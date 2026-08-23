@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-23T03:43:44.778Z",
+  "generatedAt": "2026-08-23T12:23:40.916Z",
   "page": 38,
   "pageSize": 20,
   "nextPage": "api/pages/page-0039.json",
   "ids": [
-    "gh_2e287f38108c3c23aa596c09",
     "gh_148f62b37e9aefdfed3883e3",
     "gh_f6954729fde3e12c4d973d08",
     "gh_08f1c587e43626875189bf46",
@@ -23,49 +22,10 @@
     "gh_e8f2a843dbb0f19f28040375",
     "gh_478204b4583be48117b2cc4c",
     "gh_90c9cd995dc37aa40ab4b546",
-    "gh_a67fef8e8065664acd177cb1"
+    "gh_a67fef8e8065664acd177cb1",
+    "gh_3a73e39bba320f1e00e6c5da"
   ],
   "items": [
-    {
-      "id": "gh_2e287f38108c3c23aa596c09",
-      "sourceId": "remote-job-boards/software-engineering#7486",
-      "title": "Silverfin: Experienced Ruby Engineer Team Syncs",
-      "description": "**Tags:** #ruby #ruby-on-ruby #engineer #ruby\n\n**Published on:** October 29, 2021\n\n**Original Job Post:** https://remoteOK.io/remote-jobs/106903-remote-experienced-ruby-engineer-team-syncs-silverfin\n\n![](https://remoteOK.io/assets/img/jobs/537b7cc9d35e0b42e6d78411de6fe5071635506250.png)\n\nIf you’re any good at Ruby, this is probably not the first job ad you’ve seen, so we’ve done our best to stand out while also accurately presenting what we’re all about. If it sounds like you would enjoy working with us, don’t hesitate to apply or drop us a line with questions on <span class=\"__cf_email__\" data-cfemail=\"cbaea5aca2a5aeaeb9a2a5ace6a1a4a9b88bb8a2a7bdaeb9ada2a5e5a8a4a6e5\">[email protected]</span>\n\nAhum. Here it comes.\n\n\n## What’s a Silverfin?\n\nAt Silverfin we’re trying to apply the promise of software to the age-old industry of accounting. With our SaaS we’re automating a large chunk of the busy-work that accountants are currently handling manually, and are building new tools so they can provide better services to their customers. We aim to optimize their workflow in such a way that accountants can spend more time on the much more impactful and rewarding work of advising their customers, the business owners.\n\nThe good news is we’re succeeding in doing exactly that. Every day more than 15.000 financial service professionals use Silverfin to help and advise more than 200.000 businesses. Our customers adore us! The even better news is there’s still plenty left to work on, and that’s where we hope you come in.\n\n## What’s Team Syncs?\n\nOne of the core features of Silverfin is integration with the bookkeeping software that accountants already work with, in order to import their accounting data. This means we have API integrations with over 30 different vendors, and we want to add many more as we expand to different markets.\n\nTeam Syncs is the team responsible for creating and maintaining those integrations. The ideal candidate loves working with APIs, including the uncertainty they bring. Some APIs we need to use are poorly designed, badly documented or unreliable, and it can be challenging to build a reliable integration. Yet the satisfaction of empowering our customers to import gigabytes of data from their clunky bookkeeping software and enabling the advanced features Silverfin makes it all worth it.\n\nAs a member of Team Syncs you’ll work on solving scaling issues, building and maintaining API clients, and improving transparency and communication on the status of the the sync process to the users.\n\n\n## What makes the engineering team at Silverfin special?\n\nWe’re a remote-first engineering team of 25 people distributed in 14 different countries. A priority for us is maintaining proper work-life balance. We avoid meetings as much as possible, accept deadlines only when absolutely necessary, and never expect anyone to work longer hours than they’ve signed up for. A day in our working lives is pretty boring, and we feel that’s exactly how it should be.\n\nWorking with us means you can be flexible with your schedule. It’s OK to disappear for a few hours in the middle of the day to run some errands, get a haircut, pick up the kids — whatever reason, you don’t need to explain yourself. You also fully decide when you take time off: our team is sufficiently varied and well organized that there are always enough people around to handle the load, and in the rare cases it’s not, we will decrease the load instead of asking people to move their holiday.\n\nBeing remote-first means we favor asynchronous communication. We don’t shy away from chatting in Slack, but the important decisions or discussions are done in Gitlab issues, over email, or in our wiki, so there’s a written, persisted record. We’re mindful of maintaining long chunks of focussed time, which means we avoid @-mentions or PMs on Slack, and other triggers and interrupts. We encourage using Slack’s DnD function, especially when you’re not working!\n\nWe’d be really happy to welcome you in our #engineering channel, but it’s not just virtual: we make sure we regularly get to see each other in real life too. Twice a year we fly the whole engineering team together to a different location in Europe, and at least once a year we join up with the rest of the company so we can spend some time together with the other departments.\n\n\n## What does working at Silverfin look like?\n\nWe work in nimble teams around 5 people in size, with each team taking ownership of a specific set of features of the application. Teams are responsible for a full slice across the stack, so both the backend as well as the frontend of each part is maintained by the same people.\n\nOur ops team ensures things run smoothly, deploys happen correctly, and will work with you when issues should arise. We’re enthusiastic followers of the devops mindset, which means ops and developers work together to solve problems, and empower each-other to be self-sufficient, instead of throwing problems over the wall to the “other side”.\n\nOur stack is Vue.js and vanilla JS with a sprinkling of jQuery on the frontend and an up-to-date Rails monolith on the backend. We use PostgreSQL and Redis for persistence and caching, and everything is running on a Kubernetes cluster in Google Cloud. Our daily tools include GitLab, Quip and Slack, with Zoom as our remote conferencing tool of choice.\n\nWe have a UI-kit to make front-end development easy and consistent, but at Team Syncs there will be little to no front-end development necessary.\n\nNo code gets deployed without a code-review by a peer and testing is a must. Our pipeline automates deployment when the suite is green, and deploys happen dozens of times a day. Each team is currently doing Kanban, but they’re free to follow whatever process suits them best. There are regular retros held to work towards continuous improvement.\n\nSoftware for accountants is not considered to be very exciting, but we have our fair share of technical challenges. To give you a sense of scale: our database exceeds 10TB*, and our largest table has crossed the 10 billion row mark a long while back. We interface with more than 30 different external APIs, and provide third parties an API of our own.\n\n*: Our ops team noted that this actually isn’t that hard to achieve if you’re just indexing everything, but it still sounds impressive, right?\n\n\n## What does your future look like?\n\nPersonal growth is key to staying motivated. At Silverfin you don’t need to move to management in order to advance. We see the individual contributor track and the management track as two different growth paths which every engineer can follow and switch between. You can be promoted, including pay raises, as a contributor just like as a manager.\n\nEveryone has a €1000 yearly budget to spend on conferences, courses, workshops or other training to improve their skills and level up. This also includes accommodation, travel costs. If the conference is on a workday you’ll get paid like any normal day.\n\nWe’re looking to hire a lot of new colleagues, and we’d like to have a couple of more teams in the future. Each new team would also need a new teamlead, and we prefer to promote from within the engineering team. This means if you’d like to step onto the management track, there will be plenty of opportunities to do so in the near future. We pro-actively keep track of who would be interested, and provide feedback and learning opportunities to work towards such a goal.\n\n\n## What are we looking for?\n\n* You’re experienced in both Ruby and Rails, and also understand where the boundaries lie between them. You can code in Ruby without any of Rails’ training wheels if necessary.\n* You’re up for mentoring coworkers and can give in-depth, productive feedback during code reviews. While you appreciate the small stuff, you recognize bikeshedding and can avoid its pitfalls.\n* You enjoy integrating with APIs and aren’t easily dissuaded when encountering unreliable or poorly documented systems.\n* You code with reason and can justify the important decisions you made during development.\n* You can communicate clearly in English, both written and verbally.\n* You know and can apply best practices when relevant. That means the usual like version control, testing, and refactoring; but also higher level concepts such as good object oriented design.\n* You're aware of the trade-offs involved in proper engineering and can make balanced business decisions, keeping in mind all the stakeholders of the project.\n* You’ve got opinions on code design and you can discuss them, but you’re professional enough to not let those opinions get in the way of a consensus if necessary.\n\n## What can we offer you?\n\n* Actual, proper work-life balance\n* A salary range of €60.000 - €100.000 a year\n* Choose your own working hours and work 100% remotely\n* Personal growth training and opportunities\n* Join a distributed remote-first engineering team with 25 colleagues in 14 different countries\n* A refreshing work environment with professional, friendly and welcoming colleagues\n* A €1000 yearly budget for conferences, courses, workshops or other expenses that will improve your skills\n\n## Requirements\n\n* You have at least 4 years of experience working with Ruby, or 2 years of experience with Ruby and 4 years in one or more other programming language.\n* You get Rails\n* Your work hours have some overlap with EU business hours (we require your local timezone to be within CET +/- 3h)\n\n## Nice to have’s\n\nThese would be nice but are definitely not necessary. Don’t worry if none of the following applies to you.\n\n* Experience as a remote worker in a fully remote team\n* Experience working with large datasets and the problems they bring\n* Experience in Fintech\n* Accounting knowledge\n\n## Interested?\n\n* [Read about what our interviewing process looks like](https://engineering.silverfin.com/engineering-interview-process/)\n* [Apply for the job right here](https://grnh.se/6bc90f722us)\n* Or email us with any questions on <span class=\"__cf_email__\" data-cfemail=\"acc9c2cbc5c2c9c9dec5c2cb81c6c3cedfecdfc5c0dac9decac5c282cfc3c1\">[email protected]</span> \n\nBe sure to mention the words **FRESH JAGUAR REPAIR** when applying to show you read the job post completely. This is a beta feature to avoid spam applicants. Companies can search these words\tto find applicants that read this and see they're human.\n\n\t\n\n#Salary and compensation\nNo salary data published by company so we estimated salary based on previous jobs related to . $70,000 — $120,000/year\n\n\n### Location\n🌏 Worldwide<br>",
-      "excerpt": "**Tags:** #ruby #ruby-on-ruby #engineer #ruby **Published on:** October 29, 2021 **Original Job Post:** https://remoteOK.io/remote-jobs/106903-remote-experienced-ruby-engineer-team-syncs-silverfin ![](https://remoteOK...",
-      "issueState": "open",
-      "contentHash": "a0773f81d1ce2a1ce401a9fccc954b15f93b35ff1d0caa5b4cce4f11dc7a067b",
-      "repository": "remote-job-boards/software-engineering",
-      "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "lang-ruby",
-        "remoteok.io"
-      ],
-      "author": {
-        "id": "remote-job-board",
-        "name": "remote-job-board",
-        "handle": "remote-job-board",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67670454?v=4"
-      },
-      "community": {
-        "id": "remote-job-boards",
-        "name": "remote-job-boards",
-        "avatarUrl": "https://github.com/remote-job-boards.png?size=80",
-        "repository": "remote-job-boards/software-engineering",
-        "url": "https://github.com/remote-job-boards/software-engineering"
-      },
-      "salary": {
-        "currency": "EUR",
-        "min": 60000,
-        "max": 100000,
-        "period": "hour"
-      },
-      "createdAt": "2021-10-31T12:38:58Z",
-      "updatedAt": "2021-11-03T01:09:53Z",
-      "url": "https://github.com/remote-job-boards/software-engineering/issues/7486",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_148f62b37e9aefdfed3883e3",
       "sourceId": "remote-job-boards/software-engineering#7485",
@@ -763,6 +723,40 @@
       "createdAt": "2021-09-23T13:22:09Z",
       "updatedAt": "2021-09-23T13:27:18Z",
       "url": "https://github.com/ajudevs/vagas/issues/9",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_3a73e39bba320f1e00e6c5da",
+      "sourceId": "ajudevs/vagas#8",
+      "title": "[REMOTO] PESSOA DESENVOLVEDORA MOBILE LEAD > IOS NA THOUGHTWORKS",
+      "description": "## PESSOA DESENVOLVEDORA MOBILE LEAD > IOS NA THOUGHTWORKS [REMOTO]\n\nSomos uma consultoria global de software e uma comunidade de pessoas apaixonadas por propósitos. Nós pensamos de forma disruptiva para para fornecer tecnologia capaz de enfrentar os desafios mais difíceis dos clientes, ao mesmo tempo em que buscamos revolucionar a indústria de TI e criarmos um impacto social positivo.\n\nEstamos procurando uma Pessoa Desenvolvedora - Mobile iOS para trabalhar em projetos desafiadores, entregando a melhor solução para os objetivos de clientes. Esta pessoa terá a oportunidade de trabalhar com práticas de desenvolvimento ágil, incluindo padrões de projeto, refatoração, integração contínua e TDD (Test Driven Development). \n\n// O que buscamos: \n\nPessoas apaixonadas e que possuam experiência no desenvolvimento de aplicações para plataforma IOS;\nExperiência com desenvolvimento móvel;\nExperiência e entendimento de várias plataformas e ferramentas para desenvolvimento móvel;\nQue tenha participado do ciclo completo de entrega (concepção, desenvolvimento e implantação) de aplicativos móveis;\nForte em design OO, incluindo conhecimento de padrões de projeto;\nCom bom entendimento de testes unitários, de integração, funcionais e de regressão automatizados para iOS;\nQue tenham interesse ou experiência com metodologias ágeis;\nHabilidade para julgar e fazer escolhas de plataforma dado o contexto sobre um aplicativo em particular;\nHabilidade de trabalhar em clientes diversos em um ambiente colaborativo e voltado ao trabalho em equipe;\nForte habilidade de comunicação e de lidar com clientes trabalhando em um ambiente de consultoria;\nDesejável inglês avançado. \n// Esperamos que você seja:\n\nAberta para trabalhar com times diversos, espalhados por quatro escritórios do Brasil;\nUma pessoa com habilidade de construir um relacionamento, influenciando e engajando;\nAlguém sempre em busca de mais conhecimento, tendo autonomia para tentar, errar e aprender;\nUma pessoa aberta a novos pontos de vista e maneiras de pensar. \nA Thoughtworks tem orgulho de ser uma empresa que preza pela igualdade de oportunidades. Pessoas candidatas são consideradas para todas as vagas, sem distinção de raça, cor, religião, gênero e identidade de gênero, nacionalidade, deficiência, orientação sexual, ascendência ou idade.\n\n[APLICAR PARA A VAGA](https://www.thoughtworks.com/pt/jobs/3290755)",
+      "excerpt": "## PESSOA DESENVOLVEDORA MOBILE LEAD > IOS NA THOUGHTWORKS [REMOTO] Somos uma consultoria global de software e uma comunidade de pessoas apaixonadas por propósitos. Nós pensamos de forma disruptiva para para fornecer ...",
+      "issueState": "open",
+      "contentHash": "cff18654dd38abd1657ee0936bd65b628e76458f5ba46f6d1863842c6bbd3ce3",
+      "repository": "ajudevs/vagas",
+      "repositoryUrl": "https://github.com/ajudevs/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "remoto"
+      ],
+      "author": {
+        "id": "nathanfeitoza",
+        "name": "nathanfeitoza",
+        "handle": "nathanfeitoza",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/37680036?v=4"
+      },
+      "community": {
+        "id": "ajudevs",
+        "name": "ajudevs",
+        "avatarUrl": "https://github.com/ajudevs.png?size=80",
+        "repository": "ajudevs/vagas",
+        "url": "https://github.com/ajudevs/vagas"
+      },
+      "companyName": "THOUGHTWORKS",
+      "createdAt": "2021-09-23T13:21:25Z",
+      "updatedAt": "2021-09-23T13:27:17Z",
+      "url": "https://github.com/ajudevs/vagas/issues/8",
       "sourceType": "github-issue"
     }
   ]

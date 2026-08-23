@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-23T00:51:38.010Z",
+  "generatedAt": "2026-08-23T12:23:40.916Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
-    "gh_bf1a4481c55b8d80f89cba07",
     "gh_0fe275533f5da07f8d0c9026",
     "gh_9bab610327418a0955bd2b33",
     "gh_e2b9353ac1307526e438b23d",
@@ -23,45 +22,10 @@
     "gh_828a908398f893b1e0c6ca3d",
     "gh_711783b1e589482d26973823",
     "gh_2c6305b33aff78c3ef09ce99",
-    "gh_1f61de8de06b483a9a82d5f4"
+    "gh_1f61de8de06b483a9a82d5f4",
+    "gh_9dbea54460036bccbb80c963"
   ],
   "items": [
-    {
-      "id": "gh_bf1a4481c55b8d80f89cba07",
-      "sourceId": "f2etw/jobs#1168",
-      "title": "[求職] 高雄 /現場、遠端、混合型/ | 具 Vue 3 & Angular 19 雙框架實作經驗的前端工程師 - 林家齊 (AtayalLin)",
-      "description": "## 📌 關於我 (About Me)\n您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。\n\n我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐性，能將這些特質轉化為高水準的 UI/UX 呈現與穩健的程式碼品質。\n\n- **工作狀態**：待業中，錄取後一週內可到職\n- **期望職缺**：前端工程師 / 全端工程師\n- **工作地點**：高雄市（左營/鼓山/楠梓/前鎮等） / 接受遠端工作 /新北、台中 等地區可接受員工宿舍\n- **技術社群**：完成 2025 六角學院 30 天軟體工程師體驗營鐵人挑戰，以及台南應用科技大學產業新尖兵計畫「Java全端整合實務運用就業養成班第四梯次」共 840 時數課程。\n---\n\n## 🛠 技術棧 (Technical Skills)\n\n| 分類 | 技術重點 |\n| :--- | :--- |\n| **Frontend** | JavaScript (ES6+), TypeScript, HTML5, CSS3 (Fluid Layout/clamp) |\n| **Frameworks** | **Vue 3** (Vite, Pinia, Vue Router, vee-validate, Zod)<br>**Angular 19** (Signals, RxJS) |\n| **Styles & Anim** | RWD, Bootstrap 5, GSAP 動畫庫, IntersectionObserver, Tailwind/CSS Tokens |\n| **Backend / DB** | Java, Spring Boot, RESTful API 串接, MySQL |\n| **DevOps & Tools** | Git / GitHub, GitHub Actions (CI/CD), Figma, Notion |\n\n---\n\n## 💻 精選專案作品 (Featured Projects)\n\n### 1. 懶飽飽智慧點餐系統 (團隊專案・前端負責人)\n以 Angular 19 驅動的餐飲全端管理系統，涵蓋客戶端、員工 POS 終端與老闆管理後台。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Angular-Team-Frontend)\n- **技術棧**：Angular 19, TypeScript, Angular Signals, Spring Boot, MySQL\n- **核心亮點**：\n  - **全域狀態驅動**：採用 **Angular Signals** 管理全域狀態，實現客戶下單與 POS 看板跨元件即時同步。\n  - **雙模式切換機制**：設計 Mock / 真實 API 雙模式切換，使前端可離線完整運行，並精準對齊真實 API 型態，大幅降低與後端串接時的錯誤率。\n  - **路由與權限控制**：實作 3 種角色獨立路由，管理共 10 個頁面與 8 個管理頁籤，並整合完整的信用卡與行動支付流程。\n\n### 2. 日式風格電商網站 (個人 Side Project)\n功能完整的電商購物流程專案，持續迭代並導入現代前端工程化實踐，累積 30 位開發者 clone。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Vueshop-Side-Project-Demo-)\n- **技術棧**：Vue 3, Vite, Pinia, Vue Router, vee-validate + Zod, Vitest, Playwright\n- **核心亮點**：\n  - **嚴格表單驗證**：結帳表單整合 `vee-validate` 與 `Zod` 進行強型別驗證；利用 Composable (`usePricing`) 封裝複雜的運費與折扣計算邏輯。\n  - **多主題持久化**：使用 CSS Design Tokens 實作三種主題切換，並透過 `localStorage` 持久化使用者偏好。\n  - **自動化部署與測試**：配置 GitHub Actions 自動化部署至 GitHub Pages，並配置 Vitest 單元測試與 Playwright E2E 測試框架。\n\n### 3. H5 遊戲大廳入口頁 (前端技術試題)\n受遊戲公司邀請完成的高還原度前端試題，具備 95% 的功能完成度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Igs-test-vue)\n- **技術棧**：Vue 3, Vite, Pinia, Bootstrap 5, GSAP, RESTful API\n- **核心亮點**：\n  - **流暢動效與優化**：利用 GSAP 打造精緻進場動畫與骨架屏（Skeleton Screen）載入狀態；實作實時搜尋並加入 **300ms 防抖 (Debounce)** 優化。\n  - **即時狀態輪詢**：實作 30 秒定時輪詢（Polling）更新餘額機制，以及跨分類同步的收藏管理。\n\n### 4. 個人作品集網站 (年度報告概念)\n純手刻的原生技術展示網站，用以驗證對網頁底層與瀏覽器 API 的掌握度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/AtayaHtml)\n- **技術棧**：純 HTML5, CSS3, Vanilla JavaScript (無框架與建置工具)\n- **核心亮點**：\n  - **流體排版**：CSS 採用 `clamp()` 進行流體排版，無縫支援三斷點 RWD。\n  - **高效能動畫**：使用 `IntersectionObserver` 驅動元素進場動畫與導覽列高亮。\n\n*(其他練習專案參考：[Angular 快速開發 Demo](https://github.com/AtayalLin/Angular-qsdemo) / [Vite 測試專案](https://github.com/AtayalLin/for-vite-test-2025))*\n\n---\n\n## 💼 工作經歷 (Experience)\n\n- **兼職資訊行政助理** | 匠星工程有限公司 (2023/04 - 2023/09)\n  - 協助搬運舊部落格文章至新網頁，處理軟硬體排除。\n- **約聘助理** | 交通部航港局南部航務中心 (2020/04 - 2020/10)\n  - 管理與歸檔 200+ 份船舶資料，**透過 Excel 自動化縮短 20% 行政作業時間**。\n- **學校教務處行政人員** | 高雄市立楠梓國民中學 (2016/01 - 2017/08)\n  - 負責大批量學生資料與教務數據建檔處理。\n\n---\n\n## 📬 聯絡方式 (Contact)\n\n- **Email**：a437777@gmail.com\n- **手機**：0967-187-303\n- **GitHub**：[AtayalLin](https://github.com/AtayalLin)\n\n期待有機會與您聊聊，為團隊帶來即戰力與細膩的前端開發支援！",
-      "excerpt": "## 📌 關於我 (About Me) 您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。 我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐...",
-      "issueState": "open",
-      "contentHash": "d8c0374336eabb5df35caa273f78b6f5cf6c5456dea50f1fea8dd7469b078de3",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "tags": [
-        "求職",
-        "[b] java",
-        "[f] angular",
-        "[f] vue.js"
-      ],
-      "author": {
-        "id": "AtayalLin",
-        "name": "AtayalLin",
-        "handle": "AtayalLin",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/192576566?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2026-06-18T07:09:49Z",
-      "updatedAt": "2026-06-29T06:26:57Z",
-      "url": "https://github.com/f2etw/jobs/issues/1168",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_0fe275533f5da07f8d0c9026",
       "sourceId": "qa-brasil/vagas#1264",
@@ -725,6 +689,41 @@
       "createdAt": "2026-05-26T18:22:15Z",
       "updatedAt": "2026-05-26T18:22:15Z",
       "url": "https://github.com/nerdzao/vagas/issues/191",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_9dbea54460036bccbb80c963",
+      "sourceId": "programadores-br/geral#3074",
+      "title": "[São Paulo, Brasil] Designer Gráfico na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/designer-grafico-120813593?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\nEstamos em busca de uma pessoa criativa, proativa e com perfil “hands on” para atuar no desenvolvimento de materiais visuais e apoiar a construção da comunicação da marca. Procuramos alguém que goste de ambientes dinâmicos, tenha olhar estratégico para design e queira crescer junto com um time colaborativo e em constante evolução.\n\n#### Responsabilidades:\n\n*   Desenvolver materiais gráficos para canais digitais e offline;\n    \n*   Criar peças para redes sociais, campanhas, e-mails e apresentações institucionais/comerciais;\n    \n*   Garantir consistência visual da marca em diferentes pontos de contato;\n    \n*   Participar ativamente da construção criativa dos projetos, trazendo ideias e sugestões;\n    \n*   Apoiar na organização e evolução dos materiais e identidade visual.\n    \n\n \n\n#### O que esperamos:\n\n*   Pessoa organizada, proativa e com bom senso de prioridade;\n    \n*   Boa comunicação e facilidade de relacionamento interpessoal;\n    \n*   Perfil colaborativo e adaptável a ambientes dinâmicos;\n    \n*   Capacidade de atuar com autonomia e em parceria com diferentes áreas;\n    \n*   Criatividade aliada à atenção aos detalhes;\n    \n*   Interesse em contribuir com processos e evolução contínua.\n## Coodesh Carreiras: \n <p>Nós somos a Coodesh, uma plataforma que conecta pessoas da área de tecnologia em oportunidades 100% remotas de nossas empresas parceiras.</p>\n<p>Em nossa plataforma você encontra posições de diversos níveis, tecnologias e modelos de contratação, de variadas empresas com diversas culturas e que oferecem diversos desafios, pensando sempre em atender as expectativas e objetivos de nossas pessoas candidatas.</p><a href='https://coodesh.com/companies/coodesh-selected'>Veja mais no site</a>\n\n## Local: \n São Paulo, Brasil\n## Requisitos: \n - Experiência com design gráfico para materiais digitais e offline; \n- Domínio do pacote Adobe (Photoshop, Illustrator e InDesign); \n- Experiência na criação de apresentações institucionais e comerciais; \n- Conhecimento em composição visual, tipografia e identidade de marca; \n- Organização para gestão de múltiplas demandas; \n- Conhecimento em Figma.\n## Diferenciais: \n - Conhecimento em motion design e edição de vídeo; \n- Vivência com Design Systems; \n- Experiência em ambientes e equipes em crescimento; \n- Conhecimento em branding e comunicação digital.\n## Benefícios: \n - Day off de aniversário; \n- Telemedicina; \n- Convênio médico e odontológico; \n- Seguro de vida; \n- Descontos em farmácias; \n- Benefícios educacionais e parcerias; \n- Acesso a programas de bem-estar e qualidade de vida.\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Designer Gráfico na Coodesh Carreiras](https://coodesh.com/jobs/designer-grafico-120813593?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Regime\nCLT\n#### Categoria\nGestão",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "07eadcd5bf02b07b4e8d4c82bcfa25c0e13d2a0cf8ac9e85ebb385d800c8bf16",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2026-05-26T12:37:31Z",
+      "updatedAt": "2026-05-26T12:37:31Z",
+      "url": "https://github.com/programadores-br/geral/issues/3074",
       "sourceType": "github-issue"
     }
   ]
