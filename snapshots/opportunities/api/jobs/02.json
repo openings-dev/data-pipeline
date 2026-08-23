@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T21:25:20.908Z",
+  "generatedAt": "2026-08-23T21:14:37.806Z",
   "items": {
     "gh_02639b5d30624af5760b16e1": {
       "id": "gh_02639b5d30624af5760b16e1",
@@ -106,6 +106,40 @@
       "createdAt": "2026-07-15T10:22:02Z",
       "updatedAt": "2026-07-15T10:22:02Z",
       "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2938",
+      "sourceType": "github-issue"
+    },
+    "gh_0204db9cde8a5488e44c6e8b": {
+      "id": "gh_0204db9cde8a5488e44c6e8b",
+      "sourceId": "remoteintech/remote-jobs#2122",
+      "title": "Upgrade @11ty/is-land from v4 to v5",
+      "description": "## Summary\n\nDependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked issue rather than merging blindly.\n\n## Breaking Changes in v5\n\n- **`autoinit` attribute removed** — `<is-land autoinit>` and `is-land-autoinit.js` are gone. Must migrate to the new `Island.addInitType()` API for framework initialisation\n- **`Island.define(tagName)` removed** — replaced by using `customElements.define` directly\n- **`import` attribute behaviour change** — when used with `type`, the `import()` is no longer performed automatically\n- **Manual definition** — now uses `?nodefine` query param instead of the previous approach\n\n## What's Good\n\n- Broader browser support (Chrome 71+, down from 88+)\n- Performance improvements for `on:idle`, `on:media`, `on:load`\n- Passive event listeners for `on:interaction` (fixes Lighthouse warning)\n- Minified build available (`dist/is-land.min.js`)\n\n## Suggested Approach\n\n1. Audit current `is-land` usage in templates (`src/_includes/`, `src/_layouts/`)\n2. Check if `autoinit` or `Island.define()` are used anywhere\n3. Update usage to match v5 API\n4. Test lazy-loading behaviour (theme switcher, search, any other islands)\n5. Verify build passes\n\n## References\n\n- [is-land v5.0.0 release](https://github.com/11ty/is-land/releases/tag/v5.0.0)\n- [Dependabot PR #2120](https://github.com/remoteintech/remote-jobs/pull/2120)",
+      "excerpt": "## Summary Dependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked is...",
+      "issueState": "open",
+      "contentHash": "55a19f8b0f66ddeebfdff850b17f08918a7c6115d78ea41b7572d6a89d236eab",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [
+        "remote",
+        "node"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-02-21T13:17:54Z",
+      "updatedAt": "2026-08-23T18:19:50Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
       "sourceType": "github-issue"
     },
     "gh_021e66bb9570665625ec21d6": {
