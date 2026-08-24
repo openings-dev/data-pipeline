@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-08-24T12:32:46.990Z",
+  "generatedAt": "2026-08-24T15:32:30.046Z",
   "page": 11,
   "pageSize": 20,
   "nextPage": "api/pages/page-0012.json",
   "ids": [
+    "gh_f20a6d2a5cd4d0963ee3848c",
+    "gh_f83ab72e76fc4802a6079563",
     "gh_b26dea1eadba581bed785ece",
     "gh_f2c6ad8ddbb570d902bed361",
     "gh_75e91e41a1fff3f59a91baa2",
@@ -21,11 +23,86 @@
     "gh_322e43c52c4dc474b9de092d",
     "gh_8037478966ad64b0fcc09260",
     "gh_8d35c2691e83ce39dbad4d65",
-    "gh_d13f340a60d374a11eb14b0f",
-    "gh_6f46c2a1626bc150f4f9fe95",
-    "gh_b7a42250f675b2467047d1dc"
+    "gh_d13f340a60d374a11eb14b0f"
   ],
   "items": [
+    {
+      "id": "gh_f20a6d2a5cd4d0963ee3848c",
+      "sourceId": "DevOps-Brasil/Vagas#479",
+      "title": "[Site Reliability Engineer Pleno] Sylision - Remoto",
+      "description": "### 🎯 Cargo\n\nSite Reliability Engineer\n\n### 🏢 Empresa\n\nSylision (recrutamento para empresa parceira)\n\n### 📊 Nível de Experiência\n\nPleno\n\n### 🏠 Modalidade de Trabalho\n\nRemoto\n\n### 📍 Localização\n\nBrasil inteiro ou Portugal (remoto)\n\n### 📝 Tipo de Contratação\n\nCLT ou PJ\n\n### 💱 Moeda\n\nBRL\n\n### 💰 Faixa Salarial\n\n7.000 - 12.000\n\n### 📋 Descrição da Vaga\n\nVaga de Site Reliability Engineer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n### ✅ Requisitos Técnicos\n\n**Obrigatórios:**\n- Experiência profissional com SRE (de 2 a 5 anos)\n- Linux e redes\n- Observabilidade (Prometheus, Grafana, tracing)\n- Kubernetes\n- Automação (Python, Go ou Bash)\n\n**Diferenciais:**\n- Terraform\n- Engenharia de caos\n- Gestão de incidentes em escala\n\n### 🎁 Benefícios\n\n- Faixa salarial de R$ 7.000 a 12.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n### 🛠️ Stack/Tecnologias\n\n- SRE\n- Boas práticas: CI/CD, IaC, observabilidade (varia conforme o projeto)\n\n### 📧 Como se Candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-sre-pleno-remoto\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n### 🔗 Link da Vaga (opcional)\n\nhttps://www.sylision.com/vagas/desenvolvedor-sre-pleno-remoto",
+      "excerpt": "### 🎯 Cargo Site Reliability Engineer ### 🏢 Empresa Sylision (recrutamento para empresa parceira) ### 📊 Nível de Experiência Pleno ### 🏠 Modalidade de Trabalho Remoto ### 📍 Localização Brasil inteiro ou Portugal ...",
+      "issueState": "open",
+      "contentHash": "80417ba09ffa12097091de33b5ded817eb61ebaaadbd936dc68f15090ad1708f",
+      "repository": "DevOps-Brasil/Vagas",
+      "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "clt",
+        "pj",
+        "sre",
+        "platform",
+        "kubernetes",
+        "terraform",
+        "pa",
+        "pleno"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "DevOps-Brasil",
+        "name": "DevOps-Brasil",
+        "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+        "repository": "DevOps-Brasil/Vagas",
+        "url": "https://github.com/DevOps-Brasil/Vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 7000,
+        "max": 12000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-03T12:06:04Z",
+      "updatedAt": "2026-08-03T12:06:28Z",
+      "url": "https://github.com/DevOps-Brasil/Vagas/issues/479",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_f83ab72e76fc4802a6079563",
+      "sourceId": "timqian/open-source-jobs#181",
+      "title": "Script/workflow bug",
+      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
+      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
+      "issueState": "open",
+      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "timqian",
+        "name": "timqian",
+        "handle": "timqian",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-08-03T03:51:27Z",
+      "updatedAt": "2026-08-03T03:51:27Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/181",
+      "sourceType": "github-issue"
+    },
     {
       "id": "gh_b26dea1eadba581bed785ece",
       "sourceId": "frontend-pt/vagas#105",
@@ -770,72 +847,6 @@
       "createdAt": "2026-08-01T01:30:28Z",
       "updatedAt": "2026-08-01T01:30:28Z",
       "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9666",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_6f46c2a1626bc150f4f9fe95",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9665",
-      "title": "New Internship",
-      "description": "### Link to Internship Posting\n\nhttps://www.citadel.com/careers/details/quantitative-research-analyst-intern-us/\n\n### Company Name\n\nCitadel\n\n### Internship Title\n\nQuantitative Research Analyst Intern\n\n### Location\n\nNew York, NY | Miami, FL | Greenwich, CT\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOther\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nQuantitative Finance\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nkaitosekiya@outlook.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://www.citadel.com/careers/details/quantitative-research-analyst-intern-us/ ### Company Name Citadel ### Internship Title Quantitative Research Analyst Intern ### Location New York,...",
-      "issueState": "open",
-      "contentHash": "754c98ee4d74dae3c4df1afe3acbde8fb95a774093b781e307bdbdbf4c7d3817",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "tags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "Givikap",
-        "name": "Givikap",
-        "handle": "Givikap",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/78727184?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-08-01T01:29:44Z",
-      "updatedAt": "2026-08-01T01:29:44Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9665",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_b7a42250f675b2467047d1dc",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9664",
-      "title": "New Internship",
-      "description": "### Link to Internship Posting\n\nhttps://www.citadel.com/careers/details/quantitative-research-engineer-phd-intern-us/\n\n### Company Name\n\nCitadel\n\n### Internship Title\n\nQuantitative Research Engineer Intern - PhD\n\n### Location\n\nNew York, NY | Miami, FL | Greenwich, CT | Houston, TX\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOther\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nQuantitative Finance\n\n### Advanced Degree Requirements\n\n- [x] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nkaitosekiya@outlook.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://www.citadel.com/careers/details/quantitative-research-engineer-phd-intern-us/ ### Company Name Citadel ### Internship Title Quantitative Research Engineer Intern - PhD ### Locati...",
-      "issueState": "open",
-      "contentHash": "9a82dda171f558e9402e1c3765219d40d829f752a610710e735bd711c0c44eb4",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "tags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "Givikap",
-        "name": "Givikap",
-        "handle": "Givikap",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/78727184?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-08-01T01:29:10Z",
-      "updatedAt": "2026-08-01T01:29:10Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9664",
       "sourceType": "github-issue"
     }
   ]
