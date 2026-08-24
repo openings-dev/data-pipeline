@@ -1,12 +1,9 @@
 {
-  "generatedAt": "2026-08-24T09:39:16.997Z",
+  "generatedAt": "2026-08-24T12:32:46.990Z",
   "page": 20,
   "pageSize": 20,
   "nextPage": "api/pages/page-0021.json",
   "ids": [
-    "gh_0204db9cde8a5488e44c6e8b",
-    "gh_bf70dc9f783bd9e91215da56",
-    "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
     "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_9c27ccbbb027a757720e4a38",
@@ -23,107 +20,12 @@
     "gh_777d6953c094c4c77cffa586",
     "gh_8ac6e6406bab29dc70c10f65",
     "gh_03fa03119cda6972a7f24c60",
-    "gh_018090ae0b51c7fe869fe122"
+    "gh_018090ae0b51c7fe869fe122",
+    "gh_56647ce0f055e747d42f4222",
+    "gh_f1495b68fe7d4f8349ceb1b6",
+    "gh_90da04043225a0b75c5b63f5"
   ],
   "items": [
-    {
-      "id": "gh_0204db9cde8a5488e44c6e8b",
-      "sourceId": "remoteintech/remote-jobs#2122",
-      "title": "Upgrade @11ty/is-land from v4 to v5",
-      "description": "## Summary\n\nDependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked issue rather than merging blindly.\n\n## Breaking Changes in v5\n\n- **`autoinit` attribute removed** — `<is-land autoinit>` and `is-land-autoinit.js` are gone. Must migrate to the new `Island.addInitType()` API for framework initialisation\n- **`Island.define(tagName)` removed** — replaced by using `customElements.define` directly\n- **`import` attribute behaviour change** — when used with `type`, the `import()` is no longer performed automatically\n- **Manual definition** — now uses `?nodefine` query param instead of the previous approach\n\n## What's Good\n\n- Broader browser support (Chrome 71+, down from 88+)\n- Performance improvements for `on:idle`, `on:media`, `on:load`\n- Passive event listeners for `on:interaction` (fixes Lighthouse warning)\n- Minified build available (`dist/is-land.min.js`)\n\n## Suggested Approach\n\n1. Audit current `is-land` usage in templates (`src/_includes/`, `src/_layouts/`)\n2. Check if `autoinit` or `Island.define()` are used anywhere\n3. Update usage to match v5 API\n4. Test lazy-loading behaviour (theme switcher, search, any other islands)\n5. Verify build passes\n\n## References\n\n- [is-land v5.0.0 release](https://github.com/11ty/is-land/releases/tag/v5.0.0)\n- [Dependabot PR #2120](https://github.com/remoteintech/remote-jobs/pull/2120)",
-      "excerpt": "## Summary Dependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked is...",
-      "issueState": "open",
-      "contentHash": "55a19f8b0f66ddeebfdff850b17f08918a7c6115d78ea41b7572d6a89d236eab",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "remote",
-        "node"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-21T13:17:54Z",
-      "updatedAt": "2026-08-23T18:19:50Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_72cc354e7d9c38f999fa902a",
-      "sourceId": "timqian/open-source-jobs#161",
-      "title": "Feature: Enhanced Search & Filtering",
-      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
-      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
-      "issueState": "open",
-      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:29:12Z",
-      "updatedAt": "2026-02-19T04:01:20Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/161",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_dd237a978dba300d92eb4d35",
       "sourceId": "timqian/open-source-jobs#160",
@@ -729,6 +631,115 @@
       "createdAt": "2026-01-05T22:50:21Z",
       "updatedAt": "2026-01-05T22:50:21Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/722",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_56647ce0f055e747d42f4222",
+      "sourceId": "backend-br/vagas#12150",
+      "title": "[|Remote] Senior Back-end developer Java - Botcity",
+      "description": "## Nossa empresa\n\nAt BotCity, we’ve built a pioneering Intelligent Automation platform, backed by global investors such as Y Combinator and SoftBank. Our mission is to empower enterprises worldwide to scale their automation initiatives with best-in-class governance, orchestration, and developer tools. We believe that automation projects are fundamentally software projects, which is why we advocate a high-code approach rooted in Python. Our commitment to innovation has enabled us to serve over 1,000 companies in 73 countries, and we continue to expand through strategic partnerships around the globe.\n\nWe recently raised a $12M Series A, led by Four Rivers with participation from Y Combinator, SoftBank, and top industry leaders such as Lew Cirne (New Relic), Rod Johnson (Spring Source), and Walter Kortschak (Summit Partners | Firestreak Ventures). With 1,000+ customers in 70+ countries, including Bayer and LG, and recognition by G2 (2024) as one of the world’s top 25 emerging platforms, BotCity is scaling fast. \n\nWe’re a global remote company with teams across the US and LATAM, united by a shared vision to redefine how enterprises build and manage automation. If you’re looking for an environment that values impact, autonomy, and excellence, we’d love for you to join us on this journey.\n\n## Descrição da vaga\n\nThe Senior Java Backend Engineer is responsible for architecting and developing complex Java backend applications with a strong focus on scalability, performance, and reliability. Leveraging your deep expertise in the Spring Framework, you will design and implement robust, secure microservices that drive automation at the core of some of the world’s largest and most security-conscious enterprises.\n\nResponsibilities\n\nArchitect, develop, deploy, and maintain scalable backend applications using Java/Spring Framework.\nEnsure high performance and availability of applications within a microservices architecture.\nCollaborate with product managers to understand requirements, ensure their technical feasibility, and translate them into reliable and scalable solutions.\nParticipate in software engineering rituals to develop models for complex application\nDefine private and public APIs for a world-class product.\nParticipate in code reviews, ensuring best practices in backend development.\nWrite high-quality technical documentation to clearly communicate backend architecture and API design, ensuring ease of understanding and effective collaboration across teams.\n\n## Local\n\nRemote\n\n## Requisitos\n\nRequired Qualifications\n\nBachelor's degree in Computer Science, Computer Engineering, or related technical discipline.\nProven professional experience (8+ years) in backend development using Java.\nProficiency in Spring Framework.\nStrong experience in code reviews and managing CI/CD pipelines.\nExperience implementing authentication and authorization mechanisms using OAuth, JWT, or SAML.\nExperience with version control and project management systems, particularly Git and GitHub.\nExperience with SQL and No-SQL databases.\nAbility to work independently as well as part of a team, with strong problem-solving skills and attention to detail.\nPrior experience in an early-stage, high-growth and fast-paced startup (or similar) environment.\nAbility to travel as needed to meet the team.\nPortuguese - Fluent\nPreferred Qualifications\n\nExperience in deploying containerized applications using Docker, Kubernetes, or similar technologies.\nExperience with Keycloak.\nFamiliarity with AWS services such as EC2, ECR, ECS, EKS, and ELB.\nEnglish - Fluent\n\n## Benefícios\n\nCompetitive compensation.\nPaid time off (30 days per year).\n100% remote and flexible hours.\nCaju benefits card.\nConexa health benefits.\nWellhub\nOpportunity to work in a global team with teams in San Francisco and São Paulo.\n\n## Contratação\n\nPJ\n\n## Como se candidatar\n\nhttps://jobs.quickin.io/botcity/jobs/6942bd7904d89c001382e745?src=Github\n\n## Labels\n\n\n### Nível\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+      "excerpt": "## Nossa empresa At BotCity, we’ve built a pioneering Intelligent Automation platform, backed by global investors such as Y Combinator and SoftBank. Our mission is to empower enterprises worldwide to scale their autom...",
+      "issueState": "open",
+      "contentHash": "f53d067fad39533d1910be2f2bd185fa2200f2e2c6167e2f88db8d6b95e79cdd",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pj",
+        "sênior",
+        "python",
+        "java",
+        "remoto",
+        "aws",
+        "sql",
+        "git"
+      ],
+      "author": {
+        "id": "FranPiresBotcity",
+        "name": "FranPiresBotcity",
+        "handle": "FranPiresBotcity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/208652784?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-01-02T13:02:32Z",
+      "updatedAt": "2026-08-22T17:58:02Z",
+      "url": "https://github.com/backend-br/vagas/issues/12150",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_f1495b68fe7d4f8349ceb1b6",
+      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#1",
+      "title": "Should we pull tech intern for SG directly from the website /jobs page instead and show in this README",
+      "description": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page.\n\nreference: https://github.com/SimplifyJobs/Summer2026-Internships",
+      "excerpt": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page. reference: https://github.com/Simpl...",
+      "issueState": "open",
+      "contentHash": "f274da1c982b52dfb23675137b23cf0e5323b880a7b39605aeccff9e9eb2ab48",
+      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+      "region": "Asia",
+      "country": "Singapore",
+      "tags": [],
+      "author": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "handle": "didtheyghostme",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/188044484?v=4"
+      },
+      "community": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+      },
+      "createdAt": "2025-12-31T09:25:54Z",
+      "updatedAt": "2025-12-31T09:28:08Z",
+      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/1",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_90da04043225a0b75c5b63f5",
+      "sourceId": "f2etw/jobs#1163",
+      "title": "[徵才][台北] 期天資訊 React 前端工程師",
+      "description": "**職缺: 前端工程師**\n\n**能力經歷要求:**\n\n* 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js)\n* 基礎 UI / UX 設計規劃能力\n* 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整\n* 獨立自主學習能力，積極主動\n\n**工作內容：**\n\n開發與維護 React TypeScript 相關專案，包含但不限於：\n\n* 金融交易數據可視化界面 UI/UX\n* 程式交易管理系統\n* 上線金流串接與會員管理系統\n* 電子商務前後台管理系統\n\n**適合此職缺的人格特質：**\n\n* 對金融投資有興趣 (台股期權為主)\n* 喜歡理解新事物，能快速動手實做\n* 善於安排任務優先順序，能靈活應變各類狀況\n* 客戶導向思維，釐清並解決實際問題 (非單純以程式面向考量)\n\n**不適合此職缺的人格特質：**\n\n* 只喜歡獨自埋頭寫程式，排斥溝通討論\n* 不喜歡接觸客戶 ( email / 線上會議 / 實體拜訪)\n* 數字敏銳度低或邏輯推理較差\n\n**薪資(月薪):** 50,000 - 80,000\n\n\n**工作環境與該職缺團隊介紹:**\n\n團隊規模約10人，屬於年輕新創小公司風格，組織扁平，每個人都具有影響力。主要產品為證券期貨交易相關資訊系統，提供即時量化數據網站及自動化程式交易相關技術，客戶包含國內多家大型證券期貨商、顧問公司等。\n\n**工作福利:**\n\n* 職務上手熟悉後，可視情況每週1-2天遠端 WFH\n* 每週兩天免費午餐，另有不定時老闆請客聚餐\n* 各式零食咖啡飲料\n* 每週團體運動時間 (目前是2小時羽球)\n* 公司有兩隻貓會不定時跑來蹭你 (?)\n\n**公司分紅與獎金:** 依年度盈餘及個人考績分紅\n\n**聯絡方式:** Cory / service@futures-ai.com",
+      "excerpt": "**職缺: 前端工程師** **能力經歷要求:** * 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js) * 基礎 UI / UX 設計規劃能力 * 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整 * 獨立自主學習能力，積極主動 **工作內容：** 開發與維護 React TypeScript 相關專案，包含但不限於： * 金融交易數據可視化界面 UI/UX *...",
+      "issueState": "open",
+      "contentHash": "c6211660e67dd99ff6f3718043a8fb2cf05d0b43e925ff1940932d0338810b0f",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "tags": [
+        "缺休假資訊",
+        "求才",
+        "[b] nodejs",
+        "[f] react",
+        "缺特/彈休資訊",
+        "[f] typescript"
+      ],
+      "author": {
+        "id": "cory8249",
+        "name": "cory8249",
+        "handle": "cory8249",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7524724?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2025-12-20T08:51:33Z",
+      "updatedAt": "2025-12-20T10:19:07Z",
+      "url": "https://github.com/f2etw/jobs/issues/1163",
       "sourceType": "github-issue"
     }
   ]

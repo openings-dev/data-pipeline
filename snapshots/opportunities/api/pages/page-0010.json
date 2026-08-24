@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-24T09:39:16.997Z",
+  "generatedAt": "2026-08-24T12:32:46.990Z",
   "page": 10,
   "pageSize": 20,
   "nextPage": "api/pages/page-0011.json",
   "ids": [
-    "gh_eedc0ca3c146d2fc634ba74f",
     "gh_a3b2b40e0bc085ad7bc03c77",
     "gh_ed6b96df383d264c066b821f",
     "gh_cc91aec0fe01502e65e61530",
@@ -23,40 +22,10 @@
     "gh_f58c854a32125e7dbe8a40fb",
     "gh_31a41af197adc18a9490a262",
     "gh_d439e5c9e3a0db2c1db310e7",
-    "gh_f20a6d2a5cd4d0963ee3848c"
+    "gh_f20a6d2a5cd4d0963ee3848c",
+    "gh_f83ab72e76fc4802a6079563"
   ],
   "items": [
-    {
-      "id": "gh_eedc0ca3c146d2fc634ba74f",
-      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#6",
-      "title": "Albertsons Companies-Front End Entry Level",
-      "description": "I noticed an entry that doesn't fit: a Jewel-Osco \"Front End Entry Level\" role in Chicago. Despite the title, it's a part-time grocery cashier/courtesy clerk position, not a front-end development role. Looks like it may have been picked up by a title keyword match. Might be worth removing so it doesn't confuse job seekers. Thanks!",
-      "excerpt": "I noticed an entry that doesn't fit: a Jewel-Osco \"Front End Entry Level\" role in Chicago. Despite the title, it's a part-time grocery cashier/courtesy clerk position, not a front-end development role. Looks like it m...",
-      "issueState": "open",
-      "contentHash": "185942c5a17da3f651b2480abb464504830949784db58d54a45f40084b44c704",
-      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-      "region": "North America",
-      "country": "United States",
-      "tags": [],
-      "author": {
-        "id": "DanV27",
-        "name": "DanV27",
-        "handle": "DanV27",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/130527793?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-      },
-      "createdAt": "2026-08-04T21:18:29Z",
-      "updatedAt": "2026-08-04T21:18:29Z",
-      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/6",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_a3b2b40e0bc085ad7bc03c77",
       "sourceId": "SimplifyJobs/Summer2026-Internships#9670",
@@ -806,6 +775,37 @@
       "createdAt": "2026-08-03T12:06:04Z",
       "updatedAt": "2026-08-03T12:06:28Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/479",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_f83ab72e76fc4802a6079563",
+      "sourceId": "timqian/open-source-jobs#181",
+      "title": "Script/workflow bug",
+      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
+      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
+      "issueState": "open",
+      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "timqian",
+        "name": "timqian",
+        "handle": "timqian",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-08-03T03:51:27Z",
+      "updatedAt": "2026-08-03T03:51:27Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/181",
       "sourceType": "github-issue"
     }
   ]
