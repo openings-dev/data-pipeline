@@ -1,6 +1,46 @@
 {
-  "generatedAt": "2026-08-23T18:18:43.042Z",
+  "generatedAt": "2026-08-24T03:47:43.844Z",
   "items": {
+    "gh_90494ab470094f1d5461b7d3": {
+      "id": "gh_90494ab470094f1d5461b7d3",
+      "sourceId": "DevOps-Brasil/Vagas#465",
+      "title": "[Platform Engineer Sênior (DevOps) / Especialista em Infraestrutura e Plataforma] DevOZ OZmap - Remto",
+      "description": "### 🎯 Cargo\n\nPlatform Engineer Sênior (DevOps) / Especialista em Infraestrutura e Plataforma\n\n### 🏢 Empresa\n\nOZmap \n\n### 📊 Nível de Experiência\n\nSênior\n\n### 🏠 Modalidade de Trabalho\n\nRemoto\n\n### 📍 Localização\n\nFlorianópolis (SC)\n\n### 📝 Tipo de Contratação\n\nCLT ou PJ\n\n### 💱 Moeda\n\nBRL\n\n### 💰 Faixa Salarial\n\n18.000 - 20.000 (negociável)\n\n### 📋 Descrição da Vaga\n\nSe você constrói a base da plataforma e não apenas opera a que já existe, gosta de entender o que acontece por baixo da abstração e é a pessoa que assume os problemas que ninguém mais resolve em produção, essa vaga é para você.\n\nPara você entender nosso contexto: nossa stack roda em AWS EC2 com componentes autogerenciados: não é uma operação Kubernetes gerenciada. O dia a dia é operar a primitiva: Linux, redes, proxy reverso, observabilidade open-source. Se a sua experiência é mais na camada de configuração de serviços gerenciados, sem ter operado o que está por baixo, talvez não seja o encaixe mais aderente neste momento e isso não diz nada sobre o seu valor como profissional.\n\nSobre a Ozmap 💚\n\nSomos uma empresa de tecnologia especializada em planejamento, gestão e documentação de redes de telecomunicações. Nossa plataforma ajuda provedores de internet e operadores de telecom a projetar, expandir e operar suas redes, o que significa que confiabilidade não é abstrata aqui: quando algo cai, redes reais de clientes reais sentem. Estamos em crescimento, com atuação internacional e desafios constantes de escala, criticidade e evolução de produto.\n\nProblemas, aqui, não são ignorados nem empurrados para frente: são discutidos, investigados e transformados em melhoria concreta. Nossa cultura é autonomia, senso de dono, comunicação transparente e aprendizado contínuo.\n\n🚀 O Que Você Vai Encontrar Por Aqui\n\nEspaço para atuar de forma estratégica e prática: construir observabilidade do zero, evoluir a entrega contínua, conduzir as investigações complexas de produção e influenciar tecnicamente os times de desenvolvimento. Mais do que manter ambientes, queremos quem ajude a definir os próximos passos da nossa engenharia.\n\n🚩 O que você vai fazer\n\nProjetar, operar e evoluir ambientes AWS (EC2) e on-premises com containers (Docker), garantindo disponibilidade, segurança e escalabilidade;\nOperar e administrar ambientes Linux em produção (systemd, tuning de kernel/rede, I/O, troubleshooting de processo);\nConstruir e evoluir pipelines de CI/CD do zero, com gates de qualidade e segurança;\nDesenvolver observabilidade ponta a ponta (instrumentação, exporters, PromQL, SLI/SLO, alertas);\nConduzir troubleshooting avançado, RCA e post-mortem blameless — com mudança estrutural depois, não só o relatório;\nImplementar automação via Infraestrutura como Código;\nAnalisar e otimizar custos em cloud: rightsizing, análise de uso e proposta de alternativas com dados.\nSer referência técnica para devs e engenheiros, influenciando arquitetura sem depender de autoridade formal.\n\n### ✅ Requisitos Técnicos\n\n```markdown\n🔍 O que esperamos de você:\n\nO que define o nível desta vaga é profundidade + protagonismo. Buscamos quem construiu do zero, definiu a arquitetura, liderou tecnicamente, foi responsável por, resolveu o incidente que ninguém resolvia. Menos sobre ter feito parte de times que fizeram isso, e mais sobre o que você conduziu na linha de frente. A senioridade será avaliada pela complexidade do que você resolveu e pela responsabilidade que assumiu, comprovada por história concreta de mão na massa, mais do que por uma lista de ferramentas.\n\nObrigatório: experiência operando a primitiva em produção:\n\n AWS (~4+ anos): EC2, VPC/redes, IAM e segurança: EC2, VPC/redes, IAM e segurança — operação e decisão técnica em produção; certificação é bem-vinda, mas, sozinha, não substitui essa vivência;\nLinux e redes (~4+ anos): administração de servidores, troubleshooting em produção — disco cheio, OOM killer, diagnóstico de rede. Processos, memória e I/O;\nCI/CD construído do zero (~3+ anos): pipelines criados e evoluídos por você (GitHub Actions, Jenkins, runners self-hosted, secrets, cache, gates) ;\nObservabilidade open-source ponta a ponta (~2+ anos): Prometheus, Grafana, Loki, VictoriaMetrics ou equivalentes — configurados e mantidos por você, não só utilizados.\nOpenTelemetry — com instrumentação, exporters, PromQL e definição de SLI/SLO;\nOperação sob a camada gerenciada: histórico concreto com nginx/HAProxy/Envoy, Linux por baixo, e resolução de incidentes críticos que você conduziu.\nDocker: Docker em produção (~3+ anos): operação real de containers em ambientes críticos — volumes, redes, recursos, encerramento controlado de serviços.\n\nPerfil\n\nAutonomia alta: recebe um problema ambíguo (\"nossa observabilidade está fraca\") e entrega ponta a ponta;\nOwnership e proatividade : enxerga o problema antes de virar incidente;\nComunicação clara e influência técnica, conectando times de desenvolvimento, infraestrutura e negócio. Conduz post-mortems orientados à causa raiz, aprendizado organizacional e melhoria contínua, sem cultura de culpabilização.;\nMaturidade para se autogerir em remoto.\n\nNosso processo\n\nCandidatura → Entrevista técnica assistida por IA (~35 min) → Conversa com o time de People → Entrevista com o Diretor da área → Bar Raiser → Carta oferta\n```\n\n### 🎁 Benefícios\n\n🎁 O Que Oferecemos Para Você\n\n💻 Auxílio Equipamento - pra garantir uma estrutura de trabalho confortável;\n💚 Incentivo à saúde - porque seu bem-estar importa;\n📚 Incentivo aos estudos - apoiamos sua jornada de desenvolvimento contínuo;\n🎂 Presente de aniversário - porque gostamos de comemorar juntos;\n🏅 Reconhecimento por tempo de casa - sua história aqui é valorizada;\n🗣️ Incentivo a idiomas - para você ir além das fronteiras;\n🏋️ TotalPass (uso exclusivo do colaborador);\n🌴 Recesso remunerado após 12 meses de contrato;\n🎉 Eventos online de integração e confraternizações.\n\n### 🛠️ Stack/Tecnologias\n\nCloud: AWS — EC2, VPC/redes, IAM e segurança (camada de primitiva, não só serviço gerenciado).\nSistema e redes: Linux + redes — administração de servidor, troubleshooting real (disco, OOM, I/O, diagnóstico de rede).\nContainers: Docker em produção — volumes, redes, recursos, encerramento controlado.\nCI/CD: GitHub Actions, Jenkins, runners self-hosted (secrets, cache, gates).\nObservabilidade: Prometheus, Grafana, Loki, VictoriaMetrics + OpenTelemetry, PromQL, SLI/SLO.\nProxy / load balancing: nginx, HAProxy, Envoy (operação sob a camada gerenciada).\n\n### 📧 Como se Candidatar\n\nCandidate se pelo link: https://jobs.quickin.io/ozmap/jobs/6a30025db5ba9a0013b3f162?src=LinkedIn%20Limited%20Listings\n\n### 🔗 Link da Vaga (opcional)\n\nhttps://jobs.quickin.io/ozmap/jobs/6a30025db5ba9a0013b3f162?src=LinkedIn%20Limited%20Listings\n\n### ✔️ Confirmação\n\n- [x] Esta é uma vaga real e ativa\n- [x] Li e concordo com as regras do repositório\n- [x] A vaga é relacionada à área de DevOps/SRE/Cloud/Infraestrutura",
+      "excerpt": "### 🎯 Cargo Platform Engineer Sênior (DevOps) / Especialista em Infraestrutura e Plataforma ### 🏢 Empresa OZmap ### 📊 Nível de Experiência Sênior ### 🏠 Modalidade de Trabalho Remoto ### 📍 Localização Florianópoli...",
+      "issueState": "open",
+      "contentHash": "62862d3c90cf0b6d473f10e75ee448127237729cd9b5a137478af9b070e0dcb0",
+      "repository": "DevOps-Brasil/Vagas",
+      "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "clt",
+        "pj",
+        "devops",
+        "stale",
+        "sre",
+        "platform",
+        "infra",
+        "security"
+      ],
+      "author": {
+        "id": "pfariaoz",
+        "name": "pfariaoz",
+        "handle": "pfariaoz",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/296626513?v=4"
+      },
+      "community": {
+        "id": "DevOps-Brasil",
+        "name": "DevOps-Brasil",
+        "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+        "repository": "DevOps-Brasil/Vagas",
+        "url": "https://github.com/DevOps-Brasil/Vagas"
+      },
+      "createdAt": "2026-06-24T19:14:32Z",
+      "updatedAt": "2026-08-24T01:48:28Z",
+      "url": "https://github.com/DevOps-Brasil/Vagas/issues/465",
+      "sourceType": "github-issue"
+    },
     "gh_90da04043225a0b75c5b63f5": {
       "id": "gh_90da04043225a0b75c5b63f5",
       "sourceId": "f2etw/jobs#1163",
