@@ -49,4 +49,17 @@ jobs:
           git add snapshots/opportunities
           git add -u snapshots
           git commit -m "chore(data): refresh segmented opportunities snapshot"
-          git push
+
+          for push_attempt in 1 2 3; do
+            if git push; then
+              exit 0
+            fi
+
+            if [ "$push_attempt" -lt 3 ]; then
+              echo "::warning::Snapshot push failed on attempt $push_attempt; retrying."
+              sleep "$((push_attempt * 5))"
+            fi
+          done
+
+          echo "::error::Snapshot push failed after 3 attempts."
+          exit 1
