@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-08-25T15:35:54.466Z",
+  "generatedAt": "2026-08-25T18:28:18.431Z",
   "page": 37,
   "pageSize": 20,
   "nextPage": "api/pages/page-0038.json",
   "ids": [
+    "gh_798a3404121487925fc3a6d0",
     "gh_40d63f7bae9f7039582a2470",
     "gh_5102037c7d2ef00f074349ba",
     "gh_5facd7f3767d7d69745f7644",
@@ -22,10 +23,49 @@
     "gh_6ee8b9c08295773ddc3dd28a",
     "gh_d706e42e62ef4c1e1fd54beb",
     "gh_4aa20f1f7c60c33717b2ed5a",
-    "gh_1a9bfa24e11500137fd4a711",
-    "gh_fdd36cfcf9e94d30367bea2a"
+    "gh_1a9bfa24e11500137fd4a711"
   ],
   "items": [
+    {
+      "id": "gh_798a3404121487925fc3a6d0",
+      "sourceId": "remote-job-boards/software-engineering#7496",
+      "title": "OneSecondDelivery: Machine learning dataset engineer for GPT scale ML project",
+      "description": "**Tags:** #machine-learning #pytorch #tensorflow #computer-vision #ml #deep-learning #python #data-science #engineer\n\n**Published on:** October 31, 2021\n\n**Original Job Post:** https://remoteOK.io/remote-jobs/106921-remote-machine-learning-dataset-engineer-for-gpt-scale-ml-project-oneseconddelivery\n\n![](https://remoteOK.io/assets/img/jobs/f9f9673aadca1a2dc1d603f196c35ec01635705116.png)\n\n**Promising drone-delivery startup is hiring a Dataset and Machine Learning Manager to work remotely. OneSec is working on a groundbreaking GPT-scale machine learning project to make autonomous delivery drones. In this job, you will build the Datasets and Neural Networks that fly our autonomous delivery drones. These drones will then deliver millions of meals and other packages in the real world.**\n\n##About OneSecondDelivery\nWe are creating a food delivery app that uses autonomous drones to deliver the food. We deliver everything 5 times faster and 100 times cheaper, thanks to small autonomous delivery-robots. The company was founded in 2017 by a leading expert on drone legislation and a successful e-commerce entrepreneur. The Swiss Federal Institute of Technology’s Vice Presidency of Innovation has recognized the large potential of this project and has supported us with the XGrant Prize and other resources.\n\n##Job Description\nOneSec is building one of the largest machine learning projects in the drone industry.\nWith our own photorealistic flight simulator, and a fleet of prototype drones, we have built one of the largest 3d perception dataset in the world, and we are building a large computer cluster of NVIDIA and Tenstorrent chips to scale up our machine learning to GPT-Scale.\n\n####Your job has 3 components:\n* Neural network training and optimization\n* Dataset management and generation\n* Supporting our hardware team in building up our exaflop-scale machine learning cluster\n\n####Here are some of the Neural Networks you will be building:\n\n-Delivery surface finder:\nA neural net that picks the optimal delivery surface within a balcony or backyard of a customer.\nUsually this will be a table or chair or a section of the floor that has enough clearance.\n\n-OneSec Fruxel Depthmap:\nThis is a convolutional neural network that takes camera images and generates a simple, but highly sophisticated vector representation of the space around the drone. Our pathplanner then uses this depthmap to plan a collision free path for the drone.\n\n-Visual Odometry Model:\nOur control system always needs an accurate understanding of how our drone is moving around from frame to frame.\n\n-Payload Positon tracker:\nWhile delivering the package, our control system needs to know how the package is sliding out of the payload bay. This model simply takes in the camera images and outputs the current location of the package.\n\n-Delivery Clearance Model:\nThis model checks the camera images to see if the scene is safe to approach. We don't fly into a balcony if there's a human or dog in it. And when we approach a restaurant to pickup a package, we make sure the scene is clear of humans, pets etc.\n\n\n###Requirements\n* The most important thing is that you are excited about this project, and like the mission of our company.\n* Highly knowledgeable about machine learning and neural networks. Both practical and theoretical.\n* Experience with computer vision and convolutional networks\n* Experience with PyTorch and TensorFlow\n* Good computer skills, and general tech savvy: you will do many tasks like setting up recording devices to record datasets, creating small python programs for dataset labelling and management, post processing large image datasets etc.\n* Computer programming experience in other areas is helpful\t\n\nBe sure to mention the words **AUTHOR EXCHANGE MARKET** when applying to show you read the job post completely. This is a beta feature to avoid spam applicants. Companies can search these words\tto find applicants that read this and see they're human.\n\n\t\n\n#Salary and compensation\nNo salary data published by company so we estimated salary based on previous jobs related to . $20,000 — $100,000/year\n\n\n### Location\nEastern Europe, Latin America, South Asia, Middle East/africa<br>",
+      "excerpt": "**Tags:** #machine-learning #pytorch #tensorflow #computer-vision #ml #deep-learning #python #data-science #engineer **Published on:** October 31, 2021 **Original Job Post:** https://remoteOK.io/remote-jobs/106921-rem...",
+      "issueState": "open",
+      "contentHash": "b6b9a9bc513b64d6e28b98191f70a7ded5d31ff5a5a7ce60672de714e48ab366",
+      "repository": "remote-job-boards/software-engineering",
+      "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
+      "region": "Global",
+      "country": "Global",
+      "tags": [
+        "lang-python",
+        "remoteok.io"
+      ],
+      "author": {
+        "id": "remote-job-board",
+        "name": "remote-job-board",
+        "handle": "remote-job-board",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67670454?v=4"
+      },
+      "community": {
+        "id": "remote-job-boards",
+        "name": "remote-job-boards",
+        "avatarUrl": "https://github.com/remote-job-boards.png?size=80",
+        "repository": "remote-job-boards/software-engineering",
+        "url": "https://github.com/remote-job-boards/software-engineering"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 20000,
+        "max": 100000,
+        "period": "month"
+      },
+      "createdAt": "2021-11-03T01:09:56Z",
+      "updatedAt": "2021-11-03T01:09:56Z",
+      "url": "https://github.com/remote-job-boards/software-engineering/issues/7496",
+      "sourceType": "github-issue"
+    },
     {
       "id": "gh_40d63f7bae9f7039582a2470",
       "sourceId": "remote-job-boards/software-engineering#7495",
@@ -753,41 +793,6 @@
       "createdAt": "2021-09-30T18:48:14Z",
       "updatedAt": "2021-09-30T21:39:32Z",
       "url": "https://github.com/devmatogrosso/vagas/issues/20",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_fdd36cfcf9e94d30367bea2a",
-      "sourceId": "devmatogrosso/vagas#19",
-      "title": "[Presencial][Tangará da Serra - MT] Delphi Developer na Omega Sistemas",
-      "description": "## Nossa empresa\nFundada e mantida por pessoas apaixonadas por tecnologia e educação, a OMEGA é especialista em soluções para gestão educacional.\n\nNascida em uma época de carência de soluções no setor, a OMEGA desde sua criação vem cultivando um histórico positivo com seus casos de sucesso. Saiba mais em:  [https://rb.gy/oqq0em](https://rb.gy/oqq0em)\n\n## O que procuramos?\n\nUma pessoa desenvolvedora pascal(Delphi) e que queira aprender e contribuir para transformar o futuro dos brasileiros por meio da tecnologia,  irá atuar no desenvolvimento de softwares em linguagem pascal(Delphi) dando manutenção no código atual dos produtos.\n\n\n## Local\n\nEscritório em Tangará da Serra - MT\n\n## Requisitos\n### Obrigatórios:\n\n- Conhecimento de linguagem pascal(Delphi)\n- Ter muita vontade de aprender e compartilhar conhecimento.\n\n### Desejáveis:\n- Conhecimento de SQL Server\n- Conhecimento de versionamento Git\n- Habilidade de comunicação (escrita, oral);\n- Ter realizados cursos e/ou aperfeiçoamentos na área de Engenharia de Software e/ou Análise de Sistemas;\n- Ser proativo, resiliente, ter atitude positiva e pensar como dono.\n- Conhecimento em banco de dados\n\n### Diferenciais:\n- Componente de relatório: ReportBuilder\n- Componente de conexão com base de dados: DBExpress\n- Conhecimento do método scrum e Kanban\n\n### Benefícios\n- Remuneração atrativa\n- Assistência médica\n- Vale-alimentação\n\n## Contratação\nCLT\n\nComo se candidatar\nPor favor envie um email para cleber@omegasistemas.net.br com seu CV anexado - enviar no assunto: Delphi Developer.\nOs testes poderão ser realizados para qualquer nível, a diferença é a forma que será avaliado para cada nível. Favor informar qual o nível pretendido.\n\nTempo médio de feedbacks\nCostumamos enviar feedbacks em até 2 dias após cada processo.\n\n### Labels\nAlocação\n-  Alocado\n\n### Regime\n- CLT\n\n## Nível\n- Júnior\n- Pleno\n- Sênior\n- Especialista",
-      "excerpt": "## Nossa empresa Fundada e mantida por pessoas apaixonadas por tecnologia e educação, a OMEGA é especialista em soluções para gestão educacional. Nascida em uma época de carência de soluções no setor, a OMEGA desde su...",
-      "issueState": "open",
-      "contentHash": "5c301698253871e153efb2ee03dcf29b924ea1d26fa3de9265d2f88c4efb3b95",
-      "repository": "devmatogrosso/vagas",
-      "repositoryUrl": "https://github.com/devmatogrosso/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "pleno",
-        "data"
-      ],
-      "author": {
-        "id": "kivervinicius",
-        "name": "kivervinicius",
-        "handle": "kivervinicius",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4115328?v=4"
-      },
-      "community": {
-        "id": "devmatogrosso",
-        "name": "devmatogrosso",
-        "avatarUrl": "https://github.com/devmatogrosso.png?size=80",
-        "repository": "devmatogrosso/vagas",
-        "url": "https://github.com/devmatogrosso/vagas"
-      },
-      "companyName": "Omega Sistemas",
-      "createdAt": "2021-09-29T18:50:06Z",
-      "updatedAt": "2021-10-01T12:31:47Z",
-      "url": "https://github.com/devmatogrosso/vagas/issues/19",
       "sourceType": "github-issue"
     }
   ]
