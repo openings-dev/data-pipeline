@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-25T06:33:19.830Z",
+  "generatedAt": "2026-08-25T09:27:57.035Z",
   "page": 3,
   "pageSize": 20,
   "nextPage": "api/pages/page-0004.json",
   "ids": [
-    "gh_9208a81e3c611e2fd2ef477e",
     "gh_4eda91a95dbfd4b9b9cb4748",
     "gh_eecb433d8bcf44c11d59b632",
     "gh_79849ee457ba93709b15d31a",
@@ -23,48 +22,10 @@
     "gh_14a406f3cc15ba1e46b5ca4a",
     "gh_20631fe9352665af70d6ceae",
     "gh_a8cd59eaeb8f7957cc8a68b5",
-    "gh_52c24b82c8546b78f56a51cb"
+    "gh_52c24b82c8546b78f56a51cb",
+    "gh_fe8b4626130f1dbf285f10cf"
   ],
   "items": [
-    {
-      "id": "gh_9208a81e3c611e2fd2ef477e",
-      "sourceId": "qa-brasil/vagas#1281",
-      "title": "[Remoto] QA Manual Pleno na Hidden (18+ / inglês fluente)",
-      "description": "# Descrição da vaga\n\nA Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pequeno, remoto, ritmo rápido.\n\n**⚠️ Leia antes de se candidatar:** é uma plataforma adulta (18+). O produto contém conteúdo sexual explícito e testá-lo significa ver esse conteúdo todos os dias, como parte normal do trabalho — feed, perfis, mensagens, mídia enviada e filas de moderação. Falamos isso abertamente para que você decida agora, e não depois de entrar. Se não está confortável com isso, a vaga não é para você.\n\n**O papel:** você é o último gate de qualidade antes de uma mudança chegar aos criadores e seus fãs. Pega tickets da fila \"Ready for QA\", testa ponta a ponta no ambiente de staging correto, escreve bug reports que o dev consegue agir sem perguntar nada, e dá o veredito (Approved / Rejected / Not Reproducible) no GitHub. QA aqui tem autoridade real: processo documentado, handoff de dev obrigatório e poder de devolver trabalho para desenvolvimento.\n\n**No dia a dia:**\n- Montar e executar casos de teste a partir de tickets, BRDs e Figma — caminho feliz e edge cases.\n- Testar em desktop web, mobile web, PWA, iOS Safari e Android Chrome (dispositivos reais + BrowserStack).\n- Regressão dos fluxos principais antes de cada release: cadastro e verificação, upload e transcoding, feed, perfis, compras PPV, mensagens, carteira e payouts.\n- Verificar correções, retestar tickets rejeitados, checagem pós-release em produção.\n- Reportar bugs no GitHub com o template da empresa (um bug por ticket, passos exatos, esperado vs. atual, ambiente, evidências).\n- Contribuir com o report diário/semanal de QA e escalar padrões entre bugs, não só o bug isolado.\n\n## Local de trabalho\n\n- 100% Remoto (residente no Brasil)\n\n## Requisitos da vaga\n\n**Obrigatórios**\n- 1 a 4 anos em QA manual / teste de software em produto web ou mobile voltado ao consumidor.\n- Experiência real testando em iOS e Android físicos; entender como mobile web, PWA e layouts responsivos quebram diferente do desktop.\n- Bug reports que o dev executa sem pedir mais informação.\n- DevTools do navegador com confiança: console, aba Network (ler request/response, identificar status code errado), inspeção de elemento, simulação de device.\n- Ler logs de aplicação e extrair o que vai no bug report.\n- Uso diário de IA (Claude, Codex) para entender relatórios técnicos, logs, BRDs/RFCs e respostas de API. Esperamos que você recorra à IA primeiro, em vez de gastar tempo montando ferramenta.\n- Montar dados e cenários de teste via CMS / painel admin.\n- Entender como uma aplicação web se encaixa (frontend, backend, banco, cache) o bastante para conversar com o dev sobre onde o bug provavelmente está.\n- Git/GitHub (achar tickets, ler PRs, comentar) e kanban (o nosso é GitHub Projects).\n- **Inglês escrito fluente, nível profissional.** Bug reports, notas de teste, comentários e reports são todos em inglês, para devs em outro país. Isso é avaliado de perto no processo seletivo.\n- Maior de 18 anos; setup de home office confiável (internet estável, um iPhone e um Android).\n- Disponível de segunda a sexta para jornada de 9h + 1h de pausa não remunerada (10h porta a porta), **alinhada ao horário europeu** (início na madrugada/manhã cedo no Brasil). É uma jornada mais longa que a maioria das vagas e dizemos isso de cara.\n- Flexibilidade quando release ou incidente em produção exigir.\n- Confortável com conteúdo adulto explícito todos os dias (ver aviso acima).\n\n**Desejáveis**\n- Testes de pagamento/checkout: assinaturas, compras avulsas, reembolsos, pagamentos falhos.\n- Produtos com mídia pesada: upload de vídeo/imagem, transcoding, playback, cache de CDN.\n- Moderação de conteúdo ou verificação de idade/identidade (KYC).\n- Ler relatórios do Playwright e triar falhas (a vaga **não** envolve escrever automação).\n- BrowserStack, Figma, Slack.\n- Acessibilidade e teste cross-browser.\n\n**Diferenciais**\n- ISTQB Foundation ou equivalente.\n\n## Forma de contratação\n\nA vaga é somente PJ, não faz mal não ter uma empresa aberta, mas será necessário abrir uma.\n\n## Benefícios da empresa\n\n- 100% remoto.\n- QA com autoridade real: processo documentado, handoff de dev obrigatório, poder de rejeitar trabalho.\n- Exposição ao produto inteiro num time pequeno, em vez de dono de um módulo estreito.\n- Acesso direto a devs, designers e produto, sem camadas de processo.\n\n## Range Salarial\n\nVariavel.\n\n## Sobre a empresa\n\nA Hidden é uma plataforma de conteúdo feita por criadores para criadores da indústria adulta. Nosso objetivo é dar aos criadores as melhores ferramentas para crescer a marca e vender conteúdo para sua base de fãs. Time pequeno e rápido; QA é função visível e respeitada.\n\nSomos uma empresa de oportunidades iguais. Recebemos candidaturas independentemente de gênero, identidade de gênero, orientação sexual, raça, religião, deficiência ou idade (18+). Trabalhamos na indústria adulta e tratamos a indústria, e quem trabalha nela, com profissionalismo.\n\n## Como se candidatar\n\n- Envie e-mail para luizo@hidden.com com CV (em inglês) anexado. Assunto: **Vaga do QA-Brasil – Manual QA**\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 1 dias após cada etapa.\nEstá é uma vaga urgente, então estamos procurando pessoas de forma rápida para se juntar com a equipe atual.\n\n\n## Labels\n- PJ\n- Pleno\n- Remoto\n- Exterior\n\n#QA #QualityAssurance #vagasQA #testesdesoftware #remoto #vagasremotas",
-      "excerpt": "# Descrição da vaga A Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pe...",
-      "issueState": "open",
-      "contentHash": "a5ddd01313cbbb61b39de74bc79b62749c382ec032130ed183b8ceae0455487a",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto",
-        "exterior",
-        "inglês"
-      ],
-      "author": {
-        "id": "Luiz-Olivieri",
-        "name": "Luiz-Olivieri",
-        "handle": "Luiz-Olivieri",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/295890495?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "companyName": "100% remoto.",
-      "createdAt": "2026-08-21T19:40:20Z",
-      "updatedAt": "2026-08-21T19:43:13Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1281",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_4eda91a95dbfd4b9b9cb4748",
       "sourceId": "datascience-br/vagas#204",
@@ -810,6 +771,50 @@
       "createdAt": "2026-08-19T22:18:56Z",
       "updatedAt": "2026-08-19T22:20:01Z",
       "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9682",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_fe8b4626130f1dbf285f10cf",
+      "sourceId": "frontendbr/vagas#8543",
+      "title": "[Híbrido] Angular Front-End Developer Sênior na Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Front-End Developer (Angular) nível Sênior para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 12.000 a R$ 22.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Angular (5 anos ou mais)\n- Angular 15+ e TypeScript\n- RxJS\n- Consumo de APIs REST\n- Karma ou Jest\n\n**Diferenciais:**\n- NgRx\n- Micro-frontends\n- Design system\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-angular-senior\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Tempo médio de feedbacks\n\nA IA da Sylision analisa o CV em minutos; quando há compatibilidade, um headhunter entra em contato em até 7 dias.\nE-mail para contato em caso de não haver resposta: giovani@sylision.com\n\n## Labels\n\n#### Alocação\n- Híbrido\n\n#### Regime\n- CLT\n- PJ\n\n#### Nível\n- Sênior",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
+      "issueState": "open",
+      "contentHash": "37aaf63dd2f3ee4729dd604567418f3ab80a0542a7da4e7a1f352fe36ae6db35",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 22000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-19T17:06:42Z",
+      "updatedAt": "2026-08-19T17:07:13Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8543",
       "sourceType": "github-issue"
     }
   ]
