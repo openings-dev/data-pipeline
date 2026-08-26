@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-26T03:47:21.933Z",
+  "generatedAt": "2026-08-26T16:12:47.632Z",
   "page": 20,
   "pageSize": 20,
   "nextPage": "api/pages/page-0021.json",
   "ids": [
-    "gh_bf70dc9f783bd9e91215da56",
     "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
     "gh_8ca6cfcc5f869a8b9471b21b",
@@ -23,42 +22,10 @@
     "gh_8ac6e6406bab29dc70c10f65",
     "gh_03fa03119cda6972a7f24c60",
     "gh_018090ae0b51c7fe869fe122",
-    "gh_56647ce0f055e747d42f4222"
+    "gh_56647ce0f055e747d42f4222",
+    "gh_f1495b68fe7d4f8349ceb1b6"
   ],
   "items": [
-    {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_72cc354e7d9c38f999fa902a",
       "sourceId": "timqian/open-source-jobs#161",
@@ -735,6 +702,37 @@
       "createdAt": "2026-01-02T13:02:32Z",
       "updatedAt": "2026-08-22T17:58:02Z",
       "url": "https://github.com/backend-br/vagas/issues/12150",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_f1495b68fe7d4f8349ceb1b6",
+      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#1",
+      "title": "Should we pull tech intern for SG directly from the website /jobs page instead and show in this README",
+      "description": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page.\n\nreference: https://github.com/SimplifyJobs/Summer2026-Internships",
+      "excerpt": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page. reference: https://github.com/Simpl...",
+      "issueState": "open",
+      "contentHash": "f274da1c982b52dfb23675137b23cf0e5323b880a7b39605aeccff9e9eb2ab48",
+      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+      "region": "Asia",
+      "country": "Singapore",
+      "tags": [],
+      "author": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "handle": "didtheyghostme",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/188044484?v=4"
+      },
+      "community": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+      },
+      "createdAt": "2025-12-31T09:25:54Z",
+      "updatedAt": "2025-12-31T09:28:08Z",
+      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/1",
       "sourceType": "github-issue"
     }
   ]
