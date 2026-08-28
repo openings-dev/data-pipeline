@@ -1,16 +1,153 @@
 {
-  "generatedAt": "2026-08-28T00:11:53.223Z",
+  "generatedAt": "2026-08-28T14:46:23.429Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "backend-br/vagas",
   "totals": {
     "opportunities": 30,
-    "openIssues": 22,
-    "closedIssues": 8
+    "openIssues": 23,
+    "closedIssues": 7
   },
-  "dataHash": "1a72a6526e67577335eee22ee69580d954228e48d032a4d73b446822907aac29",
+  "dataHash": "b5ca86540e97e0be10485f0ebaafd4a7d7bb2b854c4b5970e195432dd3d114d5",
   "items": [
+    {
+      "id": "gh_450bc52dcc8bb6da9c87a9c5",
+      "sourceId": "backend-br/vagas#12402",
+      "title": "[Remota] ] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React)-USD - Strider",
+      "description": "#  [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React)\n\n> **Salário:** $4,550 – $5,600 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Experiência:** 5+ anos  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nBuscamos um(a) Full-stack Engineer sênior focado em alta confiabilidade, segurança e integração de sistemas de saúde. O papel envolve o desenvolvimento em React/TypeScript, gerenciamento de banco de dados PostgreSQL, testes com TDD e provisionamento de infraestrutura via Terraform.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end & Lógica:** React.js, TypeScript, Git.\n- **Banco de Dados & Infra:** PostgreSQL, Terraform (Infrastructure as Code - IaC).\n- **HealthTech:** Experiência com integração de sistemas EHR/EMR, APIs clínicas e plataformas de dados de saúde.\n- **Engenharia & Qualidade:** Domínio de TDD (Test-Driven Development), testes automatizados, escalabilidade e segurança da informação.\n- **Processos:** Scrum/Agile e comunicação fluente em inglês (C1+).\n\n### Diferenciais (Nice-to-have)\n- Padrões de troca de dados em saúde: **FHIR, HL7**\n- Vivência prévia em Startups\n- Integrações avançadas com fornecedores de EHR/EMR\n- Uso de ferramentas/frameworks de IA em produção\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Full-stack Engineer (HealthTech)](https://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci0xZGVmZDE2NT9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+      "excerpt": "# [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) > **Salário:** $4,550 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5+...",
+      "issueState": "open",
+      "contentHash": "8ed42564dc0aff421483fb2ef0784b7ae48314cec0cdb925e40d6eb3ca755777",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "sênior",
+        "tdd",
+        "remoto",
+        "testes automatizados",
+        "typescript",
+        "postgresql",
+        "git"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4550,
+        "max": 5600,
+        "period": "hour"
+      },
+      "createdAt": "2026-08-28T01:53:20Z",
+      "updatedAt": "2026-08-28T01:53:39Z",
+      "url": "https://github.com/backend-br/vagas/issues/12402",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_785da28a609b497462469c95",
+      "sourceId": "backend-br/vagas#12401",
+      "title": "[Remota] Product Engineer (LLMs, Next.js, Python, AWS)USD (Strider)",
+      "description": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS)\n\n> **Salário:** $4,900 – $5,600 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Experiência:** 5 a 8 anos  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Product Engineer Sênior capaz de assumir a ownership de sistemas em produção, tomar decisões de produto sem especificação detalhada e construir arquiteturas robustas de IA (LLMs, agentes, pipelines de avaliação) e infraestrutura em nuvem.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end & Full-stack:** React.js, Next.js, TypeScript, tRPC.\n- **Back-end & DB:** Node.js, Python, Postgres.\n- **AI & LLM:** Construção de aplicações de IA (tool-using agents, context management, retrieval/reranking) e avaliação de sistemas (LLM judges, deterministic checks).\n- **DevOps & Cloud:** AWS (ambientes self-hosted/regulados), CI/CD, IaC (Docker, Terraform, Pulumi, SST) e observabilidade a nível de sistema.\n- **AI Tooling:** Domínio de fluxos com IA (Claude Code) e visão crítica de suas capacidades.\n\n### 🌟 Diferenciais (Nice-to-have)\n- Experiência prévia em Startups\n- Design e operação de servidores MCP (Model Context Protocol)\n- Nuvem regulada (ex: AWS GovCloud)\n- Infraestrutura de ML / Pipelines de Dados\n- Ecossistema de EdTech ou desenvolvimento de força de trabalho\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Product Engineer](https://app.onstrider.com/r/claudiaantunes?job=cHJvZHVjdC1lbmdpbmVlci04ZjAyMDk3Zj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+      "excerpt": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS) > **Salário:** $4,900 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5 a 8 anos > ...",
+      "issueState": "open",
+      "contentHash": "959523c609bd8f8c875bf3db087f5f78d66c53effaed2a7e8ad2241023fdc863",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "sênior",
+        "python",
+        "node.js",
+        "remoto",
+        "aws",
+        "typescript",
+        "docker",
+        "ci/cd"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4900,
+        "max": 5600,
+        "period": "month"
+      },
+      "createdAt": "2026-08-28T01:48:31Z",
+      "updatedAt": "2026-08-28T01:48:46Z",
+      "url": "https://github.com/backend-br/vagas/issues/12401",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_cf66cfb845e2671803c3365b",
+      "sourceId": "backend-br/vagas#12400",
+      "title": "[Remoto] Full-stack Engineer (UX-focused) Strider",
+      "description": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools\n\n> **Salário:** $4,300 – $6,000 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Full-stack Engineer hands-on (4+ anos de experiência) com viés em Front-end e UX Design para construir produtos do zero em ambiente de startup. Se você usa ferramentas como **Claude Code** e **coding agents** no seu dia a dia e sabe como validar/refinar código gerado por IA, essa vaga é para você.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end:** React.js, TypeScript, CSS/HTML, UX Design (tradução de design em código).\n- **Back-end & DB:** Node.js, Python, REST APIs, SQL e NoSQL.\n- **Workflow:** Git, ferramentas de IA assistida (AI coding tools/agents).\n- **Soft Skills:** Autonomia para criar produtos do zero, *move-fast mentality* de startup e excelente comunicação em inglês (escrita e falada).\n\n### 🌟 Diferenciais (Nice-to-have)\n- Framework TanStack Start\n- FastAPI (Python)\n- Cloud & DevOps (AWS/GCP/Azure, Docker, Kubernetes)\n- Domínio de produtos EdTech ou ecossistemas com proteção de dados/PII\n- Bacharelado em Ciência da Computação, Engenharia ou área correlata\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Full-stack Engineer](https://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci03MWY1OGY5Mj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+      "excerpt": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools > **Salário:** $4,300 – $6,000 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Modal...",
+      "issueState": "open",
+      "contentHash": "3fbf1debcabc1701dee216a0bda4cd1f59a9c566d5a9ea5b16fe703b0455cfc2",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "python",
+        "node.js",
+        "remoto",
+        "aws",
+        "typescript",
+        "sql",
+        "git",
+        "docker"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4300,
+        "max": 6000,
+        "period": "hour"
+      },
+      "createdAt": "2026-08-28T01:39:00Z",
+      "updatedAt": "2026-08-28T01:39:16Z",
+      "url": "https://github.com/backend-br/vagas/issues/12400",
+      "sourceType": "github-issue"
+    },
     {
       "id": "gh_4c6cf37982168e2e29fee61c",
       "sourceId": "backend-br/vagas#12399",
@@ -452,200 +589,6 @@
       "sourceType": "github-issue"
     },
     {
-      "id": "gh_1120d3d83f1095a76d02398b",
-      "sourceId": "backend-br/vagas#12388",
-      "title": "[Remoto] [PJ] Senior Python Developer",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\n🔥💼 Nova oportunidade na Valorei — Senior Python Developer | 100% Remoto\nVocê é um desenvolvedor Python experiente e está pronto para revolucionar o mundo de dados e inteligência comercial na América Latina? Buscamos um profissional sênior para integrar um time inovador e ágil que transforma informações em insights poderosos. Você atuará em uma empresa em rápido crescimento, sendo parte essencial de uma missão para fortalecer negócios e permitir que empresas prosperem. Se você tem expertise em arquitetura escalável, cloud e processos ETL complexos, essa é sua oportunidade!\n🎯 O que você fará no dia a dia:\n- Desenvolver e manter aplicações escaláveis e de alto desempenho, incluindo serviços web robustos\n- Construir serviços backend utilizando frameworks web consolidados como Django, Flask ou FastAPI\n- Projetar e implementar processos ETL complexos para transformação e integração de dados\n- Desenvolver e otimizar scrapers para coleta e processamento de dados\n- Trabalhar com bancos de dados relacionais (PostgreSQL) e não-relacionais (MongoDB)\n- Implementar soluções em plataformas cloud, especialmente AWS (S3, EKS e outros serviços)\n- Utilizar Redis para caching e gerenciamento eficiente de dados\n- Colaborar em um ambiente ágil, dinâmico e orientado por dados\n✅\n\n## Local\nRemoto (Remoto)\n\n## Requisitos\n- Graduação em Ciência da Computação, Engenharia ou área relacionada\n- 5+ anos de experiência profissional em desenvolvimento de software com foco em Python\n- Experiência comprovada em construção e manutenção de aplicações escaláveis e serviços web de alto desempenho\n- Experiência em desenvolvimento de serviços backend com frameworks web conhecidos (Django, Flask, FastAPI)\n- Experiência em desenvolvimento de processos ETL e scrapers\n- Forte experiência com PostgreSQL e bancos de dados relacionais\n- Conhecimento em plataformas cloud, particularmente AWS (S3, EKS)\n- Conhecimento de Redis, MongoDB, Docker e Cypress\n- Inglês avançado para conversação\n- Excelentes habilidades de resolução de problemas, análise e comunicação interpessoal\n- Capacidade de trabalhar efetivamente em ambiente dinâmico e de ritmo acelerado\n- Sólida compreensão do ciclo de vida do desenvolvimento de software e metodologias ágeis\n🌟\n\n### Diferenciais\n\n- Familiaridade com pipelines CI/CD\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nPJ\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmnnc00td0003h9bobmdhy1wf\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#PythonDeveloper #SeniorDeveloper #VagasAbertas #DesenvolvimentoBackend #CloudAWS #ETL #RemotoJobs #DadosIA #VagasPJ #TecnologiaLatina #CarreiraEmTech #Recrutamento",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga 🔥💼 Nova oportunidade na Valorei — Senior Python Developer | 100% Remoto Você é um desenvolvedor Python experiente e está pronto para revolucionar o mundo de dados e inte...",
-      "issueState": "open",
-      "contentHash": "f28621110061e0728e56211535439c24ab2dbe6f8c014af40602f8b0f153d031",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "pj",
-        "sênior",
-        "python",
-        "flask",
-        "django",
-        "remoto",
-        "aws",
-        "mongodb"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-19T14:37:00Z",
-      "updatedAt": "2026-08-19T14:37:31Z",
-      "url": "https://github.com/backend-br/vagas/issues/12388",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_a51e625559bcdf5e11bdf737",
-      "sourceId": "backend-br/vagas#12387",
-      "title": "[Av. Nações Unidas, Brooklin, São Paulo] [CLT] Java Developer + Oracle/AWS (Seguros)",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\n🚨💚 Vaga em destaque na Valorei — Java Developer + Oracle/AWS (Seguros) | Híbrido\nEstamos recrutando um(a) Java Developer com expertise em Oracle/AWS para integrar o time de tecnologia de uma grande seguradora. Você desenvolverá soluções robustas e escaláveis em um ambiente dinâmico, trabalhando com arquiteturas consolidadas e tendo liberdade para propor melhorias criativas. Se você é apaixonado(a) por tecnologia, tem espírito inovador e atitude proativa, essa é sua chance de crescer profissionalmente em um contexto desafiador e impactante.\n🎯 O que você fará no dia a dia:\n- Implementar soluções em Oracle e PL/SQL, desenvolvendo procedures, functions, packages e triggers com foco em performance\n- Desenvolver e manter APIs back-end robustas e escaláveis em Java Spring Boot, aplicando boas práticas de arquitetura, segurança e performance\n- Implementar testes unitários, garantindo qualidade e cobertura de código em todas as entregas\n- Investigar problemas de ponta a ponta, analisando e depurando o código com pensamento crítico\n- Participar ativamente das cerimônias ágeis (Scrum), contribuindo para resolução de desafios técnicos\n- Otimizar queries e performance do banco de dados através de análise de planos de execução, índices e estatísticas\n✅\n\n## Local\nAv. Nações Unidas, Brooklin, São Paulo (Híbrido)\n\n## Requisitos\n- Domínio avançado de PL/SQL: procedures, functions, packages, triggers e views\n- Experiência sólida com Java 8 ou superior, com mínimo 3 anos desenvolvendo APIs REST com Spring Boot\n- Conhecimento em performance tuning: análise de planos de execução, índices e otimização de queries\n- Experiência com Oracle e DynamoDB, incluindo desenvolvimento com PL/SQL\n- Conhecimento em IaC (Infra as Code) baseado em AWS CloudFormation\n- Vivência em ambientes multithreaded com alto volume de requisições simultâneas\n- Experiência na escrita e execução de testes unitários\n- Domínio de ferramentas Oracle: SQL*Plus, SQL Developer, TOAD ou similares\n- Experiência com versionamento: Bitbucket, Git ou outro sistema de controle de versão\n- Conhecimento em Design Patterns e boas práticas de refatoração\n- Atuação anterior em ambientes ágeis, preferencialmente com Scrum\n- Proatividade, senso de ownership e capacidade de conduzir demandas até a conclusão\n🌟\n\n### Diferenciais\n\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nCLT\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmnheye8n001284hxudrku6oo\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#JavaDeveloper #Oracle #AWS #Seguros #VagasAberta #TecnologiaEmSP #SpringBoot #PlSQL #Híbrido #Recrutamento #DesenvolvimentoBackend #OportunidadeProfissional",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga 🚨💚 Vaga em destaque na Valorei — Java Developer + Oracle/AWS (Seguros) | Híbrido Estamos recrutando um(a) Java Developer com expertise em Oracle/AWS para integrar o time...",
-      "issueState": "open",
-      "contentHash": "d645f779351d29dd3a6631b7013ddff653226f4652250e7fc426b4306c844010",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "clt",
-        "java",
-        "aws",
-        "sql",
-        "git",
-        "híbrido",
-        "oracle"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-19T14:35:06Z",
-      "updatedAt": "2026-08-19T14:35:31Z",
-      "url": "https://github.com/backend-br/vagas/issues/12387",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_d423343a5693c4cb5b13bf3e",
-      "sourceId": "backend-br/vagas#12386",
-      "title": "[Av. Nações Unidas, Brooklin, São Paulo] [CLT] AWS Developer (Seguros)",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\nBuscamos profissional desenvolvedora Full Cycle com especialidade em Cloud AWS para atuar em uma grande seguradora. Você será responsável por desenvolver soluções robustas e escaláveis na nuvem, trabalhando em projetos estratégicos de precificação com equipe ágil e colaborativa. Se tem expertise em AWS, Java Spring Boot e serverless, e busca ambiente onde possa crescer continuamente, essa é sua oportunidade!\n🎯 O que você fará no dia a dia:\n- Implementar soluções em AWS, utilizando serviços como Lambda, API Gateway, Step Functions, S3 e CloudWatch\n- Criar e manter APIs serverless com TypeScript, garantindo performance e escalabilidade\n- Desenvolver e manter APIs back-end robustas em Java Spring Boot, aplicando boas práticas de arquitetura e segurança\n- Trabalhar com DynamoDB, Oracle e PL/SQL conforme necessário\n- Implementar testes unitários e garantir qualidade e cobertura de código\n- Colaborar em ambientes com Kubernetes (EKS) para orquestração de containers\n- Participar ativamente das cerimônias ágeis (Scrum), contribuindo para resolução de desafios técnicos\n- Investigar e resolver problemas de ponta a ponta, analisando e depurando código\n✅\n\n## Local\nAv. Nações Unidas, Brooklin, São Paulo (Híbrido)\n\n## Requisitos\n- Mínimo de 3 anos de experiência prática em AWS, com domínio de serviços como Lambda, API Gateway, SQS, SNS, S3, Step Functions e CloudWatch\n- Experiência comprovada em TypeScript ou Node.js no desenvolvimento de APIs serverless com AWS Lambda\n- Conhecimentos sólidos em Oracle e DynamoDB, incluindo desenvolvimento com PL/SQL\n- Conhecimento em IaC (Infrastructure as Code) com AWS CloudFormation\n- Sólida experiência com Java 8 ou superior, com mínimo de 3 anos desenvolvendo APIs REST com Spring Boot\n- Vivência com Git para controle de versão e concorrência de código\n- Vivência com Kubernetes (EKS)\n- Experiência em ambientes multithreaded com alto volume de requisições simultâneas\n- Vivência com Angular e seus principais recursos: componentes, serviços, módulos, roteamento, RxJS e injeção de dependência\n- Experiência na escrita e execução de testes unitários\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nCLT\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmnherfjr000k84hxvv6hzexc\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#AWSDeveloper #VagasAbertas #DesenvolvimentoCloud #JavaSpringBoot #Serverless #SãoPaulo #TecnologiaEmSeguros #VagasHíbridas #RecrutamentoTech #CloudComputing #DevOps #OportunidadeDeCarreira",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga Buscamos profissional desenvolvedora Full Cycle com especialidade em Cloud AWS para atuar em uma grande seguradora. Você será responsável por desenvolver soluções robustas...",
-      "issueState": "open",
-      "contentHash": "886bd56ae19af7c1cf3869a9f92a1aa9534aa1c327cbbb09948ab3f69564fa28",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "clt",
-        "node.js",
-        "java",
-        "aws",
-        "typescript",
-        "sql",
-        "git",
-        "kubernetes"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-19T14:35:05Z",
-      "updatedAt": "2026-08-19T14:35:21Z",
-      "url": "https://github.com/backend-br/vagas/issues/12386",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_4aadad3762275620d0da8121",
-      "sourceId": "backend-br/vagas#12385",
-      "title": "[Interlagos / Santo Amaro, SP] [CLT] Analista Mainframe Sênior - Mercado Financeiro",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\nEstamos recrutando um(a) Analista Mainframe Sênior para integrar uma das maiores instituições financeiras do país em projetos estratégicos de grande porte. Você atuará em sistemas core banking de missão crítica, desenvolvendo e otimizando soluções em ambiente mainframe corporativo com foco em performance, estabilidade e modernização tecnológica. Se você tem expertise em COBOL, JCL, CICS e DB2, além de vivência em ambientes de alta criticidade, essa é sua oportunidade de crescimento em um contexto desafiador e inovador.\n🎯 O que você fará no dia a dia:\n- Desenvolver, manter e otimizar programas COBOL, JCL, CICS e DB2 em ambiente mainframe corporativo\n- Atuar em performance tuning de transações e programas, garantindo eficiência sob alto volume de processamento\n- Participar de projetos de modernização e integração de sistemas legados com arquiteturas mais atuais\n- Utilizar ferramentas como TSO, ChangeMan e/ou Microfocus no ciclo de desenvolvimento e versionamento\n- Contribuir com conhecimento funcional em sistemas de core banking, apoiando áreas de negócio\n- Colaborar com times multidisciplinares em iniciativas de integração entre mainframe e arquiteturas modernas (APIs REST/Cloud)\n✅\n\n## Local\nInterlagos ou Santo Amaro, SP (Híbrido)\n\n## Requisitos\n- Experiência avançada em COBOL, JCL, CICS e DB2\n- Conhecimento em performance tuning de transações e programas mainframe\n- Vivência com ferramentas de modernização e integração de sistemas\n- Conhecimento em TSO, ChangeMan e/ou Microfocus\n- Perfil com 5 a 8 anos de experiência em mainframe corporativo\n🌟\n\n### Diferenciais\n\n- Experiência funcional em sistemas de core banking (ex.: Cash Management)\n- Vivência em integração mainframe com APIs REST/Cloud\n- Experiência em mentoria técnica de times\n🏆\n\n## Benefícios\n- Plano Saúde e Dental 100% custeado\n- Seguro de Vida\n- Cartão Flash com PAT + Bônus\n- Plano de Carreira\n📩\n\n## Contratação\nCLT\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmsrl5eh1000fm6nn13s1echc\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#VagasAbertas #AnalistaMainframe #Mainframe #MercadoFinanceiro #COBOL #SãoPaulo #VagasSP #TecnologiaFinanceira #CarreiraEmTI #HíbridoSP #RecrutamentoTech #OportunidadeDeCarreira",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga Estamos recrutando um(a) Analista Mainframe Sênior para integrar uma das maiores instituições financeiras do país em projetos estratégicos de grande porte. Você atuará em ...",
-      "issueState": "open",
-      "contentHash": "0141d0d4805239ce8cddb3e325a04ca253944b3fa6e84ce4ee2a7ab89ca3ee01",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "clt",
-        "sênior",
-        "híbrido"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-19T14:35:04Z",
-      "updatedAt": "2026-08-19T14:35:21Z",
-      "url": "https://github.com/backend-br/vagas/issues/12385",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_a1f9ed5b410d7bba54977a36",
-      "sourceId": "backend-br/vagas#12384",
-      "title": "[Interlagos / Santo Amaro, SP] [CLT] Desenvolvedor(a) .NET - Backend - Mercado Financeiro",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\n⚡⚫ Vem fazer parte da Valorei — Desenvolvedor(a) .NET - Backend  - Mercado Financeiro | Híbrido\nEstamos em busca de um(a) Desenvolvedor(a) .NET Backend ou Full Stack para integrar um time técnico em uma operação de tecnologia com sistemas de missão crítica no setor financeiro. Se você tem sólida experiência em C# e .NET, domina desenvolvimento de APIs REST e quer trabalhar em um ambiente híbrido em São Paulo, essa é sua oportunidade! Buscamos alguém com visão de negócio, capacidade de traduzir requisitos funcionais em soluções técnicas e disposição para colaborar com áreas estratégicas.\n🎯 O que você fará no dia a dia:\n- Projetar, desenvolver e manter aplicações backend utilizando C# e .NET (Core/Framework)\n- Construir e consumir APIs REST seguras, performáticas e bem documentadas\n- Modelar e otimizar bancos de dados relacionais (SQL Server ou equivalente)\n- Participar de discussões de arquitetura e decisões técnicas junto ao time\n- Colaborar com áreas de negócio para traduzir requisitos funcionais em soluções técnicas\n- Aplicar boas práticas de código, testes automatizados e versionamento\n✅\n\n## Local\nInterlagos ou Santo Amaro, SP (Híbrido)\n\n## Requisitos\n- Experiência sólida em C# e .NET (Core e/ou Framework) em ambientes de produção\n- Domínio em desenvolvimento e consumo de APIs REST\n- Conhecimento em bancos de dados relacionais (SQL Server ou equivalente)\n- Boa comunicação e capacidade de dialogar com áreas de negócio\n- Graduação completa em Tecnologia ou área correlata\n🌟\n\n### Diferenciais\n\n- Conhecimento em Java, com capacidade de transitar entre as duas stacks\n- Forte conhecimento de negócio, especialmente em processos do setor financeiro\n- Experiência com front-end (Angular, React ou similar) — perfil Full Stack\n- Vivência com arquitetura de microsserviços\n- Conhecimento em plataformas cloud (Azure, AWS ou GCP)\n- Experiência com ferramentas de CI/CD\n🏆\n\n## Benefícios\n- Plano Saúde e Dental 100% custeado\n- Seguro de Vida\n- Cartão Flash com PAT + Bônus\n- Plano de Carreira\n📩\n\n## Contratação\nCLT\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmsrmn2an000zohhqzuxdko76\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#DesenvolvimentoDotNet #BackendDeveloper #VagasEmTecnologia #MercadoFinanceiro #SãoPaulo #VagasHíbridas #DotNetCore #CSharp #TechJobs #OportunidadeEmTI #VagasAbertas #RecrutamentoTech",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga ⚡⚫ Vem fazer parte da Valorei — Desenvolvedor(a) .NET - Backend - Mercado Financeiro | Híbrido Estamos em busca de um(a) Desenvolvedor(a) .NET Backend ou Full Stack para i...",
-      "issueState": "open",
-      "contentHash": "9fe8cc68a51a07c881ddd6d6bc16842404e3aff71818bfa0b3aa859553af15b9",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "clt",
-        "java",
-        "aws",
-        "testes automatizados",
-        "sql",
-        "híbrido",
-        "ci/cd",
-        "azure"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-19T14:32:39Z",
-      "updatedAt": "2026-08-19T14:33:16Z",
-      "url": "https://github.com/backend-br/vagas/issues/12384",
-      "sourceType": "github-issue"
-    },
-    {
       "id": "gh_06a267839646074f0e0d9d87",
       "sourceId": "backend-br/vagas#12380",
       "title": "[Brasil, Remoto] [PJ] Tech Lead ServiceNow com expertise em Customer Service Management",
@@ -799,6 +742,86 @@
       "createdAt": "2026-08-12T17:57:22Z",
       "updatedAt": "2026-08-24T01:56:03Z",
       "url": "https://github.com/backend-br/vagas/issues/12373",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_5785e611680b5a017f944305",
+      "sourceId": "backend-br/vagas#12367",
+      "title": "[Remoto] Desenvolvedor Back-end Sênior - Igma",
+      "description": "## Nossa empresa\n\nA Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n👀 O que buscamos? \n\nEstamos em busca de uma pessoa desenvolvedora Backend para se juntar ao nosso Chapter de desenvolvimento e criarmos produtos digitais para as maiores empresas do Brasil.\nUnimos tecnologia e design para resolver problemas complexos de empresas.\nCriamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n\n📅 Sua rotina será: \n\n- Desenhar e construir APIs e serviços back-end de alta performance (arquitetura e infra)\n- Modelar dados em PostgreSQL/Azure SQL pensando em escala desde o início\n- Escrever testes automatizados como parte da entrega\n- Pensar testabilidade, observabilidade e segurança enquanto desenha\n- Integrar com sistemas legados enterprise sem quebrar a operação\n- Trabalhar com IA no fluxo de planejamento, código, teste e debug\n- Comunicar com clareza de forma assíncrona\n- Assumir o que se comprometeu e avisar cedo quando algo travar\n- Configuração de worflows de CI/CD\n- Trabalhar em equipe em times multidisiciplinares\n\n## Local\n\nRemoto\n\n## Requisitos\n\nExperiência comprovada de atuação como backend de, pelo menos, 4 anos.\nDomínio avançado em Python OU C# / .NET (ASP.NET Core).\nExperiência com bancos relacionais, especificamente PostgreSQL ou Azure SQL.\nFamiliaridade com:\n     - React / React Native\n     - Next.js\n     - PostgreSQL ou Azure SQL\n     - Docker / docker-compose\n     - GitHub ou Gitlab\n     - Testes automatizados\n     - Claude Code\nNão cobramos que você já domine tudo, mas que você tenha interesse em aprender rápido o que faltar.\n\n\n✨ Você irá se destacar, se: \n\nAzure (Service Bus, Event Grid, Key Vault, Blob Storage, Application Insights)\nGCP (Cloud Run, Compute Engine)\nAWS (ECS, Developer Tools, EC2, S3)\nKubernetes (AKS)\nRedis\nKeycloak\nSonarQube\n\n## Benefícios\n🏠 Oportunidade 100% remota \n\n💙 Plano de Saúde e Odonto com coparticipação\n\n🧘 Auxílio Cuidado e Desenvolvimento por meio de reembolsos \n\n🏃 Wellhub e incentivos de à práticas de esportes\n\n💳 Cartão multi-benefício Caju\n\n💻 Auxílio Remoto para investimento em equipamentos \n\n🏖️  30 dias de férias remuneradas\n\n## Contratação\nPJ\n\n## Como se candidatar\n\nhttps://jobs.quickin.io/igma/jobs/6a63c77a9e37d900132a2d81\n\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+      "excerpt": "## Nossa empresa A Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico d...",
+      "issueState": "open",
+      "contentHash": "91d7c18437836998ab09682eb9d4f0c87c56e592b361b2f7b2f5382fb4729678",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pj",
+        "sênior",
+        "python",
+        ".net",
+        "remoto",
+        "aws",
+        "testes automatizados",
+        "postgresql"
+      ],
+      "author": {
+        "id": "mcfo-contato",
+        "name": "mcfo-contato",
+        "handle": "mcfo-contato",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85364888?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-07-28T14:58:32Z",
+      "updatedAt": "2026-08-28T08:56:30Z",
+      "url": "https://github.com/backend-br/vagas/issues/12367",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_e317cf7cc308ab44f7d0b888",
+      "sourceId": "backend-br/vagas#12366",
+      "title": "[Remoto] Full-Stack Sênior - Igma",
+      "description": "## Nossa empresa\n\nA Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n## Descrição da vaga\n\nEstamos em busca de uma Pessoa Desenvolvedora Full-Stack para se juntar ao nosso Chapter de desenvolvimento, fortalecer o time de projetos e criar produtos digitais para as maiores empresas do Brasil.\n\nUnimos tecnologia e design para resolver problemas complexos de empresas. Criamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.\n \n\nNa Igma, você será responsável por:\n\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n\nPremissas culturais\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n\n## Local\n\n100% REMOTO\n\n## Requisitos\nExperiência comprovada de ao menos 4 anos com desenvolvimento full-stack.\nExperiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.\nExperiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.\nConhecimento em arquiteturas modernas e boas práticas de desenvolvimento.\nExperiência com integração de APIs REST e/ou GraphQL.\nConhecimento em bancos de dados relacionais e não relacionais.\nControle de versão com Git.\nBoas práticas de testes automatizados (unitários e integração).\nFamiliaridade com pipelines de CI/CD.\nConhecimento em cloud e ambientes de deploy será considerado um diferencial.\n\n## Benefícios\n🏠 Oportunidade 100% remota \n\n💙 Plano de Saúde e Odonto com coparticipação\n\n🧘 Auxílio Cuidado e Desenvolvimento por meio de reembolsos \n\n🏃 Wellhub e incentivos de à práticas de esportes\n\n💳 Cartão multi-benefício Caju\n\n💻 Auxílio Remoto para investimento em equipamentos \n\n🏖️  30 dias de férias remuneradas\n\n## Contratação\n\nPJ\n\n## Como se candidatar\n\nhttps://jobs.quickin.io/igma/jobs/6a59399b273ba80014747620\n\n\n### Nível\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+      "excerpt": "## Nossa empresa A Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico d...",
+      "issueState": "open",
+      "contentHash": "cd2d515e6438a988b3859e533a8b6782d8b0b028b6fefdbdbb1c1e569497769c",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pj",
+        "sênior",
+        "node.js",
+        "remoto",
+        "testes automatizados",
+        "git",
+        "stale",
+        "ci/cd"
+      ],
+      "author": {
+        "id": "mcfo-contato",
+        "name": "mcfo-contato",
+        "handle": "mcfo-contato",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85364888?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-07-28T14:55:14Z",
+      "updatedAt": "2026-08-28T08:56:28Z",
+      "url": "https://github.com/backend-br/vagas/issues/12366",
       "sourceType": "github-issue"
     },
     {
@@ -968,6 +991,44 @@
       "sourceType": "github-issue"
     },
     {
+      "id": "gh_9dcaafdb25ea23ef3bfbc8ef",
+      "sourceId": "backend-br/vagas#12294",
+      "title": "[100% Remoto]  - Python Developer - BotCity",
+      "description": "## Nossa empresa\n\nCompany Overview\n\nBotCity is building the future of automation with the Governance Platform for Python automations and AI Agents. We empower enterprises to innovate at scale, bringing governance, control, and observability to every automation project. Our philosophy is simple: automation is software, and software deserves the same high-code standards that drive innovation in AI and machine learning.\n\nWe recently raised a $12M Series A, led by Four Rivers with participation from Y Combinator, SoftBank, and top industry leaders such as Lew Cirne (New Relic), Rod Johnson (Spring Source), and Walter Kortschak (Summit Partners | Firestreak Ventures). With 1,000+ customers in 70+ countries, including Bayer and LG, and recognition by G2 (2024) as one of the world’s top 25 emerging platforms, BotCity is scaling fast.\n\nWe’re a global remote company with teams across the US and LATAM, united by a shared vision to redefine how enterprises build and manage automation. If you’re looking for an environment that values impact, autonomy, and excellence, we’d love for you to join us on this journey.\n\n## Descrição da vaga\n\nThe Python Developer will be responsible for design, develop, and deliver automation projects that ensure performance, scalability, and customer impact for BotCity’s clients. This role is critical to maintaining high-quality code, smooth delivery, and strong customer experience across Professional Services engagements. The ideal professional is a passionate Python developer who builds clean, reliable automation solutions, communicates effectively while prioritizing the customer experience, and thrives as a collaborative, adaptable team player in a fast-changing environment.  This role reports to the Delivery Manager.\n\n## Local\n\nOportunidade 100% Remota.\n\n## Requisitos\n\n- Bachelor’s degree or equivalent experience in Computer Science, Information Systems, or related field.\n- Professional experience (2+ years) in Python development.\n- Relevant hands-on experience with automation or RPA projects.\n- Proven experience with Git version control system and GitHub Flow.\n- Solid understanding of APIs, data manipulation, error handling, and debugging.\n- Strong problem-solving skills and ability to adapt quickly to new business contexts.\n- Excellent communication and presentation skills with clients and internal stakeholders.\n- Experience working with MS Office/Excel, Google Suite, Notion, Slack.\n- Ability to travel as needed to support events and meet the team.\n- Portuguese - Fluent.\n- English - Advanced.\n\nPreferred Qualifications\n\n- Experience in professional services, IT consulting, or technical implementation.\n- Familiarity with BotCity tools.\n- Experience with Agile methodologies.\n- Prior experience in an early-stage, high-growth, and fast-paced startup environment.\n\n## Benefícios\n\nCompetitive compensation.\nPaid time off (30 days per year).\n100% remote and flexible hours.\nCaju benefits card.\nConexa health benefits.\nOpportunity to work in a global team with teams in San Francisco and São Paulo.\n\n## Contratação\n\nContratação PJ\n\n## Como se candidatar\n\nhttps://jobs.quickin.io/botcity/jobs/6a19d88cd26f2200134fa876?src=Github",
+      "excerpt": "## Nossa empresa Company Overview BotCity is building the future of automation with the Governance Platform for Python automations and AI Agents. We empower enterprises to innovate at scale, bringing governance, contr...",
+      "issueState": "open",
+      "contentHash": "27983de8bcbc8a60d87db2ae937cea050909a3322c06b7afa1259766963891af",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pj",
+        "python",
+        "remoto",
+        "git",
+        "stale",
+        "solid"
+      ],
+      "author": {
+        "id": "Claudia-S-O-M",
+        "name": "Claudia-S-O-M",
+        "handle": "Claudia-S-O-M",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/269568568?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-06-26T03:49:39Z",
+      "updatedAt": "2026-08-28T08:56:26Z",
+      "url": "https://github.com/backend-br/vagas/issues/12294",
+      "sourceType": "github-issue"
+    },
+    {
       "id": "gh_cb2ee2711308cdd4a5a45c69",
       "sourceId": "backend-br/vagas#12292",
       "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
@@ -1086,46 +1147,6 @@
       "createdAt": "2026-06-18T08:23:34Z",
       "updatedAt": "2026-08-24T01:04:11Z",
       "url": "https://github.com/backend-br/vagas/issues/12288",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_7ec4f81919903459594c39ae",
-      "sourceId": "backend-br/vagas#12250",
-      "title": "[Alocação/Florianópolis] Fullstack developer (Python)- Tributo Devido",
-      "description": "**DESENVOLVEDOR FULL-STACK**\nPresencial | Florianópolis\n\nBuscamos alguém versátil, com capacidade de transitar entre diferentes frentes — backend, frontend, integrações, automações — sem depender de um caminho único. Valorizamos autonomia, curiosidade técnica e capacidade de resolver problemas de ponta a ponta.\n\n**Requisitos obrigatórios**\n\nPython — Experiência sólida no desenvolvimento de aplicações\n\nDjango ou FastAPI — Experiência com pelo menos um dos frameworks para desenvolvimento web\n\nPostgreSQL — Modelagem, queries e otimização em bancos relacionais\n\nJavaScript / HTML / CSS — Desenvolvimento frontend e integração com backend\n\nGit — Controle de versão e boas práticas de versionamento\n\nAPIs REST — Desenvolvimento, consumo e documentação\n\nMensageria — Experiência com filas e processamento assíncrono (RabbitMQ, Celery, Kafka ou similares)\n\n**Requisitos desejáveis**\n\nReact — Desenvolvimento de interfaces com componentes\n\nTailwind / Bootstrap — Frameworks CSS para prototipação e responsividade\n\nAWS — Serviços essenciais (EC2, S3, RDS, Lambda)\n\nMonitoramento — Logs, métricas e observabilidade (Sentry, Grafana, CloudWatch)\n\nBancos NoSQL — Redis, MongoDB ou DynamoDB\n\n**Diferenciais**\n\nFerramentas de IA para desenvolvimento — Utilização avançada de assistentes de código como Claude Code, Cursor, GitHub Copilot ou similares para acelerar o fluxo de trabalho\n\nNoções de Machine Learning — Integração de modelos e uso de APIs de IA\n\nAutomações web / RPAs — Experiência com web scraping, bots e automação de processos (Selenium, Playwright ou similares)\n\nContribuições em projetos open source\n\n**INFORMAÇÕES GERAIS DA OPORTUNIDADE**\nPessoa Jurídica (PJ);\nValor contratual: 8k a 10k mensal\nBônus de performance;\nPresencial;\nSegunda a sexta;\nCozinha equipada;\nFrutas e sucos naturais disponíveis todos os dias;\nDay off de aniversário;\nPausa final de ano;\nEstamos localizados no bairro Estreito — Florianópolis.\n\nCandidate-se:\nhttps://tributodevido.enlizt.me/vagas/desenvolvedor-a-_full-stack-280426",
-      "excerpt": "**DESENVOLVEDOR FULL-STACK** Presencial | Florianópolis Buscamos alguém versátil, com capacidade de transitar entre diferentes frentes — backend, frontend, integrações, automações — sem depender de um caminho único. V...",
-      "issueState": "closed",
-      "contentHash": "af2118891aa4b7af0c4868c5353820fac29e8c36c579a2ef9c6f730e4e30faf1",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "pj",
-        "javascript",
-        "python",
-        "django",
-        "presencial",
-        "aws",
-        "mongodb",
-        "postgresql"
-      ],
-      "author": {
-        "id": "mayarahasegawa-td",
-        "name": "mayarahasegawa-td",
-        "handle": "mayarahasegawa-td",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/280393640?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-06-09T14:42:46Z",
-      "updatedAt": "2026-08-20T01:01:17Z",
-      "url": "https://github.com/backend-br/vagas/issues/12250",
       "sourceType": "github-issue"
     },
     {
