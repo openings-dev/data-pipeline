@@ -1,12 +1,9 @@
 {
-  "generatedAt": "2026-08-27T13:26:09.193Z",
+  "generatedAt": "2026-08-28T00:11:53.223Z",
   "page": 31,
   "pageSize": 20,
   "nextPage": "api/pages/page-0032.json",
   "ids": [
-    "gh_2fb1d1c5f7a72da400aa156a",
-    "gh_5737029f526e21daadacc576",
-    "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
     "gh_4dd8e42bd3f6494a4e95e53d",
     "gh_91b78ae35204f1e36f0bbe14",
@@ -23,120 +20,12 @@
     "gh_0f43ff436748c446d7dae032",
     "gh_e4d8074ab43142f996f76c22",
     "gh_80974dc524046caf9e939cc1",
-    "gh_e4e45f65c03b245bde7961fc"
+    "gh_e4e45f65c03b245bde7961fc",
+    "gh_2698bafd032165b940c5550e",
+    "gh_d52bb8fcdb4d2e9adfe1c750",
+    "gh_5ff7a61468868fed794784cd"
   ],
   "items": [
-    {
-      "id": "gh_2fb1d1c5f7a72da400aa156a",
-      "sourceId": "italiaremote/awesome-italia-remote#401",
-      "title": "Tags normalization",
-      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
-      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
-      "issueState": "open",
-      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
-      "repository": "italiaremote/awesome-italia-remote",
-      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
-      "region": "Europe",
-      "country": "Italy",
-      "tags": [
-        "feature-request"
-      ],
-      "author": {
-        "id": "FrancescoManfredi",
-        "name": "FrancescoManfredi",
-        "handle": "FrancescoManfredi",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
-      },
-      "community": {
-        "id": "italiaremote",
-        "name": "italiaremote",
-        "avatarUrl": "https://github.com/italiaremote.png?size=80",
-        "repository": "italiaremote/awesome-italia-remote",
-        "url": "https://github.com/italiaremote/awesome-italia-remote"
-      },
-      "createdAt": "2024-04-16T20:25:04Z",
-      "updatedAt": "2025-06-22T07:16:49Z",
-      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_5737029f526e21daadacc576",
-      "sourceId": "EtherTW/jobs#72",
-      "title": "[遠端] [底薪 2.1-2.9M] Circle 招募 Senior/Staff 區塊鏈工程師 (Golang)",
-      "description": "## 團隊簡介\n我們是 [Circle](https://www.circle.com/en/)，全球前五大加密貨幣 USDC 穩定幣的發行商，在前年併購了提供加密資產託管服務的台灣新創 CYBAVO 博歐科技。除了穩定幣的業務之外，Circle 在去年上線了全新的產品線：以開發者為核心的「Web3 Services」。Web3 Services 的概念類似於 AWS for Blockchain，能透過 API 整合，快速打造安全且支援各種鏈與幣種的區塊鏈服務。目前有兩個主要的產品：Programmable Wallets 以及 Smart Contract Platform，台灣團隊主要負責的就是 [Programmable Wallets](https://www.circle.com/en/programmable-wallets) 的開發。\n\n我們目前在尋找區塊鏈工程師加入團隊：Circle is looking for a highly skilled and experienced Blockchain Engineer to join our dynamic team at Circle. As a Blockchain Engineer, you will play a critical role in connecting various blockchains to our wallet infrastructure and maintaining the underlying code. Your expertise will be instrumental in bridging the gap between our service and blockchain nodes, enabling seamless interaction between the two.\n\n🔥 **應徵連結：[https://boards.greenhouse.io/circle/jobs/7025007002](https://boards.greenhouse.io/circle/jobs/7025007002)**\n\nCircle 與 Grab 合作 ➡️ [Grab整合加密錢包、還能使用NFT優惠券！Circle執行長：10億用戶將進入Web3](https://web3plus.bnext.com.tw/article/1554)\n\nPodcast 採訪 ➡️ [Circle 併購台灣新創、USDC 的發展戰略 ft. CYBAVO 執行長范紀鍠](https://blocktrend.substack.com/p/ep171#details)\n\n## 工作地點\n混合工作模式，可以自由選擇在家上班，或是到位於信義區的辦公室吹冷氣。\n有的同事住在中南部，只有偶爾有 all-hands meeting 或是 team building 活動的時候才會上來台北！\n\n## 工作內容\n\n- Evaluate new blockchain technologies and their capabilities.\n- Develop and validate cryptographic implementations.\n- Create highly performant code that is clean, simple, maintainable, and battle-tested with test-driven development (TDD) for maximum test coverage\n- Drive continuous improvement in the tech stack.\n\n## 能力需求\n\n- 4+ years of relevant experience \n- Expertise with cryptography, blockchain technologies, and the underlying fundamentals and mathematics.\n- Technical understanding of blockchain technologies, including but not limited to BIPs, UTXO, EVM, Nakamoto Consensus, and cryptography.\n- Familiar with the Golang Web Framework like Gin, Fasthttps and know the golang develop related tool like go mod, go lint, etc\n- Willingness to pick up new and emerging bleeding-edge blockchain technologies\n- Excellent communication skills, able to collaborate with remote teams, share ideas, and present concepts effectively.\n- Extensive knowledge of secure cryptosystem operating practices is required.\n\n## 加分能力\n\n- Advanced degree in cryptography, computer science, mathematics, or related fields is strongly preferred.\n- Experience participating or maintaining in open-source software development is highly preferred.\n- Experience with writing smart contracts would be a plus.\n\n## 面試流程\n\n- HR 面試（約 45 分鐘）\n- 線上程式測驗（約 90 分鐘）\n- Technical Interview*3（60 分鐘 x 2 + 90 分鐘 x 1）\n- Behavioral Interview*3 （60 分鐘 x 3）\n\n約一個月可以完成所有面試流程\n\n## 薪資範圍\n\n- Base Pay Range: NT$2,170,000 - $2,975,000（月薪：180K - 247K）\n- Annual Bonus Target: 12.5%\n- Also Included: Equity & Benefits\n\n## 福利/推薦項\n\nHome office 補助、每月手機費用補助、員工健康檢查補助、彈性有薪假期（基本上不限制休假天數，只要與主管達成共識即可）\n（雖然是外商，但不是 EOR，有提供薪轉跟勞健保）\n\n## 聯絡方式\n🔥 **應徵連結：[https://boards.greenhouse.io/circle/jobs/7025007002](https://boards.greenhouse.io/circle/jobs/7025007002)**\nEmail: [riley.chang@circle.com](mailto:riley.chang@circle.com)\nLinkedIn: https://www.linkedin.com/in/yuchen227/\n\n歡迎 LinkedIn 私訊我了解更多～",
-      "excerpt": "## 團隊簡介 我們是 [Circle](https://www.circle.com/en/)，全球前五大加密貨幣 USDC 穩定幣的發行商，在前年併購了提供加密資產託管服務的台灣新創 CYBAVO 博歐科技。除了穩定幣的業務之外，Circle 在去年上線了全新的產品線：以開發者為核心的「Web3 Services」。Web3 Services 的概念類似於 AWS for Blockchain，能透過 API 整合，快速打造安...",
-      "issueState": "open",
-      "contentHash": "0700e3e5242fdd0f4ad20d5a6c045ffc12d9fcd04116c515fa5490be6c861fdd",
-      "repository": "EtherTW/jobs",
-      "repositoryUrl": "https://github.com/EtherTW/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "tags": [
-        "remote",
-        "node",
-        "golang",
-        "senior",
-        "staff"
-      ],
-      "author": {
-        "id": "ujen227",
-        "name": "ujen227",
-        "handle": "ujen227",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/120015450?v=4"
-      },
-      "community": {
-        "id": "EtherTW",
-        "name": "EtherTW",
-        "avatarUrl": "https://github.com/EtherTW.png?size=80",
-        "repository": "EtherTW/jobs",
-        "url": "https://github.com/EtherTW/jobs"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 2170000,
-        "max": 2975000,
-        "period": "hour"
-      },
-      "createdAt": "2024-04-16T04:26:20Z",
-      "updatedAt": "2024-04-16T04:26:20Z",
-      "url": "https://github.com/EtherTW/jobs/issues/72",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_60de8bef67ca07b62c23f7bf",
-      "sourceId": "remotejobsbr/design-ux-vagas#103",
-      "title": "[Chapecó/SC] UX Designer na Desbravador Software",
-      "description": "## Nossa empresa\n\nTrabalhe em uma das 50 maiores empresas de TI do Brasil e que atua em toda América Latina e Europa. Venha fazer parte de uma empresa inovadora! Somos Desbravadores movidos por conhecimento e tecnologia, e buscamos sempre o melhor para nossas soluções em software de gestão. Com mais de 3 mil clientes, atuando em mais de 10 países, a Desbravador oferece gestão inteligente para hotelaria, food service e postos de combustíveis. Continuamos a crescer rapidamente, criando novos produtos e proporcionando que o empreendedor seja o gestor de sua própria história.\n\n## Descrição da vaga\n\nEstamos buscando Product Designers que amam estudar e curtam entender os contextos dos nossos usuários e desenhar experiências e interfaces dos nossos produtos.\n\n\n👨‍💻  **RESPONSABILIDADES**\n* Conduzir experiências e pesquisas com usuários;\n* Prototipação, validação de hipóteses e interesse por análise de dados;\n* Desenho de interfaces;\n* Parceria com Product Managers em contato com negócio\n* Liderar a criação de interfaces a partir de bibliotecas de componentes e estilos previamente definidas, e colaborar com a manutenção e desenvolvimento das mesmas\n* Garantir a linha visual de um produto digital de acordo com o guideline e as diretrizes da marca;\n\n## Local\n\nSanta Catarina, Chapecó, Jardim Itália \n\n## Requisitos\n\n* Experiência em condução de pesquisas com usuários, validação de hipóteses e análise de dados;\n* Conhecimento em alguma ferramenta de edição gráfica como Figma, Sketch, Adobe Xd ou Invision Studio;\n* Olhar analítico e criterioso, que busca entender contextos, dados, e ter empatia para se colocar no lugar dos outros;\n* Vontade de absorver e compartilhar conhecimentos, a fim de contribuir para o amadurecimento da equipe.\n* Formação em Design (graduação e/ou curso técnico) e/ou áreas similares e/ou ter experiência prática equivalente.\n\n## Benefícios\n\n* Remuneração compatível com o seu nível de conhecimento;\n* Ferramentas de apoio que facilitam o seu trabalho e a comunicação no dia-a-dia da empresa como Redmine, Teams, Git, AWS.\n* No Dress Code;\n* Plano de saúde Unimed;\n* VR/VA\n* Excelente ambiente de trabalho;\n* Treinamentos de desenvolvimento profissional;\n\n\n## Contratação\n\na combinar\n\n## Como se candidatar\n\nPor favor envie um email para andressa.celant@desbravador.com.br.com.br com seu CV anexado - enviar no assunto: Vaga UX\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 15 dias após cada processo.\nE-mail para contato em caso de não haver resposta: rh@desbravador.com.br",
-      "excerpt": "## Nossa empresa Trabalhe em uma das 50 maiores empresas de TI do Brasil e que atua em toda América Latina e Europa. Venha fazer parte de uma empresa inovadora! Somos Desbravadores movidos por conhecimento e tecnologi...",
-      "issueState": "open",
-      "contentHash": "b00c26a106d0eb62cf7e889bbc33df3c378ec3682ba71e7b128314658bde26ae",
-      "repository": "remotejobsbr/design-ux-vagas",
-      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "acelant",
-        "name": "acelant",
-        "handle": "acelant",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4805760?v=4"
-      },
-      "community": {
-        "id": "remotejobsbr",
-        "name": "remotejobsbr",
-        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-        "repository": "remotejobsbr/design-ux-vagas",
-        "url": "https://github.com/remotejobsbr/design-ux-vagas"
-      },
-      "companyName": "Desbravador Software",
-      "createdAt": "2024-03-30T18:41:51Z",
-      "updatedAt": "2024-03-30T18:41:51Z",
-      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/103",
-      "sourceType": "github-issue"
-    },
     {
       "id": "gh_3ba4922937d17d039f747321",
       "sourceId": "remotejobsbr/design-ux-vagas#102",
@@ -768,6 +657,112 @@
       "createdAt": "2024-01-23T13:55:07Z",
       "updatedAt": "2024-01-23T13:55:07Z",
       "url": "https://github.com/FlutterComunidadeBR/vagas/issues/64",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_2698bafd032165b940c5550e",
+      "sourceId": "TechnologyMasters/jobs#702",
+      "title": "Human resources Assistant ",
+      "description": "",
+      "excerpt": "Human resources Assistant",
+      "issueState": "open",
+      "contentHash": "0b6fa9398ad1997588bb96c607ee31ce1b7c697ced3c3db578f248dec860ff1f",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "Udum123",
+        "name": "Udum123",
+        "handle": "Udum123",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46588907?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "createdAt": "2024-01-21T19:30:25Z",
+      "updatedAt": "2024-01-21T19:30:25Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/702",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_d52bb8fcdb4d2e9adfe1c750",
+      "sourceId": "seujobtech/vagas#413",
+      "title": "[Remoto] Backend Software Engineer (Middle) | International Project [Kobe Apps]",
+      "description": "## Nossa empresa\n\nKobe is looking for a Backend Developer to join our international team, collaborating with a partner that helps major global brands reach over 1 billion people daily through instant messaging. In this project, you will be responsible for building and maintaining software components, ensuring excellence and testing them in a messaging microservices oriented architecture.\n\nWorking on an international project in Kobe, you will have the opportunity to face unique challenges every day. Our work environment is driven by a culture of respect and empathy among colleagues, with a strong focus on results and knowledge sharing. \n\n## Descrição da vaga\n\nBuild and maintain software components to serve as an integration layer between the platform and the Customers' Systems;\nKeep software standards, which comprise code quality, unit testing, observability and documentation;\nSupport engineering team, troubleshooting inherited codebase and tackling technical debt.\n\n\n## Local\n\nRemoto \n\n## Requisitos\n\n**Obrigatórios:**\n\nProficient on Javascript programming, specially doing NodeJS backends;\nFamiliarity with Serverless Framework and the related Cloud ecosystem on AWS;\nComfortable communicating on English language, both speaking and writing;\nGood team relationship and autonomy to manage your tasks.\n\n**Desejáveis:**\n\nFamiliar with software design patterns;\nComfortable with Golang tech stack.\n\n## Benefícios\n\n- Plano de saúde, odonto e seguro de vida 100% cobertos pela Kobe Apps;\n- Vale alimentação/refeição no valor de R$ 28,50/dia trabalhado no Caju (somente CLT);\n- Auxílio mobilidade através do Caju (residentes em Porto Alegre e região e somente CLT);\n- Acesso ilimitado a coworkings através do Woba;\n- Acesso ao Gympass com o benefício de reembolso do Plano Basic e acesso de até três dependentes;\n- Day-off no mês do aniversário;\n- Plataforma de cursos, mentorias, graduações, pós, idiomas, etc através da Unico Skill;\n- Horário flexível (sem registro de ponto);\n- Equipamentos e periféricos. \n\n## Contratação\n\nPJ ou CLT a combinar\n\n## Como se candidatar\n\nAtravés do link: https://kobe.inhire.app/vagas/c766f747-d1a5-441f-bea9-6661549cce74/backend-software-engineer-(middle)-or-international-project\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até sete dias após cada processo.\n\n## Remuneração\n\nA combinar\n\n## Labels\n\n#### Categoria\n\n- Back-End\n\n#### Regime\n\n- CLT\n- PJ\n\n#### Nível\n\n- Pleno\n- Sênior",
+      "excerpt": "## Nossa empresa Kobe is looking for a Backend Developer to join our international team, collaborating with a partner that helps major global brands reach over 1 billion people daily through instant messaging. In this...",
+      "issueState": "open",
+      "contentHash": "411a9788f0fcb97b403db648844124d566e8c3180e02c3be20a76b969d323d39",
+      "repository": "seujobtech/vagas",
+      "repositoryUrl": "https://github.com/seujobtech/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "sênior",
+        "remoto",
+        "back-end"
+      ],
+      "author": {
+        "id": "raquelallegretti",
+        "name": "raquelallegretti",
+        "handle": "raquelallegretti",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91496226?v=4"
+      },
+      "community": {
+        "id": "seujobtech",
+        "name": "seujobtech",
+        "avatarUrl": "https://github.com/seujobtech.png?size=80",
+        "repository": "seujobtech/vagas",
+        "url": "https://github.com/seujobtech/vagas"
+      },
+      "createdAt": "2024-01-18T20:19:12Z",
+      "updatedAt": "2024-01-18T20:19:43Z",
+      "url": "https://github.com/seujobtech/vagas/issues/413",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_5ff7a61468868fed794784cd",
+      "sourceId": "devmatogrosso/vagas#23",
+      "title": "[REMOTE] Consulting Architect - Middleware - Red Hat",
+      "description": "## About the job\n\nThe Red Hat Consulting team is looking for a Consulting Architect - Middleware to join us, Brazil. You will be responsible for translating the client’s business\nrequirements into specific systems, applications or process designs for very large complex\ntechnology solutions and integrating architecture. Acts as an advocate for the client as the\nultimate authority on the architecture designed to address client business problems.\nProvides direction for design activities. Often project-based, sometimes working at\ncustomer sites. You'll collaborate with the broader Sales and Technical Delivery teams to\nbring our customers solutions that improve the Red Hat Middleware suite including J2E\nruntimes, business rules, business process management, enterprise messaging, data\nvirtualization, Platform-as-a-Service (PaaS), cloud computing, Red Hat OpenShift, 3scale\nby Red Hat, and more. As a Consulting Architects - Middleware, you’ll work hand-in-hand with the account team, clients, and consultants to ensure their architectural visions are\ncommunicated and delivered effectively. They focus on open source technologies and must\nbe intimately familiar with Red Hat's product offerings, while also conversant in the wider\nlandscape of both complementing and competing products and technologies. They have\nthe ability to motivate and influence groups, whether the members of the group have an\naffinity for Red Hat products and services or not. Consulting Architects are expected to\ndivide their time between project delivery, non-billable internal initiatives, and presales\nactivities.\n\n## What you will do\n\n* Able to build, design, and present complex solutions to customers.\n* Provide project and technical leadership to multiple complex projects utilizing standard project methodologies and resource management.\n* Plays a key role in managing client expectations.\n* Defines goals and tasks for delivery teams in a project as a solution lead.\n* Collaborate with product teams and the Product Engineering, Professional Services, and Sales teams to ensure excellent customer experience with our offerings and solutions.\n* Serve as a trusted subject matter expert for the customers, gain the trust of IT professionals, and build long-lasting relationships within our key accounts.\n\n## What you will bring\n* Bachelor's degree required; master's degree in computer science, engineering or MBA\n* 8+ years of experience in consulting services\n* 3+ years of enterprise architecture experience\n* Proven architecture experience using cloud-native development, Kubernetes, agile integration, and development, continuous integration (CI), test-driven development (TDD), service-oriented architecture (SOA), message-oriented middleware (MOM), Identity and Access Management, governance, high availability, scaling, distributed applications, clustering, etc.\n* Experience with Java development technologies like Spring Boot, WildFly Swarm, or JEE, including Red Hat JBoss Enterprise Application Platform (JBoss EAP), WildFly, Oracle WebLogic, or IBM WebSphere.\n* Familiarity with Java development frameworks like Spring, Netflix OSS, Eclipse Vert.x, or Play and other technologies like Node.js, Ruby, PHP, Go, or .NET.\n* Solid verbal and written communication skills and interpersonal skills.\n* Strong facilitation skills.\n* Ability to manage both time and workload independently.\n* Expert in designing implementation solutions to deliver expected business outcomes applying application and technology capabilities.\n* Knowledge of software development lifecycle practices, including Agile (e.g. Scrum), Waterfall, and Incremental. \n* Fluency in English is mandatory.\n* Willingness to travel up to 50%\n\n*The following are considered a plus:*\n* Experience with Red Hat JBoss Enterprise Application Platform, Red Hat Fuse, 3scale by Red Hat, and Red Hat OpenShift.\n* Knowledge of the Red Hat Middleware portfolio.\n* Fluency in Spanish.",
+      "excerpt": "## About the job The Red Hat Consulting team is looking for a Consulting Architect - Middleware to join us, Brazil. You will be responsible for translating the client’s business requirements into specific systems, app...",
+      "issueState": "open",
+      "contentHash": "29bec6c18009eebc8b9b94c6ba1b74d3aa56f8d85a3f8a00193ce144c7b40ee4",
+      "repository": "devmatogrosso/vagas",
+      "repositoryUrl": "https://github.com/devmatogrosso/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "remote",
+        "node",
+        "java",
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "pedroarraes",
+        "name": "pedroarraes",
+        "handle": "pedroarraes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/14795493?v=4"
+      },
+      "community": {
+        "id": "devmatogrosso",
+        "name": "devmatogrosso",
+        "avatarUrl": "https://github.com/devmatogrosso.png?size=80",
+        "repository": "devmatogrosso/vagas",
+        "url": "https://github.com/devmatogrosso/vagas"
+      },
+      "createdAt": "2024-01-15T20:34:26Z",
+      "updatedAt": "2024-01-15T21:02:37Z",
+      "url": "https://github.com/devmatogrosso/vagas/issues/23",
       "sourceType": "github-issue"
     }
   ]
