@@ -2,6 +2,7 @@ import { buildDescription, buildExcerpt, normalizeText } from "../../shared/util
 import { sha256Json } from "../../shared/utils/hash.mjs";
 import { parseSalary } from "./salary-parser.mjs";
 import { extractTags } from "./tags-extractor.mjs";
+import { applySponsoredIssueMetadata } from "./sponsored-issue-metadata.mjs";
 
 /**
  * @param {string | null | undefined} title
@@ -50,7 +51,7 @@ export function mapIssueToOpportunity(issue, repository) {
     body: body ?? "",
   });
 
-  return {
+  const opportunity = {
     id: publicId,
     sourceId,
     title: issue.title ?? "Untitled",
@@ -83,6 +84,13 @@ export function mapIssueToOpportunity(issue, repository) {
     url: issue.html_url ?? repository.url,
     sourceType: "github-issue",
   };
+  const normalized = repository.issueMetadataFormat === "openings-sponsored-job-v1"
+    ? applySponsoredIssueMetadata(opportunity, issue)
+    : opportunity;
+
+  return repository.promotionType === "sponsored"
+    ? { ...normalized, promotion: { type: "sponsored" } }
+    : normalized;
 }
 
 /**

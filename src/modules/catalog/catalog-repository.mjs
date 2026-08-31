@@ -50,6 +50,24 @@ function assertCatalogShape(catalog) {
         "Invalid catalog repository: requiredLabels must be an array of non-empty strings.",
       );
     }
+
+    if (
+      repository.issueMetadataFormat !== undefined &&
+      repository.issueMetadataFormat !== "openings-sponsored-job-v1"
+    ) {
+      throw new Error(
+        "Invalid catalog repository: issueMetadataFormat must be openings-sponsored-job-v1.",
+      );
+    }
+
+    if (
+      repository.promotionType !== undefined &&
+      repository.promotionType !== "sponsored"
+    ) {
+      throw new Error(
+        "Invalid catalog repository: promotionType must be sponsored.",
+      );
+    }
   }
 }
 

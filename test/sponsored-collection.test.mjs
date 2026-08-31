@@ -108,3 +108,24 @@ test("catalog validation rejects malformed required labels", async () => {
     await rm(directory, { recursive: true, force: true });
   }
 });
+
+test("catalog validation rejects unknown sponsored configuration", async () => {
+  const directory = await mkdtemp(path.join(tmpdir(), "openings-catalog-"));
+  const catalogPath = path.join(directory, "repositories.json");
+  await writeFile(catalogPath, JSON.stringify({
+    repositories: [{
+      ...sponsoredRepository,
+      issueMetadataFormat: "unknown-format",
+      promotionType: "premium",
+    }],
+  }));
+
+  try {
+    await assert.rejects(
+      readRepositoryCatalog(catalogPath),
+      /issueMetadataFormat must be openings-sponsored-job-v1/,
+    );
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
