@@ -21,13 +21,17 @@ export function createGitHubClient(options) {
     /**
      * @param {string} repositoryFullName
      */
-    async fetchRecentIssues(repositoryFullName) {
+    async fetchRecentIssues(repositoryFullName, requiredLabels = []) {
       const url = new URL(`https://api.github.com/repos/${repositoryFullName}/issues`);
       url.searchParams.set("state", "all");
       url.searchParams.set("sort", "updated");
       url.searchParams.set("direction", "desc");
       url.searchParams.set("per_page", String(maxIssuesPerRepository));
       url.searchParams.set("page", "1");
+
+      if (requiredLabels.length > 0) {
+        url.searchParams.set("labels", requiredLabels.join(","));
+      }
 
       const startedAt = Date.now();
       const response = await fetch(url, {

@@ -1,13 +1,43 @@
 import { mapIssueToOpportunity, sortOpportunitiesByDate } from "../opportunities/opportunity-mapper.mjs";
 
 /**
+ * @param {unknown} labels
+ */
+function issueLabelNames(labels) {
+  if (!Array.isArray(labels)) return new Set();
+
+  return new Set(
+    labels
+      .map((label) => typeof label === "string" ? label : label?.name)
+      .filter((label) => typeof label === "string" && label.trim().length > 0)
+      .map((label) => label.trim()),
+  );
+}
+
+/**
+ * @param {Record<string, any>} issue
+ * @param {string[]} requiredLabels
+ */
+function hasEveryRequiredLabel(issue, requiredLabels) {
+  if (requiredLabels.length === 0) return true;
+  const labels = issueLabelNames(issue.labels);
+  return requiredLabels.every((label) => labels.has(label));
+}
+
+/**
  * @param {{repository: Record<string, any>; githubClient: ReturnType<import("../github/github-client.mjs").createGitHubClient>}} params
  */
 export async function processRepository(params) {
   const { repository, githubClient } = params;
-  const issues = await githubClient.fetchRecentIssues(repository.repository);
+  const requiredLabels = repository.requiredLabels ?? [];
+  const issues = await githubClient.fetchRecentIssues(
+    repository.repository,
+    requiredLabels,
+  );
   const items = sortOpportunitiesByDate(
-    issues.map((issue) => mapIssueToOpportunity(issue, repository)),
+    issues
+      .filter((issue) => hasEveryRequiredLabel(issue, requiredLabels))
+      .map((issue) => mapIssueToOpportunity(issue, repository)),
   );
 
   const openIssues = items.filter((item) => item.issueState === "open").length;
