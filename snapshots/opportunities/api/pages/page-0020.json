@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-08-30T18:19:33.332Z",
+  "generatedAt": "2026-08-31T18:32:36.756Z",
   "page": 20,
   "pageSize": 20,
   "nextPage": "api/pages/page-0021.json",
   "ids": [
+    "gh_72cc354e7d9c38f999fa902a",
+    "gh_dd237a978dba300d92eb4d35",
+    "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_9c27ccbbb027a757720e4a38",
     "gh_337dcc0369d8226aab4c836f",
     "gh_549fb47e62e78432e6e7af86",
@@ -20,12 +23,104 @@
     "gh_018090ae0b51c7fe869fe122",
     "gh_56647ce0f055e747d42f4222",
     "gh_f1495b68fe7d4f8349ceb1b6",
-    "gh_90da04043225a0b75c5b63f5",
-    "gh_d9f31b40b046d9fb1c9512c3",
-    "gh_72cfadae02e4f1d29faac8e9",
-    "gh_5f1c8b18033011026ee64886"
+    "gh_90da04043225a0b75c5b63f5"
   ],
   "items": [
+    {
+      "id": "gh_72cc354e7d9c38f999fa902a",
+      "sourceId": "timqian/open-source-jobs#161",
+      "title": "Feature: Enhanced Search & Filtering",
+      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
+      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
+      "issueState": "open",
+      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "codeCraft-Ritik",
+        "name": "codeCraft-Ritik",
+        "handle": "codeCraft-Ritik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-18T13:29:12Z",
+      "updatedAt": "2026-02-19T04:01:20Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/161",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_dd237a978dba300d92eb4d35",
+      "sourceId": "timqian/open-source-jobs#160",
+      "title": "chaos-genius repo is archived",
+      "description": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table ,\nfix : might remove it or add another new one which is alternative to it ig?",
+      "excerpt": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table , fix : might remove it or add another new one which is alternative to it ig?",
+      "issueState": "open",
+      "contentHash": "8fa49b441c78bded9b3b3f265b273b1c1cbcac0e78160ac409226673fadcb2d0",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "wasup-yash",
+        "name": "wasup-yash",
+        "handle": "wasup-yash",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112958086?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-17T18:15:36Z",
+      "updatedAt": "2026-02-17T18:15:36Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/160",
+      "sourceType": "github-issue"
+    },
+    {
+      "id": "gh_8ca6cfcc5f869a8b9471b21b",
+      "sourceId": "remoteintech/remote-jobs#2113",
+      "title": "Generate dynamic OG images for company profiles",
+      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
+      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
+      "issueState": "open",
+      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-02-15T18:03:51Z",
+      "updatedAt": "2026-08-23T18:19:28Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
+      "sourceType": "github-issue"
+    },
     {
       "id": "gh_9c27ccbbb027a757720e4a38",
       "sourceId": "nerdzao/vagas#189",
@@ -639,111 +734,6 @@
       "createdAt": "2025-12-20T08:51:33Z",
       "updatedAt": "2025-12-20T10:19:07Z",
       "url": "https://github.com/f2etw/jobs/issues/1163",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_d9f31b40b046d9fb1c9512c3",
-      "sourceId": "TechnologyMasters/jobs#721",
-      "title": "WebBoxes - Sr. AI Engineer - Remote/LatAm - $50,000 USD/Year",
-      "description": "## What You'll get\n\n### Salary Expectation\n\n- $50.000/year\n- Contract / Full Time\n\n### Benefits\n\n- choose your own custom setup\n- new macbook\n\n### Location\n- Candidate will work from home\n\n## What You'll Do _(Job Description)_\n\nWe need a senior AI engineer that will build our new developer assistant SaaS\n\n## What You Need to Be Successful _(Skills)_\n\n### Must Have\n\n- 3+ years working as an AI engineer\n\n### Nice to Have\n\n- full-stack development\n\n## About Our company\n\nhttps://web-boxes.com\n\n## How to apply\n\nPlease send an email to [i@web-boxes..com](i@web-boxes..com) with your resume\n\n---\n\n## Meta\n\n<!--\n  These meta tickboxes automatically apply labels to your post\n  Learn more in the README https://github.com/TechnologyMasters/jobs/blob/master/README.md#label-definitions\n\n  Note, you must fill in the checkboxes correctly in order for them to appear as checked in Markdown\n\n  Unfilled examples:\n  - [ ] Full Time\n  - [ x] Full Time\n  - [x ] Full Time\n\n  Filled example:\n  - [x] Full Time\n-->\n\n- [ ] Full Time\n- [ ] Part Time\n- [x] Contract\n- [ ] Internship\n- [x] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "## What You'll get ### Salary Expectation - $50.000/year - Contract / Full Time ### Benefits - choose your own custom setup - new macbook ### Location - Candidate will work from home ## What You'll Do _(Job Descriptio...",
-      "issueState": "open",
-      "contentHash": "3ca3a01661be2c7fac30412750a3fcb06c7c1532ef93b9ccd62d6761c957da02",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "remote",
-        "senior"
-      ],
-      "author": {
-        "id": "fu11stackdev",
-        "name": "fu11stackdev",
-        "handle": "fu11stackdev",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204783689?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2025-12-06T16:55:35Z",
-      "updatedAt": "2025-12-07T04:05:58Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/721",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_72cfadae02e4f1d29faac8e9",
-      "sourceId": "remotejobsbr/design-ux-vagas#118",
-      "title": "[MARINGÁ] Designer UI/UX Trainee na DB1",
-      "description": "## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Descrição da vaga\n\nComo UX/UI Trainee, você irá aprender e apoiar o time no entendimento de problemas reais dos usuários e na criação de soluções que tornem nossas jornadas mais intuitivas, eficientes e agradáveis.\nVocê estará ao lado de designer, PO, analistas de negócios, desenvolvedores e áreas internas, contribuindo em todas as etapas: desde pesquisas iniciais até protótipos e testes com usuários. Você será responsável por:\n\nApoiar pesquisas com usuários (entrevistas, levantamentos e análises) para entender dores e oportunidades;\nParticipar de sessões de brainstorming e ideação junto ao time de Produto e UX;\nAjudar na criação de fluxos, wireframes e protótipos;\nContribuir com a elaboração e organização de telas e componentes seguindo o Design System;\nAuxiliar na análise de resultados de testes de usabilidade e propor melhorias;\nAtuar em rituais ágeis (Scrum/Kanban), aprendendo sobre colaboração, ritmo e visibilidade;\nApoiar documentação básica (histórias, critérios de aceitação, especificações) sempre com orientação do time.\n## Local\n\nEscritório, [PARANÁ], [MARINGÁ]\n\n## Requisitos\n\n**Obrigatórios:**\nInteresse de aprender e crescer na área de UX/UI;\nComunicação clara, abertura para feedbacks e colaboração com diferentes áreas;\nPensamento crítico e olhar atento a detalhes, com foco em criar experiências simples e funcionais;\nOrganização e responsabilidade para acompanhar tarefas e prazos;\nFormação em andamento ou concluída em Design, Sistemas de Informação, Engenharia ou áreas correlatas.\n\n**Diferenciais:**\nFigma;\nPráticas de UX Research (entrevistas, análise heurística, mapas de jornada);\nConceitos de Design Thinking, Lean UX e Product Discovery;\nNoções de Design System.\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nLINK https://db1.inhire.app/vagas/9869bb8e-7404-4949-b99d-491acfe51633/designer-uiux-trainee?r=43941dbb-f183-4c7c-a931-f64828e11cf7 \n\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n\n- CLT\n- Treinee",
-      "excerpt": "## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida da...",
-      "issueState": "open",
-      "contentHash": "5b556cf16530c498848234e3f369148127d05dbb8f4d5bb036239cbe1d142b8f",
-      "repository": "remotejobsbr/design-ux-vagas",
-      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "remotejobsbr",
-        "name": "remotejobsbr",
-        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-        "repository": "remotejobsbr/design-ux-vagas",
-        "url": "https://github.com/remotejobsbr/design-ux-vagas"
-      },
-      "companyName": "DB1",
-      "createdAt": "2025-12-05T13:51:36Z",
-      "updatedAt": "2025-12-05T13:51:36Z",
-      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/118",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_5f1c8b18033011026ee64886",
-      "sourceId": "hanzili/canada_sde_junior_new_grad_position#3",
-      "title": "adding more canadian jobs",
-      "description": "",
-      "excerpt": "adding more canadian jobs",
-      "issueState": "open",
-      "contentHash": "7e628204e2df39791704da3ebbdca9b36865679231d4d338c47bf4d58456a04c",
-      "repository": "hanzili/canada_sde_junior_new_grad_position",
-      "repositoryUrl": "https://github.com/hanzili/canada_sde_junior_new_grad_position",
-      "region": "North America",
-      "country": "Canada",
-      "tags": [
-        "documentation",
-        "enhancement",
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "hanzili",
-        "name": "hanzili",
-        "handle": "hanzili",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
-      },
-      "community": {
-        "id": "hanzili",
-        "name": "hanzili",
-        "avatarUrl": "https://github.com/hanzili.png?size=80",
-        "repository": "hanzili/canada_sde_junior_new_grad_position",
-        "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position"
-      },
-      "createdAt": "2025-12-04T19:38:50Z",
-      "updatedAt": "2025-12-04T19:38:50Z",
-      "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position/issues/3",
       "sourceType": "github-issue"
     }
   ]
