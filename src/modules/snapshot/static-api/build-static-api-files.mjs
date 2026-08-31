@@ -1,5 +1,4 @@
-import { sha256Json } from "../../../shared/utils/hash.mjs";
-import { sortOpportunitiesByDate } from "../../opportunities/opportunity-mapper.mjs";
+import { sortOpportunitiesByDate } from "../../opportunities/opportunity-sorting.mjs";
 import { buildFacetIndex, buildFacetSummary } from "./facet-index.mjs";
 import { buildJobBuckets } from "./jobs.mjs";
 import { withPublicOpportunityId } from "./opportunity-id.mjs";
@@ -9,6 +8,7 @@ import { buildSearchIndex } from "./search-text.mjs";
 import { buildCommunities } from "./communities.mjs";
 import { staticApiCommunitiesPath } from "./paths.mjs";
 import { buildPromotionsIndex } from "./promotions.mjs";
+import { buildStaticApiManifest } from "./manifest.mjs";
 
 function collectRepositoryItems(countrySnapshots) {
   return countrySnapshots.flatMap((country) =>
@@ -23,45 +23,6 @@ function normalizeOpenItems(countrySnapshots) {
     itemsById.set(normalized.id, normalized);
   }
   return sortOpportunitiesByDate([...itemsById.values()]);
-}
-function manifestPayload(params) {
-  const { generatedAt, items, pages, facetSummary, facetIndex, communities, promotions } = params;
-  const jobIds = items.map((item) => item.id);
-  return {
-    generatedAt,
-    schemaVersion: 5,
-    pageSize: STATIC_API_PAGE_SIZE,
-    dataHash: sha256Json({
-      jobIds,
-      promotionIds: promotions.ids,
-      facetSummary,
-      communities: communities.items,
-    }),
-    totals: {
-      openOpportunities: items.length,
-      sponsoredOpportunities: promotions.ids.length,
-      pages: pages.length,
-      repositories: Object.keys(facetIndex.dimensions.repositories).length,
-      communities: communities.items.length,
-      countries: Object.keys(facetIndex.dimensions.countries).length,
-      regions: Object.keys(facetIndex.dimensions.regions).length,
-    },
-    files: {
-      facets: staticApiFacetIndexPath(),
-      pageLookup: staticApiPageLookupPath(),
-      search: staticApiSearchIndexPath(),
-      jobIds: staticApiJobIdsPath(),
-      order: staticApiOrderPath(),
-      promotions: staticApiPromotionsPath(),
-      communities: staticApiCommunitiesPath(),
-    },
-    facets: facetSummary,
-    pages: pages.map((page) => ({
-      page: page.page,
-      file: page.file,
-      count: page.payload.items.length,
-    })),
-  };
 }
 export function buildStaticApiFiles(params) {
   const { snapshotRootDir, generatedAt, countrySnapshots, repositories } = params;
@@ -100,7 +61,7 @@ export function buildStaticApiFiles(params) {
   files.push(...buildJobBuckets(items, generatedAt).map((bucket) =>
     toFile(snapshotRootDir, bucket.file, bucket.payload),
   ));
-  files.push(toFile(snapshotRootDir, staticApiManifestPath(), manifestPayload({
+  files.push(toFile(snapshotRootDir, staticApiManifestPath(), buildStaticApiManifest({
     generatedAt,
     items,
     pages,

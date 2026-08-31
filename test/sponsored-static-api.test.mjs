@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { sortOpportunitiesByDate } from "../src/modules/opportunities/opportunity-mapper.mjs";
+import { sortOpportunitiesByDate } from "../src/modules/opportunities/opportunity-sorting.mjs";
 import { buildStaticApiFiles } from "../src/modules/snapshot/static-api/build-static-api-files.mjs";
 
 function createOpportunity({ sourceId, title, createdAt, sponsored = false }) {

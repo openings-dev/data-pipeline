@@ -1,4 +1,5 @@
-import { mapIssueToOpportunity, sortOpportunitiesByDate } from "../opportunities/opportunity-mapper.mjs";
+import { mapIssueToOpportunity } from "../opportunities/opportunity-mapper.mjs";
+import { sortOpportunitiesByDate } from "../opportunities/opportunity-sorting.mjs";
 
 /**
  * @param {unknown} labels

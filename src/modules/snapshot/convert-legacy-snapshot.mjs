@@ -1,4 +1,4 @@
-import { sortOpportunitiesByDate } from "../opportunities/opportunity-mapper.mjs";
+import { sortOpportunitiesByDate } from "../opportunities/opportunity-sorting.mjs";
 
 function countIssueStates(items) {
   const openIssues = items.filter((item) => item.issueState === "open").length;
