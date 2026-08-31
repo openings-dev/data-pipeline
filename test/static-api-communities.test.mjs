@@ -120,7 +120,7 @@ test("static API manifest versions and hashes the communities artifact", () => {
   const firstManifest = firstFiles.find(({ relativePath }) => relativePath === "api/manifest.json").payload;
   const secondManifest = secondFiles.find(({ relativePath }) => relativePath === "api/manifest.json").payload;
 
-  assert.equal(firstManifest.schemaVersion, 4);
+  assert.equal(firstManifest.schemaVersion, 5);
   assert.equal(firstManifest.files.communities, "api/communities.json");
   assert.equal(firstManifest.totals.communities, 1);
   assert.notEqual(firstManifest.dataHash, secondManifest.dataHash);

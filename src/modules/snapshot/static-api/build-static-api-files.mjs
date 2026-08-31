@@ -4,10 +4,11 @@ import { buildFacetIndex, buildFacetSummary } from "./facet-index.mjs";
 import { buildJobBuckets } from "./jobs.mjs";
 import { withPublicOpportunityId } from "./opportunity-id.mjs";
 import { buildItemPages, buildPageLookup, STATIC_API_PAGE_SIZE } from "./pages.mjs";
-import { staticApiFacetIndexPath, staticApiJobIdsPath, staticApiManifestPath, staticApiOrderPath, staticApiPageLookupPath, staticApiSearchIndexPath, toFile } from "./paths.mjs";
+import { staticApiFacetIndexPath, staticApiJobIdsPath, staticApiManifestPath, staticApiOrderPath, staticApiPageLookupPath, staticApiPromotionsPath, staticApiSearchIndexPath, toFile } from "./paths.mjs";
 import { buildSearchIndex } from "./search-text.mjs";
 import { buildCommunities } from "./communities.mjs";
 import { staticApiCommunitiesPath } from "./paths.mjs";
+import { buildPromotionsIndex } from "./promotions.mjs";
 
 function collectRepositoryItems(countrySnapshots) {
   return countrySnapshots.flatMap((country) =>
@@ -24,15 +25,21 @@ function normalizeOpenItems(countrySnapshots) {
   return sortOpportunitiesByDate([...itemsById.values()]);
 }
 function manifestPayload(params) {
-  const { generatedAt, items, pages, facetSummary, facetIndex, communities } = params;
+  const { generatedAt, items, pages, facetSummary, facetIndex, communities, promotions } = params;
   const jobIds = items.map((item) => item.id);
   return {
     generatedAt,
-    schemaVersion: 4,
+    schemaVersion: 5,
     pageSize: STATIC_API_PAGE_SIZE,
-    dataHash: sha256Json({ jobIds, facetSummary, communities: communities.items }),
+    dataHash: sha256Json({
+      jobIds,
+      promotionIds: promotions.ids,
+      facetSummary,
+      communities: communities.items,
+    }),
     totals: {
       openOpportunities: items.length,
+      sponsoredOpportunities: promotions.ids.length,
       pages: pages.length,
       repositories: Object.keys(facetIndex.dimensions.repositories).length,
       communities: communities.items.length,
@@ -45,6 +52,7 @@ function manifestPayload(params) {
       search: staticApiSearchIndexPath(),
       jobIds: staticApiJobIdsPath(),
       order: staticApiOrderPath(),
+      promotions: staticApiPromotionsPath(),
       communities: staticApiCommunitiesPath(),
     },
     facets: facetSummary,
@@ -59,6 +67,7 @@ export function buildStaticApiFiles(params) {
   const { snapshotRootDir, generatedAt, countrySnapshots, repositories } = params;
   const items = normalizeOpenItems(countrySnapshots);
   const communities = buildCommunities(repositories, items);
+  const promotions = buildPromotionsIndex(items);
   const pages = buildItemPages(items, generatedAt);
   const pageLookup = buildPageLookup(pages);
   const facetIndex = buildFacetIndex(items);
@@ -80,6 +89,10 @@ export function buildStaticApiFiles(params) {
     generatedAt,
     ids: items.map((item) => item.id),
   }));
+  files.push(toFile(snapshotRootDir, staticApiPromotionsPath(), {
+    generatedAt,
+    ...promotions,
+  }));
   files.push(toFile(snapshotRootDir, staticApiCommunitiesPath(), {
     generatedAt,
     ...communities,
@@ -94,6 +107,7 @@ export function buildStaticApiFiles(params) {
     facetSummary,
     facetIndex,
     communities,
+    promotions,
   })));
   return files;
 }

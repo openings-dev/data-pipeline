@@ -34,6 +34,10 @@ export function staticApiOrderPath() {
   return `${API_ROOT}/order/recent.json`;
 }
 
+export function staticApiPromotionsPath() {
+  return `${API_ROOT}/promotions.json`;
+}
+
 export function staticApiPagePath(pageIndex) {
   return `${API_ROOT}/pages/${pageName(pageIndex)}`;
 }
