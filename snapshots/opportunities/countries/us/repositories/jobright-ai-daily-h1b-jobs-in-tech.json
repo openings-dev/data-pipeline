@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
@@ -9,7 +9,7 @@
     "openIssues": 1,
     "closedIssues": 0
   },
-  "dataHash": "f051bda68a1f02947c8388e071b028a10658b8890bce052e3f413dab55aa2254",
+  "dataHash": "c7ea9960ada568a93d723f92049b057406c27149b7cc796bea172c63194aec95",
   "items": [
     {
       "id": "gh_e8786de4831962baa72de297",
@@ -23,7 +23,15 @@
       "repositoryUrl": "https://github.com/jobright-ai/Daily-H1B-Jobs-In-Tech",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "data"
+      ],
+      "sourceTags": [
         "data"
       ],
       "author": {
@@ -42,7 +50,24 @@
       "createdAt": "2024-09-17T12:01:35Z",
       "updatedAt": "2024-09-17T12:01:35Z",
       "url": "https://github.com/jobright-ai/Daily-H1B-Jobs-In-Tech/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     }
   ]
 }

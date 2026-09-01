@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_869123f785b9a42faf717194": {
       "id": "gh_869123f785b9a42faf717194",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "senior"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-09T15:00:19Z",
       "url": "https://github.com/datascience-br/vagas/issues/188",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -77,6 +78,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_869123f785b9a42faf717194",
@@ -99,7 +106,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 22,
+        "ageDays": 23,
         "publishedAt": "2026-08-09T15:00:19Z",
         "status": "fresh"
       }
@@ -116,7 +123,19 @@
       "repositoryUrl": "https://github.com/nodejsdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "híbrido",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "híbrido",
         "pj",
@@ -146,17 +165,6 @@
       "updatedAt": "2026-08-09T21:51:47Z",
       "url": "https://github.com/nodejsdevbr/vagas/issues/73",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "híbrido",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -188,6 +196,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_8694ae720d764a9800ac4d26",
@@ -210,9 +224,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-08-01T15:03:45Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     "gh_86efffb250adb4c9c04e5739": {
@@ -227,7 +241,16 @@
       "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
       "region": "Asia",
       "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
       "tags": [
+        "急招",
+        "深圳"
+      ],
+      "sourceTags": [
         "急招",
         "深圳"
       ],
@@ -248,14 +271,6 @@
       "updatedAt": "2026-05-10T14:17:12Z",
       "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/7",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "China",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "急招",
-        "深圳"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -275,6 +290,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -298,7 +319,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 113,
+        "ageDays": 114,
         "publishedAt": "2026-05-10T14:16:18Z",
         "status": "stale"
       }
@@ -315,7 +336,18 @@
       "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "node",
+        "react"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "node",
@@ -338,16 +370,6 @@
       "updatedAt": "2026-03-22T16:51:05Z",
       "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -363,6 +385,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -386,7 +414,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 162,
+        "ageDays": 163,
         "publishedAt": "2026-03-22T16:47:15Z",
         "status": "stale"
       }
@@ -403,7 +431,16 @@
       "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "data",
         "design"
       ],
@@ -424,14 +461,6 @@
       "updatedAt": "2024-11-07T19:18:27Z",
       "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/106",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -454,6 +483,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {

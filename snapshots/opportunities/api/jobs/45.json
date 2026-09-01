@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_450bc52dcc8bb6da9c87a9c5": {
       "id": "gh_450bc52dcc8bb6da9c87a9c5",
@@ -13,7 +13,21 @@
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "git",
+        "postgresql",
+        "remoto",
+        "sênior",
+        "tdd",
+        "testes automatizados",
+        "typescript"
+      ],
+      "sourceTags": [
         "git",
         "postgresql",
         "remoto",
@@ -45,19 +59,6 @@
       "updatedAt": "2026-08-28T01:56:52Z",
       "url": "https://github.com/backend-br/vagas/issues/12402",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "git",
-        "postgresql",
-        "remoto",
-        "sênior",
-        "tdd",
-        "testes automatizados",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -87,6 +88,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -126,7 +133,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-28T01:53:20Z",
         "status": "fresh"
       }
@@ -143,7 +150,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -172,15 +189,6 @@
       "updatedAt": "2026-08-22T18:00:14Z",
       "url": "https://github.com/datascience-br/vagas/issues/207",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -207,6 +215,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_45b3ae83dff38d096f78cd24",
@@ -229,7 +243,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 9,
+        "ageDays": 10,
         "publishedAt": "2026-08-22T18:00:14Z",
         "status": "fresh"
       }
@@ -246,7 +260,13 @@
       "repositoryUrl": "https://github.com/danielbayerlein/remote-jobs-germany",
       "region": "Europe",
       "country": "Germany",
+      "sourceLocation": {
+        "country": "Germany",
+        "countryCode": "DE",
+        "region": "Europe"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "ceroxlol",
         "name": "ceroxlol",
@@ -264,11 +284,6 @@
       "updatedAt": "2024-10-22T05:53:13Z",
       "url": "https://github.com/danielbayerlein/remote-jobs-germany/issues/60",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Germany",
-        "region": "Europe"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -279,6 +294,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -302,7 +323,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 791,
+        "ageDays": 792,
         "publishedAt": "2024-07-01T09:23:25Z",
         "status": "stale"
       }

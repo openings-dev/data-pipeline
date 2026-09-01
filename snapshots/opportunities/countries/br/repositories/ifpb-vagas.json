@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 1,
     "closedIssues": 0
   },
-  "dataHash": "6f4d967769fb2a2ae96576e65119f99cf88b4d85d09c053fe31c0ac02b878b73",
+  "dataHash": "231ccef9abc86a12a21edb7fad6f95d5f8301dc46511298fef48cc563d66bf4b",
   "items": [
     {
       "id": "gh_37c3b91ade10dcb5b8d4feb2",
@@ -23,7 +23,16 @@
       "repositoryUrl": "https://github.com/ifpb/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "devops",
         "data"
       ],
@@ -44,7 +53,43 @@
       "createdAt": "2022-08-24T19:09:06Z",
       "updatedAt": "2022-08-24T19:09:06Z",
       "url": "https://github.com/ifpb/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

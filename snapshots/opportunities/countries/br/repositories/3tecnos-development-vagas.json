@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 7,
     "closedIssues": 2
   },
-  "dataHash": "198a9b46247e44e8406b2856d2d500b9140cbef1c868d014bd90245d37fcb409",
+  "dataHash": "deca152ea71c7444191cca82a421ae36db01685ee479e9b501627964a5381acf",
   "items": [
     {
       "id": "gh_ac369d5bfc0a0dfe14225360",
@@ -23,7 +23,19 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "senior",
+        "staff",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "senior",
         "staff",
@@ -46,7 +58,39 @@
       "createdAt": "2023-08-22T13:35:16Z",
       "updatedAt": "2023-09-12T16:51:59Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/9",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "mid",
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_8ec8bcfbfbf851ff199971a1",
@@ -60,7 +104,17 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "pleno",
         "devops",
         "data"
@@ -81,7 +135,46 @@
       "createdAt": "2021-07-05T11:05:17Z",
       "updatedAt": "2021-07-05T11:05:17Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/8",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "csharp",
+          "dotnet"
+        ],
+        "seniority": [
+          "junior",
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f28cafadf67bee6ce31dc175",
@@ -95,7 +188,18 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python",
+        "pleno",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "python",
         "pleno",
         "devops",
@@ -117,7 +221,47 @@
       "createdAt": "2021-07-01T12:20:57Z",
       "updatedAt": "2021-07-01T12:20:57Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/7",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "docker",
+          "python"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2fbfbdf7c0e087c3d857bc9c",
@@ -131,7 +275,17 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "pleno",
         "devops",
         "data"
@@ -152,7 +306,47 @@
       "createdAt": "2021-07-01T12:20:45Z",
       "updatedAt": "2021-07-01T12:20:45Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "csharp",
+          "dotnet"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c367065e13c90bb6798c58e5",
@@ -166,7 +360,18 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "java",
         "pleno",
         "devops",
@@ -188,7 +393,51 @@
       "createdAt": "2021-06-18T15:18:56Z",
       "updatedAt": "2021-07-01T12:29:11Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_1c1ca9d720164ff32b59d999",
@@ -202,7 +451,20 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "react",
+        "typescript",
+        "java",
+        "pleno",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "react",
         "typescript",
         "java",
@@ -226,7 +488,52 @@
       "createdAt": "2021-06-18T15:18:28Z",
       "updatedAt": "2021-07-01T12:29:21Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "devops-sre",
+          "frontend"
+        ],
+        "technologies": [
+          "dotnet",
+          "java",
+          "javascript",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_89049062fca2f75b920f50e6",
@@ -240,7 +547,16 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "react"
+      ],
+      "sourceTags": [
         "frontend",
         "react"
       ],
@@ -260,7 +576,29 @@
       "createdAt": "2020-10-17T21:48:07Z",
       "updatedAt": "2020-10-17T21:48:07Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_18cd2322bfc2194fea571899",
@@ -274,7 +612,18 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "react",
+        "node",
+        "pleno"
+      ],
+      "sourceTags": [
         "fullstack",
         "react",
         "node",
@@ -296,7 +645,39 @@
       "createdAt": "2020-10-02T00:56:55Z",
       "updatedAt": "2022-08-05T01:20:36Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "php",
+          "react"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_c95dcc8ccd8fe9a89013467f",
@@ -310,7 +691,16 @@
       "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "node"
+      ],
+      "sourceTags": [
         "backend",
         "node"
       ],
@@ -330,7 +720,35 @@
       "createdAt": "2020-09-11T22:42:37Z",
       "updatedAt": "2020-09-11T23:16:30Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     }
   ]
 }

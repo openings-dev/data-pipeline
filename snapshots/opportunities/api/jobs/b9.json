@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_b9b6de84323f5abd99550a82": {
       "id": "gh_b9b6de84323f5abd99550a82",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "needs-info"
+      ],
+      "sourceTags": [
         "needs-info"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-31T12:25:43Z",
       "url": "https://github.com/rebase-network/who-is-hiring/issues/1278",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "needs-info"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -54,6 +55,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -77,7 +84,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-08-31T12:23:11Z",
         "status": "fresh"
       }
@@ -94,12 +101,22 @@
       "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
         "clt",
         "pj",
         "remoto",
-        "sênior",
-        "🚦 awaiting triage"
+        "sênior"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -121,20 +138,9 @@
         "period": "month"
       },
       "createdAt": "2026-08-20T18:00:32Z",
-      "updatedAt": "2026-08-20T18:02:16Z",
+      "updatedAt": "2026-08-31T22:25:43Z",
       "url": "https://github.com/dotnetdevbr/vagas/issues/1075",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior",
-        "🚦 awaiting triage"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -171,6 +177,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b9c7101250427c1bff934790",
@@ -179,7 +191,7 @@
           "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
           "url": "https://github.com/dotnetdevbr/vagas/issues/1075",
           "createdAt": "2026-08-20T18:00:32Z",
-          "updatedAt": "2026-08-20T18:02:16Z",
+          "updatedAt": "2026-08-31T22:25:43Z",
           "community": {
             "id": "dotnetdevbr",
             "name": "dotnetdevbr",
@@ -193,7 +205,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-08-20T18:00:32Z",
         "status": "fresh"
       }
@@ -210,7 +222,22 @@
       "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "azure",
+        "clt",
+        "devops",
+        "docker",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "sourceTags": [
         "azure",
         "clt",
         "devops",
@@ -243,20 +270,6 @@
       "updatedAt": "2026-08-02T12:05:59Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/477",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "azure",
-        "clt",
-        "devops",
-        "docker",
-        "kubernetes",
-        "pj",
-        "platform",
-        "terraform"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -285,6 +298,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b9919d6cdd70f93f43792161",
@@ -307,7 +326,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 29,
+        "ageDays": 30,
         "publishedAt": "2026-08-02T12:05:43Z",
         "status": "fresh"
       }
@@ -324,7 +343,16 @@
       "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "senior"
       ],
@@ -345,14 +373,6 @@
       "updatedAt": "2024-04-20T18:40:32Z",
       "url": "https://github.com/FlutterComunidadeBR/vagas/issues/65",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -374,6 +394,12 @@
           "hybrid"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -414,7 +440,18 @@
       "repositoryUrl": "https://github.com/dev-pp/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "java",
+        "pleno"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "java",
@@ -437,16 +474,6 @@
       "updatedAt": "2021-04-28T14:27:01Z",
       "url": "https://github.com/dev-pp/vagas/issues/49",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "java",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -477,6 +504,12 @@
           "es"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b9c2d051f9e2316bab1a749c",
@@ -499,7 +532,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1951,
+        "ageDays": 1952,
         "publishedAt": "2021-04-28T14:27:01Z",
         "status": "stale"
       }

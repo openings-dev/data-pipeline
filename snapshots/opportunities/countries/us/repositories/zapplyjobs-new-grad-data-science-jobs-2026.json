@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T19:45:44.048Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 2
   },
-  "dataHash": "cbaf9307a41fb13d024f8f8ed3588739a97decde8433ec5d49718257a384fd93",
+  "dataHash": "77f167c6c2cc9d33688114ca6a07fd62ac4c697166b6e335ce100840d1f20e91",
   "items": [
     {
       "id": "gh_0031a8b45c2001c83b07118d",
@@ -23,7 +23,16 @@
       "repositoryUrl": "https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2026",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "junior",
+        "data"
+      ],
+      "sourceTags": [
         "junior",
         "data"
       ],
@@ -43,7 +52,34 @@
       "createdAt": "2026-06-07T16:57:53Z",
       "updatedAt": "2026-06-30T17:33:25Z",
       "url": "https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2027/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "specific data",
+        "subdivision": "ML",
+        "displayText": "specific data, ML",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_676667090fcd5276269492b4",
@@ -57,7 +93,17 @@
       "repositoryUrl": "https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2026",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "remote",
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "remote",
         "senior",
         "data"
@@ -78,7 +124,38 @@
       "createdAt": "2026-03-13T23:01:17Z",
       "updatedAt": "2026-06-30T17:33:26Z",
       "url": "https://github.com/zapplyjobs/New-Grad-Data-Science-Jobs-2027/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "San Francisco",
+        "subdivision": "CA",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "San Francisco, CA · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

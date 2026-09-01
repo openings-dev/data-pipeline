@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_b5ddef31177ad47ace287330": {
       "id": "gh_b5ddef31177ad47ace287330",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/awesome-jobs/jobs",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "remote"
+      ],
+      "sourceTags": [
         "remote"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-21T04:42:18Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5025",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -61,6 +62,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -100,7 +107,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-08-21T04:42:18Z",
         "status": "fresh"
       }
@@ -117,7 +124,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "pleno",
         "remoto"
       ],
@@ -144,14 +160,6 @@
       "updatedAt": "2026-08-18T10:15:37Z",
       "url": "https://github.com/backend-pt/vagas/issues/163",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -182,6 +190,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b502e928d1322466092d6846",
@@ -204,7 +218,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-08-17T23:32:36Z",
         "status": "fresh"
       }
@@ -221,7 +235,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "devops",
+        "node",
+        "python"
+      ],
+      "sourceTags": [
         "devops",
         "node",
         "python"
@@ -243,15 +267,6 @@
       "updatedAt": "2026-06-30T12:50:47Z",
       "url": "https://github.com/nerdzao/vagas/issues/194",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "devops",
-        "node",
-        "python"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -280,6 +295,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_b58d8e19c5708f146ef494b5",
@@ -302,7 +323,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 62,
+        "ageDays": 63,
         "publishedAt": "2026-06-30T12:50:47Z",
         "status": "aging"
       }
@@ -319,7 +340,13 @@
       "repositoryUrl": "https://github.com/timqian/open-source-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "BMG042",
         "name": "BMG042",
@@ -337,11 +364,6 @@
       "updatedAt": "2026-04-26T12:52:37Z",
       "url": "https://github.com/timqian/open-source-jobs/issues/169",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -352,6 +374,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -375,7 +403,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 146,
+        "ageDays": 147,
         "publishedAt": "2026-04-06T22:58:07Z",
         "status": "stale"
       }
@@ -392,7 +420,15 @@
       "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote"
+      ],
+      "sourceTags": [
         "remote"
       ],
       "author": {
@@ -412,13 +448,6 @@
       "updatedAt": "2021-11-23T10:42:36Z",
       "url": "https://github.com/FidelisClayton/elm-jobs/issues/73",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -440,6 +469,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -463,7 +498,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1742,
+        "ageDays": 1743,
         "publishedAt": "2021-11-23T10:39:52Z",
         "status": "stale"
       }

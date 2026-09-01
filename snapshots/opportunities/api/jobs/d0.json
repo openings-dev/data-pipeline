@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_d047b0a9f4c7c6f72e32bc9d": {
       "id": "gh_d047b0a9f4c7c6f72e32bc9d",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "remote"
@@ -41,15 +51,6 @@
       "updatedAt": "2026-08-25T00:04:05Z",
       "url": "https://github.com/backend-br/vagas/issues/12393",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -69,6 +70,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -92,7 +99,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-08-25T00:04:05Z",
         "status": "fresh"
       }
@@ -109,7 +116,19 @@
       "repositoryUrl": "https://github.com/awesome-jobs/jobs",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "design",
+        "frontend",
+        "fullstack",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "design",
         "frontend",
@@ -133,17 +152,6 @@
       "updatedAt": "2026-08-19T09:50:31Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5022",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "design",
-        "frontend",
-        "fullstack",
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -166,6 +174,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -205,7 +219,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-08-19T09:50:31Z",
         "status": "fresh"
       }
@@ -222,7 +236,15 @@
       "repositoryUrl": "https://github.com/seujobtech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior"
+      ],
+      "sourceTags": [
         "sênior"
       ],
       "author": {
@@ -242,13 +264,6 @@
       "updatedAt": "2023-08-23T17:11:31Z",
       "url": "https://github.com/seujobtech/vagas/issues/411",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -273,6 +288,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_d093b936f12b8b7228e48a69",
@@ -295,7 +316,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1104,
+        "ageDays": 1105,
         "publishedAt": "2023-08-23T17:11:05Z",
         "status": "stale"
       }

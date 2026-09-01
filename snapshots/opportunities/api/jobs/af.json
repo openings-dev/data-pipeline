@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_afd34bb14b31cc27d6ec7e69": {
       "id": "gh_afd34bb14b31cc27d6ec7e69",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "senior"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-08T18:07:49Z",
       "url": "https://github.com/datascience-br/vagas/issues/186",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -80,6 +81,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -120,7 +127,16 @@
       "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "senior"
       ],
@@ -147,14 +163,6 @@
       "updatedAt": "2024-06-12T20:55:39Z",
       "url": "https://github.com/FlutterComunidadeBR/vagas/issues/66",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -182,6 +190,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -222,7 +236,19 @@
       "repositoryUrl": "https://github.com/bafrontend/trabajos",
       "region": "South America",
       "country": "Argentina",
+      "sourceLocation": {
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "South America"
+      },
       "tags": [
+        "design",
+        "frontend",
+        "java",
+        "react",
+        "remote"
+      ],
+      "sourceTags": [
         "design",
         "frontend",
         "java",
@@ -246,17 +272,6 @@
       "updatedAt": "2018-06-22T08:24:13Z",
       "url": "https://github.com/bafrontend/trabajos/issues/58",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Argentina",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "design",
-        "frontend",
-        "java",
-        "react",
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -282,6 +297,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_afdb6ae2b462869bcd4a67fc",
@@ -304,7 +325,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2992,
+        "ageDays": 2993,
         "publishedAt": "2018-06-22T08:24:13Z",
         "status": "stale"
       }

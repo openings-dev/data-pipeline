@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_26c4f960884c36cb1975213d": {
       "id": "gh_26c4f960884c36cb1975213d",
@@ -13,7 +13,25 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "data",
+        "design",
+        "especialista",
+        "junior",
+        "pleno",
+        "presencial",
+        "remoto",
+        "senior",
+        "são paulo",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "data",
         "design",
@@ -44,23 +62,6 @@
       "updatedAt": "2026-08-07T19:05:01Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1266",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "data",
-        "design",
-        "especialista",
-        "junior",
-        "pleno",
-        "presencial",
-        "remoto",
-        "senior",
-        "são paulo",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -87,6 +88,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -126,7 +133,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 38,
+        "ageDays": 39,
         "publishedAt": "2026-07-24T14:32:54Z",
         "status": "aging"
       }
@@ -143,7 +150,21 @@
       "repositoryUrl": "https://github.com/f2etw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "full stack",
+        "senior",
+        "公司資訊未明",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊",
+        "缺香蕉資訊"
+      ],
+      "sourceTags": [
         "full stack",
         "senior",
         "公司資訊未明",
@@ -169,19 +190,6 @@
       "updatedAt": "2026-01-30T05:16:51Z",
       "url": "https://github.com/f2etw/jobs/issues/1166",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "full stack",
-        "senior",
-        "公司資訊未明",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊",
-        "缺香蕉資訊"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -211,6 +219,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
       "sources": [
         {
           "id": "gh_26b7c402e14a59e43ad9828b",
@@ -233,7 +247,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 215,
+        "ageDays": 216,
         "publishedAt": "2026-01-28T06:02:14Z",
         "status": "stale"
       }
@@ -250,7 +264,13 @@
       "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "shreyajena",
         "name": "shreyajena",
@@ -268,11 +288,6 @@
       "updatedAt": "2025-08-29T16:26:49Z",
       "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/4",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -283,6 +298,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -306,8 +327,94 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 367,
+        "ageDays": 368,
         "publishedAt": "2025-08-29T16:26:49Z",
+        "status": "stale"
+      }
+    },
+    "gh_26905fb4db0d1cea467a61dd": {
+      "id": "gh_26905fb4db0d1cea467a61dd",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#72",
+      "title": "[远程]Cryptape 秘猿区块链底层工程师 $4000 - $7500/month",
+      "description": "### 公司/团队介绍\n\n- 官网：https://cryptape.com/\n- 项目：https://github.com/nervosnetwork/ckb\n- X：https://x.com/cryptape\n\n### **职位描述**\n\n加入 CKB 核心团队，成为推动 Nervos CKB 生态系统创新的重要一员。在这个岗位上，你将参与设计和开发前沿功能，确保 Nervos CKB 核心的高性能、可扩展性和安全性。你将有机会探索突破区块链技术边界的新方案，助力 Nervos CKB 生态系统的未来发展。我们期待一位对区块链技术充满热情、渴望在这个领域大展身手的工程师加入。\n\n### **岗位职责**\n\n- 与团队协作，设计和开发Nervos CKB核心的新功能。\n- 发现并解决性能瓶颈，持续优化Nervos CKB的性能表现。\n- 参与CKB Layer1项目的开发与改进，确保其高效运行。\n- 关注新兴技术，探索能够提升Nervos CKB生态系统能力的研究方向。\n\n### **基本要求**\n\n- 计算机相关专业本科及以上学历。\n- 熟练掌握至少一门系统编程语言，如Rust、C或C++。\n- 有高性能多线程系统的开发经验。\n- 具备良好的团队协作和沟通能力，能够适应分布式团队的远程工作模式。\n\n### **加分项**\n\n- 有开源项目贡献经验，熟悉协作开发流程。\n- 了解密码学和区块链安全协议，能够为Nervos CKB的安全性提供支持。\n- 有底层计算机系统、计算机架构或嵌入式系统开发经验，能够为性能优化提供帮助。\n- 有手写汇编语言的经验，熟悉底层优化技术。\n- 曾维护过冷门编程语言的开源库，具备多样化的技术背景和社区协作经验。\n\n### 我们提供\n\n- **前沿技术环境**：参与Nervos CKB这一全球领先的Layer 1区块链项目，直接影响区块链技术的发展方向。\n- **灵活远程工作**：全球分布式团队，居家办公，享受工作与生活的平衡。\n- **技术成长支持**：区块链技术培训、一对一导师，以及持续的职业发展机会。\n- **开放文化**：加入一个极客氛围浓厚、注重技术分享的团队，所有成果开源，与全球开发者共创。\n\n## 应聘方式\n\n如果您对区块链技术充满热情，希望参与Nervos CKB生态开源贡献，请将简历发送至 join@cryptape.com，更多职位可查看官网https://cryptape.com/#join-us",
+      "excerpt": "### 公司/团队介绍 - 官网：https://cryptape.com/ - 项目：https://github.com/nervosnetwork/ckb - X：https://x.com/cryptape ### **职位描述** 加入 CKB 核心团队，成为推动 Nervos CKB 生态系统创新的重要一员。在这个岗位上，你将参与设计和开发前沿功能，确保 Nervos CKB 核心的高性能、可扩展性和安全性。你将有机会...",
+      "issueState": "open",
+      "contentHash": "08e6890a18894046ad39c4473b2a63521239b8e1bc0dc36370ecdb0ce507ca73",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "Cryptape1005",
+        "name": "Cryptape1005",
+        "handle": "Cryptape1005",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/92134826?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 4000,
+        "max": 7500,
+        "period": "month"
+      },
+      "createdAt": "2025-04-02T03:52:03Z",
+      "updatedAt": "2025-04-02T03:52:03Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/72",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_26905fb4db0d1cea467a61dd",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#72",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/72",
+          "createdAt": "2025-04-02T03:52:03Z",
+          "updatedAt": "2025-04-02T03:52:03Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 517,
+        "publishedAt": "2025-04-02T03:52:03Z",
         "status": "stale"
       }
     },
@@ -323,7 +430,20 @@
       "repositoryUrl": "https://github.com/seujobtech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "especialista",
+        "pj",
+        "pleno",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "especialista",
         "pj",
@@ -348,18 +468,6 @@
       "updatedAt": "2024-07-24T11:02:18Z",
       "url": "https://github.com/seujobtech/vagas/issues/420",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "especialista",
-        "pj",
-        "pleno",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -389,6 +497,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_260f6a61331b6aa993b78340",
@@ -411,7 +525,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 768,
+        "ageDays": 769,
         "publishedAt": "2024-07-24T11:01:49Z",
         "status": "stale"
       }
@@ -428,7 +542,13 @@
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "Udum123",
         "name": "Udum123",
@@ -446,11 +566,6 @@
       "updatedAt": "2024-01-21T19:30:25Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/702",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -461,6 +576,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -501,7 +622,16 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "java"
+      ],
+      "sourceTags": [
         "data",
         "java"
       ],
@@ -522,14 +652,6 @@
       "updatedAt": "2023-05-12T09:45:12Z",
       "url": "https://github.com/twjug/jobs/issues/109",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -543,6 +665,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -566,7 +694,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1207,
+        "ageDays": 1208,
         "publishedAt": "2023-05-12T09:45:12Z",
         "status": "stale"
       }
@@ -583,7 +711,17 @@
       "repositoryUrl": "https://github.com/dev-pp/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "principal",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "principal",
         "senior"
@@ -605,15 +743,6 @@
       "updatedAt": "2021-04-28T14:30:19Z",
       "url": "https://github.com/dev-pp/vagas/issues/61",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "principal",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -641,6 +770,12 @@
           "es"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_2646a58e253dccd05a5df512",
@@ -663,7 +798,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1951,
+        "ageDays": 1952,
         "publishedAt": "2021-04-28T14:30:19Z",
         "status": "stale"
       }
@@ -680,7 +815,17 @@
       "repositoryUrl": "https://github.com/dev-pp/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "java",
+        "pleno"
+      ],
+      "sourceTags": [
         "data",
         "java",
         "pleno"
@@ -702,15 +847,6 @@
       "updatedAt": "2021-04-28T14:30:02Z",
       "url": "https://github.com/dev-pp/vagas/issues/60",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "java",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -738,6 +874,12 @@
           "es"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_2665f91146c05aacc44deae3",
@@ -760,7 +902,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1951,
+        "ageDays": 1952,
         "publishedAt": "2021-04-28T14:30:02Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-28T21:57:45.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 2
   },
-  "dataHash": "cec2f568d42481b2a2740712e5664a4e2502121baddb799db96c608f7a3db558",
+  "dataHash": "2caa4a2f14fc1aa1f2b643d7b2c969449d00edb2c8aefb10a8bf80cb71e03e00",
   "items": [
     {
       "id": "gh_28a89509442cf0e8c335df8d",
@@ -23,7 +23,13 @@
       "repositoryUrl": "https://github.com/tramcar/awesome-job-boards",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "arafanm385-cpu",
         "name": "arafanm385-cpu",
@@ -40,7 +46,24 @@
       "createdAt": "2026-05-30T09:42:36Z",
       "updatedAt": "2026-07-28T21:23:05Z",
       "url": "https://github.com/tramcar/awesome-job-boards/issues/280",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_7ba652a44a8de9edef28588e",
@@ -54,7 +77,15 @@
       "repositoryUrl": "https://github.com/tramcar/awesome-job-boards",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "junior"
+      ],
+      "sourceTags": [
         "junior"
       ],
       "author": {
@@ -73,7 +104,26 @@
       "createdAt": "2026-05-28T10:47:17Z",
       "updatedAt": "2026-07-28T21:22:51Z",
       "url": "https://github.com/tramcar/awesome-job-boards/issues/278",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     }
   ]
 }

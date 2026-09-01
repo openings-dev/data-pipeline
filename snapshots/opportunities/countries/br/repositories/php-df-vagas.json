@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 1,
     "closedIssues": 0
   },
-  "dataHash": "3522ed1d402b76e55f18ef9fdd21ef0d5c2a07b6799697d6433561b20fa92935",
+  "dataHash": "480a05fbf84ea02e520a2f8abd073ee753e71b421a5ae36365de86d315c7ebfb",
   "items": [
     {
       "id": "gh_090ec5551d3f6aaef4d24f26",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/php-df/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "pleno",
         "design"
@@ -44,7 +54,42 @@
       "createdAt": "2022-08-04T01:07:43Z",
       "updatedAt": "2022-08-04T01:07:50Z",
       "url": "https://github.com/php-df/vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "support"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "junior",
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_114501e3905a42a1cf54fc37": {
       "id": "gh_114501e3905a42a1cf54fc37",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
         "remote",
         "senior"
       ],
@@ -40,14 +49,6 @@
       "updatedAt": "2026-08-24T12:57:28Z",
       "url": "https://github.com/EtherTW/jobs/issues/75",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "remote",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -68,6 +69,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -91,7 +98,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-08-24T12:57:28Z",
         "status": "fresh"
       }
@@ -108,7 +115,22 @@
       "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "devops",
+        "infra",
+        "pa",
+        "pleno",
+        "security",
+        "sp",
+        "sre"
+      ],
+      "sourceTags": [
         "clt",
         "devops",
         "infra",
@@ -141,20 +163,6 @@
       "updatedAt": "2026-08-19T14:28:27Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/495",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "devops",
-        "infra",
-        "pa",
-        "pleno",
-        "security",
-        "sp",
-        "sre"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -182,6 +190,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_11e44c08cb795118dad0b0af",
@@ -204,7 +218,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-08-19T14:22:26Z",
         "status": "fresh"
       }

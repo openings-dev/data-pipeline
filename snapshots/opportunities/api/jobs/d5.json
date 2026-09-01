@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_d5ce5a5c2fe2c54164720b3b": {
       "id": "gh_d5ce5a5c2fe2c54164720b3b",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/frontend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "pleno",
         "remoto"
       ],
@@ -40,14 +49,6 @@
       "updatedAt": "2026-08-06T14:45:04Z",
       "url": "https://github.com/frontend-pt/vagas/issues/109",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -78,6 +79,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_d5ce5a5c2fe2c54164720b3b",
@@ -100,7 +107,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 25,
+        "ageDays": 26,
         "publishedAt": "2026-08-06T00:16:53Z",
         "status": "fresh"
       }
@@ -117,7 +124,20 @@
       "repositoryUrl": "https://github.com/seujobtech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "back-end",
+        "clt",
+        "pj",
+        "pleno",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "back-end",
         "clt",
         "pj",
@@ -142,18 +162,6 @@
       "updatedAt": "2024-01-18T20:19:43Z",
       "url": "https://github.com/seujobtech/vagas/issues/413",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "back-end",
-        "clt",
-        "pj",
-        "pleno",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -185,6 +193,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {

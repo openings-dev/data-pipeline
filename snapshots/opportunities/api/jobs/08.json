@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_08848277f327cf34dba20b8a": {
       "id": "gh_08848277f327cf34dba20b8a",
@@ -13,7 +13,19 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "data",
+        "java",
+        "pj",
+        "python",
+        "remoto"
+      ],
+      "sourceTags": [
         "data",
         "java",
         "pj",
@@ -38,17 +50,6 @@
       "updatedAt": "2026-08-14T09:23:39Z",
       "url": "https://github.com/backend-pt/vagas/issues/160",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "data",
-        "java",
-        "pj",
-        "python",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -74,6 +75,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -129,7 +136,7 @@
         "sourceCount": 3
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-08-12T14:20:50Z",
         "status": "fresh"
       }
@@ -146,7 +153,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "senior"
@@ -175,15 +192,6 @@
       "updatedAt": "2026-08-08T18:00:09Z",
       "url": "https://github.com/datascience-br/vagas/issues/185",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -214,6 +222,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_081a3585ffa8cfe4597d9e81",
@@ -236,7 +250,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 23,
+        "ageDays": 24,
         "publishedAt": "2026-08-08T18:00:09Z",
         "status": "fresh"
       }
@@ -253,7 +267,22 @@
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "docker",
+        "git",
+        "linux",
+        "pleno",
+        "remoto",
+        "stale",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "docker",
         "git",
@@ -280,20 +309,6 @@
       "updatedAt": "2026-08-31T03:27:33Z",
       "url": "https://github.com/backend-br/vagas/issues/12324",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "docker",
-        "git",
-        "linux",
-        "pleno",
-        "remoto",
-        "stale",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -327,6 +342,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_0882bda36918150e31447eee",
@@ -349,7 +370,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 53,
+        "ageDays": 54,
         "publishedAt": "2026-07-09T17:39:12Z",
         "status": "aging"
       }
@@ -366,7 +387,13 @@
       "repositoryUrl": "https://github.com/cncf/gitjobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "iamweswilson",
         "name": "iamweswilson",
@@ -384,11 +411,6 @@
       "updatedAt": "2026-05-06T15:39:22Z",
       "url": "https://github.com/cncf/gitjobs/issues/383",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -399,6 +421,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -427,6 +455,113 @@
         "status": "stale"
       }
     },
+    "gh_08793c5a453f16e52f94fd4e": {
+      "id": "gh_08793c5a453f16e52f94fd4e",
+      "sourceId": "Prime-Leo-Enterprises/Jobs#1",
+      "title": "Hiring a Fractional CTO for Next-Gen Supply Chain Platform in Africa",
+      "description": "**Role:** Fractional CTO (approx. 15–20 hours/week)\n\n**Company:** A supply chain intelligence brand building Africa's next-generation trade and supply chain platform.\n\n**Location:** Remote — Nigeria preferred\n\n**Compensation:** Attractive\n\n**Model:** WhatsApp-first · AI-native\n\n**Brand Pillars:** Media · SaaS · DaaS · TaaS\n\n**Tech Stack:** Next.js · PostgreSQL · Supabase · WhatsApp API · Stripe · PWA\n\n---\n\n## About the Role\n\nThe Fractional CTO is a technical leadership hire. You will own the architecture, build roadmap, and technical execution of Unified Core PostgreSQL platform, starting with an audit and extension of the existing web interface, while working directly with the Founder to translate product strategy into shipped, working software. This is a builder role, not a director role. You will write code, make architectural decisions, and lay the technical foundation the platform needs to scale.\n\n### Key Responsibilities\n- Audit and upgrade the current web interface (Next.js, Supabase)\n- Architect and lead development of the Unified Core PostgreSQL platform\n- Translate product strategy into technical roadmap, milestones, and shipped software\n- Own technical quality, security, and scalability from Day 1\n- Work closely with the Founder and early team across Media, SaaS, DaaS, TaaS\n- Write production-ready code and lead by example\n\n### What We're Looking For\n- Polished backend and/or full-stack technical skills (PostgreSQL, Supabase, Next.js)\n- Hands-on experience architecting scalable data platforms\n- Ability to work independently and drive technical execution\n- Previous startup, scale-up, or greenfield build experience\n- Experience with payment APIs (e.g., Stripe) and external integrations (e.g., WhatsApp API)\n- Understanding of digital supply chains, trade, or African markets is a plus\n\n### Why Join Us?\n- Shape Africa's digital supply chain future on Day 1\n- Join an AI-native, WhatsApp-first platform with massive greenfield potential\n- Attractive compensation, remote flexibility, and high-impact ownership \n- Collaborate directly with a founder passionate about tech, trade, and media\n\n---\nIf you're excited about architecting category-defining technology and building platforms with real impact, send your CV and project portfolio to iconicprism@proton.me.\n\n**Subject:** CTO Application – [Your Name]\n\nPlease include your resume, project portfolio or GitHub profile, and a brief cover note about your fit for this builder role.\n\nApplication review will be done on a rolling basis until the right hire is found. Early applications encouraged!",
+      "excerpt": "**Role:** Fractional CTO (approx. 15–20 hours/week) **Company:** A supply chain intelligence brand building Africa's next-generation trade and supply chain platform. **Location:** Remote — Nigeria preferred **Compensa...",
+      "issueState": "open",
+      "contentHash": "4662020626f4d24e6e664e1c49dd33ae395b1b2a11afdc76c983aa5e03af05b4",
+      "repository": "Prime-Leo-Enterprises/Jobs",
+      "repositoryUrl": "https://github.com/Prime-Leo-Enterprises/Jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "remote"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "remote"
+      ],
+      "author": {
+        "id": "blezzing9",
+        "name": "blezzing9",
+        "handle": "blezzing9",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/272417447?v=4"
+      },
+      "community": {
+        "id": "Prime-Leo-Enterprises",
+        "name": "Prime-Leo-Enterprises",
+        "avatarUrl": "https://github.com/Prime-Leo-Enterprises.png?size=80",
+        "repository": "Prime-Leo-Enterprises/Jobs",
+        "url": "https://github.com/Prime-Leo-Enterprises/Jobs"
+      },
+      "createdAt": "2026-03-31T05:27:45Z",
+      "updatedAt": "2026-03-31T05:27:45Z",
+      "url": "https://github.com/Prime-Leo-Enterprises/Jobs/issues/1",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Nigeria",
+        "countryCode": "NG",
+        "region": "Africa",
+        "city": "**",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "**, Nigeria · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "fullstack",
+          "leadership"
+        ],
+        "technologies": [
+          "nextjs",
+          "postgres"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_08793c5a453f16e52f94fd4e",
+          "sourceId": "Prime-Leo-Enterprises/Jobs#1",
+          "repository": "Prime-Leo-Enterprises/Jobs",
+          "repositoryUrl": "https://github.com/Prime-Leo-Enterprises/Jobs",
+          "url": "https://github.com/Prime-Leo-Enterprises/Jobs/issues/1",
+          "createdAt": "2026-03-31T05:27:45Z",
+          "updatedAt": "2026-03-31T05:27:45Z",
+          "community": {
+            "id": "Prime-Leo-Enterprises",
+            "name": "Prime-Leo-Enterprises",
+            "avatarUrl": "https://github.com/Prime-Leo-Enterprises.png?size=80",
+            "repository": "Prime-Leo-Enterprises/Jobs",
+            "url": "https://github.com/Prime-Leo-Enterprises/Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 154,
+        "publishedAt": "2026-03-31T05:27:45Z",
+        "status": "stale"
+      }
+    },
     "gh_08f3bd4c20c7fe00b27026b4": {
       "id": "gh_08f3bd4c20c7fe00b27026b4",
       "sourceId": "Empregos-dev/Vagas-dev#85",
@@ -439,7 +574,18 @@
       "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        ".net",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         ".net",
         "pj",
         "remoto",
@@ -467,16 +613,6 @@
       "updatedAt": "2024-11-18T11:41:31Z",
       "url": "https://github.com/Empregos-dev/Vagas-dev/issues/85",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        ".net",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -505,6 +641,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_08f3bd4c20c7fe00b27026b4",
@@ -527,7 +669,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 651,
+        "ageDays": 652,
         "publishedAt": "2024-11-18T11:41:30Z",
         "status": "stale"
       }
@@ -544,7 +686,15 @@
       "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "remoteok.io"
+      ],
+      "sourceTags": [
         "remoteok.io"
       ],
       "author": {
@@ -570,13 +720,6 @@
       "updatedAt": "2021-11-02T12:38:48Z",
       "url": "https://github.com/remote-job-boards/software-engineering/issues/7470",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "remoteok.io"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -606,6 +749,12 @@
           "de"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_08f1c587e43626875189bf46",
@@ -628,7 +777,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1766,
+        "ageDays": 1767,
         "publishedAt": "2021-10-30T01:06:58Z",
         "status": "stale"
       }

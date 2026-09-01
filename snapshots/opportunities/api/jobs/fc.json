@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_fc1f63232f98258e183299f3": {
       "id": "gh_fc1f63232f98258e183299f3",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -40,14 +49,6 @@
       "updatedAt": "2026-07-24T19:23:41Z",
       "url": "https://github.com/backend-pt/vagas/issues/147",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -78,6 +79,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_fc1f63232f98258e183299f3",
@@ -100,7 +107,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 38,
+        "ageDays": 39,
         "publishedAt": "2026-07-24T17:59:30Z",
         "status": "aging"
       }

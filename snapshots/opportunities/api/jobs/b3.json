@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_b3d11f18e9b21e7bd215d304": {
       "id": "gh_b3d11f18e9b21e7bd215d304",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/vanshb03/New-Grad-2027",
       "region": "North America",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "North America"
+      },
       "tags": [
+        "edit_role"
+      ],
+      "sourceTags": [
         "edit_role"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-03T23:48:20Z",
       "url": "https://github.com/vanshb03/New-Grad-2027/issues/1550",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "edit_role"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -50,6 +51,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -89,7 +96,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 27,
+        "ageDays": 28,
         "publishedAt": "2026-08-03T23:48:20Z",
         "status": "fresh"
       }
@@ -106,7 +113,18 @@
       "repositoryUrl": "https://github.com/frontend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -125,6 +143,7 @@
         "repository": "frontend-pt/vagas",
         "url": "https://github.com/frontend-pt/vagas"
       },
+      "companyName": "Sylision",
       "salary": {
         "currency": "BRL",
         "min": 12000,
@@ -135,16 +154,6 @@
       "updatedAt": "2026-08-15T09:33:34Z",
       "url": "https://github.com/frontend-pt/vagas/issues/101",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -177,7 +186,12 @@
           "en"
         ]
       },
-      "companyName": "Sylision",
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b3efd79673d6278d2b7657e8",
@@ -216,7 +230,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 50,
+        "ageDays": 51,
         "publishedAt": "2026-07-12T17:29:40Z",
         "status": "aging"
       }
@@ -233,7 +247,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python"
+      ],
+      "sourceTags": [
         "python"
       ],
       "author": {
@@ -253,13 +275,6 @@
       "updatedAt": "2026-05-15T12:27:08Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1305",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "python"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -291,6 +306,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_b3a6d5cf12f8ebd173aa2a83",
@@ -313,7 +334,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 538,
+        "ageDays": 539,
         "publishedAt": "2025-03-11T13:46:32Z",
         "status": "stale"
       }

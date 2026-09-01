@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_cf66cfb845e2671803c3365b": {
       "id": "gh_cf66cfb845e2671803c3365b",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "aws",
+        "docker",
+        "git",
+        "node.js",
+        "python",
+        "remoto",
+        "sql",
+        "typescript"
+      ],
+      "sourceTags": [
         "aws",
         "docker",
         "git",
@@ -46,20 +61,6 @@
       "updatedAt": "2026-08-28T01:40:42Z",
       "url": "https://github.com/backend-br/vagas/issues/12400",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "aws",
-        "docker",
-        "git",
-        "node.js",
-        "python",
-        "remoto",
-        "sql",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -96,6 +97,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -135,7 +142,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-28T01:39:00Z",
         "status": "fresh"
       }
@@ -152,7 +159,16 @@
       "repositoryUrl": "https://github.com/bafrontend/trabajos",
       "region": "South America",
       "country": "Argentina",
+      "sourceLocation": {
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "principal"
+      ],
+      "sourceTags": [
         "java",
         "principal"
       ],
@@ -173,14 +189,6 @@
       "updatedAt": "2017-09-26T17:30:28Z",
       "url": "https://github.com/bafrontend/trabajos/issues/51",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Argentina",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "java",
-        "principal"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -198,6 +206,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -221,7 +235,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3261,
+        "ageDays": 3262,
         "publishedAt": "2017-09-26T17:29:58Z",
         "status": "stale"
       }

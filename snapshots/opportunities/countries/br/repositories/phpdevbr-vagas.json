@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:05:06.732Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 13,
     "closedIssues": 16
   },
-  "dataHash": "9ee1470be789fee3707a7b00e519ec5525937d44ab56f59e452eff9584f2d73c",
+  "dataHash": "62aa15556d1c679377f905984e208ab7ccfce946fd45aaed3e901e49f729a0c2",
   "items": [
     {
       "id": "gh_42bf102c156fbdce471069b8",
@@ -23,7 +23,18 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "senior",
         "data",
@@ -45,7 +56,44 @@
       "createdAt": "2026-08-25T20:47:26Z",
       "updatedAt": "2026-08-25T20:47:26Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1330",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d6f31a804dacbc548031ec5e",
@@ -59,7 +107,17 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python",
+        "pleno",
+        "design"
+      ],
+      "sourceTags": [
         "python",
         "pleno",
         "design"
@@ -87,7 +145,43 @@
       "createdAt": "2026-03-09T15:07:04Z",
       "updatedAt": "2026-04-01T20:33:51Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1324",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "gcp",
+          "laravel",
+          "php",
+          "python"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_03fa03119cda6972a7f24c60",
@@ -101,7 +195,19 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "pleno",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "pleno",
@@ -125,7 +231,45 @@
       "createdAt": "2026-01-13T14:23:29Z",
       "updatedAt": "2026-02-04T09:22:00Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1323",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "kubernetes",
+          "laravel",
+          "mongodb",
+          "mysql",
+          "php",
+          "postgres"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d2132d6f66dc0478c5e41023",
@@ -139,7 +283,20 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "react",
+        "typescript",
+        "java",
+        "pleno",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "react",
         "typescript",
         "java",
@@ -164,7 +321,51 @@
       "createdAt": "2025-11-13T19:27:00Z",
       "updatedAt": "2026-05-05T09:40:52Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1322",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "java",
+          "javascript",
+          "laravel",
+          "php",
+          "react",
+          "react-native",
+          "redis",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f16e58c71c5d1e615f22d78e",
@@ -178,7 +379,18 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "pleno",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "pleno",
         "data",
@@ -201,7 +413,45 @@
       "createdAt": "2025-11-13T19:24:27Z",
       "updatedAt": "2026-05-05T09:40:57Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1321",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "docker",
+          "laravel",
+          "php",
+          "redis"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4f81b09fdec825d1ef022048",
@@ -215,7 +465,16 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno"
+      ],
+      "sourceTags": [
         "java",
         "pleno"
       ],
@@ -235,7 +494,40 @@
       "createdAt": "2025-11-07T19:49:01Z",
       "updatedAt": "2025-11-07T19:49:01Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1320",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2fa1d8c2e1f80581bc696a54",
@@ -249,7 +541,18 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "pleno",
+        "design"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "pleno",
@@ -272,7 +575,46 @@
       "createdAt": "2025-11-04T20:46:55Z",
       "updatedAt": "2025-11-04T20:46:55Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1319",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "kubernetes",
+          "laravel",
+          "mongodb",
+          "mysql",
+          "php",
+          "postgres",
+          "redis"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ff871b03fcabd20a93060047",
@@ -286,7 +628,19 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "typescript",
+        "node",
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "typescript",
         "node",
@@ -310,7 +664,46 @@
       "createdAt": "2025-10-09T14:30:35Z",
       "updatedAt": "2025-10-09T14:30:35Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1318",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_571915d3ed190616dfccf5b6",
@@ -324,7 +717,17 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "principal",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "principal",
         "data"
@@ -346,7 +749,47 @@
       "createdAt": "2025-08-31T00:53:46Z",
       "updatedAt": "2025-09-08T15:23:29Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1317",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "support"
+        ],
+        "technologies": [
+          "docker",
+          "php",
+          "vue"
+        ],
+        "seniority": [
+          "junior",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4d692147730323f90f34f61c",
@@ -360,7 +803,20 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "pleno",
+        "principal",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "pleno",
@@ -384,7 +840,43 @@
       "createdAt": "2025-07-31T18:43:22Z",
       "updatedAt": "2025-08-10T13:29:11Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1316",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "docker",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ca980b77f7072cdcd037e91c",
@@ -398,7 +890,21 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "typescript",
+        "java",
+        "pleno",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "fullstack",
         "typescript",
         "java",
@@ -424,7 +930,43 @@
       "createdAt": "2025-07-28T22:19:26Z",
       "updatedAt": "2025-09-19T13:48:58Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1315",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "php",
+          "typescript",
+          "vue"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_b0284b782444c808bec42051",
@@ -438,7 +980,16 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "senior"
+      ],
+      "sourceTags": [
         "java",
         "senior"
       ],
@@ -458,7 +1009,40 @@
       "createdAt": "2025-07-25T17:32:58Z",
       "updatedAt": "2025-07-25T17:32:58Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1314",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_89bd58bdc9b8cda06124a35b",
@@ -472,7 +1056,21 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "react",
+        "java",
+        "senior",
+        "staff",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "java",
@@ -497,7 +1095,46 @@
       "createdAt": "2025-07-14T14:06:34Z",
       "updatedAt": "2025-09-16T19:21:41Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1313",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "qa"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php",
+          "react"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_14ab8657b069d5dc1e34e5bd",
@@ -511,7 +1148,18 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "pleno",
+        "principal",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "pleno",
         "principal",
@@ -533,7 +1181,53 @@
       "createdAt": "2025-06-05T13:13:07Z",
       "updatedAt": "2025-12-15T14:40:45Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1311",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "2x em São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "2x em São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "internship",
+          "junior",
+          "mid",
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_73f3507b952d2a8b09d86fea",
@@ -547,7 +1241,16 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "pleno"
       ],
@@ -573,7 +1276,44 @@
       "createdAt": "2025-05-07T18:32:18Z",
       "updatedAt": "2026-04-18T18:59:07Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1309",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack",
+          "qa",
+          "support"
+        ],
+        "technologies": [
+          "laravel",
+          "mysql",
+          "php",
+          "vue"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_1bdc2272d44e5c3d152baa68",
@@ -587,7 +1327,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -607,7 +1355,46 @@
       "createdAt": "2025-05-06T18:21:28Z",
       "updatedAt": "2026-04-28T14:35:19Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1308",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "kubernetes",
+          "laravel",
+          "mongodb",
+          "mysql",
+          "php",
+          "postgres"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_a9a13895e91ca4fce17ab7f6",
@@ -621,7 +1408,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python"
+      ],
+      "sourceTags": [
         "python"
       ],
       "author": {
@@ -640,7 +1435,44 @@
       "createdAt": "2025-03-11T13:57:09Z",
       "updatedAt": "2026-05-15T12:27:46Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1306",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Morumbi",
+        "subdivision": "SP",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "Morumbi, SP · On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "docker",
+          "laravel",
+          "php",
+          "postgres",
+          "python",
+          "vue"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_b3a6d5cf12f8ebd173aa2a83",
@@ -654,7 +1486,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python"
+      ],
+      "sourceTags": [
         "python"
       ],
       "author": {
@@ -673,7 +1513,44 @@
       "createdAt": "2025-03-11T13:46:32Z",
       "updatedAt": "2026-05-15T12:27:08Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1305",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Nova Lima",
+        "subdivision": "MG",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "Nova Lima, MG · On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "docker",
+          "laravel",
+          "php",
+          "postgres",
+          "python",
+          "vue"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_31072b7eb07f8515de34a041",
@@ -687,7 +1564,17 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "devops"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "devops"
@@ -708,7 +1595,44 @@
       "createdAt": "2025-02-28T20:44:03Z",
       "updatedAt": "2026-05-15T12:26:20Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1304",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "javascript",
+          "kotlin",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_bdee7881981e1da0fe35751b",
@@ -722,7 +1646,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -742,7 +1674,45 @@
       "createdAt": "2025-02-13T17:34:14Z",
       "updatedAt": "2026-05-15T12:25:45Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1303",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "javascript",
+          "laravel",
+          "nodejs",
+          "php",
+          "react",
+          "react-native"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_b2efcee24d6cf31a59612082",
@@ -756,7 +1726,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -776,7 +1754,45 @@
       "createdAt": "2025-02-07T21:23:48Z",
       "updatedAt": "2025-07-19T05:51:45Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1302",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "displayText": "Brazil",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "fullstack",
+          "product",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_0942ed9736ea13305338edbc",
@@ -790,7 +1806,17 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "design"
@@ -811,7 +1837,42 @@
       "createdAt": "2025-02-03T21:57:51Z",
       "updatedAt": "2026-05-15T12:25:02Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1301",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "laravel",
+          "mysql",
+          "php",
+          "postgres"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_0afbd41565d493b3c7c0db56",
@@ -825,7 +1886,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -844,7 +1913,44 @@
       "createdAt": "2025-01-30T15:33:49Z",
       "updatedAt": "2025-07-19T05:51:42Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1300",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai"
+        ],
+        "technologies": [
+          "go",
+          "javascript",
+          "mysql",
+          "php",
+          "postgres",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_3c8c7ccf5fbc29b4b6108542",
@@ -858,7 +1964,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -877,7 +1991,44 @@
       "createdAt": "2024-12-20T13:37:51Z",
       "updatedAt": "2025-07-19T05:51:41Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1299",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "leadership",
+          "product",
+          "support"
+        ],
+        "technologies": [
+          "docker",
+          "laravel",
+          "mysql",
+          "php",
+          "redis",
+          "vue"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_0466b7f12d15cbcca7812d5b",
@@ -891,7 +2042,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -911,7 +2070,51 @@
       "createdAt": "2024-12-19T13:08:26Z",
       "updatedAt": "2025-07-19T05:51:41Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1298",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "angular",
+          "aws",
+          "azure",
+          "dotnet",
+          "flutter",
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "python",
+          "react",
+          "vue"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_7e399896a52656dfa8171770",
@@ -925,7 +2128,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -945,7 +2156,45 @@
       "createdAt": "2024-12-03T14:00:35Z",
       "updatedAt": "2025-07-19T05:51:39Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1297",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "nodejs",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c6f540562b8e4e56efef5b9d",
@@ -959,7 +2208,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -979,7 +2236,46 @@
       "createdAt": "2024-10-30T13:15:24Z",
       "updatedAt": "2025-07-19T05:51:38Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1294",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "kubernetes",
+          "laravel",
+          "mongodb",
+          "mysql",
+          "php",
+          "postgres"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_8a0995d7091cd10c3a4ecbe2",
@@ -993,7 +2289,16 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "principal",
+        "data"
+      ],
+      "sourceTags": [
         "principal",
         "data"
       ],
@@ -1014,7 +2319,46 @@
       "createdAt": "2024-05-03T14:19:37Z",
       "updatedAt": "2025-09-08T15:21:38Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1275",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "support"
+        ],
+        "technologies": [
+          "docker",
+          "php",
+          "vue"
+        ],
+        "seniority": [
+          "junior",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_718f40832df62115f16b1ab7",
@@ -1028,7 +2372,15 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -1048,7 +2400,39 @@
       "createdAt": "2021-08-05T21:02:23Z",
       "updatedAt": "2025-10-09T18:59:37Z",
       "url": "https://github.com/phpdevbr/vagas/issues/946",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "junior",
+          "mid",
+          "principal"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

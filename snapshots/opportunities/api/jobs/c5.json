@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_c565af5bbccc6823a2585551": {
       "id": "gh_c565af5bbccc6823a2585551",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -42,16 +53,6 @@
       "updatedAt": "2026-08-07T18:01:46Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1274",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -79,6 +80,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_c565af5bbccc6823a2585551",
@@ -101,7 +108,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 24,
+        "ageDays": 25,
         "publishedAt": "2026-08-07T18:01:20Z",
         "status": "fresh"
       }
@@ -118,7 +125,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -145,14 +161,6 @@
       "updatedAt": "2026-08-06T10:14:42Z",
       "url": "https://github.com/backend-pt/vagas/issues/153",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -184,6 +192,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -224,7 +238,19 @@
       "repositoryUrl": "https://github.com/f2etw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "[f] vue.js",
+        "git",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
         "[f] vue.js",
         "git",
         "求才",
@@ -248,17 +274,6 @@
       "updatedAt": "2025-09-19T10:33:33Z",
       "url": "https://github.com/f2etw/jobs/issues/1157",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "[f] vue.js",
-        "git",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -278,6 +293,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -301,7 +322,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 347,
+        "ageDays": 348,
         "publishedAt": "2025-09-18T05:51:25Z",
         "status": "stale"
       }
@@ -318,7 +339,15 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "java"
+      ],
+      "sourceTags": [
         "java"
       ],
       "author": {
@@ -338,13 +367,6 @@
       "updatedAt": "2023-06-26T05:02:26Z",
       "url": "https://github.com/twjug/jobs/issues/111",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -357,6 +379,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -380,7 +408,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1162,
+        "ageDays": 1163,
         "publishedAt": "2023-06-26T02:24:18Z",
         "status": "stale"
       }
@@ -397,7 +425,19 @@
       "repositoryUrl": "https://github.com/IonicBrazil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "java",
+        "pleno",
+        "react",
+        "typescript"
+      ],
+      "sourceTags": [
         "data",
         "java",
         "pleno",
@@ -421,17 +461,6 @@
       "updatedAt": "2021-01-29T14:22:34Z",
       "url": "https://github.com/IonicBrazil/vagas/issues/5",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "java",
-        "pleno",
-        "react",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -465,6 +494,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_c5263fedb3238c9c4d4163ea",
@@ -487,7 +522,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2040,
+        "ageDays": 2041,
         "publishedAt": "2021-01-29T14:18:17Z",
         "status": "stale"
       }

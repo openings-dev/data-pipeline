@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 1
   },
-  "dataHash": "d84e7537ff6f638e092ad57f4cfe637cd011839e98f093529959bcd6b9a09af4",
+  "dataHash": "7e07602167afe48ce89d9a29af0586442b82eae6089230be34ea3ed9e0103ac1",
   "items": [
     {
       "id": "gh_6ef48c1d80a77e7bfe6a039c",
@@ -23,7 +23,13 @@
       "repositoryUrl": "https://github.com/uxbrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "ghost",
         "name": "ghost",
@@ -40,7 +46,24 @@
       "createdAt": "2024-04-29T17:59:50Z",
       "updatedAt": "2024-09-07T13:37:33Z",
       "url": "https://github.com/uxbrasil/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_52f74cb5b8a0bcd30d728510",
@@ -54,7 +77,19 @@
       "repositoryUrl": "https://github.com/uxbrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "junior",
+        "pleno",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "senior",
         "junior",
         "pleno",
@@ -78,7 +113,41 @@
       "createdAt": "2023-05-17T02:03:56Z",
       "updatedAt": "2023-05-17T02:03:56Z",
       "url": "https://github.com/uxbrasil/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_3a92264005538d87067d4af3",
@@ -92,7 +161,19 @@
       "repositoryUrl": "https://github.com/uxbrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "junior",
+        "pleno",
+        "principal",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "junior",
         "pleno",
         "principal",
@@ -116,7 +197,41 @@
       "createdAt": "2023-05-17T02:01:27Z",
       "updatedAt": "2023-05-17T02:01:27Z",
       "url": "https://github.com/uxbrasil/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     }
   ]
 }

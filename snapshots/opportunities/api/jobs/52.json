@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_52bd15edeb18e164dcbfcac6": {
       "id": "gh_52bd15edeb18e164dcbfcac6",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "senior"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-07T15:00:46Z",
       "url": "https://github.com/datascience-br/vagas/issues/184",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -81,6 +82,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_52bd15edeb18e164dcbfcac6",
@@ -103,7 +110,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 24,
+        "ageDays": 25,
         "publishedAt": "2026-08-07T15:00:46Z",
         "status": "fresh"
       }
@@ -120,7 +127,15 @@
       "repositoryUrl": "https://github.com/devssa/onde-codar-em-salvador",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "help wanted"
+      ],
+      "sourceTags": [
         "help wanted"
       ],
       "author": {
@@ -145,13 +160,6 @@
       "updatedAt": "2025-02-14T18:46:00Z",
       "url": "https://github.com/devssa/onde-codar-em-salvador/issues/3896",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "help wanted"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -183,6 +191,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -223,7 +237,19 @@
       "repositoryUrl": "https://github.com/uxbrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "junior",
+        "pleno",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "junior",
@@ -248,17 +274,6 @@
       "updatedAt": "2023-05-17T02:03:56Z",
       "url": "https://github.com/uxbrasil/vagas/issues/2",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "junior",
-        "pleno",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -287,6 +302,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_52f74cb5b8a0bcd30d728510",
@@ -309,7 +330,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1202,
+        "ageDays": 1203,
         "publishedAt": "2023-05-17T02:03:56Z",
         "status": "stale"
       }
@@ -326,7 +347,15 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "薪資面議"
+      ],
+      "sourceTags": [
         "薪資面議"
       ],
       "author": {
@@ -346,13 +375,6 @@
       "updatedAt": "2022-03-29T04:26:29Z",
       "url": "https://github.com/twjug/jobs/issues/92",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "薪資面議"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -365,6 +387,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -388,7 +416,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1616,
+        "ageDays": 1617,
         "publishedAt": "2022-03-29T02:51:00Z",
         "status": "stale"
       }

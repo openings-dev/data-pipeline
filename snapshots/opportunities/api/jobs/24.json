@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_243b9d759efad52b94b07f8a": {
       "id": "gh_243b9d759efad52b94b07f8a",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -40,14 +49,6 @@
       "updatedAt": "2026-08-09T22:21:52Z",
       "url": "https://github.com/backend-pt/vagas/issues/157",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -77,6 +78,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -117,7 +124,16 @@
       "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "pj",
         "remoto"
       ],
@@ -139,14 +155,6 @@
       "updatedAt": "2026-05-22T17:32:17Z",
       "url": "https://github.com/programadores-br/geral/issues/3071",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "pj",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -167,6 +175,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -190,7 +204,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 101,
+        "ageDays": 102,
         "publishedAt": "2026-05-22T17:31:55Z",
         "status": "stale"
       }
@@ -207,7 +221,15 @@
       "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "onsite"
+      ],
+      "sourceTags": [
         "onsite"
       ],
       "author": {
@@ -228,13 +250,6 @@
       "updatedAt": "2025-09-11T20:50:29Z",
       "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/2",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "onsite"
-      ],
       "jobLocation": {
         "country": "United States",
         "countryCode": "US",
@@ -257,6 +272,12 @@
           "on-site"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -297,7 +318,19 @@
       "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "devops",
+        "frontend",
+        "pleno",
+        "react"
+      ],
+      "sourceTags": [
         "data",
         "devops",
         "frontend",
@@ -322,17 +355,6 @@
       "updatedAt": "2024-12-05T13:00:32Z",
       "url": "https://github.com/FlutterComunidadeBR/vagas/issues/71",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "devops",
-        "frontend",
-        "pleno",
-        "react"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -356,6 +378,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
       "sources": [
         {
           "id": "gh_2491c668d0782523d54529f2",
@@ -378,7 +406,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 634,
+        "ageDays": 635,
         "publishedAt": "2024-12-05T13:00:32Z",
         "status": "stale"
       }

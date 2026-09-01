@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_cc91aec0fe01502e65e61530": {
       "id": "gh_cc91aec0fe01502e65e61530",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/frontend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "clt",
+        "data",
+        "design",
+        "pj",
+        "remoto",
+        "senior",
+        "sênior",
+        "typescript"
+      ],
+      "sourceTags": [
         "clt",
         "data",
         "design",
@@ -36,6 +51,7 @@
         "repository": "frontend-pt/vagas",
         "url": "https://github.com/frontend-pt/vagas"
       },
+      "companyName": "Sylision",
       "salary": {
         "currency": "BRL",
         "min": 12000,
@@ -46,20 +62,6 @@
       "updatedAt": "2026-08-25T12:00:54Z",
       "url": "https://github.com/frontend-pt/vagas/issues/108",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "clt",
-        "data",
-        "design",
-        "pj",
-        "remoto",
-        "senior",
-        "sênior",
-        "typescript"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -90,7 +92,12 @@
         ],
         "languages": []
       },
-      "companyName": "Sylision",
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_cc91aec0fe01502e65e61530",
@@ -145,7 +152,7 @@
         "sourceCount": 3
       },
       "freshness": {
-        "ageDays": 27,
+        "ageDays": 28,
         "publishedAt": "2026-08-04T15:28:14Z",
         "status": "fresh"
       }
@@ -162,7 +169,15 @@
       "repositoryUrl": "https://github.com/nodejs-tw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "java"
+      ],
+      "sourceTags": [
         "java"
       ],
       "author": {
@@ -182,13 +197,6 @@
       "updatedAt": "2023-10-03T07:51:36Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/252",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -201,6 +209,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -224,7 +238,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1069,
+        "ageDays": 1070,
         "publishedAt": "2023-09-27T13:06:16Z",
         "status": "stale"
       }

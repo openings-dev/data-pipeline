@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-03T19:22:21.743Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Angola",
   "countryCode": "AO",
   "region": "Africa",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 22
   },
-  "dataHash": "5cbee07218105561377ed4cc89182312bcbb6a1c41f34af0db0da7ceed14b2b4",
+  "dataHash": "bf0bd1bfb63554cf38a5d7bfabd0f945e163f401f367dfee0eee89cf8a5a8756",
   "items": [
     {
       "id": "gh_c7b84efb18024606a67ebd91",
@@ -23,7 +23,22 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "alocado",
+        "especialista",
+        "full time",
+        "part time",
+        "híbrido",
+        "júnior",
+        "freela",
+        "pleno"
+      ],
+      "sourceTags": [
         "alocado",
         "especialista",
         "full time",
@@ -55,7 +70,49 @@
       "createdAt": "2025-05-12T13:04:18Z",
       "updatedAt": "2025-06-03T12:06:15Z",
       "url": "https://github.com/backend-ao/vagas/issues/58",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d8401f407c1a100fef2738cc",
@@ -69,7 +126,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -90,7 +156,37 @@
       "createdAt": "2024-01-30T17:15:36Z",
       "updatedAt": "2024-04-06T00:49:04Z",
       "url": "https://github.com/backend-ao/vagas/issues/55",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "javascript",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_69d9e447573bc67ff59c7618",
@@ -104,7 +200,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "sênior",
         "stale"
       ],
@@ -125,7 +230,46 @@
       "createdAt": "2022-06-22T11:21:05Z",
       "updatedAt": "2023-01-02T00:58:30Z",
       "url": "https://github.com/backend-ao/vagas/issues/50",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "django",
+          "docker",
+          "kubernetes",
+          "python",
+          "terraform",
+          "vue"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_56ffe9214090b39276a53244",
@@ -139,7 +283,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "pleno",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "pleno",
         "remoto",
         "stale"
@@ -160,7 +314,44 @@
       "createdAt": "2022-05-09T19:00:01Z",
       "updatedAt": "2023-01-02T00:58:29Z",
       "url": "https://github.com/backend-ao/vagas/issues/49",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "leadership",
+          "mobile"
+        ],
+        "technologies": [
+          "postgres",
+          "ruby"
+        ],
+        "seniority": [
+          "lead",
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_af062eeb5a62cc4310bec85f",
@@ -174,7 +365,18 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "pleno",
+        "sênior",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "pleno",
         "sênior",
         "remoto",
@@ -196,7 +398,46 @@
       "createdAt": "2022-05-09T18:37:35Z",
       "updatedAt": "2023-01-02T00:58:28Z",
       "url": "https://github.com/backend-ao/vagas/issues/48",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "leadership",
+          "mobile"
+        ],
+        "technologies": [
+          "postgres",
+          "ruby"
+        ],
+        "seniority": [
+          "lead",
+          "mid",
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e02d79c901d23974dac2efdf",
@@ -210,7 +451,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "pleno",
+        "presencial",
+        "stale"
+      ],
+      "sourceTags": [
         "pleno",
         "presencial",
         "stale"
@@ -231,7 +482,39 @@
       "createdAt": "2022-03-31T18:48:34Z",
       "updatedAt": "2023-01-14T00:56:32Z",
       "url": "https://github.com/backend-ao/vagas/issues/47",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "aws",
+          "csharp",
+          "dotnet",
+          "kubernetes"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_dd0ca9e15fbd999f807c3530",
@@ -245,7 +528,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "inválido",
+        "sem informações",
+        "stale"
+      ],
+      "sourceTags": [
         "inválido",
         "sem informações",
         "stale"
@@ -266,7 +559,34 @@
       "createdAt": "2022-03-31T17:01:52Z",
       "updatedAt": "2023-01-14T00:56:31Z",
       "url": "https://github.com/backend-ao/vagas/issues/46",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_b6c1ee6a7c89bfc87f4531a8",
@@ -280,7 +600,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "pleno",
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "pleno",
         "sênior",
         "stale"
@@ -301,7 +631,39 @@
       "createdAt": "2022-03-31T16:21:22Z",
       "updatedAt": "2023-01-14T00:56:30Z",
       "url": "https://github.com/backend-ao/vagas/issues/45",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "dotnet",
+          "postgres"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_2c61469f18a70e352afb7f82",
@@ -315,7 +677,18 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "pleno",
+        "sênior",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "pleno",
         "sênior",
         "remoto",
@@ -337,7 +710,48 @@
       "createdAt": "2022-03-11T14:47:41Z",
       "updatedAt": "2023-01-02T00:58:27Z",
       "url": "https://github.com/backend-ao/vagas/issues/44",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "dotnet",
+          "java",
+          "kubernetes",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_9dfbec3b049d42d4ec39944a",
@@ -351,7 +765,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -372,7 +795,42 @@
       "createdAt": "2022-03-07T19:33:13Z",
       "updatedAt": "2023-01-02T00:58:27Z",
       "url": "https://github.com/backend-ao/vagas/issues/40",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "gcp",
+          "javascript",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_8e17784ac7fb1a781eb04dda",
@@ -386,7 +844,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -407,7 +874,39 @@
       "createdAt": "2022-03-07T17:56:02Z",
       "updatedAt": "2023-01-02T00:58:26Z",
       "url": "https://github.com/backend-ao/vagas/issues/39",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "go",
+          "postgres",
+          "python",
+          "redis",
+          "vue"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_5ab149fa45a7189d2ac5fef1",
@@ -421,7 +920,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -442,7 +950,39 @@
       "createdAt": "2022-03-07T17:46:27Z",
       "updatedAt": "2023-01-02T00:58:25Z",
       "url": "https://github.com/backend-ao/vagas/issues/38",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "javascript",
+          "nextjs",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_74efc6d2959d1de3ea1fd96a",
@@ -456,7 +996,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -477,7 +1026,39 @@
       "createdAt": "2022-03-07T16:48:36Z",
       "updatedAt": "2023-01-02T00:58:24Z",
       "url": "https://github.com/backend-ao/vagas/issues/37",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "javascript",
+          "mongodb",
+          "nodejs",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_1049decc4f7010bfdbbc6990",
@@ -491,7 +1072,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -512,7 +1102,42 @@
       "createdAt": "2022-03-07T16:00:04Z",
       "updatedAt": "2023-01-02T00:58:23Z",
       "url": "https://github.com/backend-ao/vagas/issues/36",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "javascript",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_fe7d6e00a3a368e784d4f93f",
@@ -526,7 +1151,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "sênior",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto",
         "stale"
@@ -548,7 +1183,41 @@
       "createdAt": "2022-03-05T17:50:35Z",
       "updatedAt": "2023-01-02T00:58:23Z",
       "url": "https://github.com/backend-ao/vagas/issues/35",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "mysql",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_50b2bc3e126ce2cf5fb86ecf",
@@ -562,7 +1231,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -583,7 +1261,34 @@
       "createdAt": "2022-02-24T18:18:44Z",
       "updatedAt": "2023-01-02T00:58:22Z",
       "url": "https://github.com/backend-ao/vagas/issues/34",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_277b32220a218ad1dc43bc02",
@@ -597,7 +1302,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -618,7 +1332,49 @@
       "createdAt": "2022-02-21T13:45:49Z",
       "updatedAt": "2023-01-02T00:58:21Z",
       "url": "https://github.com/backend-ao/vagas/issues/33",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "gcp",
+          "javascript",
+          "mysql",
+          "nextjs",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c6914401dd6ab629ab5ed511",
@@ -632,7 +1388,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -653,7 +1418,46 @@
       "createdAt": "2022-02-17T17:18:45Z",
       "updatedAt": "2023-01-02T00:58:20Z",
       "url": "https://github.com/backend-ao/vagas/issues/31",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "mobile"
+        ],
+        "technologies": [
+          "angular",
+          "docker",
+          "laravel",
+          "mysql",
+          "php",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "internship",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_445c62a30f558583984361de",
@@ -667,7 +1471,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -688,7 +1501,44 @@
       "createdAt": "2022-02-14T14:57:17Z",
       "updatedAt": "2023-01-02T00:58:19Z",
       "url": "https://github.com/backend-ao/vagas/issues/29",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [
+          "javascript",
+          "nodejs",
+          "postgres",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_314e9b2c18a69d849357abb9",
@@ -702,7 +1552,16 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -723,7 +1582,40 @@
       "createdAt": "2022-02-11T15:06:29Z",
       "updatedAt": "2023-01-02T00:58:19Z",
       "url": "https://github.com/backend-ao/vagas/issues/28",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "go",
+          "java",
+          "nodejs",
+          "php",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_00a6205251c02b7033e09160",
@@ -737,7 +1629,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "júnior",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "júnior",
         "remoto",
         "stale"
@@ -759,7 +1661,44 @@
       "createdAt": "2022-02-09T14:51:15Z",
       "updatedAt": "2023-01-02T00:58:18Z",
       "url": "https://github.com/backend-ao/vagas/issues/27",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2a0808aaa3aa511706d35d56",
@@ -773,7 +1712,17 @@
       "repositoryUrl": "https://github.com/backend-ao/vagas",
       "region": "Africa",
       "country": "Angola",
+      "sourceLocation": {
+        "country": "Angola",
+        "countryCode": "AO",
+        "region": "Africa"
+      },
       "tags": [
+        "sênior",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto",
         "stale"
@@ -795,7 +1744,41 @@
       "createdAt": "2022-02-09T14:42:14Z",
       "updatedAt": "2023-01-02T00:58:17Z",
       "url": "https://github.com/backend-ao/vagas/issues/26",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "javascript",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

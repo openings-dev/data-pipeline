@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T22:57:40.222Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 27
   },
-  "dataHash": "91f479b0059a1f15044f38150cad553ac3fad5c634c4aa544e8e530b47387b7d",
+  "dataHash": "8658478dbf0c9d1ff8871280eae7cb3cdefee6a79aaab23facd7ebc90f0753f7",
   "items": [
     {
       "id": "gh_5903d3232c2f99d9ae568fe8",
@@ -23,7 +23,22 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "estágio",
+        "contrato",
+        "remoto",
+        "híbrido",
+        "presencial",
+        "júnior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "estágio",
@@ -50,7 +65,48 @@
       "createdAt": "2026-03-03T14:46:28Z",
       "updatedAt": "2026-03-03T14:46:47Z",
       "url": "https://github.com/kotlin-br/vagas/issues/42",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "kotlin",
+          "terraform"
+        ],
+        "seniority": [
+          "internship",
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_1bd5f8d6144fe120825c7a8c",
@@ -64,7 +120,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -85,7 +150,37 @@
       "createdAt": "2026-02-05T00:07:51Z",
       "updatedAt": "2026-02-05T00:08:09Z",
       "url": "https://github.com/kotlin-br/vagas/issues/41",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_a1adbbeede90cef2f2744ddc",
@@ -99,7 +194,20 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "híbrido",
+        "presencial",
+        "sênior",
+        "especialista",
+        "stale"
+      ],
+      "sourceTags": [
         "clt",
         "híbrido",
         "presencial",
@@ -124,7 +232,48 @@
       "createdAt": "2025-12-10T17:32:28Z",
       "updatedAt": "2026-01-12T02:24:36Z",
       "url": "https://github.com/kotlin-br/vagas/issues/40",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "3x  em Santo Amaro",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "3x  em Santo Amaro, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_742e989cb0d6605784fba48b",
@@ -138,7 +287,17 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto",
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior",
         "stale"
@@ -160,7 +319,37 @@
       "createdAt": "2025-12-05T13:39:51Z",
       "updatedAt": "2026-01-08T02:11:44Z",
       "url": "https://github.com/kotlin-br/vagas/issues/39",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4f526dd8d58f4c036e8fb01d",
@@ -174,7 +363,17 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "clt",
         "remoto",
         "stale"
@@ -195,7 +394,40 @@
       "createdAt": "2025-07-08T17:54:37Z",
       "updatedAt": "2025-12-28T02:27:13Z",
       "url": "https://github.com/kotlin-br/vagas/issues/38",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack",
+          "mobile",
+          "support"
+        ],
+        "technologies": [
+          "react",
+          "react-native"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_6115bae65f9a9b2877ac9679",
@@ -209,7 +441,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -229,7 +470,42 @@
       "createdAt": "2025-06-10T18:31:51Z",
       "updatedAt": "2025-12-28T02:27:12Z",
       "url": "https://github.com/kotlin-br/vagas/issues/37",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "kotlin",
+          "kubernetes",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_31b7ec4fa07dfe09fb269d07",
@@ -243,7 +519,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -263,7 +548,44 @@
       "createdAt": "2025-06-10T18:29:16Z",
       "updatedAt": "2025-12-28T02:27:10Z",
       "url": "https://github.com/kotlin-br/vagas/issues/36",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "kotlin",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_957976c7f7c9d77ae684e9fe",
@@ -277,7 +599,17 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "pj",
         "remoto",
         "stale"
@@ -298,7 +630,37 @@
       "createdAt": "2025-04-07T13:30:52Z",
       "updatedAt": "2025-05-11T01:57:42Z",
       "url": "https://github.com/kotlin-br/vagas/issues/35",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "spring"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e0e249f92f3b914867b01ea4",
@@ -312,7 +674,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "remoto",
         "stale"
       ],
@@ -332,7 +703,40 @@
       "createdAt": "2025-02-28T20:25:39Z",
       "updatedAt": "2025-04-03T01:45:32Z",
       "url": "https://github.com/kotlin-br/vagas/issues/34",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "kotlin",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_7d0bd26920c8c89fdcacc9c3",
@@ -346,7 +750,18 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "híbrido",
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "clt",
         "híbrido",
         "sênior",
@@ -368,7 +783,39 @@
       "createdAt": "2025-02-06T12:54:54Z",
       "updatedAt": "2025-04-13T03:13:03Z",
       "url": "https://github.com/kotlin-br/vagas/issues/33",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_54ab2a7db1f60386be7a2828",
@@ -382,7 +829,18 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "remoto",
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "clt",
         "remoto",
         "sênior",
@@ -404,7 +862,38 @@
       "createdAt": "2025-01-30T15:43:37Z",
       "updatedAt": "2025-03-05T01:42:02Z",
       "url": "https://github.com/kotlin-br/vagas/issues/32",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2b9265603f797736d60006fe",
@@ -418,7 +907,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -437,7 +934,44 @@
       "createdAt": "2024-09-20T16:54:02Z",
       "updatedAt": "2025-01-10T01:41:10Z",
       "url": "https://github.com/kotlin-br/vagas/issues/31",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "go",
+          "java",
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_27b6334f9fcde6d7509509fe",
@@ -451,7 +985,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -470,7 +1012,49 @@
       "createdAt": "2024-08-13T21:51:52Z",
       "updatedAt": "2025-01-10T01:41:08Z",
       "url": "https://github.com/kotlin-br/vagas/issues/30",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "PL",
+        "subdivision": "SR",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "PL, SR · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "kotlin",
+          "mongodb",
+          "mysql",
+          "redis"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_503d1c2ef5fe26a54a898bcc",
@@ -484,7 +1068,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -504,7 +1096,40 @@
       "createdAt": "2024-07-24T11:00:44Z",
       "updatedAt": "2025-01-10T01:41:07Z",
       "url": "https://github.com/kotlin-br/vagas/issues/29",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "kotlin",
+          "mysql",
+          "postgres"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_07e092fa020399fa70deef3b",
@@ -518,7 +1143,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -537,7 +1170,39 @@
       "createdAt": "2024-07-19T16:53:32Z",
       "updatedAt": "2025-01-10T01:41:06Z",
       "url": "https://github.com/kotlin-br/vagas/issues/28",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_af4c993f0e5de471017a4610",
@@ -551,7 +1216,22 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "frontend",
+        "backend",
+        "fullstack",
+        "react",
+        "typescript",
+        "java",
+        "staff"
+      ],
+      "sourceTags": [
         "remote",
         "frontend",
         "backend",
@@ -578,7 +1258,49 @@
       "createdAt": "2024-06-13T16:00:10Z",
       "updatedAt": "2024-07-01T18:58:14Z",
       "url": "https://github.com/kotlin-br/vagas/issues/27",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "qa"
+        ],
+        "technologies": [
+          "docker",
+          "java",
+          "kotlin",
+          "postgres",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "staff"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_235ea2f7a101bc9adf1e855c",
@@ -592,7 +1314,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -611,7 +1341,37 @@
       "createdAt": "2024-06-09T15:08:50Z",
       "updatedAt": "2025-01-10T01:41:05Z",
       "url": "https://github.com/kotlin-br/vagas/issues/26",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_20993eefb5bae904eee99f95",
@@ -625,7 +1385,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -645,7 +1413,43 @@
       "createdAt": "2024-05-28T16:23:29Z",
       "updatedAt": "2025-01-10T01:41:04Z",
       "url": "https://github.com/kotlin-br/vagas/issues/25",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "go",
+          "kotlin",
+          "kubernetes",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_24e1e4037fb5acd029928435",
@@ -659,7 +1463,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -679,7 +1491,40 @@
       "createdAt": "2024-04-26T16:19:39Z",
       "updatedAt": "2025-01-10T01:41:02Z",
       "url": "https://github.com/kotlin-br/vagas/issues/24",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_6fbb2f97c61743fbdddcbbc1",
@@ -693,7 +1538,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "senior",
         "data"
       ],
@@ -713,7 +1567,38 @@
       "createdAt": "2024-03-18T18:31:43Z",
       "updatedAt": "2024-03-25T19:28:37Z",
       "url": "https://github.com/kotlin-br/vagas/issues/23",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d5adf71a4fa9d494cc97a093",
@@ -727,7 +1612,20 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "backend",
+        "java",
+        "senior",
+        "staff",
+        "data"
+      ],
+      "sourceTags": [
         "remote",
         "backend",
         "java",
@@ -752,7 +1650,45 @@
       "createdAt": "2024-02-20T15:01:46Z",
       "updatedAt": "2024-02-29T20:30:38Z",
       "url": "https://github.com/kotlin-br/vagas/issues/22",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "kotlin",
+          "mysql"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_93c50057180eeb42879828d7",
@@ -766,7 +1702,17 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "pleno",
         "data"
@@ -787,7 +1733,42 @@
       "createdAt": "2023-12-11T15:48:01Z",
       "updatedAt": "2024-01-24T20:13:59Z",
       "url": "https://github.com/kotlin-br/vagas/issues/21",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_7e06b0b243216b3abb3fcd2e",
@@ -801,7 +1782,15 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -820,7 +1809,42 @@
       "createdAt": "2023-11-07T16:38:59Z",
       "updatedAt": "2025-01-10T01:41:01Z",
       "url": "https://github.com/kotlin-br/vagas/issues/20",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "support"
+        ],
+        "technologies": [
+          "angular",
+          "dotnet",
+          "java",
+          "python"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_54eef09b03cd2bb03605b845",
@@ -834,7 +1858,19 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "contrato",
+        "remoto",
+        "presencial",
+        "sênior"
+      ],
+      "sourceTags": [
         "pj",
         "contrato",
         "remoto",
@@ -858,7 +1894,52 @@
       "createdAt": "2023-08-16T21:22:56Z",
       "updatedAt": "2024-04-26T16:18:34Z",
       "url": "https://github.com/kotlin-br/vagas/issues/19",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Porto Alegre",
+        "subdivision": "RS",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Porto Alegre, RS · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "javascript",
+          "kotlin",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_7cc0792ee2c48d172983d885",
@@ -872,7 +1953,19 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "remoto",
+        "híbrido",
+        "presencial",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "remoto",
         "híbrido",
@@ -895,7 +1988,44 @@
       "createdAt": "2023-05-19T20:25:27Z",
       "updatedAt": "2023-07-06T12:26:27Z",
       "url": "https://github.com/kotlin-br/vagas/issues/18",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "mobile",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "java",
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_522b11d42e4c76920a7f5d0d",
@@ -909,7 +2039,18 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "remoto",
+        "híbrido",
+        "pleno"
+      ],
+      "sourceTags": [
         "pj",
         "remoto",
         "híbrido",
@@ -931,7 +2072,40 @@
       "createdAt": "2023-05-05T18:08:45Z",
       "updatedAt": "2023-05-19T18:02:35Z",
       "url": "https://github.com/kotlin-br/vagas/issues/17",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "kotlin"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_59d1277da062fc4566f07014",
@@ -945,7 +2119,16 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "remoto"
       ],
@@ -966,7 +2149,36 @@
       "createdAt": "2023-04-21T01:32:05Z",
       "updatedAt": "2023-05-09T18:26:25Z",
       "url": "https://github.com/kotlin-br/vagas/issues/16",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "kotlin"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d108ceb3d28672466df0aaa8",
@@ -980,7 +2192,18 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "remoto",
+        "sênior",
+        "stale"
+      ],
+      "sourceTags": [
         "pj",
         "remoto",
         "sênior",
@@ -1003,7 +2226,41 @@
       "createdAt": "2023-03-30T12:47:21Z",
       "updatedAt": "2023-06-04T00:40:44Z",
       "url": "https://github.com/kotlin-br/vagas/issues/15",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "nodejs",
+          "react",
+          "ruby"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_5655731ef73eebdcf7329533",
@@ -1017,7 +2274,17 @@
       "repositoryUrl": "https://github.com/kotlin-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
         "pj",
         "remoto",
         "stale"
@@ -1039,7 +2306,36 @@
       "createdAt": "2023-03-21T15:19:49Z",
       "updatedAt": "2023-06-03T00:34:43Z",
       "url": "https://github.com/kotlin-br/vagas/issues/14",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "java",
+          "kotlin",
+          "spring"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     }
   ]
 }

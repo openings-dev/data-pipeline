@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_c063c058cafe16d8fef2c6d2": {
       "id": "gh_c063c058cafe16d8fef2c6d2",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
         "new_internship"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-01T01:27:30Z",
       "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9662",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "new_internship"
-      ],
       "jobLocation": {
         "country": "United States",
         "countryCode": "US",
@@ -60,6 +61,12 @@
         ],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -83,9 +90,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-08-01T01:27:30Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     "gh_c00aea9ceba72a4744407ba9": {
@@ -100,7 +107,19 @@
       "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "design",
@@ -124,17 +143,6 @@
       "updatedAt": "2025-01-31T19:32:54Z",
       "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1549",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "frontend",
-        "java"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -162,6 +170,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -202,7 +216,20 @@
       "repositoryUrl": "https://github.com/nodejs-tw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "design",
+        "devops",
+        "frontend",
+        "golang",
+        "node"
+      ],
+      "sourceTags": [
         "backend",
         "design",
         "devops",
@@ -227,18 +254,6 @@
       "updatedAt": "2024-05-09T09:38:56Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/262",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "design",
-        "devops",
-        "frontend",
-        "golang",
-        "node"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -262,6 +277,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
       "sources": [
         {
           "id": "gh_c01dc6814f05729a2a35cd60",
@@ -284,7 +305,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 844,
+        "ageDays": 845,
         "publishedAt": "2024-05-09T09:38:47Z",
         "status": "stale"
       }

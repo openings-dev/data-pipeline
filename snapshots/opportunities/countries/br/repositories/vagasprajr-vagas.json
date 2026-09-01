@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 3
   },
-  "dataHash": "bdcbc12aa697dd5c862a8c2587b1730bcadb186554fec45a30019a4498805e00",
+  "dataHash": "7967c64240fd29616a2e1e3de5ddc99e5d68cf74671a68d5356f172a85529bc5",
   "items": [
     {
       "id": "gh_98124bf365d4d53b479614d2",
@@ -23,7 +23,18 @@
       "repositoryUrl": "https://github.com/vagasprajr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "react",
+        "typescript",
+        "junior",
+        "data"
+      ],
+      "sourceTags": [
         "react",
         "typescript",
         "junior",
@@ -45,7 +56,40 @@
       "createdAt": "2023-12-20T13:12:23Z",
       "updatedAt": "2024-01-24T20:10:00Z",
       "url": "https://github.com/vagasprajr/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_556bbc9368f41a4b54e29e30",
@@ -59,7 +103,15 @@
       "repositoryUrl": "https://github.com/vagasprajr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "encerrada"
+      ],
+      "sourceTags": [
         "encerrada"
       ],
       "author": {
@@ -78,7 +130,35 @@
       "createdAt": "2023-12-16T17:30:18Z",
       "updatedAt": "2023-12-17T09:48:30Z",
       "url": "https://github.com/vagasprajr/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_487e89df74a7ffaffa53b238",
@@ -92,7 +172,15 @@
       "repositoryUrl": "https://github.com/vagasprajr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "encerrada"
+      ],
+      "sourceTags": [
         "encerrada"
       ],
       "author": {
@@ -111,7 +199,38 @@
       "createdAt": "2023-12-16T11:27:30Z",
       "updatedAt": "2023-12-19T08:51:40Z",
       "url": "https://github.com/vagasprajr/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "junior",
+          "principal"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

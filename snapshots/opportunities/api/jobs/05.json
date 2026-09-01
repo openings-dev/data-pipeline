@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_0518d453a06bfe71ae771dff": {
       "id": "gh_0518d453a06bfe71ae771dff",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "node.js",
+        "python",
+        "remoto",
+        "sênior",
+        "typescript"
+      ],
+      "sourceTags": [
         "aws",
         "ci/cd",
         "docker",
@@ -46,20 +61,6 @@
       "updatedAt": "2026-08-28T01:48:46Z",
       "url": "https://github.com/frontendbr/vagas/issues/8553",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "aws",
-        "ci/cd",
-        "docker",
-        "node.js",
-        "python",
-        "remoto",
-        "sênior",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -99,6 +100,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_0518d453a06bfe71ae771dff",
@@ -137,7 +144,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-28T01:46:54Z",
         "status": "fresh"
       }
@@ -154,7 +161,13 @@
       "repositoryUrl": "https://github.com/baixada/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "ferauche",
         "name": "ferauche",
@@ -172,11 +185,6 @@
       "updatedAt": "2017-12-15T12:35:33Z",
       "url": "https://github.com/baixada/Vagas/issues/4",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -192,6 +200,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -215,7 +229,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3181,
+        "ageDays": 3182,
         "publishedAt": "2017-12-15T12:34:46Z",
         "status": "stale"
       }

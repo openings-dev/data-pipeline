@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_8184db8810dcb3628d9eb4ef": {
       "id": "gh_8184db8810dcb3628d9eb4ef",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "senior"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-11T12:29:52Z",
       "url": "https://github.com/datascience-br/vagas/issues/191",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -77,6 +78,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_8184db8810dcb3628d9eb4ef",
@@ -99,7 +106,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 20,
+        "ageDays": 21,
         "publishedAt": "2026-08-11T12:29:52Z",
         "status": "fresh"
       }
@@ -116,7 +123,16 @@
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
         "design",
         "remote"
       ],
@@ -144,14 +160,6 @@
       "updatedAt": "2025-08-21T12:47:19Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/719",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "design",
-        "remote"
-      ],
       "jobLocation": {
         "country": "Global",
         "countryCode": "GLOBAL",
@@ -178,6 +186,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_81aa8bfda8cd75209a233f69",
@@ -200,7 +214,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 375,
+        "ageDays": 376,
         "publishedAt": "2025-08-21T12:47:19Z",
         "status": "stale"
       }
@@ -217,7 +231,17 @@
       "repositoryUrl": "https://github.com/seujobtech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pleno",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pleno",
         "sênior"
@@ -239,15 +263,6 @@
       "updatedAt": "2023-11-22T16:59:03Z",
       "url": "https://github.com/seujobtech/vagas/issues/412",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pleno",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -277,6 +292,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_8195e14c718accd70dee4444",
@@ -299,7 +320,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1013,
+        "ageDays": 1014,
         "publishedAt": "2023-11-22T16:58:37Z",
         "status": "stale"
       }

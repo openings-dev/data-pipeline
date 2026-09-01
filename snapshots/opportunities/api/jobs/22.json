@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_2294ee8082ec21ce3f6b9b81": {
       "id": "gh_2294ee8082ec21ce3f6b9b81",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "aws",
+        "clt",
+        "devops",
+        "finops",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "sourceTags": [
         "aws",
         "clt",
         "devops",
@@ -46,20 +61,6 @@
       "updatedAt": "2026-08-15T15:00:25Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/492",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "aws",
-        "clt",
-        "devops",
-        "finops",
-        "kubernetes",
-        "pj",
-        "platform",
-        "terraform"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -88,6 +89,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_2294ee8082ec21ce3f6b9b81",
@@ -110,7 +117,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-08-15T15:00:10Z",
         "status": "fresh"
       }
@@ -127,7 +134,22 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "backend",
+        "clt",
+        "hibernate",
+        "pj",
+        "remoto",
+        "rest",
+        "spring",
+        "sênior"
+      ],
+      "sourceTags": [
         "backend",
         "clt",
         "hibernate",
@@ -150,6 +172,7 @@
         "repository": "backend-pt/vagas",
         "url": "https://github.com/backend-pt/vagas"
       },
+      "companyName": "Sylision",
       "salary": {
         "currency": "BRL",
         "min": 12000,
@@ -160,20 +183,6 @@
       "updatedAt": "2026-08-22T12:00:21Z",
       "url": "https://github.com/backend-pt/vagas/issues/143",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "backend",
-        "clt",
-        "hibernate",
-        "pj",
-        "remoto",
-        "rest",
-        "spring",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -209,7 +218,12 @@
           "en"
         ]
       },
-      "companyName": "Sylision",
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_22f89c3b0b886211403e0348",
@@ -248,7 +262,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 42,
+        "ageDays": 43,
         "publishedAt": "2026-07-20T11:38:38Z",
         "status": "aging"
       }
@@ -265,7 +279,18 @@
       "repositoryUrl": "https://github.com/IonicBrazil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "node",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "node",
@@ -289,16 +314,6 @@
       "updatedAt": "2020-11-03T22:56:36Z",
       "url": "https://github.com/IonicBrazil/vagas/issues/4",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -336,6 +351,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_22bcc37536900a0d5df1bf2b",
@@ -358,7 +379,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2126,
+        "ageDays": 2127,
         "publishedAt": "2020-11-03T22:56:36Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Taiwan",
   "countryCode": "TW",
   "region": "Asia",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 0
   },
-  "dataHash": "a0d228e57cce564638143e2c8f950d3c5ea421af5810df3c1e22f4993633d5ad",
+  "dataHash": "a5b6a000ed42496e9e221986a5f3efbb2d21baee16c380c3b478eaed20e36322",
   "items": [
     {
       "id": "gh_e9d58038efbfd02158023ca7",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/taiwan-kotlin-user-group/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "求才",
+        "senior"
+      ],
+      "sourceTags": [
         "backend",
         "求才",
         "senior"
@@ -44,7 +54,33 @@
       "createdAt": "2021-11-15T03:03:15Z",
       "updatedAt": "2021-11-15T04:19:59Z",
       "url": "https://github.com/taiwan-kotlin-user-group/jobs/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "junior",
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_d68489bc16fd8d66c354a480",
@@ -58,7 +94,17 @@
       "repositoryUrl": "https://github.com/taiwan-kotlin-user-group/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "android",
+        "求才",
+        "senior"
+      ],
+      "sourceTags": [
         "android",
         "求才",
         "senior"
@@ -79,7 +125,29 @@
       "createdAt": "2021-11-12T15:28:23Z",
       "updatedAt": "2021-11-13T04:21:10Z",
       "url": "https://github.com/taiwan-kotlin-user-group/jobs/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     }
   ]
 }

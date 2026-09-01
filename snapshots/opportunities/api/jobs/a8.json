@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_a8cd59eaeb8f7957cc8a68b5": {
       "id": "gh_a8cd59eaeb8f7957cc8a68b5",
@@ -13,7 +13,13 @@
       "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "sarahfw23",
         "name": "sarahfw23",
@@ -31,11 +37,6 @@
       "updatedAt": "2026-08-26T02:14:53Z",
       "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2955",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -48,6 +49,12 @@
         ],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -71,7 +78,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-08-20T03:59:08Z",
         "status": "fresh"
       }
@@ -88,7 +95,13 @@
       "repositoryUrl": "https://github.com/ad-si/awesome-fp-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "ad-si",
         "name": "ad-si",
@@ -106,11 +119,6 @@
       "updatedAt": "2025-02-17T19:51:51Z",
       "url": "https://github.com/ad-si/awesome-fp-jobs/issues/10",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -121,6 +129,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -161,7 +175,18 @@
       "repositoryUrl": "https://github.com/bafrontend/trabajos",
       "region": "South America",
       "country": "Argentina",
+      "sourceLocation": {
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "frontend",
+        "python",
+        "react"
+      ],
+      "sourceTags": [
         "backend",
         "frontend",
         "python",
@@ -184,16 +209,6 @@
       "updatedAt": "2018-01-04T12:23:08Z",
       "url": "https://github.com/bafrontend/trabajos/issues/56",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Argentina",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "frontend",
-        "python",
-        "react"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -219,6 +234,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_a8c1b34d3a628b2f7b0583bd",
@@ -241,7 +262,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3161,
+        "ageDays": 3162,
         "publishedAt": "2018-01-04T12:23:08Z",
         "status": "stale"
       }

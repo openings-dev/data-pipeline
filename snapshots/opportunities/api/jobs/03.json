@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_03efa9d5761c2ddbcd1e50c5": {
       "id": "gh_03efa9d5761c2ddbcd1e50c5",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-17T23:21:12Z",
       "url": "https://github.com/datascience-br/vagas/issues/198",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -77,6 +78,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_03efa9d5761c2ddbcd1e50c5",
@@ -99,7 +106,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-08-17T23:21:12Z",
         "status": "fresh"
       }
@@ -116,7 +123,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -143,14 +159,6 @@
       "updatedAt": "2026-08-09T19:38:44Z",
       "url": "https://github.com/backend-pt/vagas/issues/155",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -180,6 +188,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -220,7 +234,19 @@
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "design",
@@ -245,17 +271,6 @@
       "updatedAt": "2026-02-04T09:22:00Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1323",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "frontend",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -288,6 +303,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_03fa03119cda6972a7f24c60",
@@ -310,7 +331,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 230,
+        "ageDays": 231,
         "publishedAt": "2026-01-13T14:23:29Z",
         "status": "stale"
       }
@@ -327,7 +348,16 @@
       "repositoryUrl": "https://github.com/nodejs-tw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "node"
+      ],
+      "sourceTags": [
         "backend",
         "node"
       ],
@@ -348,14 +378,6 @@
       "updatedAt": "2025-06-22T15:26:45Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/271",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "node"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -370,6 +392,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -393,7 +421,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 435,
+        "ageDays": 436,
         "publishedAt": "2025-06-22T15:26:45Z",
         "status": "stale"
       }
@@ -410,7 +438,18 @@
       "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "junior",
+        "node.js",
+        "presencial"
+      ],
+      "sourceTags": [
         "clt",
         "junior",
         "node.js",
@@ -433,16 +472,6 @@
       "updatedAt": "2024-12-12T13:36:02Z",
       "url": "https://github.com/Empregos-dev/Vagas-dev/issues/87",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "junior",
-        "node.js",
-        "presencial"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -471,6 +500,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_03bc63fc3d1aff39070d37ae",
@@ -493,7 +528,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 627,
+        "ageDays": 628,
         "publishedAt": "2024-12-12T13:36:01Z",
         "status": "stale"
       }
@@ -510,7 +545,17 @@
       "repositoryUrl": "https://github.com/hkopenjobs/hkopenjobs",
       "region": "Asia",
       "country": "Hong Kong",
+      "sourceLocation": {
+        "country": "Hong Kong",
+        "countryCode": "HK",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "full-time",
+        "php"
+      ],
+      "sourceTags": [
         "backend",
         "full-time",
         "php"
@@ -532,15 +577,6 @@
       "updatedAt": "2017-01-11T06:38:18Z",
       "url": "https://github.com/hkopenjobs/hkopenjobs/issues/6",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Hong Kong",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "full-time",
-        "php"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -560,6 +596,12 @@
         ],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -583,7 +625,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3520,
+        "ageDays": 3521,
         "publishedAt": "2017-01-10T07:04:50Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_79c77aa7ac54c371b858f925": {
       "id": "gh_79c77aa7ac54c371b858f925",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-14T00:04:16Z",
       "url": "https://github.com/datascience-br/vagas/issues/195",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -81,6 +82,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_79c77aa7ac54c371b858f925",
@@ -103,7 +110,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-08-14T00:04:16Z",
         "status": "fresh"
       }
@@ -120,7 +127,18 @@
       "repositoryUrl": "https://github.com/frontend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "pleno",
@@ -139,6 +157,7 @@
         "repository": "frontend-pt/vagas",
         "url": "https://github.com/frontend-pt/vagas"
       },
+      "companyName": "Sylision",
       "salary": {
         "currency": "BRL",
         "min": 7000,
@@ -149,16 +168,6 @@
       "updatedAt": "2026-08-20T12:01:08Z",
       "url": "https://github.com/frontend-pt/vagas/issues/102",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -191,7 +200,12 @@
           "en"
         ]
       },
-      "companyName": "Sylision",
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_799b61edb0c98791af431e2e",
@@ -247,7 +261,22 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "design",
+        "java",
+        "node",
+        "python",
+        "react",
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "java",
@@ -274,20 +303,6 @@
       "updatedAt": "2023-07-28T10:35:13Z",
       "url": "https://github.com/EtherTW/jobs/issues/61",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "java",
-        "node",
-        "python",
-        "react",
-        "remote",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -325,6 +340,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_791800c8db99244781c6cb8e",
@@ -347,7 +368,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1130,
+        "ageDays": 1131,
         "publishedAt": "2023-07-28T10:35:13Z",
         "status": "stale"
       }
@@ -364,7 +385,16 @@
       "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "lang-python",
+        "remoteok.io"
+      ],
+      "sourceTags": [
         "lang-python",
         "remoteok.io"
       ],
@@ -391,14 +421,6 @@
       "updatedAt": "2021-11-03T01:09:56Z",
       "url": "https://github.com/remote-job-boards/software-engineering/issues/7496",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "lang-python",
-        "remoteok.io"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -422,6 +444,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_798a3404121487925fc3a6d0",
@@ -444,7 +472,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1762,
+        "ageDays": 1763,
         "publishedAt": "2021-11-03T01:09:56Z",
         "status": "stale"
       }
@@ -461,7 +489,13 @@
       "repositoryUrl": "https://github.com/android-cn/android-jobs",
       "region": "Asia",
       "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "marionxue",
         "name": "marionxue",
@@ -479,11 +513,6 @@
       "updatedAt": "2019-03-30T12:11:49Z",
       "url": "https://github.com/android-cn/android-jobs/issues/329",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "China",
-        "region": "Asia"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -494,6 +523,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -517,7 +552,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2711,
+        "ageDays": 2712,
         "publishedAt": "2019-03-30T12:11:49Z",
         "status": "stale"
       }

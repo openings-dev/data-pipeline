@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_694fa53d6e76634d9cafa751": {
       "id": "gh_694fa53d6e76634d9cafa751",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "pleno",
@@ -42,16 +53,6 @@
       "updatedAt": "2026-08-05T18:28:14Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1271",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -75,6 +76,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -101,6 +108,86 @@
         "ageDays": 26,
         "publishedAt": "2026-08-05T18:27:39Z",
         "status": "fresh"
+      }
+    },
+    "gh_697a821cabc5eb7906d1c695": {
+      "id": "gh_697a821cabc5eb7906d1c695",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#80",
+      "title": "坐班宁波，招聘钱包产品经理",
+      "description": "岗位核心目标： 设计安全、合规、高性能的数字资产钱包系统，支持上层业务需求。\n详细职责：\n- 架构设计： 负责钱包产品，深度调研 Fireblocks、Cobo 方案。\n- 资产管理： 设计并优化资产充值、提现、内部调拨流程；负责多链 Gas Fee 策略优化及归集逻辑。\n- 安全合规： 设计提现审核风控引擎，确保存储与传输层符合安全合规标准。\n- 对账系统： 构建链上数据与平台内部数据库的实时、准实时对账系统，确保账实相符。\n任职资格：\n- 3 年以上加密货币钱包产品经验，熟悉 MPC (Multi-Party Computation) 或 TSS 技术原理。\n- 精通主流公链（BTC, ETH, Solana, Layer2s）的转账机制、签名算法及链上节点交互。\n- 有处理高并发资金流水对账、资产清算的实战经验。\n加分项：\n- 熟悉 Account Abstraction (EIP-4337) 协议及智能合约钱包。\n- 有通过 SOC2 或同级别安全审计的项目经验。\n\n薪资：25K-50K\n简历投递：camellia@we-boss.com",
+      "excerpt": "岗位核心目标： 设计安全、合规、高性能的数字资产钱包系统，支持上层业务需求。 详细职责： - 架构设计： 负责钱包产品，深度调研 Fireblocks、Cobo 方案。 - 资产管理： 设计并优化资产充值、提现、内部调拨流程；负责多链 Gas Fee 策略优化及归集逻辑。 - 安全合规： 设计提现审核风控引擎，确保存储与传输层符合安全合规标准。 - 对账系统： 构建链上数据与平台内部数据库的实时、准实时对账系统，确保账实相符。 任...",
+      "issueState": "open",
+      "contentHash": "5f3cc83bec8756b8e386b1d494631fd56a708fa542e42551fab54f677096ed8d",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "12Camellia",
+        "name": "12Camellia",
+        "handle": "12Camellia",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/272148107?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "createdAt": "2026-03-30T08:10:50Z",
+      "updatedAt": "2026-03-30T08:10:50Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/80",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_697a821cabc5eb7906d1c695",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#80",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/80",
+          "createdAt": "2026-03-30T08:10:50Z",
+          "updatedAt": "2026-03-30T08:10:50Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 155,
+        "publishedAt": "2026-03-30T08:10:50Z",
+        "status": "stale"
       }
     }
   }

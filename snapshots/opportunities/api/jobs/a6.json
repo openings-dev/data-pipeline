@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_a69a3453286fd468112f9308": {
       "id": "gh_a69a3453286fd468112f9308",
@@ -13,7 +13,19 @@
       "repositoryUrl": "https://github.com/nodejsdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "híbrido",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "híbrido",
         "pj",
@@ -43,17 +55,6 @@
       "updatedAt": "2026-08-09T22:21:45Z",
       "url": "https://github.com/nodejsdevbr/vagas/issues/78",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "híbrido",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -85,6 +86,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_a69a3453286fd468112f9308",
@@ -107,7 +114,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-08-03T15:11:18Z",
         "status": "fresh"
       }
@@ -124,7 +131,15 @@
       "repositoryUrl": "https://github.com/nodejs-tw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "node"
+      ],
+      "sourceTags": [
         "node"
       ],
       "author": {
@@ -150,13 +165,6 @@
       "updatedAt": "2023-12-07T03:24:03Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/255",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "node"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -167,6 +175,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -190,7 +204,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 998,
+        "ageDays": 999,
         "publishedAt": "2023-12-07T03:24:03Z",
         "status": "stale"
       }
@@ -207,7 +221,15 @@
       "repositoryUrl": "https://github.com/ajudevs/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto"
+      ],
+      "sourceTags": [
         "remoto"
       ],
       "author": {
@@ -228,13 +250,6 @@
       "updatedAt": "2021-09-23T13:27:18Z",
       "url": "https://github.com/ajudevs/vagas/issues/9",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -260,6 +275,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_a67fef8e8065664acd177cb1",
@@ -282,7 +303,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1803,
+        "ageDays": 1804,
         "publishedAt": "2021-09-23T13:22:09Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T02:51:02.005Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 3,
     "closedIssues": 4
   },
-  "dataHash": "4e67dddfb946f18595d73bf9d08f92128fd187c2ed1f99cc72e090603adbc4fa",
+  "dataHash": "af651e511cf9e23b8683ea5dab4db61e94b401d91bf52b44b6d9bd73c9ccf97d",
   "items": [
     {
       "id": "gh_a179e2d835c745927900656e",
@@ -23,7 +23,18 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "typescript",
+        "senior",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "typescript",
         "senior",
@@ -51,7 +62,44 @@
       "createdAt": "2024-05-07T19:29:54Z",
       "updatedAt": "2024-05-07T19:29:54Z",
       "url": "https://github.com/web3br/vagas/issues/7",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "docker",
+          "typescript",
+          "vue"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ebabcc17ec11957d451b2bb2",
@@ -65,7 +113,18 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "react",
+        "typescript",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "react",
         "typescript",
         "data",
@@ -88,7 +147,42 @@
       "createdAt": "2023-11-13T20:36:18Z",
       "updatedAt": "2023-11-16T14:05:54Z",
       "url": "https://github.com/web3br/vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "product"
+        ],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f732212830b495158f8fc1d6",
@@ -102,7 +196,19 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python",
+        "java",
+        "senior",
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "python",
         "java",
         "senior",
@@ -125,7 +231,43 @@
       "createdAt": "2023-11-07T16:39:32Z",
       "updatedAt": "2023-11-07T16:39:32Z",
       "url": "https://github.com/web3br/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "support"
+        ],
+        "technologies": [
+          "angular",
+          "dotnet",
+          "java",
+          "python"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ae1b35ddc559819229a19373",
@@ -139,7 +281,16 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "java",
         "data"
       ],
@@ -159,7 +310,39 @@
       "createdAt": "2023-11-01T19:37:05Z",
       "updatedAt": "2023-11-01T19:39:10Z",
       "url": "https://github.com/web3br/vagas/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "angular",
+          "java",
+          "javascript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4828c72eedc36909c5652afb",
@@ -173,7 +356,18 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "java",
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "fullstack",
         "java",
         "pleno",
@@ -195,7 +389,44 @@
       "createdAt": "2023-10-10T17:11:29Z",
       "updatedAt": "2023-10-24T19:07:13Z",
       "url": "https://github.com/web3br/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "csharp",
+          "dotnet",
+          "java",
+          "javascript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "pt"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_0ef02abdd117f47f3d97d265",
@@ -209,7 +440,16 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "java",
         "data"
       ],
@@ -229,7 +469,39 @@
       "createdAt": "2023-08-28T19:09:28Z",
       "updatedAt": "2023-10-24T19:08:11Z",
       "url": "https://github.com/web3br/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "angular",
+          "java",
+          "javascript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c1028e27977091bae7cd29e8",
@@ -243,7 +515,17 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "node",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "node",
         "data",
         "design"
@@ -264,7 +546,38 @@
       "createdAt": "2023-06-16T16:32:59Z",
       "updatedAt": "2023-10-24T19:08:21Z",
       "url": "https://github.com/web3br/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "support"
+        ],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

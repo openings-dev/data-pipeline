@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_076b3dbe9f942825463f3d2b": {
       "id": "gh_076b3dbe9f942825463f3d2b",
@@ -13,7 +13,25 @@
       "repositoryUrl": "https://github.com/CangaceirosDevels/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "frontend",
+        "junior",
+        "node",
+        "pj",
+        "react",
+        "remote",
+        "staff",
+        "stale",
+        "typescript"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "frontend",
@@ -39,27 +57,16 @@
         "repository": "CangaceirosDevels/vagas",
         "url": "https://github.com/CangaceirosDevels/vagas"
       },
+      "salary": {
+        "currency": "CAD",
+        "min": 1,
+        "max": 4,
+        "period": "hour"
+      },
       "createdAt": "2024-10-28T14:07:40Z",
       "updatedAt": "2026-02-08T19:18:53Z",
       "url": "https://github.com/CangaceirosDevels/vagas_de_emprego/issues/2792",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "frontend",
-        "junior",
-        "node",
-        "pj",
-        "react",
-        "remote",
-        "staff",
-        "stale",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -99,11 +106,11 @@
           "en"
         ]
       },
-      "salary": {
-        "currency": "CAD",
-        "min": 1,
-        "max": 4,
-        "period": "hour"
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -223,7 +230,7 @@
         "sourceCount": 7
       },
       "freshness": {
-        "ageDays": 672,
+        "ageDays": 673,
         "publishedAt": "2024-10-28T14:07:40Z",
         "status": "stale"
       }
@@ -240,7 +247,17 @@
       "repositoryUrl": "https://github.com/nodejs-tw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "nextjs",
+        "node",
+        "react"
+      ],
+      "sourceTags": [
         "nextjs",
         "node",
         "react"
@@ -262,15 +279,6 @@
       "updatedAt": "2024-07-31T06:57:45Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/263",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "nextjs",
-        "node",
-        "react"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -288,6 +296,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -311,7 +325,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 761,
+        "ageDays": 762,
         "publishedAt": "2024-07-31T06:57:01Z",
         "status": "stale"
       }

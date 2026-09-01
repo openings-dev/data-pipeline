@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_d439e5c9e3a0db2c1db310e7": {
       "id": "gh_d439e5c9e3a0db2c1db310e7",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "aws",
+        "clt",
+        "devops",
+        "finops",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "sourceTags": [
         "aws",
         "clt",
         "devops",
@@ -46,20 +61,6 @@
       "updatedAt": "2026-08-03T12:10:45Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/480",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "aws",
-        "clt",
-        "devops",
-        "finops",
-        "kubernetes",
-        "pj",
-        "platform",
-        "terraform"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -89,6 +90,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_d439e5c9e3a0db2c1db310e7",
@@ -111,7 +118,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-08-03T12:10:16Z",
         "status": "fresh"
       }
@@ -128,7 +135,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "devops",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "devops",
@@ -151,16 +169,6 @@
       "updatedAt": "2024-08-09T16:53:56Z",
       "url": "https://github.com/nerdzao/vagas/issues/177",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "devops",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -185,6 +193,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_d4e6810f754311088e0d8d2e",
@@ -207,7 +221,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 752,
+        "ageDays": 753,
         "publishedAt": "2024-08-09T16:53:56Z",
         "status": "stale"
       }

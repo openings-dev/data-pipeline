@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_dceb1f77ff2716a161057c7f": {
       "id": "gh_dceb1f77ff2716a161057c7f",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "pleno",
+        "python"
+      ],
+      "sourceTags": [
         "data",
         "pleno",
         "python"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-23T17:15:29Z",
       "url": "https://github.com/datascience-br/vagas/issues/208",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "pleno",
-        "python"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -79,6 +80,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_dceb1f77ff2716a161057c7f",
@@ -101,7 +108,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-08-23T17:15:29Z",
         "status": "fresh"
       }

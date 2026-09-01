@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_4cc3ed1afbc2d52fca57d80e": {
       "id": "gh_4cc3ed1afbc2d52fca57d80e",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/awesome-jobs/jobs",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "design",
+        "fullstack"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "fullstack"
@@ -35,15 +45,6 @@
       "updatedAt": "2026-08-28T02:44:09Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5037",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "fullstack"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -64,6 +65,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -103,7 +110,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-28T02:44:09Z",
         "status": "fresh"
       }
@@ -120,7 +127,22 @@
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "gcp",
+        "git",
+        "go",
+        "java",
+        "kotlin",
+        "mysql",
+        "postgresql",
+        "remoto"
+      ],
+      "sourceTags": [
         "gcp",
         "git",
         "go",
@@ -153,20 +175,6 @@
       "updatedAt": "2026-08-27T22:12:23Z",
       "url": "https://github.com/backend-br/vagas/issues/12399",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "gcp",
-        "git",
-        "go",
-        "java",
-        "kotlin",
-        "mysql",
-        "postgresql",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -196,6 +204,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_4c6cf37982168e2e29fee61c",
@@ -218,7 +232,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-27T22:12:05Z",
         "status": "fresh"
       }
@@ -235,7 +249,16 @@
       "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "data",
         "design"
       ],
@@ -256,14 +279,6 @@
       "updatedAt": "2026-08-27T07:23:38Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5034",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "design"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -283,6 +298,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -322,7 +343,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-08-27T07:23:38Z",
         "status": "fresh"
       }
@@ -339,7 +360,16 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "remoto",
         "sênior"
       ],
@@ -366,14 +396,6 @@
       "updatedAt": "2026-07-24T09:35:58Z",
       "url": "https://github.com/backend-pt/vagas/issues/146",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -405,6 +427,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_4c5d9e743b2d05d639e66dbc",
@@ -427,7 +455,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 39,
+        "ageDays": 40,
         "publishedAt": "2026-07-23T17:40:55Z",
         "status": "aging"
       }
@@ -444,7 +472,22 @@
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "backend",
+        "data",
+        "design",
+        "java",
+        "node",
+        "remote",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "design",
@@ -477,20 +520,6 @@
       "updatedAt": "2025-07-24T16:37:28Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/714",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "remote",
-        "senior",
-        "typescript"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -525,6 +554,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_4c1b622cc6355d609e296837",
@@ -547,7 +582,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 403,
+        "ageDays": 404,
         "publishedAt": "2025-07-24T16:33:39Z",
         "status": "stale"
       }
@@ -564,7 +599,17 @@
       "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "design",
+        "frontend",
+        "remote"
+      ],
+      "sourceTags": [
         "design",
         "frontend",
         "remote"
@@ -586,15 +631,6 @@
       "updatedAt": "2021-11-30T19:14:37Z",
       "url": "https://github.com/FidelisClayton/elm-jobs/issues/74",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "design",
-        "frontend",
-        "remote"
-      ],
       "jobLocation": {
         "country": "United States",
         "countryCode": "US",
@@ -616,6 +652,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_5c1e23251a8bd3aecf82914f": {
       "id": "gh_5c1e23251a8bd3aecf82914f",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/awesome-jobs/jobs",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "python",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "python",
         "senior"
@@ -35,15 +45,6 @@
       "updatedAt": "2026-08-19T09:18:29Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5020",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "python",
-        "senior"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -60,6 +61,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -99,86 +106,9 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-08-19T09:17:12Z",
         "status": "fresh"
-      }
-    },
-    "gh_5c6fa83157f78b5fb109953b": {
-      "id": "gh_5c6fa83157f78b5fb109953b",
-      "sourceId": "cncf/gitjobs#245",
-      "title": "ASWF Job Board",
-      "description": "The https://www.aswf.io was interested in an embedded job board",
-      "excerpt": "The https://www.aswf.io was interested in an embedded job board",
-      "issueState": "open",
-      "contentHash": "6ad04730deb6da43ab5b3a7931e92de128906ac114fa145499f5769d632dddd1",
-      "repository": "cncf/gitjobs",
-      "repositoryUrl": "https://github.com/cncf/gitjobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "integration"
-      ],
-      "author": {
-        "id": "caniszczyk",
-        "name": "caniszczyk",
-        "handle": "caniszczyk",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/63777?v=4"
-      },
-      "community": {
-        "id": "cncf",
-        "name": "cncf",
-        "avatarUrl": "https://github.com/cncf.png?size=80",
-        "repository": "cncf/gitjobs",
-        "url": "https://github.com/cncf/gitjobs"
-      },
-      "createdAt": "2025-04-25T19:21:49Z",
-      "updatedAt": "2026-02-07T20:02:48Z",
-      "url": "https://github.com/cncf/gitjobs/issues/245",
-      "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "integration"
-      ],
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "sources": [
-        {
-          "id": "gh_5c6fa83157f78b5fb109953b",
-          "sourceId": "cncf/gitjobs#245",
-          "repository": "cncf/gitjobs",
-          "repositoryUrl": "https://github.com/cncf/gitjobs",
-          "url": "https://github.com/cncf/gitjobs/issues/245",
-          "createdAt": "2025-04-25T19:21:49Z",
-          "updatedAt": "2026-02-07T20:02:48Z",
-          "community": {
-            "id": "cncf",
-            "name": "cncf",
-            "avatarUrl": "https://github.com/cncf.png?size=80",
-            "repository": "cncf/gitjobs",
-            "url": "https://github.com/cncf/gitjobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 493,
-        "publishedAt": "2025-04-25T19:21:49Z",
-        "status": "stale"
       }
     }
   }

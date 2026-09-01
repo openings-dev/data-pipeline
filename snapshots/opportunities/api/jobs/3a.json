@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_3a92264005538d87067d4af3": {
       "id": "gh_3a92264005538d87067d4af3",
@@ -13,7 +13,19 @@
       "repositoryUrl": "https://github.com/uxbrasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "junior",
+        "pleno",
+        "principal"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "junior",
@@ -38,17 +50,6 @@
       "updatedAt": "2023-05-17T02:01:27Z",
       "url": "https://github.com/uxbrasil/vagas/issues/1",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "junior",
-        "pleno",
-        "principal"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -77,6 +78,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_3a92264005538d87067d4af3",
@@ -99,7 +106,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1202,
+        "ageDays": 1203,
         "publishedAt": "2023-05-17T02:01:27Z",
         "status": "stale"
       }
@@ -116,7 +123,15 @@
       "repositoryUrl": "https://github.com/ajudevs/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto"
+      ],
+      "sourceTags": [
         "remoto"
       ],
       "author": {
@@ -137,13 +152,6 @@
       "updatedAt": "2021-09-23T13:27:17Z",
       "url": "https://github.com/ajudevs/vagas/issues/8",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -167,6 +175,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_3a73e39bba320f1e00e6c5da",
@@ -189,7 +203,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1803,
+        "ageDays": 1804,
         "publishedAt": "2021-09-23T13:21:25Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_5d87367c4f7d456d1f8095fa": {
       "id": "gh_5d87367c4f7d456d1f8095fa",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -42,16 +53,6 @@
       "updatedAt": "2026-08-01T18:05:56Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1267",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -76,6 +77,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_5d87367c4f7d456d1f8095fa",
@@ -98,9 +105,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-08-01T18:05:24Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     "gh_5d54a463e13b23bbe38791ce": {
@@ -115,7 +122,18 @@
       "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "pj",
@@ -139,16 +157,6 @@
       "updatedAt": "2026-05-26T12:26:44Z",
       "url": "https://github.com/programadores-br/geral/issues/3072",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "pj",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -169,6 +177,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -257,7 +271,15 @@
       "repositoryUrl": "https://github.com/cncf/gitjobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "integration"
+      ],
+      "sourceTags": [
         "integration"
       ],
       "author": {
@@ -277,13 +299,6 @@
       "updatedAt": "2026-02-18T11:38:03Z",
       "url": "https://github.com/cncf/gitjobs/issues/293",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "integration"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -294,6 +309,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -317,7 +338,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 417,
+        "ageDays": 418,
         "publishedAt": "2025-07-10T15:45:24Z",
         "status": "stale"
       }

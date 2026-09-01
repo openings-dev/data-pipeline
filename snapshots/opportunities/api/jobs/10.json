@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_10cef8c58d370538418ad549": {
       "id": "gh_10cef8c58d370538418ad549",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "remote"
@@ -41,15 +51,6 @@
       "updatedAt": "2026-08-24T23:59:44Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5033",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -69,6 +70,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -108,7 +115,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-08-24T23:59:44Z",
         "status": "fresh"
       }
@@ -125,7 +132,19 @@
       "repositoryUrl": "https://github.com/f2etw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "[b] java",
+        "[f] react",
+        "full stack",
+        "求才",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
         "[b] java",
         "[f] react",
         "full stack",
@@ -149,17 +168,6 @@
       "updatedAt": "2025-11-06T14:38:24Z",
       "url": "https://github.com/f2etw/jobs/issues/1160",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "[b] java",
-        "[f] react",
-        "full stack",
-        "求才",
-        "缺特/彈休資訊"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -189,6 +197,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
       "sources": [
         {
           "id": "gh_101b8e85d6e51f17f4f4fa8b",
@@ -211,7 +225,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 298,
+        "ageDays": 299,
         "publishedAt": "2025-11-06T01:33:27Z",
         "status": "stale"
       }

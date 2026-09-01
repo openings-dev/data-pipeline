@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T18:32:36.756Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 16,
     "closedIssues": 13
   },
-  "dataHash": "c91621af097aff0301ea22893381dbc0783495c90cf72daf3ed7909725c2765d",
+  "dataHash": "7323d88b7696dfcd07327d1d36ab1c4387790ad600b684a3e57cfa1b265b823f",
   "items": [
     {
       "id": "gh_de4cd6aab751d967e5196c76",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "remoto"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "remoto"
@@ -45,7 +55,40 @@
       "createdAt": "2026-08-31T12:47:10Z",
       "updatedAt": "2026-08-31T12:47:39Z",
       "url": "https://github.com/frontendbr/vagas/issues/8557",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_3f4fb2a68202280ca41956c8",
@@ -59,7 +102,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -89,7 +144,42 @@
       "createdAt": "2026-08-28T17:58:56Z",
       "updatedAt": "2026-08-28T17:59:18Z",
       "url": "https://github.com/frontendbr/vagas/issues/8555",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_5e9389b1f39a95d222e2ade5",
@@ -103,7 +193,16 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto"
       ],
@@ -129,7 +228,43 @@
       "createdAt": "2026-08-28T01:56:23Z",
       "updatedAt": "2026-08-28T01:56:52Z",
       "url": "https://github.com/frontendbr/vagas/issues/8554",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "postgres",
+          "react",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_0518d453a06bfe71ae771dff",
@@ -143,7 +278,16 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto"
       ],
@@ -169,7 +313,52 @@
       "createdAt": "2026-08-28T01:46:54Z",
       "updatedAt": "2026-08-28T01:47:14Z",
       "url": "https://github.com/frontendbr/vagas/issues/8553",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "nextjs",
+          "nodejs",
+          "postgres",
+          "python",
+          "react",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_e20c87ec9b8a84e4069f865e",
@@ -183,7 +372,15 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remoto"
+      ],
+      "sourceTags": [
         "remoto"
       ],
       "author": {
@@ -208,7 +405,50 @@
       "createdAt": "2026-08-28T01:40:18Z",
       "updatedAt": "2026-08-28T01:40:42Z",
       "url": "https://github.com/frontendbr/vagas/issues/8552",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4069aaa4b8ed2c6ca16fa901",
@@ -222,7 +462,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "remoto",
+        "especialista",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto",
         "especialista",
@@ -244,7 +495,46 @@
       "createdAt": "2026-08-27T22:08:53Z",
       "updatedAt": "2026-08-27T22:09:19Z",
       "url": "https://github.com/frontendbr/vagas/issues/8551",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "support"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d71471df3543c2014e94e7a8",
@@ -258,7 +548,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "pj",
+        "estágio",
+        "são paulo",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "pj",
         "estágio",
@@ -281,7 +583,51 @@
       "createdAt": "2026-08-27T21:53:59Z",
       "updatedAt": "2026-08-27T21:54:21Z",
       "url": "https://github.com/frontendbr/vagas/issues/8550",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "docker",
+          "postgres",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "internship"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_964d59a68b31e3bb24c601f7",
@@ -295,7 +641,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -325,7 +683,41 @@
       "createdAt": "2026-08-26T21:00:09Z",
       "updatedAt": "2026-08-26T21:00:40Z",
       "url": "https://github.com/frontendbr/vagas/issues/8549",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c734e6f23042238380854406",
@@ -339,7 +731,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "remoto",
+        "especialista",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "remoto",
         "especialista",
@@ -361,7 +764,46 @@
       "createdAt": "2026-08-26T01:15:55Z",
       "updatedAt": "2026-08-26T01:16:25Z",
       "url": "https://github.com/frontendbr/vagas/issues/8548",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "support"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_787d6a13e318df3c5623c284",
@@ -375,7 +817,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -404,7 +857,45 @@
       "createdAt": "2026-08-25T12:00:28Z",
       "updatedAt": "2026-08-25T12:00:54Z",
       "url": "https://github.com/frontendbr/vagas/issues/8547",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "typescript",
+          "vue"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_67ed1db0ff9b3bb17a425be1",
@@ -418,7 +909,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -447,7 +949,46 @@
       "createdAt": "2026-08-24T12:00:43Z",
       "updatedAt": "2026-08-24T12:01:17Z",
       "url": "https://github.com/frontendbr/vagas/issues/8546",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_3d0179fc12fad7d01281b2eb",
@@ -461,7 +1002,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "pj",
@@ -491,7 +1044,41 @@
       "createdAt": "2026-08-21T12:00:14Z",
       "updatedAt": "2026-08-21T12:00:38Z",
       "url": "https://github.com/frontendbr/vagas/issues/8545",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_9778e2bda5326d36dc502ed4",
@@ -505,7 +1092,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "pj",
@@ -534,7 +1132,45 @@
       "createdAt": "2026-08-20T12:00:38Z",
       "updatedAt": "2026-08-20T12:01:08Z",
       "url": "https://github.com/frontendbr/vagas/issues/8544",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_fe8b4626130f1dbf285f10cf",
@@ -548,7 +1184,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -578,7 +1226,41 @@
       "createdAt": "2026-08-19T17:06:42Z",
       "updatedAt": "2026-08-19T17:07:13Z",
       "url": "https://github.com/frontendbr/vagas/issues/8543",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_a09dc58cf82751f7cd3f27df",
@@ -592,7 +1274,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -621,7 +1314,46 @@
       "createdAt": "2026-08-18T12:00:21Z",
       "updatedAt": "2026-08-28T20:05:23Z",
       "url": "https://github.com/frontendbr/vagas/issues/8542",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_cb50f1799c059bb49375cabc",
@@ -635,7 +1367,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "react",
+        "typescript",
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "react",
         "typescript",
         "senior",
@@ -664,7 +1407,45 @@
       "createdAt": "2026-08-17T17:22:06Z",
       "updatedAt": "2026-08-18T14:10:41Z",
       "url": "https://github.com/frontendbr/vagas/issues/8541",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_efad0b60919ea2fcfe21a206",
@@ -678,7 +1459,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -707,7 +1499,45 @@
       "createdAt": "2026-08-15T09:33:01Z",
       "updatedAt": "2026-08-15T09:33:34Z",
       "url": "https://github.com/frontendbr/vagas/issues/8540",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_6880f9e9a53ece011528f17f",
@@ -721,7 +1551,21 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "pj",
+        "remoto",
+        "alocado",
+        "são paulo",
+        "híbrido"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "pj",
@@ -747,7 +1591,40 @@
       "createdAt": "2026-08-12T20:34:06Z",
       "updatedAt": "2026-08-21T13:06:18Z",
       "url": "https://github.com/frontendbr/vagas/issues/8539",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "postgres"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4416bda8f852c5ab171cc62e",
@@ -761,7 +1638,17 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "remote",
         "devops",
         "data"
@@ -782,7 +1669,37 @@
       "createdAt": "2026-08-12T18:25:12Z",
       "updatedAt": "2026-08-18T14:10:40Z",
       "url": "https://github.com/frontendbr/vagas/issues/8538",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_39a1caa24170ea15341074f1",
@@ -796,7 +1713,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -826,7 +1755,41 @@
       "createdAt": "2026-07-26T15:19:04Z",
       "updatedAt": "2026-08-28T17:58:55Z",
       "url": "https://github.com/frontendbr/vagas/issues/8526",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_6380c8ef9576c95c54cf6cab",
@@ -840,7 +1803,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -870,7 +1845,41 @@
       "createdAt": "2026-07-26T12:21:17Z",
       "updatedAt": "2026-08-26T21:00:08Z",
       "url": "https://github.com/frontendbr/vagas/issues/8525",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4cce924b5744e2a199ac473f",
@@ -884,7 +1893,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -913,7 +1933,45 @@
       "createdAt": "2026-07-25T18:28:48Z",
       "updatedAt": "2026-08-25T12:00:27Z",
       "url": "https://github.com/frontendbr/vagas/issues/8524",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "vue"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_5d7d9dd5575f7424544d85a0",
@@ -927,7 +1985,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -956,7 +2025,45 @@
       "createdAt": "2026-07-25T18:19:47Z",
       "updatedAt": "2026-08-24T12:00:42Z",
       "url": "https://github.com/frontendbr/vagas/issues/8523",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_fdca83cb0404a0baab1c3fa4",
@@ -970,7 +2077,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "pj",
@@ -1000,7 +2119,41 @@
       "createdAt": "2026-07-12T17:23:30Z",
       "updatedAt": "2026-08-21T12:00:13Z",
       "url": "https://github.com/frontendbr/vagas/issues/8522",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "angular"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_a971b0331e754ca00213a4e6",
@@ -1014,7 +2167,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "pleno",
         "clt",
         "pj",
@@ -1043,7 +2207,45 @@
       "createdAt": "2026-07-12T17:22:30Z",
       "updatedAt": "2026-08-20T12:00:37Z",
       "url": "https://github.com/frontendbr/vagas/issues/8521",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "angular"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e323bf398e40b8ae1f8c59bc",
@@ -1057,7 +2259,19 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto",
+        "híbrido"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -1087,7 +2301,41 @@
       "createdAt": "2026-07-12T17:21:20Z",
       "updatedAt": "2026-08-19T17:06:41Z",
       "url": "https://github.com/frontendbr/vagas/issues/8520",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "angular"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_6b9fa9e736a4c6a75c0c3dc6",
@@ -1101,7 +2349,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -1130,7 +2389,45 @@
       "createdAt": "2026-07-07T13:13:49Z",
       "updatedAt": "2026-08-18T12:00:20Z",
       "url": "https://github.com/frontendbr/vagas/issues/8516",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ab73013f4dc9b332f5aa8a20",
@@ -1144,7 +2441,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "sênior",
+        "clt",
+        "pj",
+        "remoto"
+      ],
+      "sourceTags": [
         "sênior",
         "clt",
         "pj",
@@ -1173,7 +2481,45 @@
       "createdAt": "2026-07-07T13:12:35Z",
       "updatedAt": "2026-08-17T17:22:05Z",
       "url": "https://github.com/frontendbr/vagas/issues/8515",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_88ea999c66efeb67b1469595",
@@ -1187,7 +2533,20 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "pj",
+        "alocado",
+        "são paulo",
+        "stale",
+        "híbrido"
+      ],
+      "sourceTags": [
         "pleno",
         "pj",
         "alocado",
@@ -1212,7 +2571,44 @@
       "createdAt": "2026-06-18T04:45:52Z",
       "updatedAt": "2026-08-23T00:46:02Z",
       "url": "https://github.com/frontendbr/vagas/issues/8509",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "nextjs",
+          "nodejs",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

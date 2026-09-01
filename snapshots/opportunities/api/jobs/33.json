@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_33d05217457732ee882415dd": {
       "id": "gh_33d05217457732ee882415dd",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -42,16 +53,6 @@
       "updatedAt": "2026-08-31T19:57:42Z",
       "url": "https://github.com/backend-pt/vagas/issues/145",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -86,6 +87,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -125,7 +132,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 40,
+        "ageDays": 41,
         "publishedAt": "2026-07-22T11:34:09Z",
         "status": "aging"
       }
@@ -142,7 +149,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "design",
+        "python"
+      ],
+      "sourceTags": [
         "backend",
         "design",
         "python"
@@ -165,15 +182,6 @@
       "updatedAt": "2026-02-06T18:42:28Z",
       "url": "https://github.com/nerdzao/vagas/issues/188",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "design",
-        "python"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -208,6 +216,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -248,7 +262,16 @@
       "repositoryUrl": "https://github.com/golangtw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "90k以上",
+        "苗栗"
+      ],
+      "sourceTags": [
         "90k以上",
         "苗栗"
       ],
@@ -269,14 +292,6 @@
       "updatedAt": "2026-04-09T02:47:13Z",
       "url": "https://github.com/golangtw/jobs/issues/225",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "90k以上",
-        "苗栗"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -296,6 +311,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -319,7 +340,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 419,
+        "ageDays": 420,
         "publishedAt": "2025-07-08T07:48:12Z",
         "status": "stale"
       }
@@ -336,7 +357,21 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "design",
+        "frontend",
+        "golang",
+        "java",
+        "node",
+        "python"
+      ],
+      "sourceTags": [
         "backend",
         "design",
         "frontend",
@@ -362,19 +397,6 @@
       "updatedAt": "2022-08-05T10:54:03Z",
       "url": "https://github.com/twjug/jobs/issues/101",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "design",
-        "frontend",
-        "golang",
-        "java",
-        "node",
-        "python"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -401,6 +423,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_334e6a189e0f2f259f76a71a",
@@ -423,7 +451,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1487,
+        "ageDays": 1488,
         "publishedAt": "2022-08-05T10:54:03Z",
         "status": "stale"
       }
@@ -440,7 +468,17 @@
       "repositoryUrl": "https://github.com/js-hcm/job-board",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "design",
+        "java",
+        "react"
+      ],
+      "sourceTags": [
         "design",
         "java",
         "react"
@@ -468,15 +506,6 @@
       "updatedAt": "2016-02-23T06:51:25Z",
       "url": "https://github.com/js-hcm/job-board/issues/2",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "design",
-        "java",
-        "react"
-      ],
       "jobLocation": {
         "country": "Vietnam",
         "countryCode": "VN",
@@ -501,6 +530,12 @@
         "workModels": [],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
       "sources": [
         {
           "id": "gh_338eaefafa24429e046994f1",
@@ -523,7 +558,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3842,
+        "ageDays": 3843,
         "publishedAt": "2016-02-23T06:51:25Z",
         "status": "stale"
       }

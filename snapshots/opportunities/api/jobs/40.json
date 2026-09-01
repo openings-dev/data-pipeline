@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_4069aaa4b8ed2c6ca16fa901": {
       "id": "gh_4069aaa4b8ed2c6ca16fa901",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/frontendbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "especialista",
+        "híbrido",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "especialista",
         "híbrido",
         "remoto",
@@ -36,16 +47,6 @@
       "updatedAt": "2026-08-27T22:09:19Z",
       "url": "https://github.com/frontendbr/vagas/issues/8551",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "especialista",
-        "híbrido",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -79,6 +80,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_4069aaa4b8ed2c6ca16fa901",
@@ -101,7 +108,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-08-27T22:08:53Z",
         "status": "fresh"
       }
@@ -118,7 +125,19 @@
       "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
       "region": "Asia",
       "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
       "tags": [
+        "agent",
+        "llm",
+        "rlhf强化学习",
+        "北京",
+        "算法"
+      ],
+      "sourceTags": [
         "agent",
         "llm",
         "rlhf强化学习",
@@ -142,17 +161,6 @@
       "updatedAt": "2026-05-10T13:16:16Z",
       "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/2",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "China",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "agent",
-        "llm",
-        "rlhf强化学习",
-        "北京",
-        "算法"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -168,6 +176,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -191,7 +205,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 113,
+        "ageDays": 114,
         "publishedAt": "2026-05-10T12:53:48Z",
         "status": "stale"
       }
@@ -208,7 +222,17 @@
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "data",
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "remote"
@@ -236,15 +260,6 @@
       "updatedAt": "2024-11-27T11:23:18Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/710",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "remote"
-      ],
       "jobLocation": {
         "country": "United Kingdom",
         "countryCode": "GB",
@@ -271,6 +286,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_40fdf6f56a3c3ae8f9cb428a",
@@ -293,7 +314,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 642,
+        "ageDays": 643,
         "publishedAt": "2024-11-27T11:23:18Z",
         "status": "stale"
       }
@@ -310,7 +331,16 @@
       "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "fullstack",
+        "remoteok.io"
+      ],
+      "sourceTags": [
         "fullstack",
         "remoteok.io"
       ],
@@ -337,14 +367,6 @@
       "updatedAt": "2021-11-03T01:09:55Z",
       "url": "https://github.com/remote-job-boards/software-engineering/issues/7495",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "fullstack",
-        "remoteok.io"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -377,6 +399,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_40d63f7bae9f7039582a2470",
@@ -399,7 +427,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1762,
+        "ageDays": 1763,
         "publishedAt": "2021-11-03T01:09:55Z",
         "status": "stale"
       }

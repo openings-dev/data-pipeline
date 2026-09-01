@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_991d451cae933311704c7f75": {
       "id": "gh_991d451cae933311704c7f75",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "azure",
+        "clt",
+        "devops",
+        "docker",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "sourceTags": [
         "azure",
         "clt",
         "devops",
@@ -46,20 +61,6 @@
       "updatedAt": "2026-08-16T00:01:03Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/493",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "azure",
-        "clt",
-        "devops",
-        "docker",
-        "kubernetes",
-        "pj",
-        "platform",
-        "terraform"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -88,6 +89,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_991d451cae933311704c7f75",
@@ -110,7 +117,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 15,
+        "ageDays": 16,
         "publishedAt": "2026-08-16T00:00:48Z",
         "status": "fresh"
       }
@@ -127,7 +134,15 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "sem informações"
+      ],
+      "sourceTags": [
         "sem informações"
       ],
       "author": {
@@ -153,13 +168,6 @@
       "updatedAt": "2026-08-06T21:33:20Z",
       "url": "https://github.com/backend-pt/vagas/issues/154",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "sem informações"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -187,6 +195,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -227,7 +241,16 @@
       "repositoryUrl": "https://github.com/golangtw/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "100k以上",
+        "遠端"
+      ],
+      "sourceTags": [
         "100k以上",
         "遠端"
       ],
@@ -248,14 +271,6 @@
       "updatedAt": "2026-06-02T07:01:47Z",
       "url": "https://github.com/golangtw/jobs/issues/226",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "100k以上",
-        "遠端"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -283,6 +298,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_99150832107b847772cd7a87",
@@ -305,7 +326,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 355,
+        "ageDays": 356,
         "publishedAt": "2025-09-10T16:04:04Z",
         "status": "stale"
       }
@@ -322,7 +343,15 @@
       "repositoryUrl": "https://github.com/neutraltone/awesome-development-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "remote"
+      ],
+      "sourceTags": [
         "remote"
       ],
       "author": {
@@ -342,13 +371,6 @@
       "updatedAt": "2022-11-01T18:17:47Z",
       "url": "https://github.com/neutraltone/awesome-development-jobs/issues/22",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "remote"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -363,6 +385,12 @@
         "languages": [
           "de"
         ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -403,7 +431,16 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "golang",
+        "java"
+      ],
+      "sourceTags": [
         "golang",
         "java"
       ],
@@ -424,14 +461,6 @@
       "updatedAt": "2022-10-06T06:10:56Z",
       "url": "https://github.com/twjug/jobs/issues/104",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "golang",
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -451,6 +480,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -474,7 +509,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1425,
+        "ageDays": 1426,
         "publishedAt": "2022-10-06T06:02:50Z",
         "status": "stale"
       }

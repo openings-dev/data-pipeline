@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_8c890980e94de3f7d52998a2": {
       "id": "gh_8c890980e94de3f7d52998a2",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
         "new_role"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-05T04:54:24Z",
       "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2950",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "new_role"
-      ],
       "jobLocation": {
         "country": "United States",
         "countryCode": "US",
@@ -56,6 +57,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -79,7 +86,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 26,
+        "ageDays": 27,
         "publishedAt": "2026-08-05T04:52:08Z",
         "status": "fresh"
       }
@@ -96,7 +103,15 @@
       "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
         "enhancement"
       ],
       "author": {
@@ -116,13 +131,6 @@
       "updatedAt": "2026-08-23T18:19:28Z",
       "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "enhancement"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -138,6 +146,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -161,7 +175,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 197,
+        "ageDays": 198,
         "publishedAt": "2026-02-15T18:03:51Z",
         "status": "stale"
       }

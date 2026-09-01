@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T09:27:57.035Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 3
   },
-  "dataHash": "72659e0cdf44baae5d0392873eeb1f568f3e3174e80d8b9709057dc608edfcdd",
+  "dataHash": "55e5a91111b9878510a19f5e7d508a5b353c6fe611cda785bb58b5250b0e0dbf",
   "items": [
     {
       "id": "gh_c6bbf6170a4b8e7e5ede5250",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/Blazorise/Blazorise.Jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "remote",
+        "senior",
+        "principal"
+      ],
+      "sourceTags": [
         "remote",
         "senior",
         "principal"
@@ -44,7 +54,36 @@
       "createdAt": "2026-08-22T04:43:04Z",
       "updatedAt": "2026-08-25T08:56:59Z",
       "url": "https://github.com/Blazorise/Blazorise.Jobs/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "csharp"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_d0e78cebe518d102808b1565",
@@ -58,7 +97,16 @@
       "repositoryUrl": "https://github.com/Blazorise/Blazorise.Jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
         "remote",
         "senior"
       ],
@@ -78,7 +126,33 @@
       "createdAt": "2026-08-03T11:35:55Z",
       "updatedAt": "2026-08-03T11:36:38Z",
       "url": "https://github.com/Blazorise/Blazorise.Jobs/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "csharp"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_d1176b59964050b45e45c89f",
@@ -92,7 +166,16 @@
       "repositoryUrl": "https://github.com/Blazorise/Blazorise.Jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "status:approved",
+        "type:job"
+      ],
+      "sourceTags": [
         "status:approved",
         "type:job"
       ],
@@ -112,7 +195,37 @@
       "createdAt": "2026-01-17T11:37:56Z",
       "updatedAt": "2026-02-14T12:16:01Z",
       "url": "https://github.com/Blazorise/Blazorise.Jobs/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "city": "London",
+        "subdivision": "GB",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "London, GB · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     }
   ]
 }

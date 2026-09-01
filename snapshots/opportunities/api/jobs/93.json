@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_939843b36f15ab3414741f1e": {
       "id": "gh_939843b36f15ab3414741f1e",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "pleno",
+        "python"
+      ],
+      "sourceTags": [
         "data",
         "pleno",
         "python"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-20T21:00:17Z",
       "url": "https://github.com/datascience-br/vagas/issues/202",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "pleno",
-        "python"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -74,6 +75,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -114,7 +121,15 @@
       "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
         "new_internship"
       ],
       "author": {
@@ -134,13 +149,6 @@
       "updatedAt": "2026-08-01T01:28:19Z",
       "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9663",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "new_internship"
-      ],
       "jobLocation": {
         "country": "United States",
         "countryCode": "US",
@@ -161,6 +169,12 @@
         ],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -184,9 +198,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-08-01T01:28:19Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     "gh_9334c8ca82a55cfcd2535c76": {
@@ -201,7 +215,18 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "java",
+        "junior",
+        "typescript"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "junior",
@@ -224,16 +249,6 @@
       "updatedAt": "2022-10-06T04:13:16Z",
       "url": "https://github.com/twjug/jobs/issues/103",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "java",
-        "junior",
-        "typescript"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -254,6 +269,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -277,7 +298,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1425,
+        "ageDays": 1426,
         "publishedAt": "2022-10-06T04:06:28Z",
         "status": "stale"
       }
@@ -294,7 +315,17 @@
       "repositoryUrl": "https://github.com/devmatogrosso/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "node",
+        "react"
+      ],
+      "sourceTags": [
         "java",
         "node",
         "react"
@@ -317,15 +348,6 @@
       "updatedAt": "2019-06-11T02:24:18Z",
       "url": "https://github.com/devmatogrosso/vagas/issues/12",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "java",
-        "node",
-        "react"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -355,6 +377,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_93a18d82604a9afdc130e4b5",
@@ -377,7 +405,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2638,
+        "ageDays": 2639,
         "publishedAt": "2019-06-10T22:28:59Z",
         "status": "stale"
       }

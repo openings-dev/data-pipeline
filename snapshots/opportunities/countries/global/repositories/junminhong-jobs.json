@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-17T17:32:19.840Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 0
   },
-  "dataHash": "2c49165eb3ee763313b48a5cc68ec0ef0d01db2e6ed1773b6bcb727d25b0bd25",
+  "dataHash": "9779fa14acbbe611f60f4119fd819344170d522236882fbc746cecbcdde9caa2",
   "items": [
     {
       "id": "gh_c48d49960e929a5d32e92190",
@@ -23,7 +23,15 @@
       "repositoryUrl": "https://github.com/junminhong/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "job"
+      ],
+      "sourceTags": [
         "job"
       ],
       "author": {
@@ -42,7 +50,37 @@
       "createdAt": "2026-07-24T07:50:21Z",
       "updatedAt": "2026-07-24T07:50:21Z",
       "url": "https://github.com/junminhong/jobs/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile",
+          "product"
+        ],
+        "technologies": [],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_ff2eef9774c09afe77f80f9d",
@@ -56,7 +94,16 @@
       "repositoryUrl": "https://github.com/junminhong/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "job",
+        "approved"
+      ],
+      "sourceTags": [
         "job",
         "approved"
       ],
@@ -76,7 +123,44 @@
       "createdAt": "2025-10-21T16:00:15Z",
       "updatedAt": "2025-10-21T16:14:10Z",
       "url": "https://github.com/junminhong/jobs/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "go",
+          "kubernetes",
+          "postgres",
+          "python",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T17:46:37.139Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 13
   },
-  "dataHash": "d5ac876525c2253bcaf9d64f6eff6025ade0a0a6b9ab16266ace322dc2b8df82",
+  "dataHash": "970a0547db8c6231fa6d540e72a78c287c4b1cdd0876af7635c510512a81b347",
   "items": [
     {
       "id": "gh_922dd01876946661596e5c8f",
@@ -23,7 +23,19 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale",
+        "remoto",
+        "pj",
+        "sênior",
+        "full time"
+      ],
+      "sourceTags": [
         "stale",
         "remoto",
         "pj",
@@ -46,7 +58,47 @@
       "createdAt": "2024-11-18T15:03:27Z",
       "updatedAt": "2025-09-14T01:59:02Z",
       "url": "https://github.com/rustdevbr/vagas/issues/20",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "javascript",
+          "nodejs",
+          "rust",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_bced62921e05859d404a0b2d",
@@ -60,7 +112,22 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "typescript",
+        "python",
+        "senior",
+        "pleno",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "typescript",
         "python",
@@ -92,7 +159,56 @@
       "createdAt": "2021-08-17T19:47:39Z",
       "updatedAt": "2021-10-22T00:40:11Z",
       "url": "https://github.com/rustdevbr/vagas/issues/12",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "work",
+        "subdivision": "CO",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "work, CO · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "csharp",
+          "django",
+          "docker",
+          "dotnet",
+          "mysql",
+          "postgres",
+          "python",
+          "rust",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d7145a2afd181bffe304a617",
@@ -106,7 +222,18 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "data",
@@ -129,7 +256,44 @@
       "createdAt": "2021-04-01T19:02:14Z",
       "updatedAt": "2021-06-07T00:54:03Z",
       "url": "https://github.com/rustdevbr/vagas/issues/11",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "fullstack"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "java",
+          "kubernetes",
+          "rust"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_73d180116603452b33a18378",
@@ -143,7 +307,16 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "data",
         "design"
       ],
@@ -163,7 +336,41 @@
       "createdAt": "2021-03-23T17:06:03Z",
       "updatedAt": "2021-05-28T00:57:07Z",
       "url": "https://github.com/rustdevbr/vagas/issues/10",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "kubernetes",
+          "postgres",
+          "redis",
+          "rust"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_1c59db3c6c88cdbcf0f98387",
@@ -177,7 +384,17 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "data",
         "design"
@@ -199,7 +416,43 @@
       "createdAt": "2021-01-18T13:16:19Z",
       "updatedAt": "2021-03-25T00:27:34Z",
       "url": "https://github.com/rustdevbr/vagas/issues/9",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "java",
+          "kubernetes",
+          "rust"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2862f26c838f240e1b794305",
@@ -213,7 +466,17 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "data",
         "design"
@@ -235,7 +498,45 @@
       "createdAt": "2021-01-05T20:19:14Z",
       "updatedAt": "2021-05-13T00:38:02Z",
       "url": "https://github.com/rustdevbr/vagas/issues/8",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "csharp",
+          "docker",
+          "go",
+          "java",
+          "kubernetes",
+          "postgres",
+          "rust"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4b322a45b2364a1eee5b6052",
@@ -249,7 +550,17 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "data",
         "design"
@@ -271,7 +582,43 @@
       "createdAt": "2020-11-30T17:00:08Z",
       "updatedAt": "2021-01-05T20:19:40Z",
       "url": "https://github.com/rustdevbr/vagas/issues/7",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "java",
+          "kubernetes",
+          "postgres",
+          "rust"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_da72a60a9441eb7c7c5ae8cc",
@@ -285,7 +632,13 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "PedroGabrielFBarbosa",
         "name": "PedroGabrielFBarbosa",
@@ -302,7 +655,29 @@
       "createdAt": "2020-11-23T22:16:35Z",
       "updatedAt": "2021-01-29T00:25:18Z",
       "url": "https://github.com/rustdevbr/vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "kotlin"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_60468a8176e2c7102a026dd7",
@@ -316,7 +691,18 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "senior",
+        "principal",
+        "data"
+      ],
+      "sourceTags": [
         "java",
         "senior",
         "principal",
@@ -338,7 +724,41 @@
       "createdAt": "2020-11-09T19:42:42Z",
       "updatedAt": "2021-05-13T00:38:01Z",
       "url": "https://github.com/rustdevbr/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Escritório, Porto Alegre, RS",
+        "displayText": "Escritório, Porto Alegre, RS, Brazil",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "rust"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee",
+          "full-time"
+        ],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_3e1ce2b4bd0f5399ed2ac024",
@@ -352,7 +772,13 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "PedroGabrielFBarbosa",
         "name": "PedroGabrielFBarbosa",
@@ -369,7 +795,29 @@
       "createdAt": "2020-11-05T17:29:40Z",
       "updatedAt": "2020-11-06T02:06:41Z",
       "url": "https://github.com/rustdevbr/vagas/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "kotlin"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_6658d884755dc23c31fd0210",
@@ -383,7 +831,15 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "node"
+      ],
+      "sourceTags": [
         "node"
       ],
       "author": {
@@ -402,7 +858,28 @@
       "createdAt": "2020-10-27T20:46:52Z",
       "updatedAt": "2020-10-27T21:32:09Z",
       "url": "https://github.com/rustdevbr/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "leadership"
+        ],
+        "technologies": [],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_7b4fe0b7b4efd5ffe5307022",
@@ -416,7 +893,16 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "pleno",
         "data"
       ],
@@ -436,7 +922,52 @@
       "createdAt": "2020-08-31T12:28:58Z",
       "updatedAt": "2020-11-06T00:18:43Z",
       "url": "https://github.com/rustdevbr/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São José dos Campos",
+        "subdivision": "SP",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "São José dos Campos, SP · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "go",
+          "kotlin",
+          "postgres",
+          "rust"
+        ],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_6704e6c9303f404f9f4c5975",
@@ -450,7 +981,17 @@
       "repositoryUrl": "https://github.com/rustdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "senior",
         "pleno",
         "data"
@@ -478,7 +1019,38 @@
       "createdAt": "2020-08-18T12:48:08Z",
       "updatedAt": "2020-12-31T00:36:01Z",
       "url": "https://github.com/rustdevbr/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "rust"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

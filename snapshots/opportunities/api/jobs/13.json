@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_13a4c16d56f29c6c8e1ad75e": {
       "id": "gh_13a4c16d56f29c6c8e1ad75e",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-12T18:00:37Z",
       "url": "https://github.com/datascience-br/vagas/issues/193",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -81,6 +82,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_13a4c16d56f29c6c8e1ad75e",
@@ -103,7 +110,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-08-12T18:00:37Z",
         "status": "fresh"
       }
@@ -120,7 +127,18 @@
       "repositoryUrl": "https://github.com/seujobtech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "especialista",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "especialista",
         "remoto",
@@ -143,16 +161,6 @@
       "updatedAt": "2024-06-21T21:24:27Z",
       "url": "https://github.com/seujobtech/vagas/issues/415",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "especialista",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -179,6 +187,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {

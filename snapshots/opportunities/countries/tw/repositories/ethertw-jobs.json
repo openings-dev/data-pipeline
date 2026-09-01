@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T00:48:32.630Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Taiwan",
   "countryCode": "TW",
   "region": "Asia",
@@ -9,7 +9,7 @@
     "openIssues": 16,
     "closedIssues": 14
   },
-  "dataHash": "df04e81775398ffb708df553c89b246a064db021c828ac1353f9c0e88ea201a7",
+  "dataHash": "e2c3ba818eee2f25ce92bb0a6113bea7d09229624cb2ce039f5c68b43e0a85bb",
   "items": [
     {
       "id": "gh_a256b233a3320f2d358e3e67",
@@ -23,7 +23,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote"
+      ],
+      "sourceTags": [
         "remote"
       ],
       "author": {
@@ -42,7 +50,31 @@
       "createdAt": "2026-08-24T23:47:49Z",
       "updatedAt": "2026-08-24T23:47:49Z",
       "url": "https://github.com/EtherTW/jobs/issues/76",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_114501e3905a42a1cf54fc37",
@@ -56,7 +88,16 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
         "remote",
         "senior"
       ],
@@ -82,7 +123,34 @@
       "createdAt": "2026-08-24T12:57:28Z",
       "updatedAt": "2026-08-24T12:57:28Z",
       "url": "https://github.com/EtherTW/jobs/issues/75",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "part-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d774a41259f652c1ea370252",
@@ -96,7 +164,13 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "elenpoter394-sys",
         "name": "elenpoter394-sys",
@@ -113,7 +187,24 @@
       "createdAt": "2026-02-03T08:33:10Z",
       "updatedAt": "2026-02-03T08:33:10Z",
       "url": "https://github.com/EtherTW/jobs/issues/74",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_5737029f526e21daadacc576",
@@ -127,7 +218,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "node",
+        "golang",
+        "senior",
+        "staff"
+      ],
+      "sourceTags": [
         "remote",
         "node",
         "golang",
@@ -156,7 +259,35 @@
       "createdAt": "2024-04-16T04:26:20Z",
       "updatedAt": "2024-04-16T04:26:20Z",
       "url": "https://github.com/EtherTW/jobs/issues/72",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "go"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_3280870494bb2d3e88b16788",
@@ -170,7 +301,22 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "node",
+        "python",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "node",
@@ -196,7 +342,52 @@
       "createdAt": "2024-01-30T23:03:30Z",
       "updatedAt": "2024-01-30T23:03:30Z",
       "url": "https://github.com/EtherTW/jobs/issues/71",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "postgres",
+          "python",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_bfdb46470bf3c965502a175e",
@@ -210,7 +401,22 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "typescript",
+        "node",
+        "golang",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "typescript",
         "node",
@@ -236,7 +442,50 @@
       "createdAt": "2024-01-30T23:02:03Z",
       "updatedAt": "2024-01-30T23:02:03Z",
       "url": "https://github.com/EtherTW/jobs/issues/70",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "csharp",
+          "go",
+          "java",
+          "javascript",
+          "nodejs",
+          "postgres",
+          "ruby",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e62f5dcff54592ebd257e117",
@@ -250,7 +499,21 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "typescript",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "typescript",
@@ -275,7 +538,48 @@
       "createdAt": "2024-01-30T23:00:58Z",
       "updatedAt": "2024-01-30T23:00:58Z",
       "url": "https://github.com/EtherTW/jobs/issues/69",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "postgres",
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "internship",
+          "senior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_43eb7bcef557ef7dd797ebbe",
@@ -289,7 +593,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "python",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "python",
         "senior",
@@ -312,7 +628,39 @@
       "createdAt": "2024-01-30T22:59:53Z",
       "updatedAt": "2024-01-30T22:59:53Z",
       "url": "https://github.com/EtherTW/jobs/issues/68",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_aebb302846199bcbd63dd8da",
@@ -326,7 +674,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "java"
+      ],
+      "sourceTags": [
         "java"
       ],
       "author": {
@@ -345,7 +701,26 @@
       "createdAt": "2023-10-27T08:08:59Z",
       "updatedAt": "2023-10-27T08:08:59Z",
       "url": "https://github.com/EtherTW/jobs/issues/67",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_bb95e71939c1d64baec9b52c",
@@ -359,7 +734,16 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "react",
+        "senior"
+      ],
+      "sourceTags": [
         "react",
         "senior"
       ],
@@ -379,7 +763,28 @@
       "createdAt": "2023-08-01T12:27:59Z",
       "updatedAt": "2023-08-01T12:37:05Z",
       "url": "https://github.com/EtherTW/jobs/issues/65",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_e434827693aa157ffa2e7bbc",
@@ -393,7 +798,20 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "node",
+        "java",
+        "senior",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "node",
@@ -417,7 +835,45 @@
       "createdAt": "2023-07-28T10:37:15Z",
       "updatedAt": "2023-07-28T10:37:15Z",
       "url": "https://github.com/EtherTW/jobs/issues/64",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c97eae1531a9385cb4677062",
@@ -431,7 +887,21 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "node",
+        "golang",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "node",
         "golang",
@@ -456,7 +926,47 @@
       "createdAt": "2023-07-28T10:36:41Z",
       "updatedAt": "2023-07-28T10:36:41Z",
       "url": "https://github.com/EtherTW/jobs/issues/63",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "csharp",
+          "go",
+          "java",
+          "javascript",
+          "nodejs",
+          "postgres",
+          "ruby"
+        ],
+        "seniority": [
+          "internship",
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_ffbab03a0e31b6ecd2cefb44",
@@ -470,7 +980,20 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "java",
@@ -494,7 +1017,45 @@
       "createdAt": "2023-07-28T10:36:01Z",
       "updatedAt": "2023-07-28T10:36:01Z",
       "url": "https://github.com/EtherTW/jobs/issues/62",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "postgres",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "internship",
+          "senior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_791800c8db99244781c6cb8e",
@@ -508,7 +1069,22 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "node",
+        "python",
+        "java",
+        "senior",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "node",
@@ -534,7 +1110,50 @@
       "createdAt": "2023-07-28T10:35:13Z",
       "updatedAt": "2023-07-28T10:35:13Z",
       "url": "https://github.com/EtherTW/jobs/issues/61",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "postgres",
+          "python",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_bb3fa49952e4dd6fc100f8ba",
@@ -548,7 +1167,18 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "java",
+        "senior",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "java",
         "senior",
@@ -570,7 +1200,39 @@
       "createdAt": "2023-07-28T10:34:19Z",
       "updatedAt": "2023-07-28T10:34:19Z",
       "url": "https://github.com/EtherTW/jobs/issues/60",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e88bb910439134d49009d793",
@@ -584,7 +1246,17 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "react",
+        "node",
+        "java"
+      ],
+      "sourceTags": [
         "react",
         "node",
         "java"
@@ -605,7 +1277,40 @@
       "createdAt": "2022-12-21T09:33:12Z",
       "updatedAt": "2023-07-28T10:15:09Z",
       "url": "https://github.com/EtherTW/jobs/issues/59",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "postgres",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_134df6567f79334b27fb84e3",
@@ -619,7 +1324,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "node",
+        "java",
+        "senior"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "node",
@@ -642,7 +1359,43 @@
       "createdAt": "2022-10-29T08:22:00Z",
       "updatedAt": "2023-01-03T08:31:37Z",
       "url": "https://github.com/EtherTW/jobs/issues/58",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "postgres",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_e857479608d61d0f10b08910",
@@ -656,7 +1409,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "react",
+        "node",
+        "python",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "react",
         "node",
@@ -679,7 +1444,40 @@
       "createdAt": "2022-10-29T08:20:44Z",
       "updatedAt": "2023-01-03T08:32:38Z",
       "url": "https://github.com/EtherTW/jobs/issues/57",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "nodejs",
+          "postgres",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_1a1113396d290480277ca29a",
@@ -693,7 +1491,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "react",
+        "node",
+        "java",
+        "senior"
+      ],
+      "sourceTags": [
         "remote",
         "react",
         "node",
@@ -716,7 +1526,43 @@
       "createdAt": "2022-06-30T07:31:33Z",
       "updatedAt": "2022-10-29T08:22:30Z",
       "url": "https://github.com/EtherTW/jobs/issues/56",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "postgres",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_52d87d9e2c69edda06a9f0d4",
@@ -730,7 +1576,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "react",
+        "node",
+        "python",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "react",
         "node",
@@ -753,7 +1611,40 @@
       "createdAt": "2022-06-30T07:29:05Z",
       "updatedAt": "2022-10-29T08:22:38Z",
       "url": "https://github.com/EtherTW/jobs/issues/55",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "nodejs",
+          "postgres",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_61eba6a9636295e2c71d9305",
@@ -767,7 +1658,20 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "fullstack",
+        "react",
+        "node",
+        "python",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "fullstack",
         "react",
@@ -791,7 +1695,41 @@
       "createdAt": "2022-03-27T09:44:50Z",
       "updatedAt": "2022-06-30T07:25:29Z",
       "url": "https://github.com/EtherTW/jobs/issues/54",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "django",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "nodejs",
+          "postgres",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_d20e1529b157db5116e79f16",
@@ -805,7 +1743,13 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "orangelady5388",
         "name": "orangelady5388",
@@ -822,7 +1766,24 @@
       "createdAt": "2022-01-25T02:24:28Z",
       "updatedAt": "2022-01-25T02:28:10Z",
       "url": "https://github.com/EtherTW/jobs/issues/53",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_91058700677ed908d86dde70",
@@ -836,7 +1797,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "wontfix"
+      ],
+      "sourceTags": [
         "wontfix"
       ],
       "author": {
@@ -855,7 +1824,35 @@
       "createdAt": "2021-08-18T09:33:25Z",
       "updatedAt": "2022-04-17T06:26:50Z",
       "url": "https://github.com/EtherTW/jobs/issues/52",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "security"
+        ],
+        "technologies": [
+          "azure",
+          "kubernetes"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_8e1687af276883ddf2f5303c",
@@ -869,7 +1866,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "wontfix"
+      ],
+      "sourceTags": [
         "wontfix"
       ],
       "author": {
@@ -888,7 +1893,37 @@
       "createdAt": "2021-03-03T16:22:09Z",
       "updatedAt": "2021-07-21T00:11:30Z",
       "url": "https://github.com/EtherTW/jobs/issues/51",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "javascript",
+          "nodejs",
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_2d22aee8817049a11c763cd0",
@@ -902,7 +1937,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "frontend",
+        "backend",
+        "senior",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "frontend",
         "backend",
@@ -931,7 +1978,36 @@
       "createdAt": "2021-02-22T14:52:26Z",
       "updatedAt": "2021-06-03T00:19:46Z",
       "url": "https://github.com/EtherTW/jobs/issues/50",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_61fdcafc2b6c3905fd70bcb1",
@@ -945,7 +2021,19 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "remote",
+        "frontend",
+        "react",
+        "typescript",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "frontend",
         "react",
@@ -968,7 +2056,35 @@
       "createdAt": "2021-02-22T14:45:09Z",
       "updatedAt": "2021-06-03T00:27:31Z",
       "url": "https://github.com/EtherTW/jobs/issues/49",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_533932d5477ec8d5d51a58d3",
@@ -982,7 +2098,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "wontfix"
+      ],
+      "sourceTags": [
         "wontfix"
       ],
       "author": {
@@ -1007,7 +2131,34 @@
       "createdAt": "2021-01-20T06:09:04Z",
       "updatedAt": "2021-06-11T01:57:01Z",
       "url": "https://github.com/EtherTW/jobs/issues/48",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2effae9bae33d4d510cfaf08",
@@ -1021,7 +2172,13 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "kennethhutw",
         "name": "kennethhutw",
@@ -1038,7 +2195,27 @@
       "createdAt": "2020-06-10T07:05:01Z",
       "updatedAt": "2020-09-06T13:58:29Z",
       "url": "https://github.com/EtherTW/jobs/issues/47",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "azure",
+          "gcp"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_ac52be4675bc22f83799482e",
@@ -1052,7 +2229,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "wontfix"
+      ],
+      "sourceTags": [
         "wontfix"
       ],
       "author": {
@@ -1071,7 +2256,32 @@
       "createdAt": "2019-12-19T04:03:12Z",
       "updatedAt": "2020-04-25T04:42:41Z",
       "url": "https://github.com/EtherTW/jobs/issues/46",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "django",
+          "react"
+        ],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_3e079e6fff9971cc77cc752d",
@@ -1085,7 +2295,15 @@
       "repositoryUrl": "https://github.com/EtherTW/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "wontfix"
+      ],
+      "sourceTags": [
         "wontfix"
       ],
       "author": {
@@ -1104,7 +2322,29 @@
       "createdAt": "2019-05-07T04:22:32Z",
       "updatedAt": "2019-09-11T05:44:09Z",
       "url": "https://github.com/EtherTW/jobs/issues/45",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "mysql",
+          "nodejs",
+          "php"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     }
   ]
 }

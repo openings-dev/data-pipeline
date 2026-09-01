@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_95d6733bc43f96bf3dc20972": {
       "id": "gh_95d6733bc43f96bf3dc20972",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-23T18:00:19Z",
       "url": "https://github.com/datascience-br/vagas/issues/209",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -77,6 +78,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_95d6733bc43f96bf3dc20972",
@@ -99,93 +106,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-08-23T18:00:19Z",
         "status": "fresh"
-      }
-    },
-    "gh_954665aad060b2ba2cbc9299": {
-      "id": "gh_954665aad060b2ba2cbc9299",
-      "sourceId": "lukasz-madon/awesome-remote-job#1118",
-      "title": "Add HomeOffice AI: AI-powered productivity tools and resources for remote work. Guides on using AI ",
-      "description": "## HomeOffice AI\n\n**URL:** https://homeoffice-ai.com\n**Description:** AI-powered productivity tools and resources for remote work. Guides on using AI for workflow automation, writing, and business efficiency.\n**Category:** AI Tools & Productivity\n**Tags:** ai, productivity, remote-work, tools\n\n---\n\nHi! I'd like to suggest adding HomeOffice AI to this list. It's a valuable resource for anyone interested in AI productivity.\n\nPlease let me know if any additional information is needed. Thank you!",
-      "excerpt": "## HomeOffice AI **URL:** https://homeoffice-ai.com **Description:** AI-powered productivity tools and resources for remote work. Guides on using AI for workflow automation, writing, and business efficiency. **Categor...",
-      "issueState": "open",
-      "contentHash": "71d8338b58d9aea70a37b08d300180ef6fa45f14c2428a0750585f6d794961cd",
-      "repository": "lukasz-madon/awesome-remote-job",
-      "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "remote"
-      ],
-      "author": {
-        "id": "allenshi16",
-        "name": "allenshi16",
-        "handle": "allenshi16",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/192084100?v=4"
-      },
-      "community": {
-        "id": "lukasz-madon",
-        "name": "lukasz-madon",
-        "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
-        "repository": "lukasz-madon/awesome-remote-job",
-        "url": "https://github.com/lukasz-madon/awesome-remote-job"
-      },
-      "createdAt": "2026-07-21T22:03:51Z",
-      "updatedAt": "2026-07-21T22:03:51Z",
-      "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1118",
-      "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "remote"
-      ],
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "sources": [
-        {
-          "id": "gh_954665aad060b2ba2cbc9299",
-          "sourceId": "lukasz-madon/awesome-remote-job#1118",
-          "repository": "lukasz-madon/awesome-remote-job",
-          "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
-          "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1118",
-          "createdAt": "2026-07-21T22:03:51Z",
-          "updatedAt": "2026-07-21T22:03:51Z",
-          "community": {
-            "id": "lukasz-madon",
-            "name": "lukasz-madon",
-            "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
-            "repository": "lukasz-madon/awesome-remote-job",
-            "url": "https://github.com/lukasz-madon/awesome-remote-job"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 41,
-        "publishedAt": "2026-07-21T22:03:51Z",
-        "status": "aging"
       }
     },
     "gh_95dfaec90b828a0dcf2308fe": {
@@ -200,7 +123,18 @@
       "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -229,16 +163,6 @@
       "updatedAt": "2026-07-22T09:36:07Z",
       "url": "https://github.com/dotnetdevbr/vagas/issues/1066",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -271,6 +195,12 @@
         "languages": [
           "en"
         ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -310,7 +240,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 43,
+        "ageDays": 44,
         "publishedAt": "2026-07-19T15:25:33Z",
         "status": "aging"
       }
@@ -327,7 +257,16 @@
       "repositoryUrl": "https://github.com/VagasBR/desenvolvedores",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "junior",
+        "pleno"
+      ],
+      "sourceTags": [
         "junior",
         "pleno"
       ],
@@ -348,14 +287,6 @@
       "updatedAt": "2021-03-23T23:52:05Z",
       "url": "https://github.com/VagasBR/desenvolvedores/issues/7",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "junior",
-        "pleno"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -370,6 +301,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -393,7 +330,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1986,
+        "ageDays": 1987,
         "publishedAt": "2021-03-23T23:52:05Z",
         "status": "stale"
       }

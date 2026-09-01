@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 1
   },
-  "dataHash": "bcb2d47b49c837aa2cc85cf24609829103bb8a6d41b64f5318012c202a88248d",
+  "dataHash": "66b286819c2d6f4658ff8616fa4c0f60631efd27769eed326eb0e4ac004ac162",
   "items": [
     {
       "id": "gh_46ebbddf6e1a9b3d7e2fc547",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/MacaeTech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "typescript",
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "typescript",
         "java",
         "data"
@@ -44,7 +54,32 @@
       "createdAt": "2019-11-19T19:02:45Z",
       "updatedAt": "2019-11-20T00:06:07Z",
       "url": "https://github.com/MacaeTech/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "angular",
+          "csharp",
+          "dotnet",
+          "java",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_542a7ad96692ce43e954334e",
@@ -58,7 +93,20 @@
       "repositoryUrl": "https://github.com/MacaeTech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "fullstack",
+        "node",
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "fullstack",
@@ -82,7 +130,38 @@
       "createdAt": "2019-11-12T21:57:18Z",
       "updatedAt": "2019-11-12T21:57:18Z",
       "url": "https://github.com/MacaeTech/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "azure",
+          "java",
+          "javascript",
+          "nodejs"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_afb05307496652f340faa8c5",
@@ -96,7 +175,15 @@
       "repositoryUrl": "https://github.com/MacaeTech/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "desenvolvedor"
+      ],
+      "sourceTags": [
         "desenvolvedor"
       ],
       "author": {
@@ -115,7 +202,32 @@
       "createdAt": "2019-09-29T01:31:10Z",
       "updatedAt": "2019-10-29T13:06:53Z",
       "url": "https://github.com/MacaeTech/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet",
+          "java",
+          "javascript"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     }
   ]
 }

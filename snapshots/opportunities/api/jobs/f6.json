@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_f67d9cb98c7df392629587d1": {
       "id": "gh_f67d9cb98c7df392629587d1",
@@ -13,7 +13,22 @@
       "repositoryUrl": "https://github.com/backend-pt/vagas",
       "region": "Europe",
       "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
       "tags": [
+        "backend",
+        "clt",
+        "docker",
+        "hibernate",
+        "pj",
+        "remoto",
+        "rest",
+        "sênior"
+      ],
+      "sourceTags": [
         "backend",
         "clt",
         "docker",
@@ -36,6 +51,7 @@
         "repository": "backend-pt/vagas",
         "url": "https://github.com/backend-pt/vagas"
       },
+      "companyName": "Sylision",
       "salary": {
         "currency": "BRL",
         "min": 12000,
@@ -46,20 +62,6 @@
       "updatedAt": "2026-08-21T15:00:19Z",
       "url": "https://github.com/backend-pt/vagas/issues/139",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Portugal",
-        "region": "Europe"
-      },
-      "sourceTags": [
-        "backend",
-        "clt",
-        "docker",
-        "hibernate",
-        "pj",
-        "remoto",
-        "rest",
-        "sênior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -92,7 +94,12 @@
           "en"
         ]
       },
-      "companyName": "Sylision",
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_f67d9cb98c7df392629587d1",
@@ -131,7 +138,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 46,
+        "ageDays": 47,
         "publishedAt": "2026-07-16T13:13:21Z",
         "status": "aging"
       }
@@ -148,7 +155,21 @@
       "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "data",
+        "design",
+        "frontend",
+        "hybrid",
+        "java",
+        "react",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "design",
         "frontend",
@@ -175,19 +196,6 @@
       "updatedAt": "2022-07-04T18:16:57Z",
       "url": "https://github.com/remote-job-boards/software-engineering/issues/7503",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "data",
-        "design",
-        "frontend",
-        "hybrid",
-        "java",
-        "react",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -213,6 +221,12 @@
           "hybrid"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -253,7 +267,16 @@
       "repositoryUrl": "https://github.com/remote-job-boards/software-engineering",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "lang-javascript",
+        "remoteok.io"
+      ],
+      "sourceTags": [
         "lang-javascript",
         "remoteok.io"
       ],
@@ -280,14 +303,6 @@
       "updatedAt": "2021-11-03T01:09:51Z",
       "url": "https://github.com/remote-job-boards/software-engineering/issues/7479",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "lang-javascript",
-        "remoteok.io"
-      ],
       "jobLocation": {
         "country": "Global",
         "countryCode": "GLOBAL",
@@ -320,6 +335,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
       "sources": [
         {
           "id": "gh_f6954729fde3e12c4d973d08",
@@ -342,7 +363,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1765,
+        "ageDays": 1766,
         "publishedAt": "2021-10-31T01:12:20Z",
         "status": "stale"
       }

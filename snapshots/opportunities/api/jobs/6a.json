@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_6a1098d504e460b826b0e253": {
       "id": "gh_6a1098d504e460b826b0e253",
@@ -13,7 +13,15 @@
       "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
         "new_role"
       ],
       "author": {
@@ -33,13 +41,6 @@
       "updatedAt": "2026-08-07T22:33:17Z",
       "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2953",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "United States",
-        "region": "North America"
-      },
-      "sourceTags": [
-        "new_role"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -50,6 +51,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -73,9 +80,106 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 23,
+        "ageDays": 24,
         "publishedAt": "2026-08-07T22:33:17Z",
         "status": "fresh"
+      }
+    },
+    "gh_6acd596ff1b40eca91793a33": {
+      "id": "gh_6acd596ff1b40eca91793a33",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#65",
+      "title": "[深圳]DeXFun 全栈工程师 薪水 $3000 - $10000 / month",
+      "description": "## 公司/团队介绍\nhttps://www.dexfun.io/\n\n## 薪资福利待遇\n$3000 - $10000 / month\n\n## 地点\n深圳\n\n## 工作性质\n\n全职坐班\n\n## 🌵  **岗位要求：**\n\n1️⃣  本科及以上学历，计算机科学、软件工程或相关专业。\n\n2️⃣  精通 #Typescript 及其性能优化。\n\n3️⃣  熟练掌握主流前端框架（如 #ReactJS）。\n\n4️⃣  精通后端开发语言（如 #Node.js）。\n\n5️⃣  具备 Web3 项目开发经验，熟悉 #web3.js、#ethers.js 等库。\n\n6️⃣  具备数据库设计与管理经验，熟悉 #Postgres 数据库，并有 GitHub 项目管理经验。\n\n7️⃣  中英文双语能力，能够与国际团队无障碍协作。\n\n## 如何申请\nEmail: jobs@dexfun.io\nTelegram: @Jobs_Fun",
+      "excerpt": "## 公司/团队介绍 https://www.dexfun.io/ ## 薪资福利待遇 $3000 - $10000 / month ## 地点 深圳 ## 工作性质 全职坐班 ## 🌵 **岗位要求：** 1️⃣ 本科及以上学历，计算机科学、软件工程或相关专业。 2️⃣ 精通 #Typescript 及其性能优化。 3️⃣ 熟练掌握主流前端框架（如 #ReactJS）。 4️⃣ 精通后端开发语言（如 #Node.js）。 5️...",
+      "issueState": "open",
+      "contentHash": "724dfe8e44876c3d5a94dbb64270e48b9aacc1fe56bf60bf5af28210450fae39",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [
+        "node",
+        "react",
+        "typescript"
+      ],
+      "sourceTags": [
+        "node",
+        "react",
+        "typescript"
+      ],
+      "author": {
+        "id": "TinTinLand",
+        "name": "TinTinLand",
+        "handle": "TinTinLand",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101783642?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 3000,
+        "max": 10000,
+        "period": "month"
+      },
+      "createdAt": "2024-09-06T11:08:40Z",
+      "updatedAt": "2024-09-06T11:08:41Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/65",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_6acd596ff1b40eca91793a33",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#65",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/65",
+          "createdAt": "2024-09-06T11:08:40Z",
+          "updatedAt": "2024-09-06T11:08:41Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 725,
+        "publishedAt": "2024-09-06T11:08:40Z",
+        "status": "stale"
       }
     },
     "gh_6a021324ee760bd7ed189675": {
@@ -90,7 +194,17 @@
       "repositoryUrl": "https://github.com/PHPcomRapadura/Vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno",
+        "react"
+      ],
+      "sourceTags": [
         "java",
         "pleno",
         "react"
@@ -112,15 +226,6 @@
       "updatedAt": "2024-06-18T20:21:03Z",
       "url": "https://github.com/PHPcomRapadura/Vagas/issues/93",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "java",
-        "pleno",
-        "react"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -150,6 +255,12 @@
           "on-site"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
       },
       "sources": [
         {
@@ -190,7 +301,19 @@
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "devops",
+        "java",
+        "principal",
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
         "devops",
         "java",
         "principal",
@@ -214,17 +337,6 @@
       "updatedAt": "2024-04-24T18:21:00Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/703",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [
-        "devops",
-        "java",
-        "principal",
-        "python",
-        "remote"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "global",
@@ -255,6 +367,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
       },
       "sources": [
         {

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_3cf698ed43b95b724d93215b": {
       "id": "gh_3cf698ed43b95b724d93215b",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/awesome-jobs/jobs",
       "region": "Asia",
       "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
       "tags": [
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "senior"
       ],
@@ -34,14 +43,6 @@
       "updatedAt": "2026-08-24T03:46:07Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5031",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -56,6 +57,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -95,7 +102,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-08-24T03:46:07Z",
         "status": "fresh"
       }
@@ -112,7 +119,13 @@
       "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "HoopoeIntroduce",
         "name": "HoopoeIntroduce",
@@ -130,11 +143,6 @@
       "updatedAt": "2026-08-25T06:33:29Z",
       "url": "https://github.com/rebase-network/who-is-hiring/issues/1239",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Global",
-        "region": "Global"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -145,6 +153,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -185,7 +199,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "pleno",
@@ -214,16 +239,6 @@
       "updatedAt": "2026-08-08T21:00:41Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1275",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -246,6 +261,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -286,7 +307,18 @@
       "repositoryUrl": "https://github.com/nodejsdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "pleno",
@@ -315,16 +347,6 @@
       "updatedAt": "2026-08-09T19:37:13Z",
       "url": "https://github.com/nodejsdevbr/vagas/issues/75",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -360,6 +382,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_3ccfeb0841f044587cf7d01f",
@@ -382,7 +410,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-08-02T22:39:38Z",
         "status": "fresh"
       }
@@ -399,7 +427,15 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "principal"
+      ],
+      "sourceTags": [
         "principal"
       ],
       "author": {
@@ -419,13 +455,6 @@
       "updatedAt": "2024-08-08T13:24:30Z",
       "url": "https://github.com/nerdzao/vagas/issues/175",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "principal"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -443,6 +472,12 @@
           "on-site"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -466,7 +501,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 753,
+        "ageDays": 754,
         "publishedAt": "2024-08-08T13:24:30Z",
         "status": "stale"
       }
@@ -483,7 +518,20 @@
       "repositoryUrl": "https://github.com/brasil-php/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "data",
+        "fullstack",
+        "remoto",
+        "senior",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "data",
         "fullstack",
@@ -508,18 +556,6 @@
       "updatedAt": "2023-07-27T18:23:16Z",
       "url": "https://github.com/brasil-php/vagas/issues/188",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "data",
-        "fullstack",
-        "remoto",
-        "senior",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -546,6 +582,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
@@ -585,7 +627,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1174,
+        "ageDays": 1175,
         "publishedAt": "2023-06-14T11:36:44Z",
         "status": "stale"
       }
@@ -602,7 +644,15 @@
       "repositoryUrl": "https://github.com/twjug/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "java"
+      ],
+      "sourceTags": [
         "java"
       ],
       "author": {
@@ -622,13 +672,6 @@
       "updatedAt": "2022-03-29T04:27:39Z",
       "url": "https://github.com/twjug/jobs/issues/88",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "java"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -643,6 +686,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -666,7 +715,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1616,
+        "ageDays": 1617,
         "publishedAt": "2022-03-29T02:35:36Z",
         "status": "stale"
       }

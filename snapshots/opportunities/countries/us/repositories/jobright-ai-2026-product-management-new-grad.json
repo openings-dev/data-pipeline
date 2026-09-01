@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-08T20:04:50.486Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
@@ -9,7 +9,7 @@
     "openIssues": 1,
     "closedIssues": 0
   },
-  "dataHash": "93d9af0b69430603352e18b11b4d7b5b43fcd3eee9d31a0221e925125d00ba97",
+  "dataHash": "60e2899b6ada1ab257507b51b5b9ab87304e1b6af0e8127ff6db08dd5115b2d7",
   "items": [
     {
       "id": "gh_d2c11c8fc2357a8b0eef0f15",
@@ -23,7 +23,17 @@
       "repositoryUrl": "https://github.com/jobright-ai/2026-Product-Management-New-Grad",
       "region": "North America",
       "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
       "tags": [
+        "remote",
+        "junior",
+        "data"
+      ],
+      "sourceTags": [
         "remote",
         "junior",
         "data"
@@ -44,7 +54,33 @@
       "createdAt": "2026-06-08T18:33:33Z",
       "updatedAt": "2026-06-08T18:33:33Z",
       "url": "https://github.com/jobright-ai/2026-Product-Management-New-Grad/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "product"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     }
   ]
 }

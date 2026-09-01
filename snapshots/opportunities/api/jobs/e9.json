@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_e9721afbc9b4182c76aa329b": {
       "id": "gh_e9721afbc9b4182c76aa329b",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/brasil-php/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "pj",
         "pleno",
         "remoto"
@@ -35,15 +45,6 @@
       "updatedAt": "2023-11-19T01:58:43Z",
       "url": "https://github.com/brasil-php/vagas/issues/189",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -72,6 +73,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_e9721afbc9b4182c76aa329b",
@@ -94,7 +101,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1064,
+        "ageDays": 1065,
         "publishedAt": "2023-10-02T13:59:05Z",
         "status": "stale"
       }
@@ -111,7 +118,17 @@
       "repositoryUrl": "https://github.com/taiwan-kotlin-user-group/jobs",
       "region": "Asia",
       "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
       "tags": [
+        "backend",
+        "senior",
+        "求才"
+      ],
+      "sourceTags": [
         "backend",
         "senior",
         "求才"
@@ -133,15 +150,6 @@
       "updatedAt": "2021-11-15T04:19:59Z",
       "url": "https://github.com/taiwan-kotlin-user-group/jobs/issues/2",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "region": "Asia"
-      },
-      "sourceTags": [
-        "backend",
-        "senior",
-        "求才"
-      ],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -161,6 +169,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -184,7 +198,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1750,
+        "ageDays": 1751,
         "publishedAt": "2021-11-15T03:03:15Z",
         "status": "stale"
       }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_4b477283ff274db145cfb7e6": {
       "id": "gh_4b477283ff274db145cfb7e6",
@@ -13,7 +13,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "remoto",
@@ -42,16 +53,6 @@
       "updatedAt": "2026-08-04T12:45:46Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1270",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
       "jobLocation": {
         "workModel": "hybrid",
         "remoteScope": "unspecified",
@@ -76,6 +77,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_4b477283ff274db145cfb7e6",
@@ -98,7 +105,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 27,
+        "ageDays": 28,
         "publishedAt": "2026-08-04T12:45:15Z",
         "status": "fresh"
       }

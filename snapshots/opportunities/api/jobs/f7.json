@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_f7f5e01513b6b24188a7de73": {
       "id": "gh_f7f5e01513b6b24188a7de73",
@@ -13,7 +13,16 @@
       "repositoryUrl": "https://github.com/androiddevbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "senior"
       ],
@@ -41,14 +50,6 @@
       "updatedAt": "2026-07-31T15:01:28Z",
       "url": "https://github.com/androiddevbr/vagas/issues/2242",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "senior"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -81,6 +82,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_f7f5e01513b6b24188a7de73",
@@ -103,7 +110,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 31,
+        "ageDays": 32,
         "publishedAt": "2026-07-31T15:01:28Z",
         "status": "aging"
       }
@@ -120,7 +127,19 @@
       "repositoryUrl": "https://github.com/web3br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "java",
+        "pleno",
+        "python",
+        "senior"
+      ],
+      "sourceTags": [
         "data",
         "java",
         "pleno",
@@ -144,17 +163,6 @@
       "updatedAt": "2023-11-07T16:39:32Z",
       "url": "https://github.com/web3br/vagas/issues/5",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "java",
-        "pleno",
-        "python",
-        "senior"
-      ],
       "jobLocation": {
         "workModel": "on-site",
         "remoteScope": "unspecified",
@@ -185,6 +193,12 @@
           "en"
         ]
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_f732212830b495158f8fc1d6",
@@ -207,7 +221,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1028,
+        "ageDays": 1029,
         "publishedAt": "2023-11-07T16:39:32Z",
         "status": "stale"
       }

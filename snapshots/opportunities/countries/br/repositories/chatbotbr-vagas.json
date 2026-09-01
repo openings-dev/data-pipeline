@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-11T02:51:02.005Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 1,
     "closedIssues": 1
   },
-  "dataHash": "ca82f0b0e559de30559b095a42ef12a407cac0c12635fd8ea1e8907ef11eca5c",
+  "dataHash": "c7e230cf061ecaa10f3074258545e4ac77235df9f8aabf6332ce202df52d4616",
   "items": [
     {
       "id": "gh_657777cebd8275b7069bd8dc",
@@ -23,7 +23,16 @@
       "repositoryUrl": "https://github.com/chatbotbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "pleno",
         "data"
       ],
@@ -43,7 +52,36 @@
       "createdAt": "2024-05-27T14:10:41Z",
       "updatedAt": "2024-05-27T14:10:41Z",
       "url": "https://github.com/chatbotbr/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_3783ec1ea397cfd217467e8f",
@@ -57,7 +95,16 @@
       "repositoryUrl": "https://github.com/chatbotbr/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "senior",
         "data"
       ],
@@ -78,7 +125,38 @@
       "createdAt": "2022-06-07T10:18:59Z",
       "updatedAt": "2022-07-15T13:54:01Z",
       "url": "https://github.com/chatbotbr/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T18:05:06.732Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 28,
     "closedIssues": 1
   },
-  "dataHash": "a412c76e46a9e108bccccce0a847f517b5483b535429ed3b3ecbacf082d41c4c",
+  "dataHash": "55c22068c0509f149b9e28e5606e4b2825ac9e8a1c827cd4fcb103c2822529f4",
   "items": [
     {
       "id": "gh_01af249400b5297948fd5955",
@@ -23,7 +23,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "junior",
+        "pleno",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "senior",
         "junior",
         "pleno",
@@ -47,7 +59,40 @@
       "createdAt": "2026-07-24T14:47:43Z",
       "updatedAt": "2026-07-24T14:47:43Z",
       "url": "https://github.com/nerdzao/vagas/issues/196",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_27c2250541f3aca4b4982d3d",
@@ -61,7 +106,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "python",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "python",
         "design"
@@ -83,7 +138,47 @@
       "createdAt": "2026-07-15T14:22:41Z",
       "updatedAt": "2026-07-15T14:22:41Z",
       "url": "https://github.com/nerdzao/vagas/issues/195",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_b58d8e19c5708f146ef494b5",
@@ -97,7 +192,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "node",
+        "python",
+        "devops"
+      ],
+      "sourceTags": [
         "node",
         "python",
         "devops"
@@ -118,7 +223,41 @@
       "createdAt": "2026-06-30T12:50:47Z",
       "updatedAt": "2026-06-30T12:50:47Z",
       "url": "https://github.com/nerdzao/vagas/issues/194",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "go",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_0e98dad659c3df11a1cb1cc8",
@@ -132,7 +271,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "node",
+        "python",
+        "java",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "node",
         "python",
@@ -155,7 +306,46 @@
       "createdAt": "2026-06-08T16:58:12Z",
       "updatedAt": "2026-06-08T16:58:12Z",
       "url": "https://github.com/nerdzao/vagas/issues/193",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "go",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_2c6305b33aff78c3ef09ce99",
@@ -169,7 +359,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "principal",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "principal",
         "devops",
@@ -193,7 +395,47 @@
       "createdAt": "2026-05-29T18:25:37Z",
       "updatedAt": "2026-05-29T18:25:37Z",
       "url": "https://github.com/nerdzao/vagas/issues/192",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "kubernetes",
+          "spring"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_1f61de8de06b483a9a82d5f4",
@@ -207,7 +449,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "devops",
@@ -230,7 +484,44 @@
       "createdAt": "2026-05-26T18:22:15Z",
       "updatedAt": "2026-05-26T18:22:15Z",
       "url": "https://github.com/nerdzao/vagas/issues/191",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "java",
+          "mongodb"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_04e16e2c007892d76818f4d4",
@@ -244,7 +535,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "pleno",
         "devops",
         "data",
@@ -266,7 +568,36 @@
       "createdAt": "2026-05-15T15:16:11Z",
       "updatedAt": "2026-05-15T15:16:11Z",
       "url": "https://github.com/nerdzao/vagas/issues/190",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack",
+          "product",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_9c27ccbbb027a757720e4a38",
@@ -280,7 +611,20 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "react",
+        "node",
+        "devops",
+        "design"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "react",
@@ -305,7 +649,47 @@
       "createdAt": "2026-02-06T18:44:05Z",
       "updatedAt": "2026-02-06T18:44:05Z",
       "url": "https://github.com/nerdzao/vagas/issues/189",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Híbrido-São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Híbrido-São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "kubernetes",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_337dcc0369d8226aab4c836f",
@@ -319,7 +703,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "python",
+        "design"
+      ],
+      "sourceTags": [
         "backend",
         "python",
         "design"
@@ -341,7 +735,48 @@
       "createdAt": "2026-02-06T18:42:28Z",
       "updatedAt": "2026-02-06T18:42:28Z",
       "url": "https://github.com/nerdzao/vagas/issues/188",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Híbrido-São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Híbrido-São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "gcp",
+          "kubernetes",
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_549fb47e62e78432e6e7af86",
@@ -355,7 +790,22 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "frontend",
+        "backend",
+        "fullstack",
+        "react",
+        "node",
+        "java",
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "frontend",
         "backend",
         "fullstack",
@@ -382,7 +832,50 @@
       "createdAt": "2026-02-06T18:40:41Z",
       "updatedAt": "2026-02-06T18:40:41Z",
       "url": "https://github.com/nerdzao/vagas/issues/187",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Híbrido-São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Híbrido-São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "gcp",
+          "java",
+          "javascript",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_c1e8308e6f56f9f9fe5e212e",
@@ -396,7 +889,15 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "python"
+      ],
+      "sourceTags": [
         "python"
       ],
       "author": {
@@ -415,7 +916,34 @@
       "createdAt": "2025-06-20T20:16:55Z",
       "updatedAt": "2025-06-20T20:16:55Z",
       "url": "https://github.com/nerdzao/vagas/issues/186",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_8fc3381391202b6c84d44339",
@@ -429,7 +957,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno",
+        "devops",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "pleno",
         "devops",
@@ -452,7 +991,43 @@
       "createdAt": "2025-05-21T17:11:48Z",
       "updatedAt": "2025-05-21T17:11:48Z",
       "url": "https://github.com/nerdzao/vagas/issues/185",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "aws",
+          "docker",
+          "gcp",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f811ea11eb896201b2a8dc82",
@@ -466,7 +1041,15 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "pleno"
+      ],
+      "sourceTags": [
         "pleno"
       ],
       "author": {
@@ -485,7 +1068,32 @@
       "createdAt": "2025-02-14T16:06:42Z",
       "updatedAt": "2025-02-14T16:07:05Z",
       "url": "https://github.com/nerdzao/vagas/issues/184",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_4d52140b4b268f7734475611",
@@ -499,7 +1107,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "java",
+        "pleno",
+        "devops",
+        "design"
+      ],
+      "sourceTags": [
         "java",
         "pleno",
         "devops",
@@ -522,7 +1141,43 @@
       "createdAt": "2024-11-14T20:45:52Z",
       "updatedAt": "2024-11-14T20:47:35Z",
       "url": "https://github.com/nerdzao/vagas/issues/183",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "aws",
+          "docker",
+          "gcp",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d2a829c05745267fa3c81247",
@@ -536,7 +1191,13 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "ilarionaaa",
         "name": "ilarionaaa",
@@ -553,7 +1214,26 @@
       "createdAt": "2024-09-11T21:08:27Z",
       "updatedAt": "2024-09-11T21:08:27Z",
       "url": "https://github.com/nerdzao/vagas/issues/182",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_2a9bf0e8205ffa8fe0589c8f",
@@ -567,7 +1247,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "react",
+        "pleno"
+      ],
+      "sourceTags": [
         "fullstack",
         "react",
         "pleno"
@@ -589,7 +1279,42 @@
       "createdAt": "2024-08-23T15:29:28Z",
       "updatedAt": "2024-08-23T15:29:28Z",
       "url": "https://github.com/nerdzao/vagas/issues/181",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "laravel",
+          "php",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_1401ffa8e9444186cd443217",
@@ -603,7 +1328,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "fullstack",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "fullstack",
         "java"
@@ -624,7 +1359,40 @@
       "createdAt": "2024-08-20T20:00:55Z",
       "updatedAt": "2024-08-20T20:00:55Z",
       "url": "https://github.com/nerdzao/vagas/issues/180",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "gcp",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_dc6008c873da512db06396dd",
@@ -638,7 +1406,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "fullstack",
+        "java"
+      ],
+      "sourceTags": [
         "backend",
         "fullstack",
         "java"
@@ -659,7 +1437,40 @@
       "createdAt": "2024-08-20T19:33:37Z",
       "updatedAt": "2024-08-20T19:35:25Z",
       "url": "https://github.com/nerdzao/vagas/issues/179",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "gcp",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_d9f863df40d8382e5b389168",
@@ -673,7 +1484,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "typescript",
+        "java",
+        "senior",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "typescript",
         "java",
         "senior",
@@ -696,7 +1519,36 @@
       "createdAt": "2024-08-09T16:56:20Z",
       "updatedAt": "2024-08-09T16:56:20Z",
       "url": "https://github.com/nerdzao/vagas/issues/178",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "dotnet",
+          "java",
+          "javascript",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_d4e6810f754311088e0d8d2e",
@@ -710,7 +1562,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "senior",
+        "devops",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "senior",
         "devops",
         "data",
@@ -732,7 +1595,37 @@
       "createdAt": "2024-08-09T16:53:56Z",
       "updatedAt": "2024-08-09T16:53:56Z",
       "url": "https://github.com/nerdzao/vagas/issues/177",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "mobile"
+        ],
+        "technologies": [
+          "flutter"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_06e5133410ad03bfe789378a",
@@ -746,7 +1639,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "typescript",
+        "java",
+        "senior",
+        "devops",
+        "data"
+      ],
+      "sourceTags": [
         "typescript",
         "java",
         "senior",
@@ -769,7 +1674,41 @@
       "createdAt": "2024-08-09T16:52:49Z",
       "updatedAt": "2024-08-09T16:53:16Z",
       "url": "https://github.com/nerdzao/vagas/issues/176",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "dotnet",
+          "java",
+          "javascript",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_3c621670361db2aab9e21860",
@@ -783,7 +1722,15 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "principal"
+      ],
+      "sourceTags": [
         "principal"
       ],
       "author": {
@@ -802,7 +1749,31 @@
       "createdAt": "2024-08-08T13:24:30Z",
       "updatedAt": "2024-08-08T13:24:30Z",
       "url": "https://github.com/nerdzao/vagas/issues/175",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "principal"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_980ae86b4d1ca40f184d01f0",
@@ -816,7 +1787,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "pleno",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "pleno",
@@ -839,7 +1821,35 @@
       "createdAt": "2024-07-31T19:29:05Z",
       "updatedAt": "2024-07-31T19:29:05Z",
       "url": "https://github.com/nerdzao/vagas/issues/174",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_48e2b59c4735a9cb4bebedec",
@@ -853,7 +1863,19 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "react",
+        "node",
+        "java",
+        "devops"
+      ],
+      "sourceTags": [
         "fullstack",
         "react",
         "node",
@@ -877,7 +1899,51 @@
       "createdAt": "2024-07-29T18:16:03Z",
       "updatedAt": "2024-07-29T18:30:42Z",
       "url": "https://github.com/nerdzao/vagas/issues/173",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "azure",
+          "csharp",
+          "dotnet",
+          "java",
+          "javascript",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_1a9d2f150c6cdcf6054606a9",
@@ -891,7 +1957,20 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "react",
+        "typescript",
+        "java",
+        "pleno",
+        "design"
+      ],
+      "sourceTags": [
         "fullstack",
         "react",
         "typescript",
@@ -915,7 +1994,46 @@
       "createdAt": "2024-07-25T15:12:10Z",
       "updatedAt": "2024-07-25T15:13:25Z",
       "url": "https://github.com/nerdzao/vagas/issues/172",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "csharp",
+          "dotnet",
+          "java",
+          "javascript",
+          "react",
+          "typescript",
+          "vue"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2b59bd0d93d8846a9154a2b1",
@@ -929,7 +2047,22 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "react",
+        "typescript",
+        "node",
+        "python",
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "fullstack",
         "react",
         "typescript",
@@ -955,7 +2088,50 @@
       "createdAt": "2024-06-21T01:00:04Z",
       "updatedAt": "2024-06-21T01:00:04Z",
       "url": "https://github.com/nerdzao/vagas/issues/171",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "gcp",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nextjs",
+          "nodejs",
+          "postgres",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f3accc2c43f39b7ff9e468c6",
@@ -969,7 +2145,18 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "node",
+        "java",
+        "senior",
+        "data"
+      ],
+      "sourceTags": [
         "node",
         "java",
         "senior",
@@ -991,7 +2178,40 @@
       "createdAt": "2024-06-21T00:57:32Z",
       "updatedAt": "2024-06-21T00:57:32Z",
       "url": "https://github.com/nerdzao/vagas/issues/170",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "support"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "nodejs",
+          "ruby"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_5bfec8ac94b5d3b02f2afe06",
@@ -1005,7 +2225,21 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "fullstack",
+        "typescript",
+        "node",
+        "python",
+        "java",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "fullstack",
         "typescript",
         "node",
@@ -1030,7 +2264,36 @@
       "createdAt": "2024-06-18T19:49:28Z",
       "updatedAt": "2024-06-18T19:49:28Z",
       "url": "https://github.com/nerdzao/vagas/issues/169",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "java",
+          "mysql",
+          "nodejs",
+          "python",
+          "spring",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     },
     {
       "id": "gh_e5397047ec1a16d0f5ca11e6",
@@ -1044,7 +2307,17 @@
       "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "java",
+        "data"
+      ],
+      "sourceTags": [
         "backend",
         "java",
         "data"
@@ -1065,7 +2338,31 @@
       "createdAt": "2024-06-18T19:49:09Z",
       "updatedAt": "2024-06-18T19:49:09Z",
       "url": "https://github.com/nerdzao/vagas/issues/168",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "mongodb",
+          "mysql",
+          "spring"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
     }
   ]
 }

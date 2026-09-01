@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T21:14:37.806Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
@@ -9,7 +9,7 @@
     "openIssues": 2,
     "closedIssues": 0
   },
-  "dataHash": "d4a17a7bc42690d67dea353357f2e9e4d1940c9b81ef1a961f3108a1d354d169",
+  "dataHash": "cff3e66238c92dd8b63563fbf2243f91b684d1f9ec4d9fd10c2411b3bc8d3f71",
   "items": [
     {
       "id": "gh_0204db9cde8a5488e44c6e8b",
@@ -23,7 +23,16 @@
       "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "remote",
+        "node"
+      ],
+      "sourceTags": [
         "remote",
         "node"
       ],
@@ -43,7 +52,29 @@
       "createdAt": "2026-02-21T13:17:54Z",
       "updatedAt": "2026-08-23T18:19:50Z",
       "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_8ca6cfcc5f869a8b9471b21b",
@@ -57,7 +88,15 @@
       "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
       "region": "Global",
       "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
       "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
         "enhancement"
       ],
       "author": {
@@ -76,7 +115,29 @@
       "createdAt": "2026-02-15T18:03:51Z",
       "updatedAt": "2026-08-23T18:19:28Z",
       "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
     }
   ]
 }

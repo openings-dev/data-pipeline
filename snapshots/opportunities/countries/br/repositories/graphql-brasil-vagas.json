@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-29T13:29:01.811Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,7 +9,7 @@
     "openIssues": 0,
     "closedIssues": 5
   },
-  "dataHash": "147ece29afa76ae0a5c1ef5dc8b2cfdf72357ccd4151dd416420f453c2518d36",
+  "dataHash": "18ac9abdd12ed297a6c565d90978f4616605cf1833032764acd14a03b1389e20",
   "items": [
     {
       "id": "gh_a4be664aa7baf6e5a6f536dd",
@@ -23,7 +23,19 @@
       "repositoryUrl": "https://github.com/graphql-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "remote",
+        "senior",
+        "staff",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
         "remote",
         "senior",
         "staff",
@@ -46,7 +58,39 @@
       "createdAt": "2023-08-22T13:36:33Z",
       "updatedAt": "2023-09-12T16:52:05Z",
       "url": "https://github.com/graphql-brasil/vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "mid",
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_2cb13de8b944cf0232c25dcb",
@@ -60,7 +104,15 @@
       "repositoryUrl": "https://github.com/graphql-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "stale"
+      ],
+      "sourceTags": [
         "stale"
       ],
       "author": {
@@ -79,7 +131,47 @@
       "createdAt": "2021-09-20T15:44:40Z",
       "updatedAt": "2021-11-27T12:59:14Z",
       "url": "https://github.com/graphql-brasil/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe",
+        "city": "ou Escritório -  (Viseu ou Aveiro)",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "ou Escritório -  (Viseu ou Aveiro), Portugal · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "django",
+          "python",
+          "vue"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_f56a450d6689b9f2cbd0216d",
@@ -93,7 +185,19 @@
       "repositoryUrl": "https://github.com/graphql-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "alocação/remoto",
+        "experiência/senior",
+        "regime/clt",
+        "regime/pj",
+        "stale"
+      ],
+      "sourceTags": [
         "alocação/remoto",
         "experiência/senior",
         "regime/clt",
@@ -117,7 +221,44 @@
       "createdAt": "2019-09-23T21:41:12Z",
       "updatedAt": "2020-03-22T04:07:42Z",
       "url": "https://github.com/graphql-brasil/vagas/issues/3",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "docker",
+          "javascript",
+          "kubernetes",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
     },
     {
       "id": "gh_38aac5aa75ad3262957c7643",
@@ -131,7 +272,18 @@
       "repositoryUrl": "https://github.com/graphql-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "alocação/presencial",
+        "experiência/pleno",
+        "regime/clt",
+        "stale"
+      ],
+      "sourceTags": [
         "alocação/presencial",
         "experiência/pleno",
         "regime/clt",
@@ -154,7 +306,39 @@
       "createdAt": "2019-08-22T13:31:52Z",
       "updatedAt": "2020-05-21T04:09:37Z",
       "url": "https://github.com/graphql-brasil/vagas/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "javascript",
+          "nodejs",
+          "react",
+          "react-native",
+          "vue"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     },
     {
       "id": "gh_deca84b37c81e58e89dd0bd1",
@@ -168,7 +352,19 @@
       "repositoryUrl": "https://github.com/graphql-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "alocação/presencial",
+        "experiência/pleno",
+        "regime/clt",
+        "regime/pj",
+        "stale"
+      ],
+      "sourceTags": [
         "alocação/presencial",
         "experiência/pleno",
         "regime/clt",
@@ -191,7 +387,35 @@
       "createdAt": "2019-03-18T21:41:21Z",
       "updatedAt": "2020-03-16T15:25:18Z",
       "url": "https://github.com/graphql-brasil/vagas/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
     }
   ]
 }

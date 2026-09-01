@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T22:06:54.277Z",
+  "generatedAt": "2026-09-01T18:06:12.645Z",
   "items": {
     "gh_3712b3449a25015d16d51633": {
       "id": "gh_3712b3449a25015d16d51633",
@@ -13,7 +13,17 @@
       "repositoryUrl": "https://github.com/datascience-br/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "sourceTags": [
         "backend",
         "data",
         "pleno"
@@ -42,15 +52,6 @@
       "updatedAt": "2026-08-14T15:06:38Z",
       "url": "https://github.com/datascience-br/vagas/issues/196",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
@@ -81,6 +82,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_3712b3449a25015d16d51633",
@@ -103,7 +110,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-08-14T15:06:38Z",
         "status": "fresh"
       }
@@ -120,7 +127,18 @@
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "clt",
         "pj",
         "pleno",
@@ -149,16 +167,6 @@
       "updatedAt": "2026-08-09T18:00:45Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1276",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -185,6 +193,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_37c9426f293800588664d8de",
@@ -207,7 +221,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 22,
+        "ageDays": 23,
         "publishedAt": "2026-08-09T18:00:10Z",
         "status": "fresh"
       }
@@ -224,7 +238,18 @@
       "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "flutter",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
         "flutter",
         "pj",
         "pleno",
@@ -252,16 +277,6 @@
       "updatedAt": "2025-04-13T13:13:26Z",
       "url": "https://github.com/Empregos-dev/Vagas-dev/issues/97",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "flutter",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -288,6 +303,12 @@
         ],
         "languages": []
       },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
       "sources": [
         {
           "id": "gh_37d4fbca63e20e104991a24e",
@@ -310,7 +331,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 505,
+        "ageDays": 506,
         "publishedAt": "2025-04-13T13:13:26Z",
         "status": "stale"
       }
@@ -327,7 +348,13 @@
       "repositoryUrl": "https://github.com/LinuxSuRen/remote-jobs-in-china",
       "region": "Asia",
       "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
       "tags": [],
+      "sourceTags": [],
       "author": {
         "id": "dreamerlzl",
         "name": "dreamerlzl",
@@ -345,11 +372,6 @@
       "updatedAt": "2024-11-29T03:23:03Z",
       "url": "https://github.com/LinuxSuRen/remote-jobs-in-china/issues/81",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "China",
-        "region": "Asia"
-      },
-      "sourceTags": [],
       "jobLocation": {
         "confidence": "unknown"
       },
@@ -360,6 +382,12 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       },
       "sources": [
         {
@@ -383,7 +411,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 640,
+        "ageDays": 641,
         "publishedAt": "2024-11-29T03:23:03Z",
         "status": "stale"
       }
@@ -400,7 +428,16 @@
       "repositoryUrl": "https://github.com/ifpb/vagas",
       "region": "South America",
       "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
       "tags": [
+        "data",
+        "devops"
+      ],
+      "sourceTags": [
         "data",
         "devops"
       ],
@@ -422,14 +459,6 @@
       "updatedAt": "2022-08-24T19:09:06Z",
       "url": "https://github.com/ifpb/vagas/issues/1",
       "sourceType": "github-issue",
-      "sourceLocation": {
-        "country": "Brazil",
-        "region": "South America"
-      },
-      "sourceTags": [
-        "data",
-        "devops"
-      ],
       "jobLocation": {
         "workModel": "remote",
         "remoteScope": "unspecified",
@@ -459,6 +488,12 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
