@@ -4,12 +4,13 @@ import { buildGlobalIndex } from "./build-global-index.mjs";
 import { buildStaticApiFiles } from "./static-api/build-static-api-files.mjs";
 
 /**
- * @param {{snapshotRootDir: string; generatedAt: string; catalogGeneratedAt: string | null; request: Record<string, unknown>; repositoriesRequested: number; repositoriesScanned: number; failedRepositories: Array<Record<string, unknown>>; countries: Array<any>; catalogRepositories: Array<any>;}} params
+ * @param {{snapshotRootDir: string; generatedAt: string; startedAt?: string; catalogGeneratedAt: string | null; request: Record<string, unknown>; repositoriesRequested: number; repositoriesScanned: number; failedRepositories: Array<Record<string, unknown>>; countries: Array<any>; catalogRepositories: Array<any>; previousStatus?: Record<string, unknown> | null; previousStatusHistory?: Record<string, unknown> | null;}} params
  */
 export function prepareSegmentedSnapshot(params) {
   const {
     snapshotRootDir,
     generatedAt,
+    startedAt = generatedAt,
     catalogGeneratedAt,
     request,
     repositoriesRequested,
@@ -17,6 +18,8 @@ export function prepareSegmentedSnapshot(params) {
     failedRepositories,
     countries,
     catalogRepositories,
+    previousStatus = null,
+    previousStatusHistory = null,
   } = params;
 
   const countrySnapshots = countries
@@ -27,6 +30,10 @@ export function prepareSegmentedSnapshot(params) {
     generatedAt,
     countrySnapshots,
     repositories: catalogRepositories,
+    failedRepositories,
+    previousStatus,
+    previousStatusHistory,
+    startedAt,
   });
 
   const globalIndex = buildGlobalIndex({

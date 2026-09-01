@@ -35,6 +35,10 @@ jobs:
           MAX_ISSUES_PER_REPOSITORY: "30"
           MAX_REPOSITORIES: "0"
           REQUEST_DELAY_MS: "120"
+          SENTRY_DSN: ${{ secrets.SENTRY_DSN }}
+          SENTRY_ENVIRONMENT: production
+          SENTRY_MONITOR_SLUG: opportunities-sync
+          SENTRY_RELEASE: ${{ github.sha }}
         run: npm run build:snapshot
 
       - name: Commit and push snapshot

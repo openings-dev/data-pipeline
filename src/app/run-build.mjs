@@ -6,6 +6,12 @@ import { createGitHubClient } from "../modules/github/github-client.mjs";
 import { createLogger } from "../modules/observability/logger.mjs";
 import { prepareSegmentedSnapshot } from "../modules/snapshot/prepare-segmented-snapshot.mjs";
 import { writeSegmentedSnapshot } from "../modules/snapshot/write-segmented-snapshot.mjs";
+import { readJsonIfExists } from "../modules/storage/read-json-if-exists.mjs";
+import { toSnapshotPath } from "../modules/snapshot/snapshot-paths.mjs";
+import {
+  staticApiStatusHistoryPath,
+  staticApiStatusPath,
+} from "../modules/snapshot/static-api/paths.mjs";
 
 export async function runBuild() {
   const config = loadBuildConfig();
@@ -20,6 +26,18 @@ export async function runBuild() {
   if (repositories.length === 0) {
     throw new Error(`No repositories found after filters in ${config.paths.repositoriesFile}.`);
   }
+  const startedAt = new Date().toISOString();
+  const [previousStatus, previousStatusHistory] = await Promise.all([
+    readJsonIfExists(
+      toSnapshotPath(config.paths.snapshotRootDir, staticApiStatusPath()),
+    ),
+    readJsonIfExists(
+      toSnapshotPath(
+        config.paths.snapshotRootDir,
+        staticApiStatusHistoryPath(),
+      ),
+    ),
+  ]);
 
   logger.info("build-started", {
     repositories_requested: repositories.length,
@@ -41,14 +59,15 @@ export async function runBuild() {
     requestDelayMs: config.limits.requestDelayMs,
     logger,
   });
-
   if (results.repositoriesScanned === 0 && results.failedRepositories.length > 0) {
     throw new Error("No repositories were processed successfully. Snapshot update aborted.");
   }
 
+  const completedAt = new Date().toISOString();
   const snapshot = prepareSegmentedSnapshot({
     snapshotRootDir: config.paths.snapshotRootDir,
-    generatedAt: new Date().toISOString(),
+    generatedAt: completedAt,
+    startedAt,
     catalogGeneratedAt: catalog.generatedAt ?? null,
     request: {
       maxIssuesPerRepository: config.limits.maxIssuesPerRepository,
@@ -62,6 +81,8 @@ export async function runBuild() {
     failedRepositories: results.failedRepositories,
     countries: results.countries,
     catalogRepositories: catalog.repositories,
+    previousStatus,
+    previousStatusHistory,
   });
 
   const writeResult = await writeSegmentedSnapshot(snapshot);

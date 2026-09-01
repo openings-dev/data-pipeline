@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T09:08:54.467Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_fb912858247d5261cc51e874": {
       "id": "gh_fb912858247d5261cc51e874",
@@ -32,7 +32,55 @@
       "createdAt": "2026-08-26T01:52:39Z",
       "updatedAt": "2026-08-31T03:13:19Z",
       "url": "https://github.com/rebase-network/who-is-hiring/issues/1258",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "needs-info"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_fb912858247d5261cc51e874",
+          "sourceId": "rebase-network/who-is-hiring#1258",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1258",
+          "createdAt": "2026-08-26T01:52:39Z",
+          "updatedAt": "2026-08-31T03:13:19Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-08-26T01:52:39Z",
+        "status": "fresh"
+      }
     },
     "gh_fbd7897fa7cdf7f1f95d0f6f": {
       "id": "gh_fbd7897fa7cdf7f1f95d0f6f",
@@ -47,10 +95,10 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remoto",
+        "devops",
         "pj",
-        "sênior",
-        "devops"
+        "remoto",
+        "sênior"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -67,9 +115,89 @@
       },
       "companyName": "Coodesh",
       "createdAt": "2026-06-12T17:27:42Z",
-      "updatedAt": "2026-06-12T17:28:11Z",
+      "updatedAt": "2026-06-22T13:22:02Z",
       "url": "https://github.com/programadores-br/geral/issues/3081",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "devops",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_fbd7897fa7cdf7f1f95d0f6f",
+          "sourceId": "programadores-br/geral#3081",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3081",
+          "createdAt": "2026-06-12T17:27:42Z",
+          "updatedAt": "2026-06-12T17:28:11Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        },
+        {
+          "id": "gh_8efe119dc847f2d5d97185b1",
+          "sourceId": "programadores-br/geral#3083",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3083",
+          "createdAt": "2026-06-22T13:21:36Z",
+          "updatedAt": "2026-06-22T13:22:02Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 80,
+        "publishedAt": "2026-06-12T17:27:42Z",
+        "status": "aging"
+      }
     },
     "gh_fb4ec6f93d17afcf44bb3e60": {
       "id": "gh_fb4ec6f93d17afcf44bb3e60",
@@ -84,9 +212,9 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "remote",
         "backend",
-        "design"
+        "design",
+        "remote"
       ],
       "author": {
         "id": "Uiler105",
@@ -104,7 +232,66 @@
       "createdAt": "2025-11-18T10:17:52Z",
       "updatedAt": "2025-11-18T10:20:23Z",
       "url": "https://github.com/ios-taipei/MobileJobs/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "backend",
+        "design",
+        "remote"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_fb4ec6f93d17afcf44bb3e60",
+          "sourceId": "ios-taipei/MobileJobs#6",
+          "repository": "ios-taipei/MobileJobs",
+          "repositoryUrl": "https://github.com/ios-taipei/MobileJobs",
+          "url": "https://github.com/ios-taipei/MobileJobs/issues/6",
+          "createdAt": "2025-11-18T10:17:52Z",
+          "updatedAt": "2025-11-18T10:20:23Z",
+          "community": {
+            "id": "ios-taipei",
+            "name": "ios-taipei",
+            "avatarUrl": "https://github.com/ios-taipei.png?size=80",
+            "repository": "ios-taipei/MobileJobs",
+            "url": "https://github.com/ios-taipei/MobileJobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 286,
+        "publishedAt": "2025-11-18T10:17:52Z",
+        "status": "stale"
+      }
     },
     "gh_fb2306ac219103e0929104e5": {
       "id": "gh_fb2306ac219103e0929104e5",
@@ -119,9 +306,9 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
+        "node",
         "react",
-        "typescript",
-        "node"
+        "typescript"
       ],
       "author": {
         "id": "Lisa71130",
@@ -139,7 +326,63 @@
       "createdAt": "2025-04-01T09:45:39Z",
       "updatedAt": "2025-04-01T09:45:39Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/269",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "node",
+        "react",
+        "typescript"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "mongodb",
+          "mysql",
+          "nodejs",
+          "php",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_fb2306ac219103e0929104e5",
+          "sourceId": "nodejs-tw/jobs#269",
+          "repository": "nodejs-tw/jobs",
+          "repositoryUrl": "https://github.com/nodejs-tw/jobs",
+          "url": "https://github.com/nodejs-tw/jobs/issues/269",
+          "createdAt": "2025-04-01T09:45:39Z",
+          "updatedAt": "2025-04-01T09:45:39Z",
+          "community": {
+            "id": "nodejs-tw",
+            "name": "nodejs-tw",
+            "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
+            "repository": "nodejs-tw/jobs",
+            "url": "https://github.com/nodejs-tw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 517,
+        "publishedAt": "2025-04-01T09:45:39Z",
+        "status": "stale"
+      }
     },
     "gh_fbcd0549308f93fa2ecbe812": {
       "id": "gh_fbcd0549308f93fa2ecbe812",
@@ -154,13 +397,13 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remote",
-        "react",
+        "data",
+        "java",
         "node",
         "python",
-        "java",
-        "staff",
-        "data"
+        "react",
+        "remote",
+        "staff"
       ],
       "author": {
         "id": "Thuanysb",
@@ -179,7 +422,76 @@
       "createdAt": "2024-12-27T00:59:41Z",
       "updatedAt": "2024-12-27T00:59:44Z",
       "url": "https://github.com/Empregos-dev/Vagas-dev/issues/90",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "java",
+        "node",
+        "python",
+        "react",
+        "remote",
+        "staff"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "nodejs",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_fbcd0549308f93fa2ecbe812",
+          "sourceId": "Empregos-dev/Vagas-dev#90",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/90",
+          "createdAt": "2024-12-27T00:59:41Z",
+          "updatedAt": "2024-12-27T00:59:44Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 612,
+        "publishedAt": "2024-12-27T00:59:41Z",
+        "status": "stale"
+      }
     },
     "gh_fba393d757a63111f2ac77a8": {
       "id": "gh_fba393d757a63111f2ac77a8",
@@ -194,12 +506,12 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "react",
-        "python",
-        "java",
-        "devops",
         "data",
-        "design"
+        "design",
+        "devops",
+        "java",
+        "python",
+        "react"
       ],
       "author": {
         "id": "YUHanWang02",
@@ -217,7 +529,73 @@
       "createdAt": "2022-05-08T13:21:22Z",
       "updatedAt": "2022-05-08T13:21:22Z",
       "url": "https://github.com/twjug/jobs/issues/96",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "devops",
+        "java",
+        "python",
+        "react"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "python",
+          "react",
+          "redis",
+          "spring"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_fba393d757a63111f2ac77a8",
+          "sourceId": "twjug/jobs#96",
+          "repository": "twjug/jobs",
+          "repositoryUrl": "https://github.com/twjug/jobs",
+          "url": "https://github.com/twjug/jobs/issues/96",
+          "createdAt": "2022-05-08T13:21:22Z",
+          "updatedAt": "2022-05-08T13:21:22Z",
+          "community": {
+            "id": "twjug",
+            "name": "twjug",
+            "avatarUrl": "https://github.com/twjug.png?size=80",
+            "repository": "twjug/jobs",
+            "url": "https://github.com/twjug/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1576,
+        "publishedAt": "2022-05-08T13:21:22Z",
+        "status": "stale"
+      }
     },
     "gh_fbd749465d81bb08a07bf3d2": {
       "id": "gh_fbd749465d81bb08a07bf3d2",
@@ -248,7 +626,49 @@
       "createdAt": "2018-01-17T18:30:16Z",
       "updatedAt": "2018-02-22T16:02:38Z",
       "url": "https://github.com/baixada/Vagas/issues/6",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_fbd749465d81bb08a07bf3d2",
+          "sourceId": "baixada/Vagas#6",
+          "repository": "baixada/Vagas",
+          "repositoryUrl": "https://github.com/baixada/Vagas",
+          "url": "https://github.com/baixada/Vagas/issues/6",
+          "createdAt": "2018-01-17T18:30:16Z",
+          "updatedAt": "2018-02-22T16:02:38Z",
+          "community": {
+            "id": "baixada",
+            "name": "baixada",
+            "avatarUrl": "https://github.com/baixada.png?size=80",
+            "repository": "baixada/Vagas",
+            "url": "https://github.com/baixada/Vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3148,
+        "publishedAt": "2018-01-17T18:30:16Z",
+        "status": "stale"
+      }
     }
   }
 }

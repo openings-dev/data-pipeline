@@ -1,5 +1,5 @@
 import { sha256Json } from "../../shared/utils/hash.mjs";
-import { sortOpportunitiesByDate } from "../opportunities/opportunity-sorting.mjs";
+import { sortOpportunitiesByDate } from "../opportunities/opportunity-mapper.mjs";
 import {
   countryIndexRelativePath,
   repositoryShardRelativePath,

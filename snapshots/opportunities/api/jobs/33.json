@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-22T19:01:11.059Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_33d05217457732ee882415dd": {
       "id": "gh_33d05217457732ee882415dd",
@@ -14,6 +14,8 @@
       "region": "Europe",
       "country": "Portugal",
       "tags": [
+        "clt",
+        "pj",
         "remoto",
         "sênior"
       ],
@@ -37,9 +39,96 @@
         "period": "month"
       },
       "createdAt": "2026-07-22T11:34:09Z",
-      "updatedAt": "2026-07-22T18:01:32Z",
+      "updatedAt": "2026-08-31T19:57:42Z",
       "url": "https://github.com/backend-pt/vagas/issues/145",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Portugal",
+        "region": "Europe"
+      },
+      "sourceTags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre"
+        ],
+        "technologies": [
+          "azure",
+          "csharp",
+          "docker",
+          "dotnet",
+          "postgres"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_33d05217457732ee882415dd",
+          "sourceId": "backend-pt/vagas#145",
+          "repository": "backend-pt/vagas",
+          "repositoryUrl": "https://github.com/backend-pt/vagas",
+          "url": "https://github.com/backend-pt/vagas/issues/145",
+          "createdAt": "2026-07-22T11:34:09Z",
+          "updatedAt": "2026-07-22T18:01:32Z",
+          "community": {
+            "id": "backend-pt",
+            "name": "backend-pt",
+            "avatarUrl": "https://github.com/backend-pt.png?size=80",
+            "repository": "backend-pt/vagas",
+            "url": "https://github.com/backend-pt/vagas"
+          }
+        },
+        {
+          "id": "gh_eecb433d8bcf44c11d59b632",
+          "sourceId": "dotnetdevbr/vagas#1076",
+          "repository": "dotnetdevbr/vagas",
+          "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
+          "url": "https://github.com/dotnetdevbr/vagas/issues/1076",
+          "createdAt": "2026-08-21T17:22:24Z",
+          "updatedAt": "2026-08-31T19:57:42Z",
+          "community": {
+            "id": "dotnetdevbr",
+            "name": "dotnetdevbr",
+            "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
+            "repository": "dotnetdevbr/vagas",
+            "url": "https://github.com/dotnetdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 40,
+        "publishedAt": "2026-07-22T11:34:09Z",
+        "status": "aging"
+      }
     },
     "gh_337dcc0369d8226aab4c836f": {
       "id": "gh_337dcc0369d8226aab4c836f",
@@ -55,8 +144,8 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "python",
-        "design"
+        "design",
+        "python"
       ],
       "author": {
         "id": "jesspinheiro93",
@@ -75,7 +164,77 @@
       "createdAt": "2026-02-06T18:42:28Z",
       "updatedAt": "2026-02-06T18:42:28Z",
       "url": "https://github.com/nerdzao/vagas/issues/188",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "design",
+        "python"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Híbrido-São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Híbrido-São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "gcp",
+          "kubernetes",
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_337dcc0369d8226aab4c836f",
+          "sourceId": "nerdzao/vagas#188",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/188",
+          "createdAt": "2026-02-06T18:42:28Z",
+          "updatedAt": "2026-02-06T18:42:28Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 206,
+        "publishedAt": "2026-02-06T18:42:28Z",
+        "status": "stale"
+      }
     },
     "gh_338622c06f4332345fe4f4ea": {
       "id": "gh_338622c06f4332345fe4f4ea",
@@ -109,7 +268,61 @@
       "createdAt": "2025-07-08T07:48:12Z",
       "updatedAt": "2026-04-09T02:47:13Z",
       "url": "https://github.com/golangtw/jobs/issues/225",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "90k以上",
+        "苗栗"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "kubernetes",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_338622c06f4332345fe4f4ea",
+          "sourceId": "golangtw/jobs#225",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/225",
+          "createdAt": "2025-07-08T07:48:12Z",
+          "updatedAt": "2026-04-09T02:47:13Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 419,
+        "publishedAt": "2025-07-08T07:48:12Z",
+        "status": "stale"
+      }
     },
     "gh_334e6a189e0f2f259f76a71a": {
       "id": "gh_334e6a189e0f2f259f76a71a",
@@ -124,13 +337,13 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "frontend",
         "backend",
-        "node",
-        "python",
+        "design",
+        "frontend",
         "golang",
         "java",
-        "design"
+        "node",
+        "python"
       ],
       "author": {
         "id": "louisehuyuning",
@@ -148,7 +361,72 @@
       "createdAt": "2022-08-05T10:54:03Z",
       "updatedAt": "2022-08-05T10:54:03Z",
       "url": "https://github.com/twjug/jobs/issues/101",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "backend",
+        "design",
+        "frontend",
+        "golang",
+        "java",
+        "node",
+        "python"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "go",
+          "java",
+          "nodejs",
+          "python",
+          "spring"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_334e6a189e0f2f259f76a71a",
+          "sourceId": "twjug/jobs#101",
+          "repository": "twjug/jobs",
+          "repositoryUrl": "https://github.com/twjug/jobs",
+          "url": "https://github.com/twjug/jobs/issues/101",
+          "createdAt": "2022-08-05T10:54:03Z",
+          "updatedAt": "2022-08-05T10:54:03Z",
+          "community": {
+            "id": "twjug",
+            "name": "twjug",
+            "avatarUrl": "https://github.com/twjug.png?size=80",
+            "repository": "twjug/jobs",
+            "url": "https://github.com/twjug/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1487,
+        "publishedAt": "2022-08-05T10:54:03Z",
+        "status": "stale"
+      }
     },
     "gh_338eaefafa24429e046994f1": {
       "id": "gh_338eaefafa24429e046994f1",
@@ -163,9 +441,9 @@
       "region": "Asia",
       "country": "Vietnam",
       "tags": [
-        "react",
+        "design",
         "java",
-        "design"
+        "react"
       ],
       "author": {
         "id": "hoangan",
@@ -189,7 +467,66 @@
       "createdAt": "2016-02-23T06:51:25Z",
       "updatedAt": "2016-02-23T06:51:25Z",
       "url": "https://github.com/js-hcm/job-board/issues/2",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "design",
+        "java",
+        "react"
+      ],
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "Saigon",
+        "displayText": "Saigon, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "java",
+          "javascript",
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_338eaefafa24429e046994f1",
+          "sourceId": "js-hcm/job-board#2",
+          "repository": "js-hcm/job-board",
+          "repositoryUrl": "https://github.com/js-hcm/job-board",
+          "url": "https://github.com/js-hcm/job-board/issues/2",
+          "createdAt": "2016-02-23T06:51:25Z",
+          "updatedAt": "2016-02-23T06:51:25Z",
+          "community": {
+            "id": "js-hcm",
+            "name": "js-hcm",
+            "avatarUrl": "https://github.com/js-hcm.png?size=80",
+            "repository": "js-hcm/job-board",
+            "url": "https://github.com/js-hcm/job-board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3842,
+        "publishedAt": "2016-02-23T06:51:25Z",
+        "status": "stale"
+      }
     }
   }
 }

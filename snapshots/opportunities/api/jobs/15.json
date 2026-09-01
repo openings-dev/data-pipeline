@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T00:49:47.942Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_15f2330ba8ed6a2df2e4d27c": {
       "id": "gh_15f2330ba8ed6a2df2e4d27c",
@@ -14,9 +14,9 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "遠端",
+        "100k以上",
         "台北",
-        "100k以上"
+        "遠端"
       ],
       "author": {
         "id": "ujen227",
@@ -40,7 +40,63 @@
       "createdAt": "2023-11-13T03:37:08Z",
       "updatedAt": "2025-10-09T05:37:14Z",
       "url": "https://github.com/golangtw/jobs/issues/192",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "100k以上",
+        "台北",
+        "遠端"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "go"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_15f2330ba8ed6a2df2e4d27c",
+          "sourceId": "golangtw/jobs#192",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/192",
+          "createdAt": "2023-11-13T03:37:08Z",
+          "updatedAt": "2025-10-09T05:37:14Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1022,
+        "publishedAt": "2023-11-13T03:37:08Z",
+        "status": "stale"
+      }
     }
   }
 }

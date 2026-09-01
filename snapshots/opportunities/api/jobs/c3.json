@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T21:25:20.908Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_c3db156ca7cb1edb34c7d060": {
       "id": "gh_c3db156ca7cb1edb34c7d060",
@@ -15,8 +15,8 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "pleno",
-        "data"
+        "data",
+        "pleno"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -41,7 +41,72 @@
       "createdAt": "2026-08-12T21:00:06Z",
       "updatedAt": "2026-08-12T21:00:06Z",
       "url": "https://github.com/datascience-br/vagas/issues/194",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_c3db156ca7cb1edb34c7d060",
+          "sourceId": "datascience-br/vagas#194",
+          "repository": "datascience-br/vagas",
+          "repositoryUrl": "https://github.com/datascience-br/vagas",
+          "url": "https://github.com/datascience-br/vagas/issues/194",
+          "createdAt": "2026-08-12T21:00:06Z",
+          "updatedAt": "2026-08-12T21:00:06Z",
+          "community": {
+            "id": "datascience-br",
+            "name": "datascience-br",
+            "avatarUrl": "https://github.com/datascience-br.png?size=80",
+            "repository": "datascience-br/vagas",
+            "url": "https://github.com/datascience-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 19,
+        "publishedAt": "2026-08-12T21:00:06Z",
+        "status": "fresh"
+      }
     },
     "gh_c367065e13c90bb6798c58e5": {
       "id": "gh_c367065e13c90bb6798c58e5",
@@ -56,10 +121,10 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "java",
-        "pleno",
+        "data",
         "devops",
-        "data"
+        "java",
+        "pleno"
       ],
       "author": {
         "id": "ghost",
@@ -77,7 +142,81 @@
       "createdAt": "2021-06-18T15:18:56Z",
       "updatedAt": "2021-07-01T12:29:11Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "devops",
+        "java",
+        "pleno"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_c367065e13c90bb6798c58e5",
+          "sourceId": "3Tecnos-Development/vagas#5",
+          "repository": "3Tecnos-Development/vagas",
+          "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
+          "url": "https://github.com/3Tecnos-Development/vagas/issues/5",
+          "createdAt": "2021-06-18T15:18:56Z",
+          "updatedAt": "2021-07-01T12:29:11Z",
+          "community": {
+            "id": "3Tecnos-Development",
+            "name": "3Tecnos-Development",
+            "avatarUrl": "https://github.com/3Tecnos-Development.png?size=80",
+            "repository": "3Tecnos-Development/vagas",
+            "url": "https://github.com/3Tecnos-Development/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1900,
+        "publishedAt": "2021-06-18T15:18:56Z",
+        "status": "stale"
+      }
     }
   }
 }

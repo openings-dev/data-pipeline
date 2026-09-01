@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T14:46:23.429Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_450bc52dcc8bb6da9c87a9c5": {
       "id": "gh_450bc52dcc8bb6da9c87a9c5",
@@ -14,13 +14,13 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
+        "git",
+        "postgresql",
+        "remoto",
         "sênior",
         "tdd",
-        "remoto",
         "testes automatizados",
-        "typescript",
-        "postgresql",
-        "git"
+        "typescript"
       ],
       "author": {
         "id": "Claudiaantunesdelima",
@@ -42,9 +42,94 @@
         "period": "hour"
       },
       "createdAt": "2026-08-28T01:53:20Z",
-      "updatedAt": "2026-08-28T01:53:39Z",
+      "updatedAt": "2026-08-28T01:56:52Z",
       "url": "https://github.com/backend-br/vagas/issues/12402",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "git",
+        "postgresql",
+        "remoto",
+        "sênior",
+        "tdd",
+        "testes automatizados",
+        "typescript"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "postgres",
+          "react",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_450bc52dcc8bb6da9c87a9c5",
+          "sourceId": "backend-br/vagas#12402",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12402",
+          "createdAt": "2026-08-28T01:53:20Z",
+          "updatedAt": "2026-08-28T01:53:39Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        },
+        {
+          "id": "gh_5e9389b1f39a95d222e2ade5",
+          "sourceId": "frontendbr/vagas#8554",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8554",
+          "createdAt": "2026-08-28T01:56:23Z",
+          "updatedAt": "2026-08-28T01:56:52Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-08-28T01:53:20Z",
+        "status": "fresh"
+      }
     },
     "gh_45b3ae83dff38d096f78cd24": {
       "id": "gh_45b3ae83dff38d096f78cd24",
@@ -60,8 +145,8 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "pleno",
-        "data"
+        "data",
+        "pleno"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -86,7 +171,68 @@
       "createdAt": "2026-08-22T18:00:14Z",
       "updatedAt": "2026-08-22T18:00:14Z",
       "url": "https://github.com/datascience-br/vagas/issues/207",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_45b3ae83dff38d096f78cd24",
+          "sourceId": "datascience-br/vagas#207",
+          "repository": "datascience-br/vagas",
+          "repositoryUrl": "https://github.com/datascience-br/vagas",
+          "url": "https://github.com/datascience-br/vagas/issues/207",
+          "createdAt": "2026-08-22T18:00:14Z",
+          "updatedAt": "2026-08-22T18:00:14Z",
+          "community": {
+            "id": "datascience-br",
+            "name": "datascience-br",
+            "avatarUrl": "https://github.com/datascience-br.png?size=80",
+            "repository": "datascience-br/vagas",
+            "url": "https://github.com/datascience-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-08-22T18:00:14Z",
+        "status": "fresh"
+      }
     },
     "gh_456543dbf314476c71d778c8": {
       "id": "gh_456543dbf314476c71d778c8",
@@ -117,7 +263,49 @@
       "createdAt": "2024-07-01T09:23:25Z",
       "updatedAt": "2024-10-22T05:53:13Z",
       "url": "https://github.com/danielbayerlein/remote-jobs-germany/issues/60",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Germany",
+        "region": "Europe"
+      },
+      "sourceTags": [],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_456543dbf314476c71d778c8",
+          "sourceId": "danielbayerlein/remote-jobs-germany#60",
+          "repository": "danielbayerlein/remote-jobs-germany",
+          "repositoryUrl": "https://github.com/danielbayerlein/remote-jobs-germany",
+          "url": "https://github.com/danielbayerlein/remote-jobs-germany/issues/60",
+          "createdAt": "2024-07-01T09:23:25Z",
+          "updatedAt": "2024-10-22T05:53:13Z",
+          "community": {
+            "id": "danielbayerlein",
+            "name": "danielbayerlein",
+            "avatarUrl": "https://github.com/danielbayerlein.png?size=80",
+            "repository": "danielbayerlein/remote-jobs-germany",
+            "url": "https://github.com/danielbayerlein/remote-jobs-germany"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 791,
+        "publishedAt": "2024-07-01T09:23:25Z",
+        "status": "stale"
+      }
     }
   }
 }

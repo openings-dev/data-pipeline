@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-14T01:14:43.702Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_237d354ae3994e01bd1b16e8": {
       "id": "gh_237d354ae3994e01bd1b16e8",
@@ -14,14 +14,14 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "sênior",
-        "pj",
-        "remoto",
-        "devops",
         "backend",
-        "spring",
+        "devops",
         "docker",
-        "postgresql"
+        "pj",
+        "postgresql",
+        "remoto",
+        "spring",
+        "sênior"
       ],
       "author": {
         "id": "kerol-barros",
@@ -39,7 +39,84 @@
       "createdAt": "2026-08-11T20:31:19Z",
       "updatedAt": "2026-08-11T20:31:38Z",
       "url": "https://github.com/soujava/vagas-java/issues/1938",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "devops",
+        "docker",
+        "pj",
+        "postgresql",
+        "remoto",
+        "spring",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "postgres",
+          "python",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_237d354ae3994e01bd1b16e8",
+          "sourceId": "soujava/vagas-java#1938",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1938",
+          "createdAt": "2026-08-11T20:31:19Z",
+          "updatedAt": "2026-08-11T20:31:38Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 20,
+        "publishedAt": "2026-08-11T20:31:19Z",
+        "status": "fresh"
+      }
     }
   }
 }

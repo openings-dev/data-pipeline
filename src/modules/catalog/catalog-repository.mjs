@@ -11,13 +11,6 @@ function assertNonEmptyString(value, fieldName) {
 }
 
 /**
- * @param {unknown} value
- */
-function isNonEmptyString(value) {
-  return typeof value === "string" && value.trim().length > 0;
-}
-
-/**
  * @param {unknown} catalog
  */
 function assertCatalogShape(catalog) {
@@ -39,35 +32,6 @@ function assertCatalogShape(catalog) {
     assertNonEmptyString(repository.countryCode, "countryCode");
     assertNonEmptyString(repository.region, "region");
     assertNonEmptyString(repository.url, "url");
-
-    if (
-      repository.requiredLabels !== undefined &&
-      (!Array.isArray(repository.requiredLabels) ||
-        repository.requiredLabels.length === 0 ||
-        !repository.requiredLabels.every(isNonEmptyString))
-    ) {
-      throw new Error(
-        "Invalid catalog repository: requiredLabels must be an array of non-empty strings.",
-      );
-    }
-
-    if (
-      repository.issueMetadataFormat !== undefined &&
-      repository.issueMetadataFormat !== "openings-sponsored-job-v1"
-    ) {
-      throw new Error(
-        "Invalid catalog repository: issueMetadataFormat must be openings-sponsored-job-v1.",
-      );
-    }
-
-    if (
-      repository.promotionType !== undefined &&
-      repository.promotionType !== "sponsored"
-    ) {
-      throw new Error(
-        "Invalid catalog repository: promotionType must be sponsored.",
-      );
-    }
   }
 }
 

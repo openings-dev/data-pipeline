@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T15:24:00.352Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_ff8445df97f543e66b59fc42": {
       "id": "gh_ff8445df97f543e66b59fc42",
@@ -14,10 +14,13 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remoto",
+        "data",
+        "devops",
         "pj",
-        "sênior",
-        "devops"
+        "principal",
+        "remoto",
+        "senior",
+        "sênior"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -36,7 +39,93 @@
       "createdAt": "2026-08-18T13:10:19Z",
       "updatedAt": "2026-08-18T13:10:49Z",
       "url": "https://github.com/programadores-br/geral/issues/3087",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "devops",
+        "pj",
+        "principal",
+        "remoto",
+        "senior",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "csharp",
+          "docker",
+          "dotnet",
+          "kubernetes",
+          "postgres",
+          "redis"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_ff8445df97f543e66b59fc42",
+          "sourceId": "programadores-br/geral#3087",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3087",
+          "createdAt": "2026-08-18T13:10:19Z",
+          "updatedAt": "2026-08-18T13:10:49Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        },
+        {
+          "id": "gh_cdfa2de024dbb8a4cb735734",
+          "sourceId": "devfsa/vagas#2830",
+          "repository": "devfsa/vagas",
+          "repositoryUrl": "https://github.com/devfsa/vagas",
+          "url": "https://github.com/devfsa/vagas/issues/2830",
+          "createdAt": "2026-08-18T13:10:36Z",
+          "updatedAt": "2026-08-18T13:10:36Z",
+          "community": {
+            "id": "devfsa",
+            "name": "devfsa",
+            "avatarUrl": "https://github.com/devfsa.png?size=80",
+            "repository": "devfsa/vagas",
+            "url": "https://github.com/devfsa/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 13,
+        "publishedAt": "2026-08-18T13:10:19Z",
+        "status": "fresh"
+      }
     },
     "gh_ff2eef9774c09afe77f80f9d": {
       "id": "gh_ff2eef9774c09afe77f80f9d",
@@ -51,8 +140,8 @@
       "region": "Global",
       "country": "Global",
       "tags": [
-        "job",
-        "approved"
+        "approved",
+        "job"
       ],
       "author": {
         "id": "junminhong",
@@ -70,7 +159,72 @@
       "createdAt": "2025-10-21T16:00:15Z",
       "updatedAt": "2025-10-21T16:14:10Z",
       "url": "https://github.com/junminhong/jobs/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "approved",
+        "job"
+      ],
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "go",
+          "kubernetes",
+          "postgres",
+          "python",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_ff2eef9774c09afe77f80f9d",
+          "sourceId": "junminhong/jobs#1",
+          "repository": "junminhong/jobs",
+          "repositoryUrl": "https://github.com/junminhong/jobs",
+          "url": "https://github.com/junminhong/jobs/issues/1",
+          "createdAt": "2025-10-21T16:00:15Z",
+          "updatedAt": "2025-10-21T16:14:10Z",
+          "community": {
+            "id": "junminhong",
+            "name": "junminhong",
+            "avatarUrl": "https://github.com/junminhong.png?size=80",
+            "repository": "junminhong/jobs",
+            "url": "https://github.com/junminhong/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 314,
+        "publishedAt": "2025-10-21T16:00:15Z",
+        "status": "stale"
+      }
     },
     "gh_ff871b03fcabd20a93060047": {
       "id": "gh_ff871b03fcabd20a93060047",
@@ -86,10 +240,10 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "typescript",
-        "node",
+        "data",
         "java",
-        "data"
+        "node",
+        "typescript"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -108,7 +262,77 @@
       "createdAt": "2025-10-09T14:30:35Z",
       "updatedAt": "2025-10-09T14:30:35Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1318",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "java",
+        "node",
+        "typescript"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_ff871b03fcabd20a93060047",
+          "sourceId": "phpdevbr/vagas#1318",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1318",
+          "createdAt": "2025-10-09T14:30:35Z",
+          "updatedAt": "2025-10-09T14:30:35Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 326,
+        "publishedAt": "2025-10-09T14:30:35Z",
+        "status": "stale"
+      }
     },
     "gh_ffbab03a0e31b6ecd2cefb44": {
       "id": "gh_ffbab03a0e31b6ecd2cefb44",
@@ -123,12 +347,12 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "remote",
-        "react",
-        "java",
-        "senior",
         "data",
-        "design"
+        "design",
+        "java",
+        "react",
+        "remote",
+        "senior"
       ],
       "author": {
         "id": "workataha",
@@ -146,7 +370,77 @@
       "createdAt": "2023-07-28T10:36:01Z",
       "updatedAt": "2023-07-28T10:36:01Z",
       "url": "https://github.com/EtherTW/jobs/issues/62",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "react",
+        "remote",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "postgres",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "internship",
+          "senior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_ffbab03a0e31b6ecd2cefb44",
+          "sourceId": "EtherTW/jobs#62",
+          "repository": "EtherTW/jobs",
+          "repositoryUrl": "https://github.com/EtherTW/jobs",
+          "url": "https://github.com/EtherTW/jobs/issues/62",
+          "createdAt": "2023-07-28T10:36:01Z",
+          "updatedAt": "2023-07-28T10:36:01Z",
+          "community": {
+            "id": "EtherTW",
+            "name": "EtherTW",
+            "avatarUrl": "https://github.com/EtherTW.png?size=80",
+            "repository": "EtherTW/jobs",
+            "url": "https://github.com/EtherTW/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1130,
+        "publishedAt": "2023-07-28T10:36:01Z",
+        "status": "stale"
+      }
     }
   }
 }

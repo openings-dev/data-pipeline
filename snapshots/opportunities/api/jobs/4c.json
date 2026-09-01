@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T14:46:23.429Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_4cc3ed1afbc2d52fca57d80e": {
       "id": "gh_4cc3ed1afbc2d52fca57d80e",
@@ -14,9 +14,9 @@
       "region": "Asia",
       "country": "Vietnam",
       "tags": [
-        "fullstack",
         "data",
-        "design"
+        "design",
+        "fullstack"
       ],
       "author": {
         "id": "techdyvn",
@@ -34,7 +34,79 @@
       "createdAt": "2026-08-28T02:44:09Z",
       "updatedAt": "2026-08-28T02:44:09Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5037",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "fullstack"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "fullstack",
+          "leadership"
+        ],
+        "technologies": [
+          "aws"
+        ],
+        "seniority": [
+          "lead",
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4cc3ed1afbc2d52fca57d80e",
+          "sourceId": "awesome-jobs/jobs#5037",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5037",
+          "createdAt": "2026-08-28T02:44:09Z",
+          "updatedAt": "2026-08-28T02:44:09Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        },
+        {
+          "id": "gh_58edb3e761e5b0c7a9923f19",
+          "sourceId": "awesome-jobs/vietnam#5037",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5037",
+          "createdAt": "2026-08-28T02:44:09Z",
+          "updatedAt": "2026-08-28T02:44:09Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-08-28T02:44:09Z",
+        "status": "fresh"
+      }
     },
     "gh_4c6cf37982168e2e29fee61c": {
       "id": "gh_4c6cf37982168e2e29fee61c",
@@ -49,14 +121,14 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "java",
+        "gcp",
+        "git",
         "go",
-        "remoto",
+        "java",
+        "kotlin",
         "mysql",
         "postgresql",
-        "git",
-        "kotlin",
-        "gcp"
+        "remoto"
       ],
       "author": {
         "id": "Claudiaantunesdelima",
@@ -80,7 +152,76 @@
       "createdAt": "2026-08-27T22:12:05Z",
       "updatedAt": "2026-08-27T22:12:23Z",
       "url": "https://github.com/backend-br/vagas/issues/12399",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "gcp",
+        "git",
+        "go",
+        "java",
+        "kotlin",
+        "mysql",
+        "postgresql",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "gcp",
+          "go",
+          "java",
+          "kotlin",
+          "mysql",
+          "postgres",
+          "react",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_4c6cf37982168e2e29fee61c",
+          "sourceId": "backend-br/vagas#12399",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12399",
+          "createdAt": "2026-08-27T22:12:05Z",
+          "updatedAt": "2026-08-27T22:12:23Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-08-27T22:12:05Z",
+        "status": "fresh"
+      }
     },
     "gh_4c2627ee1ce2c130c83070a5": {
       "id": "gh_4c2627ee1ce2c130c83070a5",
@@ -114,7 +255,77 @@
       "createdAt": "2026-08-27T07:23:38Z",
       "updatedAt": "2026-08-27T07:23:38Z",
       "url": "https://github.com/awesome-jobs/vietnam/issues/5034",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "product"
+        ],
+        "technologies": [],
+        "seniority": [
+          "lead",
+          "mid"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_4c2627ee1ce2c130c83070a5",
+          "sourceId": "awesome-jobs/vietnam#5034",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5034",
+          "createdAt": "2026-08-27T07:23:38Z",
+          "updatedAt": "2026-08-27T07:23:38Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_67debae869fb9046bffff573",
+          "sourceId": "awesome-jobs/jobs#5034",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5034",
+          "createdAt": "2026-08-27T07:23:38Z",
+          "updatedAt": "2026-08-27T07:23:38Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 4,
+        "publishedAt": "2026-08-27T07:23:38Z",
+        "status": "fresh"
+      }
     },
     "gh_4c5d9e743b2d05d639e66dbc": {
       "id": "gh_4c5d9e743b2d05d639e66dbc",
@@ -154,7 +365,72 @@
       "createdAt": "2026-07-23T17:40:55Z",
       "updatedAt": "2026-07-24T09:35:58Z",
       "url": "https://github.com/backend-pt/vagas/issues/146",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Portugal",
+        "region": "Europe"
+      },
+      "sourceTags": [
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "laravel",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_4c5d9e743b2d05d639e66dbc",
+          "sourceId": "backend-pt/vagas#146",
+          "repository": "backend-pt/vagas",
+          "repositoryUrl": "https://github.com/backend-pt/vagas",
+          "url": "https://github.com/backend-pt/vagas/issues/146",
+          "createdAt": "2026-07-23T17:40:55Z",
+          "updatedAt": "2026-07-24T09:35:58Z",
+          "community": {
+            "id": "backend-pt",
+            "name": "backend-pt",
+            "avatarUrl": "https://github.com/backend-pt.png?size=80",
+            "repository": "backend-pt/vagas",
+            "url": "https://github.com/backend-pt/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 39,
+        "publishedAt": "2026-07-23T17:40:55Z",
+        "status": "aging"
+      }
     },
     "gh_4c1b622cc6355d609e296837": {
       "id": "gh_4c1b622cc6355d609e296837",
@@ -169,14 +445,14 @@
       "region": "Global",
       "country": "Global",
       "tags": [
-        "remote",
         "backend",
-        "typescript",
-        "node",
-        "java",
-        "senior",
         "data",
-        "design"
+        "design",
+        "java",
+        "node",
+        "remote",
+        "senior",
+        "typescript"
       ],
       "author": {
         "id": "P4Awd",
@@ -200,7 +476,81 @@
       "createdAt": "2025-07-24T16:33:39Z",
       "updatedAt": "2025-07-24T16:37:28Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/714",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "java",
+        "node",
+        "remote",
+        "senior",
+        "typescript"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "angular",
+          "docker",
+          "gcp",
+          "java",
+          "javascript",
+          "nodejs",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4c1b622cc6355d609e296837",
+          "sourceId": "TechnologyMasters/jobs#714",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/714",
+          "createdAt": "2025-07-24T16:33:39Z",
+          "updatedAt": "2025-07-24T16:37:28Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 403,
+        "publishedAt": "2025-07-24T16:33:39Z",
+        "status": "stale"
+      }
     },
     "gh_4c29f7e2a3fc9315961f9e86": {
       "id": "gh_4c29f7e2a3fc9315961f9e86",
@@ -215,9 +565,9 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remote",
+        "design",
         "frontend",
-        "design"
+        "remote"
       ],
       "author": {
         "id": "elmjobsbot",
@@ -235,7 +585,64 @@
       "createdAt": "2021-11-30T19:14:37Z",
       "updatedAt": "2021-11-30T19:14:37Z",
       "url": "https://github.com/FidelisClayton/elm-jobs/issues/74",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "design",
+        "frontend",
+        "remote"
+      ],
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "workModel": "remote",
+        "remoteScope": "country",
+        "displayText": "United States · Remote within United States",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4c29f7e2a3fc9315961f9e86",
+          "sourceId": "FidelisClayton/elm-jobs#74",
+          "repository": "FidelisClayton/elm-jobs",
+          "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
+          "url": "https://github.com/FidelisClayton/elm-jobs/issues/74",
+          "createdAt": "2021-11-30T19:14:37Z",
+          "updatedAt": "2021-11-30T19:14:37Z",
+          "community": {
+            "id": "FidelisClayton",
+            "name": "FidelisClayton",
+            "avatarUrl": "https://github.com/FidelisClayton.png?size=80",
+            "repository": "FidelisClayton/elm-jobs",
+            "url": "https://github.com/FidelisClayton/elm-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1735,
+        "publishedAt": "2021-11-30T19:14:37Z",
+        "status": "stale"
+      }
     }
   }
 }

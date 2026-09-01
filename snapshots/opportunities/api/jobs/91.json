@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T11:48:54.070Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_91b78ae35204f1e36f0bbe14": {
       "id": "gh_91b78ae35204f1e36f0bbe14",
@@ -18,8 +18,8 @@
         "especialista",
         "pj",
         "pleno",
-        "sênior",
-        "remoto"
+        "remoto",
+        "sênior"
       ],
       "author": {
         "id": "alvaropsc",
@@ -38,7 +38,74 @@
       "createdAt": "2024-02-20T14:02:30Z",
       "updatedAt": "2024-02-20T14:03:03Z",
       "url": "https://github.com/seujobtech/vagas/issues/414",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "especialista",
+        "pj",
+        "pleno",
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "mysql",
+          "postgres"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_91b78ae35204f1e36f0bbe14",
+          "sourceId": "seujobtech/vagas#414",
+          "repository": "seujobtech/vagas",
+          "repositoryUrl": "https://github.com/seujobtech/vagas",
+          "url": "https://github.com/seujobtech/vagas/issues/414",
+          "createdAt": "2024-02-20T14:02:30Z",
+          "updatedAt": "2024-02-20T14:03:03Z",
+          "community": {
+            "id": "seujobtech",
+            "name": "seujobtech",
+            "avatarUrl": "https://github.com/seujobtech.png?size=80",
+            "repository": "seujobtech/vagas",
+            "url": "https://github.com/seujobtech/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 923,
+        "publishedAt": "2024-02-20T14:02:30Z",
+        "status": "stale"
+      }
     },
     "gh_916d761a44e9acc0c213a42d": {
       "id": "gh_916d761a44e9acc0c213a42d",
@@ -54,8 +121,8 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "pleno",
-        "data"
+        "data",
+        "pleno"
       ],
       "author": {
         "id": "alissongusmao",
@@ -73,7 +140,68 @@
       "createdAt": "2021-04-28T14:28:33Z",
       "updatedAt": "2021-04-28T14:28:33Z",
       "url": "https://github.com/dev-pp/vagas/issues/55",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_916d761a44e9acc0c213a42d",
+          "sourceId": "dev-pp/vagas#55",
+          "repository": "dev-pp/vagas",
+          "repositoryUrl": "https://github.com/dev-pp/vagas",
+          "url": "https://github.com/dev-pp/vagas/issues/55",
+          "createdAt": "2021-04-28T14:28:33Z",
+          "updatedAt": "2021-04-28T14:28:33Z",
+          "community": {
+            "id": "dev-pp",
+            "name": "dev-pp",
+            "avatarUrl": "https://github.com/dev-pp.png?size=80",
+            "repository": "dev-pp/vagas",
+            "url": "https://github.com/dev-pp/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1951,
+        "publishedAt": "2021-04-28T14:28:33Z",
+        "status": "stale"
+      }
     }
   }
 }

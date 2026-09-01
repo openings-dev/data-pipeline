@@ -1,649 +1,941 @@
 {
-  "generatedAt": "2026-09-01T08:10:47.599Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "page": 21,
   "pageSize": 20,
   "nextPage": "api/pages/page-0022.json",
   "ids": [
-    "gh_0204db9cde8a5488e44c6e8b",
-    "gh_bf70dc9f783bd9e91215da56",
-    "gh_72cc354e7d9c38f999fa902a",
-    "gh_dd237a978dba300d92eb4d35",
-    "gh_8ca6cfcc5f869a8b9471b21b",
-    "gh_9c27ccbbb027a757720e4a38",
-    "gh_337dcc0369d8226aab4c836f",
-    "gh_549fb47e62e78432e6e7af86",
-    "gh_1bd5f8d6144fe120825c7a8c",
-    "gh_d774a41259f652c1ea370252",
-    "gh_26b7c402e14a59e43ad9828b",
-    "gh_27ad1c5fa6ae31eaf8210333",
-    "gh_4d641b50245b8d41ceff0703",
-    "gh_7b4f6457d040ea0a23c1c43b",
-    "gh_b0b25f9f51d0e7f1c185dc60",
-    "gh_8d3d4b455493191722317dda",
-    "gh_777d6953c094c4c77cffa586",
-    "gh_03fa03119cda6972a7f24c60",
-    "gh_018090ae0b51c7fe869fe122",
-    "gh_f1495b68fe7d4f8349ceb1b6"
+    "gh_f0a399ade124ccb0520bf139",
+    "gh_31072b7eb07f8515de34a041",
+    "gh_b4c389988f0e5a389aabf3b3",
+    "gh_a8804e9c31dabfe160161277",
+    "gh_529af6046ca6a2af0d52eeca",
+    "gh_3410d8d834ad83dcb24d8aac",
+    "gh_fd7b159a281de9af79b31d1c",
+    "gh_0a1918ad5c999a150186ba80",
+    "gh_f811ea11eb896201b2a8dc82",
+    "gh_bdee7881981e1da0fe35751b",
+    "gh_0c8142500ab7244ecd91bc45",
+    "gh_0942ed9736ea13305338edbc",
+    "gh_c00aea9ceba72a4744407ba9",
+    "gh_94cafd35f7b9d2a5c82cd324",
+    "gh_a087c2a7e4c36bd695c90fdc",
+    "gh_e51f320ccc04057f58acdee4",
+    "gh_ac0c2bf05a2a9f15633a7fe2",
+    "gh_e3cea4edfbc7f630c99d150f",
+    "gh_fbcd0549308f93fa2ecbe812",
+    "gh_e2a0b1deedf7bb946ad695f2"
   ],
   "items": [
     {
-      "id": "gh_0204db9cde8a5488e44c6e8b",
-      "sourceId": "remoteintech/remote-jobs#2122",
-      "title": "Upgrade @11ty/is-land from v4 to v5",
-      "description": "## Summary\n\nDependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked issue rather than merging blindly.\n\n## Breaking Changes in v5\n\n- **`autoinit` attribute removed** — `<is-land autoinit>` and `is-land-autoinit.js` are gone. Must migrate to the new `Island.addInitType()` API for framework initialisation\n- **`Island.define(tagName)` removed** — replaced by using `customElements.define` directly\n- **`import` attribute behaviour change** — when used with `type`, the `import()` is no longer performed automatically\n- **Manual definition** — now uses `?nodefine` query param instead of the previous approach\n\n## What's Good\n\n- Broader browser support (Chrome 71+, down from 88+)\n- Performance improvements for `on:idle`, `on:media`, `on:load`\n- Passive event listeners for `on:interaction` (fixes Lighthouse warning)\n- Minified build available (`dist/is-land.min.js`)\n\n## Suggested Approach\n\n1. Audit current `is-land` usage in templates (`src/_includes/`, `src/_layouts/`)\n2. Check if `autoinit` or `Island.define()` are used anywhere\n3. Update usage to match v5 API\n4. Test lazy-loading behaviour (theme switcher, search, any other islands)\n5. Verify build passes\n\n## References\n\n- [is-land v5.0.0 release](https://github.com/11ty/is-land/releases/tag/v5.0.0)\n- [Dependabot PR #2120](https://github.com/remoteintech/remote-jobs/pull/2120)",
-      "excerpt": "## Summary Dependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked is...",
+      "id": "gh_f0a399ade124ccb0520bf139",
+      "sourceId": "developersRJ/vagas#516",
+      "title": "[Remoto] Pessoa Engenheira de Software - Tech Lead (Ruby on Rails) - RD Station",
+      "description": "## Nossa empresa\nSomos a [RD Station](https://bit.ly/3RyakzX), líder em soluções de tecnologia no Brasil. Nossa plataforma de automação de marketing e vendas é líder no Brasil e soma mais de 50.000 clientes, em mais de 40 países. Como alcançamos tudo isso? Através do nosso [A-team](https://bit.ly/3ZUPopc), composto por mais de 1.500 pessoas colaboradoras em nosso grupo, capaz de oferecer soluções, produtos, e educar o mercado, impactando o ecossistema e empoderando heróis e heroínas que fazem a economia crescer.\n\n\n ## Descrição da vaga\nComo Tech Lead no time do RD Station Marketing, sua missão será garantir que as decisões técnicas do time estejam sempre alinhadas à estratégia do produto, promovendo uma arquitetura das features sob seu domínio que seja escalável, resiliente e sustentável. Você será responsável por desenvolver o time técnico, liderando pela excelência, compartilhando conhecimento e criando um ambiente de aprendizado contínuo e alta performance.\n\n## Local\nRemoto\n\n## Requisitos\n\n- Experiência sólida em desenvolvimento de software com Ruby on Rails, preferencialmente em ambientes complexos e escaláveis;\n- Conhecimento avançado em tecnologias relevantes para o stack tecnológico da empresa, como Postgres, Redis, GCP/AWS;\n- Experiência prática com arquitetura de software e padrões de design;\n- Histórico comprovado de entrega de funcionalidades completas, incluindo testes automatizados e code review;\n- Experiência anterior como Tech Lead ou em papel similar.\n\n**Características que somam pontos…**\n\n- Boas noções de Golang;\n- Experiência atuando com ElasticSearch e MongoDB;\n- Ser (ou querer se tornar) uma pessoa ativa na comunidade, que compartilha conhecimento dentro e fora da empresa através de eventos, artigos, mentorias, iniciativas voluntárias, projetos open source, etc.\n\n## Benefícios\nLink dos nossos benefícios [aqui](https://talent.rdstation-tm.com/beneficios-rdstation).\n\n## Contratação\nCLT\n\n#### Nível\n- Especialista\n\n## Como se candidatar\nPara se candidatar é só clicar [aqui](https://grnh.se/657a94cc2us).",
+      "excerpt": "## Nossa empresa Somos a [RD Station](https://bit.ly/3RyakzX), líder em soluções de tecnologia no Brasil. Nossa plataforma de automação de marketing e vendas é líder no Brasil e soma mais de 50.000 clientes, em mais d...",
       "issueState": "open",
-      "contentHash": "55a19f8b0f66ddeebfdff850b17f08918a7c6115d78ea41b7572d6a89d236eab",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "remote",
-        "node"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-21T13:17:54Z",
-      "updatedAt": "2026-08-23T18:19:50Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_72cc354e7d9c38f999fa902a",
-      "sourceId": "timqian/open-source-jobs#161",
-      "title": "Feature: Enhanced Search & Filtering",
-      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
-      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
-      "issueState": "open",
-      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:29:12Z",
-      "updatedAt": "2026-02-19T04:01:20Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/161",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_dd237a978dba300d92eb4d35",
-      "sourceId": "timqian/open-source-jobs#160",
-      "title": "chaos-genius repo is archived",
-      "description": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table ,\nfix : might remove it or add another new one which is alternative to it ig?",
-      "excerpt": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table , fix : might remove it or add another new one which is alternative to it ig?",
-      "issueState": "open",
-      "contentHash": "8fa49b441c78bded9b3b3f265b273b1c1cbcac0e78160ac409226673fadcb2d0",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [],
-      "author": {
-        "id": "wasup-yash",
-        "name": "wasup-yash",
-        "handle": "wasup-yash",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112958086?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-17T18:15:36Z",
-      "updatedAt": "2026-02-17T18:15:36Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/160",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_8ca6cfcc5f869a8b9471b21b",
-      "sourceId": "remoteintech/remote-jobs#2113",
-      "title": "Generate dynamic OG images for company profiles",
-      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
-      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
-      "issueState": "open",
-      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "enhancement"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-15T18:03:51Z",
-      "updatedAt": "2026-08-23T18:19:28Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_9c27ccbbb027a757720e4a38",
-      "sourceId": "nerdzao/vagas#189",
-      "title": "[Híbrido-São Paulo/SP] Back-end Developer (NestJS) na Viaflow",
-      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Backend (NestJS/Node.js) de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\n\nSe você tem domínio em NestJS, arquitetura de microsserviços e paixão por sistemas escaláveis em GCP, #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nArquitetura e Desenvolvimento: Projetar, desenvolver e manter serviços de backend escaláveis utilizando NestJS e [Node.js](http://node.js/).\nIntegração de APIs: Construir e integrar APIs RESTful e/ou GraphQL para o frontend e sistemas externos.\nColaboração Multidisciplinar: Trabalhar estreitamente com engenheiros frontend ([React.js](http://react.js/)) para entregar experiências de usuário fluidas e integradas.\nCloud Native: Arquitetar e implementar microsserviços nativos da nuvem no Google Cloud Platform (GCP).\nSistemas Orientados a Eventos: Desenvolver sistemas event-driven utilizando plataformas de mensageria e streaming (ex: Pub/Sub, Kafka, etc.).\nExcelência Técnica: Garantir a segurança, performance, escalabilidade e confiabilidade das aplicações, implementando as melhores práticas de autenticação, autorização e proteção de dados.\nQualidade de Código: Escrever código limpo, de fácil manutenção e bem testado, seguindo os padrões da indústria e participando ativamente de code reviews.\nLiderança Técnica: Participar de discussões de design técnico e decisões arquiteturais.\nOperações: Realizar o troubleshooting de problemas em produção, otimizar a performance do sistema e colaborar com times de DevOps em pipelines de CI/CD e monitoramento.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\nSólida Experiência: Desenvolvimento Backend utilizando NestJS e [Node.js](http://node.js/).\nIntegração Frontend: Experiência prática com [React.js](http://react.js/) (focada na integração e colaboração com times de frontend).\nDesign de APIs: Sólido entendimento de arquiteturas baseadas em APIs (REST / GraphQL).\nArquitetura Moderna: Experiência na construção de microsserviços e sistemas orientados a eventos.\nEspecialista em Cloud: Forte experiência com serviços do Google Cloud Platform (GCP).\nContainerização: Experiência com Docker.\nDados: Conhecimento profundo de bancos de dados (SQL e/ou NoSQL).\nSegurança: Forte compreensão de melhores práticas de segurança e design de sistemas escaláveis.\n🏆 Diferenciais (O que valorizamos)\nExperiência com orquestração utilizando Kubernetes.\nCertificações oficiais GCP.\nVivência prévia em projetos SaaS de escala global.\n🤝 Soft Skills\nExcelentes habilidades de comunicação para atuar em ambientes multidisciplinares.\nCapacidade analítica para resolução de problemas complexos.\n\nIdioma: Inglês Fluente\n\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nTreinamentos e Certificações\nClube do iFood gratuito\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nSe candidate através do link:  https://viaflow.gupy.io/jobs/10805702?jobBoardSource=gupy_public_page",
-      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Backend (NestJS/Node.js) de altíssimo nível para atuar em um cliente globa...",
-      "issueState": "open",
-      "contentHash": "37dc953b4049ab2d1448405a34d3441d95786b2fc28717211e42b1f616676388",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "contentHash": "12827d11e9250cb21321d7652d14712b5379d7778608f3a2e0336cfaa5518741",
+      "repository": "developersRJ/vagas",
+      "repositoryUrl": "https://github.com/developersRJ/vagas",
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "frontend",
-        "backend",
-        "react",
-        "node",
-        "devops",
-        "design"
+        "clt",
+        "especialista",
+        "remoto"
       ],
       "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+        "id": "SheilaMiqueli",
+        "name": "SheilaMiqueli",
+        "handle": "SheilaMiqueli",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/175030286?v=4"
       },
       "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
+        "id": "developersRJ",
+        "name": "developersRJ",
+        "avatarUrl": "https://github.com/developersRJ.png?size=80",
+        "repository": "developersRJ/vagas",
+        "url": "https://github.com/developersRJ/vagas"
       },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:44:05Z",
-      "updatedAt": "2026-02-06T18:44:05Z",
-      "url": "https://github.com/nerdzao/vagas/issues/189",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_337dcc0369d8226aab4c836f",
-      "sourceId": "nerdzao/vagas#188",
-      "title": "[Híbrido-São Paulo/SP] AI Engineer (Python) na Viaflow",
-      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de IA Sênior de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\n\nComo Pessoa Engenheira de IA Sênior, você será peça-chave no nosso time de ML/AI. Seu foco será a exploração e implementação de Machine Learning, IA Generativa e tecnologias disruptivas para construir interfaces que tornem a IA acessível e funcional. Buscamos um perfil full-stack com alma backend, capaz de construir sistemas escaláveis, orientados a eventos e prontos para o mundo real.\n\n\nSe você tem experiência consolidada em Python, visão estratégica de nuvem e paixão por integrar IA em aplicações reais, #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nExecução Independente e Ownership: Conduzir projetos da concepção ao deploy com supervisão mínima, assumindo a responsabilidade total pelas entregas e prazos.\nDesign de Soluções: Projetar arquiteturas inovadoras (whiteboarding), colaborando com o time para transformar ideias em soluções técnicas viáveis.\nDesenvolvimento em Nuvem: Desenhar e implementar soluções robustas, com foco em Google Cloud Platform (GCP) e Vertex AI.\nArquitetura Event-Driven: Construir e gerenciar APIs dinâmicas em tempo real utilizando tecnologias como Cloud Functions, Kubernetes e Cloud Run.\nIntegração de IA: Aplicar mecanismos de IA clássica e moderna, como o uso de transformers, execução de inferências e formatação de dados para o cliente final.\nMentoria e Cultura: Promover uma cultura de curiosidade e aprendizado contínuo, mantendo-se atualizado sobre tendências de IA e inspirando o crescimento da equipe.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\nExperiência Sólida atuando com desenvolvimento de software backend.\nDomínio de Linguagem: Proficiência indispensável em Python.\nExpertise em Nuvem: Experiência prática em plataformas de nuvem (GCP é o nosso grande diferencial).\nSistemas de Alta Performance: Experiência na construção de soluções resilientes e orientadas a eventos (event-driven).\nCiclo de Vida (SDLC): Domínio completo do ciclo de desenvolvimento, do código à produção.\n🎓 Formação e idiomas\nGraduação: Bacharelado em Ciência da Computação, Engenharia ou áreas correlatas.\nInglês fluente\n🏆 Diferenciais (O que te destaca)\nExperiência direta com implementação e suporte de Machine Learning / LLMs (Large Language Models).\nVivência em projetos globais e ambientes multiculturais.\n🧠 Seu Perfil Comportamental\nAutossuficiência: Desenvoltura para resolver problemas de forma eficaz e independente.\nColaboração: Mentalidade aberta para trabalhar próximo a Engenheiros Líderes, Product Owners e Cientistas de Dados.\nInconformismo e Inovação: Paixão por aprender novas tecnologias e impulsionar a inovação no time.\nComunicação: Excelentes habilidades de colaboração e resolução de problemas complexos.\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nClube do iFood gratuito\nTreinamentos e Certificações\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nSe candidate através do link: https://viaflow.gupy.io/jobs/10805620?jobBoardSource=gupy_public_page",
-      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de IA Sênior de altíssimo nível para atuar em um cliente global, focado em mod...",
-      "issueState": "open",
-      "contentHash": "923025e4955c62c04793aaf9a939349caef030b34c9272d250397678b6ef1812",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "backend",
-        "python",
-        "design"
+      "createdAt": "2025-03-03T17:41:18Z",
+      "updatedAt": "2025-03-03T17:41:54Z",
+      "url": "https://github.com/developersRJ/vagas/issues/516",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "especialista",
+        "remoto"
       ],
-      "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
       },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
+      "taxonomy": {
+        "areas": [
+          "design",
+          "leadership"
+        ],
+        "technologies": [
+          "aws",
+          "gcp",
+          "go",
+          "mongodb",
+          "postgres",
+          "redis",
+          "ruby"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
       },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:42:28Z",
-      "updatedAt": "2026-02-06T18:42:28Z",
-      "url": "https://github.com/nerdzao/vagas/issues/188",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_549fb47e62e78432e6e7af86",
-      "sourceId": "nerdzao/vagas#187",
-      "title": "[Híbrido-São Paulo/SP] Front-end Developer (React) na Viaflow",
-      "description": "Nossa empresa\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Frontend Senior de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\nSe você tem domínio de React, mentalidade voltada para escalabilidade e paixão por inovação, #VemPraViaflow!\n\n✨ Se identificou? Então vem com a gente!\n\nDescrição da vaga\nResponsabilidades e atribuições:\n\nColaboração e Pairing: Atuar em conjunto com engenharia e gestão de produto para criar soluções de software seguras, confiáveis e escaláveis.\nEspecialista (SME): Atuar como referência técnica e de negócio, compreendendo profundamente processos, inter-relações e dependências entre os componentes do sistema.\nDesenvolvimento de Excelência: Projetar, desenvolver e manter código JavaScript/React altamente reutilizável e de alto desempenho.\nIntegração Fluida: Colaborar com desenvolvedores de backend para integrar componentes de UI com APIs e bancos de dados.\nExperiência do Usuário (UX): Participar ativamente de testes com usuários e incorporar feedbacks para refinar o design e a jornada do cliente.\nDesign System: Contribuir para a evolução do nosso Design System, garantindo consistência visual em todos os pontos de contato digitais.\nOtimização de Performance: Garantir que as aplicações sejam otimizadas para velocidade (minimizando tempos de carregamento e requisições HTTP).\nQualidade e Automação: Implementar e manter procedimentos de testes automatizados no frontend para identificar regressões e garantir entregas robustas.\nInovação Contínua: Manter-se atualizado com as tendências de frontend, integrando novas tecnologias para manter a competitividade do produto.\n\nLocal\nAvenida Paulista, São Paulo-SP\n\nRequisitos\n💻 Experiência e Conhecimento Técnico\n\nSólida Experiência em desenvolvimento Frontend em ambientes complexos.\nExpertise em React: Conhecimento especialista em JavaScript e React, com foco em arquitetura baseada em componentes.\nVisão Fullstack: Bom conhecimento de [Node.js](http://node.js/) para suporte às necessidades de integração.\nCloud Computing: Experiência com nuvem pública, preferencialmente Google Cloud Platform (GCP).\nQualidade de Código: Excelentes habilidades de escrita de código e experiência sólida na escrita de testes.\nComponentização: Experiência avançada na criação e aprimoramento de componentes reutilizáveis.\nMetodologias: Ótimo conhecimento em metodologias Ágeis (Scrum/Kanban).\n\n🎓 Formação e Soft Skills\n\nGraduação: Formação completa em Engenharia, Ciência da Computação ou áreas correlatas.\nComunicação: Fortes habilidades de comunicação para colaborar com equipes multifuncionais globais.\nMindset: Paixão por expandir conhecimentos técnicos e atitude de dono frente aos domínios técnicos.\nIdioma: Inglês Fluente\n\nBenefícios\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nClube do iFood gratuito\nTreinamentos e Certificações\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nContratação\nCooperativa\n\nComo se candidatar\nSe candidate através do link: https://viaflow.gupy.io/jobs/10805397?jobBoardSource=gupy_public_page\n\nTempo médio de feedbacks\nCostumamos enviar feedbacks em até 07 dias após cada processo.\nE-mail para contato em caso de não haver resposta: [jessica.pinheiro@viaflow.com.br](mailto:jessica.pinheiro@viaflow.com.br)",
-      "excerpt": "Nossa empresa Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Frontend Senior de altíssimo nível para atuar em um cliente global, focado em ...",
-      "issueState": "open",
-      "contentHash": "214ee77940ac5b24de59d9207f4d01c3e754bec6f6c0367be86fbe2f96b2ed43",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "frontend",
-        "backend",
-        "fullstack",
-        "react",
-        "node",
-        "java",
-        "senior",
-        "data"
+      "sources": [
+        {
+          "id": "gh_f0a399ade124ccb0520bf139",
+          "sourceId": "developersRJ/vagas#516",
+          "repository": "developersRJ/vagas",
+          "repositoryUrl": "https://github.com/developersRJ/vagas",
+          "url": "https://github.com/developersRJ/vagas/issues/516",
+          "createdAt": "2025-03-03T17:41:18Z",
+          "updatedAt": "2025-03-03T17:41:42Z",
+          "community": {
+            "id": "developersRJ",
+            "name": "developersRJ",
+            "avatarUrl": "https://github.com/developersRJ.png?size=80",
+            "repository": "developersRJ/vagas",
+            "url": "https://github.com/developersRJ/vagas"
+          }
+        },
+        {
+          "id": "gh_ef74ae95b0f7fbec0a9767b0",
+          "sourceId": "developersRJ/vagas#517",
+          "repository": "developersRJ/vagas",
+          "repositoryUrl": "https://github.com/developersRJ/vagas",
+          "url": "https://github.com/developersRJ/vagas/issues/517",
+          "createdAt": "2025-03-03T17:41:27Z",
+          "updatedAt": "2025-03-03T17:41:54Z",
+          "community": {
+            "id": "developersRJ",
+            "name": "developersRJ",
+            "avatarUrl": "https://github.com/developersRJ.png?size=80",
+            "repository": "developersRJ/vagas",
+            "url": "https://github.com/developersRJ/vagas"
+          }
+        }
       ],
-      "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      "deduplication": {
+        "sourceCount": 2
       },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
-      },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:40:41Z",
-      "updatedAt": "2026-02-06T18:40:41Z",
-      "url": "https://github.com/nerdzao/vagas/issues/187",
-      "sourceType": "github-issue"
+      "freshness": {
+        "ageDays": 546,
+        "publishedAt": "2025-03-03T17:41:18Z",
+        "status": "stale"
+      }
     },
     {
-      "id": "gh_1bd5f8d6144fe120825c7a8c",
-      "sourceId": "kotlin-br/vagas#41",
-      "title": "[REMOTO] Desenvolvedor(a) Kotlin Sênior na DB1",
-      "description": "Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n\nLink: https://db1.inhire.app/vagas/f2e012ab-f58a-4089-b6be-c155cafff9f0/desenvolvedora-kotlin-senior?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n\nO que você vai fazer por aqui:\n\nCriar experiências digitais que encantam usuários e resolvem problemas reais, desenvolvendo aplicações modernas em Kotlin e React.JS.\nTransformar lógica de programação em interfaces intuitivas e soluções de alto impacto.\nAplicar Programação Orientada a Objetos e boas práticas como Clean Code, SOLID e Design Patterns, garantindo qualidade e manutenibilidade do código.\nConstruir software seguro desde a base, aplicando conceitos de Desenvolvimento Seguro.\nUtilizar Inteligência Artificial de forma prática no dia a dia para potencializar soluções e processos.\nColaborar com times multidisciplinares para entregar produtos com velocidade e excelência.\nEscrever e manter testes automatizados que asseguram estabilidade e confiança nas entregas.\nPerfil que buscamos:\n\nExperiência sólida em Kotlin e React.js.\nFacilidade para entender problemas complexos e propor soluções criativas e eficientes.\nDomínio de lógica de programação e POO.\nCompromisso com qualidade, segurança e escalabilidade.\nVai ser incrível se você souber ou tiver vontade de aprender:\n\nTiver vivência com metodologias ágeis, especialmente Scrum.\nJá tiver trabalhado com desenvolvimento em Java e Node\nFor curioso(a) e gostar de experimentar novas tecnologias para ir além do esperado.\nO que você vai encontrar aqui: \n\n·         O jeito único de ser DB1: https://culture.db1group.com/\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\nSobre a empresa\nSomos um grupo que transforma a vida das pessoas e das organizações por meio da tecnologia. \n\nNossa cultura, conhecimento e habilidades nos movem para fazer entregas que ajudam as pessoas a terem um dia a dia melhor. \n\nSomos conhecidos pela efetividade de nossas entregas bem-feitas que simplificam o dia a dia e ajudam nossos clientes a atingirem seus objetivos, cuidando para que cada pessoa envolvida seja iluminada pela experiência de trabalhar conosco. \n\nEstamos construindo um nome que vai durar gerações e que vai representar um conjunto de indivíduos extraordinários, com talento, alto desempenho e engajamento nas missões que lhe são confiadas. \n\nSe você se identifica com esses valores, a DB1 é para você!",
-      "excerpt": "Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostam...",
+      "id": "gh_31072b7eb07f8515de34a041",
+      "sourceId": "phpdevbr/vagas#1304",
+      "title": "[REMOTO] Sr Backend Developer - PHP - Invillia",
+      "description": "**DESCRIÇÃO DA VAGA**\nAproxime-se. A Invillia não apenas transformou a forma como as empresas mais revolucionárias do mundo criam e desenvolvem estratégias, negócios e produtos digitais.\nInovou também a maneira como pessoas apaixonadas por tecnologia, de qualquer lugar do planeta, podem interagir, evoluir, mais conectados do que nunca.\nPara a Invillia, não importa onde você está. Se é um país grande. Ou uma cidade pequena. E sim a sua vontade. As suas ideias. O seu potencial.\nO tamanho do seu talento_\n\n**RESPONSABILIDADES E ATRIBUIÇÕES**\nO profissional será responsável em prover soluções técnicas para novas features e dar o suporte necessário as features já existentes, afinal, nem tudo são flores.\nEsperamos também que essa pessoa auxilie os outros membros do time em questões técnicas não esquecendo de fornecer a melhor solução para o negócio.\nAlgo que prezamos bastante é qualidade, isso inclui um código limpo e legível (clean code).\nTambém é desejável que o mesmo tenha um perfil intra-empreendedor, onde seus objetivos estejam alinhados com os objetivos da empresa, afinal, temos muito orgulho do que fazemos aqui!\n\n**REQUISITOS E QUALIFICAÇÕES**\nPrincipais Responsabilidades\nAnalista Sênior com experiência em desenvolvimento de sistemas distribuídos com hospedagem na AWS. Buscamos um analista que tenha pensamento crítico, boa comunicação e comprometido com as entregas.\nSomos responsáveis pelo desenvolvimento de um motor de processamento com alta volumetria e que precisa ser bastante resiliente, então é muito importante ter profundidade e experiência nos temas.\nFazer parte de um time de desenvolvimento;\nTrabalhar com sistemas distribuídos, cloud e modelo Devops;\nAtuar nos projetos que consistem em aumentar e flexibilizar o negócio;\nConstrução de rotinas de monitoramento e performance de sistemas.\n\nÉ fundamental que você tenha conhecimento em:\nConhecimentos e experiência em PHP 7.0;\nConhecimentos na utilização de frameworks PHP (ex: Laravel, Symphony, Phalcon e etc);\nConhecimentos e experiência em HTML5, CSS3, Javascript, JQuery e Bootstrap;\nExperiência com banco de dados MySQL;\nSoluções e definições de arquitetura;\nSistema operacional Linux;\nDesenvolvimento Ágil - Scrum e Kanban;\nDocker, Git, CI/CD e Gerenciamento de Pacotes (ex: NPM, Yarn, Composer, Bower e etc);\nExperiência com webservices REST/SOAP;\nDesenvolvimento de testes automatizados (unitários, TDD).\nExperiência com processamento de alto volume de dados\nKafka\nExperiencia com aplicações com alta disponibilidade e Perfomance\n\n\nOutros pontos desejáveis:\nConhecimento em Kotlin\nAWS\n\nEnvie seu CV atualizado para: isaque.silva@invillia.com",
+      "excerpt": "**DESCRIÇÃO DA VAGA** Aproxime-se. A Invillia não apenas transformou a forma como as empresas mais revolucionárias do mundo criam e desenvolvem estratégias, negócios e produtos digitais. Inovou também a maneira como p...",
       "issueState": "open",
-      "contentHash": "e845f78bafcee62984c397096cc1a412ff965f0632988aed35341d58323a63d9",
-      "repository": "kotlin-br/vagas",
-      "repositoryUrl": "https://github.com/kotlin-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "tags": [
-        "remoto",
-        "sênior"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "kotlin-br",
-        "name": "kotlin-br",
-        "avatarUrl": "https://github.com/kotlin-br.png?size=80",
-        "repository": "kotlin-br/vagas",
-        "url": "https://github.com/kotlin-br/vagas"
-      },
-      "companyName": "DB1",
-      "createdAt": "2026-02-05T00:07:51Z",
-      "updatedAt": "2026-02-05T00:08:09Z",
-      "url": "https://github.com/kotlin-br/vagas/issues/41",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_d774a41259f652c1ea370252",
-      "sourceId": "EtherTW/jobs#74",
-      "title": "Redstone com",
-      "description": "🚀 招聘：区块链 / Web3 开发工程师\n\n关于我们\n\n我们是一家专注于 区块链与 Web3 技术 的科技公司，致力于构建真实落地的去中心化解决方案和可扩展的 Web3 产品。\n\n职位名称\n\n区块链 / Web3 开发工程师（远程）\n\n岗位职责\n\n开发、测试和维护智能合约\n\n使用 Solidity 在 EVM 兼容区块链 上进行开发\n\n与前端和后端工程师协作完成产品开发\n\n审查、优化并提升智能合约的安全性与性能\n\n任职要求\n\n具备 Solidity 实际开发经验\n\n熟悉 Web3.js 和 / 或 Ethers.js\n\n对 DeFi、NFT、DAO 有良好的理解\n\n有 GitHub 作品集或公开代码示例者优先\n\n加分项（Nice to Have）\n\n智能合约审计经验\n\n熟悉 Layer 2 扩展方案\n\n参与过 开源项目 并有实际贡献\n\n薪资待遇\n\n年薪：110,000 – 130,000 美元（可根据经验协商）\n\n可选择 全职或合同制\n\n完全远程办公，时间灵活\n\n应聘方式\n\n请发送以下资料：\n\nGitHub 主页\n\n简历（可选）\n\n简短的自我介绍\n\n📧 邮箱：elenpoter394@gmail.com\n\n💬 Telegram：@Romanpotter",
-      "excerpt": "🚀 招聘：区块链 / Web3 开发工程师 关于我们 我们是一家专注于 区块链与 Web3 技术 的科技公司，致力于构建真实落地的去中心化解决方案和可扩展的 Web3 产品。 职位名称 区块链 / Web3 开发工程师（远程） 岗位职责 开发、测试和维护智能合约 使用 Solidity 在 EVM 兼容区块链 上进行开发 与前端和后端工程师协作完成产品开发 审查、优化并提升智能合约的安全性与性能 任职要求 具备 Solidity...",
-      "issueState": "open",
-      "contentHash": "13b487a11df57b07cb94b194a7fb5ba7d340b3cecdc402c1823d514f2b2ce18b",
-      "repository": "EtherTW/jobs",
-      "repositoryUrl": "https://github.com/EtherTW/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "tags": [],
-      "author": {
-        "id": "elenpoter394-sys",
-        "name": "elenpoter394-sys",
-        "handle": "elenpoter394-sys",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/258803491?v=4"
-      },
-      "community": {
-        "id": "EtherTW",
-        "name": "EtherTW",
-        "avatarUrl": "https://github.com/EtherTW.png?size=80",
-        "repository": "EtherTW/jobs",
-        "url": "https://github.com/EtherTW/jobs"
-      },
-      "createdAt": "2026-02-03T08:33:10Z",
-      "updatedAt": "2026-02-03T08:33:10Z",
-      "url": "https://github.com/EtherTW/jobs/issues/74",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_26b7c402e14a59e43ad9828b",
-      "sourceId": "f2etw/jobs#1166",
-      "title": "[徵才]Software Senior Principal Engineer",
-      "description": "Senior Principal Software Engineer\n\n\n\nThe Software Engineering team delivers next-generation software application enhancements and new products for a changing world. Working at the cutting edge, we design and develop software for platforms, peripherals, applications and diagnostics — all with the most advanced technologies, tools, software engineering methodologies and the collaboration of internal and external partners.\n\n\n\nJoin us to do the best work of your career and make a profound social impact as a Senior Principal Software Engineer on our Software Engineering Team in [Taipei].\n\nWhat you’ll achieveAs a Software Principal Engineer on the HCI team, you will be responsible for leading the technical direction and architecture of Dell's AI and Solutions hyperconverged infrastructure platform. This role requires close collaboration with cross-functional teams—including engineering, product management, and quality assurance—to deliver high-quality software solutions that meet customer needs. You will drive technical innovation, mentor engineers, and champion best practices and emerging technologies, including AI tools usageYou will:\n\n1.Technical Leadership:  Overlook cross Domain Engineering gap/risks and provide guidance to engineers to move forward to meet the Site development target.\n\n2.Architecture: Design and implement scalable, secure, and efficient software architectures for HCI, leveraging cloud, virtualization, and storage technologies.\n\n3.Innovation: Drive technical innovation and stay up-to-date with industry trends, emerging technologies, and Dell's technology strategy to ensure the products remain competitive and innovative.\n\n4.Software Development: Lead the design, development, testing, and maintenance of HCI software applications and features, including API development, UI/UX enhancements, and backend infrastructure improvements.\n\n5.Collaboration: Work closely with cross-functional teams to ensure timely delivery of high-quality solutions.\n\n6.Problem-Solving: Troubleshoot and resolve complex technical issues, perform root cause analysis and recommendations for improvement.\n\n7.Mentorship: Mentor engineers and provide technical guidance to support their career growth and cowork as one team.\n\n8.Strategy: Develop and implement technical strategies to align with business objectives, grow the site capabilities/efficiency.\n\n\n\nTake the first step towards your dream careerEvery Dell Technologies team member brings something unique to the table. Here’s what we are looking for with this role:Essential Requirements\n\n• Bachelo's or Master's degree in Computer Science, Software Engineering, or a related technical field or equivalent 10+ years of experience as a software Engineering leader\n\n• Proficiency in programming languages such as Python/Golang on Unix/Linux/BSD operating systems and understanding of data structures, algorithms, and analysis techniques\n\n• AI‑Enabled Software Design and Development Skills: Experience applying AI‑based capabilities to support software design, development, testing, and troubleshooting throughout the engineering lifecycle.\n\n• Experience with network, storage, security product development \n\n• Proven leadership experience, including mentoring and technical direction, enhance Engineering efficiency \n\n• Ability to lead teams to design, develop and deliver major features on time with high quality\n\n• Able to engage with customers and support when needed to solve production issues\n\n• Excellent communication, collaboration, and problem-solving skills\n\n• Familiarity with Agile development methodolofies (e.g. Scrum, Kanban)Desirable Requirements\n\n•Experience with cloud-native applications and microservices architecture\n\n• Knowledge of cybersecurity principles and practices\n\n• Experience with containerized orchestration systems (Kubernetes, Rancher, etc) is a plus\n\n• Certifications: Relevant certifications, such as VMware VCP or AWS Certified Developer, are a plus\n\n• Knowledge of DevOps practices and tools (e.g., Jenkins, Github CI/CD) is a plus\n\nWho we are\n\nWe believe that each of us has the power to make an impact. That’s why we put our team members at the center of everything we do. If you’re looking for an opportunity to grow your career with some of the best minds and most advanced tech in the industry, we’re looking for you.Dell Technologies is a unique family of businesses that helps individuals and organizations transform how they work, live and play. Join us to build a future that works for everyone because Progress Takes All of Us.Application closing date: 30 March 2026Dell Technologies is committed to the principle of equal employment opportunity for all employees and to providing employees with a work environment free of discrimination and harassment. Read the full Equal Employment Opportunity Policy [here](https://jobs.dell.com/equal-employment-opportunity-policy-statement).\n\n\n\n**If you are interested in the position, please contact [lucy.liu1@dellteam.com ](mailto:lucy.liu1@dellteam.com).**",
-      "excerpt": "Senior Principal Software Engineer The Software Engineering team delivers next-generation software application enhancements and new products for a changing world. Working at the cutting edge, we design and develop sof...",
-      "issueState": "open",
-      "contentHash": "161492b5d26ec8f1d80c18c0b68de9105996b61494b9851520fe230848be9e7c",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "tags": [
-        "缺休假資訊",
-        "求才",
-        "缺香蕉資訊",
-        "senior",
-        "full stack",
-        "缺特/彈休資訊",
-        "公司資訊未明"
-      ],
-      "author": {
-        "id": "WoshiLucyya",
-        "name": "WoshiLucyya",
-        "handle": "WoshiLucyya",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/257514112?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2026-01-28T06:02:14Z",
-      "updatedAt": "2026-01-30T05:16:51Z",
-      "url": "https://github.com/f2etw/jobs/issues/1166",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_27ad1c5fa6ae31eaf8210333",
-      "sourceId": "PrepAIJobs/Summer2026-Internships#3",
-      "title": "Mechanize — Software Engineering Intern",
-      "description": "### Link to Internship Posting\n\nhttps://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos\n\n### Company Name\n\nMechanize\n\n### Internship Title\n\nSoftware Engineering Intern\n\n### Location\n\nSan Francisco, CA\n\n### What season is this internship for?\n\nSummer\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\narjun.panickssery@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos ### Company Name Mechanize ### Internship Title Software Engineering Intern ### Location...",
-      "issueState": "open",
-      "contentHash": "5bdd63bccf8d7a2f020d13c229f2ce1da1f9557371836f7f964c1b0976ef3035",
-      "repository": "PrepAIJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/PrepAIJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "tags": [],
-      "author": {
-        "id": "ArjunPanickssery",
-        "name": "ArjunPanickssery",
-        "handle": "ArjunPanickssery",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30219365?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/Summer2026-Internships",
-        "url": "https://github.com/PrepAIJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-01-27T03:43:19Z",
-      "updatedAt": "2026-01-27T03:43:19Z",
-      "url": "https://github.com/PrepAIJobs/Summer2026-Internships/issues/3",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_4d641b50245b8d41ceff0703",
-      "sourceId": "PrepAIJobs/New-Grad-2026#6",
-      "title": "Junior Software Engineer",
-      "description": "### Link to Grad Posting\n\nhttps://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490?utm_source=new_grad_repos\n\n### Company Name\n\nMechanize\n\n### Grad Title\n\nJunior Software Engineer\n\n### Location\n\nSan Francisco, CA\n\n### Does this opportunity offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this position currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\narjun.panickssery@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Grad Posting https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490?utm_source=new_grad_repos ### Company Name Mechanize ### Grad Title Junior Software Engineer ### Location San Francisco,...",
-      "issueState": "open",
-      "contentHash": "4e37e156ff63626cca29c35b7743f3bdd8372984ea9c8a50c46189e534f5a530",
-      "repository": "PrepAIJobs/New-Grad-2026",
-      "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-      "region": "North America",
-      "country": "United States",
-      "tags": [
-        "junior"
-      ],
-      "author": {
-        "id": "ArjunPanickssery",
-        "name": "ArjunPanickssery",
-        "handle": "ArjunPanickssery",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30219365?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/New-Grad-2026",
-        "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-      },
-      "createdAt": "2026-01-27T03:41:33Z",
-      "updatedAt": "2026-01-27T03:41:33Z",
-      "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/6",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_7b4f6457d040ea0a23c1c43b",
-      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#4",
-      "title": "Mechanize — Junior Software Engineer",
-      "description": "https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490?utm_source=new_grad_repos",
-      "excerpt": "https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490?utm_source=new_grad_repos",
-      "issueState": "open",
-      "contentHash": "a5cb61106a6c96c61b699e995d7996e75c9d12f87d90ca11109793056ede3bf2",
-      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-      "region": "North America",
-      "country": "United States",
-      "tags": [
-        "junior"
-      ],
-      "author": {
-        "id": "ArjunPanickssery",
-        "name": "ArjunPanickssery",
-        "handle": "ArjunPanickssery",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30219365?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-      },
-      "createdAt": "2026-01-27T03:40:08Z",
-      "updatedAt": "2026-01-27T03:40:08Z",
-      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/4",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_b0b25f9f51d0e7f1c185dc60",
-      "sourceId": "pythonjobs/jobs#442",
-      "title": "Lead Graphics Engineer",
-      "description": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission: **use software to change the way we build**—turning complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n\nOur platform digests massive BIM models, uses **AI** to generate logical assembly sequences, and visualizes them in a **custom 3D engine**.\nWe’re building the **operating system for the next generation of construction**.\n\n📊 **Proof, not promises**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nThe impact: less re-work, compressed schedules, and reduced carbon emissions ♻️\n\n🚀 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the software team to ship the **next-gen Pilot** and make **digital assembly the industry standard**.\n\n🧠 **Your Mission**\nTake full ownership of our **web-based rendering engine**.\nYou’ll lead the strategic transition from **Autodesk Viewer** to a fully custom, high-performance rendering solution—defining how massive construction datasets are visualized and interacted with in the browser.\n\n🔧 **What you’ll solve**\n\n* Architect and scale a modular rendering engine using **Three.js + TypeScript**\n* Push browser rendering to its limits (1M+ objects) with batching, instancing, Draco compression, and dynamic **LOD streaming**\n* Build advanced AEC features: **4D simulations**, sectioning, markup, spatial filtering\n* Optimize **GraphQL data pipelines** for decoupled geometry and metadata loading\n* Own visualization infrastructure, **data sovereignty**, and security\n\n💡 **Who you are**\n\n* Mid–Senior level (5+ years) in **Three.js / Babylon.js / WebGL**\n* Deep understanding of **GPU pipelines, GLSL shaders, and WebGL internals**\n* Hands-on experience with **CAD/BIM data** (Revit, Rhino, IFC)\n* Strong foundation in **3D math** (matrices, vectors, quaternions)\n* Fluent in **JavaScript / TypeScript** (C# a plus)\n\n🧪 **A day in the role**\nMorning: Profiling a 500MB BIM model crashing mobile browsers 📱\nMid-day: Writing a custom **GLSL shader** for an X-ray visualization mode 👻\nAfternoon: Designing GraphQL queries to fetch only critical metadata and speed up dashboards ⚡\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **live job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real, physical-world impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 If you love graphics, performance, and building tools that leave the screen and enter the real world, we should talk.\n\n👉 **Apply via our Portal**: https://www.maestro-tech.com/careers/\n\n#Hiring #GraphicsEngineering #ThreeJS #WebGL #RenderingEngine\n#TechCareers #StartupJobs #ConstructionTech #BIM #3DEngine\n#AI #DigitalConstruction #TurinJobs",
-      "excerpt": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission: **use software to change t...",
-      "issueState": "open",
-      "contentHash": "0d84fb5b015e00d47d2157863446e725f18b7c22a28aa459b35954c3eea1f18a",
-      "repository": "pythonjobs/jobs",
-      "repositoryUrl": "https://github.com/pythonjobs/jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "hybrid",
-        "typescript",
-        "java",
-        "senior",
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "sandra614",
-        "name": "sandra614",
-        "handle": "sandra614",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
-      },
-      "community": {
-        "id": "pythonjobs",
-        "name": "pythonjobs",
-        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-        "repository": "pythonjobs/jobs",
-        "url": "https://github.com/pythonjobs/jobs"
-      },
-      "createdAt": "2026-01-19T17:26:42Z",
-      "updatedAt": "2026-01-19T17:26:42Z",
-      "url": "https://github.com/pythonjobs/jobs/issues/442",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_8d3d4b455493191722317dda",
-      "sourceId": "pythonjobs/jobs#441",
-      "title": "We're hiring!! Senior Full-Stack Engineer (High-Performance Web)",
-      "description": "🚀 **We’re hiring builders of the future (in code).**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission is simple and ambitious: **use software to change the way we build**. We turn complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n  We digest massive BIM models, use **AI** to generate logical assembly sequences, and visualize everything in a custom **3D engine**.\n  We’re building the **operating system for next-generation construction**.\n\n📍 **Proof, not slides**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nResults? Less re-work, faster schedules, and lower carbon impact ♻️\n\n🔭 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the **software team** to ship the next-gen Pilot and make **digital assembly the industry default**.\n\n💻 **Your Mission**\nYou’ll build the application backbone of a high-performance **Single-Page Application (SPA)** that connects massive geometric datasets (1M+ objects) directly to the user’s fingertips.\n\nYou’ll work on:\n\n* Advanced **UI architecture** (React, SSR/RSC, hydration, rendering strategies)\n* **Complex data visualization** (datagrids, flowcharts, 3D overlays)\n* **State management** at scale (Redux, Zustand, XState)\n* **Algorithms & data structures** (graphs, trees, BIM traversal)\n* **Performance-first engineering** (benchmarking, custom lightweight solutions)\n\n🤝 **How you’ll collaborate**\n\n* With the **Graphics Lead** to sync React UI with a custom Three.js engine\n* With the **AI Engineer** to visualize AI agents, streaming outputs, and interactive chat interfaces\n\n🧠 **The reality**\nFrom optimizing recursive SQL queries in the morning, to refactoring heavy UI components in the afternoon, your work directly impacts live construction sites.\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **active job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real-world, physical impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 Join us early. Ship code that leaves the screen and enters the real world.\n\n👉 **Apply via our Dev Portal** https://www.maestro-tech.com/careers/\n\n#Hiring #FrontendEngineering #ReactJobs #TechCareers #StartupJobs #DevJobs\n#3DRendering #BIM #AIEngineering #ConstructionTech #DigitalTransformation\n``",
-      "excerpt": "🚀 **We’re hiring builders of the future (in code).** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission is simple and ambitious: **use software to change the way w...",
-      "issueState": "open",
-      "contentHash": "2367233a10e8829a9be227eed3a900dabdce66bec80ee55cfc69c606c58e3625",
-      "repository": "pythonjobs/jobs",
-      "repositoryUrl": "https://github.com/pythonjobs/jobs",
-      "region": "Global",
-      "country": "Global",
-      "tags": [
-        "hybrid",
-        "frontend",
-        "react",
-        "senior",
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "sandra614",
-        "name": "sandra614",
-        "handle": "sandra614",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
-      },
-      "community": {
-        "id": "pythonjobs",
-        "name": "pythonjobs",
-        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-        "repository": "pythonjobs/jobs",
-        "url": "https://github.com/pythonjobs/jobs"
-      },
-      "createdAt": "2026-01-19T17:25:09Z",
-      "updatedAt": "2026-07-22T19:05:02Z",
-      "url": "https://github.com/pythonjobs/jobs/issues/441",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_777d6953c094c4c77cffa586",
-      "sourceId": "f2etw/jobs#1165",
-      "title": "[徵才][台北][1.4M+] SWAG.live 徵求資深前端工程師 | Senior Frontend Engineer",
-      "description": "## 公司介紹 \nSWAG 創立於 2016 年 8 月，最初的產品構想，是要打造一個能串連網紅創作者及用戶的 PGC 流量變現的平台，讓粉絲可以無時無刻的與心儀的網紅互動、讓網紅可以透過人氣實現獲利。\n透過豐富多元的內容及強大的行銷推廣，目前平台有超過 400 萬註冊用戶及數千位內容提供者，用戶遍及臺灣、香港、澳門、新加坡、馬來西亞及歐美等，並獲得數十位 YouTuber 網紅大力推薦；成為亞洲最大的影音串流平台。\n官方在 2018 上半年開啟了 swag.live ，使用者可以透過網頁直接開啟 SWAG，並陸續加入了直播、一對一私訊聊天以及影片解鎖等新功能。\n如今 SWAG 定位為亞洲最大的影音串流社交平台，並且持續的拓展國際市場\n\n* 請至 [SWAG Careers](https://www.swag.careers/) 查看所有招募中的職缺\n* 喜歡 SWAG 的文化，卻若找不到合適的職缺嗎？歡迎來信 hr@swag.live 附上履歷，並告訴我們你也很適合 SWAG!\n\n## 薪資範圍\nNTD 1,400,000 – 1,800,000 per year\n\n## 工作內容\n1. 根據規格獨立開發新功能與除錯\n2. 跨部門協作及溝通 (PM, Design, Backend)\n3. 產品效能提升\n4. 內部程式碼審核\n\n## 必要條件\n1. Web: HTML, CSS, Javascript, React, Redux\n2. 以下技術任挑五項以上\n    * Server-side render: react-router v7, express server, NextJS App router\n    * Performance: critical rendering path, event loop, interaction to next paint (INP), intersection observer\n    * Persist: Cookie, LocalStorage, IndexedDB\n    * Cache: CDN cache, server side fetch cache, redis, cache-control header, service worker fetch cache\n    * WebApp: PWA, service worker, push notification, i18n\n    * SEO: og headers, canonical headers, ld+json, sitemap/robot.txt\n\n## 加分條件\n1. Others: webpack, socket.io, React Native, tween.js, PixiJS, Apple/Google/Samsung Pay, WebASM\n2. Players: video.js, DASH.js, shaka-player, bitmovin, ...\n3. CI/CD: GitHub action/workflow, Dockerfile, pm2\n4. 個性主動積極，樂於研究新知並分享\n5. 有帶過新手或領導小專案的經驗",
-      "excerpt": "## 公司介紹 SWAG 創立於 2016 年 8 月，最初的產品構想，是要打造一個能串連網紅創作者及用戶的 PGC 流量變現的平台，讓粉絲可以無時無刻的與心儀的網紅互動、讓網紅可以透過人氣實現獲利。 透過豐富多元的內容及強大的行銷推廣，目前平台有超過 400 萬註冊用戶及數千位內容提供者，用戶遍及臺灣、香港、澳門、新加坡、馬來西亞及歐美等，並獲得數十位 YouTuber 網紅大力推薦；成為亞洲最大的影音串流平台。 官方在 201...",
-      "issueState": "open",
-      "contentHash": "6e7a9b66848e35c5ee351e460e3e54186d6df2ced4cc0aa3029f267f8b5b9e09",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "tags": [
-        "缺休假資訊",
-        "求才",
-        "senior",
-        "年薪百萬",
-        "[f] react",
-        "缺特/彈休資訊"
-      ],
-      "author": {
-        "id": "bill42362",
-        "name": "bill42362",
-        "handle": "bill42362",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/2115695?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2026-01-15T06:48:02Z",
-      "updatedAt": "2026-01-15T12:54:45Z",
-      "url": "https://github.com/f2etw/jobs/issues/1165",
-      "sourceType": "github-issue"
-    },
-    {
-      "id": "gh_03fa03119cda6972a7f24c60",
-      "sourceId": "phpdevbr/vagas#1323",
-      "title": "[Remoto] Backend Developer PHP/Laravel na Coodesh",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/pessoa-desenvolvedora-backend-phplaravel-pleno-175850607?utm_source=github&utm_medium=phpdevbr-vagas&modal=open) para realizar a candidatura. 👋\n**TruckPag: Transformando a Logística através da Tecnologia de Pagamentos**\n\nA TruckPag é uma startup inovadora no setor de Meios de Pagamento, focada em solucionar grandes desafios e gerar impacto relevante no mundo logístico.Buscamos profissionais talentosos e motivados que queiram tornar as operações logísticas mais efetivas, assertivas e competitivas.Acreditamos que grandes ideias nascem da diversidade de vivências, formações e pessoas únicas.Cultivamos um ambiente de trabalho colaborativo, de alta performance e descontraído, onde você terá a oportunidade de agregar valor significativo à nossa equipe e aos nossos produtos.\n\n**Sua Missão (Responsabilidades Principais)**\n\n**_Como Pessoa Desenvolvedora Backend PHP/Laravel Pleno_**_, você será fundamental na construção e manutenção da nossa plataforma, garantindo escalabilidade, performance e segurança._\n\nSuas responsabilidades incluirão:\n\n*   _Desenvolvimento de Funcionalidades: Implementar e otimizar funcionalidades backend complexas utilizando PHP e o framework Laravel._ Manutenção e Performance: Identificar, analisar e corrigir bugs e problemas de performance, garantindo a estabilidade e a manutenção contínua dos sistemas existentes.\n    \n*   Criação de APIs: Projetar, desenvolver e documentar APIs RESTful robustas e seguras para integrações com sistemas internos (Frontend) e parceiros externos.\n    \n*   Colaboração e Planejamento: Participar ativamente das reuniões de planejamento (como sprint planning e dailies), colaborando estreitamente com as equipes de Frontend, Design e Produto.\n    \n*   Qualidade de Código: Assegurar a qualidade e estabilidade do sistema através da escrita e manutenção de testes unitários e de integração com ferramentas como PHPUnit.\n    \n*   Dados e Otimização: Realizar a modelagem de dados e otimizar queries de banco de dados para garantir a eficiência e escalabilidade das operações.\n    \n*   Documentação e Melhoria Contínua: Manter a documentação técnica do código e dos processos atualizada e propor ativamente melhorias para o sistema e o fluxo de trabalho (CI/CD, metodologias, etc.).\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - Boas Práticas \n- Laravel \n- MySQL \n- PHP \n- Postgre \n- GIT\n## Local: \n Remota\n## Requisitos: \n - Experiência Sólida em PHP: Profundo conhecimento da linguagem PHP e comprovada experiência na aplicação de boas práticas de programação e princípios de código limpo. \n- Domínio de Laravel: Experiência prática e sólida com o framework Laravel, incluindo o uso de Eloquent ORM, Blade, Middlewares, Service Providers e outros recursos centrais. \n- Banco de Dados Relacional: Forte experiência em MySQL e/ou PostgreSQL, incluindo modelagem de dados, otimização de queries e manipulação de consultas complexas. \n- Controle de Versão: Experiência avançada com Git e familiaridade com estratégias de branching consolidadas, como Gitflow. \n- APIs e Integração: Experiência comprovada no desenvolvimento e consumo de APIs (RESTful) e integração com serviços e sistemas externos (Webhooks, SDKs). \n- Testes Automatizados: Experiência na escrita e execução de testes unitários e de integração utilizando PHPUnit. \n- Princípios Arquiteturais: Compreensão e aplicação prática dos princípios SOLID e padrões de design arquitetural comuns (MVC, Injeção de Dependência, etc.). \n- Trabalho em Equipe: Experiência prévia em ambientes ágeis e colaborativos, trabalhando em conjunto com equipes multidisciplinares.\n## Diferenciais: \n - Experiência em bancos de dados NoSQL: MongoDB ou DynamoDB. \n- Conhecimento e experiência em filas de processamento e background jobs utilizando ferramentas como Supervisor e/ou serviços de mensageria (ex.: AWS SQS, RabbitMQ). \n- Familiaridade com orquestração de containers, especialmente Kubernetes (k8s) e experiência no ambiente AWS EKS. \n- Conhecimento prático em segurança de desenvolvimento e aplicação (prevenção contra SQL Injection, XSS, CSRF, etc.). \n- Residência em Cascavel - PR (não obrigatório, mas um diferencial).\n## Benefícios: \n - Horário Flexível: Maior autonomia e equilíbrio entre vida pessoal e profissional. \n- Parceria Alura: Acesso a diversas plataformas de aprendizado para desenvolvimento contínuo. \n- Descanso remunerado: 30 dias de descanso remunerado por ano.\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Backend Developer PHP/Laravel na TruckPag](https://coodesh.com/jobs/pessoa-desenvolvedora-backend-phplaravel-pleno-175850607?utm_source=github&utm_medium=phpdevbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nBack-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "3710f2e94ad17131a8ecb5bceafd52ac3489df988869b212bc651637d95b5dec",
+      "contentHash": "40c6ccc50f5480607e92c157c92bdec3f58f6c2bf0ca6d5a6b1d56ae0368b368",
       "repository": "phpdevbr/vagas",
       "repositoryUrl": "https://github.com/phpdevbr/vagas",
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "frontend",
         "backend",
-        "pleno",
+        "devops",
+        "java"
+      ],
+      "author": {
+        "id": "GiLazaro",
+        "name": "GiLazaro",
+        "handle": "GiLazaro",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/176509171?v=4"
+      },
+      "community": {
+        "id": "phpdevbr",
+        "name": "phpdevbr",
+        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+        "repository": "phpdevbr/vagas",
+        "url": "https://github.com/phpdevbr/vagas"
+      },
+      "createdAt": "2025-02-28T20:44:03Z",
+      "updatedAt": "2026-05-15T12:26:20Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1304",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "devops",
+        "java"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre",
+          "support"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "javascript",
+          "kotlin",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_31072b7eb07f8515de34a041",
+          "sourceId": "phpdevbr/vagas#1304",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1304",
+          "createdAt": "2025-02-28T20:44:03Z",
+          "updatedAt": "2026-05-15T12:26:20Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 549,
+        "publishedAt": "2025-02-28T20:44:03Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_b4c389988f0e5a389aabf3b3",
+      "sourceId": "remotejobsbr/design-ux-vagas#108",
+      "title": "[Remoto] Igma | Designer UX/UI Sênior",
+      "description": "Estamos em busca de uma pessoa Designer UX/UI Sênior para criar experiências digitais impactantes, desde a concepção até a execução. Essa pessoa será responsável por traduzir as necessidades dos usuários e os requisitos de negócios em ideias de produto, materializando-as em interfaces intuitivas e funcionais. Procuramos alguém com ampla experiência em design de produtos digitais, habilidade em prototipagem rápida e disposição para liderar sessões imersivas de co-criação.\n\nUnimos design e tecnologia para transformar problemas complexos em soluções digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n**Responsabilidades**\nNa Igma, o Designer UX/UI Sênior será responsável por desenvolver soluções visuais e interativas que sejam inovadoras e eficazes para o usuário. É essencial que tenha aptidão para trabalhar em equipe com profissionais de diferentes áreas, saiba se comunicar com clareza e tenha adaptabilidade para lidar com mudanças constantes. Para isso, é necessário fazer parte de sua rotina:\n- Traduzir dados e feedbacks dos usuários em soluções de design centrado no usuário (Design Thinking)\n- Colaborar com equipes multidisciplinares em sessões de co-criação imersivas\n- Criar e defender decisões de design em apresentações para stakeholders\n- Realizar prototipagem rápida e testes de usabilidade com usuários\n- Garantir consistência e escalabilidade por meio de design systems\n- Aplicar práticas de acessibilidade e responsividade nas interfaces\n\n**Premissas Culturais**\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n**Etapas do processo**\n- Cadastro\n- Entrevista inicial\n- Entrevista Fit Cultural\n- Entrevista Técnica\n- Proposta\n- Contratação\n\n**Modelo de trabalho**\n- Regime: 100% remoto\n- Modelo de contratação: PJ\n\n**Requisitos**\n- Proficiência em ferramentas de design, como Figma, Sketch ou Adobe XD\n- Experiência em design de interface (UI) e experiência do usuário (UX)\n- Habilidade em prototipagem rápida e realização de testes de usabilidade\n- Conhecimento em design responsivo e práticas de acessibilidade\n- Capacidade de criar e manter design systems\n- Experiência em criar wireframes, mockups e protótipos interativos\n\n**Conhecimentos desejáveis**\n- Criatividade e inovação para propor soluções únicas\n- Conhecimento básico de HTML, CSS e práticas de front-end (diferencial)\n- Boa comunicação para defender e justificar escolhas de design\n\n**Benefícios**\n- ✌️ Trabalho 100% remoto\n- 💙 Plano de Saúde individual\n- 🧘 Auxílio Cuidado e Desenvolvimento\n- 🏃 Incentivo à prática de esportes\n- ✨ Seguro de vida através do Betterfly\n- 💳 Cartão multi-benefício através do Caju\n- 💻 Auxílio Remoto para investimento em equipamentos (R$2.000 anual)\n- 🏖️ PJ - 30 dias de férias remuneradas\n\n**Como se candidatar**\nCandidate-se no [link](https://jobs.quickin.io/igma/jobs/67b3a3b5141f6100129fa1e3)",
+      "excerpt": "Estamos em busca de uma pessoa Designer UX/UI Sênior para criar experiências digitais impactantes, desde a concepção até a execução. Essa pessoa será responsável por traduzir as necessidades dos usuários e os requisit...",
+      "issueState": "open",
+      "contentHash": "d4b6630e8752c023db30bef37eab818081b878c16d29af95808c09bfbf351c6b",
+      "repository": "remotejobsbr/design-ux-vagas",
+      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
         "data",
         "design"
       ],
       "author": {
-        "id": "quetlinkober-source",
-        "name": "quetlinkober-source",
-        "handle": "quetlinkober-source",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/253765460?v=4"
+        "id": "mcfo-backoffice",
+        "name": "mcfo-backoffice",
+        "handle": "mcfo-backoffice",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/200601612?v=4"
+      },
+      "community": {
+        "id": "remotejobsbr",
+        "name": "remotejobsbr",
+        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+        "repository": "remotejobsbr/design-ux-vagas",
+        "url": "https://github.com/remotejobsbr/design-ux-vagas"
+      },
+      "createdAt": "2025-02-24T17:53:19Z",
+      "updatedAt": "2025-02-24T17:54:19Z",
+      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/108",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_b4c389988f0e5a389aabf3b3",
+          "sourceId": "remotejobsbr/design-ux-vagas#108",
+          "repository": "remotejobsbr/design-ux-vagas",
+          "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+          "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/108",
+          "createdAt": "2025-02-24T17:53:19Z",
+          "updatedAt": "2025-02-24T17:54:19Z",
+          "community": {
+            "id": "remotejobsbr",
+            "name": "remotejobsbr",
+            "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+            "repository": "remotejobsbr/design-ux-vagas",
+            "url": "https://github.com/remotejobsbr/design-ux-vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 553,
+        "publishedAt": "2025-02-24T17:53:19Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_a8804e9c31dabfe160161277",
+      "sourceId": "ad-si/awesome-fp-jobs#10",
+      "title": "Add https://beyond-tabs.com/",
+      "description": "",
+      "excerpt": "Add https://beyond-tabs.com/",
+      "issueState": "open",
+      "contentHash": "6d829e34413bef77173249f5afaf5a67471e4eddbe0bb1a16e5ef4794584381f",
+      "repository": "ad-si/awesome-fp-jobs",
+      "repositoryUrl": "https://github.com/ad-si/awesome-fp-jobs",
+      "region": "Global",
+      "country": "Global",
+      "tags": [],
+      "author": {
+        "id": "ad-si",
+        "name": "ad-si",
+        "handle": "ad-si",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/36796532?v=4"
+      },
+      "community": {
+        "id": "ad-si",
+        "name": "ad-si",
+        "avatarUrl": "https://github.com/ad-si.png?size=80",
+        "repository": "ad-si/awesome-fp-jobs",
+        "url": "https://github.com/ad-si/awesome-fp-jobs"
+      },
+      "createdAt": "2025-02-17T19:51:51Z",
+      "updatedAt": "2025-02-17T19:51:51Z",
+      "url": "https://github.com/ad-si/awesome-fp-jobs/issues/10",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_a8804e9c31dabfe160161277",
+          "sourceId": "ad-si/awesome-fp-jobs#10",
+          "repository": "ad-si/awesome-fp-jobs",
+          "repositoryUrl": "https://github.com/ad-si/awesome-fp-jobs",
+          "url": "https://github.com/ad-si/awesome-fp-jobs/issues/10",
+          "createdAt": "2025-02-17T19:51:51Z",
+          "updatedAt": "2025-02-17T19:51:51Z",
+          "community": {
+            "id": "ad-si",
+            "name": "ad-si",
+            "avatarUrl": "https://github.com/ad-si.png?size=80",
+            "repository": "ad-si/awesome-fp-jobs",
+            "url": "https://github.com/ad-si/awesome-fp-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 560,
+        "publishedAt": "2025-02-17T19:51:51Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_529af6046ca6a2af0d52eeca",
+      "sourceId": "devssa/onde-codar-em-salvador#3896",
+      "title": "[JAVASCRIPT] [Mongo] [NODE.JS] [DevOps] Backend Senior Developer Node.js and Javascript (Fluent English) na [Hunter]",
+      "description": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents\n\nRemote.\n\nR$15k CLT.\n\nStays is the vacation rental software that increases your bookings on autopilot.\nOur solutions involve improving the performance of the Saas platform, as well as calendar management, task management, reservation management, payment gateways, messaging services, site builders, advanced API communications. We are a company at Despegar group\n\nWhat do you must have:\n\nMinimum of 7 years of professional software development experience\n\nAt least 5 years of hands-on experience with Node.js\n\nStrong Backend experience\n\nExperience with mongodb and Javascript\n\nFluent English\n\nExpericence requeried:\n\nNode.js, JavaScript (including closures, callbacks, promises, and async/await)\n\nMongoDB database (including schema design and optimization)\n\nAPI Design. Designing and implementing scalable and secure APIs.\n\nVersion Control. Advanced knowledge of Git, including branching strategies, pull requests, and code reviews.\n\nDevOps. CI/CD pipelines, containerization (Docker) and AWS cloud platform.\n\nTesting. Unit testing, integration testing using frameworks like Mocha, Jest, or similar.\n\nOur Benefits:\n\nhealth plan\n\nbonus\n\nfood allowance\n\nhome office allowance\n\nwellhub\n\n100% remote\n\nDay off.\n\n9h to 18h Brasília time zone.\n\nCompensation: R$15k CLT.\n\nSe tem interesse e os requisitos da oportunidade entre em contato pelo Linkedin abaixo, informando qual é a oportunidade:[https://www.linkedin.com/in/erickamarquesb/]",
+      "excerpt": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents Remote. R$15k CLT. Stays is the vacation rental software that increases your bookings on autopilot. Our solutions involve improving the pe...",
+      "issueState": "open",
+      "contentHash": "ddcd808a0ee592ba4b986078e242c49ce0a6b64e6a8d056037afa83badfcf923",
+      "repository": "devssa/onde-codar-em-salvador",
+      "repositoryUrl": "https://github.com/devssa/onde-codar-em-salvador",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "help wanted"
+      ],
+      "author": {
+        "id": "ErickaMB",
+        "name": "ErickaMB",
+        "handle": "ErickaMB",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73557073?v=4"
+      },
+      "community": {
+        "id": "devssa",
+        "name": "devssa",
+        "avatarUrl": "https://github.com/devssa.png?size=80",
+        "repository": "devssa/onde-codar-em-salvador",
+        "url": "https://github.com/devssa/onde-codar-em-salvador"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 15000,
+        "period": "month"
+      },
+      "createdAt": "2025-02-14T18:46:00Z",
+      "updatedAt": "2025-02-14T18:46:00Z",
+      "url": "https://github.com/devssa/onde-codar-em-salvador/issues/3896",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "help wanted"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "javascript",
+          "mongodb",
+          "nodejs"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_529af6046ca6a2af0d52eeca",
+          "sourceId": "devssa/onde-codar-em-salvador#3896",
+          "repository": "devssa/onde-codar-em-salvador",
+          "repositoryUrl": "https://github.com/devssa/onde-codar-em-salvador",
+          "url": "https://github.com/devssa/onde-codar-em-salvador/issues/3896",
+          "createdAt": "2025-02-14T18:46:00Z",
+          "updatedAt": "2025-02-14T18:46:00Z",
+          "community": {
+            "id": "devssa",
+            "name": "devssa",
+            "avatarUrl": "https://github.com/devssa.png?size=80",
+            "repository": "devssa/onde-codar-em-salvador",
+            "url": "https://github.com/devssa/onde-codar-em-salvador"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 563,
+        "publishedAt": "2025-02-14T18:46:00Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_3410d8d834ad83dcb24d8aac",
+      "sourceId": "CangaceirosDevels/vagas#2797",
+      "title": "[Remote] Backend Senior Developer Node.js and Javascript (Fluent English) - Hunter",
+      "description": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents\n\nRemote.\n\nR$15k CLT.\n\nStays is the vacation rental software that increases your bookings on autopilot.\nOur solutions involve improving the performance of the Saas platform, as well as calendar management, task management, reservation management, payment gateways, messaging services, site builders, advanced API communications. We are a company at Despegar group\n\nWhat do you must have:\n\nMinimum of 7 years of professional software development experience\n\nAt least 5 years of hands-on experience with Node.js\n\nStrong Backend experience\n\nExperience with mongodb and Javascript\n\nFluent English\n\nExpericence requeried:\n\nNode.js, JavaScript (including closures, callbacks, promises, and async/await)\n\nMongoDB database (including schema design and optimization)\n\nAPI Design. Designing and implementing scalable and secure APIs.\n\nVersion Control. Advanced knowledge of Git, including branching strategies, pull requests, and code reviews.\n\nDevOps. CI/CD pipelines, containerization (Docker) and AWS cloud platform.\n\nTesting. Unit testing, integration testing using frameworks like Mocha, Jest, or similar.\n\nOur Benefits:\n\nhealth plan\n\nbonus\n\nfood allowance\n\nhome office allowance\n\nwellhub\n\n100% remote\n\nDay off.\n\n9h to 18h Brasília time zone.\n\nCompensation: R$15k CLT.\n\nSe tem interesse e os requisitos da oportunidade entre em contato pelo Linkedin abaixo, informando qual é a oportunidade:[https://www.linkedin.com/in/erickamarquesb/]",
+      "excerpt": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents Remote. R$15k CLT. Stays is the vacation rental software that increases your bookings on autopilot. Our solutions involve improving the pe...",
+      "issueState": "open",
+      "contentHash": "8e9c5370c4beafdf3db486b39ae40fed46b17b516470622f786ac4737c64bc17",
+      "repository": "CangaceirosDevels/vagas",
+      "repositoryUrl": "https://github.com/CangaceirosDevels/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "clt"
+      ],
+      "author": {
+        "id": "ErickaMB",
+        "name": "ErickaMB",
+        "handle": "ErickaMB",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73557073?v=4"
+      },
+      "community": {
+        "id": "CangaceirosDevels",
+        "name": "CangaceirosDevels",
+        "avatarUrl": "https://github.com/CangaceirosDevels.png?size=80",
+        "repository": "CangaceirosDevels/vagas",
+        "url": "https://github.com/CangaceirosDevels/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 15000,
+        "period": "month"
+      },
+      "createdAt": "2025-02-14T18:45:32Z",
+      "updatedAt": "2025-02-14T18:45:56Z",
+      "url": "https://github.com/CangaceirosDevels/vagas_de_emprego/issues/2797",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "javascript",
+          "mongodb",
+          "nodejs"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_3410d8d834ad83dcb24d8aac",
+          "sourceId": "CangaceirosDevels/vagas#2797",
+          "repository": "CangaceirosDevels/vagas",
+          "repositoryUrl": "https://github.com/CangaceirosDevels/vagas",
+          "url": "https://github.com/CangaceirosDevels/vagas_de_emprego/issues/2797",
+          "createdAt": "2025-02-14T18:45:32Z",
+          "updatedAt": "2025-02-14T18:45:56Z",
+          "community": {
+            "id": "CangaceirosDevels",
+            "name": "CangaceirosDevels",
+            "avatarUrl": "https://github.com/CangaceirosDevels.png?size=80",
+            "repository": "CangaceirosDevels/vagas",
+            "url": "https://github.com/CangaceirosDevels/vagas"
+          }
+        },
+        {
+          "id": "gh_a0d0697e0611db05ad0efa22",
+          "sourceId": "CangaceirosDevels/vagas_de_emprego#2797",
+          "repository": "CangaceirosDevels/vagas_de_emprego",
+          "repositoryUrl": "https://github.com/CangaceirosDevels/vagas_de_emprego",
+          "url": "https://github.com/CangaceirosDevels/vagas_de_emprego/issues/2797",
+          "createdAt": "2025-02-14T18:45:32Z",
+          "updatedAt": "2025-02-14T18:45:56Z",
+          "community": {
+            "id": "CangaceirosDevels",
+            "name": "CangaceirosDevels",
+            "avatarUrl": "https://github.com/CangaceirosDevels.png?size=80",
+            "repository": "CangaceirosDevels/vagas_de_emprego",
+            "url": "https://github.com/CangaceirosDevels/vagas_de_emprego"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 563,
+        "publishedAt": "2025-02-14T18:45:32Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_fd7b159a281de9af79b31d1c",
+      "sourceId": "developersRJ/vagas#515",
+      "title": "[Remote] [Backend Senior Developer Node.js and Javascript (Fluent English)] na [Hunter]",
+      "description": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents\n\nRemote.\n\nR$15k CLT.\n\nStays is the vacation rental software that increases your bookings on autopilot.\nOur solutions involve improving the performance of the Saas platform, as well as calendar management, task management, reservation management, payment gateways, messaging services, site builders, advanced API communications. We are a company at Despegar group\n\nWhat do you must have:\n\nMinimum of 7 years of professional software development experience\n\nAt least 5 years of hands-on experience with Node.js\n\nStrong Backend experience\n\nExperience with mongodb and Javascript\n\nFluent English\n\nExpericence requeried:\n\nNode.js, JavaScript (including closures, callbacks, promises, and async/await)\n\nMongoDB database (including schema design and optimization)\n\nAPI Design. Designing and implementing scalable and secure APIs.\n\nVersion Control. Advanced knowledge of Git, including branching strategies, pull requests, and code reviews.\n\nDevOps. CI/CD pipelines, containerization (Docker) and AWS cloud platform.\n\nTesting. Unit testing, integration testing using frameworks like Mocha, Jest, or similar.\n\nOur Benefits:\n\nhealth plan\n\nbonus\n\nfood allowance\n\nhome office allowance\n\nwellhub\n\n100% remote\n\nDay off.\n\n9h to 18h Brasília time zone.\n\nCompensation: R$15k CLT.\n\nSe tem interesse e os requisitos da oportunidade entre em contato pelo Linkedin abaixo, informando qual é a oportunidade:[https://www.linkedin.com/in/erickamarquesb/]",
+      "excerpt": "Senior Developer Node.js and Javascript (Fluent English) only Brazil residents Remote. R$15k CLT. Stays is the vacation rental software that increases your bookings on autopilot. Our solutions involve improving the pe...",
+      "issueState": "open",
+      "contentHash": "1d4a4ea112a82db47e07afa87b0483272b6392ff1973f02c083282926a4c047e",
+      "repository": "developersRJ/vagas",
+      "repositoryUrl": "https://github.com/developersRJ/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "clt"
+      ],
+      "author": {
+        "id": "ErickaMB",
+        "name": "ErickaMB",
+        "handle": "ErickaMB",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73557073?v=4"
+      },
+      "community": {
+        "id": "developersRJ",
+        "name": "developersRJ",
+        "avatarUrl": "https://github.com/developersRJ.png?size=80",
+        "repository": "developersRJ/vagas",
+        "url": "https://github.com/developersRJ/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 15000,
+        "period": "month"
+      },
+      "createdAt": "2025-02-14T18:44:39Z",
+      "updatedAt": "2025-02-14T18:45:08Z",
+      "url": "https://github.com/developersRJ/vagas/issues/515",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "javascript",
+          "mongodb",
+          "nodejs"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_fd7b159a281de9af79b31d1c",
+          "sourceId": "developersRJ/vagas#515",
+          "repository": "developersRJ/vagas",
+          "repositoryUrl": "https://github.com/developersRJ/vagas",
+          "url": "https://github.com/developersRJ/vagas/issues/515",
+          "createdAt": "2025-02-14T18:44:39Z",
+          "updatedAt": "2025-02-14T18:45:08Z",
+          "community": {
+            "id": "developersRJ",
+            "name": "developersRJ",
+            "avatarUrl": "https://github.com/developersRJ.png?size=80",
+            "repository": "developersRJ/vagas",
+            "url": "https://github.com/developersRJ/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 563,
+        "publishedAt": "2025-02-14T18:44:39Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_0a1918ad5c999a150186ba80",
+      "sourceId": "Empregos-dev/Vagas-dev#94",
+      "title": "[PESSOA DESENVOLVEDORA DE IA - PL/SR] PRESENCIAL EM FLORIANÓPOLIS/SC",
+      "description": "Busco profissional Pleno ou Sênior para atuar como desenvolvedor/a de IA em presencialmente em Florianópolis. \nInteressados podem encaminhar currículo para o seguinte e-mail: maria.carradore@wkrh.com.br\n47 997924243.  \nPython\nMachine Learning\nInglês intermediário",
+      "excerpt": "Busco profissional Pleno ou Sênior para atuar como desenvolvedor/a de IA em presencialmente em Florianópolis. Interessados podem encaminhar currículo para o seguinte e-mail: maria.carradore@wkrh.com.br 47 997924243. P...",
+      "issueState": "open",
+      "contentHash": "e4d1887c3b33c589fd046ee6bc2faf6755ff74aed9ce4a5ece7e34b75c6f93ec",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pleno",
+        "python"
+      ],
+      "author": {
+        "id": "MariaCarradore",
+        "name": "MariaCarradore",
+        "handle": "MariaCarradore",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/116596293?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "createdAt": "2025-02-14T16:22:38Z",
+      "updatedAt": "2025-02-14T16:22:43Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/94",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "pleno",
+        "python"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "PL",
+        "subdivision": "SR",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "PL, SR · On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_0a1918ad5c999a150186ba80",
+          "sourceId": "Empregos-dev/Vagas-dev#94",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/94",
+          "createdAt": "2025-02-14T16:22:38Z",
+          "updatedAt": "2025-02-14T16:22:43Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 563,
+        "publishedAt": "2025-02-14T16:22:38Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_f811ea11eb896201b2a8dc82",
+      "sourceId": "nerdzao/vagas#184",
+      "title": "[PRESENCIAL/FLORIANÓPOLIS-SC] PESSOA DESENVOLVEDORA DE IA PL/SR.",
+      "description": "Buscamos pessoas desenvolvedora de IA pleno ou sênior para atuar presencialmente em Florianópolis/SC.  \nInteressados podem encaminhar currículo diretamente para o seguinte e-mail: maria.carradore@wkrh.com.br",
+      "excerpt": "Buscamos pessoas desenvolvedora de IA pleno ou sênior para atuar presencialmente em Florianópolis/SC. Interessados podem encaminhar currículo diretamente para o seguinte e-mail: maria.carradore@wkrh.com.br",
+      "issueState": "open",
+      "contentHash": "28f26b1096565ff819638a5c4e617dedce6aa951fc31df1b1878730355bc0d21",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "pleno"
+      ],
+      "author": {
+        "id": "MariaCarradore",
+        "name": "MariaCarradore",
+        "handle": "MariaCarradore",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/116596293?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "createdAt": "2025-02-14T16:06:42Z",
+      "updatedAt": "2025-02-14T16:07:05Z",
+      "url": "https://github.com/nerdzao/vagas/issues/184",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_f811ea11eb896201b2a8dc82",
+          "sourceId": "nerdzao/vagas#184",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/184",
+          "createdAt": "2025-02-14T16:06:42Z",
+          "updatedAt": "2025-02-14T16:07:05Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 563,
+        "publishedAt": "2025-02-14T16:06:42Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_bdee7881981e1da0fe35751b",
+      "sourceId": "phpdevbr/vagas#1303",
+      "title": "[Hibrido / São Paulo, Brasil] Fullstack Developer na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/fullstack-developer-173331749?utm_source=github&utm_medium=phpdevbr-vagas&modal=open) para realizar a candidatura. 👋\n<p>Estamos buscando <strong>Fullstack Developer </strong>para compor nosso time! Profissional irá atuar 4 horas na empresa Namu e 4 horas na Altivis, contratação mista.</p>\n<p><strong>Missão: </strong>Desenvolver Projetos envolvendo as plataformas digitais da NAMU e Meu Mais Bem-estar (App e Mobile).</p>\n<p><strong>Responsabilidades e atribuições:</strong></p>\n<ul>\n<li>Atuar em metodologias ágeis e organizar e manter o backlog;</li>\n<li>Executar programação e integração de módulos e o banco de dados;</li>\n<li>Realizar o planejamento de tarefas e entregas;</li>\n<li>Gerenciar documentação dos códigos desenvolvidos;</li>\n<li>Atuar em metodologias ágeis e organizar e manter o backlog;</li>\n<li>Realizar o planejamento de tarefas e entregas;</li>\n<li>Gerenciar documentação dos códigos desenvolvidos;</li>\n<li>Integração com APIs externas e internas;</li>\n<li>Modelagem de dados e manutenção de DB;</li>\n<li>Desenvolvimento e manutenção de aplicações/funcionalidades;</li>\n</ul>\n## Namu: \n <p>Começamos nossa trajetória em 2013 com o Portal Namu e desde então nos tornamos uma referência na produção de conteúdo multimídia de bem-estar. Temos a yoga, o pilates e a gastronomia como as principais vertentes da empresa, e mais de 8 milhões de páginas visualizadas compartilhamos ensinamentos em aulas, entrevistas e palestras com as maiores referências nacionais e internacionais. O grande sucesso das aulas de yoga, pilates e gastronomia, com mais de 10 milhões de visualizações no YouTube nos inspirou a criar o Namu Cursos, a primeira plataforma brasileira de cursos online completamente focada em uma vida equilibrada.</p>\n<p>Em pouco mais de um ano construímos um portfólio que oferece a oportunidade e comodidade de praticar yoga onde e quando você quiser, com mais de 87 horas de aulas divididas entre 35 cursos. Os cursos são ministrados por professores de referência no Brasil que, em vários anos de estudos e experiência nas melhores escolas ou com os Gurus ao redor do mundo, se capacitaram para ensinar de forma didática e com preço acessível.</p>\n\n ## Habilidades: \n - Node.js \n- PHP \n- React.js \n- React Native \n- Laravel \n- Wordpress \n- Nest.JS \n- AWS CloudWatch\n## Local: \n São Paulo, Brasil\n## Requisitos: \n - Profissional full stack com experiência em desenvolvimento front/back end, banco de dados e infraestrutura; \n- Formação na área de Tecnologia; \n- Forte conhecimento em Node JS e PHP; \n- Experiência com React, React Native, Laravel, Nest.js e Wordpress; \n- Experiência em desenvolvimento, testes e integração de APIs REST/RESTful; \n- Conhecimento front end de Javascript, HTML , CSS; \n- Conhecimento de bancos de dados relacionais SQL; \n- Desejável experiência com tecnologias AWS para gestão da infraestrutura (EC2, RDS, CloudWatch, S3,...); \n- Vivência com ambiente e metodologia ágil;\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Fullstack Developer na Namu](https://coodesh.com/jobs/fullstack-developer-173331749?utm_source=github&utm_medium=phpdevbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nFull-Stack",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "0b35db5e3566bae8a57a4a00b64145f051211bf25a6f5b37849b84bff561df31",
+      "repository": "phpdevbr/vagas",
+      "repositoryUrl": "https://github.com/phpdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "stale"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
         "id": "phpdevbr",
@@ -653,77 +945,1102 @@
         "url": "https://github.com/phpdevbr/vagas"
       },
       "companyName": "Coodesh",
-      "createdAt": "2026-01-13T14:23:29Z",
-      "updatedAt": "2026-02-04T09:22:00Z",
-      "url": "https://github.com/phpdevbr/vagas/issues/1323",
-      "sourceType": "github-issue"
+      "createdAt": "2025-02-13T17:34:14Z",
+      "updatedAt": "2026-05-15T12:25:45Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1303",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "stale"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "javascript",
+          "laravel",
+          "nodejs",
+          "php",
+          "react",
+          "react-native"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_bdee7881981e1da0fe35751b",
+          "sourceId": "phpdevbr/vagas#1303",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1303",
+          "createdAt": "2025-02-13T17:34:14Z",
+          "updatedAt": "2026-05-15T12:25:45Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 564,
+        "publishedAt": "2025-02-13T17:34:14Z",
+        "status": "stale"
+      }
     },
     {
-      "id": "gh_018090ae0b51c7fe869fe122",
-      "sourceId": "TechnologyMasters/jobs#722",
-      "title": "Biz-Tech Analytics - DevOps Engineer - India - Rs.1000-1200/hr",
-      "description": "We’re hiring for our client: Biz-Tech Analytics\n\nRole: DevOps Engineer (Freelance)\nExperience: 4-7+ years\nProject: Terminus Project\nLocation: Remote\nEngagement Type: Freelance | Project-based\n\nAbout the Role:\nBiz-Tech Analytics is looking for experienced DevOps Engineers to contribute to the Terminus Project, a hands-on initiative involving system-level problem solving, automation, and containerised environments.\nThis role is ideal for engineers who enjoy working close to the system layer, debugging complex issues, and building reliable automation in isolated environments.\n\n\nKey Responsibilities:\n • Work on Linux-based systems, handling process management, file systems, and system utilities\n • Write clean, testable Python code for automation and verification\n • Build, configure, and manage Docker-based environments for testing and deployment\n • Troubleshoot and debug complex system and software issues\n • Collaborate using Git and GitHub workflows, including pull requests and branching\n • Execute tasks independently and iterate based on structured feedback\n\nRequired Skills & Qualifications:\n • Expert-level proficiency with Linux CLI, including Bash scripting\n • Strong Python programming skills for automation and tooling\n • Hands-on experience with Docker and containerized environments\n • Excellent problem-solving and debugging skills\n • Proficiency with Git and standard GitHub workflows\n\nPreferred Qualifications:\n • Professional experience in DevOps or Site Reliability Engineering (SRE)\n • Exposure to cloud platforms such as AWS, GCP, or Azure\n • Familiarity with machine learning frameworks like TensorFlow or PyTorch\n • Prior experience contributing to open-source projects\n\nEngagement Details\n • Fully remote freelance engagement\n • Flexible workload, with scope to take on additional tasks\n • Opportunity to work on real-world systems supporting advanced AI and infrastructure projects\n\nPayment Details\n • Rs.1000-1200/hr for approved tasks (India)\n • Invoice to be raised 15-20 days after starting the initial task as long as it is approved\n\nApply via\n • Google form: https://forms.gle/ETNec2n1qJundZsX6\n\n About Biz-Tech Analytics:\nBiz-Tech Analytics partners with global enterprises, AI labs, and industrial businesses to help them build and scale frontier AI systems. From data creation to deployment, the team delivers specialised services including human-in-the-loop annotation, reinforcement learning from human feedback (RLHF), and custom dataset creation.\nWith a network of 500+ vetted developers, STEM professionals, linguists, and domain experts, Biz-Tech Analytics supports leading global platforms by enhancing complex AI models and providing high-precision feedback at scale.\nTheir work sits at the intersection of advanced research, engineering rigor, and real-world AI deployment, making them a strong partner for cutting-edge AI initiatives.",
-      "excerpt": "We’re hiring for our client: Biz-Tech Analytics Role: DevOps Engineer (Freelance) Experience: 4-7+ years Project: Terminus Project Location: Remote Engagement Type: Freelance | Project-based About the Role: Biz-Tech A...",
+      "id": "gh_0c8142500ab7244ecd91bc45",
+      "sourceId": "golangtw/jobs#221",
+      "title": "[台北 市政府站] 資深 Golang 後端工程師_混合式辦公",
+      "description": "### 團隊簡介\n[vocus](https://vocus.cc) \n我們相信，內容的力量是無遠弗屆的。\n\nvocus 致力於幫助創作者實踐夢想。無論是被看見的機會、或是合理的報酬。我們期望能夠持續幫助創作者創造價值，讓更多不同的思想在此激盪、交流。在 vocus ，創作者能夠與自己的會員與粉絲建立關係，能夠真實的交流，並且逐步建立起自己的影響圈，與自己的粉絲共創價值、共享價值。\n\nvocus 的團隊是 50% 軟體科技、 50% 文化內容的「混血」公司，團隊以 Hybrid 的方式運作，如果你認同我們的理念，也是高效、當責、自主的人才，歡迎一起加入我們！\n\n產品與開發團隊的目標，是帶給每位使用者穩定且流暢的服務體驗。團隊規模不大，但每個人都有他獨特且豐富的技能樹，組合起來就是無數的可能性。我們期待你擁有兩項特質：對程式碼品質的自我要求，以及對新技術保持敏銳嗅覺、傳教的心。\n\n在團隊裡，我們相信開發者獨立作業的能力，也確保暢通的溝通管道，讓開發流程能不斷迭代成更好的版本。此外，在 vocus 你也不會只是一位碼農而已，你將能夠與不同的角色協作並且參與決策，因為在這裡，每個人的聲音都很重要。﻿\n\n### 工作地點\n台北市信義區基隆路1段178號5樓\n\n### 工作內容\n您將負責開發、維護並優化方格子的後端系統，確保平台的穩定性、擴展性，並為數十萬的使用者提供優質的服務。\n\n1. 負責開發、維護產品後端系統，確保系統穩定性與擴展性\n2. 與產品經理、UI/UX 設計師、前端工程師協同合作，完成產品開發\n3. 設計、開發並優化 RESTful API\n4. 建置高效能的資料庫，並優化查詢效能\n5. 建立 CI/CD 流程，自動化部署\n6. 參與系統架構設計，並提出優化建議\n\n### 我們期待你擁有的能力是：\n● 語言以 Golang 為主，如熟悉 Java / Python 也可以，但希望具獨立開發能力\n● 熟悉資料庫設計與操作 (MongoDB, MySQL 等)\n● 熟悉 RESTful API 設計與開發\n● 熟悉第三方服務串接 (如 Payment Gateway、SSO 等)\n● 熟悉 Linux 系統操作\n● 熟悉 Git 版本控制\n● 具備良好的程式設計習慣與問題解決能力\n\n### 如果你也了解以下項目，那就太棒了：\n● 熟悉雲端平台 (AWS, GCP)\n● 熟悉容器化技術 (Docker)\n● 熟悉可觀測性相關工具 (Grafana, Prometheus)\n● 具效能調校經驗\n● 具有內容產業 / 創作者經濟相關經驗\n\n### 薪資範圍\n月薪台幣 7 萬起 ( 保障 13 薪 )\n能力優秀者可談 ( 歡迎來聊聊喔～～ )\n\n### 工時/特休\n8小時\n特休滿半年 7 天；滿一年 15 天，每多一年加 1 天，滿至 30 天\n\n### 福利/推薦項\n● 年度尾牙 犒勞夥伴們的辛勞～（不用表演，有抽獎 !）\n● 年終 1 個月（未滿一年，依到職比例發放）\n● 三節禮金 一點心意祝大家年節快樂～\n● 部份遠端 （Hybrid 工作）彈性上班時間，9-11點自主管理\n● 滿半年享有 7 天特休；滿 1 年 15 天特休，每多一年加 1 天，滿至 30 天\n● 女性同仁每月生理假 1 天 ( 滿 3 個月後不扣薪 )\n● 額外團保 24 小時意外險保障不打烊\n● 不定期請內外部講師教育訓練分享\n● 不定期聚餐、慶生、下午茶、電影觀賞\n● 需自備自己習慣使用之電腦，提供外接螢幕 ( 最高領 3 萬 補助金 )\n● 無限咖啡 、零食、沖泡飲\n\n### 聯絡方式\n請將你的履歷或是其他能展示你自己的資料（GitHub / CV / LinkedIn / Portfolio），寄到 [joinus@vocus.cc](url)，告訴我們為什麼想要加入以及適合我們團隊，合適者，我們將會盡快聯繫你！",
+      "excerpt": "### 團隊簡介 [vocus](https://vocus.cc) 我們相信，內容的力量是無遠弗屆的。 vocus 致力於幫助創作者實踐夢想。無論是被看見的機會、或是合理的報酬。我們期望能夠持續幫助創作者創造價值，讓更多不同的思想在此激盪、交流。在 vocus ，創作者能夠與自己的會員與粉絲建立關係，能夠真實的交流，並且逐步建立起自己的影響圈，與自己的粉絲共創價值、共享價值。 vocus 的團隊是 50% 軟體科技、 50% 文...",
       "issueState": "open",
-      "contentHash": "8873badd16a5033d22f1d13c655a680775ac67caeb12e018287652cde4ab1496",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
+      "contentHash": "4cff584e67033b9194205bc5ba79d1095ffc9b44f824204a45df94117b2431a1",
+      "repository": "golangtw/jobs",
+      "repositoryUrl": "https://github.com/golangtw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
       "tags": [
-        "remote",
-        "python",
-        "devops",
-        "data"
+        "70k以上",
+        "台北"
       ],
       "author": {
-        "id": "gulatimehul",
-        "name": "gulatimehul",
-        "handle": "gulatimehul",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/224396119?v=4"
+        "id": "vocusHR",
+        "name": "vocusHR",
+        "handle": "vocusHR",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/197879770?v=4"
       },
       "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
+        "id": "golangtw",
+        "name": "golangtw",
+        "avatarUrl": "https://github.com/golangtw.png?size=80",
+        "repository": "golangtw/jobs",
+        "url": "https://github.com/golangtw/jobs"
       },
-      "createdAt": "2026-01-05T22:50:21Z",
-      "updatedAt": "2026-01-05T22:50:21Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/722",
-      "sourceType": "github-issue"
+      "createdAt": "2025-02-05T08:17:34Z",
+      "updatedAt": "2025-03-15T12:07:27Z",
+      "url": "https://github.com/golangtw/jobs/issues/221",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "70k以上",
+        "台北"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "docker",
+          "gcp",
+          "go",
+          "java",
+          "mongodb",
+          "mysql",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_0c8142500ab7244ecd91bc45",
+          "sourceId": "golangtw/jobs#221",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/221",
+          "createdAt": "2025-02-05T08:17:34Z",
+          "updatedAt": "2025-03-15T12:07:27Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 572,
+        "publishedAt": "2025-02-05T08:17:34Z",
+        "status": "stale"
+      }
     },
     {
-      "id": "gh_f1495b68fe7d4f8349ceb1b6",
-      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#1",
-      "title": "Should we pull tech intern for SG directly from the website /jobs page instead and show in this README",
-      "description": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page.\n\nreference: https://github.com/SimplifyJobs/Summer2026-Internships",
-      "excerpt": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page. reference: https://github.com/Simpl...",
+      "id": "gh_0942ed9736ea13305338edbc",
+      "sourceId": "phpdevbr/vagas#1301",
+      "title": "São Paulo - Desenvolvedor(a) Backend Júnior (PHP e o framework Laravel e banco de dados relacionais)",
+      "description": "Desenvolvedor(a) Backend Júnior (PHP e o framework Laravel e banco de dados relacionais)\n\n\n\n100% Presencial na Casa Verde Alta, São Paulo.\n\n\n\nO valor/hora é de R$ 24 (média de 180 horas/mês).\n\n\n\nRequisitos obrigatórios:\n\n● Mais de 1 ano e meio de experiência.\n\n● Experiência sólida com PHP e o framework Laravel.\n\n● Habilidade para criar e otimizar queries em SQL puro.\n\n● Experiência com bancos de dados relacionais, como MySQL, PostgreSQL e/ou SQL Server.\n\n● Docker.\n\n\n\nDiferenciais não obrigatórios:\n\n● Conhecimento em arquitetura back-end e lógica de programação para resolver problemas complexos.\n\n● Experiência prática com PHP puro para criação de scripts ou funcionalidades específicas.\n\n● Conhecimento em configuração e gerenciamento de servidores Linux, incluindo instalação e monitoramento de serviços.\n\n● Experiência básica com Java para integrações ou funcionalidades complementares.\n\n● Capacidade de implementar e consumir APIs RESTful.\n\n● Familiaridade com ferramentas de versionamento, como Git, e práticas de branching.\n\n● Experiência em criar e manter scripts automatizados para tarefas recorrentes (ex.: envio de e-mails, relatórios, processamento de dados).\n\n● Conhecimento básico em crawlers para coleta de dados e automação.\n\n● Habilidade em configurar ambientes de desenvolvimento e produção com Docker e Docker Compose.\n\n● Experiência com metodologias ágeis, como Scrum ou Kanban.\n\n● Noções básicas de CI/CD e ferramentas como GitHub Actions ou Jenkins.\n\n● Experiência em criar e manter scripts automatizados para tarefas recorrentes (ex.: envio de e-mails, relatórios, processamento de dados).\n\n● Experiência média em HTML e CSS para o desenvolvimento de e-mails e PDFs no Blade.\n\n\n\n● Conhecimento em infraestrutura AWS além do EC2 (RDS, S3, Lambda, etc.).\n\n● Familiaridade com padrões de design de software, como DDD ou Clean Architecture.\n\n● Experiência com filas de mensagem (RabbitMQ, Kafka, etc.).\n\n● Participação ativa em comunidades de desenvolvimento ou contribuição para projetos open source.\n\n\n\nResponsabilidades:\n\n● Desenvolver e manter aplicações back-end utilizando Laravel, garantindo uma arquitetura robusta e escalável.\n\n● Criar e otimizar APIs RESTful, com foco em desempenho e segurança.\n\n● Implementar queries complexas utilizando SQL puro para manipulação e análise de dados.\n\n● Desenvolver funcionalidades específicas em PHP puro, quando o uso de frameworks não for necessário. Entre outros.",
+      "excerpt": "Desenvolvedor(a) Backend Júnior (PHP e o framework Laravel e banco de dados relacionais) 100% Presencial na Casa Verde Alta, São Paulo. O valor/hora é de R$ 24 (média de 180 horas/mês). Requisitos obrigatórios: ● Mais...",
       "issueState": "open",
-      "contentHash": "f274da1c982b52dfb23675137b23cf0e5323b880a7b39605aeccff9e9eb2ab48",
-      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
-      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
-      "region": "Asia",
-      "country": "Singapore",
-      "tags": [],
+      "contentHash": "cfd2c74a31e8d97236a439acd56b4a5fdb14004c9fcc96e2f2afab4499b5642f",
+      "repository": "phpdevbr/vagas",
+      "repositoryUrl": "https://github.com/phpdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "backend",
+        "design",
+        "java"
+      ],
       "author": {
-        "id": "didtheyghostme",
-        "name": "didtheyghostme",
-        "handle": "didtheyghostme",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/188044484?v=4"
+        "id": "ErickaMB",
+        "name": "ErickaMB",
+        "handle": "ErickaMB",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/73557073?v=4"
       },
       "community": {
-        "id": "didtheyghostme",
-        "name": "didtheyghostme",
-        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
-        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
-        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+        "id": "phpdevbr",
+        "name": "phpdevbr",
+        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+        "repository": "phpdevbr/vagas",
+        "url": "https://github.com/phpdevbr/vagas"
       },
-      "createdAt": "2025-12-31T09:25:54Z",
-      "updatedAt": "2025-12-31T09:28:08Z",
-      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/1",
-      "sourceType": "github-issue"
+      "createdAt": "2025-02-03T21:57:51Z",
+      "updatedAt": "2026-05-15T12:25:02Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1301",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "design",
+        "java"
+      ],
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "laravel",
+          "mysql",
+          "php",
+          "postgres"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_0942ed9736ea13305338edbc",
+          "sourceId": "phpdevbr/vagas#1301",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1301",
+          "createdAt": "2025-02-03T21:57:51Z",
+          "updatedAt": "2026-05-15T12:25:02Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 574,
+        "publishedAt": "2025-02-03T21:57:51Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_c00aea9ceba72a4744407ba9",
+      "sourceId": "CocoaHeadsBrasil/vagas#1549",
+      "title": "[REMOTO] Sr Mobile Developer (iOS) - Invillia",
+      "description": "**Nossa empresa**\nA experiência de trabalhar na Invillia é única. E global. Temos o nosso próprio jeito de conectar talentos e construir inovações.\n\nRevolucionamos o ambiente de trabalho #Instation + somos experts em desenvolver soluções complexas para #GameChangers + temos uma metodologia única #EngagedbyDataPeopleAction + investimos em pessoas #InvilliaAcademy\n\nAlguns diferenciais Invillia:\n_inovamos lado-a-lado com #GameChangersGlobais\n_cultura de trabalho distribuído #inStation\n_metodologia exclusiva #GlobalGrowthFramework\n\nFaça uma imersão aqui https://invillia.com/\n\nEntão, se você busca uma oportunidade de trabalhar de onde estiver, em uma empresa dedicada em recriar a sensação de proximidade, de conexão humana, e de se sentir acolhido a qualquer momento, mesmo com todos distribuídos, aqui é o lugar certo.\n\n**Descrição da vaga**\nO profissional será responsável em prover soluções técnicas para novas features e dar o suporte necessário as features já existentes, afinal, nem tudo são flores.\nEsperamos também que essa pessoa auxilie os outros membros do time em questões técnicas não esquecendo de fornecer a melhor solução para o negócio.\nAlgo que prezamos bastante é qualidade, isso inclui um código limpo e legível (clean code).\nTambém é desejável que o mesmo tenha um perfil intra-empreendedor, onde seus objetivos estejam alinhados com os objetivos da empresa, afinal, temos muito orgulho do que fazemos aqui!\n\n**Local**\nRemoto\n\n**REQUISITOS**\nDesenvolvimento de aplicativos nativos Android (Kotlin/Java) utilizando views nativas\nDesenvolvimento de aplicativos utilizando ferramentas Low-code para auxílio na construção de componentes\nConsumo de APIs RESTful com Coroutines\nExperiencia com testes unitários utilizando Roboletric, Mockk e Junit\nConhecimentos dos padrões de arquitetura MVVMcom Coroutines\nExperiência com desenvolvimento Android (Nativo);\nExperiência com Git e Git Flow;\nExperiência em JSON;\nAmplos conhecimentos em Java e Kotlin;\nConhecimento e vivência com RESTFul;\nTestes de interface e testes unitários;\nAndroid Jetpack Components (ViewModel, Room, LiveData, Databinding, Navigation);\nConhecimento em UI customizada;\nExperiência em desenvolvimento e integração com aplicações utilizadas em larga escala com foco em performance e utilização racional de recursos;\nConhecimento em arquiteturas móveis como MVP, MVVM e Clean Architecture;\nCapacidade de trabalhar em times multidisciplinares e de se comunicar claramente com times de desenvolvimento, design, marketing e produtos;\nFerramentas de versionamento de código (git) e desenvolvimento colaborativo\nCriar, manter e evoluir documentações\nArquitetura de software, princípios SOLID e padrões de projetos\nDesejável conhecimento em Server Driven UI(SDUI) e Backend For Frontend(BFF) ou disponibilidade de aprender\nDesejável conhecimento em desenvolvimento Java + Spring (para atuação nos orquestradores de frontend) ou disponibilidade de aprender\nExperiência com modularização de aplicações\nDisponibilidade para mentoria e disseminação de conhecimento\nBuscar conhecimento proativamente, vontade de aprender\nComunicar-se bem e ser participativo\nTrabalhar bem colaborativamente\nExperiência com ferramentas de minificação e ofuscação de código\nConhecimento em gerenciamento de memória e ajustes de desempenho do App\n\n**Como se candidatar**\nPor favor, enviar o cv atualizado para: isaque.silva@invillia.com",
+      "excerpt": "**Nossa empresa** A experiência de trabalhar na Invillia é única. E global. Temos o nosso próprio jeito de conectar talentos e construir inovações. Revolucionamos o ambiente de trabalho #Instation + somos experts em d...",
+      "issueState": "open",
+      "contentHash": "0f47967442084686c7f8eb48ac9fa9cbb4b7ee9a0919cf8bf0e5157a8126a8e6",
+      "repository": "CocoaHeadsBrasil/vagas",
+      "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "java"
+      ],
+      "author": {
+        "id": "GiLazaro",
+        "name": "GiLazaro",
+        "handle": "GiLazaro",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/176509171?v=4"
+      },
+      "community": {
+        "id": "CocoaHeadsBrasil",
+        "name": "CocoaHeadsBrasil",
+        "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+        "repository": "CocoaHeadsBrasil/vagas",
+        "url": "https://github.com/CocoaHeadsBrasil/vagas"
+      },
+      "createdAt": "2025-01-31T19:32:31Z",
+      "updatedAt": "2025-01-31T19:32:54Z",
+      "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1549",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "java"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile",
+          "support"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_c00aea9ceba72a4744407ba9",
+          "sourceId": "CocoaHeadsBrasil/vagas#1549",
+          "repository": "CocoaHeadsBrasil/vagas",
+          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1549",
+          "createdAt": "2025-01-31T19:32:31Z",
+          "updatedAt": "2025-01-31T19:32:54Z",
+          "community": {
+            "id": "CocoaHeadsBrasil",
+            "name": "CocoaHeadsBrasil",
+            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+            "repository": "CocoaHeadsBrasil/vagas",
+            "url": "https://github.com/CocoaHeadsBrasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 577,
+        "publishedAt": "2025-01-31T19:32:31Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_94cafd35f7b9d2a5c82cd324",
+      "sourceId": "CocoaHeadsBrasil/vagas#1546",
+      "title": "[Remoto] Desenvolvedor Mobile  (iOS/Android) Sr na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/desenvolvedor-mobile-iosandroid-sr-183529666?utm_source=github&utm_medium=CocoaHeadsBrasil-vagas&modal=open) para realizar a candidatura. 👋\n<p>Estamos em busca de um Desenvolvedor Mobile talentoso e com experiência para se juntar à nossa equipe. O profissional será responsável por desenvolver e manter aplicativos móveis para as plataformas iOS e Android, utilizando Swift para iOS e Java/Kotlin para Android. Buscamos um profissional proativo, com boa capacidade de identificar e solucionar problemas existentes, além de apresentar uma sólida experiência na área de desenvolvimento mobile.</p>\n<p></p>\n<p>Responsabilidades:</p>\n<p>Desenvolvimento de aplicativos móveis para iOS (Swift) e Android (Java/Kotlin).</p>\n<p>Realizar a análise, identificação e resolução de problemas em aplicativos existentes.</p>\n<p>Garantir a performance, qualidade e responsividade dos aplicativos móveis.</p>\n<p>Colaborar com a equipe de design e backend para definir soluções eficazes.</p>\n<p>Implementar testes automatizados e práticas de desenvolvimento ágil.</p>\n<p>Acompanhar as tendências de mercado e buscar melhorias contínuas nas soluções desenvolvidas / defasadas.</p>\n<p></p>\n<p>Requisitos:</p>\n<p>Experiência prática no desenvolvimento de aplicativos móveis para iOS e Android.</p>\n<p>Conhecimentos avançados em Swift (iOS) e Java/Kotlin (Android).</p>\n<p>Capacidade de diagnosticar e resolver problemas técnicos em aplicativos móveis.</p>\n<p>Experiência com ferramentas de controle de versão (como Git).</p>\n<p>Familiaridade com integração de APIs e serviços de backend.</p>\n<p>Capacidade de trabalhar de forma autônoma e em equipe.</p>\n<p>Experiência com metodologias ágeis (Scrum, Kanban, etc.).</p>\n<p>Disponibilidade em Período Integral / Comercial</p>\n<p></p>\n<p>Desejável:</p>\n<p>Experiência com Firebase, GraphQL ou outras tecnologias complementares.</p>\n<p>Conhecimento em UX/UI e práticas de design mobile.</p>\n<p>Contribuições para projetos open-source ou participação ativa em comunidades de desenvolvimento.</p>\n## Rede Piu: \n <p>A PIU é uma empresa de tecnologia especializada na venda de recargas e serviços e tem como objetivo disponibilizar diversos serviços como recarga de Transporte, Celular, Pagamento de contas, Crédito para Jogos, TV Pré-Paga e muito mais, por meio de sua rede, que conta com terminais de autoatendimento, maquininhas POS e App. Estamos há 10 anos no mercado, mas agora com um novo nome, conceito e visual totalmente repaginado! Nossa operação conta aproximadamente 2000 pontos de atendimento espalhados em 12 estados brasileiros: São Paulo, Paraná, Rio de Janeiro, Bahia, Pernambuco, Alagoas, Ceará, Paraíba, Minas Gerais, Espírito Santo, Santa Catarina e Rio Grande do Sul. Somos a empresa de maior abrangência para o transporte público brasileiro.</p></p>\n\n ## Habilidades: \n - Swift \n- Kotlin\n## Local: \n Remota\n\n## Diferenciais: \n - UX/UI\n## Benefícios: \n - VR/VA\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Desenvolvedor Mobile  (iOS/Android) Sr na Rede Piu](https://coodesh.com/jobs/desenvolvedor-mobile-iosandroid-sr-183529666?utm_source=github&utm_medium=CocoaHeadsBrasil-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nMobile",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "0e2e59960ace3c71d9f06c7a58774c4dada621e91a46c13fb422e53a92c363fc",
+      "repository": "CocoaHeadsBrasil/vagas",
+      "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "java"
+      ],
+      "author": {
+        "id": "RHRedePiu",
+        "name": "RHRedePiu",
+        "handle": "RHRedePiu",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/196851843?v=4"
+      },
+      "community": {
+        "id": "CocoaHeadsBrasil",
+        "name": "CocoaHeadsBrasil",
+        "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+        "repository": "CocoaHeadsBrasil/vagas",
+        "url": "https://github.com/CocoaHeadsBrasil/vagas"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2025-01-28T20:46:10Z",
+      "updatedAt": "2025-04-04T01:25:34Z",
+      "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1546",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "java"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_94cafd35f7b9d2a5c82cd324",
+          "sourceId": "CocoaHeadsBrasil/vagas#1546",
+          "repository": "CocoaHeadsBrasil/vagas",
+          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1546",
+          "createdAt": "2025-01-28T20:46:10Z",
+          "updatedAt": "2025-04-04T01:25:34Z",
+          "community": {
+            "id": "CocoaHeadsBrasil",
+            "name": "CocoaHeadsBrasil",
+            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+            "repository": "CocoaHeadsBrasil/vagas",
+            "url": "https://github.com/CocoaHeadsBrasil/vagas"
+          }
+        },
+        {
+          "id": "gh_76359a8b230645e1e0418136",
+          "sourceId": "CocoaHeadsBrasil/vagas#1547",
+          "repository": "CocoaHeadsBrasil/vagas",
+          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1547",
+          "createdAt": "2025-01-28T20:46:20Z",
+          "updatedAt": "2025-01-28T20:46:20Z",
+          "community": {
+            "id": "CocoaHeadsBrasil",
+            "name": "CocoaHeadsBrasil",
+            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+            "repository": "CocoaHeadsBrasil/vagas",
+            "url": "https://github.com/CocoaHeadsBrasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 580,
+        "publishedAt": "2025-01-28T20:46:10Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_a087c2a7e4c36bd695c90fdc",
+      "sourceId": "Empregos-dev/Vagas-dev#93",
+      "title": "🚀 Vaga Desenvolvedor Full-stack Junior (React.js + Node.js) 📍 remoto 🚀",
+      "description": "# Desenvolvedor Full-stack Junior (React.js + Node.js)\n\n- 📍 Localização: remoto\n- 📈 Nível: junior\n- 📃 Contrato: pj\n- 💰 Salário: R$: 6.000,00\n- 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗\n\n\n## Descrição da vaga:\nO que é a Shaw and Partners? O que eles fazem? Onde vivem?\nShaw and Partners é uma fábrica de desenvolvimento de software americana para startups de alto nível, com aproximadamente 25 funcionários remotos. \nChristopher Shaw é o fundador e CEO.\n\n\n\n## Atividades e responsabilidade:\nO que você vai fazer: \n• Conceber, construir e manter código eficiente, reutilizável e fiável\n• Garantir o melhor desempenho possível, qualidade e capacidade de resposta das aplicações\n• Identificar e rastrear estrangulamentos e bugs, e conceber soluções para esses problemas\n• Ajudar a manter a qualidade do código, a organização e os padrões internos\n\n\n## Requisitos:\nO que você precisa saber e trazer na bagagem: \n• Frustração com códigos mal construídos, ineficientes e insustentáveis\n• Experiência em consumir APIs de back-end e front-end com foco no usuário\n• Conhecimentos fundamentais e sólidos em Ciência da Computação (algoritmos, estrutura de dados, concorrência, etc.\n• Conhecimento em React.js, Node.js e TypeScript\n\nE seria muito legal se você tiver:\n• Forte experiência e interesse em trabalhar com Kubernetes, Amazon Web Services, Google Cloud Platform\n• Experiência com Next e Responsive Web Design, padrões e soluções de gestão de estados (por exemplo, Redux) ES2015+, APIs HTML5 e CSS3\n• Experiência de trabalho em integração/implantação contínua\n\n\n\n\n\n\n## Mais Informações:\nMas, antes de você se candidatar precisa saber que: \n• Terá a oportunidade de trabalhar bem próximo do nosso CEO, relaxa ele não morde\n• Nós te pagamos em USD \n• Aqui a gente não te pede inglês avançado para guardar na gaveta, temos funcionários da Jordânia, Egito, Argentina, Brasil, Estados Unidos, Ucrânia e entre outros. \n• Não temos happy hour às sextas porque todos trabalham remotamente, mas tem joguinho online se marcar com a equipe \n• Tem médico ou prova para tirar carteira de motorista no meio da semana? Não tem problema, você mesmo gerencia suas horas, só precisa ficar atento quando o cliente manda mensagem e solicita uma reunião. \n• Parece ser meio óbvio, mas pra quem nunca trabalhou no modelo remoto, nós não exigimos dresscode. Só não pode aparecer sem camiseta quando rolar uma vídeo chamada, combinado?\n• Se você indica um coleguinha para trabalhar conosco e a pessoa é contratada, após três meses de contrato de trabalho do seu amigo, a gente te paga uma mesada\n• Não somos o Google, mas nosso processo seletivo é bem rápido do que os dele, pode confiar\n\nTeremos um crush por você se:\n• Ter senso de dono, o projeto é seu, rolou um bug no final de semana? Concerte\n• Curte trabalhar no projeto do início ao fim, então arregace as mangas porque você vai trabalhar tanto em front-end como em back-end também. Mas não se preocupe se você não gosta tanto assim de trabalhar com um dos dois, conta pra gente que damos um jeito!\n• Gosta de trabalhar em equipe, “ninguém solta a mão de ninguém”\n• Tá ligado nas novidades do mundo tech e gosta de dar “pitaco” com novas ideias e soluções\n• Está sempre atento ao feedback do cliente, afinal é ele que paga as contas\n\nTalvez a Shaw a não seja a empresa certa para você se: \n• É uma pessoa preguiçosa hahaha \n• Precisa de micro gerenciamento. Claro que sabemos que um profissional júnior precisará de um pouco mais de atenção no início, mas depois que “você aprende a andar de bicicleta”, não esquece nunca mais, né?\n• Quer trabalhar em uma empresa 100% segura e busca total estabilidade. Somos uma startup em crescimento avançado\n\n\n# [🔗 Clique aqui para se candidatar](https://empregos.dev/vaga/desenvolvedor-full-stack-junior-reactjs-nodejs-8619)\n\n\n**Use nosso site [Empregos.dev](https://empregos.dev) para buscar mais vagas de trabalho na área da programação, desenvolvimento, devops e tecnologia como está!**",
+      "excerpt": "# Desenvolvedor Full-stack Junior (React.js + Node.js) - 📍 Localização: remoto - 📈 Nível: junior - 📃 Contrato: pj - 💰 Salário: R$: 6.000,00 - 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗 ## Descrição da vaga...",
+      "issueState": "open",
+      "contentHash": "bee5b293a441710b608a3cb94bef7989ad3d4dfe8a6fcc211d181a1c2045be94",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "junior",
+        "node.js",
+        "pj",
+        "remoto"
+      ],
+      "author": {
+        "id": "ecossistemadev",
+        "name": "ecossistemadev",
+        "handle": "ecossistemadev",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/107730006?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "createdAt": "2025-01-21T20:29:10Z",
+      "updatedAt": "2025-01-21T20:29:10Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/93",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "junior",
+        "node.js",
+        "pj",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "gcp",
+          "kubernetes",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_a087c2a7e4c36bd695c90fdc",
+          "sourceId": "Empregos-dev/Vagas-dev#93",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/93",
+          "createdAt": "2025-01-21T20:29:10Z",
+          "updatedAt": "2025-01-21T20:29:10Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 587,
+        "publishedAt": "2025-01-21T20:29:10Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_e51f320ccc04057f58acdee4",
+      "sourceId": "Empregos-dev/Vagas-dev#91",
+      "title": "[Full Remoto] Vaga: Desenvolvedor(a) Maker JR/PL",
+      "description": "🚀 Empresa: [MK Solutions](https://www.mksolutions.com.br/carreiras/)\n📍 Localização: remoto\n📈 Nível: Júnior ou Pleno\n📃 Contrato: CLT\n\nVenha fazer parte do nosso time🔗: [https://mksolutions.inhire.app/vagas/70dd1baa-ff7a-4d17-b3d1-40575365c2c5/desenvolvedor-maker](url)\n\n### Stacks:\n- Experiência com a versão do Maker 3.9\n- Conhecimento em PostgreSQL\n- Conhecimentos em Java, Javascript, CSS, HTML e SQL\n\n### Skills:\n- Protagonismo e senso de dono;\n-  Comunicação assertiva;\n- Curiosidade aguçada;\n- Mindset de crescimento;\n- Adaptabilidade às mudanças, mantendo o entusiasmo.\n\n### Dia a dia da posição:\n- Desenvolver fluxos com o framework da Softwell conforme demandas do nosso backlog;\n- Desenvolver webservices e APIS;\n- Estar alinhado com os padrões da estrutura de tabela, banco de dados e regras de negócio: identificando-os e seguindo-os;\n- Atuar em conjunto com o time ágil: devs, QAs e POs. Aqui trabalhamos em equipe, todos colaborando para realizar as entregas!;\n\n### Benefícios:\n- Beneflex Flash 🦩 com bandeira Visa no valor de R$650,00;\n- Auxílio Home Office no valor de R$ 100,00; 🏡\n- Plano de Saúde Unimed Hospitalar + Ambulatorial; 🏥\n- Gympass;\n- Seguro de Vida MetLife; 🤩\n- Programa de Reconhecimento interno entre colaboradores; 💰\n- Convênio com Sesc ⚽ em âmbito nacional extensível para a família;\n- 👩‍🎓 Parcerias com Instituições de Ensino (+4 universidades e escolas de idiomas);\n- DressCode flexível; 🖖\nps.: nossos benefícios não possuem descontos em folha de pagamento (isso também é um benefícios?!)\n\n### Sobre a MK\nConectar o mundo é o que nos move, e conectar as pessoas também! 📲 🌐 MK Solutions é uma empresa tech de desenvolvimento de software para ISPs, no top 3 de melhores companhias do segmento, conforme ranking da RTI, e GPTW pelo 3º ano consecutivo! Conectamos pessoas no meio digital, garantindo que nenhuma distância seja longa o suficiente para separar seres humanos! 🚀\n\nTemos muito orgulho de simplificar a jornada dos provedores de internet, apoiando empreendedores na busca pelo seu sonho, contribuindo com ferramentas de gestão que impulsionam  o negócio e geram + empregos! 🤩💚\n\nTrazemos para nosso universo estrelas que fazem acontecer, e que sabem o tamanho da importância delas para nosso ecossistema! 🌟",
+      "excerpt": "🚀 Empresa: [MK Solutions](https://www.mksolutions.com.br/carreiras/) 📍 Localização: remoto 📈 Nível: Júnior ou Pleno 📃 Contrato: CLT Venha fazer parte do nosso time🔗: [https://mksolutions.inhire.app/vagas/70dd1baa...",
+      "issueState": "open",
+      "contentHash": "68ad4ca1582de2c37c78f38646e01e6c5b857d4c3fc5b015e5202c1a0de9bfca",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "java",
+        "pleno"
+      ],
+      "author": {
+        "id": "Jiocasta",
+        "name": "Jiocasta",
+        "handle": "Jiocasta",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/177887612?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "companyName": "[MK Solutions](https://www.mksolutions.com.br/carreiras/)",
+      "createdAt": "2025-01-10T20:24:28Z",
+      "updatedAt": "2025-01-10T20:24:28Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/91",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "java",
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "postgres"
+        ],
+        "seniority": [
+          "junior",
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_e51f320ccc04057f58acdee4",
+          "sourceId": "Empregos-dev/Vagas-dev#91",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/91",
+          "createdAt": "2025-01-10T20:24:28Z",
+          "updatedAt": "2025-01-10T20:24:28Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 598,
+        "publishedAt": "2025-01-10T20:24:28Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_ac0c2bf05a2a9f15633a7fe2",
+      "sourceId": "golangtw/jobs#220",
+      "title": "[台北/混合式辦公] Cloud Engineer (Golang/Python, Backend Focus) 雲端開發工程師",
+      "description": "## 團隊簡介\nJoin our team and play a pivotal role in Trend Vision One™, a cutting-edge cyber defense platform leveraging Trend Micro's security and Zero Trust framework to protect enterprise ecosystems.\n\nWe are looking for an experienced full-cycle cloud developer to be part of a high caliber multi-disciplinary team. Your focus will be on developing high-quality security services for Trend Vision One™ and collaborating with stakeholders to navigate the evolving cyber threat landscape. This role offers a blend of technical challenges and opportunities for skill development in communication and strategic planning. You will work with cross-functional teams (architects, product managers, developers, QA, and UX/Visual designers) in software engineering across the organization, developing products that satisfy customer needs, solve their problems, and achieve customer success.\n\n## 工作地點\n台北市大安區敦化南路二段198號 (近捷運六張犁站)\n\n## 工作內容\n1. Responsible as a full-cycle developer for delivering features with high quality to achieve business goals.\n2. Work closely with stakeholders for requirement discussions, cross-team collaboration, and troubleshooting.\n3. Automate and improve the development and release process.\n\n## 能力需求\n1. 2+ years of experience in developing web applications by using microservice architecture with RESTful API interface design.\n2. Familiarity with developing cloud service solutions using AWS, Azure, or GCP.\n3. Familiar with Golang, Python, or Java programming languages.\n4. Experience in unit testing, component testing and end-to-end testing, etc.\n5. Experience in development with relational or NoSQL databases, such as PostgreSQL, MySQL, Redis, Dynamo, or ElasticSearch.\n6. Experience in CI/CD and agile software development with a DevOps culture and mindset.\n7. English communication skills, enabling close collaboration with global team members.\n\n## 加分能力\n1. Experience in cloud service architecture design from scratch, especially with serverless technologies.\n2. Experience in software build and deployments, such as Terraform, GitHub Actions, Jenkins, AWS CodeDeploy, or Azure DevOps.\n3. Experience in service monitoring and alert tools, like Grafana or Kibana.\n4. Experience with containerization technologies, e.g., Docker, Kubernetes, or AWS ECS.\n\n## 薪資範圍\n面議\n\n## 工時/特休\n- 彈性工作環境，混合上班模式，每周只需來公司 2-3 天，上下班不打卡\n- 第一年10天特別休假\n- 每年全薪病假 12 天\n- 每年7天彈性休假\n\n## 福利/推薦項\n- 每年多達100場以上的技術與軟性技能的自主學習Study Group\n- 豐富的社團活動\n- 多元的職涯發展管道\n\n## 聯絡方式\nAnna Cheng     \nanna_cheng@trendmicro.com\n或直接透過 104 投遞履歷 https://www.104.com.tw/job/8j3s8?jobsource=index_s_cs",
+      "excerpt": "## 團隊簡介 Join our team and play a pivotal role in Trend Vision One™, a cutting-edge cyber defense platform leveraging Trend Micro's security and Zero Trust framework to protect enterprise ecosystems. We are looking for...",
+      "issueState": "open",
+      "contentHash": "357ac33d66cb2504aa6adccc183f234c11b4775454d66d28c01fb595e37ad9a0",
+      "repository": "golangtw/jobs",
+      "repositoryUrl": "https://github.com/golangtw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "tags": [
+        "台北",
+        "缺薪資範圍"
+      ],
+      "author": {
+        "id": "smallj3128",
+        "name": "smallj3128",
+        "handle": "smallj3128",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/193297389?v=4"
+      },
+      "community": {
+        "id": "golangtw",
+        "name": "golangtw",
+        "avatarUrl": "https://github.com/golangtw.png?size=80",
+        "repository": "golangtw/jobs",
+        "url": "https://github.com/golangtw/jobs"
+      },
+      "createdAt": "2025-01-06T07:57:38Z",
+      "updatedAt": "2025-03-15T12:08:36Z",
+      "url": "https://github.com/golangtw/jobs/issues/220",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "台北",
+        "缺薪資範圍"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "go",
+          "java",
+          "kubernetes",
+          "mysql",
+          "postgres",
+          "python",
+          "redis",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_ac0c2bf05a2a9f15633a7fe2",
+          "sourceId": "golangtw/jobs#220",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/220",
+          "createdAt": "2025-01-06T07:57:38Z",
+          "updatedAt": "2025-03-15T12:08:36Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 602,
+        "publishedAt": "2025-01-06T07:57:38Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_e3cea4edfbc7f630c99d150f",
+      "sourceId": "nodejs-tw/jobs#268",
+      "title": "徵才【日本大阪】NodeJS Backend Developer (年薪100~200萬台幣) #公司可提供簽證 #擴大招募! ",
+      "description": "📍其他資訊: 自2024/5月以來團隊已成長到8人，2025預計再加10人加入團隊!\n📍類型: 博奕遊戲 \n📍薪資: 年薪100~200萬台幣\n📍外派流程:\n-外派前2-3個月會先在台灣辦公室上班，等工作簽證下來後再前往日本\n-外派到日本後的第1-2個月先住宿舍，之後會給房屋津貼自行找住宿地點唷\n💫優先歡迎已經具備簽證的人選! \n\nBackend Developer /後端工程師\n✍️相關經驗2年以上\n1. 開發遊戲伺服器新功能。 \n2. 與組員合作討論，分析需求定義並實作。 \n3. 跟 Designer, PM, QA, Devops, Backend, Frontend, APP 合作完成「需求-設計-開發-測試-上線」的流程。 \n4. 協助不同專案的系統開發、後端程式撰寫及維護，同時適時進行跨專案的支援。 \n5. 網站的後端及相關 API 開發與串接並確保程式品質。 \n\n【期待你的技術職能】 \n1. 熟悉資料庫相關操作(Transaction)與建置(Schema)。 \n2. 了解程式相關資安維護。 \n3. 有專案設計、規畫、開發相關工作經驗者佳。 \n4. 資訊工程或相關科、系(所)畢業佳，具備實際開發經驗則不限。\n5. 程式語言需求(二擇一) : (1)Golang (2)NodeJS \n6. 資料庫需求(二擇一) : (1) Oracle (2) MySQL \n\n【如果有以下的經驗或特質，那就太加分】 \n1. Docker 2. K8S 3. 邏輯調理能力佳\n\n歡迎將履歷寄 至📩 joanne@recruitexpress.com.tw\n來信告知應徵大阪工作\n也可以直接加Joanne Line 好友討論唷! (ID a19901204)",
+      "excerpt": "📍其他資訊: 自2024/5月以來團隊已成長到8人，2025預計再加10人加入團隊! 📍類型: 博奕遊戲 📍薪資: 年薪100~200萬台幣 📍外派流程: -外派前2-3個月會先在台灣辦公室上班，等工作簽證下來後再前往日本 -外派到日本後的第1-2個月先住宿舍，之後會給房屋津貼自行找住宿地點唷 💫優先歡迎已經具備簽證的人選! Backend Developer /後端工程師 ✍️相關經驗2年以上 1. 開發遊戲伺服器新功...",
+      "issueState": "open",
+      "contentHash": "df8a0f172ae28849354b9c7ed2c9fd3901c0473f222403f370e80336bc0099a8",
+      "repository": "nodejs-tw/jobs",
+      "repositoryUrl": "https://github.com/nodejs-tw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "tags": [
+        "backend",
+        "design",
+        "devops",
+        "frontend",
+        "golang",
+        "node"
+      ],
+      "author": {
+        "id": "1204Joanne",
+        "name": "1204Joanne",
+        "handle": "1204Joanne",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/116633760?v=4"
+      },
+      "community": {
+        "id": "nodejs-tw",
+        "name": "nodejs-tw",
+        "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
+        "repository": "nodejs-tw/jobs",
+        "url": "https://github.com/nodejs-tw/jobs"
+      },
+      "createdAt": "2025-01-02T09:15:34Z",
+      "updatedAt": "2025-01-02T09:15:34Z",
+      "url": "https://github.com/nodejs-tw/jobs/issues/268",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "backend",
+        "design",
+        "devops",
+        "frontend",
+        "golang",
+        "node"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend",
+          "qa"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "kubernetes",
+          "mysql",
+          "nodejs"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_e3cea4edfbc7f630c99d150f",
+          "sourceId": "nodejs-tw/jobs#268",
+          "repository": "nodejs-tw/jobs",
+          "repositoryUrl": "https://github.com/nodejs-tw/jobs",
+          "url": "https://github.com/nodejs-tw/jobs/issues/268",
+          "createdAt": "2025-01-02T09:15:34Z",
+          "updatedAt": "2025-01-02T09:15:34Z",
+          "community": {
+            "id": "nodejs-tw",
+            "name": "nodejs-tw",
+            "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
+            "repository": "nodejs-tw/jobs",
+            "url": "https://github.com/nodejs-tw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 606,
+        "publishedAt": "2025-01-02T09:15:34Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_fbcd0549308f93fa2ecbe812",
+      "sourceId": "Empregos-dev/Vagas-dev#90",
+      "title": "[REMOTE] Full-stack Developer Grader at Shaw and Partners",
+      "description": "**Who we are and what we do**\nShaw and Partners is a software development provider for high-profile startups with approximately 25 remote staff. We are also incubating two startups. [Christopher Shaw](https://chrisshaw.me/), the founder and CEO, would be your manager.\n\nWe are seeking a highly skilled **Full Stack Developer to join our team as a Grader**, responsible for evaluating, reviewing, and assessing coding assignments and projects submitted by candidates. In this role, you will utilize your expertise in full-stack development to ensure submissions meet technical and quality.\n\n**Required:**\n\n- English (Fluency in reading and writing, speaking can be intermediate)\n- Proficiency in front-end technologies: HTML, CSS, JavaScript (and frameworks like React)\n- Strong knowledge of back-end development with languages like Node.js, Python\n- Solid Computer Science fundamentals knowledge (algorithms, data structures, concurrency, etc.) \n\n**Differentials:**\n\n- Previous experience in teaching, mentoring, or grading is a plus\n\n**Responsibilities (Assessment and Grading)**\n\n- Conduct technical interviews\n- Review technical tests\n- Send feedback on the candidate's technical skills to the hiring manager\n- Ensure submitted work aligns with modern frameworks, tools, and industry trends\n- Validate the functionality, scalability, and maintainability of code submissions\n\nApply here: https://shawandpartners.com/opt/?jobId=116\n\n![FS grader](https://github.com/user-attachments/assets/1a961d5f-c573-4b5c-a6ba-61968f313be7)",
+      "excerpt": "**Who we are and what we do** Shaw and Partners is a software development provider for high-profile startups with approximately 25 remote staff. We are also incubating two startups. [Christopher Shaw](https://chrissha...",
+      "issueState": "open",
+      "contentHash": "260f9ee7a7dc8039f279fa65d1eafd8f7c53624915529a61f17accf3329a5960",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "data",
+        "java",
+        "node",
+        "python",
+        "react",
+        "remote",
+        "staff"
+      ],
+      "author": {
+        "id": "Thuanysb",
+        "name": "Thuanysb",
+        "handle": "Thuanysb",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/186589723?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "companyName": "Shaw and Partners",
+      "createdAt": "2024-12-27T00:59:41Z",
+      "updatedAt": "2024-12-27T00:59:44Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/90",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "java",
+        "node",
+        "python",
+        "react",
+        "remote",
+        "staff"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "nodejs",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_fbcd0549308f93fa2ecbe812",
+          "sourceId": "Empregos-dev/Vagas-dev#90",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/90",
+          "createdAt": "2024-12-27T00:59:41Z",
+          "updatedAt": "2024-12-27T00:59:44Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 612,
+        "publishedAt": "2024-12-27T00:59:41Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_e2a0b1deedf7bb946ad695f2",
+      "sourceId": "Empregos-dev/Vagas-dev#89",
+      "title": "[REMOTE] DevOps Developer Grader at Shaw and Partners ",
+      "description": "**Who we are and what we do**\nShaw and Partners is a software development provider for high-profile startups with approximately 25 remote staff. We are also incubating two startups. [Christopher Shaw](https://chrisshaw.me/), the founder and CEO, would be your manager. \n\nWe are seeking a highly skilled **DevOps** to join our team as a **Grader**, responsible for evaluating, reviewing, and assessing coding assignments and projects submitted by candidates. In this role, you will utilize your expertise in DevOps to ensure submissions meet technical and quality.\n\n**Required:** \n- English (Fluency in reading and writing, speaking can be intermediate)\n- Proficiency developing in one or more programming languages including JavaScript/TypeScript, Java, Groovy, or Go \n- Solid skills or experience with database management (on MySQL, Postgres, Mongo) \n- Solid Computer Science fundamentals knowledge (algorithms, data structures, concurrency, etc.) \n- Experience utilizing Jira or similar Agile tools for task management\n- Validate the use of DevOps tools and technologies such as Docker, Kubernetes, Terraform, Ansible, Jenkins, and Git\n\n**Differentials:** \n- Previous experience in teaching, mentoring, or grading is a plus\n\n**Responsibilities (Assessment and Grading):**\n- Conduct technical interviews\n- Review technical tests\n- Send feedback on the candidate's technical skills to the hiring manager\n- Ensure submitted work aligns with modern frameworks, tools, and industry trends\n- Validate the functionality, scalability, and maintainability of code submissions\n\nApply here https://shawandpartners.com/opt/?jobId=118\n\n![devops grader](https://github.com/user-attachments/assets/60a13a99-86bf-4aa0-a070-21fe8303bd72)",
+      "excerpt": "**Who we are and what we do** Shaw and Partners is a software development provider for high-profile startups with approximately 25 remote staff. We are also incubating two startups. [Christopher Shaw](https://chrissha...",
+      "issueState": "open",
+      "contentHash": "5d0212ad09c5613bbe4224f5a14abb8ca7c1626e296aa8e1845690cc14a9fdf4",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "tags": [
+        "data",
+        "devops",
+        "java",
+        "remote",
+        "staff",
+        "typescript"
+      ],
+      "author": {
+        "id": "Thuanysb",
+        "name": "Thuanysb",
+        "handle": "Thuanysb",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/186589723?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "companyName": "Shaw and Partners",
+      "createdAt": "2024-12-27T00:55:22Z",
+      "updatedAt": "2024-12-27T00:55:26Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/89",
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "devops",
+        "java",
+        "remote",
+        "staff",
+        "typescript"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mysql",
+          "postgres",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_e2a0b1deedf7bb946ad695f2",
+          "sourceId": "Empregos-dev/Vagas-dev#89",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/89",
+          "createdAt": "2024-12-27T00:55:22Z",
+          "updatedAt": "2024-12-27T00:55:26Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 612,
+        "publishedAt": "2024-12-27T00:55:22Z",
+        "status": "stale"
+      }
     }
   ]
 }

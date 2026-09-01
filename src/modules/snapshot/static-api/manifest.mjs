@@ -6,27 +6,40 @@ import {
   staticApiJobIdsPath,
   staticApiOrderPath,
   staticApiPageLookupPath,
-  staticApiPromotionsPath,
   staticApiSearchIndexPath,
+  staticApiAliasesPath,
+  staticApiStatusHistoryPath,
+  staticApiStatusPath,
 } from "./paths.mjs";
 
 export function buildStaticApiManifest(params) {
-  const { generatedAt, items, pages, facetSummary, facetIndex, communities, promotions } = params;
+  const {
+    generatedAt,
+    items,
+    pages,
+    facetSummary,
+    facetIndex,
+    communities,
+    aliases,
+    status,
+    statusHistory,
+  } = params;
   const jobIds = items.map((item) => item.id);
 
   return {
     generatedAt,
-    schemaVersion: 5,
+    schemaVersion: 6,
     pageSize: STATIC_API_PAGE_SIZE,
     dataHash: sha256Json({
       jobIds,
-      promotionIds: promotions.ids,
       facetSummary,
       communities: communities.items,
+      aliases: aliases.ids,
+      status: status.items,
+      statusHistory: statusHistory.runs,
     }),
     totals: {
       openOpportunities: items.length,
-      sponsoredOpportunities: promotions.ids.length,
       pages: pages.length,
       repositories: Object.keys(facetIndex.dimensions.repositories).length,
       communities: communities.items.length,
@@ -39,8 +52,10 @@ export function buildStaticApiManifest(params) {
       search: staticApiSearchIndexPath(),
       jobIds: staticApiJobIdsPath(),
       order: staticApiOrderPath(),
-      promotions: staticApiPromotionsPath(),
       communities: staticApiCommunitiesPath(),
+      aliases: staticApiAliasesPath(),
+      status: staticApiStatusPath(),
+      statusHistory: staticApiStatusHistoryPath(),
     },
     facets: facetSummary,
     pages: pages.map((page) => ({

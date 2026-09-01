@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-18T12:29:17.749Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_bebc4c633e728a987497ecda": {
       "id": "gh_bebc4c633e728a987497ecda",
@@ -14,9 +14,10 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remoto",
+        "clt",
         "júnior",
-        "pj"
+        "pj",
+        "remoto"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -33,9 +34,88 @@
       },
       "companyName": "Coodesh",
       "createdAt": "2026-03-25T18:12:49Z",
-      "updatedAt": "2026-03-25T18:13:20Z",
+      "updatedAt": "2026-06-03T17:57:51Z",
       "url": "https://github.com/programadores-br/geral/issues/3062",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "júnior",
+        "pj",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "javascript",
+          "react"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_bebc4c633e728a987497ecda",
+          "sourceId": "programadores-br/geral#3062",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3062",
+          "createdAt": "2026-03-25T18:12:49Z",
+          "updatedAt": "2026-03-25T18:13:20Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        },
+        {
+          "id": "gh_83b66ce2daefa84016b71185",
+          "sourceId": "programadores-br/geral#3077",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3077",
+          "createdAt": "2026-06-03T17:57:21Z",
+          "updatedAt": "2026-06-03T17:57:51Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 159,
+        "publishedAt": "2026-03-25T18:12:49Z",
+        "status": "stale"
+      }
     },
     "gh_bee6bfa2c8e12bb59f137acc": {
       "id": "gh_bee6bfa2c8e12bb59f137acc",
@@ -50,8 +130,8 @@
       "region": "Global",
       "country": "Global",
       "tags": [
-        "remote",
-        "design"
+        "design",
+        "remote"
       ],
       "author": {
         "id": "IndependentRecruiter",
@@ -69,7 +149,66 @@
       "createdAt": "2024-04-27T16:46:51Z",
       "updatedAt": "2024-04-27T16:46:51Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/705",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "design",
+        "remote"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_bee6bfa2c8e12bb59f137acc",
+          "sourceId": "TechnologyMasters/jobs#705",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/705",
+          "createdAt": "2024-04-27T16:46:51Z",
+          "updatedAt": "2024-04-27T16:46:51Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 856,
+        "publishedAt": "2024-04-27T16:46:51Z",
+        "status": "stale"
+      }
     }
   }
 }

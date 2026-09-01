@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T21:59:36.553Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_771e69b35a748d39b77d7307": {
       "id": "gh_771e69b35a748d39b77d7307",
@@ -15,9 +15,9 @@
       "country": "Brazil",
       "tags": [
         "clt",
+        "especialista",
         "pj",
-        "remoto",
-        "especialista"
+        "remoto"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -39,9 +39,92 @@
         "period": "month"
       },
       "createdAt": "2026-07-17T13:09:34Z",
-      "updatedAt": "2026-07-17T14:28:34Z",
+      "updatedAt": "2026-07-17T14:28:36Z",
       "url": "https://github.com/dotnetdevbr/vagas/issues/1065",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "especialista",
+        "pj",
+        "remoto"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "dotnet",
+          "java"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_771e69b35a748d39b77d7307",
+          "sourceId": "dotnetdevbr/vagas#1065",
+          "repository": "dotnetdevbr/vagas",
+          "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
+          "url": "https://github.com/dotnetdevbr/vagas/issues/1065",
+          "createdAt": "2026-07-17T13:09:34Z",
+          "updatedAt": "2026-07-17T14:28:34Z",
+          "community": {
+            "id": "dotnetdevbr",
+            "name": "dotnetdevbr",
+            "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
+            "repository": "dotnetdevbr/vagas",
+            "url": "https://github.com/dotnetdevbr/vagas"
+          }
+        },
+        {
+          "id": "gh_ed00b8f2449863124678856d",
+          "sourceId": "backend-pt/vagas#141",
+          "repository": "backend-pt/vagas",
+          "repositoryUrl": "https://github.com/backend-pt/vagas",
+          "url": "https://github.com/backend-pt/vagas/issues/141",
+          "createdAt": "2026-07-17T13:10:36Z",
+          "updatedAt": "2026-07-17T14:28:36Z",
+          "community": {
+            "id": "backend-pt",
+            "name": "backend-pt",
+            "avatarUrl": "https://github.com/backend-pt.png?size=80",
+            "repository": "backend-pt/vagas",
+            "url": "https://github.com/backend-pt/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 45,
+        "publishedAt": "2026-07-17T13:09:34Z",
+        "status": "aging"
+      }
     },
     "gh_777d6953c094c4c77cffa586": {
       "id": "gh_777d6953c094c4c77cffa586",
@@ -56,11 +139,11 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "缺休假資訊",
-        "求才",
+        "[f] react",
         "senior",
         "年薪百萬",
-        "[f] react",
+        "求才",
+        "缺休假資訊",
         "缺特/彈休資訊"
       ],
       "author": {
@@ -79,7 +162,69 @@
       "createdAt": "2026-01-15T06:48:02Z",
       "updatedAt": "2026-01-15T12:54:45Z",
       "url": "https://github.com/f2etw/jobs/issues/1165",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "[f] react",
+        "senior",
+        "年薪百萬",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "javascript",
+          "nextjs",
+          "react",
+          "react-native",
+          "redis"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_777d6953c094c4c77cffa586",
+          "sourceId": "f2etw/jobs#1165",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1165",
+          "createdAt": "2026-01-15T06:48:02Z",
+          "updatedAt": "2026-01-15T12:54:45Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 228,
+        "publishedAt": "2026-01-15T06:48:02Z",
+        "status": "stale"
+      }
     },
     "gh_77349f962dfd436d0bafb6a2": {
       "id": "gh_77349f962dfd436d0bafb6a2",
@@ -94,12 +239,12 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "react",
-        "node",
+        "data",
         "golang",
         "java",
+        "node",
         "pleno",
-        "data"
+        "react"
       ],
       "author": {
         "id": "FranSTechRecruiter",
@@ -118,7 +263,77 @@
       "createdAt": "2022-12-13T19:59:36Z",
       "updatedAt": "2022-12-13T19:59:36Z",
       "url": "https://github.com/FranSTechRecruiter/VagasDevs/issues/9",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "golang",
+        "java",
+        "node",
+        "pleno",
+        "react"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "gcp",
+          "go",
+          "java",
+          "nodejs",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_77349f962dfd436d0bafb6a2",
+          "sourceId": "FranSTechRecruiter/VagasDevs#9",
+          "repository": "FranSTechRecruiter/VagasDevs",
+          "repositoryUrl": "https://github.com/FranSTechRecruiter/VagasDevs",
+          "url": "https://github.com/FranSTechRecruiter/VagasDevs/issues/9",
+          "createdAt": "2022-12-13T19:59:36Z",
+          "updatedAt": "2022-12-13T19:59:36Z",
+          "community": {
+            "id": "FranSTechRecruiter",
+            "name": "FranSTechRecruiter",
+            "avatarUrl": "https://github.com/FranSTechRecruiter.png?size=80",
+            "repository": "FranSTechRecruiter/VagasDevs",
+            "url": "https://github.com/FranSTechRecruiter/VagasDevs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1357,
+        "publishedAt": "2022-12-13T19:59:36Z",
+        "status": "stale"
+      }
     }
   }
 }

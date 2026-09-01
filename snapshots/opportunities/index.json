@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-01T13:51:36.733Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "schemaVersion": 2,
-  "dataHash": "e20a4c3fed678e1f99cfbda6c3df9aee789f0e862922f9d9e0dfd139944c5936",
+  "dataHash": "9842bb3f6fd3179ab45fbc8411d50577f68135851ee51c155922d08ce3ce470e",
   "catalogGeneratedAt": "2026-08-17",
   "request": {
     "maxIssuesPerRepository": 30,
@@ -13,7 +13,7 @@
   "repositoriesRequested": 186,
   "repositoriesScanned": 186,
   "totals": {
-    "opportunities": 2137,
+    "opportunities": 2144,
     "uniqueRepositories": 186,
     "uniqueCountries": 23,
     "uniqueRegions": 7,
@@ -23,6 +23,7 @@
   "staticApi": {
     "manifestFile": "api/manifest.json",
     "files": [
+      "api/aliases.json",
       "api/communities.json",
       "api/facet-index.json",
       "api/job-ids.json",
@@ -53,6 +54,7 @@
       "api/jobs/1b.json",
       "api/jobs/1c.json",
       "api/jobs/1d.json",
+      "api/jobs/1e.json",
       "api/jobs/1f.json",
       "api/jobs/20.json",
       "api/jobs/21.json",
@@ -123,7 +125,6 @@
       "api/jobs/64.json",
       "api/jobs/65.json",
       "api/jobs/66.json",
-      "api/jobs/67.json",
       "api/jobs/69.json",
       "api/jobs/6a.json",
       "api/jobs/6b.json",
@@ -152,7 +153,6 @@
       "api/jobs/82.json",
       "api/jobs/83.json",
       "api/jobs/84.json",
-      "api/jobs/85.json",
       "api/jobs/86.json",
       "api/jobs/87.json",
       "api/jobs/88.json",
@@ -206,7 +206,6 @@
       "api/jobs/b9.json",
       "api/jobs/ba.json",
       "api/jobs/bb.json",
-      "api/jobs/bc.json",
       "api/jobs/bd.json",
       "api/jobs/be.json",
       "api/jobs/bf.json",
@@ -313,14 +312,8 @@
       "api/pages/page-0036.json",
       "api/pages/page-0037.json",
       "api/pages/page-0038.json",
-      "api/pages/page-0039.json",
-      "api/pages/page-0040.json",
-      "api/pages/page-0041.json",
-      "api/pages/page-0042.json",
-      "api/pages/page-0043.json",
-      "api/pages/page-0044.json",
-      "api/promotions.json",
-      "api/search-index.json"
+      "api/search-index.json",
+      "api/status.json"
     ]
   },
   "countries": [
@@ -448,10 +441,10 @@
       "country": "Global",
       "countryCode": "GLOBAL",
       "region": "Global",
-      "opportunities": 286,
+      "opportunities": 293,
       "repositories": 36,
-      "openIssues": 104,
-      "closedIssues": 182,
+      "openIssues": 86,
+      "closedIssues": 207,
       "indexFile": "countries/global/index.json"
     },
     {
@@ -540,8 +533,8 @@
       "region": "North America",
       "opportunities": 138,
       "repositories": 24,
-      "openIssues": 66,
-      "closedIssues": 72,
+      "openIssues": 65,
+      "closedIssues": 73,
       "indexFile": "countries/us/index.json"
     },
     {

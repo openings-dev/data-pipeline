@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-31T05:58:49.865Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_ba4f8e13f468e4ef55d8683c": {
       "id": "gh_ba4f8e13f468e4ef55d8683c",
@@ -14,9 +14,9 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remoto",
         "júnior",
-        "pj"
+        "pj",
+        "remoto"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -35,7 +35,65 @@
       "createdAt": "2026-05-14T11:23:47Z",
       "updatedAt": "2026-05-14T11:24:06Z",
       "url": "https://github.com/programadores-br/geral/issues/3067",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "júnior",
+        "pj",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "product"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_ba4f8e13f468e4ef55d8683c",
+          "sourceId": "programadores-br/geral#3067",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3067",
+          "createdAt": "2026-05-14T11:23:47Z",
+          "updatedAt": "2026-05-14T11:24:06Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 109,
+        "publishedAt": "2026-05-14T11:23:47Z",
+        "status": "stale"
+      }
     },
     "gh_ba951e47c79bd7f0d83865f5": {
       "id": "gh_ba951e47c79bd7f0d83865f5",
@@ -50,10 +108,10 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "java",
-        "senior",
         "data",
-        "design"
+        "design",
+        "java",
+        "senior"
       ],
       "author": {
         "id": "alissongusmao",
@@ -71,7 +129,71 @@
       "createdAt": "2021-04-28T14:26:47Z",
       "updatedAt": "2021-04-28T14:26:47Z",
       "url": "https://github.com/dev-pp/vagas/issues/48",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_ba951e47c79bd7f0d83865f5",
+          "sourceId": "dev-pp/vagas#48",
+          "repository": "dev-pp/vagas",
+          "repositoryUrl": "https://github.com/dev-pp/vagas",
+          "url": "https://github.com/dev-pp/vagas/issues/48",
+          "createdAt": "2021-04-28T14:26:47Z",
+          "updatedAt": "2021-04-28T14:26:47Z",
+          "community": {
+            "id": "dev-pp",
+            "name": "dev-pp",
+            "avatarUrl": "https://github.com/dev-pp.png?size=80",
+            "repository": "dev-pp/vagas",
+            "url": "https://github.com/dev-pp/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1951,
+        "publishedAt": "2021-04-28T14:26:47Z",
+        "status": "stale"
+      }
     }
   }
 }

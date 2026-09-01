@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T12:32:46.990Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_39ce70b48fd56a2286aeca90": {
       "id": "gh_39ce70b48fd56a2286aeca90",
@@ -14,10 +14,10 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "remote",
-        "python",
         "data",
-        "design"
+        "design",
+        "python",
+        "remote"
       ],
       "author": {
         "id": "workataha",
@@ -35,7 +35,68 @@
       "createdAt": "2024-01-30T22:51:53Z",
       "updatedAt": "2024-01-30T22:51:53Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/259",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "python",
+        "remote"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_39ce70b48fd56a2286aeca90",
+          "sourceId": "nodejs-tw/jobs#259",
+          "repository": "nodejs-tw/jobs",
+          "repositoryUrl": "https://github.com/nodejs-tw/jobs",
+          "url": "https://github.com/nodejs-tw/jobs/issues/259",
+          "createdAt": "2024-01-30T22:51:53Z",
+          "updatedAt": "2024-01-30T22:51:53Z",
+          "community": {
+            "id": "nodejs-tw",
+            "name": "nodejs-tw",
+            "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
+            "repository": "nodejs-tw/jobs",
+            "url": "https://github.com/nodejs-tw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 943,
+        "publishedAt": "2024-01-30T22:51:53Z",
+        "status": "stale"
+      }
     }
   }
 }

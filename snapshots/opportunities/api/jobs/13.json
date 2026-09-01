@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-12T18:52:24.009Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_13a4c16d56f29c6c8e1ad75e": {
       "id": "gh_13a4c16d56f29c6c8e1ad75e",
@@ -15,8 +15,8 @@
       "country": "Brazil",
       "tags": [
         "backend",
-        "pleno",
-        "data"
+        "data",
+        "pleno"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -41,7 +41,72 @@
       "createdAt": "2026-08-12T18:00:37Z",
       "updatedAt": "2026-08-12T18:00:37Z",
       "url": "https://github.com/datascience-br/vagas/issues/193",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "pleno"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_13a4c16d56f29c6c8e1ad75e",
+          "sourceId": "datascience-br/vagas#193",
+          "repository": "datascience-br/vagas",
+          "repositoryUrl": "https://github.com/datascience-br/vagas",
+          "url": "https://github.com/datascience-br/vagas/issues/193",
+          "createdAt": "2026-08-12T18:00:37Z",
+          "updatedAt": "2026-08-12T18:00:37Z",
+          "community": {
+            "id": "datascience-br",
+            "name": "datascience-br",
+            "avatarUrl": "https://github.com/datascience-br.png?size=80",
+            "repository": "datascience-br/vagas",
+            "url": "https://github.com/datascience-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 19,
+        "publishedAt": "2026-08-12T18:00:37Z",
+        "status": "fresh"
+      }
     },
     "gh_134ed8ca61ec97e4f23f4c2d": {
       "id": "gh_134ed8ca61ec97e4f23f4c2d",
@@ -58,8 +123,8 @@
       "tags": [
         "clt",
         "especialista",
-        "sênior",
-        "remoto"
+        "remoto",
+        "sênior"
       ],
       "author": {
         "id": "TARDStation",
@@ -77,7 +142,70 @@
       "createdAt": "2024-06-21T21:23:57Z",
       "updatedAt": "2024-06-21T21:24:27Z",
       "url": "https://github.com/seujobtech/vagas/issues/415",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "especialista",
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack",
+          "product"
+        ],
+        "technologies": [
+          "go",
+          "ruby"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_134ed8ca61ec97e4f23f4c2d",
+          "sourceId": "seujobtech/vagas#415",
+          "repository": "seujobtech/vagas",
+          "repositoryUrl": "https://github.com/seujobtech/vagas",
+          "url": "https://github.com/seujobtech/vagas/issues/415",
+          "createdAt": "2024-06-21T21:23:57Z",
+          "updatedAt": "2024-06-21T21:24:27Z",
+          "community": {
+            "id": "seujobtech",
+            "name": "seujobtech",
+            "avatarUrl": "https://github.com/seujobtech.png?size=80",
+            "repository": "seujobtech/vagas",
+            "url": "https://github.com/seujobtech/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 801,
+        "publishedAt": "2024-06-21T21:23:57Z",
+        "status": "stale"
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-18T05:18:14.232Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_0c8142500ab7244ecd91bc45": {
       "id": "gh_0c8142500ab7244ecd91bc45",
@@ -14,8 +14,8 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
-        "台北",
-        "70k以上"
+        "70k以上",
+        "台北"
       ],
       "author": {
         "id": "vocusHR",
@@ -33,7 +33,66 @@
       "createdAt": "2025-02-05T08:17:34Z",
       "updatedAt": "2025-03-15T12:07:27Z",
       "url": "https://github.com/golangtw/jobs/issues/221",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "70k以上",
+        "台北"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "docker",
+          "gcp",
+          "go",
+          "java",
+          "mongodb",
+          "mysql",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_0c8142500ab7244ecd91bc45",
+          "sourceId": "golangtw/jobs#221",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/221",
+          "createdAt": "2025-02-05T08:17:34Z",
+          "updatedAt": "2025-03-15T12:07:27Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 572,
+        "publishedAt": "2025-02-05T08:17:34Z",
+        "status": "stale"
+      }
     },
     "gh_0c97b8d919ef7b6f83e68160": {
       "id": "gh_0c97b8d919ef7b6f83e68160",
@@ -66,7 +125,56 @@
       "createdAt": "2019-06-07T07:59:59Z",
       "updatedAt": "2024-02-20T07:03:44Z",
       "url": "https://github.com/danielbayerlein/remote-jobs-germany/issues/15",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Germany",
+        "region": "Europe"
+      },
+      "sourceTags": [
+        "enhancement"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_0c97b8d919ef7b6f83e68160",
+          "sourceId": "danielbayerlein/remote-jobs-germany#15",
+          "repository": "danielbayerlein/remote-jobs-germany",
+          "repositoryUrl": "https://github.com/danielbayerlein/remote-jobs-germany",
+          "url": "https://github.com/danielbayerlein/remote-jobs-germany/issues/15",
+          "createdAt": "2019-06-07T07:59:59Z",
+          "updatedAt": "2024-02-20T07:03:44Z",
+          "community": {
+            "id": "danielbayerlein",
+            "name": "danielbayerlein",
+            "avatarUrl": "https://github.com/danielbayerlein.png?size=80",
+            "repository": "danielbayerlein/remote-jobs-germany",
+            "url": "https://github.com/danielbayerlein/remote-jobs-germany"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2642,
+        "publishedAt": "2019-06-07T07:59:59Z",
+        "status": "stale"
+      }
     }
   }
 }

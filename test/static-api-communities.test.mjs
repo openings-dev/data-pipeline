@@ -120,7 +120,7 @@ test("static API manifest versions and hashes the communities artifact", () => {
   const firstManifest = firstFiles.find(({ relativePath }) => relativePath === "api/manifest.json").payload;
   const secondManifest = secondFiles.find(({ relativePath }) => relativePath === "api/manifest.json").payload;
 
-  assert.equal(firstManifest.schemaVersion, 5);
+  assert.equal(firstManifest.schemaVersion, 6);
   assert.equal(firstManifest.files.communities, "api/communities.json");
   assert.equal(firstManifest.totals.communities, 1);
   assert.notEqual(firstManifest.dataHash, secondManifest.dataHash);
@@ -145,31 +145,4 @@ test("catalog contains vetted issue-backed communities", async () => {
   for (const repository of expected) {
     assert.equal(repositories.has(repository), true, `missing ${repository}`);
   }
-});
-
-test("catalog includes the label-gated Openings sponsored source", async () => {
-  const catalog = JSON.parse(await readFile(
-    new URL("../src/modules/catalog/repositories.json", import.meta.url),
-    "utf8",
-  ));
-  const sponsoredSource = catalog.repositories.find(
-    (entry) => entry.repository === "openings-dev/jobs",
-  );
-
-  assert.deepEqual(sponsoredSource, {
-    repository: "openings-dev/jobs",
-    owner: "openings-dev",
-    name: "jobs",
-    url: "https://github.com/openings-dev/jobs",
-    country: "Global",
-    countryCode: "GLOBAL",
-    region: "Global",
-    locale: "en",
-    scope: "global",
-    source: "openings-sponsored",
-    queryHints: ["jobs", "technology", "remote", "opportunities"],
-    requiredLabels: ["sponsored"],
-    issueMetadataFormat: "openings-sponsored-job-v1",
-    promotionType: "sponsored",
-  });
 });

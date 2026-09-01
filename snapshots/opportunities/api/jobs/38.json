@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-20T21:56:37.337Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_38273d5e9a1d13896becec9e": {
       "id": "gh_38273d5e9a1d13896becec9e",
@@ -14,8 +14,8 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "pleno",
-        "data"
+        "data",
+        "pleno"
       ],
       "author": {
         "id": "kivervinicius",
@@ -34,7 +34,65 @@
       "createdAt": "2021-04-06T21:58:06Z",
       "updatedAt": "2021-10-01T12:31:29Z",
       "url": "https://github.com/devmatogrosso/vagas/issues/15",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_38273d5e9a1d13896becec9e",
+          "sourceId": "devmatogrosso/vagas#15",
+          "repository": "devmatogrosso/vagas",
+          "repositoryUrl": "https://github.com/devmatogrosso/vagas",
+          "url": "https://github.com/devmatogrosso/vagas/issues/15",
+          "createdAt": "2021-04-06T21:58:06Z",
+          "updatedAt": "2021-10-01T12:31:29Z",
+          "community": {
+            "id": "devmatogrosso",
+            "name": "devmatogrosso",
+            "avatarUrl": "https://github.com/devmatogrosso.png?size=80",
+            "repository": "devmatogrosso/vagas",
+            "url": "https://github.com/devmatogrosso/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1973,
+        "publishedAt": "2021-04-06T21:58:06Z",
+        "status": "stale"
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T03:47:43.844Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_3d0179fc12fad7d01281b2eb": {
       "id": "gh_3d0179fc12fad7d01281b2eb",
@@ -14,11 +14,11 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "pleno",
         "clt",
+        "híbrido",
         "pj",
-        "remoto",
-        "híbrido"
+        "pleno",
+        "remoto"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -43,7 +43,72 @@
       "createdAt": "2026-08-21T12:00:14Z",
       "updatedAt": "2026-08-21T12:00:38Z",
       "url": "https://github.com/frontendbr/vagas/issues/8545",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "híbrido",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_3d0179fc12fad7d01281b2eb",
+          "sourceId": "frontendbr/vagas#8545",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8545",
+          "createdAt": "2026-08-21T12:00:14Z",
+          "updatedAt": "2026-08-21T12:00:38Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 10,
+        "publishedAt": "2026-08-21T12:00:14Z",
+        "status": "fresh"
+      }
     },
     "gh_3d09a99aa51c44423af5214c": {
       "id": "gh_3d09a99aa51c44423af5214c",
@@ -58,8 +123,8 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "senior",
-        "data"
+        "data",
+        "senior"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -78,7 +143,68 @@
       "createdAt": "2023-09-13T17:08:09Z",
       "updatedAt": "2023-09-13T17:08:09Z",
       "url": "https://github.com/FlutterComunidadeBR/vagas/issues/59",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "senior"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Belo Horizonte, Minas Gerais",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Belo Horizonte, Minas Gerais, Brazil · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "flutter"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_3d09a99aa51c44423af5214c",
+          "sourceId": "FlutterComunidadeBR/vagas#59",
+          "repository": "FlutterComunidadeBR/vagas",
+          "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
+          "url": "https://github.com/FlutterComunidadeBR/vagas/issues/59",
+          "createdAt": "2023-09-13T17:08:09Z",
+          "updatedAt": "2023-09-13T17:08:09Z",
+          "community": {
+            "id": "FlutterComunidadeBR",
+            "name": "FlutterComunidadeBR",
+            "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
+            "repository": "FlutterComunidadeBR/vagas",
+            "url": "https://github.com/FlutterComunidadeBR/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1083,
+        "publishedAt": "2023-09-13T17:08:09Z",
+        "status": "stale"
+      }
     }
   }
 }

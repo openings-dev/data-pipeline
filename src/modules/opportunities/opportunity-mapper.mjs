@@ -1,36 +1,11 @@
-import { buildDescription, buildExcerpt, normalizeText } from "../../shared/utils/text.mjs";
+import { buildDescription, buildExcerpt } from "../../shared/utils/text.mjs";
 import { sha256Json } from "../../shared/utils/hash.mjs";
 import { parseSalary } from "./salary-parser.mjs";
 import { extractTags } from "./tags-extractor.mjs";
-import { applySponsoredIssueMetadata } from "./sponsored-issue-metadata.mjs";
-
-/**
- * @param {string | null | undefined} title
- * @param {string | null | undefined} body
- */
-function parseCompanyName(title, body) {
-  const source = `${title ?? ""}\n${body ?? ""}`;
-
-  const labeledMatch = source.match(
-    /(?:company|empresa|companhia|cliente)\s*[:|-]\s*([^\n|]{2,80})/i,
-  );
-
-  if (labeledMatch) {
-    const normalized = normalizeText(labeledMatch[1]);
-    return normalized.length <= 64 ? normalized : undefined;
-  }
-
-  const titleAtMatch = String(title ?? "").match(
-    /\b(?:at|na|no)\s+([A-Za-z0-9&.'\- ]{2,64})$/i,
-  );
-
-  if (titleAtMatch) {
-    return normalizeText(titleAtMatch[1]);
-  }
-
-  return undefined;
-}
-
+import { extractJobLocation } from "./job-location.mjs";
+import { extractStructuredTaxonomy } from "./structured-taxonomy.mjs";
+import { parseCompanyName } from "./company-name.mjs";
+import { addIssueDataProvenance } from "./data-provenance.mjs";
 /**
  * @param {{id: number; number: number; title?: string; body?: string | null; state?: string; html_url?: string; created_at?: string; updated_at?: string; user?: { login?: string; avatar_url?: string }}} issue
  * @param {{repository: string; owner?: string; url: string; region: string; country: string; countryCode?: string}} repository
@@ -50,7 +25,12 @@ export function mapIssueToOpportunity(issue, repository) {
     title: issue.title ?? "",
     body: body ?? "",
   });
-
+  const sourceLocation = {
+    country: repository.country,
+    countryCode: repository.countryCode,
+    region: repository.region,
+  };
+  const sourceTags = extractTags(issue);
   const opportunity = {
     id: publicId,
     sourceId,
@@ -63,7 +43,9 @@ export function mapIssueToOpportunity(issue, repository) {
     repositoryUrl: repository.url,
     region: repository.region,
     country: repository.country,
-    tags: extractTags(issue),
+    sourceLocation,
+    tags: sourceTags,
+    sourceTags,
     author: {
       id: issue.user?.login ?? "unknown",
       name: issue.user?.login ?? "unknown",
@@ -84,11 +66,31 @@ export function mapIssueToOpportunity(issue, repository) {
     url: issue.html_url ?? repository.url,
     sourceType: "github-issue",
   };
-  const normalized = repository.issueMetadataFormat === "openings-sponsored-job-v1"
-    ? applySponsoredIssueMetadata(opportunity, issue)
-    : opportunity;
 
-  return repository.promotionType === "sponsored"
-    ? { ...normalized, promotion: { type: "sponsored" } }
-    : normalized;
+  const withLocation = {
+    ...opportunity,
+    jobLocation: extractJobLocation({
+      title: opportunity.title,
+      body: opportunity.description,
+      sourceLocation,
+    }),
+    taxonomy: extractStructuredTaxonomy({
+      title: opportunity.title,
+      body: opportunity.description,
+      labels: opportunity.tags,
+    }),
+  };
+  return addIssueDataProvenance(
+    withLocation,
+    { title: issue.title, body },
+  );
+}
+
+/**
+ * @param {Array<{createdAt: string}>} opportunities
+ */
+export function sortOpportunitiesByDate(opportunities) {
+  return [...opportunities].sort(
+    (left, right) => new Date(right.createdAt).getTime() - new Date(left.createdAt).getTime(),
+  );
 }

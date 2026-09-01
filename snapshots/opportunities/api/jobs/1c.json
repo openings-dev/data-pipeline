@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-31T18:32:36.756Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_1c2b57871a734db05f971bcd": {
       "id": "gh_1c2b57871a734db05f971bcd",
@@ -14,12 +14,12 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "remoto",
         "aws",
-        "mysql",
         "azure",
+        "contrato",
         "gcp",
-        "contrato"
+        "mysql",
+        "remoto"
       ],
       "author": {
         "id": "Claudiaantunesdelima",
@@ -43,7 +43,75 @@
       "createdAt": "2026-08-31T12:52:43Z",
       "updatedAt": "2026-08-31T12:52:59Z",
       "url": "https://github.com/backend-br/vagas/issues/12404",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "aws",
+        "azure",
+        "contrato",
+        "gcp",
+        "mysql",
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "csharp",
+          "dotnet",
+          "gcp",
+          "mysql"
+        ],
+        "seniority": [
+          "principal"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_1c2b57871a734db05f971bcd",
+          "sourceId": "backend-br/vagas#12404",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12404",
+          "createdAt": "2026-08-31T12:52:43Z",
+          "updatedAt": "2026-08-31T12:52:59Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-08-31T12:52:43Z",
+        "status": "fresh"
+      }
     },
     "gh_1ce4d396bdf950364af4492b": {
       "id": "gh_1ce4d396bdf950364af4492b",
@@ -58,10 +126,10 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "sênior",
-        "pj",
+        ".net core",
         "belo horizonte - mg (remoto)",
-        ".net core"
+        "pj",
+        "sênior"
       ],
       "author": {
         "id": "ecossistemadev",
@@ -84,7 +152,71 @@
       "createdAt": "2025-06-09T21:11:23Z",
       "updatedAt": "2025-06-09T21:11:23Z",
       "url": "https://github.com/Empregos-dev/Vagas-dev/issues/102",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        ".net core",
+        "belo horizonte - mg (remoto)",
+        "pj",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "azure",
+          "docker",
+          "dotnet",
+          "javascript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_1ce4d396bdf950364af4492b",
+          "sourceId": "Empregos-dev/Vagas-dev#102",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/102",
+          "createdAt": "2025-06-09T21:11:23Z",
+          "updatedAt": "2025-06-09T21:11:23Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 448,
+        "publishedAt": "2025-06-09T21:11:23Z",
+        "status": "stale"
+      }
     },
     "gh_1c1ca9d720164ff32b59d999": {
       "id": "gh_1c1ca9d720164ff32b59d999",
@@ -99,12 +231,12 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "react",
-        "typescript",
+        "data",
+        "devops",
         "java",
         "pleno",
-        "devops",
-        "data"
+        "react",
+        "typescript"
       ],
       "author": {
         "id": "ghost",
@@ -122,7 +254,84 @@
       "createdAt": "2021-06-18T15:18:28Z",
       "updatedAt": "2021-07-01T12:29:21Z",
       "url": "https://github.com/3Tecnos-Development/vagas/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "devops",
+        "java",
+        "pleno",
+        "react",
+        "typescript"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "mas contamos com um espaço exclusivo no Centro de Inovação",
+        "subdivision": "EM",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "mas contamos com um espaço exclusivo no Centro de Inovação, EM · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "devops-sre",
+          "frontend"
+        ],
+        "technologies": [
+          "dotnet",
+          "java",
+          "javascript",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_1c1ca9d720164ff32b59d999",
+          "sourceId": "3Tecnos-Development/vagas#4",
+          "repository": "3Tecnos-Development/vagas",
+          "repositoryUrl": "https://github.com/3Tecnos-Development/vagas",
+          "url": "https://github.com/3Tecnos-Development/vagas/issues/4",
+          "createdAt": "2021-06-18T15:18:28Z",
+          "updatedAt": "2021-07-01T12:29:21Z",
+          "community": {
+            "id": "3Tecnos-Development",
+            "name": "3Tecnos-Development",
+            "avatarUrl": "https://github.com/3Tecnos-Development.png?size=80",
+            "repository": "3Tecnos-Development/vagas",
+            "url": "https://github.com/3Tecnos-Development/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1900,
+        "publishedAt": "2021-06-18T15:18:28Z",
+        "status": "stale"
+      }
     }
   }
 }

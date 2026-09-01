@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T18:25:38.696Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_4eda91a95dbfd4b9b9cb4748": {
       "id": "gh_4eda91a95dbfd4b9b9cb4748",
@@ -14,9 +14,9 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "python",
+        "data",
         "pleno",
-        "data"
+        "python"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -41,7 +41,66 @@
       "createdAt": "2026-08-21T18:05:47Z",
       "updatedAt": "2026-08-21T18:05:47Z",
       "url": "https://github.com/datascience-br/vagas/issues/204",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "pleno",
+        "python"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4eda91a95dbfd4b9b9cb4748",
+          "sourceId": "datascience-br/vagas#204",
+          "repository": "datascience-br/vagas",
+          "repositoryUrl": "https://github.com/datascience-br/vagas",
+          "url": "https://github.com/datascience-br/vagas/issues/204",
+          "createdAt": "2026-08-21T18:05:47Z",
+          "updatedAt": "2026-08-21T18:05:47Z",
+          "community": {
+            "id": "datascience-br",
+            "name": "datascience-br",
+            "avatarUrl": "https://github.com/datascience-br.png?size=80",
+            "repository": "datascience-br/vagas",
+            "url": "https://github.com/datascience-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 10,
+        "publishedAt": "2026-08-21T18:05:47Z",
+        "status": "fresh"
+      }
     },
     "gh_4e61569a5d7ecd89c151cb8a": {
       "id": "gh_4e61569a5d7ecd89c151cb8a",
@@ -56,11 +115,11 @@
       "region": "Global",
       "country": "Global",
       "tags": [
-        "remote",
-        "python",
-        "java",
         "data",
-        "design"
+        "design",
+        "java",
+        "python",
+        "remote"
       ],
       "author": {
         "id": "Rahul-garg60",
@@ -78,7 +137,72 @@
       "createdAt": "2025-08-01T15:52:12Z",
       "updatedAt": "2025-08-01T15:52:12Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/717",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "python",
+        "remote"
+      ],
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "United States · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "java",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4e61569a5d7ecd89c151cb8a",
+          "sourceId": "TechnologyMasters/jobs#717",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/717",
+          "createdAt": "2025-08-01T15:52:12Z",
+          "updatedAt": "2025-08-01T15:52:12Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 395,
+        "publishedAt": "2025-08-01T15:52:12Z",
+        "status": "stale"
+      }
     },
     "gh_4e154d4fc7ecc61336e35b06": {
       "id": "gh_4e154d4fc7ecc61336e35b06",
@@ -93,9 +217,9 @@
       "region": "Asia",
       "country": "Taiwan",
       "tags": [
+        "java",
         "react",
-        "typescript",
-        "java"
+        "typescript"
       ],
       "author": {
         "id": "Anna8954",
@@ -113,7 +237,58 @@
       "createdAt": "2025-05-09T21:26:26Z",
       "updatedAt": "2025-05-09T21:43:25Z",
       "url": "https://github.com/nodejs-tw/jobs/issues/270",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "java",
+        "react",
+        "typescript"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4e154d4fc7ecc61336e35b06",
+          "sourceId": "nodejs-tw/jobs#270",
+          "repository": "nodejs-tw/jobs",
+          "repositoryUrl": "https://github.com/nodejs-tw/jobs",
+          "url": "https://github.com/nodejs-tw/jobs/issues/270",
+          "createdAt": "2025-05-09T21:26:26Z",
+          "updatedAt": "2025-05-09T21:43:25Z",
+          "community": {
+            "id": "nodejs-tw",
+            "name": "nodejs-tw",
+            "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
+            "repository": "nodejs-tw/jobs",
+            "url": "https://github.com/nodejs-tw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 479,
+        "publishedAt": "2025-05-09T21:26:26Z",
+        "status": "stale"
+      }
     },
     "gh_4ecec9e0e6780f8e377fd4a3": {
       "id": "gh_4ecec9e0e6780f8e377fd4a3",
@@ -128,11 +303,11 @@
       "region": "Global",
       "country": "Global",
       "tags": [
-        "remote",
         "backend",
+        "devops",
         "python",
-        "senior",
-        "devops"
+        "remote",
+        "senior"
       ],
       "author": {
         "id": "13pleblord",
@@ -150,7 +325,68 @@
       "createdAt": "2024-11-14T21:29:41Z",
       "updatedAt": "2024-11-14T21:29:41Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/709",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "backend",
+        "devops",
+        "python",
+        "remote",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4ecec9e0e6780f8e377fd4a3",
+          "sourceId": "TechnologyMasters/jobs#709",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/709",
+          "createdAt": "2024-11-14T21:29:41Z",
+          "updatedAt": "2024-11-14T21:29:41Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 655,
+        "publishedAt": "2024-11-14T21:29:41Z",
+        "status": "stale"
+      }
     },
     "gh_4ec482bf745f6139c0e4d889": {
       "id": "gh_4ec482bf745f6139c0e4d889",
@@ -165,8 +401,8 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "senior",
-        "data"
+        "data",
+        "senior"
       ],
       "author": {
         "id": "alissongusmao",
@@ -184,7 +420,68 @@
       "createdAt": "2021-04-28T14:29:40Z",
       "updatedAt": "2021-04-28T14:29:40Z",
       "url": "https://github.com/dev-pp/vagas/issues/59",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "data",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_4ec482bf745f6139c0e4d889",
+          "sourceId": "dev-pp/vagas#59",
+          "repository": "dev-pp/vagas",
+          "repositoryUrl": "https://github.com/dev-pp/vagas",
+          "url": "https://github.com/dev-pp/vagas/issues/59",
+          "createdAt": "2021-04-28T14:29:40Z",
+          "updatedAt": "2021-04-28T14:29:40Z",
+          "community": {
+            "id": "dev-pp",
+            "name": "dev-pp",
+            "avatarUrl": "https://github.com/dev-pp.png?size=80",
+            "repository": "dev-pp/vagas",
+            "url": "https://github.com/dev-pp/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1951,
+        "publishedAt": "2021-04-28T14:29:40Z",
+        "status": "stale"
+      }
     },
     "gh_4e89233f3c73bd785142959d": {
       "id": "gh_4e89233f3c73bd785142959d",
@@ -199,9 +496,9 @@
       "region": "South America",
       "country": "Argentina",
       "tags": [
-        "react",
-        "node",
         "java",
+        "node",
+        "react",
         "senior"
       ],
       "author": {
@@ -220,7 +517,74 @@
       "createdAt": "2018-12-04T12:38:52Z",
       "updatedAt": "2018-12-04T12:38:52Z",
       "url": "https://github.com/bafrontend/trabajos/issues/60",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Argentina",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "java",
+        "node",
+        "react",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "java",
+          "javascript",
+          "mongodb",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_4e89233f3c73bd785142959d",
+          "sourceId": "bafrontend/trabajos#60",
+          "repository": "bafrontend/trabajos",
+          "repositoryUrl": "https://github.com/bafrontend/trabajos",
+          "url": "https://github.com/bafrontend/trabajos/issues/60",
+          "createdAt": "2018-12-04T12:38:52Z",
+          "updatedAt": "2018-12-04T12:38:52Z",
+          "community": {
+            "id": "bafrontend",
+            "name": "bafrontend",
+            "avatarUrl": "https://github.com/bafrontend.png?size=80",
+            "repository": "bafrontend/trabajos",
+            "url": "https://github.com/bafrontend/trabajos"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2827,
+        "publishedAt": "2018-12-04T12:38:52Z",
+        "status": "stale"
+      }
     },
     "gh_4e89c132cf530fafbc859171": {
       "id": "gh_4e89c132cf530fafbc859171",
@@ -251,7 +615,49 @@
       "createdAt": "2018-05-10T10:15:07Z",
       "updatedAt": "2018-05-10T10:15:07Z",
       "url": "https://github.com/android-cn/android-jobs/issues/311",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "China",
+        "region": "Asia"
+      },
+      "sourceTags": [],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_4e89c132cf530fafbc859171",
+          "sourceId": "android-cn/android-jobs#311",
+          "repository": "android-cn/android-jobs",
+          "repositoryUrl": "https://github.com/android-cn/android-jobs",
+          "url": "https://github.com/android-cn/android-jobs/issues/311",
+          "createdAt": "2018-05-10T10:15:07Z",
+          "updatedAt": "2018-05-10T10:15:07Z",
+          "community": {
+            "id": "android-cn",
+            "name": "android-cn",
+            "avatarUrl": "https://github.com/android-cn.png?size=80",
+            "repository": "android-cn/android-jobs",
+            "url": "https://github.com/android-cn/android-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3035,
+        "publishedAt": "2018-05-10T10:15:07Z",
+        "status": "stale"
+      }
     }
   }
 }

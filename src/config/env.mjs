@@ -25,6 +25,12 @@ export function loadBuildConfig() {
     github: {
       token: process.env.OPENINGS_GITHUB_TOKEN || process.env.GITHUB_TOKEN || "",
     },
+    observability: {
+      dsn: process.env.SENTRY_DSN || "",
+      environment: process.env.SENTRY_ENVIRONMENT || "production",
+      monitorSlug: process.env.SENTRY_MONITOR_SLUG || "opportunities-sync",
+      release: process.env.SENTRY_RELEASE || "unknown",
+    },
     filters: {
       countryCodes: parseCountryCodes(process.env.COUNTRY_CODES),
     },

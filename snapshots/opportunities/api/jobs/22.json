@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T03:36:09.403Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_2294ee8082ec21ce3f6b9b81": {
       "id": "gh_2294ee8082ec21ce3f6b9b81",
@@ -14,13 +14,13 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "clt",
-        "pj",
-        "devops",
-        "platform",
-        "finops",
         "aws",
+        "clt",
+        "devops",
+        "finops",
         "kubernetes",
+        "pj",
+        "platform",
         "terraform"
       ],
       "author": {
@@ -45,7 +45,75 @@
       "createdAt": "2026-08-15T15:00:10Z",
       "updatedAt": "2026-08-15T15:00:25Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/492",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "aws",
+        "clt",
+        "devops",
+        "finops",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "kubernetes",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_2294ee8082ec21ce3f6b9b81",
+          "sourceId": "DevOps-Brasil/Vagas#492",
+          "repository": "DevOps-Brasil/Vagas",
+          "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+          "url": "https://github.com/DevOps-Brasil/Vagas/issues/492",
+          "createdAt": "2026-08-15T15:00:10Z",
+          "updatedAt": "2026-08-15T15:00:25Z",
+          "community": {
+            "id": "DevOps-Brasil",
+            "name": "DevOps-Brasil",
+            "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+            "repository": "DevOps-Brasil/Vagas",
+            "url": "https://github.com/DevOps-Brasil/Vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-08-15T15:00:10Z",
+        "status": "fresh"
+      }
     },
     "gh_22f89c3b0b886211403e0348": {
       "id": "gh_22f89c3b0b886211403e0348",
@@ -60,7 +128,13 @@
       "region": "Europe",
       "country": "Portugal",
       "tags": [
+        "backend",
+        "clt",
+        "hibernate",
+        "pj",
         "remoto",
+        "rest",
+        "spring",
         "sênior"
       ],
       "author": {
@@ -83,9 +157,101 @@
         "period": "month"
       },
       "createdAt": "2026-07-20T11:38:38Z",
-      "updatedAt": "2026-07-22T09:36:21Z",
+      "updatedAt": "2026-08-22T12:00:21Z",
       "url": "https://github.com/backend-pt/vagas/issues/143",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Portugal",
+        "region": "Europe"
+      },
+      "sourceTags": [
+        "backend",
+        "clt",
+        "hibernate",
+        "pj",
+        "remoto",
+        "rest",
+        "spring",
+        "sênior"
+      ],
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "companyName": "Sylision",
+      "sources": [
+        {
+          "id": "gh_22f89c3b0b886211403e0348",
+          "sourceId": "backend-pt/vagas#143",
+          "repository": "backend-pt/vagas",
+          "repositoryUrl": "https://github.com/backend-pt/vagas",
+          "url": "https://github.com/backend-pt/vagas/issues/143",
+          "createdAt": "2026-07-20T11:38:38Z",
+          "updatedAt": "2026-07-22T09:36:21Z",
+          "community": {
+            "id": "backend-pt",
+            "name": "backend-pt",
+            "avatarUrl": "https://github.com/backend-pt.png?size=80",
+            "repository": "backend-pt/vagas",
+            "url": "https://github.com/backend-pt/vagas"
+          }
+        },
+        {
+          "id": "gh_6b086e71dc4401438488d072",
+          "sourceId": "soujava/vagas-java#1942",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1942",
+          "createdAt": "2026-08-22T12:00:08Z",
+          "updatedAt": "2026-08-22T12:00:21Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 42,
+        "publishedAt": "2026-07-20T11:38:38Z",
+        "status": "aging"
+      }
     },
     "gh_22bcc37536900a0d5df1bf2b": {
       "id": "gh_22bcc37536900a0d5df1bf2b",
@@ -101,9 +267,9 @@
       "country": "Brazil",
       "tags": [
         "backend",
+        "data",
         "node",
-        "pleno",
-        "data"
+        "pleno"
       ],
       "author": {
         "id": "Claulu3",
@@ -122,7 +288,80 @@
       "createdAt": "2020-11-03T22:56:36Z",
       "updatedAt": "2020-11-03T22:56:36Z",
       "url": "https://github.com/IonicBrazil/vagas/issues/4",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "backend",
+        "data",
+        "node",
+        "pleno"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "csharp",
+          "kubernetes",
+          "mongodb",
+          "nodejs",
+          "ruby"
+        ],
+        "seniority": [
+          "internship",
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_22bcc37536900a0d5df1bf2b",
+          "sourceId": "IonicBrazil/vagas#4",
+          "repository": "IonicBrazil/vagas",
+          "repositoryUrl": "https://github.com/IonicBrazil/vagas",
+          "url": "https://github.com/IonicBrazil/vagas/issues/4",
+          "createdAt": "2020-11-03T22:56:36Z",
+          "updatedAt": "2020-11-03T22:56:36Z",
+          "community": {
+            "id": "IonicBrazil",
+            "name": "IonicBrazil",
+            "avatarUrl": "https://github.com/IonicBrazil.png?size=80",
+            "repository": "IonicBrazil/vagas",
+            "url": "https://github.com/IonicBrazil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2126,
+        "publishedAt": "2020-11-03T22:56:36Z",
+        "status": "stale"
+      }
     }
   }
 }

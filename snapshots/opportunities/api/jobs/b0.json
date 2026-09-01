@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-20T12:31:48.656Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_b0364c3e5754459ec018dcc6": {
       "id": "gh_b0364c3e5754459ec018dcc6",
@@ -14,14 +14,14 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "clt",
-        "pj",
-        "devops",
-        "platform",
         "azure",
+        "clt",
+        "devops",
+        "docker",
         "kubernetes",
-        "terraform",
-        "docker"
+        "pj",
+        "platform",
+        "terraform"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -45,7 +45,76 @@
       "createdAt": "2026-08-04T12:20:53Z",
       "updatedAt": "2026-08-04T12:21:12Z",
       "url": "https://github.com/DevOps-Brasil/Vagas/issues/481",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "azure",
+        "clt",
+        "devops",
+        "docker",
+        "kubernetes",
+        "pj",
+        "platform",
+        "terraform"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "azure",
+          "docker",
+          "kubernetes",
+          "terraform"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_b0364c3e5754459ec018dcc6",
+          "sourceId": "DevOps-Brasil/Vagas#481",
+          "repository": "DevOps-Brasil/Vagas",
+          "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+          "url": "https://github.com/DevOps-Brasil/Vagas/issues/481",
+          "createdAt": "2026-08-04T12:20:53Z",
+          "updatedAt": "2026-08-04T12:21:12Z",
+          "community": {
+            "id": "DevOps-Brasil",
+            "name": "DevOps-Brasil",
+            "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+            "repository": "DevOps-Brasil/Vagas",
+            "url": "https://github.com/DevOps-Brasil/Vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 27,
+        "publishedAt": "2026-08-04T12:20:53Z",
+        "status": "fresh"
+      }
     },
     "gh_b0b25f9f51d0e7f1c185dc60": {
       "id": "gh_b0b25f9f51d0e7f1c185dc60",
@@ -60,12 +129,12 @@
       "region": "Global",
       "country": "Global",
       "tags": [
+        "data",
+        "design",
         "hybrid",
-        "typescript",
         "java",
         "senior",
-        "data",
-        "design"
+        "typescript"
       ],
       "author": {
         "id": "sandra614",
@@ -83,7 +152,73 @@
       "createdAt": "2026-01-19T17:26:42Z",
       "updatedAt": "2026-01-19T17:26:42Z",
       "url": "https://github.com/pythonjobs/jobs/issues/442",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Global",
+        "region": "Global"
+      },
+      "sourceTags": [
+        "data",
+        "design",
+        "hybrid",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "csharp",
+          "java",
+          "javascript",
+          "typescript"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_b0b25f9f51d0e7f1c185dc60",
+          "sourceId": "pythonjobs/jobs#442",
+          "repository": "pythonjobs/jobs",
+          "repositoryUrl": "https://github.com/pythonjobs/jobs",
+          "url": "https://github.com/pythonjobs/jobs/issues/442",
+          "createdAt": "2026-01-19T17:26:42Z",
+          "updatedAt": "2026-01-19T17:26:42Z",
+          "community": {
+            "id": "pythonjobs",
+            "name": "pythonjobs",
+            "avatarUrl": "https://github.com/pythonjobs.png?size=80",
+            "repository": "pythonjobs/jobs",
+            "url": "https://github.com/pythonjobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 224,
+        "publishedAt": "2026-01-19T17:26:42Z",
+        "status": "stale"
+      }
     },
     "gh_b0284b782444c808bec42051": {
       "id": "gh_b0284b782444c808bec42051",
@@ -117,7 +252,68 @@
       "createdAt": "2025-07-25T17:32:58Z",
       "updatedAt": "2025-07-25T17:32:58Z",
       "url": "https://github.com/phpdevbr/vagas/issues/1314",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "java",
+        "senior"
+      ],
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_b0284b782444c808bec42051",
+          "sourceId": "phpdevbr/vagas#1314",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1314",
+          "createdAt": "2025-07-25T17:32:58Z",
+          "updatedAt": "2025-07-25T17:32:58Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 402,
+        "publishedAt": "2025-07-25T17:32:58Z",
+        "status": "stale"
+      }
     },
     "gh_b0122dd315527c0d5e46b1a4": {
       "id": "gh_b0122dd315527c0d5e46b1a4",
@@ -132,8 +328,8 @@
       "region": "Asia",
       "country": "China",
       "tags": [
-        "remote",
-        "react"
+        "react",
+        "remote"
       ],
       "author": {
         "id": "gina1309",
@@ -151,7 +347,71 @@
       "createdAt": "2023-06-26T02:29:53Z",
       "updatedAt": "2023-06-26T02:29:53Z",
       "url": "https://github.com/awesome-jobs/china/issues/1",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "China",
+        "region": "Asia"
+      },
+      "sourceTags": [
+        "react",
+        "remote"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "kotlin",
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_b0122dd315527c0d5e46b1a4",
+          "sourceId": "awesome-jobs/china#1",
+          "repository": "awesome-jobs/china",
+          "repositoryUrl": "https://github.com/awesome-jobs/china",
+          "url": "https://github.com/awesome-jobs/china/issues/1",
+          "createdAt": "2023-06-26T02:29:53Z",
+          "updatedAt": "2023-06-26T02:29:53Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/china",
+            "url": "https://github.com/awesome-jobs/china"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1162,
+        "publishedAt": "2023-06-26T02:29:53Z",
+        "status": "stale"
+      }
     },
     "gh_b01a07667d991322b585d6c8": {
       "id": "gh_b01a07667d991322b585d6c8",
@@ -185,7 +445,72 @@
       "createdAt": "2021-09-23T13:18:25Z",
       "updatedAt": "2021-09-23T13:27:17Z",
       "url": "https://github.com/ajudevs/vagas/issues/5",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "remoto"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "csharp",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_b01a07667d991322b585d6c8",
+          "sourceId": "ajudevs/vagas#5",
+          "repository": "ajudevs/vagas",
+          "repositoryUrl": "https://github.com/ajudevs/vagas",
+          "url": "https://github.com/ajudevs/vagas/issues/5",
+          "createdAt": "2021-09-23T13:18:25Z",
+          "updatedAt": "2021-09-23T13:27:17Z",
+          "community": {
+            "id": "ajudevs",
+            "name": "ajudevs",
+            "avatarUrl": "https://github.com/ajudevs.png?size=80",
+            "repository": "ajudevs/vagas",
+            "url": "https://github.com/ajudevs/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1803,
+        "publishedAt": "2021-09-23T13:18:25Z",
+        "status": "stale"
+      }
     },
     "gh_b0d29af154805a59445e08bc": {
       "id": "gh_b0d29af154805a59445e08bc",
@@ -218,7 +543,59 @@
       "createdAt": "2019-10-28T20:50:32Z",
       "updatedAt": "2019-10-28T20:50:32Z",
       "url": "https://github.com/bafrontend/trabajos/issues/65",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Argentina",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "react"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "leadership"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_b0d29af154805a59445e08bc",
+          "sourceId": "bafrontend/trabajos#65",
+          "repository": "bafrontend/trabajos",
+          "repositoryUrl": "https://github.com/bafrontend/trabajos",
+          "url": "https://github.com/bafrontend/trabajos/issues/65",
+          "createdAt": "2019-10-28T20:50:32Z",
+          "updatedAt": "2019-10-28T20:50:32Z",
+          "community": {
+            "id": "bafrontend",
+            "name": "bafrontend",
+            "avatarUrl": "https://github.com/bafrontend.png?size=80",
+            "repository": "bafrontend/trabajos",
+            "url": "https://github.com/bafrontend/trabajos"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2499,
+        "publishedAt": "2019-10-28T20:50:32Z",
+        "status": "stale"
+      }
     }
   }
 }

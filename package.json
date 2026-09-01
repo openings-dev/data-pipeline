@@ -6,13 +6,17 @@
   "description": "Public data pipeline for openings.dev",
   "scripts": {
     "build:snapshot": "node scripts/build-opportunities.mjs",
+    "rebuild:static-api": "node scripts/rebuild-static-api.mjs",
     "discover:communities": "node src/cli/discover-communities.mjs",
     "review:communities": "node src/cli/review-communities.mjs",
     "migrate:snapshot": "node scripts/migrate-opportunities-snapshot.mjs",
-    "test": "node --test",
+    "test": "node --test test/*.test.mjs",
     "validate": "npm test && node scripts/validate-repo.mjs"
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@sentry/node": "^10.73.0"
   }
 }

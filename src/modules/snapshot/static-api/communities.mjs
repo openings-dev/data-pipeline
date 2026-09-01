@@ -24,9 +24,14 @@ export function buildCommunities(repositories, opportunityItems) {
 
   for (const item of opportunityItems) {
     if (item.issueState !== "open") continue;
-    const items = openItemsByRepository.get(item.repository) ?? [];
-    items.push(item);
-    openItemsByRepository.set(item.repository, items);
+    const sources = Array.isArray(item.sources) && item.sources.length > 0
+      ? item.sources
+      : [item];
+    for (const source of sources) {
+      const items = openItemsByRepository.get(source.repository) ?? [];
+      items.push({ ...item, createdAt: source.createdAt, community: source.community ?? item.community });
+      openItemsByRepository.set(source.repository, items);
+    }
   }
 
   const items = repositories.map((source) => {

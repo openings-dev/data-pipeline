@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-23T18:18:43.042Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_1b4d0c648ec1118a0362ace3": {
       "id": "gh_1b4d0c648ec1118a0362ace3",
@@ -41,7 +41,69 @@
       "createdAt": "2026-08-06T13:21:23Z",
       "updatedAt": "2026-08-06T13:22:08Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1272",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "qa"
+        ],
+        "technologies": [
+          "docker"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_1b4d0c648ec1118a0362ace3",
+          "sourceId": "qa-brasil/vagas#1272",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1272",
+          "createdAt": "2026-08-06T13:21:23Z",
+          "updatedAt": "2026-08-06T13:22:08Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 25,
+        "publishedAt": "2026-08-06T13:21:23Z",
+        "status": "fresh"
+      }
     },
     "gh_1bd5f8d6144fe120825c7a8c": {
       "id": "gh_1bd5f8d6144fe120825c7a8c",
@@ -76,7 +138,65 @@
       "createdAt": "2026-02-05T00:07:51Z",
       "updatedAt": "2026-02-05T00:08:09Z",
       "url": "https://github.com/kotlin-br/vagas/issues/41",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "remoto",
+        "sênior"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "kotlin",
+          "react"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_1bd5f8d6144fe120825c7a8c",
+          "sourceId": "kotlin-br/vagas#41",
+          "repository": "kotlin-br/vagas",
+          "repositoryUrl": "https://github.com/kotlin-br/vagas",
+          "url": "https://github.com/kotlin-br/vagas/issues/41",
+          "createdAt": "2026-02-05T00:07:51Z",
+          "updatedAt": "2026-02-05T00:08:09Z",
+          "community": {
+            "id": "kotlin-br",
+            "name": "kotlin-br",
+            "avatarUrl": "https://github.com/kotlin-br.png?size=80",
+            "repository": "kotlin-br/vagas",
+            "url": "https://github.com/kotlin-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 207,
+        "publishedAt": "2026-02-05T00:07:51Z",
+        "status": "stale"
+      }
     }
   }
 }

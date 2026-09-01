@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-28T14:46:23.429Z",
+  "generatedAt": "2026-08-31T22:06:54.277Z",
   "items": {
     "gh_cf66cfb845e2671803c3365b": {
       "id": "gh_cf66cfb845e2671803c3365b",
@@ -14,14 +14,14 @@
       "region": "South America",
       "country": "Brazil",
       "tags": [
-        "python",
-        "node.js",
-        "remoto",
         "aws",
-        "typescript",
-        "sql",
+        "docker",
         "git",
-        "docker"
+        "node.js",
+        "python",
+        "remoto",
+        "sql",
+        "typescript"
       ],
       "author": {
         "id": "Claudiaantunesdelima",
@@ -43,9 +43,102 @@
         "period": "hour"
       },
       "createdAt": "2026-08-28T01:39:00Z",
-      "updatedAt": "2026-08-28T01:39:16Z",
+      "updatedAt": "2026-08-28T01:40:42Z",
       "url": "https://github.com/backend-br/vagas/issues/12400",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Brazil",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "aws",
+        "docker",
+        "git",
+        "node.js",
+        "python",
+        "remoto",
+        "sql",
+        "typescript"
+      ],
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "sources": [
+        {
+          "id": "gh_cf66cfb845e2671803c3365b",
+          "sourceId": "backend-br/vagas#12400",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12400",
+          "createdAt": "2026-08-28T01:39:00Z",
+          "updatedAt": "2026-08-28T01:39:16Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        },
+        {
+          "id": "gh_e20c87ec9b8a84e4069f865e",
+          "sourceId": "frontendbr/vagas#8552",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8552",
+          "createdAt": "2026-08-28T01:40:18Z",
+          "updatedAt": "2026-08-28T01:40:42Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-08-28T01:39:00Z",
+        "status": "fresh"
+      }
     },
     "gh_cfdd9eda74fb2458115278bd": {
       "id": "gh_cfdd9eda74fb2458115278bd",
@@ -79,7 +172,59 @@
       "createdAt": "2017-09-26T17:29:58Z",
       "updatedAt": "2017-09-26T17:30:28Z",
       "url": "https://github.com/bafrontend/trabajos/issues/51",
-      "sourceType": "github-issue"
+      "sourceType": "github-issue",
+      "sourceLocation": {
+        "country": "Argentina",
+        "region": "South America"
+      },
+      "sourceTags": [
+        "java",
+        "principal"
+      ],
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "java",
+          "javascript"
+        ],
+        "seniority": [
+          "principal"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "sources": [
+        {
+          "id": "gh_cfdd9eda74fb2458115278bd",
+          "sourceId": "bafrontend/trabajos#51",
+          "repository": "bafrontend/trabajos",
+          "repositoryUrl": "https://github.com/bafrontend/trabajos",
+          "url": "https://github.com/bafrontend/trabajos/issues/51",
+          "createdAt": "2017-09-26T17:29:58Z",
+          "updatedAt": "2017-09-26T17:30:28Z",
+          "community": {
+            "id": "bafrontend",
+            "name": "bafrontend",
+            "avatarUrl": "https://github.com/bafrontend.png?size=80",
+            "repository": "bafrontend/trabajos",
+            "url": "https://github.com/bafrontend/trabajos"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3261,
+        "publishedAt": "2017-09-26T17:29:58Z",
+        "status": "stale"
+      }
     }
   }
 }

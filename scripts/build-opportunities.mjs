@@ -1,8 +1,14 @@
 import { runBuild } from "../src/app/run-build.mjs";
+import { loadBuildConfig } from "../src/config/env.mjs";
+import {
+  initializePipelineSentry,
+  runMonitoredPipeline,
+} from "../src/modules/observability/sentry.mjs";
 import { RateLimitError } from "../src/shared/errors/rate-limit-error.mjs";
 
 try {
-  await runBuild();
+  initializePipelineSentry(loadBuildConfig().observability);
+  await runMonitoredPipeline(runBuild);
 } catch (error) {
   if (error instanceof RateLimitError) {
     console.error(error.message);
@@ -21,4 +27,3 @@ try {
   console.error(error);
   process.exit(1);
 }
-
