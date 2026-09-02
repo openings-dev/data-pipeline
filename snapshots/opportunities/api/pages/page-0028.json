@@ -1,11 +1,9 @@
 {
-  "generatedAt": "2026-09-01T22:56:01.890Z",
+  "generatedAt": "2026-09-02T02:12:32.814Z",
   "page": 28,
   "pageSize": 20,
   "nextPage": "api/pages/page-0029.json",
   "ids": [
-    "gh_b9847a89f2095dbea74c63ac",
-    "gh_2fb1d1c5f7a72da400aa156a",
     "gh_5737029f526e21daadacc576",
     "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
@@ -23,192 +21,11 @@
     "gh_80974dc524046caf9e939cc1",
     "gh_e4e45f65c03b245bde7961fc",
     "gh_2698bafd032165b940c5550e",
-    "gh_d52bb8fcdb4d2e9adfe1c750"
+    "gh_d52bb8fcdb4d2e9adfe1c750",
+    "gh_5ff7a61468868fed794784cd",
+    "gh_724342a7441cbc13493ec56f"
   ],
   "items": [
-    {
-      "id": "gh_b9847a89f2095dbea74c63ac",
-      "sourceId": "FlutterComunidadeBR/vagas#65",
-      "title": "[Florianopolis, SC] Desenvolvedor Flutter [SENIOR] | Sellers",
-      "description": "## Descrição da vaga\n\nEstamos buscando um talentoso desenvolvedor Flutter Sênior para se juntar à nossa equipe de desenvolvimento. Como parte essencial da equipe, você será responsável por desenvolver e evoluir nosso aplicativo de alto desempenho.\n\n## Local\n\nHíbrido, Florianópolis\n\n## Benefícios\n\n- R$ 1.300,00\n\n## Contratação\n\nCooperativa\n\n## Como se candidatar\n\nPor favor envie um email para marcelo@sellers.com.br com seu CV anexado - enviar no assunto: Vaga Flutter",
-      "excerpt": "## Descrição da vaga Estamos buscando um talentoso desenvolvedor Flutter Sênior para se juntar à nossa equipe de desenvolvimento. Como parte essencial da equipe, você será responsável por desenvolver e evoluir nosso a...",
-      "issueState": "open",
-      "contentHash": "ff888901e100ae11cbd76629904cede79ab07d0b030df06b511cb1dda8e3910b",
-      "repository": "FlutterComunidadeBR/vagas",
-      "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "senior"
-      ],
-      "sourceTags": [
-        "data",
-        "senior"
-      ],
-      "author": {
-        "id": "marcelosv",
-        "name": "marcelosv",
-        "handle": "marcelosv",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/8119208?v=4"
-      },
-      "community": {
-        "id": "FlutterComunidadeBR",
-        "name": "FlutterComunidadeBR",
-        "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-        "repository": "FlutterComunidadeBR/vagas",
-        "url": "https://github.com/FlutterComunidadeBR/vagas"
-      },
-      "createdAt": "2024-04-20T18:40:32Z",
-      "updatedAt": "2024-04-20T18:40:32Z",
-      "url": "https://github.com/FlutterComunidadeBR/vagas/issues/65",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [
-          "flutter"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b9847a89f2095dbea74c63ac",
-          "sourceId": "FlutterComunidadeBR/vagas#65",
-          "repository": "FlutterComunidadeBR/vagas",
-          "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-          "url": "https://github.com/FlutterComunidadeBR/vagas/issues/65",
-          "createdAt": "2024-04-20T18:40:32Z",
-          "updatedAt": "2024-04-20T18:40:32Z",
-          "community": {
-            "id": "FlutterComunidadeBR",
-            "name": "FlutterComunidadeBR",
-            "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-            "repository": "FlutterComunidadeBR/vagas",
-            "url": "https://github.com/FlutterComunidadeBR/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 864,
-        "publishedAt": "2024-04-20T18:40:32Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_2fb1d1c5f7a72da400aa156a",
-      "sourceId": "italiaremote/awesome-italia-remote#401",
-      "title": "Tags normalization",
-      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
-      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
-      "issueState": "open",
-      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
-      "repository": "italiaremote/awesome-italia-remote",
-      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
-      "region": "Europe",
-      "country": "Italy",
-      "sourceLocation": {
-        "country": "Italy",
-        "countryCode": "IT",
-        "region": "Europe"
-      },
-      "tags": [
-        "feature-request"
-      ],
-      "sourceTags": [
-        "feature-request"
-      ],
-      "author": {
-        "id": "FrancescoManfredi",
-        "name": "FrancescoManfredi",
-        "handle": "FrancescoManfredi",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
-      },
-      "community": {
-        "id": "italiaremote",
-        "name": "italiaremote",
-        "avatarUrl": "https://github.com/italiaremote.png?size=80",
-        "repository": "italiaremote/awesome-italia-remote",
-        "url": "https://github.com/italiaremote/awesome-italia-remote"
-      },
-      "createdAt": "2024-04-16T20:25:04Z",
-      "updatedAt": "2025-06-22T07:16:49Z",
-      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_2fb1d1c5f7a72da400aa156a",
-          "sourceId": "italiaremote/awesome-italia-remote#401",
-          "repository": "italiaremote/awesome-italia-remote",
-          "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
-          "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
-          "createdAt": "2024-04-16T20:25:04Z",
-          "updatedAt": "2025-06-22T07:16:49Z",
-          "community": {
-            "id": "italiaremote",
-            "name": "italiaremote",
-            "avatarUrl": "https://github.com/italiaremote.png?size=80",
-            "repository": "italiaremote/awesome-italia-remote",
-            "url": "https://github.com/italiaremote/awesome-italia-remote"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 868,
-        "publishedAt": "2024-04-16T20:25:04Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_5737029f526e21daadacc576",
       "sourceId": "EtherTW/jobs#72",
@@ -1089,7 +906,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 938,
+        "ageDays": 939,
         "publishedAt": "2024-02-06T00:45:18Z",
         "status": "stale"
       }
@@ -1198,7 +1015,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 942,
+        "ageDays": 943,
         "publishedAt": "2024-02-02T02:07:25Z",
         "status": "stale"
       }
@@ -1305,7 +1122,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 944,
+        "ageDays": 945,
         "publishedAt": "2024-01-30T22:59:53Z",
         "status": "stale"
       }
@@ -2137,6 +1954,226 @@
       "freshness": {
         "ageDays": 957,
         "publishedAt": "2024-01-18T20:19:12Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5ff7a61468868fed794784cd",
+      "sourceId": "devmatogrosso/vagas#23",
+      "title": "[REMOTE] Consulting Architect - Middleware - Red Hat",
+      "description": "## About the job\n\nThe Red Hat Consulting team is looking for a Consulting Architect - Middleware to join us, Brazil. You will be responsible for translating the client’s business\nrequirements into specific systems, applications or process designs for very large complex\ntechnology solutions and integrating architecture. Acts as an advocate for the client as the\nultimate authority on the architecture designed to address client business problems.\nProvides direction for design activities. Often project-based, sometimes working at\ncustomer sites. You'll collaborate with the broader Sales and Technical Delivery teams to\nbring our customers solutions that improve the Red Hat Middleware suite including J2E\nruntimes, business rules, business process management, enterprise messaging, data\nvirtualization, Platform-as-a-Service (PaaS), cloud computing, Red Hat OpenShift, 3scale\nby Red Hat, and more. As a Consulting Architects - Middleware, you’ll work hand-in-hand with the account team, clients, and consultants to ensure their architectural visions are\ncommunicated and delivered effectively. They focus on open source technologies and must\nbe intimately familiar with Red Hat's product offerings, while also conversant in the wider\nlandscape of both complementing and competing products and technologies. They have\nthe ability to motivate and influence groups, whether the members of the group have an\naffinity for Red Hat products and services or not. Consulting Architects are expected to\ndivide their time between project delivery, non-billable internal initiatives, and presales\nactivities.\n\n## What you will do\n\n* Able to build, design, and present complex solutions to customers.\n* Provide project and technical leadership to multiple complex projects utilizing standard project methodologies and resource management.\n* Plays a key role in managing client expectations.\n* Defines goals and tasks for delivery teams in a project as a solution lead.\n* Collaborate with product teams and the Product Engineering, Professional Services, and Sales teams to ensure excellent customer experience with our offerings and solutions.\n* Serve as a trusted subject matter expert for the customers, gain the trust of IT professionals, and build long-lasting relationships within our key accounts.\n\n## What you will bring\n* Bachelor's degree required; master's degree in computer science, engineering or MBA\n* 8+ years of experience in consulting services\n* 3+ years of enterprise architecture experience\n* Proven architecture experience using cloud-native development, Kubernetes, agile integration, and development, continuous integration (CI), test-driven development (TDD), service-oriented architecture (SOA), message-oriented middleware (MOM), Identity and Access Management, governance, high availability, scaling, distributed applications, clustering, etc.\n* Experience with Java development technologies like Spring Boot, WildFly Swarm, or JEE, including Red Hat JBoss Enterprise Application Platform (JBoss EAP), WildFly, Oracle WebLogic, or IBM WebSphere.\n* Familiarity with Java development frameworks like Spring, Netflix OSS, Eclipse Vert.x, or Play and other technologies like Node.js, Ruby, PHP, Go, or .NET.\n* Solid verbal and written communication skills and interpersonal skills.\n* Strong facilitation skills.\n* Ability to manage both time and workload independently.\n* Expert in designing implementation solutions to deliver expected business outcomes applying application and technology capabilities.\n* Knowledge of software development lifecycle practices, including Agile (e.g. Scrum), Waterfall, and Incremental. \n* Fluency in English is mandatory.\n* Willingness to travel up to 50%\n\n*The following are considered a plus:*\n* Experience with Red Hat JBoss Enterprise Application Platform, Red Hat Fuse, 3scale by Red Hat, and Red Hat OpenShift.\n* Knowledge of the Red Hat Middleware portfolio.\n* Fluency in Spanish.",
+      "excerpt": "## About the job The Red Hat Consulting team is looking for a Consulting Architect - Middleware to join us, Brazil. You will be responsible for translating the client’s business requirements into specific systems, app...",
+      "issueState": "open",
+      "contentHash": "29bec6c18009eebc8b9b94c6ba1b74d3aa56f8d85a3f8a00193ce144c7b40ee4",
+      "repository": "devmatogrosso/vagas",
+      "repositoryUrl": "https://github.com/devmatogrosso/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design",
+        "java",
+        "node",
+        "remote"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "node",
+        "remote"
+      ],
+      "author": {
+        "id": "pedroarraes",
+        "name": "pedroarraes",
+        "handle": "pedroarraes",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/14795493?v=4"
+      },
+      "community": {
+        "id": "devmatogrosso",
+        "name": "devmatogrosso",
+        "avatarUrl": "https://github.com/devmatogrosso.png?size=80",
+        "repository": "devmatogrosso/vagas",
+        "url": "https://github.com/devmatogrosso/vagas"
+      },
+      "createdAt": "2024-01-15T20:34:26Z",
+      "updatedAt": "2024-01-15T21:02:37Z",
+      "url": "https://github.com/devmatogrosso/vagas/issues/23",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "dotnet",
+          "go",
+          "java",
+          "kubernetes",
+          "nodejs",
+          "php",
+          "ruby",
+          "spring"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_5ff7a61468868fed794784cd",
+          "sourceId": "devmatogrosso/vagas#23",
+          "repository": "devmatogrosso/vagas",
+          "repositoryUrl": "https://github.com/devmatogrosso/vagas",
+          "url": "https://github.com/devmatogrosso/vagas/issues/23",
+          "createdAt": "2024-01-15T20:34:26Z",
+          "updatedAt": "2024-01-15T21:02:37Z",
+          "community": {
+            "id": "devmatogrosso",
+            "name": "devmatogrosso",
+            "avatarUrl": "https://github.com/devmatogrosso.png?size=80",
+            "repository": "devmatogrosso/vagas",
+            "url": "https://github.com/devmatogrosso/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 960,
+        "publishedAt": "2024-01-15T20:34:26Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_724342a7441cbc13493ec56f",
+      "sourceId": "FlutterComunidadeBR/vagas#63",
+      "title": "[Remoto] Flutter Mobile (Júnior/Pleno) na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open) com o pop-up personalizado de candidatura. 👋\n<p>Estamos procurando uma pessoa com experiência em desenvolvimento Flutter para se juntar à equipe da Net Imoveis!</p>\n<p></p>\n<p><strong>Responsabilidades:</strong></p>\n<ul>\n<li>Desenvolver e manter nossos aplicativos em Flutter;</li>\n<li>Trabalhar em estreita colaboração com a equipe de design para criar interfaces de usuário atraentes e fáceis de usar;</li>\n<li>Garantir que nossos aplicativos sejam de alta qualidade, seguros e escaláveis;</li>\n<li>Identificar e corrigir bugs e problemas de desempenho;</li>\n<li>Manter-se atualizado sobre as tendências e tecnologias mais recentes em desenvolvimento de aplicativos móveis.</li>\n</ul>\n<p></p>\n## Netimóveis Brasil: \n <p>Há mais de 27 anos trabalhamos para ajudar você em um momento muito importante: a procura de um lar ideal. Para isso contamos com mais de 150 imobiliárias associadas espalhadas pelo Brasil, além de uma unidade em Portugal, fruto da expansão internacional iniciada no último ano.</p>\n<p>Somos um dos maiores portais imobiliários do país, com mais de 100 mil imóveis qualificados e sem repetição. Na Netimóveis você vende, aluga e compra o seu imóvel com muito mais segurança e agilidade.</p>\n\n ## Habilidades: \n - Flutter \n- Design Patterns \n- Code Review \n- Dart\n## Local: \n 100% Remoto\n## Requisitos: \n - Experiência com desenvolvimento Flutter; \n- Conhecimentos sólidos em estruturas de dados, algoritmos, design patterns e arquitetura de sistemas; \n- Experiência em boas práticas de engenharia de software, lint, testes unitários e code reviews.\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Flutter Mobile (Júnior/Pleno) na Netimóveis Brasil](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nMobile",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "4ad1cd52cc9ffe33e0ca7c3987342de6dee749c894f89714ded08d83b0a35c88",
+      "repository": "FlutterComunidadeBR/vagas",
+      "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design",
+        "junior",
+        "pleno"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "junior",
+        "pleno"
+      ],
+      "author": {
+        "id": "GabrielaSluz",
+        "name": "GabrielaSluz",
+        "handle": "GabrielaSluz",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/152880287?v=4"
+      },
+      "community": {
+        "id": "FlutterComunidadeBR",
+        "name": "FlutterComunidadeBR",
+        "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
+        "repository": "FlutterComunidadeBR/vagas",
+        "url": "https://github.com/FlutterComunidadeBR/vagas"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2023-12-28T19:22:29Z",
+      "updatedAt": "2023-12-28T19:22:29Z",
+      "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "dotnet",
+          "flutter"
+        ],
+        "seniority": [
+          "junior",
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_724342a7441cbc13493ec56f",
+          "sourceId": "FlutterComunidadeBR/vagas#63",
+          "repository": "FlutterComunidadeBR/vagas",
+          "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
+          "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
+          "createdAt": "2023-12-28T19:22:29Z",
+          "updatedAt": "2023-12-28T19:22:29Z",
+          "community": {
+            "id": "FlutterComunidadeBR",
+            "name": "FlutterComunidadeBR",
+            "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
+            "repository": "FlutterComunidadeBR/vagas",
+            "url": "https://github.com/FlutterComunidadeBR/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 978,
+        "publishedAt": "2023-12-28T19:22:29Z",
         "status": "stale"
       }
     }
