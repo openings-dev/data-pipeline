@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-09-02T18:18:07.026Z",
+  "generatedAt": "2026-09-02T22:56:33.433Z",
   "page": 28,
   "pageSize": 20,
   "nextPage": "api/pages/page-0029.json",
   "ids": [
+    "gh_2fb1d1c5f7a72da400aa156a",
+    "gh_5737029f526e21daadacc576",
     "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
     "gh_4dd8e42bd3f6494a4e95e53d",
@@ -21,11 +23,204 @@
     "gh_e4e45f65c03b245bde7961fc",
     "gh_2698bafd032165b940c5550e",
     "gh_d52bb8fcdb4d2e9adfe1c750",
-    "gh_5ff7a61468868fed794784cd",
-    "gh_724342a7441cbc13493ec56f",
-    "gh_a6bde7918a54217d3e9edaa7"
+    "gh_5ff7a61468868fed794784cd"
   ],
   "items": [
+    {
+      "id": "gh_2fb1d1c5f7a72da400aa156a",
+      "sourceId": "italiaremote/awesome-italia-remote#401",
+      "title": "Tags normalization",
+      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
+      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
+      "issueState": "open",
+      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
+      "repository": "italiaremote/awesome-italia-remote",
+      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+      "region": "Europe",
+      "country": "Italy",
+      "sourceLocation": {
+        "country": "Italy",
+        "countryCode": "IT",
+        "region": "Europe"
+      },
+      "tags": [
+        "feature-request"
+      ],
+      "sourceTags": [
+        "feature-request"
+      ],
+      "author": {
+        "id": "FrancescoManfredi",
+        "name": "FrancescoManfredi",
+        "handle": "FrancescoManfredi",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
+      },
+      "community": {
+        "id": "italiaremote",
+        "name": "italiaremote",
+        "avatarUrl": "https://github.com/italiaremote.png?size=80",
+        "repository": "italiaremote/awesome-italia-remote",
+        "url": "https://github.com/italiaremote/awesome-italia-remote"
+      },
+      "createdAt": "2024-04-16T20:25:04Z",
+      "updatedAt": "2025-06-22T07:16:49Z",
+      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2fb1d1c5f7a72da400aa156a",
+          "sourceId": "italiaremote/awesome-italia-remote#401",
+          "repository": "italiaremote/awesome-italia-remote",
+          "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+          "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+          "createdAt": "2024-04-16T20:25:04Z",
+          "updatedAt": "2025-06-22T07:16:49Z",
+          "community": {
+            "id": "italiaremote",
+            "name": "italiaremote",
+            "avatarUrl": "https://github.com/italiaremote.png?size=80",
+            "repository": "italiaremote/awesome-italia-remote",
+            "url": "https://github.com/italiaremote/awesome-italia-remote"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 869,
+        "publishedAt": "2024-04-16T20:25:04Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5737029f526e21daadacc576",
+      "sourceId": "EtherTW/jobs#72",
+      "title": "[遠端] [底薪 2.1-2.9M] Circle 招募 Senior/Staff 區塊鏈工程師 (Golang)",
+      "description": "## 團隊簡介\n我們是 [Circle](https://www.circle.com/en/)，全球前五大加密貨幣 USDC 穩定幣的發行商，在前年併購了提供加密資產託管服務的台灣新創 CYBAVO 博歐科技。除了穩定幣的業務之外，Circle 在去年上線了全新的產品線：以開發者為核心的「Web3 Services」。Web3 Services 的概念類似於 AWS for Blockchain，能透過 API 整合，快速打造安全且支援各種鏈與幣種的區塊鏈服務。目前有兩個主要的產品：Programmable Wallets 以及 Smart Contract Platform，台灣團隊主要負責的就是 [Programmable Wallets](https://www.circle.com/en/programmable-wallets) 的開發。\n\n我們目前在尋找區塊鏈工程師加入團隊：Circle is looking for a highly skilled and experienced Blockchain Engineer to join our dynamic team at Circle. As a Blockchain Engineer, you will play a critical role in connecting various blockchains to our wallet infrastructure and maintaining the underlying code. Your expertise will be instrumental in bridging the gap between our service and blockchain nodes, enabling seamless interaction between the two.\n\n🔥 **應徵連結：[https://boards.greenhouse.io/circle/jobs/7025007002](https://boards.greenhouse.io/circle/jobs/7025007002)**\n\nCircle 與 Grab 合作 ➡️ [Grab整合加密錢包、還能使用NFT優惠券！Circle執行長：10億用戶將進入Web3](https://web3plus.bnext.com.tw/article/1554)\n\nPodcast 採訪 ➡️ [Circle 併購台灣新創、USDC 的發展戰略 ft. CYBAVO 執行長范紀鍠](https://blocktrend.substack.com/p/ep171#details)\n\n## 工作地點\n混合工作模式，可以自由選擇在家上班，或是到位於信義區的辦公室吹冷氣。\n有的同事住在中南部，只有偶爾有 all-hands meeting 或是 team building 活動的時候才會上來台北！\n\n## 工作內容\n\n- Evaluate new blockchain technologies and their capabilities.\n- Develop and validate cryptographic implementations.\n- Create highly performant code that is clean, simple, maintainable, and battle-tested with test-driven development (TDD) for maximum test coverage\n- Drive continuous improvement in the tech stack.\n\n## 能力需求\n\n- 4+ years of relevant experience \n- Expertise with cryptography, blockchain technologies, and the underlying fundamentals and mathematics.\n- Technical understanding of blockchain technologies, including but not limited to BIPs, UTXO, EVM, Nakamoto Consensus, and cryptography.\n- Familiar with the Golang Web Framework like Gin, Fasthttps and know the golang develop related tool like go mod, go lint, etc\n- Willingness to pick up new and emerging bleeding-edge blockchain technologies\n- Excellent communication skills, able to collaborate with remote teams, share ideas, and present concepts effectively.\n- Extensive knowledge of secure cryptosystem operating practices is required.\n\n## 加分能力\n\n- Advanced degree in cryptography, computer science, mathematics, or related fields is strongly preferred.\n- Experience participating or maintaining in open-source software development is highly preferred.\n- Experience with writing smart contracts would be a plus.\n\n## 面試流程\n\n- HR 面試（約 45 分鐘）\n- 線上程式測驗（約 90 分鐘）\n- Technical Interview*3（60 分鐘 x 2 + 90 分鐘 x 1）\n- Behavioral Interview*3 （60 分鐘 x 3）\n\n約一個月可以完成所有面試流程\n\n## 薪資範圍\n\n- Base Pay Range: NT$2,170,000 - $2,975,000（月薪：180K - 247K）\n- Annual Bonus Target: 12.5%\n- Also Included: Equity & Benefits\n\n## 福利/推薦項\n\nHome office 補助、每月手機費用補助、員工健康檢查補助、彈性有薪假期（基本上不限制休假天數，只要與主管達成共識即可）\n（雖然是外商，但不是 EOR，有提供薪轉跟勞健保）\n\n## 聯絡方式\n🔥 **應徵連結：[https://boards.greenhouse.io/circle/jobs/7025007002](https://boards.greenhouse.io/circle/jobs/7025007002)**\nEmail: [riley.chang@circle.com](mailto:riley.chang@circle.com)\nLinkedIn: https://www.linkedin.com/in/yuchen227/\n\n歡迎 LinkedIn 私訊我了解更多～",
+      "excerpt": "## 團隊簡介 我們是 [Circle](https://www.circle.com/en/)，全球前五大加密貨幣 USDC 穩定幣的發行商，在前年併購了提供加密資產託管服務的台灣新創 CYBAVO 博歐科技。除了穩定幣的業務之外，Circle 在去年上線了全新的產品線：以開發者為核心的「Web3 Services」。Web3 Services 的概念類似於 AWS for Blockchain，能透過 API 整合，快速打造安...",
+      "issueState": "open",
+      "contentHash": "0700e3e5242fdd0f4ad20d5a6c045ffc12d9fcd04116c515fa5490be6c861fdd",
+      "repository": "EtherTW/jobs",
+      "repositoryUrl": "https://github.com/EtherTW/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "golang",
+        "node",
+        "remote",
+        "senior",
+        "staff"
+      ],
+      "sourceTags": [
+        "golang",
+        "node",
+        "remote",
+        "senior",
+        "staff"
+      ],
+      "author": {
+        "id": "ujen227",
+        "name": "ujen227",
+        "handle": "ujen227",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/120015450?v=4"
+      },
+      "community": {
+        "id": "EtherTW",
+        "name": "EtherTW",
+        "avatarUrl": "https://github.com/EtherTW.png?size=80",
+        "repository": "EtherTW/jobs",
+        "url": "https://github.com/EtherTW/jobs"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 2170000,
+        "max": 2975000,
+        "period": "hour"
+      },
+      "createdAt": "2024-04-16T04:26:20Z",
+      "updatedAt": "2024-04-16T04:26:20Z",
+      "url": "https://github.com/EtherTW/jobs/issues/72",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "aws",
+          "go"
+        ],
+        "seniority": [
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_5737029f526e21daadacc576",
+          "sourceId": "EtherTW/jobs#72",
+          "repository": "EtherTW/jobs",
+          "repositoryUrl": "https://github.com/EtherTW/jobs",
+          "url": "https://github.com/EtherTW/jobs/issues/72",
+          "createdAt": "2024-04-16T04:26:20Z",
+          "updatedAt": "2024-04-16T04:26:20Z",
+          "community": {
+            "id": "EtherTW",
+            "name": "EtherTW",
+            "avatarUrl": "https://github.com/EtherTW.png?size=80",
+            "repository": "EtherTW/jobs",
+            "url": "https://github.com/EtherTW/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 869,
+        "publishedAt": "2024-04-16T04:26:20Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_60de8bef67ca07b62c23f7bf",
       "sourceId": "remotejobsbr/design-ux-vagas#103",
@@ -118,7 +313,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 885,
+        "ageDays": 886,
         "publishedAt": "2024-03-30T18:41:51Z",
         "status": "stale"
       }
@@ -339,7 +534,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 909,
+        "ageDays": 910,
         "publishedAt": "2024-03-06T21:31:49Z",
         "status": "stale"
       }
@@ -1117,7 +1312,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 945,
+        "ageDays": 946,
         "publishedAt": "2024-01-30T22:51:53Z",
         "status": "stale"
       }
@@ -1257,7 +1452,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 945,
+        "ageDays": 946,
         "publishedAt": "2024-01-30T22:50:24Z",
         "status": "stale"
       }
@@ -1399,7 +1594,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 945,
+        "ageDays": 946,
         "publishedAt": "2024-01-30T22:48:41Z",
         "status": "stale"
       }
@@ -1535,7 +1730,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 945,
+        "ageDays": 946,
         "publishedAt": "2024-01-30T22:47:15Z",
         "status": "stale"
       }
@@ -1728,7 +1923,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 954,
+        "ageDays": 955,
         "publishedAt": "2024-01-21T19:30:25Z",
         "status": "stale"
       }
@@ -1843,7 +2038,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 957,
+        "ageDays": 958,
         "publishedAt": "2024-01-18T20:19:12Z",
         "status": "stale"
       }
@@ -1956,205 +2151,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 960,
+        "ageDays": 961,
         "publishedAt": "2024-01-15T20:34:26Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_724342a7441cbc13493ec56f",
-      "sourceId": "FlutterComunidadeBR/vagas#63",
-      "title": "[Remoto] Flutter Mobile (Júnior/Pleno) na Coodesh",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open) com o pop-up personalizado de candidatura. 👋\n<p>Estamos procurando uma pessoa com experiência em desenvolvimento Flutter para se juntar à equipe da Net Imoveis!</p>\n<p></p>\n<p><strong>Responsabilidades:</strong></p>\n<ul>\n<li>Desenvolver e manter nossos aplicativos em Flutter;</li>\n<li>Trabalhar em estreita colaboração com a equipe de design para criar interfaces de usuário atraentes e fáceis de usar;</li>\n<li>Garantir que nossos aplicativos sejam de alta qualidade, seguros e escaláveis;</li>\n<li>Identificar e corrigir bugs e problemas de desempenho;</li>\n<li>Manter-se atualizado sobre as tendências e tecnologias mais recentes em desenvolvimento de aplicativos móveis.</li>\n</ul>\n<p></p>\n## Netimóveis Brasil: \n <p>Há mais de 27 anos trabalhamos para ajudar você em um momento muito importante: a procura de um lar ideal. Para isso contamos com mais de 150 imobiliárias associadas espalhadas pelo Brasil, além de uma unidade em Portugal, fruto da expansão internacional iniciada no último ano.</p>\n<p>Somos um dos maiores portais imobiliários do país, com mais de 100 mil imóveis qualificados e sem repetição. Na Netimóveis você vende, aluga e compra o seu imóvel com muito mais segurança e agilidade.</p>\n\n ## Habilidades: \n - Flutter \n- Design Patterns \n- Code Review \n- Dart\n## Local: \n 100% Remoto\n## Requisitos: \n - Experiência com desenvolvimento Flutter; \n- Conhecimentos sólidos em estruturas de dados, algoritmos, design patterns e arquitetura de sistemas; \n- Experiência em boas práticas de engenharia de software, lint, testes unitários e code reviews.\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Flutter Mobile (Júnior/Pleno) na Netimóveis Brasil](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nMobile",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "4ad1cd52cc9ffe33e0ca7c3987342de6dee749c894f89714ded08d83b0a35c88",
-      "repository": "FlutterComunidadeBR/vagas",
-      "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "junior",
-        "pleno"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "junior",
-        "pleno"
-      ],
-      "author": {
-        "id": "GabrielaSluz",
-        "name": "GabrielaSluz",
-        "handle": "GabrielaSluz",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/152880287?v=4"
-      },
-      "community": {
-        "id": "FlutterComunidadeBR",
-        "name": "FlutterComunidadeBR",
-        "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-        "repository": "FlutterComunidadeBR/vagas",
-        "url": "https://github.com/FlutterComunidadeBR/vagas"
-      },
-      "companyName": "Coodesh",
-      "createdAt": "2023-12-28T19:22:29Z",
-      "updatedAt": "2023-12-28T19:22:29Z",
-      "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "dotnet",
-          "flutter"
-        ],
-        "seniority": [
-          "junior",
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_724342a7441cbc13493ec56f",
-          "sourceId": "FlutterComunidadeBR/vagas#63",
-          "repository": "FlutterComunidadeBR/vagas",
-          "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-          "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
-          "createdAt": "2023-12-28T19:22:29Z",
-          "updatedAt": "2023-12-28T19:22:29Z",
-          "community": {
-            "id": "FlutterComunidadeBR",
-            "name": "FlutterComunidadeBR",
-            "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-            "repository": "FlutterComunidadeBR/vagas",
-            "url": "https://github.com/FlutterComunidadeBR/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 978,
-        "publishedAt": "2023-12-28T19:22:29Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_a6bde7918a54217d3e9edaa7",
-      "sourceId": "nodejs-tw/jobs#255",
-      "title": "【徵才】外商CDN代徵-Node.JS後端工程師$3000-4500(遠程上班)",
-      "description": "Content Delivery Network 業務\n\n職稱\nNode.JS後端工程師(遠程工作)\n\n薪資範圍\n美金 $3000-4500\n\n職位描述\n1.負責公司業務系統Node.JS後端代碼的研發與維護\n2.獨立完成專案的系統分析、設計，並主導完成詳細設計和編碼的任務，確保專案的進度和品質 \n3.靈活支撐業務的同時，對於系統容量、穩定性等有較為深厚的理解。\n\n職位要求\n1.扎實的Node.JS相關技術背景\n2.熟悉egg.js框架\n3.熟悉微服務相關技術，或者瞭解Service Mesh相關技術\n4.熟練MySQL，對資料庫有較強的設計能力\n5.具有基於資料庫、緩存、分散式存儲開發高性能、高可用系統的設計開發的開發經驗\n6.具有高度的責任心與自驅力，良好的溝通協作、應急回應與處理問題的能力\n7.具備良好的識別和設計通用框架及模組的能力，有跨平臺的API規範設計以及API高效調用設計能力。\n\n能力要求：\n1.工作經驗：2年以上佳\n2.學歷要求：大學或以上\n3.科系要求：資訊相關科系佳\n\n歡迎聯繫Lucas或直接投遞簡歷\nEmail：[lucas@marsconsult.com.tw](mailto:lucas@marsconsult.com.tw)\ntelegram： @Mars_Lucas",
-      "excerpt": "Content Delivery Network 業務 職稱 Node.JS後端工程師(遠程工作) 薪資範圍 美金 $3000-4500 職位描述 1.負責公司業務系統Node.JS後端代碼的研發與維護 2.獨立完成專案的系統分析、設計，並主導完成詳細設計和編碼的任務，確保專案的進度和品質 3.靈活支撐業務的同時，對於系統容量、穩定性等有較為深厚的理解。 職位要求 1.扎實的Node.JS相關技術背景 2.熟悉egg.js框架 3...",
-      "issueState": "open",
-      "contentHash": "f66d6ce3557a610c49e816b6b3c7a669914274fc3eef3532a320c5d29dfcdccf",
-      "repository": "nodejs-tw/jobs",
-      "repositoryUrl": "https://github.com/nodejs-tw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "node"
-      ],
-      "sourceTags": [
-        "node"
-      ],
-      "author": {
-        "id": "Kino1116",
-        "name": "Kino1116",
-        "handle": "Kino1116",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/145644153?v=4"
-      },
-      "community": {
-        "id": "nodejs-tw",
-        "name": "nodejs-tw",
-        "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
-        "repository": "nodejs-tw/jobs",
-        "url": "https://github.com/nodejs-tw/jobs"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 3000,
-        "max": 4500,
-        "period": "month"
-      },
-      "createdAt": "2023-12-07T03:24:03Z",
-      "updatedAt": "2023-12-07T03:24:03Z",
-      "url": "https://github.com/nodejs-tw/jobs/issues/255",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a6bde7918a54217d3e9edaa7",
-          "sourceId": "nodejs-tw/jobs#255",
-          "repository": "nodejs-tw/jobs",
-          "repositoryUrl": "https://github.com/nodejs-tw/jobs",
-          "url": "https://github.com/nodejs-tw/jobs/issues/255",
-          "createdAt": "2023-12-07T03:24:03Z",
-          "updatedAt": "2023-12-07T03:24:03Z",
-          "community": {
-            "id": "nodejs-tw",
-            "name": "nodejs-tw",
-            "avatarUrl": "https://github.com/nodejs-tw.png?size=80",
-            "repository": "nodejs-tw/jobs",
-            "url": "https://github.com/nodejs-tw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1000,
-        "publishedAt": "2023-12-07T03:24:03Z",
         "status": "stale"
       }
     }

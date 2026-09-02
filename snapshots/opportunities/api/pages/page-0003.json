@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-09-02T18:18:07.026Z",
+  "generatedAt": "2026-09-02T22:56:33.433Z",
   "page": 3,
   "pageSize": 20,
   "nextPage": "api/pages/page-0004.json",
   "ids": [
+    "gh_0518d453a06bfe71ae771dff",
+    "gh_cf66cfb845e2671803c3365b",
+    "gh_4c6cf37982168e2e29fee61c",
     "gh_4069aaa4b8ed2c6ca16fa901",
     "gh_d71471df3543c2014e94e7a8",
     "gh_9f4bcfdf00b9c0943d544fad",
@@ -20,12 +23,425 @@
     "gh_8864c009c0e49a4272abce10",
     "gh_b8dd3877fef0d7bff91bee67",
     "gh_9f91cca173864103e1a5724f",
-    "gh_00f12f8090b3e56bccda0b4f",
-    "gh_809903c2b3eb0261b69cdd76",
-    "gh_9c42821abe6be55f97eee839",
-    "gh_f94a8703a9a2cacb14801ef7"
+    "gh_00f12f8090b3e56bccda0b4f"
   ],
   "items": [
+    {
+      "id": "gh_0518d453a06bfe71ae771dff",
+      "sourceId": "frontendbr/vagas#8553",
+      "title": "[Remota] Product Engineer (LLMs, Next.js, Python, AWS)USD - Strider",
+      "description": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS)\n\n> **Salário:** $4,900 – $5,600 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Experiência:** 5 a 8 anos  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Product Engineer Sênior capaz de assumir a ownership de sistemas em produção, tomar decisões de produto sem especificação detalhada e construir arquiteturas robustas de IA (LLMs, agentes, pipelines de avaliação) e infraestrutura em nuvem.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end & Full-stack:** React.js, Next.js, TypeScript, tRPC.\n- **Back-end & DB:** Node.js, Python, Postgres.\n- **AI & LLM:** Construção de aplicações de IA (tool-using agents, context management, retrieval/reranking) e avaliação de sistemas (LLM judges, deterministic checks).\n- **DevOps & Cloud:** AWS (ambientes self-hosted/regulados), CI/CD, IaC (Docker, Terraform, Pulumi, SST) e observabilidade a nível de sistema.\n- **AI Tooling:** Domínio de fluxos com IA (Claude Code) e visão crítica de suas capacidades.\n\n###  Diferenciais (Nice-to-have)\n- Experiência prévia em Startups\n- Design e operação de servidores MCP (Model Context Protocol)\n- Nuvem regulada (ex: AWS GovCloud)\n- Infraestrutura de ML / Pipelines de Dados\n- Ecossistema de EdTech ou desenvolvimento de força de trabalho\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Product Engineer](https://app.onstrider.com/r/claudiaantunes?job=cHJvZHVjdC1lbmdpbmVlci04ZjAyMDk3Zj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+      "excerpt": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS) > **Salário:** $4,900 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5 a 8 anos > ...",
+      "issueState": "open",
+      "contentHash": "259a465fcf478eb7f80bec362d53d185e260a5b5d358a4c69a47ac3cbc9b810c",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "node.js",
+        "python",
+        "remoto",
+        "sênior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "aws",
+        "ci/cd",
+        "docker",
+        "node.js",
+        "python",
+        "remoto",
+        "sênior",
+        "typescript"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4900,
+        "max": 5600,
+        "period": "month"
+      },
+      "createdAt": "2026-08-28T01:46:54Z",
+      "updatedAt": "2026-08-28T01:48:46Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8553",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "nextjs",
+          "nodejs",
+          "postgres",
+          "python",
+          "react",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_0518d453a06bfe71ae771dff",
+          "sourceId": "frontendbr/vagas#8553",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8553",
+          "createdAt": "2026-08-28T01:46:54Z",
+          "updatedAt": "2026-08-28T01:47:14Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        },
+        {
+          "id": "gh_785da28a609b497462469c95",
+          "sourceId": "backend-br/vagas#12401",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12401",
+          "createdAt": "2026-08-28T01:48:31Z",
+          "updatedAt": "2026-08-28T01:48:46Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-08-28T01:46:54Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_cf66cfb845e2671803c3365b",
+      "sourceId": "backend-br/vagas#12400",
+      "title": "[Remoto] Full-stack Engineer (UX-focused) Strider",
+      "description": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools\n\n> **Salário:** $4,300 – $6,000 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Full-stack Engineer hands-on (4+ anos de experiência) com viés em Front-end e UX Design para construir produtos do zero em ambiente de startup. Se você usa ferramentas como **Claude Code** e **coding agents** no seu dia a dia e sabe como validar/refinar código gerado por IA, essa vaga é para você.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end:** React.js, TypeScript, CSS/HTML, UX Design (tradução de design em código).\n- **Back-end & DB:** Node.js, Python, REST APIs, SQL e NoSQL.\n- **Workflow:** Git, ferramentas de IA assistida (AI coding tools/agents).\n- **Soft Skills:** Autonomia para criar produtos do zero, *move-fast mentality* de startup e excelente comunicação em inglês (escrita e falada).\n\n### 🌟 Diferenciais (Nice-to-have)\n- Framework TanStack Start\n- FastAPI (Python)\n- Cloud & DevOps (AWS/GCP/Azure, Docker, Kubernetes)\n- Domínio de produtos EdTech ou ecossistemas com proteção de dados/PII\n- Bacharelado em Ciência da Computação, Engenharia ou área correlata\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Full-stack Engineer](https://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci03MWY1OGY5Mj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+      "excerpt": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools > **Salário:** $4,300 – $6,000 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Modal...",
+      "issueState": "open",
+      "contentHash": "3fbf1debcabc1701dee216a0bda4cd1f59a9c566d5a9ea5b16fe703b0455cfc2",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "aws",
+        "docker",
+        "git",
+        "node.js",
+        "python",
+        "remoto",
+        "sql",
+        "typescript"
+      ],
+      "sourceTags": [
+        "aws",
+        "docker",
+        "git",
+        "node.js",
+        "python",
+        "remoto",
+        "sql",
+        "typescript"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4300,
+        "max": 6000,
+        "period": "hour"
+      },
+      "createdAt": "2026-08-28T01:39:00Z",
+      "updatedAt": "2026-08-28T01:40:42Z",
+      "url": "https://github.com/backend-br/vagas/issues/12400",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_cf66cfb845e2671803c3365b",
+          "sourceId": "backend-br/vagas#12400",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12400",
+          "createdAt": "2026-08-28T01:39:00Z",
+          "updatedAt": "2026-08-28T01:39:16Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        },
+        {
+          "id": "gh_e20c87ec9b8a84e4069f865e",
+          "sourceId": "frontendbr/vagas#8552",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8552",
+          "createdAt": "2026-08-28T01:40:18Z",
+          "updatedAt": "2026-08-28T01:40:42Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-08-28T01:39:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_4c6cf37982168e2e29fee61c",
+      "sourceId": "backend-br/vagas#12399",
+      "title": "[Remoto] Full-stack Engineer (Java/Kotlin|Golang) USD (Strider) - NomeDaEmpresa",
+      "description": "OPORTUNIDADE INTERNACIONAL | FULL-STACK ENGINEER (JAVA | KOTLIN | GOLANG) | REMOTO | RECEBA EM DÓLAR 🌎💰\n\nSe você é um(a) Full-stack Engineer e busca uma oportunidade para atuar em projetos globais utilizando tecnologias modernas, essa vaga pode ser para você!\n\n💼 Cargo: Full-stack Engineer\n💵 Salário: US$ 3.500 a US$ 5.000 por mês\n🌍 Modelo: 100% Remoto\n📅 Contrato: Projeto de 6 meses – 40 horas semanais\n🗣️ Inglês: C1+ (Avançado)\n\n📍 Vaga aberta para profissionais da América Latina:\n🇦🇷 Argentina | 🇧🇷 Brasil | 🇨🇴 Colômbia | 🇲🇽 México | 🇵🇾 Paraguai | 🇨🇱 Chile | 🇵🇪 Peru | 🇨🇷 Costa Rica\n\n🎯 Requisitos:\n\n✅ 5+ anos de experiência em desenvolvimento de software.\n✅ Experiência sólida com Java e Kotlin.\n✅ Conhecimento e interesse em trabalhar com Golang (Go).\n✅ Experiência com React.js e desenvolvimento de aplicações web modernas.\n✅ Forte conhecimento em programação orientada a objetos para desenvolvimento de APIs.\n✅ Experiência com Git em ambientes colaborativos.\n✅ Vivência com metodologias ágeis.\n✅ Excelente comunicação em inglês (oral e escrita).\n\n🤩 Diferenciais:\n\n✔️ Experiência em startups.\n✔️ Conhecimento em infraestrutura como código (Terraform, OpenTofu ou Pulumi).\n✔️ Experiência com Google Cloud Platform (GCP):\n• Pub/Sub\n• Google Cloud Storage\n• CloudSQL\n• GKE\n• BigQuery\n\n✔️ Experiência com Temporal e gerenciamento de workflows.\n✔️ Conhecimento em processamento de dados em tempo real (Beam, Flink, filas de mensagens e stream processing**).\n✔️ Experiência com contratos de dados, gRPC e Protocol Buffers (protobuf).\n✔️ Conhecimento em MySQL e PostgreSQL.\n✔️ Graduação em Ciência da Computação, Engenharia da Computação ou áreas correlatas.\n\n🤩 Por que vale a pena?\n💲 Salário em dólar.\n🌎 Trabalho 100% remoto.\n🚀 Projetos internacionais utilizando tecnologias modernas.\n☁️ Oportunidade de atuar com Cloud, Microservices e Data Processing.\n📈 Excelente oportunidade para acelerar sua carreira global.\n\n📩 👉 Se inscreva agora👇🏻 \nhttps://lnkd.in/d2Qkv8H9\n\n💬 Marque um(a) desenvolvedor(a) que tenha esse perfil ou compartilhe esta oportunidade para ajudar mais profissionais a conquistarem uma vaga internacional!\n\n#VagasTI #TechJobs #Hiring #OpenToWork #RemoteJobs #HomeOffice #FullStackEngineer #SoftwareEngineer #Java #Kotlin #Golang #GoLangDeveloper #ReactJS #API #Microservices #GCP #GoogleCloud #BigQuery #CloudSQL #GKE #Terraform #Pulumi #Temporal #gRPC #PostgreSQL #MySQL #TechRecruiter #CarreiraInternacional #VagasRemotas #RecebaEmDolar #Brasil #Argentina #Colombia #Mexico #Chile #Peru #CostaRica #Paraguay",
+      "excerpt": "OPORTUNIDADE INTERNACIONAL | FULL-STACK ENGINEER (JAVA | KOTLIN | GOLANG) | REMOTO | RECEBA EM DÓLAR 🌎💰 Se você é um(a) Full-stack Engineer e busca uma oportunidade para atuar em projetos globais utilizando tecnolog...",
+      "issueState": "open",
+      "contentHash": "44217db24edc0d09b3814a07c3b39a226f8ef37ffa697a3230877b840257d3bb",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "gcp",
+        "git",
+        "go",
+        "java",
+        "kotlin",
+        "mysql",
+        "postgresql",
+        "remoto"
+      ],
+      "sourceTags": [
+        "gcp",
+        "git",
+        "go",
+        "java",
+        "kotlin",
+        "mysql",
+        "postgresql",
+        "remoto"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 3500,
+        "max": 5000,
+        "period": "hour"
+      },
+      "createdAt": "2026-08-27T22:12:05Z",
+      "updatedAt": "2026-08-27T22:12:23Z",
+      "url": "https://github.com/backend-br/vagas/issues/12399",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "gcp",
+          "go",
+          "java",
+          "kotlin",
+          "mysql",
+          "postgres",
+          "react",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_4c6cf37982168e2e29fee61c",
+          "sourceId": "backend-br/vagas#12399",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12399",
+          "createdAt": "2026-08-27T22:12:05Z",
+          "updatedAt": "2026-08-27T22:12:23Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-08-27T22:12:05Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_4069aaa4b8ed2c6ca16fa901",
       "sourceId": "frontendbr/vagas#8551",
@@ -133,7 +549,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-08-27T22:08:53Z",
         "status": "fresh"
       }
@@ -252,7 +668,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-08-27T21:53:59Z",
         "status": "fresh"
       }
@@ -971,7 +1387,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-08-26T21:00:09Z",
         "status": "fresh"
       }
@@ -1097,7 +1513,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-08-26T19:51:52Z",
         "status": "fresh"
       }
@@ -1796,7 +2212,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-08-25T20:46:46Z",
         "status": "fresh"
       }
@@ -1917,382 +2333,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-08-25T19:19:39Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_809903c2b3eb0261b69cdd76",
-      "sourceId": "backend-br/vagas#12394",
-      "title": "[Remoto] Back-end Developer Python - Shipwell",
-      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nShipwell is a US-based logistics and supply chain platform focused on transportation management. The company builds technology that helps shippers, carriers and brokers manage freight operations end to end on a single platform.\n\n## Descrição da vaga\n\nWe are hiring a Senior Backend Engineer to design, build and scale the Python services that power Shipwell's transportation management platform. This is a senior individual contributor role, fully remote from Brazil, working closely with a distributed engineering team.\n\n- Design, build and maintain backend services and APIs in Python\n- Model and evolve data structures that support high volume logistics workflows\n- Write automated tests and contribute to code quality standards across the codebase\n- Review pull requests and mentor mid level engineers on backend best practices\n- Collaborate with product, frontend and data teams to scope and deliver features\n- Monitor, debug and optimize performance and reliability of production systems\n- Participate in technical discussions and help shape backend architecture decisions\n\n## Local\n\nFully Remote \n\n## Requisitos\n\n- Solid professional experience as a backend engineer working primarily with Python\n- Strong experience building and consuming RESTful APIs\n- Proficiency with relational databases and SQL, including query optimization\n- Experience with cloud environments and containerized deployments\n- Familiarity with automated testing, CI/CD pipelines and version control workflows\n- Ability to work autonomously in a distributed, asynchronous team\n- Professional English, written and spoken, for daily collaboration with a US based team\n\n## Benefícios\n\nFully remote, based in Brazil\nWorking hours with overlap to US time zones\n\n## Contratação\n\nPJ\n\n## Como se candidatar\n\nVocê pode se candidatar pelo link: https://combineglobalrecruitment.na.teamtailor.com/jobs/653633-full-stack-developer-python-react\n\n## Labels\n\n\n### Nível\n\n\n\n- Pleno\n- Sênior\n\n\n### Regime\n\n- PJ\n- Contrato\n\n\n### Alocação\n\n- Remoto",
-      "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Shipwell is a US-based logistics and supply chain platform focused on transportation management. The company builds technology that helps shippers,...",
-      "issueState": "open",
-      "contentHash": "d8f02161aa783280f6f922fa0575d069d24426f4c7543a6b967c6e7f109e0353",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "ci/cd",
-        "pj",
-        "pleno",
-        "python",
-        "remoto",
-        "solid",
-        "sql",
-        "sênior"
-      ],
-      "sourceTags": [
-        "ci/cd",
-        "pj",
-        "pleno",
-        "python",
-        "remoto",
-        "solid",
-        "sql",
-        "sênior"
-      ],
-      "author": {
-        "id": "milenaalbino-recruiter",
-        "name": "milenaalbino-recruiter",
-        "handle": "milenaalbino-recruiter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/317059230?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-08-25T18:01:28Z",
-      "updatedAt": "2026-08-25T18:01:45Z",
-      "url": "https://github.com/backend-br/vagas/issues/12394",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_809903c2b3eb0261b69cdd76",
-          "sourceId": "backend-br/vagas#12394",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12394",
-          "createdAt": "2026-08-25T18:01:28Z",
-          "updatedAt": "2026-08-25T18:01:45Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-08-25T18:01:28Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_9c42821abe6be55f97eee839",
-      "sourceId": "dotnetdevbr/vagas#1080",
-      "title": "[Híbrido] Back-End Developer (ASP.NET Core) Sênior @ Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de .NET Back-End Developer (ASP.NET Core) nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Construir APIs REST com ASP.NET Core\n- Implementar autenticação e autorização\n- Integrar com bancos relacionais e serviços externos\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com .NET/ASP.NET Core (5 anos ou mais)\n- ASP.NET Core e C#\n- Entity Framework Core\n- SQL Server ou PostgreSQL\n- Testes com xUnit ou NUnit\n\n**Diferenciais:**\n- Azure DevOps\n- Docker\n- gRPC\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-net-asp-net-core-senior\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
-      "issueState": "open",
-      "contentHash": "1c6e755da4f46b17467048209403c59f42b99928025e619f9fbfea95fce46a77",
-      "repository": "dotnetdevbr/vagas",
-      "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "híbrido",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
-      "sourceTags": [
-        "clt",
-        "híbrido",
-        "pj",
-        "remoto",
-        "sênior"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "dotnetdevbr",
-        "name": "dotnetdevbr",
-        "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
-        "repository": "dotnetdevbr/vagas",
-        "url": "https://github.com/dotnetdevbr/vagas"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 12000,
-        "max": 22000,
-        "period": "month"
-      },
-      "createdAt": "2026-08-25T17:14:32Z",
-      "updatedAt": "2026-08-31T22:25:55Z",
-      "url": "https://github.com/dotnetdevbr/vagas/issues/1080",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "devops-sre"
-        ],
-        "technologies": [
-          "azure",
-          "csharp",
-          "docker",
-          "dotnet",
-          "postgres"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_9c42821abe6be55f97eee839",
-          "sourceId": "dotnetdevbr/vagas#1080",
-          "repository": "dotnetdevbr/vagas",
-          "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
-          "url": "https://github.com/dotnetdevbr/vagas/issues/1080",
-          "createdAt": "2026-08-25T17:14:32Z",
-          "updatedAt": "2026-08-31T22:25:55Z",
-          "community": {
-            "id": "dotnetdevbr",
-            "name": "dotnetdevbr",
-            "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
-            "repository": "dotnetdevbr/vagas",
-            "url": "https://github.com/dotnetdevbr/vagas"
-          }
-        },
-        {
-          "id": "gh_c247c1e537de8cb2ec3dbbea",
-          "sourceId": "dotnetdevbr/vagas#1081",
-          "repository": "dotnetdevbr/vagas",
-          "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
-          "url": "https://github.com/dotnetdevbr/vagas/issues/1081",
-          "createdAt": "2026-08-25T21:01:50Z",
-          "updatedAt": "2026-08-31T19:46:53Z",
-          "community": {
-            "id": "dotnetdevbr",
-            "name": "dotnetdevbr",
-            "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
-            "repository": "dotnetdevbr/vagas",
-            "url": "https://github.com/dotnetdevbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-08-25T17:14:32Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_f94a8703a9a2cacb14801ef7",
-      "sourceId": "soujava/vagas-java#1945",
-      "title": "[Híbrido] Desenvolvedor(a) Java/Kafka Sênior na Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Desenvolvedor(a) Java/Kafka nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Desenvolver produtores e consumidores de eventos em Kafka\n- Modelar tópicos, partições e estratégias de retenção\n- Garantir entrega e ordenação em pipelines de alto volume\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Java/Kafka (5 anos ou mais)\n- Java e Spring Boot\n- Apache Kafka (produtor, consumidor, consumer group)\n- Serialização (Avro, Protobuf ou JSON Schema)\n- SQL\n\n**Diferenciais:**\n- Kafka Streams ou KSQL\n- Schema Registry\n- Kubernetes\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-kafka-senior\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
-      "issueState": "open",
-      "contentHash": "8ffc5f1616bf70736efe1fca9ddc628e90aa5d9094be76c0d8a94281cfadf388",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "clt",
-        "java",
-        "pj",
-        "remoto",
-        "spring",
-        "sql",
-        "sênior"
-      ],
-      "sourceTags": [
-        "backend",
-        "clt",
-        "java",
-        "pj",
-        "remoto",
-        "spring",
-        "sql",
-        "sênior"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 12000,
-        "max": 22000,
-        "period": "month"
-      },
-      "createdAt": "2026-08-25T13:14:52Z",
-      "updatedAt": "2026-08-25T13:15:15Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1945",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "java",
-          "kubernetes",
-          "spring"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_f94a8703a9a2cacb14801ef7",
-          "sourceId": "soujava/vagas-java#1945",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1945",
-          "createdAt": "2026-08-25T13:14:52Z",
-          "updatedAt": "2026-08-25T13:15:15Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-08-25T13:14:52Z",
         "status": "fresh"
       }
     }
