@@ -10,6 +10,7 @@
     "discover:communities": "node src/cli/discover-communities.mjs",
     "review:communities": "node src/cli/review-communities.mjs",
     "migrate:snapshot": "node scripts/migrate-opportunities-snapshot.mjs",
+    "report:monthly": "node scripts/generate-monthly-report.mjs",
     "test": "node --test test/*.test.mjs",
     "validate": "npm test && node scripts/validate-repo.mjs"
   },

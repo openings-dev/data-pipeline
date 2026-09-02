@@ -126,6 +126,18 @@ const manifest = await fetch(`${baseUrl}/api/manifest.json`).then((response) =>
 
 GitHub Actions runs the update workflow on a schedule and commits changed files under `snapshots/opportunities/**`.
 
+## Monthly public reports
+
+The pipeline publishes one immutable point-in-time report per month under [`reports/monthly`](./reports/monthly). Each report records open jobs, catalog communities, active repositories, countries, regions, leading locations and technologies, work-model signals, and salary-disclosure coverage directly from the public manifest.
+
+Generate the current month locally with:
+
+```bash
+npm run report:monthly
+```
+
+If a report for the snapshot month already exists with different contents, generation stops instead of rewriting public history. The scheduled workflow runs after the first snapshot cycle of each month and updates only the mutable report index.
+
 ## Community Discovery
 
 Discovery searches open GitHub Issues for repositories that publish jobs. It creates a review inbox; it never adds sources, rebuilds snapshots, commits, or pushes by itself.
