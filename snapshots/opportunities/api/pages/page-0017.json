@@ -1,11 +1,9 @@
 {
-  "generatedAt": "2026-09-02T22:56:33.433Z",
+  "generatedAt": "2026-09-03T02:19:33.508Z",
   "page": 17,
   "pageSize": 20,
   "nextPage": "api/pages/page-0018.json",
   "ids": [
-    "gh_86cf7c4c726a6cec1163d1fb",
-    "gh_0f0495da862b94749892e684",
     "gh_d6f31a804dacbc548031ec5e",
     "gh_5903d3232c2f99d9ae568fe8",
     "gh_eae48d87a90e3ffbeb60afaf",
@@ -23,229 +21,11 @@
     "gh_26b7c402e14a59e43ad9828b",
     "gh_27ad1c5fa6ae31eaf8210333",
     "gh_7b4f6457d040ea0a23c1c43b",
-    "gh_1b456af185b0d148e1769bc2"
+    "gh_1b456af185b0d148e1769bc2",
+    "gh_b0b25f9f51d0e7f1c185dc60",
+    "gh_8d3d4b455493191722317dda"
   ],
   "items": [
-    {
-      "id": "gh_86cf7c4c726a6cec1163d1fb",
-      "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-      "title": "Bug: Company logo thumbnails enter corrupted render state after job application, stale DOM / z-index collision across job card components",
-      "description": "# Company thumbnails overlap other job cards after applying to a posting\n\nHey team,\n\nI've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that job bleeds over into the other job cards in the feed. Sometimes it stacks on top of the adjacent card's logo, sometimes it straight up replaces it. It looks pretty broken.\n\nThe weird part is that it fixes itself the moment I do a hard refresh. So the data coming from the backend seems fine, this is purely a client-side rendering issue.\n\n## Repro\n\n1. Go to the job listings feed.\n2. Apply to any job.\n3. Come back to the listings (back nav or closing the apply modal).\n4. The thumbnails on nearby job cards are now messed up; wrong logos, overlapping, stacked, etc.\n5. Refresh the page → everything goes back to normal.\n\nThis happens every single time, not intermittent. I've tried it across a few different browsers (Chrome and Firefox) and it's the same behavior.\n\n## What I think is going on\n\nI'm a software engineer so I poked around in devtools a bit. A few things that might be worth looking at:\n\n**Key prop issue on the list**: If the job card list is keyed by array index instead of something stable like `job.id`, React's reconciler will reuse DOM nodes incorrectly when the list state changes after applying. This would explain why the thumbnails get \"shifted\" onto wrong cards. Classic React anti-pattern.\n\n**Stacking context / z-index leak**: When the apply flow triggers (modal, overlay, toast, whatever), it might be setting `position: absolute` or bumping `z-index` on the applied card's thumbnail. If that style isn't cleaned up properly (maybe an animation callback that doesn't fire?), the image escapes its container and sits on top of siblings. Throwing `overflow: hidden` and `position: relative` on the card container would contain this.\n\n**Race condition on refetch**: If applying fires off a POST and then the feed revalidates in parallel (SWR `mutate()`, React Query `invalidateQueries()`, etc.), there's a window where partial/stale data gets rendered before the fresh response lands. The thumbnails might be getting swapped around during that intermediate state.\n\n**Image caching**: Less likely, but if there's a custom image component or service worker caching thumbnails by position/index instead of URL, a re-render after apply could serve the wrong cached image to the wrong card.\n\n## Quick fix suggestions\n\n- Check that `key={job.id}` (or whatever unique identifier) is used on the card list, not `key={index}`.\n- Make sure each card's thumbnail container has its own stacking context (`position: relative; overflow: hidden;`).\n- If the apply action triggers a list refetch, batch the state update or wrap it in `startTransition` so you don't get an intermediate broken frame.\n- Audit `useEffect` cleanups around the apply modal/overlay, something might not be resetting styles on unmount.\n\n## Environment\n\n- Chrome 124  on macOS\n- Desktop, standard resolution\n- Happens on both fast and slow connections so it's not a network timing thing\n\nNot a blocker since refresh fixes it, but it makes the platform look buggy and I'd imagine it's hurting trust with less technical users who don't know to just reload. Happy to provide more details or screen recordings if that helps.",
-      "excerpt": "# Company thumbnails overlap other job cards after applying to a posting Hey team, I've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that ...",
-      "issueState": "open",
-      "contentHash": "1e4843c8fb9d905a53f168f5b02b0201043140e257eec09e5f353c378fe3c473",
-      "repository": "jobright-ai/2026-Data-Analysis-Internship",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "author": {
-        "id": "JayDS22",
-        "name": "JayDS22",
-        "handle": "JayDS22",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Data-Analysis-Internship",
-        "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-      },
-      "createdAt": "2026-03-22T16:47:15Z",
-      "updatedAt": "2026-03-22T16:51:05Z",
-      "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "go",
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_86cf7c4c726a6cec1163d1fb",
-          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-          "repository": "jobright-ai/2026-Data-Analysis-Internship",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-          "createdAt": "2026-03-22T16:47:15Z",
-          "updatedAt": "2026-03-22T16:51:05Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Data-Analysis-Internship",
-            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 164,
-        "publishedAt": "2026-03-22T16:47:15Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_0f0495da862b94749892e684",
-      "sourceId": "react-native-drops/vagas#148",
-      "title": "[Curitiba] Senior React Native Developer para um cliente da Visionnaire",
-      "description": "## Nossa empresa\n\nFábrica de Software, desenvolvimento com IA.\n\n## Descrição da vaga\n\nBuscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que executar tarefas, queremos alguém que contribua com melhorias, decisões técnicas e evolução contínua da nossa stack mobile. Trabalho 100% presencial em Curitiba.\n\nAtividades\nVocê vai trabalhar na evolução de aplicativos digitais usados por milhares de pessoas, ajudando a construir experiências mobile mais estáveis, rápidas e relevantes para o nosso público;\nEvoluir aplicativos em produção com foco em performance, estabilidade e experiência do usuário;\nDesenvolver novas funcionalidades e integrações com APIs e serviços de back-end;\nAtuar em problemas reais de compatibilidade entre plataformas, qualidade de entrega e manutenção sustentável;\nTrabalhar com React Native, Expo e EAS no fluxo de configuração, build e publicação dos aplicativos;\nColaborar com designers, desenvolvedores e áreas de negócio na construção de produtos digitais relevantes;\nContribuir com decisões técnicas, melhoria contínua da arquitetura e boas práticas de engenharia.\n\n## Local\n\nPresencial em Curitiba/PR\n\n## Requisitos\n\n**Obrigatórios:**\n\nGraduação em Ciência da Computação, Engenharia de Software ou área relacionada;\nExperiência sólida com React Native;\nBoa base em TypeScript/JavaScript;\nExperiência prática com Expo/EAS, incluindo configuração de projeto, build e publicação;\nVivência com iOS e Android no contexto React Native;\nExperiência em desenvolvimento de Backend e APIs REST;\nConhecimento em autenticação JWT e oAuth2\nFamiliaridade com Git, code review e boas práticas de engenharia;\nCapacidade de investigar problemas, propor melhorias e atuar de forma colaborativa com o time.\nConhecimento em Banco de Dados SQL e No-SQL;\nDisponibilidade para residir em Curitiba/PR ou região metropolitana e atuar no sistema 100% presencial.\n\n**Diferenciais:**\n\nExperiência com CI/CD para apps mobile;\nConhecimento em AWS ou GCP;\nVivência com Node.js / NestJS;\nInteresse em arquitetura, observabilidade e evolução contínua de produto digital.\n\n## Benefícios\n\n- Assistência médica\n- Assistência odontológica\n- Seguro de vida\n- PLR\n- Vale transporte\n- Gympass\n- Auxílio creche\n- Vale Alimentação ou Refeição\n\n## Contratação\n\nCLT \n\n## Como se candidatar\n\nAtravés do link da vaga https://ats.abler.com.br/jobs/visionnaire?slug=desenvolvedor-a-react-native-senior-158167 ou por e-mail recrutamento_selecao@visionnaire.com.br com seu CV anexado - enviar no assunto: Vaga Senior React Native Developer\n\n## Labels\n\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Regime\n\n- CLT\n\n#### Nível\n\n- Sênior",
-      "excerpt": "## Nossa empresa Fábrica de Software, desenvolvimento com IA. ## Descrição da vaga Buscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que execut...",
-      "issueState": "open",
-      "contentHash": "47d394e3a68076103443aba008b607cd7256098851d3d533511920a0bf84d7b5",
-      "repository": "react-native-drops/vagas",
-      "repositoryUrl": "https://github.com/react-native-drops/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "author": {
-        "id": "Vilcilaine",
-        "name": "Vilcilaine",
-        "handle": "Vilcilaine",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/62064964?v=4"
-      },
-      "community": {
-        "id": "react-native-drops",
-        "name": "react-native-drops",
-        "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-        "repository": "react-native-drops/vagas",
-        "url": "https://github.com/react-native-drops/vagas"
-      },
-      "createdAt": "2026-03-10T13:05:56Z",
-      "updatedAt": "2026-03-10T13:05:56Z",
-      "url": "https://github.com/react-native-drops/vagas/issues/148",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "em Curitiba",
-        "subdivision": "PR",
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "em Curitiba, PR · On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "gcp",
-          "java",
-          "javascript",
-          "nodejs",
-          "react",
-          "react-native",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0f0495da862b94749892e684",
-          "sourceId": "react-native-drops/vagas#148",
-          "repository": "react-native-drops/vagas",
-          "repositoryUrl": "https://github.com/react-native-drops/vagas",
-          "url": "https://github.com/react-native-drops/vagas/issues/148",
-          "createdAt": "2026-03-10T13:05:56Z",
-          "updatedAt": "2026-03-10T13:05:56Z",
-          "community": {
-            "id": "react-native-drops",
-            "name": "react-native-drops",
-            "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-            "repository": "react-native-drops/vagas",
-            "url": "https://github.com/react-native-drops/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 176,
-        "publishedAt": "2026-03-10T13:05:56Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_d6f31a804dacbc548031ec5e",
       "sourceId": "phpdevbr/vagas#1324",
@@ -1551,7 +1331,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 209,
+        "ageDays": 210,
         "publishedAt": "2026-02-05T00:07:51Z",
         "status": "stale"
       }
@@ -2029,6 +1809,226 @@
       "freshness": {
         "ageDays": 225,
         "publishedAt": "2026-01-20T05:43:31Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_b0b25f9f51d0e7f1c185dc60",
+      "sourceId": "pythonjobs/jobs#442",
+      "title": "Lead Graphics Engineer",
+      "description": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission: **use software to change the way we build**—turning complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n\nOur platform digests massive BIM models, uses **AI** to generate logical assembly sequences, and visualizes them in a **custom 3D engine**.\nWe’re building the **operating system for the next generation of construction**.\n\n📊 **Proof, not promises**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nThe impact: less re-work, compressed schedules, and reduced carbon emissions ♻️\n\n🚀 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the software team to ship the **next-gen Pilot** and make **digital assembly the industry standard**.\n\n🧠 **Your Mission**\nTake full ownership of our **web-based rendering engine**.\nYou’ll lead the strategic transition from **Autodesk Viewer** to a fully custom, high-performance rendering solution—defining how massive construction datasets are visualized and interacted with in the browser.\n\n🔧 **What you’ll solve**\n\n* Architect and scale a modular rendering engine using **Three.js + TypeScript**\n* Push browser rendering to its limits (1M+ objects) with batching, instancing, Draco compression, and dynamic **LOD streaming**\n* Build advanced AEC features: **4D simulations**, sectioning, markup, spatial filtering\n* Optimize **GraphQL data pipelines** for decoupled geometry and metadata loading\n* Own visualization infrastructure, **data sovereignty**, and security\n\n💡 **Who you are**\n\n* Mid–Senior level (5+ years) in **Three.js / Babylon.js / WebGL**\n* Deep understanding of **GPU pipelines, GLSL shaders, and WebGL internals**\n* Hands-on experience with **CAD/BIM data** (Revit, Rhino, IFC)\n* Strong foundation in **3D math** (matrices, vectors, quaternions)\n* Fluent in **JavaScript / TypeScript** (C# a plus)\n\n🧪 **A day in the role**\nMorning: Profiling a 500MB BIM model crashing mobile browsers 📱\nMid-day: Writing a custom **GLSL shader** for an X-ray visualization mode 👻\nAfternoon: Designing GraphQL queries to fetch only critical metadata and speed up dashboards ⚡\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **live job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real, physical-world impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 If you love graphics, performance, and building tools that leave the screen and enter the real world, we should talk.\n\n👉 **Apply via our Portal**: https://www.maestro-tech.com/careers/\n\n#Hiring #GraphicsEngineering #ThreeJS #WebGL #RenderingEngine\n#TechCareers #StartupJobs #ConstructionTech #BIM #3DEngine\n#AI #DigitalConstruction #TurinJobs",
+      "excerpt": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission: **use software to change t...",
+      "issueState": "open",
+      "contentHash": "0d84fb5b015e00d47d2157863446e725f18b7c22a28aa459b35954c3eea1f18a",
+      "repository": "pythonjobs/jobs",
+      "repositoryUrl": "https://github.com/pythonjobs/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "design",
+        "hybrid",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "hybrid",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "author": {
+        "id": "sandra614",
+        "name": "sandra614",
+        "handle": "sandra614",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
+      },
+      "community": {
+        "id": "pythonjobs",
+        "name": "pythonjobs",
+        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
+        "repository": "pythonjobs/jobs",
+        "url": "https://github.com/pythonjobs/jobs"
+      },
+      "createdAt": "2026-01-19T17:26:42Z",
+      "updatedAt": "2026-01-19T17:26:42Z",
+      "url": "https://github.com/pythonjobs/jobs/issues/442",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "csharp",
+          "java",
+          "javascript",
+          "typescript"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_b0b25f9f51d0e7f1c185dc60",
+          "sourceId": "pythonjobs/jobs#442",
+          "repository": "pythonjobs/jobs",
+          "repositoryUrl": "https://github.com/pythonjobs/jobs",
+          "url": "https://github.com/pythonjobs/jobs/issues/442",
+          "createdAt": "2026-01-19T17:26:42Z",
+          "updatedAt": "2026-01-19T17:26:42Z",
+          "community": {
+            "id": "pythonjobs",
+            "name": "pythonjobs",
+            "avatarUrl": "https://github.com/pythonjobs.png?size=80",
+            "repository": "pythonjobs/jobs",
+            "url": "https://github.com/pythonjobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 226,
+        "publishedAt": "2026-01-19T17:26:42Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_8d3d4b455493191722317dda",
+      "sourceId": "pythonjobs/jobs#441",
+      "title": "We're hiring!! Senior Full-Stack Engineer (High-Performance Web)",
+      "description": "🚀 **We’re hiring builders of the future (in code).**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission is simple and ambitious: **use software to change the way we build**. We turn complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n  We digest massive BIM models, use **AI** to generate logical assembly sequences, and visualize everything in a custom **3D engine**.\n  We’re building the **operating system for next-generation construction**.\n\n📍 **Proof, not slides**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nResults? Less re-work, faster schedules, and lower carbon impact ♻️\n\n🔭 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the **software team** to ship the next-gen Pilot and make **digital assembly the industry default**.\n\n💻 **Your Mission**\nYou’ll build the application backbone of a high-performance **Single-Page Application (SPA)** that connects massive geometric datasets (1M+ objects) directly to the user’s fingertips.\n\nYou’ll work on:\n\n* Advanced **UI architecture** (React, SSR/RSC, hydration, rendering strategies)\n* **Complex data visualization** (datagrids, flowcharts, 3D overlays)\n* **State management** at scale (Redux, Zustand, XState)\n* **Algorithms & data structures** (graphs, trees, BIM traversal)\n* **Performance-first engineering** (benchmarking, custom lightweight solutions)\n\n🤝 **How you’ll collaborate**\n\n* With the **Graphics Lead** to sync React UI with a custom Three.js engine\n* With the **AI Engineer** to visualize AI agents, streaming outputs, and interactive chat interfaces\n\n🧠 **The reality**\nFrom optimizing recursive SQL queries in the morning, to refactoring heavy UI components in the afternoon, your work directly impacts live construction sites.\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **active job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real-world, physical impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 Join us early. Ship code that leaves the screen and enters the real world.\n\n👉 **Apply via our Dev Portal** https://www.maestro-tech.com/careers/\n\n#Hiring #FrontendEngineering #ReactJobs #TechCareers #StartupJobs #DevJobs\n#3DRendering #BIM #AIEngineering #ConstructionTech #DigitalTransformation\n``",
+      "excerpt": "🚀 **We’re hiring builders of the future (in code).** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission is simple and ambitious: **use software to change the way w...",
+      "issueState": "open",
+      "contentHash": "2367233a10e8829a9be227eed3a900dabdce66bec80ee55cfc69c606c58e3625",
+      "repository": "pythonjobs/jobs",
+      "repositoryUrl": "https://github.com/pythonjobs/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "design",
+        "frontend",
+        "hybrid",
+        "react",
+        "senior"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "frontend",
+        "hybrid",
+        "react",
+        "senior"
+      ],
+      "author": {
+        "id": "sandra614",
+        "name": "sandra614",
+        "handle": "sandra614",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
+      },
+      "community": {
+        "id": "pythonjobs",
+        "name": "pythonjobs",
+        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
+        "repository": "pythonjobs/jobs",
+        "url": "https://github.com/pythonjobs/jobs"
+      },
+      "createdAt": "2026-01-19T17:25:09Z",
+      "updatedAt": "2026-07-22T19:05:02Z",
+      "url": "https://github.com/pythonjobs/jobs/issues/441",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_8d3d4b455493191722317dda",
+          "sourceId": "pythonjobs/jobs#441",
+          "repository": "pythonjobs/jobs",
+          "repositoryUrl": "https://github.com/pythonjobs/jobs",
+          "url": "https://github.com/pythonjobs/jobs/issues/441",
+          "createdAt": "2026-01-19T17:25:09Z",
+          "updatedAt": "2026-07-22T19:05:02Z",
+          "community": {
+            "id": "pythonjobs",
+            "name": "pythonjobs",
+            "avatarUrl": "https://github.com/pythonjobs.png?size=80",
+            "repository": "pythonjobs/jobs",
+            "url": "https://github.com/pythonjobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 226,
+        "publishedAt": "2026-01-19T17:25:09Z",
         "status": "stale"
       }
     }
