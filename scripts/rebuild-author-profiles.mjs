@@ -1,4 +1,4 @@
-import { readFile } from "node:fs/promises";
+import { readdir, readFile, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
 
 import { buildAuthorArtifacts } from "../src/modules/snapshot/static-api/authors.mjs";
@@ -22,6 +22,14 @@ const artifacts = buildAuthorArtifacts(
 
 for (const artifact of artifacts) {
   await writeJsonIfChanged(resolve(root, artifact.file), artifact.payload);
+}
+
+const authorDirectory = resolve(root, "api/authors");
+const currentAuthorFiles = new Set(artifacts.map(({ file }) => file.split("/").at(-1)));
+for (const file of await readdir(authorDirectory)) {
+  if (file.endsWith(".json") && !currentAuthorFiles.has(file)) {
+    await unlink(resolve(authorDirectory, file));
+  }
 }
 
 manifest.totals.authors = artifacts.length;
