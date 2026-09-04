@@ -174,3 +174,36 @@ test("writeSegmentedSnapshot ignores generatedAt-only snapshot changes", async (
     assert.equal(repositoryContent, `${JSON.stringify(repositoryPayload, null, 2)}\n`);
   });
 });
+
+test("writeSegmentedSnapshot removes retired author artifacts", async () => {
+  await withTempDir(async (snapshotRootDir) => {
+    const retiredRelativePath = "api/authors/retired.json";
+    const retiredPath = join(snapshotRootDir, retiredRelativePath);
+    const globalIndexPath = join(snapshotRootDir, "index.json");
+    await writeJson(retiredPath, { schemaVersion: 1, author: { handle: "retired" } });
+    await writeJson(globalIndexPath, {
+      schemaVersion: 2,
+      countries: [],
+      staticApi: { manifestFile: "api/manifest.json", files: [retiredRelativePath] },
+    });
+
+    const nextGlobalIndex = {
+      schemaVersion: 2,
+      countries: [],
+      staticApi: { manifestFile: "api/manifest.json", files: [] },
+    };
+    const result = await writeSegmentedSnapshot({
+      snapshotRootDir,
+      globalIndex: {
+        relativePath: "index.json",
+        filePath: globalIndexPath,
+        payload: nextGlobalIndex,
+      },
+      countrySnapshots: [],
+      staticApiFiles: [],
+    });
+
+    assert.equal(result.changedFiles.includes(retiredRelativePath), true);
+    await assert.rejects(readFile(retiredPath, "utf8"), { code: "ENOENT" });
+  });
+});
