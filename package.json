@@ -7,6 +7,7 @@
   "scripts": {
     "build:snapshot": "node scripts/build-opportunities.mjs",
     "rebuild:static-api": "node scripts/rebuild-static-api.mjs",
+    "rebuild:author-profiles": "node scripts/rebuild-author-profiles.mjs",
     "discover:communities": "node src/cli/discover-communities.mjs",
     "review:communities": "node src/cli/review-communities.mjs",
     "migrate:snapshot": "node scripts/migrate-opportunities-snapshot.mjs",

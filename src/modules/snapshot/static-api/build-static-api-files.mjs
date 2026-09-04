@@ -13,10 +13,7 @@ import { buildOpportunityAliases } from "./aliases.mjs";
 import { buildCommunityStatus } from "./community-status.mjs";
 import { buildStatusHistory } from "./status-history.mjs";
 import { normalizeDiscoveryOpportunity } from "../../opportunities/normalize-discovery-opportunity.mjs";
-import {
-  collectRepositoryItems,
-  collectSynchronizedRepositories,
-} from "./repository-items.mjs";
+import { collectRepositoryItems, collectSynchronizedRepositories } from "./repository-items.mjs";
 import { buildAuthorArtifacts } from "./authors.mjs";
 function normalizeOpenItems(countrySnapshots, generatedAt) {
   const itemsById = new Map();
@@ -94,8 +91,7 @@ export function buildStaticApiFiles(params) {
   files.push(...authorArtifacts.map((artifact) =>
     toFile(snapshotRootDir, artifact.file, artifact.payload),
   ));
-  const manifest = buildStaticApiManifest({ generatedAt, items, pages, facetSummary,
-    facetIndex, communities, aliases, status, statusHistory, authorArtifacts });
+  const manifest = buildStaticApiManifest({ generatedAt, items, pages, facetSummary, facetIndex, communities, aliases, status, statusHistory, authorArtifacts });
   files.push(toFile(snapshotRootDir, staticApiManifestPath(), manifest));
   return files;
 }
