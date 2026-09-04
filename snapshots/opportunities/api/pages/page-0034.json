@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-03T22:57:01.597Z",
+  "generatedAt": "2026-09-04T07:40:33.696Z",
   "page": 34,
   "pageSize": 20,
   "nextPage": "api/pages/page-0035.json",
   "ids": [
+    "gh_e43426d1a2257902e81afbcb",
     "gh_944a2f8bc18a924c8efd7dfd",
     "gh_6ee8b9c08295773ddc3dd28a",
     "gh_d706e42e62ef4c1e1fd54beb",
@@ -22,10 +23,95 @@
     "gh_7a360bd953f1dd6c55918e2e",
     "gh_4f906f266ed3d77de496323a",
     "gh_207da1ec74fa38e9ac0b5969",
-    "gh_b25d50b22a63ca6c3f5b072d",
-    "gh_5a366599b831700d70e5f7bd"
+    "gh_b25d50b22a63ca6c3f5b072d"
   ],
   "items": [
+    {
+      "id": "gh_e43426d1a2257902e81afbcb",
+      "sourceId": "clj-br/vagas#7",
+      "title": "Vagas da Pipo Saúde com localização incorreta",
+      "description": "Ao que parece o job board da Pipo Saúde (https://pipo-saude.breezy.hr/), usa Polyglot (https://airbnb.io/polyglot.js/) para lidar com traduções, o que faz com que alguns textos apareçam não traduzidos se o JS não for executado na página, o que faz com que a localização da vaga apareça como `%LABEL_POSITION_TYPE_WORLDWIDE%`.",
+      "excerpt": "Ao que parece o job board da Pipo Saúde (https://pipo-saude.breezy.hr/), usa Polyglot (https://airbnb.io/polyglot.js/) para lidar com traduções, o que faz com que alguns textos apareçam não traduzidos se o JS não for ...",
+      "issueState": "open",
+      "contentHash": "ba1fea8a750d484a063a9daeefbe069f43ce7e5d5895b4c29e7a2d3770a8f3be",
+      "repository": "clj-br/vagas",
+      "repositoryUrl": "https://github.com/clj-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "bug",
+        "help wanted"
+      ],
+      "sourceTags": [
+        "bug",
+        "help wanted"
+      ],
+      "author": {
+        "id": "renatoalencar",
+        "name": "renatoalencar",
+        "handle": "renatoalencar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6964593?v=4"
+      },
+      "community": {
+        "id": "clj-br",
+        "name": "clj-br",
+        "avatarUrl": "https://github.com/clj-br.png?size=80",
+        "repository": "clj-br/vagas",
+        "url": "https://github.com/clj-br/vagas"
+      },
+      "createdAt": "2021-10-27T11:55:14Z",
+      "updatedAt": "2021-11-01T20:50:53Z",
+      "url": "https://github.com/clj-br/vagas/issues/7",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_e43426d1a2257902e81afbcb",
+          "sourceId": "clj-br/vagas#7",
+          "repository": "clj-br/vagas",
+          "repositoryUrl": "https://github.com/clj-br/vagas",
+          "url": "https://github.com/clj-br/vagas/issues/7",
+          "createdAt": "2021-10-27T11:55:14Z",
+          "updatedAt": "2021-11-01T20:50:53Z",
+          "community": {
+            "id": "clj-br",
+            "name": "clj-br",
+            "avatarUrl": "https://github.com/clj-br.png?size=80",
+            "repository": "clj-br/vagas",
+            "url": "https://github.com/clj-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1772,
+        "publishedAt": "2021-10-27T11:55:14Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_944a2f8bc18a924c8efd7dfd",
       "sourceId": "clj-br/vagas#6",
@@ -1916,113 +2002,6 @@
       "freshness": {
         "ageDays": 1833,
         "publishedAt": "2021-08-27T13:43:06Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_5a366599b831700d70e5f7bd",
-      "sourceId": "dev-pp/vagas#68",
-      "title": "[REMOTO] Pessoa Desenvolvedora React Native Middle - Kobe Global Software House",
-      "description": "## Sobre o desafio 📱\n\nNessa posição, você terá a oportunidade de fazer parte de um de um **projeto de uma startup que é referência no mercado fitness impactando a vida de milhares de usuários em todo o Brasil**. Você trabalhará com produtos complexos que envolvem streaming de video, contato com cloud e diversos APIs. Além disso, terá autonomia para desenvolver e implementar novas soluções pensando nas necessidade dos usuários e oferecendo a melhor experiência.\n\n## Local 🌍\n\nRemoto\n\n## Benefícios 🚀\n\n- **Food Voucher:** R$25/dia\n- **Your Way Holidays**: 10 dias de recesso de final de ano sem desconto no tempo de férias\n- **Health Insurance:** plano de saúde, odontológico e seguro de vida 100% coberto e sem coparticipação\n- **Flexible Time:** possibilidade de gerenciar sua agenda com autonomia (e claro, responsabilidade!) \n- **Kober Remote Experience**: cultura remote first com atividades de integração periódicas para Kobers \n- **Kobe Growth:** Plano de Desenvolvimento Individual (PDI) para cada Kober\n- **International Immersion**: cultura internacional com projetos e escritórios fora da BR\n- **The Right Tools**: equipamento de alto nível para sua estrutura de trabalho\n\n## Requisitos ☝️\n\n**O desafio vai ser mais natural se você já tiver**\n- 2 anos de experiência com framework React Native\n- Conhecimento do processo end to end de desenvolvimento \n- Habilidade de comunicação interpessoal \n- Ownership e autonomia na tomada de decisões\n\n**Desejáveis:**\n- Conhecimento em **Redux Saga**\n- Experiência com **Testes Unitários**\n- Experiência com **IAP** (In App Purchases)\n\n\n## Contratação ⚖️\n\nCLT\n\n## Sobre a Kobe\n\nSomos uma empresa que cria apps usando tecnologia, design e empatia. Ajudamos empresas a desenhar, construir e lançar produtos digitais. Alguns cases de sucesso são: Tok & Stok, Agibank, Warren, Decathlon & muitos outros!\n\nPara mais info acesse: https://www.kobe.io/cases\n\n## Curtiu? 💥\n\nSó se candidatar através do link: https://kobe.gupy.io/jobs/1125735\n\nOu enviar um email para: maria.zepeda@kobe.io com o CV anexado.\n\n## Labels\n\n- 🏢 Flexível\n- 🏢 Remoto\n- 👨 Pleno\n- ⚖️ CLT\n- 💰 5k-10k",
-      "excerpt": "## Sobre o desafio 📱 Nessa posição, você terá a oportunidade de fazer parte de um de um **projeto de uma startup que é referência no mercado fitness impactando a vida de milhares de usuários em todo o Brasil**. Você ...",
-      "issueState": "open",
-      "contentHash": "6be5f11b4a255679a2b2855a3743e2c07b1cf3a07c0e8d9fc4e37fc7162e7845",
-      "repository": "dev-pp/vagas",
-      "repositoryUrl": "https://github.com/dev-pp/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "author": {
-        "id": "mariazepe",
-        "name": "mariazepe",
-        "handle": "mariazepe",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/84739583?v=4"
-      },
-      "community": {
-        "id": "dev-pp",
-        "name": "dev-pp",
-        "avatarUrl": "https://github.com/dev-pp.png?size=80",
-        "repository": "dev-pp/vagas",
-        "url": "https://github.com/dev-pp/vagas"
-      },
-      "createdAt": "2021-08-23T17:11:15Z",
-      "updatedAt": "2021-08-23T17:11:15Z",
-      "url": "https://github.com/dev-pp/vagas/issues/68",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "react",
-          "react-native"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_5a366599b831700d70e5f7bd",
-          "sourceId": "dev-pp/vagas#68",
-          "repository": "dev-pp/vagas",
-          "repositoryUrl": "https://github.com/dev-pp/vagas",
-          "url": "https://github.com/dev-pp/vagas/issues/68",
-          "createdAt": "2021-08-23T17:11:15Z",
-          "updatedAt": "2021-08-23T17:11:15Z",
-          "community": {
-            "id": "dev-pp",
-            "name": "dev-pp",
-            "avatarUrl": "https://github.com/dev-pp.png?size=80",
-            "repository": "dev-pp/vagas",
-            "url": "https://github.com/dev-pp/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1837,
-        "publishedAt": "2021-08-23T17:11:15Z",
         "status": "stale"
       }
     }
