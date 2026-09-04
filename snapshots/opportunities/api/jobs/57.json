@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T07:40:33.696Z",
+  "generatedAt": "2026-09-04T17:57:21.826Z",
   "items": {
     "gh_576ba7eaf4dac8a0db6163f3": {
       "id": "gh_576ba7eaf4dac8a0db6163f3",
@@ -19,10 +19,12 @@
         "region": "South America"
       },
       "tags": [
+        "contrato",
         "node.js",
         "remoto"
       ],
       "sourceTags": [
+        "contrato",
         "node.js",
         "remoto"
       ],
@@ -39,8 +41,14 @@
         "repository": "backend-br/vagas",
         "url": "https://github.com/backend-br/vagas"
       },
+      "salary": {
+        "currency": "USD",
+        "min": 4900,
+        "max": 6500,
+        "period": "hour"
+      },
       "createdAt": "2026-09-03T00:00:29Z",
-      "updatedAt": "2026-09-03T00:00:45Z",
+      "updatedAt": "2026-09-04T16:04:52Z",
       "url": "https://github.com/backend-br/vagas/issues/12411",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -51,7 +59,8 @@
       },
       "taxonomy": {
         "areas": [
-          "backend"
+          "backend",
+          "data-ai"
         ],
         "technologies": [
           "nodejs"
@@ -61,11 +70,13 @@
         "workModels": [
           "remote"
         ],
-        "languages": []
+        "languages": [
+          "en"
+        ]
       },
       "dataProvenance": {
         "location": "unknown",
-        "salary": "unknown",
+        "salary": "inferred",
         "seniority": "unknown",
         "workModel": "declared"
       },
@@ -85,10 +96,26 @@
             "repository": "backend-br/vagas",
             "url": "https://github.com/backend-br/vagas"
           }
+        },
+        {
+          "id": "gh_004f401332527ad14da049be",
+          "sourceId": "backend-br/vagas#12414",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12414",
+          "createdAt": "2026-09-04T16:04:33Z",
+          "updatedAt": "2026-09-04T16:04:52Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
         }
       ],
       "deduplication": {
-        "sourceCount": 1
+        "sourceCount": 2
       },
       "freshness": {
         "ageDays": 1,
@@ -301,7 +328,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2784,
+        "ageDays": 2785,
         "publishedAt": "2019-01-19T14:52:18Z",
         "status": "stale"
       }
