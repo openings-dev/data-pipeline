@@ -55,6 +55,10 @@ export function staticApiJobBucketPath(id) {
   return `${API_ROOT}/jobs/${bucket}.json`;
 }
 
+export function staticApiAuthorPath(handle) {
+  return `${API_ROOT}/authors/${encodeURIComponent(String(handle ?? "").trim().replace(/^@+/, ""))}.json`;
+}
+
 export function toFile(snapshotRootDir, relativePath, payload) {
   return {
     relativePath,

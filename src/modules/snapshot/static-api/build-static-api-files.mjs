@@ -17,6 +17,7 @@ import {
   collectRepositoryItems,
   collectSynchronizedRepositories,
 } from "./repository-items.mjs";
+import { buildAuthorArtifacts } from "./authors.mjs";
 function normalizeOpenItems(countrySnapshots, generatedAt) {
   const itemsById = new Map();
   for (const item of collectRepositoryItems(countrySnapshots)) {
@@ -68,6 +69,7 @@ export function buildStaticApiFiles(params) {
   const pageLookup = buildPageLookup(pages);
   const facetIndex = buildFacetIndex(items);
   const facetSummary = buildFacetSummary(facetIndex);
+  const authorArtifacts = buildAuthorArtifacts(items, generatedAt);
   const files = pages.map((page) =>
     toFile(snapshotRootDir, page.file, page.payload),
   );
@@ -89,8 +91,11 @@ export function buildStaticApiFiles(params) {
   files.push(...buildJobBuckets(items, generatedAt).map((bucket) =>
     toFile(snapshotRootDir, bucket.file, bucket.payload),
   ));
+  files.push(...authorArtifacts.map((artifact) =>
+    toFile(snapshotRootDir, artifact.file, artifact.payload),
+  ));
   const manifest = buildStaticApiManifest({ generatedAt, items, pages, facetSummary,
-    facetIndex, communities, aliases, status, statusHistory });
+    facetIndex, communities, aliases, status, statusHistory, authorArtifacts });
   files.push(toFile(snapshotRootDir, staticApiManifestPath(), manifest));
   return files;
 }

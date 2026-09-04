@@ -71,9 +71,14 @@ test("publishes schema 6 structured facets, weighted search fields, and source a
   const statusHistory = payload("api/status-history.json");
   const page = payload("api/pages/page-0001.json");
   const canonicalId = payload("api/job-ids.json").ids[0];
+  const authorProfile = payload("api/authors/author.json");
 
   assert.equal(manifest.schemaVersion, 6);
   assert.equal(manifest.totals.openOpportunities, 1);
+  assert.equal(manifest.totals.authors, 1);
+  assert.equal(manifest.totals.authorArtifactBytes > 0, true);
+  assert.equal(authorProfile.schemaVersion, 1);
+  assert.equal(authorProfile.author.handle, "author");
   assert.equal(manifest.files.aliases, "api/aliases.json");
   assert.equal(manifest.files.status, "api/status.json");
   assert.equal(manifest.files.statusHistory, "api/status-history.json");

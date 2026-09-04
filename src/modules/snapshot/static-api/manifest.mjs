@@ -23,6 +23,7 @@ export function buildStaticApiManifest(params) {
     aliases,
     status,
     statusHistory,
+    authorArtifacts = [],
   } = params;
   const jobIds = items.map((item) => item.id);
 
@@ -45,6 +46,8 @@ export function buildStaticApiManifest(params) {
       communities: communities.items.length,
       countries: Object.keys(facetIndex.dimensions.countries).length,
       regions: Object.keys(facetIndex.dimensions.regions).length,
+      authors: authorArtifacts.length,
+      authorArtifactBytes: authorArtifacts.reduce((total, artifact) => total + artifact.bytes, 0),
     },
     files: {
       facets: staticApiFacetIndexPath(),
