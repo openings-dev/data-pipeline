@@ -7,7 +7,7 @@ function requireText(value, label) {
 
 function hash(value) { return createHash("sha256").update(JSON.stringify(value)).digest("hex"); }
 
-function webPublication({ sourceType, sourceId, title, summary = "", canonicalPath, content, revision = hash(content) }) {
+export function buildWebEntityPublication({ sourceType, sourceId, title, summary = "", canonicalPath, content, revision = hash(content) }) {
   const contentSha256 = hash(content);
   return {
     schemaVersion: 1,
@@ -27,13 +27,13 @@ function publicationsForJob(job) {
   const revision = requireText(job.contentHash, "contentHash");
   const title = requireText(job.title, "title");
   const summary = typeof job.excerpt === "string" ? job.excerpt : "";
-  const publications = [webPublication({ sourceType: "job", sourceId: id, title, summary,
+  const publications = [buildWebEntityPublication({ sourceType: "job", sourceId: id, title, summary,
     canonicalPath: `/jobs/${id}`, content: job, revision })];
 
   const handle = job.author?.handle;
   if (typeof handle === "string" && handle.length > 0) {
     const content = { ...job.author, latestJobId: id };
-    publications.push(webPublication({ sourceType: "author", sourceId: handle,
+    publications.push(buildWebEntityPublication({ sourceType: "author", sourceId: handle,
       title: job.author.name || handle, summary: `Vagas publicadas por ${job.author.name || handle}`,
       canonicalPath: `/authors/${encodeURIComponent(handle)}`, content }));
   }
@@ -41,7 +41,7 @@ function publicationsForJob(job) {
   const repository = job.community?.repository;
   if (typeof repository === "string" && /^[^/]+\/[^/]+$/u.test(repository)) {
     const content = { ...job.community, latestJobId: id };
-    publications.push(webPublication({ sourceType: "community", sourceId: repository,
+    publications.push(buildWebEntityPublication({ sourceType: "community", sourceId: repository,
       title: job.community.name || repository, summary: `Vagas da comunidade ${job.community.name || repository}`,
       canonicalPath: `/communities/${repository.split("/").map(encodeURIComponent).join("/")}`, content }));
   }
