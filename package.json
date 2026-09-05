@@ -6,6 +6,7 @@
   "description": "Public data pipeline for openings.dev",
   "scripts": {
     "build:snapshot": "node scripts/build-opportunities.mjs",
+    "publish:shadow": "node scripts/dispatch-publishing-outbox.mjs",
     "rebuild:static-api": "node scripts/rebuild-static-api.mjs",
     "rebuild:author-profiles": "node scripts/rebuild-author-profiles.mjs",
     "discover:communities": "node src/cli/discover-communities.mjs",

@@ -8,10 +8,8 @@ import { prepareSegmentedSnapshot } from "../modules/snapshot/prepare-segmented-
 import { writeSegmentedSnapshot } from "../modules/snapshot/write-segmented-snapshot.mjs";
 import { readJsonIfExists } from "../modules/storage/read-json-if-exists.mjs";
 import { toSnapshotPath } from "../modules/snapshot/snapshot-paths.mjs";
-import {
-  staticApiStatusHistoryPath,
-  staticApiStatusPath,
-} from "../modules/snapshot/static-api/paths.mjs";
+import { loadPublishingState, updatePublishingOutbox } from "../modules/publishing/prepare-outbox.mjs";
+import { staticApiStatusHistoryPath, staticApiStatusPath } from "../modules/snapshot/static-api/paths.mjs";
 
 export async function runBuild() {
   const config = loadBuildConfig();
@@ -27,6 +25,7 @@ export async function runBuild() {
     throw new Error(`No repositories found after filters in ${config.paths.repositoriesFile}.`);
   }
   const startedAt = new Date().toISOString();
+  const publishingState = await loadPublishingState(config.paths);
   const [previousStatus, previousStatusHistory] = await Promise.all([
     readJsonIfExists(
       toSnapshotPath(config.paths.snapshotRootDir, staticApiStatusPath()),
@@ -86,11 +85,12 @@ export async function runBuild() {
   });
 
   const writeResult = await writeSegmentedSnapshot(snapshot);
+  const publishing = await updatePublishingOutbox(publishingState, snapshot);
   logger.info(writeResult.updated ? "build-updated" : "build-no-changes", {
     repositories_scanned: results.repositoriesScanned,
     failed_repositories: results.failedRepositories.length,
     changed_files: writeResult.changedFiles.length,
   });
 
-  return { updated: writeResult.updated, snapshot: snapshot.globalIndex.payload };
+  return { updated: writeResult.updated, snapshot: snapshot.globalIndex.payload, publishing };
 }

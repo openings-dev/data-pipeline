@@ -44,6 +44,13 @@ jobs:
           SENTRY_RELEASE: ${{ github.sha }}
         run: npm run build:snapshot
 
+      - name: Submit shadow publications
+        env:
+          PUBLISHING_SHADOW_ENDPOINT: ${{ secrets.PUBLISHING_SHADOW_ENDPOINT }}
+          PUBLISHING_CLIENT_ID: ${{ secrets.PUBLISHING_CLIENT_ID }}
+          PUBLISHING_CLIENT_SECRET: ${{ secrets.PUBLISHING_CLIENT_SECRET }}
+        run: npm run publish:shadow
+
       - name: Commit and push snapshot
         run: |
           if git diff --quiet -- snapshots/opportunities; then
@@ -54,6 +61,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add snapshots/opportunities
+          git add snapshots/publishing
           git add -u snapshots
           git commit -m "chore(data): refresh segmented opportunities snapshot"
 
