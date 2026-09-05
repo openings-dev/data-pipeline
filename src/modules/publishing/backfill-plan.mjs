@@ -1,10 +1,10 @@
 import { buildWebEntityPublication } from "./job-publications.mjs";
 
 export const BACKFILL_BUDGET = Object.freeze({
-  maximumPublications: 2_000,
+  maximumPublications: 1_333,
   maximumR2Bytes: 4 * 1024 * 1024 * 1024,
-  estimatedQueueOperationsPerPublication: 2,
-  estimatedD1RowsPerPublication: 10,
+  estimatedQueueOperationsPerPublication: 3,
+  estimatedD1RowsPerPublication: 13,
 });
 
 export function buildPublishingBackfill({ jobs, authors, communities }) {

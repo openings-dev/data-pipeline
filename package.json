@@ -10,6 +10,7 @@
     "smoke:publishing-shadow": "node scripts/smoke-publishing-shadow.mjs",
     "plan:publishing-backfill": "node scripts/plan-publishing-backfill.mjs",
     "run:publishing-backfill": "node scripts/run-publishing-backfill.mjs",
+    "check:publishing-backfill-capacity": "node scripts/check-publishing-backfill-capacity.mjs",
     "rebuild:static-api": "node scripts/rebuild-static-api.mjs",
     "rebuild:author-profiles": "node scripts/rebuild-author-profiles.mjs",
     "discover:communities": "node src/cli/discover-communities.mjs",

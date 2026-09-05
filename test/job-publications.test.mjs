@@ -13,7 +13,7 @@ const job = {
   community: { repository: "acme/jobs", name: "Acme Jobs", url: "https://github.com/acme/jobs" },
 };
 
-test("creates web then all-subscribers push for a genuinely new job", () => {
+test("creates isolated web entities for a genuinely new job", () => {
   const publications = buildNewJobPublications({ previousIds: [], jobs: [job] });
   const [publication] = publications;
   assert.deepEqual(publications.map((item) => item.identity.sourceType), ["job", "author", "community"]);
