@@ -32,7 +32,7 @@ function toPublication(job) {
         adapter: "web.r2",
         operation: "publish",
         required: true,
-        payload: { type: "web.page", entity: {
+        payload: { type: "web.page", route: `/jobs/${id}`, entity: {
           schemaVersion: 1, tenant: "openings", kind: "job", id, revision,
           canonicalPath: `/jobs/${id}`, title, summary, status: "active",
           contentSha256, content: job,
