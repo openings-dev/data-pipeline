@@ -1,0 +1,28 @@
+name: Smoke publishing shadow
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: openings-publishing-shadow-smoke
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    if: github.ref == 'refs/heads/cloudflare-preview'
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38
+        with:
+          node-version: "20"
+      - name: Submit one isolated shadow publication
+        env:
+          PUBLISHING_SHADOW_ENDPOINT: ${{ secrets.PUBLISHING_SHADOW_ENDPOINT }}
+          PUBLISHING_CLIENT_ID: ${{ secrets.PUBLISHING_CLIENT_ID }}
+          PUBLISHING_CLIENT_SECRET: ${{ secrets.PUBLISHING_CLIENT_SECRET }}
+        run: node scripts/smoke-publishing-shadow.mjs
