@@ -22,7 +22,7 @@ test("submits one real web-plus-push envelope without enabling providers", async
 
   assert.deepEqual(result, { accepted: 1, pending: 0 });
   assert.equal(submitted.length, 1);
-  assert.deepEqual(submitted[0].deliveries.map((delivery) => delivery.adapter), ["web.pages", "push.onesignal"]);
+  assert.deepEqual(submitted[0].deliveries.map((delivery) => delivery.adapter), ["web.r2", "push.onesignal"]);
   assert.deepEqual(submitted[0].deliveries[1].dependsOn, [{ deliveryId: "web", state: "verified" }]);
 });
 

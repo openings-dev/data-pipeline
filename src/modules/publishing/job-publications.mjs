@@ -8,6 +8,8 @@ function toPublication(job) {
   const revision = requireText(job.contentHash, "contentHash");
   const title = requireText(job.title, "title");
   const url = `https://openings.dev/jobs/${encodeURIComponent(id)}`;
+  const summary = typeof job.excerpt === "string" ? job.excerpt : "";
+  const contentSha256 = createHash("sha256").update(JSON.stringify(job)).digest("hex");
   return {
     schemaVersion: 1,
     identity: {
@@ -19,7 +21,7 @@ function toPublication(job) {
     },
     canonical: {
       title,
-      summary: typeof job.excerpt === "string" ? job.excerpt : "",
+      summary,
       canonicalUrl: url,
       language: "pt-BR",
     },
@@ -27,15 +29,14 @@ function toPublication(job) {
     deliveries: [
       {
         id: "web",
-        adapter: "web.pages",
+        adapter: "web.r2",
         operation: "publish",
         required: true,
-        payload: {
-          type: "web.page",
-          route: `/jobs/${id}`,
-          expectedTitle: title,
-          expectedCanonicalUrl: url,
-        },
+        payload: { type: "web.page", entity: {
+          schemaVersion: 1, tenant: "openings", kind: "job", id, revision,
+          canonicalPath: `/jobs/${id}`, title, summary, status: "active",
+          contentSha256, content: job,
+        } },
       },
       {
         id: "push",
@@ -62,3 +63,4 @@ export function buildNewJobPublications({ previousIds, jobs }) {
     .sort((left, right) => String(left.id).localeCompare(String(right.id)))
     .map(toPublication);
 }
+import { createHash } from "node:crypto";
