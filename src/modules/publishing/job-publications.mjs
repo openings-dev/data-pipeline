@@ -36,7 +36,7 @@ function toPublication(job) {
         id: "push",
         adapter: "push.onesignal",
         operation: "publish",
-        required: false,
+        required: true,
         dependsOn: [{ deliveryId: "web", state: "verified" }],
         payload: {
           type: "push.notification",

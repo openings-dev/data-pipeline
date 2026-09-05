@@ -16,6 +16,7 @@ test("creates web then all-subscribers push for a genuinely new job", () => {
   assert.equal(publication.identity.tenant, "openings");
   assert.equal(publication.identity.idempotencyKey, `openings:job:gh_123:${job.contentHash}`);
   assert.deepEqual(publication.deliveries[1].dependsOn, [{ deliveryId: "web", state: "verified" }]);
+  assert.equal(publication.deliveries[1].required, true);
   assert.deepEqual(publication.deliveries[1].payload.audience, { type: "all-subscribers" });
   assert.equal(publication.deliveries[1].payload.url, "https://openings.dev/jobs/gh_123");
 });
