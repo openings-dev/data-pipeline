@@ -15,6 +15,12 @@ test("creates web then all-subscribers push for a genuinely new job", () => {
   const [publication] = buildNewJobPublications({ previousIds: [], jobs: [job] });
   assert.equal(publication.identity.tenant, "openings");
   assert.equal(publication.identity.idempotencyKey, `openings:job:gh_123:${job.contentHash}`);
+  assert.deepEqual(publication.deliveries[0].payload, {
+    type: "web.page",
+    route: "/jobs/gh_123",
+    expectedTitle: "Backend Engineer",
+    expectedCanonicalUrl: "https://openings.dev/jobs/gh_123",
+  });
   assert.deepEqual(publication.deliveries[1].dependsOn, [{ deliveryId: "web", state: "verified" }]);
   assert.equal(publication.deliveries[1].required, true);
   assert.deepEqual(publication.deliveries[1].payload.audience, { type: "all-subscribers" });

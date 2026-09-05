@@ -30,7 +30,12 @@ function toPublication(job) {
         adapter: "web.pages",
         operation: "publish",
         required: true,
-        payload: { type: "web.page", route: `/jobs/${id}` },
+        payload: {
+          type: "web.page",
+          route: `/jobs/${id}`,
+          expectedTitle: title,
+          expectedCanonicalUrl: url,
+        },
       },
       {
         id: "push",
