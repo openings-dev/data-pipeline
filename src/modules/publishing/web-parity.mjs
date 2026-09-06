@@ -3,6 +3,24 @@ function escapeHtml(value) {
     .replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 }
 
+export function selectWebParityBatch(publications, { offset = 0, limit = 500 } = {}) {
+  if (!Number.isSafeInteger(offset) || offset < 0) {
+    throw new Error("Parity offset must be a non-negative integer.");
+  }
+  if (!Number.isSafeInteger(limit) || limit < 1 || limit > 500) {
+    throw new Error("Parity limit must be between 1 and 500.");
+  }
+  const selected = publications.slice(offset, offset + limit);
+  const nextOffset = Math.min(offset + selected.length, publications.length);
+  return {
+    publications: selected,
+    offset,
+    nextOffset,
+    total: publications.length,
+    complete: nextOffset >= publications.length,
+  };
+}
+
 export async function verifyWebPublication(response, publication, canonicalBaseUrl = "https://openings.dev") {
   const entity = publication.deliveries[0].payload.entity;
   const issues = [];

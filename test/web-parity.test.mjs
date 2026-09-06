@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  selectWebParityBatch,
   verifyWebPublication,
   verifyWebPublicationWithRetry,
 } from "../src/modules/publishing/web-parity.mjs";
@@ -48,4 +49,29 @@ test("still rejects a persistent generic shell after the bounded attempts", asyn
     "missing publishing revision", "missing title", "missing canonical URL",
   ]);
   assert.equal(attempts, 3);
+});
+
+test("selects a deterministic bounded parity batch", () => {
+  const publications = Array.from({ length: 7 }, (_, index) => ({ index }));
+  assert.deepEqual(selectWebParityBatch(publications, { offset: 2, limit: 3 }), {
+    publications: [{ index: 2 }, { index: 3 }, { index: 4 }],
+    offset: 2,
+    nextOffset: 5,
+    total: 7,
+    complete: false,
+  });
+  assert.deepEqual(selectWebParityBatch(publications, { offset: 5, limit: 3 }), {
+    publications: [{ index: 5 }, { index: 6 }],
+    offset: 5,
+    nextOffset: 7,
+    total: 7,
+    complete: true,
+  });
+});
+
+test("rejects parity batches that could create an unbounded live scan", () => {
+  const publications = Array.from({ length: 1_321 }, (_, index) => ({ index }));
+  assert.throws(() => selectWebParityBatch(publications, { offset: 0, limit: 0 }), /between 1 and 500/u);
+  assert.throws(() => selectWebParityBatch(publications, { offset: 0, limit: 501 }), /between 1 and 500/u);
+  assert.throws(() => selectWebParityBatch(publications, { offset: -1, limit: 1 }), /non-negative/u);
 });

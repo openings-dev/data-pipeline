@@ -1,18 +1,25 @@
 import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { buildPublishingBackfill } from "../src/modules/publishing/backfill-plan.mjs";
-import { verifyWebPublicationWithRetry } from "../src/modules/publishing/web-parity.mjs";
+import {
+  selectWebParityBatch,
+  verifyWebPublicationWithRetry,
+} from "../src/modules/publishing/web-parity.mjs";
 
 const baseUrl = (process.env.PUBLISHING_WEB_BASE_URL || "https://cloudflare-preview.openings-dev-web.pages.dev").replace(/\/+$/u, "");
-const plan = await loadPlan();
+const completePlan = await loadPlan();
+const batch = selectWebParityBatch(completePlan.publications, {
+  offset: integer("PARITY_OFFSET", 0),
+  limit: integer("PARITY_LIMIT", 500),
+});
 const failures = [];
 // Keep the sustained preview load below the free Pages-to-Worker proxy's
 // transient fallback threshold while still validating every public route.
 const concurrency = 1;
 let cursor = 0;
 await Promise.all(Array.from({ length: concurrency }, async () => {
-  while (cursor < plan.publications.length) {
-    const publication = plan.publications[cursor++];
+  while (cursor < batch.publications.length) {
+    const publication = batch.publications[cursor++];
     const route = publication.deliveries[0].payload.entity.canonicalPath;
     const issues = await verifyWebPublicationWithRetry(
       () => fetch(`${baseUrl}${route}`, { headers: { "cache-control": "no-cache" } }),
@@ -23,9 +30,13 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
 }));
 
 process.stdout.write(`${JSON.stringify({
-  checked: plan.publications.length,
-  passed: plan.publications.length - failures.length,
+  checked: batch.publications.length,
+  passed: batch.publications.length - failures.length,
   failed: failures.length,
+  offset: batch.offset,
+  nextOffset: batch.nextOffset,
+  total: batch.total,
+  complete: batch.complete,
   failureSamples: failures.slice(0, 25),
 }, null, 2)}\n`);
 if (failures.length > 0) process.exitCode = 1;
@@ -42,3 +53,8 @@ async function loadPlan() {
 
 function json(file) { return file.endsWith(".json"); }
 async function readJson(path) { return JSON.parse(await readFile(path, "utf8")); }
+function integer(name, fallback) {
+  const value = process.env[name] ?? String(fallback);
+  if (!/^\d+$/u.test(value)) throw new Error(`${name} must be a non-negative integer.`);
+  return Number(value);
+}
