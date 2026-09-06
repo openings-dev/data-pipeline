@@ -21,6 +21,19 @@ export function selectWebParityBatch(publications, { offset = 0, limit = 500 } =
   };
 }
 
+export function createWebParityRequest(url, timeoutMs = 10_000) {
+  if (!Number.isSafeInteger(timeoutMs) || timeoutMs < 1 || timeoutMs > 15_000) {
+    throw new Error("Parity request timeout must be between 1 and 15000 milliseconds.");
+  }
+  return {
+    url,
+    init: {
+      headers: { "cache-control": "no-cache" },
+      signal: AbortSignal.timeout(timeoutMs),
+    },
+  };
+}
+
 export async function verifyWebPublication(response, publication, canonicalBaseUrl = "https://openings.dev") {
   const entity = publication.deliveries[0].payload.entity;
   const issues = [];

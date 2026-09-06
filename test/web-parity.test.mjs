@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import {
+  createWebParityRequest,
   selectWebParityBatch,
   verifyWebPublication,
   verifyWebPublicationWithRetry,
@@ -74,4 +75,13 @@ test("rejects parity batches that could create an unbounded live scan", () => {
   assert.throws(() => selectWebParityBatch(publications, { offset: 0, limit: 0 }), /between 1 and 500/u);
   assert.throws(() => selectWebParityBatch(publications, { offset: 0, limit: 501 }), /between 1 and 500/u);
   assert.throws(() => selectWebParityBatch(publications, { offset: -1, limit: 1 }), /non-negative/u);
+});
+
+test("bounds every live parity request with an abort signal", () => {
+  const request = createWebParityRequest("https://preview.test/jobs/job-1", 5_000);
+  assert.equal(request.url, "https://preview.test/jobs/job-1");
+  assert.deepEqual(request.init.headers, { "cache-control": "no-cache" });
+  assert.equal(request.init.signal instanceof AbortSignal, true);
+  assert.throws(() => createWebParityRequest("https://preview.test/jobs/job-1", 0), /between 1 and 15000/u);
+  assert.throws(() => createWebParityRequest("https://preview.test/jobs/job-1", 15_001), /between 1 and 15000/u);
 });

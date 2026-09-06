@@ -2,12 +2,14 @@ import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { buildPublishingBackfill } from "../src/modules/publishing/backfill-plan.mjs";
 import {
+  createWebParityRequest,
   selectWebParityBatch,
   verifyWebPublicationWithRetry,
 } from "../src/modules/publishing/web-parity.mjs";
 
 const baseUrl = (process.env.PUBLISHING_WEB_BASE_URL || "https://cloudflare-preview.openings-dev-web.pages.dev").replace(/\/+$/u, "");
 const completePlan = await loadPlan();
+const requestTimeoutMs = integer("PARITY_REQUEST_TIMEOUT_MS", 10_000);
 const batch = selectWebParityBatch(completePlan.publications, {
   offset: integer("PARITY_OFFSET", 0),
   limit: integer("PARITY_LIMIT", 500),
@@ -21,9 +23,11 @@ await Promise.all(Array.from({ length: concurrency }, async () => {
   while (cursor < batch.publications.length) {
     const publication = batch.publications[cursor++];
     const route = publication.deliveries[0].payload.entity.canonicalPath;
+    const request = createWebParityRequest(`${baseUrl}${route}`, requestTimeoutMs);
     const issues = await verifyWebPublicationWithRetry(
-      () => fetch(`${baseUrl}${route}`, { headers: { "cache-control": "no-cache" } }),
+      () => fetch(request.url, request.init),
       publication,
+      { maximumAttempts: 1 },
     );
     if (issues.length > 0) failures.push({ route, issues });
   }
