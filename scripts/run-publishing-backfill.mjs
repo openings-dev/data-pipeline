@@ -1,6 +1,6 @@
 import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
-import { buildPublishingBackfill } from "../src/modules/publishing/backfill-plan.mjs";
+import { buildPublishingBackfill, selectPublishingBackfillBatch } from "../src/modules/publishing/backfill-plan.mjs";
 import { dispatchBackfill } from "../src/modules/publishing/dispatch-backfill.mjs";
 import { createPublishingSender } from "../src/modules/publishing/publishing-client.mjs";
 
@@ -11,7 +11,10 @@ const [jobFiles, authorFiles, communities] = await Promise.all([
 ]);
 const jobs = (await Promise.all(jobFiles.filter(json).map(async (file) => Object.values((await readJson(resolve(apiRoot, "jobs", file))).items ?? {})))).flat();
 const authors = await Promise.all(authorFiles.filter(json).map((file) => readJson(resolve(apiRoot, "authors", file))));
-const plan = buildPublishingBackfill({ jobs, authors, communities: communities.items ?? [] });
+const completePlan = buildPublishingBackfill({ jobs, authors, communities: communities.items ?? [] });
+const plan = selectPublishingBackfillBatch(completePlan.publications, {
+  offset: integer("BACKFILL_OFFSET", 0), limit: integer("BACKFILL_LIMIT", 500),
+});
 const send = createPublishingSender({ endpoint: required("PUBLISHING_SHADOW_ENDPOINT"),
   clientId: required("PUBLISHING_CLIENT_ID"), secret: required("PUBLISHING_CLIENT_SECRET") });
 const result = await dispatchBackfill(plan.publications, send, 4);
@@ -21,3 +24,8 @@ if (result.failures.length) throw new Error(`Backfill retained ${result.failures
 function required(name) { const value = process.env[name]; if (!value) throw new Error(`${name} is required.`); return value; }
 function json(file) { return file.endsWith(".json"); }
 async function readJson(path) { return JSON.parse(await readFile(path, "utf8")); }
+function integer(name, fallback) {
+  const value = process.env[name] ?? String(fallback);
+  if (!/^\d+$/u.test(value)) throw new Error(`${name} must be a non-negative integer.`);
+  return Number(value);
+}

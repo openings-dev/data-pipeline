@@ -4,7 +4,8 @@ export const BACKFILL_BUDGET = Object.freeze({
   maximumPublications: 1_333,
   maximumR2Bytes: 4 * 1024 * 1024 * 1024,
   estimatedQueueOperationsPerPublication: 3,
-  estimatedD1RowsPerPublication: 13,
+  estimatedD1RowsReadPerPublication: 3_000,
+  estimatedD1RowsWrittenPerPublication: 65,
 });
 
 export function buildPublishingBackfill({ jobs, authors, communities }) {
@@ -17,19 +18,32 @@ export function buildPublishingBackfill({ jobs, authors, communities }) {
     `${item.identity.sourceType}:${item.identity.sourceId}`,
     item,
   ])).values()];
-  const r2Bytes = unique.reduce((total, item) => total
-    + Buffer.byteLength(JSON.stringify(item.deliveries[0].payload.entity.content)), 0);
+  const r2Bytes = estimateR2Bytes(unique);
   if (unique.length > BACKFILL_BUDGET.maximumPublications) throw new Error("Backfill exceeds the free queue-operation budget.");
   if (r2Bytes > BACKFILL_BUDGET.maximumR2Bytes) throw new Error("Backfill exceeds the internal R2 storage budget.");
+  return { publications: unique, estimate: estimatePublications(unique, r2Bytes) };
+}
+
+export function selectPublishingBackfillBatch(publications, { offset = 0, limit = 500 } = {}) {
+  if (!Number.isSafeInteger(offset) || offset < 0) throw new Error("Backfill offset must be a non-negative integer.");
+  if (!Number.isSafeInteger(limit) || limit < 1 || limit > 500) throw new Error("Backfill limit must be between 1 and 500.");
+  const selected = publications.slice(offset, offset + limit);
+  return { publications: selected, estimate: estimatePublications(selected) };
+}
+
+function estimatePublications(publications, r2Bytes = estimateR2Bytes(publications)) {
   return {
-    publications: unique,
-    estimate: {
-      publications: unique.length,
-      queueOperations: unique.length * BACKFILL_BUDGET.estimatedQueueOperationsPerPublication,
-      d1Rows: unique.length * BACKFILL_BUDGET.estimatedD1RowsPerPublication,
-      r2Bytes,
-    },
+    publications: publications.length,
+    queueOperations: publications.length * BACKFILL_BUDGET.estimatedQueueOperationsPerPublication,
+    d1RowsRead: publications.length * BACKFILL_BUDGET.estimatedD1RowsReadPerPublication,
+    d1RowsWritten: publications.length * BACKFILL_BUDGET.estimatedD1RowsWrittenPerPublication,
+    r2Bytes,
   };
+}
+
+function estimateR2Bytes(publications) {
+  return publications.reduce((total, item) => total
+    + Buffer.byteLength(JSON.stringify(item.deliveries[0].payload.entity.content)), 0);
 }
 
 function jobPublication(job) {
