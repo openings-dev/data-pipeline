@@ -1,24 +1,24 @@
 import { readFile, readdir } from "node:fs/promises";
 import { resolve } from "node:path";
 import { buildPublishingBackfill } from "../src/modules/publishing/backfill-plan.mjs";
-import { verifyWebPublication } from "../src/modules/publishing/web-parity.mjs";
+import { verifyWebPublicationWithRetry } from "../src/modules/publishing/web-parity.mjs";
 
 const baseUrl = (process.env.PUBLISHING_WEB_BASE_URL || "https://cloudflare-preview.openings-dev-web.pages.dev").replace(/\/+$/u, "");
 const plan = await loadPlan();
 const failures = [];
-const concurrency = 5;
+// Keep the sustained preview load below the free Pages-to-Worker proxy's
+// transient fallback threshold while still validating every public route.
+const concurrency = 1;
 let cursor = 0;
 await Promise.all(Array.from({ length: concurrency }, async () => {
   while (cursor < plan.publications.length) {
     const publication = plan.publications[cursor++];
     const route = publication.deliveries[0].payload.entity.canonicalPath;
-    try {
-      const response = await fetch(`${baseUrl}${route}`, { headers: { "cache-control": "no-cache" } });
-      const issues = await verifyWebPublication(response, publication);
-      if (issues.length > 0) failures.push({ route, issues });
-    } catch (error) {
-      failures.push({ route, issues: [error instanceof Error ? error.message : String(error)] });
-    }
+    const issues = await verifyWebPublicationWithRetry(
+      () => fetch(`${baseUrl}${route}`, { headers: { "cache-control": "no-cache" } }),
+      publication,
+    );
+    if (issues.length > 0) failures.push({ route, issues });
   }
 }));
 

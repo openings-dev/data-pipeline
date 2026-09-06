@@ -14,3 +14,32 @@ export async function verifyWebPublication(response, publication, canonicalBaseU
   if (!html.includes(escapeHtml(canonicalUrl))) issues.push("missing canonical URL");
   return issues;
 }
+
+export async function verifyWebPublicationWithRetry(fetchPublication, publication, {
+  canonicalBaseUrl = "https://openings.dev",
+  maximumAttempts = 3,
+  retryDelayMs = 1_000,
+} = {}) {
+  if (!Number.isSafeInteger(maximumAttempts) || maximumAttempts < 1 || maximumAttempts > 5) {
+    throw new Error("Maximum parity attempts must be between one and five.");
+  }
+  if (!Number.isSafeInteger(retryDelayMs) || retryDelayMs < 0 || retryDelayMs > 10_000) {
+    throw new Error("Parity retry delay must be between zero and ten seconds.");
+  }
+
+  let issues = [];
+  for (let attempt = 1; attempt <= maximumAttempts; attempt += 1) {
+    try {
+      issues = await verifyWebPublication(
+        await fetchPublication(),
+        publication,
+        canonicalBaseUrl,
+      );
+    } catch (error) {
+      issues = [error instanceof Error ? error.message : String(error)];
+    }
+    if (issues.length === 0 || attempt === maximumAttempts) return issues;
+    if (retryDelayMs > 0) await new Promise((resolve) => setTimeout(resolve, retryDelayMs));
+  }
+  return issues;
+}
