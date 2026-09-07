@@ -16,6 +16,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     timeout-minutes: 25
+    environment: production
 
     steps:
       - name: Checkout

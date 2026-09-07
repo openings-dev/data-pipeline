@@ -6,6 +6,7 @@ const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
 test("scheduled publishing is explicitly gated and uses production-only credentials", async () => {
   const workflow = await read(".github/workflows/update-opportunities.yml");
+  assert.match(workflow, /jobs:\s+[\s\S]*?update:\s+[\s\S]*?environment: production/u);
   assert.match(workflow, /if: vars\.PUBLISHING_PRODUCTION_ENABLED == 'true'/u);
   assert.match(workflow, /PUBLISHING_ENDPOINT: \$\{\{ secrets\.PUBLISHING_ENDPOINT \}\}/u);
   assert.match(workflow, /run: npm run publish:production/u);
