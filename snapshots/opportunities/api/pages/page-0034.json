@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-09-07T02:07:55.370Z",
+  "generatedAt": "2026-09-07T07:45:03.326Z",
   "page": 34,
   "pageSize": 20,
   "nextPage": "api/pages/page-0035.json",
   "ids": [
+    "gh_e43426d1a2257902e81afbcb",
+    "gh_944a2f8bc18a924c8efd7dfd",
     "gh_6ee8b9c08295773ddc3dd28a",
     "gh_d706e42e62ef4c1e1fd54beb",
     "gh_4aa20f1f7c60c33717b2ed5a",
@@ -21,11 +23,181 @@
     "gh_7a360bd953f1dd6c55918e2e",
     "gh_4f906f266ed3d77de496323a",
     "gh_207da1ec74fa38e9ac0b5969",
-    "gh_b25d50b22a63ca6c3f5b072d",
-    "gh_5a366599b831700d70e5f7bd",
-    "gh_ce181d02023ff49bf298d075"
+    "gh_b25d50b22a63ca6c3f5b072d"
   ],
   "items": [
+    {
+      "id": "gh_e43426d1a2257902e81afbcb",
+      "sourceId": "clj-br/vagas#7",
+      "title": "Vagas da Pipo Saúde com localização incorreta",
+      "description": "Ao que parece o job board da Pipo Saúde (https://pipo-saude.breezy.hr/), usa Polyglot (https://airbnb.io/polyglot.js/) para lidar com traduções, o que faz com que alguns textos apareçam não traduzidos se o JS não for executado na página, o que faz com que a localização da vaga apareça como `%LABEL_POSITION_TYPE_WORLDWIDE%`.",
+      "excerpt": "Ao que parece o job board da Pipo Saúde (https://pipo-saude.breezy.hr/), usa Polyglot (https://airbnb.io/polyglot.js/) para lidar com traduções, o que faz com que alguns textos apareçam não traduzidos se o JS não for ...",
+      "issueState": "open",
+      "contentHash": "ba1fea8a750d484a063a9daeefbe069f43ce7e5d5895b4c29e7a2d3770a8f3be",
+      "repository": "clj-br/vagas",
+      "repositoryUrl": "https://github.com/clj-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "bug",
+        "help wanted"
+      ],
+      "sourceTags": [
+        "bug",
+        "help wanted"
+      ],
+      "author": {
+        "id": "renatoalencar",
+        "name": "renatoalencar",
+        "handle": "renatoalencar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6964593?v=4"
+      },
+      "community": {
+        "id": "clj-br",
+        "name": "clj-br",
+        "avatarUrl": "https://github.com/clj-br.png?size=80",
+        "repository": "clj-br/vagas",
+        "url": "https://github.com/clj-br/vagas"
+      },
+      "createdAt": "2021-10-27T11:55:14Z",
+      "updatedAt": "2021-11-01T20:50:53Z",
+      "url": "https://github.com/clj-br/vagas/issues/7",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_e43426d1a2257902e81afbcb",
+          "sourceId": "clj-br/vagas#7",
+          "repository": "clj-br/vagas",
+          "repositoryUrl": "https://github.com/clj-br/vagas",
+          "url": "https://github.com/clj-br/vagas/issues/7",
+          "createdAt": "2021-10-27T11:55:14Z",
+          "updatedAt": "2021-11-01T20:50:53Z",
+          "community": {
+            "id": "clj-br",
+            "name": "clj-br",
+            "avatarUrl": "https://github.com/clj-br.png?size=80",
+            "repository": "clj-br/vagas",
+            "url": "https://github.com/clj-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1775,
+        "publishedAt": "2021-10-27T11:55:14Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_944a2f8bc18a924c8efd7dfd",
+      "sourceId": "clj-br/vagas#6",
+      "title": "Vagas da Nubank parecem vir com vagas que não são Clojure",
+      "description": "Algumas vagas de infosec e outras de dados parecem não ser propriamente Clojure, o que pode criar ruído para pessoas que procuram vagas específicas para Clojure. Ainda precisamos discutir o que é possível de ser feito.",
+      "excerpt": "Algumas vagas de infosec e outras de dados parecem não ser propriamente Clojure, o que pode criar ruído para pessoas que procuram vagas específicas para Clojure. Ainda precisamos discutir o que é possível de ser feito.",
+      "issueState": "open",
+      "contentHash": "b77ad83c71b2bcb74a4a6d5623fe762775c6adbdf6332b330f9b67e23be8ccd1",
+      "repository": "clj-br/vagas",
+      "repositoryUrl": "https://github.com/clj-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "bug",
+        "help wanted"
+      ],
+      "sourceTags": [
+        "bug",
+        "help wanted"
+      ],
+      "author": {
+        "id": "renatoalencar",
+        "name": "renatoalencar",
+        "handle": "renatoalencar",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/6964593?v=4"
+      },
+      "community": {
+        "id": "clj-br",
+        "name": "clj-br",
+        "avatarUrl": "https://github.com/clj-br.png?size=80",
+        "repository": "clj-br/vagas",
+        "url": "https://github.com/clj-br/vagas"
+      },
+      "createdAt": "2021-10-27T11:49:56Z",
+      "updatedAt": "2021-12-01T17:40:04Z",
+      "url": "https://github.com/clj-br/vagas/issues/6",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_944a2f8bc18a924c8efd7dfd",
+          "sourceId": "clj-br/vagas#6",
+          "repository": "clj-br/vagas",
+          "repositoryUrl": "https://github.com/clj-br/vagas",
+          "url": "https://github.com/clj-br/vagas/issues/6",
+          "createdAt": "2021-10-27T11:49:56Z",
+          "updatedAt": "2021-12-01T17:40:04Z",
+          "community": {
+            "id": "clj-br",
+            "name": "clj-br",
+            "avatarUrl": "https://github.com/clj-br.png?size=80",
+            "repository": "clj-br/vagas",
+            "url": "https://github.com/clj-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1775,
+        "publishedAt": "2021-10-27T11:49:56Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_6ee8b9c08295773ddc3dd28a",
       "sourceId": "remote-job-boards/software-engineering#7440",
@@ -1830,227 +2002,6 @@
       "freshness": {
         "ageDays": 1836,
         "publishedAt": "2021-08-27T13:43:06Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_5a366599b831700d70e5f7bd",
-      "sourceId": "dev-pp/vagas#68",
-      "title": "[REMOTO] Pessoa Desenvolvedora React Native Middle - Kobe Global Software House",
-      "description": "## Sobre o desafio 📱\n\nNessa posição, você terá a oportunidade de fazer parte de um de um **projeto de uma startup que é referência no mercado fitness impactando a vida de milhares de usuários em todo o Brasil**. Você trabalhará com produtos complexos que envolvem streaming de video, contato com cloud e diversos APIs. Além disso, terá autonomia para desenvolver e implementar novas soluções pensando nas necessidade dos usuários e oferecendo a melhor experiência.\n\n## Local 🌍\n\nRemoto\n\n## Benefícios 🚀\n\n- **Food Voucher:** R$25/dia\n- **Your Way Holidays**: 10 dias de recesso de final de ano sem desconto no tempo de férias\n- **Health Insurance:** plano de saúde, odontológico e seguro de vida 100% coberto e sem coparticipação\n- **Flexible Time:** possibilidade de gerenciar sua agenda com autonomia (e claro, responsabilidade!) \n- **Kober Remote Experience**: cultura remote first com atividades de integração periódicas para Kobers \n- **Kobe Growth:** Plano de Desenvolvimento Individual (PDI) para cada Kober\n- **International Immersion**: cultura internacional com projetos e escritórios fora da BR\n- **The Right Tools**: equipamento de alto nível para sua estrutura de trabalho\n\n## Requisitos ☝️\n\n**O desafio vai ser mais natural se você já tiver**\n- 2 anos de experiência com framework React Native\n- Conhecimento do processo end to end de desenvolvimento \n- Habilidade de comunicação interpessoal \n- Ownership e autonomia na tomada de decisões\n\n**Desejáveis:**\n- Conhecimento em **Redux Saga**\n- Experiência com **Testes Unitários**\n- Experiência com **IAP** (In App Purchases)\n\n\n## Contratação ⚖️\n\nCLT\n\n## Sobre a Kobe\n\nSomos uma empresa que cria apps usando tecnologia, design e empatia. Ajudamos empresas a desenhar, construir e lançar produtos digitais. Alguns cases de sucesso são: Tok & Stok, Agibank, Warren, Decathlon & muitos outros!\n\nPara mais info acesse: https://www.kobe.io/cases\n\n## Curtiu? 💥\n\nSó se candidatar através do link: https://kobe.gupy.io/jobs/1125735\n\nOu enviar um email para: maria.zepeda@kobe.io com o CV anexado.\n\n## Labels\n\n- 🏢 Flexível\n- 🏢 Remoto\n- 👨 Pleno\n- ⚖️ CLT\n- 💰 5k-10k",
-      "excerpt": "## Sobre o desafio 📱 Nessa posição, você terá a oportunidade de fazer parte de um de um **projeto de uma startup que é referência no mercado fitness impactando a vida de milhares de usuários em todo o Brasil**. Você ...",
-      "issueState": "open",
-      "contentHash": "6be5f11b4a255679a2b2855a3743e2c07b1cf3a07c0e8d9fc4e37fc7162e7845",
-      "repository": "dev-pp/vagas",
-      "repositoryUrl": "https://github.com/dev-pp/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "author": {
-        "id": "mariazepe",
-        "name": "mariazepe",
-        "handle": "mariazepe",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/84739583?v=4"
-      },
-      "community": {
-        "id": "dev-pp",
-        "name": "dev-pp",
-        "avatarUrl": "https://github.com/dev-pp.png?size=80",
-        "repository": "dev-pp/vagas",
-        "url": "https://github.com/dev-pp/vagas"
-      },
-      "createdAt": "2021-08-23T17:11:15Z",
-      "updatedAt": "2021-08-23T17:11:15Z",
-      "url": "https://github.com/dev-pp/vagas/issues/68",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "react",
-          "react-native"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_5a366599b831700d70e5f7bd",
-          "sourceId": "dev-pp/vagas#68",
-          "repository": "dev-pp/vagas",
-          "repositoryUrl": "https://github.com/dev-pp/vagas",
-          "url": "https://github.com/dev-pp/vagas/issues/68",
-          "createdAt": "2021-08-23T17:11:15Z",
-          "updatedAt": "2021-08-23T17:11:15Z",
-          "community": {
-            "id": "dev-pp",
-            "name": "dev-pp",
-            "avatarUrl": "https://github.com/dev-pp.png?size=80",
-            "repository": "dev-pp/vagas",
-            "url": "https://github.com/dev-pp/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1840,
-        "publishedAt": "2021-08-23T17:11:15Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_ce181d02023ff49bf298d075",
-      "sourceId": "reactrecife/vagas#6",
-      "title": "[Remoto] Pessoa Desenvolvedora Front-End (React.js) @ Kobe - International Project",
-      "description": "## Descrição da vaga\n\nE se você pudesse atuar em um **projeto de uma grande empresa americana que vai desenvolver uma solução para uma das maiores fabricantes de caminhões do mundo**?\nOu, então, se você pudesse trabalhar no **projeto de uma das maiores cervejarias do mundo que vai revolucionar a experiência das pessoas na compra de bebidas**?\n\nComo Kober, você fará parte do nosso time de Engenharia, se juntando a um time de pessoas **talentosas** e **apaixonadas** por desenvolver soluções que merecem ser compartilhadas.\n\nSomos uma startup que ajuda empresas a **desenhar, criar e lançar** produtos digitais. Temos 7 anos de história e uma mentalidade **jovem** e **ambiciosa**. Criamos apps, plataformas e consultorias que trazem ideias à vida **impactando mais de 40.000.000 de pessoas** com as nossas soluções. E este é só o início.\n\nVocê estará em um ambiente **ágil** reconhecido como **Great Place to Work** em 2018, 2019 e 2020. Nos últimos dois anos estamos no **top 3** das melhores pequenas empresas para se trabalhar no RS e no **top 9** do mesmo ranking em território nacional. \n\nA Kobe possui **cultura remote-first**. Não importa onde você estiver, nossa cultura chega até você!\n\nSuas principais responsabilidades serão:\n\n- **Desenvolver aplicativos Web** em **Front-End** (React.js);\n- Dar **suporte a todo ciclo de vida** de aplicações: concepção, design, teste, release e suporte a novas e existentes funcionalidades;\n- **Analisar, compreender e discutir os requisitos técnicos e funcionais**, propondo a melhor abordagem para o desenvolvimento e testes;\n- Acompanhar entregas específicas com um **espírito inovador, melhoria contínua e obsessão por superar as expectativas do cliente**;\n- **Contribuir** com um time em constante crescimento propondo novos códigos, componentes e processos para melhorar nossa prática de desenvolvimento.\n\n## Benefícios\n\n- Plano de saúde e odontológico\n- Seguro de vida\n- 10 dias de recesso sem desconto das férias\n\n#### Diferenciais\n\n- Plano de Desenvolvimento Individual\n- Os melhores equipamentos para uma estrutura de trabalho a nível Kobe\n- Cultura internacional com projetos e escritório fora do BR\n\n## Requisitos\n\n**O desafio vai ser mais natural se você tiver:**\n\n- Experiência de **3+ anos** no desenvolvimento de aplicativos Web (React.js);\n- Conhecimento em **conversação no idioma inglês**;\n- Atuação nas diferentes **etapas do ciclo de vida** de um app;\n- Vivência atuando em **times ágeis**.\n\nPontos extra que poderão fazer teu perfil se **destacar**:\n\n- Conhecimento em **Node.js** e **VTEX.io**;\n- Experiência com **Next.js**;\n- **Autonomia** para a tomada de decisões;\n- Habilidade de **comunicação interpessoal**, com clientes e team members.\n\n## Contratação\n\nCLT\n\n## Nossa empresa\n\nA Kobe é uma **empresa jovem, cheia de criatividade e talento**! Somos movidos por **melhorar a vida das pessoas desafiando a forma como vivemos**. Unimos pessoas apaixonadas por solucionar problemas usando **Tecnologia**, **Design** e **empatia**. Nosso estilo de trabalho é desenhado para que os Kobers possam **construir a carreira dos seus sonhos**, trabalhando juntos e unindo o melhor de dois mundos: **um ambiente descontraído e colaborativo com altos desafios e responsabilidades**.\n\nNa Kobe, você vai estar próximo das **melhores tecnologias do mercado**, trabalhar em **projetos desafiadores** e receber suporte de **profissionais de alta performance**. Nós acreditamos que a Tecnologia tem o poder de transformar nossa realidade e trabalhamos duro para deixar esse legado no mundo. Se você também acredita nisso, este pode ser o seu lugar!\n\n## Como se candidatar\n\nEnvie um email para patricia.guedes@kobe.io demonstrando interesse na vaga ou me chama no [Linkedin](https://www.linkedin.com/in/patriciaguedes/).\n\n## Labels\n\n- 🏢 Flexível\n- 🏢 Remoto\n\n- 👨 Pleno\n- 👨 Sênior\n\n- ⚖️ CLT",
-      "excerpt": "## Descrição da vaga E se você pudesse atuar em um **projeto de uma grande empresa americana que vai desenvolver uma solução para uma das maiores fabricantes de caminhões do mundo**? Ou, então, se você pudesse trabalh...",
-      "issueState": "open",
-      "contentHash": "9868ff95d26bc22d52c26e5393018d8e6c250f121018f8baafae7ef088f59eba",
-      "repository": "reactrecife/vagas",
-      "repositoryUrl": "https://github.com/reactrecife/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "node",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "node",
-        "pleno",
-        "react",
-        "remote"
-      ],
-      "author": {
-        "id": "patriciagueds",
-        "name": "patriciagueds",
-        "handle": "patriciagueds",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/86254723?v=4"
-      },
-      "community": {
-        "id": "reactrecife",
-        "name": "reactrecife",
-        "avatarUrl": "https://github.com/reactrecife.png?size=80",
-        "repository": "reactrecife/vagas",
-        "url": "https://github.com/reactrecife/vagas"
-      },
-      "createdAt": "2021-08-13T18:54:28Z",
-      "updatedAt": "2021-08-13T18:54:28Z",
-      "url": "https://github.com/reactrecife/vagas/issues/6",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "frontend",
-          "support"
-        ],
-        "technologies": [
-          "nextjs",
-          "nodejs",
-          "react"
-        ],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_ce181d02023ff49bf298d075",
-          "sourceId": "reactrecife/vagas#6",
-          "repository": "reactrecife/vagas",
-          "repositoryUrl": "https://github.com/reactrecife/vagas",
-          "url": "https://github.com/reactrecife/vagas/issues/6",
-          "createdAt": "2021-08-13T18:54:28Z",
-          "updatedAt": "2021-08-13T18:54:28Z",
-          "community": {
-            "id": "reactrecife",
-            "name": "reactrecife",
-            "avatarUrl": "https://github.com/reactrecife.png?size=80",
-            "repository": "reactrecife/vagas",
-            "url": "https://github.com/reactrecife/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1850,
-        "publishedAt": "2021-08-13T18:54:28Z",
         "status": "stale"
       }
     }
