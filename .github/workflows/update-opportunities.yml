@@ -47,10 +47,10 @@ jobs:
       - name: Submit production publications
         if: vars.PUBLISHING_PRODUCTION_ENABLED == 'true'
         env:
-          PUBLISHING_SHADOW_ENDPOINT: ${{ secrets.PUBLISHING_SHADOW_ENDPOINT }}
+          PUBLISHING_ENDPOINT: ${{ secrets.PUBLISHING_ENDPOINT }}
           PUBLISHING_CLIENT_ID: ${{ secrets.PUBLISHING_CLIENT_ID }}
           PUBLISHING_CLIENT_SECRET: ${{ secrets.PUBLISHING_CLIENT_SECRET }}
-        run: npm run publish:shadow
+        run: npm run publish:production
 
       - name: Commit and push snapshot
         run: |
