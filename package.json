@@ -6,6 +6,13 @@
   "description": "Public data pipeline for openings.dev",
   "scripts": {
     "build:snapshot": "node scripts/build-opportunities.mjs",
+    "publish:shadow": "node scripts/dispatch-publishing-outbox.mjs",
+    "smoke:publishing-shadow": "node scripts/smoke-publishing-shadow.mjs",
+    "plan:publishing-backfill": "node scripts/plan-publishing-backfill.mjs",
+    "run:publishing-backfill": "node scripts/run-publishing-backfill.mjs",
+    "check:publishing-backfill-capacity": "node scripts/check-publishing-backfill-capacity.mjs",
+    "verify:publishing-web-parity": "node scripts/verify-publishing-web-parity.mjs",
+    "prepare:missing-web-delivery-repair": "node scripts/prepare-missing-web-delivery-repair.mjs",
     "rebuild:static-api": "node scripts/rebuild-static-api.mjs",
     "rebuild:author-profiles": "node scripts/rebuild-author-profiles.mjs",
     "discover:communities": "node src/cli/discover-communities.mjs",
