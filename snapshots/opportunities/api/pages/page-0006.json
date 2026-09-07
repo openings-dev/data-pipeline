@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-07T18:57:36.523Z",
+  "generatedAt": "2026-09-07T23:13:28.374Z",
   "page": 6,
   "pageSize": 20,
   "nextPage": "api/pages/page-0007.json",
   "ids": [
+    "gh_9208a81e3c611e2fd2ef477e",
     "gh_4eda91a95dbfd4b9b9cb4748",
     "gh_5156cfb77132d5e4748cbeee",
     "gh_3d0179fc12fad7d01281b2eb",
@@ -22,10 +23,121 @@
     "gh_00f670a164b634f9d56ebdc4",
     "gh_ff8445df97f543e66b59fc42",
     "gh_b502e928d1322466092d6846",
-    "gh_a550d3026fe89f719a32347a",
-    "gh_03efa9d5761c2ddbcd1e50c5"
+    "gh_a550d3026fe89f719a32347a"
   ],
   "items": [
+    {
+      "id": "gh_9208a81e3c611e2fd2ef477e",
+      "sourceId": "qa-brasil/vagas#1281",
+      "title": "[Remoto] QA Manual Pleno na Hidden (18+ / inglês fluente)",
+      "description": "# Descrição da vaga\n\nA Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pequeno, remoto, ritmo rápido.\n\n**⚠️ Leia antes de se candidatar:** é uma plataforma adulta (18+). O produto contém conteúdo sexual explícito e testá-lo significa ver esse conteúdo todos os dias, como parte normal do trabalho — feed, perfis, mensagens, mídia enviada e filas de moderação. Falamos isso abertamente para que você decida agora, e não depois de entrar. Se não está confortável com isso, a vaga não é para você.\n\n**O papel:** você é o último gate de qualidade antes de uma mudança chegar aos criadores e seus fãs. Pega tickets da fila \"Ready for QA\", testa ponta a ponta no ambiente de staging correto, escreve bug reports que o dev consegue agir sem perguntar nada, e dá o veredito (Approved / Rejected / Not Reproducible) no GitHub. QA aqui tem autoridade real: processo documentado, handoff de dev obrigatório e poder de devolver trabalho para desenvolvimento.\n\n**No dia a dia:**\n- Montar e executar casos de teste a partir de tickets, BRDs e Figma — caminho feliz e edge cases.\n- Testar em desktop web, mobile web, PWA, iOS Safari e Android Chrome (dispositivos reais + BrowserStack).\n- Regressão dos fluxos principais antes de cada release: cadastro e verificação, upload e transcoding, feed, perfis, compras PPV, mensagens, carteira e payouts.\n- Verificar correções, retestar tickets rejeitados, checagem pós-release em produção.\n- Reportar bugs no GitHub com o template da empresa (um bug por ticket, passos exatos, esperado vs. atual, ambiente, evidências).\n- Contribuir com o report diário/semanal de QA e escalar padrões entre bugs, não só o bug isolado.\n\n## Local de trabalho\n\n- 100% Remoto (residente no Brasil)\n\n## Requisitos da vaga\n\n**Obrigatórios**\n- 1 a 4 anos em QA manual / teste de software em produto web ou mobile voltado ao consumidor.\n- Experiência real testando em iOS e Android físicos; entender como mobile web, PWA e layouts responsivos quebram diferente do desktop.\n- Bug reports que o dev executa sem pedir mais informação.\n- DevTools do navegador com confiança: console, aba Network (ler request/response, identificar status code errado), inspeção de elemento, simulação de device.\n- Ler logs de aplicação e extrair o que vai no bug report.\n- Uso diário de IA (Claude, Codex) para entender relatórios técnicos, logs, BRDs/RFCs e respostas de API. Esperamos que você recorra à IA primeiro, em vez de gastar tempo montando ferramenta.\n- Montar dados e cenários de teste via CMS / painel admin.\n- Entender como uma aplicação web se encaixa (frontend, backend, banco, cache) o bastante para conversar com o dev sobre onde o bug provavelmente está.\n- Git/GitHub (achar tickets, ler PRs, comentar) e kanban (o nosso é GitHub Projects).\n- **Inglês escrito fluente, nível profissional.** Bug reports, notas de teste, comentários e reports são todos em inglês, para devs em outro país. Isso é avaliado de perto no processo seletivo.\n- Maior de 18 anos; setup de home office confiável (internet estável, um iPhone e um Android).\n- Disponível de segunda a sexta para jornada de 9h + 1h de pausa não remunerada (10h porta a porta), **alinhada ao horário europeu** (início na madrugada/manhã cedo no Brasil). É uma jornada mais longa que a maioria das vagas e dizemos isso de cara.\n- Flexibilidade quando release ou incidente em produção exigir.\n- Confortável com conteúdo adulto explícito todos os dias (ver aviso acima).\n\n**Desejáveis**\n- Testes de pagamento/checkout: assinaturas, compras avulsas, reembolsos, pagamentos falhos.\n- Produtos com mídia pesada: upload de vídeo/imagem, transcoding, playback, cache de CDN.\n- Moderação de conteúdo ou verificação de idade/identidade (KYC).\n- Ler relatórios do Playwright e triar falhas (a vaga **não** envolve escrever automação).\n- BrowserStack, Figma, Slack.\n- Acessibilidade e teste cross-browser.\n\n**Diferenciais**\n- ISTQB Foundation ou equivalente.\n\n## Forma de contratação\n\nA vaga é somente PJ, não faz mal não ter uma empresa aberta, mas será necessário abrir uma.\n\n## Benefícios da empresa\n\n- 100% remoto.\n- QA com autoridade real: processo documentado, handoff de dev obrigatório, poder de rejeitar trabalho.\n- Exposição ao produto inteiro num time pequeno, em vez de dono de um módulo estreito.\n- Acesso direto a devs, designers e produto, sem camadas de processo.\n\n## Range Salarial\n\nVariavel.\n\n## Sobre a empresa\n\nA Hidden é uma plataforma de conteúdo feita por criadores para criadores da indústria adulta. Nosso objetivo é dar aos criadores as melhores ferramentas para crescer a marca e vender conteúdo para sua base de fãs. Time pequeno e rápido; QA é função visível e respeitada.\n\nSomos uma empresa de oportunidades iguais. Recebemos candidaturas independentemente de gênero, identidade de gênero, orientação sexual, raça, religião, deficiência ou idade (18+). Trabalhamos na indústria adulta e tratamos a indústria, e quem trabalha nela, com profissionalismo.\n\n## Como se candidatar\n\n- Envie e-mail para luizo@hidden.com com CV (em inglês) anexado. Assunto: **Vaga do QA-Brasil – Manual QA**\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 1 dias após cada etapa.\nEstá é uma vaga urgente, então estamos procurando pessoas de forma rápida para se juntar com a equipe atual.\n\n\n## Labels\n- PJ\n- Pleno\n- Remoto\n- Exterior\n\n#QA #QualityAssurance #vagasQA #testesdesoftware #remoto #vagasremotas",
+      "excerpt": "# Descrição da vaga A Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pe...",
+      "issueState": "open",
+      "contentHash": "a5ddd01313cbbb61b39de74bc79b62749c382ec032130ed183b8ceae0455487a",
+      "repository": "qa-brasil/vagas",
+      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "exterior",
+        "inglês",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
+        "clt",
+        "exterior",
+        "inglês",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "author": {
+        "id": "Luiz-Olivieri",
+        "name": "Luiz-Olivieri",
+        "handle": "Luiz-Olivieri",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/295890495?v=4"
+      },
+      "community": {
+        "id": "qa-brasil",
+        "name": "qa-brasil",
+        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+        "repository": "qa-brasil/vagas",
+        "url": "https://github.com/qa-brasil/vagas"
+      },
+      "companyName": "100% remoto.",
+      "createdAt": "2026-08-21T19:40:20Z",
+      "updatedAt": "2026-08-21T19:43:13Z",
+      "url": "https://github.com/qa-brasil/vagas/issues/1281",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "mobile",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_9208a81e3c611e2fd2ef477e",
+          "sourceId": "qa-brasil/vagas#1281",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1281",
+          "createdAt": "2026-08-21T19:40:20Z",
+          "updatedAt": "2026-08-21T19:43:13Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 17,
+        "publishedAt": "2026-08-21T19:40:20Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_4eda91a95dbfd4b9b9cb4748",
       "sourceId": "datascience-br/vagas#204",
@@ -583,7 +695,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-08-20T22:53:42Z",
         "status": "fresh"
       }
@@ -691,7 +803,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-08-20T21:00:17Z",
         "status": "fresh"
       }
@@ -2141,116 +2253,6 @@
       "freshness": {
         "ageDays": 20,
         "publishedAt": "2026-08-17T23:25:54Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_03efa9d5761c2ddbcd1e50c5",
-      "sourceId": "datascience-br/vagas#198",
-      "title": "[Híbrido] Administração de Banco de Dados Pleno na Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Administração de Banco de Dados nível Pleno para atuar em projetos de empresas parceiras da Sylision, na área de Dados.\n\nFaixa salarial: R$ 7.000 a 12.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Desenvolver e manter serviços de backend\n- Modelar dados e integrar sistemas\n- Escrever testes e revisar código\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Administração de Banco de Dados (de 2 a 5 anos)\n- Uma linguagem de backend em nível profissional\n- APIs REST e SQL\n- Git e fluxo de pull request\n- Testes automatizados\n\n**Diferenciais:**\n- Docker\n- Cloud\n- Mensageria\n\n## Benefícios\n\n- Faixa salarial de R$ 7.000 a 12.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-administracao-de-banco-de-dados-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
-      "issueState": "open",
-      "contentHash": "98325edb1872dd4af36b45989449a462f713e9832ff23f7937e6c304527f9115",
-      "repository": "datascience-br/vagas",
-      "repositoryUrl": "https://github.com/datascience-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "pleno"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "datascience-br",
-        "name": "datascience-br",
-        "avatarUrl": "https://github.com/datascience-br.png?size=80",
-        "repository": "datascience-br/vagas",
-        "url": "https://github.com/datascience-br/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-08-17T23:21:12Z",
-      "updatedAt": "2026-08-17T23:21:12Z",
-      "url": "https://github.com/datascience-br/vagas/issues/198",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "docker"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_03efa9d5761c2ddbcd1e50c5",
-          "sourceId": "datascience-br/vagas#198",
-          "repository": "datascience-br/vagas",
-          "repositoryUrl": "https://github.com/datascience-br/vagas",
-          "url": "https://github.com/datascience-br/vagas/issues/198",
-          "createdAt": "2026-08-17T23:21:12Z",
-          "updatedAt": "2026-08-17T23:21:12Z",
-          "community": {
-            "id": "datascience-br",
-            "name": "datascience-br",
-            "avatarUrl": "https://github.com/datascience-br.png?size=80",
-            "repository": "datascience-br/vagas",
-            "url": "https://github.com/datascience-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 20,
-        "publishedAt": "2026-08-17T23:21:12Z",
         "status": "fresh"
       }
     }
