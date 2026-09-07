@@ -21,7 +21,7 @@ export function buildMissingWebDeliveryRepairSql(repairs) {
     ];
   });
 
-  return ["BEGIN TRANSACTION;", ...statements, "COMMIT;", ""].join("\n");
+  return [...statements, ""].join("\n");
 }
 
 function hexText(value) {

@@ -12,12 +12,11 @@ test("builds a bounded idempotent repair for an existing publication", () => {
     { publicationId: "publication-1", publication },
   ]);
 
-  assert.match(sql, /BEGIN TRANSACTION/u);
   assert.match(sql, /INSERT OR IGNORE INTO deliveries/u);
   assert.match(sql, /'web-r2'/u);
   assert.match(sql, /'web\.r2'/u);
   assert.match(sql, /INSERT OR IGNORE INTO outbox/u);
-  assert.match(sql, /COMMIT/u);
+  assert.doesNotMatch(sql, /BEGIN TRANSACTION|COMMIT/u);
   assert.doesNotMatch(sql, /Dev's job/u);
 });
 
