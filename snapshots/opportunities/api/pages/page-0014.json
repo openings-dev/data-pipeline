@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-06T22:36:52.377Z",
+  "generatedAt": "2026-09-07T02:07:55.370Z",
   "page": 14,
   "pageSize": 20,
   "nextPage": "api/pages/page-0015.json",
@@ -12,6 +12,7 @@
     "gh_0452743bd518510cd292c3c9",
     "gh_aae2906ad2e4de661fd3b293",
     "gh_01d59eb415dd02a0c1612a74",
+    "gh_ea38c1270a4018a146a15872",
     "gh_31771006fb197da7d3ea896f",
     "gh_b58d8e19c5708f146ef494b5",
     "gh_90494ab470094f1d5461b7d3",
@@ -22,8 +23,7 @@
     "gh_e2b9353ac1307526e438b23d",
     "gh_fbd7897fa7cdf7f1f95d0f6f",
     "gh_0e98dad659c3df11a1cb1cc8",
-    "gh_5f066bed10486c20bcb3fc70",
-    "gh_84cd180e02db9815d917bcc4"
+    "gh_5f066bed10486c20bcb3fc70"
   ],
   "items": [
     {
@@ -950,6 +950,129 @@
       }
     },
     {
+      "id": "gh_ea38c1270a4018a146a15872",
+      "sourceId": "frontendbr/vagas#8518",
+      "title": "[Remoto] Desenvolvedor(a) Full-Stack Sênior (TypeScript/React/Node) - Grupo Apex (EUA)",
+      "description": "## Sobre nós\n\nGrupo de três pequenas empresas americanas (Orlando, FL — dono brasileiro): revenda de carros\ncom DMS próprio (theapexauto.com), plataforma de investimento imobiliário e plataforma de\nserviços de construção (riseconstruction.us). Os três produtos estão em produção, com clientes\nreais e receita real.\n\n## A vaga\n\nOs três produtos foram construídos majoritariamente com agentes de IA (Claude Code). Você vai\ntrabalhar COM esses agentes — eles revisam seus PRs, você revisa os deles. Procuramos alguém\nque use IA como alavanca e traga o que ela não traz: julgamento sênior sobre edge cases,\nintegridade de dados, migração segura e deploy sem susto. Os produtos estão ~80% prontos; o\ntrabalho é levá-los a 100% — a parte que separa produto de demo.\n\n## O que você vai fazer\n\n- Cutover de redesigns de staging para produção, incluindo migrações de schema manuais (MySQL)\n- Features de dashboard: fluxos de financiamento, pipeline de ofertas com SLA, portais por\n  papel (comprador/colaborador), chat interno, motores de orçamento e comissão\n- Integrações: Stripe (go-live), QuickBooks two-way, telefonia (Twilio), APIs de terceiros\n- Hardening: checagens multi-tenant, bugs de cálculo de folha (nível centavo), schema drift\n\n## Stack (igual nos 3 produtos)\n\nTypeScript, React, Vite, tRPC, Drizzle ORM, MySQL, Tailwind/Radix, Node.js em VPS Linux\n(nginx), Cloudflare R2. Integrações: Stripe, Twilio, QuickBooks, APIs Meta/Google.\n\n## Local\n\nRemoto (Brasil) — PJ\n\n## Requisitos\n\n- **Experiência:** 5+ anos levando TypeScript full-stack a produção; React + Node + SQL\n  profundos (o peso maior é backend)\n- **Produção de verdade:** já operou app em Linux puro (nginx, systemd, SSH, backup) — sem\n  rede de segurança de PaaS\n- **Cicatriz de integração:** Stripe, OAuth, webhooks (inclusive entrega duplicada)\n- **Inglês:** técnico de leitura/escrita (código e docs em inglês; dia a dia em português)\n- **Perfil:** autonomia, conforto genuíno em revisar código escrito por IA e ser revisado\n  por agentes\n- **Diferencial forte:** React Native/Expo — temos 3 apps mobile (Expo Router) na fila\n  depois da web, incluindo publicação nas lojas\n\n## Contratação\n\nPJ — **R$ 12.000 a R$ 18.000/mês**, conforme senioridade · full-time ou 30h+/semana\n- Cliente americano direto (sem agência no meio), pagamento em dia via Deel, longo prazo\n- Demo semanal · começa com **trial pago de 1 semana** (tarefa real do backlog, no seu rate)\n\n## Como se candidatar\n\nEmail para **alex@theapexauto.com** com assunto **[FULLSTACK] Seu Nome** contendo:\n1. A integração de produção mais cabeluda que você já entregou — o que quebrou e como descobriu\n2. Links de código seu com histórico real de commits\n3. Pretensão (R$/mês PJ) e disponibilidade\n\nPropostas genéricas são descartadas. Sem agências, por favor.",
+      "excerpt": "## Sobre nós Grupo de três pequenas empresas americanas (Orlando, FL — dono brasileiro): revenda de carros com DMS próprio (theapexauto.com), plataforma de investimento imobiliário e plataforma de serviços de construç...",
+      "issueState": "open",
+      "contentHash": "25265dcfbb891324ce5612e04a8a67a004b8a049eb352bd1a880003ec771d542",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "remoto",
+        "stale",
+        "sênior"
+      ],
+      "sourceTags": [
+        "pj",
+        "remoto",
+        "stale",
+        "sênior"
+      ],
+      "author": {
+        "id": "matheu555",
+        "name": "matheu555",
+        "handle": "matheu555",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/221351562?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 18000,
+        "period": "month"
+      },
+      "createdAt": "2026-07-08T18:36:12Z",
+      "updatedAt": "2026-09-07T02:01:14Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8518",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "go",
+          "mysql",
+          "nodejs",
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_ea38c1270a4018a146a15872",
+          "sourceId": "frontendbr/vagas#8518",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8518",
+          "createdAt": "2026-07-08T18:36:12Z",
+          "updatedAt": "2026-09-07T02:01:14Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 60,
+        "publishedAt": "2026-07-08T18:36:12Z",
+        "status": "aging"
+      }
+    },
+    {
       "id": "gh_31771006fb197da7d3ea896f",
       "sourceId": "programadores-br/geral#3084",
       "title": "[Nova Lima, Brasil] Suporte de TI N2 (Turno Noturno) na Coodesh",
@@ -1344,7 +1467,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 76,
+        "ageDays": 77,
         "publishedAt": "2026-06-22T01:47:27Z",
         "status": "aging"
       }
@@ -1424,7 +1547,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 76,
+        "ageDays": 77,
         "publishedAt": "2026-06-22T01:39:41Z",
         "status": "aging"
       }
@@ -2094,95 +2217,6 @@
       "freshness": {
         "ageDays": 93,
         "publishedAt": "2026-06-05T19:14:10Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_84cd180e02db9815d917bcc4",
-      "sourceId": "jobright-ai/2026-Software-Engineer-Internship#2",
-      "title": "Suggestion: add Canada-specific software internship/new-grad resource",
-      "description": "Hi maintainers — thanks for keeping this Software Engineer internship tracker updated.\n\nWould you be open to adding Hanzilla Jobs as a Canada-specific companion resource for students using this repo?\n\nSuggested link:\n\n```md\n- [Hanzilla Jobs — Canada software engineering internships/co-ops and new-grad roles](https://jobs.hanzilla.co/categories/software-engineering/) — free, daily-updated Canadian student/recent-grad job board for software engineering internships, co-ops, new-grad, junior, and entry-level roles. It also has an internships landing page: https://jobs.hanzilla.co/internships/\n```\n\nWhy it may fit here:\n- Your tracker already includes Canada-relevant software internship rows, including Toronto/Ontario/Canada roles.\n- Hanzilla is Canada-focused and covers roles students may miss when a global tracker is noisy.\n- Public verification/about page: https://jobs.hanzilla.co/about/\n\nSmall disclosure: I’m helping build Hanzilla Jobs. Totally fine if this does not match the repo’s scope; sharing as a low-pressure suggestion.",
-      "excerpt": "Hi maintainers — thanks for keeping this Software Engineer internship tracker updated. Would you be open to adding Hanzilla Jobs as a Canada-specific companion resource for students using this repo? Suggested link: ``...",
-      "issueState": "open",
-      "contentHash": "788043755cbd80926290ce5dd79a69404553a90793af098ecfdf04b1448bc6a5",
-      "repository": "jobright-ai/2026-Software-Engineer-Internship",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-Internship",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "junior"
-      ],
-      "sourceTags": [
-        "junior"
-      ],
-      "author": {
-        "id": "hanzili",
-        "name": "hanzili",
-        "handle": "hanzili",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Software-Engineer-Internship",
-        "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship"
-      },
-      "createdAt": "2026-06-05T14:28:49Z",
-      "updatedAt": "2026-06-05T14:28:49Z",
-      "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship/issues/2",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship",
-          "junior"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_84cd180e02db9815d917bcc4",
-          "sourceId": "jobright-ai/2026-Software-Engineer-Internship#2",
-          "repository": "jobright-ai/2026-Software-Engineer-Internship",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-Internship",
-          "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship/issues/2",
-          "createdAt": "2026-06-05T14:28:49Z",
-          "updatedAt": "2026-06-05T14:28:49Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Software-Engineer-Internship",
-            "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 93,
-        "publishedAt": "2026-06-05T14:28:49Z",
         "status": "stale"
       }
     }
