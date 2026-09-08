@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-08T02:19:57.040Z",
+  "generatedAt": "2026-09-08T07:38:28.403Z",
   "page": 33,
   "pageSize": 20,
   "nextPage": "api/pages/page-0034.json",
   "ids": [
+    "gh_b515951a8597751ca4cb1e35",
     "gh_e04c9c501d14e31ef924858a",
     "gh_9bc0bda95b500affdf25e21a",
     "gh_e9d58038efbfd02158023ca7",
@@ -22,10 +23,104 @@
     "gh_f8b25cedf422dc789eee17e5",
     "gh_6f4d0a1c5dabd825edd7a35f",
     "gh_9411c946edb1024dc76f07bb",
-    "gh_e43426d1a2257902e81afbcb",
-    "gh_944a2f8bc18a924c8efd7dfd"
+    "gh_e43426d1a2257902e81afbcb"
   ],
   "items": [
+    {
+      "id": "gh_b515951a8597751ca4cb1e35",
+      "sourceId": "FidelisClayton/elm-jobs#73",
+      "title": "[Remote] Software developer @ Timelineapp",
+      "description": "Timelineapp is a service for the financial advisers (mostly in the UK) helping them to build and discuss investment strategies and retirement plans with their clients. Our front-end is almost 100% in Elm, the back-end is in Elixir (we use Phoenix framework), and a very important part has recently been rewritten in Rust. We’re looking for a person to develop both parts of the application (i.e., someone with full-stack capabilities and/or ambitions). Our development team is fully remote. \n\nMore information and the link to apply is available in [the job posting](https://timelineapp.freshteam.com/jobs/-rhCfxf_dSVo/software-developer-software-engineer-remote).",
+      "excerpt": "Timelineapp is a service for the financial advisers (mostly in the UK) helping them to build and discuss investment strategies and retirement plans with their clients. Our front-end is almost 100% in Elm, the back-end...",
+      "issueState": "open",
+      "contentHash": "b07eead4140019e4c27889ff320a619c8c082dae07f61c5eb8d4a2b0bc269068",
+      "repository": "FidelisClayton/elm-jobs",
+      "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "remote"
+      ],
+      "sourceTags": [
+        "remote"
+      ],
+      "author": {
+        "id": "szubtsovskiy",
+        "name": "szubtsovskiy",
+        "handle": "szubtsovskiy",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/1901687?v=4"
+      },
+      "community": {
+        "id": "FidelisClayton",
+        "name": "FidelisClayton",
+        "avatarUrl": "https://github.com/FidelisClayton.png?size=80",
+        "repository": "FidelisClayton/elm-jobs",
+        "url": "https://github.com/FidelisClayton/elm-jobs"
+      },
+      "createdAt": "2021-11-23T10:39:52Z",
+      "updatedAt": "2021-11-23T10:42:36Z",
+      "url": "https://github.com/FidelisClayton/elm-jobs/issues/73",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b515951a8597751ca4cb1e35",
+          "sourceId": "FidelisClayton/elm-jobs#73",
+          "repository": "FidelisClayton/elm-jobs",
+          "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
+          "url": "https://github.com/FidelisClayton/elm-jobs/issues/73",
+          "createdAt": "2021-11-23T10:39:52Z",
+          "updatedAt": "2021-11-23T10:42:36Z",
+          "community": {
+            "id": "FidelisClayton",
+            "name": "FidelisClayton",
+            "avatarUrl": "https://github.com/FidelisClayton.png?size=80",
+            "repository": "FidelisClayton/elm-jobs",
+            "url": "https://github.com/FidelisClayton/elm-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1749,
+        "publishedAt": "2021-11-23T10:39:52Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_e04c9c501d14e31ef924858a",
       "sourceId": "remote-job-boards/software-engineering#7498",
@@ -344,7 +439,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1757,
+        "ageDays": 1758,
         "publishedAt": "2021-11-15T03:03:15Z",
         "status": "stale"
       }
@@ -2080,92 +2175,6 @@
       "freshness": {
         "ageDays": 1776,
         "publishedAt": "2021-10-27T11:55:14Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_944a2f8bc18a924c8efd7dfd",
-      "sourceId": "clj-br/vagas#6",
-      "title": "Vagas da Nubank parecem vir com vagas que não são Clojure",
-      "description": "Algumas vagas de infosec e outras de dados parecem não ser propriamente Clojure, o que pode criar ruído para pessoas que procuram vagas específicas para Clojure. Ainda precisamos discutir o que é possível de ser feito.",
-      "excerpt": "Algumas vagas de infosec e outras de dados parecem não ser propriamente Clojure, o que pode criar ruído para pessoas que procuram vagas específicas para Clojure. Ainda precisamos discutir o que é possível de ser feito.",
-      "issueState": "open",
-      "contentHash": "b77ad83c71b2bcb74a4a6d5623fe762775c6adbdf6332b330f9b67e23be8ccd1",
-      "repository": "clj-br/vagas",
-      "repositoryUrl": "https://github.com/clj-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "bug",
-        "help wanted"
-      ],
-      "sourceTags": [
-        "bug",
-        "help wanted"
-      ],
-      "author": {
-        "id": "renatoalencar",
-        "name": "renatoalencar",
-        "handle": "renatoalencar",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/6964593?v=4"
-      },
-      "community": {
-        "id": "clj-br",
-        "name": "clj-br",
-        "avatarUrl": "https://github.com/clj-br.png?size=80",
-        "repository": "clj-br/vagas",
-        "url": "https://github.com/clj-br/vagas"
-      },
-      "createdAt": "2021-10-27T11:49:56Z",
-      "updatedAt": "2021-12-01T17:40:04Z",
-      "url": "https://github.com/clj-br/vagas/issues/6",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_944a2f8bc18a924c8efd7dfd",
-          "sourceId": "clj-br/vagas#6",
-          "repository": "clj-br/vagas",
-          "repositoryUrl": "https://github.com/clj-br/vagas",
-          "url": "https://github.com/clj-br/vagas/issues/6",
-          "createdAt": "2021-10-27T11:49:56Z",
-          "updatedAt": "2021-12-01T17:40:04Z",
-          "community": {
-            "id": "clj-br",
-            "name": "clj-br",
-            "avatarUrl": "https://github.com/clj-br.png?size=80",
-            "repository": "clj-br/vagas",
-            "url": "https://github.com/clj-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1776,
-        "publishedAt": "2021-10-27T11:49:56Z",
         "status": "stale"
       }
     }
