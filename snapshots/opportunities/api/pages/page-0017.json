@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-08T23:06:23.996Z",
+  "generatedAt": "2026-09-09T02:23:07.037Z",
   "page": 17,
   "pageSize": 20,
   "nextPage": "api/pages/page-0018.json",
   "ids": [
+    "gh_86cf7c4c726a6cec1163d1fb",
     "gh_0f0495da862b94749892e684",
     "gh_d6f31a804dacbc548031ec5e",
     "gh_5903d3232c2f99d9ae568fe8",
@@ -22,10 +23,104 @@
     "gh_26b7c402e14a59e43ad9828b",
     "gh_27ad1c5fa6ae31eaf8210333",
     "gh_7b4f6457d040ea0a23c1c43b",
-    "gh_1b456af185b0d148e1769bc2",
-    "gh_b0b25f9f51d0e7f1c185dc60"
+    "gh_1b456af185b0d148e1769bc2"
   ],
   "items": [
+    {
+      "id": "gh_86cf7c4c726a6cec1163d1fb",
+      "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
+      "title": "Bug: Company logo thumbnails enter corrupted render state after job application, stale DOM / z-index collision across job card components",
+      "description": "# Company thumbnails overlap other job cards after applying to a posting\n\nHey team,\n\nI've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that job bleeds over into the other job cards in the feed. Sometimes it stacks on top of the adjacent card's logo, sometimes it straight up replaces it. It looks pretty broken.\n\nThe weird part is that it fixes itself the moment I do a hard refresh. So the data coming from the backend seems fine, this is purely a client-side rendering issue.\n\n## Repro\n\n1. Go to the job listings feed.\n2. Apply to any job.\n3. Come back to the listings (back nav or closing the apply modal).\n4. The thumbnails on nearby job cards are now messed up; wrong logos, overlapping, stacked, etc.\n5. Refresh the page → everything goes back to normal.\n\nThis happens every single time, not intermittent. I've tried it across a few different browsers (Chrome and Firefox) and it's the same behavior.\n\n## What I think is going on\n\nI'm a software engineer so I poked around in devtools a bit. A few things that might be worth looking at:\n\n**Key prop issue on the list**: If the job card list is keyed by array index instead of something stable like `job.id`, React's reconciler will reuse DOM nodes incorrectly when the list state changes after applying. This would explain why the thumbnails get \"shifted\" onto wrong cards. Classic React anti-pattern.\n\n**Stacking context / z-index leak**: When the apply flow triggers (modal, overlay, toast, whatever), it might be setting `position: absolute` or bumping `z-index` on the applied card's thumbnail. If that style isn't cleaned up properly (maybe an animation callback that doesn't fire?), the image escapes its container and sits on top of siblings. Throwing `overflow: hidden` and `position: relative` on the card container would contain this.\n\n**Race condition on refetch**: If applying fires off a POST and then the feed revalidates in parallel (SWR `mutate()`, React Query `invalidateQueries()`, etc.), there's a window where partial/stale data gets rendered before the fresh response lands. The thumbnails might be getting swapped around during that intermediate state.\n\n**Image caching**: Less likely, but if there's a custom image component or service worker caching thumbnails by position/index instead of URL, a re-render after apply could serve the wrong cached image to the wrong card.\n\n## Quick fix suggestions\n\n- Check that `key={job.id}` (or whatever unique identifier) is used on the card list, not `key={index}`.\n- Make sure each card's thumbnail container has its own stacking context (`position: relative; overflow: hidden;`).\n- If the apply action triggers a list refetch, batch the state update or wrap it in `startTransition` so you don't get an intermediate broken frame.\n- Audit `useEffect` cleanups around the apply modal/overlay, something might not be resetting styles on unmount.\n\n## Environment\n\n- Chrome 124  on macOS\n- Desktop, standard resolution\n- Happens on both fast and slow connections so it's not a network timing thing\n\nNot a blocker since refresh fixes it, but it makes the platform look buggy and I'd imagine it's hurting trust with less technical users who don't know to just reload. Happy to provide more details or screen recordings if that helps.",
+      "excerpt": "# Company thumbnails overlap other job cards after applying to a posting Hey team, I've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that ...",
+      "issueState": "open",
+      "contentHash": "1e4843c8fb9d905a53f168f5b02b0201043140e257eec09e5f353c378fe3c473",
+      "repository": "jobright-ai/2026-Data-Analysis-Internship",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "node",
+        "react"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "node",
+        "react"
+      ],
+      "author": {
+        "id": "JayDS22",
+        "name": "JayDS22",
+        "handle": "JayDS22",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Data-Analysis-Internship",
+        "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
+      },
+      "createdAt": "2026-03-22T16:47:15Z",
+      "updatedAt": "2026-03-22T16:51:05Z",
+      "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "go",
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_86cf7c4c726a6cec1163d1fb",
+          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
+          "repository": "jobright-ai/2026-Data-Analysis-Internship",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
+          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
+          "createdAt": "2026-03-22T16:47:15Z",
+          "updatedAt": "2026-03-22T16:51:05Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Data-Analysis-Internship",
+            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 170,
+        "publishedAt": "2026-03-22T16:47:15Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_0f0495da862b94749892e684",
       "sourceId": "react-native-drops/vagas#148",
@@ -1456,7 +1551,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 215,
+        "ageDays": 216,
         "publishedAt": "2026-02-05T00:07:51Z",
         "status": "stale"
       }
@@ -1934,117 +2029,6 @@
       "freshness": {
         "ageDays": 231,
         "publishedAt": "2026-01-20T05:43:31Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_b0b25f9f51d0e7f1c185dc60",
-      "sourceId": "pythonjobs/jobs#442",
-      "title": "Lead Graphics Engineer",
-      "description": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission: **use software to change the way we build**—turning complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n\nOur platform digests massive BIM models, uses **AI** to generate logical assembly sequences, and visualizes them in a **custom 3D engine**.\nWe’re building the **operating system for the next generation of construction**.\n\n📊 **Proof, not promises**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nThe impact: less re-work, compressed schedules, and reduced carbon emissions ♻️\n\n🚀 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the software team to ship the **next-gen Pilot** and make **digital assembly the industry standard**.\n\n🧠 **Your Mission**\nTake full ownership of our **web-based rendering engine**.\nYou’ll lead the strategic transition from **Autodesk Viewer** to a fully custom, high-performance rendering solution—defining how massive construction datasets are visualized and interacted with in the browser.\n\n🔧 **What you’ll solve**\n\n* Architect and scale a modular rendering engine using **Three.js + TypeScript**\n* Push browser rendering to its limits (1M+ objects) with batching, instancing, Draco compression, and dynamic **LOD streaming**\n* Build advanced AEC features: **4D simulations**, sectioning, markup, spatial filtering\n* Optimize **GraphQL data pipelines** for decoupled geometry and metadata loading\n* Own visualization infrastructure, **data sovereignty**, and security\n\n💡 **Who you are**\n\n* Mid–Senior level (5+ years) in **Three.js / Babylon.js / WebGL**\n* Deep understanding of **GPU pipelines, GLSL shaders, and WebGL internals**\n* Hands-on experience with **CAD/BIM data** (Revit, Rhino, IFC)\n* Strong foundation in **3D math** (matrices, vectors, quaternions)\n* Fluent in **JavaScript / TypeScript** (C# a plus)\n\n🧪 **A day in the role**\nMorning: Profiling a 500MB BIM model crashing mobile browsers 📱\nMid-day: Writing a custom **GLSL shader** for an X-ray visualization mode 👻\nAfternoon: Designing GraphQL queries to fetch only critical metadata and speed up dashboards ⚡\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **live job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real, physical-world impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 If you love graphics, performance, and building tools that leave the screen and enter the real world, we should talk.\n\n👉 **Apply via our Portal**: https://www.maestro-tech.com/careers/\n\n#Hiring #GraphicsEngineering #ThreeJS #WebGL #RenderingEngine\n#TechCareers #StartupJobs #ConstructionTech #BIM #3DEngine\n#AI #DigitalConstruction #TurinJobs",
-      "excerpt": "🎮 **We’re hiring a Rendering Engine Lead to redefine how buildings are visualized.** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission: **use software to change t...",
-      "issueState": "open",
-      "contentHash": "0d84fb5b015e00d47d2157863446e725f18b7c22a28aa459b35954c3eea1f18a",
-      "repository": "pythonjobs/jobs",
-      "repositoryUrl": "https://github.com/pythonjobs/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data",
-        "design",
-        "hybrid",
-        "java",
-        "senior",
-        "typescript"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "hybrid",
-        "java",
-        "senior",
-        "typescript"
-      ],
-      "author": {
-        "id": "sandra614",
-        "name": "sandra614",
-        "handle": "sandra614",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
-      },
-      "community": {
-        "id": "pythonjobs",
-        "name": "pythonjobs",
-        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-        "repository": "pythonjobs/jobs",
-        "url": "https://github.com/pythonjobs/jobs"
-      },
-      "createdAt": "2026-01-19T17:26:42Z",
-      "updatedAt": "2026-01-19T17:26:42Z",
-      "url": "https://github.com/pythonjobs/jobs/issues/442",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "csharp",
-          "java",
-          "javascript",
-          "typescript"
-        ],
-        "seniority": [
-          "lead",
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_b0b25f9f51d0e7f1c185dc60",
-          "sourceId": "pythonjobs/jobs#442",
-          "repository": "pythonjobs/jobs",
-          "repositoryUrl": "https://github.com/pythonjobs/jobs",
-          "url": "https://github.com/pythonjobs/jobs/issues/442",
-          "createdAt": "2026-01-19T17:26:42Z",
-          "updatedAt": "2026-01-19T17:26:42Z",
-          "community": {
-            "id": "pythonjobs",
-            "name": "pythonjobs",
-            "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-            "repository": "pythonjobs/jobs",
-            "url": "https://github.com/pythonjobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 232,
-        "publishedAt": "2026-01-19T17:26:42Z",
         "status": "stale"
       }
     }

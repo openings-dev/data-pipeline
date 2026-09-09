@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-08T23:06:23.996Z",
+  "generatedAt": "2026-09-09T02:23:07.037Z",
   "page": 28,
   "pageSize": 20,
   "nextPage": "api/pages/page-0029.json",
   "ids": [
+    "gh_2fb1d1c5f7a72da400aa156a",
     "gh_5737029f526e21daadacc576",
     "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
@@ -22,10 +23,95 @@
     "gh_e4e45f65c03b245bde7961fc",
     "gh_2698bafd032165b940c5550e",
     "gh_d52bb8fcdb4d2e9adfe1c750",
-    "gh_5ff7a61468868fed794784cd",
-    "gh_724342a7441cbc13493ec56f"
+    "gh_5ff7a61468868fed794784cd"
   ],
   "items": [
+    {
+      "id": "gh_2fb1d1c5f7a72da400aa156a",
+      "sourceId": "italiaremote/awesome-italia-remote#401",
+      "title": "Tags normalization",
+      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
+      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
+      "issueState": "open",
+      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
+      "repository": "italiaremote/awesome-italia-remote",
+      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+      "region": "Europe",
+      "country": "Italy",
+      "sourceLocation": {
+        "country": "Italy",
+        "countryCode": "IT",
+        "region": "Europe"
+      },
+      "tags": [
+        "feature-request"
+      ],
+      "sourceTags": [
+        "feature-request"
+      ],
+      "author": {
+        "id": "FrancescoManfredi",
+        "name": "FrancescoManfredi",
+        "handle": "FrancescoManfredi",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
+      },
+      "community": {
+        "id": "italiaremote",
+        "name": "italiaremote",
+        "avatarUrl": "https://github.com/italiaremote.png?size=80",
+        "repository": "italiaremote/awesome-italia-remote",
+        "url": "https://github.com/italiaremote/awesome-italia-remote"
+      },
+      "createdAt": "2024-04-16T20:25:04Z",
+      "updatedAt": "2025-06-22T07:16:49Z",
+      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2fb1d1c5f7a72da400aa156a",
+          "sourceId": "italiaremote/awesome-italia-remote#401",
+          "repository": "italiaremote/awesome-italia-remote",
+          "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+          "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+          "createdAt": "2024-04-16T20:25:04Z",
+          "updatedAt": "2025-06-22T07:16:49Z",
+          "community": {
+            "id": "italiaremote",
+            "name": "italiaremote",
+            "avatarUrl": "https://github.com/italiaremote.png?size=80",
+            "repository": "italiaremote/awesome-italia-remote",
+            "url": "https://github.com/italiaremote/awesome-italia-remote"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 875,
+        "publishedAt": "2024-04-16T20:25:04Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_5737029f526e21daadacc576",
       "sourceId": "EtherTW/jobs#72",
@@ -906,7 +992,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 945,
+        "ageDays": 946,
         "publishedAt": "2024-02-06T00:45:18Z",
         "status": "stale"
       }
@@ -1015,7 +1101,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 949,
+        "ageDays": 950,
         "publishedAt": "2024-02-02T02:07:25Z",
         "status": "stale"
       }
@@ -2067,113 +2153,6 @@
       "freshness": {
         "ageDays": 967,
         "publishedAt": "2024-01-15T20:34:26Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_724342a7441cbc13493ec56f",
-      "sourceId": "FlutterComunidadeBR/vagas#63",
-      "title": "[Remoto] Flutter Mobile (Júnior/Pleno) na Coodesh",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open) com o pop-up personalizado de candidatura. 👋\n<p>Estamos procurando uma pessoa com experiência em desenvolvimento Flutter para se juntar à equipe da Net Imoveis!</p>\n<p></p>\n<p><strong>Responsabilidades:</strong></p>\n<ul>\n<li>Desenvolver e manter nossos aplicativos em Flutter;</li>\n<li>Trabalhar em estreita colaboração com a equipe de design para criar interfaces de usuário atraentes e fáceis de usar;</li>\n<li>Garantir que nossos aplicativos sejam de alta qualidade, seguros e escaláveis;</li>\n<li>Identificar e corrigir bugs e problemas de desempenho;</li>\n<li>Manter-se atualizado sobre as tendências e tecnologias mais recentes em desenvolvimento de aplicativos móveis.</li>\n</ul>\n<p></p>\n## Netimóveis Brasil: \n <p>Há mais de 27 anos trabalhamos para ajudar você em um momento muito importante: a procura de um lar ideal. Para isso contamos com mais de 150 imobiliárias associadas espalhadas pelo Brasil, além de uma unidade em Portugal, fruto da expansão internacional iniciada no último ano.</p>\n<p>Somos um dos maiores portais imobiliários do país, com mais de 100 mil imóveis qualificados e sem repetição. Na Netimóveis você vende, aluga e compra o seu imóvel com muito mais segurança e agilidade.</p>\n\n ## Habilidades: \n - Flutter \n- Design Patterns \n- Code Review \n- Dart\n## Local: \n 100% Remoto\n## Requisitos: \n - Experiência com desenvolvimento Flutter; \n- Conhecimentos sólidos em estruturas de dados, algoritmos, design patterns e arquitetura de sistemas; \n- Experiência em boas práticas de engenharia de software, lint, testes unitários e code reviews.\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Flutter Mobile (Júnior/Pleno) na Netimóveis Brasil](https://coodesh.com/jobs/flutter-mobile-juniorpleno-151529578?utm_source=github&utm_medium=FlutterComunidadeBR-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nMobile",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "4ad1cd52cc9ffe33e0ca7c3987342de6dee749c894f89714ded08d83b0a35c88",
-      "repository": "FlutterComunidadeBR/vagas",
-      "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "junior",
-        "pleno"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "junior",
-        "pleno"
-      ],
-      "author": {
-        "id": "GabrielaSluz",
-        "name": "GabrielaSluz",
-        "handle": "GabrielaSluz",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/152880287?v=4"
-      },
-      "community": {
-        "id": "FlutterComunidadeBR",
-        "name": "FlutterComunidadeBR",
-        "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-        "repository": "FlutterComunidadeBR/vagas",
-        "url": "https://github.com/FlutterComunidadeBR/vagas"
-      },
-      "companyName": "Coodesh",
-      "createdAt": "2023-12-28T19:22:29Z",
-      "updatedAt": "2023-12-28T19:22:29Z",
-      "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "dotnet",
-          "flutter"
-        ],
-        "seniority": [
-          "junior",
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_724342a7441cbc13493ec56f",
-          "sourceId": "FlutterComunidadeBR/vagas#63",
-          "repository": "FlutterComunidadeBR/vagas",
-          "repositoryUrl": "https://github.com/FlutterComunidadeBR/vagas",
-          "url": "https://github.com/FlutterComunidadeBR/vagas/issues/63",
-          "createdAt": "2023-12-28T19:22:29Z",
-          "updatedAt": "2023-12-28T19:22:29Z",
-          "community": {
-            "id": "FlutterComunidadeBR",
-            "name": "FlutterComunidadeBR",
-            "avatarUrl": "https://github.com/FlutterComunidadeBR.png?size=80",
-            "repository": "FlutterComunidadeBR/vagas",
-            "url": "https://github.com/FlutterComunidadeBR/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 985,
-        "publishedAt": "2023-12-28T19:22:29Z",
         "status": "stale"
       }
     }
