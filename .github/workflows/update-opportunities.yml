@@ -54,21 +54,37 @@ jobs:
         run: npm run publish:production
 
       - name: Commit and push snapshot
+        id: snapshot
         run: |
           if git diff --quiet -- snapshots/opportunities; then
             echo "No snapshot changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
 
+          previous_commit="$(git rev-parse HEAD)"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add snapshots/opportunities
           git add snapshots/publishing
           git add -u snapshots
           git commit -m "chore(data): refresh segmented opportunities snapshot"
+          source_commit="$(git rev-parse HEAD)"
+          data_hash="$(node -p "JSON.parse(require('fs').readFileSync('snapshots/opportunities/api/manifest.json', 'utf8')).dataHash")"
+
+          if [[ ! "$source_commit" =~ ^[0-9a-f]{40}$ || ! "$previous_commit" =~ ^[0-9a-f]{40}$ || ! "$data_hash" =~ ^[0-9a-f]{64}$ ]]; then
+            echo "::error::Refusing to emit an invalid source event."
+            exit 1
+          fi
 
           for push_attempt in 1 2 3; do
             if git push; then
+              {
+                echo "changed=true"
+                echo "source_commit=$source_commit"
+                echo "previous_commit=$previous_commit"
+                echo "data_hash=$data_hash"
+              } >> "$GITHUB_OUTPUT"
               exit 0
             fi
 
@@ -80,3 +96,27 @@ jobs:
 
           echo "::error::Snapshot push failed after 3 attempts."
           exit 1
+
+      - name: Notify social publisher after successful push
+        if: steps.snapshot.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.SOCIAL_PUBLISHER_DISPATCH_TOKEN }}
+          SOURCE_COMMIT: ${{ steps.snapshot.outputs.source_commit }}
+          PREVIOUS_COMMIT: ${{ steps.snapshot.outputs.previous_commit }}
+          DATA_HASH: ${{ steps.snapshot.outputs.data_hash }}
+        run: |
+          jq -n \
+            --arg source_commit "$SOURCE_COMMIT" \
+            --arg previous_commit "$PREVIOUS_COMMIT" \
+            --arg data_hash "$DATA_HASH" \
+            '{
+              event_type: "openings_source_committed_v1",
+              client_payload: {
+                schema_version: 1,
+                source_repository: "openings-dev/data-pipeline",
+                source_commit: $source_commit,
+                previous_commit: $previous_commit,
+                data_hash: $data_hash,
+                event_id: ("openings:data:" + $source_commit)
+              }
+            }' | gh api --method POST repos/openings-dev/social-publisher/dispatches --input -
