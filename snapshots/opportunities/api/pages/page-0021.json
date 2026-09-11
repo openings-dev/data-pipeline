@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-09-11T02:17:39.694Z",
+  "generatedAt": "2026-09-11T07:39:24.596Z",
   "page": 21,
   "pageSize": 20,
   "nextPage": "api/pages/page-0022.json",
   "ids": [
+    "gh_338622c06f4332345fe4f4ea",
+    "gh_2dd307ccb8f3ad7b24c5d38b",
     "gh_1230e0e80450a8e3313a1981",
     "gh_0334f931443ab00c53da098c",
     "gh_c1e8308e6f56f9f9fe5e212e",
@@ -21,11 +23,200 @@
     "gh_a30547f5853d337ea89895e9",
     "gh_7e923ca8233bc921db05ea5b",
     "gh_35675ecd494ba80044916118",
-    "gh_3bf4a98545b8ef34b0e75c62",
-    "gh_5a7a0fd4ee14b0cbfce120eb",
-    "gh_37d4fbca63e20e104991a24e"
+    "gh_3bf4a98545b8ef34b0e75c62"
   ],
   "items": [
+    {
+      "id": "gh_338622c06f4332345fe4f4ea",
+      "sourceId": "golangtw/jobs#225",
+      "title": "[苗栗/竹南][月薪 90k 起] 群聯電子 雲原生平台工程師",
+      "description": "## 工作地點\n- 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號)\n\n## 工作內容\n- 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。\n- 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。\n- 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。\n- 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernetes RBAC 與多租戶隔離。\n- 開發 LLM 模型服務基礎設施，透過 KServe 與 Gateway API Inference Extension 管理模型的打包、部署與推論生命週期。\n- 設計與實作 Kubernetes CRD 及 Controller，管理叢集、工作負載、租戶隔離與模型生命週期。\n- 使用 ConnectRPC / gRPC 設計跨叢集 API，搭配 Protobuf 定義服務介面。\n- 與前端（SvelteKit）、DevOps 及 QA 團隊合作，確保程式碼品質與安全性。\n- 參與技術研究，探索 AI 推論優化、Gateway API 與雲原生新技術。\n\n## 能力需求\n- Go 經驗：3 年以上 Go 開發經驗，熟悉 Goroutine 與 Channel。\n- Kubernetes：熟悉 Kubernetes 架構，具備 Operator / controller-runtime 開發經驗。\n- 開源貢獻：參與過 GitHub 開源專案，熟悉 Pull Request 與程式碼審查。\n- Linux 技能：精通 Linux 系統操作、Shell 腳本、系統監控與效能優化。\n- 容器化技術：熟悉 Docker，具備撰寫多階段 Dockerfile 與容器部署經驗。\n- API 設計：熟悉 ConnectRPC / gRPC、Protobuf 與 RESTful API 設計。\n- 軟實力：優秀的問題解決能力、團隊合作精神與溝通技巧。\n\n## 加分項目\n- 熟悉 Kubernetes RBAC、NetworkPolicy 或 Admission Webhook 等安全機制。\n- 具備 OIDC / OAuth 2.0 身份驗證或 mTLS 憑證管理實作經驗。\n- 具備 AI/ML 模型服務經驗（如 KServe、vLLM 或類似推論框架）。\n- 熟悉 Istio 服務網格或 Envoy Gateway。\n- 熟悉 Gateway API 與 Kubernetes 網路模型。\n- 熟悉 CI/CD 工具（如 GitHub Actions）與 GitOps 流程（如 Flux CD）。\n- 具備 Helm Chart 開發與管理經驗。\n- 熟悉 OpenTelemetry 分散式追蹤與可觀測性實踐。\n- 熟悉前端技術（如 SvelteKit、TypeScript）。\n\n## 團隊技術\n- 程式語言：Go、TypeScript、Protobuf\n- 前端框架：SvelteKit、Tailwind CSS\n- 通訊協定：ConnectRPC、gRPC\n- 容器與叢集：Kubernetes、Docker、Helm\n- 儲存與網路：Rook/Ceph、Istio、Gateway API\n- AI/ML 推論：KServe、llm-d、Gateway API Inference Extension\n- 安全機制：OIDC、mTLS、Kubernetes RBAC、多租戶隔離\n- 監控與可觀測性：Prometheus、Grafana、OpenTelemetry\n- CI/CD：GitHub Actions、Flux CD\n\n## 薪資與福利\n  - 基本底薪：每月 90,000 - 110,000 元。\n  - 年薪保證 14 個月，另加績效獎金與公司分紅。\n\n## 職涯發展\n- 技術專家：深入 Kubernetes Operator、多叢集架構與 AI 推論基礎設施，成為雲原生平台專家。\n- 技術管理：帶領技術團隊，參與產品策略制定。\n- 跨領域成長：參與前端、AI/ML 推論或基礎設施自動化專案。\n\n## 應徵方式\n請將履歷寄至 [paul_tsai@phison.com](mailto:paul_tsai@phison.com) ，並簡述您的後端開發、Kubernetes 或雲原生技術經驗。",
+      "excerpt": "## 工作地點 - 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號) ## 工作內容 - 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。 - 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。 - 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。 - 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernet...",
+      "issueState": "open",
+      "contentHash": "fd2d0c5383bbd3a92e29f99abb4d9e780b24b944b2784284c76aa9de8a311fee",
+      "repository": "golangtw/jobs",
+      "repositoryUrl": "https://github.com/golangtw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "90k以上",
+        "苗栗"
+      ],
+      "sourceTags": [
+        "90k以上",
+        "苗栗"
+      ],
+      "author": {
+        "id": "iasthc",
+        "name": "iasthc",
+        "handle": "iasthc",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/40525303?v=4"
+      },
+      "community": {
+        "id": "golangtw",
+        "name": "golangtw",
+        "avatarUrl": "https://github.com/golangtw.png?size=80",
+        "repository": "golangtw/jobs",
+        "url": "https://github.com/golangtw/jobs"
+      },
+      "createdAt": "2025-07-08T07:48:12Z",
+      "updatedAt": "2026-04-09T02:47:13Z",
+      "url": "https://github.com/golangtw/jobs/issues/225",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "kubernetes",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_338622c06f4332345fe4f4ea",
+          "sourceId": "golangtw/jobs#225",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/225",
+          "createdAt": "2025-07-08T07:48:12Z",
+          "updatedAt": "2026-04-09T02:47:13Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 429,
+        "publishedAt": "2025-07-08T07:48:12Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_2dd307ccb8f3ad7b24c5d38b",
+      "sourceId": "remotejobsbr/design-ux-vagas#117",
+      "title": "[Remoto] Igma | UX/UI Designer",
+      "description": "A Igma é uma empresa de tecnologia que cria produtos digitais críticos — sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n**O que buscamos**\nEstamos em busca de uma pessoa Designer UX/UI para criar experiências digitais impactantes, desde a concepção até a execução. Essa pessoa será responsável por traduzir as necessidades dos usuários e os requisitos de negócios em ideias de produto, materializando-as em interfaces intuitivas e funcionais.\nProcuramos alguém com ampla experiência em design de produtos digitais, habilidade em prototipagem rápida e disposição para liderar sessões imersivas de co-criação.\nUnimos design e tecnologia para transformar problemas complexos em soluções digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n**Modelo de trabalho**\n- Regime: 100% remoto\n- Modelo de contratação: PJ\n\n**Responsabilidades e premissas para a posição**\nNa Igma, o Designer UX/UI será responsável por desenvolver soluções visuais e interativas que sejam inovadoras e eficazes para o usuário. É essencial que tenha aptidão para trabalhar em equipe com profissionais de diferentes áreas, saiba se comunicar com clareza e tenha adaptabilidade para lidar com mudanças constantes. Para isso, é necessário fazer parte de sua rotina:\n- Traduzir dados e feedbacks dos usuários em soluções de design centrado no usuário (Design Thinking)\n- Colaborar com equipes multidisciplinares em sessões de co-criação imersivas\n- Criar e defender decisões de design em apresentações para stakeholders\n- Realizar prototipagem rápida e testes de usabilidade com usuários\n- Garantir consistência e escalabilidade por meio de design systems\n- Aplicar práticas de acessibilidade e responsividade nas interfaces\n- Curiosidade ativa por Inteligência Artificial e disposição para explorar como a IA pode potencializar seu trabalho\n\n**Premissas culturais**\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n**Etapas do processo**\n- Cadastro\n- Entrevista inicial\n- Entrevista Fit Cultural\n- Entrevista Técnica\n- Proposta\n- Contratação\n\n**Requisitos**\n- Proficiência em ferramentas de design, como Figma, Sketch ou Adobe XD\n- Experiência em design de interface (UI) e experiência do usuário (UX)\n- Habilidade em prototipagem rápida e realização de testes de usabilidade\n- Conhecimento em design responsivo e práticas de acessibilidade\n- Capacidade de criar e manter design systems\n- Experiência em criar wireframes, mockups e protótipos interativos\n- Criatividade e inovação para propor soluções únicas\n- Conhecimento básico de HTML, CSS e práticas de front-end (diferencial)\n- Boa comunicação para defender e justificar escolhas de design\n\n**Benefícios**\n✌️ Trabalho 100% remoto\n💙 Plano de Saúde individual\n🧘 Auxílio Cuidado e Desenvolvimento\n🏃 Incentivo à prática de esportes\n💳 Cartão multi-benefício através do Caju\n💻 Auxílio Remoto para investimento em equipamentos (R$ 2.000 anuais)\n🏖️ PJ - 30 dias de férias remuneradas\n\n**Como se candidatar**\nCandidate-se no [link](https://jobs.quickin.io/igma/jobs/684c7526724a850013b9d953)",
+      "excerpt": "A Igma é uma empresa de tecnologia que cria produtos digitais críticos — sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transf...",
+      "issueState": "open",
+      "contentHash": "9a7a70ba083b9bfa1a2bbd697f7f365e7b677cf04742947fe6711024ca68a614",
+      "repository": "remotejobsbr/design-ux-vagas",
+      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "mcfo-contato",
+        "name": "mcfo-contato",
+        "handle": "mcfo-contato",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85364888?v=4"
+      },
+      "community": {
+        "id": "remotejobsbr",
+        "name": "remotejobsbr",
+        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+        "repository": "remotejobsbr/design-ux-vagas",
+        "url": "https://github.com/remotejobsbr/design-ux-vagas"
+      },
+      "createdAt": "2025-06-30T14:36:26Z",
+      "updatedAt": "2025-06-30T14:36:26Z",
+      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/117",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_2dd307ccb8f3ad7b24c5d38b",
+          "sourceId": "remotejobsbr/design-ux-vagas#117",
+          "repository": "remotejobsbr/design-ux-vagas",
+          "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+          "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/117",
+          "createdAt": "2025-06-30T14:36:26Z",
+          "updatedAt": "2025-06-30T14:36:26Z",
+          "community": {
+            "id": "remotejobsbr",
+            "name": "remotejobsbr",
+            "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+            "repository": "remotejobsbr/design-ux-vagas",
+            "url": "https://github.com/remotejobsbr/design-ux-vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 437,
+        "publishedAt": "2025-06-30T14:36:26Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_1230e0e80450a8e3313a1981",
       "sourceId": "remotejobsbr/design-ux-vagas#116",
@@ -633,7 +824,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 470,
+        "ageDays": 471,
         "publishedAt": "2025-05-28T06:59:18Z",
         "status": "stale"
       }
@@ -1885,221 +2076,6 @@
       "freshness": {
         "ageDays": 497,
         "publishedAt": "2025-05-01T19:38:03Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_5a7a0fd4ee14b0cbfce120eb",
-      "sourceId": "remotejobsbr/design-ux-vagas#111",
-      "title": "[HIBRIDO SP] Product Designer @PayRetailers Transfeera",
-      "description": "## Nossa empresa\n\nSomos Inovação em Pagamentos\nNossa solução de pagamento conecta empresas a milhões de consumidores pelo mundo.\n\nNossa missão? Simplificar os pagamentos online para empresas em todo o mundo e de diversos mercados. Combinando tecnologia com nossa experiência em pagamentos, a PayRetailers promove o crescimento sustentável, simplificando as operações e eliminando complicações nos pagamentos entre países.\n\nCom **sede em Barcelona**, mais 9 escritórios na América Latina e outro na Bulgária, continuamos nossa expansão por todo o mundo.\n\nA sua atuação será junto ao time Transfeera, empresa do grupo PayRetailers.\n\nÉ REQUISITO residir na cidade de São Paulo ou adjacências. O formato hibrido ainda está em construção.\n\n## Descrição da vaga\n\nBuscamos uma pessoa para o cargo de designer de produto nível pleno que entenda a importância das fintechs em garantirem acesso, transparência e justiça nos serviços financeiros, promovendo o crescimento de negócios e a geração de empregos. Nosso trabalho é nobre e precisamos de gente que queira fazer parte da construção diária de uma cultura de gestão de produto de execução, inovadora e contribuir para a transformação do setor financeiro.\n\nSe você é designer de produto, gosta de um ambiente ágil e possui vivência em fintechs, convidamos você a se juntar ao nosso time.\n\n##Responsabilidades\n\n- Garantir que as interfaces de usuário sejam intuitivas e agradáveis de usar, com base nas descobertas contínuas com os usuários;\n- Colaborar com equipes de desenvolvimento, design e marketing para criar produtos com experiência de usuário de alta qualidade;\n- Conduzir pesquisas de usuário e entrevistas contínuas para informar as decisões de design e produto e garantir que os produtos atendam às necessidades dos usuários;\n- Promover a cultura de design centrado no usuário e buscar que as melhores práticas de design sejam integradas em nossa estratégia de produto;\n- Manter-se atualizado com as tendências do setor e tecnologias emergentes relacionadas a meios de pagamento, integrando as melhores práticas de design em nossa estratégia.\n\n## Local\n\nMaior parte do tempo remoto, com possibilidade de Híbrido em São Paulo - SP - Brooklin. O formato hibrido ainda está em construção.\n\n## Requisitos\n\n**Obrigatórios:**\n- Agilidade em leitura de cenário e criação de experiências e fluxos de interação;\n- Experiência comprovada como designer de produto em fintechs;\n- Capacidade de liderar iniciativas de design do começo ao fim, promovendo a cultura de design centrada no usuário dentro de um time de produto pequeno, sendo a única e claro, a principal referência de design no time e companhia;\n- Excelentes habilidades de comunicação e capacidade de articular uma visão de design para todas as partes interessadas;\n- Vocação e habilidade para pesquisas desk e em campo (Research);\n- Portfólio demonstrando habilidades em design de interfaces de usuário e experiência do usuário.\n\n**Desejáveis:**\n- Residir na cidade de São Paulo/SP ou adjacências;\n- Inglês para estabelecer uma boa comunicação e compreensão;\n\n## Benefícios\n\n🍽️ Cartão flex CAJU (refeição ou alimentação): R$ 40,00 por dia útil;\n👩🏻‍⚕️ Plano de saúde CarePlus - sem desconto de mensalidade para o colaborador e com co-participação limitada;\n🦷 Plano dental CarePlus - sem desconto de mensalidade para o colaborador e com co-participação limitada;\n💚 Seguro de vida pessoal e familiar sem desconto em folha;\n🤸‍♂️ Wellhub/Gympass;\n🎊 Day off de aniversário;\n🍼 Auxílio-creche.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nhttps://bit.ly/PayRetailersProductDesigner\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 15 dias após cada processo.\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Alocação\n- Híbrido\n\n#### Regime\n- CLT\n\n#### Nível\n- Pleno",
-      "excerpt": "## Nossa empresa Somos Inovação em Pagamentos Nossa solução de pagamento conecta empresas a milhões de consumidores pelo mundo. Nossa missão? Simplificar os pagamentos online para empresas em todo o mundo e de diverso...",
-      "issueState": "open",
-      "contentHash": "6836f93eb8c8022334cf451682b172c2426ae925652b001489a5d57daf047846",
-      "repository": "remotejobsbr/design-ux-vagas",
-      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "pleno",
-        "principal"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "pleno",
-        "principal"
-      ],
-      "author": {
-        "id": "MartinaCarvalho",
-        "name": "MartinaCarvalho",
-        "handle": "MartinaCarvalho",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/29093113?v=4"
-      },
-      "community": {
-        "id": "remotejobsbr",
-        "name": "remotejobsbr",
-        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-        "repository": "remotejobsbr/design-ux-vagas",
-        "url": "https://github.com/remotejobsbr/design-ux-vagas"
-      },
-      "createdAt": "2025-04-30T19:55:49Z",
-      "updatedAt": "2025-04-30T19:55:49Z",
-      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/111",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [],
-        "seniority": [
-          "mid",
-          "principal"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_5a7a0fd4ee14b0cbfce120eb",
-          "sourceId": "remotejobsbr/design-ux-vagas#111",
-          "repository": "remotejobsbr/design-ux-vagas",
-          "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-          "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/111",
-          "createdAt": "2025-04-30T19:55:49Z",
-          "updatedAt": "2025-04-30T19:55:49Z",
-          "community": {
-            "id": "remotejobsbr",
-            "name": "remotejobsbr",
-            "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-            "repository": "remotejobsbr/design-ux-vagas",
-            "url": "https://github.com/remotejobsbr/design-ux-vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 498,
-        "publishedAt": "2025-04-30T19:55:49Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_37d4fbca63e20e104991a24e",
-      "sourceId": "Empregos-dev/Vagas-dev#97",
-      "title": "🚀 Vaga Desenvolvedor Full-Stack Pleno (Mobile) 📱 📍 Remoto 🚀",
-      "description": "# Desenvolvedor Full-Stack Pleno (Mobile) 📱\n\n- 📍 Localização: Remoto\n- 📈 Nível: pleno\n- 📃 Contrato: pj\n- 💰 Salário: R$ 7.148,82\n- 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗\n\n\n## Descrição da vaga:\nVaga para desenvolvedor com experiência em Flutter e Dart. \n\nOferecemos uma oportunidade para crescer na área de tecnologia, colaborando em projetos inovadores.\n\n\n## Atividades e responsabilidade:\nDesenvolvimento de aplicativos; \nCriação e configuração de projetos; \nConsumo de APIs; \nBoas práticas em UI e UX.\n\n\n## Requisitos:\nTécnico Completo ou Graduação em Andamento ou Ensino Médio Completo com Graduação em Andamento. \n\n06 meses de experiência em desenvolvimento de aplicativos utilizando Flutter e boas práticas da linguagem Dart. 📚\n\n\n\n\n\n## Mais Informações:\nSalário compatível e carga horária de 200 horas/mês. \n\nHorário de trabalho: De segunda a sexta-feira das 08:00 às 12:00 e das 13:30 às 17:30.\n\n\n# [🔗 Clique aqui para se candidatar](https://empregos.dev/vaga/desenvolvedor-full-stack-pleno-mobile-752)\n\n\n**Use nosso site [Empregos.dev](https://empregos.dev) para buscar mais vagas de trabalho na área da programação, desenvolvimento, devops e tecnologia como está!**",
-      "excerpt": "# Desenvolvedor Full-Stack Pleno (Mobile) 📱 - 📍 Localização: Remoto - 📈 Nível: pleno - 📃 Contrato: pj - 💰 Salário: R$ 7.148,82 - 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗 ## Descrição da vaga: Vaga para ...",
-      "issueState": "open",
-      "contentHash": "eebf4a4364ca864d94e4cf80e25122dec39022a09fd99e49d5960300f3a7e217",
-      "repository": "Empregos-dev/Vagas-dev",
-      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "flutter",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "sourceTags": [
-        "flutter",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "author": {
-        "id": "ecossistemadev",
-        "name": "ecossistemadev",
-        "handle": "ecossistemadev",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/107730006?v=4"
-      },
-      "community": {
-        "id": "Empregos-dev",
-        "name": "Empregos-dev",
-        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
-        "repository": "Empregos-dev/Vagas-dev",
-        "url": "https://github.com/Empregos-dev/Vagas-dev"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 7149,
-        "period": "hour"
-      },
-      "createdAt": "2025-04-13T13:13:26Z",
-      "updatedAt": "2025-04-13T13:13:26Z",
-      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/97",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "flutter"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_37d4fbca63e20e104991a24e",
-          "sourceId": "Empregos-dev/Vagas-dev#97",
-          "repository": "Empregos-dev/Vagas-dev",
-          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
-          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/97",
-          "createdAt": "2025-04-13T13:13:26Z",
-          "updatedAt": "2025-04-13T13:13:26Z",
-          "community": {
-            "id": "Empregos-dev",
-            "name": "Empregos-dev",
-            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
-            "repository": "Empregos-dev/Vagas-dev",
-            "url": "https://github.com/Empregos-dev/Vagas-dev"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 515,
-        "publishedAt": "2025-04-13T13:13:26Z",
         "status": "stale"
       }
     }
