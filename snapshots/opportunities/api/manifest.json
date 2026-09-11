@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-09-11T07:39:24.596Z",
+  "generatedAt": "2026-09-11T13:09:36.486Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "09e0c8eefcae0d8027ee4082c9e0d8d20fe20009fe34983c15eaa6e38cc7e4fc",
+  "dataHash": "87ae5c5a4717a55531440532e6d5fcd8c1ecc41158a7b4df333849a01693bf05",
   "totals": {
-    "openOpportunities": 799,
-    "pages": 40,
+    "openOpportunities": 801,
+    "pages": 41,
     "repositories": 115,
     "communities": 187,
     "countries": 15,
     "regions": 5,
-    "authors": 346,
-    "authorArtifactBytes": 100041
+    "authors": 347,
+    "authorArtifactBytes": 100334
   },
   "files": {
     "facets": "api/facet-index.json",
@@ -57,7 +57,7 @@
       "devmatogrosso/vagas": 17,
       "DevOps-Brasil/Vagas": 24,
       "devssa/onde-codar-em-salvador": 2,
-      "didtheyghostme/Singapore-Summer2026-TechInternships": 1,
+      "didtheyghostme/Singapore-Summer2026-TechInternships": 2,
       "dotnetdevbr/vagas": 14,
       "Empregos-dev/Vagas-dev": 27,
       "engineerapart/TheRemoteFreelancer": 1,
@@ -120,13 +120,13 @@
       "remoteintech/remote-jobs": 2,
       "remotejobsbr/design-ux-vagas": 15,
       "seujobtech/vagas": 10,
-      "SimplifyJobs/New-Grad-Positions": 17,
+      "SimplifyJobs/New-Grad-Positions": 19,
       "SimplifyJobs/Summer2026-Internships": 15,
       "soujava/vagas-java": 12,
       "speedyapply/2026-AI-College-Jobs": 3,
-      "speedyapply/2026-SWE-College-Jobs": 2,
+      "speedyapply/2026-SWE-College-Jobs": 3,
       "speedyapply/2027-AI-College-Jobs": 3,
-      "speedyapply/2027-SWE-College-Jobs": 2,
+      "speedyapply/2027-SWE-College-Jobs": 3,
       "TADSG/jobs": 2,
       "taiwan-kotlin-user-group/jobs": 2,
       "TechnologyMasters/jobs": 19,
@@ -146,7 +146,7 @@
       "Asia": 171,
       "Europe": 38,
       "Global": 71,
-      "North America": 82,
+      "North America": 84,
       "South America": 437
     },
     "countries": {
@@ -163,7 +163,7 @@
       "Singapore": 1,
       "Spain": 1,
       "Taiwan": 90,
-      "United States": 58,
+      "United States": 60,
       "Vietnam": 28
     },
     "tags": {
@@ -265,7 +265,7 @@
       "needs-info": 2,
       "net": 4,
       "net-core": 1,
-      "new": 13,
+      "new": 15,
       "new-internship": 24,
       "new-job": 1,
       "nextjs": 3,
@@ -612,6 +612,7 @@
       "SheilaMiqueli": 5,
       "shivamsharma-debug": 1,
       "shreyajena": 1,
+      "SI1997SI": 3,
       "smallj3128": 1,
       "sofiacancelliere": 1,
       "sohumtiwary": 1,
@@ -666,10 +667,11 @@
       "yukuairoy": 3,
       "YYxDeveloper": 1,
       "ZachPlotkin": 1,
-      "Zaku-Seven": 2,
+      "Zaku-Seven": 1,
       "zrack23": 2
     },
     "authorLabels": {
+      "SI1997SI": "SI1997SI",
       "techdyvn": "techdyvn",
       "Claudiaantunesdelima": "Claudiaantunesdelima",
       "AngelaBarboza": "AngelaBarboza",
@@ -1021,19 +1023,19 @@
       "Argentina": 1,
       "Brazil": 102,
       "Global": 8,
-      "Hong Kong": 1,
+      "Hong Kong": 4,
       "Italy": 1,
       "Nigeria": 1,
       "Portugal": 3,
       "United Kingdom": 2,
-      "United States": 40
+      "United States": 39
     },
     "jobRegions": {
       "Africa": 1,
-      "Asia": 1,
+      "Asia": 4,
       "Europe": 6,
       "Global": 8,
-      "North America": 40,
+      "North America": 39,
       "South America": 103
     },
     "workModels": {
@@ -1045,7 +1047,7 @@
       "backend": 258,
       "data-ai": 122,
       "design": 219,
-      "devops-sre": 110,
+      "devops-sre": 112,
       "frontend": 155,
       "fullstack": 113,
       "leadership": 22,
@@ -1089,19 +1091,19 @@
       "vue": 32
     },
     "seniority": {
-      "internship": 61,
+      "internship": 62,
       "junior": 69,
       "lead": 55,
       "mid": 193,
       "principal": 21,
-      "senior": 308,
+      "senior": 309,
       "staff": 10
     },
     "employmentTypes": {
       "contractor": 238,
       "employee": 255,
       "full-time": 58,
-      "internship": 60,
+      "internship": 61,
       "part-time": 17
     },
     "languages": {
@@ -1113,15 +1115,15 @@
       "pt": 12
     },
     "freshness": {
-      "7": 34,
-      "30": 154,
-      "90": 288,
-      "aging": 134,
-      "fresh": 154,
+      "7": 35,
+      "30": 155,
+      "90": 290,
+      "aging": 135,
+      "fresh": 155,
       "stale": 511
     },
     "salaryDisclosed": {
-      "false": 589,
+      "false": 591,
       "true": 210
     }
   },
@@ -1324,7 +1326,12 @@
     {
       "page": 40,
       "file": "api/pages/page-0040.json",
-      "count": 19
+      "count": 20
+    },
+    {
+      "page": 41,
+      "file": "api/pages/page-0041.json",
+      "count": 1
     }
   ]
 }
