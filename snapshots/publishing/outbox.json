@@ -135,6 +135,156 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_a50de92f39a572b83ad2af68",
+        "revision": "24f7da2230192b4a141baf8d593056b8f8433b44963a94383b03b832f5953235",
+        "idempotencyKey": "openings:job:gh_a50de92f39a572b83ad2af68:24f7da2230192b4a141baf8d593056b8f8433b44963a94383b03b832f5953235"
+      },
+      "canonical": {
+        "title": "[HCM] Senior Automation Test Engineer - upto 80M",
+        "summary": "**Industry:** Financial Services & Banking What you'll do * Build and maintain automation frameworks for Mobile, UI, API & Integration testing. * Integrate automated tests into CI/CD (Jenkins, GitLab CI). * Improve te...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_a50de92f39a572b83ad2af68",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_a50de92f39a572b83ad2af68",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_a50de92f39a572b83ad2af68",
+              "revision": "24f7da2230192b4a141baf8d593056b8f8433b44963a94383b03b832f5953235",
+              "canonicalPath": "/jobs/gh_a50de92f39a572b83ad2af68",
+              "title": "[HCM] Senior Automation Test Engineer - upto 80M",
+              "summary": "**Industry:** Financial Services & Banking What you'll do * Build and maintain automation frameworks for Mobile, UI, API & Integration testing. * Integrate automated tests into CI/CD (Jenkins, GitLab CI). * Improve te...",
+              "status": "active",
+              "contentSha256": "752b817d2c905a995606da464ec02328202d451dad939f4a28bc060d864bd1af",
+              "content": {
+                "id": "gh_a50de92f39a572b83ad2af68",
+                "sourceId": "awesome-jobs/vietnam#5029",
+                "title": "[HCM] Senior Automation Test Engineer - upto 80M",
+                "description": "**Industry:** Financial Services & Banking\nWhat you'll do\n* Build and maintain automation frameworks for Mobile, UI, API & Integration testing.\n* Integrate automated tests into CI/CD (Jenkins, GitLab CI).\n* Improve test coverage, quality, and release reliability.\n* Collaborate with Engineering, QA & DevOps teams.\n* Mentor team members and drive automation best practices.\n Requirements\n* 5+ years in QA Automation.\n* Strong experience with **Python (Robot Framework), Appium, Playwright, Jenkins, GitLab CI**.\n* Experience with UI, API, and system integration testing.\n* Knowledge of microservices; Kafka is a plus.\n* Fintech/Banking experience and professional English are preferred.\nBenefit\n* Salary: up to 80M\n* Work on large-scale digital banking products.\n* Regional engineering environment.\n* Hybrid: **4 days onsite (HCMC) + 1 WFH**.\nContact:\nEmail: phanthenho.work@gmail.com\nZalo/Tele/WhatsApp: +84 775 357 812",
+                "excerpt": "**Industry:** Financial Services & Banking What you'll do * Build and maintain automation frameworks for Mobile, UI, API & Integration testing. * Integrate automated tests into CI/CD (Jenkins, GitLab CI). * Improve te...",
+                "issueState": "open",
+                "contentHash": "24f7da2230192b4a141baf8d593056b8f8433b44963a94383b03b832f5953235",
+                "repository": "awesome-jobs/vietnam",
+                "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+                "region": "Asia",
+                "country": "Vietnam",
+                "sourceLocation": {
+                  "country": "Vietnam",
+                  "countryCode": "VN",
+                  "region": "Asia"
+                },
+                "tags": [
+                  "devops",
+                  "hybrid",
+                  "onsite",
+                  "python",
+                  "senior"
+                ],
+                "sourceTags": [
+                  "devops",
+                  "hybrid",
+                  "onsite",
+                  "python",
+                  "senior"
+                ],
+                "author": {
+                  "id": "ptnwork-pixel",
+                  "name": "ptnwork-pixel",
+                  "handle": "ptnwork-pixel",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/292807287?v=4"
+                },
+                "community": {
+                  "id": "awesome-jobs",
+                  "name": "awesome-jobs",
+                  "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+                  "repository": "awesome-jobs/vietnam",
+                  "url": "https://github.com/awesome-jobs/vietnam"
+                },
+                "createdAt": "2026-08-23T09:49:38Z",
+                "updatedAt": "2026-08-23T09:49:38Z",
+                "url": "https://github.com/awesome-jobs/vietnam/issues/5029",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "devops-sre",
+                    "mobile",
+                    "qa"
+                  ],
+                  "technologies": [
+                    "python"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "hybrid",
+                    "on-site",
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "inferred"
+                },
+                "sources": [
+                  {
+                    "id": "gh_a50de92f39a572b83ad2af68",
+                    "sourceId": "awesome-jobs/vietnam#5029",
+                    "repository": "awesome-jobs/vietnam",
+                    "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+                    "url": "https://github.com/awesome-jobs/vietnam/issues/5029",
+                    "createdAt": "2026-08-23T09:49:38Z",
+                    "updatedAt": "2026-08-23T09:49:38Z",
+                    "community": {
+                      "id": "awesome-jobs",
+                      "name": "awesome-jobs",
+                      "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+                      "repository": "awesome-jobs/vietnam",
+                      "url": "https://github.com/awesome-jobs/vietnam"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 23,
+                  "publishedAt": "2026-08-23T09:49:38Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
