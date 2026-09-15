@@ -1,9 +1,13 @@
 {
-  "generatedAt": "2026-09-15T18:38:55.802Z",
+  "generatedAt": "2026-09-15T23:21:25.700Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
+    "gh_f83ab72e76fc4802a6079563",
+    "gh_b26dea1eadba581bed785ece",
+    "gh_f2c6ad8ddbb570d902bed361",
+    "gh_75e91e41a1fff3f59a91baa2",
     "gh_3ccfeb0841f044587cf7d01f",
     "gh_2b40ebfdf92589b10e006de1",
     "gh_4a0027f1cba146b3933fd5ad",
@@ -19,13 +23,467 @@
     "gh_e28ab400211c8c30f90763e6",
     "gh_f7f5e01513b6b24188a7de73",
     "gh_27fe40f0fa169901104ea82f",
-    "gh_55bedf2d15381e67bb953516",
-    "gh_50535e86aa2938e1aac6bd4b",
-    "gh_0efcf8a825dff70e78cfe9bc",
-    "gh_313f1f028c4484af9bc95eb6",
-    "gh_fe5757fbad33016053bd30eb"
+    "gh_55bedf2d15381e67bb953516"
   ],
   "items": [
+    {
+      "id": "gh_f83ab72e76fc4802a6079563",
+      "sourceId": "timqian/open-source-jobs#181",
+      "title": "Script/workflow bug",
+      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
+      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
+      "issueState": "open",
+      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "timqian",
+        "name": "timqian",
+        "handle": "timqian",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-08-03T03:51:27Z",
+      "updatedAt": "2026-08-03T03:51:27Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/181",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f83ab72e76fc4802a6079563",
+          "sourceId": "timqian/open-source-jobs#181",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/181",
+          "createdAt": "2026-08-03T03:51:27Z",
+          "updatedAt": "2026-08-03T03:51:27Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 43,
+        "publishedAt": "2026-08-03T03:51:27Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_b26dea1eadba581bed785ece",
+      "sourceId": "frontend-pt/vagas#105",
+      "title": "[Remoto] React Frontend Developer Sênior @ Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de React Frontend Developer nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de Frontend.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Desenvolver interfaces em React\n- Consumir APIs e cuidar do estado da aplicação\n- Garantir performance, responsividade e acessibilidade\n\n## Local\n\n100% remoto, para profissionais em Portugal ou no Brasil.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com React (5 anos ou mais)\n- React e Hooks\n- TypeScript\n- Gerência de estado (Redux, Zustand ou Context)\n- CSS moderno e consumo de APIs REST\n\n**Diferenciais:**\n- Next.js\n- Testes com Testing Library\n- Design system\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-senior-remoto\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
+      "issueState": "open",
+      "contentHash": "09724c4f34f74b6aa48d29d1519bb77637326fc8acb3bc8a8e6a363a2cea91cc",
+      "repository": "frontend-pt/vagas",
+      "repositoryUrl": "https://github.com/frontend-pt/vagas",
+      "region": "Europe",
+      "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior",
+        "⚖️ clt",
+        "⚖️ pj",
+        "🏢 remoto",
+        "👴 senior",
+        "💰 15k+"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior",
+        "⚖️ clt",
+        "⚖️ pj",
+        "🏢 remoto",
+        "👴 senior",
+        "💰 15k+"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "frontend-pt",
+        "name": "frontend-pt",
+        "avatarUrl": "https://github.com/frontend-pt.png?size=80",
+        "repository": "frontend-pt/vagas",
+        "url": "https://github.com/frontend-pt/vagas"
+      },
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 22000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-02T23:14:58Z",
+      "updatedAt": "2026-08-28T20:05:23Z",
+      "url": "https://github.com/frontend-pt/vagas/issues/105",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b26dea1eadba581bed785ece",
+          "sourceId": "frontend-pt/vagas#105",
+          "repository": "frontend-pt/vagas",
+          "repositoryUrl": "https://github.com/frontend-pt/vagas",
+          "url": "https://github.com/frontend-pt/vagas/issues/105",
+          "createdAt": "2026-08-02T23:14:58Z",
+          "updatedAt": "2026-08-09T19:37:34Z",
+          "community": {
+            "id": "frontend-pt",
+            "name": "frontend-pt",
+            "avatarUrl": "https://github.com/frontend-pt.png?size=80",
+            "repository": "frontend-pt/vagas",
+            "url": "https://github.com/frontend-pt/vagas"
+          }
+        },
+        {
+          "id": "gh_d0a58ca9e76d4aca337816ba",
+          "sourceId": "react-brasil/vagas#3026",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3026",
+          "createdAt": "2026-08-15T12:00:49Z",
+          "updatedAt": "2026-08-15T12:01:14Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        },
+        {
+          "id": "gh_a09dc58cf82751f7cd3f27df",
+          "sourceId": "frontendbr/vagas#8542",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8542",
+          "createdAt": "2026-08-18T12:00:21Z",
+          "updatedAt": "2026-08-28T20:05:23Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 3
+      },
+      "freshness": {
+        "ageDays": 44,
+        "publishedAt": "2026-08-02T23:14:58Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_f2c6ad8ddbb570d902bed361",
+      "sourceId": "backend-pt/vagas#149",
+      "title": "[Remoto] Go Backend Developer Sênior @ Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Go Backend Developer nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Desenvolver serviços de alta concorrência em Go\n- Otimizar latência e uso de recursos\n- Instrumentar serviços para observabilidade\n\n## Local\n\n100% remoto, para profissionais em Portugal ou no Brasil.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Go (5 anos ou mais)\n- Go e sua biblioteca padrão\n- APIs REST ou gRPC\n- Goroutines e canais\n- SQL e Docker\n\n**Diferenciais:**\n- Kubernetes\n- Kafka ou NATS\n- Prometheus e Grafana\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-go-senior-remoto\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
+      "issueState": "open",
+      "contentHash": "3335eb7859b0e75203d22c70ff6acfbb0a6b1ea81046bc9ad38ec0f8332b8dca",
+      "repository": "backend-pt/vagas",
+      "repositoryUrl": "https://github.com/backend-pt/vagas",
+      "region": "Europe",
+      "country": "Portugal",
+      "sourceLocation": {
+        "country": "Portugal",
+        "countryCode": "PT",
+        "region": "Europe"
+      },
+      "tags": [
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
+        "remoto",
+        "sênior"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "backend-pt",
+        "name": "backend-pt",
+        "avatarUrl": "https://github.com/backend-pt.png?size=80",
+        "repository": "backend-pt/vagas",
+        "url": "https://github.com/backend-pt/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 22000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-02T23:06:46Z",
+      "updatedAt": "2026-08-09T19:37:26Z",
+      "url": "https://github.com/backend-pt/vagas/issues/149",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "kubernetes"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_f2c6ad8ddbb570d902bed361",
+          "sourceId": "backend-pt/vagas#149",
+          "repository": "backend-pt/vagas",
+          "repositoryUrl": "https://github.com/backend-pt/vagas",
+          "url": "https://github.com/backend-pt/vagas/issues/149",
+          "createdAt": "2026-08-02T23:06:46Z",
+          "updatedAt": "2026-08-09T19:37:26Z",
+          "community": {
+            "id": "backend-pt",
+            "name": "backend-pt",
+            "avatarUrl": "https://github.com/backend-pt.png?size=80",
+            "repository": "backend-pt/vagas",
+            "url": "https://github.com/backend-pt/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 44,
+        "publishedAt": "2026-08-02T23:06:46Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_75e91e41a1fff3f59a91baa2",
+      "sourceId": "qa-brasil/vagas#1268",
+      "title": "[Remoto] QA Manual Sênior na Sylision",
+      "description": "## Descrição da vaga\n\nVaga de QA Manual nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de QA.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Local de trabalho\n\n100% remoto, de qualquer lugar do Brasil ou de Portugal.\n\n## Requisitos da vaga\n\n**Obrigatórios:**\n- Experiência profissional com QA Manual (5 anos ou mais)\n- Elaboração de casos e planos de teste\n- Teste exploratório e de regressão\n- Ferramenta de gestão de defeitos (Jira ou similar)\n- Noções de SQL\n\n**Diferenciais:**\n- Início em automação\n- Teste de API\n- Certificação CTFL\n\n## Forma de contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Benefícios da empresa\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Range Salarial\n\nA vaga paga entre R$ 12.000 e R$ 22.000 por mês, conforme experiência.\n\n## Sobre a empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-qa-manual-senior-remoto\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
+      "excerpt": "## Descrição da vaga Vaga de QA Manual nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de QA. Faixa salarial: R$ 12.000 a 22.000/mês, conforme experiência. ## Local de trabalho 100% remo...",
+      "issueState": "open",
+      "contentHash": "95f8a04cb7fb88f263de43a9367f31be7af02a88811b00c0e7065477087d1090",
+      "repository": "qa-brasil/vagas",
+      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "remoto",
+        "sênior"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "qa-brasil",
+        "name": "qa-brasil",
+        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+        "repository": "qa-brasil/vagas",
+        "url": "https://github.com/qa-brasil/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 22000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-02T23:01:39Z",
+      "updatedAt": "2026-08-02T23:02:00Z",
+      "url": "https://github.com/qa-brasil/vagas/issues/1268",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_75e91e41a1fff3f59a91baa2",
+          "sourceId": "qa-brasil/vagas#1268",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1268",
+          "createdAt": "2026-08-02T23:01:39Z",
+          "updatedAt": "2026-08-02T23:02:00Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 44,
+        "publishedAt": "2026-08-02T23:01:39Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_3ccfeb0841f044587cf7d01f",
       "sourceId": "nodejsdevbr/vagas#75",
@@ -141,7 +599,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 43,
+        "ageDays": 44,
         "publishedAt": "2026-08-02T22:39:38Z",
         "status": "aging"
       }
@@ -606,7 +1064,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 44,
+        "ageDays": 45,
         "publishedAt": "2026-08-01T21:00:04Z",
         "status": "aging"
       }
@@ -1307,7 +1765,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 45,
+        "ageDays": 46,
         "publishedAt": "2026-07-31T21:09:04Z",
         "status": "aging"
       }
@@ -1429,7 +1887,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 45,
+        "ageDays": 46,
         "publishedAt": "2026-07-31T21:00:11Z",
         "status": "aging"
       }
@@ -1834,474 +2292,6 @@
       "freshness": {
         "ageDays": 46,
         "publishedAt": "2026-07-31T05:02:37Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_50535e86aa2938e1aac6bd4b",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9634",
-      "title": "Not for US based people",
-      "description": "### Link to Internship Posting\n\nhttp://careers-sig.icims.com/jobs/11244/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify\n\n### Company Name\n\nSusquehanna\n\n### Internship Title\n\nTrading Operations Analyst Internship: Summer 2027\n\n### Location\n\n_No response_\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOffers Sponsorship\n\n### Is this internship still accepting applications?\n\nYes\n\n### Permanently remove this internship from the list?\n\n- [ ] Yes, remove this internship\n\n### What category does this internship belong to?\n\nNone\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Reason for edit\n\nThis internship is for people who graduated from a Hong Kong/Singapore university a chance in the US. Not avaliable for US based people",
-      "excerpt": "### Link to Internship Posting http://careers-sig.icims.com/jobs/11244/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify ### Company Name Susquehanna ### Internship Title Trading Operations Analyst ...",
-      "issueState": "open",
-      "contentHash": "c6ba0b183f70bdebb52909bfaabce5f7041387bbfde0de94dbb9569ac78feba8",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "edit_internship"
-      ],
-      "sourceTags": [
-        "edit_internship"
-      ],
-      "author": {
-        "id": "ThinkerDesigns",
-        "name": "ThinkerDesigns",
-        "handle": "ThinkerDesigns",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/62044304?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-07-31T02:42:29Z",
-      "updatedAt": "2026-08-16T20:39:31Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9634",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_50535e86aa2938e1aac6bd4b",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9634",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9634",
-          "createdAt": "2026-07-31T02:42:29Z",
-          "updatedAt": "2026-08-16T20:39:31Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 46,
-        "publishedAt": "2026-07-31T02:42:29Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_0efcf8a825dff70e78cfe9bc",
-      "sourceId": "react-brasil/vagas#3025",
-      "title": "[Híbrido] React Developer Pleno na Sylision",
-      "description": "## Descrição da vaga\n\nVaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Labels\n\n- 🏢 Flexível\n- 👨 Pleno\n- ⚖️ CLT\n- ⚖️ PJ\n- 💰 5k-10k",
-      "excerpt": "## Descrição da vaga Vaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision. Faixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência. ## Local Híbrido ou remoto, a combinar...",
-      "issueState": "open",
-      "contentHash": "2778be271d1df17809304087d057ec82adea72f32d6a3ccd43d3af599499cedf",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "sourceTags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-07-30T21:08:56Z",
-      "updatedAt": "2026-07-30T21:09:18Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3025",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0efcf8a825dff70e78cfe9bc",
-          "sourceId": "react-brasil/vagas#3025",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3025",
-          "createdAt": "2026-07-30T21:08:56Z",
-          "updatedAt": "2026-07-30T21:09:18Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 46,
-        "publishedAt": "2026-07-30T21:08:56Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_313f1f028c4484af9bc95eb6",
-      "sourceId": "react-brasil/vagas#3024",
-      "title": "[Híbrido] React Native Developer Pleno na Sylision",
-      "description": "## Descrição da vaga\n\nVaga de React Native Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React Native compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-native-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Labels\n\n- 🏢 Flexível\n- 👨 Pleno\n- ⚖️ CLT\n- ⚖️ PJ\n- 💰 5k-10k",
-      "excerpt": "## Descrição da vaga Vaga de React Native Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision. Faixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência. ## Local Híbrido ou remoto, a c...",
-      "issueState": "open",
-      "contentHash": "1026a3aea9b93556ebb16d4160f63dcf9319e08ad1bcb7cd2a878d55fe72d2b3",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "sourceTags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-07-30T21:00:25Z",
-      "updatedAt": "2026-07-30T21:00:59Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3024",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [
-          "react",
-          "react-native"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_313f1f028c4484af9bc95eb6",
-          "sourceId": "react-brasil/vagas#3024",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3024",
-          "createdAt": "2026-07-30T21:00:25Z",
-          "updatedAt": "2026-07-30T21:00:59Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 46,
-        "publishedAt": "2026-07-30T21:00:25Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_fe5757fbad33016053bd30eb",
-      "sourceId": "react-brasil/vagas#3023",
-      "title": "[Remoto] React Developer Pleno na Sylision",
-      "description": "## Descrição da vaga\n\nVaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\n100% remoto, de qualquer lugar do Brasil ou de Portugal.\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-pleno-remoto\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Labels\n\n- 🏢 Remoto\n- 👨 Pleno\n- ⚖️ CLT\n- ⚖️ PJ\n- 💰 5k-10k",
-      "excerpt": "## Descrição da vaga Vaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision. Faixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência. ## Local 100% remoto, de qualquer luga...",
-      "issueState": "open",
-      "contentHash": "387453e1b65cc3676847cece16107bb1495d507bfc778e97751700747463cf13",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pleno",
-        "remoto",
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "sourceTags": [
-        "pleno",
-        "remoto",
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-07-29T21:00:07Z",
-      "updatedAt": "2026-08-11T19:02:53Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3023",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "100%",
-        "subdivision": "DE",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "100%, DE · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "frontend"
-        ],
-        "technologies": [
-          "nextjs",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_fe5757fbad33016053bd30eb",
-          "sourceId": "react-brasil/vagas#3023",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3023",
-          "createdAt": "2026-07-29T21:00:07Z",
-          "updatedAt": "2026-07-29T21:00:30Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        },
-        {
-          "id": "gh_ae83435fb98f57eb1f4b8182",
-          "sourceId": "frontend-pt/vagas#110",
-          "repository": "frontend-pt/vagas",
-          "repositoryUrl": "https://github.com/frontend-pt/vagas",
-          "url": "https://github.com/frontend-pt/vagas/issues/110",
-          "createdAt": "2026-08-10T21:00:35Z",
-          "updatedAt": "2026-08-11T19:02:53Z",
-          "community": {
-            "id": "frontend-pt",
-            "name": "frontend-pt",
-            "avatarUrl": "https://github.com/frontend-pt.png?size=80",
-            "repository": "frontend-pt/vagas",
-            "url": "https://github.com/frontend-pt/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 47,
-        "publishedAt": "2026-07-29T21:00:07Z",
         "status": "aging"
       }
     }

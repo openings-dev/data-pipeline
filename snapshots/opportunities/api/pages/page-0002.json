@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-09-15T18:38:55.802Z",
+  "generatedAt": "2026-09-15T23:21:25.700Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_5b8f66736b45606cdc8ca421",
+    "gh_2bf1364281c72d4aa07b6d73",
+    "gh_4a9e1cd0be22fca7515d714c",
+    "gh_07684f7ca8d92fa38a4ce3e2",
+    "gh_5a1ff9c946d4a24594ec28b1",
+    "gh_50efd974bb132352b1188a9f",
     "gh_f379b4c76548e2cd330b8777",
     "gh_0e6bd5dbd7f6d69f3e81bc93",
     "gh_4db408dda673329e8d662de7",
@@ -17,15 +23,658 @@
     "gh_02bb152066b12fe4c52f9c59",
     "gh_76007f3ca426a2991eb904e1",
     "gh_e60ad3426cdccd2670251bf1",
-    "gh_25cf5dc022de1ad2231b828d",
-    "gh_6ce2011192257ba9ecbe6ca6",
-    "gh_393ea76d196974f1543704ce",
-    "gh_70e6e21759821a59e640879e",
-    "gh_61212c2435cd38b5c470216d",
-    "gh_423253e9f32ff55698650e74",
-    "gh_1ba6459bb5469a28d19f2a84"
+    "gh_25cf5dc022de1ad2231b828d"
   ],
   "items": [
+    {
+      "id": "gh_5b8f66736b45606cdc8ca421",
+      "sourceId": "rebase-network/who-is-hiring#1288",
+      "title": "[Remote & HK/SG] Quant/Web3公司诚聘  Rust量化交易系统工程师/Java/前端/Senior BD/Lead BD（韩国/越南-远程）/做市与对冲负责人/英语 & 欧洲区负责人/华语区市场经理/COO/财务BP/财务经理/HR负责人一号位  薪水 HKD/SGD/RMB/USD",
+      "description": "## 公司/团队介绍\n将人工智能深度融入去中心化交易协议，为机构与零售用户提供现货、高杠杆永续/交割合约及美式/欧式期权等结构化产品。团队远程优先，办公室覆盖香港、新加坡、加拿大、欧盟及北美，成员兼具投行、高频做市、量化对冲、FAANG 及区块链底层研发背景，依托全球低延迟交易设施与 AI 风控引擎，实现 7×24 小时跨时区流动性供给与 Delta 中性对冲。\n\n## 薪资福利待遇\n$5K/月-10K/月，  $10K-20K/月。\n\n## 地点\n\n- 工作地点：Remote & HK/SG & Dubai\n- 联系方式：justinxu268@gmail.com\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：是 & 否\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\nPosition 一：量化交易系统工程师（Senior Rust）\nJob Type: Full-Time，Onsite-SG/HK（提供EP）\n岗位职责：\n负责低延迟、高性能的加密衍生品交易系统开发，涵盖策略、报价、风控、监控及 API 维护。\n保障交易系统在策略、报价、风控、监控与 API 维护等模块的稳定运行。\n在非常扁平、工程师文化浓厚、稳定性高且成员背景与综合素质优秀的团队中协作。\n任职要求：\n精通 Rust，具备高频/量化交易系统实战经验，并理解订单簿、资金费率等核心机制。\n熟悉主流交易所 API；有做市/HFT 经验者优先。\nGitHub 显著开源贡献或高质量项目者加分。\n\nPosition 二：高级Java工程师\nJob Type: Full-Time，remote（需要base上海）\n岗位职责：\n负责事件合约交易平台后端核心模块的设计与开发，包括撮合、风控、结算、定价、资产系统。\n确保系统高性能、高可用及强一致性。\n与智能合约团队协作完成链上资产对接。\n任职要求：\n5年以上Java经验，深入掌握JVM、并发、NIO/Netty、Spring Cloud、MySQL、Redis。\n具备微服务、消息队列、分布式事务及系统调优能力，能独立处理线上故障与容量预估。\n优先考虑知名交易所经验者；注重工程质量与稳定性，具备从0到1构建及重构系统能力，善于使用AI工具提升研发效率，沟通协作能力强。\n\nPosition 三：高级前端工程师（预测市场）\nJob Type: Full-Time，远程办公（需要base上海）\n岗位职责：\n负责交易所核心前端系统（Web/H5，覆盖行情、交易、资产等）的设计优化、架构演进与工程治理。\n独立负责复杂模块，推动多端协作与需求落地。\n带领小团队，提升前端工程效率与交付质量。\n任职要求：\n3年以上中大型项目经验，必须有过CEX/DEX或金融交易产品经历。\n精通React/Vue等技术栈，能独立负责复杂模块。\n必须熟练使用AI Agent工具提效，具备强沟通协作与ownership，有实际团队或项目管理经验。\n\nPosition 四：BD/Senior BD/Lead BD（韩国/越南）\nJob Type: Full-Time，remote\n岗位职责：\n负责韩国或越南区域KOL、做市商及交易社区的商务拓展，主导合作伙伴关系全生命周期管理（挖掘、谈判、签约、培训与增长）。\n协同策划联合营销、赛事及社区活动。\n收集市场反馈，推动合约产品迭代优化。\n任职要求：\n具备DeFi/加密交易所BD经验，拥有丰富KOL与社区资源。\n熟悉CPA/RevShare分成模式。\n适应跨时区快节奏，自驱力强。\n\nPosition 五：预测市场做市与对冲负责人\nJob Type: Full-Time，remote\n岗位职责：\n负责预测市场做市与对冲业务，亲自负责定价、报价、库存、对冲、风控及PnL。\n独立设计策略与系统（Python/C++），从0到1搭建内部MM系统。\n处理实盘成交、对冲、异常及事故的全流程。\n任职要求：\n拥有Prediction Market真实做市经验和Crypto交易所内部做市经历，做过options、0DTE、binary或其他短到期非线性产品。\n必须hands-on，能独立设计策略与系统（Python/C++），具备从0到1搭建内部MM系统并处理实盘成交、对冲、异常及事故的全流程能力。\n中文流利、Crypto背景扎实；排除仅做FoF/CTA、团队管理或外部对接者；能接受短周期市场前期高强度on-call及亲自下场。\n\nPosition 六：英语 & 欧洲区负责人\nJob Type: Full-Time，remote\n岗位职责：\n负责加拿大、新西兰、澳大利亚及英国市场的战略规划、年度业务计划及用户与收入增长目标。\n深入洞察当地市场趋势、用户需求与竞争格局，持续优化产品和商业策略，并搭建合作伙伴、渠道及社区资源网络。\n跨部门协同产品、市场、运营等团队，代表公司参与行业活动及商务合作，推动业务落地。\n任职要求：\n具备英语区市场工作经验。\n有从0到1拓展或综合管理经验，战略思维与数据驱动能力强。\n英语商务流利，常驻当地优先。\n\nPosition 七：市场经理-华语区\nJob Type: Full-Time，remote\n岗位职责：\n负责华语区（主要港澳台及马来西亚）整体市场策略制定与落地，提升品牌知名度与市占率，并统筹区域市场调研、竞争分析及策略建议输出。\n策划并执行线上线下推广活动，评估优化效果；搭建维护区域渠道、合作伙伴及关键客户关系，协同内部销售、品牌、公关等团队推进市场项目。\n管理市场预算与投放效果，确保ROI达标，定期输出区域市场数据及复盘报告，为业务决策提供依据。\n任职要求：\n本科及以上学历，3年以上市场经验，具备区域市场管理成功案例。\n拥有策略规划、项目管理、数据分析及团队管理能力。\n英语或外语能力优先（视业务需要）。\n\nPosition 八：Global Head of Operation（全盘COO）\nJob Type: Full-Time，海外 remote\n岗位职责：\n全面负责CEX平台整体运营体系与业务增长，统筹用户增长、渠道建设、全球市场运营及VIP/客服体系，对用户规模、交易量、资产沉淀、手续费收入及运营效率直接负责。\n制定并落地运营战略与增长计划，主导合约/理财跟单/Ucard等核心产品运营，搭建全球代理商、KOL及做市商合作体系。\n协同产品、技术、市场等多部门推进业务，管理运营事故与舆情处理。\n任职要求：\n全日制统招985/211（海外同等高校）本科及以上，必须具备海外全职工作经历。\n5年以上金融科技/Crypto行业经验、3年以上CEX核心运营管理经验。\n必须当前在职状态并拥有CMC前20交易所运营负责人/区域负责人/业务负责人或COO经历，中英文流利。\n\nPosition 九：财务BP/财务经理\nJob Type: Full-Time，Onsite-迪拜\n岗位职责：\n负责交易所多币种、多主体全盘账务与月结年结，管理冷热钱包及链上对账（Etherscan/Tronscan）。\n搭建数字资产内控流程并保障资金数据准确。\n对接产研团队梳理财务需求，转化为记账规则与系统配置，参与对账核算系统搭建与优化，推动财务流程自动化。\n任职要求：\n3年以上Web3/加密交易所财务全盘经验。\n懂链上对账、多币种资金管理与报表分析，能独立对接产研提系统需求。\n持有CPA/中级会计优先，有海外主体账务或从0搭建对账体系经验者加分。\n\nPosition 十：HR负责人（一号位，汇报CEO）\nJob Type: Full-Time，remote\n管理7人团队\n岗位职责：\n管理5-10人团队，主导技术、量化、风控、合规等中高端及全球化岗位招聘，搭建行业人才地图，确保关键岗位快速到岗且高质匹配。\n深入业务，设计有竞争力的薪酬与长期激励（Token/ESOP），推动绩效体系落地，直接支撑组织效率与业务增长。\n协同CEO塑造企业文化，强化核心人才保留，在高速创业节奏中打造稳定、有战斗力的团队，并持续完善HR职能支撑体系。\n任职要求：\n曾在知名交易所担任HRD/HR Head或HRBP Leader的负责人，能直接对话CEO，驱动业务而非停留于后台职能。\n该角色不是只写制度、建文档、走流程，而是以人才引进、绩效激活和文化建设为三大核心战场。\n具备业务驱动、组织建设与人才保留能力，适应高速创业节奏。\n\n## 工作环境\n弹性工作，非常扁平，典型工程师文化氛围，稳定性高。",
+      "excerpt": "## 公司/团队介绍 将人工智能深度融入去中心化交易协议，为机构与零售用户提供现货、高杠杆永续/交割合约及美式/欧式期权等结构化产品。团队远程优先，办公室覆盖香港、新加坡、加拿大、欧盟及北美，成员兼具投行、高频做市、量化对冲、FAANG 及区块链底层研发背景，依托全球低延迟交易设施与 AI 风控引擎，实现 7×24 小时跨时区流动性供给与 Delta 中性对冲。 ## 薪资福利待遇 $5K/月-10K/月， $10K-20K/月。...",
+      "issueState": "open",
+      "contentHash": "fc4571288de9020e2e6b52babe9163c2ca1aac4b61e9e39734862e69ba8c872c",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "java",
+        "onsite",
+        "python",
+        "react",
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
+        "java",
+        "onsite",
+        "python",
+        "react",
+        "remote",
+        "senior"
+      ],
+      "author": {
+        "id": "JTX-8",
+        "name": "JTX-8",
+        "handle": "JTX-8",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/191010584?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 10000,
+        "max": 20000,
+        "period": "hour"
+      },
+      "createdAt": "2026-09-10T11:22:07Z",
+      "updatedAt": "2026-09-10T11:22:07Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1288",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "java",
+          "mysql",
+          "python",
+          "react",
+          "redis",
+          "rust",
+          "spring"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_5b8f66736b45606cdc8ca421",
+          "sourceId": "rebase-network/who-is-hiring#1288",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1288",
+          "createdAt": "2026-09-10T11:22:07Z",
+          "updatedAt": "2026-09-10T11:22:07Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-09-10T11:22:07Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_2bf1364281c72d4aa07b6d73",
+      "sourceId": "awesome-jobs/vietnam#5055",
+      "title": "Australian marketplace startup - Senior Software Engineer (React / Full-Stack) - Remote/Vietnam - FT",
+      "description": "## Location\n\n* Remote / Vietnam (distributed team across Australia and Vietnam)\n\n## Salary Expectation\n\n* Competitive (negotiable based on experience)\n\n## Requirements\n\n* 5+ years of professional software development experience\n* Experience designing and building full-stack features end-to-end (UI through backend integration)\n* Backend development and API design (REST/gRPC)\n* Relational databases and data modelling\n* Cloud platforms (AWS preferred) and containerisation\n* CI/CD pipelines and automated deployment practices\n* Strong written/spoken English for distributed, async-first collaboration\n\n## Skills\n\n### Must Have\n\n* React Strength track: React, TypeScript, modern build tools (Webpack, Babel), state management (TanStack or similar)\n* Full-Stack Generalist track: React / React Native plus work across Rails, Kotlin, and Golang services\n* Comfort working across multiple programming languages and stacks\n* Writing comprehensive tests within strong CI/CD practices\n* Applying AI tooling effectively in day-to-day engineering\n\n### Ideally\n\n* User analytics and data transformation pipelines\n* Prior work in marketplace / consumer product environments\n* Experience migrating legacy systems to modern architecture patterns\n\n### Responsibilities\n\nOwn full-stack product features on the Product Engineering team across two related senior tracks (React Strength and Full-Stack Generalist).\n\n### You’ll be responsible for\n\n* Designing and building full-stack features across the React/TypeScript (and React Native) frontend and Kotlin / Go / Rails backends\n* Implementing robust API integrations following BFF (Backend for Frontend) patterns\n* Building responsive, accessible user interfaces using the design system\n* Writing tests and contributing to CI/CD, observability, monitoring, and on-call\n* Mentoring teammates and raising engineering standards\n* Judging when a complex solution is warranted vs when a simpler one ships reliably\n\n### You can bring\n\n* Strong product thinking and attention to craft\n* Ownership and autonomy in a distributed, async-first environment\n* A consistent focus on user experience and technical quality\n\n### Why it would be awesome to work with us\n\n* Own features end-to-end on a real marketplace product, not slice-only tickets\n* Modern frontend plus a multi-language microservices ecosystem (Golang, Rails, Kotlin)\n* Distributed team across Australia, Portugal, and Vietnam\n* Culture that prefers the simplest solution that gets the job done\n\n### What's the roadmap is like for the near future.\n* Ongoing migration from legacy systems to modern architecture patterns. Heavily AI-assisted SLDC (Claude account provided)\n* BFF-based API integration across a multi-language backend\n* Design-system-driven UI shared across web (and mobile for the Generalist track)\n\n### Contact\nSMS / WhatsApp: 0583362116",
+      "excerpt": "## Location * Remote / Vietnam (distributed team across Australia and Vietnam) ## Salary Expectation * Competitive (negotiable based on experience) ## Requirements * 5+ years of professional software development exper...",
+      "issueState": "open",
+      "contentHash": "5d82e1ac8f91f0f8053d16acbff2d96ee74025343c83006572e37c77224a7447",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "frontend",
+        "golang",
+        "react",
+        "remote",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "frontend",
+        "golang",
+        "react",
+        "remote",
+        "senior",
+        "typescript"
+      ],
+      "author": {
+        "id": "aiversonhr",
+        "name": "aiversonhr",
+        "handle": "aiversonhr",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/223813733?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-09-10T07:14:37Z",
+      "updatedAt": "2026-09-14T15:33:56Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Australia",
+        "countryCode": "AU",
+        "region": "Oceania",
+        "city": "*  / Vietnam (distributed team across  and Vietnam)",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "*  / Vietnam (distributed team across  and Vietnam), Australia · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "go",
+          "kotlin",
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_2bf1364281c72d4aa07b6d73",
+          "sourceId": "awesome-jobs/vietnam#5055",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
+          "createdAt": "2026-09-10T07:14:37Z",
+          "updatedAt": "2026-09-14T15:33:56Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_4dca58465e67cfcc6360ed90",
+          "sourceId": "awesome-jobs/jobs#5055",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
+          "createdAt": "2026-09-10T07:14:37Z",
+          "updatedAt": "2026-09-14T15:33:56Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-09-10T07:14:37Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_4a9e1cd0be22fca7515d714c",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9694",
+      "title": "New Internship",
+      "description": "### Link to Internship Posting\n\nhttps://www.amazon.jobs/en/jobs/10535280/software-development-engineer-intern-robotics-2027\n\n### Company Name\n\nAmazon\n\n### Internship Title\n\nSoftware Development Intern, Robotics\n\n### Location\n\nToronto, ON\n\n### What term(s) is this internship offered for?\n\nWinter 2027, Spring 2027, Summer 2027\n\n### Does this internship offer sponsorship?\n\nOther\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nchinenyeenete2020@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
+      "excerpt": "### Link to Internship Posting https://www.amazon.jobs/en/jobs/10535280/software-development-engineer-intern-robotics-2027 ### Company Name Amazon ### Internship Title Software Development Intern, Robotics ### Locatio...",
+      "issueState": "open",
+      "contentHash": "78d2fc91907fd0fc0358acd2b4bec6c5a5849ed48436242a339b8668a76175b0",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
+        "new_internship"
+      ],
+      "author": {
+        "id": "chinenyeenete",
+        "name": "chinenyeenete",
+        "handle": "chinenyeenete",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/189556569?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-09-10T01:22:47Z",
+      "updatedAt": "2026-09-10T01:22:47Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9694",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Toronto",
+        "subdivision": "ON",
+        "displayText": "Toronto, ON",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "spring"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4a9e1cd0be22fca7515d714c",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9694",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9694",
+          "createdAt": "2026-09-10T01:22:47Z",
+          "updatedAt": "2026-09-10T01:22:47Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-09-10T01:22:47Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_07684f7ca8d92fa38a4ce3e2",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2970",
+      "title": "Hardware Engineering Hyperlink Issue",
+      "description": "### Issue/Question\n\nThe Hardware Engineering hyperlink on the README.md doesn't lead to the job table for that section, hence the hardware engineering jobs are not accessible.",
+      "excerpt": "### Issue/Question The Hardware Engineering hyperlink on the README.md doesn't lead to the job table for that section, hence the hardware engineering jobs are not accessible.",
+      "issueState": "open",
+      "contentHash": "321cf7035b2d6f146a5cae0f369b6b6dd10675e66b5980d97372bb232eb2feda",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "misc"
+      ],
+      "sourceTags": [
+        "misc"
+      ],
+      "author": {
+        "id": "sohumtiwary",
+        "name": "sohumtiwary",
+        "handle": "sohumtiwary",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61177362?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-09-10T00:36:55Z",
+      "updatedAt": "2026-09-10T00:36:55Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2970",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_07684f7ca8d92fa38a4ce3e2",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2970",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2970",
+          "createdAt": "2026-09-10T00:36:55Z",
+          "updatedAt": "2026-09-10T00:36:55Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-09-10T00:36:55Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_5a1ff9c946d4a24594ec28b1",
+      "sourceId": "soujava/vagas-java#1954",
+      "title": "[HÍBRIDO - São Paulo | SP] Pessoa Desenvolvedora Sênior | BAU e Modernização | Mercado de Capitais na [Evertec]",
+      "description": "## **Descrição da vaga**\nEstamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de dados Oracle, soluções corporativas de relatórios (reporting) e tecnologias Microsoft .NET.\n\nO(a) profissional atuará em iniciativas tecnológicas complexas envolvendo múltiplas equipes locais, apoiando tanto o desenvolvimento de aplicações modernas quanto a sustentação e modernização de plataformas legadas. A posição exige uma combinação de competências em engenharia de software, arquitetura de soluções, modelagem de dados, análise de negócios e gestão de stakeholders.\n\nO(a) candidato(a) deve ter conforto para interagir diretamente com usuários de negócio, levantar requisitos, projetar soluções escaláveis, dar suporte a sistemas legados e conduzir iniciativas de modernização ao longo de todo o ciclo de desenvolvimento de software, incluindo testes e implantação em produção.\n\n \n**Principais Responsabilidades**\n\n- Projetar, desenvolver e manter aplicações backend utilizando Java e aplicações frontend utilizando React.\n- Dar suporte, manter e aprimorar aplicações legadas desenvolvidas em tecnologias Microsoft .NET.\n- Participar de iniciativas estratégicas de modernização de aplicações .NET legadas, migrando-as para arquiteturas e stacks tecnológicos modernos.\n- Projetar soluções de dados e relatórios corporativos de ponta a ponta, garantindo escalabilidade, manutenção simplificada e aderência aos requisitos de negócio.\n- Definir arquitetura de sistemas, padrões de integração e soluções técnicas para plataformas novas e existentes.\n- Realizar modelagem de dados conceitual, lógica e física em bancos Oracle.\n- Projetar estruturas de banco de dados, otimizar consultas SQL e garantir integridade, performance e escalabilidade dos dados.\n- Trabalhar diretamente com stakeholders de negócio para levantamento, documentação e validação de requisitos funcionais e técnicos.\n- Traduzir requisitos de negócio em especificações técnicas e desenhos de solução.\n- Desenvolver novas ferramentas e sistemas do zero, desde a análise de requisitos até a implementação.\n- Participar de discussões arquiteturais e iniciativas de estratégia tecnológica.\n- Criar e executar testes unitários para garantir qualidade de código e estabilidade das aplicações.\n- Apoiar testes de integração de sistemas (SIT) e coordenar atividades de homologação com usuários (UAT).\n- Analisar defeitos, realizar análise de causa raiz e apoiar a resolução de problemas.\n- Trabalhar em estreita colaboração com equipes locais e globais das áreas de tecnologia e negócio.\n- Produzir e manter documentação técnica e funcional.\n- Sustentar e evoluir sistemas relacionados ao mercado de ações (equities) e às operações da B3.\n\n \n**Requisitos Técnicos**\n\n- Experiência sólida em desenvolvimento backend com Java.\n- Experiência sólida em desenvolvimento frontend com React.\n- Conhecimento prático em Microsoft .NET Framework e/ou .NET Core.\n- Experiência em sustentação e evolução de aplicações legadas em .NET.\n- Experiência em iniciativas de modernização de sistemas legados e transformação de aplicações.\n- Conhecimento avançado em Oracle Database.\n- Forte domínio de SQL e PL/SQL.\n- Experiência relevante em arquitetura de bancos de dados e otimização de performance.\n- Experiência comprovada em modelagem de dados conceitual, lógica e física.\n- Experiência no desenho de soluções corporativas de dados e relatórios.\n- Sólida compreensão de arquitetura de sistemas e sistemas distribuídos.\n- Experiência com APIs, integrações entre sistemas e desenho de aplicações corporativas.\n- Experiência na concepção e desenvolvimento de aplicações do zero.\n- Conhecimento de metodologias do Ciclo de Vida de Desenvolvimento de Software (SDLC).\n\n \n**Competências de Análise de Negócios e Funcionais**\n\n- Capacidade comprovada de conduzir sessões de levantamento de requisitos com usuários e stakeholders.\n- Capacidade de traduzir necessidades complexas de negócio em soluções técnicas escaláveis.\n- Experiência na elaboração de especificações funcionais, desenhos de solução e documentação técnica.\n- Forte capacidade analítica e de resolução de problemas.\n- Experiência no gerenciamento de prioridades concorrentes em múltiplos projetos.\n- Capacidade de atuar como ponte entre equipes de negócio e tecnologia.\n\n \n**Testes e Garantia da Qualidade**\n\n- Experiência na criação e execução de planos de testes unitários.\n- Experiência no suporte a testes de integração de sistemas (SIT).\n- Experiência na coordenação e suporte a testes de aceitação do usuário (UAT).\n- Capacidade de identificar, documentar e acompanhar defeitos até sua resolução.\n- Compromisso com qualidade, confiabilidade e melhoria contínua do software.\n\n \n**Soft Skills**\n\n- Excelente comunicação e habilidade de gestão de stakeholders.\n- Capacidade de interação eficaz com equipes técnicas, liderança executiva e usuários de negócio.\n- Excelente organização e gestão do tempo.\n- Alto nível de autonomia, responsabilidade e senso de dono.\n- Forte capacidade de liderança e influência.\n- Capacidade de atuar em um ambiente colaborativo, multicultural e global.\n- Perfil analítico e atenção aos detalhes.\n\n \n**Experiência de Mercado Desejável**\n\n- Experiência em corretoras, bancos de investimento, gestoras de recursos ou mercado de capitais.\n- Conhecimento do mercado de ações brasileiro e dos processos da B3.\n- Experiência com sistemas de negociação (trading), pós-negociação (post-trade), reportes regulatórios ou aplicações de middle/back office será considerada um diferencial.\n\n \n**Idioma**\nInglês avançado para comunicação com equipes globais, discussões de arquitetura, workshops de levantamento de requisitos e elaboração de documentação técnica. --> \n\n## **Local**\n\nHíbrido em São Paulo - Próx. ao Shopping Morumbi\n\n## **Benefícios**\n\nE ai, se identificou com o que leu até agora? Então, vou te contar o que você encontrará aqui, além de um ambiente dinâmico:\n\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\nValorizamos a diversidade e entendemos que o que acrescenta é justamente ideias e pontos de vistas variados. Por isso raça, cor, religião, gênero e identidade de gênero, nacionalidade, deficiência, orientação sexual, ascendência ou idade, não serão impeditivos de você fazer parte do nosso time.\n\n\n## **Contratação**\n\n- CLT\n\n## **Sobre a Evertec**\n\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## **Como se candidatar**\n\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Sênior | BAU e Modernização | Mercado de Capitais](https://jobs.quickin.io/sinqia/jobs/6a2047ba03cf9f0013288972)\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 07 dias após cada processo.\n\n#### Alocação\n- Alocado\n- Hibrido\n\n#### Nível\n- Sênior\n- Especialista",
+      "excerpt": "## **Descrição da vaga** Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de da...",
+      "issueState": "open",
+      "contentHash": "6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "alocado",
+        "arquiteto",
+        "backend",
+        "clt",
+        "frontend",
+        "inglês avançado",
+        "sql",
+        "sênior"
+      ],
+      "sourceTags": [
+        "alocado",
+        "arquiteto",
+        "backend",
+        "clt",
+        "frontend",
+        "inglês avançado",
+        "sql",
+        "sênior"
+      ],
+      "author": {
+        "id": "DNina31",
+        "name": "DNina31",
+        "handle": "DNina31",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/157808255?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "createdAt": "2026-09-09T15:04:41Z",
+      "updatedAt": "2026-09-09T15:05:21Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1954",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "frontend",
+          "fullstack",
+          "support"
+        ],
+        "technologies": [
+          "dotnet",
+          "java",
+          "react"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_5a1ff9c946d4a24594ec28b1",
+          "sourceId": "soujava/vagas-java#1954",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1954",
+          "createdAt": "2026-09-09T15:04:41Z",
+          "updatedAt": "2026-09-09T15:05:21Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-09-09T15:04:41Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_50efd974bb132352b1188a9f",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9693",
+      "title": "Add multiple resumes",
+      "description": "### Improvement\n\nI try to upload 2 different resume for 2 different job role but it remove the previous resume and add the new one. I want we can add at least 2 resumes.\n<img width=\"1106\" height=\"566\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/42aa6f82-dd70-49dd-8899-9ca25f40dece\" />",
+      "excerpt": "### Improvement I try to upload 2 different resume for 2 different job role but it remove the previous resume and add the new one. I want we can add at least 2 resumes. <img width=\"1106\" height=\"566\" alt=\"Image\" src=\"...",
+      "issueState": "open",
+      "contentHash": "a35b9ae84a37d96036f8cf66c750845669221ab3c0e9391eec58d16309dc0036",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "kashif7230",
+        "name": "kashif7230",
+        "handle": "kashif7230",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/198715463?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-09-09T14:56:39Z",
+      "updatedAt": "2026-09-09T14:56:39Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9693",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_50efd974bb132352b1188a9f",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9693",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9693",
+          "createdAt": "2026-09-09T14:56:39Z",
+          "updatedAt": "2026-09-09T14:56:39Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-09-09T14:56:39Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_f379b4c76548e2cd330b8777",
       "sourceId": "backend-br/vagas#12418",
@@ -1683,663 +2332,6 @@
       "freshness": {
         "ageDays": 10,
         "publishedAt": "2026-09-05T09:32:34Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_6ce2011192257ba9ecbe6ca6",
-      "sourceId": "frontendbr/vagas#8558",
-      "title": "[Remoto! Curitiba] Tech Lead Integrações (USD)",
-      "description": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES\n📍 Curitiba/PR | Modelo híbrido – 2x por semana\n 💰 Até US$ 5.000/mês | Contractor\n 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA\nEstamos buscando um(a) Tech Lead Hands-On, com forte experiência em desenvolvimento, arquitetura e integrações para atuar em um projeto internacional.\nAqui, liderança técnica significa continuar colocando a mão no código.\nNão buscamos alguém que tenha atuado apenas como gestor ou que esteja distante do desenvolvimento. A posição exige programação no dia a dia, revisão de código, decisões arquiteturais, acompanhamento de pipelines e atuação direta na resolução de problemas em produção.\n💡 Importante: o processo seletivo terá Live Coding, justamente para avaliar a capacidade técnica na prática.\n🔎 O que você precisa ter?\n✅ 10+ anos de experiência profissional em desenvolvimento de software;\n ✅ Experiência sólida com Python, Java ou Go;\n ✅ Experiência com programação assíncrona e concorrência;\n ✅ Bacharelado concluído em TI, como Ciência da Computação, Sistemas de Informação ou Engenharia de Software;\n ✅ Domínio prático de Scrum e Kanban;\n ✅ Experiência conduzindo ritos, refinamentos técnicos e priorização de backlog;\n ✅ Capacidade de liderar tecnicamente uma squad com autonomia, inclusive em cenários sem PO dedicado;\n ✅ Experiência com Clean Code, SOLID e Code Review;\n ✅ Experiência na investigação e resolução de problemas em produção;\n ✅ Conhecimento avançado de SQL;\n ✅ Experiência com APIs REST, Webhooks e integrações;\n ✅ Conhecimento de arquiteturas Event-Driven, como Kafka ou RabbitMQ;\n ✅ Experiência trabalhando com arquivos em alta escala;\n ✅ Prática com testes automatizados, resiliência e idempotência;\n ✅ Inglês C1/C2, com comunicação diária em ambiente internacional.\n⭐ Será um grande diferencial:\n• Experiência com US Healthcare;\n • Conhecimento de FHIR, HL7 e X12 (834/835/837);\n • Conhecimento de HIPAA/PHI;\n • Experiência com arquitetura de integrações na AWS;\n • Conhecimento de Lambda, SQS, SNS e API Gateway.\n⚠️ Antes de se candidatar\nEssa é uma posição realmente Hands-On.\nSe você atualmente não programa no dia a dia ou busca uma posição exclusivamente gerencial, provavelmente essa oportunidade não será o melhor match.\nO processo inclui uma etapa prática de Live Coding, portanto buscamos profissionais que tenham segurança para demonstrar seus conhecimentos técnicos na prática.\n🌎 O que oferecemos?\n💰 Até US$ 5.000/mês\n 📄 Contrato internacional\n 📍 Híbrido em Curitiba/PR – 2x por semana\n 🇺🇸 Atuação com equipe nos Estados Unidos\n 🚀 Projeto internacional e ambiente tecnicamente desafiador\nSe você tem experiência técnica + liderança + perfil Hands-On e está pronto para atuar em um projeto internacional, queremos conhecer você.\n👉 Envie seu CV em inglês (PDF) pelo link nos comentários.\nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n\nE se você conhece aquele Tech Lead que realmente ainda coloca a mão no código, marque ou compartilhe esta oportunidade com ele. 🚀\n#TechLead #TechLeadership #SoftwareEngineering #SoftwareDeveloper #BackendDeveloper #Python #Java #Golang #Kafka #RabbitMQ #AWS #APIs #Integration #EventDrivenArchitecture #CleanCode #SOLID #Scrum #Kanban #USHealthcare #HealthcareIT #RemoteJobs #InternationalJobs #TechJobs #VagasDeTI #Curitiba #LATAM",
-      "excerpt": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech...",
-      "issueState": "open",
-      "contentHash": "ea1036305d074dad0fc14b0f1af77ad042180f86cae3d5f48e4d128c682a8b9b",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "híbrido"
-      ],
-      "sourceTags": [
-        "híbrido"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "createdAt": "2026-09-04T15:51:55Z",
-      "updatedAt": "2026-09-04T15:52:21Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8558",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "leadership"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "java",
-          "python"
-        ],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_6ce2011192257ba9ecbe6ca6",
-          "sourceId": "frontendbr/vagas#8558",
-          "repository": "frontendbr/vagas",
-          "repositoryUrl": "https://github.com/frontendbr/vagas",
-          "url": "https://github.com/frontendbr/vagas/issues/8558",
-          "createdAt": "2026-09-04T15:51:55Z",
-          "updatedAt": "2026-09-04T15:52:21Z",
-          "community": {
-            "id": "frontendbr",
-            "name": "frontendbr",
-            "avatarUrl": "https://github.com/frontendbr.png?size=80",
-            "repository": "frontendbr/vagas",
-            "url": "https://github.com/frontendbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-04T15:51:55Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_393ea76d196974f1543704ce",
-      "sourceId": "backend-br/vagas#12413",
-      "title": "[Híbrido/Curitiba ] Tech Lead Integrações - USD",
-      "description": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES\n📍 Curitiba/PR | Modelo híbrido – 2x por semana\n 💰 Até US$ 5.000/mês | Contractor\n 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA\nEstamos buscando um(a) Tech Lead Hands-On, com forte experiência em desenvolvimento, arquitetura e integrações para atuar em um projeto internacional.\nAqui, liderança técnica significa continuar colocando a mão no código.\nNão buscamos alguém que tenha atuado apenas como gestor ou que esteja distante do desenvolvimento. A posição exige programação no dia a dia, revisão de código, decisões arquiteturais, acompanhamento de pipelines e atuação direta na resolução de problemas em produção.\n💡 Importante: o processo seletivo terá Live Coding, justamente para avaliar a capacidade técnica na prática.\n🔎 O que você precisa ter?\n✅ 10+ anos de experiência profissional em desenvolvimento de software;\n ✅ Experiência sólida com Python, Java ou Go;\n ✅ Experiência com programação assíncrona e concorrência;\n ✅ Bacharelado concluído em TI, como Ciência da Computação, Sistemas de Informação ou Engenharia de Software;\n ✅ Domínio prático de Scrum e Kanban;\n ✅ Experiência conduzindo ritos, refinamentos técnicos e priorização de backlog;\n ✅ Capacidade de liderar tecnicamente uma squad com autonomia, inclusive em cenários sem PO dedicado;\n ✅ Experiência com Clean Code, SOLID e Code Review;\n ✅ Experiência na investigação e resolução de problemas em produção;\n ✅ Conhecimento avançado de SQL;\n ✅ Experiência com APIs REST, Webhooks e integrações;\n ✅ Conhecimento de arquiteturas Event-Driven, como Kafka ou RabbitMQ;\n ✅ Experiência trabalhando com arquivos em alta escala;\n ✅ Prática com testes automatizados, resiliência e idempotência;\n ✅ Inglês C1/C2, com comunicação diária em ambiente internacional.\nSerá um grande diferencial:\n• Experiência com US Healthcare;\n • Conhecimento de FHIR, HL7 e X12 (834/835/837);\n • Conhecimento de HIPAA/PHI;\n • Experiência com arquitetura de integrações na AWS;\n • Conhecimento de Lambda, SQS, SNS e API Gateway.\n⚠️ Antes de se candidatar\nEssa é uma posição realmente Hands-On.\nSe você atualmente não programa no dia a dia ou busca uma posição exclusivamente gerencial, provavelmente essa oportunidade não será o melhor match.\nO processo inclui uma etapa prática de Live Coding, portanto buscamos profissionais que tenham segurança para demonstrar seus conhecimentos técnicos na prática.\n🌎 O que oferecemos?\n💰 Até US$ 5.000/mês\n 📄 Contrato internacional\n 📍 Híbrido em Curitiba/PR – 2x por semana\n 🇺🇸 Atuação com equipe nos Estados Unidos\n 🚀 Projeto internacional e ambiente tecnicamente desafiador\nSe você tem experiência técnica + liderança + perfil Hands-On e está pronto para atuar em um projeto internacional, queremos conhecer você.\n👉 Envie seu CV em inglês (PDF) pelo link nos comentários.\nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n\nE se você conhece aquele Tech Lead que realmente ainda coloca a mão no código, marque ou compartilhe esta oportunidade com ele. 🚀\n#TechLead #TechLeadership #SoftwareEngineering #SoftwareDeveloper #BackendDeveloper #Python #Java #Golang #Kafka #RabbitMQ #AWS #APIs #Integration #EventDrivenArchitecture #CleanCode #SOLID #Scrum #Kanban #USHealthcare #HealthcareIT #RemoteJobs #InternationalJobs #TechJobs #VagasDeTI #Curitiba #LATAM",
-      "excerpt": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech...",
-      "issueState": "open",
-      "contentHash": "94458929d556065dd24d0a10bc022f05a8709106debfd994d4a4959a030a83f0",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "aws",
-        "go",
-        "híbrido",
-        "java",
-        "python",
-        "rabbitmq",
-        "sql",
-        "testes automatizados"
-      ],
-      "sourceTags": [
-        "aws",
-        "go",
-        "híbrido",
-        "java",
-        "python",
-        "rabbitmq",
-        "sql",
-        "testes automatizados"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-09-04T15:49:04Z",
-      "updatedAt": "2026-09-04T15:49:25Z",
-      "url": "https://github.com/backend-br/vagas/issues/12413",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "leadership"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "java",
-          "python"
-        ],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_393ea76d196974f1543704ce",
-          "sourceId": "backend-br/vagas#12413",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12413",
-          "createdAt": "2026-09-04T15:49:04Z",
-          "updatedAt": "2026-09-04T15:49:25Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-04T15:49:04Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_70e6e21759821a59e640879e",
-      "sourceId": "react-brasil/vagas#3031",
-      "title": "Senior Full Stack Software Engineer (React / Python / Go or Node.js or Java) | Remote | Velozient",
-      "description": "**About the Role**\n\nWe are seeking a remote, full-time Senior Full Stack Software Engineer with 6+ years of software development experience. Candidates must have a strong background in React.js and either Golang, Node.js, or Java experience with a strong desire to adopt Golang as the primary back-end technology.\n\nIn this position, you will play a foundational role in building the core platform that enables power utilities to shift from decades-old legacy systems into an AI-native future. Candidates must bring working proficiency with AI tools and APIs to ensure seamless integration of intelligent functionality into the client's products.\n\n**Required Experience**\n\nExcellent English communication skills\n6+ years of software engineering experience in SaaS or enterprise environments\nStrong proficiency in Python, Golang, Node.js, or Java (non-Golang developers will learn and adopt Golang on the job)\nStrong background in React\nDemonstrated ability to deliver high-quality code in fast-moving teams\nBasic proficiency with AI/ML tooling (e.g., calling APIs, integrating model outputs)\nSolid understanding of databases (SQL and NoSQL), message queues, and distributed architectures\nCloud-native engineering experience (AWS, Azure, GCP)\n\n\n**Additional Information**\n\n15 days Paid Time Off (PTO), 1 floating day, 3 sick days, and designated national holidays\nStart: ASAP\n--------------------------------------------------------------------------------------------------------\n**Interested in this role?**\n\n**Apply here:** https://velozi-vetting.base44.app/careers/6a6cb6502cbcfa7a246e4ea3?acquisition=inbound&source=forum&landing_job_id=6a6cb6502cbcfa7a246e4ea3&community=React+Brasil&campaign=September+2026\n**All opportunities here:** https://apply.velozient.com/careers",
-      "excerpt": "**About the Role** We are seeking a remote, full-time Senior Full Stack Software Engineer with 6+ years of software development experience. Candidates must have a strong background in React.js and either Golang, Node....",
-      "issueState": "open",
-      "contentHash": "21b3c4602f7c0fafd93adedb37f390bd6381fa0426de4e7b46633e8b4e2c7304",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "golang",
-        "java",
-        "node",
-        "python",
-        "react",
-        "remote",
-        "senior"
-      ],
-      "sourceTags": [
-        "data",
-        "golang",
-        "java",
-        "node",
-        "python",
-        "react",
-        "remote",
-        "senior"
-      ],
-      "author": {
-        "id": "Fabiochapola",
-        "name": "Fabiochapola",
-        "handle": "Fabiochapola",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/87088868?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "createdAt": "2026-09-04T15:16:19Z",
-      "updatedAt": "2026-09-04T15:16:19Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3031",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [
-          "aws",
-          "azure",
-          "gcp",
-          "go",
-          "java",
-          "nodejs",
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_70e6e21759821a59e640879e",
-          "sourceId": "react-brasil/vagas#3031",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3031",
-          "createdAt": "2026-09-04T15:16:19Z",
-          "updatedAt": "2026-09-04T15:16:19Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-04T15:16:19Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_61212c2435cd38b5c470216d",
-      "sourceId": "awesome-jobs/vietnam#5047",
-      "title": "[ 50tr ] HCM dự án Fraud tìm ReactJS Developer 4+ yoe | ENG tự tin (jobID: IT-569)",
-      "description": "[ 50tr ] HCM dự án Fraud tìm ReactJS Developer 4+ yoe | ENG tự tin | thử việc 100% lương | lh zl o332.o22.o55\n\nMô tả công việc\nDevelop and maintain modern, scalable web applications using ReactJS.\nBuild reusable and maintainable UI components following frontend best practices.\nManage application state effectively using Redux and React Hooks.\nIntegrate frontend applications with RESTful APIs and Microservices.\nCollaborate with Backend Engineers, QA Engineers, Product Owners, and other stakeholders to deliver high-quality features.\nParticipate in code reviews and contribute to improving coding standards and development practices.\nTroubleshoot and resolve technical issues across development and production environments.\nWork with AWS services to support application deployment and operation.\nWork with CI/CD pipelines to automate build, testing, and deployment processes.\nWrite unit tests and support automated testing to ensure application quality and stability.\nProactively identify potential issues and continuously improve application performance, reliability, and maintainability.\n\nUV qtam liên hệ mình zl o332.o22.o55 hoặc techdy.vn@gmail.com với jobID là IT-569 nhé.\nIB mình nếu bạn quan tâm các vị trí khác đang open lĩnh vực IT, Data & AI (đang open 100+ vị trí từ Middle đến Lead++).",
-      "excerpt": "[ 50tr ] HCM dự án Fraud tìm ReactJS Developer 4+ yoe | ENG tự tin | thử việc 100% lương | lh zl o332.o22.o55 Mô tả công việc Develop and maintain modern, scalable web applications using ReactJS. Build reusable and ma...",
-      "issueState": "open",
-      "contentHash": "ffe5dec87913202807dec4f89abd8520c2f8e2775cfa6712e6a41023d49bbda1",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "frontend",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "frontend",
-        "react"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-09-04T03:52:26Z",
-      "updatedAt": "2026-09-04T03:52:26Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5047",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "frontend",
-          "qa"
-        ],
-        "technologies": [
-          "aws",
-          "react"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_61212c2435cd38b5c470216d",
-          "sourceId": "awesome-jobs/vietnam#5047",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5047",
-          "createdAt": "2026-09-04T03:52:26Z",
-          "updatedAt": "2026-09-04T03:52:26Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_cc85460a07294cd6136c2988",
-          "sourceId": "awesome-jobs/jobs#5047",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5047",
-          "createdAt": "2026-09-04T03:52:26Z",
-          "updatedAt": "2026-09-04T03:52:26Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-04T03:52:26Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_423253e9f32ff55698650e74",
-      "sourceId": "soujava/vagas-java#1952",
-      "title": "[REMOTO] Desenvolvedor Full Stack SENIOR na [OPIKODE]",
-      "description": "## Descrição da vaga\n<!-- Informe mais detalhes sobre a vaga --> \n\nSobre a vaga:\n\nEstamos buscando um(a) Desenvolvedor(a) Full Stack Sênior para atuar em projetos utilizando tecnologias low-code e soluções orientadas por Inteligência Artificial.\nA pessoa terá contato direto com o cliente, sendo responsável por compreender necessidades, contribuir para o planejamento das atividades, realizar estimativas e apoiar a tomada de decisões técnicas.\nBuscamos alguém com comunicação clara e assertiva, autonomia, capacidade de planejamento e senso de responsabilidade, que se sinta confortável em lidar com diferentes demandas e atuar em mais de um projeto simultaneamente.\nTambém é importante ter abertura e interesse em, futuramente, assumir responsabilidades de liderança e gestão de equipe, conforme a evolução da atuação na empresa.\n\n## Local\n\nRemoto\n\n## O que oferecemos?\n\nContratação PJ;\nHorário flexível;\nSalário compatível com o mercado;\nDay-Off no dia do aniversário;\n100% remoto.\n\n#### Obrigatórios:\n\nExperiência profissional com desenvolvimento em Java;\nConhecimento em ferramentas de controle de dependências Maven, Gradle, NPM, Gulp e ConT;\nExperiência na construção de REST e serviços WS/SOAP;\nExperiência consolidada em desenvolvimento front-end;\nExperiência em desenvolver interfaces a partir de protótipos desenvolvidos no Figma;\nMetodologias ágeis (Scrum ou Kanban);\nConhecimento complementar em uso de modelos e criação de agentes de IA;\nDisponibilidade para conhecer novas tecnologias;\n\n#### Desejáveis:\n\nConhecimento de Kubernetes e OpenShift.\nConhecimento de DevOps e CI/CD.\nConhecimento em desenvolvimento e administração em Liferay DXP e Liferay Portal.\nExperiência em ETL e/ou ESB;\nConhecimento em E-Commerce;\nInglês técnico.\n\n## Contratação\n\n- PJ a combinar\n\n## Nossa empresa\n\nA Opikode é uma empresa de desenvolvimento de software que está construindo sua marca no mercado brasileiro, produzindo soluções de alto valor para os negócios de nossos clientes e parceiros.\n\n## Como se candidatar\n\nEncaminhar o curriculo para o e-mail renata.maia@opikode.com com o assunto com o nome da vaga.\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 3 dias após cada processo.\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Alocação\n- Remoto\n\n#### Regime\n- PJ\n\n#### Nível\n- Sênior",
-      "excerpt": "## Descrição da vaga <!-- Informe mais detalhes sobre a vaga --> Sobre a vaga: Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior para atuar em projetos utilizando tecnologias low-code e soluções orientadas por...",
-      "issueState": "open",
-      "contentHash": "8a16ce5e77ca27d3f41ef9975f25dbefe5c30c24c3c4217d1c0091e12a7608d0",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "devops",
-        "maven",
-        "pj",
-        "remoto",
-        "rest",
-        "scrum",
-        "soap",
-        "sênior"
-      ],
-      "sourceTags": [
-        "devops",
-        "maven",
-        "pj",
-        "remoto",
-        "rest",
-        "scrum",
-        "soap",
-        "sênior"
-      ],
-      "author": {
-        "id": "cmaiarenata",
-        "name": "cmaiarenata",
-        "handle": "cmaiarenata",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/127779730?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-09-03T19:44:25Z",
-      "updatedAt": "2026-09-03T19:44:43Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1952",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "java",
-          "kubernetes"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_423253e9f32ff55698650e74",
-          "sourceId": "soujava/vagas-java#1952",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1952",
-          "createdAt": "2026-09-03T19:44:25Z",
-          "updatedAt": "2026-09-03T19:44:43Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-03T19:44:25Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_1ba6459bb5469a28d19f2a84",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2964",
-      "title": "Update Arch to correct company profile",
-      "description": "### Link to Job Posting\n\nhttps://jobs.ashbyhq.com/arch.co/9fde8d03-9f47-44ac-bd14-53829722c06d/application?embed=true&utm_source=Simplify&ref=Simplify\n\n### Company Name\n\nArch\n\n### Job Title\n\nSoftware Engineer\n\n### Location\n\nNYC\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nYes\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Permanently remove this job from the list?\n\n- [ ] Yes, remove this job\n\n### Email associated with your GitHub account (Optional)\n\nleonxie2003@gmail.com\n\n### Reason for edit\n\nThe company profile linked is incorrect. It should be arch.com, the alternative investment platform, not archlending.com, the crypto lending company.",
-      "excerpt": "### Link to Job Posting https://jobs.ashbyhq.com/arch.co/9fde8d03-9f47-44ac-bd14-53829722c06d/application?embed=true&utm_source=Simplify&ref=Simplify ### Company Name Arch ### Job Title Software Engineer ### Location ...",
-      "issueState": "open",
-      "contentHash": "75d1218ec89625141c4d6c9c9aad96495a8874b16b53a9d4e270422232476636",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "edit_role"
-      ],
-      "sourceTags": [
-        "edit_role"
-      ],
-      "author": {
-        "id": "leonxie2003",
-        "name": "leonxie2003",
-        "handle": "leonxie2003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/64603936?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-09-03T19:15:29Z",
-      "updatedAt": "2026-09-04T13:34:30Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2964",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_1ba6459bb5469a28d19f2a84",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2964",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2964",
-          "createdAt": "2026-09-03T19:15:29Z",
-          "updatedAt": "2026-09-04T13:34:30Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 11,
-        "publishedAt": "2026-09-03T19:15:29Z",
         "status": "fresh"
       }
     }
