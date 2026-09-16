@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-15T23:21:25.700Z",
+  "generatedAt": "2026-09-16T02:37:42.405Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
+    "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_eba1cf4eba45f378f7186a1e",
     "gh_9c27ccbbb027a757720e4a38",
     "gh_337dcc0369d8226aab4c836f",
@@ -22,10 +23,98 @@
     "gh_f1495b68fe7d4f8349ceb1b6",
     "gh_90da04043225a0b75c5b63f5",
     "gh_d9f31b40b046d9fb1c9512c3",
-    "gh_72cfadae02e4f1d29faac8e9",
-    "gh_5f1c8b18033011026ee64886"
+    "gh_72cfadae02e4f1d29faac8e9"
   ],
   "items": [
+    {
+      "id": "gh_8ca6cfcc5f869a8b9471b21b",
+      "sourceId": "remoteintech/remote-jobs#2113",
+      "title": "Generate dynamic OG images for company profiles",
+      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
+      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
+      "issueState": "open",
+      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-02-15T18:03:51Z",
+      "updatedAt": "2026-08-23T18:19:28Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_8ca6cfcc5f869a8b9471b21b",
+          "sourceId": "remoteintech/remote-jobs#2113",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
+          "createdAt": "2026-02-15T18:03:51Z",
+          "updatedAt": "2026-08-23T18:19:28Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 212,
+        "publishedAt": "2026-02-15T18:03:51Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_eba1cf4eba45f378f7186a1e",
       "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
@@ -565,7 +654,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 222,
+        "ageDays": 223,
         "publishedAt": "2026-02-05T00:07:51Z",
         "status": "stale"
       }
@@ -1971,96 +2060,6 @@
       "freshness": {
         "ageDays": 284,
         "publishedAt": "2025-12-05T13:51:36Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_5f1c8b18033011026ee64886",
-      "sourceId": "hanzili/canada_sde_junior_new_grad_position#3",
-      "title": "adding more canadian jobs",
-      "description": "",
-      "excerpt": "adding more canadian jobs",
-      "issueState": "open",
-      "contentHash": "7e628204e2df39791704da3ebbdca9b36865679231d4d338c47bf4d58456a04c",
-      "repository": "hanzili/canada_sde_junior_new_grad_position",
-      "repositoryUrl": "https://github.com/hanzili/canada_sde_junior_new_grad_position",
-      "region": "North America",
-      "country": "Canada",
-      "sourceLocation": {
-        "country": "Canada",
-        "countryCode": "CA",
-        "region": "North America"
-      },
-      "tags": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "sourceTags": [
-        "documentation",
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "author": {
-        "id": "hanzili",
-        "name": "hanzili",
-        "handle": "hanzili",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
-      },
-      "community": {
-        "id": "hanzili",
-        "name": "hanzili",
-        "avatarUrl": "https://github.com/hanzili.png?size=80",
-        "repository": "hanzili/canada_sde_junior_new_grad_position",
-        "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position"
-      },
-      "createdAt": "2025-12-04T19:38:50Z",
-      "updatedAt": "2025-12-04T19:38:50Z",
-      "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position/issues/3",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_5f1c8b18033011026ee64886",
-          "sourceId": "hanzili/canada_sde_junior_new_grad_position#3",
-          "repository": "hanzili/canada_sde_junior_new_grad_position",
-          "repositoryUrl": "https://github.com/hanzili/canada_sde_junior_new_grad_position",
-          "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position/issues/3",
-          "createdAt": "2025-12-04T19:38:50Z",
-          "updatedAt": "2025-12-04T19:38:50Z",
-          "community": {
-            "id": "hanzili",
-            "name": "hanzili",
-            "avatarUrl": "https://github.com/hanzili.png?size=80",
-            "repository": "hanzili/canada_sde_junior_new_grad_position",
-            "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 285,
-        "publishedAt": "2025-12-04T19:38:50Z",
         "status": "stale"
       }
     }
