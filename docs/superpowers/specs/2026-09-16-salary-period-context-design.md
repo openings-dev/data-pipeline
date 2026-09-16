@@ -47,4 +47,3 @@ Add focused parser tests that reproduce the Strider wording and cover a genuine
 hourly salary, a marker before the amount, and an unspecified-period salary. Run
 the focused tests first in the red state, then after the minimal implementation,
 followed by the complete repository validation suite.
-

@@ -185,4 +185,3 @@ test/salary-parser.test.mjs
 Run: `git diff --name-only origin/main...HEAD | rg '^(snapshots/|state/|\.github/)'`
 
 Expected: no output.
-
