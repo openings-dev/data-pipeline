@@ -7,6 +7,20 @@ const RANGE_PATTERN =
   /(R\$|US\$|USD|BRL|EUR|CAD|€|\$|£)\s*([0-9][0-9.,\s]*[kKmM]?)\s*(?:-|–|—|to|a|até)\s*(?:R\$|US\$|USD|BRL|EUR|CAD|€|\$|£)?\s*([0-9][0-9.,\s]*[kKmM]?)/i;
 const SINGLE_PATTERN =
   /(?:salary|sal[aá]rio|compensation|pay|faixa)[^\dRUSBECAD€$£]{0,24}(R\$|US\$|USD|BRL|EUR|CAD|€|\$|£)\s*([0-9][0-9.,\s]*[kKmM]?)/i;
+const SALARY_CONTEXT_BEFORE = 48;
+const SALARY_CONTEXT_AFTER = 96;
+
+function getSalaryContext(content, match) {
+  const matchStart = match.index ?? 0;
+  const matchEnd = matchStart + match[0].length;
+  const contextStart = Math.max(0, matchStart - SALARY_CONTEXT_BEFORE);
+  const contextEnd = Math.min(content.length, matchEnd + SALARY_CONTEXT_AFTER);
+
+  return {
+    text: content.slice(contextStart, contextEnd),
+    anchor: matchEnd - contextStart,
+  };
+}
 
 function parseRangeSalary(content, repository) {
   const rangeMatch = content.match(RANGE_PATTERN);
@@ -23,11 +37,13 @@ function parseRangeSalary(content, repository) {
     return undefined;
   }
 
+  const salaryContext = getSalaryContext(content, rangeMatch);
+
   return {
     currency,
     min: Math.min(min, max),
     max: Math.max(min, max),
-    period: detectSalaryPeriod(content),
+    period: detectSalaryPeriod(salaryContext.text, salaryContext.anchor),
   };
 }
 
@@ -45,10 +61,12 @@ function parseSingleSalary(content, repository) {
     return undefined;
   }
 
+  const salaryContext = getSalaryContext(content, singleMatch);
+
   return {
     currency,
     min: amount,
-    period: detectSalaryPeriod(content),
+    period: detectSalaryPeriod(salaryContext.text, salaryContext.anchor),
   };
 }
 
