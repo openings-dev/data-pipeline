@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-09-17T02:41:49.133Z",
+  "generatedAt": "2026-09-17T08:15:45.601Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
-    "gh_f83ab72e76fc4802a6079563",
     "gh_b26dea1eadba581bed785ece",
     "gh_f2c6ad8ddbb570d902bed361",
     "gh_75e91e41a1fff3f59a91baa2",
@@ -23,89 +22,10 @@
     "gh_e28ab400211c8c30f90763e6",
     "gh_f7f5e01513b6b24188a7de73",
     "gh_27fe40f0fa169901104ea82f",
-    "gh_55bedf2d15381e67bb953516"
+    "gh_55bedf2d15381e67bb953516",
+    "gh_50535e86aa2938e1aac6bd4b"
   ],
   "items": [
-    {
-      "id": "gh_f83ab72e76fc4802a6079563",
-      "sourceId": "timqian/open-source-jobs#181",
-      "title": "Script/workflow bug",
-      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
-      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
-      "issueState": "open",
-      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "timqian",
-        "name": "timqian",
-        "handle": "timqian",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-08-03T03:51:27Z",
-      "updatedAt": "2026-08-03T03:51:27Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/181",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f83ab72e76fc4802a6079563",
-          "sourceId": "timqian/open-source-jobs#181",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/181",
-          "createdAt": "2026-08-03T03:51:27Z",
-          "updatedAt": "2026-08-03T03:51:27Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 44,
-        "publishedAt": "2026-08-03T03:51:27Z",
-        "status": "aging"
-      }
-    },
     {
       "id": "gh_b26dea1eadba581bed785ece",
       "sourceId": "frontend-pt/vagas#105",
@@ -2198,7 +2118,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 47,
+        "ageDays": 48,
         "publishedAt": "2026-07-31T06:33:12Z",
         "status": "aging"
       }
@@ -2290,8 +2210,98 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 47,
+        "ageDays": 48,
         "publishedAt": "2026-07-31T05:02:37Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_50535e86aa2938e1aac6bd4b",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9634",
+      "title": "Not for US based people",
+      "description": "### Link to Internship Posting\n\nhttp://careers-sig.icims.com/jobs/11244/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify\n\n### Company Name\n\nSusquehanna\n\n### Internship Title\n\nTrading Operations Analyst Internship: Summer 2027\n\n### Location\n\n_No response_\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOffers Sponsorship\n\n### Is this internship still accepting applications?\n\nYes\n\n### Permanently remove this internship from the list?\n\n- [ ] Yes, remove this internship\n\n### What category does this internship belong to?\n\nNone\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Reason for edit\n\nThis internship is for people who graduated from a Hong Kong/Singapore university a chance in the US. Not avaliable for US based people",
+      "excerpt": "### Link to Internship Posting http://careers-sig.icims.com/jobs/11244/job?mobile=true&needsRedirect=false&utm_source=Simplify&ref=Simplify ### Company Name Susquehanna ### Internship Title Trading Operations Analyst ...",
+      "issueState": "open",
+      "contentHash": "c6ba0b183f70bdebb52909bfaabce5f7041387bbfde0de94dbb9569ac78feba8",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "edit_internship"
+      ],
+      "sourceTags": [
+        "edit_internship"
+      ],
+      "author": {
+        "id": "ThinkerDesigns",
+        "name": "ThinkerDesigns",
+        "handle": "ThinkerDesigns",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/62044304?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-07-31T02:42:29Z",
+      "updatedAt": "2026-08-16T20:39:31Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9634",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_50535e86aa2938e1aac6bd4b",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9634",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9634",
+          "createdAt": "2026-07-31T02:42:29Z",
+          "updatedAt": "2026-08-16T20:39:31Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 48,
+        "publishedAt": "2026-07-31T02:42:29Z",
         "status": "aging"
       }
     }
