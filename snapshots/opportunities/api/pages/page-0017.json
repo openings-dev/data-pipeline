@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-17T08:15:45.601Z",
+  "generatedAt": "2026-09-17T14:00:53.573Z",
   "page": 17,
   "pageSize": 20,
   "nextPage": "api/pages/page-0018.json",
   "ids": [
+    "gh_08c2b289f0b0fbaf5bd9f142",
     "gh_42aec3e02f4705505e208eb2",
     "gh_615cd5b5c01016e20e631b0c",
     "gh_8bbc2d1fbf260ff495b6debe",
@@ -22,10 +23,89 @@
     "gh_bf70dc9f783bd9e91215da56",
     "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
-    "gh_8ca6cfcc5f869a8b9471b21b",
-    "gh_eba1cf4eba45f378f7186a1e"
+    "gh_8ca6cfcc5f869a8b9471b21b"
   ],
   "items": [
+    {
+      "id": "gh_08c2b289f0b0fbaf5bd9f142",
+      "sourceId": "cncf/gitjobs#383",
+      "title": "Ability to manually assign jobs to a foundation/project after submission",
+      "description": "Some companies submitting roles to GitJobs aren't selecting \"OpenInfra\" as the project, which means their posts don't appear in the OpenInfra Foundation's bucket. I suspect the \"project\" terminology is causing confusion, submitters may be thinking of it as the specific upstream project rather than the foundation umbrella.\n\nThis week we had 3 companies submit roles where this happened. One example:\nhttps://gitjobs.dev/?job_id=a33c9906-aec4-4d7b-91b8-c41d783b8f5e\n\nI'm unclear whether they missed something when adding the job or if there is a bug here. Either way, is there a way for foundation admins to manually update existing job posts to assign them to the correct project/foundation bucket after submission? This would let us pull in roles that should have been associated with OpenInfra but weren't tagged correctly at submission time.\n\nIt might also be worth looking at the submission UX around the \"project\" field, clarifying the distinction between foundation and project (or letting submitters select both) could reduce these mis-assignments going forward.\n\nHappy to discuss further or provide additional examples if useful.",
+      "excerpt": "Some companies submitting roles to GitJobs aren't selecting \"OpenInfra\" as the project, which means their posts don't appear in the OpenInfra Foundation's bucket. I suspect the \"project\" terminology is causing confusi...",
+      "issueState": "open",
+      "contentHash": "1c7eb10758546ab0042c001133a70a66965593411af04471115ee856d20bd5ce",
+      "repository": "cncf/gitjobs",
+      "repositoryUrl": "https://github.com/cncf/gitjobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "iamweswilson",
+        "name": "iamweswilson",
+        "handle": "iamweswilson",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/214968?v=4"
+      },
+      "community": {
+        "id": "cncf",
+        "name": "cncf",
+        "avatarUrl": "https://github.com/cncf.png?size=80",
+        "repository": "cncf/gitjobs",
+        "url": "https://github.com/cncf/gitjobs"
+      },
+      "createdAt": "2026-05-05T18:56:03Z",
+      "updatedAt": "2026-05-06T15:39:22Z",
+      "url": "https://github.com/cncf/gitjobs/issues/383",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_08c2b289f0b0fbaf5bd9f142",
+          "sourceId": "cncf/gitjobs#383",
+          "repository": "cncf/gitjobs",
+          "repositoryUrl": "https://github.com/cncf/gitjobs",
+          "url": "https://github.com/cncf/gitjobs/issues/383",
+          "createdAt": "2026-05-05T18:56:03Z",
+          "updatedAt": "2026-05-06T15:39:22Z",
+          "community": {
+            "id": "cncf",
+            "name": "cncf",
+            "avatarUrl": "https://github.com/cncf.png?size=80",
+            "repository": "cncf/gitjobs",
+            "url": "https://github.com/cncf/gitjobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 134,
+        "publishedAt": "2026-05-05T18:56:03Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_42aec3e02f4705505e208eb2",
       "sourceId": "qa-brasil/vagas#1252",
@@ -119,7 +199,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 142,
+        "ageDays": 143,
         "publishedAt": "2026-04-27T13:01:42Z",
         "status": "stale"
       }
@@ -199,7 +279,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 148,
+        "ageDays": 149,
         "publishedAt": "2026-04-21T10:30:11Z",
         "status": "stale"
       }
@@ -573,7 +653,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 170,
+        "ageDays": 171,
         "publishedAt": "2026-03-30T08:47:20Z",
         "status": "stale"
       }
@@ -1089,7 +1169,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 190,
+        "ageDays": 191,
         "publishedAt": "2026-03-10T13:05:56Z",
         "status": "stale"
       }
@@ -1520,7 +1600,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 207,
+        "ageDays": 208,
         "publishedAt": "2026-02-21T13:17:54Z",
         "status": "stale"
       }
@@ -1606,7 +1686,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 210,
+        "ageDays": 211,
         "publishedAt": "2026-02-18T13:31:05Z",
         "status": "stale"
       }
@@ -1686,7 +1766,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 210,
+        "ageDays": 211,
         "publishedAt": "2026-02-18T13:29:12Z",
         "status": "stale"
       }
@@ -1857,94 +1937,6 @@
       "freshness": {
         "ageDays": 213,
         "publishedAt": "2026-02-15T18:03:51Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_eba1cf4eba45f378f7186a1e",
-      "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
-      "title": "[NEW JOB] Seeking Front-End Developers To Build E-Commerce Site",
-      "description": "I have an ecommerce site and am looking for experienced developers to improve the project.\n\nRequired Skills:\n- React.js\n- Blockchain\n\nContact me; \n- Telegram: @hot_cappuccino75\n- Gmail: bluedragon3829@gmail.com",
-      "excerpt": "I have an ecommerce site and am looking for experienced developers to improve the project. Required Skills: - React.js - Blockchain Contact me; - Telegram: @hot_cappuccino75 - Gmail: bluedragon3829@gmail.com",
-      "issueState": "open",
-      "contentHash": "8a87e12418e842caf771a411e8b16704d988a217d9aa9aae3aabc0812ebd282f",
-      "repository": "OurTinTinLand/TinTin-Job-Board",
-      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-      "region": "Asia",
-      "country": "China",
-      "sourceLocation": {
-        "country": "China",
-        "countryCode": "CN",
-        "region": "Asia"
-      },
-      "tags": [
-        "react"
-      ],
-      "sourceTags": [
-        "react"
-      ],
-      "author": {
-        "id": "spiderman6689030-png",
-        "name": "spiderman6689030-png",
-        "handle": "spiderman6689030-png",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/260697248?v=4"
-      },
-      "community": {
-        "id": "OurTinTinLand",
-        "name": "OurTinTinLand",
-        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-        "repository": "OurTinTinLand/TinTin-Job-Board",
-        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-      },
-      "createdAt": "2026-02-10T21:29:45Z",
-      "updatedAt": "2026-02-10T21:29:45Z",
-      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/78",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_eba1cf4eba45f378f7186a1e",
-          "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
-          "repository": "OurTinTinLand/TinTin-Job-Board",
-          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/78",
-          "createdAt": "2026-02-10T21:29:45Z",
-          "updatedAt": "2026-02-10T21:29:45Z",
-          "community": {
-            "id": "OurTinTinLand",
-            "name": "OurTinTinLand",
-            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-            "repository": "OurTinTinLand/TinTin-Job-Board",
-            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 218,
-        "publishedAt": "2026-02-10T21:29:45Z",
         "status": "stale"
       }
     }
