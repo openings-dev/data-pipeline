@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-21T08:26:05.317Z",
+  "generatedAt": "2026-09-21T15:32:23.043Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
+    "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
     "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_eba1cf4eba45f378f7186a1e",
@@ -22,10 +23,89 @@
     "gh_03fa03119cda6972a7f24c60",
     "gh_018090ae0b51c7fe869fe122",
     "gh_f1495b68fe7d4f8349ceb1b6",
-    "gh_90da04043225a0b75c5b63f5",
-    "gh_d9f31b40b046d9fb1c9512c3"
+    "gh_90da04043225a0b75c5b63f5"
   ],
   "items": [
+    {
+      "id": "gh_72cc354e7d9c38f999fa902a",
+      "sourceId": "timqian/open-source-jobs#161",
+      "title": "Feature: Enhanced Search & Filtering",
+      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
+      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
+      "issueState": "open",
+      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "codeCraft-Ritik",
+        "name": "codeCraft-Ritik",
+        "handle": "codeCraft-Ritik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-18T13:29:12Z",
+      "updatedAt": "2026-02-19T04:01:20Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/161",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_72cc354e7d9c38f999fa902a",
+          "sourceId": "timqian/open-source-jobs#161",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/161",
+          "createdAt": "2026-02-18T13:29:12Z",
+          "updatedAt": "2026-02-19T04:01:20Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 215,
+        "publishedAt": "2026-02-18T13:29:12Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_dd237a978dba300d92eb4d35",
       "sourceId": "timqian/open-source-jobs#160",
@@ -814,7 +894,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 229,
+        "ageDays": 230,
         "publishedAt": "2026-02-03T08:33:10Z",
         "status": "stale"
       }
@@ -1651,7 +1731,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 250,
+        "ageDays": 251,
         "publishedAt": "2026-01-13T14:23:29Z",
         "status": "stale"
       }
@@ -1837,7 +1917,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 263,
+        "ageDays": 264,
         "publishedAt": "2025-12-31T09:25:54Z",
         "status": "stale"
       }
@@ -1943,109 +2023,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 274,
+        "ageDays": 275,
         "publishedAt": "2025-12-20T08:51:33Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_d9f31b40b046d9fb1c9512c3",
-      "sourceId": "TechnologyMasters/jobs#721",
-      "title": "WebBoxes - Sr. AI Engineer - Remote/LatAm - $50,000 USD/Year",
-      "description": "## What You'll get\n\n### Salary Expectation\n\n- $50.000/year\n- Contract / Full Time\n\n### Benefits\n\n- choose your own custom setup\n- new macbook\n\n### Location\n- Candidate will work from home\n\n## What You'll Do _(Job Description)_\n\nWe need a senior AI engineer that will build our new developer assistant SaaS\n\n## What You Need to Be Successful _(Skills)_\n\n### Must Have\n\n- 3+ years working as an AI engineer\n\n### Nice to Have\n\n- full-stack development\n\n## About Our company\n\nhttps://web-boxes.com\n\n## How to apply\n\nPlease send an email to [i@web-boxes..com](i@web-boxes..com) with your resume\n\n---\n\n## Meta\n\n<!--\n  These meta tickboxes automatically apply labels to your post\n  Learn more in the README https://github.com/TechnologyMasters/jobs/blob/master/README.md#label-definitions\n\n  Note, you must fill in the checkboxes correctly in order for them to appear as checked in Markdown\n\n  Unfilled examples:\n  - [ ] Full Time\n  - [ x] Full Time\n  - [x ] Full Time\n\n  Filled example:\n  - [x] Full Time\n-->\n\n- [ ] Full Time\n- [ ] Part Time\n- [x] Contract\n- [ ] Internship\n- [x] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "## What You'll get ### Salary Expectation - $50.000/year - Contract / Full Time ### Benefits - choose your own custom setup - new macbook ### Location - Candidate will work from home ## What You'll Do _(Job Descriptio...",
-      "issueState": "open",
-      "contentHash": "3ca3a01661be2c7fac30412750a3fcb06c7c1532ef93b9ccd62d6761c957da02",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote",
-        "senior"
-      ],
-      "sourceTags": [
-        "remote",
-        "senior"
-      ],
-      "author": {
-        "id": "fu11stackdev",
-        "name": "fu11stackdev",
-        "handle": "fu11stackdev",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204783689?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2025-12-06T16:55:35Z",
-      "updatedAt": "2025-12-07T04:05:58Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/721",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship",
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_d9f31b40b046d9fb1c9512c3",
-          "sourceId": "TechnologyMasters/jobs#721",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/721",
-          "createdAt": "2025-12-06T16:55:35Z",
-          "updatedAt": "2025-12-07T04:05:58Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 288,
-        "publishedAt": "2025-12-06T16:55:35Z",
         "status": "stale"
       }
     }

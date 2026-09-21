@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-21T08:26:05.317Z",
+  "generatedAt": "2026-09-21T15:32:23.043Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
+    "gh_f83ab72e76fc4802a6079563",
     "gh_b26dea1eadba581bed785ece",
     "gh_f2c6ad8ddbb570d902bed361",
     "gh_75e91e41a1fff3f59a91baa2",
@@ -22,10 +23,89 @@
     "gh_f7f5e01513b6b24188a7de73",
     "gh_27fe40f0fa169901104ea82f",
     "gh_55bedf2d15381e67bb953516",
-    "gh_50535e86aa2938e1aac6bd4b",
-    "gh_0efcf8a825dff70e78cfe9bc"
+    "gh_50535e86aa2938e1aac6bd4b"
   ],
   "items": [
+    {
+      "id": "gh_f83ab72e76fc4802a6079563",
+      "sourceId": "timqian/open-source-jobs#181",
+      "title": "Script/workflow bug",
+      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
+      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
+      "issueState": "open",
+      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "timqian",
+        "name": "timqian",
+        "handle": "timqian",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-08-03T03:51:27Z",
+      "updatedAt": "2026-08-03T03:51:27Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/181",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f83ab72e76fc4802a6079563",
+          "sourceId": "timqian/open-source-jobs#181",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/181",
+          "createdAt": "2026-08-03T03:51:27Z",
+          "updatedAt": "2026-08-03T03:51:27Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 49,
+        "publishedAt": "2026-08-03T03:51:27Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_b26dea1eadba581bed785ece",
       "sourceId": "frontend-pt/vagas#105",
@@ -641,7 +721,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 49,
+        "ageDays": 50,
         "publishedAt": "2026-08-02T12:21:32Z",
         "status": "aging"
       }
@@ -753,7 +833,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 49,
+        "ageDays": 50,
         "publishedAt": "2026-08-02T12:17:29Z",
         "status": "aging"
       }
@@ -1201,7 +1281,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 50,
+        "ageDays": 51,
         "publishedAt": "2026-08-01T15:03:45Z",
         "status": "aging"
       }
@@ -1321,7 +1401,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 50,
+        "ageDays": 51,
         "publishedAt": "2026-08-01T15:00:05Z",
         "status": "aging"
       }
@@ -1429,7 +1509,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 50,
+        "ageDays": 51,
         "publishedAt": "2026-08-01T12:18:13Z",
         "status": "aging"
       }
@@ -1918,7 +1998,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 51,
+        "ageDays": 52,
         "publishedAt": "2026-07-31T15:01:28Z",
         "status": "aging"
       }
@@ -2182,122 +2262,6 @@
       "freshness": {
         "ageDays": 52,
         "publishedAt": "2026-07-31T02:42:29Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_0efcf8a825dff70e78cfe9bc",
-      "sourceId": "react-brasil/vagas#3025",
-      "title": "[Híbrido] React Developer Pleno na Sylision",
-      "description": "## Descrição da vaga\n\nVaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Labels\n\n- 🏢 Flexível\n- 👨 Pleno\n- ⚖️ CLT\n- ⚖️ PJ\n- 💰 5k-10k",
-      "excerpt": "## Descrição da vaga Vaga de React Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision. Faixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência. ## Local Híbrido ou remoto, a combinar...",
-      "issueState": "open",
-      "contentHash": "2778be271d1df17809304087d057ec82adea72f32d6a3ccd43d3af599499cedf",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "sourceTags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 flexível",
-        "🏢 remoto",
-        "👨 pleno",
-        "💰 5k-10k"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-07-30T21:08:56Z",
-      "updatedAt": "2026-07-30T21:09:18Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3025",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0efcf8a825dff70e78cfe9bc",
-          "sourceId": "react-brasil/vagas#3025",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3025",
-          "createdAt": "2026-07-30T21:08:56Z",
-          "updatedAt": "2026-07-30T21:09:18Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 52,
-        "publishedAt": "2026-07-30T21:08:56Z",
         "status": "aging"
       }
     }
