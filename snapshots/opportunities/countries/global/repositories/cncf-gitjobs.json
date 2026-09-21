@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-01T18:06:12.645Z",
+  "generatedAt": "2026-09-21T08:26:05.317Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
   "repository": "cncf/gitjobs",
   "totals": {
     "opportunities": 6,
-    "openIssues": 2,
-    "closedIssues": 4
+    "openIssues": 1,
+    "closedIssues": 5
   },
-  "dataHash": "c3856849d66d935e089398dc19f290427d51bc44d4151e8bccd7e104c9a8d25a",
+  "dataHash": "642558a20e5f4157a5922954afc6dd28fefd8b75912423e3ab5e2764b28a8355",
   "items": [
     {
       "id": "gh_08c2b289f0b0fbaf5bd9f142",
@@ -17,7 +17,7 @@
       "title": "Ability to manually assign jobs to a foundation/project after submission",
       "description": "Some companies submitting roles to GitJobs aren't selecting \"OpenInfra\" as the project, which means their posts don't appear in the OpenInfra Foundation's bucket. I suspect the \"project\" terminology is causing confusion, submitters may be thinking of it as the specific upstream project rather than the foundation umbrella.\n\nThis week we had 3 companies submit roles where this happened. One example:\nhttps://gitjobs.dev/?job_id=a33c9906-aec4-4d7b-91b8-c41d783b8f5e\n\nI'm unclear whether they missed something when adding the job or if there is a bug here. Either way, is there a way for foundation admins to manually update existing job posts to assign them to the correct project/foundation bucket after submission? This would let us pull in roles that should have been associated with OpenInfra but weren't tagged correctly at submission time.\n\nIt might also be worth looking at the submission UX around the \"project\" field, clarifying the distinction between foundation and project (or letting submitters select both) could reduce these mis-assignments going forward.\n\nHappy to discuss further or provide additional examples if useful.",
       "excerpt": "Some companies submitting roles to GitJobs aren't selecting \"OpenInfra\" as the project, which means their posts don't appear in the OpenInfra Foundation's bucket. I suspect the \"project\" terminology is causing confusi...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "1c7eb10758546ab0042c001133a70a66965593411af04471115ee856d20bd5ce",
       "repository": "cncf/gitjobs",
       "repositoryUrl": "https://github.com/cncf/gitjobs",
@@ -44,7 +44,7 @@
         "url": "https://github.com/cncf/gitjobs"
       },
       "createdAt": "2026-05-05T18:56:03Z",
-      "updatedAt": "2026-05-06T15:39:22Z",
+      "updatedAt": "2026-09-21T07:21:39Z",
       "url": "https://github.com/cncf/gitjobs/issues/383",
       "sourceType": "github-issue",
       "jobLocation": {
