@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T21:30:33.536Z",
+  "generatedAt": "2026-09-22T02:39:13.113Z",
   "page": 7,
   "pageSize": 20,
   "nextPage": "api/pages/page-0008.json",
@@ -18,12 +18,12 @@
     "gh_7be4999098912b2c53a47287",
     "gh_939843b36f15ab3414741f1e",
     "gh_b9c7101250427c1bff934790",
+    "gh_9778e2bda5326d36dc502ed4",
     "gh_a8cd59eaeb8f7957cc8a68b5",
     "gh_1120d3d83f1095a76d02398b",
     "gh_a51e625559bcdf5e11bdf737",
     "gh_78a413808cdd53999da07a59",
-    "gh_a3f3af3ea4539c8d684f6211",
-    "gh_a442b3bffe44658fc936f508"
+    "gh_a3f3af3ea4539c8d684f6211"
   ],
   "items": [
     {
@@ -670,9 +670,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-08-22T01:10:51Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     {
@@ -1335,7 +1335,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 31,
+        "ageDays": 32,
         "publishedAt": "2026-08-20T22:53:42Z",
         "status": "aging"
       }
@@ -1566,6 +1566,124 @@
       "freshness": {
         "ageDays": 32,
         "publishedAt": "2026-08-20T18:00:32Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_9778e2bda5326d36dc502ed4",
+      "sourceId": "frontendbr/vagas#8544",
+      "title": "[Remoto] Angular Front-End Developer Pleno na Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Front-End Developer (Angular) nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\n100% remoto, de qualquer lugar do Brasil ou de Portugal.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Angular (de 2 a 5 anos)\n- Angular 15+ e TypeScript\n- RxJS\n- Consumo de APIs REST\n- Karma ou Jest\n\n**Diferenciais:**\n- NgRx\n- Micro-frontends\n- Design system\n\n## Benefícios\n\n- Faixa salarial de R$ 7.000 a 12.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-angular-pleno-remoto\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Tempo médio de feedbacks\n\nA IA da Sylision analisa o CV em minutos; quando há compatibilidade, um headhunter entra em contato em até 7 dias.\nE-mail para contato em caso de não haver resposta: giovani@sylision.com\n\n## Labels\n\n#### Alocação\n- Remoto\n\n#### Regime\n- CLT\n- PJ\n\n#### Nível\n- Pleno",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
+      "issueState": "open",
+      "contentHash": "c2c7ebef22e3c388d11b2950373d7ef7cf3b63df52a0f473e778a9fd31a83a5f",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 7000,
+        "max": 12000,
+        "period": "month"
+      },
+      "createdAt": "2026-08-20T12:00:38Z",
+      "updatedAt": "2026-08-20T12:01:08Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8544",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "DE",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "100%, DE · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_9778e2bda5326d36dc502ed4",
+          "sourceId": "frontendbr/vagas#8544",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8544",
+          "createdAt": "2026-08-20T12:00:38Z",
+          "updatedAt": "2026-08-20T12:01:08Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 32,
+        "publishedAt": "2026-08-20T12:00:38Z",
         "status": "aging"
       }
     },
@@ -2090,110 +2208,6 @@
       "freshness": {
         "ageDays": 33,
         "publishedAt": "2026-08-19T14:32:39Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_a442b3bffe44658fc936f508",
-      "sourceId": "qa-brasil/vagas#1280",
-      "title": "[Remoto] [PJ] Senior QA Engineer apaixonado por qualidade e automação",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\nEstamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados comerciais. Você será responsável por projetar e manter suites de testes automatizados robustas, garantir cobertura de testes em funcionalidades críticas e colaborar com desenvolvedores e Product Managers para elevar os padrões de qualidade. Se você tem experiência sólida em Cypress, JavaScript, testes E2E e API, além de proficiência em inglês, essa é sua oportunidade!\n🎯 O que você fará no dia a dia:\n- Projetar, desenvolver, manter e melhorar continuamente suites de testes automatizados utilizando Cypress e JavaScript\n- Definir e implementar estratégias eficazes de automação de testes para aplicações web complexas\n- Desenvolver e executar testes end-to-end (E2E), integração, regressão, funcionais e de API\n- Realizar testes de API para validar integrações, regras de negócio e consistência de dados\n- Colaborar com desenvolvedores, Product Managers e outros engenheiros de QA ao longo do ciclo de desenvolvimento\n- Participar de análise de requisitos e discussões técnicas para identificar riscos de qualidade\n- Garantir cobertura de testes apropriada para novas funcionalidades, correções e fluxos críticos\n- Identificar, documentar e rastrear defeitos com informações técnicas claras\n- Utilizar Grafana e Sentry para monitorar comportamento da aplicação e investigar falhas\n- Integrar testes automatizados em pipelines CI/CD, garantindo validação contínua\n- Mentorizar e apoiar outros engenheiros de QA, compartilhando conhecimento e boas práticas\n✅\n\n## Local\nRemoto (Remoto)\n\n## Requisitos\n- Experiência sólida (mínimo 5 anos) em Garantia de Qualidade de Software e testes de software\n- Experiência prática forte com automação de testes utilizando Cypress e JavaScript\n- Experiência em design e manutenção de frameworks de testes automatizados escaláveis\n- Compreensão sólida de testes E2E, integração, regressão, funcionais e de API\n- Experiência testando aplicações web modernas e sistemas distribuídos\n- Conhecimento forte de metodologias de testes de software e práticas de ciclo de vida de desenvolvimento\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nPJ\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmsxs2mi9000k13v46hsq94lw\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#SeniorQAEngineer #QAAutomation #Cypress #JavaScript #TestesAutomatizados #VagasEmTecnologia #100Remoto #EngenhariaDeQA #CarreiraEmTech #VagasAbertasAgora #OportunidadeRemota #TecnologiaEmFoco",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga Estamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados co...",
-      "issueState": "open",
-      "contentHash": "6bde026d4059b1a3afa5f4d2e3b0167b38813c1767801d58f2b89f1d556fcebd",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "inglês",
-        "pj",
-        "remoto"
-      ],
-      "sourceTags": [
-        "inglês",
-        "pj",
-        "remoto"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "createdAt": "2026-08-19T14:32:37Z",
-      "updatedAt": "2026-08-19T14:33:01Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1280",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "qa"
-        ],
-        "technologies": [
-          "javascript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_a442b3bffe44658fc936f508",
-          "sourceId": "qa-brasil/vagas#1280",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1280",
-          "createdAt": "2026-08-19T14:32:37Z",
-          "updatedAt": "2026-08-19T14:33:01Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 33,
-        "publishedAt": "2026-08-19T14:32:37Z",
         "status": "aging"
       }
     }
