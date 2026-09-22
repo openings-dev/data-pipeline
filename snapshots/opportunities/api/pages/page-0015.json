@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-22T18:27:31.716Z",
+  "generatedAt": "2026-09-22T23:25:05.116Z",
   "page": 15,
   "pageSize": 20,
   "nextPage": "api/pages/page-0016.json",
   "ids": [
+    "gh_7557e8348cc3ee95670cabc5",
     "gh_19b5fdf75df6ae77bffa86f6",
     "gh_31771006fb197da7d3ea896f",
     "gh_c16a9b067fa99b03ac968205",
@@ -22,10 +23,140 @@
     "gh_eca179323abe1309b96e6c74",
     "gh_66eaeb59684b31b56e56dc58",
     "gh_a2bf5d8b1ac2ec634b465f35",
-    "gh_70eda67c2285a24c2f32ca41",
-    "gh_828a908398f893b1e0c6ca3d"
+    "gh_70eda67c2285a24c2f32ca41"
   ],
   "items": [
+    {
+      "id": "gh_7557e8348cc3ee95670cabc5",
+      "sourceId": "backend-br/vagas#12323",
+      "title": "[Remoto] Desenvolvedor(a) Full-Stack Sênior (TypeScript/React/Node) - Grupo Apex (EUA)",
+      "description": "## Sobre nós\n\nGrupo de três pequenas empresas americanas (Orlando, FL — dono brasileiro): revenda de carros\ncom DMS próprio (theapexauto.com), plataforma de investimento imobiliário e plataforma de\nserviços de construção (riseconstruction.us). Os três produtos estão em produção, com clientes\nreais e receita real.\n\n## A vaga\n\nOs três produtos foram construídos majoritariamente com agentes de IA (Claude Code). Você vai\ntrabalhar COM esses agentes — eles revisam seus PRs, você revisa os deles. Procuramos alguém\nque use IA como alavanca e traga o que ela não traz: julgamento sênior sobre edge cases,\nintegridade de dados, migração segura e deploy sem susto. Os produtos estão ~80% prontos; o\ntrabalho é levá-los a 100% — a parte que separa produto de demo.\n\n## O que você vai fazer\n\n- Cutover de redesigns de staging para produção, incluindo migrações de schema manuais (MySQL)\n- Features de dashboard: fluxos de financiamento, pipeline de ofertas com SLA, portais por\n  papel (comprador/colaborador), chat interno, motores de orçamento e comissão\n- Integrações: Stripe (go-live), QuickBooks two-way, telefonia (Twilio), APIs de terceiros\n- Hardening: checagens multi-tenant, bugs de cálculo de folha (nível centavo), schema drift\n\n## Stack (igual nos 3 produtos)\n\nTypeScript, React, Vite, tRPC, Drizzle ORM, MySQL, Tailwind/Radix, Node.js em VPS Linux\n(nginx), Cloudflare R2. Integrações: Stripe, Twilio, QuickBooks, APIs Meta/Google.\n\n## Local\n\nRemoto (Brasil) — PJ\n\n## Requisitos\n\n- **Experiência:** 5+ anos levando TypeScript full-stack a produção; React + Node + SQL\n  profundos (o peso maior é backend)\n- **Produção de verdade:** já operou app em Linux puro (nginx, systemd, SSH, backup) — sem\n  rede de segurança de PaaS\n- **Cicatriz de integração:** Stripe, OAuth, webhooks (inclusive entrega duplicada)\n- **Inglês:** técnico de leitura/escrita (código e docs em inglês; dia a dia em português)\n- **Perfil:** autonomia, conforto genuíno em revisar código escrito por IA e ser revisado\n  por agentes\n- **Diferencial forte:** React Native/Expo — temos 3 apps mobile (Expo Router) na fila\n  depois da web, incluindo publicação nas lojas\n\n## Contratação\n\nPJ — **R$ 12.000 a R$ 18.000/mês**, conforme senioridade · full-time ou 30h+/semana\n- Cliente americano direto (sem agência no meio), pagamento em dia via Deel, longo prazo\n- Demo semanal · começa com **trial pago de 1 semana** (tarefa real do backlog, no seu rate)\n\n## Como se candidatar\n\nEmail para **alex@theapexauto.com** com assunto **[FULLSTACK] Seu Nome** contendo:\n1. A integração de produção mais cabeluda que você já entregou — o que quebrou e como descobriu\n2. Links de código seu com histórico real de commits\n3. Pretensão (R$/mês PJ) e disponibilidade\n\nPropostas genéricas são descartadas. Sem agências, por favor.",
+      "excerpt": "## Sobre nós Grupo de três pequenas empresas americanas (Orlando, FL — dono brasileiro): revenda de carros com DMS próprio (theapexauto.com), plataforma de investimento imobiliário e plataforma de serviços de construç...",
+      "issueState": "open",
+      "contentHash": "25265dcfbb891324ce5612e04a8a67a004b8a049eb352bd1a880003ec771d542",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "go",
+        "mysql",
+        "node.js",
+        "pj",
+        "remoto",
+        "sql",
+        "sênior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "go",
+        "mysql",
+        "node.js",
+        "pj",
+        "remoto",
+        "sql",
+        "sênior",
+        "typescript"
+      ],
+      "author": {
+        "id": "matheu555",
+        "name": "matheu555",
+        "handle": "matheu555",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/221351562?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 12000,
+        "max": 18000,
+        "period": "month"
+      },
+      "createdAt": "2026-07-08T18:36:05Z",
+      "updatedAt": "2026-09-21T03:12:05Z",
+      "url": "https://github.com/backend-br/vagas/issues/12323",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "go",
+          "mysql",
+          "nodejs",
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_7557e8348cc3ee95670cabc5",
+          "sourceId": "backend-br/vagas#12323",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12323",
+          "createdAt": "2026-07-08T18:36:05Z",
+          "updatedAt": "2026-09-21T03:12:05Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 76,
+        "publishedAt": "2026-07-08T18:36:05Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_19b5fdf75df6ae77bffa86f6",
       "sourceId": "DevOps-Brasil/Vagas#468",
@@ -245,7 +376,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 77,
+        "ageDays": 78,
         "publishedAt": "2026-07-06T18:56:46Z",
         "status": "aging"
       }
@@ -364,7 +495,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 80,
+        "ageDays": 81,
         "publishedAt": "2026-07-03T19:01:50Z",
         "status": "aging"
       }
@@ -583,7 +714,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 89,
+        "ageDays": 90,
         "publishedAt": "2026-06-24T19:14:32Z",
         "status": "aging"
       }
@@ -1064,7 +1195,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 98,
+        "ageDays": 99,
         "publishedAt": "2026-06-15T19:31:20Z",
         "status": "stale"
       }
@@ -1530,7 +1661,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 108,
+        "ageDays": 109,
         "publishedAt": "2026-06-05T19:14:10Z",
         "status": "stale"
       }
@@ -1699,7 +1830,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 109,
+        "ageDays": 110,
         "publishedAt": "2026-06-04T18:38:01Z",
         "status": "stale"
       }
@@ -2006,113 +2137,6 @@
       "freshness": {
         "ageDays": 113,
         "publishedAt": "2026-06-01T17:00:26Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_828a908398f893b1e0c6ca3d",
-      "sourceId": "programadores-br/geral#3075",
-      "title": "[Remoto] Analista de Sistema Jr na Coodesh",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/analista-de-sistema-jr-213003167?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n### **Estamos em busca de um(a) Analista de Sistemas Júnior para atuar no desenvolvimento e manutenção de sistemas, colaborando com times multidisciplinares e contribuindo para a evolução das soluções tecnológicas da empresa. O profissional ideal possui entre 1 e 2 anos de experiência em desenvolvimento de software, com preferência por atuação em ambientes Java e AWS.**\n\n \n\n### **Responsabilidades**\n\n*   Desenvolver, manter e evoluir sistemas e aplicações;\n    \n*   Participar da análise de requisitos técnicos e funcionais;\n    \n*   Apoiar na correção de bugs e melhorias contínuas nos sistemas existentes;\n    \n*   Trabalhar em conjunto com a equipe de desenvolvimento, QA e áreas de negócio;\n    \n*   Documentar código e processos técnicos;\n    \n*   Seguir boas práticas de desenvolvimento, segurança e qualidade de software\n    \n\n \n\n### **Requisitos**\n\n*   Experiência de **1 a 2 anos** com desenvolvimento de sistemas;\n    \n*   Conhecimentos em **Java** (Spring ou similares);\n    \n*   Conhecimentos básicos ou intermediários em **AWS** (EC2, S3, RDS, Lambda ou similares);\n    \n*   Experiência com banco de dados relacionais (MySQL, PostgreSQL, Oracle, etc.);\n    \n*   Noções de versionamento de código (Git);\n    \n*   Capacidade de aprendizado contínuo e trabalho em equipe.\n    \n\n \n\n**Soft Skill**\n\n*   Proatividade e vontade de aprender;\n    \n*   Boa comunicação e organização;\n    \n*   Capacidade de resolver problemas;\n    \n*   Espírito colaborativo.\n## PWC BR: \n Na PwC, o nosso propósito é construir confiança na sociedade e resolver problemas importantes. Somos um Network de firmas presente em 155 países e formado por mais de 284 mil profissionais, ajudamos organizações e indivíduos oferecendo qualidade na prestação de serviços integrados nas áreas de auditoria e asseguração, consultoria tributária, consultoria estratégica e assessoria em transações. Estamos no Brasil há mais de 100 anos, contamos com cerca de 4 mil profissionais, distribuídos em 15 escritórios em todas as regiões brasileiras. Nossa comunidade de solvers está pronta para solucionar qualquer desafio, independentemente do tamanho ou do segmento de atuação da sua empresa. Não importa se o cliente é uma startup, empresa familiar ou companhia de capital aberto. Reunimos os melhores talentos nas mais diferentes especialidades e combinamos as tecnologias mais inovadoras para propor ideias ousadas, capazes de criar valor, hoje e amanhã, para as empresas, seus stakeholders, clientes e a sociedade em geral. Saiba mais sobre a PwC Brasil e nos diga o que é importante para sua empresa ou carreira, visitando nosso site: www.pwc.com.br \n\nundefined \n\n\n\n ## Habilidades: \n - GIT \n- Java \n- MySQL \n- PostgreSQL \n- Spring \n- Lambda\n## Local: \n Remota\n\n## Diferenciais: \n - Experiência com APIs REST; \n- Conhecimento em metodologias ágeis (Scrum, Kanban); \n- Experiência com testes unitários; \n- Conhecimento em arquitetura de microsserviços; \n- Certificações AWS.\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Analista de Sistema Jr na PWC BR](https://coodesh.com/jobs/analista-de-sistema-jr-213003167?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nCLT\n#### Categoria\nBack-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "04112ff1f27fc7cf06722874d521f5cf5526450df3fb5d968dea43107f0b9fed",
-      "repository": "programadores-br/geral",
-      "repositoryUrl": "https://github.com/programadores-br/geral",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "júnior",
-        "remoto"
-      ],
-      "sourceTags": [
-        "clt",
-        "júnior",
-        "remoto"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "programadores-br",
-        "name": "programadores-br",
-        "avatarUrl": "https://github.com/programadores-br.png?size=80",
-        "repository": "programadores-br/geral",
-        "url": "https://github.com/programadores-br/geral"
-      },
-      "companyName": "Coodesh",
-      "createdAt": "2026-06-01T16:59:58Z",
-      "updatedAt": "2026-06-01T17:00:27Z",
-      "url": "https://github.com/programadores-br/geral/issues/3075",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "qa"
-        ],
-        "technologies": [
-          "aws",
-          "java",
-          "mysql",
-          "postgres",
-          "spring"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_828a908398f893b1e0c6ca3d",
-          "sourceId": "programadores-br/geral#3075",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3075",
-          "createdAt": "2026-06-01T16:59:58Z",
-          "updatedAt": "2026-06-01T17:00:27Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 113,
-        "publishedAt": "2026-06-01T16:59:58Z",
         "status": "stale"
       }
     }
