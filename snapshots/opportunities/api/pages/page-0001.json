@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-23T14:00:50.320Z",
+  "generatedAt": "2026-09-23T18:46:29.215Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_b4197231ee36d78db1f0e1ba",
     "gh_9a209b66f806a0d8049b8e95",
     "gh_81101225f8f8a2c29de5c5b8",
     "gh_447cc5783e558f477cf03095",
@@ -22,10 +23,119 @@
     "gh_ec07fc26b3d3475cc24bbd29",
     "gh_9a4c4483e3eb079a1e21301f",
     "gh_2a2ff992a9206cb986867cd4",
-    "gh_8ac0a429ebaa2ee0a15c7681",
-    "gh_7c7e95c00a6ef2ab493c2e3a"
+    "gh_8ac0a429ebaa2ee0a15c7681"
   ],
   "items": [
+    {
+      "id": "gh_b4197231ee36d78db1f0e1ba",
+      "sourceId": "backend-br/vagas#12431",
+      "title": "[Remoto] Lead Database & Data Platform Engineer (Strider)",
+      "description": "VAGA INTERNACIONAL | REMOTA | USD\n\n LEAD DATABASE & DATA PLATFORM ENGINEER\n\nOportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto.\n\n💰 USD 5.000–8.000/mês\n🇺🇸 Inglês C1+\n💼 7+ anos de experiência\n🕐 Long-term · 40h/semana\n\n Tecnologias:\n• AWS\n• MySQL\n• Microsoft SQL Server\n• Database & Data Platforms\n\n🌎 Vaga para profissionais da América Latina.\n\n\n\n📩 Aplique👇🏻 \nhttps://app.onstrider.com/r/claudiaantunes?job=bGVhZC1kYXRhYmFzZS1kYXRhLXBsYXRmb3JtLWVuZ2luZWVyLWQ0YWZlMzc0P3JlZmVycmFsPWNsYXVkaWFhbnR1bmVz",
+      "excerpt": "VAGA INTERNACIONAL | REMOTA | USD LEAD DATABASE & DATA PLATFORM ENGINEER Oportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto. 💰 USD 5.000–8.000/mês 🇺\ud83c...",
+      "issueState": "open",
+      "contentHash": "7f8bc5666421e7dc9901d01bd5a163bebb3b0d507512481a4da6e3bdc9f825c6",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "aws",
+        "mysql",
+        "remoto",
+        "sql"
+      ],
+      "sourceTags": [
+        "aws",
+        "mysql",
+        "remoto",
+        "sql"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 5000,
+        "max": 8000,
+        "period": "month"
+      },
+      "createdAt": "2026-09-23T16:57:25Z",
+      "updatedAt": "2026-09-23T16:57:43Z",
+      "url": "https://github.com/backend-br/vagas/issues/12431",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "mysql"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b4197231ee36d78db1f0e1ba",
+          "sourceId": "backend-br/vagas#12431",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12431",
+          "createdAt": "2026-09-23T16:57:25Z",
+          "updatedAt": "2026-09-23T16:57:43Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-09-23T16:57:25Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_9a209b66f806a0d8049b8e95",
       "sourceId": "rebase-network/who-is-hiring#1306",
@@ -1359,7 +1469,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-09-21T14:04:13Z",
         "status": "fresh"
       }
@@ -1935,98 +2045,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
-        "publishedAt": "2026-09-18T14:51:33Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_7c7e95c00a6ef2ab493c2e3a",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2976",
-      "title": "Capital One TDP",
-      "description": "### Link to Job Posting\n\nhttps://www.capitalonecareers.com/job/mclean/technology-development-program-associate-august-2027/31238/100616402160\n\n### Company Name\n\nCapital One\n\n### Job Title\n\nSoftware Engineer\n\n### Location\n\nRichmond, VA | Plano, TX\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nOffers Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\njjmerino05@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Job Posting https://www.capitalonecareers.com/job/mclean/technology-development-program-associate-august-2027/31238/100616402160 ### Company Name Capital One ### Job Title Software Engineer ### Location Ri...",
-      "issueState": "open",
-      "contentHash": "f59378ebe1ca6d52c31345074b5f469c567289f8f5a4b01fd86f8593c6a3650d",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_role"
-      ],
-      "sourceTags": [
-        "new_role"
-      ],
-      "author": {
-        "id": "jayj05",
-        "name": "jayj05",
-        "handle": "jayj05",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/103336766?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-09-18T13:34:28Z",
-      "updatedAt": "2026-09-18T13:34:28Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2976",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Richmond",
-        "subdivision": "VA",
-        "displayText": "Richmond, VA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_7c7e95c00a6ef2ab493c2e3a",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2976",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2976",
-          "createdAt": "2026-09-18T13:34:28Z",
-          "updatedAt": "2026-09-18T13:34:28Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
         "ageDays": 5,
-        "publishedAt": "2026-09-18T13:34:28Z",
+        "publishedAt": "2026-09-18T14:51:33Z",
         "status": "fresh"
       }
     }
