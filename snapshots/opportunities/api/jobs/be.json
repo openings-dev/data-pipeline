@@ -1,6 +1,100 @@
 {
-  "generatedAt": "2026-09-23T18:46:29.215Z",
+  "generatedAt": "2026-09-24T13:57:15.336Z",
   "items": {
+    "gh_bee25d48c1d08bdb89cd3956": {
+      "id": "gh_bee25d48c1d08bdb89cd3956",
+      "sourceId": "ambicuity/New-Grad-Jobs#355",
+      "title": "[Sponsors] How sponsorship works here — current sponsors, hard limits, and how to propose a README CTA placement",
+      "description": "**This is a standing, pinned issue. It is intentionally left open — please do not close it.** It is the single public place where sponsorship happens in the open: what we accept, what we refuse, what it costs us to run this, and how anyone can propose a placement.\n\nIf you just want to submit a proposal, skip to [How to propose a placement](#how-to-propose-a-placement).\n\n---\n\n## Why this repo takes sponsorship at all\n\nThis project is free, solo-maintained, and runs a scraper against 224+ company APIs **every 5 minutes, 24/7**. That has a real cost in infrastructure and in maintainer hours. There are three ways it stays alive: people who [sponsor the maintainer](https://github.com/sponsors/ambicuity), people who contribute fixes, and a small number of products that pay for a placement in this README.\n\nWe would rather be openly, boringly transparent about that third one than pretend it doesn't happen. **Every paid placement in this repository is labelled \"Sponsored by …\" in the README itself.** If you ever see a product promoted here without that label, that's a bug — please comment on this issue.\n\n## Current sponsors\n\n| Sponsor | What it is | Where it appears | Relationship |\n|---|---|---|---|\n| **[Tailr](https://www.tailr.uk)** | Rewrites your résumé per job posting and shows an ATS match score. Free 10/day, no card. | `README.md` sponsor section + a badge on the [job board](https://jobs.riteshrana.engineer/) | Sponsor. Disclosed: a sibling product cross-promoted by the maintainer, not an arm's-length ad buy. |\n| **[Zapply](https://app.zapply.jobs)** | Chrome extension that autofills job applications, plus its own job board and application tracking. | `README.md` \"Website & Autofill Extension\" CTA only | Paid monthly CTA placement under a written agreement. Not affiliated with the maintainer. |\n\nSponsorship buys **README real estate and nothing else.**\n\n## What sponsorship never buys\n\nThese are hard lines, not negotiating positions:\n\n- **No influence over job data.** Listings, categories, rankings, sort order, and dedup behaviour are driven by [`config.yml`](https://github.com/ambicuity/New-Grad-Jobs/blob/main/config.yml) and the scraper. A sponsor cannot buy a listing, buy a better position in a table, or get a competitor removed. Paying us does not get your company's roles surfaced.\n- **No reader tracking.** No pixels, no analytics scripts, no third-party JS, no data about who read what. A plain link with a `?ref=` query parameter is the absolute maximum, and it is visible in the Markdown for anyone to inspect.\n- **No editorial control.** Sponsors do not review, approve, or veto anything outside their own CTA block — not the README copy around it, not issues, not PRs, not moderation.\n- **No implied endorsement of a hiring outcome.** We will not host copy that promises a job, an interview, a referral, or a salary.\n\n## What we will not accept, at any price\n\n- Guaranteed-job, guaranteed-interview, or guaranteed-salary claims (\"we place you at FAANG\").\n- Pay-to-apply schemes, or anything that charges a job seeker to *submit* an application.\n- Résumé mills, fake-experience services, or anything that coaches applicants to misrepresent themselves.\n- Visa/immigration \"guarantees\", or products that prey on international students' status anxiety.\n- Unpaid-internship marketplaces and training programmes that bill students for the privilege of working.\n- MLM, crypto/trading pitches, and anything aimed at extracting money from people who are, by definition, currently unemployed.\n- Anything requiring a database, a frontend framework, or an external orchestrator to be added to this repo — the [architectural constraints](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md) apply to sponsors too.\n\nNew grads are a vulnerable audience with time pressure and little leverage. Our bar for what we'll put in front of them is deliberately higher than our need for the money.\n\n## Where placements are allowed to live\n\n- **`README.md` — yes.** This is the default and, for paid CTAs, currently the only place.\n- **The [live job board](https://jobs.riteshrana.engineer/) — ad-free by default.** The site carries no paid CTA. Tailr's badge there predates this policy and is disclosed above; we are not adding more.\n- **Job listings, `jobs.json`, the RSS feed, commit messages, releases — never.** These are data, not inventory.\n\n## How to propose a placement\n\n1. Open a proposal with the **[🤝 Sponsorship / CTA Placement Proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=sponsor_placement.yml)** template. Fill it in honestly — the checkboxes at the bottom are the rules above restated, and proposals that tick them falsely get closed and stay closed.\n2. Expect a reply in **1–2 weeks**. This is a spare-time project; sponsorship enquiries do not jump the queue ahead of bug fixes.\n3. If it's a fit, we agree terms **in writing, off this issue** (copy, destination URL, assets, disclosure wording, duration, fee, removal notice).\n4. The placement lands as a normal reviewed **pull request** with the assets committed to this repo. Nothing goes live by side channel, and we never hotlink your CDN.\n5. It's live when that PR is merged and CI is green — not when terms are agreed.\n\n**Do not post pricing you consider confidential, contract terms, invoices, or payment details in this public issue or in a proposal issue.** Email `contact@riteshrana.engineer` for that. Public issues get indexed by search engines, quoted in replies, and picked up by archives and scrapers, so deleting a comment later does not unpublish what it said.\n\n## For readers, contributors, and forks\n\n- **Spotted a sponsor behaving badly?** If a sponsored product misleads job seekers, charges for something it advertised as free, or spams users who click through, comment here or open a bug report. We will ask them to fix it, and we will remove the placement if they don't. A placement is rented, not owned.\n- **Reviewing a sponsorship PR?** Check three things: the \"Sponsored by …\" disclosure is present and adjacent to the CTA, assets are committed in-repo rather than hotlinked, and nothing outside the CTA block changed.\n- **Forking this repo?** Sponsor placements are *ours*, not part of the project's licence. Please strip the Tailr and Zapply blocks from your fork's README — the [MIT licence](https://github.com/ambicuity/New-Grad-Jobs/blob/main/LICENSE) covers the code, not a sponsor's marks, and their agreements do not extend to you.\n- **Want to support the project without a placement?** [GitHub Sponsors](https://github.com/sponsors/ambicuity), [Buy Me a Coffee](https://buymeacoffee.com/ritesh.rana), a star, or — best of all — a PR.\n\n---\n\n*Maintained per [GOVERNANCE.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/GOVERNANCE.md). Kept open on purpose as the permanent public record of how sponsorship works here.*",
+      "excerpt": "**This is a standing, pinned issue. It is intentionally left open — please do not close it.** It is the single public place where sponsorship happens in the open: what we accept, what we refuse, what it costs us to ru...",
+      "issueState": "open",
+      "contentHash": "83815e373955ef2f1aab329bdda15a216073b42b68ebfe92234d14b5cb0b6255",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "community",
+        "sponsorship: placement",
+        "type: docs"
+      ],
+      "sourceTags": [
+        "community",
+        "sponsorship: placement",
+        "type: docs"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-08-09T21:31:45Z",
+      "updatedAt": "2026-08-09T21:42:48Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/355",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_bee25d48c1d08bdb89cd3956",
+          "sourceId": "ambicuity/New-Grad-Jobs#355",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/355",
+          "createdAt": "2026-08-09T21:31:45Z",
+          "updatedAt": "2026-08-09T21:42:48Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 45,
+        "publishedAt": "2026-08-09T21:31:45Z",
+        "status": "aging"
+      }
+    },
     "gh_bebc4c633e728a987497ecda": {
       "id": "gh_bebc4c633e728a987497ecda",
       "sourceId": "programadores-br/geral#3062",
