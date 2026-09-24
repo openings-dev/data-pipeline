@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-24T18:47:22.885Z",
+  "generatedAt": "2026-09-24T23:43:26.752Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 14,
+    "opportunities": 12,
     "openIssues": 1,
-    "closedIssues": 13
+    "closedIssues": 11
   },
-  "dataHash": "ae45aba5e06532a9b5af2dafccda766410b195d13e5e507df1a1f819eb5c6f92",
+  "dataHash": "1dd7c6b133a6c656f786f261a67d795f3c898c75aa2617b263841b0e04645f05",
   "items": [
     {
       "id": "gh_b61a0deb059a39397b8134da",
@@ -408,74 +408,6 @@
       }
     },
     {
-      "id": "gh_4a795bc5217ca32263bfde59",
-      "sourceId": "ambicuity/New-Grad-Jobs#335",
-      "title": "Feature Tailr as project sponsor (README + terminal site) + add a Support section",
-      "description": "## Summary\n\nThe project has a real sponsor — **[Tailr](https://www.tailr.uk)** — but it isn't credited anywhere. The README has no sponsor/support section, and the site only exposes the Buy Me a Coffee (☕ SPONSOR) button, which is the *inverse* relationship (visitors funding the maintainer).\n\nThis adds an honest sponsor credit for Tailr and formalizes the existing support channels.\n\n## Scope\n\n**Website (`docs/terminal/app.jsx`)**\n- New `SponsoredBy` badge — `◆ SPONSORED BY [T] tailr` with an inline SVG of Tailr's white-T mark, in the top-bar meta cluster **immediately left of** the existing ☕ SPONSOR button (unchanged).\n- Links to https://www.tailr.uk (new tab, `rel=noopener`).\n- Bump the `?v=` cache-bust token in `docs/index.html` so Pages serves the update.\n\n**README.md** (hand-edited, outside the auto-synced `<!-- COUNT:* -->` markers — CI-safe)\n- `## 💛 Sponsored by Tailr` block near the top (wordmark + honest one-liner + link).\n- `## 💖 Support This Project` section (GitHub Sponsors + Buy Me a Coffee), mirroring `.github/FUNDING.yml`.\n\n**Assets**\n- `docs/assets/tailr-mark.svg`, `docs/assets/tailr-wordmark.png`.\n\n## Honesty constraints\n- Tailr is the maintainer's sibling product; its positioning explicitly calls for cross-promotion via the New-Grad-Jobs projects, so the credit is intended and truthful.\n- Generic tech-company logos are **not** used as \"sponsors\". A separate, honest \"Companies Hiring\" logo wall is deferred to a follow-up.\n\n## Non-goals\n- Companies-hiring logo wall (follow-up PR).\n- No change to the ☕ SPONSOR button meaning, footer, scraper, or `jobs.json`.\n\n## Acceptance\n- [ ] Tailr badge visible left of SPONSOR on the site, links to tailr.uk\n- [ ] README has Sponsored-by-Tailr + Support sections\n- [ ] Full CI green (pytest, pre-commit, codeql, pages build)",
-      "excerpt": "## Summary The project has a real sponsor — **[Tailr](https://www.tailr.uk)** — but it isn't credited anywhere. The README has no sponsor/support section, and the site only exposes the Buy Me a Coffee (☕ SPONSOR) butt...",
-      "issueState": "closed",
-      "contentHash": "00b7adfd872527600da2cd88355766c420e6dc4c77415d28d1dd4e35aaa82526",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: docs",
-        "type: enhancement",
-        "help wanted",
-        "intermediate",
-        "ui/ux",
-        "community"
-      ],
-      "sourceTags": [
-        "type: docs",
-        "type: enhancement",
-        "help wanted",
-        "intermediate",
-        "ui/ux",
-        "community"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-07-15T19:06:21Z",
-      "updatedAt": "2026-07-15T19:27:28Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/335",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_fcc326c9dd1dfad7a787701e",
       "sourceId": "ambicuity/New-Grad-Jobs#245",
       "title": "[Feature]: add publish-time URL safety validation for jobs artifact output",
@@ -610,72 +542,6 @@
           "react",
           "redis",
           "vue"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_bedaba9a8ab0024ee42827c4",
-      "sourceId": "ambicuity/New-Grad-Jobs#133",
-      "title": "[Good First Issue]: align ci.yml config validation with current config[\"apis\"] schema",
-      "description": "---\n## Welcome to New Grad Jobs! 🎓\n\nThis template creates a **Good First Issue** — a small, guided task that helps new\ncontributors learn the codebase and contribution workflow.\n\n**Good First Issues are pre-approved by the maintainer.** A contributor can claim it\nimmediately by commenting `/assign`.\n\n---\n\n### 🆕 Newcomer Friendly\n\nThis is a **Good First Issue** — a guided, well-scoped task designed for contributors\nwho are new to this repository.\n\n#### What you'll do\n- ✅ Read a small part of the codebase\n- ✅ Make a focused, well-defined change\n- ✅ Write or extend a test\n- ✅ Submit and merge a pull request\n\n#### Support\nThe maintainer actively monitors Good First Issues and will respond to questions\nwithin 24–48 hours.\n\n> [!IMPORTANT]\n> **This issue does not require prior scraping or API experience.**\n>\n> - Basic Python and Git are sufficient\n> - You must be assigned before starting — comment `/assign` to claim this issue\n> - Read [CONTRIBUTING.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md)\n>   before opening a PR\n\n> [!NOTE]\n> ⏱️ **Typical time to complete:** 30–90 minutes (once local setup is done)\n> 🧩 **Difficulty:** Small, well-contained change\n> 🎓 **Best for:** First-time contributors\n\n**🏁 When this issue is complete, you will have:**\n- ✅ A merged PR in a real open-source project\n- ✅ Your name in the [Contributors Hall of Fame](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTORS.md)\n- ✅ Confidence to take on larger issues next\n\n> [!IMPORTANT]\n> #### 📋 What makes a Good First Issue in this repo?\n>\n> **Often a good fit:**\n> - Adding a missing company to `config.yml` (Greenhouse, Lever endpoint)\n> - Fixing a keyword in `categorize_job()` or `get_company_tier()`\n> - Correcting a typo or broken link in documentation\n> - Adding a test case for an existing, already-working function\n> - Small CSS/HTML improvements to `docs/`\n>\n> **Not a good fit for GFI:**\n> - Changes to `filter_jobs()`, `deduplicate_jobs()`, or date parsing\n> - New scraping source integrations (Workday, Google Careers)\n> - Architectural changes to `update_jobs.py`\n>\n> Those belong in **Beginner**, **Intermediate**, or **Advanced** issues.\n\n### 👾 Task Description\n\nThe `Validate config.yml structure` step in `.github/workflows/ci.yml` reads company counts from outdated key paths:\n\n- Current code reads `config.get(\"greenhouse\", {})` and `config.get(\"lever\", {})`\n- Actual schema stores these under `config[\"apis\"][\"greenhouse\"]` and `config[\"apis\"][\"lever\"]`\n\nBecause of this mismatch, the workflow prints incorrect counts and does not validate the nested schema as intended.\n\nPlease update the inline validation script to match the current config structure.\n\nSuggested scope:\n- Ensure required top-level keys include `filtering`, `apis`, and `readme`\n- Read company lists from `config[\"apis\"][\"greenhouse\"][\"companies\"]` and `config[\"apis\"][\"lever\"][\"companies\"]`\n- Keep behavior simple and non-breaking: fail only on true schema problems\n- Keep output logs clear for contributors debugging CI\n\n**Area touched:**\n- `.github/workflows/ci.yml`\n\n### ✅ Acceptance Criteria\n\n- [ ] CI validation step reads Greenhouse/Lever company counts from `config[\"apis\"]`\n- [ ] Required key checks include `apis`\n- [ ] Validation output reflects real company counts from current schema\n- [ ] Existing tests still pass (`make test`)\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format",
-      "excerpt": "--- ## Welcome to New Grad Jobs! 🎓 This template creates a **Good First Issue** — a small, guided task that helps new contributors learn the codebase and contribution workflow. **Good First Issues are pre-approved by...",
-      "issueState": "closed",
-      "contentHash": "20e732a73bb36a91b8c42b226287b00a4dcefadc81b19796ccf64b3ae283e964",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue",
-        "type: chore",
-        "needs-triage"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue",
-        "type: chore",
-        "needs-triage"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-07T05:41:24Z",
-      "updatedAt": "2026-07-15T20:01:55Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/133",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
         ],
         "seniority": [],
         "employmentTypes": [],
