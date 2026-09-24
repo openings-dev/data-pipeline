@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-09-23T23:23:29.976Z",
+  "generatedAt": "2026-09-24T02:28:34.632Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
-    "gh_0204db9cde8a5488e44c6e8b",
     "gh_bf70dc9f783bd9e91215da56",
     "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
@@ -23,100 +22,10 @@
     "gh_8d3d4b455493191722317dda",
     "gh_b1d7b3a976f64e5cf24ef658",
     "gh_777d6953c094c4c77cffa586",
-    "gh_03fa03119cda6972a7f24c60"
+    "gh_03fa03119cda6972a7f24c60",
+    "gh_018090ae0b51c7fe869fe122"
   ],
   "items": [
-    {
-      "id": "gh_0204db9cde8a5488e44c6e8b",
-      "sourceId": "remoteintech/remote-jobs#2122",
-      "title": "Upgrade @11ty/is-land from v4 to v5",
-      "description": "## Summary\n\nDependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked issue rather than merging blindly.\n\n## Breaking Changes in v5\n\n- **`autoinit` attribute removed** — `<is-land autoinit>` and `is-land-autoinit.js` are gone. Must migrate to the new `Island.addInitType()` API for framework initialisation\n- **`Island.define(tagName)` removed** — replaced by using `customElements.define` directly\n- **`import` attribute behaviour change** — when used with `type`, the `import()` is no longer performed automatically\n- **Manual definition** — now uses `?nodefine` query param instead of the previous approach\n\n## What's Good\n\n- Broader browser support (Chrome 71+, down from 88+)\n- Performance improvements for `on:idle`, `on:media`, `on:load`\n- Passive event listeners for `on:interaction` (fixes Lighthouse warning)\n- Minified build available (`dist/is-land.min.js`)\n\n## Suggested Approach\n\n1. Audit current `is-land` usage in templates (`src/_includes/`, `src/_layouts/`)\n2. Check if `autoinit` or `Island.define()` are used anywhere\n3. Update usage to match v5 API\n4. Test lazy-loading behaviour (theme switcher, search, any other islands)\n5. Verify build passes\n\n## References\n\n- [is-land v5.0.0 release](https://github.com/11ty/is-land/releases/tag/v5.0.0)\n- [Dependabot PR #2120](https://github.com/remoteintech/remote-jobs/pull/2120)",
-      "excerpt": "## Summary Dependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked is...",
-      "issueState": "open",
-      "contentHash": "55a19f8b0f66ddeebfdff850b17f08918a7c6115d78ea41b7572d6a89d236eab",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "node",
-        "remote"
-      ],
-      "sourceTags": [
-        "node",
-        "remote"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-21T13:17:54Z",
-      "updatedAt": "2026-08-23T18:19:50Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_0204db9cde8a5488e44c6e8b",
-          "sourceId": "remoteintech/remote-jobs#2122",
-          "repository": "remoteintech/remote-jobs",
-          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-          "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-          "createdAt": "2026-02-21T13:17:54Z",
-          "updatedAt": "2026-08-23T18:19:50Z",
-          "community": {
-            "id": "remoteintech",
-            "name": "remoteintech",
-            "avatarUrl": "https://github.com/remoteintech.png?size=80",
-            "repository": "remoteintech/remote-jobs",
-            "url": "https://github.com/remoteintech/remote-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 214,
-        "publishedAt": "2026-02-21T13:17:54Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_bf70dc9f783bd9e91215da56",
       "sourceId": "timqian/open-source-jobs#162",
@@ -991,7 +900,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 230,
+        "ageDays": 231,
         "publishedAt": "2026-02-05T00:07:51Z",
         "status": "stale"
       }
@@ -2005,6 +1914,110 @@
       "freshness": {
         "ageDays": 253,
         "publishedAt": "2026-01-13T14:23:29Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_018090ae0b51c7fe869fe122",
+      "sourceId": "TechnologyMasters/jobs#722",
+      "title": "Biz-Tech Analytics - DevOps Engineer - India - Rs.1000-1200/hr",
+      "description": "We’re hiring for our client: Biz-Tech Analytics\n\nRole: DevOps Engineer (Freelance)\nExperience: 4-7+ years\nProject: Terminus Project\nLocation: Remote\nEngagement Type: Freelance | Project-based\n\nAbout the Role:\nBiz-Tech Analytics is looking for experienced DevOps Engineers to contribute to the Terminus Project, a hands-on initiative involving system-level problem solving, automation, and containerised environments.\nThis role is ideal for engineers who enjoy working close to the system layer, debugging complex issues, and building reliable automation in isolated environments.\n\n\nKey Responsibilities:\n • Work on Linux-based systems, handling process management, file systems, and system utilities\n • Write clean, testable Python code for automation and verification\n • Build, configure, and manage Docker-based environments for testing and deployment\n • Troubleshoot and debug complex system and software issues\n • Collaborate using Git and GitHub workflows, including pull requests and branching\n • Execute tasks independently and iterate based on structured feedback\n\nRequired Skills & Qualifications:\n • Expert-level proficiency with Linux CLI, including Bash scripting\n • Strong Python programming skills for automation and tooling\n • Hands-on experience with Docker and containerized environments\n • Excellent problem-solving and debugging skills\n • Proficiency with Git and standard GitHub workflows\n\nPreferred Qualifications:\n • Professional experience in DevOps or Site Reliability Engineering (SRE)\n • Exposure to cloud platforms such as AWS, GCP, or Azure\n • Familiarity with machine learning frameworks like TensorFlow or PyTorch\n • Prior experience contributing to open-source projects\n\nEngagement Details\n • Fully remote freelance engagement\n • Flexible workload, with scope to take on additional tasks\n • Opportunity to work on real-world systems supporting advanced AI and infrastructure projects\n\nPayment Details\n • Rs.1000-1200/hr for approved tasks (India)\n • Invoice to be raised 15-20 days after starting the initial task as long as it is approved\n\nApply via\n • Google form: https://forms.gle/ETNec2n1qJundZsX6\n\n About Biz-Tech Analytics:\nBiz-Tech Analytics partners with global enterprises, AI labs, and industrial businesses to help them build and scale frontier AI systems. From data creation to deployment, the team delivers specialised services including human-in-the-loop annotation, reinforcement learning from human feedback (RLHF), and custom dataset creation.\nWith a network of 500+ vetted developers, STEM professionals, linguists, and domain experts, Biz-Tech Analytics supports leading global platforms by enhancing complex AI models and providing high-precision feedback at scale.\nTheir work sits at the intersection of advanced research, engineering rigor, and real-world AI deployment, making them a strong partner for cutting-edge AI initiatives.",
+      "excerpt": "We’re hiring for our client: Biz-Tech Analytics Role: DevOps Engineer (Freelance) Experience: 4-7+ years Project: Terminus Project Location: Remote Engagement Type: Freelance | Project-based About the Role: Biz-Tech A...",
+      "issueState": "open",
+      "contentHash": "8873badd16a5033d22f1d13c655a680775ac67caeb12e018287652cde4ab1496",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "devops",
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "data",
+        "devops",
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "gulatimehul",
+        "name": "gulatimehul",
+        "handle": "gulatimehul",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/224396119?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "createdAt": "2026-01-05T22:50:21Z",
+      "updatedAt": "2026-01-05T22:50:21Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/722",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_018090ae0b51c7fe869fe122",
+          "sourceId": "TechnologyMasters/jobs#722",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/722",
+          "createdAt": "2026-01-05T22:50:21Z",
+          "updatedAt": "2026-01-05T22:50:21Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 261,
+        "publishedAt": "2026-01-05T22:50:21Z",
         "status": "stale"
       }
     }
