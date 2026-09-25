@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-09-24T23:43:26.752Z",
+  "generatedAt": "2026-09-25T08:24:46.593Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 12,
-    "openIssues": 1,
-    "closedIssues": 11
+    "openIssues": 2,
+    "closedIssues": 10
   },
-  "dataHash": "1dd7c6b133a6c656f786f261a67d795f3c898c75aa2617b263841b0e04645f05",
+  "dataHash": "069ebc6bb0b044d9115e29f7f96614e08eb94a39316659e6e6f2e401e6040023",
   "items": [
+    {
+      "id": "gh_af13796ff8c941761dcb75e0",
+      "sourceId": "ambicuity/New-Grad-Jobs#363",
+      "title": "Job data is stale: last scrape 2026-09-25T01:26:43.548358Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36096971692. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "0d3f00f1797b886032342dc379755d010440c53b0221a0c6c22001f62cb0cc7c",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-09-25T05:03:54Z",
+      "updatedAt": "2026-09-25T05:03:54Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/363",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_b61a0deb059a39397b8134da",
       "sourceId": "ambicuity/New-Grad-Jobs#359",
@@ -542,68 +600,6 @@
           "react",
           "redis",
           "vue"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_fd0c2689702672cf9211c572",
-      "sourceId": "ambicuity/New-Grad-Jobs#51",
-      "title": "[Beginner]: Add an `.editorconfig` file to standardize code formatting",
-      "description": "### Description\nCreate an `.editorconfig` at the root of the repository to enforce 4 spaces for Python, 2 spaces for JSON/YAML, UTF-8 charset, and final newlines.\n\n### Why it matters\nEnsures that all contributors automatically use the correct tab/space settings in their IDEs before they even hit pre-commit hooks.\n\n### Acceptance Criteria\n- [ ] Create `.editorconfig`\n- [ ] Define rules for `*.py`, `*.yml`, `*.md`\n- [ ] Ensure it enforces trim-trailing-whitespace and final newlines\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description Create an `.editorconfig` at the root of the repository to enforce 4 spaces for Python, 2 spaces for JSON/YAML, UTF-8 charset, and final newlines. ### Why it matters Ensures that all contributors autom...",
-      "issueState": "closed",
-      "contentHash": "c9d9b770037216d5e9c2c8aaf30f541607aa2601d567aaba45971f2306866506",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:37Z",
-      "updatedAt": "2026-07-15T20:01:58Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/51",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
         ],
         "seniority": [],
         "employmentTypes": [],

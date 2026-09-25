@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-24T23:43:26.752Z",
+  "generatedAt": "2026-09-25T08:24:46.593Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_af13796ff8c941761dcb75e0",
     "gh_a21f2ea34587fe92452e3d29",
     "gh_49c83bd51761b2ff7c87ab3a",
     "gh_f731e6b22a1664fd513efea5",
@@ -22,10 +23,93 @@
     "gh_5920044c481a81f4ba029054",
     "gh_c44d96e1acded35b569295dc",
     "gh_51659470ccf0887616c6cd66",
-    "gh_6f45233b99747b64f192566e",
-    "gh_a46069ea14b72cc4d37999b6"
+    "gh_6f45233b99747b64f192566e"
   ],
   "items": [
+    {
+      "id": "gh_af13796ff8c941761dcb75e0",
+      "sourceId": "ambicuity/New-Grad-Jobs#363",
+      "title": "Job data is stale: last scrape 2026-09-25T01:26:43.548358Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36096971692. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "0d3f00f1797b886032342dc379755d010440c53b0221a0c6c22001f62cb0cc7c",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-09-25T05:03:54Z",
+      "updatedAt": "2026-09-25T05:03:54Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/363",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_af13796ff8c941761dcb75e0",
+          "sourceId": "ambicuity/New-Grad-Jobs#363",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/363",
+          "createdAt": "2026-09-25T05:03:54Z",
+          "updatedAt": "2026-09-25T05:03:54Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-09-25T05:03:54Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_a21f2ea34587fe92452e3d29",
       "sourceId": "Gommunity/vagas#269",
@@ -538,7 +622,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-09-24T02:54:20Z",
         "status": "fresh"
       }
@@ -632,7 +716,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-09-24T02:52:30Z",
         "status": "fresh"
       }
@@ -719,7 +803,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-09-24T02:48:34Z",
         "status": "fresh"
       }
@@ -1506,7 +1590,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-09-23T06:56:28Z",
         "status": "fresh"
       }
@@ -1586,7 +1670,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-09-23T05:11:27Z",
         "status": "fresh"
       }
@@ -1871,116 +1955,8 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-09-22T08:08:02Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a46069ea14b72cc4d37999b6",
-      "sourceId": "awesome-jobs/vietnam#5065",
-      "title": "[Cần Thơ 18tr] Tìm 1 Mobile Dev (1+ yoe) và 1 Fullstack Dev (2+ yoe) - Lộ trình thăng tiến - Trao quyền định hướng",
-      "description": "Công ty là một trong những doanh nghiệp bán lẻ dược phẩm quy mô lớn và lâu đời tại Việt Nam, với hệ thống nhà thuốc phủ rộng khu vực Đồng bằng sông Cửu Long. Doanh nghiệp hoạt động trong lĩnh vực bán lẻ dược phẩm và các sản phẩm chăm sóc sức khỏe, bao gồm thuốc, thực phẩm chức năng, mỹ phẩm, thiết bị y tế và sản phẩm chăm sóc cá nhân.\n\nCơ hội phát triển:\nLộ trình thăng tiến rõ ràng\nĐược trao quyền quyết định định hướng thể hiện hình ảnh tại hệ thống chuỗi bán lẻ dược phẩm lớn.\n\nUV qtam liên hệ mình zl o332.o22.o55 hoặc techdy.vn@gmail.com nhé.\nIB mình nếu bạn quan tâm các vị trí khác đang open lĩnh vực IT, Data & AI (đang open 100+ vị trí từ Middle đến Lead++)..",
-      "excerpt": "Công ty là một trong những doanh nghiệp bán lẻ dược phẩm quy mô lớn và lâu đời tại Việt Nam, với hệ thống nhà thuốc phủ rộng khu vực Đồng bằng sông Cửu Long. Doanh nghiệp hoạt động trong lĩnh vực bán lẻ dược phẩm và c...",
-      "issueState": "open",
-      "contentHash": "70d0453e2be2cdd6b37a02905d44ade2e771c6f1214587de3ed35495d1b9338c",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "fullstack"
-      ],
-      "sourceTags": [
-        "data",
-        "fullstack"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-09-22T04:39:16Z",
-      "updatedAt": "2026-09-22T04:39:16Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5065",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a46069ea14b72cc4d37999b6",
-          "sourceId": "awesome-jobs/vietnam#5065",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5065",
-          "createdAt": "2026-09-22T04:39:16Z",
-          "updatedAt": "2026-09-22T04:39:16Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_b13ef23d13ac894e7db651de",
-          "sourceId": "awesome-jobs/jobs#5065",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5065",
-          "createdAt": "2026-09-22T04:39:16Z",
-          "updatedAt": "2026-09-22T04:39:16Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 2,
-        "publishedAt": "2026-09-22T04:39:16Z",
         "status": "fresh"
       }
     }
