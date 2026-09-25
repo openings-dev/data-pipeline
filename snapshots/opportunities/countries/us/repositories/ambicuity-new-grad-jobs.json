@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-25T19:04:45.085Z",
+  "generatedAt": "2026-09-25T23:45:18.368Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 10,
+    "opportunities": 9,
     "openIssues": 1,
-    "closedIssues": 9
+    "closedIssues": 8
   },
-  "dataHash": "b1b5e995770864164b1ccb4a0d3d2692e6dd1926ac012c768d00a1e35cecd061",
+  "dataHash": "e9a7acead2912f4a738f1ca251e6479fd3bbb93f50bb2843031c18a9055ff182",
   "items": [
     {
       "id": "gh_af13796ff8c941761dcb75e0",
@@ -452,80 +452,6 @@
         ],
         "technologies": [
           "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_1d0db06ec7c7885fb28edafc",
-      "sourceId": "ambicuity/New-Grad-Jobs#230",
-      "title": "[Feature]: add automated duplicate-issue guardrail for triage quality",
-      "description": "### Problem\nIssue backlog quality degrades when near-duplicate issues are opened (for example, repeated or reintroduced issue topics). This increases maintainer triage overhead and fragments context.\n\n### Proposed Solution\nAdd a lightweight duplicate-detection guardrail in issue triage:\n- on issue open/edit, compare against recent open + closed issue titles/bodies\n- if similarity is high, auto-comment candidate duplicates and add a `possible-duplicate` label\n- keep final decision manual (no auto-close)\n\nThis should preserve discussion quality while remaining maintainer-friendly.\n\n### Alternatives Considered\nManual duplicate checks only.\nThis works at small scale but does not scale with automation-generated and community issue volume.\n\n### 🏗️ Which area does this affect?\n🔁 GitHub Actions / CI-CD (.github/workflows/)\n\n### Constraints Check\n- [x] This does NOT require an external database (PostgreSQL, Redis, SQLite, etc.)\n- [x] This does NOT require a frontend framework (React, Vue, Next.js, Tailwind)\n- [x] This does NOT require an external orchestrator (Airflow, Celery, etc.)",
-      "excerpt": "### Problem Issue backlog quality degrades when near-duplicate issues are opened (for example, repeated or reintroduced issue topics). This increases maintainer triage overhead and fragments context. ### Proposed Solu...",
-      "issueState": "closed",
-      "contentHash": "701305a67219d02de92178c54d469c3826100c8f2593b098846a15ea49392a07",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "plan-me"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "plan-me"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-04-03T17:07:25Z",
-      "updatedAt": "2026-07-15T20:03:22Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/230",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "nextjs",
-          "postgres",
-          "react",
-          "redis",
-          "vue"
         ],
         "seniority": [],
         "employmentTypes": [],
