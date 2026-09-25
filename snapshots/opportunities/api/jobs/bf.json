@@ -1,6 +1,95 @@
 {
-  "generatedAt": "2026-09-25T08:24:46.593Z",
+  "generatedAt": "2026-09-25T14:21:33.127Z",
   "items": {
+    "gh_bf11ac27c78c19485c3ac9f0": {
+      "id": "gh_bf11ac27c78c19485c3ac9f0",
+      "sourceId": "lukasz-madon/awesome-remote-job#1162",
+      "title": "Does a remote job board with limited free access fit the list?",
+      "description": "Hi, I run [DoableFromHome](https://doablefromhome.com), a remote tech job board that checks employer hiring restrictions against the country a job seeker selects.\n\nI saw the contribution rule about paywalls and required login, so I wanted to check before opening a PR. Visitors can browse 20 jobs per search without an account. Free accounts get 40 jobs per search and saved searches. Full results and daily email alerts require Pro, and free users see new jobs 12 hours later.\n\nThe distinction is the country eligibility check: we assess employer location restrictions and explain the result for the reader's country. Listings link to the employer's posting.\n\nWould a board with this access model be eligible for the Job boards section, or does the rule exclude it?",
+      "excerpt": "Hi, I run [DoableFromHome](https://doablefromhome.com), a remote tech job board that checks employer hiring restrictions against the country a job seeker selects. I saw the contribution rule about paywalls and require...",
+      "issueState": "open",
+      "contentHash": "a8d9e9901b3759cd096ab37c10f57219bf11c3de02bbd3fd96ef5d7531a33817",
+      "repository": "lukasz-madon/awesome-remote-job",
+      "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "remote"
+      ],
+      "sourceTags": [
+        "remote"
+      ],
+      "author": {
+        "id": "Skowt",
+        "name": "Skowt",
+        "handle": "Skowt",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4960236?v=4"
+      },
+      "community": {
+        "id": "lukasz-madon",
+        "name": "lukasz-madon",
+        "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
+        "repository": "lukasz-madon/awesome-remote-job",
+        "url": "https://github.com/lukasz-madon/awesome-remote-job"
+      },
+      "createdAt": "2026-09-25T13:03:01Z",
+      "updatedAt": "2026-09-25T13:03:01Z",
+      "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1162",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_bf11ac27c78c19485c3ac9f0",
+          "sourceId": "lukasz-madon/awesome-remote-job#1162",
+          "repository": "lukasz-madon/awesome-remote-job",
+          "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
+          "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1162",
+          "createdAt": "2026-09-25T13:03:01Z",
+          "updatedAt": "2026-09-25T13:03:01Z",
+          "community": {
+            "id": "lukasz-madon",
+            "name": "lukasz-madon",
+            "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
+            "repository": "lukasz-madon/awesome-remote-job",
+            "url": "https://github.com/lukasz-madon/awesome-remote-job"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-09-25T13:03:01Z",
+        "status": "fresh"
+      }
+    },
     "gh_bf73df7999bf22857e69155f": {
       "id": "gh_bf73df7999bf22857e69155f",
       "sourceId": "frontendbr/vagas#8562",
@@ -297,7 +386,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 218,
+        "ageDays": 219,
         "publishedAt": "2026-02-18T13:31:05Z",
         "status": "stale"
       }
