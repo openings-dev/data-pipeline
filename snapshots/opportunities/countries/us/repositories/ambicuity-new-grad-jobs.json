@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-09-25T08:24:46.593Z",
+  "generatedAt": "2026-09-25T19:04:45.085Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 12,
-    "openIssues": 2,
-    "closedIssues": 10
+    "opportunities": 10,
+    "openIssues": 1,
+    "closedIssues": 9
   },
-  "dataHash": "069ebc6bb0b044d9115e29f7f96614e08eb94a39316659e6e6f2e401e6040023",
+  "dataHash": "b1b5e995770864164b1ccb4a0d3d2692e6dd1926ac012c768d00a1e35cecd061",
   "items": [
     {
       "id": "gh_af13796ff8c941761dcb75e0",
@@ -17,7 +17,7 @@
       "title": "Job data is stale: last scrape 2026-09-25T01:26:43.548358Z",
       "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36096971692. This issue closes automatically once data is fresh.",
       "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "0d3f00f1797b886032342dc379755d010440c53b0221a0c6c22001f62cb0cc7c",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
@@ -48,7 +48,7 @@
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
       "createdAt": "2026-09-25T05:03:54Z",
-      "updatedAt": "2026-09-25T05:03:54Z",
+      "updatedAt": "2026-09-25T17:17:04Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/363",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -466,80 +466,6 @@
       }
     },
     {
-      "id": "gh_fcc326c9dd1dfad7a787701e",
-      "sourceId": "ambicuity/New-Grad-Jobs#245",
-      "title": "[Feature]: add publish-time URL safety validation for jobs artifact output",
-      "description": "### Problem\nThe pipeline validates schema/contracts but does not enforce a strict publish-time URL safety gate before writing `docs/jobs.json`. Unsafe or malformed links (non-http schemes, localhost/private-network targets, invalid hosts) could be published into public artifacts.\n\n### Proposed Solution\nAdd publish-time URL safety validation before artifact write/finalization:\n- allow only `http`/`https`\n- reject localhost/private IP ranges/metadata endpoints/malformed hosts\n- surface blocked-count telemetry in health output\n- optionally fail fast or mark degraded when violations exceed a threshold\n\n### Alternatives Considered\n- Rely on liveness checks only (too late: unsafe links may already be published).\n- Manual cleanup through issue reports (reactive and inconsistent).\n\n### 🏗️ Which area does this affect?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### Constraints Check\n- [x] This does NOT require an external database (PostgreSQL, Redis, SQLite, etc.)\n- [x] This does NOT require a frontend framework (React, Vue, Next.js, Tailwind)\n- [x] This does NOT require an external orchestrator (Airflow, Celery, etc.)",
-      "excerpt": "### Problem The pipeline validates schema/contracts but does not enforce a strict publish-time URL safety gate before writing `docs/jobs.json`. Unsafe or malformed links (non-http schemes, localhost/private-network ta...",
-      "issueState": "closed",
-      "contentHash": "ad4775ddc1d49d6fbddec06f80048ce3e191f8b955fcc0cac53e300bb1313a41",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "intermediate"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "intermediate"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-04-08T15:03:08Z",
-      "updatedAt": "2026-07-15T20:03:18Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/245",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "nextjs",
-          "postgres",
-          "react",
-          "redis",
-          "vue"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_1d0db06ec7c7885fb28edafc",
       "sourceId": "ambicuity/New-Grad-Jobs#230",
       "title": "[Feature]: add automated duplicate-issue guardrail for triage quality",
@@ -601,66 +527,6 @@
           "redis",
           "vue"
         ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_5347d095871ffa9b1d72e47b",
-      "sourceId": "ambicuity/New-Grad-Jobs#49",
-      "title": "[Beginner]: Make `normalize_date_string` accept an optional `reference_date` parameter",
-      "description": "### Description\nCurrently, `normalize_date_string` uses `datetime.now()` directly. This makes it hard to test deterministically. Add an optional `reference_date` parameter that defaults to `None`.\n\n### Why it matters\nInjecting the current time via a parameter allows tests to pass fixed dates, eliminating flaky tests around midnight boundaries.\n\n### Acceptance Criteria\n- [ ] Add `reference_date: datetime = None` parameter\n- [ ] Use `reference_date or datetime.now()` inside the function\n- [ ] Update tests if necessary\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description Currently, `normalize_date_string` uses `datetime.now()` directly. This makes it hard to test deterministically. Add an optional `reference_date` parameter that defaults to `None`. ### Why it matters I...",
-      "issueState": "closed",
-      "contentHash": "8e860d05bc5cdb6961bfda06af4e61129a975910e76e428a4331a67ae8da2ea6",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:31Z",
-      "updatedAt": "2026-07-15T20:02:01Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/49",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
         "seniority": [],
         "employmentTypes": [],
         "workModels": [],
