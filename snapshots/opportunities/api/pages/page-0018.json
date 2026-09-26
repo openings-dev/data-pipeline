@@ -1,21 +1,9 @@
 {
-  "generatedAt": "2026-09-26T02:48:14.830Z",
+  "generatedAt": "2026-09-26T08:11:21.623Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
-    "gh_bf70dc9f783bd9e91215da56",
-    "gh_72cc354e7d9c38f999fa902a",
-    "gh_dd237a978dba300d92eb4d35",
-    "gh_8ca6cfcc5f869a8b9471b21b",
-    "gh_eba1cf4eba45f378f7186a1e",
-    "gh_9c27ccbbb027a757720e4a38",
-    "gh_337dcc0369d8226aab4c836f",
-    "gh_549fb47e62e78432e6e7af86",
-    "gh_1bd5f8d6144fe120825c7a8c",
-    "gh_d774a41259f652c1ea370252",
-    "gh_26b7c402e14a59e43ad9828b",
-    "gh_27ad1c5fa6ae31eaf8210333",
     "gh_7b4f6457d040ea0a23c1c43b",
     "gh_1b456af185b0d148e1769bc2",
     "gh_b0b25f9f51d0e7f1c185dc60",
@@ -23,1172 +11,21 @@
     "gh_b1d7b3a976f64e5cf24ef658",
     "gh_777d6953c094c4c77cffa586",
     "gh_03fa03119cda6972a7f24c60",
-    "gh_018090ae0b51c7fe869fe122"
+    "gh_018090ae0b51c7fe869fe122",
+    "gh_f1495b68fe7d4f8349ceb1b6",
+    "gh_90da04043225a0b75c5b63f5",
+    "gh_d9f31b40b046d9fb1c9512c3",
+    "gh_72cfadae02e4f1d29faac8e9",
+    "gh_5f1c8b18033011026ee64886",
+    "gh_7de941f14023985213e7d373",
+    "gh_903b11b11902557631119931",
+    "gh_fb4ec6f93d17afcf44bb3e60",
+    "gh_4f932f9132ac743803a990ff",
+    "gh_e69a66e5d4446a6782d444c6",
+    "gh_c68291eef5db5e9cb0e89fc3",
+    "gh_4f81b09fdec825d1ef022048"
   ],
   "items": [
-    {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data"
-      ],
-      "sourceTags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "nextjs"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_bf70dc9f783bd9e91215da56",
-          "sourceId": "timqian/open-source-jobs#162",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/162",
-          "createdAt": "2026-02-18T13:31:05Z",
-          "updatedAt": "2026-02-19T04:01:13Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 219,
-        "publishedAt": "2026-02-18T13:31:05Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_72cc354e7d9c38f999fa902a",
-      "sourceId": "timqian/open-source-jobs#161",
-      "title": "Feature: Enhanced Search & Filtering",
-      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
-      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
-      "issueState": "open",
-      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:29:12Z",
-      "updatedAt": "2026-02-19T04:01:20Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/161",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_72cc354e7d9c38f999fa902a",
-          "sourceId": "timqian/open-source-jobs#161",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/161",
-          "createdAt": "2026-02-18T13:29:12Z",
-          "updatedAt": "2026-02-19T04:01:20Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 219,
-        "publishedAt": "2026-02-18T13:29:12Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_dd237a978dba300d92eb4d35",
-      "sourceId": "timqian/open-source-jobs#160",
-      "title": "chaos-genius repo is archived",
-      "description": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table ,\nfix : might remove it or add another new one which is alternative to it ig?",
-      "excerpt": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table , fix : might remove it or add another new one which is alternative to it ig?",
-      "issueState": "open",
-      "contentHash": "8fa49b441c78bded9b3b3f265b273b1c1cbcac0e78160ac409226673fadcb2d0",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "wasup-yash",
-        "name": "wasup-yash",
-        "handle": "wasup-yash",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112958086?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-17T18:15:36Z",
-      "updatedAt": "2026-02-17T18:15:36Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/160",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_dd237a978dba300d92eb4d35",
-          "sourceId": "timqian/open-source-jobs#160",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/160",
-          "createdAt": "2026-02-17T18:15:36Z",
-          "updatedAt": "2026-02-17T18:15:36Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 220,
-        "publishedAt": "2026-02-17T18:15:36Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_8ca6cfcc5f869a8b9471b21b",
-      "sourceId": "remoteintech/remote-jobs#2113",
-      "title": "Generate dynamic OG images for company profiles",
-      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
-      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
-      "issueState": "open",
-      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "enhancement"
-      ],
-      "sourceTags": [
-        "enhancement"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-15T18:03:51Z",
-      "updatedAt": "2026-08-23T18:19:28Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_8ca6cfcc5f869a8b9471b21b",
-          "sourceId": "remoteintech/remote-jobs#2113",
-          "repository": "remoteintech/remote-jobs",
-          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-          "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
-          "createdAt": "2026-02-15T18:03:51Z",
-          "updatedAt": "2026-08-23T18:19:28Z",
-          "community": {
-            "id": "remoteintech",
-            "name": "remoteintech",
-            "avatarUrl": "https://github.com/remoteintech.png?size=80",
-            "repository": "remoteintech/remote-jobs",
-            "url": "https://github.com/remoteintech/remote-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 222,
-        "publishedAt": "2026-02-15T18:03:51Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_eba1cf4eba45f378f7186a1e",
-      "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
-      "title": "[NEW JOB] Seeking Front-End Developers To Build E-Commerce Site",
-      "description": "I have an ecommerce site and am looking for experienced developers to improve the project.\n\nRequired Skills:\n- React.js\n- Blockchain\n\nContact me; \n- Telegram: @hot_cappuccino75\n- Gmail: bluedragon3829@gmail.com",
-      "excerpt": "I have an ecommerce site and am looking for experienced developers to improve the project. Required Skills: - React.js - Blockchain Contact me; - Telegram: @hot_cappuccino75 - Gmail: bluedragon3829@gmail.com",
-      "issueState": "open",
-      "contentHash": "8a87e12418e842caf771a411e8b16704d988a217d9aa9aae3aabc0812ebd282f",
-      "repository": "OurTinTinLand/TinTin-Job-Board",
-      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-      "region": "Asia",
-      "country": "China",
-      "sourceLocation": {
-        "country": "China",
-        "countryCode": "CN",
-        "region": "Asia"
-      },
-      "tags": [
-        "react"
-      ],
-      "sourceTags": [
-        "react"
-      ],
-      "author": {
-        "id": "spiderman6689030-png",
-        "name": "spiderman6689030-png",
-        "handle": "spiderman6689030-png",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/260697248?v=4"
-      },
-      "community": {
-        "id": "OurTinTinLand",
-        "name": "OurTinTinLand",
-        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-        "repository": "OurTinTinLand/TinTin-Job-Board",
-        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-      },
-      "createdAt": "2026-02-10T21:29:45Z",
-      "updatedAt": "2026-02-10T21:29:45Z",
-      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/78",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_eba1cf4eba45f378f7186a1e",
-          "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
-          "repository": "OurTinTinLand/TinTin-Job-Board",
-          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/78",
-          "createdAt": "2026-02-10T21:29:45Z",
-          "updatedAt": "2026-02-10T21:29:45Z",
-          "community": {
-            "id": "OurTinTinLand",
-            "name": "OurTinTinLand",
-            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-            "repository": "OurTinTinLand/TinTin-Job-Board",
-            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 227,
-        "publishedAt": "2026-02-10T21:29:45Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_9c27ccbbb027a757720e4a38",
-      "sourceId": "nerdzao/vagas#189",
-      "title": "[Híbrido-São Paulo/SP] Back-end Developer (NestJS) na Viaflow",
-      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Backend (NestJS/Node.js) de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\n\nSe você tem domínio em NestJS, arquitetura de microsserviços e paixão por sistemas escaláveis em GCP, #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nArquitetura e Desenvolvimento: Projetar, desenvolver e manter serviços de backend escaláveis utilizando NestJS e [Node.js](http://node.js/).\nIntegração de APIs: Construir e integrar APIs RESTful e/ou GraphQL para o frontend e sistemas externos.\nColaboração Multidisciplinar: Trabalhar estreitamente com engenheiros frontend ([React.js](http://react.js/)) para entregar experiências de usuário fluidas e integradas.\nCloud Native: Arquitetar e implementar microsserviços nativos da nuvem no Google Cloud Platform (GCP).\nSistemas Orientados a Eventos: Desenvolver sistemas event-driven utilizando plataformas de mensageria e streaming (ex: Pub/Sub, Kafka, etc.).\nExcelência Técnica: Garantir a segurança, performance, escalabilidade e confiabilidade das aplicações, implementando as melhores práticas de autenticação, autorização e proteção de dados.\nQualidade de Código: Escrever código limpo, de fácil manutenção e bem testado, seguindo os padrões da indústria e participando ativamente de code reviews.\nLiderança Técnica: Participar de discussões de design técnico e decisões arquiteturais.\nOperações: Realizar o troubleshooting de problemas em produção, otimizar a performance do sistema e colaborar com times de DevOps em pipelines de CI/CD e monitoramento.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\nSólida Experiência: Desenvolvimento Backend utilizando NestJS e [Node.js](http://node.js/).\nIntegração Frontend: Experiência prática com [React.js](http://react.js/) (focada na integração e colaboração com times de frontend).\nDesign de APIs: Sólido entendimento de arquiteturas baseadas em APIs (REST / GraphQL).\nArquitetura Moderna: Experiência na construção de microsserviços e sistemas orientados a eventos.\nEspecialista em Cloud: Forte experiência com serviços do Google Cloud Platform (GCP).\nContainerização: Experiência com Docker.\nDados: Conhecimento profundo de bancos de dados (SQL e/ou NoSQL).\nSegurança: Forte compreensão de melhores práticas de segurança e design de sistemas escaláveis.\n🏆 Diferenciais (O que valorizamos)\nExperiência com orquestração utilizando Kubernetes.\nCertificações oficiais GCP.\nVivência prévia em projetos SaaS de escala global.\n🤝 Soft Skills\nExcelentes habilidades de comunicação para atuar em ambientes multidisciplinares.\nCapacidade analítica para resolução de problemas complexos.\n\nIdioma: Inglês Fluente\n\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nTreinamentos e Certificações\nClube do iFood gratuito\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nSe candidate através do link:  https://viaflow.gupy.io/jobs/10805702?jobBoardSource=gupy_public_page",
-      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Backend (NestJS/Node.js) de altíssimo nível para atuar em um cliente globa...",
-      "issueState": "open",
-      "contentHash": "37dc953b4049ab2d1448405a34d3441d95786b2fc28717211e42b1f616676388",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "design",
-        "devops",
-        "frontend",
-        "node",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "design",
-        "devops",
-        "frontend",
-        "node",
-        "react"
-      ],
-      "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
-      },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
-      },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:44:05Z",
-      "updatedAt": "2026-02-06T18:44:05Z",
-      "url": "https://github.com/nerdzao/vagas/issues/189",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "Híbrido-São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Híbrido-São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "devops-sre",
-          "frontend"
-        ],
-        "technologies": [
-          "docker",
-          "gcp",
-          "kubernetes",
-          "nodejs",
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_9c27ccbbb027a757720e4a38",
-          "sourceId": "nerdzao/vagas#189",
-          "repository": "nerdzao/vagas",
-          "repositoryUrl": "https://github.com/nerdzao/vagas",
-          "url": "https://github.com/nerdzao/vagas/issues/189",
-          "createdAt": "2026-02-06T18:44:05Z",
-          "updatedAt": "2026-02-06T18:44:05Z",
-          "community": {
-            "id": "nerdzao",
-            "name": "nerdzao",
-            "avatarUrl": "https://github.com/nerdzao.png?size=80",
-            "repository": "nerdzao/vagas",
-            "url": "https://github.com/nerdzao/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 231,
-        "publishedAt": "2026-02-06T18:44:05Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_337dcc0369d8226aab4c836f",
-      "sourceId": "nerdzao/vagas#188",
-      "title": "[Híbrido-São Paulo/SP] AI Engineer (Python) na Viaflow",
-      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de IA Sênior de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\n\nComo Pessoa Engenheira de IA Sênior, você será peça-chave no nosso time de ML/AI. Seu foco será a exploração e implementação de Machine Learning, IA Generativa e tecnologias disruptivas para construir interfaces que tornem a IA acessível e funcional. Buscamos um perfil full-stack com alma backend, capaz de construir sistemas escaláveis, orientados a eventos e prontos para o mundo real.\n\n\nSe você tem experiência consolidada em Python, visão estratégica de nuvem e paixão por integrar IA em aplicações reais, #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nExecução Independente e Ownership: Conduzir projetos da concepção ao deploy com supervisão mínima, assumindo a responsabilidade total pelas entregas e prazos.\nDesign de Soluções: Projetar arquiteturas inovadoras (whiteboarding), colaborando com o time para transformar ideias em soluções técnicas viáveis.\nDesenvolvimento em Nuvem: Desenhar e implementar soluções robustas, com foco em Google Cloud Platform (GCP) e Vertex AI.\nArquitetura Event-Driven: Construir e gerenciar APIs dinâmicas em tempo real utilizando tecnologias como Cloud Functions, Kubernetes e Cloud Run.\nIntegração de IA: Aplicar mecanismos de IA clássica e moderna, como o uso de transformers, execução de inferências e formatação de dados para o cliente final.\nMentoria e Cultura: Promover uma cultura de curiosidade e aprendizado contínuo, mantendo-se atualizado sobre tendências de IA e inspirando o crescimento da equipe.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\nExperiência Sólida atuando com desenvolvimento de software backend.\nDomínio de Linguagem: Proficiência indispensável em Python.\nExpertise em Nuvem: Experiência prática em plataformas de nuvem (GCP é o nosso grande diferencial).\nSistemas de Alta Performance: Experiência na construção de soluções resilientes e orientadas a eventos (event-driven).\nCiclo de Vida (SDLC): Domínio completo do ciclo de desenvolvimento, do código à produção.\n🎓 Formação e idiomas\nGraduação: Bacharelado em Ciência da Computação, Engenharia ou áreas correlatas.\nInglês fluente\n🏆 Diferenciais (O que te destaca)\nExperiência direta com implementação e suporte de Machine Learning / LLMs (Large Language Models).\nVivência em projetos globais e ambientes multiculturais.\n🧠 Seu Perfil Comportamental\nAutossuficiência: Desenvoltura para resolver problemas de forma eficaz e independente.\nColaboração: Mentalidade aberta para trabalhar próximo a Engenheiros Líderes, Product Owners e Cientistas de Dados.\nInconformismo e Inovação: Paixão por aprender novas tecnologias e impulsionar a inovação no time.\nComunicação: Excelentes habilidades de colaboração e resolução de problemas complexos.\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nClube do iFood gratuito\nTreinamentos e Certificações\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nSe candidate através do link: https://viaflow.gupy.io/jobs/10805620?jobBoardSource=gupy_public_page",
-      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de IA Sênior de altíssimo nível para atuar em um cliente global, focado em mod...",
-      "issueState": "open",
-      "contentHash": "923025e4955c62c04793aaf9a939349caef030b34c9272d250397678b6ef1812",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "design",
-        "python"
-      ],
-      "sourceTags": [
-        "backend",
-        "design",
-        "python"
-      ],
-      "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
-      },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
-      },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:42:28Z",
-      "updatedAt": "2026-02-06T18:42:28Z",
-      "url": "https://github.com/nerdzao/vagas/issues/188",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "Híbrido-São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Híbrido-São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "fullstack",
-          "support"
-        ],
-        "technologies": [
-          "gcp",
-          "kubernetes",
-          "python"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_337dcc0369d8226aab4c836f",
-          "sourceId": "nerdzao/vagas#188",
-          "repository": "nerdzao/vagas",
-          "repositoryUrl": "https://github.com/nerdzao/vagas",
-          "url": "https://github.com/nerdzao/vagas/issues/188",
-          "createdAt": "2026-02-06T18:42:28Z",
-          "updatedAt": "2026-02-06T18:42:28Z",
-          "community": {
-            "id": "nerdzao",
-            "name": "nerdzao",
-            "avatarUrl": "https://github.com/nerdzao.png?size=80",
-            "repository": "nerdzao/vagas",
-            "url": "https://github.com/nerdzao/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 231,
-        "publishedAt": "2026-02-06T18:42:28Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_549fb47e62e78432e6e7af86",
-      "sourceId": "nerdzao/vagas#187",
-      "title": "[Híbrido-São Paulo/SP] Front-end Developer (React) na Viaflow",
-      "description": "Nossa empresa\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Frontend Senior de altíssimo nível para atuar em um cliente global, focado em modernização e soluções SaaS do zero.\n\nSe você tem domínio de React, mentalidade voltada para escalabilidade e paixão por inovação, #VemPraViaflow!\n\n✨ Se identificou? Então vem com a gente!\n\nDescrição da vaga\nResponsabilidades e atribuições:\n\nColaboração e Pairing: Atuar em conjunto com engenharia e gestão de produto para criar soluções de software seguras, confiáveis e escaláveis.\nEspecialista (SME): Atuar como referência técnica e de negócio, compreendendo profundamente processos, inter-relações e dependências entre os componentes do sistema.\nDesenvolvimento de Excelência: Projetar, desenvolver e manter código JavaScript/React altamente reutilizável e de alto desempenho.\nIntegração Fluida: Colaborar com desenvolvedores de backend para integrar componentes de UI com APIs e bancos de dados.\nExperiência do Usuário (UX): Participar ativamente de testes com usuários e incorporar feedbacks para refinar o design e a jornada do cliente.\nDesign System: Contribuir para a evolução do nosso Design System, garantindo consistência visual em todos os pontos de contato digitais.\nOtimização de Performance: Garantir que as aplicações sejam otimizadas para velocidade (minimizando tempos de carregamento e requisições HTTP).\nQualidade e Automação: Implementar e manter procedimentos de testes automatizados no frontend para identificar regressões e garantir entregas robustas.\nInovação Contínua: Manter-se atualizado com as tendências de frontend, integrando novas tecnologias para manter a competitividade do produto.\n\nLocal\nAvenida Paulista, São Paulo-SP\n\nRequisitos\n💻 Experiência e Conhecimento Técnico\n\nSólida Experiência em desenvolvimento Frontend em ambientes complexos.\nExpertise em React: Conhecimento especialista em JavaScript e React, com foco em arquitetura baseada em componentes.\nVisão Fullstack: Bom conhecimento de [Node.js](http://node.js/) para suporte às necessidades de integração.\nCloud Computing: Experiência com nuvem pública, preferencialmente Google Cloud Platform (GCP).\nQualidade de Código: Excelentes habilidades de escrita de código e experiência sólida na escrita de testes.\nComponentização: Experiência avançada na criação e aprimoramento de componentes reutilizáveis.\nMetodologias: Ótimo conhecimento em metodologias Ágeis (Scrum/Kanban).\n\n🎓 Formação e Soft Skills\n\nGraduação: Formação completa em Engenharia, Ciência da Computação ou áreas correlatas.\nComunicação: Fortes habilidades de comunicação para colaborar com equipes multifuncionais globais.\nMindset: Paixão por expandir conhecimentos técnicos e atitude de dono frente aos domínios técnicos.\nIdioma: Inglês Fluente\n\nBenefícios\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nClube do iFood gratuito\nTreinamentos e Certificações\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nContratação\nCooperativa\n\nComo se candidatar\nSe candidate através do link: https://viaflow.gupy.io/jobs/10805397?jobBoardSource=gupy_public_page\n\nTempo médio de feedbacks\nCostumamos enviar feedbacks em até 07 dias após cada processo.\nE-mail para contato em caso de não haver resposta: [jessica.pinheiro@viaflow.com.br](mailto:jessica.pinheiro@viaflow.com.br)",
-      "excerpt": "Nossa empresa Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Frontend Senior de altíssimo nível para atuar em um cliente global, focado em ...",
-      "issueState": "open",
-      "contentHash": "214ee77940ac5b24de59d9207f4d01c3e754bec6f6c0367be86fbe2f96b2ed43",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "frontend",
-        "fullstack",
-        "java",
-        "node",
-        "react",
-        "senior"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "frontend",
-        "fullstack",
-        "java",
-        "node",
-        "react",
-        "senior"
-      ],
-      "author": {
-        "id": "jesspinheiro93",
-        "name": "jesspinheiro93",
-        "handle": "jesspinheiro93",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
-      },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
-      },
-      "companyName": "Viaflow",
-      "createdAt": "2026-02-06T18:40:41Z",
-      "updatedAt": "2026-02-06T18:40:41Z",
-      "url": "https://github.com/nerdzao/vagas/issues/187",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "Híbrido-São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Híbrido-São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend",
-          "fullstack",
-          "support"
-        ],
-        "technologies": [
-          "gcp",
-          "java",
-          "javascript",
-          "nodejs",
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_549fb47e62e78432e6e7af86",
-          "sourceId": "nerdzao/vagas#187",
-          "repository": "nerdzao/vagas",
-          "repositoryUrl": "https://github.com/nerdzao/vagas",
-          "url": "https://github.com/nerdzao/vagas/issues/187",
-          "createdAt": "2026-02-06T18:40:41Z",
-          "updatedAt": "2026-02-06T18:40:41Z",
-          "community": {
-            "id": "nerdzao",
-            "name": "nerdzao",
-            "avatarUrl": "https://github.com/nerdzao.png?size=80",
-            "repository": "nerdzao/vagas",
-            "url": "https://github.com/nerdzao/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 231,
-        "publishedAt": "2026-02-06T18:40:41Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_1bd5f8d6144fe120825c7a8c",
-      "sourceId": "kotlin-br/vagas#41",
-      "title": "[REMOTO] Desenvolvedor(a) Kotlin Sênior na DB1",
-      "description": "Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n\nLink: https://db1.inhire.app/vagas/f2e012ab-f58a-4089-b6be-c155cafff9f0/desenvolvedora-kotlin-senior?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n\nO que você vai fazer por aqui:\n\nCriar experiências digitais que encantam usuários e resolvem problemas reais, desenvolvendo aplicações modernas em Kotlin e React.JS.\nTransformar lógica de programação em interfaces intuitivas e soluções de alto impacto.\nAplicar Programação Orientada a Objetos e boas práticas como Clean Code, SOLID e Design Patterns, garantindo qualidade e manutenibilidade do código.\nConstruir software seguro desde a base, aplicando conceitos de Desenvolvimento Seguro.\nUtilizar Inteligência Artificial de forma prática no dia a dia para potencializar soluções e processos.\nColaborar com times multidisciplinares para entregar produtos com velocidade e excelência.\nEscrever e manter testes automatizados que asseguram estabilidade e confiança nas entregas.\nPerfil que buscamos:\n\nExperiência sólida em Kotlin e React.js.\nFacilidade para entender problemas complexos e propor soluções criativas e eficientes.\nDomínio de lógica de programação e POO.\nCompromisso com qualidade, segurança e escalabilidade.\nVai ser incrível se você souber ou tiver vontade de aprender:\n\nTiver vivência com metodologias ágeis, especialmente Scrum.\nJá tiver trabalhado com desenvolvimento em Java e Node\nFor curioso(a) e gostar de experimentar novas tecnologias para ir além do esperado.\nO que você vai encontrar aqui: \n\n·         O jeito único de ser DB1: https://culture.db1group.com/\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\nSobre a empresa\nSomos um grupo que transforma a vida das pessoas e das organizações por meio da tecnologia. \n\nNossa cultura, conhecimento e habilidades nos movem para fazer entregas que ajudam as pessoas a terem um dia a dia melhor. \n\nSomos conhecidos pela efetividade de nossas entregas bem-feitas que simplificam o dia a dia e ajudam nossos clientes a atingirem seus objetivos, cuidando para que cada pessoa envolvida seja iluminada pela experiência de trabalhar conosco. \n\nEstamos construindo um nome que vai durar gerações e que vai representar um conjunto de indivíduos extraordinários, com talento, alto desempenho e engajamento nas missões que lhe são confiadas. \n\nSe você se identifica com esses valores, a DB1 é para você!",
-      "excerpt": "Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostam...",
-      "issueState": "open",
-      "contentHash": "e845f78bafcee62984c397096cc1a412ff965f0632988aed35341d58323a63d9",
-      "repository": "kotlin-br/vagas",
-      "repositoryUrl": "https://github.com/kotlin-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "remoto",
-        "sênior"
-      ],
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "kotlin-br",
-        "name": "kotlin-br",
-        "avatarUrl": "https://github.com/kotlin-br.png?size=80",
-        "repository": "kotlin-br/vagas",
-        "url": "https://github.com/kotlin-br/vagas"
-      },
-      "companyName": "DB1",
-      "createdAt": "2026-02-05T00:07:51Z",
-      "updatedAt": "2026-02-05T00:08:09Z",
-      "url": "https://github.com/kotlin-br/vagas/issues/41",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [
-          "java",
-          "kotlin",
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_1bd5f8d6144fe120825c7a8c",
-          "sourceId": "kotlin-br/vagas#41",
-          "repository": "kotlin-br/vagas",
-          "repositoryUrl": "https://github.com/kotlin-br/vagas",
-          "url": "https://github.com/kotlin-br/vagas/issues/41",
-          "createdAt": "2026-02-05T00:07:51Z",
-          "updatedAt": "2026-02-05T00:08:09Z",
-          "community": {
-            "id": "kotlin-br",
-            "name": "kotlin-br",
-            "avatarUrl": "https://github.com/kotlin-br.png?size=80",
-            "repository": "kotlin-br/vagas",
-            "url": "https://github.com/kotlin-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 233,
-        "publishedAt": "2026-02-05T00:07:51Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_d774a41259f652c1ea370252",
-      "sourceId": "EtherTW/jobs#74",
-      "title": "Redstone com",
-      "description": "🚀 招聘：区块链 / Web3 开发工程师\n\n关于我们\n\n我们是一家专注于 区块链与 Web3 技术 的科技公司，致力于构建真实落地的去中心化解决方案和可扩展的 Web3 产品。\n\n职位名称\n\n区块链 / Web3 开发工程师（远程）\n\n岗位职责\n\n开发、测试和维护智能合约\n\n使用 Solidity 在 EVM 兼容区块链 上进行开发\n\n与前端和后端工程师协作完成产品开发\n\n审查、优化并提升智能合约的安全性与性能\n\n任职要求\n\n具备 Solidity 实际开发经验\n\n熟悉 Web3.js 和 / 或 Ethers.js\n\n对 DeFi、NFT、DAO 有良好的理解\n\n有 GitHub 作品集或公开代码示例者优先\n\n加分项（Nice to Have）\n\n智能合约审计经验\n\n熟悉 Layer 2 扩展方案\n\n参与过 开源项目 并有实际贡献\n\n薪资待遇\n\n年薪：110,000 – 130,000 美元（可根据经验协商）\n\n可选择 全职或合同制\n\n完全远程办公，时间灵活\n\n应聘方式\n\n请发送以下资料：\n\nGitHub 主页\n\n简历（可选）\n\n简短的自我介绍\n\n📧 邮箱：elenpoter394@gmail.com\n\n💬 Telegram：@Romanpotter",
-      "excerpt": "🚀 招聘：区块链 / Web3 开发工程师 关于我们 我们是一家专注于 区块链与 Web3 技术 的科技公司，致力于构建真实落地的去中心化解决方案和可扩展的 Web3 产品。 职位名称 区块链 / Web3 开发工程师（远程） 岗位职责 开发、测试和维护智能合约 使用 Solidity 在 EVM 兼容区块链 上进行开发 与前端和后端工程师协作完成产品开发 审查、优化并提升智能合约的安全性与性能 任职要求 具备 Solidity...",
-      "issueState": "open",
-      "contentHash": "13b487a11df57b07cb94b194a7fb5ba7d340b3cecdc402c1823d514f2b2ce18b",
-      "repository": "EtherTW/jobs",
-      "repositoryUrl": "https://github.com/EtherTW/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "elenpoter394-sys",
-        "name": "elenpoter394-sys",
-        "handle": "elenpoter394-sys",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/258803491?v=4"
-      },
-      "community": {
-        "id": "EtherTW",
-        "name": "EtherTW",
-        "avatarUrl": "https://github.com/EtherTW.png?size=80",
-        "repository": "EtherTW/jobs",
-        "url": "https://github.com/EtherTW/jobs"
-      },
-      "createdAt": "2026-02-03T08:33:10Z",
-      "updatedAt": "2026-02-03T08:33:10Z",
-      "url": "https://github.com/EtherTW/jobs/issues/74",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_d774a41259f652c1ea370252",
-          "sourceId": "EtherTW/jobs#74",
-          "repository": "EtherTW/jobs",
-          "repositoryUrl": "https://github.com/EtherTW/jobs",
-          "url": "https://github.com/EtherTW/jobs/issues/74",
-          "createdAt": "2026-02-03T08:33:10Z",
-          "updatedAt": "2026-02-03T08:33:10Z",
-          "community": {
-            "id": "EtherTW",
-            "name": "EtherTW",
-            "avatarUrl": "https://github.com/EtherTW.png?size=80",
-            "repository": "EtherTW/jobs",
-            "url": "https://github.com/EtherTW/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 234,
-        "publishedAt": "2026-02-03T08:33:10Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_26b7c402e14a59e43ad9828b",
-      "sourceId": "f2etw/jobs#1166",
-      "title": "[徵才]Software Senior Principal Engineer",
-      "description": "Senior Principal Software Engineer\n\n\n\nThe Software Engineering team delivers next-generation software application enhancements and new products for a changing world. Working at the cutting edge, we design and develop software for platforms, peripherals, applications and diagnostics — all with the most advanced technologies, tools, software engineering methodologies and the collaboration of internal and external partners.\n\n\n\nJoin us to do the best work of your career and make a profound social impact as a Senior Principal Software Engineer on our Software Engineering Team in [Taipei].\n\nWhat you’ll achieveAs a Software Principal Engineer on the HCI team, you will be responsible for leading the technical direction and architecture of Dell's AI and Solutions hyperconverged infrastructure platform. This role requires close collaboration with cross-functional teams—including engineering, product management, and quality assurance—to deliver high-quality software solutions that meet customer needs. You will drive technical innovation, mentor engineers, and champion best practices and emerging technologies, including AI tools usageYou will:\n\n1.Technical Leadership:  Overlook cross Domain Engineering gap/risks and provide guidance to engineers to move forward to meet the Site development target.\n\n2.Architecture: Design and implement scalable, secure, and efficient software architectures for HCI, leveraging cloud, virtualization, and storage technologies.\n\n3.Innovation: Drive technical innovation and stay up-to-date with industry trends, emerging technologies, and Dell's technology strategy to ensure the products remain competitive and innovative.\n\n4.Software Development: Lead the design, development, testing, and maintenance of HCI software applications and features, including API development, UI/UX enhancements, and backend infrastructure improvements.\n\n5.Collaboration: Work closely with cross-functional teams to ensure timely delivery of high-quality solutions.\n\n6.Problem-Solving: Troubleshoot and resolve complex technical issues, perform root cause analysis and recommendations for improvement.\n\n7.Mentorship: Mentor engineers and provide technical guidance to support their career growth and cowork as one team.\n\n8.Strategy: Develop and implement technical strategies to align with business objectives, grow the site capabilities/efficiency.\n\n\n\nTake the first step towards your dream careerEvery Dell Technologies team member brings something unique to the table. Here’s what we are looking for with this role:Essential Requirements\n\n• Bachelo's or Master's degree in Computer Science, Software Engineering, or a related technical field or equivalent 10+ years of experience as a software Engineering leader\n\n• Proficiency in programming languages such as Python/Golang on Unix/Linux/BSD operating systems and understanding of data structures, algorithms, and analysis techniques\n\n• AI‑Enabled Software Design and Development Skills: Experience applying AI‑based capabilities to support software design, development, testing, and troubleshooting throughout the engineering lifecycle.\n\n• Experience with network, storage, security product development \n\n• Proven leadership experience, including mentoring and technical direction, enhance Engineering efficiency \n\n• Ability to lead teams to design, develop and deliver major features on time with high quality\n\n• Able to engage with customers and support when needed to solve production issues\n\n• Excellent communication, collaboration, and problem-solving skills\n\n• Familiarity with Agile development methodolofies (e.g. Scrum, Kanban)Desirable Requirements\n\n•Experience with cloud-native applications and microservices architecture\n\n• Knowledge of cybersecurity principles and practices\n\n• Experience with containerized orchestration systems (Kubernetes, Rancher, etc) is a plus\n\n• Certifications: Relevant certifications, such as VMware VCP or AWS Certified Developer, are a plus\n\n• Knowledge of DevOps practices and tools (e.g., Jenkins, Github CI/CD) is a plus\n\nWho we are\n\nWe believe that each of us has the power to make an impact. That’s why we put our team members at the center of everything we do. If you’re looking for an opportunity to grow your career with some of the best minds and most advanced tech in the industry, we’re looking for you.Dell Technologies is a unique family of businesses that helps individuals and organizations transform how they work, live and play. Join us to build a future that works for everyone because Progress Takes All of Us.Application closing date: 30 March 2026Dell Technologies is committed to the principle of equal employment opportunity for all employees and to providing employees with a work environment free of discrimination and harassment. Read the full Equal Employment Opportunity Policy [here](https://jobs.dell.com/equal-employment-opportunity-policy-statement).\n\n\n\n**If you are interested in the position, please contact [lucy.liu1@dellteam.com ](mailto:lucy.liu1@dellteam.com).**",
-      "excerpt": "Senior Principal Software Engineer The Software Engineering team delivers next-generation software application enhancements and new products for a changing world. Working at the cutting edge, we design and develop sof...",
-      "issueState": "open",
-      "contentHash": "161492b5d26ec8f1d80c18c0b68de9105996b61494b9851520fe230848be9e7c",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "full stack",
-        "senior",
-        "公司資訊未明",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊",
-        "缺香蕉資訊"
-      ],
-      "sourceTags": [
-        "full stack",
-        "senior",
-        "公司資訊未明",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊",
-        "缺香蕉資訊"
-      ],
-      "author": {
-        "id": "WoshiLucyya",
-        "name": "WoshiLucyya",
-        "handle": "WoshiLucyya",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/257514112?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2026-01-28T06:02:14Z",
-      "updatedAt": "2026-01-30T05:16:51Z",
-      "url": "https://github.com/f2etw/jobs/issues/1166",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "devops-sre",
-          "fullstack",
-          "product",
-          "qa",
-          "security"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "kubernetes",
-          "python"
-        ],
-        "seniority": [
-          "lead",
-          "principal",
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_26b7c402e14a59e43ad9828b",
-          "sourceId": "f2etw/jobs#1166",
-          "repository": "f2etw/jobs",
-          "repositoryUrl": "https://github.com/f2etw/jobs",
-          "url": "https://github.com/f2etw/jobs/issues/1166",
-          "createdAt": "2026-01-28T06:02:14Z",
-          "updatedAt": "2026-01-30T05:16:51Z",
-          "community": {
-            "id": "f2etw",
-            "name": "f2etw",
-            "avatarUrl": "https://github.com/f2etw.png?size=80",
-            "repository": "f2etw/jobs",
-            "url": "https://github.com/f2etw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 240,
-        "publishedAt": "2026-01-28T06:02:14Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_27ad1c5fa6ae31eaf8210333",
-      "sourceId": "PrepAIJobs/Summer2026-Internships#3",
-      "title": "Mechanize — Software Engineering Intern",
-      "description": "### Link to Internship Posting\n\nhttps://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos\n\n### Company Name\n\nMechanize\n\n### Internship Title\n\nSoftware Engineering Intern\n\n### Location\n\nSan Francisco, CA\n\n### What season is this internship for?\n\nSummer\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\narjun.panickssery@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos ### Company Name Mechanize ### Internship Title Software Engineering Intern ### Location...",
-      "issueState": "open",
-      "contentHash": "5bdd63bccf8d7a2f020d13c229f2ce1da1f9557371836f7f964c1b0976ef3035",
-      "repository": "PrepAIJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/PrepAIJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ArjunPanickssery",
-        "name": "ArjunPanickssery",
-        "handle": "ArjunPanickssery",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/30219365?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/Summer2026-Internships",
-        "url": "https://github.com/PrepAIJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-01-27T03:43:19Z",
-      "updatedAt": "2026-01-27T03:43:19Z",
-      "url": "https://github.com/PrepAIJobs/Summer2026-Internships/issues/3",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "San Francisco",
-        "subdivision": "CA",
-        "displayText": "San Francisco, CA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_27ad1c5fa6ae31eaf8210333",
-          "sourceId": "PrepAIJobs/Summer2026-Internships#3",
-          "repository": "PrepAIJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/PrepAIJobs/Summer2026-Internships",
-          "url": "https://github.com/PrepAIJobs/Summer2026-Internships/issues/3",
-          "createdAt": "2026-01-27T03:43:19Z",
-          "updatedAt": "2026-01-27T03:43:19Z",
-          "community": {
-            "id": "PrepAIJobs",
-            "name": "PrepAIJobs",
-            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-            "repository": "PrepAIJobs/Summer2026-Internships",
-            "url": "https://github.com/PrepAIJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 241,
-        "publishedAt": "2026-01-27T03:43:19Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_7b4f6457d040ea0a23c1c43b",
       "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#4",
@@ -1292,7 +129,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 241,
+        "ageDays": 242,
         "publishedAt": "2026-01-27T03:40:08Z",
         "status": "stale"
       }
@@ -1376,7 +213,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 248,
+        "ageDays": 249,
         "publishedAt": "2026-01-20T05:43:31Z",
         "status": "stale"
       }
@@ -1798,7 +635,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 253,
+        "ageDays": 254,
         "publishedAt": "2026-01-15T06:48:02Z",
         "status": "stale"
       }
@@ -2018,6 +855,1169 @@
       "freshness": {
         "ageDays": 263,
         "publishedAt": "2026-01-05T22:50:21Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_f1495b68fe7d4f8349ceb1b6",
+      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#1",
+      "title": "Should we pull tech intern for SG directly from the website /jobs page instead and show in this README",
+      "description": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page.\n\nreference: https://github.com/SimplifyJobs/Summer2026-Internships",
+      "excerpt": "commenting for anyone that sees this, would you prefer to see jobs for tech intern sg on github instead of [/jobs](https://didtheyghost.me/jobs?utm_source=githubSummer26Issue) page. reference: https://github.com/Simpl...",
+      "issueState": "open",
+      "contentHash": "f274da1c982b52dfb23675137b23cf0e5323b880a7b39605aeccff9e9eb2ab48",
+      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+      "region": "Asia",
+      "country": "Singapore",
+      "sourceLocation": {
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "handle": "didtheyghostme",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/188044484?v=4"
+      },
+      "community": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+      },
+      "createdAt": "2025-12-31T09:25:54Z",
+      "updatedAt": "2025-12-31T09:28:08Z",
+      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/1",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f1495b68fe7d4f8349ceb1b6",
+          "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#1",
+          "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+          "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+          "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/1",
+          "createdAt": "2025-12-31T09:25:54Z",
+          "updatedAt": "2025-12-31T09:28:08Z",
+          "community": {
+            "id": "didtheyghostme",
+            "name": "didtheyghostme",
+            "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+            "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+            "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 268,
+        "publishedAt": "2025-12-31T09:25:54Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_90da04043225a0b75c5b63f5",
+      "sourceId": "f2etw/jobs#1163",
+      "title": "[徵才][台北] 期天資訊 React 前端工程師",
+      "description": "**職缺: 前端工程師**\n\n**能力經歷要求:**\n\n* 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js)\n* 基礎 UI / UX 設計規劃能力\n* 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整\n* 獨立自主學習能力，積極主動\n\n**工作內容：**\n\n開發與維護 React TypeScript 相關專案，包含但不限於：\n\n* 金融交易數據可視化界面 UI/UX\n* 程式交易管理系統\n* 上線金流串接與會員管理系統\n* 電子商務前後台管理系統\n\n**適合此職缺的人格特質：**\n\n* 對金融投資有興趣 (台股期權為主)\n* 喜歡理解新事物，能快速動手實做\n* 善於安排任務優先順序，能靈活應變各類狀況\n* 客戶導向思維，釐清並解決實際問題 (非單純以程式面向考量)\n\n**不適合此職缺的人格特質：**\n\n* 只喜歡獨自埋頭寫程式，排斥溝通討論\n* 不喜歡接觸客戶 ( email / 線上會議 / 實體拜訪)\n* 數字敏銳度低或邏輯推理較差\n\n**薪資(月薪):** 50,000 - 80,000\n\n\n**工作環境與該職缺團隊介紹:**\n\n團隊規模約10人，屬於年輕新創小公司風格，組織扁平，每個人都具有影響力。主要產品為證券期貨交易相關資訊系統，提供即時量化數據網站及自動化程式交易相關技術，客戶包含國內多家大型證券期貨商、顧問公司等。\n\n**工作福利:**\n\n* 職務上手熟悉後，可視情況每週1-2天遠端 WFH\n* 每週兩天免費午餐，另有不定時老闆請客聚餐\n* 各式零食咖啡飲料\n* 每週團體運動時間 (目前是2小時羽球)\n* 公司有兩隻貓會不定時跑來蹭你 (?)\n\n**公司分紅與獎金:** 依年度盈餘及個人考績分紅\n\n**聯絡方式:** Cory / service@futures-ai.com",
+      "excerpt": "**職缺: 前端工程師** **能力經歷要求:** * 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js) * 基礎 UI / UX 設計規劃能力 * 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整 * 獨立自主學習能力，積極主動 **工作內容：** 開發與維護 React TypeScript 相關專案，包含但不限於： * 金融交易數據可視化界面 UI/UX *...",
+      "issueState": "open",
+      "contentHash": "c6211660e67dd99ff6f3718043a8fb2cf05d0b43e925ff1940932d0338810b0f",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[b] nodejs",
+        "[f] react",
+        "[f] typescript",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
+        "[b] nodejs",
+        "[f] react",
+        "[f] typescript",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "author": {
+        "id": "cory8249",
+        "name": "cory8249",
+        "handle": "cory8249",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7524724?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2025-12-20T08:51:33Z",
+      "updatedAt": "2025-12-20T10:19:07Z",
+      "url": "https://github.com/f2etw/jobs/issues/1163",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "nextjs",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_90da04043225a0b75c5b63f5",
+          "sourceId": "f2etw/jobs#1163",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1163",
+          "createdAt": "2025-12-20T08:51:33Z",
+          "updatedAt": "2025-12-20T10:19:07Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 279,
+        "publishedAt": "2025-12-20T08:51:33Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_d9f31b40b046d9fb1c9512c3",
+      "sourceId": "TechnologyMasters/jobs#721",
+      "title": "WebBoxes - Sr. AI Engineer - Remote/LatAm - $50,000 USD/Year",
+      "description": "## What You'll get\n\n### Salary Expectation\n\n- $50.000/year\n- Contract / Full Time\n\n### Benefits\n\n- choose your own custom setup\n- new macbook\n\n### Location\n- Candidate will work from home\n\n## What You'll Do _(Job Description)_\n\nWe need a senior AI engineer that will build our new developer assistant SaaS\n\n## What You Need to Be Successful _(Skills)_\n\n### Must Have\n\n- 3+ years working as an AI engineer\n\n### Nice to Have\n\n- full-stack development\n\n## About Our company\n\nhttps://web-boxes.com\n\n## How to apply\n\nPlease send an email to [i@web-boxes..com](i@web-boxes..com) with your resume\n\n---\n\n## Meta\n\n<!--\n  These meta tickboxes automatically apply labels to your post\n  Learn more in the README https://github.com/TechnologyMasters/jobs/blob/master/README.md#label-definitions\n\n  Note, you must fill in the checkboxes correctly in order for them to appear as checked in Markdown\n\n  Unfilled examples:\n  - [ ] Full Time\n  - [ x] Full Time\n  - [x ] Full Time\n\n  Filled example:\n  - [x] Full Time\n-->\n\n- [ ] Full Time\n- [ ] Part Time\n- [x] Contract\n- [ ] Internship\n- [x] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
+      "excerpt": "## What You'll get ### Salary Expectation - $50.000/year - Contract / Full Time ### Benefits - choose your own custom setup - new macbook ### Location - Candidate will work from home ## What You'll Do _(Job Descriptio...",
+      "issueState": "open",
+      "contentHash": "3ca3a01661be2c7fac30412750a3fcb06c7c1532ef93b9ccd62d6761c957da02",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
+        "remote",
+        "senior"
+      ],
+      "author": {
+        "id": "fu11stackdev",
+        "name": "fu11stackdev",
+        "handle": "fu11stackdev",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/204783689?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "createdAt": "2025-12-06T16:55:35Z",
+      "updatedAt": "2025-12-07T04:05:58Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/721",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "fullstack"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship",
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_d9f31b40b046d9fb1c9512c3",
+          "sourceId": "TechnologyMasters/jobs#721",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/721",
+          "createdAt": "2025-12-06T16:55:35Z",
+          "updatedAt": "2025-12-07T04:05:58Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 293,
+        "publishedAt": "2025-12-06T16:55:35Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_72cfadae02e4f1d29faac8e9",
+      "sourceId": "remotejobsbr/design-ux-vagas#118",
+      "title": "[MARINGÁ] Designer UI/UX Trainee na DB1",
+      "description": "## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Descrição da vaga\n\nComo UX/UI Trainee, você irá aprender e apoiar o time no entendimento de problemas reais dos usuários e na criação de soluções que tornem nossas jornadas mais intuitivas, eficientes e agradáveis.\nVocê estará ao lado de designer, PO, analistas de negócios, desenvolvedores e áreas internas, contribuindo em todas as etapas: desde pesquisas iniciais até protótipos e testes com usuários. Você será responsável por:\n\nApoiar pesquisas com usuários (entrevistas, levantamentos e análises) para entender dores e oportunidades;\nParticipar de sessões de brainstorming e ideação junto ao time de Produto e UX;\nAjudar na criação de fluxos, wireframes e protótipos;\nContribuir com a elaboração e organização de telas e componentes seguindo o Design System;\nAuxiliar na análise de resultados de testes de usabilidade e propor melhorias;\nAtuar em rituais ágeis (Scrum/Kanban), aprendendo sobre colaboração, ritmo e visibilidade;\nApoiar documentação básica (histórias, critérios de aceitação, especificações) sempre com orientação do time.\n## Local\n\nEscritório, [PARANÁ], [MARINGÁ]\n\n## Requisitos\n\n**Obrigatórios:**\nInteresse de aprender e crescer na área de UX/UI;\nComunicação clara, abertura para feedbacks e colaboração com diferentes áreas;\nPensamento crítico e olhar atento a detalhes, com foco em criar experiências simples e funcionais;\nOrganização e responsabilidade para acompanhar tarefas e prazos;\nFormação em andamento ou concluída em Design, Sistemas de Informação, Engenharia ou áreas correlatas.\n\n**Diferenciais:**\nFigma;\nPráticas de UX Research (entrevistas, análise heurística, mapas de jornada);\nConceitos de Design Thinking, Lean UX e Product Discovery;\nNoções de Design System.\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nLINK https://db1.inhire.app/vagas/9869bb8e-7404-4949-b99d-491acfe51633/designer-uiux-trainee?r=43941dbb-f183-4c7c-a931-f64828e11cf7 \n\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n\n- CLT\n- Treinee",
+      "excerpt": "## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida da...",
+      "issueState": "open",
+      "contentHash": "5b556cf16530c498848234e3f369148127d05dbb8f4d5bb036239cbe1d142b8f",
+      "repository": "remotejobsbr/design-ux-vagas",
+      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "hadamaller",
+        "name": "hadamaller",
+        "handle": "hadamaller",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
+      },
+      "community": {
+        "id": "remotejobsbr",
+        "name": "remotejobsbr",
+        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+        "repository": "remotejobsbr/design-ux-vagas",
+        "url": "https://github.com/remotejobsbr/design-ux-vagas"
+      },
+      "companyName": "DB1",
+      "createdAt": "2025-12-05T13:51:36Z",
+      "updatedAt": "2025-12-05T13:51:36Z",
+      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/118",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "employee",
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_72cfadae02e4f1d29faac8e9",
+          "sourceId": "remotejobsbr/design-ux-vagas#118",
+          "repository": "remotejobsbr/design-ux-vagas",
+          "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
+          "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/118",
+          "createdAt": "2025-12-05T13:51:36Z",
+          "updatedAt": "2025-12-05T13:51:36Z",
+          "community": {
+            "id": "remotejobsbr",
+            "name": "remotejobsbr",
+            "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
+            "repository": "remotejobsbr/design-ux-vagas",
+            "url": "https://github.com/remotejobsbr/design-ux-vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 294,
+        "publishedAt": "2025-12-05T13:51:36Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5f1c8b18033011026ee64886",
+      "sourceId": "hanzili/canada_sde_junior_new_grad_position#3",
+      "title": "adding more canadian jobs",
+      "description": "",
+      "excerpt": "adding more canadian jobs",
+      "issueState": "open",
+      "contentHash": "7e628204e2df39791704da3ebbdca9b36865679231d4d338c47bf4d58456a04c",
+      "repository": "hanzili/canada_sde_junior_new_grad_position",
+      "repositoryUrl": "https://github.com/hanzili/canada_sde_junior_new_grad_position",
+      "region": "North America",
+      "country": "Canada",
+      "sourceLocation": {
+        "country": "Canada",
+        "countryCode": "CA",
+        "region": "North America"
+      },
+      "tags": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "sourceTags": [
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "author": {
+        "id": "hanzili",
+        "name": "hanzili",
+        "handle": "hanzili",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
+      },
+      "community": {
+        "id": "hanzili",
+        "name": "hanzili",
+        "avatarUrl": "https://github.com/hanzili.png?size=80",
+        "repository": "hanzili/canada_sde_junior_new_grad_position",
+        "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position"
+      },
+      "createdAt": "2025-12-04T19:38:50Z",
+      "updatedAt": "2025-12-04T19:38:50Z",
+      "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position/issues/3",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_5f1c8b18033011026ee64886",
+          "sourceId": "hanzili/canada_sde_junior_new_grad_position#3",
+          "repository": "hanzili/canada_sde_junior_new_grad_position",
+          "repositoryUrl": "https://github.com/hanzili/canada_sde_junior_new_grad_position",
+          "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position/issues/3",
+          "createdAt": "2025-12-04T19:38:50Z",
+          "updatedAt": "2025-12-04T19:38:50Z",
+          "community": {
+            "id": "hanzili",
+            "name": "hanzili",
+            "avatarUrl": "https://github.com/hanzili.png?size=80",
+            "repository": "hanzili/canada_sde_junior_new_grad_position",
+            "url": "https://github.com/hanzili/canada_sde_junior_new_grad_position"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 295,
+        "publishedAt": "2025-12-04T19:38:50Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_7de941f14023985213e7d373",
+      "sourceId": "TechnologyMasters/jobs#720",
+      "title": "TalentedEngineer",
+      "description": "<!--\n\nPLEASE REVIEW RULES BEFORE POSTING:\nhttps://github.com/TechnologyMasters/jobs/blob/master/README.md#employers\n\n# Issue title format: [Company Name] - [Job Title] - [Location] - [Salary] [Currency]/[Frequency]\n\n-->\n\n## What You'll get\n\n### Salary Expectation\n\n<!--\n  - Be sure to specify an actual salary figure, or at least a range\n  - Specify a current locale, such as GBP, USD, or CAD\n\n  IMPORTANT: Posts that do not include a salary or range\n  will receive a 'needs info' label\n-->\n\n- $2000-$4000/month or negotiable\n- Part Time\n\n### Benefits\n\n- Flexible Schedule\n- Supportive Team\n- Extra Bonus\n\n### Location\n\n<!--\n  Please specify your job's policy on remote work (see README for details)\n-->\n\n- Taiwan\n- Candidate may work from home for a few hours every day\n\n## What You'll Do _(Job Description)_\n\nWe need a full stack developer to join our team. He will be responsible to communicate with clients and mentor the junior developers.\n\n## What You Need to Be Successful _(Skills)_\n\n### Must Have\n\n- 2+ years working as a Full stack developer.\n- 2+ years working with mongodb; express.\n- Fluent in English(required).\n\n### Nice to Have\n\nMore experience in software engineering, the better.\nIf you are a US citizen, you will be best.\n\n### Relevant Experiences\n\n- interview conduction\n- teaching students.\n\n## How to apply\n\nPlease send an email to [kyledominick479@gmail.com] with your resume(optional), use 'Full Stack Developer' as subject\n\n---\n\n## Meta\n\n<!--\n  These meta tickboxes automatically apply labels to your post\n  Learn more in the README https://github.com/TechnologyMasters/jobs/blob/master/README.md#label-definitions\n\n  Note, you must fill in the checkboxes correctly in order for them to appear as checked in Markdown\n\n  Unfilled examples:\n  - [ ] Full Time\n  - [ x] Full Time\n  - [x ] Full Time\n\n  Filled example:\n  - [x] Full Time\n-->\n\n- [ ] Part Time\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [ ] Remote OK",
+      "excerpt": "<!-- PLEASE REVIEW RULES BEFORE POSTING: https://github.com/TechnologyMasters/jobs/blob/master/README.md#employers # Issue title format: [Company Name] - [Job Title] - [Location] - [Salary] [Currency]/[Frequency] --> ...",
+      "issueState": "open",
+      "contentHash": "d015502566d9b4004d2c5b9abaad7eeb93511475cade9dc86f767eec4232c64c",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "junior",
+        "remote"
+      ],
+      "sourceTags": [
+        "junior",
+        "remote"
+      ],
+      "author": {
+        "id": "kyledominick479-cloud",
+        "name": "kyledominick479-cloud",
+        "handle": "kyledominick479-cloud",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/237137981?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 2000,
+        "max": 4000,
+        "period": "month"
+      },
+      "createdAt": "2025-11-26T16:02:26Z",
+      "updatedAt": "2025-12-11T10:23:22Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/720",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "mongodb"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "part-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_7de941f14023985213e7d373",
+          "sourceId": "TechnologyMasters/jobs#720",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/720",
+          "createdAt": "2025-11-26T16:02:26Z",
+          "updatedAt": "2025-12-11T10:23:22Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 303,
+        "publishedAt": "2025-11-26T16:02:26Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_903b11b11902557631119931",
+      "sourceId": "PrepAIJobs/New-Grad-2026#5",
+      "title": "List is not being updated",
+      "description": "",
+      "excerpt": "List is not being updated",
+      "issueState": "open",
+      "contentHash": "e8ec27fccca6b1e252f4621275aa87a3999f3850eba9d2bfc279fa9f1e925f2a",
+      "repository": "PrepAIJobs/New-Grad-2026",
+      "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "ZachPlotkin",
+        "name": "ZachPlotkin",
+        "handle": "ZachPlotkin",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/160683758?v=4"
+      },
+      "community": {
+        "id": "PrepAIJobs",
+        "name": "PrepAIJobs",
+        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
+        "repository": "PrepAIJobs/New-Grad-2026",
+        "url": "https://github.com/PrepAIJobs/New-Grad-2026"
+      },
+      "createdAt": "2025-11-24T13:39:45Z",
+      "updatedAt": "2025-11-24T13:39:45Z",
+      "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/5",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_903b11b11902557631119931",
+          "sourceId": "PrepAIJobs/New-Grad-2026#5",
+          "repository": "PrepAIJobs/New-Grad-2026",
+          "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
+          "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/5",
+          "createdAt": "2025-11-24T13:39:45Z",
+          "updatedAt": "2025-11-24T13:39:45Z",
+          "community": {
+            "id": "PrepAIJobs",
+            "name": "PrepAIJobs",
+            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
+            "repository": "PrepAIJobs/New-Grad-2026",
+            "url": "https://github.com/PrepAIJobs/New-Grad-2026"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 305,
+        "publishedAt": "2025-11-24T13:39:45Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_fb4ec6f93d17afcf44bb3e60",
+      "sourceId": "ios-taipei/MobileJobs#6",
+      "title": "[徵才][遠端/台北]Ubiquiti_Android Application Developer",
+      "description": "Responsibilities (What he/she will do after joining UI):\nBuild Android Apps That Shine:\nDevelop and maintain high-quality Android applications that integrate seamlessly with Ubiquiti’s ecosystem, including UniFi Connect, UniFi Play, and UniFi Drive. Your work will directly impact how users interact with our products.\n\nDesign Intuitive User Interfaces:\nCreate user-friendly designs that simplify complex workflows, ensuring an exceptional user experience across all devices.\n\nCollaborate Across Teams:\nWork closely with firmware, hardware, and backend teams to implement features like device setup, real-time monitoring, and remote control. Ensure a smooth handoff between software and hardware.\n\nWrite and Maintain Tests:\nDevelop and run unit tests, UI tests, and integration tests to guarantee app stability and performance. Your attention to quality will let every engineer on the team sleep a little easier.\n\nParticipate in Code Reviews:\nContribute to maintaining a high standard of code quality by reviewing teammates’ work, sharing insights, and suggesting improvements. Help the team grow stronger with each iteration.\n\nDocument and Share Knowledge:\nWrite clear and concise documentation for your code and processes, enabling the entire team to work more effectively. Sharing is caring, especially when it saves time!\n\nMinimum Qualifications (MUST-haves) :\nA collaborative and open mindset, with a willingness to seek feedback, share ideas, and support both individual and team growth.\nStrong experience in developing Android applications with Kotlin.\nFamiliarity with Git for version control in team projects.\nAbility to speak and write in English fluently, sufficient for effective collaboration with a global team.\nBachelor’s degree in Computer Science or equivalent practical experience.\n\n\nPreferred Qualifications (Nice-to-haves / Plus) :\nFamiliarity with Coroutines and Flow for efficient asynchronous programming and state management.\nExperience with Dependency Injection frameworks like Hilt or Dagger, and modular architecture design.\nDemonstrated skills in writing unit tests and UI tests.\nExperience with performance optimization techniques, such as improving app startup time, memory usage, and rendering efficiency.\nKnowledge of analyzing and troubleshooting production issues using tools like Firebase Analytics, Crashlytics, or custom logging frameworks.\nA proactive and flexible approach to working in a fast-changing environment, with a focus on collaboration and continuous improvement.\n\n**薪資範圍**\nNT$ 1,700,000以上 (年薪）\n\n**工作福利**\n彈性上下班也可申請遠端WFH\n免費午餐及水果\n優於勞基法不扣薪事假病假\n零食區全日免費提供飲品及美食\n員工/眷屬團體保險及健檢\n健身房補助\n\n**聯絡方式**\nMichael Wu michael.wu@ui.com",
+      "excerpt": "Responsibilities (What he/she will do after joining UI): Build Android Apps That Shine: Develop and maintain high-quality Android applications that integrate seamlessly with Ubiquiti’s ecosystem, including UniFi Conne...",
+      "issueState": "open",
+      "contentHash": "46425d59ab7d3a1749af448ec638b0fa2c29c6a92343305efcd9c204b31352cf",
+      "repository": "ios-taipei/MobileJobs",
+      "repositoryUrl": "https://github.com/ios-taipei/MobileJobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
+        "backend",
+        "design",
+        "remote"
+      ],
+      "author": {
+        "id": "Uiler105",
+        "name": "Uiler105",
+        "handle": "Uiler105",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/102198667?v=4"
+      },
+      "community": {
+        "id": "ios-taipei",
+        "name": "ios-taipei",
+        "avatarUrl": "https://github.com/ios-taipei.png?size=80",
+        "repository": "ios-taipei/MobileJobs",
+        "url": "https://github.com/ios-taipei/MobileJobs"
+      },
+      "createdAt": "2025-11-18T10:17:52Z",
+      "updatedAt": "2025-11-18T10:20:23Z",
+      "url": "https://github.com/ios-taipei/MobileJobs/issues/6",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [
+          "kotlin"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_fb4ec6f93d17afcf44bb3e60",
+          "sourceId": "ios-taipei/MobileJobs#6",
+          "repository": "ios-taipei/MobileJobs",
+          "repositoryUrl": "https://github.com/ios-taipei/MobileJobs",
+          "url": "https://github.com/ios-taipei/MobileJobs/issues/6",
+          "createdAt": "2025-11-18T10:17:52Z",
+          "updatedAt": "2025-11-18T10:20:23Z",
+          "community": {
+            "id": "ios-taipei",
+            "name": "ios-taipei",
+            "avatarUrl": "https://github.com/ios-taipei.png?size=80",
+            "repository": "ios-taipei/MobileJobs",
+            "url": "https://github.com/ios-taipei/MobileJobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 311,
+        "publishedAt": "2025-11-18T10:17:52Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_4f932f9132ac743803a990ff",
+      "sourceId": "ios-taipei/MobileJobs#5",
+      "title": "[徵才][遠端/台北]Ubiquiti_iOS Developer",
+      "description": "Job Description\nResponsibilities:\nDesign, develop, and maintain iOS applications using Swift, SwiftUI, and UIKit.\nEnsure an excellent user experience by focusing on UI/UX design details and reducing friction points.\nCollaborate with cross-functional teams, including designers, backend developers, and product managers, to deliver high-quality features.\nContribute to code reviews, architecture discussions, and best practices within the team.\nDebug and optimize code for performance, reliability, and scalability.\nUse tools like Instruments to analyze and resolve runtime and memory issues.\nKeep up-to-date with the latest iOS technologies and incorporate them into the development process.\n\nRequirements:\nProven experience in iOS development with a strong portfolio of projects on the App Store or GitHub.\nProficiency in Swift, SwiftUI, and UIKit.\nExperience in writing clean, maintainable, and testable code.\nFamiliarity with debugging tools and techniques, including Xcode tools and Instruments.\nKnowledge of networking fundamental of iOS apps\nSolid understanding of concurrency and asynchronous programming in Swift.\nExcellent problem-solving and analytical skills.\nStrong communication skills and the ability to work collaboratively in a team environment.\n\nKey Traits:\nPassion for creating seamless and intuitive user experiences.\nStrong teamwork and collaboration skills.\nAbility to work independently and proactively address challenges.\nAttention to detail with a strong sense of ownership and accountability.\nEagerness to learn and implement new technologies.\n\nNice to Have:\nFamiliarity with Swift Concurrency and Swift 6.\nExperience with The Composable Architecture (TCA).\nKnowledge of CI/CD pipelines and modular app design.\nExperience with advanced iOS frameworks such as AVFoundation, Core Data, Bluetooth, or NFC.\nBackground in integrating third-party systems, such as Matter or similar smart home systems.\nUnderstanding of testing frameworks and automation.\nContribution to open-source projects or active participation in developer communities.\n\n**薪資範圍**\nNT$ 1,700,000以上 (年薪）\n\n**工作福利**\n彈性上下班也可申請遠端WFH\n免費午餐及水果\n優於勞基法不扣薪事假病假\n零食區全日免費提供飲品及美食\n員工/眷屬團體保險及健檢\n健身房補助\n\n**聯絡方式**\nMichael Wu michael.wu@ui.com",
+      "excerpt": "Job Description Responsibilities: Design, develop, and maintain iOS applications using Swift, SwiftUI, and UIKit. Ensure an excellent user experience by focusing on UI/UX design details and reducing friction points. C...",
+      "issueState": "open",
+      "contentHash": "ae765dbfd8ca9f240c0d78d3b66673129c30da527aeca9e4e46c37bb9a6b39bc",
+      "repository": "ios-taipei/MobileJobs",
+      "repositoryUrl": "https://github.com/ios-taipei/MobileJobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "Uiler105",
+        "name": "Uiler105",
+        "handle": "Uiler105",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/102198667?v=4"
+      },
+      "community": {
+        "id": "ios-taipei",
+        "name": "ios-taipei",
+        "avatarUrl": "https://github.com/ios-taipei.png?size=80",
+        "repository": "ios-taipei/MobileJobs",
+        "url": "https://github.com/ios-taipei/MobileJobs"
+      },
+      "createdAt": "2025-11-18T10:09:12Z",
+      "updatedAt": "2025-11-18T10:09:12Z",
+      "url": "https://github.com/ios-taipei/MobileJobs/issues/5",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_4f932f9132ac743803a990ff",
+          "sourceId": "ios-taipei/MobileJobs#5",
+          "repository": "ios-taipei/MobileJobs",
+          "repositoryUrl": "https://github.com/ios-taipei/MobileJobs",
+          "url": "https://github.com/ios-taipei/MobileJobs/issues/5",
+          "createdAt": "2025-11-18T10:09:12Z",
+          "updatedAt": "2025-11-18T10:09:12Z",
+          "community": {
+            "id": "ios-taipei",
+            "name": "ios-taipei",
+            "avatarUrl": "https://github.com/ios-taipei.png?size=80",
+            "repository": "ios-taipei/MobileJobs",
+            "url": "https://github.com/ios-taipei/MobileJobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 311,
+        "publishedAt": "2025-11-18T10:09:12Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_e69a66e5d4446a6782d444c6",
+      "sourceId": "DevComputaria/CangaceiroDevVagas#199",
+      "title": "[São Leopoldo/RS] SAP FI/CO Senior Analyst na STIHL Ferramentas Motorizadas",
+      "description": "Vaga Híbrida \n\n**## Nossa empresa**\n\nComo uma empresa familiar inovadora e marca líder global no campo de motosserras e ferramentas elétricas, estamos intensamente envolvidos em robótica, baterias recarregáveis, engenharia elétrica, comércio eletrônico e digitalização, além das áreas de negócios tradicionais. Oferecemos todos os pré-requisitos para o crescimento pessoal e profissional. Juntamente com mais de 19.000 funcionários, estamos moldando o futuro - com visão de futuro e senso de responsabilidade.\n\n**## Descrição da vaga**\n\nA pessoa Analista Sênior SAP FI/CO atuará como parceiro estratégico para as áreas de Finanças e Controladoria, agindo para garantir alinhamento entre as necessidades dos nossos usuários e as soluções tecnológicas, atuando de forma colaborativa, proativa e com total autonomia para impulsionar os resultados do negócio no Brasil e no mundo.\n\n- Assegurar a evolução, estabilidade e performance dos sistemas #SAP #S/4HANA e aplicações satélites, com foco total nos módulos de Finanças e Controladoria.\n- Desenvolver e aprimorar soluções que conectam o #SAP com sistemas satélites, como o SAP Concur e plataformas de comércio exterior (Thomson Reuters OSGT), otimizando os processos financeiros e contábeis.\n- Conduzir o ciclo completo de projetos e demandas para os módulos FI/CO, desde o levantamento de requisitos com a área de negócio até a entrega da solução, utilizando metodologias ágeis ou tradicionais.\n- Atuar como ponto focal para a sustentação dos sistemas, liderando a resolução de problemas complexos, identificando a causa raiz e implementando correções definitivas para garantir a fluidez das operações.\n- Liderar e participar de reuniões com nossos times multidisciplinares, garantindo o alinhamento global das nossas soluções, sempre com foco na Governança de TI em primeiro lugar.\n\n**## Local**\n\nHíbrido em São Leopoldo, Rio Grande do Sul, Brasil.\n\n**## Requisitos**\n\n**Obrigatórios:**\n- Inglês avançado\n- Superior completo.\n- Experiência sólida e comprovada nos principais processos de Contabilidade Financeira, (FI-AP, FI-AR, FI-AA,FI-GL)\n- Domínio dos processos de Controladoria (CO-CCA, CO-OM,CO-PA)\n\n**Desejáveis:**\n- Conhecimento em SAP Concur.\n- Conhecimento com sistemas de comércio exterior, como Thomson Reuters ONESOURCE Global Trade (OSGT), ou conhecimento dos processos de Comex e sua integração com as áreas financeira e contábil.\n\n**Diferenciais:**\n-Vivência anterior no segmento industrial metal mecânico.\n- Experiência com interface com times globais e utilização diária do idioma inglês.\n\n## Benefícios\n\n- -Participação nos Lucros, ligado ao resultado financeiroda Empresa.\n- Assistência médica Unimed, extensiva aos dependentes.\n- Ambulatório na empresa disponível para o funcionário realizar consultas com clínico geral,sem custo.\n- Uniodonto Nacional, extensivo aos dependentes.\n- Seguro de Vida.\n- Programa de Previdência Privada, 100% aportado pela STIHL.\n- Transporte Fretado.\n- Estacionamento próprio da empresa, sem custo ao colaborador.\n- Restaurante na Empresa, servido por fornecedor especializado em refeições corporativas.\n- Incentivo a Educação: disponível após 12 meses de contrato, o profissional torna-se elegível a receber da STIHL um percentual para curso de graduação ou pós-graduação\n- Plataforma de Treinamentos Online.\n- Licença maternidade e paternidade estendida.\n- Núcleo de Qualidade de Vida.\n- TotalPass\n\n**## Contratação**\n\nCLT\n\n**## Como se candidatar**\n\nPor favor, acesso o link: https://jobs.stihl.com/job-invite/55772/\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 15 dias após cada processo.\n\n#### Alocação\n- Alocado em São Leopoldo, RS, BR\n\n#### Regime\n- CLT\n\n#### Nível\n- Sênior",
+      "excerpt": "Vaga Híbrida **## Nossa empresa** Como uma empresa familiar inovadora e marca líder global no campo de motosserras e ferramentas elétricas, estamos intensamente envolvidos em robótica, baterias recarregáveis, engenhar...",
+      "issueState": "open",
+      "contentHash": "6b3849743f08848a6d96596361987e95a7fdc3a4e677a8e35a4ae9067fc4d8df",
+      "repository": "DevComputaria/CangaceiroDevVagas",
+      "repositoryUrl": "https://github.com/DevComputaria/CangaceiroDevVagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "sap",
+        "senior"
+      ],
+      "sourceTags": [
+        "sap",
+        "senior"
+      ],
+      "author": {
+        "id": "BrendaRosaTA",
+        "name": "BrendaRosaTA",
+        "handle": "BrendaRosaTA",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/242195331?v=4"
+      },
+      "community": {
+        "id": "DevComputaria",
+        "name": "DevComputaria",
+        "avatarUrl": "https://github.com/DevComputaria.png?size=80",
+        "repository": "DevComputaria/CangaceiroDevVagas",
+        "url": "https://github.com/DevComputaria/CangaceiroDevVagas"
+      },
+      "companyName": "STIHL Ferramentas Motorizadas",
+      "createdAt": "2025-11-11T11:39:41Z",
+      "updatedAt": "2025-11-16T05:08:17Z",
+      "url": "https://github.com/DevComputaria/CangaceiroDevVagas/issues/199",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Leopoldo",
+        "subdivision": "RS",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Leopoldo, RS · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_e69a66e5d4446a6782d444c6",
+          "sourceId": "DevComputaria/CangaceiroDevVagas#199",
+          "repository": "DevComputaria/CangaceiroDevVagas",
+          "repositoryUrl": "https://github.com/DevComputaria/CangaceiroDevVagas",
+          "url": "https://github.com/DevComputaria/CangaceiroDevVagas/issues/199",
+          "createdAt": "2025-11-11T11:39:41Z",
+          "updatedAt": "2025-11-16T05:08:17Z",
+          "community": {
+            "id": "DevComputaria",
+            "name": "DevComputaria",
+            "avatarUrl": "https://github.com/DevComputaria.png?size=80",
+            "repository": "DevComputaria/CangaceiroDevVagas",
+            "url": "https://github.com/DevComputaria/CangaceiroDevVagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 318,
+        "publishedAt": "2025-11-11T11:39:41Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_c68291eef5db5e9cb0e89fc3",
+      "sourceId": "flutterbr/vagas#344",
+      "title": "[São Paulo] Flutter Developer na XP Inc",
+      "description": "<!-- \n==================================================\nPOR FAVOR, SÓ POSTE SE A VAGA FOR PARA Flutter ou Dart!\n\nNão faça distinção de gênero no título da vaga.\n\nUse: \"Flutter Developer\" ao invés de \n\"Desenvolvedor Flutter\" \\o/\n\nExemplo: `[São Paulo] Flutter Developer na NOME DA EMPRESA`\n==================================================\n-->\n\n## Descrição da vaga\n\nEsta vaga é direcionada a pessoas sêniores que buscam atuar com Mobile na XP Inc. \nCaso você atenda os requisitos da vaga, entraremos em contato te chamando para o processo seletivo, então fique de olho no seu e-mail! \n\nSomos uma empresa em construção, então aqui o aprendizado é constante e você terá pista livre para criar e muitos (muitos mesmo!) desafios. Além disso, você trabalhará ao lado de pessoas diversas e talentosas que irão te ajudar a usar todo o seu potencial e gerar o maior impacto possível. \n\nDesafios que você vai encontrar por aqui:\n\nAmbiente dinâmico e aberto para novas ideias;\nLiberdade para trilhar uma carreira protagonista;\nEspaço para desenvolvimento e aprendizado constantes.\n// Nossas áreas:\nContratamos por Business Units para trabalhar com os produtos de Crédito, Banking, Renda Fixa, Renda Variável, Câmbio e muitas outras squads. Hoje possuímos diversas vagas, de diversas senioridade nas principais BUs.\n\n\n// Sobre as etapas do processo seletivo?\nEtapas de Entrevistas:\n\nEntrevista com Time de Recrutamento\nEntrevista com Hiring Manager (Líder)\nEntrevista Técnica (Pares)\nEntrevista com Stakeholder\nEntrevista de Cultura com Sócio da XP\nSe identificou com a XP Inc. e com a oportunidade? \n\nVenha conquistar o impossível com a gente!\nPara saber mais sobre nossas áreas e carreiras em Tecnologia, clique [aqui](https://www.xpinc.com/carreira-tech).\n\n## São Paulo SP\n\nHibrido 2 dias presenciais, 3 dias remoto, São Paulo - Vila Olímpia\n\n## Benefícios\n\nSaúde e bem-estar:\n\nPlano de saúde sem coparticipação (inclusive, para dependentes)\nPlano odontológico\nWellhub (Gympass)\nZenklub\nSeguro de Vida\niFood Benefícios (VA e VR flexível)\nVale Transporte\nNew Value (clube de benefícios)\nLicença parental: maternidade de 6 meses e paternidade de 20 dias.\nAuxílio Creche\nVida Financeira\n\nFundos de Investimentos Exclusivos\nAssessoria de Investimentos  \nCartão XP Visa Infinite sem anuidade  \nCrédito (consignado, home equity, CCB Imobiliário, etc.) \n\n## Requisitos\n\n**Obrigatórios:**\n// O perfil que estamos buscando, os pré requisitos e diferenciais para a sua candidatura: \nTer nossa cultura;\nInteresse pelo mercado financeiro;\nSaber elaborar um código limpo e bem escrito garantindo padrão de qualidade e code review;\nCapacidade analítica para resolução de problemas (análise e correção de bugs);\nPossuir experiência de linguagem de programação Flutter e Git;\nSaber realizar a integração com API.REST;\nTer conhecimento em bloc/cubit;\nTer conhecimento em alguma plataforma nativa (iOS ou Android);\nLidar com várias prioridades concorrentes, assumindo responsabilidades e riscos em um ambiente de ritmo acelerado e constante mudança;\nResidir em São Paulo (modelo de trabalho híbrido).\n\n\n## Contratação\n\nCLT\n\n## Nossa empresa\n\nA XP Inc. é uma das maiores instituições financeiras independente do Brasil, dona das marcas XP, Rico, Clear, XP Educação, InfoMoney, entre outras. Com mais de 4,6 milhões de clientes ativos e um valor superior a R$ 1,1 trilhão de ativos sob custódia, há 23 anos vem transformando o mercado financeiro para melhorar a vida das pessoas.\n\n\n\nFoi pioneira no mercado com sua rede de assessores de investimentos, que hoje é a maior do país, com mais de 18,3 mil profissionais.\n\n\n\nCom uma cultura marcante guiada por quatro valores - Sonho Grande, Espírito Empreendedor, Foco no Cliente e Mente Aberta - a XP Inc. está sempre em busca dos melhores talentos que tem ambição de fazer o impossível.\n\n## Como se candidatar\n\nPor favor  se aplique no link abaixo:\nhttps://rpo-xpinc.inhire.app/vagas/80de82cf-e211-4b7a-8024-11599edca031/engenheiroa-de-software-mobile-senior-sao-paulo\n\nEm caso de dúvidas me chama no Linkedin: https://www.linkedin.com/in/ciraiane/\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 03 dias após cada processo.\nE-mail para contato em caso de não haver resposta: cira.aguiar@byintera.com\n\n## Labels\n\n\n- CLT\n- Júnior\n- Pleno\n- Sênior\n- Remoto",
+      "excerpt": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA Flutter ou Dart! Não faça distinção de gênero no título da vaga. Use: \"Flutter Developer\" ao invés de \"Desenvolvedor Flutt...",
+      "issueState": "open",
+      "contentHash": "8a2c6a7a2e2bfb12dbd57675c8a2e6ab8e45529183ad5a59b4953892f8a4f52f",
+      "repository": "flutterbr/vagas",
+      "repositoryUrl": "https://github.com/flutterbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "stale"
+      ],
+      "sourceTags": [
+        "stale"
+      ],
+      "author": {
+        "id": "Ciraiane",
+        "name": "Ciraiane",
+        "handle": "Ciraiane",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/107438918?v=4"
+      },
+      "community": {
+        "id": "flutterbr",
+        "name": "flutterbr",
+        "avatarUrl": "https://github.com/flutterbr.png?size=80",
+        "repository": "flutterbr/vagas",
+        "url": "https://github.com/flutterbr/vagas"
+      },
+      "companyName": "XP Inc",
+      "createdAt": "2025-11-07T20:05:28Z",
+      "updatedAt": "2026-04-18T19:07:24Z",
+      "url": "https://github.com/flutterbr/vagas/issues/344",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "flutter"
+        ],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_c68291eef5db5e9cb0e89fc3",
+          "sourceId": "flutterbr/vagas#344",
+          "repository": "flutterbr/vagas",
+          "repositoryUrl": "https://github.com/flutterbr/vagas",
+          "url": "https://github.com/flutterbr/vagas/issues/344",
+          "createdAt": "2025-11-07T20:05:28Z",
+          "updatedAt": "2026-04-18T19:07:24Z",
+          "community": {
+            "id": "flutterbr",
+            "name": "flutterbr",
+            "avatarUrl": "https://github.com/flutterbr.png?size=80",
+            "repository": "flutterbr/vagas",
+            "url": "https://github.com/flutterbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 322,
+        "publishedAt": "2025-11-07T20:05:28Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_4f81b09fdec825d1ef022048",
+      "sourceId": "phpdevbr/vagas#1320",
+      "title": "Hibrido São Paulo - Programador PHP Pleno - Tech For TI",
+      "description": "Localização: São Paulo / São Paulo ( Sul )\nNível Profissional: Especialista\nArea / Tecnologia: TI - Projetos / PHP 7.0.33 ou superior, Html / CSS, Laravel, MySQL\nContrato PJ\nDescrição da vaga:\nOportunidade para Programador PHP Pleno, em empresa de grande porte, do segmento transportes marítimos e aéreos internacionais, iniciando no modelo híbrido (2 meses) 3x semana no escritório em Moema, e à partir do 3º mês será 100% remoto.\n\n\nRequisitos imprescindíveis:\n- PHP 7.0.33 ou superior;\n- HTML/ CSS;\n- Laravel;\n- MySQL / Maria DB 10.1 ou superior;\n- Javascript / JQuery / Json;\n- API REST;\n- Git  / Github.\n\nRequisitos diferenciais:  \n- MVC;\n- Slim Framework;\n- Code Igniter Framework;\n- Ter trabalhado com GCloud;\n- Ter trabalhado em projetos de integrações com bancos;\n- Ter trabalhado com integrações SAP.\n\nFormação Mínima: Ensino Superior Completo\n\nInteressados encaminhar cv para: llongo@techforti.com.br",
+      "excerpt": "Localização: São Paulo / São Paulo ( Sul ) Nível Profissional: Especialista Area / Tecnologia: TI - Projetos / PHP 7.0.33 ou superior, Html / CSS, Laravel, MySQL Contrato PJ Descrição da vaga: Oportunidade para Progra...",
+      "issueState": "open",
+      "contentHash": "7e5d26480144f9000be702f39c8efef1f032887db9243cafbf697ea4b3791dc8",
+      "repository": "phpdevbr/vagas",
+      "repositoryUrl": "https://github.com/phpdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "java",
+        "pleno"
+      ],
+      "sourceTags": [
+        "java",
+        "pleno"
+      ],
+      "author": {
+        "id": "Luiza3004",
+        "name": "Luiza3004",
+        "handle": "Luiza3004",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/93356327?v=4"
+      },
+      "community": {
+        "id": "phpdevbr",
+        "name": "phpdevbr",
+        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+        "repository": "phpdevbr/vagas",
+        "url": "https://github.com/phpdevbr/vagas"
+      },
+      "createdAt": "2025-11-07T19:49:01Z",
+      "updatedAt": "2025-11-07T19:49:01Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1320",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "laravel",
+          "mysql",
+          "php"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_4f81b09fdec825d1ef022048",
+          "sourceId": "phpdevbr/vagas#1320",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1320",
+          "createdAt": "2025-11-07T19:49:01Z",
+          "updatedAt": "2025-11-07T19:49:01Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 322,
+        "publishedAt": "2025-11-07T19:49:01Z",
         "status": "stale"
       }
     }
