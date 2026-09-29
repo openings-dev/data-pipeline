@@ -38436,6 +38436,315 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_5e9389b1f39a95d222e2ade5",
+        "revision": "436d39d3233876fa61077bea458d5d6c55521abd166b56732f242374e738ad61",
+        "idempotencyKey": "openings:job:gh_5e9389b1f39a95d222e2ade5:436d39d3233876fa61077bea458d5d6c55521abd166b56732f242374e738ad61"
+      },
+      "canonical": {
+        "title": "[Remoto ]  Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) USD - Strider",
+        "summary": "# [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) > **Salário:** $4,550 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5+...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_5e9389b1f39a95d222e2ade5",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_5e9389b1f39a95d222e2ade5",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_5e9389b1f39a95d222e2ade5",
+              "revision": "436d39d3233876fa61077bea458d5d6c55521abd166b56732f242374e738ad61",
+              "canonicalPath": "/jobs/gh_5e9389b1f39a95d222e2ade5",
+              "title": "[Remoto ]  Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) USD - Strider",
+              "summary": "# [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) > **Salário:** $4,550 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5+...",
+              "status": "active",
+              "contentSha256": "db1052a2a7ed20df94526aeb26586814c78dd0905de559461f5068d582359854",
+              "content": {
+                "id": "gh_5e9389b1f39a95d222e2ade5",
+                "sourceId": "frontendbr/vagas#8554",
+                "title": "[Remoto ]  Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) USD - Strider",
+                "description": "#  [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React)\n\n> **Salário:** $4,550 – $5,600 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Experiência:** 5+ anos  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nBuscamos um(a) Full-stack Engineer sênior focado em alta confiabilidade, segurança e integração de sistemas de saúde. O papel envolve o desenvolvimento em React/TypeScript, gerenciamento de banco de dados PostgreSQL, testes com TDD e provisionamento de infraestrutura via Terraform.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end & Lógica:** React.js, TypeScript, Git.\n- **Banco de Dados & Infra:** PostgreSQL, Terraform (Infrastructure as Code - IaC).\n- **HealthTech:** Experiência com integração de sistemas EHR/EMR, APIs clínicas e plataformas de dados de saúde.\n- **Engenharia & Qualidade:** Domínio de TDD (Test-Driven Development), testes automatizados, escalabilidade e segurança da informação.\n- **Processos:** Scrum/Agile e comunicação fluente em inglês (C1+).\n\n###  Diferenciais (Nice-to-have)\n- Padrões de troca de dados em saúde: **FHIR, HL7**\n- Vivência prévia em Startups\n- Integrações avançadas com fornecedores de EHR/EMR\n- Uso de ferramentas/frameworks de IA em produção\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Full-stack Engineer (HealthTech)](https://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci0xZGVmZDE2NT9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+                "excerpt": "# [VAGA REMOTA] Full-stack Engineer (HealthTech, EHR/EMR, Terraform, React) > **Salário:** $4,550 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5+...",
+                "issueState": "open",
+                "contentHash": "436d39d3233876fa61077bea458d5d6c55521abd166b56732f242374e738ad61",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "remoto",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "remoto",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "salary": {
+                  "currency": "BRL",
+                  "min": 4550,
+                  "max": 5600,
+                  "period": "month"
+                },
+                "createdAt": "2026-08-28T01:56:23Z",
+                "updatedAt": "2026-08-28T01:56:52Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8554",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "postgres",
+                    "react",
+                    "terraform",
+                    "typescript"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "full-time"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_5e9389b1f39a95d222e2ade5",
+                    "sourceId": "frontendbr/vagas#8554",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8554",
+                    "createdAt": "2026-08-28T01:56:23Z",
+                    "updatedAt": "2026-08-28T01:56:52Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 32,
+                  "publishedAt": "2026-08-28T01:56:23Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_e20c87ec9b8a84e4069f865e",
+        "revision": "78f2f2083f8be6d10866c81c9be286d74f713a0aaa5f0b8ef8852e2fb50593a1",
+        "idempotencyKey": "openings:job:gh_e20c87ec9b8a84e4069f865e:78f2f2083f8be6d10866c81c9be286d74f713a0aaa5f0b8ef8852e2fb50593a1"
+      },
+      "canonical": {
+        "title": "[Remoto] Full-stack Engineer (UX (focused) Strider",
+        "summary": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools > **Salário:** $4,300 – $6,000 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Modal...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_e20c87ec9b8a84e4069f865e",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_e20c87ec9b8a84e4069f865e",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_e20c87ec9b8a84e4069f865e",
+              "revision": "78f2f2083f8be6d10866c81c9be286d74f713a0aaa5f0b8ef8852e2fb50593a1",
+              "canonicalPath": "/jobs/gh_e20c87ec9b8a84e4069f865e",
+              "title": "[Remoto] Full-stack Engineer (UX (focused) Strider",
+              "summary": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools > **Salário:** $4,300 – $6,000 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Modal...",
+              "status": "active",
+              "contentSha256": "1bf100782485ba38d2b9d756bc7018858192f7ba6cab9b33b418d0625cb4cfe9",
+              "content": {
+                "id": "gh_e20c87ec9b8a84e4069f865e",
+                "sourceId": "frontendbr/vagas#8552",
+                "title": "[Remoto] Full-stack Engineer (UX (focused) Strider",
+                "description": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools\n\n> **Salário:** $4,300 – $6,000 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Full-stack Engineer hands-on (4+ anos de experiência) com viés em Front-end e UX Design para construir produtos do zero em ambiente de startup. Se você usa ferramentas como **Claude Code** e **coding agents** no seu dia a dia e sabe como validar/refinar código gerado por IA, essa vaga é para você.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end:** React.js, TypeScript, CSS/HTML, UX Design (tradução de design em código).\n- **Back-end & DB:** Node.js, Python, REST APIs, SQL e NoSQL.\n- **Workflow:** Git, ferramentas de IA assistida (AI coding tools/agents).\n- **Soft Skills:** Autonomia para criar produtos do zero, *move-fast mentality* de startup e excelente comunicação em inglês (escrita e falada).\n\n### 🌟 Diferenciais (Nice-to-have)\n- Framework TanStack Start\n- FastAPI (Python)\n- Cloud & DevOps (AWS/GCP/Azure, Docker, Kubernetes)\n- Domínio de produtos EdTech ou ecossistemas com proteção de dados/PII\n- Bacharelado em Ciência da Computação, Engenharia ou área correlata\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Full-stack Engineer](https://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci03MWY1OGY5Mj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+                "excerpt": "# 🚀 [VAGA REMOTA] Full-stack Engineer (UX-focused) | React, Node.js, Python & AI Tools > **Salário:** $4,300 – $6,000 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Modal...",
+                "issueState": "open",
+                "contentHash": "78f2f2083f8be6d10866c81c9be286d74f713a0aaa5f0b8ef8852e2fb50593a1",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "remoto"
+                ],
+                "sourceTags": [
+                  "remoto"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "salary": {
+                  "currency": "BRL",
+                  "min": 4300,
+                  "max": 6000,
+                  "period": "month"
+                },
+                "createdAt": "2026-08-28T01:40:18Z",
+                "updatedAt": "2026-08-28T01:40:42Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8552",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "design",
+                    "devops-sre",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "azure",
+                    "docker",
+                    "gcp",
+                    "kubernetes",
+                    "nodejs",
+                    "python",
+                    "react",
+                    "typescript"
+                  ],
+                  "seniority": [],
+                  "employmentTypes": [
+                    "full-time"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "unknown",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_e20c87ec9b8a84e4069f865e",
+                    "sourceId": "frontendbr/vagas#8552",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8552",
+                    "createdAt": "2026-08-28T01:40:18Z",
+                    "updatedAt": "2026-08-28T01:40:42Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 32,
+                  "publishedAt": "2026-08-28T01:40:18Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
