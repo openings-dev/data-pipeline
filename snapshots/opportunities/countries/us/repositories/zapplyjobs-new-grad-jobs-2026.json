@@ -1,16 +1,72 @@
 {
-  "generatedAt": "2026-09-15T18:38:55.802Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "zapplyjobs/New-Grad-Jobs-2026",
   "totals": {
-    "opportunities": 5,
-    "openIssues": 0,
+    "opportunities": 6,
+    "openIssues": 1,
     "closedIssues": 5
   },
-  "dataHash": "0bde8f3b3496113f28da2eb2e0424f6980ed70f0d4a421ec263fba95dc08e7f8",
+  "dataHash": "0af86f834ff013fa25c2ed4e60270f176ae359ca5717022adf1ee4b44df3ee16",
   "items": [
+    {
+      "id": "gh_34aef200ad805203586dcecc",
+      "sourceId": "zapplyjobs/New-Grad-Jobs-2026#26",
+      "title": "Question about reading public listings on ZApply Underclassmen (personal final-year project)",
+      "description": "Hello ZApply Underclassmen team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer and a link to the job (your list gives no location or date), plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/zapplyjobs/underclassmen-internships/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello ZApply Underclassmen team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any univers...",
+      "issueState": "open",
+      "contentHash": "c6965d5877f075281e4b98c621bf33bd6eb4b3809506ec5d9d5f0f7e6395ecee",
+      "repository": "zapplyjobs/New-Grad-Jobs-2026",
+      "repositoryUrl": "https://github.com/zapplyjobs/New-Grad-Jobs-2026",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "zapplyjobs",
+        "name": "zapplyjobs",
+        "avatarUrl": "https://github.com/zapplyjobs.png?size=80",
+        "repository": "zapplyjobs/New-Grad-Jobs-2026",
+        "url": "https://github.com/zapplyjobs/New-Grad-Jobs-2026"
+      },
+      "createdAt": "2026-09-30T10:27:39Z",
+      "updatedAt": "2026-09-30T10:27:39Z",
+      "url": "https://github.com/zapplyjobs/underclassmen-internships/issues/26",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_dd5e844f99cf07717091f156",
       "sourceId": "zapplyjobs/New-Grad-Jobs-2026#24",

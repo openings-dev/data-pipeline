@@ -1,6 +1,108 @@
 {
-  "generatedAt": "2026-09-30T03:15:53.097Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "items": {
+    "gh_04527d7aee2622a060d30425": {
+      "id": "gh_04527d7aee2622a060d30425",
+      "sourceId": "speedyapply/2027-SWE-College-Jobs#47",
+      "title": "Question about reading public listings on SpeedyApply INTL (personal final-year project)",
+      "description": "Hello SpeedyApply INTL team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. Neither this repository nor speedyapply/2027-AI-College-Jobs has a licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (4 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/INTERN_INTL.md (the international internship list)\n    GET raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/NEW_GRAD_INTL.md (the international new-grad list)\n    GET raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/INTERN_INTL.md (the international AI internship list)\n    GET raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/NEW_GRAD_INTL.md (the international AI new-grad list)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello SpeedyApply INTL team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university ...",
+      "issueState": "open",
+      "contentHash": "fdf1398f91efa9eb099d3b6c3bc33948403e464c9a710ce891cd2780df6ede95",
+      "repository": "speedyapply/2027-SWE-College-Jobs",
+      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "speedyapply",
+        "name": "speedyapply",
+        "avatarUrl": "https://github.com/speedyapply.png?size=80",
+        "repository": "speedyapply/2027-SWE-College-Jobs",
+        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
+      },
+      "createdAt": "2026-09-30T10:27:34Z",
+      "updatedAt": "2026-09-30T10:27:34Z",
+      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/47",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_04527d7aee2622a060d30425",
+          "sourceId": "speedyapply/2027-SWE-College-Jobs#47",
+          "repository": "speedyapply/2027-SWE-College-Jobs",
+          "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
+          "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/47",
+          "createdAt": "2026-09-30T10:27:34Z",
+          "updatedAt": "2026-09-30T10:27:34Z",
+          "community": {
+            "id": "speedyapply",
+            "name": "speedyapply",
+            "avatarUrl": "https://github.com/speedyapply.png?size=80",
+            "repository": "speedyapply/2027-SWE-College-Jobs",
+            "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
+          }
+        },
+        {
+          "id": "gh_0fd620eefb93182033d5f363",
+          "sourceId": "speedyapply/2026-SWE-College-Jobs#47",
+          "repository": "speedyapply/2026-SWE-College-Jobs",
+          "repositoryUrl": "https://github.com/speedyapply/2026-SWE-College-Jobs",
+          "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/47",
+          "createdAt": "2026-09-30T10:27:34Z",
+          "updatedAt": "2026-09-30T10:27:34Z",
+          "community": {
+            "id": "speedyapply",
+            "name": "speedyapply",
+            "avatarUrl": "https://github.com/speedyapply.png?size=80",
+            "repository": "speedyapply/2026-SWE-College-Jobs",
+            "url": "https://github.com/speedyapply/2026-SWE-College-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-09-30T10:27:34Z",
+        "status": "fresh"
+      }
+    },
     "gh_04ea0643a4053e3c77e17710": {
       "id": "gh_04ea0643a4053e3c77e17710",
       "sourceId": "vanshb03/Summer2027-Internships#4585",
@@ -106,7 +208,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-01T06:55:31Z",
         "status": "fresh"
       }
@@ -432,7 +534,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 82,
+        "ageDays": 83,
         "publishedAt": "2026-07-09T11:00:03Z",
         "status": "aging"
       }

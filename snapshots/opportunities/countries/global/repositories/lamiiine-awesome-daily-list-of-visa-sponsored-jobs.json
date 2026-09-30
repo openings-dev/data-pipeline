@@ -1,16 +1,72 @@
 {
-  "generatedAt": "2026-09-15T18:38:55.802Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
   "repository": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs",
   "totals": {
-    "opportunities": 3,
-    "openIssues": 0,
+    "opportunities": 4,
+    "openIssues": 1,
     "closedIssues": 3
   },
-  "dataHash": "b29a9f9131cbf47e2d811aea032061c96bc50e9dfe1ff0a91f0657690b7cc489",
+  "dataHash": "0db56479dea59a10b8719ec98076ffa79f5da429c08b23630dafb5ab7ecca51d",
   "items": [
+    {
+      "id": "gh_5cf43af7adf0bacb68e0bed4",
+      "sourceId": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs#8",
+      "title": "Question about reading public listings on Visa-Sponsored Jobs List (personal final-year project)",
+      "description": "Hello Visa-Sponsored Jobs List team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs/main/jobList.json (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello Visa-Sponsored Jobs List team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any uni...",
+      "issueState": "open",
+      "contentHash": "f0e78fc6414fac89a44b935b06b775730c5b42ee157473332aba7e40c581eb76",
+      "repository": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs",
+      "repositoryUrl": "https://github.com/Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "Lamiiine",
+        "name": "Lamiiine",
+        "avatarUrl": "https://github.com/Lamiiine.png?size=80",
+        "repository": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs",
+        "url": "https://github.com/Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs"
+      },
+      "createdAt": "2026-09-30T10:27:37Z",
+      "updatedAt": "2026-09-30T10:27:37Z",
+      "url": "https://github.com/Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs/issues/8",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_6bf410d4c903574113f7bcb2",
       "sourceId": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs#5",

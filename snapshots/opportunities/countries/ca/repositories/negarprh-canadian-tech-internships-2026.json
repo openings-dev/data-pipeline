@@ -1,16 +1,72 @@
 {
-  "generatedAt": "2026-09-25T23:45:18.368Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "country": "Canada",
   "countryCode": "CA",
   "region": "North America",
   "repository": "negarprh/Canadian-Tech-Internships-2026",
   "totals": {
-    "opportunities": 4,
-    "openIssues": 0,
+    "opportunities": 5,
+    "openIssues": 1,
     "closedIssues": 4
   },
-  "dataHash": "5c126dece4547e1e0091b0b9d8731b05cf47a4b32af714b6fbb799fd4c7eb0d7",
+  "dataHash": "0a9bf7b2cec634dff07dd9146ab5b0a38e60e0d89f1cb5a42fb7ccd9554e6f8b",
   "items": [
+    {
+      "id": "gh_6f9fd79e1626999457c55a32",
+      "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
+      "title": "Question about reading public listings on Canadian Tech Internships 2027 (personal final-year project)",
+      "description": "Hello Canadian Tech Internships 2027 team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most once):\n    GET raw.githubusercontent.com/negarprh/Canadian-Tech-Internships-2027/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello Canadian Tech Internships 2027 team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by a...",
+      "issueState": "open",
+      "contentHash": "f6b74beb1b1a1a34b99442d8c4f0435a9bff1fc9df724de9b4e2fca55d1f41a1",
+      "repository": "negarprh/Canadian-Tech-Internships-2026",
+      "repositoryUrl": "https://github.com/negarprh/Canadian-Tech-Internships-2026",
+      "region": "North America",
+      "country": "Canada",
+      "sourceLocation": {
+        "country": "Canada",
+        "countryCode": "CA",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "negarprh",
+        "name": "negarprh",
+        "avatarUrl": "https://github.com/negarprh.png?size=80",
+        "repository": "negarprh/Canadian-Tech-Internships-2026",
+        "url": "https://github.com/negarprh/Canadian-Tech-Internships-2026"
+      },
+      "createdAt": "2026-09-30T10:26:56Z",
+      "updatedAt": "2026-09-30T10:26:56Z",
+      "url": "https://github.com/negarprh/Canadian-Tech-Internships-2027/issues/358",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_c44d96e1acded35b569295dc",
       "sourceId": "negarprh/Canadian-Tech-Internships-2026#348",

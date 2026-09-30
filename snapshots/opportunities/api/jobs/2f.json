@@ -1,6 +1,92 @@
 {
-  "generatedAt": "2026-09-29T21:43:44.805Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "items": {
+    "gh_2f36944fe3030097352d176e": {
+      "id": "gh_2f36944fe3030097352d176e",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9700",
+      "title": "Question about reading public listings on SimplifyJobs (personal final-year project)",
+      "description": "Hello SimplifyJobs team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. Neither this repository nor SimplifyJobs/New-Grad-Positions has a licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (2 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json (the internship list, one request; Summer2026-Internships is this repository's old name, which GitHub still serves)\n    GET raw.githubusercontent.com/SimplifyJobs/New-Grad-Positions/dev/.github/scripts/listings.json (the new-grad list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello SimplifyJobs team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or o...",
+      "issueState": "open",
+      "contentHash": "3c9d234e2ac5fcda2136f9b2820c1ff7bec4e92bda404057a4f9e78bed55c98b",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-09-30T10:27:16Z",
+      "updatedAt": "2026-09-30T10:27:16Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9700",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2f36944fe3030097352d176e",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9700",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9700",
+          "createdAt": "2026-09-30T10:27:16Z",
+          "updatedAt": "2026-09-30T10:27:16Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-09-30T10:27:16Z",
+        "status": "fresh"
+      }
+    },
     "gh_2fa1d8c2e1f80581bc696a54": {
       "id": "gh_2fa1d8c2e1f80581bc696a54",
       "sourceId": "phpdevbr/vagas#1319",

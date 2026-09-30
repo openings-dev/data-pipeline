@@ -1,16 +1,80 @@
 {
-  "generatedAt": "2026-09-29T09:21:45.138Z",
+  "generatedAt": "2026-09-30T11:41:05.852Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "soujava/vagas-java",
   "totals": {
-    "opportunities": 18,
-    "openIssues": 4,
+    "opportunities": 20,
+    "openIssues": 6,
     "closedIssues": 14
   },
-  "dataHash": "cf4a475de78f2bba5a2f0347af951e311acdbcf7cbc4b647e87385fd479975e3",
+  "dataHash": "2c064d226614d4a2200b5b16fb18c1b37766ceca3315a24ea12d61b0dc7a99b7",
   "items": [
+    {
+      "id": "gh_b6aefab5452b32ee8687841b",
+      "sourceId": "soujava/vagas-java#1956",
+      "title": "Question about reading public listings on soujava/vagas-java (personal final-year project)",
+      "description": "Hello soujava/vagas-java team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET api.github.com/repos/soujava/vagas-java/issues?state=open&per_page=100 (the open issues, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello soujava/vagas-java team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any universit...",
+      "issueState": "open",
+      "contentHash": "84422d8dbf49e22c0e602cc7089815c276468d3783d2bfbe029f41eaccb8937c",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "api",
+        "java"
+      ],
+      "sourceTags": [
+        "api",
+        "java"
+      ],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "createdAt": "2026-09-30T10:27:18Z",
+      "updatedAt": "2026-09-30T10:27:42Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1956",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "java"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_5a1ff9c946d4a24594ec28b1",
       "sourceId": "soujava/vagas-java#1954",
@@ -107,13 +171,13 @@
       }
     },
     {
-      "id": "gh_423253e9f32ff55698650e74",
-      "sourceId": "soujava/vagas-java#1952",
-      "title": "[REMOTO] Desenvolvedor Full Stack SENIOR na [OPIKODE]",
-      "description": "## Descrição da vaga\n<!-- Informe mais detalhes sobre a vaga --> \n\nSobre a vaga:\n\nEstamos buscando um(a) Desenvolvedor(a) Full Stack Sênior para atuar em projetos utilizando tecnologias low-code e soluções orientadas por Inteligência Artificial.\nA pessoa terá contato direto com o cliente, sendo responsável por compreender necessidades, contribuir para o planejamento das atividades, realizar estimativas e apoiar a tomada de decisões técnicas.\nBuscamos alguém com comunicação clara e assertiva, autonomia, capacidade de planejamento e senso de responsabilidade, que se sinta confortável em lidar com diferentes demandas e atuar em mais de um projeto simultaneamente.\nTambém é importante ter abertura e interesse em, futuramente, assumir responsabilidades de liderança e gestão de equipe, conforme a evolução da atuação na empresa.\n\n## Local\n\nRemoto\n\n## O que oferecemos?\n\nContratação PJ;\nHorário flexível;\nSalário compatível com o mercado;\nDay-Off no dia do aniversário;\n100% remoto.\n\n#### Obrigatórios:\n\nExperiência profissional com desenvolvimento em Java;\nConhecimento em ferramentas de controle de dependências Maven, Gradle, NPM, Gulp e ConT;\nExperiência na construção de REST e serviços WS/SOAP;\nExperiência consolidada em desenvolvimento front-end;\nExperiência em desenvolver interfaces a partir de protótipos desenvolvidos no Figma;\nMetodologias ágeis (Scrum ou Kanban);\nConhecimento complementar em uso de modelos e criação de agentes de IA;\nDisponibilidade para conhecer novas tecnologias;\n\n#### Desejáveis:\n\nConhecimento de Kubernetes e OpenShift.\nConhecimento de DevOps e CI/CD.\nConhecimento em desenvolvimento e administração em Liferay DXP e Liferay Portal.\nExperiência em ETL e/ou ESB;\nConhecimento em E-Commerce;\nInglês técnico.\n\n## Contratação\n\n- PJ a combinar\n\n## Nossa empresa\n\nA Opikode é uma empresa de desenvolvimento de software que está construindo sua marca no mercado brasileiro, produzindo soluções de alto valor para os negócios de nossos clientes e parceiros.\n\n## Como se candidatar\n\nEncaminhar o curriculo para o e-mail renata.maia@opikode.com com o assunto com o nome da vaga.\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 3 dias após cada processo.\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Alocação\n- Remoto\n\n#### Regime\n- PJ\n\n#### Nível\n- Sênior",
-      "excerpt": "## Descrição da vaga <!-- Informe mais detalhes sobre a vaga --> Sobre a vaga: Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior para atuar em projetos utilizando tecnologias low-code e soluções orientadas por...",
+      "id": "gh_66567127e38a6d84bdcb2194",
+      "sourceId": "soujava/vagas-java#1932",
+      "title": "[Híbrido] Desenvolvedor(a) Java/Spring Boot Pleno na Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Desenvolvedor(a) Java/Spring Boot nível Pleno para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 7.000 a 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com Java/Spring Boot compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-spring-boot-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
       "issueState": "open",
-      "contentHash": "8a16ce5e77ca27d3f41ef9975f25dbefe5c30c24c3c4217d1c0091e12a7608d0",
+      "contentHash": "c400079d94a227330eef080d390a4b0f95f9406abeabdae1c27b73033f4806a5",
       "repository": "soujava/vagas-java",
       "repositoryUrl": "https://github.com/soujava/vagas-java",
       "region": "South America",
@@ -124,30 +188,30 @@
         "region": "South America"
       },
       "tags": [
-        "sênior",
+        "clt",
         "pj",
+        "pleno",
         "remoto",
-        "devops",
-        "rest",
-        "maven",
-        "soap",
-        "scrum"
+        "backend",
+        "spring",
+        "java",
+        "portugal"
       ],
       "sourceTags": [
-        "sênior",
+        "clt",
         "pj",
+        "pleno",
         "remoto",
-        "devops",
-        "rest",
-        "maven",
-        "soap",
-        "scrum"
+        "backend",
+        "spring",
+        "java",
+        "portugal"
       ],
       "author": {
-        "id": "cmaiarenata",
-        "name": "cmaiarenata",
-        "handle": "cmaiarenata",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/127779730?v=4"
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
       },
       "community": {
         "id": "soujava",
@@ -156,33 +220,40 @@
         "repository": "soujava/vagas-java",
         "url": "https://github.com/soujava/vagas-java"
       },
-      "createdAt": "2026-09-03T19:44:25Z",
-      "updatedAt": "2026-09-03T19:44:43Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1952",
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 7000,
+        "max": 12000,
+        "period": "month"
+      },
+      "createdAt": "2026-07-31T18:00:18Z",
+      "updatedAt": "2026-09-30T03:48:40Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1932",
       "sourceType": "github-issue",
       "jobLocation": {
-        "workModel": "remote",
+        "workModel": "hybrid",
         "remoteScope": "unspecified",
-        "displayText": "Remote",
+        "displayText": "Hybrid",
         "confidence": "explicit"
       },
       "taxonomy": {
         "areas": [
-          "devops-sre",
-          "frontend",
-          "fullstack"
+          "backend"
         ],
         "technologies": [
           "java",
-          "kubernetes"
+          "spring"
         ],
         "seniority": [
-          "senior"
+          "mid"
         ],
         "employmentTypes": [
-          "contractor"
+          "contractor",
+          "employee"
         ],
         "workModels": [
+          "hybrid",
           "remote"
         ],
         "languages": [
@@ -191,7 +262,103 @@
       },
       "dataProvenance": {
         "location": "unknown",
-        "salary": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_d60682e9047937ab3c16440c",
+      "sourceId": "soujava/vagas-java#1931",
+      "title": "[Híbrido] Desenvolvedor(a) Java/Quarkus Pleno na Sylision",
+      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Desenvolvedor(a) Java/Quarkus nível Pleno para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 7.000 a 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com Java/Quarkus compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-quarkus-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
+      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
+      "issueState": "open",
+      "contentHash": "237a01e88f86424ae4905264c441ee45effb9b8db1512a64791ba47626274b35",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto",
+        "backend",
+        "java",
+        "portugal",
+        "stale"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto",
+        "backend",
+        "java",
+        "portugal",
+        "stale"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 7000,
+        "max": 12000,
+        "period": "month"
+      },
+      "createdAt": "2026-07-31T15:06:16Z",
+      "updatedAt": "2026-09-30T03:48:38Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1931",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
         "seniority": "inferred",
         "workModel": "declared"
       }
