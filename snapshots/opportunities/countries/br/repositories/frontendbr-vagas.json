@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T09:21:45.138Z",
+  "generatedAt": "2026-09-30T17:21:53.278Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,8 +9,178 @@
     "openIssues": 24,
     "closedIssues": 5
   },
-  "dataHash": "7fcd7d78f9b37a1ac32cac5597987565d64a5a6327f5f1eff74584f85b48cda7",
+  "dataHash": "7032396d894beabcc8e83e15b54acd46c81bcbbab952c356b9128dd9b29519f2",
   "items": [
+    {
+      "id": "gh_1a9c36538077a783cbe21297",
+      "sourceId": "frontendbr/vagas#8565",
+      "title": "[Remoto] Software Developer Front-end Pleno na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open) para realizar a candidatura. 👋\nA **TruckPag** está em busca de uma pessoa **Software Developer Front-end Pleno** para aumentar o time de tecnologia. Você vai atuar no desenvolvimento das interfaces dos nossos produtos, trabalhando com as duas gerações de UI da empresa (MUI v5 + Emotion + design system @truckpag/components nos projetos legados e Tailwind CSS + shadcn/ui + Radix UI + Lucide nos projetos novos), em colaboração com os times de back-end e mobile.\n\n### Responsabilidades\n\n*   Escrever código e funções facilmente testáveis e compreendidas por outros desenvolvedores, considerando casos extremos e erros;\n    \n*   Compreender a pirâmide de testes, escrever testes unitários de acordo com a regra de negócio e testes de integração com apoio de desenvolvedores sênior e do Líder Técnico;\n    \n*   Testar casos extremos e erros esperados, usar abordagem sistemática para depurar problemas e conhecer a filosofia de monitoramento da organização e os dados operacionais do domínio da equipe;\n    \n*   Entender o contexto do domínio de negócio, as boas práticas, padrões e processos do time, desenvolvendo funções que melhorem a qualidade do código e reduzam débito técnico;\n    \n*   Entender a importância da segurança nas implementações e envolver o Líder Técnico em decisões com implicação de segurança;\n    \n*   Atuar conforme a priorização de tarefas, identificando dependências entre tarefas e requisitos;\n    \n*   Desenhar estrutura de estado de aplicação e componentes reutilizáveis, com revisão de sênior ou especialista;\n    \n*   Aplicar diretrizes de acessibilidade e de performance de renderização (carregamento sob demanda, controle de re-render) de forma proativa;\n    \n*   Tratar erros de consumo de API com autonomia, incluindo falhas de rede e respostas inesperadas do back-end;\n    \n*   Escrever testes cobrindo os dois estados de funcionalidades de interface implementadas por trás de feature flag, com apoio de sênior.\n    \n\n### Perfil que buscamos\n\n*   **Proatividade:** antecipa problemas de usabilidade ou performance antes de ser perguntado;\n    \n*   **Trabalho em equipe:** colabora com colegas de front, back e mobile sem precisar de mediação constante;\n    \n*   **Foco no cliente:** prioriza o que implementar pelo impacto real na experiência de quem usa a interface;\n    \n*   **Resolução de problemas:** decide como depurar e corrigir problemas de complexidade média com autonomia;\n    \n*   **Adaptabilidade e autoliderança:** transita entre demandas de complexidade crescente sem precisar de re-explicação constante de contexto;\n    \n*   **Boa comunicação:** traduz decisões técnicas de interface para quem não é desenvolvedor sem perder precisão.\n    \n\n### Informações da vaga\n\n*   Contratação: PJ;\n    \n*   Modalidade: remota, com disponibilidade para viagens eventuais para encontros presenciais;\n    \n*   Horário: 08:00 às 17:30;\n    \n*   Formação: ensino superior completo ou em andamento, ou experiência equivalente comprovada na área;\n    \n*   Experiência: 2 a 4 anos na função.\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - React \n- Tailwind CSS \n- Vitest \n- Typescript \n- Redux \n- Zustand \n- Docker \n- Figma \n- Testing Library \n- TanStack Query\n## Local: \n Remota\n## Requisitos: \n - React e TypeScript em nível intermediário, com capacidade de desenhar estrutura de estado e componentes reutilizáveis \n- Vite, Node (18 a 24) e gerenciador de pacotes (npm ou pnpm) \n- MUI v5 + Emotion + design system próprio (@truckpag/components) e Tailwind CSS + shadcn/ui + Radix UI + Lucide \n- Gestão de estado: Redux + Redux Toolkit + Redux Saga (legado), Zustand (novos), TanStack Query e Context API ou Constate \n- Formulários com React Hook Form + Yup (legado) ou Zod (novos) \n- Tabelas com react-table v7 / material-react-table (legado) e TanStack Table v8 (novos) \n- Testes com Vitest, Testing Library e MSW para mock de API \n- Padronização de código: ESLint (@truckpag/eslint-config), Prettier, Husky, lint-staged, Commitlint ou Commitizen \n- Acessibilidade e responsividade de interfaces \n- Git e GitLab CI: escrever e entender .gitlab-ci.yml e participar do pipeline de build e teste do front-end \n- Experiência com CI/CD \n- Docker para ambiente de desenvolvimento local \n- Linux e uso de terminal como ambiente padrão de desenvolvimento \n- git-crypt para variáveis de ambiente \n- Figma: implementação fiel a partir do design entregue \n- Uso de IA no desenvolvimento no dia a dia (Cursor) \n- Integração entre sistemas via consumo de APIs \n- Metodologias ágeis (Scrum, Kanban) \n- Noções de segurança da informação e prevenção de vulnerabilidades web no front-end (XSS, CSRF, CORS e CSP)\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Developer Front-end Pleno na TruckPag](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nFront-End",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "129f0a147d53b57ff7a94bc303aeecedb35bbca0ce3eb40ecf6760666eb2ce3b",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pleno",
+        "sênior",
+        "pj",
+        "remoto",
+        "especialista"
+      ],
+      "sourceTags": [
+        "pleno",
+        "sênior",
+        "pj",
+        "remoto",
+        "especialista"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "createdAt": "2026-09-30T13:32:41Z",
+      "updatedAt": "2026-09-30T13:33:09Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8565",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_c99e3a932f7fe533fc8d11db",
+      "sourceId": "frontendbr/vagas#8564",
+      "title": "[Remoto] Software Developer Front-end Pleno na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open) para realizar a candidatura. 👋\nA **TruckPag** está em busca de uma pessoa **Software Developer Front-end Pleno** para aumentar o time de tecnologia. Você vai atuar no desenvolvimento das interfaces dos nossos produtos, trabalhando com as duas gerações de UI da empresa (MUI v5 + Emotion + design system @truckpag/components nos projetos legados e Tailwind CSS + shadcn/ui + Radix UI + Lucide nos projetos novos), em colaboração com os times de back-end e mobile.\n\n### Responsabilidades\n\n*   Escrever código e funções facilmente testáveis e compreendidas por outros desenvolvedores, considerando casos extremos e erros;\n    \n*   Compreender a pirâmide de testes, escrever testes unitários de acordo com a regra de negócio e testes de integração com apoio de desenvolvedores sênior e do Líder Técnico;\n    \n*   Testar casos extremos e erros esperados, usar abordagem sistemática para depurar problemas e conhecer a filosofia de monitoramento da organização e os dados operacionais do domínio da equipe;\n    \n*   Entender o contexto do domínio de negócio, as boas práticas, padrões e processos do time, desenvolvendo funções que melhorem a qualidade do código e reduzam débito técnico;\n    \n*   Entender a importância da segurança nas implementações e envolver o Líder Técnico em decisões com implicação de segurança;\n    \n*   Atuar conforme a priorização de tarefas, identificando dependências entre tarefas e requisitos;\n    \n*   Desenhar estrutura de estado de aplicação e componentes reutilizáveis, com revisão de sênior ou especialista;\n    \n*   Aplicar diretrizes de acessibilidade e de performance de renderização (carregamento sob demanda, controle de re-render) de forma proativa;\n    \n*   Tratar erros de consumo de API com autonomia, incluindo falhas de rede e respostas inesperadas do back-end;\n    \n*   Escrever testes cobrindo os dois estados de funcionalidades de interface implementadas por trás de feature flag, com apoio de sênior.\n    \n\n### Perfil que buscamos\n\n*   **Proatividade:** antecipa problemas de usabilidade ou performance antes de ser perguntado;\n    \n*   **Trabalho em equipe:** colabora com colegas de front, back e mobile sem precisar de mediação constante;\n    \n*   **Foco no cliente:** prioriza o que implementar pelo impacto real na experiência de quem usa a interface;\n    \n*   **Resolução de problemas:** decide como depurar e corrigir problemas de complexidade média com autonomia;\n    \n*   **Adaptabilidade e autoliderança:** transita entre demandas de complexidade crescente sem precisar de re-explicação constante de contexto;\n    \n*   **Boa comunicação:** traduz decisões técnicas de interface para quem não é desenvolvedor sem perder precisão.\n    \n\n### Informações da vaga\n\n*   Contratação: PJ;\n    \n*   Modalidade: remota, com disponibilidade para viagens eventuais para encontros presenciais;\n    \n*   Horário: 08:00 às 17:30;\n    \n*   Formação: ensino superior completo ou em andamento, ou experiência equivalente comprovada na área;\n    \n*   Experiência: 2 a 4 anos na função.\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - React \n- Tailwind CSS \n- Vitest \n- Typescript \n- Redux \n- Zustand \n- Docker \n- Figma \n- Testing Library \n- TanStack Query\n## Local: \n Remota\n## Requisitos: \n - React e TypeScript em nível intermediário, com capacidade de desenhar estrutura de estado e componentes reutilizáveis \n- Vite, Node (18 a 24) e gerenciador de pacotes (npm ou pnpm) \n- MUI v5 + Emotion + design system próprio (@truckpag/components) e Tailwind CSS + shadcn/ui + Radix UI + Lucide \n- Gestão de estado: Redux + Redux Toolkit + Redux Saga (legado), Zustand (novos), TanStack Query e Context API ou Constate \n- Formulários com React Hook Form + Yup (legado) ou Zod (novos) \n- Tabelas com react-table v7 / material-react-table (legado) e TanStack Table v8 (novos) \n- Testes com Vitest, Testing Library e MSW para mock de API \n- Padronização de código: ESLint (@truckpag/eslint-config), Prettier, Husky, lint-staged, Commitlint ou Commitizen \n- Acessibilidade e responsividade de interfaces \n- Git e GitLab CI: escrever e entender .gitlab-ci.yml e participar do pipeline de build e teste do front-end \n- Experiência com CI/CD \n- Docker para ambiente de desenvolvimento local \n- Linux e uso de terminal como ambiente padrão de desenvolvimento \n- git-crypt para variáveis de ambiente \n- Figma: implementação fiel a partir do design entregue \n- Uso de IA no desenvolvimento no dia a dia (Cursor) \n- Integração entre sistemas via consumo de APIs \n- Metodologias ágeis (Scrum, Kanban) \n- Noções de segurança da informação e prevenção de vulnerabilidades web no front-end (XSS, CSRF, CORS e CSP)\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Developer Front-end Pleno na TruckPag](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nFront-End",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "129f0a147d53b57ff7a94bc303aeecedb35bbca0ce3eb40ecf6760666eb2ce3b",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pleno",
+        "sênior",
+        "pj",
+        "remoto",
+        "especialista"
+      ],
+      "sourceTags": [
+        "pleno",
+        "sênior",
+        "pj",
+        "remoto",
+        "especialista"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "createdAt": "2026-09-30T12:47:56Z",
+      "updatedAt": "2026-09-30T12:48:23Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8564",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_461c2de2accdad3cc973f73e",
       "sourceId": "frontendbr/vagas#8563",
@@ -1039,189 +1209,6 @@
       "dataProvenance": {
         "location": "declared",
         "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_d71471df3543c2014e94e7a8",
-      "sourceId": "frontendbr/vagas#8550",
-      "title": "[Híbrido] Developer Full Stack Python AI/LLM - Convolut",
-      "description": "<!-- \n==================================================\nPOR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!\n\n!!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!!\n\nNão faça distinção de gênero no título da vaga.\n\nUse: \"Front-End Developer\" ao invés de \n\"Desenvolvedor Front-End\" \\o/\n\nExemplo: `[São Paulo] Front-End Developer na NOME DA EMPRESA`\n==================================================\n-->\n\n## Nossa empresa\n\n**Convolut**\n\nConectamos pessoas e empresas, facilitando para que todos resolvam suas pendências. Somos uma startup em estágio inicial. O MVP está pronto e rodando ponta a ponta, e o primeiro cliente está começando a operar agora. Os founders têm bastante relacionamento no mercado e hoje temos mais clientes no pipeline do que conseguimos atender. Estamos buscando pessoas para fazer parte do founding team.\n\n## Descrição da vaga\n\nBuscamos uma pessoa desenvolvedora para integrar o time fundador e atuar no nosso sistema de negociação inteligente, multicanal e multimodal, que assume e otimiza toda a régua de cobrança de clientes inadimplentes (voz, WhatsApp, SMS e e-mail).\n\n**Atividades:**\n- Colocar em produção o sistema construído em LLM;\n- Desenvolvimento de funcionalidades no Back-End;\n- Desenvolvimento de funcionalidades no Front-End;\n- Aplicar melhores práticas de documentação de código desenvolvido.\n\n**Remuneração:**\n- Até R$ 18.000 / mês\n\n## Local\n\nHíbrido - São Paulo, SP (Av. Brigadeiro Faria Lima, 2391, cj 7)\n*(Não aceita candidatos de outra cidade)*\n\n## Requisitos\n\n**Obrigatórios:**\n- Full stack: Python (FastAPI) e React / TypeScript no dia a dia;\n- Postgres;\n- Infraestrutura com DigitalOcean e Docker;\n- Experiência com sistemas assíncronos, filas e integrações com APIs de terceiros;\n- Uso nativo de ferramentas de IA para programação;\n- Autonomia para tocar projetos de ponta a ponta e visão de negócio.\n\n**Desejáveis:**\n- Já ter colocado LLM em produção e não apenas em POC: prompt, orquestração de agente, controle de custo, tratamento de resposta ruim do modelo;\n- Experiência com telefonia e voz (LiveKit, Twilio, SIP) ou WhatsApp Cloud API;\n- Ter trabalhado em fintech, cobrança ou crédito;\n- Vivência em early-stage.\n\n## Benefícios\n\n- Oportunidade de fazer parte do founding team (perspectiva de equity / sociedade);\n- Remuneração compatível com o mercado (até R$ 18k).\n\n## Contratação\n\nPJ\n\n## Como se candidatar\nLink para se candidatar:\nhttps://kibryp.s.gy/MSsMud\n\n## Labels\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Híbrido",
-      "excerpt": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
-      "issueState": "open",
-      "contentHash": "a4bfba077ead61bdd7053db3466c5b5cc4a425f09af851af5a16d0db7e4e1b6b",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "sênior",
-        "pj",
-        "estágio",
-        "são paulo",
-        "híbrido"
-      ],
-      "sourceTags": [
-        "sênior",
-        "pj",
-        "estágio",
-        "são paulo",
-        "híbrido"
-      ],
-      "author": {
-        "id": "Arisnaldo",
-        "name": "Arisnaldo",
-        "handle": "Arisnaldo",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/103151770?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "createdAt": "2026-08-27T21:53:59Z",
-      "updatedAt": "2026-08-27T21:54:21Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8550",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "docker",
-          "postgres",
-          "python",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "internship",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "internship"
-        ],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_964d59a68b31e3bb24c601f7",
-      "sourceId": "frontendbr/vagas#8549",
-      "title": "[Híbrido] Next.js Front-End Developer Sênior na Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Front-End Developer (Next.js) nível Sênior para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 12.000 a R$ 22.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Next.js (5 anos ou mais)\n- Next.js (App Router) e React\n- TypeScript\n- SSR, SSG e ISR\n- CSS moderno\n\n**Diferenciais:**\n- Vercel\n- Testes automatizados\n- GraphQL\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-next-js-senior\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Tempo médio de feedbacks\n\nA IA da Sylision analisa o CV em minutos; quando há compatibilidade, um headhunter entra em contato em até 7 dias.\nE-mail para contato em caso de não haver resposta: giovani@sylision.com\n\n## Labels\n\n#### Alocação\n- Híbrido\n\n#### Regime\n- CLT\n- PJ\n\n#### Nível\n- Sênior",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
-      "issueState": "open",
-      "contentHash": "f0a1db4b5e6077d307977e4f7511235f018c7b989d24f1b5fd3a44d45d40fff6",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "sênior",
-        "clt",
-        "pj",
-        "remoto",
-        "híbrido"
-      ],
-      "sourceTags": [
-        "sênior",
-        "clt",
-        "pj",
-        "remoto",
-        "híbrido"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 12000,
-        "max": 22000,
-        "period": "month"
-      },
-      "createdAt": "2026-08-26T21:00:09Z",
-      "updatedAt": "2026-08-26T21:00:40Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8549",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "nextjs",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
         "seniority": "inferred",
         "workModel": "declared"
       }
