@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-09-29T21:43:44.805Z",
+  "generatedAt": "2026-09-30T03:15:53.097Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
-    "gh_f83ab72e76fc4802a6079563",
     "gh_b26dea1eadba581bed785ece",
     "gh_f2c6ad8ddbb570d902bed361",
     "gh_75e91e41a1fff3f59a91baa2",
@@ -23,89 +22,10 @@
     "gh_f7f5e01513b6b24188a7de73",
     "gh_55bedf2d15381e67bb953516",
     "gh_50535e86aa2938e1aac6bd4b",
-    "gh_2536c3c612236cf113d6f054"
+    "gh_2536c3c612236cf113d6f054",
+    "gh_313f1f028c4484af9bc95eb6"
   ],
   "items": [
-    {
-      "id": "gh_f83ab72e76fc4802a6079563",
-      "sourceId": "timqian/open-source-jobs#181",
-      "title": "Script/workflow bug",
-      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
-      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
-      "issueState": "open",
-      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "timqian",
-        "name": "timqian",
-        "handle": "timqian",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-08-03T03:51:27Z",
-      "updatedAt": "2026-08-03T03:51:27Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/181",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f83ab72e76fc4802a6079563",
-          "sourceId": "timqian/open-source-jobs#181",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/181",
-          "createdAt": "2026-08-03T03:51:27Z",
-          "updatedAt": "2026-08-03T03:51:27Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 57,
-        "publishedAt": "2026-08-03T03:51:27Z",
-        "status": "aging"
-      }
-    },
     {
       "id": "gh_b26dea1eadba581bed785ece",
       "sourceId": "frontend-pt/vagas#105",
@@ -260,7 +180,7 @@
         "sourceCount": 3
       },
       "freshness": {
-        "ageDays": 57,
+        "ageDays": 58,
         "publishedAt": "2026-08-02T23:14:58Z",
         "status": "aging"
       }
@@ -371,7 +291,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 57,
+        "ageDays": 58,
         "publishedAt": "2026-08-02T23:06:46Z",
         "status": "aging"
       }
@@ -479,7 +399,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 57,
+        "ageDays": 58,
         "publishedAt": "2026-08-02T23:01:39Z",
         "status": "aging"
       }
@@ -599,7 +519,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 57,
+        "ageDays": 58,
         "publishedAt": "2026-08-02T22:39:38Z",
         "status": "aging"
       }
@@ -2180,7 +2100,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 60,
+        "ageDays": 61,
         "publishedAt": "2026-07-31T02:42:29Z",
         "status": "aging"
       }
@@ -2303,6 +2223,127 @@
       "freshness": {
         "ageDays": 61,
         "publishedAt": "2026-07-30T21:12:45Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_313f1f028c4484af9bc95eb6",
+      "sourceId": "react-brasil/vagas#3024",
+      "title": "[Híbrido] React Native Developer Pleno na Sylision",
+      "description": "## Descrição da vaga\n\nVaga de React Native Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision.\n\nFaixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React Native compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-react-native-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.\n\n## Labels\n\n- 🏢 Flexível\n- 👨 Pleno\n- ⚖️ CLT\n- ⚖️ PJ\n- 💰 5k-10k",
+      "excerpt": "## Descrição da vaga Vaga de React Native Developer nível Pleno para atuar em projetos de empresas parceiras da Sylision. Faixa salarial: R$ 7.000 a R$ 12.000/mês, conforme experiência. ## Local Híbrido ou remoto, a c...",
+      "issueState": "open",
+      "contentHash": "1026a3aea9b93556ebb16d4160f63dcf9319e08ad1bcb7cd2a878d55fe72d2b3",
+      "repository": "react-brasil/vagas",
+      "repositoryUrl": "https://github.com/react-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "stale",
+        "⚖️ clt",
+        "⚖️ pj",
+        "🏢 flexível",
+        "🏢 remoto",
+        "👨 pleno",
+        "💰 5k-10k"
+      ],
+      "sourceTags": [
+        "stale",
+        "⚖️ clt",
+        "⚖️ pj",
+        "🏢 flexível",
+        "🏢 remoto",
+        "👨 pleno",
+        "💰 5k-10k"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "react-brasil",
+        "name": "react-brasil",
+        "avatarUrl": "https://github.com/react-brasil.png?size=80",
+        "repository": "react-brasil/vagas",
+        "url": "https://github.com/react-brasil/vagas"
+      },
+      "companyName": "Sylision",
+      "salary": {
+        "currency": "BRL",
+        "min": 7000,
+        "max": 12000,
+        "period": "month"
+      },
+      "createdAt": "2026-07-30T21:00:25Z",
+      "updatedAt": "2026-09-29T04:49:42Z",
+      "url": "https://github.com/react-brasil/vagas/issues/3024",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "react",
+          "react-native"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_313f1f028c4484af9bc95eb6",
+          "sourceId": "react-brasil/vagas#3024",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3024",
+          "createdAt": "2026-07-30T21:00:25Z",
+          "updatedAt": "2026-09-29T04:49:42Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 61,
+        "publishedAt": "2026-07-30T21:00:25Z",
         "status": "aging"
       }
     }
