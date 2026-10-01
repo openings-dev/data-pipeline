@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-09-30T21:44:00.827Z",
+  "generatedAt": "2026-10-01T03:22:32.274Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
-    "gh_dfe2c19e791285c22fdd4896",
     "gh_c99e3a932f7fe533fc8d11db",
     "gh_62dd90fe5fc8ef9fb41715bd",
     "gh_01a0a1ad79a225ed23493c50",
@@ -23,93 +22,10 @@
     "gh_bb98d5e4d31818054eb7ac4c",
     "gh_719f224c7806dc02e6dd9cd2",
     "gh_2b4556255b2af8b4faf1aa9a",
-    "gh_007e557e3cce1342e00affb2"
+    "gh_007e557e3cce1342e00affb2",
+    "gh_ea595cfd3331c8561fa42c4f"
   ],
   "items": [
-    {
-      "id": "gh_dfe2c19e791285c22fdd4896",
-      "sourceId": "ambicuity/New-Grad-Jobs#371",
-      "title": "Job data is stale: last scrape 2026-09-30T13:02:10.861624Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **203 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36744136512. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **203 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "326987d25fb6b80ddec2dc4af3352ac9843a26d9e966e26da9a5ad3fe5274d61",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-09-30T16:26:04Z",
-      "updatedAt": "2026-09-30T16:26:04Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/371",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_dfe2c19e791285c22fdd4896",
-          "sourceId": "ambicuity/New-Grad-Jobs#371",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/371",
-          "createdAt": "2026-09-30T16:26:04Z",
-          "updatedAt": "2026-09-30T16:26:04Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-09-30T16:26:04Z",
-        "status": "fresh"
-      }
-    },
     {
       "id": "gh_c99e3a932f7fe533fc8d11db",
       "sourceId": "frontendbr/vagas#8564",
@@ -1714,11 +1630,11 @@
     {
       "id": "gh_bb98d5e4d31818054eb7ac4c",
       "sourceId": "backend-br/vagas#12436",
-      "title": "[Remoto - somente EUA/Canadá] Engenheiro(a) de Software Sênior (Python / TypeScript) - Turing (via AYAN)",
-      "description": "> **Atenção:** esta vaga é **somente para quem mora nos EUA (estados aprovados) ou no Canadá**. Candidaturas de outros países não serão consideradas.\n\n## Nossa empresa\n\nA AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) de software sênior (Python / TypeScript) com olhar apurado para qualidade, para ajudar a definir como modelos de IA de fronteira são treinados.\n\n## Descrição da vaga\n\nVocê vai criar e refinar rubricas para dados de preferência, revisar dados com um padrão de qualidade muito alto e construir os pipelines em Python/TypeScript que geram e avaliam dados para um laboratório de IA líder.\n\n## Local\n\n100% remoto, **somente para quem mora nos EUA (estados aprovados) ou no Canadá**.\n\n## Requisitos\n\n**Obrigatórios:**\n\n- 5+ anos de Python (pipelines e infraestrutura) ou TypeScript (bases de código grandes, como o VSCode, são um diferencial)\n- Experiência prática com coleta de dados de preferência e/ou criação de rubricas\n- Histórico em empresas e universidades Tier 1\n- Escrita técnica clara e objetiva\n- Perfil do LinkedIn no currículo\n- 20+ horas/semana (mínimo de 4h/dia) com 4h de overlap com o horário do Pacífico (PST)\n- Inglês fluente\n\n## Benefícios\n\n- Trabalho 100% remoto\n- Trabalho direto com um laboratório de IA de fronteira\n\n## Contratação\n\nContrato de prestação de serviços (contractor), 3 meses, início imediato. Processo rápido: entrevista com IA, desafio de código e uma entrevista de 30 minutos.\n\n## Como se candidatar\n\nPreencha o formulário: https://tally.so/r/MeBXeM\n\n## Labels\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- Contrato\n\n### Alocação\n\n- Remoto",
+      "title": "[Remoto - somente EUA/Canadá] Engenheiro(a) de Software Sênior (Python / TypeScript / Go / JavaScript) - Turing (via AYAN)",
+      "description": "> **Atenção:** esta vaga é **somente para quem mora nos EUA (estados aprovados) ou no Canadá**. Candidaturas de outros países não serão consideradas.\n\n## Nossa empresa\n\nA AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) de software sênior com olhar apurado para qualidade, para ajudar a definir como modelos de IA de fronteira são treinados.\n\n## Descrição da vaga\n\nVocê vai criar e refinar rubricas para dados de preferência, revisar dados com um padrão de qualidade muito alto e construir os pipelines que geram e avaliam dados para um laboratório de IA líder.\n\n## Local\n\n100% remoto, **somente para quem mora nos EUA (estados aprovados) ou no Canadá**.\n\n## Requisitos\n\n**Obrigatórios:**\n\n- 5+ anos de Python (pipelines e infraestrutura) ou TypeScript / Golang / JavaScript (bases de código grandes, como o VSCode, são um diferencial)\n- Experiência prática com coleta de dados de preferência e/ou criação de rubricas\n- Histórico em empresas e universidades Tier 1\n- Escrita técnica clara e objetiva\n- Perfil do LinkedIn no currículo\n- 20+ horas/semana (mínimo de 4h/dia) com 4h de overlap com o horário do Pacífico (PST)\n- Inglês fluente\n\n## Benefícios\n\n- Trabalho 100% remoto\n- Trabalho direto com um laboratório de IA de fronteira\n\n## Contratação\n\nContrato de prestação de serviços (contractor), 3 meses, início imediato. 200 vagas. Processo rápido: entrevista com IA, desafio de código e uma entrevista de 30 minutos.\n\n## Como se candidatar\n\nPreencha o formulário: https://tally.so/r/MeBXeM\n\n## Labels\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- Contrato\n\n### Alocação\n\n- Remoto",
       "excerpt": "> **Atenção:** esta vaga é **somente para quem mora nos EUA (estados aprovados) ou no Canadá**. Candidaturas de outros países não serão consideradas. ## Nossa empresa A AYAN é parceira oficial da Turing, empresa que c...",
       "issueState": "open",
-      "contentHash": "b08cd7baf7733d43f136950974c15a445bdae06c5235544f4391b9327ec8184f",
+      "contentHash": "d969447fb3728c070ee7452491ce8e389dc1eaf36eaef72d65eb4da481e2a1a9",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
@@ -1730,6 +1646,8 @@
       },
       "tags": [
         "contrato",
+        "go",
+        "javascript",
         "python",
         "remoto",
         "sênior",
@@ -1737,6 +1655,8 @@
       ],
       "sourceTags": [
         "contrato",
+        "go",
+        "javascript",
         "python",
         "remoto",
         "sênior",
@@ -1756,7 +1676,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-28T20:02:31Z",
-      "updatedAt": "2026-09-28T20:02:48Z",
+      "updatedAt": "2026-09-30T23:52:22Z",
       "url": "https://github.com/backend-br/vagas/issues/12436",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1771,6 +1691,8 @@
       "taxonomy": {
         "areas": [],
         "technologies": [
+          "go",
+          "javascript",
           "python",
           "typescript"
         ],
@@ -1801,7 +1723,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12436",
           "createdAt": "2026-09-28T20:02:31Z",
-          "updatedAt": "2026-09-28T20:02:48Z",
+          "updatedAt": "2026-09-30T23:52:22Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -2153,6 +2075,124 @@
       "freshness": {
         "ageDays": 2,
         "publishedAt": "2026-09-28T07:33:11Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_ea595cfd3331c8561fa42c4f",
+      "sourceId": "backend-br/vagas#12434",
+      "title": "Desenvolvedor / Engenheiro de IA (AI Stack) - Programa AI Stack - Rio de Janeiro - RJ",
+      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nNEXAGEN AI é uma cooperativa global de engenheiros de IA, arquitetos e estrategistas seniores, focada no desenvolvimento e implementação de soluções de Inteligência Artificial em nível de produção.\n\nhttps://nexagen-ai-zeta.vercel.app/\n\n## Descrição da vaga\n\nPerfil Desenvolvedor & Engenheiro de IA (AI Stack)\n\nFoco: Arquitetura de sistemas, desenvolvimento hands-on, integração de LLMs e automação de pipelines de IA.\n## Local\n\nHíbrido\n\n## Requisitos\n\nDomínio de desenvolvimento em Python, Node.js / TypeScript ou .NET.\nExperiência com AI Stack:\nIntegração de APIs de LLMs: Gemini API, OpenAI / ChatGPT API e Claude.\nExecução e orquestração de modelos locais / open-source: Ollama e Hugging Face.\nFrameworks e SDKs de IA: LangChain, LlamaIndex, AI SDK, AutoGen / agentes ReAct.\nBancos de dados vetoriais e arquiteturas RAG (Retrieval-Augmented Generation).\nPráticas de engenharia de software: pipelines de CI/CD, testes, automação e arquitetura limpa.\n\n## Benefícios\n\nParticipação em programa de capacitação e possibilidade de acesso a oportunidades de atuação em projetos e consultorias de Inteligência Artificial, de acordo com proficiência técnica, perfil e disponibilidade das oportunidades.\n\n## Contratação\n\nAs oportunidades poderão envolver alocação por projeto, consultoria técnica ou dedicação full-time / part-time, conforme o projeto.\n\n## Como se candidatar\n\nEnvie seu currículo atualizado em PDF para:\n rhiabrasil@gmail.com\n\nAssunto: [Candidatura AI Stack] - Perfil 2 (Desenvolvedor)\n\nLinks relevantes (opcional): GitHub, LinkedIn ou portfólio de projetos.\n\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n\n- Sênior\n- Especialista\n\n### Regime\n\nPJ\nFreelance\n\n\n### Alocação\n\nRio de Janeiro - RJ.\n\nAtuação em modelo híbrido. A oportunidade é destinada exclusivamente a profissionais residentes no Rio de Janeiro.",
+      "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa NEXAGEN AI é uma cooperativa global de engenheiros de IA, arquitetos e estrategistas seniores, focada no desenvolvimento e implementação de soluçõe...",
+      "issueState": "open",
+      "contentHash": "dff3da3868f80535c624ba9207ac6ad5059dd59c2ff3614dbcb85f9ce88f48d0",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "especialista",
+        "freelance",
+        "híbrido",
+        "node.js",
+        "pj",
+        "python",
+        "sênior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "especialista",
+        "freelance",
+        "híbrido",
+        "node.js",
+        "pj",
+        "python",
+        "sênior",
+        "typescript"
+      ],
+      "author": {
+        "id": "rhiabrasil",
+        "name": "rhiabrasil",
+        "handle": "rhiabrasil",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/334702483?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-09-28T00:45:22Z",
+      "updatedAt": "2026-09-28T00:45:39Z",
+      "url": "https://github.com/backend-br/vagas/issues/12434",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai"
+        ],
+        "technologies": [
+          "dotnet",
+          "nodejs",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "full-time",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_ea595cfd3331c8561fa42c4f",
+          "sourceId": "backend-br/vagas#12434",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12434",
+          "createdAt": "2026-09-28T00:45:22Z",
+          "updatedAt": "2026-09-28T00:45:39Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-09-28T00:45:22Z",
         "status": "fresh"
       }
     }
