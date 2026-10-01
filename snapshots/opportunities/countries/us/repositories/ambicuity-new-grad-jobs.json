@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-01T03:22:32.274Z",
+  "generatedAt": "2026-10-01T20:01:49.562Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 10,
+    "opportunities": 9,
     "openIssues": 1,
-    "closedIssues": 9
+    "closedIssues": 8
   },
-  "dataHash": "c2593f732f29309e9ae0bd093658b4d5f0e2cedfd6577f9c54fc49d218ea4b0c",
+  "dataHash": "b1244578ca58fbefc30dd080c59c8ceaed93dc40670157a09909ad81ad6706ac",
   "items": [
     {
       "id": "gh_dfe2c19e791285c22fdd4896",
@@ -560,73 +560,6 @@
           "mobile"
         ],
         "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_5a116f32e238bd1e560006b1",
-      "sourceId": "ambicuity/New-Grad-Jobs#344",
-      "title": "chore(frontend): remove orphaned pre-terminal site files (app.js, styles.css, ui.js, contributors.js, site-metrics.js)",
-      "description": "### Summary\n\nThe **NGJ terminal redesign** (`262d287d`) replaced the original vanilla-JS/CSS GitHub Pages site with the React (Babel-in-browser) UI under `docs/terminal/*.jsx`. The old entry files were left behind as orphans — `docs/index.html` now loads **only** `terminal/*`, and nothing else references them.\n\nCodeRabbit flagged on #336 that repo cleanup should land in its own PR; this issue tracks that cleanup properly.\n\n### Dead files to remove\n\nVerified: not loaded by `docs/index.html`, and zero references from CI workflows, Lighthouse config, `.pre-commit-config.yaml`, HTML `<link>`/`<script>`, or any active `terminal/*.jsx`.\n\n| File | Size | Was |\n|------|------|-----|\n| `docs/app.js` | 43 KB | Old vanilla job-board logic |\n| `docs/styles.css` | 52 KB | Old stylesheet (index.html now uses inline styles) |\n| `docs/contributors.js` | 6.7 KB | Old contributors-page logic |\n| `docs/ui.js` | 3.8 KB | Old mobile hamburger nav |\n| `docs/site-metrics.js` | 2 KB | Old metrics widget (zero references) |\n\n**Kept:** `docs/contributors.html` — now a deliberate redirect stub to `index.html#contributors` (serves old bookmarks). Not dead.\n\n### Stale references to fix (docs point at deleted files)\n\n- `CONTRIBUTING.md` — directory tree + Code Style section reference `docs/app.js`, `docs/styles.css`, `docs/stats.js`\n- `docs/adr/0002-github-pages-deployment.md` — names deleted files\n- `docs/architecture.md` — describes frontend as \"Vanilla JS\" (now React via in-browser Babel)\n- `.github/ISSUE_TEMPLATE/feature_request.yml` and `05_advanced_issue.yml` — example text references `docs/app.js`\n- `tests/test_display_count_copy.py` — comment about removed files\n\n### Acceptance criteria\n\n- [ ] 5 orphan files deleted\n- [ ] All doc/template/test references updated to the current `docs/terminal/*.jsx` architecture\n- [ ] `make test` green; `pre-commit run --all-files` green\n- [ ] Live site (`docs/index.html`) unaffected — still loads `terminal/*` only",
-      "excerpt": "### Summary The **NGJ terminal redesign** (`262d287d`) replaced the original vanilla-JS/CSS GitHub Pages site with the React (Babel-in-browser) UI under `docs/terminal/*.jsx`. The old entry files were left behind as o...",
-      "issueState": "closed",
-      "contentHash": "0a307b8d84bd853edd1df0b29756f1f4650a4fbae2efff5c1566e7e0d06db237",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "type: chore",
-        "needs-triage"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "type: chore",
-        "needs-triage"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-07-15T23:21:49Z",
-      "updatedAt": "2026-07-15T23:32:06Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/344",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend",
-          "mobile"
-        ],
-        "technologies": [
-          "react"
-        ],
         "seniority": [],
         "employmentTypes": [],
         "workModels": [],
