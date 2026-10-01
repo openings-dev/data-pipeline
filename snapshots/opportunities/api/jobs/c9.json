@@ -1,6 +1,87 @@
 {
-  "generatedAt": "2026-10-01T03:22:32.274Z",
+  "generatedAt": "2026-10-01T12:09:50.381Z",
   "items": {
+    "gh_c9dbe8c3245224e55d772ee5": {
+      "id": "gh_c9dbe8c3245224e55d772ee5",
+      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#8",
+      "title": "Add an \"Updated At\" timestamp column so readers can spot new roles",
+      "description": "The `Date Posted` column is day-level only, so when new roles get added between refreshes there's no way to tell which rows are new since my last visit — I have to re-scan the whole table from the top and remember where I left off.\n\nProposal: add a column (e.g. `Updated At`) showing the date + time each row was added or updated by the bot, like:\n\n| Company | Job Title | Location | Date Posted | Updated At |\n|---|---|---|---|---|\n| Company A | ... | ... | Sep 29 | Sep 29, 13:53 |\n| Company B | ... | ... | Sep 29 | Sep 29, 17:54 |\n\nThis should be feasible since the bot already knows when it inserts each row (the timestamp is implicit in the commit history today) — persisting it per-row just makes it visible to everyone. Readers could then instantly see what's new since their last refresh.",
+      "excerpt": "The `Date Posted` column is day-level only, so when new roles get added between refreshes there's no way to tell which rows are new since my last visit — I have to re-scan the whole table from the top and remember whe...",
+      "issueState": "open",
+      "contentHash": "bfc98df4fa468990e5bde9265c165b2dc1a13a1a57b5644b6d76b1772d5f5389",
+      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "akshatshahh",
+        "name": "akshatshahh",
+        "handle": "akshatshahh",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/98461448?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+      },
+      "companyName": "Job Title",
+      "createdAt": "2026-10-01T05:16:11Z",
+      "updatedAt": "2026-10-01T05:16:11Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/8",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_c9dbe8c3245224e55d772ee5",
+          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#8",
+          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/8",
+          "createdAt": "2026-10-01T05:16:11Z",
+          "updatedAt": "2026-10-01T05:16:11Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-01T05:16:11Z",
+        "status": "fresh"
+      }
+    },
     "gh_c99e3a932f7fe533fc8d11db": {
       "id": "gh_c99e3a932f7fe533fc8d11db",
       "sourceId": "frontendbr/vagas#8564",
@@ -284,7 +365,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1160,
+        "ageDays": 1161,
         "publishedAt": "2023-07-28T10:36:41Z",
         "status": "stale"
       }
