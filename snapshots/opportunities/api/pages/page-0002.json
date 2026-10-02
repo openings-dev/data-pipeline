@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-02T09:13:29.163Z",
+  "generatedAt": "2026-10-02T17:09:35.452Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_89dcbc79e38c36bf725d0c43",
     "gh_6f9fd79e1626999457c55a32",
     "gh_4cb39f6675d3a84f550bc860",
     "gh_2053fcbed89f4b0a9f16deab",
@@ -22,10 +23,91 @@
     "gh_2225650e80acfb4546882b42",
     "gh_6096c22ce5a05150b15df844",
     "gh_3facc8a3975e165502c9db3f",
-    "gh_0bce997abd900e64be05d7f3",
-    "gh_b4197231ee36d78db1f0e1ba"
+    "gh_0bce997abd900e64be05d7f3"
   ],
   "items": [
+    {
+      "id": "gh_89dcbc79e38c36bf725d0c43",
+      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#6",
+      "title": "Question about reading public listings on didtheyghostme Singapore (personal final-year project)",
+      "description": "Hello didtheyghostme Singapore team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/didtheyghostme/Singapore-Summer2026-TechInternships/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello didtheyghostme Singapore team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any uni...",
+      "issueState": "open",
+      "contentHash": "e031e799c5d109a89ba59b61985b2187e6bd72a7e9840397927aad953ba11406",
+      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+      "region": "Asia",
+      "country": "Singapore",
+      "sourceLocation": {
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+      },
+      "createdAt": "2026-09-30T10:27:11Z",
+      "updatedAt": "2026-09-30T10:27:11Z",
+      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/6",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_89dcbc79e38c36bf725d0c43",
+          "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#6",
+          "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+          "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+          "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/6",
+          "createdAt": "2026-09-30T10:27:11Z",
+          "updatedAt": "2026-09-30T10:27:11Z",
+          "community": {
+            "id": "didtheyghostme",
+            "name": "didtheyghostme",
+            "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+            "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+            "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2,
+        "publishedAt": "2026-09-30T10:27:11Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_6f9fd79e1626999457c55a32",
       "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
@@ -103,7 +185,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-09-30T10:26:56Z",
         "status": "fresh"
       }
@@ -925,7 +1007,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-09-28T10:12:40Z",
         "status": "fresh"
       }
@@ -1431,7 +1513,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-09-25T13:03:01Z",
         "status": "fresh"
       }
@@ -1551,7 +1633,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-09-25T13:02:57Z",
         "status": "fresh"
       }
@@ -1645,7 +1727,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-24T16:06:58Z",
         "status": "fresh"
       }
@@ -1768,7 +1850,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-24T10:59:51Z",
         "status": "fresh"
       }
@@ -2038,116 +2120,6 @@
       "freshness": {
         "ageDays": 8,
         "publishedAt": "2026-09-24T02:48:34Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_b4197231ee36d78db1f0e1ba",
-      "sourceId": "backend-br/vagas#12431",
-      "title": "[Remoto] Lead Database & Data Platform Engineer (Strider)",
-      "description": "VAGA INTERNACIONAL | REMOTA | USD\n\n LEAD DATABASE & DATA PLATFORM ENGINEER\n\nOportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto.\n\n💰 USD 5.000–8.000/mês\n🇺🇸 Inglês C1+\n💼 7+ anos de experiência\n🕐 Long-term · 40h/semana\n\n Tecnologias:\n• AWS\n• MySQL\n• Microsoft SQL Server\n• Database & Data Platforms\n\n🌎 Vaga para profissionais da América Latina.\n\n\n\n📩 Aplique👇🏻 \nhttps://app.onstrider.com/r/claudiaantunes?job=bGVhZC1kYXRhYmFzZS1kYXRhLXBsYXRmb3JtLWVuZ2luZWVyLWQ0YWZlMzc0P3JlZmVycmFsPWNsYXVkaWFhbnR1bmVz",
-      "excerpt": "VAGA INTERNACIONAL | REMOTA | USD LEAD DATABASE & DATA PLATFORM ENGINEER Oportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto. 💰 USD 5.000–8.000/mês 🇺\ud83c...",
-      "issueState": "open",
-      "contentHash": "7f8bc5666421e7dc9901d01bd5a163bebb3b0d507512481a4da6e3bdc9f825c6",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "aws",
-        "mysql",
-        "remoto",
-        "sql"
-      ],
-      "sourceTags": [
-        "aws",
-        "mysql",
-        "remoto",
-        "sql"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 5000,
-        "max": 8000,
-        "period": "month"
-      },
-      "createdAt": "2026-09-23T16:57:25Z",
-      "updatedAt": "2026-09-23T16:57:43Z",
-      "url": "https://github.com/backend-br/vagas/issues/12431",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre"
-        ],
-        "technologies": [
-          "aws",
-          "mysql"
-        ],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b4197231ee36d78db1f0e1ba",
-          "sourceId": "backend-br/vagas#12431",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12431",
-          "createdAt": "2026-09-23T16:57:25Z",
-          "updatedAt": "2026-09-23T16:57:43Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T16:57:25Z",
         "status": "fresh"
       }
     }
