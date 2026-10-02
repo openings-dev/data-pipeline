@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-10-02T00:23:18.735Z",
+  "generatedAt": "2026-10-02T09:13:29.163Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_6f9fd79e1626999457c55a32",
+    "gh_4cb39f6675d3a84f550bc860",
+    "gh_2053fcbed89f4b0a9f16deab",
+    "gh_d4c7dfe0cf934a1a36146713",
+    "gh_a1647bfa438d985a5a959c58",
     "gh_bb98d5e4d31818054eb7ac4c",
     "gh_719f224c7806dc02e6dd9cd2",
     "gh_2b4556255b2af8b4faf1aa9a",
@@ -18,14 +23,560 @@
     "gh_6096c22ce5a05150b15df844",
     "gh_3facc8a3975e165502c9db3f",
     "gh_0bce997abd900e64be05d7f3",
-    "gh_b4197231ee36d78db1f0e1ba",
-    "gh_9a209b66f806a0d8049b8e95",
-    "gh_81101225f8f8a2c29de5c5b8",
-    "gh_447cc5783e558f477cf03095",
-    "gh_f57d60a6e9ecbafe44d2c3d3",
-    "gh_803be473276db52bc1817412"
+    "gh_b4197231ee36d78db1f0e1ba"
   ],
   "items": [
+    {
+      "id": "gh_6f9fd79e1626999457c55a32",
+      "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
+      "title": "Question about reading public listings on Canadian Tech Internships 2027 (personal final-year project)",
+      "description": "Hello Canadian Tech Internships 2027 team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most once):\n    GET raw.githubusercontent.com/negarprh/Canadian-Tech-Internships-2027/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello Canadian Tech Internships 2027 team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by a...",
+      "issueState": "open",
+      "contentHash": "f6b74beb1b1a1a34b99442d8c4f0435a9bff1fc9df724de9b4e2fca55d1f41a1",
+      "repository": "negarprh/Canadian-Tech-Internships-2026",
+      "repositoryUrl": "https://github.com/negarprh/Canadian-Tech-Internships-2026",
+      "region": "North America",
+      "country": "Canada",
+      "sourceLocation": {
+        "country": "Canada",
+        "countryCode": "CA",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "manuchehrqoriev798",
+        "name": "manuchehrqoriev798",
+        "handle": "manuchehrqoriev798",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "negarprh",
+        "name": "negarprh",
+        "avatarUrl": "https://github.com/negarprh.png?size=80",
+        "repository": "negarprh/Canadian-Tech-Internships-2026",
+        "url": "https://github.com/negarprh/Canadian-Tech-Internships-2026"
+      },
+      "createdAt": "2026-09-30T10:26:56Z",
+      "updatedAt": "2026-09-30T10:26:56Z",
+      "url": "https://github.com/negarprh/Canadian-Tech-Internships-2027/issues/358",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_6f9fd79e1626999457c55a32",
+          "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
+          "repository": "negarprh/Canadian-Tech-Internships-2026",
+          "repositoryUrl": "https://github.com/negarprh/Canadian-Tech-Internships-2026",
+          "url": "https://github.com/negarprh/Canadian-Tech-Internships-2027/issues/358",
+          "createdAt": "2026-09-30T10:26:56Z",
+          "updatedAt": "2026-09-30T10:26:56Z",
+          "community": {
+            "id": "negarprh",
+            "name": "negarprh",
+            "avatarUrl": "https://github.com/negarprh.png?size=80",
+            "repository": "negarprh/Canadian-Tech-Internships-2026",
+            "url": "https://github.com/negarprh/Canadian-Tech-Internships-2026"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1,
+        "publishedAt": "2026-09-30T10:26:56Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_4cb39f6675d3a84f550bc860",
+      "sourceId": "awesome-jobs/jobs#5073",
+      "title": "LINE Pay Vietnam - QA - Saigon, District 10",
+      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n* We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobile, Web, service servers, databases, etc.)\n\n### Responsibilities\n\n- Analyze complex software systems and collaborate with global teams to improve the overall design, testability, and quality of the platform\n- Performing all testing activities across one or more projects, utilizing tools, scripts and software that ensure the quality and reliability\n- Develop and execute test cases to diagnose issues and bugs, creating test data when required\n- Working with a global team, communicating effectively with developers, project managers, business operations on test related information\n- Identifying quality issues and drive corrective actions to resolve them\n\n### Qualifications\n- At least 3-years related experiences\n- Solid knowledge about computer science (objected-oriented design, algorithms, data structures, databases, networks, etc.)\n- Strong knowledge of software QA methodologies, tools and processes\n- Experience designing and conducting Performance Testing, Security Testing, Migration Testing\n- Experience in creating and proposing unit tests as well as integration tests that match the architecture and nature of the service. Ability to identify and escalate issues in a timely manner\n- Good analytical and problem solving skills\n- Good communication and interpersonal skills\n- Growth mindset and eagerness to learn\n- •ble to communicate in English efficiently in technical work\n- Familiarity with Test Automation is a plus\n- Experience with Payment or Fintech Service is a plus\n- Experience with using AI in work\n\n### Nice to have\n- ISTQB/ISEB Certificate or equivalence\n- Experience with working in micro services architecture\n- Experience with working in Agile environment\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
+      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary * We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobil...",
+      "issueState": "open",
+      "contentHash": "c177172dc7d369d270800f1feb434f6a254e6c3b625b53c311594f7583138ec6",
+      "repository": "awesome-jobs/jobs",
+      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "tungthanhng",
+        "name": "tungthanhng",
+        "handle": "tungthanhng",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/jobs",
+        "url": "https://github.com/awesome-jobs/jobs"
+      },
+      "createdAt": "2026-09-30T04:05:24Z",
+      "updatedAt": "2026-09-30T04:05:24Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "* District 10, HCMC",
+        "displayText": "* District 10, HCMC, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "mobile",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4cb39f6675d3a84f550bc860",
+          "sourceId": "awesome-jobs/jobs#5073",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+          "createdAt": "2026-09-30T04:05:24Z",
+          "updatedAt": "2026-09-30T04:05:24Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        },
+        {
+          "id": "gh_a930f487b8ffc8c5d45c7938",
+          "sourceId": "awesome-jobs/vietnam#5073",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+          "createdAt": "2026-09-30T04:05:24Z",
+          "updatedAt": "2026-09-30T04:05:24Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 2,
+        "publishedAt": "2026-09-30T04:05:24Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_2053fcbed89f4b0a9f16deab",
+      "sourceId": "awesome-jobs/vietnam#5072",
+      "title": "LINE Pay Vietnam - Backend Engineer - Saigon, District 10",
+      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n- We are looking for a Mid/Senior Backend Engineer to design, build, maintain, and improve large-scale backend services. The role involves working on distributed systems that support user-facing products, business operations, partner integrations, and mission-critical transaction flows.\n- You will collaborate with product, QA, operations, and overseas engineering teams to deliver reliable backend features, improve system performance, and support production stability.\n\n### Responsibilities\n\n- Design, develop, maintain, and enhance backend services using Java and Spring Boot.\n- Build and operate scalable APIs and service-to-service integrations for user- facing and internal business systems.\n- Work with distributed system components such as relational databases, message queues, caches, search platforms, and file/object storage.\n- Participate in designing reliable workflows for business-critical operations such as transaction processing, asynchronous events, data synchronization, reporting, and reconciliation.\n- Investigate and resolve production issues across APIs, background jobs, messaging systems, caches, databases, and external integrations.\n- Improve system reliability, performance, scalability, observability, and maintainability.\n- Write clean, testable, maintainable code and participate in code reviews.\n- Collaborate with cross-functional and international teams to clarify requirements, design solutions, and deliver features safely.\n- Contribute to technical documentation, runbooks, onboarding materials, and operational knowledge sharing.\n\n### Requirements\n- Over 5 years of experience in backend development, preferably with large-scale or distributed systems.\n- Strong proficiency in Java and hands-on experience with Spring Boot.\n- Solid experience designing, implementing, and maintaining RESTful APIs and\nbackend services.\n- Experience with relational databases such as MySQL, including basic schema design, query optimization, transaction handling, and data consistency.\n- Experience with Kafka or similar messaging systems, including asynchronous processing, producer/consumer patterns, retry handling, and idempotency.\n- Experience with Redis or similar caching systems for caching, temporary state management, distributed locking, or rate limiting.\n- Familiarity with Elasticsearch or other search/indexing platforms is a plus.\n- Familiarity with Docker, Kubernetes, CI/CD pipelines, and cloud/container- based deployment is a plus.\n- Understanding of system reliability topics such as logging, monitoring, tracing, alerting, performance tuning, and incident investigation.\n- Strong understanding of testing practices, code review, maintainability, secure coding, and production-safe rollout.\n- Good communication skills and willingness to work with international stakeholders.\n\n\n### Preferred Qualification\n- Experience in payment, fintech, e-commerce, order management, settlement, coupon/voucher, or other transaction-heavy systems.\n- Experience designing high-consistency workflows such as checkout, payment, refund, inventory, reconciliation, or asynchronous fulfillment.\n- Experience operating scheduled jobs, batch processing, retry workflows, and incident recovery procedures.\n- Experience with API gateways, authentication/authorization, or secure service-to- service communication.\n- Experience with object storage, file export/import workflows, or reporting systems.\n- Ability to document architecture clearly, including service boundaries, API contracts, data ownership, operational runbooks, and failure scenarios.\n\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
+      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary - We are looking for a Mid/Senior Backend Engineer to design, build, maintain, and improve large-scale backend services. The role involves working on distributed sys...",
+      "issueState": "open",
+      "contentHash": "88e7a060667d391654411bbc147acfac123753bb6e7cf17a6ba14e096c786cf0",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "java",
+        "senior"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "java",
+        "senior"
+      ],
+      "author": {
+        "id": "tungthanhng",
+        "name": "tungthanhng",
+        "handle": "tungthanhng",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-09-30T03:59:10Z",
+      "updatedAt": "2026-09-30T03:59:10Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "* District 10, HCMC",
+        "displayText": "* District 10, HCMC, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "qa"
+        ],
+        "technologies": [
+          "docker",
+          "java",
+          "kubernetes",
+          "mysql",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2053fcbed89f4b0a9f16deab",
+          "sourceId": "awesome-jobs/vietnam#5072",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
+          "createdAt": "2026-09-30T03:59:10Z",
+          "updatedAt": "2026-09-30T03:59:10Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_a5c0bb76d60d1f7139836a92",
+          "sourceId": "awesome-jobs/jobs#5072",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
+          "createdAt": "2026-09-30T03:59:10Z",
+          "updatedAt": "2026-09-30T03:59:10Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 2,
+        "publishedAt": "2026-09-30T03:59:10Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_d4c7dfe0cf934a1a36146713",
+      "sourceId": "awesome-jobs/vietnam#5071",
+      "title": "LINE Pay Vietnam - Frontend Engineer - Saigon, District 10",
+      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n* We are looking for bright, creative, self-starting engineers with broad experience developing and optimizing UX/UI for web application\n\n### Responsibilities\n\n- Develop and maintain responsive, high-quality web applications using React and Next.js\n- Translate Figma designs into production-ready user interfaces\n- Build reusable UI components and interactive frontend experiences\n- Integrate frontend applications with APIs and manage client-side data\n- Collaborate with designers, backend engineers, and other stakeholders to deliver product features\n- Write clean, maintainable code and participate in code reviews\n- Troubleshoot frontend issues and improve performance, usability, and overall user experience\n\n### Basic Qualification\n\n- Proficiency in TypeScript, JavaScript, HTML, and CSS, with a strong interest in how things work under the hood\n- Hands-on experience with modern frameworks such as React and Next.js\n- Familiarity with version control using Git and experience with code reviews\n- Experience in developing mobile web applications\n- Ability to translate Figma designs into responsive, pixel-accurate, and production- ready user interfaces\n- • Solid experience in modern front-end build pipelines and tools (e.g. Git, Webpack, Gulp, NPM)\n\n### Preferred Qualification\n- Experience working in a monorepo environment using tools like Lerna or Nx\n-  Familiarity with end-to-end testing tools such as Playwright or Cypress\n- Knowledge of testing frameworks like Jest, React Testing Library, MSW\n- Experience with CI/CD pipelines, especially using GitHub Actions\n- Experience building multilingual and globally distributed web services\n-  Experience with data-fetching and caching libraries such as TanStack Query (React Query), SWR, or similar\n- Experience building interactive UI transitions and animations using CSS animations, transitions, transforms, and keyframes\n- Experience using UI component libraries such as Ant Design or similar\n\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
+      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary * We are looking for bright, creative, self-starting engineers with broad experience developing and optimizing UX/UI for web application ### Responsibilities - Devel...",
+      "issueState": "open",
+      "contentHash": "3f3326df4c1c8dbdc22a6b2f7af04f045869c18f919c602378deb21319917fa1",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "java",
+        "react",
+        "typescript"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "frontend",
+        "java",
+        "react",
+        "typescript"
+      ],
+      "author": {
+        "id": "tungthanhng",
+        "name": "tungthanhng",
+        "handle": "tungthanhng",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-09-30T03:56:50Z",
+      "updatedAt": "2026-09-30T03:56:50Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "* District 10, HCMC",
+        "displayText": "* District 10, HCMC, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "nextjs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_d4c7dfe0cf934a1a36146713",
+          "sourceId": "awesome-jobs/vietnam#5071",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
+          "createdAt": "2026-09-30T03:56:50Z",
+          "updatedAt": "2026-09-30T03:56:50Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_f6b9357a7652e7eeae5e03e6",
+          "sourceId": "awesome-jobs/jobs#5071",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
+          "createdAt": "2026-09-30T03:56:50Z",
+          "updatedAt": "2026-09-30T03:56:50Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 2,
+        "publishedAt": "2026-09-30T03:56:50Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_a1647bfa438d985a5a959c58",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9699",
+      "title": "Student Learning Coach - Coding",
+      "description": "### Link to Internship Posting\n\nhttps://www.linkedin.com/jobs/view/4471624326/\n\n### Company Name\n\nPrivate Family\n\n### Internship Title\n\nStudent Learning Coach - Coding\n\n### Location\n\nMiami, FL | Remote\n\n### What term(s) is this internship offered for?\n\nWinter 2027\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nPaid, part-time role ($100/hr, 8 hrs/week, in person in Kendall, Miami) mentoring two high-school students through a project-based program in coding, writing, and research. The work is building things with them: shipping websites, writing code, publishing work. It's not tutoring or homework help. Coding ability is required; teaching experience is not. It's a strong fit for CS students who want to lead something real. Posted on behalf of a private family by their recruiter.",
+      "excerpt": "### Link to Internship Posting https://www.linkedin.com/jobs/view/4471624326/ ### Company Name Private Family ### Internship Title Student Learning Coach - Coding ### Location Miami, FL | Remote ### What term(s) is th...",
+      "issueState": "open",
+      "contentHash": "d27f52af173311cda0ec655673251c5a3101705a5de608f73d35ef59b8dd8aa2",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
+        "new_internship"
+      ],
+      "author": {
+        "id": "skrejcipapa",
+        "name": "skrejcipapa",
+        "handle": "skrejcipapa",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/240150649?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-09-29T19:44:12Z",
+      "updatedAt": "2026-09-29T19:44:12Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9699",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Miami",
+        "subdivision": "FL",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Miami, FL · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "internship",
+          "lead"
+        ],
+        "employmentTypes": [
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_a1647bfa438d985a5a959c58",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9699",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9699",
+          "createdAt": "2026-09-29T19:44:12Z",
+          "updatedAt": "2026-09-29T19:44:12Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 2,
+        "publishedAt": "2026-09-29T19:44:12Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_bb98d5e4d31818054eb7ac4c",
       "sourceId": "backend-br/vagas#12436",
@@ -472,7 +1023,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-09-28T07:33:11Z",
         "status": "fresh"
       }
@@ -590,7 +1141,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-09-28T00:45:22Z",
         "status": "fresh"
       }
@@ -1304,7 +1855,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-24T02:54:20Z",
         "status": "fresh"
       }
@@ -1398,7 +1949,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-24T02:52:30Z",
         "status": "fresh"
       }
@@ -1485,7 +2036,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-24T02:48:34Z",
         "status": "fresh"
       }
@@ -1597,470 +2148,6 @@
       "freshness": {
         "ageDays": 8,
         "publishedAt": "2026-09-23T16:57:25Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_9a209b66f806a0d8049b8e95",
-      "sourceId": "rebase-network/who-is-hiring#1306",
-      "title": "[日本横滨] web3交易所 测试工程师 30K RMB",
-      "description": "岗位：测试工程师\n\n工作地点：日本横滨\n薪资范围：20,000–40,000 元人民币/月，能力优秀者薪资另议\n语言要求：不限\n工时：8 小时，周休 1 日\n国籍：不限\n\n工作职责\n1. 分析产品需求，编写测试计画、执行测试案例并回馈问题。\n2. 协助研发工程师修复 Bug。\n3. 推动专案进度，改善相关流程，提高测试品质与效率。\n\n任职要求\n1. 2 年以上工作经验，具备 APP、网站、Web 测试经验。\n2. 具备良好的测试思维，熟悉测试流程，能独立设计及执行测试案例。\n3. 具备良好沟通及问题解决能力，能主动追踪 Bug 成因及修复进度。\n4. 具备 API 测试经验，熟悉 JMeter、Fiddler、Postman 等工具。\n5. 了解计算机相关知识，有 Java、C、C++、C#、Python 等程式设计能力者优先。\n6. 有白盒测试、自动化测试、效能测试或行动端测试经验者优先。\n7. 有 Appium、Selenium 等工具经验者优先。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "岗位：测试工程师 工作地点：日本横滨 薪资范围：20,000–40,000 元人民币/月，能力优秀者薪资另议 语言要求：不限 工时：8 小时，周休 1 日 国籍：不限 工作职责 1. 分析产品需求，编写测试计画、执行测试案例并回馈问题。 2. 协助研发工程师修复 Bug。 3. 推动专案进度，改善相关流程，提高测试品质与效率。 任职要求 1. 2 年以上工作经验，具备 APP、网站、Web 测试经验。 2. 具备良好的测试思维，熟...",
-      "issueState": "open",
-      "contentHash": "064a5387b529f79026c1cf215bae2dd2df3ed3dcec6f84f140beab2e066ecbec",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang",
-        "java",
-        "python"
-      ],
-      "sourceTags": [
-        "golang",
-        "java",
-        "python"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-23T10:38:10Z",
-      "updatedAt": "2026-09-23T10:38:10Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1306",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "csharp",
-          "go",
-          "java",
-          "python",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_9a209b66f806a0d8049b8e95",
-          "sourceId": "rebase-network/who-is-hiring#1306",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1306",
-          "createdAt": "2026-09-23T10:38:10Z",
-          "updatedAt": "2026-09-23T10:38:10Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T10:38:10Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_81101225f8f8a2c29de5c5b8",
-      "sourceId": "rebase-network/who-is-hiring#1305",
-      "title": "[日本大阪] web3 交易所 高级测试开发工程师（区块链钱包方向） 8000 USD",
-      "description": "岗位：高级测试开发工程师（区块链钱包方向）\n工作地点：日本大阪\n薪资范围：5,000–10,000 美金/月\n语言要求：中文\n工时：8 小时，周休 1 日\n国籍：不限\n\n工作职责\n1. 参与产品及技术方案评审，识别资产、权限、状态机、幂等、并发及资料一致性风险。\n2. 根据业务风险制定测试策略、测试计画、测试矩阵及发布标准。\n3. 负责托管钱包、AA 钱包、理财、企业金库及多签业务的功能、API、整合及 E2E 测试。\n4. 验证充值、提币、转帐、签名、广播、链上确认、链重组、交易替换及对帐等核心流程。\n5. 负责 OIDC、SSO、SLO、JWT、Token 生命周期、多租户隔离及权限控制测试。\n6. 建设及维护 API 自动化、链上场景自动化及关键业务 E2E 自动化测试。\n7. 与后端、前端及智能合约开发共同完善单元测试、元件测试、Foundry 场景测试及 CI/CD 品质门禁。\n8. 负责 PC、H5、iOS、Android 客户端关键流程的相容性及异常场景测试。\n9. 设计重复请求、并发操作、RPC 故障、讯息乱序、回调重复、服务重启等异常测试。\n10. 跟进及分析生产问题，推动事故复盘并将生产缺陷转化为自动化回归测试案例。\n11. 建立缺陷管理、版本回归、品质指标及发布检查机制。\n12. 推动研发团队建立共同承担品质责任的工程​​文化。\n\n任职要求\n1. 5 年以上软体测试或测试开发经验，特别优秀者不以年限为唯一标准。\n2. 具备后端 API、分散式系统及资料一致性测试能力。\n3. 熟悉 Go、TypeScript 或 Python 至少一门程式语言。\n4. 能独立设计及编写稳定、可维护的自动化测试。\n5. 熟悉 Linux、Git、Docker 及常见 CI/CD 流程。\n6. 熟悉 HTTP、REST、JSON、WebSocket、Webhook 及 SQL。\n7. 理解状态机、幂等、重试、逾时、并发、最终一致性及故障补偿。\n8. 理解 EVM 交易生命周期，包括 Gas、Nonce、Receipt、Event、Confirmation、Revert、Reorg。\n9. 具备权限安全、租户隔离及资产风险意识。\n10. 能使用中文进行高品质技术沟通及文件撰写。\n11. 能在需求不完整时主动推动产品及研发补充边界条件。\n\n加分条件\n\n1. 具备托管钱包、交易所、支付、清结算或金融帐务测试经验。\n2. 具备 ERC-4337、智能帐户、Bundler 或 Paymaster 经验。\n3. 具备多签、MPC、HSM 或企业金库经验。\n4. 具备 Solidity、Foundry 测试经验。\n5. 具备 OIDC、OAuth 2.0、SSO、SLO 测试经验。\n6. 熟悉 Playwright、Appium、Detox 或 Maestro。\n7. 具备效能测试、故障注入或基础安全测试经验。\n8. 具备 DeFi、理财产品或链上资产管理经验。\n\n不适合\n1. 没有区块链测试经验。\n2. 主要按照既有测试案例进行手动测试。\n3. 不具备基本程式设计及自动化测试能力。\n4. 只关注页面显示，不关注服务端状态及资料一致性。\n5. 不理解幂等、并发、重试及非同步状态。\n6. 对权限越权、租户隔离及资产风险不敏感。\n7. 无法独立定位 API、资料库、日志及链上交易问题。\n\n备注：\n1. 公司为区块链基础设施公司。\n2. 产品涵盖智能帐户钱包、托管钱包、数位资产理财、企业级数位资产金库、多签及风控系统。\n3. 客户端包含 PC Web、H5、iOS、Android。\n4. 后端主要使用 Go，智能合约使用 Solidity／Foundry，前端主要使用 JavaScript／TypeScript。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "岗位：高级测试开发工程师（区块链钱包方向） 工作地点：日本大阪 薪资范围：5,000–10,000 美金/月 语言要求：中文 工时：8 小时，周休 1 日 国籍：不限 工作职责 1. 参与产品及技术方案评审，识别资产、权限、状态机、幂等、并发及资料一致性风险。 2. 根据业务风险制定测试策略、测试计画、测试矩阵及发布标准。 3. 负责托管钱包、AA 钱包、理财、企业金库及多签业务的功能、API、整合及 E2E 测试。 4. 验证充...",
-      "issueState": "open",
-      "contentHash": "5b8c627feb465c602eec1e722c0868a9bcab4194f7a016fcdae4dc100a2a86c5",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang",
-        "java",
-        "python",
-        "typescript"
-      ],
-      "sourceTags": [
-        "golang",
-        "java",
-        "python",
-        "typescript"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-23T10:36:28Z",
-      "updatedAt": "2026-09-23T10:36:28Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1305",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [
-          "docker",
-          "go",
-          "java",
-          "javascript",
-          "python",
-          "rust",
-          "typescript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_81101225f8f8a2c29de5c5b8",
-          "sourceId": "rebase-network/who-is-hiring#1305",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1305",
-          "createdAt": "2026-09-23T10:36:28Z",
-          "updatedAt": "2026-09-23T10:36:28Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T10:36:28Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_447cc5783e558f477cf03095",
-      "sourceId": "rebase-network/who-is-hiring#1304",
-      "title": "[日本大阪] web3交易所  产品经理  30-50K RMB",
-      "description": "岗位：产品经理\n工作地点：日本大阪\n薪资范围：面议\n语言要求：中文\n工时：8 小时，周休 1 日\n\n工作职责\n1. 将业务策略转化为可落地的产品方案，确保研发团队能准确理解并高效执行。\n2. 负责市场调研及竞品分析。\n3. 追踪国内外区块链金融、DeFi、CeFi 及传统电子银行发展趋势。\n4. 定期输出竞品分析报告，为产品迭代提供方向。\n5. 将复杂金融业务需求转化为清晰的产品需求文件 PRD。\n6. 绘制产品原型及互动流程。\n7. 梳理信托、理财、量化策略及 DApp 互动等业务流程。\n8. 设计风控、清结算对帐及异常处理机制。\n9. 结合链上及链下数据分析使用者行为。\n10. 与开发、测试及营运团队协作，推进专案落地。\n\n任职要求\n1. 3 年以上网际网路产品或金融科技产品经验。\n2. 必须熟悉区块链基础概念，如智能合约、公链、Gas、钱包互动等。\n3. 熟悉至少两类区块链应用场景，如 DeFi、资产 Token 化、去中心化身份等。\n4. 对信托、理财、量化交易等金融业务具备基本理解。\n5. 熟练使用 Axure、Figma、Visio、ProcessOn 等产品及流程工具。\n6. 具备强大的逻辑思维能力，能将复杂金融、合规、风控业务转化为简洁的产品逻辑。\n7. 金融、计算机、数学等相关专业背景者优先。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "岗位：产品经理 工作地点：日本大阪 薪资范围：面议 语言要求：中文 工时：8 小时，周休 1 日 工作职责 1. 将业务策略转化为可落地的产品方案，确保研发团队能准确理解并高效执行。 2. 负责市场调研及竞品分析。 3. 追踪国内外区块链金融、DeFi、CeFi 及传统电子银行发展趋势。 4. 定期输出竞品分析报告，为产品迭代提供方向。 5. 将复杂金融业务需求转化为清晰的产品需求文件 PRD。 6. 绘制产品原型及互动流程。 7...",
-      "issueState": "open",
-      "contentHash": "fc4d9096b7294a5efe8c3fadd8f1be00971848ca8e760e4e43700f79c07e729f",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang"
-      ],
-      "sourceTags": [
-        "golang"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-23T10:34:47Z",
-      "updatedAt": "2026-09-23T10:34:47Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1304",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "go",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_447cc5783e558f477cf03095",
-          "sourceId": "rebase-network/who-is-hiring#1304",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1304",
-          "createdAt": "2026-09-23T10:34:47Z",
-          "updatedAt": "2026-09-23T10:34:47Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T10:34:47Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_f57d60a6e9ecbafe44d2c3d3",
-      "sourceId": "rebase-network/who-is-hiring#1303",
-      "title": "[日本大阪] web3 交易所 游戏数据分析师  30K-40K RMB (可无经验18K)",
-      "description": "岗位：游戏数据分析师\n\n工作地点：日本大阪\n薪资范围：30,000–40,000 元人民币/月；无经验者薪资 18,000 元人民币/月\n语言要求：不限\n工时：8 小时，周休 1 日\n\n工作职责\n1. 负责专项业务全域数据分析，透过统计分析、建模等方式产出数据结论。\n2. 识别业务问题并提出方案，推动业务增长。\n3. 负责真人视讯游戏数据分析，熟悉赌场游戏机率原理。\n4. 进行 RTP、House Edge、EV 等数据计算。\n5. 与产品、市场、营运等团队对接，支援数据分析需求。\n6. 建立数据分析体系，推动数据自动化及平台化。\n7. 负责使用者留存、流失召回等使用者增长相关指标分析。\n\n任职要求\n1. 计算机、统计学、数学等相关专业本科以上学历。\n2. 3 年以上工作经验，具备商业分析／数据建模实务经验。\n3. 数学能力强，熟悉机率及统计概念，能自行计算游戏机率。\n4. 统计基础扎实，熟悉 SQL、Excel、BI 软体及数据视觉化。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "岗位：游戏数据分析师 工作地点：日本大阪 薪资范围：30,000–40,000 元人民币/月；无经验者薪资 18,000 元人民币/月 语言要求：不限 工时：8 小时，周休 1 日 工作职责 1. 负责专项业务全域数据分析，透过统计分析、建模等方式产出数据结论。 2. 识别业务问题并提出方案，推动业务增长。 3. 负责真人视讯游戏数据分析，熟悉赌场游戏机率原理。 4. 进行 RTP、House Edge、EV 等数据计算。 5. ...",
-      "issueState": "open",
-      "contentHash": "2b4caa35cba669922e3a5718b1c9beebd63c8e9aadbe848e855f5b852aeb42da",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang"
-      ],
-      "sourceTags": [
-        "golang"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-23T10:28:53Z",
-      "updatedAt": "2026-09-23T10:28:53Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1303",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "go",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f57d60a6e9ecbafe44d2c3d3",
-          "sourceId": "rebase-network/who-is-hiring#1303",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1303",
-          "createdAt": "2026-09-23T10:28:53Z",
-          "updatedAt": "2026-09-23T10:28:53Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T10:28:53Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_803be473276db52bc1817412",
-      "sourceId": "rebase-network/who-is-hiring#1302",
-      "title": "[日本 大阪] 资深 Golang 后端工程师（Web3 方向） 40-70K RMB",
-      "description": "资深 Golang 后端工程师（Web3 方向）\n\n岗位：资深 Golang 后端工程师（Web3 方向）\n工作地点：日本大阪\n薪资范围：面议\n语言要求：不限\n工时：8 小时，周休 1 日\n\n工作职责\n1. 负责高并发、高可用后端服务开发及 API 设计。\n2. 负责 Web3／EVM 链相关服务开发，包括链上数据处理、智能合约事件监听、RPC／WebSocket 节点对接等。\n3. 负责微服务架构设计、资料库及快取优化，提高系统效能及稳定性。\n4. 配合 DevOps 完成 Docker、Kubernetes 容器化部署及 CI/CD。\n\n任职要求\n1. 本科以上学历，计算机相关专业优先。\n2. 3–8 年以上 Golang 开发经验，熟悉 Go 并发开发。\n3. 具备网际网路、高并发系统开发经验。\n4. 具备 Web3、交易所、钱包、公链、DeFi、支付等相关专案经验者优先。\n5. 熟悉 MySQL、PostgreSQL、Redis。\n6. 熟悉 Kafka、RocketMQ、Pulsar 至少一种讯息伫列。\n7. 熟悉 HTTP／RESTful、gRPC、WebSocket。\n8. 熟悉 Gin、Fiber、Kratos 至少一种 Go 框架。\n9. 熟悉 Docker、Kubernetes 基本使用。\n10. 学习能力强，能独立负责模组开发。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 企业猎才\n协助企业寻找职能、专业人才及中高阶管理人才。\n🔹 跨国人才招募\n针对日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "资深 Golang 后端工程师（Web3 方向） 岗位：资深 Golang 后端工程师（Web3 方向） 工作地点：日本大阪 薪资范围：面议 语言要求：不限 工时：8 小时，周休 1 日 工作职责 1. 负责高并发、高可用后端服务开发及 API 设计。 2. 负责 Web3／EVM 链相关服务开发，包括链上数据处理、智能合约事件监听、RPC／WebSocket 节点对接等。 3. 负责微服务架构设计、资料库及快取优化，提高系统效能...",
-      "issueState": "open",
-      "contentHash": "ed4179e1f2c5a38799232a7b23087c635aabbc00d36d37d31085047fc6c7d751",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "devops",
-        "golang"
-      ],
-      "sourceTags": [
-        "devops",
-        "golang"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-23T10:23:20Z",
-      "updatedAt": "2026-09-23T10:23:20Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1302",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre"
-        ],
-        "technologies": [
-          "docker",
-          "go",
-          "kubernetes",
-          "mysql",
-          "postgres",
-          "redis",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_803be473276db52bc1817412",
-          "sourceId": "rebase-network/who-is-hiring#1302",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1302",
-          "createdAt": "2026-09-23T10:23:20Z",
-          "updatedAt": "2026-09-23T10:23:20Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-09-23T10:23:20Z",
         "status": "fresh"
       }
     }

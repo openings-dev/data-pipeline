@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-10-02T00:23:18.735Z",
+  "generatedAt": "2026-10-02T09:13:29.163Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_d0a55334501f812ebde83f2c",
+    "gh_735dbeff671f017ea4d1a2de",
+    "gh_806b64f2950fea9d5b673d14",
+    "gh_6bd4163903234b0bf8e2d437",
+    "gh_0a7a3c6e002a0928c26b439d",
     "gh_bfd88116fb1031805d20e111",
     "gh_e8b9bf5abce069669f50ccbe",
     "gh_f599c06e5d8f2eadf0fb40ca",
@@ -18,14 +23,644 @@
     "gh_04527d7aee2622a060d30425",
     "gh_b6aefab5452b32ee8687841b",
     "gh_2f36944fe3030097352d176e",
-    "gh_89dcbc79e38c36bf725d0c43",
-    "gh_6f9fd79e1626999457c55a32",
-    "gh_4cb39f6675d3a84f550bc860",
-    "gh_2053fcbed89f4b0a9f16deab",
-    "gh_d4c7dfe0cf934a1a36146713",
-    "gh_a1647bfa438d985a5a959c58"
+    "gh_89dcbc79e38c36bf725d0c43"
   ],
   "items": [
+    {
+      "id": "gh_d0a55334501f812ebde83f2c",
+      "sourceId": "ambicuity/New-Grad-Jobs#376",
+      "title": "Job data is stale: last scrape 2026-10-02T00:10:29.520638Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **337 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36970526616. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **337 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "da275c70f7c07b82f2666b68b5899154f97f7ae846a250124746e378ee380732",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-02T05:47:42Z",
+      "updatedAt": "2026-10-02T05:47:42Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/376",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_d0a55334501f812ebde83f2c",
+          "sourceId": "ambicuity/New-Grad-Jobs#376",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/376",
+          "createdAt": "2026-10-02T05:47:42Z",
+          "updatedAt": "2026-10-02T05:47:42Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-02T05:47:42Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_735dbeff671f017ea4d1a2de",
+      "sourceId": "awesome-jobs/vietnam#5080",
+      "title": "[HYBRID] SENIOR/ STAFF SOFTWARE ENGINEER (PYTHON) - PRODUCT COMPANY - OPEN SALARY",
+      "description": "**About the role**\n\n- As a Senior Software Engineer at Inspectorio, you will partner with Product, Design, QA, and Customer Support to solve complex business problems and deliver customer value. You will use modern engineering practices, including AI-assisted development where appropriate, while maintaining high standards for architecture, quality, security, and operational excellence. As such, we are open to hiring a Senior Software Engineer with either strong backend expertise in Python, or fullstack experience with a frontend focus in Angular alongside Python.\n- Success in this role is defined not only by technical implementation, but by the ability to frame problems effectively, evaluate trade-offs, orchestrate solutions across systems and teams, and guide projects from concept to measurable business outcomes.\n\n**What you'll do**\n\n- Design, develop, and maintain high-performance backend services using Python and Django. \n- Collaborate with cross-functional teams, including designers, product managers, and other engineers, to deliver high-quality software solutions. \n- Lead problem discovery, root cause analysis, and solution framing for complex technical and business challenges.\n- Translate ambiguous business requirements into well-defined technical solutions and execution plans.\n- Drive decisions through data, experimentation, and rapid prototyping.\n- Work closely with Customer Support and QA teams to investigate and resolve customer-reported incidents, bugs, and requests in a timely and professional manner. \n- Demonstrate strong communication and collaboration skills, participating actively in team discussions, planning sessions, and retrospectives. \n- Architect and implement new features and services that meet business requirements. \n- Write clean, maintainable, and well-documented code adhering to best practices and industry standards. \n- Lead code reviews, provide constructive feedback, and mentor junior developers to enhance the team’s capabilities. \n- Identify, troubleshoot, and resolve performance bottlenecks and other backend issues. \n- Stay current with the latest industry trends, technologies, and best practices, particularly in Python and Django. \n- Optimize applications for maximum speed and scalability while ensuring security and data protection standards. \n- Contribute to the improvement of the development process, including continuous integration and deployment strategies.\n\n**Qualifications**\n\n- 5+ years of professional experience in backend development, with a strong emphasis on Python and Django. \n- Deep understanding of object-oriented programming, design patterns, and other OOP principles such as SOLID and GRASP. \n- Experience with RESTful APIs, API-first approach, and microservices architecture. \n- Proficient in working with relational databases such as PostgreSQL, MySQL, or similar. \n- Demonstrated ability to solve ambiguous problems and translate business objectives into scalable technical solutions.\n- Strong systems-thinking mindset with the ability to reason across product, technical, operational, and customer domains.\n- Experience using AI-assisted development tools responsibly to improve engineering productivity, including coding, testing, debugging, documentation, and solution design, while maintaining high standards for quality, security, and maintainability.\n- Proven ability to evaluate competing solutions and make sound trade-off decisions under uncertainty.\n- Excellent written communication skills, including the ability to produce high-quality technical designs, implementation plans, and architectural proposals.\n- Experience with asynchronous programming and related frameworks like Celery. \n- Proficient with version control systems, particularly Git. \n- Familiarity with cloud platforms (AWS, Azure, Google Cloud) and their services. \n- Proven ability to work independently and within cross-functional teams. \n- Understanding of CI/CD pipelines, Docker, and container orchestration tools like Kubernetes \n- Strong problem-solving skills and the ability to work independently in a fast-paced environment. \n- Great communication skills, in English, both written and verbal. \n\n**NICE TO HAVE**\n\n- Experience with Angular (v18+) and modern frontend development. \n- Ability to contribute across the fullstack (backend + frontend). \n\n**Benefits**\n- Full salary insurance\n- Premium healthcare PVI for employees & children \n- Lunch allowance, well-being allowance, team building, tet holiday,..\n- Unlimited days leave\n- Hyrbrid working environment",
+      "excerpt": "**About the role** - As a Senior Software Engineer at Inspectorio, you will partner with Product, Design, QA, and Customer Support to solve complex business problems and deliver customer value. You will use modern eng...",
+      "issueState": "open",
+      "contentHash": "f7a019d9e2c5a76a15401e9b70d7371d73268f583901f89bdd701d3d70ce750a",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "frontend",
+        "fullstack",
+        "hybrid",
+        "junior",
+        "python",
+        "senior",
+        "staff"
+      ],
+      "sourceTags": [
+        "backend",
+        "frontend",
+        "fullstack",
+        "hybrid",
+        "junior",
+        "python",
+        "senior",
+        "staff"
+      ],
+      "author": {
+        "id": "viphan28",
+        "name": "viphan28",
+        "handle": "viphan28",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/142965427?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "companyName": "OPEN SALARY",
+      "createdAt": "2026-10-02T04:35:32Z",
+      "updatedAt": "2026-10-02T07:25:49Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5080",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack",
+          "qa",
+          "support"
+        ],
+        "technologies": [
+          "angular",
+          "aws",
+          "azure",
+          "django",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "mysql",
+          "postgres",
+          "python"
+        ],
+        "seniority": [
+          "junior",
+          "lead",
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_735dbeff671f017ea4d1a2de",
+          "sourceId": "awesome-jobs/vietnam#5080",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5080",
+          "createdAt": "2026-10-02T04:35:32Z",
+          "updatedAt": "2026-10-02T07:25:49Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_7a0bc2ecad39525a9914be44",
+          "sourceId": "awesome-jobs/jobs#5080",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5080",
+          "createdAt": "2026-10-02T04:35:32Z",
+          "updatedAt": "2026-10-02T07:25:49Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-02T04:35:32Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_806b64f2950fea9d5b673d14",
+      "sourceId": "awesome-jobs/jobs#5079",
+      "title": "[HYBRID] SENIOR/ STAFF SOFTWARE ENGINEER (JAVASCRIPT) - PRODUCT COMPANY - OPEN SALARY",
+      "description": "**About The Role**\n\nAs a Senior Software Engineer, you will be responsible for working with cross-functional teams, including Product Owners, Designers, and Quality Assurance Engineers, to conceptualize, develop, and deploy software features that meet customer needs.\n\n**What You'll Do**\n\n- Design, develop, and maintain high-performance backend and frontend services using NodeJS, Python and ReactJS\n- Collaborate with cross-functional teams, including designers, product managers, and other engineers, to deliver high-quality software solutions.\n- Architect and implement new features and services that meet business requirements.\n- Write clean, maintainable, and well-documented code adhering to best practices and industry standards.\n- Lead code reviews, provide constructive feedback, and mentor junior developers to enhance the team’s capabilities.\n- Identify, troubleshoot, and resolve performance bottlenecks and other backend issues.\n- Stay current with the latest industry trends, technologies, and best practices, particularly in NodeJS and ReactJS.\n- Optimize applications for maximum speed and scalability while ensuring security and data protection standards.\n- Contribute to the improvement of the development process, including continuous integration and deployment strategies.\n- Work closely with Customer Support and QA teams to investigate and resolve customer-reported incidents, bugs, and requests in a timely and professional manner.\n- Utilize AI tools (e.g., code assistants, automated testing, log analyzers) to streamline development tasks and routine operations.\n- Demonstrate strong communication and collaboration skills, participating actively in team discussions, planning sessions, and retrospectives.\n\n**Qualifications**\n\n- Deep understanding of how to build high-performance, decoupled, testable, maintainable code \n- Experience facing the challenges of building software as a service, including designing architecture and maintaining software at scale \n- 6+ years of experience in web application development\n- Expertise in backend development using NodeJS, and SQL databases; experience with GraphQL is a plus\n- In-depth understanding of software development and design principles (DRY, KISS, SOLID) \n- Excellent Javascript/NodeJS skills Experience in UI/UX development \n- Proficiency in working with React; experience with React Hooks is a plus \n- Experience with Google Cloud Platform services is a plus \n- Good English communication skills \n- Good organizational skills and attention to detail \n- Good problem-solving skills \n- Excellent communication and teamwork skills \n- Good leadership skills for projects and initiatives\n\n**Benefits**:\n- Full salary insurance\n- Premium healthcare PVI for employees & children \n- Lunch allowance, well-being allowance, team building, tet holiday,..\n- Unlimited days leave\n- Hyrbrid working environment",
+      "excerpt": "**About The Role** As a Senior Software Engineer, you will be responsible for working with cross-functional teams, including Product Owners, Designers, and Quality Assurance Engineers, to conceptualize, develop, and d...",
+      "issueState": "open",
+      "contentHash": "c90458e14d2d72068e352b1cc23a5a33707f0833391c1f8b2c8bbf32d3ec7dbd",
+      "repository": "awesome-jobs/jobs",
+      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "frontend",
+        "hybrid",
+        "java",
+        "node",
+        "python",
+        "react",
+        "senior"
+      ],
+      "sourceTags": [
+        "backend",
+        "frontend",
+        "hybrid",
+        "java",
+        "node",
+        "python",
+        "react",
+        "senior"
+      ],
+      "author": {
+        "id": "viphan28",
+        "name": "viphan28",
+        "handle": "viphan28",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/142965427?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/jobs",
+        "url": "https://github.com/awesome-jobs/jobs"
+      },
+      "companyName": "OPEN SALARY",
+      "createdAt": "2026-10-02T04:32:54Z",
+      "updatedAt": "2026-10-02T04:33:22Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5079",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "qa",
+          "support"
+        ],
+        "technologies": [
+          "gcp",
+          "java",
+          "javascript",
+          "nodejs",
+          "python",
+          "react"
+        ],
+        "seniority": [
+          "junior",
+          "lead",
+          "senior",
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_806b64f2950fea9d5b673d14",
+          "sourceId": "awesome-jobs/jobs#5079",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5079",
+          "createdAt": "2026-10-02T04:32:54Z",
+          "updatedAt": "2026-10-02T04:33:22Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        },
+        {
+          "id": "gh_844ee7bc3e34b7b3caa603c7",
+          "sourceId": "awesome-jobs/vietnam#5079",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5079",
+          "createdAt": "2026-10-02T04:32:54Z",
+          "updatedAt": "2026-10-02T04:33:22Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-02T04:32:54Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_6bd4163903234b0bf8e2d437",
+      "sourceId": "awesome-jobs/vietnam#5078",
+      "title": "[REMOTE or Hybrid HCM/Danang] Senior Data Engineer 5+ yoe, có kn BE với Node.js/NestJS/Python (70% Data, 30% BE)",
+      "description": "Mô tả công việc\nData Ingestion\nDesign and implement batch data pipelines to ingest enrollment data from multiple sources.\nDevelop data ingestion workflows using Python, Airflow, and SQL.\nIntegrate data from different systems and ensure reliable data delivery.\nData Quality & Validation\n\nImplement data validation and quality checks throughout the pipeline.\nIdentify, handle, and troubleshoot data inconsistencies and processing errors.\nEnsure data accuracy, completeness, and consistency.\nData Transformation\n\nDesign and implement data transformation workflows using SQL and dbt.\nTransform and prepare data for downstream consumption and analytics.\nOptimize data processing and query performance where required.\nHistorical Tracking\n\nImplement mechanisms to maintain and track historical enrollment data.\nEnsure data changes and historical records can be reliably traced and retrieved.\nREST API Development\n\nDevelop and maintain REST APIs using Node.js / NestJS to serve processed data.\nDesign APIs for reliable and efficient data access.\nEvent Publishing\n\nImplement event publishing and data integration using Kafka.\nEnsure reliable event delivery between data services and downstream systems.\n\nUV qtam liên hệ mình zl o332.o22.o55 hoặc contact@techdy.vn nhé.\nIB mình nếu bạn quan tâm các vị trí khác đang open lĩnh vực IT, Data & AI (đang open 100+ vị trí từ Middle đến Lead++).",
+      "excerpt": "Mô tả công việc Data Ingestion Design and implement batch data pipelines to ingest enrollment data from multiple sources. Develop data ingestion workflows using Python, Airflow, and SQL. Integrate data from different ...",
+      "issueState": "open",
+      "contentHash": "521a5c5d06eee9896c753cc65d461810d2181b46da94897aa776961e3b8cd682",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "data",
+        "design",
+        "hybrid",
+        "node",
+        "python",
+        "remote",
+        "senior"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "hybrid",
+        "node",
+        "python",
+        "remote",
+        "senior"
+      ],
+      "author": {
+        "id": "techdyvn",
+        "name": "techdyvn",
+        "handle": "techdyvn",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-10-02T04:16:01Z",
+      "updatedAt": "2026-10-02T04:16:01Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5078",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "nodejs",
+          "python"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_6bd4163903234b0bf8e2d437",
+          "sourceId": "awesome-jobs/vietnam#5078",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5078",
+          "createdAt": "2026-10-02T04:16:01Z",
+          "updatedAt": "2026-10-02T04:16:01Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_8a45793b377d781d6dcad1f8",
+          "sourceId": "awesome-jobs/jobs#5078",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5078",
+          "createdAt": "2026-10-02T04:16:01Z",
+          "updatedAt": "2026-10-02T04:16:01Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-02T04:16:01Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_0a7a3c6e002a0928c26b439d",
+      "sourceId": "awesome-jobs/jobs#5077",
+      "title": "[HYBRID] SENIOR QA ENGINEER/ SDET - PRODUCT COMPANY - OPEN SALARY",
+      "description": "**About the role**\n\n- The Core Services team supports complex workflows, integrations, and data-driven decision-making, requiring a strong focus on reliability, scalability, performance, and user experience. Its core functionalities include Organization & User Management, Authentication & Authorization, and Billing & Subscription Management.\n- As a Senior QA Engineer, you will play a key role in advancing quality engineering practices across the Core Services solutions area. You will design and scale test automation frameworks, improve product testability, and partner closely with Product and Engineering teams to ensure high-quality releases. \n- This role requires strong technical expertise, a quality-first mindset, and the ability to influence engineering decisions through collaboration, data-driven insights, and modern automation practices. You will help drive the adoption of scalable quality engineering approaches, mentor other QA engineers, and contribute to continuous improvement initiatives across the engineering organization.\n\n**What you'll do**\n\n- Drive Quality Excellence: Contribute to the evolution of QA and quality engineering practices within the organization. Identify opportunities to improve testing effectiveness, release reliability, and development efficiency through automation, process improvements, and better quality visibility. \n- Leverage AI-Enhanced Quality Engineering: Evaluate and adopt AI-assisted tools and practices that improve test design, automation development, defect analysis, and engineering productivity. Contribute to initiatives that increase testing efficiency while maintaining engineering rigor and quality standards. \n- Partner Across Teams: Collaborate closely with Product Managers, Designers, and Engineers to influence feature design, acceptance criteria, and implementation decisions that improve testability and product quality. \n- Promote Shift-Left Quality Practices: Engage early in the software development lifecycle by collaborating closely with Product Managers, Designers, and Engineers to influence feature design, acceptance criteria, and implementation decisions that improve testability and product quality. \n- Ensure Comprehensive Test Coverage: Develop and implement test strategies that balance automated and exploratory approaches across regression, integration, end-to-end, performance, and reliability testing. \n- Improve Quality Outcomes: Drive measurable improvements in automation coverage, regression execution efficiency, defect prevention, release confidence, and overall product quality. \n- Lead Incident and Defect Management: Investigate complex defects, perform root-cause analysis, and provide actionable insights to engineering teams. Partner with stakeholders to prioritize and resolve quality issues efficiently.  \n\n**Qualifications**\n- Bachelor’s degree in Computer Science, Information Technology, Engineering, or a related field.\n- 5+ years of experience in software quality engineering, including extensive experience building and maintaining automated testing solutions.\n- 3+ years of hands-on experience in test automation development.\n- Strong proficiency in JavaScript and/or TypeScript with solid software engineering fundamentals.\n- Proven ability to collaborate effectively across Product, Engineering, and DevOps teams.\n- Strong expertise in API testing, frontend UI automation, and end-to-end testing strategies.\n- Experience with SQL and relational databases (e.g., PostgreSQL, MySQL), including writing complex queries (joins, subqueries, aggregations) for data validation, test data preparation, and defect investigation.\n- Strong understanding of software architecture and how system components interact.\n- Deep knowledge of test design techniques, test architecture, defect lifecycle management, and quality engineering best practices.\n- Excellent analytical, troubleshooting, and problem-solving skills.\n- Strong verbal and written communication skills in English.\n\n**Preferred Qualifications**\n\n- Experience leveraging AI-assisted engineering tools to improve test automation, test design, defect analysis, or developer productivity.\n- Experience implementing AI-driven quality engineering workflows and automation solutions.\n- Experience testing distributed systems, microservices architectures, and event-driven applications.\n- Understanding of modern quality engineering practices including:\n- Shift-left testing\n- Contract testing\n- CI/CD quality gates\n- Risk-based testing\n- Observability-driven testing\n- Experience defining, measuring, and improving quality metrics such as:\n- Automation coverage\n- Defect escape rate\n- Release health\n- Test effectiveness\n- Mean time to resolution (MTTR)\n- Experience working in high-growth SaaS environments and supporting large-scale customer-facing platforms.\n\n**Benefits**:\n- Full salary insurance\n- Premium healthcare PVI for employees & children \n- Lunch allowance, well-being allowance, team building, tet holiday,..\n- Unlimited days leave\n- Hyrbrid working environment\n\nCONTACT ME AT: +84395392802 - Vi Phan",
+      "excerpt": "**About the role** - The Core Services team supports complex workflows, integrations, and data-driven decision-making, requiring a strong focus on reliability, scalability, performance, and user experience. Its core f...",
+      "issueState": "open",
+      "contentHash": "7e71edcafc8e9b73938f55b930ec709010fa003dc3600235f442d0ee9f996957",
+      "repository": "awesome-jobs/jobs",
+      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "data",
+        "design",
+        "devops",
+        "frontend",
+        "hybrid",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "devops",
+        "frontend",
+        "hybrid",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "author": {
+        "id": "viphan28",
+        "name": "viphan28",
+        "handle": "viphan28",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/142965427?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/jobs",
+        "url": "https://github.com/awesome-jobs/jobs"
+      },
+      "companyName": "OPEN SALARY",
+      "createdAt": "2026-10-02T03:38:14Z",
+      "updatedAt": "2026-10-02T03:38:14Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5077",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "devops-sre",
+          "frontend",
+          "qa"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "mysql",
+          "postgres",
+          "typescript"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_0a7a3c6e002a0928c26b439d",
+          "sourceId": "awesome-jobs/jobs#5077",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5077",
+          "createdAt": "2026-10-02T03:38:14Z",
+          "updatedAt": "2026-10-02T03:38:14Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        },
+        {
+          "id": "gh_66e0795ab4dcc7534b9bdc98",
+          "sourceId": "awesome-jobs/vietnam#5077",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5077",
+          "createdAt": "2026-10-02T03:38:14Z",
+          "updatedAt": "2026-10-02T03:38:14Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-02T03:38:14Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_bfd88116fb1031805d20e111",
       "sourceId": "negarprh/Canadian-Tech-Internships-2026#363",
@@ -530,7 +1165,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-01T05:16:11Z",
         "status": "fresh"
       }
@@ -1582,557 +2217,6 @@
       "freshness": {
         "ageDays": 1,
         "publishedAt": "2026-09-30T10:27:11Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_6f9fd79e1626999457c55a32",
-      "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
-      "title": "Question about reading public listings on Canadian Tech Internships 2027 (personal final-year project)",
-      "description": "Hello Canadian Tech Internships 2027 team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most once):\n    GET raw.githubusercontent.com/negarprh/Canadian-Tech-Internships-2027/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
-      "excerpt": "Hello Canadian Tech Internships 2027 team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by a...",
-      "issueState": "open",
-      "contentHash": "f6b74beb1b1a1a34b99442d8c4f0435a9bff1fc9df724de9b4e2fca55d1f41a1",
-      "repository": "negarprh/Canadian-Tech-Internships-2026",
-      "repositoryUrl": "https://github.com/negarprh/Canadian-Tech-Internships-2026",
-      "region": "North America",
-      "country": "Canada",
-      "sourceLocation": {
-        "country": "Canada",
-        "countryCode": "CA",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "manuchehrqoriev798",
-        "name": "manuchehrqoriev798",
-        "handle": "manuchehrqoriev798",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
-      },
-      "community": {
-        "id": "negarprh",
-        "name": "negarprh",
-        "avatarUrl": "https://github.com/negarprh.png?size=80",
-        "repository": "negarprh/Canadian-Tech-Internships-2026",
-        "url": "https://github.com/negarprh/Canadian-Tech-Internships-2026"
-      },
-      "createdAt": "2026-09-30T10:26:56Z",
-      "updatedAt": "2026-09-30T10:26:56Z",
-      "url": "https://github.com/negarprh/Canadian-Tech-Internships-2027/issues/358",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_6f9fd79e1626999457c55a32",
-          "sourceId": "negarprh/Canadian-Tech-Internships-2026#358",
-          "repository": "negarprh/Canadian-Tech-Internships-2026",
-          "repositoryUrl": "https://github.com/negarprh/Canadian-Tech-Internships-2026",
-          "url": "https://github.com/negarprh/Canadian-Tech-Internships-2027/issues/358",
-          "createdAt": "2026-09-30T10:26:56Z",
-          "updatedAt": "2026-09-30T10:26:56Z",
-          "community": {
-            "id": "negarprh",
-            "name": "negarprh",
-            "avatarUrl": "https://github.com/negarprh.png?size=80",
-            "repository": "negarprh/Canadian-Tech-Internships-2026",
-            "url": "https://github.com/negarprh/Canadian-Tech-Internships-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-09-30T10:26:56Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_4cb39f6675d3a84f550bc860",
-      "sourceId": "awesome-jobs/jobs#5073",
-      "title": "LINE Pay Vietnam - QA - Saigon, District 10",
-      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n* We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobile, Web, service servers, databases, etc.)\n\n### Responsibilities\n\n- Analyze complex software systems and collaborate with global teams to improve the overall design, testability, and quality of the platform\n- Performing all testing activities across one or more projects, utilizing tools, scripts and software that ensure the quality and reliability\n- Develop and execute test cases to diagnose issues and bugs, creating test data when required\n- Working with a global team, communicating effectively with developers, project managers, business operations on test related information\n- Identifying quality issues and drive corrective actions to resolve them\n\n### Qualifications\n- At least 3-years related experiences\n- Solid knowledge about computer science (objected-oriented design, algorithms, data structures, databases, networks, etc.)\n- Strong knowledge of software QA methodologies, tools and processes\n- Experience designing and conducting Performance Testing, Security Testing, Migration Testing\n- Experience in creating and proposing unit tests as well as integration tests that match the architecture and nature of the service. Ability to identify and escalate issues in a timely manner\n- Good analytical and problem solving skills\n- Good communication and interpersonal skills\n- Growth mindset and eagerness to learn\n- •ble to communicate in English efficiently in technical work\n- Familiarity with Test Automation is a plus\n- Experience with Payment or Fintech Service is a plus\n- Experience with using AI in work\n\n### Nice to have\n- ISTQB/ISEB Certificate or equivalence\n- Experience with working in micro services architecture\n- Experience with working in Agile environment\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
-      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary * We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobil...",
-      "issueState": "open",
-      "contentHash": "c177172dc7d369d270800f1feb434f6a254e6c3b625b53c311594f7583138ec6",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "design"
-      ],
-      "sourceTags": [
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "tungthanhng",
-        "name": "tungthanhng",
-        "handle": "tungthanhng",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "createdAt": "2026-09-30T04:05:24Z",
-      "updatedAt": "2026-09-30T04:05:24Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia",
-        "city": "* District 10, HCMC",
-        "displayText": "* District 10, HCMC, Vietnam",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design",
-          "mobile",
-          "qa"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_4cb39f6675d3a84f550bc860",
-          "sourceId": "awesome-jobs/jobs#5073",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
-          "createdAt": "2026-09-30T04:05:24Z",
-          "updatedAt": "2026-09-30T04:05:24Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_a930f487b8ffc8c5d45c7938",
-          "sourceId": "awesome-jobs/vietnam#5073",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
-          "createdAt": "2026-09-30T04:05:24Z",
-          "updatedAt": "2026-09-30T04:05:24Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-09-30T04:05:24Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_2053fcbed89f4b0a9f16deab",
-      "sourceId": "awesome-jobs/vietnam#5072",
-      "title": "LINE Pay Vietnam - Backend Engineer - Saigon, District 10",
-      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n- We are looking for a Mid/Senior Backend Engineer to design, build, maintain, and improve large-scale backend services. The role involves working on distributed systems that support user-facing products, business operations, partner integrations, and mission-critical transaction flows.\n- You will collaborate with product, QA, operations, and overseas engineering teams to deliver reliable backend features, improve system performance, and support production stability.\n\n### Responsibilities\n\n- Design, develop, maintain, and enhance backend services using Java and Spring Boot.\n- Build and operate scalable APIs and service-to-service integrations for user- facing and internal business systems.\n- Work with distributed system components such as relational databases, message queues, caches, search platforms, and file/object storage.\n- Participate in designing reliable workflows for business-critical operations such as transaction processing, asynchronous events, data synchronization, reporting, and reconciliation.\n- Investigate and resolve production issues across APIs, background jobs, messaging systems, caches, databases, and external integrations.\n- Improve system reliability, performance, scalability, observability, and maintainability.\n- Write clean, testable, maintainable code and participate in code reviews.\n- Collaborate with cross-functional and international teams to clarify requirements, design solutions, and deliver features safely.\n- Contribute to technical documentation, runbooks, onboarding materials, and operational knowledge sharing.\n\n### Requirements\n- Over 5 years of experience in backend development, preferably with large-scale or distributed systems.\n- Strong proficiency in Java and hands-on experience with Spring Boot.\n- Solid experience designing, implementing, and maintaining RESTful APIs and\nbackend services.\n- Experience with relational databases such as MySQL, including basic schema design, query optimization, transaction handling, and data consistency.\n- Experience with Kafka or similar messaging systems, including asynchronous processing, producer/consumer patterns, retry handling, and idempotency.\n- Experience with Redis or similar caching systems for caching, temporary state management, distributed locking, or rate limiting.\n- Familiarity with Elasticsearch or other search/indexing platforms is a plus.\n- Familiarity with Docker, Kubernetes, CI/CD pipelines, and cloud/container- based deployment is a plus.\n- Understanding of system reliability topics such as logging, monitoring, tracing, alerting, performance tuning, and incident investigation.\n- Strong understanding of testing practices, code review, maintainability, secure coding, and production-safe rollout.\n- Good communication skills and willingness to work with international stakeholders.\n\n\n### Preferred Qualification\n- Experience in payment, fintech, e-commerce, order management, settlement, coupon/voucher, or other transaction-heavy systems.\n- Experience designing high-consistency workflows such as checkout, payment, refund, inventory, reconciliation, or asynchronous fulfillment.\n- Experience operating scheduled jobs, batch processing, retry workflows, and incident recovery procedures.\n- Experience with API gateways, authentication/authorization, or secure service-to- service communication.\n- Experience with object storage, file export/import workflows, or reporting systems.\n- Ability to document architecture clearly, including service boundaries, API contracts, data ownership, operational runbooks, and failure scenarios.\n\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
-      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary - We are looking for a Mid/Senior Backend Engineer to design, build, maintain, and improve large-scale backend services. The role involves working on distributed sys...",
-      "issueState": "open",
-      "contentHash": "88e7a060667d391654411bbc147acfac123753bb6e7cf17a6ba14e096c786cf0",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "senior"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "senior"
-      ],
-      "author": {
-        "id": "tungthanhng",
-        "name": "tungthanhng",
-        "handle": "tungthanhng",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-09-30T03:59:10Z",
-      "updatedAt": "2026-09-30T03:59:10Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia",
-        "city": "* District 10, HCMC",
-        "displayText": "* District 10, HCMC, Vietnam",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "qa"
-        ],
-        "technologies": [
-          "docker",
-          "java",
-          "kubernetes",
-          "mysql",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_2053fcbed89f4b0a9f16deab",
-          "sourceId": "awesome-jobs/vietnam#5072",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
-          "createdAt": "2026-09-30T03:59:10Z",
-          "updatedAt": "2026-09-30T03:59:10Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_a5c0bb76d60d1f7139836a92",
-          "sourceId": "awesome-jobs/jobs#5072",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5072",
-          "createdAt": "2026-09-30T03:59:10Z",
-          "updatedAt": "2026-09-30T03:59:10Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-09-30T03:59:10Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_d4c7dfe0cf934a1a36146713",
-      "sourceId": "awesome-jobs/vietnam#5071",
-      "title": "LINE Pay Vietnam - Frontend Engineer - Saigon, District 10",
-      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n* We are looking for bright, creative, self-starting engineers with broad experience developing and optimizing UX/UI for web application\n\n### Responsibilities\n\n- Develop and maintain responsive, high-quality web applications using React and Next.js\n- Translate Figma designs into production-ready user interfaces\n- Build reusable UI components and interactive frontend experiences\n- Integrate frontend applications with APIs and manage client-side data\n- Collaborate with designers, backend engineers, and other stakeholders to deliver product features\n- Write clean, maintainable code and participate in code reviews\n- Troubleshoot frontend issues and improve performance, usability, and overall user experience\n\n### Basic Qualification\n\n- Proficiency in TypeScript, JavaScript, HTML, and CSS, with a strong interest in how things work under the hood\n- Hands-on experience with modern frameworks such as React and Next.js\n- Familiarity with version control using Git and experience with code reviews\n- Experience in developing mobile web applications\n- Ability to translate Figma designs into responsive, pixel-accurate, and production- ready user interfaces\n- • Solid experience in modern front-end build pipelines and tools (e.g. Git, Webpack, Gulp, NPM)\n\n### Preferred Qualification\n- Experience working in a monorepo environment using tools like Lerna or Nx\n-  Familiarity with end-to-end testing tools such as Playwright or Cypress\n- Knowledge of testing frameworks like Jest, React Testing Library, MSW\n- Experience with CI/CD pipelines, especially using GitHub Actions\n- Experience building multilingual and globally distributed web services\n-  Experience with data-fetching and caching libraries such as TanStack Query (React Query), SWR, or similar\n- Experience building interactive UI transitions and animations using CSS animations, transitions, transforms, and keyframes\n- Experience using UI component libraries such as Ant Design or similar\n\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
-      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary * We are looking for bright, creative, self-starting engineers with broad experience developing and optimizing UX/UI for web application ### Responsibilities - Devel...",
-      "issueState": "open",
-      "contentHash": "3f3326df4c1c8dbdc22a6b2f7af04f045869c18f919c602378deb21319917fa1",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "design",
-        "frontend",
-        "java",
-        "react",
-        "typescript"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "frontend",
-        "java",
-        "react",
-        "typescript"
-      ],
-      "author": {
-        "id": "tungthanhng",
-        "name": "tungthanhng",
-        "handle": "tungthanhng",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-09-30T03:56:50Z",
-      "updatedAt": "2026-09-30T03:56:50Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia",
-        "city": "* District 10, HCMC",
-        "displayText": "* District 10, HCMC, Vietnam",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend",
-          "mobile"
-        ],
-        "technologies": [
-          "java",
-          "javascript",
-          "nextjs",
-          "react",
-          "typescript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_d4c7dfe0cf934a1a36146713",
-          "sourceId": "awesome-jobs/vietnam#5071",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
-          "createdAt": "2026-09-30T03:56:50Z",
-          "updatedAt": "2026-09-30T03:56:50Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_f6b9357a7652e7eeae5e03e6",
-          "sourceId": "awesome-jobs/jobs#5071",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5071",
-          "createdAt": "2026-09-30T03:56:50Z",
-          "updatedAt": "2026-09-30T03:56:50Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-09-30T03:56:50Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a1647bfa438d985a5a959c58",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9699",
-      "title": "Student Learning Coach - Coding",
-      "description": "### Link to Internship Posting\n\nhttps://www.linkedin.com/jobs/view/4471624326/\n\n### Company Name\n\nPrivate Family\n\n### Internship Title\n\nStudent Learning Coach - Coding\n\n### Location\n\nMiami, FL | Remote\n\n### What term(s) is this internship offered for?\n\nWinter 2027\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nPaid, part-time role ($100/hr, 8 hrs/week, in person in Kendall, Miami) mentoring two high-school students through a project-based program in coding, writing, and research. The work is building things with them: shipping websites, writing code, publishing work. It's not tutoring or homework help. Coding ability is required; teaching experience is not. It's a strong fit for CS students who want to lead something real. Posted on behalf of a private family by their recruiter.",
-      "excerpt": "### Link to Internship Posting https://www.linkedin.com/jobs/view/4471624326/ ### Company Name Private Family ### Internship Title Student Learning Coach - Coding ### Location Miami, FL | Remote ### What term(s) is th...",
-      "issueState": "open",
-      "contentHash": "d27f52af173311cda0ec655673251c5a3101705a5de608f73d35ef59b8dd8aa2",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship"
-      ],
-      "sourceTags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "skrejcipapa",
-        "name": "skrejcipapa",
-        "handle": "skrejcipapa",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/240150649?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-09-29T19:44:12Z",
-      "updatedAt": "2026-09-29T19:44:12Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9699",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Miami",
-        "subdivision": "FL",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Miami, FL · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship",
-          "lead"
-        ],
-        "employmentTypes": [
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "on-site",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_a1647bfa438d985a5a959c58",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9699",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9699",
-          "createdAt": "2026-09-29T19:44:12Z",
-          "updatedAt": "2026-09-29T19:44:12Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 2,
-        "publishedAt": "2026-09-29T19:44:12Z",
         "status": "fresh"
       }
     }

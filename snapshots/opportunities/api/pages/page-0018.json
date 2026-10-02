@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-10-02T00:23:18.735Z",
+  "generatedAt": "2026-10-02T09:13:29.163Z",
   "page": 18,
   "pageSize": 20,
   "nextPage": "api/pages/page-0019.json",
   "ids": [
+    "gh_72cc354e7d9c38f999fa902a",
+    "gh_dd237a978dba300d92eb4d35",
+    "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_eba1cf4eba45f378f7186a1e",
     "gh_9c27ccbbb027a757720e4a38",
     "gh_337dcc0369d8226aab4c836f",
@@ -20,12 +23,258 @@
     "gh_777d6953c094c4c77cffa586",
     "gh_03fa03119cda6972a7f24c60",
     "gh_018090ae0b51c7fe869fe122",
-    "gh_f1495b68fe7d4f8349ceb1b6",
-    "gh_90da04043225a0b75c5b63f5",
-    "gh_d9f31b40b046d9fb1c9512c3",
-    "gh_72cfadae02e4f1d29faac8e9"
+    "gh_f1495b68fe7d4f8349ceb1b6"
   ],
   "items": [
+    {
+      "id": "gh_72cc354e7d9c38f999fa902a",
+      "sourceId": "timqian/open-source-jobs#161",
+      "title": "Feature: Enhanced Search & Filtering",
+      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
+      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
+      "issueState": "open",
+      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "codeCraft-Ritik",
+        "name": "codeCraft-Ritik",
+        "handle": "codeCraft-Ritik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-18T13:29:12Z",
+      "updatedAt": "2026-02-19T04:01:20Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/161",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_72cc354e7d9c38f999fa902a",
+          "sourceId": "timqian/open-source-jobs#161",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/161",
+          "createdAt": "2026-02-18T13:29:12Z",
+          "updatedAt": "2026-02-19T04:01:20Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 225,
+        "publishedAt": "2026-02-18T13:29:12Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_dd237a978dba300d92eb4d35",
+      "sourceId": "timqian/open-source-jobs#160",
+      "title": "chaos-genius repo is archived",
+      "description": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table ,\nfix : might remove it or add another new one which is alternative to it ig?",
+      "excerpt": "[chaos-genius repo](https://github.com/chaos-genius/chaos_genius) is archived, which is linked in thee repo to contribute in the table , fix : might remove it or add another new one which is alternative to it ig?",
+      "issueState": "open",
+      "contentHash": "8fa49b441c78bded9b3b3f265b273b1c1cbcac0e78160ac409226673fadcb2d0",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "wasup-yash",
+        "name": "wasup-yash",
+        "handle": "wasup-yash",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112958086?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-17T18:15:36Z",
+      "updatedAt": "2026-02-17T18:15:36Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/160",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_dd237a978dba300d92eb4d35",
+          "sourceId": "timqian/open-source-jobs#160",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/160",
+          "createdAt": "2026-02-17T18:15:36Z",
+          "updatedAt": "2026-02-17T18:15:36Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 226,
+        "publishedAt": "2026-02-17T18:15:36Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_8ca6cfcc5f869a8b9471b21b",
+      "sourceId": "remoteintech/remote-jobs#2113",
+      "title": "Generate dynamic OG images for company profiles",
+      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
+      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
+      "issueState": "open",
+      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-02-15T18:03:51Z",
+      "updatedAt": "2026-08-23T18:19:28Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_8ca6cfcc5f869a8b9471b21b",
+          "sourceId": "remoteintech/remote-jobs#2113",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
+          "createdAt": "2026-02-15T18:03:51Z",
+          "updatedAt": "2026-08-23T18:19:28Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 228,
+        "publishedAt": "2026-02-15T18:03:51Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_eba1cf4eba45f378f7186a1e",
       "sourceId": "OurTinTinLand/TinTin-Job-Board#78",
@@ -645,7 +894,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 240,
+        "ageDays": 241,
         "publishedAt": "2026-02-03T08:33:10Z",
         "status": "stale"
       }
@@ -759,7 +1008,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 246,
+        "ageDays": 247,
         "publishedAt": "2026-01-28T06:02:14Z",
         "status": "stale"
       }
@@ -849,7 +1098,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 247,
+        "ageDays": 248,
         "publishedAt": "2026-01-27T03:43:19Z",
         "status": "stale"
       }
@@ -957,7 +1206,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 247,
+        "ageDays": 248,
         "publishedAt": "2026-01-27T03:40:08Z",
         "status": "stale"
       }
@@ -1041,7 +1290,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 254,
+        "ageDays": 255,
         "publishedAt": "2026-01-20T05:43:31Z",
         "status": "stale"
       }
@@ -1463,7 +1712,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 259,
+        "ageDays": 260,
         "publishedAt": "2026-01-15T06:48:02Z",
         "status": "stale"
       }
@@ -1765,307 +2014,6 @@
       "freshness": {
         "ageDays": 274,
         "publishedAt": "2025-12-31T09:25:54Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_90da04043225a0b75c5b63f5",
-      "sourceId": "f2etw/jobs#1163",
-      "title": "[徵才][台北] 期天資訊 React 前端工程師",
-      "description": "**職缺: 前端工程師**\n\n**能力經歷要求:**\n\n* 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js)\n* 基礎 UI / UX 設計規劃能力\n* 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整\n* 獨立自主學習能力，積極主動\n\n**工作內容：**\n\n開發與維護 React TypeScript 相關專案，包含但不限於：\n\n* 金融交易數據可視化界面 UI/UX\n* 程式交易管理系統\n* 上線金流串接與會員管理系統\n* 電子商務前後台管理系統\n\n**適合此職缺的人格特質：**\n\n* 對金融投資有興趣 (台股期權為主)\n* 喜歡理解新事物，能快速動手實做\n* 善於安排任務優先順序，能靈活應變各類狀況\n* 客戶導向思維，釐清並解決實際問題 (非單純以程式面向考量)\n\n**不適合此職缺的人格特質：**\n\n* 只喜歡獨自埋頭寫程式，排斥溝通討論\n* 不喜歡接觸客戶 ( email / 線上會議 / 實體拜訪)\n* 數字敏銳度低或邏輯推理較差\n\n**薪資(月薪):** 50,000 - 80,000\n\n\n**工作環境與該職缺團隊介紹:**\n\n團隊規模約10人，屬於年輕新創小公司風格，組織扁平，每個人都具有影響力。主要產品為證券期貨交易相關資訊系統，提供即時量化數據網站及自動化程式交易相關技術，客戶包含國內多家大型證券期貨商、顧問公司等。\n\n**工作福利:**\n\n* 職務上手熟悉後，可視情況每週1-2天遠端 WFH\n* 每週兩天免費午餐，另有不定時老闆請客聚餐\n* 各式零食咖啡飲料\n* 每週團體運動時間 (目前是2小時羽球)\n* 公司有兩隻貓會不定時跑來蹭你 (?)\n\n**公司分紅與獎金:** 依年度盈餘及個人考績分紅\n\n**聯絡方式:** Cory / service@futures-ai.com",
-      "excerpt": "**職缺: 前端工程師** **能力經歷要求:** * 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js) * 基礎 UI / UX 設計規劃能力 * 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整 * 獨立自主學習能力，積極主動 **工作內容：** 開發與維護 React TypeScript 相關專案，包含但不限於： * 金融交易數據可視化界面 UI/UX *...",
-      "issueState": "open",
-      "contentHash": "c6211660e67dd99ff6f3718043a8fb2cf05d0b43e925ff1940932d0338810b0f",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "[b] nodejs",
-        "[f] react",
-        "[f] typescript",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊"
-      ],
-      "sourceTags": [
-        "[b] nodejs",
-        "[f] react",
-        "[f] typescript",
-        "求才",
-        "缺休假資訊",
-        "缺特/彈休資訊"
-      ],
-      "author": {
-        "id": "cory8249",
-        "name": "cory8249",
-        "handle": "cory8249",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/7524724?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2025-12-20T08:51:33Z",
-      "updatedAt": "2025-12-20T10:19:07Z",
-      "url": "https://github.com/f2etw/jobs/issues/1163",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "nextjs",
-          "nodejs",
-          "react",
-          "typescript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_90da04043225a0b75c5b63f5",
-          "sourceId": "f2etw/jobs#1163",
-          "repository": "f2etw/jobs",
-          "repositoryUrl": "https://github.com/f2etw/jobs",
-          "url": "https://github.com/f2etw/jobs/issues/1163",
-          "createdAt": "2025-12-20T08:51:33Z",
-          "updatedAt": "2025-12-20T10:19:07Z",
-          "community": {
-            "id": "f2etw",
-            "name": "f2etw",
-            "avatarUrl": "https://github.com/f2etw.png?size=80",
-            "repository": "f2etw/jobs",
-            "url": "https://github.com/f2etw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 285,
-        "publishedAt": "2025-12-20T08:51:33Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_d9f31b40b046d9fb1c9512c3",
-      "sourceId": "TechnologyMasters/jobs#721",
-      "title": "WebBoxes - Sr. AI Engineer - Remote/LatAm - $50,000 USD/Year",
-      "description": "## What You'll get\n\n### Salary Expectation\n\n- $50.000/year\n- Contract / Full Time\n\n### Benefits\n\n- choose your own custom setup\n- new macbook\n\n### Location\n- Candidate will work from home\n\n## What You'll Do _(Job Description)_\n\nWe need a senior AI engineer that will build our new developer assistant SaaS\n\n## What You Need to Be Successful _(Skills)_\n\n### Must Have\n\n- 3+ years working as an AI engineer\n\n### Nice to Have\n\n- full-stack development\n\n## About Our company\n\nhttps://web-boxes.com\n\n## How to apply\n\nPlease send an email to [i@web-boxes..com](i@web-boxes..com) with your resume\n\n---\n\n## Meta\n\n<!--\n  These meta tickboxes automatically apply labels to your post\n  Learn more in the README https://github.com/TechnologyMasters/jobs/blob/master/README.md#label-definitions\n\n  Note, you must fill in the checkboxes correctly in order for them to appear as checked in Markdown\n\n  Unfilled examples:\n  - [ ] Full Time\n  - [ x] Full Time\n  - [x ] Full Time\n\n  Filled example:\n  - [x] Full Time\n-->\n\n- [ ] Full Time\n- [ ] Part Time\n- [x] Contract\n- [ ] Internship\n- [x] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "## What You'll get ### Salary Expectation - $50.000/year - Contract / Full Time ### Benefits - choose your own custom setup - new macbook ### Location - Candidate will work from home ## What You'll Do _(Job Descriptio...",
-      "issueState": "open",
-      "contentHash": "3ca3a01661be2c7fac30412750a3fcb06c7c1532ef93b9ccd62d6761c957da02",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote",
-        "senior"
-      ],
-      "sourceTags": [
-        "remote",
-        "senior"
-      ],
-      "author": {
-        "id": "fu11stackdev",
-        "name": "fu11stackdev",
-        "handle": "fu11stackdev",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/204783689?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2025-12-06T16:55:35Z",
-      "updatedAt": "2025-12-07T04:05:58Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/721",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship",
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_d9f31b40b046d9fb1c9512c3",
-          "sourceId": "TechnologyMasters/jobs#721",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/721",
-          "createdAt": "2025-12-06T16:55:35Z",
-          "updatedAt": "2025-12-07T04:05:58Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 299,
-        "publishedAt": "2025-12-06T16:55:35Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_72cfadae02e4f1d29faac8e9",
-      "sourceId": "remotejobsbr/design-ux-vagas#118",
-      "title": "[MARINGÁ] Designer UI/UX Trainee na DB1",
-      "description": "## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Descrição da vaga\n\nComo UX/UI Trainee, você irá aprender e apoiar o time no entendimento de problemas reais dos usuários e na criação de soluções que tornem nossas jornadas mais intuitivas, eficientes e agradáveis.\nVocê estará ao lado de designer, PO, analistas de negócios, desenvolvedores e áreas internas, contribuindo em todas as etapas: desde pesquisas iniciais até protótipos e testes com usuários. Você será responsável por:\n\nApoiar pesquisas com usuários (entrevistas, levantamentos e análises) para entender dores e oportunidades;\nParticipar de sessões de brainstorming e ideação junto ao time de Produto e UX;\nAjudar na criação de fluxos, wireframes e protótipos;\nContribuir com a elaboração e organização de telas e componentes seguindo o Design System;\nAuxiliar na análise de resultados de testes de usabilidade e propor melhorias;\nAtuar em rituais ágeis (Scrum/Kanban), aprendendo sobre colaboração, ritmo e visibilidade;\nApoiar documentação básica (histórias, critérios de aceitação, especificações) sempre com orientação do time.\n## Local\n\nEscritório, [PARANÁ], [MARINGÁ]\n\n## Requisitos\n\n**Obrigatórios:**\nInteresse de aprender e crescer na área de UX/UI;\nComunicação clara, abertura para feedbacks e colaboração com diferentes áreas;\nPensamento crítico e olhar atento a detalhes, com foco em criar experiências simples e funcionais;\nOrganização e responsabilidade para acompanhar tarefas e prazos;\nFormação em andamento ou concluída em Design, Sistemas de Informação, Engenharia ou áreas correlatas.\n\n**Diferenciais:**\nFigma;\nPráticas de UX Research (entrevistas, análise heurística, mapas de jornada);\nConceitos de Design Thinking, Lean UX e Product Discovery;\nNoções de Design System.\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nLINK https://db1.inhire.app/vagas/9869bb8e-7404-4949-b99d-491acfe51633/designer-uiux-trainee?r=43941dbb-f183-4c7c-a931-f64828e11cf7 \n\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n\n- CLT\n- Treinee",
-      "excerpt": "## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida da...",
-      "issueState": "open",
-      "contentHash": "5b556cf16530c498848234e3f369148127d05dbb8f4d5bb036239cbe1d142b8f",
-      "repository": "remotejobsbr/design-ux-vagas",
-      "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design"
-      ],
-      "sourceTags": [
-        "data",
-        "design"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "remotejobsbr",
-        "name": "remotejobsbr",
-        "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-        "repository": "remotejobsbr/design-ux-vagas",
-        "url": "https://github.com/remotejobsbr/design-ux-vagas"
-      },
-      "companyName": "DB1",
-      "createdAt": "2025-12-05T13:51:36Z",
-      "updatedAt": "2025-12-05T13:51:36Z",
-      "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/118",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "employee",
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_72cfadae02e4f1d29faac8e9",
-          "sourceId": "remotejobsbr/design-ux-vagas#118",
-          "repository": "remotejobsbr/design-ux-vagas",
-          "repositoryUrl": "https://github.com/remotejobsbr/design-ux-vagas",
-          "url": "https://github.com/remotejobsbr/design-ux-vagas/issues/118",
-          "createdAt": "2025-12-05T13:51:36Z",
-          "updatedAt": "2025-12-05T13:51:36Z",
-          "community": {
-            "id": "remotejobsbr",
-            "name": "remotejobsbr",
-            "avatarUrl": "https://github.com/remotejobsbr.png?size=80",
-            "repository": "remotejobsbr/design-ux-vagas",
-            "url": "https://github.com/remotejobsbr/design-ux-vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 300,
-        "publishedAt": "2025-12-05T13:51:36Z",
         "status": "stale"
       }
     }
