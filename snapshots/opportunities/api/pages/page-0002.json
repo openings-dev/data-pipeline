@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-03T15:31:07.628Z",
+  "generatedAt": "2026-10-03T20:26:00.318Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
-    "gh_1c5328af78cf355f775290f3",
     "gh_5cf43af7adf0bacb68e0bed4",
     "gh_04527d7aee2622a060d30425",
     "gh_b6aefab5452b32ee8687841b",
@@ -23,107 +22,10 @@
     "gh_a005a7b8b54bdcc1233e7263",
     "gh_db999290471cf301e6e682fa",
     "gh_bf11ac27c78c19485c3ac9f0",
-    "gh_b09d79dd41c1009014b9e0ee"
+    "gh_b09d79dd41c1009014b9e0ee",
+    "gh_f731e6b22a1664fd513efea5"
   ],
   "items": [
-    {
-      "id": "gh_1c5328af78cf355f775290f3",
-      "sourceId": "zapplyjobs/underclassmen-internships#26",
-      "title": "Question about reading public listings on ZApply Underclassmen (personal final-year project)",
-      "description": "Hello ZApply Underclassmen team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer and a link to the job (your list gives no location or date), plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/zapplyjobs/underclassmen-internships/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
-      "excerpt": "Hello ZApply Underclassmen team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any univers...",
-      "issueState": "open",
-      "contentHash": "c6965d5877f075281e4b98c621bf33bd6eb4b3809506ec5d9d5f0f7e6395ecee",
-      "repository": "zapplyjobs/underclassmen-internships",
-      "repositoryUrl": "https://github.com/zapplyjobs/underclassmen-internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "pathmaker7",
-        "name": "pathmaker7",
-        "handle": "pathmaker7",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
-      },
-      "community": {
-        "id": "zapplyjobs",
-        "name": "zapplyjobs",
-        "avatarUrl": "https://github.com/zapplyjobs.png?size=80",
-        "repository": "zapplyjobs/underclassmen-internships",
-        "url": "https://github.com/zapplyjobs/underclassmen-internships"
-      },
-      "createdAt": "2026-09-30T10:27:39Z",
-      "updatedAt": "2026-09-30T10:27:39Z",
-      "url": "https://github.com/zapplyjobs/underclassmen-internships/issues/26",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_1c5328af78cf355f775290f3",
-          "sourceId": "zapplyjobs/underclassmen-internships#26",
-          "repository": "zapplyjobs/underclassmen-internships",
-          "repositoryUrl": "https://github.com/zapplyjobs/underclassmen-internships",
-          "url": "https://github.com/zapplyjobs/underclassmen-internships/issues/26",
-          "createdAt": "2026-09-30T10:27:39Z",
-          "updatedAt": "2026-09-30T10:27:39Z",
-          "community": {
-            "id": "zapplyjobs",
-            "name": "zapplyjobs",
-            "avatarUrl": "https://github.com/zapplyjobs.png?size=80",
-            "repository": "zapplyjobs/underclassmen-internships",
-            "url": "https://github.com/zapplyjobs/underclassmen-internships"
-          }
-        },
-        {
-          "id": "gh_34aef200ad805203586dcecc",
-          "sourceId": "zapplyjobs/New-Grad-Jobs-2026#26",
-          "repository": "zapplyjobs/New-Grad-Jobs-2026",
-          "repositoryUrl": "https://github.com/zapplyjobs/New-Grad-Jobs-2026",
-          "url": "https://github.com/zapplyjobs/underclassmen-internships/issues/26",
-          "createdAt": "2026-09-30T10:27:39Z",
-          "updatedAt": "2026-09-30T10:27:39Z",
-          "community": {
-            "id": "zapplyjobs",
-            "name": "zapplyjobs",
-            "avatarUrl": "https://github.com/zapplyjobs.png?size=80",
-            "repository": "zapplyjobs/New-Grad-Jobs-2026",
-            "url": "https://github.com/zapplyjobs/New-Grad-Jobs-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 3,
-        "publishedAt": "2026-09-30T10:27:39Z",
-        "status": "fresh"
-      }
-    },
     {
       "id": "gh_5cf43af7adf0bacb68e0bed4",
       "sourceId": "Lamiiine/Awesome-daily-list-of-visa-sponsored-jobs#8",
@@ -1112,7 +1014,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-09-29T19:44:12Z",
         "status": "fresh"
       }
@@ -1227,7 +1129,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-09-28T20:02:31Z",
         "status": "fresh"
       }
@@ -1344,7 +1246,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-09-28T20:01:27Z",
         "status": "fresh"
       }
@@ -1767,7 +1669,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-09-26T18:34:27Z",
         "status": "fresh"
       }
@@ -1882,7 +1784,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-09-25T17:30:55Z",
         "status": "fresh"
       }
@@ -2093,6 +1995,100 @@
       "freshness": {
         "ageDays": 8,
         "publishedAt": "2026-09-25T13:02:57Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_f731e6b22a1664fd513efea5",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9698",
+      "title": "New Internship: Meta Production Engineering Intern",
+      "description": "### Link to Internship Posting\n\nhttps://www.metacareers.com/profile/job_details/1609178343953401/?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgRzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAadN_sCh5WPs6crCcQAbiFbZR8SkePKVixGyE-RsmHfxSQWp_pK2H0lLSj9n7g_aem_h8HQbnkStITd6j-SAlCocw\n\n### Company Name\n\nMeta\n\n### Internship Title\n\nProduction Engineering Intern\n\n### Location\n\nBellevue, WA | Menlo Park, CA\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nspkirangi@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
+      "excerpt": "### Link to Internship Posting https://www.metacareers.com/profile/job_details/1609178343953401/?fbclid=PAZXh0bgNhZW0CMTEAcGRvZgRzcnRjBmFwcF9pZAwyNTYyODEwNDA1NTgAAadN_sCh5WPs6crCcQAbiFbZR8SkePKVixGyE-RsmHfxSQWp_pK2H0l...",
+      "issueState": "open",
+      "contentHash": "4f5e6c36c845a38bd8e41d9200dab5627a7f00437c1dd77d26a2deaaa24e3fd1",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
+        "new_internship"
+      ],
+      "author": {
+        "id": "Sahil-kirangi",
+        "name": "Sahil-kirangi",
+        "handle": "Sahil-kirangi",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/142359248?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-09-24T16:06:58Z",
+      "updatedAt": "2026-09-24T16:07:43Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9698",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Bellevue",
+        "subdivision": "WA",
+        "displayText": "Bellevue, WA",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f731e6b22a1664fd513efea5",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9698",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9698",
+          "createdAt": "2026-09-24T16:06:58Z",
+          "updatedAt": "2026-09-24T16:07:43Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-09-24T16:06:58Z",
         "status": "fresh"
       }
     }
