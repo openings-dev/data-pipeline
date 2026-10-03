@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-10-02T17:09:35.452Z",
+  "generatedAt": "2026-10-03T10:54:07.998Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 10,
-    "openIssues": 1,
-    "closedIssues": 9
+    "openIssues": 2,
+    "closedIssues": 8
   },
-  "dataHash": "797168ed11c0255310ba7d28df44642484d4ec60dc1bdfb03456cb99df8952dc",
+  "dataHash": "ee62e4911b146913efa3c7a79711db3ae29c311fb1e9f50aae8c4ee34bd8f2f7",
   "items": [
+    {
+      "id": "gh_064d8d44d5caf9b4157f4e8e",
+      "sourceId": "ambicuity/New-Grad-Jobs#377",
+      "title": "Job data is stale: last scrape 2026-10-03T01:11:08.913505Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **253 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/37099709849. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **253 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "225ee0d2913fc800baabf5bd03057058fb02e864988508db4d9f9f3ec95225be",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-03T05:24:31Z",
+      "updatedAt": "2026-10-03T05:24:31Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/377",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_d0a55334501f812ebde83f2c",
       "sourceId": "ambicuity/New-Grad-Jobs#376",
@@ -543,72 +601,6 @@
       "createdAt": "2026-07-16T02:16:50Z",
       "updatedAt": "2026-07-16T02:21:53Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/348",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_f84858769bf7bd65b7d9fa12",
-      "sourceId": "ambicuity/New-Grad-Jobs#346",
-      "title": "Make the terminal site mobile-friendly (single-column reflow)",
-      "description": "## Problem\n\nThe live site (`docs/index.html` + `docs/terminal/*.jsx`) is a desktop-only Bloomberg-terminal-style dashboard. On phones it forces horizontal scrolling and is effectively unusable.\n\nBlockers:\n- `#root { min-width: 1180px }` forces a 1180px canvas on every viewport\n- `body { overflow-x: auto }` — the layout is designed to scroll sideways\n- Both tabs use fixed 3-column grids (`210px 1fr 460px` / `220px 1fr 460px`) + dense 8–9 column tabular rows\n- No responsive logic exists (`@media` / `matchMedia` / breakpoints all absent)\n\n## Goal\n\nSingle-column **reflow** below a 760px breakpoint, for **both** tabs (Hiring + Contributors). Desktop layout (≥760px) stays pixel-identical.\n\nBecause every component uses inline JS style objects (inline styles beat stylesheet rules), responsiveness is driven by a JS `matchMedia` hook (`useIsMobile`) that components branch on; only the `index.html` `<style>` block uses real `@media`.\n\n## Plan\n\n- New `docs/terminal/use-viewport.jsx` → `useIsMobile()` (`max-width: 760px`)\n- `index.html`: relax `#root` min-width + `body` overflow on mobile via media queries; cache-bust `?v=17`\n- `app.jsx`: TopBar wraps, tappable tabs, condensed meta; footer padding\n- `dashboard.jsx`: filters drawer accordion, stats strip horizontal-scroll, table rows → cards, full-screen job detail with BACK, hide F-key hints\n- `contributors.jsx`: same single-column treatment\n\n## Testing\n\nPlaywright screenshots at 320/375/768/1024/1440; assert no horizontal overflow at mobile widths; verify drawer + full-screen detail + both tabs; confirm desktop 1440 unchanged.",
-      "excerpt": "## Problem The live site (`docs/index.html` + `docs/terminal/*.jsx`) is a desktop-only Bloomberg-terminal-style dashboard. On phones it forces horizontal scrolling and is effectively unusable. Blockers: - `#root { min...",
-      "issueState": "closed",
-      "contentHash": "d3f1eff92aab7895ed057ea333b936c4c74dd330d9838c384995cca21ce9e6b5",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement",
-        "help wanted",
-        "intermediate",
-        "ui/ux"
-      ],
-      "sourceTags": [
-        "type: enhancement",
-        "help wanted",
-        "intermediate",
-        "ui/ux"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-07-16T01:34:53Z",
-      "updatedAt": "2026-07-16T02:07:48Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/346",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
