@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-07T09:36:38.452Z",
+  "generatedAt": "2026-10-07T18:13:29.129Z",
   "page": 3,
   "pageSize": 20,
   "nextPage": "api/pages/page-0004.json",
   "ids": [
+    "gh_bf11ac27c78c19485c3ac9f0",
     "gh_b09d79dd41c1009014b9e0ee",
     "gh_f731e6b22a1664fd513efea5",
     "gh_2225650e80acfb4546882b42",
@@ -22,10 +23,98 @@
     "gh_6f45233b99747b64f192566e",
     "gh_a46069ea14b72cc4d37999b6",
     "gh_b966e0258e506bd3daf3e811",
-    "gh_d450ba5b01eda9a9621a176b",
-    "gh_13d45f8cd2e50adab5e7c669"
+    "gh_d450ba5b01eda9a9621a176b"
   ],
   "items": [
+    {
+      "id": "gh_bf11ac27c78c19485c3ac9f0",
+      "sourceId": "lukasz-madon/awesome-remote-job#1162",
+      "title": "Does a remote job board with limited free access fit the list?",
+      "description": "Hi, I run [DoableFromHome](https://doablefromhome.com), a remote tech job board that checks employer hiring restrictions against the country a job seeker selects.\n\nI saw the contribution rule about paywalls and required login, so I wanted to check before opening a PR. Visitors can browse 20 jobs per search without an account. Free accounts get 40 jobs per search and saved searches. Full results and daily email alerts require Pro, and free users see new jobs 12 hours later.\n\nThe distinction is the country eligibility check: we assess employer location restrictions and explain the result for the reader's country. Listings link to the employer's posting.\n\nWould a board with this access model be eligible for the Job boards section, or does the rule exclude it?",
+      "excerpt": "Hi, I run [DoableFromHome](https://doablefromhome.com), a remote tech job board that checks employer hiring restrictions against the country a job seeker selects. I saw the contribution rule about paywalls and require...",
+      "issueState": "open",
+      "contentHash": "a8d9e9901b3759cd096ab37c10f57219bf11c3de02bbd3fd96ef5d7531a33817",
+      "repository": "lukasz-madon/awesome-remote-job",
+      "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "remote"
+      ],
+      "sourceTags": [
+        "remote"
+      ],
+      "author": {
+        "id": "Skowt",
+        "name": "Skowt",
+        "handle": "Skowt",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4960236?v=4"
+      },
+      "community": {
+        "id": "lukasz-madon",
+        "name": "lukasz-madon",
+        "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
+        "repository": "lukasz-madon/awesome-remote-job",
+        "url": "https://github.com/lukasz-madon/awesome-remote-job"
+      },
+      "createdAt": "2026-09-25T13:03:01Z",
+      "updatedAt": "2026-09-25T13:03:01Z",
+      "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1162",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_bf11ac27c78c19485c3ac9f0",
+          "sourceId": "lukasz-madon/awesome-remote-job#1162",
+          "repository": "lukasz-madon/awesome-remote-job",
+          "repositoryUrl": "https://github.com/lukasz-madon/awesome-remote-job",
+          "url": "https://github.com/lukasz-madon/awesome-remote-job/issues/1162",
+          "createdAt": "2026-09-25T13:03:01Z",
+          "updatedAt": "2026-09-25T13:03:01Z",
+          "community": {
+            "id": "lukasz-madon",
+            "name": "lukasz-madon",
+            "avatarUrl": "https://github.com/lukasz-madon.png?size=80",
+            "repository": "lukasz-madon/awesome-remote-job",
+            "url": "https://github.com/lukasz-madon/awesome-remote-job"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 12,
+        "publishedAt": "2026-09-25T13:03:01Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_b09d79dd41c1009014b9e0ee",
       "sourceId": "awesome-jobs/jobs#5069",
@@ -141,7 +230,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-09-25T13:02:57Z",
         "status": "fresh"
       }
@@ -235,7 +324,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-09-24T16:06:58Z",
         "status": "fresh"
       }
@@ -358,7 +447,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-09-24T10:59:51Z",
         "status": "fresh"
       }
@@ -720,7 +809,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:38:10Z",
         "status": "fresh"
       }
@@ -820,7 +909,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:36:28Z",
         "status": "fresh"
       }
@@ -907,7 +996,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:34:47Z",
         "status": "fresh"
       }
@@ -994,7 +1083,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:28:53Z",
         "status": "fresh"
       }
@@ -1090,7 +1179,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:23:20Z",
         "status": "fresh"
       }
@@ -1177,7 +1266,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 13,
+        "ageDays": 14,
         "publishedAt": "2026-09-23T10:13:17Z",
         "status": "fresh"
       }
@@ -1884,132 +1973,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 15,
+        "ageDays": 16,
         "publishedAt": "2026-09-21T14:04:13Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_13d45f8cd2e50adab5e7c669",
-      "sourceId": "androiddevbr/vagas#2247",
-      "title": "[Remoto] Mobile Engineer (USD Strider)",
-      "description": "🚨📱 VAGA INTERNACIONAL | REMOTA | BRASIL | USD\n\n💻 MOBILE ENGINEER — iOS\n\nOportunidade para profissionais com forte experiência em desenvolvimento mobile e atuação com iOS, Swift e Kotlin Multiplatform (KMP).\n\n💰 USD 4.000–6.000/mês\n\n🔹 5+ anos em desenvolvimento mobile\n🔹 Experiência sólida em produção com iOS + Swift\n🔹 Kotlin Multiplatform (KMP) e Kotlin\n🔹 TypeScript\n🔹 Swift Concurrency & Kotlin Coroutines\n🔹 Arquitetura iOS, networking, persistência e integrações com dispositivos\n🔹 Interesse em AI-assisted / agentic development\n🔹 Inglês B2+\n🔹 Localização: Brasil\n🔹 Long-term | 40h/semana\n\n🚀 Perfil ideal: Mobile Engineer que vai além de aplicações simples, com experiência em sistemas complexos e interesse em integrar IA ao processo de desenvolvimento.\n\n👉 Se esse perfil é o seu, vale conferir todos os requisitos da oportunidade!\n\nSe inscreva abaixo 👇🏻 \nMobile Engineer | iOS, Swift, Kotlin Multiplatform (KMP)\n4k-6k USD/month | 5+ years of exp. | B2 English\nhttps://app.onstrider.com/r/claudiaantunes?job=bW9iaWxlLWVuZ2luZWVyLWEyYmI1OTQzP3JlZmVycmFsPWNsYXVkaWFhbnR1bmVz \n\n#VagasInternacionais #VagasRemotas #MobileEngineer #iOSDeveloper #Swift #Kotlin #KMP #KotlinMultiplatform #TypeScript #AI #SoftwareEngineer #TechJobs #RemoteJobs #VagasTI #TechRecruiter",
-      "excerpt": "🚨📱 VAGA INTERNACIONAL | REMOTA | BRASIL | USD 💻 MOBILE ENGINEER — iOS Oportunidade para profissionais com forte experiência em desenvolvimento mobile e atuação com iOS, Swift e Kotlin Multiplatform (KMP). 💰 USD 4....",
-      "issueState": "open",
-      "contentHash": "69122b11c71e529c18aa8fffa4adaf8a95ea562a5943048d64f559c303624386",
-      "repository": "androiddevbr/vagas",
-      "repositoryUrl": "https://github.com/androiddevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "remote",
-        "typescript"
-      ],
-      "sourceTags": [
-        "remote",
-        "typescript"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "androiddevbr",
-        "name": "androiddevbr",
-        "avatarUrl": "https://github.com/androiddevbr.png?size=80",
-        "repository": "androiddevbr/vagas",
-        "url": "https://github.com/androiddevbr/vagas"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 4000,
-        "max": 6000,
-        "period": "month"
-      },
-      "createdAt": "2026-09-19T13:38:05Z",
-      "updatedAt": "2026-09-19T13:49:29Z",
-      "url": "https://github.com/androiddevbr/vagas/issues/2247",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Brazil · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "mobile"
-        ],
-        "technologies": [
-          "kotlin",
-          "typescript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_13d45f8cd2e50adab5e7c669",
-          "sourceId": "androiddevbr/vagas#2247",
-          "repository": "androiddevbr/vagas",
-          "repositoryUrl": "https://github.com/androiddevbr/vagas",
-          "url": "https://github.com/androiddevbr/vagas/issues/2247",
-          "createdAt": "2026-09-19T13:38:05Z",
-          "updatedAt": "2026-09-19T13:38:05Z",
-          "community": {
-            "id": "androiddevbr",
-            "name": "androiddevbr",
-            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
-            "repository": "androiddevbr/vagas",
-            "url": "https://github.com/androiddevbr/vagas"
-          }
-        },
-        {
-          "id": "gh_62c893e746cdb0fe0b66deb6",
-          "sourceId": "androiddevbr/vagas#2248",
-          "repository": "androiddevbr/vagas",
-          "repositoryUrl": "https://github.com/androiddevbr/vagas",
-          "url": "https://github.com/androiddevbr/vagas/issues/2248",
-          "createdAt": "2026-09-19T13:49:29Z",
-          "updatedAt": "2026-09-19T13:49:29Z",
-          "community": {
-            "id": "androiddevbr",
-            "name": "androiddevbr",
-            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
-            "repository": "androiddevbr/vagas",
-            "url": "https://github.com/androiddevbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 17,
-        "publishedAt": "2026-09-19T13:38:05Z",
         "status": "fresh"
       }
     }
