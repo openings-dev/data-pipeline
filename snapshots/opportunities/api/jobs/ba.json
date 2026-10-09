@@ -1,6 +1,109 @@
 {
-  "generatedAt": "2026-10-09T17:48:37.815Z",
+  "generatedAt": "2026-10-09T22:05:06.135Z",
   "items": {
+    "gh_ba5bd2250dfdfeaed6de206e": {
+      "id": "gh_ba5bd2250dfdfeaed6de206e",
+      "sourceId": "remoteintech/remote-jobs#2268",
+      "title": "[Bug] Changelog page: change descriptions shatter into columns and overflow underneath the Carbon ad",
+      "description": "## Summary\n\nOn `/changelog/`, each change description is shattered into a series of narrow vertical columns, and the overflowing text runs underneath the Carbon Ads sidebar unit. Entries whose description contains inline markup (`<code>`, `<a>`) are badly broken; plain-text entries render fine.\n\nLive page: https://remoteintech.company/changelog/\n\n## Screenshots (current behaviour)\n\n**Desktop — 1920×1080** — description text collapses into columns and extends beneath the ad:\n\n![Desktop 1920 - changelog entries broken, text running under the ad](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-desktop-1920.png)\n\n**Desktop — 1440×900** — same failure at a narrower desktop width:\n\n![Desktop 1440 - fragmented text overflows past the content column](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-desktop-1440.png)\n\n**Tablet — 834×1112** — fragments overflow the right edge:\n\n![Tablet 834 - change text spills outside the content column](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-tablet-834.png)\n\n**Mobile — 390px** — the inline ad is pushed off-screen and entries fragment into columns:\n\n![Mobile 390 - ad pushed off-screen, changelog entries fragmented](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-mobile-390-entries.png)\n\n## Steps to reproduce\n\n1. Open <https://remoteintech.company/changelog/> in a desktop browser (≥961px, where the sidebar ad is shown).\n2. Scroll to the **v4.14.1** entry.\n3. Observe the first `FIXED` item.\n\n## Expected behaviour\n\nThe badge (`FIXED` / `ADDED` / `CHANGED`) sits on the left, and the description wraps as normal prose within the content column, never crossing into the ad's area.\n\n## Actual behaviour\n\nThe description is broken into separate vertical columns spread across the full page width. On desktop the overflow is painted underneath the sticky Carbon ad, so text reads as though the ad is covering it. Entries with no inline markup (e.g. *\"Migrated from static README-based list to Eleventy v3 static site\"*) are unaffected, which makes the page look intermittently broken.\n\n## Root cause\n\n`src/pages/changelog.njk` styles each list item as a flex container:\n\n```css\n.changelog-entry__changes li {\n  padding-block: var(--space-2xs);\n  display: flex;          /* <-- the problem */\n  align-items: baseline;\n  gap: var(--space-xs);\n}\n```\n\nBut each `<li>` is not a flex row of two items — it is the badge **plus raw inline content** interpolated from `src/_data/changelog.json` via `{{ change.description | safe }}`:\n\n```html\n<li>\n  <span class=\"changelog-badge\" data-type=\"fixed\">fixed</span>\n  The technology tag list was stale in all three contributor docs —\n  <a href=\"/contributing/\">the site's contributing page</a>,\n  <code>CONTRIBUTING.md</code> and <code>.github/CONTRIBUTING.md</code> — missing\n  <code>typescript</code>, <code>react</code>, … <code>postgres</code>, which …\n</li>\n```\n\nBecause the `<li>` is a flex container, **every one of those nodes becomes a separate flex item**:\n\n- each run of bare text becomes an *anonymous flex item*,\n- every `<a>` and every `<code>` becomes its own flex item.\n\nFlexbox defaults to `flex-wrap: nowrap`, and flex items have `min-width: auto`, so they refuse to shrink below their min-content width. For an entry containing ten-plus inline fragments, the combined min-content width is far wider than the `<main>` column. Two consequences follow:\n\n1. Each fragment collapses to its own min-content-width column (one long word wide) — the \"shattered\" appearance.\n2. The row overflows the `<li>` and the `<main>` column, so it paints underneath the `position: sticky` `.carbon-ad-container` in the sidebar, which is the overlap reported here.\n\nOn mobile the same overflow widens the document beyond the viewport, which also drags the inline ad off-screen.\n\nThis affects every changelog entry whose description contains inline markup — the large majority of recent entries.\n\n## Suggested fix\n\nKeep the badge and the description as the only two flex items by wrapping the description in an element, so the inline markup flows normally inside it:\n\n```njk\n<li>\n  <span class=\"changelog-badge\" data-type=\"{{ change.type }}\">{{ change.type }}</span>\n  <span class=\"changelog-entry__description\">{{ change.description | safe }}</span>\n</li>\n```\n\n```css\n.changelog-entry__changes li {\n  padding-block: var(--space-2xs);\n  display: flex;\n  align-items: baseline;\n  gap: var(--space-xs);\n}\n\n.changelog-entry__description {\n  flex: 1;\n  min-inline-size: 0; /* allow the text to shrink and wrap instead of overflowing */\n}\n```\n\nAdding `overflow-wrap: anywhere` for long unbreakable tokens such as `.github/CONTRIBUTING.md` would also keep narrow viewports clean.\n\n## Environment\n\n- Page: `/changelog/` (https://remoteintech.company/changelog/)\n- Affects all viewport widths; most visible at ≥961px where the sidebar ad renders\n- Reproduced on Chrome (desktop 1920, 1440; tablet 834; mobile 390), both light and dark themes\n- Ad behaviour means it is only reproducible on production builds — the Carbon unit is gated behind `eleventy.env.runMode == \"build\"` (see `src/_includes/partials/carbon-ad.njk` and `src/_layouts/base.njk`)\n\n## Files involved\n\n- `src/pages/changelog.njk` — the `display: flex` list item and the ungrouped description\n- `src/_data/changelog.json` — descriptions containing inline `<a>`/`<code>`\n- `src/_includes/partials/carbon-ad.njk`, `src/assets/css/global/blocks/carbon-ad.css` — the sticky sidebar ad (not at fault, but the element the overflow collides with)",
+      "excerpt": "## Summary On `/changelog/`, each change description is shattered into a series of narrow vertical columns, and the overflowing text runs underneath the Carbon Ads sidebar unit. Entries whose description contains inli...",
+      "issueState": "open",
+      "contentHash": "e19dd6c4bec2e3fd0ddb3c1b9b20ccbb8bd7dc67a6458ac5ef7489b785d11de3",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "node",
+        "react",
+        "remote",
+        "typescript"
+      ],
+      "sourceTags": [
+        "data",
+        "node",
+        "react",
+        "remote",
+        "typescript"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-10-09T18:01:42Z",
+      "updatedAt": "2026-10-09T18:01:42Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2268",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "postgres",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_ba5bd2250dfdfeaed6de206e",
+          "sourceId": "remoteintech/remote-jobs#2268",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2268",
+          "createdAt": "2026-10-09T18:01:42Z",
+          "updatedAt": "2026-10-09T18:01:42Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-09T18:01:42Z",
+        "status": "fresh"
+      }
+    },
     "gh_ba4f8e13f468e4ef55d8683c": {
       "id": "gh_ba4f8e13f468e4ef55d8683c",
       "sourceId": "programadores-br/geral#3067",
