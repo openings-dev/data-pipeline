@@ -41051,6 +41051,314 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_6bd2ea87cfb4bbe49569241c",
+        "revision": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+        "idempotencyKey": "openings:job:gh_6bd2ea87cfb4bbe49569241c:9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7"
+      },
+      "canonical": {
+        "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
+        "summary": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_6bd2ea87cfb4bbe49569241c",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_6bd2ea87cfb4bbe49569241c",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_6bd2ea87cfb4bbe49569241c",
+              "revision": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+              "canonicalPath": "/jobs/gh_6bd2ea87cfb4bbe49569241c",
+              "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
+              "summary": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
+              "status": "active",
+              "contentSha256": "ac5cd7fd9548e919d47bf4ef4112e8a2f92d4963a39812e5ec9a37aeac0171a4",
+              "content": {
+                "id": "gh_6bd2ea87cfb4bbe49569241c",
+                "sourceId": "ambicuity/New-Grad-Jobs#316",
+                "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
+                "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
+                "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
+                "issueState": "open",
+                "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+                "repository": "ambicuity/New-Grad-Jobs",
+                "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+                "region": "North America",
+                "country": "United States",
+                "sourceLocation": {
+                  "country": "United States",
+                  "countryCode": "US",
+                  "region": "North America"
+                },
+                "tags": [
+                  "enhancement",
+                  "help wanted",
+                  "needs-triage",
+                  "priority: medium",
+                  "roadmap",
+                  "type: enhancement"
+                ],
+                "sourceTags": [
+                  "enhancement",
+                  "help wanted",
+                  "needs-triage",
+                  "priority: medium",
+                  "roadmap",
+                  "type: enhancement"
+                ],
+                "author": {
+                  "id": "ambicuity",
+                  "name": "ambicuity",
+                  "handle": "ambicuity",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+                },
+                "community": {
+                  "id": "ambicuity",
+                  "name": "ambicuity",
+                  "avatarUrl": "https://github.com/ambicuity.png?size=80",
+                  "repository": "ambicuity/New-Grad-Jobs",
+                  "url": "https://github.com/ambicuity/New-Grad-Jobs"
+                },
+                "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
+                "createdAt": "2026-05-26T23:52:14Z",
+                "updatedAt": "2026-10-09T17:27:12Z",
+                "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "data-ai",
+                    "design"
+                  ],
+                  "technologies": [
+                    "go",
+                    "python"
+                  ],
+                  "seniority": [
+                    "internship",
+                    "junior"
+                  ],
+                  "employmentTypes": [
+                    "full-time",
+                    "internship"
+                  ],
+                  "workModels": [
+                    "hybrid",
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "inferred"
+                },
+                "sources": [
+                  {
+                    "id": "gh_6bd2ea87cfb4bbe49569241c",
+                    "sourceId": "ambicuity/New-Grad-Jobs#316",
+                    "repository": "ambicuity/New-Grad-Jobs",
+                    "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+                    "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+                    "createdAt": "2026-05-26T23:52:14Z",
+                    "updatedAt": "2026-10-09T17:27:12Z",
+                    "community": {
+                      "id": "ambicuity",
+                      "name": "ambicuity",
+                      "avatarUrl": "https://github.com/ambicuity.png?size=80",
+                      "repository": "ambicuity/New-Grad-Jobs",
+                      "url": "https://github.com/ambicuity/New-Grad-Jobs"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 135,
+                  "publishedAt": "2026-05-26T23:52:14Z",
+                  "status": "stale"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_cb2ee2711308cdd4a5a45c69",
+        "revision": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+        "idempotencyKey": "openings:job:gh_cb2ee2711308cdd4a5a45c69:7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5"
+      },
+      "canonical": {
+        "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+        "summary": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_cb2ee2711308cdd4a5a45c69",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_cb2ee2711308cdd4a5a45c69",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_cb2ee2711308cdd4a5a45c69",
+              "revision": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+              "canonicalPath": "/jobs/gh_cb2ee2711308cdd4a5a45c69",
+              "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+              "summary": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+              "status": "active",
+              "contentSha256": "1e46c48d276a43a8379326411e83a8098f5fce9e904ed5a55329be7c040688c6",
+              "content": {
+                "id": "gh_cb2ee2711308cdd4a5a45c69",
+                "sourceId": "backend-br/vagas#12292",
+                "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+                "description": "## Nossa empresa\nA Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para negócios de todos os tamanhos. Nossa equipe de experts vive e respira o setor financeiro, atualizando nossas soluções constantemente para tornar suas operações mais digitais, melhorar a performance, inovar no atendimento aos clientes e garantir que todas as exigências regulatórias sejam 100% cumpridas.\n\nTodas as nossas oportunidades são inclusivas e abertas para pessoas com deficiência. 🌟\n\n## Descrição da vaga\n**DESAFIO**\nParticipar do desenvolvimento e manutenção de aplicações web utilizando ASP.NET, C#, JavaScript, e outras tecnologias relacionadas.\nImplementar e otimizar soluções utilizando HTML, CSS, Bootstrap, e JSon, garantindo alta performance e usabilidade.\nDesenvolver e manter banco de dados SQL Server, incluindo a criação e otimização de triggers, stored procedures e aplicação de regras de normalização.\nIntegrar e consumir WebServices (SOAP e REST) nas aplicações desenvolvidas.\nControlar as mudanças no desenvolvimento de software para assegurar a estabilidade e evolução contínua dos projetos.\nIdentificar e corrigir problemas no código, bem como propor melhorias e oportunidades de refatoração para manter a qualidade do software.\nColaborar com equipes multifuncionais para garantir que as soluções atendam aos requisitos de negócios e qualidade.\n\n## Local\nRemoto.\n\n## Requisitos\n\n**O que você precisa ter:**\n\n- Ensino superior completo ou em andamento em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas. \n- Entendimento de processos de desenvolvimento, qualidade e maturidade de software.\n- Experiência e conhecimento em Linguagem de programação: domínio de aplicação e entendimento de sintaxe e desempenho de linguagens como ASP.NET C#, Java script, Json, Bootstrap \n- Experiência com WEB JS/Jquery/Ajax, Webforms, Bootstrap, HTML, JSon e CSS, SQL Server, incluindo normalização, triggers, e stored procedures. \n- Conhecimento em SOAP e REST. \n- Habilidade analítica para detectar problemas e propor soluções eficazes. \n- Proatividade e boa comunicação para colaborar com diferentes equipes.\n\n## Benefícios\n🍽️ Auxílio Alimentação: para você escolher suas refeições com liberdade.\n👶Auxílio Creche: Para ajudar nas despesas dos pequenos.\n👶 Licença Maternidade e Paternidade Estendida: Mais tempo para aproveitar os momentos especiais.\n🏥 Assistência Médica SulAmérica: Cuidado completo para você e sua família.\n🛡️ Seguro de Vida e Funeral: Proteção garantida.\n🏡 Auxílio Home Office: Apoio financeiro para montar e manter seu espaço de trabalho em casa, com conforto e eficiência.\n💊 Descontos em Farmácias: Economize com o Univers.\n🎉 Day Off: Dia de folga no mês do seu aniversário para celebrar em grande estilo!\n\n## Contratação\nCLT.\n\n## Como se candidatar\nCurtiu o desafio e quer fazer parte do nosso time?\n\nPara se candidatar, basta enviar o seu currículo atualizado para o e-mail:\n📧 kerolayne.fbarros@dimensa.com.br\n\nDica: Coloque no assunto do e-mail: **Vaga ASP .NET** para localizarmos sua mensagem mais rápido!\n\n### Nível\n- Junior/Pleno\n\n### Regime\n- CLT\n\n### Alocação\n- Remoto",
+                "excerpt": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+                "issueState": "open",
+                "contentHash": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  ".net",
+                  "asp",
+                  "clt",
+                  "java",
+                  "javascript",
+                  "pleno",
+                  "remoto",
+                  "sql"
+                ],
+                "sourceTags": [
+                  ".net",
+                  "asp",
+                  "clt",
+                  "java",
+                  "javascript",
+                  "pleno",
+                  "remoto",
+                  "sql"
+                ],
+                "author": {
+                  "id": "kerol-barros",
+                  "name": "kerol-barros",
+                  "handle": "kerol-barros",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-06-23T19:07:13Z",
+                "updatedAt": "2026-10-09T16:59:38Z",
+                "url": "https://github.com/backend-br/vagas/issues/12292",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [],
+                  "technologies": [
+                    "csharp",
+                    "dotnet",
+                    "java",
+                    "javascript"
+                  ],
+                  "seniority": [
+                    "junior",
+                    "mid"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_cb2ee2711308cdd4a5a45c69",
+                    "sourceId": "backend-br/vagas#12292",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12292",
+                    "createdAt": "2026-06-23T19:07:13Z",
+                    "updatedAt": "2026-10-09T16:59:38Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 107,
+                  "publishedAt": "2026-06-23T19:07:13Z",
+                  "status": "stale"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
