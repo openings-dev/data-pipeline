@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-08T18:15:30.249Z",
+  "generatedAt": "2026-10-09T00:54:17.071Z",
   "page": 8,
   "pageSize": 20,
   "nextPage": "api/pages/page-0009.json",
   "ids": [
-    "gh_bee25d48c1d08bdb89cd3956",
     "gh_6a1098d504e460b826b0e253",
     "gh_aab1efa0506bca04ee83cbc2",
     "gh_6c2f20dee6f01cb5c724a974",
@@ -23,103 +22,10 @@
     "gh_27c2250541f3aca4b4982d3d",
     "gh_71e10b291f6b95046c3c84fa",
     "gh_345438a912c4cb4b37d9e419",
-    "gh_e12e9295912e94b19e0d7246"
+    "gh_e12e9295912e94b19e0d7246",
+    "gh_f3583e040876fb4b3023f14f"
   ],
   "items": [
-    {
-      "id": "gh_bee25d48c1d08bdb89cd3956",
-      "sourceId": "ambicuity/New-Grad-Jobs#355",
-      "title": "[Sponsors] How sponsorship works here — current sponsors, hard limits, and how to propose a README CTA placement",
-      "description": "**This is a standing, pinned issue. It is intentionally left open — please do not close it.** It is the single public place where sponsorship happens in the open: what we accept, what we refuse, what it costs us to run this, and how anyone can propose a placement.\n\nIf you just want to submit a proposal, skip to [How to propose a placement](#how-to-propose-a-placement).\n\n---\n\n## Why this repo takes sponsorship at all\n\nThis project is free, solo-maintained, and runs a scraper against 224+ company APIs **every 5 minutes, 24/7**. That has a real cost in infrastructure and in maintainer hours. There are three ways it stays alive: people who [sponsor the maintainer](https://github.com/sponsors/ambicuity), people who contribute fixes, and a small number of products that pay for a placement in this README.\n\nWe would rather be openly, boringly transparent about that third one than pretend it doesn't happen. **Every paid placement in this repository is labelled \"Sponsored by …\" in the README itself.** If you ever see a product promoted here without that label, that's a bug — please comment on this issue.\n\n## Current sponsors\n\n| Sponsor | What it is | Where it appears | Relationship |\n|---|---|---|---|\n| **[Tailr](https://www.tailr.uk)** | Rewrites your résumé per job posting and shows an ATS match score. Free 10/day, no card. | `README.md` sponsor section + a badge on the [job board](https://jobs.riteshrana.engineer/) | Sponsor. Disclosed: a sibling product cross-promoted by the maintainer, not an arm's-length ad buy. |\n| **[Zapply](https://app.zapply.jobs)** | Chrome extension that autofills job applications, plus its own job board and application tracking. | `README.md` \"Website & Autofill Extension\" CTA only | Paid monthly CTA placement under a written agreement. Not affiliated with the maintainer. |\n\nSponsorship buys **README real estate and nothing else.**\n\n## What sponsorship never buys\n\nThese are hard lines, not negotiating positions:\n\n- **No influence over job data.** Listings, categories, rankings, sort order, and dedup behaviour are driven by [`config.yml`](https://github.com/ambicuity/New-Grad-Jobs/blob/main/config.yml) and the scraper. A sponsor cannot buy a listing, buy a better position in a table, or get a competitor removed. Paying us does not get your company's roles surfaced.\n- **No reader tracking.** No pixels, no analytics scripts, no third-party JS, no data about who read what. A plain link with a `?ref=` query parameter is the absolute maximum, and it is visible in the Markdown for anyone to inspect.\n- **No editorial control.** Sponsors do not review, approve, or veto anything outside their own CTA block — not the README copy around it, not issues, not PRs, not moderation.\n- **No implied endorsement of a hiring outcome.** We will not host copy that promises a job, an interview, a referral, or a salary.\n\n## What we will not accept, at any price\n\n- Guaranteed-job, guaranteed-interview, or guaranteed-salary claims (\"we place you at FAANG\").\n- Pay-to-apply schemes, or anything that charges a job seeker to *submit* an application.\n- Résumé mills, fake-experience services, or anything that coaches applicants to misrepresent themselves.\n- Visa/immigration \"guarantees\", or products that prey on international students' status anxiety.\n- Unpaid-internship marketplaces and training programmes that bill students for the privilege of working.\n- MLM, crypto/trading pitches, and anything aimed at extracting money from people who are, by definition, currently unemployed.\n- Anything requiring a database, a frontend framework, or an external orchestrator to be added to this repo — the [architectural constraints](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md) apply to sponsors too.\n\nNew grads are a vulnerable audience with time pressure and little leverage. Our bar for what we'll put in front of them is deliberately higher than our need for the money.\n\n## Where placements are allowed to live\n\n- **`README.md` — yes.** This is the default and, for paid CTAs, currently the only place.\n- **The [live job board](https://jobs.riteshrana.engineer/) — ad-free by default.** The site carries no paid CTA. Tailr's badge there predates this policy and is disclosed above; we are not adding more.\n- **Job listings, `jobs.json`, the RSS feed, commit messages, releases — never.** These are data, not inventory.\n\n## How to propose a placement\n\n1. Open a proposal with the **[🤝 Sponsorship / CTA Placement Proposal](https://github.com/ambicuity/New-Grad-Jobs/issues/new?template=sponsor_placement.yml)** template. Fill it in honestly — the checkboxes at the bottom are the rules above restated, and proposals that tick them falsely get closed and stay closed.\n2. Expect a reply in **1–2 weeks**. This is a spare-time project; sponsorship enquiries do not jump the queue ahead of bug fixes.\n3. If it's a fit, we agree terms **in writing, off this issue** (copy, destination URL, assets, disclosure wording, duration, fee, removal notice).\n4. The placement lands as a normal reviewed **pull request** with the assets committed to this repo. Nothing goes live by side channel, and we never hotlink your CDN.\n5. It's live when that PR is merged and CI is green — not when terms are agreed.\n\n**Do not post pricing you consider confidential, contract terms, invoices, or payment details in this public issue or in a proposal issue.** Email `contact@riteshrana.engineer` for that. Public issues get indexed by search engines, quoted in replies, and picked up by archives and scrapers, so deleting a comment later does not unpublish what it said.\n\n## For readers, contributors, and forks\n\n- **Spotted a sponsor behaving badly?** If a sponsored product misleads job seekers, charges for something it advertised as free, or spams users who click through, comment here or open a bug report. We will ask them to fix it, and we will remove the placement if they don't. A placement is rented, not owned.\n- **Reviewing a sponsorship PR?** Check three things: the \"Sponsored by …\" disclosure is present and adjacent to the CTA, assets are committed in-repo rather than hotlinked, and nothing outside the CTA block changed.\n- **Forking this repo?** Sponsor placements are *ours*, not part of the project's licence. Please strip the Tailr and Zapply blocks from your fork's README — the [MIT licence](https://github.com/ambicuity/New-Grad-Jobs/blob/main/LICENSE) covers the code, not a sponsor's marks, and their agreements do not extend to you.\n- **Want to support the project without a placement?** [GitHub Sponsors](https://github.com/sponsors/ambicuity), [Buy Me a Coffee](https://buymeacoffee.com/ritesh.rana), a star, or — best of all — a PR.\n\n---\n\n*Maintained per [GOVERNANCE.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/GOVERNANCE.md). Kept open on purpose as the permanent public record of how sponsorship works here.*",
-      "excerpt": "**This is a standing, pinned issue. It is intentionally left open — please do not close it.** It is the single public place where sponsorship happens in the open: what we accept, what we refuse, what it costs us to ru...",
-      "issueState": "open",
-      "contentHash": "83815e373955ef2f1aab329bdda15a216073b42b68ebfe92234d14b5cb0b6255",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "community",
-        "sponsorship: placement",
-        "type: docs"
-      ],
-      "sourceTags": [
-        "community",
-        "sponsorship: placement",
-        "type: docs"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-08-09T21:31:45Z",
-      "updatedAt": "2026-08-09T21:42:48Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/355",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_bee25d48c1d08bdb89cd3956",
-          "sourceId": "ambicuity/New-Grad-Jobs#355",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/355",
-          "createdAt": "2026-08-09T21:31:45Z",
-          "updatedAt": "2026-08-09T21:42:48Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 59,
-        "publishedAt": "2026-08-09T21:31:45Z",
-        "status": "aging"
-      }
-    },
     {
       "id": "gh_6a1098d504e460b826b0e253",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2953",
@@ -199,7 +105,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 61,
+        "ageDays": 62,
         "publishedAt": "2026-08-07T22:33:17Z",
         "status": "aging"
       }
@@ -685,7 +591,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 64,
+        "ageDays": 65,
         "publishedAt": "2026-08-04T21:18:29Z",
         "status": "aging"
       }
@@ -785,7 +691,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 65,
+        "ageDays": 66,
         "publishedAt": "2026-08-03T23:48:20Z",
         "status": "aging"
       }
@@ -1121,7 +1027,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 70,
+        "ageDays": 71,
         "publishedAt": "2026-07-29T20:26:41Z",
         "status": "aging"
       }
@@ -1972,6 +1878,86 @@
       "freshness": {
         "ageDays": 85,
         "publishedAt": "2026-07-15T12:01:43Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_f3583e040876fb4b3023f14f",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#86",
+      "title": "[全球] 全球Web3金融平台 诚聘 增长运营专家",
+      "description": "## 公司介绍\nKlickl (www.klickl.com) 是一家全球的数字金融科技平台，深耕中东及欧洲市场。\n- 已完成 2500 万美元 A 轮融资\n- 创始人同时担任纽交所上市基金董事会成员\n- 持有阿联酋和欧盟合规牌照\n- 阿联酋政府投资平台的战略合作伙伴\n\n## 薪资待遇\n将根据经验、能力和面试评价综合评定。\n\n## 地点\n\n- 工作地点：中国内地 / 香港、阿联酋阿布扎比 / 迪拜、其他符合业务需求的地点\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：可谈\n  \n## 岗位要求、职责\n**你将负责**\n- 制定月度/季度用户增长计划，围绕注册→KYC→充值→交易消费→复购全链路搭建分层增长策略\n- 设计并推动拉新、激活、转化、留存、召回、裂变机制，对用户生命周期价值负责\n- 针对不同国家/地区/用户群体制定差异化运营方案\n- 独立策划增长活动：注册奖励、首充返现、交易返佣、限时汇率优惠、银行卡激活奖励、理财加息等\n- 拓展并管理KOL、代理、社区及渠道合作伙伴，搭建代理增长体系\n- 建立增长实验机制，每周提出假设并推动测试，用数据驱动决策\n- 与产品、技术、市场、合规、风控、客服团队协同，推动关键项目落地\n\n**我们希望你**\n- 本科及以上学历，3年+ 互联网/金融科技/支付/券商/跨境金融运营经验\n- 熟悉AARRR增长模型，能独立完成增长策略、活动方案、数据分析及复盘\n- 数据敏感度高，能通过数据发现问题并推动解决\n- 结果导向，适应快速变化和创业型工作环境\n- 中文表达优秀，具备良好的英文读写及工作沟通能力\n\n**加分项**\n- 有交易平台、跨境支付、银行卡或金融科技产品经验\n- 有从0到1搭建用户增长体系的成功案例\n- 熟悉华人钱包/支付用户、海外华人、跨境电商或社群\n- 自带KOL、代理商、社群及渠道资源\n- 熟练使用SQL、Google Analytics、Tableau等数据分析工具\n\n## 投递方式\n感兴趣可私信TG @appr_windrider 并发送简历，或将简历发送至 jaden@klickl.com",
+      "excerpt": "## 公司介绍 Klickl (www.klickl.com) 是一家全球的数字金融科技平台，深耕中东及欧洲市场。 - 已完成 2500 万美元 A 轮融资 - 创始人同时担任纽交所上市基金董事会成员 - 持有阿联酋和欧盟合规牌照 - 阿联酋政府投资平台的战略合作伙伴 ## 薪资待遇 将根据经验、能力和面试评价综合评定。 ## 地点 - 工作地点：中国内地 / 香港、阿联酋阿布扎比 / 迪拜、其他符合业务需求的地点 ## 工作性质...",
+      "issueState": "open",
+      "contentHash": "37c2f560f44c335a1313c4663b239aef7cce2296f4dc8c9811215a4cc92cfcaf",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "apprentice-windrider",
+        "name": "apprentice-windrider",
+        "handle": "apprentice-windrider",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/242378079?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "createdAt": "2026-07-15T03:17:37Z",
+      "updatedAt": "2026-07-15T03:17:37Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/86",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f3583e040876fb4b3023f14f",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#86",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/86",
+          "createdAt": "2026-07-15T03:17:37Z",
+          "updatedAt": "2026-07-15T03:17:37Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 85,
+        "publishedAt": "2026-07-15T03:17:37Z",
         "status": "aging"
       }
     }

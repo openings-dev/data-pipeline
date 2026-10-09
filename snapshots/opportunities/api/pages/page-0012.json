@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-08T18:15:30.249Z",
+  "generatedAt": "2026-10-09T00:54:17.071Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
-    "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
     "gh_8ca6cfcc5f869a8b9471b21b",
     "gh_eba1cf4eba45f378f7186a1e",
@@ -23,89 +22,10 @@
     "gh_777d6953c094c4c77cffa586",
     "gh_03fa03119cda6972a7f24c60",
     "gh_018090ae0b51c7fe869fe122",
-    "gh_f1495b68fe7d4f8349ceb1b6"
+    "gh_f1495b68fe7d4f8349ceb1b6",
+    "gh_90da04043225a0b75c5b63f5"
   ],
   "items": [
-    {
-      "id": "gh_72cc354e7d9c38f999fa902a",
-      "sourceId": "timqian/open-source-jobs#161",
-      "title": "Feature: Enhanced Search & Filtering",
-      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
-      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
-      "issueState": "open",
-      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:29:12Z",
-      "updatedAt": "2026-02-19T04:01:20Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/161",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_72cc354e7d9c38f999fa902a",
-          "sourceId": "timqian/open-source-jobs#161",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/161",
-          "createdAt": "2026-02-18T13:29:12Z",
-          "updatedAt": "2026-02-19T04:01:20Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 232,
-        "publishedAt": "2026-02-18T13:29:12Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_dd237a978dba300d92eb4d35",
       "sourceId": "timqian/open-source-jobs#160",
@@ -181,7 +101,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 232,
+        "ageDays": 233,
         "publishedAt": "2026-02-17T18:15:36Z",
         "status": "stale"
       }
@@ -358,7 +278,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 239,
+        "ageDays": 240,
         "publishedAt": "2026-02-10T21:29:45Z",
         "status": "stale"
       }
@@ -476,7 +396,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 243,
+        "ageDays": 244,
         "publishedAt": "2026-02-06T18:44:05Z",
         "status": "stale"
       }
@@ -589,7 +509,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 243,
+        "ageDays": 244,
         "publishedAt": "2026-02-06T18:42:28Z",
         "status": "stale"
       }
@@ -714,7 +634,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 243,
+        "ageDays": 244,
         "publishedAt": "2026-02-06T18:40:41Z",
         "status": "stale"
       }
@@ -814,7 +734,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 245,
+        "ageDays": 246,
         "publishedAt": "2026-02-05T00:07:51Z",
         "status": "stale"
       }
@@ -1930,7 +1850,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 275,
+        "ageDays": 276,
         "publishedAt": "2026-01-05T22:50:21Z",
         "status": "stale"
       }
@@ -2014,6 +1934,112 @@
       "freshness": {
         "ageDays": 281,
         "publishedAt": "2025-12-31T09:25:54Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_90da04043225a0b75c5b63f5",
+      "sourceId": "f2etw/jobs#1163",
+      "title": "[徵才][台北] 期天資訊 React 前端工程師",
+      "description": "**職缺: 前端工程師**\n\n**能力經歷要求:**\n\n* 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js)\n* 基礎 UI / UX 設計規劃能力\n* 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整\n* 獨立自主學習能力，積極主動\n\n**工作內容：**\n\n開發與維護 React TypeScript 相關專案，包含但不限於：\n\n* 金融交易數據可視化界面 UI/UX\n* 程式交易管理系統\n* 上線金流串接與會員管理系統\n* 電子商務前後台管理系統\n\n**適合此職缺的人格特質：**\n\n* 對金融投資有興趣 (台股期權為主)\n* 喜歡理解新事物，能快速動手實做\n* 善於安排任務優先順序，能靈活應變各類狀況\n* 客戶導向思維，釐清並解決實際問題 (非單純以程式面向考量)\n\n**不適合此職缺的人格特質：**\n\n* 只喜歡獨自埋頭寫程式，排斥溝通討論\n* 不喜歡接觸客戶 ( email / 線上會議 / 實體拜訪)\n* 數字敏銳度低或邏輯推理較差\n\n**薪資(月薪):** 50,000 - 80,000\n\n\n**工作環境與該職缺團隊介紹:**\n\n團隊規模約10人，屬於年輕新創小公司風格，組織扁平，每個人都具有影響力。主要產品為證券期貨交易相關資訊系統，提供即時量化數據網站及自動化程式交易相關技術，客戶包含國內多家大型證券期貨商、顧問公司等。\n\n**工作福利:**\n\n* 職務上手熟悉後，可視情況每週1-2天遠端 WFH\n* 每週兩天免費午餐，另有不定時老闆請客聚餐\n* 各式零食咖啡飲料\n* 每週團體運動時間 (目前是2小時羽球)\n* 公司有兩隻貓會不定時跑來蹭你 (?)\n\n**公司分紅與獎金:** 依年度盈餘及個人考績分紅\n\n**聯絡方式:** Cory / service@futures-ai.com",
+      "excerpt": "**職缺: 前端工程師** **能力經歷要求:** * 2-3年以上前端 React / TypeScript 開發經驗 (目前公司主專案框架是用 Next.js) * 基礎 UI / UX 設計規劃能力 * 善於理解業務邏輯，找出合適實做方式，根據客戶反饋進行調整 * 獨立自主學習能力，積極主動 **工作內容：** 開發與維護 React TypeScript 相關專案，包含但不限於： * 金融交易數據可視化界面 UI/UX *...",
+      "issueState": "open",
+      "contentHash": "c6211660e67dd99ff6f3718043a8fb2cf05d0b43e925ff1940932d0338810b0f",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[b] nodejs",
+        "[f] react",
+        "[f] typescript",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
+        "[b] nodejs",
+        "[f] react",
+        "[f] typescript",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "author": {
+        "id": "cory8249",
+        "name": "cory8249",
+        "handle": "cory8249",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/7524724?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2025-12-20T08:51:33Z",
+      "updatedAt": "2025-12-20T10:19:07Z",
+      "url": "https://github.com/f2etw/jobs/issues/1163",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "nextjs",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_90da04043225a0b75c5b63f5",
+          "sourceId": "f2etw/jobs#1163",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1163",
+          "createdAt": "2025-12-20T08:51:33Z",
+          "updatedAt": "2025-12-20T10:19:07Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 292,
+        "publishedAt": "2025-12-20T08:51:33Z",
         "status": "stale"
       }
     }
