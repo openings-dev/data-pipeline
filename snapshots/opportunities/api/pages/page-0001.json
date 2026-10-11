@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-10-11T00:05:37.082Z",
+  "generatedAt": "2026-10-11T09:33:09.709Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_7adffa257c85b69872e047c3",
+    "gh_d89e1cc41b9d704400c8843b",
     "gh_584abed0049e3bbac72854c5",
     "gh_734b65d4c7197d44b825b886",
     "gh_ba5bd2250dfdfeaed6de206e",
@@ -21,11 +23,185 @@
     "gh_bfc02976c19c5a4835721791",
     "gh_dcc3699070be130fcf1efda5",
     "gh_4ec91f598ecbce2754fde105",
-    "gh_b69c178802ca1f80cb167848",
-    "gh_ede060fe5da659d9f89f93ef",
-    "gh_fc1605fc2911311918d775d7"
+    "gh_b69c178802ca1f80cb167848"
   ],
   "items": [
+    {
+      "id": "gh_7adffa257c85b69872e047c3",
+      "sourceId": "ambicuity/New-Grad-Jobs#384",
+      "title": "Job data is stale: last scrape 2026-10-11T02:10:15.914636Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38116380207. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "0c8cdcb66814532e77b4270351305a597282f6086bddb718cd9654b2b8d76ebb",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T05:55:52Z",
+      "updatedAt": "2026-10-11T05:55:52Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/384",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_7adffa257c85b69872e047c3",
+          "sourceId": "ambicuity/New-Grad-Jobs#384",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/384",
+          "createdAt": "2026-10-11T05:55:52Z",
+          "updatedAt": "2026-10-11T05:55:52Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-11T05:55:52Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "sourceId": "ambicuity/New-Grad-Jobs#383",
+      "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+      "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+      "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+      "issueState": "open",
+      "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T04:41:00Z",
+      "updatedAt": "2026-10-11T04:41:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_d89e1cc41b9d704400c8843b",
+          "sourceId": "ambicuity/New-Grad-Jobs#383",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+          "createdAt": "2026-10-11T04:41:00Z",
+          "updatedAt": "2026-10-11T04:41:00Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-11T04:41:00Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_584abed0049e3bbac72854c5",
       "sourceId": "backend-br/vagas#12442",
@@ -233,7 +409,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-10T05:20:14Z",
         "status": "fresh"
       }
@@ -653,7 +829,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-09T03:04:06Z",
         "status": "fresh"
       }
@@ -748,7 +924,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-09T02:57:12Z",
         "status": "fresh"
       }
@@ -871,7 +1047,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-09T01:49:55Z",
         "status": "fresh"
       }
@@ -984,7 +1160,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-10-08T07:09:07Z",
         "status": "fresh"
       }
@@ -1226,7 +1402,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-07T07:37:51Z",
         "status": "fresh"
       }
@@ -1612,7 +1788,7 @@
         "sourceCount": 6
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-10-06T01:05:40Z",
         "status": "fresh"
       }
@@ -1725,7 +1901,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-10-03T05:37:07Z",
         "status": "fresh"
       }
@@ -2025,206 +2201,6 @@
       "freshness": {
         "ageDays": 8,
         "publishedAt": "2026-10-02T18:49:52Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_ede060fe5da659d9f89f93ef",
-      "sourceId": "backend-br/vagas#12438",
-      "title": "(Full-remote) Senior Embedded Engineer - Jobsity",
-      "description": "## About [Jobsity](https://www.jobsity.com/)💡\nJobsity is a New York–based staffing company with 10+ years of experience, working with clients across the US, Canada, and Europe. We connect top-tier LATAM talent—only the top 3%—with long-term international opportunities and have successfully placed over 400 professionals across 15+ countries. As part of our recruitment process, we focus on finding the right role based on what matters most to you.\n\n## Requirements\n\n𝗪̳𝗵̳𝗮̳𝘁̳ ̳𝗱̳𝗼̳ ̳𝘆̳𝗼̳𝘂̳ ̳𝗻̳𝗲̳𝗲̳𝗱̳ ̳𝘁̳𝗼̳ ̳𝗮̳𝗽̳𝗽̳𝗹̳𝘆̳ ̳𝘀̳𝘂̳𝗰̳𝗰̳𝗲̳𝘀̳𝘀̳𝗳̳𝘂̳𝗹̳𝗹̳𝘆̳?🥇\n🌟 A minimum of +B2 level Conversational English level\n🌟 Must reside in Latin America🌎\n🌟 6+ years of professional software engineering experience, with Python as the primary language, including production software running on hardware in the field.\n🌟 Experience building and deploying software on embedded Linux computing platforms such as NVIDIA Jetson or comparable single-board computers and system-on-modules.\n🌟 Hands-on Docker experience packaging, versioning and deploying containerized applications.\n🌟 Experience working with message brokers, specifically MQTT and Kafka (or similar like RabbitMQ).\n🌟Experience implementing or configuring Linux drivers for external peripherals and imaging hardware such as cameras.\n\n## Modality\n👨‍💻 Fully remote\n\n## Perks that Jobsity offers!💎\n\n🔹Yearly paid vacation.\n🔹Paid local holidays.\n🔹Learning budget.\n🔹Financing program for home office supplies.\n🔹Bonuses for referrals and more!\n\n## Type of contract📜\n\nThis role is full-time!🕘\n...working remotely🏡, with USD payment💰, long-term relationship🤝, within an international team👩‍💻 👨‍💻, and working on international client projects!🌎\n\n## How to apply🤔\n✔️ Send an email to angela.barboza@jobsity.com with your CV and LinkedIn attached\n\n✔️ Or just send me a DM!\n\n## How to refer a friend🤔\n✔️ Refer a friend👥 sending an email with your friend's CV and LinkedIn attached\n✔️ Or just send me a DM!\n\n## Any questions or additional details needed?\nFeel free to send me a message on [LinkedIn](https://www.linkedin.com/in/angela-barboza/)💬",
-      "excerpt": "## About [Jobsity](https://www.jobsity.com/)💡 Jobsity is a New York–based staffing company with 10+ years of experience, working with clients across the US, Canada, and Europe. We connect top-tier LATAM talent—only t...",
-      "issueState": "open",
-      "contentHash": "7deb90d71f678a69e012c90f6ce9289331e04d03550307e089741771b6b470c3",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "docker",
-        "linux",
-        "python",
-        "rabbitmq"
-      ],
-      "sourceTags": [
-        "docker",
-        "linux",
-        "python",
-        "rabbitmq"
-      ],
-      "author": {
-        "id": "AngelaBarboza",
-        "name": "AngelaBarboza",
-        "handle": "AngelaBarboza",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112015240?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-10-02T18:48:38Z",
-      "updatedAt": "2026-10-02T18:49:02Z",
-      "url": "https://github.com/backend-br/vagas/issues/12438",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "docker",
-          "python"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_ede060fe5da659d9f89f93ef",
-          "sourceId": "backend-br/vagas#12438",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12438",
-          "createdAt": "2026-10-02T18:48:38Z",
-          "updatedAt": "2026-10-02T18:49:02Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-10-02T18:48:38Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_fc1605fc2911311918d775d7",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9701",
-      "title": "New Internship",
-      "description": "### Link to Internship Posting\n\nhttps://physicalreasoning.ai/join/software-engineering-intern/\n\n### Company Name\n\nPhysical Reasoning\n\n### Internship Title\n\nSoftware Engineering Intern\n\n### Location\n\nSan Francisco, CA | New York, NY\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOffers Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://physicalreasoning.ai/join/software-engineering-intern/ ### Company Name Physical Reasoning ### Internship Title Software Engineering Intern ### Location San Francisco, CA | New Y...",
-      "issueState": "open",
-      "contentHash": "77fbb8214a07b05f502532ef5cfb40c646f9bb867615754e4a947a9999815038",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship"
-      ],
-      "sourceTags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "adamkoch4221",
-        "name": "adamkoch4221",
-        "handle": "adamkoch4221",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/281675600?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-10-02T18:14:11Z",
-      "updatedAt": "2026-10-02T18:36:33Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9701",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "San Francisco",
-        "subdivision": "CA",
-        "displayText": "San Francisco, CA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_fc1605fc2911311918d775d7",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9701",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9701",
-          "createdAt": "2026-10-02T18:14:11Z",
-          "updatedAt": "2026-10-02T18:36:33Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-10-02T18:14:11Z",
         "status": "fresh"
       }
     }

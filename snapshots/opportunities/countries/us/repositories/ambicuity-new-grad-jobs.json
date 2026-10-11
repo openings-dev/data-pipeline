@@ -1,16 +1,140 @@
 {
-  "generatedAt": "2026-10-10T16:42:22.573Z",
+  "generatedAt": "2026-10-11T09:33:09.709Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 14,
-    "openIssues": 1,
-    "closedIssues": 13
+    "opportunities": 15,
+    "openIssues": 3,
+    "closedIssues": 12
   },
-  "dataHash": "890796ffed856c094f3a2ff97f9c3def05ee3fa77edc71d69ed661fe8ad8adbd",
+  "dataHash": "6aed7aee5a97bede6bdf68bac078a6ad837e20a10bdb09ed065080b5564fc824",
   "items": [
+    {
+      "id": "gh_7adffa257c85b69872e047c3",
+      "sourceId": "ambicuity/New-Grad-Jobs#384",
+      "title": "Job data is stale: last scrape 2026-10-11T02:10:15.914636Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38116380207. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "0c8cdcb66814532e77b4270351305a597282f6086bddb718cd9654b2b8d76ebb",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T05:55:52Z",
+      "updatedAt": "2026-10-11T05:55:52Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/384",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "sourceId": "ambicuity/New-Grad-Jobs#383",
+      "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+      "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+      "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+      "issueState": "open",
+      "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: bug",
+        "needs-triage",
+        "priority: high",
+        "bug"
+      ],
+      "sourceTags": [
+        "type: bug",
+        "needs-triage",
+        "priority: high",
+        "bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T04:41:00Z",
+      "updatedAt": "2026-10-11T04:41:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_e33d7c5a23287aa27c360315",
       "sourceId": "ambicuity/New-Grad-Jobs#382",
@@ -707,79 +831,6 @@
         "salary": "unknown",
         "seniority": "unknown",
         "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_a3c177710816112726954215",
-      "sourceId": "ambicuity/New-Grad-Jobs#357",
-      "title": "Coverage gap: 55 unconfigured employer boards, and the 2027 cohort is filtered out entirely",
-      "description": "## Problem\n\nAn audit of a recent new-grad job export against `config.yml` turned up two independent coverage gaps.\n\n**Source data:** a 359-posting / 168-employer new-grad CSV export (`jobs.csv`, columns `company,title,location,has_remote,is_agency,published,expired,experience_level,experience_years,salary_min,salary_max,salary_currency,views,clicks,foo_url,apply_url`), covering postings published 2026-08-01 → 2026-08-12. Each row carries the employer's real `apply_url`, which identifies their ATS — that is what makes the export usable as a *sourcing* list. No job data from the export would be imported; the scraper still fetches everything itself.\n\n### Gap 1 — employers we don't scrape\n\nNormalizing all 168 employer names and diffing against `config.yml`:\n\n| | Count |\n|---|---|\n| Already configured | 20 |\n| Not configured | 148 |\n| …of those, running a board on a supported ATS (Greenhouse / Lever / Ashby / Workday) | **55** |\n| …of those, on an ATS with no fetcher in this repo | 93 |\n\nThe 55 include employers that ought to be on this board already: **Jane Street**, **Point72**, **DRW**, **Nextdoor**, **PathAI**, **The Home Depot**, **GE Aerospace**, **The Walt Disney Company**, **RBC**, **Philips**, **Luma AI**, **Sunday Robotics**.\n\nWorth flagging: `docs/removed-companies.md` currently records Jane Street under *\"Not added — quant firms use custom careers sites or recruiter-only flows\"*. That is no longer true — `boards-api.greenhouse.io/v1/boards/janestreet/jobs` returns 232 open reqs. Same for Point72.\n\n### Gap 2 — the 2027 cohort is filtered out entirely\n\n`filtering.new_grad_signals` lists cohort years up to `2026 start` / `2026`. Campus reqs open roughly 18 months ahead, so the **2027 cycle is live right now** and every one of these titles is dropped on the floor:\n\n```\nSoftware Engineer Graduate (AML-Engine-Orchestration) - 2027 Start\nResearch Engineer Graduate (Monetization Technology - Business Integrity) - 2027 Start\nLarge Language Model Training System Engineer Graduate (Applied Machine Learning) - 2027 Start\nBackend Inference Runtime Engineer Graduate (AML Inference) - 2027 Start\nML Infra Engineer Graduate (Ads Infra) - 2027 Start\n```\n\nTwo things are missing:\n\n1. **The cohort year.** `2027` / `2027 start` are absent from `new_grad_signals` *and* from the hardcoded `strong_new_grad_signals` list in `filter_jobs()` (`scripts/update_jobs.py`) — the two lists have to move together each cycle.\n2. **Bare `graduate`.** The config has `new graduate`, `graduate program`, and `university grad`, but not `graduate` on its own, so the `\"<Role> Graduate (<Team>)\"` title shape that ByteDance, TikTok, and similar campus programs use matches nothing.\n\nRunning the current filter over the export: **116 of 359 postings are rejected for having no new-grad signal**, and 38 of those rejections are legitimate 2027-cohort or `Graduate`-suffixed roles.\n\n## Proposed fix\n\n1. Add the 55 live-verified boards to `config.yml`, each probed before adding.\n2. Add `2027 start`, `2027`, and `graduate` to `filtering.new_grad_signals`; mirror the cohort years into `strong_new_grad_signals`; add 2027 JobSpy search terms.\n3. Keep interns excluded — 2027 *Summer* intern reqs must stay filtered out.\n4. Add a regression test so a bulk config edit can't reintroduce duplicate slugs, a wrong-source URL, or a Workday CXS API URL where the careers URL belongs.\n5. Log the sweep in `docs/removed-companies.md`, including the 93 employers deliberately left out and the ATS each one uses, so the next sweep doesn't re-litigate them.\n\n## Out of scope\n\nThe remaining 93 employers need new ATS fetchers, not config entries. By volume: iCIMS (13 employers), Oracle Fusion/Taleo (8), Workable (6), SmartRecruiters (6), ADP (6), Paylocity (5), plus ~30 on fully custom career sites.\n\nThe single biggest gap is **ByteDance — 58 of the export's 359 postings**, all on `joinbytedance.com`, which exposes no public board API. TikTok's Workday tenant is already configured and covers TikTok-branded reqs only. iCIMS or SmartRecruiters would be the highest-yield fetcher to write next.",
-      "excerpt": "## Problem An audit of a recent new-grad job export against `config.yml` turned up two independent coverage gaps. **Source data:** a 359-posting / 168-employer new-grad CSV export (`jobs.csv`, columns `company,title,l...",
-      "issueState": "closed",
-      "contentHash": "8cedd7f142f2eed2e0c3e76b2a2e7eea2fbb2121b569b986124b22f03e47755e",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement",
-        "help wanted",
-        "good first issue",
-        "priority: medium",
-        "enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement",
-        "help wanted",
-        "good first issue",
-        "priority: medium",
-        "enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-08-12T20:57:33Z",
-      "updatedAt": "2026-08-12T22:24:54Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/357",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
       }
     },
     {

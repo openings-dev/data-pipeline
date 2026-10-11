@@ -1,6 +1,32 @@
 {
-  "generatedAt": "2026-10-10T20:58:19.061Z",
+  "generatedAt": "2026-10-11T09:33:09.709Z",
   "items": [
+    {
+      "id": "gh_7adffa257c85b69872e047c3",
+      "createdAt": "2026-10-11T05:55:52Z",
+      "text": "job data is stale: last scrape 2026-10-11t02:10:15.914636z the watchdog found https://jobs.riteshrana.engineer/health.json last updated **225 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s... ambicuity/new-grad-jobs united states north america github-actions[bot] github-actions[bot] scraper-stale",
+      "fields": {
+        "title": "job data is stale: last scrape 2026-10-11t02:10:15.914636z",
+        "company": "",
+        "taxonomy": "",
+        "location": "",
+        "excerpt": "the watchdog found https://jobs.riteshrana.engineer/health.json last updated **225 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s...",
+        "source": "ambicuity/new-grad-jobs github-actions[bot] github-actions[bot] ambicuity/new-grad-jobs"
+      }
+    },
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "createdAt": "2026-10-11T04:41:00Z",
+      "text": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld ### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ... ambicuity/new-grad-jobs united states north america ambicuity ambicuity bug needs-triage priority: high type: bug",
+      "fields": {
+        "title": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld",
+        "company": "",
+        "taxonomy": "python",
+        "location": "",
+        "excerpt": "### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ...",
+        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
+      }
+    },
     {
       "id": "gh_584abed0049e3bbac72854c5",
       "createdAt": "2026-10-10T19:44:18Z",
@@ -1133,6 +1159,32 @@
       }
     },
     {
+      "id": "gh_71777214eda8251069edbc42",
+      "createdAt": "2026-09-10T16:01:43Z",
+      "text": "[hibrido! curitiba] tech lead - usd (jcal) 🚀 oportunidade internacional | tech lead – integracoes 📍 curitiba/pr | modelo hibrido – 2x por semana 💰 ate us$ 5.000/mes | contractor 🇺🇸 ingles c1/c2 | atuacao diaria com time nos eua estamos buscando um(a) tech... backend-br/vagas brazil south america claudiaantunesdelima claudiaantunesdelima aws go java python rabbitmq sql stale testes automatizados",
+      "fields": {
+        "title": "[hibrido! curitiba] tech lead - usd (jcal)",
+        "company": "",
+        "taxonomy": "leadership aws go java python lead contractor hybrid en",
+        "location": "hybrid",
+        "excerpt": "🚀 oportunidade internacional | tech lead – integracoes 📍 curitiba/pr | modelo hibrido – 2x por semana 💰 ate us$ 5.000/mes | contractor 🇺🇸 ingles c1/c2 | atuacao diaria com time nos eua estamos buscando um(a) tech...",
+        "source": "backend-br/vagas claudiaantunesdelima claudiaantunesdelima backend-br/vagas"
+      }
+    },
+    {
+      "id": "gh_2425b55ecadf59465ec1e50b",
+      "createdAt": "2026-09-10T15:58:12Z",
+      "text": "[hibrido/curitiba ] back-end engineer developer python - usd (jcal consultoria) 🚀 oportunidade internacional | senior backend engineer (python) 🇺🇸🇧🇷 engenheiro(a) de software senior com vasta bagagem tecnica (+8 anos), especialista em python e interessado em atuar em uma escala global com re... backend-br/vagas brazil south america claudiaantunesdelima claudiaantunesdelima aws especialista hibrido python sql stale senior testes automatizados",
+      "fields": {
+        "title": "[hibrido/curitiba ] back-end engineer developer python - usd (jcal consultoria)",
+        "company": "",
+        "taxonomy": "backend devops-sre qa support aws python principal senior full-time hybrid remote en",
+        "location": "hybrid",
+        "excerpt": "🚀 oportunidade internacional | senior backend engineer (python) 🇺🇸🇧🇷 engenheiro(a) de software senior com vasta bagagem tecnica (+8 anos), especialista em python e interessado em atuar em uma escala global com re...",
+        "source": "backend-br/vagas claudiaantunesdelima claudiaantunesdelima backend-br/vagas"
+      }
+    },
+    {
       "id": "gh_5b8f66736b45606cdc8ca421",
       "createdAt": "2026-09-10T11:22:07Z",
       "text": "[remote & hk/sg] quant/web3公司诚聘 rust量化交易系统工程师/java/前端/senior bd/lead bd（韩国/越南-远程）/做市与对冲负责人/英语 & 欧洲区负责人/华语区市场经理/coo/财务bp/财务经理/hr负责人一号位 薪水 hkd/sgd/rmb/usd ## 公司/团队介绍 将人工智能深度融入去中心化交易协议，为机构与零售用户提供现货、高杠杆永续/交割合约及美式/欧式期权等结构化产品。团队远程优先，办公室覆盖香港、新加坡、加拿大、欧盟及北美，成员兼具投行、高频做市、量化对冲、faang 及区块链底层研发背景，依托全球低延迟交易设施与 ai 风控引擎，实现 7×24 小时跨时区流动性供给与 delta 中性对冲。 ## 薪资福利待遇 $5k/月-10k/月， $10k-20k/月。... rebase-network/who-is-hiring global global jtx-8 jtx-8 java onsite python react remote senior",
@@ -1871,6 +1923,19 @@
         "location": "remote",
         "excerpt": "## descricao da vaga: esta e uma vaga de um parceiro da plataforma coodesh, ao candidatar-se voce tera acesso as informacoes completas sobre a empresa e beneficios. fique atento ao redirecionamento que vai te levar pa...",
         "source": "backend-pt/vagas francieleghizzoni francieleghizzoni backend-pt/vagas devfsa/vagas programadores-br/geral"
+      }
+    },
+    {
+      "id": "gh_237d354ae3994e01bd1b16e8",
+      "createdAt": "2026-08-11T20:31:19Z",
+      "text": "[remoto] java backend senior + python (foco em ia) - evertec 🧡 <!-- por favor, poste apenas vagas para backend. --> ## nossa empresa 🧡 a evertec e uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuacao e presenca em 26 paises da america l... soujava/vagas-java brazil south america kerol-barros kerol-barros backend devops docker pj postgresql remoto spring senior",
+      "fields": {
+        "title": "[remoto] java backend senior + python (foco em ia) - evertec 🧡",
+        "company": "",
+        "taxonomy": "backend design devops-sre aws azure docker gcp java kubernetes mongodb mysql postgres python redis spring senior contractor remote",
+        "location": "remote",
+        "excerpt": "<!-- por favor, poste apenas vagas para backend. --> ## nossa empresa 🧡 a evertec e uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuacao e presenca em 26 paises da america l...",
+        "source": "soujava/vagas-java kerol-barros kerol-barros soujava/vagas-java"
       }
     },
     {
