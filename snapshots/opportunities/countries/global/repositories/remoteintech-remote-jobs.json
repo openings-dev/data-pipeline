@@ -1,16 +1,73 @@
 {
-  "generatedAt": "2026-10-09T22:05:06.135Z",
+  "generatedAt": "2026-10-11T17:08:17.738Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
   "repository": "remoteintech/remote-jobs",
   "totals": {
-    "opportunities": 3,
-    "openIssues": 3,
+    "opportunities": 2,
+    "openIssues": 2,
     "closedIssues": 0
   },
-  "dataHash": "99df0a5f2b07a8bfb5329ec85afd701819bd57faff58fe67be4225c6be0741bc",
+  "dataHash": "a751a755465ddf5b1a8f6286fbbfe9ea80d651ee6dd72d0181b1428e198e54df",
   "items": [
+    {
+      "id": "gh_64aa16d7a09022b86ee0040c",
+      "sourceId": "remoteintech/remote-jobs#2271",
+      "title": "9 company profiles whose domains no longer exist",
+      "description": "While checking careers links across `src/companies/` (2026-10-11), I found profiles whose company website and careers page are both unreachable. For these 9, the domain no longer resolves at all (NXDOMAIN, checked twice), so the company looks closed or renamed:\n\n| Profile | Website |\n|---|---|\n| Cuvette | https://cuvette.tech |\n| GitPrime | https://gitprime.com/ (acquired by Pluralsight in 2019) |\n| Grou.ps | https://build.gr.ps |\n| Impira | https://www.impira.com/ |\n| Mobile Jazz | https://mobilejazz.com |\n| Park Assist | https://tech.parkassist.com |\n| Pathable | https://pathable.com/ |\n| Socket Supply Co | https://socketsupply.co |\n| Telestax Inc. | https://telestax.com/ |\n\nRelated:\n- **Interactive Intelligence**: `inin.com` now redirects to Genesys, which acquired it.\n- **Bugfender**: its `careers_url` is `https://mobilejazz.com/jobs`, on the dead Mobile Jazz domain above.\n\nCONTRIBUTING says profiles are normally removed when a company no longer meets the criteria, so I didn't want to delete these without asking. Happy to open a PR removing them (and fixing Bugfender's link) if you agree.\n\n(Separately, #2270 updates 9 careers links that moved.)",
+      "excerpt": "While checking careers links across `src/companies/` (2026-10-11), I found profiles whose company website and careers page are both unreachable. For these 9, the domain no longer resolves at all (NXDOMAIN, checked twi...",
+      "issueState": "open",
+      "contentHash": "9cd29dc4c8fcba780246dbadc0570a450c61a1fc619d41ba095622fe9347e7b7",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "AymenJeddou",
+        "name": "AymenJeddou",
+        "handle": "AymenJeddou",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/127895207?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "companyName": "longer exist",
+      "createdAt": "2026-10-11T13:29:49Z",
+      "updatedAt": "2026-10-11T13:29:49Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2271",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_ba5bd2250dfdfeaed6de206e",
       "sourceId": "remoteintech/remote-jobs#2268",
@@ -74,134 +131,6 @@
           "react",
           "typescript"
         ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_0204db9cde8a5488e44c6e8b",
-      "sourceId": "remoteintech/remote-jobs#2122",
-      "title": "Upgrade @11ty/is-land from v4 to v5",
-      "description": "## Summary\n\nDependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked issue rather than merging blindly.\n\n## Breaking Changes in v5\n\n- **`autoinit` attribute removed** — `<is-land autoinit>` and `is-land-autoinit.js` are gone. Must migrate to the new `Island.addInitType()` API for framework initialisation\n- **`Island.define(tagName)` removed** — replaced by using `customElements.define` directly\n- **`import` attribute behaviour change** — when used with `type`, the `import()` is no longer performed automatically\n- **Manual definition** — now uses `?nodefine` query param instead of the previous approach\n\n## What's Good\n\n- Broader browser support (Chrome 71+, down from 88+)\n- Performance improvements for `on:idle`, `on:media`, `on:load`\n- Passive event listeners for `on:interaction` (fixes Lighthouse warning)\n- Minified build available (`dist/is-land.min.js`)\n\n## Suggested Approach\n\n1. Audit current `is-land` usage in templates (`src/_includes/`, `src/_layouts/`)\n2. Check if `autoinit` or `Island.define()` are used anywhere\n3. Update usage to match v5 API\n4. Test lazy-loading behaviour (theme switcher, search, any other islands)\n5. Verify build passes\n\n## References\n\n- [is-land v5.0.0 release](https://github.com/11ty/is-land/releases/tag/v5.0.0)\n- [Dependabot PR #2120](https://github.com/remoteintech/remote-jobs/pull/2120)",
-      "excerpt": "## Summary Dependabot opened PR #2120 to bump `@11ty/is-land` from 4.0.1 to 5.0.1. This is a major version bump with breaking changes, and the **CI build is currently failing** on that PR. Parking this as a tracked is...",
-      "issueState": "open",
-      "contentHash": "55a19f8b0f66ddeebfdff850b17f08918a7c6115d78ea41b7572d6a89d236eab",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote",
-        "node"
-      ],
-      "sourceTags": [
-        "remote",
-        "node"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-21T13:17:54Z",
-      "updatedAt": "2026-08-23T18:19:50Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2122",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_8ca6cfcc5f869a8b9471b21b",
-      "sourceId": "remoteintech/remote-jobs#2113",
-      "title": "Generate dynamic OG images for company profiles",
-      "description": "## Summary\n\nCompany profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to company profiles.\n\n## Current System (Blog Posts)\n\n1. `src/common/og-images.njk` generates an SVG per blog post using Eleventy pagination\n2. `src/_config/events/svg-to-jpeg.js` converts SVGs to JPEGs using Sharp (via `@11ty/eleventy-img`)\n3. JPEGs are committed to `src/assets/og-images/` — the converter skips files that already exist\n4. Only runs in serve mode, not production builds\n\n## Considerations\n\n- **850+ company profiles** — this is a much larger scale than ~10 blog posts\n- **~30MB of images in git** if we commit them all (~35KB each) — not ideal\n- **Build time** — 850 extra SVG files generated per build adds overhead\n- **Font dependency** — the SVG-to-JPEG conversion requires fonts to be installed locally (Red Hat Display, Atkinson Hyperlegible)\n\n## Suggested Approach\n\nRather than committing images to the repo like blog posts do:\n\n1. **Generate at deploy time** — run the SVG-to-JPEG conversion in the `eleventy.after` event for production builds (not just serve mode), outputting directly to `dist/`\n2. **Keep it simple** — company name + remote policy/region on the branded background\n3. **Cache on Netlify** — use `netlify-plugin-cache` (already a dependency) to cache generated images between deploys so only new/changed companies trigger regeneration\n4. **Incremental** — skip conversion if the output file already exists (the current blog pipeline already does this)\n\nThis avoids bloating the git repo while still giving each company a unique social card.\n\n## Alternative\n\nIf deploy-time generation proves too slow or complex, an external OG image service (e.g. Vercel OG, Cloudinary) could generate images on-demand via URL parameters. This would add an external dependency but remove all build-time overhead.",
-      "excerpt": "## Summary Company profile pages currently use the generic site-wide OG image for social sharing. Blog posts already have dynamic per-post OG images generated via an SVG → JPEG pipeline. We should extend this to compa...",
-      "issueState": "open",
-      "contentHash": "5e0731ea53399dd19b387b172c31f98c47d2a79b26c5255a44ce17acabd132f1",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "enhancement"
-      ],
-      "sourceTags": [
-        "enhancement"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-02-15T18:03:51Z",
-      "updatedAt": "2026-08-23T18:19:28Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2113",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
         "seniority": [],
         "employmentTypes": [],
         "workModels": [
