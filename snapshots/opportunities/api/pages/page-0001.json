@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-10-11T17:08:17.738Z",
+  "generatedAt": "2026-10-11T21:19:22.080Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
     "gh_64aa16d7a09022b86ee0040c",
-    "gh_7adffa257c85b69872e047c3",
     "gh_d89e1cc41b9d704400c8843b",
     "gh_584abed0049e3bbac72854c5",
     "gh_734b65d4c7197d44b825b886",
@@ -23,7 +22,8 @@
     "gh_f28f751aba191a8d493eb5be",
     "gh_bfc02976c19c5a4835721791",
     "gh_dcc3699070be130fcf1efda5",
-    "gh_4ec91f598ecbce2754fde105"
+    "gh_4ec91f598ecbce2754fde105",
+    "gh_b69c178802ca1f80cb167848"
   ],
   "items": [
     {
@@ -106,90 +106,6 @@
       "freshness": {
         "ageDays": 0,
         "publishedAt": "2026-10-11T13:29:49Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_7adffa257c85b69872e047c3",
-      "sourceId": "ambicuity/New-Grad-Jobs#384",
-      "title": "Job data is stale: last scrape 2026-10-11T02:10:15.914636Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38116380207. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **225 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "0c8cdcb66814532e77b4270351305a597282f6086bddb718cd9654b2b8d76ebb",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-11T05:55:52Z",
-      "updatedAt": "2026-10-11T05:55:52Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/384",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_7adffa257c85b69872e047c3",
-          "sourceId": "ambicuity/New-Grad-Jobs#384",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/384",
-          "createdAt": "2026-10-11T05:55:52Z",
-          "updatedAt": "2026-10-11T05:55:52Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-10-11T05:55:52Z",
         "status": "fresh"
       }
     },
@@ -399,7 +315,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-10T19:44:18Z",
         "status": "fresh"
       }
@@ -595,7 +511,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-09T18:01:42Z",
         "status": "fresh"
       }
@@ -2084,7 +2000,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-10-02T19:36:07Z",
         "status": "fresh"
       }
@@ -2184,8 +2100,106 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-10-02T19:36:07Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_b69c178802ca1f80cb167848",
+      "sourceId": "pydevbr/vagas#50",
+      "title": "(fully-remote) Senior Embedded Engineer - Jobsity",
+      "description": "## About [Jobsity](https://www.jobsity.com/)💡\nJobsity is a New York–based staffing company with 10+ years of experience, working with clients across the US, Canada, and Europe. We connect top-tier LATAM talent—only the top 3%—with long-term international opportunities and have successfully placed over 400 professionals across 15+ countries. As part of our recruitment process, we focus on finding the right role based on what matters most to you.\n\n## Requirements\n\n𝗪̳𝗵̳𝗮̳𝘁̳ ̳𝗱̳𝗼̳ ̳𝘆̳𝗼̳𝘂̳ ̳𝗻̳𝗲̳𝗲̳𝗱̳ ̳𝘁̳𝗼̳ ̳𝗮̳𝗽̳𝗽̳𝗹̳𝘆̳ ̳𝘀̳𝘂̳𝗰̳𝗰̳𝗲̳𝘀̳𝘀̳𝗳̳𝘂̳𝗹̳𝗹̳𝘆̳?🥇\n🌟 A minimum of +B2 level Conversational English level\n🌟 Must reside in Latin America🌎\n🌟 6+ years of professional software engineering experience, with Python as the primary language, including production software running on hardware in the field.\n🌟 Experience building and deploying software on embedded Linux computing platforms such as NVIDIA Jetson or comparable single-board computers and system-on-modules.\n🌟 Hands-on Docker experience packaging, versioning and deploying containerized applications.\n🌟 Experience working with message brokers, specifically MQTT and Kafka (or similar like RabbitMQ).\n🌟Experience implementing or configuring Linux drivers for external peripherals and imaging hardware such as cameras.\n\n## Modality\n👨‍💻 Fully remote\n\n## Perks that Jobsity offers!💎\n\n🔹Yearly paid vacation.\n🔹Paid local holidays.\n🔹Learning budget.\n🔹Financing program for home office supplies.\n🔹Bonuses for referrals and more!\n\n## Type of contract📜\n\nThis role is full-time!🕘\n...working remotely🏡, with USD payment💰, long-term relationship🤝, within an international team👩‍💻 👨‍💻, and working on international client projects!🌎\n\n## How to apply🤔\n✔️ Send an email to angela.barboza@jobsity.com with your CV and LinkedIn attached\n\n✔️ Or just send me a DM!\n\n## How to refer a friend🤔\n✔️ Refer a friend👥 sending an email with your friend's CV and LinkedIn attached\n✔️ Or just send me a DM!\n\n## Any questions or additional details needed?\nFeel free to send me a message on [LinkedIn](https://www.linkedin.com/in/angela-barboza/)💬",
+      "excerpt": "## About [Jobsity](https://www.jobsity.com/)💡 Jobsity is a New York–based staffing company with 10+ years of experience, working with clients across the US, Canada, and Europe. We connect top-tier LATAM talent—only t...",
+      "issueState": "open",
+      "contentHash": "e0059825fbdadeea8bce9eaf08bdd4988c29a47e44cf8ae9fbc3a3bdea71adf0",
+      "repository": "pydevbr/vagas",
+      "repositoryUrl": "https://github.com/pydevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "🚦 awaiting triage"
+      ],
+      "sourceTags": [
+        "🚦 awaiting triage"
+      ],
+      "author": {
+        "id": "AngelaBarboza",
+        "name": "AngelaBarboza",
+        "handle": "AngelaBarboza",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112015240?v=4"
+      },
+      "community": {
+        "id": "pydevbr",
+        "name": "pydevbr",
+        "avatarUrl": "https://github.com/pydevbr.png?size=80",
+        "repository": "pydevbr/vagas",
+        "url": "https://github.com/pydevbr/vagas"
+      },
+      "createdAt": "2026-10-02T18:49:52Z",
+      "updatedAt": "2026-10-02T18:52:15Z",
+      "url": "https://github.com/pydevbr/vagas/issues/50",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b69c178802ca1f80cb167848",
+          "sourceId": "pydevbr/vagas#50",
+          "repository": "pydevbr/vagas",
+          "repositoryUrl": "https://github.com/pydevbr/vagas",
+          "url": "https://github.com/pydevbr/vagas/issues/50",
+          "createdAt": "2026-10-02T18:49:52Z",
+          "updatedAt": "2026-10-02T18:52:15Z",
+          "community": {
+            "id": "pydevbr",
+            "name": "pydevbr",
+            "avatarUrl": "https://github.com/pydevbr.png?size=80",
+            "repository": "pydevbr/vagas",
+            "url": "https://github.com/pydevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-10-02T18:49:52Z",
         "status": "fresh"
       }
     }

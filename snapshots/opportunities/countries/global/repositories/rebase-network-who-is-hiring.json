@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T17:48:37.815Z",
+  "generatedAt": "2026-10-11T21:19:22.080Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
@@ -9,8 +9,77 @@
     "openIssues": 18,
     "closedIssues": 11
   },
-  "dataHash": "c0a541ea72381619ec9d7aae005490c9c11beaa3f155a903459e5d120e1072c0",
+  "dataHash": "3aa3cd88e56d85757568b7ed875ef184a00c5b5aac049b4f2b364f26d050df6b",
   "items": [
+    {
+      "id": "gh_f2c90efb484c012f0a9e9ee7",
+      "sourceId": "rebase-network/who-is-hiring#1316",
+      "title": "[招聘] 高级 Solana 智能合约开发工程师 | Rust / Anchor / DeFi / Solana | 月薪 7万–9万元",
+      "description": "我们正在构建一个由 AI 驱动的 DeFi 平台，旨在通过智能化的非托管链上执行，帮助用户优化其加密资产投资组合。现诚聘一位高级 Solana 智能合约开发工程师，负责设计、开发并优化支撑该产品的链上基础设施。\n\n职责：\n\n• 使用 Rust 和 Anchor 设计、开发并维护安全高效的 Solana 程序（Programs）。\n\n• 构建核心 DeFi 智能合约逻辑，涵盖投资组合策略、资产管理、交易执行、用户意图（User Intents）及链上状态管理。\n\n• 设计并实现 Solana 账户结构、PDA（程序派生地址）、CPI（跨程序调用）、代币交互、程序指令及交易流程。\n\n• 将 Solana 程序与后端及前端系统集成，并与 Node.js/TypeScript 工程师紧密协作，共同构建区块链交互与交易基础设施。\n\n• 开发并优化智能合约逻辑，确保其具备高性能、高安全性、高可靠性以及高效的计算单元（Compute Unit）使用率。\n\n• 处理 SPL 代币、代币账户、关联代币账户（ATA）、钱包、签名及其他 Solana 生态系统组件。\n\n• 分析并改进交易执行、账户状态管理、程序交互及链上数据流。\n\n• 构建全面的智能合约测试框架，包括单元测试、集成测试、边界情况测试及安全测试。\n\n• 识别并解决漏洞、交易失败、账户验证问题、授权问题及其他区块链层面的风险。\n\n• 审查现有智能合约架构，并在产品从 MVP（最小可行性产品）向生产环境过渡的过程中持续改进系统。\n\n• 研究 Solana 生态协议、DeFi 基础设施、流动性机制及新兴区块链技术。\n\n• 参与架构讨论、技术评审以及关于区块链基础设施和协议设计的决策制定。\n\n• 与 AI、后端、前端及产品工程师紧密合作，将区块链功能集成到整体平台中。\n\n• 利用 AI 辅助开发工具和 AI Agent 优化源代码分析、开发、测试、调试、文档编写及代码审查流程，同时确保代码质量与安全。任职要求：\n\n• 5 年以上专业软件工程经验，具备扎实的区块链开发实战经验。\n\n• 具备开发 Solana 程序（Programs）和智能合约的丰富专业经验。\n\n• 具备高阶 Rust 编程技能，并深刻理解 Solana 编程模型。\n\n• 熟练掌握 Anchor 框架及各类 Solana 开发工具。\n\n• 深入理解 Solana 账户（Accounts）、PDA、CPI、交易（Transactions）、指令（Instructions）、程序派生状态（Program-derived state）及账户所有权机制。\n\n• 深刻理解 SPL 代币、代币程序（Token Programs）、钱包、签名及 Solana 交易执行机制。\n\n• 具备构建 DeFi 协议、金融应用、交易系统、投资组合管理系统或其他链上产品的经验。\n\n• 深刻理解智能合约安全，包括访问控制、账户验证、重入攻击（Reentrancy）风险、算术运算问题、交易操纵及其他区块链安全隐患。\n\n• 具备为 Solana 程序编写全面自动化测试及调试复杂链上问题的经验。\n\n• 深刻理解区块链基础原理，包括交易、区块、状态转换、加密签名、哈希算法及去中心化执行。\n\n• 具备使用 TypeScript/Node.js、Web3 库或类似技术将智能合约与后端服务进行集成的经验。\n\n• 深刻理解性能优化，包括计算单元（Compute Units）、交易大小、账户访问及程序执行效率。\n\n• 能够阅读并理解现有的区块链源代码，并能快速适应大型代码库的开发工作。\n\n• 具备优秀的工程思维，熟悉代码审查、测试、调试、Git 工作流及生产级软件开发流程。\n\n• 对 DeFi、区块链基础设施及新兴 Web3 技术有浓厚兴趣。\n\n• 具备使用 AI 辅助开发工具及 AI Agent 工作流进行编码、代码库分析、调试、测试及技术研究的丰富经验。\n\n加分项：\n\n• 具备主流 Solana DeFi 协议或流动性协议的开发经验。\n\n• 具备跨程序调用（CPI）及复杂多程序架构的设计与开发经验。\n\n• 具备 MEV、交易排序、套利、收益策略或自动化交易系统的相关经验。\n\n• 除 Solana/Rust 外，还具备 EVM/Solidity 开发经验。\n\n• 具备区块链安全审计或智能合约安全规范实践经验。 • 具备构建自主运行或由人工智能驱动的区块链应用程序的经验。\n\n初步设计：https://www.figma.com/design/hE6rPdQOVHGG6bESD0Txr4/Untitled\n\n🌎 远程办公 | 资深职位 | 全职 | B2B\n\n📮 联系方式：邮箱 [career@aerrecens.com]",
+      "excerpt": "我们正在构建一个由 AI 驱动的 DeFi 平台，旨在通过智能化的非托管链上执行，帮助用户优化其加密资产投资组合。现诚聘一位高级 Solana 智能合约开发工程师，负责设计、开发并优化支撑该产品的链上基础设施。 职责： • 使用 Rust 和 Anchor 设计、开发并维护安全高效的 Solana 程序（Programs）。 • 构建核心 DeFi 智能合约逻辑，涵盖投资组合策略、资产管理、交易执行、用户意图（User Inten...",
+      "issueState": "closed",
+      "contentHash": "9ca0d2f8094662584e099e6a74e2bb51ca5132d362ff608c376a50117cbd7a87",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "typescript",
+        "node",
+        "design"
+      ],
+      "sourceTags": [
+        "typescript",
+        "node",
+        "design"
+      ],
+      "author": {
+        "id": "yorrowrisponhaxqz",
+        "name": "yorrowrisponhaxqz",
+        "handle": "yorrowrisponhaxqz",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/275294290?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-10-11T20:34:09Z",
+      "updatedAt": "2026-10-11T20:39:40Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1316",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "nodejs",
+          "rust",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_849717642034c6ac92924f14",
       "sourceId": "rebase-network/who-is-hiring#1315",
@@ -1685,72 +1754,6 @@
         "salary": "unknown",
         "seniority": "unknown",
         "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_1e2c9d1ee32b13dfe3bf838a",
-      "sourceId": "rebase-network/who-is-hiring#1149",
-      "title": "[成都] 诚聘高级运维工程师(P6)/运维专家(P7) 薪水 3000-8000 USD",
-      "description": "## 公司/团队介绍\nWeb3 技术咨询与实施公司，Digital Money 和 Digital ID 业务\n\n## 薪资福利待遇\n3000~8000 USD 每月 + 13薪 + 年终奖 + 期权（根据绩效结果）\n\n## 地点\n- 工作地点：成都\n- 联系方式：hstarorg (TG)\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：不支持远程\n  \n## 岗位职责\n\n- 深入 CBDC、支付业务领域，负责该业务全链路的稳定性，对稳定性事故目标负责\n- 挖掘业务架构中的潜在风险，包括技术债、容量瓶颈、容灾短板等，与业务研发团队共同推进优化和重构\n- 主导业务线的高可用体系建设，完善核心场景的容灾预案（如降级、限流、兜底），并建立周期性、自动化的演练机制，确保预案的有效性\n- 建立与关键依赖方的联防联控机制，在风险预防和故障应急方面进行深度合作\n- 作为业务侧的应急接口人，高效组织和协调故障处理过程，快速止损，并主导事后复盘，推动根因问题的解决\n- 将稳定性建设的最佳实践（如 SLO/SLI 度量、预案建设、On-Call 规范）在业务团队内进行布道和落地，提升团队整体的稳定性意识和能力\n\n## 任职要求\n\n- 5 年以上运维 / SRE 相关工作经验，有金融、支付或其他核心交易类业务经验者优先\n- 深入理解分布式系统原理，熟悉高可用、高并发架构设计，对容灾、限流、降级、熔断等稳定性机制有系统性认知与落地经验\n- 熟悉 Linux 系统、网络原理及常见中间件（Postgresql、Redis、Kafka、消息队列、RPC 框架等）的运行机制与常见故障排查手段\n- 熟悉 Kubernetes、Service Mesh、容器化及云原生体系，具备大规模集群运维与性能调优经验\n- 熟练掌握 Go、Python、Shell 等至少一种语言，具备自动化工具、巡检平台或预案演练系统的开发能力\n- 熟悉可观测性体系建设（Metrics / Logging / Tracing），有 Prometheus、OpenTelemetry、Grafana、ELK 等相关实战经验\n- 具备优秀的故障应急处置能力、跨团队沟通协调能力与复盘推动能力，能够在高压场景下保持清晰判断\n\n## 加分项\n\n- 有金融级核心系统（支付、清结算、交易所、银行核心等）稳定性建设经验\n- 主导过大规模故障演练、混沌工程（Chaos Engineering）体系建设\n- 有完整的 SLO/SLI 体系落地经验，推动过组织级稳定性文化建设\n- 了解 CBDC、区块链或数字货币相关技术背景",
-      "excerpt": "## 公司/团队介绍 Web3 技术咨询与实施公司，Digital Money 和 Digital ID 业务 ## 薪资福利待遇 3000~8000 USD 每月 + 13薪 + 年终奖 + 期权（根据绩效结果） ## 地点 - 工作地点：成都 - 联系方式：hstarorg (TG) ## 工作性质 - 是否全职：是 - 是否远程：不支持远程 ## 岗位职责 - 深入 CBDC、支付业务领域，负责该业务全链路的稳定性，对稳定性...",
-      "issueState": "closed",
-      "contentHash": "a3f685d35f0897f6d79c78f60569f3784a4945f04c47e23c9ed3c725a249c88a",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "python"
-      ],
-      "sourceTags": [
-        "python"
-      ],
-      "author": {
-        "id": "hstarorg",
-        "name": "hstarorg",
-        "handle": "hstarorg",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4043284?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-05-12T04:13:48Z",
-      "updatedAt": "2026-09-09T08:09:14Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1149",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre"
-        ],
-        "technologies": [
-          "go",
-          "kubernetes",
-          "postgres",
-          "python",
-          "redis"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
       }
     },
     {
