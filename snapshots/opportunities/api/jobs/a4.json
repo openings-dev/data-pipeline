@@ -1,6 +1,93 @@
 {
-  "generatedAt": "2026-10-11T17:08:17.738Z",
+  "generatedAt": "2026-10-12T10:37:38.202Z",
   "items": {
+    "gh_a4a7d7b8ea3a77260256bf62": {
+      "id": "gh_a4a7d7b8ea3a77260256bf62",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+      "title": "New Feature Request: Graduation-year and academic-standing filtering",
+      "description": "### Improvement\n\nFollowing up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to check the requirements.\nI looked through the list-updater code and `listings.json`. The export includes degree types, but not graduation-date windows or freshman/sophomore/junior/senior requirements. The contribution guide mentions that a private service imports listings from Simplify.\nDoes Simplify already store this information, and could it be included in the automated export? Missing or ambiguous requirements could remain “unknown” rather than implying eligibility.\nI’d be interested in contributing filters to the existing search command using that upstream data. Would this be a welcome contribution, and is exposing the necessary data feasible?",
+      "excerpt": "### Improvement Following up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to che...",
+      "issueState": "open",
+      "contentHash": "804d6324575c7187eed7b98afb25ade1def4772b7010c1f586175315750699b6",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "saisrikar8",
+        "name": "saisrikar8",
+        "handle": "saisrikar8",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/77305508?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-10-12T05:05:20Z",
+      "updatedAt": "2026-10-12T05:05:20Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a4a7d7b8ea3a77260256bf62",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+          "createdAt": "2026-10-12T05:05:20Z",
+          "updatedAt": "2026-10-12T05:05:20Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-12T05:05:20Z",
+        "status": "fresh"
+      }
+    },
     "gh_a46069ea14b72cc4d37999b6": {
       "id": "gh_a46069ea14b72cc4d37999b6",
       "sourceId": "awesome-jobs/vietnam#5065",
@@ -104,7 +191,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-09-22T04:39:16Z",
         "status": "fresh"
       }

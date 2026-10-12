@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-10-12T03:33:31.071Z",
+  "generatedAt": "2026-10-12T10:37:38.202Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
-    "gh_8fd42d6b7cc786322bb03c29",
+    "gh_a4a7d7b8ea3a77260256bf62",
     "gh_64aa16d7a09022b86ee0040c",
     "gh_d89e1cc41b9d704400c8843b",
     "gh_584abed0049e3bbac72854c5",
@@ -27,15 +27,15 @@
   ],
   "items": [
     {
-      "id": "gh_8fd42d6b7cc786322bb03c29",
-      "sourceId": "ambicuity/New-Grad-Jobs#386",
-      "title": "Job data is stale: last scrape 2026-10-11T20:13:43.452889Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **209 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38185344650. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **209 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "id": "gh_a4a7d7b8ea3a77260256bf62",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+      "title": "New Feature Request: Graduation-year and academic-standing filtering",
+      "description": "### Improvement\n\nFollowing up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to check the requirements.\nI looked through the list-updater code and `listings.json`. The export includes degree types, but not graduation-date windows or freshman/sophomore/junior/senior requirements. The contribution guide mentions that a private service imports listings from Simplify.\nDoes Simplify already store this information, and could it be included in the automated export? Missing or ambiguous requirements could remain “unknown” rather than implying eligibility.\nI’d be interested in contributing filters to the existing search command using that upstream data. Would this be a welcome contribution, and is exposing the necessary data feasible?",
+      "excerpt": "### Improvement Following up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to che...",
       "issueState": "open",
-      "contentHash": "461cae1cda48b9356d9307bb6779952262b4977779eaf65029cd28213525e2f8",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "contentHash": "804d6324575c7187eed7b98afb25ade1def4772b7010c1f586175315750699b6",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
       "region": "North America",
       "country": "United States",
       "sourceLocation": {
@@ -44,27 +44,27 @@
         "region": "North America"
       },
       "tags": [
-        "scraper-stale"
+        "enhancement"
       ],
       "sourceTags": [
-        "scraper-stale"
+        "enhancement"
       ],
       "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+        "id": "saisrikar8",
+        "name": "saisrikar8",
+        "handle": "saisrikar8",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/77305508?v=4"
       },
       "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
       },
-      "createdAt": "2026-10-11T23:43:30Z",
-      "updatedAt": "2026-10-11T23:43:30Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/386",
+      "createdAt": "2026-10-12T05:05:20Z",
+      "updatedAt": "2026-10-12T05:05:20Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
@@ -72,7 +72,10 @@
       "taxonomy": {
         "areas": [],
         "technologies": [],
-        "seniority": [],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
         "employmentTypes": [],
         "workModels": [],
         "languages": []
@@ -80,24 +83,24 @@
       "dataProvenance": {
         "location": "unknown",
         "salary": "unknown",
-        "seniority": "unknown",
+        "seniority": "inferred",
         "workModel": "unknown"
       },
       "sources": [
         {
-          "id": "gh_8fd42d6b7cc786322bb03c29",
-          "sourceId": "ambicuity/New-Grad-Jobs#386",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/386",
-          "createdAt": "2026-10-11T23:43:30Z",
-          "updatedAt": "2026-10-11T23:43:30Z",
+          "id": "gh_a4a7d7b8ea3a77260256bf62",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+          "createdAt": "2026-10-12T05:05:20Z",
+          "updatedAt": "2026-10-12T05:05:20Z",
           "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
           }
         }
       ],
@@ -106,7 +109,7 @@
       },
       "freshness": {
         "ageDays": 0,
-        "publishedAt": "2026-10-11T23:43:30Z",
+        "publishedAt": "2026-10-12T05:05:20Z",
         "status": "fresh"
       }
     },
@@ -280,7 +283,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-11T04:41:00Z",
         "status": "fresh"
       }
@@ -492,7 +495,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-10T05:20:14Z",
         "status": "fresh"
       }
@@ -1243,7 +1246,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-08T07:09:07Z",
         "status": "fresh"
       }
@@ -1485,7 +1488,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-10-07T07:37:51Z",
         "status": "fresh"
       }
@@ -1984,7 +1987,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-10-03T05:37:07Z",
         "status": "fresh"
       }

@@ -1,16 +1,77 @@
 {
-  "generatedAt": "2026-10-11T17:08:17.738Z",
+  "generatedAt": "2026-10-12T10:37:38.202Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "SimplifyJobs/Summer2026-Internships",
   "totals": {
     "opportunities": 25,
-    "openIssues": 15,
-    "closedIssues": 10
+    "openIssues": 16,
+    "closedIssues": 9
   },
-  "dataHash": "c6d8b27f01876afba0ffabc4a4d159d3a4b44d596105fa3735beba72ff42c189",
+  "dataHash": "8730fcf081b92e7fbeff4ac1a5f315994d1430f72fa4c640ba55dcd8a0f7c0a8",
   "items": [
+    {
+      "id": "gh_a4a7d7b8ea3a77260256bf62",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+      "title": "New Feature Request: Graduation-year and academic-standing filtering",
+      "description": "### Improvement\n\nFollowing up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to check the requirements.\nI looked through the list-updater code and `listings.json`. The export includes degree types, but not graduation-date windows or freshman/sophomore/junior/senior requirements. The contribution guide mentions that a private service imports listings from Simplify.\nDoes Simplify already store this information, and could it be included in the automated export? Missing or ambiguous requirements could remain “unknown” rather than implying eligibility.\nI’d be interested in contributing filters to the existing search command using that upstream data. Would this be a welcome contribution, and is exposing the necessary data feasible?",
+      "excerpt": "### Improvement Following up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to che...",
+      "issueState": "open",
+      "contentHash": "804d6324575c7187eed7b98afb25ade1def4772b7010c1f586175315750699b6",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "saisrikar8",
+        "name": "saisrikar8",
+        "handle": "saisrikar8",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/77305508?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-10-12T05:05:20Z",
+      "updatedAt": "2026-10-12T05:05:20Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_f28f751aba191a8d493eb5be",
       "sourceId": "SimplifyJobs/Summer2026-Internships#9702",
@@ -1221,76 +1282,6 @@
         "location": "unknown",
         "salary": "unknown",
         "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_03792cbce3f5bc6e7ba5e16c",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9679",
-      "title": "SCM software developer internship",
-      "description": "### Link to Internship Posting\n\nhttps://grnh.se/abfli75k1us\n\n### Company Name\n\nSteven's Capital Management\n\n### Internship Title\n\nSoftware Engineer\n\n### Location\n\nRadnor, PA\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOffers Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://grnh.se/abfli75k1us ### Company Name Steven's Capital Management ### Internship Title Software Engineer ### Location Radnor, PA ### What term(s) is this internship offered for? S...",
-      "issueState": "closed",
-      "contentHash": "6fd1812784934d5c3a1ee3f87a222d8969c865a135df24df016d365d61aef30a",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship",
-        "approved"
-      ],
-      "sourceTags": [
-        "new_internship",
-        "approved"
-      ],
-      "author": {
-        "id": "Zaku-Seven",
-        "name": "Zaku-Seven",
-        "handle": "Zaku-Seven",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/229045745?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-08-14T19:41:39Z",
-      "updatedAt": "2026-08-26T01:16:18Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9679",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Radnor",
-        "subdivision": "PA",
-        "displayText": "Radnor, PA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
         "workModel": "unknown"
       }
     },
