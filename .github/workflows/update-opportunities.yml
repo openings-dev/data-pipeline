@@ -105,7 +105,7 @@ jobs:
           PREVIOUS_COMMIT: ${{ steps.snapshot.outputs.previous_commit }}
           DATA_HASH: ${{ steps.snapshot.outputs.data_hash }}
         run: |
-          jq -n \
+          if ! jq -n \
             --arg source_commit "$SOURCE_COMMIT" \
             --arg previous_commit "$PREVIOUS_COMMIT" \
             --arg data_hash "$DATA_HASH" \
@@ -119,4 +119,6 @@ jobs:
                 data_hash: $data_hash,
                 event_id: ("openings:data:" + $source_commit)
               }
-            }' | gh api --method POST repos/openings-dev/social-publisher/dispatches --input -
+            }' | gh api --method POST repos/openings-dev/social-publisher/dispatches --input -; then
+            echo "::warning::Social publisher notification failed; scheduled intake will process the committed snapshot."
+          fi

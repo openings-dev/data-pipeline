@@ -33,6 +33,11 @@ test("dispatches an exact source event only after a changed snapshot was pushed"
     assert.match(dispatch, new RegExp(`\\b${field}\\b`, "u"));
   }
   assert.match(dispatch, /openings_source_committed_v1/u);
+  assert.match(dispatch, /if ! jq -n[\s\S]*\| gh api[\s\S]*; then/u);
+  assert.match(
+    dispatch,
+    /::warning::Social publisher notification failed; scheduled intake will process the committed snapshot\./u,
+  );
   assert.doesNotMatch(commit, /dispatches|SOCIAL_PUBLISHER_DISPATCH_TOKEN/u);
 });
 
