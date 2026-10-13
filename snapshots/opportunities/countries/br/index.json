@@ -1,15 +1,20 @@
 {
-  "generatedAt": "2026-10-12T22:21:22.940Z",
+  "generatedAt": "2026-10-13T04:47:40.770Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "totals": {
-    "opportunities": 1192,
-    "repositories": 68,
-    "openIssues": 332,
-    "closedIssues": 860
+    "opportunities": 1185,
+    "repositories": 67,
+    "openIssues": 329,
+    "closedIssues": 856
   },
-  "failedRepositories": [],
+  "failedRepositories": [
+    {
+      "repository": "web3br/vagas",
+      "error": "Unexpected response 500 while fetching web3br/vagas."
+    }
+  ],
   "byRepository": [
     {
       "repository": "3Tecnos-Development/vagas",
@@ -538,14 +543,6 @@
       "closedIssues": 28,
       "file": "countries/br/repositories/vuejs-br-vagas.json",
       "hash": "d054531517bc28db6587be83bdc31ea8307d82bd9f60e620fdf507bd34ac9a10"
-    },
-    {
-      "repository": "web3br/vagas",
-      "issues": 7,
-      "openIssues": 3,
-      "closedIssues": 4,
-      "file": "countries/br/repositories/web3br-vagas.json",
-      "hash": "90a5a4cf60d57002d132a430ab4fb6e907cf44d9db54226ad298a6c59c45f762"
     },
     {
       "repository": "womenthatreact/vagas",

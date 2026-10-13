@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-12T22:21:22.940Z",
+  "generatedAt": "2026-10-13T04:47:40.770Z",
   "schemaVersion": 2,
-  "dataHash": "dd57d298fa1599db222dbcf9f6a842ed37b245b300bba78169d9b6cd2d075cd3",
+  "dataHash": "bf55e2cf669983119bf93bf42879ea72ae95e49f995df33c7af1be394fc5ea96",
   "catalogGeneratedAt": "2026-08-17",
   "request": {
     "maxIssuesPerRepository": 30,
@@ -11,15 +11,20 @@
     "countryCodes": []
   },
   "repositoriesRequested": 187,
-  "repositoriesScanned": 187,
+  "repositoriesScanned": 186,
   "totals": {
-    "opportunities": 2197,
-    "uniqueRepositories": 187,
+    "opportunities": 2190,
+    "uniqueRepositories": 186,
     "uniqueCountries": 23,
     "uniqueRegions": 7,
-    "failedRepositories": 0
+    "failedRepositories": 1
   },
-  "failedRepositories": [],
+  "failedRepositories": [
+    {
+      "repository": "web3br/vagas",
+      "error": "Unexpected response 500 while fetching web3br/vagas."
+    }
+  ],
   "staticApi": {
     "manifestFile": "api/manifest.json",
     "files": [
@@ -133,7 +138,6 @@
       "api/authors/SebastianCD.json",
       "api/authors/SebastianStifler.json",
       "api/authors/SheilaMiqueli.json",
-      "api/authors/Soonas.json",
       "api/authors/Steporto.json",
       "api/authors/TREVIHR.json",
       "api/authors/TakumaLee.json",
@@ -696,10 +700,10 @@
       "country": "Brazil",
       "countryCode": "BR",
       "region": "South America",
-      "opportunities": 1192,
-      "repositories": 68,
-      "openIssues": 332,
-      "closedIssues": 860,
+      "opportunities": 1185,
+      "repositories": 67,
+      "openIssues": 329,
+      "closedIssues": 856,
       "indexFile": "countries/br/index.json"
     },
     {
