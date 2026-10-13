@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-10-13T04:47:40.770Z",
+  "generatedAt": "2026-10-13T13:17:09.287Z",
   "schemaVersion": 2,
-  "dataHash": "bf55e2cf669983119bf93bf42879ea72ae95e49f995df33c7af1be394fc5ea96",
+  "dataHash": "df25a86bd1ac1d7a17264397eaa17c258f133bb1fe7aadfb163257ac20849811",
   "catalogGeneratedAt": "2026-08-17",
   "request": {
     "maxIssuesPerRepository": 30,
@@ -11,20 +11,15 @@
     "countryCodes": []
   },
   "repositoriesRequested": 187,
-  "repositoriesScanned": 186,
+  "repositoriesScanned": 187,
   "totals": {
-    "opportunities": 2190,
-    "uniqueRepositories": 186,
+    "opportunities": 2195,
+    "uniqueRepositories": 187,
     "uniqueCountries": 23,
     "uniqueRegions": 7,
-    "failedRepositories": 1
+    "failedRepositories": 0
   },
-  "failedRepositories": [
-    {
-      "repository": "web3br/vagas",
-      "error": "Unexpected response 500 while fetching web3br/vagas."
-    }
-  ],
+  "failedRepositories": [],
   "staticApi": {
     "manifestFile": "api/manifest.json",
     "files": [
@@ -39,7 +34,6 @@
       "api/authors/AlexChan-1985.json",
       "api/authors/Allenz5.json",
       "api/authors/Amandaleeanne.json",
-      "api/authors/Anacrisgp.json",
       "api/authors/AnakMtzP.json",
       "api/authors/Andy-Chenie.json",
       "api/authors/AngelaBarboza.json",
@@ -138,6 +132,7 @@
       "api/authors/SebastianCD.json",
       "api/authors/SebastianStifler.json",
       "api/authors/SheilaMiqueli.json",
+      "api/authors/Soonas.json",
       "api/authors/Steporto.json",
       "api/authors/TREVIHR.json",
       "api/authors/TakumaLee.json",
@@ -207,7 +202,6 @@
       "api/authors/dg3feiko.json",
       "api/authors/didtheyghostme.json",
       "api/authors/dreamerlzl.json",
-      "api/authors/dwsbrazil.json",
       "api/authors/echo19981024.json",
       "api/authors/ecossistemadev.json",
       "api/authors/elenpoter394-sys.json",
@@ -232,6 +226,7 @@
       "api/authors/ghost.json",
       "api/authors/giacomoquinalia.json",
       "api/authors/gina1309.json",
+      "api/authors/github-actions%5Bbot%5D.json",
       "api/authors/greenapptech.json",
       "api/authors/gulatimehul.json",
       "api/authors/gustable42.json",
@@ -700,20 +695,20 @@
       "country": "Brazil",
       "countryCode": "BR",
       "region": "South America",
-      "opportunities": 1185,
-      "repositories": 67,
-      "openIssues": 329,
-      "closedIssues": 856,
+      "opportunities": 1190,
+      "repositories": 68,
+      "openIssues": 328,
+      "closedIssues": 862,
       "indexFile": "countries/br/index.json"
     },
     {
       "country": "Canada",
       "countryCode": "CA",
       "region": "North America",
-      "opportunities": 67,
+      "opportunities": 66,
       "repositories": 10,
       "openIssues": 6,
-      "closedIssues": 61,
+      "closedIssues": 60,
       "indexFile": "countries/ca/index.json"
     },
     {
@@ -880,9 +875,9 @@
       "country": "United States",
       "countryCode": "US",
       "region": "North America",
-      "opportunities": 154,
+      "opportunities": 155,
       "repositories": 24,
-      "openIssues": 79,
+      "openIssues": 80,
       "closedIssues": 75,
       "indexFile": "countries/us/index.json"
     },
