@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-10-14T14:15:40.465Z",
+  "generatedAt": "2026-10-14T19:07:15.671Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_b256c39c80fcfe7ea8df79e4",
+    "gh_37868d2da89017c43383f5f3",
     "gh_0065133926adf9a786c1f458",
     "gh_7c17d41a11070d7781299515",
     "gh_14809edc1bee697bfd43f43f",
@@ -21,11 +23,190 @@
     "gh_087d885731246159d14ac233",
     "gh_4d807f1015114f3e8c3686cf",
     "gh_f12187a6f9db3fd08703be81",
-    "gh_26b612b8a876401de18363ae",
-    "gh_5402fbb42413034211d27217",
-    "gh_6ee5c31976b58995be8b656a"
+    "gh_26b612b8a876401de18363ae"
   ],
   "items": [
+    {
+      "id": "gh_b256c39c80fcfe7ea8df79e4",
+      "sourceId": "ambicuity/New-Grad-Jobs#399",
+      "title": "Add a UKG Pro Recruiting (UltiPro) source adapter (19 verified job boards)",
+      "description": "## Problem\n\n**UKG Pro Recruiting** (UltiPro) has 21 employers on the 30-day applied-jobs export (#390), more than any other job system still unsupported except iCIMS (backlog in #316). None of their postings reach the board.\n\n## Evidence (probed 2026-10-14)\n\n- **The public job-board search needs no key.** `POST https://<host>/<tenant>/JobBoard/<board-id>/JobBoardView/LoadSearchResults` with `{\"opportunitySearch\": {\"Top\": N, \"Skip\": M, \"OrderBy\": [postedDateDesc], \"Filters\": []}}` returns `opportunities` and `totalCount`.\n- **All 19 boards in the export answer HTTP 200 with postings,** from the Cleveland Guardians (4) to Gray Media (504). The hosts are `recruiting.ultipro.com`, `recruiting2.ultipro.com` and `<company>.rec.pro.ukg.net`. Results sort newest first and pages don't overlap. `Top` accepts at least 500.\n- **Each opportunity has** `Id`, `Title`, `PostedDate`, a `BriefDescription`, and `Locations` with a structured `Address` (city, state code, country). `LocalizedName` is often null, so the location must be built from the address. `JobLocationType` (null/0/1/2) does not reliably mark remote work: a \"Remote / Virtual\" posting has none, so the adapter doesn't use it.\n- **The posting page `<board>/OpportunityDetail?opportunityId=<Id>` answers 200.**\n- **Many tenants share `recruiting.ultipro.com`,** so the 403 cooldown must key on the tenant path, not the host.\n\n## Proposed solution\n\n1. Let `ngj.http.fetch_json_with_retry` take an optional JSON body, which sends a POST with the same cooldown and error handling. POST is not retried at the transport level, which is correct. Timeouts still get the board-level retry pass.\n2. Add `scripts/ngj/sources/ukg.py`, returning `SourceResult`. It pages the search newest first, caps each board, builds locations from the address, skips postings without an `Id`, and returns no partial jobs on a timeout or network error.\n3. Register UKG as a board source (`apis.ukg.companies: [{name, url}]`, where `url` is the job-board URL). That covers the registry, pipeline, `Settings`, `validate_config.py`, tenant-level cooldown keys, README sync and the site's source label. Add the 19 verified boards.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.\n\n## Also probed (not in this issue)\n\n- **ADP Workforce Now** (`careercenter/public/events/staffing/v1/job-requisitions?cid=…`): public JSON for the 3 employers on it. A small follow-up.\n- **ADP MyJobs** (10 employers): answers `400 Missing orgoid header`. Not keyless as it stands.\n- **Paylocity** (16): the export's links carry no company ID, and the ID found on one posting page returned an empty feed. Needs more digging.",
+      "excerpt": "## Problem **UKG Pro Recruiting** (UltiPro) has 21 employers on the 30-day applied-jobs export (#390), more than any other job system still unsupported except iCIMS (backlog in #316). None of their postings reach the ...",
+      "issueState": "open",
+      "contentHash": "3213e09a388646144ebadaac8ee4735435036e5d883393caed1e71939a2f4b16",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T19:06:19Z",
+      "updatedAt": "2026-10-14T19:06:19Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/399",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_b256c39c80fcfe7ea8df79e4",
+          "sourceId": "ambicuity/New-Grad-Jobs#399",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/399",
+          "createdAt": "2026-10-14T19:06:19Z",
+          "updatedAt": "2026-10-14T19:06:19Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-14T19:06:19Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_37868d2da89017c43383f5f3",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2983",
+      "title": "Software Developer",
+      "description": "### Link to Job Posting\n\nhttps://careers.epic.com/jobs/softwaredevelopment/\n\n### Company Name\n\nEpic\n\n### Job Title\n\nSoftware Developer\n\n### Location\n\nMadison, WI\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\n_No response_",
+      "excerpt": "### Link to Job Posting https://careers.epic.com/jobs/softwaredevelopment/ ### Company Name Epic ### Job Title Software Developer ### Location Madison, WI ### What category does this job belong to? Software Engineerin...",
+      "issueState": "open",
+      "contentHash": "4868027c0604aa9fe8e656bdd77a27c5b82ebb07ca639496f46d351c69c292f5",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
+        "new_role"
+      ],
+      "author": {
+        "id": "epicrecruiting",
+        "name": "epicrecruiting",
+        "handle": "epicrecruiting",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/342566902?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-10-14T14:54:45Z",
+      "updatedAt": "2026-10-14T14:54:45Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2983",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Madison",
+        "subdivision": "WI",
+        "displayText": "Madison, WI",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_37868d2da89017c43383f5f3",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2983",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2983",
+          "createdAt": "2026-10-14T14:54:45Z",
+          "updatedAt": "2026-10-14T14:54:45Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-14T14:54:45Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_0065133926adf9a786c1f458",
       "sourceId": "awesome-jobs/vietnam#5086",
@@ -1149,7 +1330,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-10-09T18:01:42Z",
         "status": "fresh"
       }
@@ -1271,7 +1452,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-10-09T15:07:16Z",
         "status": "fresh"
       }
@@ -2041,207 +2222,6 @@
       "freshness": {
         "ageDays": 7,
         "publishedAt": "2026-10-07T07:37:51Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_5402fbb42413034211d27217",
-      "sourceId": "rebase-network/who-is-hiring#1313",
-      "title": "【招聘】区块链后端工程师｜Go / EVM / Solana / DEX / Meme｜$6,000–8,000/月",
-      "description": "岗位职责:\n• 负责平台链上交易核心模块后端研发，包含 Meme 币、多链代币、合约、预测市场等交易链路开发与迭代，对接 DEX、链上 RPC，完成链上签名、发单、交易上链、交易回执解析等功能。\n• 搭建链上行情与 Meme 生态数据采集、清洗、聚合、存储、分发系统；开发链上 Token 监控、新币扫描、链上大户钱包追踪、热度指标等数据服务，支撑 AI 智能推荐能力落地。\n• 负责后端平台服务开发，保障生产环境高可用、高并发、低延迟；设计业务解耦方案，妥善管理复杂交易状态，做好服务监控、故障排查与性能优化。\n• 主导研发工程效能建设，落地 CI/CD 持续集成、自动化测试、灰度发布、线上运维等流程，提升团队交付效率。\n• 深度参与 Meme 赛道业务需求评审、技术方案设计，理解 Meme 币交易场景、热点周期、用户行为特征，和产品、前端、AI 团队协同迭代交易终端产品。\n• 跟进区块链生态、Meme 赛道前沿技术与市场动态，输出技术调研方案，持续优化产品架构。\n\n岗位要求:\n• 本科及以上学历，计算机相关专业。\n• 扎实计算机基础，精通常用数据结构、算法、网络、操作系统原理。\n• 熟练使用 #Go 语言开发，具备异步、并发编程实战经验。\n• 熟练使用 MySQL、Redis，熟悉 Kafka 等消息队列，具备分布式系统开发经验。\n• 精通高并发系统设计，擅长业务解耦、分布式事务、复杂状态管理。\n• 了解区块链基础原理，熟悉 EVM/Solana 等至少一条公链，有链上交互、DEX 对接、Meme 币相关后端开发项目经验。\n• 熟悉 Meme 赛道生态，了解 Meme 币的市场玩法、热点逻辑、链上数据指标，有 Meme 工具、链上扫描器、交易机器人开发经验优先。\n• 对 Web3、AI 交易赛道抱有强烈好奇心，具备主动学习能力、自驱力与主人翁意识。\n• 必须完全掌握 AI 辅助研发与 AI Agent 工具，能够独立应用于后端需求分析、技术方案设计、Go 编码、调试、单元/集成测试、性能优化、代码审查和技术文档编写。\n• 熟练掌握任务拆解、指令设计、上下文管理、代码库检索、终端与工具调用、长任务执行和 Agent 工作流编排。\n\n\n📮 联系方式: Email: support@aerrecens.com",
-      "excerpt": "岗位职责: • 负责平台链上交易核心模块后端研发，包含 Meme 币、多链代币、合约、预测市场等交易链路开发与迭代，对接 DEX、链上 RPC，完成链上签名、发单、交易上链、交易回执解析等功能。 • 搭建链上行情与 Meme 生态数据采集、清洗、聚合、存储、分发系统；开发链上 Token 监控、新币扫描、链上大户钱包追踪、热度指标等数据服务，支撑 AI 智能推荐能力落地。 • 负责后端平台服务开发，保障生产环境高可用、高并发、低延...",
-      "issueState": "open",
-      "contentHash": "666fea5110ea68b506e4b0aa7cffa61d4c85ae3108c11bb30013b5674ef0bc68",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "needs-info"
-      ],
-      "sourceTags": [
-        "needs-info"
-      ],
-      "author": {
-        "id": "danielwongeth",
-        "name": "danielwongeth",
-        "handle": "danielwongeth",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/338853309?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 6000,
-        "max": 8000,
-        "period": "year"
-      },
-      "createdAt": "2026-10-06T21:46:56Z",
-      "updatedAt": "2026-10-06T21:47:20Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1313",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "go",
-          "mysql",
-          "redis"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_5402fbb42413034211d27217",
-          "sourceId": "rebase-network/who-is-hiring#1313",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1313",
-          "createdAt": "2026-10-06T21:46:56Z",
-          "updatedAt": "2026-10-06T21:47:20Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-06T21:46:56Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_6ee5c31976b58995be8b656a",
-      "sourceId": "backend-br/vagas#12439",
-      "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
-      "description": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM \n\n💻 SENIOR FULL-STACK ENGINEER\n\nSe você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional.\n\n🔹 React.js\n🔹 Nest.js\n🔹 Kafka\n\n💰 USD 5.5k – 8.5k/mês\n🗣️ Inglês C1+\n📌 6+ anos de experiência\n⏰ Long-term | 40h/semana\n\n🌎 Oportunidade para profissionais de tecnologia que buscam atuar em projetos internacionais e receber em dólar.\n\n👉 Candidatura pelo meu link abaixo, não recebo o currículo no privado.\nhttps://app.onstrider.com/r/claudiaantunes?job=c2VuaW9yLWZ1bGwtc3RhY2stZW5naW5lZXItOTk3YTViMDM/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=\n\n🔁 Conhece um Full-stack Engineer com esse perfil? Marque ou compartilhe!\n\n#FullStackDeveloper #ReactJS #NestJS #Kafka #SoftwareEngineer #TechJobs #RemoteJobs #VagasInternacionais #VagasRemotas #LATAM #JobsInUSD",
-      "excerpt": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
-      "issueState": "open",
-      "contentHash": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "remoto",
-        "sênior"
-      ],
-      "sourceTags": [
-        "remoto",
-        "sênior"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 5500,
-        "max": 8500,
-        "period": "month"
-      },
-      "createdAt": "2026-10-06T12:49:47Z",
-      "updatedAt": "2026-10-06T12:50:41Z",
-      "url": "https://github.com/backend-br/vagas/issues/12439",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "fullstack"
-        ],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_6ee5c31976b58995be8b656a",
-          "sourceId": "backend-br/vagas#12439",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12439",
-          "createdAt": "2026-10-06T12:49:47Z",
-          "updatedAt": "2026-10-06T12:50:41Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-10-06T12:49:47Z",
         "status": "fresh"
       }
     }

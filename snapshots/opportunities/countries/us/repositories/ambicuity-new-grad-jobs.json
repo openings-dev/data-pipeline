@@ -1,16 +1,391 @@
 {
-  "generatedAt": "2026-10-14T08:16:51.393Z",
+  "generatedAt": "2026-10-14T19:07:15.671Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 16,
-    "openIssues": 2,
-    "closedIssues": 14
+    "opportunities": 20,
+    "openIssues": 4,
+    "closedIssues": 16
   },
-  "dataHash": "ba7a7ed301662d45e5b4842dae4492070dcfa1576e7cfb703bb26b2291da6507",
+  "dataHash": "6475a21772d1c9ade2c12c6ac6fc5a5008945c0ad8cd150cadabc61e1cd72fb4",
   "items": [
+    {
+      "id": "gh_b256c39c80fcfe7ea8df79e4",
+      "sourceId": "ambicuity/New-Grad-Jobs#399",
+      "title": "Add a UKG Pro Recruiting (UltiPro) source adapter (19 verified job boards)",
+      "description": "## Problem\n\n**UKG Pro Recruiting** (UltiPro) has 21 employers on the 30-day applied-jobs export (#390), more than any other job system still unsupported except iCIMS (backlog in #316). None of their postings reach the board.\n\n## Evidence (probed 2026-10-14)\n\n- **The public job-board search needs no key.** `POST https://<host>/<tenant>/JobBoard/<board-id>/JobBoardView/LoadSearchResults` with `{\"opportunitySearch\": {\"Top\": N, \"Skip\": M, \"OrderBy\": [postedDateDesc], \"Filters\": []}}` returns `opportunities` and `totalCount`.\n- **All 19 boards in the export answer HTTP 200 with postings,** from the Cleveland Guardians (4) to Gray Media (504). The hosts are `recruiting.ultipro.com`, `recruiting2.ultipro.com` and `<company>.rec.pro.ukg.net`. Results sort newest first and pages don't overlap. `Top` accepts at least 500.\n- **Each opportunity has** `Id`, `Title`, `PostedDate`, a `BriefDescription`, and `Locations` with a structured `Address` (city, state code, country). `LocalizedName` is often null, so the location must be built from the address. `JobLocationType` (null/0/1/2) does not reliably mark remote work: a \"Remote / Virtual\" posting has none, so the adapter doesn't use it.\n- **The posting page `<board>/OpportunityDetail?opportunityId=<Id>` answers 200.**\n- **Many tenants share `recruiting.ultipro.com`,** so the 403 cooldown must key on the tenant path, not the host.\n\n## Proposed solution\n\n1. Let `ngj.http.fetch_json_with_retry` take an optional JSON body, which sends a POST with the same cooldown and error handling. POST is not retried at the transport level, which is correct. Timeouts still get the board-level retry pass.\n2. Add `scripts/ngj/sources/ukg.py`, returning `SourceResult`. It pages the search newest first, caps each board, builds locations from the address, skips postings without an `Id`, and returns no partial jobs on a timeout or network error.\n3. Register UKG as a board source (`apis.ukg.companies: [{name, url}]`, where `url` is the job-board URL). That covers the registry, pipeline, `Settings`, `validate_config.py`, tenant-level cooldown keys, README sync and the site's source label. Add the 19 verified boards.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.\n\n## Also probed (not in this issue)\n\n- **ADP Workforce Now** (`careercenter/public/events/staffing/v1/job-requisitions?cid=…`): public JSON for the 3 employers on it. A small follow-up.\n- **ADP MyJobs** (10 employers): answers `400 Missing orgoid header`. Not keyless as it stands.\n- **Paylocity** (16): the export's links carry no company ID, and the ID found on one posting page returned an empty feed. Needs more digging.",
+      "excerpt": "## Problem **UKG Pro Recruiting** (UltiPro) has 21 employers on the 30-day applied-jobs export (#390), more than any other job system still unsupported except iCIMS (backlog in #316). None of their postings reach the ...",
+      "issueState": "open",
+      "contentHash": "3213e09a388646144ebadaac8ee4735435036e5d883393caed1e71939a2f4b16",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T19:06:19Z",
+      "updatedAt": "2026-10-14T19:06:19Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/399",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
+    },
+    {
+      "id": "gh_bb7ad7eb5e8a947e6cef8486",
+      "sourceId": "ambicuity/New-Grad-Jobs#397",
+      "title": "Add a Rippling ATS source adapter (16 verified boards, date and description from the detail endpoint)",
+      "description": "## Problem\n\n**Rippling** has 16 employers on the 30-day applied-jobs export (#390), and the backlog is in #316. It has the simplest keyless public feed of any job system still unsupported, but none of its postings reach the board.\n\n## Evidence (probed 2026-10-14)\n\n- **The board list needs no key:** `GET https://ats.rippling.com/api/v2/board/<slug>/jobs?page=N&pageSize=100` returns `items`, `totalItems` and `totalPages`. All 16 slugs from the export answer HTTP 200, with 1,064 postings in total, from Flourish And Thrive Labs (4) to Rippling itself (609).\n- **List items** carry the title, posting URL and structured `locations` (country code, `workplaceType`), **but no posting date.** `ngj.dates.is_recent_job('')` is `False`, so dateless postings would all be filtered out.\n- **The detail endpoint `.../board/<slug>/jobs/<id>`** has `createdOn`, the description (`company` and `role` HTML), `employmentType`, a structured `payRangeDetails`, and `unlistedFromSearch`.\n- **Only 51 of the 1,064 postings pass the filter's title rules,** so detail requests are cheap: about 22 list pages plus 51 details per run.\n\n## Proposed solution\n\n1. Add `scripts/ngj/sources/rippling.py`, returning `SourceResult`. It pages the list, then fetches details only for postings whose title passes the filter's title rules, to get `posted_at`, the description and yearly pay (`bounded_comp`). Other postings are still returned without a date, so the Explore corpus stays complete. Postings marked `unlistedFromSearch` are skipped. A timeout or network error returns no partial jobs.\n2. Extract the title-only hard rules of `ngj.filters.classify_job` into `passes_title_rules`, and use it in both the filter and the adapter, so they cannot drift apart.\n3. Register Rippling as a board source (`apis.rippling.companies: [{name, url}]`): the registry, pipeline, `Settings`, `validate_config.py`, 403-cooldown keys, README sync and the site's source label. Add the 16 verified boards.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.\n\n## Acceptance criteria\n\n- [ ] Paging, the detail pass, mapping (location, remote, comp, description), unlisted postings and errors are covered by deterministic tests.\n- [ ] `passes_title_rules` agrees with `classify_job` and is tested directly.\n- [ ] A full local scrape finishes with the `rippling` source `ok`, and the integrity check passes.",
+      "excerpt": "## Problem **Rippling** has 16 employers on the 30-day applied-jobs export (#390), and the backlog is in #316. It has the simplest keyless public feed of any job system still unsupported, but none of its postings reac...",
+      "issueState": "closed",
+      "contentHash": "eca4213e5d6da4c38f5787b20b510d74234d7243b6ee9e4e4e8232afcc88db90",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T18:24:23Z",
+      "updatedAt": "2026-10-14T18:36:41Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/397",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
+    },
+    {
+      "id": "gh_d0b0aa561a349be28ed27cc5",
+      "sourceId": "ambicuity/New-Grad-Jobs#394",
+      "title": "Add an Oracle HCM (Recruiting Cloud) source adapter (21 verified employers)",
+      "description": "## Problem\n\nAfter SmartRecruiters (#392), **Oracle HCM** (Oracle Recruiting Cloud) is the most-requested job system that has a usable public feed. The 30-day applied-jobs export (#390) has 22 employers on it, and the backlog is in #316. These include Texas Instruments, American Express, Uber, Nokia, CSX, Southern Company, Mayo Clinic, International Paper and Vertiv. None of their postings reach the board.\n\n## Evidence (probed 2026-10-14)\n\n- **The public candidate-experience REST API needs no key:**\n  `GET https://<host>/hcmRestApi/resources/latest/recruitingCEJobRequisitions?onlyData=true&expand=requisitionList&finder=findReqs;siteNumber=<site>,limit=100,offset=N,sortBy=POSTING_DATES_DESC`\n- **All 21 host/site pairs in the export answer HTTP 200 with postings,** from Trail King (38) to WSP (4,091). On every tenant, results sort newest first and consecutive pages don't overlap. Page size tops out at 200.\n- **`location=<country name>` filters on the server.** Uber goes from 664 postings to 324 in the US, 16 in Canada and 24 in India. `location=India` doesn't match Indiana: International Paper, CSX and GM Financial have Indiana jobs, and each returns 0.\n- **The posting page is `https://<host>/hcmUI/CandidateExperience/en/sites/<site>/job/<Id>`,** the same form as the links in the export.\n- **Some tenants are slow:** a Nokia query took more than 30 s. The source needs its own timeout.\n\n## Proposed solution\n\n1. Add `scripts/ngj/sources/oracle_hcm.py`, returning `SourceResult`. It queries once per target country, pages through results, caps each query, removes duplicate postings by URL, skips postings without an `Id`, and returns no partial jobs on a timeout or network error so the retry pass can't duplicate them.\n2. Register it as a board source, `apis.oracle_hcm.companies: [{name, url}]`, where `url` is the careers site (`https://<host>/hcmUI/CandidateExperience/en/sites/<site>`). That covers the registry, pipeline, `Settings` knobs, `validate_config.py`, README sync and the site's source label.\n3. Add the 21 verified companies.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.\n\n## Acceptance criteria\n\n- [ ] Paging, the cap, country queries, the job mapping and error handling are covered by deterministic tests.\n- [ ] `validate_config.py` rejects careers URLs that aren't Oracle HCM.\n- [ ] A full local scrape finishes with the `oracle_hcm` source `ok` in `health.json`, and the integrity check passes.",
+      "excerpt": "## Problem After SmartRecruiters (#392), **Oracle HCM** (Oracle Recruiting Cloud) is the most-requested job system that has a usable public feed. The 30-day applied-jobs export (#390) has 22 employers on it, and the b...",
+      "issueState": "closed",
+      "contentHash": "d05273a72285826454ce3958d118cb405ca6231ab3a6bc654f8a7e22e0af9c6b",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T17:46:16Z",
+      "updatedAt": "2026-10-14T18:00:26Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/394",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_4194236b8f6a98b173bb28ad",
+      "sourceId": "ambicuity/New-Grad-Jobs#392",
+      "title": "Add a SmartRecruiters source adapter (37 verified employers, highest-demand missing ATS)",
+      "description": "## Problem\n\nSmartRecruiters is tied with iCIMS as the most-requested job system the scraper can't read. The 30-day applied-jobs export in #390 has 38 employers on it, and the backlog is in #316. None of their postings reach the board.\n\n## Evidence (probed 2026-10-14)\n\n- **The public Posting API needs no key:** `GET https://api.smartrecruiters.com/v1/companies/<id>/postings?limit=100&offset=N`.\n- **All 37 company IDs found in the applied-jobs lists answer HTTP 200 with postings.** They range from ELITEBRAIN (10) to Domino's (24,834).\n- **Results are sorted newest first,** so a per-company cap keeps the most recent postings.\n- **`country=us|ca|in` filters on the server.** For example, Bosch drops from 5,032 postings to 350 in the US.\n- **The list response has no job URL,** but `https://jobs.smartrecruiters.com/<id>/<postingId>` opens the posting (HTTP 200).\n- **An unknown ID returns HTTP 200 with `totalFound: 0`, not an error.** Every configured ID must be probed for jobs before it's added.\n- **The list payload carries internal custom fields** (e.g. hiring-manager names). The adapter must not copy them.\n- **LinkedIn moved here:** its configured Greenhouse board (`linkedin`) now returns 0 jobs, while SmartRecruiters `LinkedIn3` has 325.\n\n## Proposed solution\n\n1. Add `scripts/ngj/sources/smartrecruiters.py`, returning `SourceResult`. It queries once per target country, pages through results, caps each query, removes duplicate postings by URL, and reports errors per company.\n2. Register it as a board source, `apis.smartrecruiters.companies: [{name, url}]`. That covers the registry, pipeline, `Settings` knobs, `validate_config.py`, README sync, 403-cooldown keys and the site's source label.\n3. Add the 37 verified companies, and move LinkedIn from Greenhouse to SmartRecruiters.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.\n\n## Acceptance criteria\n\n- [ ] Paging, the cap, country queries and the job mapping are covered by deterministic tests.\n- [ ] `validate_config.py` rejects malformed SmartRecruiters URLs.\n- [ ] A full local scrape finishes with the `smartrecruiters` source `ok` in `health.json`, and the integrity check passes.",
+      "excerpt": "## Problem SmartRecruiters is tied with iCIMS as the most-requested job system the scraper can't read. The 30-day applied-jobs export in #390 has 38 employers on it, and the backlog is in #316. None of their postings ...",
+      "issueState": "closed",
+      "contentHash": "711722e0f7ba36536e0b44ea707e70399149adf237fe4026454951448cbb62ec",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T17:19:31Z",
+      "updatedAt": "2026-10-14T17:35:09Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/392",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_dd2a50b42a8a3c9bee37eee2",
+      "sourceId": "ambicuity/New-Grad-Jobs#390",
+      "title": "Add 234 employer boards from the 30-day applied-jobs export and exclude part-time/seasonal titles",
+      "description": "## Summary\n\nA 30-day export of applied-to employers (**704 employers**, 2026-09-14 → 2026-10-14) shows that the board misses most of the companies where entry-level candidates actually apply.\n\nI matched every posting link in the export to its ATS board and compared the result with `config.yml`.\n\n| Bucket | Employers / boards |\n|---|---|\n| Already configured (link matched an existing board) | 89 link hits |\n| **On a supported ATS but not configured** | **237 boards**: Greenhouse 87, Workday 75, Ashby 39, Lever 36 |\n| On an ATS with no adapter, or a custom career site | 396 employers |\n\n## Probe result (2026-10-14)\n\n- **235 of 237** boards answered with open jobs.\n- **Not adding:** DeepLearning.AI (Lever `aifund`, HTTP 404). HP `EXTEU-AC-CareerSite` is an EU-only site, and HP is already configured.\n- **Poshmark** is configured on Greenhouse, but that board now has 0 jobs. Its postings live on Ashby (`poshmark`).\n\n## Quality problem found while testing\n\nRunning the new boards through the real adapters and filter gave **2,355** curated jobs. **768** of them were store, part-time or seasonal roles, against 22 on the live board today:\n\n| Employer | Store, part-time or seasonal jobs |\n|---|---|\n| Alo Yoga | 351, nearly all \"Seasonal Sales Associate (Part-Time)\" |\n| Verizon | 208, in-store retail sales |\n| T-Mobile | 192, in-store retail sales |\n\nThey pass because \"Associate\" plus the \"sales\" track counts as entry-level. **Owner decision:** exclude part-time and seasonal titles, and keep full-time entry-level sales and operations roles, since the board covers every profession.\n\n## Not in scope\n\nThe ATS families without an adapter are tracked in #316 and #173 (iCIMS): SmartRecruiters 38, iCIMS 38, Oracle HCM 22, UKG/UltiPro 19, Dayforce 16, Paylocity 16, Rippling 16, ADP 13, Workable 8, Taleo 7, and others. Another 167 employers use custom career sites.",
+      "excerpt": "## Summary A 30-day export of applied-to employers (**704 employers**, 2026-09-14 → 2026-10-14) shows that the board misses most of the companies where entry-level candidates actually apply. I matched every posting li...",
+      "issueState": "closed",
+      "contentHash": "46248053049135535a41805462a9f73480b6d86294805c2c54b1e9915a991426",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T16:51:50Z",
+      "updatedAt": "2026-10-14T17:00:43Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/390",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time",
+          "part-time"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_8c889ecee8e2d1a678c13551",
+      "sourceId": "ambicuity/New-Grad-Jobs#388",
+      "title": "Add 23 missing employer boards and fix three filter gaps that drop junior postings",
+      "description": "## Summary\n\nI audited 60 recent entry-level applications (Oct 13 2026) against the board. Most of their employers were never scraped. Three filter bugs also dropped real junior postings from employers that are scraped.\n\n## 1. Employers on a supported ATS but missing from `config.yml` (23)\n\nEach posting URL names its ATS. Every endpoint below was probed live on 2026-10-14 and returned jobs.\n\n- **Workday (17):** Amgen, Astound, Conagra Brands, Daimler Truck North America, Dow Jones, Eli Lilly, Gartner, Microchip Technology, Mohegan, Pacific Life, Point32Health, Rockwell Automation, Travelers, TTI, Unisys, UPM, Whataburger\n- **Greenhouse (4):** Alarm.com, Foxhole Technology, MetTel, Vectara\n- **Lever (2):** Dynamic Catholic, Pivotal\n\nAlready configured: Medtronic, Nuro, CoreWeave.\n\n## 2. Filter bugs found by running those boards through the pipeline\n\n| Bug | Example dropped posting |\n|---|---|\n| A Workday location count such as `\"6 Locations\"` reads as foreign, so the job becomes a near miss (`outside_target_countries`). `\"Multiple Locations\"` already passes. The live `jobs-extended.json` has **233** near misses held back by this alone. | Astound, *Junior SQL Database Administrator* (`6 Locations`) |\n| `Jr.` / `Jr` is not read as junior | Foxhole, *Jr. Systems Administrator*; SBTGlobal, *Jr. Front-End Developer* |\n| `administrator` is not a track word | *Junior SQL Database Administrator*, *Jr. Systems Administrator* |\n\n## 3. Out of scope (follow-ups)\n\n- **SmartRecruiters** (ELITEBRAIN, AbbVie, Check Point, SBTGlobalInc) needs a new source adapter.\n- **Unsupported ATSes in the list:** iCIMS, Paylocity, Paycom, Oracle HCM, Workable, PageUp, CATS, JazzHR (applytojob), HRM Direct, isolvedhire, and custom career sites (UnitedHealth, Timken, Boston Scientific).\n- **Workday keyword search misses unlevelled titles.** 9 of the listed Workday postings were never fetched, although the filter would keep them, for example *Gartner Business Analyst*, *Travelers Data Engineer I* and *Lilly Software Engineer – Full Stack*. The `search_filters.title_keywords` design only reaches titles or descriptions that contain a new-grad keyword.\n- **\"Scott, AFB\"** (an Air Force Base) is not recognised as a US location.\n- **Unlevelled titles** such as *Analytics Engineer*, *Data Analyst* and *Quality Engineer* are dropped because the title has no early-career signal. This is by design.\n- Two listed iCIMS links (Primehealthcare, ISYS) are `notFound` search redirects, so those postings have closed.",
+      "excerpt": "## Summary I audited 60 recent entry-level applications (Oct 13 2026) against the board. Most of their employers were never scraped. Three filter bugs also dropped real junior postings from employers that are scraped....",
+      "issueState": "closed",
+      "contentHash": "3a4e404303edba77074918dbd43a73ef53a454fe0ac28077b9813478862b854d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: bug",
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "type: bug",
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-14T16:16:49Z",
+      "updatedAt": "2026-10-14T16:35:24Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/388",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_415a5be86a5a7600cee60f6b",
       "sourceId": "ambicuity/New-Grad-Jobs#387",
@@ -716,180 +1091,6 @@
       }
     },
     {
-      "id": "gh_4c4120b9a6b8f881f1515c70",
-      "sourceId": "ambicuity/New-Grad-Jobs#370",
-      "title": "Job data is stale: last scrape 2026-09-29T11:35:38.271415Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **297 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36598472901. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **297 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "closed",
-      "contentHash": "227a988dc8ea18b47dc57bc6edfa953ae410e2aa733e8c365bb230adb0c6daf5",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-09-29T16:32:45Z",
-      "updatedAt": "2026-09-29T22:21:15Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/370",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_131bcc65a23629aa68bf5503",
-      "sourceId": "ambicuity/New-Grad-Jobs#369",
-      "title": "Job data is stale: last scrape 2026-09-26T09:52:01.607570Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **198 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36244286048. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **198 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "closed",
-      "contentHash": "0e31130de2502d76cce60aa02276d5a1a9e8e939dda07fb60f2b6fce6348801d",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-09-26T13:10:46Z",
-      "updatedAt": "2026-09-26T21:15:27Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/369",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_af13796ff8c941761dcb75e0",
-      "sourceId": "ambicuity/New-Grad-Jobs#363",
-      "title": "Job data is stale: last scrape 2026-09-25T01:26:43.548358Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/36096971692. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **217 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "closed",
-      "contentHash": "0d3f00f1797b886032342dc379755d010440c53b0221a0c6c22001f62cb0cc7c",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-09-25T05:03:54Z",
-      "updatedAt": "2026-09-25T17:17:04Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/363",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_6bd2ea87cfb4bbe49569241c",
       "sourceId": "ambicuity/New-Grad-Jobs#316",
       "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
@@ -937,7 +1138,7 @@
       },
       "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
       "createdAt": "2026-05-26T23:52:14Z",
-      "updatedAt": "2026-10-09T17:27:12Z",
+      "updatedAt": "2026-10-14T18:42:49Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -974,6 +1175,72 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "inferred"
+      }
+    },
+    {
+      "id": "gh_b29f7d5bd90361353b30b563",
+      "sourceId": "ambicuity/New-Grad-Jobs#173",
+      "title": "[Advanced]: add iCIMS ingestion support to recover enterprise networking and infrastructure coverage",
+      "description": "### 🧠 Advanced Contributors\nThis issue is for contributors who are already very familiar with this codebase\nand its architectural patterns.\n\nYou should feel comfortable:\n- Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit\n- Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations\n- Reasoning about API contract changes across ATS providers\n- Writing rigorous, deterministic tests without live network calls\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\n### 🐞 Problem Description\nThe roadmap already calls out ATS coverage expansion as the biggest remaining quality gap. Today, the scraper has strong coverage for Greenhouse, Lever, Google Careers, and partial Workday, but it still misses entire slices of enterprise hiring that sit behind other ATS platforms.\n\niCIMS is a high-leverage next source because it is common among larger employers, including companies that post entry-level infrastructure, networking, and security roles that never reach the board today.\n\nWithout a first-class iCIMS integration, the dataset will continue to under-represent one of the main role families the README says it tracks.\n\n### 💡 Proposed / Expected Solution\nAdd a production-ready iCIMS fetch path that follows the same project constraints as the existing sources:\n\n- config-driven company definitions\n- deterministic tests with mocked responses\n- compatibility with the current normalization, filtering, and dedup pipeline\n- no external database or browser-based dependency\n\nThis should be implemented as a source integration, not as a one-off company patch.\n\n### ✅ Acceptance Criteria\n- [ ] A reusable iCIMS fetch path exists in the scraper\n- [ ] `config.yml` can declare iCIMS-backed companies without custom code per company\n- [ ] New source behavior is covered by deterministic tests with mocked payloads\n- [ ] Thread-safety is preserved\n- [ ] All existing `pytest tests/` pass\n- [ ] New tests added for every changed code path (deterministic — no live network calls)\n- [ ] `pre-commit run --all-files` passes\n- [ ] `jobs.json` schema remains backward compatible with `docs/app.js`\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### 🔗 Additional Context\n- Roadmap reference: `ROADMAP.md` lists iCIMS support under v1.1\n- Existing ATS references: Greenhouse, Lever, Google Careers, Workday",
+      "excerpt": "### 🧠 Advanced Contributors This issue is for contributors who are already very familiar with this codebase and its architectural patterns. You should feel comfortable: - Understanding the full data flow: `config.yml...",
+      "issueState": "open",
+      "contentHash": "17425b134c9d469abcb69957f04a1c66b27b5fc282997ba3704f0223c4ce761f",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "advanced"
+      ],
+      "sourceTags": [
+        "type: enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "advanced"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-14T05:28:12Z",
+      "updatedAt": "2026-10-14T16:35:23Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/173",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
       }
     }
   ]
