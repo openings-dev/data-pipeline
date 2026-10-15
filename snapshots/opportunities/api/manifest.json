@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-15T13:50:46.065Z",
+  "generatedAt": "2026-10-15T18:49:17.487Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "5648f92fb880c4134a336460d745a601c3191855e620b5bfefd94aa76531518a",
+  "dataHash": "507fefd70d4d81bd205fe6da27b7ea95630da75ece0fb9819350dfe71b6127b6",
   "totals": {
-    "openOpportunities": 699,
-    "pages": 35,
+    "openOpportunities": 701,
+    "pages": 36,
     "repositories": 114,
     "communities": 187,
     "countries": 15,
@@ -35,7 +35,7 @@
       "awesome-jobs/china": 5,
       "awesome-jobs/jobs": 28,
       "awesome-jobs/vietnam": 28,
-      "backend-br/vagas": 28,
+      "backend-br/vagas": 30,
       "backend-pt/vagas": 2,
       "bafrontend/trabajos": 24,
       "baixada/Vagas": 11,
@@ -146,11 +146,11 @@
       "Europe": 11,
       "Global": 87,
       "North America": 99,
-      "South America": 329
+      "South America": 331
     },
     "countries": {
       "Argentina": 24,
-      "Brazil": 303,
+      "Brazil": 305,
       "Canada": 6,
       "China": 49,
       "Germany": 5,
@@ -235,7 +235,7 @@
       "integration": 1,
       "ios": 1,
       "it": 1,
-      "java": 168,
+      "java": 170,
       "java-spring": 1,
       "javascript": 16,
       "job": 2,
@@ -269,12 +269,12 @@
       "presencial-porto-alegre": 1,
       "principal": 12,
       "priority-medium": 2,
-      "python": 85,
+      "python": 87,
       "rabbitmq": 3,
       "react": 99,
       "react-native": 1,
       "recruited": 1,
-      "remote": 139,
+      "remote": 141,
       "remotely": 4,
       "remoteok-io": 16,
       "rlhf": 1,
@@ -366,7 +366,7 @@
       "chilijung": 1,
       "chinenyeenete": 2,
       "Ciraiane": 1,
-      "Claudiaantunesdelima": 3,
+      "Claudiaantunesdelima": 5,
       "Claulu3": 1,
       "codeCraft-Ritik": 2,
       "CombineGlobalRecruitment": 1,
@@ -655,6 +655,7 @@
       "zrack23": 2
     },
     "authorLabels": {
+      "Claudiaantunesdelima": "Claudiaantunesdelima",
       "NoahLI-07": "NoahLI-07",
       "Danielsch1": "Danielsch1",
       "FrancieleGhizzoni": "FrancieleGhizzoni",
@@ -663,7 +664,6 @@
       "hadamaller": "hadamaller",
       "saisrikar8": "saisrikar8",
       "AymenJeddou": "AymenJeddou",
-      "Claudiaantunesdelima": "Claudiaantunesdelima",
       "adamkoch4221": "adamkoch4221",
       "ambicuity": "ambicuity",
       "CombineGlobalRecruitment": "CombineGlobalRecruitment",
@@ -1032,11 +1032,11 @@
     "workModels": {
       "hybrid": 68,
       "on-site": 84,
-      "remote": 297
+      "remote": 299
     },
     "areas": {
       "backend": 189,
-      "data-ai": 152,
+      "data-ai": 154,
       "design": 220,
       "devops-sre": 92,
       "frontend": 131,
@@ -1059,7 +1059,7 @@
       "flutter": 22,
       "gcp": 71,
       "go": 77,
-      "java": 189,
+      "java": 191,
       "javascript": 141,
       "kotlin": 20,
       "kubernetes": 70,
@@ -1070,12 +1070,12 @@
       "nodejs": 100,
       "php": 51,
       "postgres": 63,
-      "python": 116,
+      "python": 118,
       "react": 132,
       "react-native": 34,
       "redis": 38,
       "ruby": 19,
-      "rust": 22,
+      "rust": 24,
       "spring": 50,
       "terraform": 17,
       "typescript": 83,
@@ -1106,16 +1106,16 @@
       "pt": 17
     },
     "freshness": {
-      "7": 55,
-      "30": 122,
-      "90": 192,
+      "7": 56,
+      "30": 124,
+      "90": 194,
       "aging": 70,
-      "fresh": 122,
+      "fresh": 124,
       "stale": 507
     },
     "salaryDisclosed": {
       "false": 610,
-      "true": 89
+      "true": 91
     }
   },
   "pages": [
@@ -1292,7 +1292,12 @@
     {
       "page": 35,
       "file": "api/pages/page-0035.json",
-      "count": 19
+      "count": 20
+    },
+    {
+      "page": 36,
+      "file": "api/pages/page-0036.json",
+      "count": 1
     }
   ]
 }
