@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T18:49:17.487Z",
+  "generatedAt": "2026-10-15T23:29:49.835Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
@@ -9,8 +9,195 @@
     "openIssues": 2,
     "closedIssues": 12
   },
-  "dataHash": "d442e0f4fb26c8b25eda2ac9e8557008903456e07937259aee761a4c94491289",
+  "dataHash": "19b542dc327065fc8165daa61fecf277ea67ccee15411395c02ee8e6da6b8a3a",
   "items": [
+    {
+      "id": "gh_6deed1c4e9c643b90b8b5efa",
+      "sourceId": "ambicuity/New-Grad-Jobs#438",
+      "title": "Guides: redesign the index and guide pages (reading paths, cards, briefs, on-page contents) within the static CSP",
+      "description": "The `/guides/` index is a plain grouped list, and guide pages have no summary, no on-page contents and no way to keep your place. A proposed redesign mockup (single-page app with \"pick your situation\" tracks, cards, format tags, a 30-second brief, On this page and Save) shows the direction, but it can't ship as is:\n\n- it loads Tailwind from a CDN and fonts from Google, and runs inline scripts, which breaks the strict static-page CSP and adds third-party requests;\n- every guide lives inside one JavaScript bundle, so the prerendered `/guides/<slug>/` pages, Markdown copies and llms.txt entries would be lost;\n- it renames guide URLs (e.g. `recruiter-screen` → `the-recruiter-screen`);\n- its counts disagree with each other (81 vs 101 guides) and its new content states unsourced figures;\n- it adds localStorage keys the privacy policy doesn't list;\n- on phones the filters fill the first screen.\n\n## Scope\n\nRebuild the layout inside the existing static generator for the existing 76 guides only (new guides are a separate issue):\n\n- Index: reading paths that mirror `start-here.md`, section chips, cards with format tags and reading time, search, All / Unread / Saved views and a format filter. All counts computed.\n- Guide page: 30-second brief, On this page (sticky column on wide screens, folded inline on phones), prev/next, published and modified dates in Article JSON-LD, Mark as read / Save.\n- Pages stay complete without JavaScript. One same-origin module script adds the interactive parts; no CDN, no web fonts, no URL changes.\n- Privacy policy lists the new storage keys and the guides' script.\n\n## Acceptance\n\n- Unit tests for front matter (formats, briefs that only repeat numbers from the body, published dates), reading paths in sync with start-here, rendering, escaping and CSP.\n- jsdom tests for the browser script, including blocked storage.\n- Playwright on desktop and 375px: search/filters/save/read, no-JS fallback, no horizontal overflow, axe on the index and a guide page.",
+      "excerpt": "The `/guides/` index is a plain grouped list, and guide pages have no summary, no on-page contents and no way to keep your place. A proposed redesign mockup (single-page app with \"pick your situation\" tracks, cards, f...",
+      "issueState": "closed",
+      "contentHash": "4de21e13e7fa2f80170be4d8b16f2d52116ca678e132b18b9dc34bf97025cde5",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "java",
+        "design"
+      ],
+      "sourceTags": [
+        "java",
+        "design"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-15T22:08:42Z",
+      "updatedAt": "2026-10-15T22:12:23Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/438",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "java",
+          "javascript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_0bb45713227208611e89e2ee",
+      "sourceId": "ambicuity/New-Grad-Jobs#436",
+      "title": "Exclude temporary, fixed-term, contract and fractional-FTE jobs; remove Allied Universal",
+      "description": "Owner decision (2026-10-15). These are not new-grad careers:\n\n- **Temporary and fixed-term postings**, including temp-to-hire: \"Retail Sales Associate Temp\", \"Temporary Early Career Electrical Engineer\", \"Business Analyst (Fixed Term)\".\n- **Contract postings**, including contract-to-hire: \"12 Month Contract\", \"(Contract)\", \"Contractual\". Titles about contracts as a subject stay, such as \"Contracts Administrator\" and \"Contract Specialist\".\n- **Fractional-FTE (part-time) titles**, such as Duke's \"… .3FTE\".\n- **Allied Universal**, whose iCIMS portal publishes only security-officer postings.\n\nMeasured on the live jobs.json (9,003 jobs), the title rules drop 33 jobs, and removing Allied Universal drops 4 more. A careful phrase list keeps every full-time \"contracts\" role.",
+      "excerpt": "Owner decision (2026-10-15). These are not new-grad careers: - **Temporary and fixed-term postings**, including temp-to-hire: \"Retail Sales Associate Temp\", \"Temporary Early Career Electrical Engineer\", \"Business Anal...",
+      "issueState": "closed",
+      "contentHash": "e5769cd1b179adcc2a3f574ec4807d8c022b5fd4058cd2ab7f33483de1b25982",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-15T19:48:48Z",
+      "updatedAt": "2026-10-15T20:01:22Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/436",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [
+          "contract",
+          "full-time",
+          "part-time"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_4e3361d742d7798394c865b4",
+      "sourceId": "ambicuity/New-Grad-Jobs#434",
+      "title": "Publish Terms, Privacy, Copyright and Data Sources pages, llms.txt and third-party licence notices",
+      "description": "## Problem\n\nThe site has no Terms of Service, Privacy Policy, copyright/attribution policy or data-source disclosure. It also has no `llms.txt`, and no licence notices for the software it bundles. JetBrains Mono (OFL-1.1) and React/TanStack (MIT) require their notices to travel with redistributed copies.\n\nThe README and `LICENSE` say MIT, but nothing explains that the licence covers NGJ's own code and not the employers' job postings.\n\n## Audit findings (from the code)\n\n- The site is static (GitHub Pages). It has no accounts, forms, cookies or ads.\n- **Page counter.** GoatCounter loads on the interactive board only. Its `count.js` sends the page's query string, which contains the board's filters and search words.\n- **Browser storage.** The site writes 4 `localStorage` keys (saved jobs, applied jobs, two GitHub caches). GitHub Pages logs visitor IPs.\n- **What gets republished.** Descriptions appear in full (up to 50,000 characters) on job pages and in `descriptions/`, and as a 3,000-character excerpt in `jobs.json`.\n- **User agents.** The scraper uses `NewGradJobs-Aggregator/3.0`, except Workday and Indeed/JobSpy, which send a browser user agent.\n\n## Plan\n\n- Build `/terms/`, `/privacy/`, `/copyright/` and `/data-sources/` from `site/content/legal/*.md` with the existing Markdown renderer. They are script-free, use the same CSP, and each has a Markdown copy at `index.md`.\n- Link the policy pages from the board footer and from every static page footer. Add them to the sitemap.\n- Generate `/llms.txt` (llmstxt.org format) from the published data. Counts are computed, never typed.\n- Generate `/third-party-licenses.txt` from `node_modules`, and add `THIRD_PARTY_NOTICES.md`.\n- Write the audit, open decisions and checklist in `docs/legal/README.md`.\n\nContact for all requests: contact@riteshrana.engineer (already published in SECURITY.md).",
+      "excerpt": "## Problem The site has no Terms of Service, Privacy Policy, copyright/attribution policy or data-source disclosure. It also has no `llms.txt`, and no licence notices for the software it bundles. JetBrains Mono (OFL-1...",
+      "issueState": "closed",
+      "contentHash": "0d1918b9192afb5fa9a9b8d3f946112d62ad8fe95cb26bd9ec3aeda3e6ce96ed",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "react",
+        "node",
+        "data"
+      ],
+      "sourceTags": [
+        "react",
+        "node",
+        "data"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-15T19:24:58Z",
+      "updatedAt": "2026-10-15T19:32:09Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/434",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_beef41c56cdee1a95b5a4fde",
       "sourceId": "ambicuity/New-Grad-Jobs#429",
@@ -552,186 +739,6 @@
         "salary": "unknown",
         "seniority": "unknown",
         "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_8ccbfdce894ce84cb56f6d44",
-      "sourceId": "ambicuity/New-Grad-Jobs#410",
-      "title": "Flaky test: contributors 'sponsor link only for handles with GitHub Sponsors' fails intermittently in CI",
-      "description": "## What happened\n\n`site/src/components/contributors/contributors.test.jsx` › *sponsor link only for handles with GitHub Sponsors; profile is a real link* failed once in CI on PR #408, then passed when the failed job was re-run:\n\n```\nAssertionError: expected 'ambicuity' not to be 'ambicuity'\n  106|     expect(sel()).not.toBe('ambicuity');\n```\n\n- Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38633101875 (first attempt failed, the re-run passed)\n- PR #408 doesn't touch the contributors view or its keyboard handling.\n- Locally the file passed 5 of 5 times, and recent `main` CI runs pass.\n\n## Likely cause (not confirmed)\n\nAfter `await screen.findByText(/SHOWN:/)`, the test presses `j` and checks synchronously that the selection moved. On a slow runner, either the window `keydown` listener (registered in an effect) isn't attached yet, or a later async update (contributors / GitHub enrichment resolving) resets the selection back to the first row after the keypress.\n\n## Suggested fix\n\n- Wait for the view to settle before the keypress, for example on the enriched roster.\n- Assert the move with `await vi.waitFor(() => expect(sel()).not.toBe('ambicuity'))`, or press `j` inside `act(async …)` after the data promise resolves.\n- Confirm the fix by running the file in a loop with CPU throttling (`--pool=forks --poolOptions.forks.singleFork`).",
-      "excerpt": "## What happened `site/src/components/contributors/contributors.test.jsx` › *sponsor link only for handles with GitHub Sponsors; profile is a real link* failed once in CI on PR #408, then passed when the failed job wa...",
-      "issueState": "closed",
-      "contentHash": "741179436488200295cbc89d7aa00f9cfb53d590881ca6abf51415639b5164af",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: bug"
-      ],
-      "sourceTags": [
-        "type: bug"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-14T20:40:38Z",
-      "updatedAt": "2026-10-14T21:10:00Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/410",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_f320e0622b81450fdb4fb65b",
-      "sourceId": "ambicuity/New-Grad-Jobs#407",
-      "title": "Watchdog: surface per-source health (status, failed companies, degraded/zero sources)",
-      "description": "## Problem\n\n`.github/workflows/scraper-watchdog.yml` only checks how old `health.json` is (more than 3 h triggers a re-dispatch and a stale-data issue). It never looks at the per-source health that `health.json` already publishes: each source's `status`, `failed_companies`, and the top-level `degraded_sources` and `zero_sources`. A source that is quietly degraded, for example a provider blocking us or a schema change that zeroes a source, never shows up in the watchdog's run.\n\nAll 11 sources already share `ngj.http`: one session with urllib3 retries and backoff on 429/5xx for GET, per-source timeouts, the per-tenant 403 cooldown, and all-or-nothing handling of transient errors. So the gap is visibility, not inconsistent retry logic.\n\n## Proposed solution\n\n- Add a watchdog step that reads the same `health.json` and writes a per-source table to the job summary: source, status, jobs and failed companies.\n- Emit a `::warning::` for every degraded or zero-job source, so it appears on the run without paging anyone.\n- Keep the step informational, so it never fails the watchdog. Staleness remains the only trigger for re-dispatch and the stale-data issue, so behaviour doesn't change.\n- Cover the summary logic with a test that runs the step's script against fixture `health.json` payloads.",
-      "excerpt": "## Problem `.github/workflows/scraper-watchdog.yml` only checks how old `health.json` is (more than 3 h triggers a re-dispatch and a stale-data issue). It never looks at the per-source health that `health.json` alread...",
-      "issueState": "closed",
-      "contentHash": "fb731776579e78cd9ade171e70d80e5401ec1a17daea3b0dc44487ae1492d463",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-14T20:25:48Z",
-      "updatedAt": "2026-10-14T20:40:58Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/407",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_054b259645bfa519f9b47827",
-      "sourceId": "ambicuity/New-Grad-Jobs#406",
-      "title": "Site: readable truncated cells, a skills fallback for unstructured descriptions, Explore CSV e2e",
-      "description": "## Problem\n\nThe board's site has three gaps, all verified against `main` on 2026-10-14.\n\n1. **Truncated cells can't be read in place.** Desktop board rows (`JobRow.jsx`) and Explore rows (`ExploreView.jsx`) clip the company, role/title, location and source with `text-overflow: ellipsis`, and show no hover text. Long values such as \"Anduril Industr…\", \"Waltham, Massachuset…\" or \"hosur road bangalore…\" can only be read by opening the detail pane. Screen readers already get the full text from each option's `aria-label`; sighted mouse users don't.\n2. **The requirements fallback is empty for unstructured descriptions.** `lib/requirements.js` only finds requirements under a header section or in a list of three or more `<li>` items. Plain-prose descriptions fall back to \"None extracted from the description — see the full listing.\", even when they name concrete skills (Python, C++, Kubernetes, AWS…).\n3. **The Explore tab's EXPORT CSV has no end-to-end test.** `site/e2e/explore.spec.js` already covers presets, URL restore, tiers and keyboard selection, and `keyboard.spec.js` covers `/`, ↑/↓ and F2, but the CSV download is never exercised.\n\n## Proposed solution\n\n1. Give truncated cells a native `title` with their full value, in both the board and Explore.\n2. Add a pure, unit-tested `lib/skills.js` that finds skill names from a fixed list as whole tokens in the description text. When no requirements list is found, show those names labelled **\"Skills mentioned in the description\"**, which is honest: they're derived, not invented. When none are found, keep the current message.\n3. Add a Playwright test that clicks EXPORT CSV and checks the downloaded file's name, header and row count against the result count.\n\n## Not in scope (already done; audit 2026-10-14)\n\n- **Mobile layout** already switches below 1180px (not 768px) to single-column cards, a full-screen detail dialog and a FILTERS drawer, all covered at 375px by `mobile.mobile.spec.js`.",
-      "excerpt": "## Problem The board's site has three gaps, all verified against `main` on 2026-10-14. 1. **Truncated cells can't be read in place.** Desktop board rows (`JobRow.jsx`) and Explore rows (`ExploreView.jsx`) clip the com...",
-      "issueState": "closed",
-      "contentHash": "47e56f0388c1730abade2e280c6c88a3c02866882b4eb7e0f4050e74d0af4267",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-14T20:25:47Z",
-      "updatedAt": "2026-10-14T20:40:42Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/406",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "kubernetes",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
       }
     },
     {
