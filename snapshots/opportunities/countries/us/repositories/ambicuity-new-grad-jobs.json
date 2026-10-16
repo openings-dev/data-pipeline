@@ -1,16 +1,195 @@
 {
-  "generatedAt": "2026-10-15T23:29:49.835Z",
+  "generatedAt": "2026-10-16T02:29:52.912Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 14,
-    "openIssues": 2,
-    "closedIssues": 12
+    "openIssues": 3,
+    "closedIssues": 11
   },
-  "dataHash": "19b542dc327065fc8165daa61fecf277ea67ccee15411395c02ee8e6da6b8a3a",
+  "dataHash": "43d2b24f2cff54e0a7c4442a5b12fb5300008b148e8c8a23e76cde33c76bc934",
   "items": [
+    {
+      "id": "gh_f9423a44dfa4c405cd352a84",
+      "sourceId": "ambicuity/New-Grad-Jobs#445",
+      "title": "Privacy policy: Cloudflare proxies the site but is not disclosed",
+      "description": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare also adds:\n\n- `Report-To` / `NEL` headers, which ask browsers to report failed connections to `a.nel.cloudflare.com`;\n- its Web Analytics beacon (`static.cloudflareinsights.com`), which every page's CSP blocks. It shows up as a console error and never runs.\n\nNo cookies are set. The privacy policy names only GitHub Pages as the host, so it needs a Cloudflare section, and the sharing, transfers, retention and security sections and the terms need updating to match.\n\nSeparately, the owner should disable Web Analytics automatic setup in the Cloudflare dashboard. That's a dashboard setting, not a code change.",
+      "excerpt": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare als...",
+      "issueState": "open",
+      "contentHash": "34926e66663ba9a70b5927e979485628be4a8a704dd03fe6b9358f2cba6a500d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T01:47:20Z",
+      "updatedAt": "2026-10-16T01:47:20Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/445",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_c7f60008c3825de71e9e8f62",
+      "sourceId": "ambicuity/New-Grad-Jobs#443",
+      "title": "Board: salaries shown as US dollars whatever their currency; Indian locations tagged US or untagged",
+      "description": "Found while fact-checking the salary and Canada/India guides (#440).\n\n**1. The board labels every posted salary as US dollars.** `fmtComp` prints `$X–Yk` whatever the range's currency. On the 2026-10-15 feed, 1,661 jobs post a range:\n- 114 are CAD, 6 EUR and 1 INR, and all show as `$`;\n- 6 have an unknown currency (a bare `$` outside the US and Canada) and still show, although the static job pages hide them;\n- the pay sort and the MED COMP median mix all of these together.\n\n**2. Indian locations are tagged US or get no country.** For example, \"IN - Chennai\" and \"IN: Lilly Bengaluru\" are read as Indiana, while \"Gurgaon\", \"IND-Pune-…\" and \"Chennai, Tamil Nadu\" get no country. On the same feed, 108 Indian jobs are affected:\n- 13 are tagged US, and some of those appear as US metros such as \"Chennai, IN\";\n- 95 have no country.\n\nThe COUNTRY filter, the LOCATION list, the /jobs/in/… landing pages and the JobPosting `addressCountry` all inherit the error.\n\n## Expected\n- Each range is labelled in its own currency, with no conversion, and ranges of unknown currency are hidden as on the job pages. Pay is compared only within one currency, and MED COMP is over US-dollar ranges and says so.\n- An Indian state or city is India unless the location names another country. \"IN\" beside it is India, not Indiana, and US/Canadian places such as \"Delhi, NY\" and \"Indianapolis, IN\" are unchanged.",
+      "excerpt": "Found while fact-checking the salary and Canada/India guides (#440). **1. The board labels every posted salary as US dollars.** `fmtComp` prints `$X–Yk` whatever the range's currency. On the 2026-10-15 feed, 1,661 job...",
+      "issueState": "closed",
+      "contentHash": "d8dec8aa9fc4152a1ef210a826a715a55d4e293c1b115f7d059aae834ac705c7",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T01:28:24Z",
+      "updatedAt": "2026-10-16T01:32:22Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/443",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_3c005c90e07a226401a258ed",
+      "sourceId": "ambicuity/New-Grad-Jobs#440",
+      "title": "Guides: add sourced guides for common situations the current set misses",
+      "description": "Follow-up to #438. The guides cover the software search well but leave common situations unanswered:\n- searching with no internship, or after graduating;\n- advanced degrees, career switchers and location choices;\n- Canada and India, although the board covers both;\n- rotational programs, staffing agencies and contract roles;\n- adjacent technical roles;\n- cover letters, GPA cutoffs, career fairs and cold emails;\n- portfolios and open source;\n- OPT unemployment days, cap-exempt H-1B and other visas;\n- rescinded offers, employment agreements and the first 90 days;\n- how the board reads salary ranges.\n\nThe redesign mockup proposed 25 such guides. Four overlap existing guides (frontend, embedded and security interview prep are already in role-specific technical preparation; deadline extensions are in comparing offers), so this issue covers the other 21.\n\nAlso out of date: \"What counts as a new grad job\" says contract and staffing-agency roles are not excluded. That stopped being true when temporary, contract and fractional-FTE titles were excluded in #437. Three guides also link a USCIS H-1B page that no longer loads.\n\n## Standard for each new guide\n- Front matter per AGENTS.md: published, format, use_when / you_get. The brief may not state a number the body doesn't.\n- 700–1,300 words; supported Markdown only.\n- Every rule, number or quote links an official or primary source opened at writing time. No invented statistics.\n- Claims about NGJ's own behaviour match the code.\n- Field-neutral unless the topic is field-specific; no advice to misrepresent anything.\n- Independently fact-checked before merge.\n\n## Acceptance\n- The 21 guides above, fact-checked.\n- start-here and the reading paths updated together; the sync test passes.\n- The \"What counts\" exclusions corrected and the USCIS link fixed.\n- Content tests, build and a five-width browser sweep of every guide pass.",
+      "excerpt": "Follow-up to #438. The guides cover the software search well but leave common situations unanswered: - searching with no internship, or after graduating; - advanced degrees, career switchers and location choices; - Ca...",
+      "issueState": "closed",
+      "contentHash": "4b3ef584a728b038c829e64f52a9ad5bc44484b621b1217c337ff4b425ab386d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "frontend",
+        "staff",
+        "design"
+      ],
+      "sourceTags": [
+        "frontend",
+        "staff",
+        "design"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T01:02:18Z",
+      "updatedAt": "2026-10-16T01:06:40Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/440",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship",
+          "staff"
+        ],
+        "employmentTypes": [
+          "contract",
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_6deed1c4e9c643b90b8b5efa",
       "sourceId": "ambicuity/New-Grad-Jobs#438",
@@ -550,195 +729,6 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_f0c6251fa8f2cc9fe8ff5d70",
-      "sourceId": "ambicuity/New-Grad-Jobs#417",
-      "title": "Filter: Unicode dashes hide co-op/part-time titles; senior 'Associate General Counsel/Professor/Dean' titles pass",
-      "description": "## Bug\n\nTwo title-filter false positives, found while measuring new employer boards on 2026-10-15.\n\n**1. Unicode dashes defeat the hyphenated signals.** The signals are written with an ASCII hyphen (`co-op`, `part-time`), so a title with any other dash isn't recognised. Emerson's Oracle HCM board lists \"Controls & Automation Engineering Co‑Op – Latham, NY - Summer 2027\" (U+2011, a non-breaking hyphen), and our filters curate it as a full-time job instead of a co-op near miss. 216 live titles already contain Unicode dashes; none happen to hit a hyphenated signal yet, but Oracle HCM and Workday boards produce them routinely.\n\n**2. Senior legal and academic \"Associate …\" titles pass.** \"Associate\" is a new-grad signal, so these are curated today:\n- \"Associate General Counsel\" (Booz Allen ×3, Workday, IonQ, Roku, CoreWeave, Cloudflare)\n- \"Associate Professor\" (Texas A&M ×8, Nebraska, UBC)\n- \"Associate Dean\" (from new boards)\n\n## Fix\n\n- Fold Unicode hyphens and dashes (U+2010–U+2015, U+2212) to `-` in `passes_title_rules` and `classify_job`, before any rule reads the title. The published title is unchanged.\n- Add `general counsel`, `associate dean`, `assistant dean` and `associate professor` to `filtering.exclusion_signals`.\n\n**Effect on the live board:** 18 of 6,738 jobs drop: 8 \"Associate General Counsel\" and 10 \"… Associate Professor\" titles. \"Associate Counsel\", \"Associate Software Engineer\" and other junior \"Associate\" roles stay.",
-      "excerpt": "## Bug Two title-filter false positives, found while measuring new employer boards on 2026-10-15. **1. Unicode dashes defeat the hyphenated signals.** The signals are written with an ASCII hyphen (`co-op`, `part-time`...",
-      "issueState": "closed",
-      "contentHash": "b899f029d3514cbfe27d06cff5460ac4730ba125e7dc24f6e7d37826fd6eae1b",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: bug"
-      ],
-      "sourceTags": [
-        "type: bug"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T03:41:47Z",
-      "updatedAt": "2026-10-15T03:44:57Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/417",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "junior",
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_2f9dcc4146981325f7fe8926",
-      "sourceId": "ambicuity/New-Grad-Jobs#415",
-      "title": "Add 54 direct-employer boards found by auditing Foorilla's hiring board",
-      "description": "## Problem\n\n[Foorilla](https://foorilla.com/hiring/) lists about 247,000 open jobs from 22,721 hiring companies. An audit on 2026-10-14 found employers with recent entry-level jobs in the US, Canada and India whose boards are on a job system we already fetch, but who aren't in `config.yml`.\n\n## How they were found\n\n1. Every Foorilla company was listed (47,424). The 841 already configured were removed.\n2. The Foorilla page of each remaining company with at least 5 open jobs (7,267) was read. Jobs were counted when they carry Foorilla's entry-level tag, are in the US, Canada or India, were posted within the last month, and are not internships, part-time or seasonal.\n3. The 632 companies with 3 or more such jobs were probed on Greenhouse, Lever, Ashby, Workable and SmartRecruiters, using slugs built from the name and website. A board was kept only if its job titles matched that company's titles on Foorilla. 71 boards matched; one (CGS Federal) is already configured.\n4. The other 70 boards were run through our own fetchers and `partition_jobs`. **55 contribute curated jobs, 317 in total.**\n\n## Proposal\n\nAdd 54 of them: 36 Greenhouse, 9 Lever, 7 Ashby and 2 SmartRecruiters.\n\n**Left out:**\n- **Vailexa:** it places contractors at client sites, so the direct-employers rule (#404) excludes it.\n- **University Health Network:** some of its matches are \"Casual\" cleaner and aide jobs, which are close to the part-time roles the board excludes.\n- **Pear VC:** a portfolio job board that posts for other companies.\n- **Ten boards that contribute 0 curated jobs.**\n\n**Not resolvable this way:** 561 companies, about 2,700 of the counted jobs. Most are large employers on Workday (KLA, PG&E, Walgreens, Supermicro, Sandisk, state universities). Foorilla doesn't expose their careers links.\n\n## Acceptance\n\n- [ ] Boards added, with display names taken from each board.\n- [ ] `validate_config.py` passes.\n- [ ] A full real scrape exits 0 with no failed companies and passes `check_integrity.py`.\n- [ ] The README board counts are regenerated by `scripts/sync_readme_companies.py`.\n- [ ] Additions and exclusions are logged in `docs/removed-companies.md`.",
-      "excerpt": "## Problem [Foorilla](https://foorilla.com/hiring/) lists about 247,000 open jobs from 22,721 hiring companies. An audit on 2026-10-14 found employers with recent entry-level jobs in the US, Canada and India whose boa...",
-      "issueState": "closed",
-      "contentHash": "a6e9f1d1847e2d8f3ae724a8e0ac704f707894aea17663ad228d4d2bc9b32326",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T02:40:29Z",
-      "updatedAt": "2026-10-15T02:48:20Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/415",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_71d0f1548029849c8399bf2e",
-      "sourceId": "ambicuity/New-Grad-Jobs#413",
-      "title": "Add a Paylocity source adapter (9 verified direct employers)",
-      "description": "## Problem\n\n**Paylocity** has 16 employers on the 30-day applied-jobs export (#390), and none of their postings reach the board. The backlog in #316 listed it as \"no company id in the links\", which this issue resolves.\n\n## Evidence (probed 2026-10-14)\n\n- **The export's links are job pages** (`recruiting.paylocity.com/Recruiting/Jobs/Details/<JobId>`). Each live job page links \"View All Jobs\" at `/Recruiting/Jobs/All/<company GUID>`, which is the company's board.\n- **That board page embeds its full job list as JSON** in `window.pageData`, with no key. Each job has `JobId`, `JobTitle`, `PublishedDate`, a structured `JobLocation` (city, state, country), `IsRemote`, `IsInternal` and a `Description` snippet. There's no separate JSON API, so this works like the Google Careers source's embedded-data parsing.\n- **Paylocity rate-limits bursts:** a quick probe received HTTP 429. One request per company and few workers are needed. GET requests already get urllib3's backoff and `Retry-After` handling.\n\n## Companies\n\n**Add (9 direct employers, every board probed live):** CU*Answers, Concept Solutions, E&M Technologies, Five Star Bank, Forgent Power Solutions, Interclypse, Oneida Professional Services, Trean, UNICO Group. Forgent appears twice in the export but is one board.\n\n**Leave out (owner rule, direct employers only; see #404):** Abstrakt Marketing Group. The export's \"Mechanical Comfort, Inc.\" link resolves to Abstrakt's board, which posts HVAC and sales jobs for client companies.\n\n**Can't resolve:** CleanSlate Technology Group, Imagine, Northern Technologies Group, ES&S and Ryan Consulting Group. Their postings have closed (\"Job Not Found\"), so their links no longer reveal a company id.\n\n## Proposed solution\n\n1. Let `ngj.http.fetch_json_with_retry` hand back the raw text instead of JSON when asked, keeping the same cooldown and error handling.\n2. Add `scripts/ngj/sources/paylocity.py`. It extracts `window.pageData` and skips internal and id-less jobs. Locations come from `JobLocation`, with remote marked once. Postings link to `/Recruiting/Jobs/Details/<JobId>`. A page without `pageData` is a parse error, so a layout change shows up in `health.json` instead of silently returning nothing.\n3. Register the source (`apis.paylocity.companies: [{name, url}]`, where `url` is the board page). That covers the registry, pipeline, `Settings` (2 workers by default), `validate_config.py`, a 403-cooldown key per company GUID, README sync and the site's label.\n4. Test with mocked HTTP only, then run a real local scrape and `check_integrity.py` before the PR.",
-      "excerpt": "## Problem **Paylocity** has 16 employers on the 30-day applied-jobs export (#390), and none of their postings reach the board. The backlog in #316 listed it as \"no company id in the links\", which this issue resolves....",
-      "issueState": "closed",
-      "contentHash": "8165a13cf7bb6e9376a5f3d6252cbcc562481e0f020e28bc0ab8a13f24ee0c0c",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement",
-        "possible-duplicate"
-      ],
-      "sourceTags": [
-        "type: enhancement",
-        "possible-duplicate"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-14T21:31:34Z",
-      "updatedAt": "2026-10-14T21:43:15Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/413",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
       }
     },
     {
