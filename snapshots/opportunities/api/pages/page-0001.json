@@ -1,14 +1,15 @@
 {
-  "generatedAt": "2026-10-16T18:34:00.073Z",
+  "generatedAt": "2026-10-16T23:11:34.994Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_4a700fa8926cbb8edfbdeb95",
+    "gh_94493c77be84aabfeeabe717",
+    "gh_6af86c5878cd128f328f3e33",
     "gh_0da1549c7daf4a0c09a7d121",
-    "gh_320f20971f8b22056109b288",
     "gh_2f90b160baee5d09b0165e89",
     "gh_14ddee933b9b152d7875ef0c",
-    "gh_f9423a44dfa4c405cd352a84",
     "gh_a03853fce961d78f26781f71",
     "gh_c2ca6e47f2a8e232fc4150d6",
     "gh_f0549aba345734555903a748",
@@ -22,10 +23,286 @@
     "gh_376143f18c1c757c4fe196f9",
     "gh_4001ce1c357ee7446bc58419",
     "gh_d9f69df508a70f1bd67af284",
-    "gh_34417202d0a35257d6811c40",
-    "gh_029af2b880506194635d23b8"
+    "gh_34417202d0a35257d6811c40"
   ],
   "items": [
+    {
+      "id": "gh_4a700fa8926cbb8edfbdeb95",
+      "sourceId": "ambicuity/New-Grad-Jobs#449",
+      "title": "[Bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
+      "description": "### Bug Type\nPortal: website not loading or showing stale data\n\n### Description\nThe browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response with an invalid jobs schema. If the index answers HTTP 200 with `{ \"nope\": 1 }` while `jobs.json` contains valid postings, `loadJobs` returns an error and zero jobs without requesting the healthy full dataset.\n\nVerified against `main` at `c73256709`; the relevant files are unchanged from that commit. This is a deterministic fault-injection reproduction, not evidence that production currently serves an invalid index.\n\n### Steps to Reproduce\nRun from the repository root:\n\n```sh\nnode --input-type=module <<'JS'\nimport { loadJobs } from './site/src/data/jobs-source.js';\nconst calls = [];\nconst fetchImpl = async (url) => {\n  calls.push(url);\n  return {\n    ok: true,\n    json: async () => url.endsWith('jobs-index.json')\n      ? { nope: 1 }\n      : { jobs: [{ job_id: 'job_valid', title: 'Junior Engineer', company: 'Example' }] },\n  };\n};\nconst result = await loadJobs(fetchImpl, false);\nconsole.log({ calls, jobs: result.jobs.length, error: result.error });\nJS\n```\n\nActual:\n\n```text\ncalls: ['./jobs-index.json']\njobs: 0\nerror: 'jobs payload has no \"jobs\" array'\n```\n\nExpected: `jobs.json` is requested, its valid posting is returned, and `error` is null.\n\n### Cause\nIn [`jobs-source.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/data/jobs-source.js), the inner `try/catch` protects only the index fetch/decode. `normalizeJobsPayload(payload)` runs after that catch, so a schema error goes straight to the outer failure handler and bypasses the fallback.\n\nThe existing “reports a malformed payload” test supplies only an invalid index. It does not provide a healthy full file or assert that fallback was attempted.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Index loading is considered successful only after schema validation and normalization succeed.\n- [ ] A schema-invalid index triggers a request for `jobs.json`.\n- [ ] A valid full payload restores jobs and returns `error: null`.\n- [ ] A valid empty index (`jobs: []`) remains a successful empty result, without fallback.\n- [ ] When both candidates fail, the loader resolves with an explicit error rather than rejecting or silently reporting success.\n- [ ] Add deterministic tests for invalid index + healthy full payload, both invalid, and valid empty index; cover schema-invalid Brotli index payloads as applicable.\n\n### Validation\nReproduced with the injected fetch above. Existing checks also pass: `vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js` (**50 passed**).\n\nSearched open and closed issues for index/fallback/malformed-payload reports; no issue tracking this specific jobs-loader recovery gap was found.",
+      "excerpt": "### Bug Type Portal: website not loading or showing stale data ### Description The browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response wit...",
+      "issueState": "open",
+      "contentHash": "0b615e7f62c8083170a457bc160151ca568ed466ed88ac0e70b96404a2b69f3d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "'Example' }] },",
+      "createdAt": "2026-10-16T23:03:02Z",
+      "updatedAt": "2026-10-16T23:03:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4a700fa8926cbb8edfbdeb95",
+          "sourceId": "ambicuity/New-Grad-Jobs#449",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+          "createdAt": "2026-10-16T23:03:02Z",
+          "updatedAt": "2026-10-16T23:03:02Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T23:03:02Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "sourceId": "ambicuity/New-Grad-Jobs#448",
+      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
+      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
+      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
+      "issueState": "open",
+      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T23:03:00Z",
+      "updatedAt": "2026-10-16T23:03:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_94493c77be84aabfeeabe717",
+          "sourceId": "ambicuity/New-Grad-Jobs#448",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+          "createdAt": "2026-10-16T23:03:00Z",
+          "updatedAt": "2026-10-16T23:03:00Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T23:03:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_6af86c5878cd128f328f3e33",
+      "sourceId": "rebase-network/who-is-hiring#1321",
+      "title": "【招聘】高级智能合约工程师｜Solidity / EVM / DeFi / DEX / Solana｜5年以上经验 | $7,000–9,000/月",
+      "description": "我们正在寻找一位资深智能合约工程师，参与 Web3 交易平台的核心研发，项目涉及 Meme 币、多链交易、DEX、DeFi 及预测市场。\n\n我们希望候选人具备扎实的智能合约开发能力，**有从零设计、编写、测试并部署智能合约至主网的实际经验**，能够独立负责核心合约开发，而不仅仅是调用现有协议或进行后端集成。\n\n## 岗位职责：\n• 负责智能合约的设计、开发、测试、部署及维护，构建安全、可靠的链上业务逻辑。\n\n• 开发和优化代币发行、交易执行、流动性管理、费用分配及资金结算等核心合约模块。\n\n• 对接 DEX 及相关链上协议，参与 Meme 币交易、DeFi 和预测市场等业务的合约开发。\n\n• 负责合约安全、Gas 优化及性能调优，排查重入攻击、权限漏洞、价格操纵等安全风险。\n\n• 建立完善的合约测试体系，包括单元测试、集成测试、Fuzz Testing 及部署前验证。\n\n• 与后端团队协作，完成合约与链下服务的集成、链上事件处理及交易状态同步。\n\n## 岗位要求：\n• 5年以上区块链或智能合约开发经验，有真实主网项目的合约开发及部署经验。\n\n• 精通 Solidity 和 EVM，深入理解合约存储、调用机制、交易执行、事件日志及 Gas 优化。\n\n• 能够独立完成智能合约的架构设计、核心逻辑实现、测试及主网部署，具备实际项目交付能力。\n\n• 熟悉 Foundry、Hardhat、OpenZeppelin 等开发与测试工具，具备合约安全分析和漏洞排查经验。\n\n• 熟悉 DEX、AMM、流动性池及链上交易机制，有 DeFi、Meme 币、Launchpad 或预测市场开发经验者优先。\n\n• 有 Solana、Rust 或 Anchor 开发经验者优先。\n\n• 具备良好的技术判断力和责任心，能够独立解决复杂问题，并对合约安全与代码质量负责。\n\n\n📮 **联系方式：** Email: support@aerrecens.com",
+      "excerpt": "我们正在寻找一位资深智能合约工程师，参与 Web3 交易平台的核心研发，项目涉及 Meme 币、多链交易、DEX、DeFi 及预测市场。 我们希望候选人具备扎实的智能合约开发能力，**有从零设计、编写、测试并部署智能合约至主网的实际经验**，能够独立负责核心合约开发，而不仅仅是调用现有协议或进行后端集成。 ## 岗位职责： • 负责智能合约的设计、开发、测试、部署及维护，构建安全、可靠的链上业务逻辑。 • 开发和优化代币发行、交易...",
+      "issueState": "open",
+      "contentHash": "5b5a258f854af200ef93e718373e5e450a1f784f91902168be7778c8807ab7bf",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "needs-info"
+      ],
+      "sourceTags": [
+        "needs-info"
+      ],
+      "author": {
+        "id": "danielwongeth",
+        "name": "danielwongeth",
+        "handle": "danielwongeth",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/338853309?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 7000,
+        "max": 9000,
+        "period": "year"
+      },
+      "createdAt": "2026-10-16T19:38:33Z",
+      "updatedAt": "2026-10-16T19:39:01Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1321",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_6af86c5878cd128f328f3e33",
+          "sourceId": "rebase-network/who-is-hiring#1321",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1321",
+          "createdAt": "2026-10-16T19:38:33Z",
+          "updatedAt": "2026-10-16T19:39:01Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T19:38:33Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_0da1549c7daf4a0c09a7d121",
       "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
@@ -114,90 +391,6 @@
       "freshness": {
         "ageDays": 0,
         "publishedAt": "2026-10-16T16:34:38Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_320f20971f8b22056109b288",
-      "sourceId": "ambicuity/New-Grad-Jobs#447",
-      "title": "Job data is stale: last scrape 2026-10-16T09:45:45.008777Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38906843941. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "f5b06839d653a17f22e71f9c109f34d5e22f2bb652dd0894c8d7c4835f11bba3",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-16T13:18:41Z",
-      "updatedAt": "2026-10-16T13:18:41Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_320f20971f8b22056109b288",
-          "sourceId": "ambicuity/New-Grad-Jobs#447",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
-          "createdAt": "2026-10-16T13:18:41Z",
-          "updatedAt": "2026-10-16T13:18:41Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-10-16T13:18:41Z",
         "status": "fresh"
       }
     },
@@ -377,86 +570,6 @@
       }
     },
     {
-      "id": "gh_f9423a44dfa4c405cd352a84",
-      "sourceId": "ambicuity/New-Grad-Jobs#445",
-      "title": "Privacy policy: Cloudflare proxies the site but is not disclosed",
-      "description": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare also adds:\n\n- `Report-To` / `NEL` headers, which ask browsers to report failed connections to `a.nel.cloudflare.com`;\n- its Web Analytics beacon (`static.cloudflareinsights.com`), which every page's CSP blocks. It shows up as a console error and never runs.\n\nNo cookies are set. The privacy policy names only GitHub Pages as the host, so it needs a Cloudflare section, and the sharing, transfers, retention and security sections and the terms need updating to match.\n\nSeparately, the owner should disable Web Analytics automatic setup in the Cloudflare dashboard. That's a dashboard setting, not a code change.",
-      "excerpt": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare als...",
-      "issueState": "open",
-      "contentHash": "34926e66663ba9a70b5927e979485628be4a8a704dd03fe6b9358f2cba6a500d",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-16T01:47:20Z",
-      "updatedAt": "2026-10-16T01:47:20Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/445",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f9423a44dfa4c405cd352a84",
-          "sourceId": "ambicuity/New-Grad-Jobs#445",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/445",
-          "createdAt": "2026-10-16T01:47:20Z",
-          "updatedAt": "2026-10-16T01:47:20Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-10-16T01:47:20Z",
-        "status": "fresh"
-      }
-    },
-    {
       "id": "gh_a03853fce961d78f26781f71",
       "sourceId": "SimplifyJobs/Summer2026-Internships#9705",
       "title": "Duolingo Data Science Internship",
@@ -547,7 +660,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-15T23:00:19Z",
         "status": "fresh"
       }
@@ -1141,7 +1254,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T21:02:00Z",
         "status": "fresh"
       }
@@ -1243,7 +1356,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T21:01:42Z",
         "status": "fresh"
       }
@@ -1349,7 +1462,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T21:01:25Z",
         "status": "fresh"
       }
@@ -1468,7 +1581,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T21:00:19Z",
         "status": "fresh"
       }
@@ -1585,7 +1698,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T20:58:44Z",
         "status": "fresh"
       }
@@ -1702,7 +1815,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T20:57:10Z",
         "status": "fresh"
       }
@@ -1819,7 +1932,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T20:56:12Z",
         "status": "fresh"
       }
@@ -1961,155 +2074,8 @@
         "sourceCount": 3
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-14T20:54:09Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_029af2b880506194635d23b8",
-      "sourceId": "qa-brasil/vagas#1285",
-      "title": "[Cidade do México, México] Senior Software Engineer, Chrome Test Infrastructure na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/senior-software-engineer-chrome-test-infrastructure-181722226?utm_source=github&utm_medium=qa-brasil-vagas&modal=open) para realizar a candidatura. 👋\nIn most instances, this position requires in-person interviews as part of the hiring process.<br><br>Please submit your resume in English - we can only consider applications submitted in this language.<br><br>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.<h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Computer Science or a related technical field, or equivalent practical experience.</li>\n<li>5 years of experience with data structures and algorithms and software development in one or more programming languages.</li>\n<li>Experience with distributed systems and architecture, and systems integration.</li>\n<li>Experience in cloud/full-stack web development (e.g., Python, JavaScript).</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or equivalent practical experience.</li>\n<li>Experience with ML algorithms and AI application development.</li>\n<li>4 years of experience deploying Continuous Integration (CI)/Continuous Quality (CQ) systems.</li>\n<li>Experience with C++ development.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>In this role, you will help ensure Chrome remains the safest, fastest and most reliable browser.<br><br>Our team is in charge of building and maintaining the processes and code that helps build the most beloved browser in the world. </p><div><br></div>As part of our team you will not only be building infrastructure you will be developing a product that helps thousands of experienced engineers achieve their goals.To build the next generation of infrastructure support you will have to develop innovative algorithms for outlier detection and test success modeling. You will integrate LLMs into the development flow for faster regression detection. You will understand our clients needs to best serve them.<p>Chrome is dedicated to building a better, more open web. We’re focused on making a better browser (on both desktop and mobile) to help users take advantage of all the web has to offer in a safe and secure way.Chrome is available across all major platforms — iOS, Android, Windows, Mac, Linux and Chrome OS. We also built Chrome as an open source project so the entire web ecosystem could benefit from the latest innovations in speed, simplicity and security.<b></b></p></div><div><h2>Responsibilities</h2><ul>\n<li>Build the next generation of test infrastructure.</li>\n<li>Integrate LLMs with our detection systems for more accurate pinpointing of issues.</li>\n<li>Develop novel algorithms for optimizing build and test run times.</li>\n<li>Work with Chrome developers to identify pain points in the Chrome release process.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Senior Software Engineer, Chrome Test Infrastructure na Google](https://coodesh.com/jobs/senior-software-engineer-chrome-test-infrastructure-181722226?utm_source=github&utm_medium=qa-brasil-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nTestes/Q.A",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "d65233f3b7c6f9db44de6af761df8c167c156f77b0a27649d83431b2f8b2cd5c",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado",
-        "inglês",
-        "javascript",
-        "linux",
-        "python",
-        "windows"
-      ],
-      "sourceTags": [
-        "alocado",
-        "inglês",
-        "javascript",
-        "linux",
-        "python",
-        "windows"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:51:10Z",
-      "updatedAt": "2026-10-14T20:53:08Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1285",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America",
-        "displayText": "Mexico",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "fullstack",
-          "mobile",
-          "qa"
-        ],
-        "technologies": [
-          "javascript",
-          "python"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_029af2b880506194635d23b8",
-          "sourceId": "qa-brasil/vagas#1285",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1285",
-          "createdAt": "2026-10-14T20:51:10Z",
-          "updatedAt": "2026-10-14T20:51:37Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        },
-        {
-          "id": "gh_f873c14e9e850b3182b336ae",
-          "sourceId": "backend-br/vagas#12463",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12463",
-          "createdAt": "2026-10-14T20:51:46Z",
-          "updatedAt": "2026-10-14T20:52:00Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
-          "id": "gh_dd93894d05afb37071100594",
-          "sourceId": "programadores-br/geral#3117",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3117",
-          "createdAt": "2026-10-14T20:52:40Z",
-          "updatedAt": "2026-10-14T20:53:08Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 3
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-10-14T20:51:10Z",
         "status": "fresh"
       }
     }

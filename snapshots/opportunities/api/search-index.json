@@ -1,6 +1,45 @@
 {
-  "generatedAt": "2026-10-16T18:34:00.073Z",
+  "generatedAt": "2026-10-16T23:11:34.994Z",
   "items": [
+    {
+      "id": "gh_4a700fa8926cbb8edfbdeb95",
+      "createdAt": "2026-10-16T23:03:02Z",
+      "text": "[bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json ### bug type portal: website not loading or showing stale data ### description the browser's fallback from jobs-index.json to jobs.json handles http / json-decoding failures, but not a successful json response wit... 'example' }] }, ambicuity/new-grad-jobs united states north america ambicuity ambicuity needs-triage priority: medium type: bug",
+      "fields": {
+        "title": "[bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
+        "company": "'example' }] },",
+        "taxonomy": "junior",
+        "location": "",
+        "excerpt": "### bug type portal: website not loading or showing stale data ### description the browser's fallback from jobs-index.json to jobs.json handles http / json-decoding failures, but not a successful json response wit...",
+        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
+      }
+    },
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "createdAt": "2026-10-16T23:03:00Z",
+      "text": "[bug]: near-miss job share links point to static pages that are never generated ### bug type portal: broken link or incorrect data displayed ### description “copy link to this job” produces a static /job/<job_id>/ url for a near-miss posting, even though the seo build generates these pages only... ambicuity/new-grad-jobs united states north america ambicuity ambicuity needs-triage priority: medium type: bug",
+      "fields": {
+        "title": "[bug]: near-miss job share links point to static pages that are never generated",
+        "company": "",
+        "taxonomy": "react internship on-site",
+        "location": "",
+        "excerpt": "### bug type portal: broken link or incorrect data displayed ### description “copy link to this job” produces a static /job/<job_id>/ url for a near-miss posting, even though the seo build generates these pages only...",
+        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
+      }
+    },
+    {
+      "id": "gh_6af86c5878cd128f328f3e33",
+      "createdAt": "2026-10-16T19:38:33Z",
+      "text": "【招聘】高级智能合约工程师｜solidity / evm / defi / dex / solana｜5年以上经验 | $7,000–9,000/月 我们正在寻找一位资深智能合约工程师，参与 web3 交易平台的核心研发，项目涉及 meme 币、多链交易、dex、defi 及预测市场。 我们希望候选人具备扎实的智能合约开发能力，**有从零设计、编写、测试并部署智能合约至主网的实际经验**，能够独立负责核心合约开发，而不仅仅是调用现有协议或进行后端集成。 ## 岗位职责： • 负责智能合约的设计、开发、测试、部署及维护，构建安全、可靠的链上业务逻辑。 • 开发和优化代币发行、交易... rebase-network/who-is-hiring global global danielwongeth danielwongeth needs-info",
+      "fields": {
+        "title": "【招聘】高级智能合约工程师｜solidity / evm / defi / dex / solana｜5年以上经验 | $7,000–9,000/月",
+        "company": "",
+        "taxonomy": "rust",
+        "location": "",
+        "excerpt": "我们正在寻找一位资深智能合约工程师，参与 web3 交易平台的核心研发，项目涉及 meme 币、多链交易、dex、defi 及预测市场。 我们希望候选人具备扎实的智能合约开发能力，**有从零设计、编写、测试并部署智能合约至主网的实际经验**，能够独立负责核心合约开发，而不仅仅是调用现有协议或进行后端集成。 ## 岗位职责： • 负责智能合约的设计、开发、测试、部署及维护，构建安全、可靠的链上业务逻辑。 • 开发和优化代币发行、交易...",
+        "source": "rebase-network/who-is-hiring danielwongeth danielwongeth rebase-network/who-is-hiring"
+      }
+    },
     {
       "id": "gh_0da1549c7daf4a0c09a7d121",
       "createdAt": "2026-10-16T16:34:38Z",
@@ -12,19 +51,6 @@
         "location": "",
         "excerpt": "hi jobright team. filing here because this repo is the most public-visible surface; please route to the extension / web-app product team. ### bug after the chrome extension auto-detects a submitted application, the jo...",
         "source": "jobright-ai/2026-software-engineer-new-grad jayds22 jayds22 jobright-ai/2026-software-engineer-new-grad"
-      }
-    },
-    {
-      "id": "gh_320f20971f8b22056109b288",
-      "createdAt": "2026-10-16T13:18:41Z",
-      "text": "job data is stale: last scrape 2026-10-16t09:45:45.008777z the watchdog found https://jobs.riteshrana.engineer/health.json last updated **212 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s... ambicuity/new-grad-jobs united states north america github-actions[bot] github-actions[bot] scraper-stale",
-      "fields": {
-        "title": "job data is stale: last scrape 2026-10-16t09:45:45.008777z",
-        "company": "",
-        "taxonomy": "",
-        "location": "",
-        "excerpt": "the watchdog found https://jobs.riteshrana.engineer/health.json last updated **212 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s...",
-        "source": "ambicuity/new-grad-jobs github-actions[bot] github-actions[bot] ambicuity/new-grad-jobs"
       }
     },
     {
@@ -51,19 +77,6 @@
         "location": "",
         "excerpt": "专注于加密货币衍生品，尤其是期权交易的金融科技公司，总部位于新加坡，业务覆盖香港及全球数字资产市场。 目前团队正在扩张，重点招聘 c++ 低延迟交易系统工程师、rust 量化交易系统工程师、量化策略研究员及机构业务拓展经理等岗位。 ## 薪资福利待遇 开发者喜欢薪资范围准确的招聘信息。 此项必须填写，否则 rebase 公众号和其它媒体渠道可能不会转发。 ## 地点 - 工作地点：香港线下办公，可协助办理工作签证 - 联系方式：@...",
         "source": "rebase-network/who-is-hiring digital123s digital123s rebase-network/who-is-hiring"
-      }
-    },
-    {
-      "id": "gh_f9423a44dfa4c405cd352a84",
-      "createdAt": "2026-10-16T01:47:20Z",
-      "text": "privacy policy: cloudflare proxies the site but is not disclosed every request to jobs.riteshrana.engineer goes through cloudflare before github pages: the responses carry server: cloudflare, cf-ray and cf-cache-status, and dns resolves to cloudflare addresses. cloudflare als... ambicuity/new-grad-jobs united states north america ambicuity ambicuity",
-      "fields": {
-        "title": "privacy policy: cloudflare proxies the site but is not disclosed",
-        "company": "",
-        "taxonomy": "",
-        "location": "",
-        "excerpt": "every request to jobs.riteshrana.engineer goes through cloudflare before github pages: the responses carry server: cloudflare, cf-ray and cf-cache-status, and dns resolves to cloudflare addresses. cloudflare als...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
       }
     },
     {
@@ -2953,19 +2966,6 @@
       }
     },
     {
-      "id": "gh_6bd2ea87cfb4bbe49569241c",
-      "createdAt": "2026-05-26T23:52:14Z",
-      "text": "[roadmap] help us expand job data — all suggestions welcome! ## tl;dr we want to dramatically expand the job data this project surfaces, and we need **your ideas**. whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **all suggestions are ... ** \\\"please add <company> — their careers page is <url>\\\" ambicuity/new-grad-jobs united states north america ambicuity ambicuity enhancement help wanted needs-triage priority: medium roadmap type: enhancement",
-      "fields": {
-        "title": "[roadmap] help us expand job data — all suggestions welcome!",
-        "company": "** \\\"please add <company> — their careers page is <url>\\\"",
-        "taxonomy": "data-ai design go python internship junior full-time internship hybrid remote",
-        "location": "remote",
-        "excerpt": "## tl;dr we want to dramatically expand the job data this project surfaces, and we need **your ideas**. whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **all suggestions are ...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
-      }
-    },
-    {
       "id": "gh_1f61de8de06b483a9a82d5f4",
       "createdAt": "2026-05-26T18:22:15Z",
       "text": "[hibrido/sp] pessoa desenvolvedora backend sr (java) - viaflow nossa empresa na viaflow, conectamos talentos de elite a projetos que transformam o mercado. estamos em busca de uma pessoa desenvolvedora java backend senior de altissimo nivel para atuar em um cliente global, focado... nerdzao/vagas brazil south america jesspinheiro93 jesspinheiro93 backend data design devops java",
@@ -3210,19 +3210,6 @@
         "location": "",
         "excerpt": "# company thumbnails overlap other job cards after applying to a posting hey team, i've been noticing a consistent visual bug on the platform. every time i apply to a job posting, the company logo/thumbnail from that ...",
         "source": "jobright-ai/2026-data-analysis-internship jayds22 jayds22 jobright-ai/2026-data-analysis-internship"
-      }
-    },
-    {
-      "id": "gh_b29f7d5bd90361353b30b563",
-      "createdAt": "2026-03-14T05:28:12Z",
-      "text": "[advanced]: add icims ingestion support to recover enterprise networking and infrastructure coverage ### 🧠 advanced contributors this issue is for contributors who are already very familiar with this codebase and its architectural patterns. you should feel comfortable: - understanding the full data flow: config.yml... ambicuity/new-grad-jobs united states north america ambicuity ambicuity advanced help wanted needs-triage priority: medium type: enhancement",
-      "fields": {
-        "title": "[advanced]: add icims ingestion support to recover enterprise networking and infrastructure coverage",
-        "company": "",
-        "taxonomy": "",
-        "location": "",
-        "excerpt": "### 🧠 advanced contributors this issue is for contributors who are already very familiar with this codebase and its architectural patterns. you should feel comfortable: - understanding the full data flow: config.yml...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
       }
     },
     {

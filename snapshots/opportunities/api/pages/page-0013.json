@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T18:34:00.073Z",
+  "generatedAt": "2026-10-16T23:11:34.994Z",
   "page": 13,
   "pageSize": 20,
   "nextPage": "api/pages/page-0014.json",
@@ -11,7 +11,6 @@
     "gh_697a821cabc5eb7906d1c695",
     "gh_a925bdb6349671e5c976d3ab",
     "gh_86cf7c4c726a6cec1163d1fb",
-    "gh_b29f7d5bd90361353b30b563",
     "gh_0f0495da862b94749892e684",
     "gh_d6f31a804dacbc548031ec5e",
     "gh_eae48d87a90e3ffbeb60afaf",
@@ -23,7 +22,8 @@
     "gh_337dcc0369d8226aab4c836f",
     "gh_549fb47e62e78432e6e7af86",
     "gh_d774a41259f652c1ea370252",
-    "gh_26b7c402e14a59e43ad9828b"
+    "gh_26b7c402e14a59e43ad9828b",
+    "gh_27ad1c5fa6ae31eaf8210333"
   ],
   "items": [
     {
@@ -181,7 +181,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 192,
+        "ageDays": 193,
         "publishedAt": "2026-04-06T22:58:07Z",
         "status": "stale"
       }
@@ -645,98 +645,6 @@
       "freshness": {
         "ageDays": 208,
         "publishedAt": "2026-03-22T16:47:15Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_b29f7d5bd90361353b30b563",
-      "sourceId": "ambicuity/New-Grad-Jobs#173",
-      "title": "[Advanced]: add iCIMS ingestion support to recover enterprise networking and infrastructure coverage",
-      "description": "### 🧠 Advanced Contributors\nThis issue is for contributors who are already very familiar with this codebase\nand its architectural patterns.\n\nYou should feel comfortable:\n- Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit\n- Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations\n- Reasoning about API contract changes across ATS providers\n- Writing rigorous, deterministic tests without live network calls\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\n### 🐞 Problem Description\nThe roadmap already calls out ATS coverage expansion as the biggest remaining quality gap. Today, the scraper has strong coverage for Greenhouse, Lever, Google Careers, and partial Workday, but it still misses entire slices of enterprise hiring that sit behind other ATS platforms.\n\niCIMS is a high-leverage next source because it is common among larger employers, including companies that post entry-level infrastructure, networking, and security roles that never reach the board today.\n\nWithout a first-class iCIMS integration, the dataset will continue to under-represent one of the main role families the README says it tracks.\n\n### 💡 Proposed / Expected Solution\nAdd a production-ready iCIMS fetch path that follows the same project constraints as the existing sources:\n\n- config-driven company definitions\n- deterministic tests with mocked responses\n- compatibility with the current normalization, filtering, and dedup pipeline\n- no external database or browser-based dependency\n\nThis should be implemented as a source integration, not as a one-off company patch.\n\n### ✅ Acceptance Criteria\n- [ ] A reusable iCIMS fetch path exists in the scraper\n- [ ] `config.yml` can declare iCIMS-backed companies without custom code per company\n- [ ] New source behavior is covered by deterministic tests with mocked payloads\n- [ ] Thread-safety is preserved\n- [ ] All existing `pytest tests/` pass\n- [ ] New tests added for every changed code path (deterministic — no live network calls)\n- [ ] `pre-commit run --all-files` passes\n- [ ] `jobs.json` schema remains backward compatible with `docs/app.js`\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### 🔗 Additional Context\n- Roadmap reference: `ROADMAP.md` lists iCIMS support under v1.1\n- Existing ATS references: Greenhouse, Lever, Google Careers, Workday",
-      "excerpt": "### 🧠 Advanced Contributors This issue is for contributors who are already very familiar with this codebase and its architectural patterns. You should feel comfortable: - Understanding the full data flow: `config.yml...",
-      "issueState": "open",
-      "contentHash": "17425b134c9d469abcb69957f04a1c66b27b5fc282997ba3704f0223c4ce761f",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "advanced",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "advanced",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-14T05:28:12Z",
-      "updatedAt": "2026-10-15T14:39:33Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/173",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_b29f7d5bd90361353b30b563",
-          "sourceId": "ambicuity/New-Grad-Jobs#173",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/173",
-          "createdAt": "2026-03-14T05:28:12Z",
-          "updatedAt": "2026-10-15T14:39:33Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 216,
-        "publishedAt": "2026-03-14T05:28:12Z",
         "status": "stale"
       }
     },
@@ -1411,7 +1319,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 247,
+        "ageDays": 248,
         "publishedAt": "2026-02-10T21:29:45Z",
         "status": "stale"
       }
@@ -1529,7 +1437,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 251,
+        "ageDays": 252,
         "publishedAt": "2026-02-06T18:44:05Z",
         "status": "stale"
       }
@@ -1642,7 +1550,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 251,
+        "ageDays": 252,
         "publishedAt": "2026-02-06T18:42:28Z",
         "status": "stale"
       }
@@ -1767,7 +1675,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 251,
+        "ageDays": 252,
         "publishedAt": "2026-02-06T18:40:41Z",
         "status": "stale"
       }
@@ -1963,6 +1871,96 @@
       "freshness": {
         "ageDays": 261,
         "publishedAt": "2026-01-28T06:02:14Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_27ad1c5fa6ae31eaf8210333",
+      "sourceId": "PrepAIJobs/Summer2026-Internships#3",
+      "title": "Mechanize — Software Engineering Intern",
+      "description": "### Link to Internship Posting\n\nhttps://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos\n\n### Company Name\n\nMechanize\n\n### Internship Title\n\nSoftware Engineering Intern\n\n### Location\n\nSan Francisco, CA\n\n### What season is this internship for?\n\nSummer\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\narjun.panickssery@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
+      "excerpt": "### Link to Internship Posting https://jobs.ashbyhq.com/mechanize/d148d54f-6db7-4c28-9699-0304596f554e?utm_source=new_grad_repos ### Company Name Mechanize ### Internship Title Software Engineering Intern ### Location...",
+      "issueState": "open",
+      "contentHash": "5bdd63bccf8d7a2f020d13c229f2ce1da1f9557371836f7f964c1b0976ef3035",
+      "repository": "PrepAIJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/PrepAIJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "ArjunPanickssery",
+        "name": "ArjunPanickssery",
+        "handle": "ArjunPanickssery",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/30219365?v=4"
+      },
+      "community": {
+        "id": "PrepAIJobs",
+        "name": "PrepAIJobs",
+        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
+        "repository": "PrepAIJobs/Summer2026-Internships",
+        "url": "https://github.com/PrepAIJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-01-27T03:43:19Z",
+      "updatedAt": "2026-01-27T03:43:19Z",
+      "url": "https://github.com/PrepAIJobs/Summer2026-Internships/issues/3",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "San Francisco",
+        "subdivision": "CA",
+        "displayText": "San Francisco, CA",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_27ad1c5fa6ae31eaf8210333",
+          "sourceId": "PrepAIJobs/Summer2026-Internships#3",
+          "repository": "PrepAIJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/PrepAIJobs/Summer2026-Internships",
+          "url": "https://github.com/PrepAIJobs/Summer2026-Internships/issues/3",
+          "createdAt": "2026-01-27T03:43:19Z",
+          "updatedAt": "2026-01-27T03:43:19Z",
+          "community": {
+            "id": "PrepAIJobs",
+            "name": "PrepAIJobs",
+            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
+            "repository": "PrepAIJobs/Summer2026-Internships",
+            "url": "https://github.com/PrepAIJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 262,
+        "publishedAt": "2026-01-27T03:43:19Z",
         "status": "stale"
       }
     }

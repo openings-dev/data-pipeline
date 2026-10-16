@@ -1,23 +1,156 @@
 {
-  "generatedAt": "2026-10-16T13:40:38.729Z",
+  "generatedAt": "2026-10-16T23:11:34.994Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 14,
-    "openIssues": 4,
-    "closedIssues": 10
+    "opportunities": 24,
+    "openIssues": 2,
+    "closedIssues": 22
   },
-  "dataHash": "5cae334dfff143e2c96bcfaf9ef2b98ece6adb5fe21cd214d2d8eed95f6c25d5",
+  "dataHash": "46ff721f31aac5276d419818d8479b80f52638bfb580ceea2db11e5574580ea9",
   "items": [
+    {
+      "id": "gh_4a700fa8926cbb8edfbdeb95",
+      "sourceId": "ambicuity/New-Grad-Jobs#449",
+      "title": "[Bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
+      "description": "### Bug Type\nPortal: website not loading or showing stale data\n\n### Description\nThe browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response with an invalid jobs schema. If the index answers HTTP 200 with `{ \"nope\": 1 }` while `jobs.json` contains valid postings, `loadJobs` returns an error and zero jobs without requesting the healthy full dataset.\n\nVerified against `main` at `c73256709`; the relevant files are unchanged from that commit. This is a deterministic fault-injection reproduction, not evidence that production currently serves an invalid index.\n\n### Steps to Reproduce\nRun from the repository root:\n\n```sh\nnode --input-type=module <<'JS'\nimport { loadJobs } from './site/src/data/jobs-source.js';\nconst calls = [];\nconst fetchImpl = async (url) => {\n  calls.push(url);\n  return {\n    ok: true,\n    json: async () => url.endsWith('jobs-index.json')\n      ? { nope: 1 }\n      : { jobs: [{ job_id: 'job_valid', title: 'Junior Engineer', company: 'Example' }] },\n  };\n};\nconst result = await loadJobs(fetchImpl, false);\nconsole.log({ calls, jobs: result.jobs.length, error: result.error });\nJS\n```\n\nActual:\n\n```text\ncalls: ['./jobs-index.json']\njobs: 0\nerror: 'jobs payload has no \"jobs\" array'\n```\n\nExpected: `jobs.json` is requested, its valid posting is returned, and `error` is null.\n\n### Cause\nIn [`jobs-source.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/data/jobs-source.js), the inner `try/catch` protects only the index fetch/decode. `normalizeJobsPayload(payload)` runs after that catch, so a schema error goes straight to the outer failure handler and bypasses the fallback.\n\nThe existing “reports a malformed payload” test supplies only an invalid index. It does not provide a healthy full file or assert that fallback was attempted.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Index loading is considered successful only after schema validation and normalization succeed.\n- [ ] A schema-invalid index triggers a request for `jobs.json`.\n- [ ] A valid full payload restores jobs and returns `error: null`.\n- [ ] A valid empty index (`jobs: []`) remains a successful empty result, without fallback.\n- [ ] When both candidates fail, the loader resolves with an explicit error rather than rejecting or silently reporting success.\n- [ ] Add deterministic tests for invalid index + healthy full payload, both invalid, and valid empty index; cover schema-invalid Brotli index payloads as applicable.\n\n### Validation\nReproduced with the injected fetch above. Existing checks also pass: `vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js` (**50 passed**).\n\nSearched open and closed issues for index/fallback/malformed-payload reports; no issue tracking this specific jobs-loader recovery gap was found.",
+      "excerpt": "### Bug Type Portal: website not loading or showing stale data ### Description The browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response wit...",
+      "issueState": "open",
+      "contentHash": "0b615e7f62c8083170a457bc160151ca568ed466ed88ac0e70b96404a2b69f3d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: bug",
+        "needs-triage",
+        "priority: medium"
+      ],
+      "sourceTags": [
+        "type: bug",
+        "needs-triage",
+        "priority: medium"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "'Example' }] },",
+      "createdAt": "2026-10-16T23:03:02Z",
+      "updatedAt": "2026-10-16T23:03:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "sourceId": "ambicuity/New-Grad-Jobs#448",
+      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
+      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
+      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
+      "issueState": "open",
+      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: bug",
+        "needs-triage",
+        "priority: medium"
+      ],
+      "sourceTags": [
+        "type: bug",
+        "needs-triage",
+        "priority: medium"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T23:03:00Z",
+      "updatedAt": "2026-10-16T23:03:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
+    },
     {
       "id": "gh_320f20971f8b22056109b288",
       "sourceId": "ambicuity/New-Grad-Jobs#447",
       "title": "Job data is stale: last scrape 2026-10-16T09:45:45.008777Z",
       "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38906843941. This issue closes automatically once data is fresh.",
       "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "f5b06839d653a17f22e71f9c109f34d5e22f2bb652dd0894c8d7c4835f11bba3",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
@@ -48,7 +181,7 @@
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
       "createdAt": "2026-10-16T13:18:41Z",
-      "updatedAt": "2026-10-16T13:18:41Z",
+      "updatedAt": "2026-10-16T21:18:09Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -75,7 +208,7 @@
       "title": "Privacy policy: Cloudflare proxies the site but is not disclosed",
       "description": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare also adds:\n\n- `Report-To` / `NEL` headers, which ask browsers to report failed connections to `a.nel.cloudflare.com`;\n- its Web Analytics beacon (`static.cloudflareinsights.com`), which every page's CSP blocks. It shows up as a console error and never runs.\n\nNo cookies are set. The privacy policy names only GitHub Pages as the host, so it needs a Cloudflare section, and the sharing, transfers, retention and security sections and the terms need updating to match.\n\nSeparately, the owner should disable Web Analytics automatic setup in the Cloudflare dashboard. That's a dashboard setting, not a code change.",
       "excerpt": "Every request to jobs.riteshrana.engineer goes through Cloudflare before GitHub Pages: the responses carry `server: cloudflare`, `cf-ray` and `cf-cache-status`, and DNS resolves to Cloudflare addresses. Cloudflare als...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "34926e66663ba9a70b5927e979485628be4a8a704dd03fe6b9358f2cba6a500d",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
@@ -102,7 +235,7 @@
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
       "createdAt": "2026-10-16T01:47:20Z",
-      "updatedAt": "2026-10-16T01:47:20Z",
+      "updatedAt": "2026-10-16T22:56:11Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/445",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -249,13 +382,13 @@
       }
     },
     {
-      "id": "gh_6deed1c4e9c643b90b8b5efa",
-      "sourceId": "ambicuity/New-Grad-Jobs#438",
-      "title": "Guides: redesign the index and guide pages (reading paths, cards, briefs, on-page contents) within the static CSP",
-      "description": "The `/guides/` index is a plain grouped list, and guide pages have no summary, no on-page contents and no way to keep your place. A proposed redesign mockup (single-page app with \"pick your situation\" tracks, cards, format tags, a 30-second brief, On this page and Save) shows the direction, but it can't ship as is:\n\n- it loads Tailwind from a CDN and fonts from Google, and runs inline scripts, which breaks the strict static-page CSP and adds third-party requests;\n- every guide lives inside one JavaScript bundle, so the prerendered `/guides/<slug>/` pages, Markdown copies and llms.txt entries would be lost;\n- it renames guide URLs (e.g. `recruiter-screen` → `the-recruiter-screen`);\n- its counts disagree with each other (81 vs 101 guides) and its new content states unsourced figures;\n- it adds localStorage keys the privacy policy doesn't list;\n- on phones the filters fill the first screen.\n\n## Scope\n\nRebuild the layout inside the existing static generator for the existing 76 guides only (new guides are a separate issue):\n\n- Index: reading paths that mirror `start-here.md`, section chips, cards with format tags and reading time, search, All / Unread / Saved views and a format filter. All counts computed.\n- Guide page: 30-second brief, On this page (sticky column on wide screens, folded inline on phones), prev/next, published and modified dates in Article JSON-LD, Mark as read / Save.\n- Pages stay complete without JavaScript. One same-origin module script adds the interactive parts; no CDN, no web fonts, no URL changes.\n- Privacy policy lists the new storage keys and the guides' script.\n\n## Acceptance\n\n- Unit tests for front matter (formats, briefs that only repeat numbers from the body, published dates), reading paths in sync with start-here, rendering, escaping and CSP.\n- jsdom tests for the browser script, including blocked storage.\n- Playwright on desktop and 375px: search/filters/save/read, no-JS fallback, no horizontal overflow, axe on the index and a guide page.",
-      "excerpt": "The `/guides/` index is a plain grouped list, and guide pages have no summary, no on-page contents and no way to keep your place. A proposed redesign mockup (single-page app with \"pick your situation\" tracks, cards, f...",
+      "id": "gh_f3ff22243be6d0586dd15828",
+      "sourceId": "ambicuity/New-Grad-Jobs#244",
+      "title": "[Feature]: canonicalize job URLs before deduplication and job_id generation",
+      "description": "### Problem\nDeduplication and `job_id` generation currently depend on raw URLs. Equivalent listings often differ only by tracking/query variants (for example `gh_jid`, UTM params, reordered query strings), which can produce duplicate jobs and unstable IDs for the same posting.\n\n### Proposed Solution\nCanonicalize URLs before passing them into dedup (`get_job_key`) and `compute_job_id` identity logic:\n- normalize host/scheme casing\n- remove known tracking params (for example UTM-style parameters)\n- sort remaining query params deterministically\n- trim safe trailing-slash noise\n\nUse canonical URL for identity/dedup while preserving original apply URL as needed for display.\n\n### Alternatives Considered\n- Keep exact URL matching only (still allows duplicates from link variants).\n- Use fuzzy title/company dedup only (higher false-positive risk than deterministic URL normalization).\n\n### 🏗️ Which area does this affect?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### Constraints Check\n- [x] This does NOT require an external database (PostgreSQL, Redis, SQLite, etc.)\n- [x] This does NOT require a frontend framework (React, Vue, Next.js, Tailwind)\n- [x] This does NOT require an external orchestrator (Airflow, Celery, etc.)",
+      "excerpt": "### Problem Deduplication and `job_id` generation currently depend on raw URLs. Equivalent listings often differ only by tracking/query variants (for example `gh_jid`, UTM params, reordered query strings), which can p...",
       "issueState": "closed",
-      "contentHash": "4de21e13e7fa2f80170be4d8b16f2d52116ca678e132b18b9dc34bf97025cde5",
+      "contentHash": "f22ff096afaba697db232317022085b8f714a36539c8488160547d6e5d7ba944",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
       "region": "North America",
@@ -266,12 +399,12 @@
         "region": "North America"
       },
       "tags": [
-        "java",
-        "design"
+        "needs-triage",
+        "enhancement"
       ],
       "sourceTags": [
-        "java",
-        "design"
+        "needs-triage",
+        "enhancement"
       ],
       "author": {
         "id": "ambicuity",
@@ -286,428 +419,9 @@
         "repository": "ambicuity/New-Grad-Jobs",
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
-      "createdAt": "2026-10-15T22:08:42Z",
-      "updatedAt": "2026-10-15T22:12:23Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/438",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [
-          "java",
-          "javascript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_0bb45713227208611e89e2ee",
-      "sourceId": "ambicuity/New-Grad-Jobs#436",
-      "title": "Exclude temporary, fixed-term, contract and fractional-FTE jobs; remove Allied Universal",
-      "description": "Owner decision (2026-10-15). These are not new-grad careers:\n\n- **Temporary and fixed-term postings**, including temp-to-hire: \"Retail Sales Associate Temp\", \"Temporary Early Career Electrical Engineer\", \"Business Analyst (Fixed Term)\".\n- **Contract postings**, including contract-to-hire: \"12 Month Contract\", \"(Contract)\", \"Contractual\". Titles about contracts as a subject stay, such as \"Contracts Administrator\" and \"Contract Specialist\".\n- **Fractional-FTE (part-time) titles**, such as Duke's \"… .3FTE\".\n- **Allied Universal**, whose iCIMS portal publishes only security-officer postings.\n\nMeasured on the live jobs.json (9,003 jobs), the title rules drop 33 jobs, and removing Allied Universal drops 4 more. A careful phrase list keeps every full-time \"contracts\" role.",
-      "excerpt": "Owner decision (2026-10-15). These are not new-grad careers: - **Temporary and fixed-term postings**, including temp-to-hire: \"Retail Sales Associate Temp\", \"Temporary Early Career Electrical Engineer\", \"Business Anal...",
-      "issueState": "closed",
-      "contentHash": "e5769cd1b179adcc2a3f574ec4807d8c022b5fd4058cd2ab7f33483de1b25982",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T19:48:48Z",
-      "updatedAt": "2026-10-15T20:01:22Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/436",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "contract",
-          "full-time",
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_4e3361d742d7798394c865b4",
-      "sourceId": "ambicuity/New-Grad-Jobs#434",
-      "title": "Publish Terms, Privacy, Copyright and Data Sources pages, llms.txt and third-party licence notices",
-      "description": "## Problem\n\nThe site has no Terms of Service, Privacy Policy, copyright/attribution policy or data-source disclosure. It also has no `llms.txt`, and no licence notices for the software it bundles. JetBrains Mono (OFL-1.1) and React/TanStack (MIT) require their notices to travel with redistributed copies.\n\nThe README and `LICENSE` say MIT, but nothing explains that the licence covers NGJ's own code and not the employers' job postings.\n\n## Audit findings (from the code)\n\n- The site is static (GitHub Pages). It has no accounts, forms, cookies or ads.\n- **Page counter.** GoatCounter loads on the interactive board only. Its `count.js` sends the page's query string, which contains the board's filters and search words.\n- **Browser storage.** The site writes 4 `localStorage` keys (saved jobs, applied jobs, two GitHub caches). GitHub Pages logs visitor IPs.\n- **What gets republished.** Descriptions appear in full (up to 50,000 characters) on job pages and in `descriptions/`, and as a 3,000-character excerpt in `jobs.json`.\n- **User agents.** The scraper uses `NewGradJobs-Aggregator/3.0`, except Workday and Indeed/JobSpy, which send a browser user agent.\n\n## Plan\n\n- Build `/terms/`, `/privacy/`, `/copyright/` and `/data-sources/` from `site/content/legal/*.md` with the existing Markdown renderer. They are script-free, use the same CSP, and each has a Markdown copy at `index.md`.\n- Link the policy pages from the board footer and from every static page footer. Add them to the sitemap.\n- Generate `/llms.txt` (llmstxt.org format) from the published data. Counts are computed, never typed.\n- Generate `/third-party-licenses.txt` from `node_modules`, and add `THIRD_PARTY_NOTICES.md`.\n- Write the audit, open decisions and checklist in `docs/legal/README.md`.\n\nContact for all requests: contact@riteshrana.engineer (already published in SECURITY.md).",
-      "excerpt": "## Problem The site has no Terms of Service, Privacy Policy, copyright/attribution policy or data-source disclosure. It also has no `llms.txt`, and no licence notices for the software it bundles. JetBrains Mono (OFL-1...",
-      "issueState": "closed",
-      "contentHash": "0d1918b9192afb5fa9a9b8d3f946112d62ad8fe95cb26bd9ec3aeda3e6ce96ed",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "react",
-        "node",
-        "data"
-      ],
-      "sourceTags": [
-        "react",
-        "node",
-        "data"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T19:24:58Z",
-      "updatedAt": "2026-10-15T19:32:09Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/434",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_beef41c56cdee1a95b5a4fde",
-      "sourceId": "ambicuity/New-Grad-Jobs#429",
-      "title": "Workday: foreign-only multi-location postings still kept as \"N Locations\"",
-      "description": "Follow-up to #427 / #428.\n\n#428 resolves Workday \"N Locations\" postings through the job endpoint. It also kept a posting's listed text when its primary location was foreign and an additional location was a bare place without a country (e.g. London + \"Plano\"), on the theory that the bare place might be in the US.\n\nMeasured over a full run (625 lookups across all configured Workday boards), 52 postings hit that rule. **Every one was foreign-only**, for example:\n- Melbourne + \"Sydney\", \"Remote Australia\"\n- Munich + \"Remote Germany\"\n- Tokyo + \"Osaka\"\n- Barcelona + \"London\", \"Surrey\"\n- Amsterdam + \"Almere\", \"Haarlem\"\n\nThe only exception was a Singapore posting that also lists \"IND-Mumbai-One World Center\". It passes the location gate when its locations are written out in full. No posting paired a US or Canadian city with a foreign primary.\n\nSo the rule only kept foreign jobs on the board (e.g. Fortrea's Sydney/Melbourne Clinical Research Associate). The fix is to always write every place out in full and let the location gate judge each one.",
-      "excerpt": "Follow-up to #427 / #428. #428 resolves Workday \"N Locations\" postings through the job endpoint. It also kept a posting's listed text when its primary location was foreign and an additional location was a bare place w...",
-      "issueState": "closed",
-      "contentHash": "b2208ce3892ba35f97fb06df6178ab6bb37931363106a907538068f380adfa8a",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "remote"
-      ],
-      "sourceTags": [
-        "remote"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T15:26:43Z",
-      "updatedAt": "2026-10-15T15:33:01Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/429",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_eb7c0c4c737010dade87972d",
-      "sourceId": "ambicuity/New-Grad-Jobs#427",
-      "title": "Workday: \"N Locations\" postings bypass the location filter",
-      "description": "The Workday listing API reports a posting with several locations as just \\`locationsText: \"2 Locations\"\\`. The location gate (\\`is_valid_location\\`) can't read a country from that text, so it passes. The board then publishes such postings even when every location is abroad. Measured examples: a Fortrea \"Clinical Research Associate II - Sydney, Melbourne or Adelaide\" shown as \"3 Locations\", and \"Clinical Research Associate based in Germany\" shown as \"2 Locations\". \"2 Locations\" also tells a reader nothing about where the job is.\n\n**Scale:** 549 live curated jobs (all Workday) show only \"N Locations\" (Blue Origin 33, Bank of America 25, Cisco 24, CACI 21, …).\n\n**Fix:** the CXS job endpoint (\\`GET /wday/cxs/<tenant>/<site><externalPath>\\`) returns \\`location\\`, \\`additionalLocations\\` and \\`country\\`. For postings whose title passes the existing Workday title pre-filter and whose location is \"N Locations\", fetch that endpoint (capped per company, within the per-company time budget). Replace the placeholder with the real locations, giving the primary location its country, so the gate can judge them. If a lookup fails, keep the posting as it is today.\n\nThis is a filter bug fix (out-of-scope postings published as in scope).",
-      "excerpt": "The Workday listing API reports a posting with several locations as just \\`locationsText: \"2 Locations\"\\`. The location gate (\\`is_valid_location\\`) can't read a country from that text, so it passes. The board then pu...",
-      "issueState": "closed",
-      "contentHash": "15a975174b39666bd10a9fc6e34d4caed0da631ea4c0983a1c05ba3fa9c0617d",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T15:00:36Z",
-      "updatedAt": "2026-10-15T15:19:48Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/427",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_a2c60f81463764da0f7b1494",
-      "sourceId": "ambicuity/New-Grad-Jobs#425",
-      "title": "iCIMS: read classic portals (careers-<company>.icims.com)",
-      "description": "Part 2 of #173 (part 1, iCIMS career sites, shipped in #424).\n\nAbout 30 employers from the careers-page audit (#419) use a classic iCIMS portal at `https://<prefix>-<company>.icims.com` instead of a career site on their own domain. These portals have no JSON API, but they server-render a public search page (`/jobs/search?ss=1&in_iframe=1&pr=<page>`) with job cards and \"Page 1 of N\" paging, and each job page carries a JSON-LD `JobPosting`.\n\nPlan:\n- Route `*.icims.com` portal roots in the `icims` source to an HTML adapter. It reads the search pages, then fetches job pages (capped) only for postings whose title and location can pass, the same way as SuccessFactors.\n- Find card fields by label, because every employer configures its own fields. Normalize `US-OH-Dublin`-style locations.\n- Skip part-time postings, both from the card's position type and from the job page's `employmentType`.\n- Reject employee-only (`internal*`) portals, and accept only job links on a portal of the same employer.\n- Leave out portals already read through a configured career site (their `apply_url` hosts).\n- Portals that hide posted dates make up a `datePosted` on each job page (the request time minus two years). Treat that date as unknown, not as two years old.\n- Probe every portal found by the audit and keep those that publish at least 2 curated jobs.",
-      "excerpt": "Part 2 of #173 (part 1, iCIMS career sites, shipped in #424). About 30 employers from the careers-page audit (#419) use a classic iCIMS portal at `https://<prefix>-<company>.icims.com` instead of a career site on thei...",
-      "issueState": "closed",
-      "contentHash": "b29140041a42254044b869ace8e1c38090e3454338ef81997c8a03794798e48b",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T14:17:08Z",
-      "updatedAt": "2026-10-15T14:31:36Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/425",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "employee",
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_f6f7f9a94601e4537111256f",
-      "sourceId": "ambicuity/New-Grad-Jobs#423",
-      "title": "Add an iCIMS source: iCIMS career sites (Jibe JSON API) first",
-      "description": "## Problem\n\niCIMS is the largest job system we still can't read: 37 employers in the careers-page audit (#419), and the long-standing #173. iCIMS customers publish in one of two ways:\n\n1. **iCIMS career sites** (iCIMS's \"Jibe\" product) on the employer's own domain (`careers.amd.com`, `careers.emory.edu`). These have a **public JSON API**:\n   - `GET /api/jobs?page=N&limit=100&sortBy=posted_date&descending=true&country=<name>` returns `{totalCount, jobs: [{data: {...}}]}`;\n   - each job has `title`, `slug`, `full_location`, `posted_date`, `employment_type`, `description`, `responsibilities`, `qualifications`, `apply_url` and `searchable`;\n   - `country` takes a country name (\"United States\", \"Canada\", \"India\"), and `limit` goes up to 100;\n   - the public job page is `https://<host>/jobs/<slug>`.\n2. **Classic portals** (`careers-<company>.icims.com/jobs/search`): server-rendered HTML lists, with JSON-LD `JobPosting` on each job page.\n\nThis issue covers **(1)**. (2) follows in a separate PR into the same `icims` source.\n\n## Probe (2026-10-15)\n\n`/api/jobs` was tried on every unresolved employer's careers hosts. Seven are iCIMS career sites on iCIMS itself: AMD, PepsiCo, Medpace, First Citizens Bank, OHSU, Noblis and Emory.\n\nS&P Global's and Mount Sinai's career sites also answer, but their `apply_url` points to Workday and Oracle HCM, which we already read. They're left out to avoid duplicating those boards.\n\nOur filters would publish **226 curated jobs**: Emory 67, Medpace 51, First Citizens 38, Noblis 25, PepsiCo 23, AMD 22. OHSU publishes 0.\n\n## Proposal\n\nAn `icims` source:\n- one newest-first query per target country, bounded per country;\n- postings de-duplicated by `slug`;\n- `searchable: false` postings skipped, and `PART_TIME` dropped (owner rule, #390);\n- the description built from the three HTML fields;\n- errors reported as data.\n\n`*.icims.com` portal URLs get a config error until (2) lands.\n\n## Acceptance\n\n- [ ] Adapter and tests with mocked HTTP.\n- [ ] Registered, wired, with settings knobs and `validate_config` checks.\n- [ ] The sites added after a live probe.\n- [ ] A full real scrape exits 0 and passes `check_integrity.py`.",
-      "excerpt": "## Problem iCIMS is the largest job system we still can't read: 37 employers in the careers-page audit (#419), and the long-standing #173. iCIMS customers publish in one of two ways: 1. **iCIMS career sites** (iCIMS's...",
-      "issueState": "closed",
-      "contentHash": "26883aae6e83acf15dbccce0fd27d3051713c3f13ceee47a7932332e756648e4",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T04:59:51Z",
-      "updatedAt": "2026-10-15T05:16:31Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/423",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_7c8a2361771c49a7e18237bb",
-      "sourceId": "ambicuity/New-Grad-Jobs#421",
-      "title": "Add a SAP SuccessFactors (Career Site Builder) source",
-      "description": "## Problem\n\nThe careers-page audit (#419) found **51 employers** with recent entry-level US/CA/IN jobs whose job board is SAP SuccessFactors. It's now the largest job system we can't read (#316). Examples: Boston Scientific, Duke University, Leonardo DRS, NextEra Energy, Oak Ridge National Laboratory, Teradyne, Westinghouse, State of Florida and State of Illinois.\n\n## What SuccessFactors exposes\n\n39 of the 51 run a **Career Site Builder** site on their own domain (`careers.duke.edu`, `jobs.bostonscientific.com`, …). There's no keyless JSON API: `/services/recruiting/v1/jobs` answers 401. But every site server-renders the same public search page:\n\n- `GET /search/?q=&sortColumn=referencedate&sortDirection=desc&locale=en_US&startrow=N` gives rows with `a.jobTitle-link` (`/job/<slug>/<id>/`).\n- The page uses one of two layouts:\n  - **table**: `tr.data-row` with `span.jobLocation` and `span.jobDate`;\n  - **tiles**: `li.job-tile` with `…-section-<field>-value` cells.\n- Page size is 10–100 rows; a page past the end still contains `id=\"searchresults\"`.\n- Each job page carries microdata: `itemprop=\"datePosted\"` (`Thu Oct 15 00:00:00 UTC 2026`), `addressLocality`/`addressRegion`/`addressCountry`, and the description in `span.jobdescription`.\n\nThe other 12 aren't covered here. Eleven use the legacy `career4.successfactors.com/career?company=…` portal, which needs a login flow. PG&E uses a Radancy (TalentBrew) front end.\n\n## Proposal\n\nAdd a `successfactors` source modelled on Rippling (#398):\n\n1. **List pass:** page the search, newest first, bounded by request count and `max_jobs_per_company`.\n2. **Detail pass:** fetch the job page only for postings whose title passes `passes_title_rules` and whose list location is empty or in the US/CA/IN. That page supplies the date, a clean location and the description. Several sites show no date column, so without this pass their postings could never pass the recency rule.\n3. **Location codes:** list locations look like `City, ST, CC, ZIP`. A naive reading takes Germany's `DE`, Morocco's `MA` and Malta's `MT` as US states (`is_valid_location(\"Schweinfurt, DE\")` is True today). So the trailing ISO country code is rewritten: `US`/`CA`/`IN` become country names, and any other code makes the posting foreign.\n4. **Errors are data:** a page without the search markup is a parse error, and a gone posting (404/410) is dropped.\n\n**Prototype measurement** (2026-10-15, 39 sites, our filters): 534 curated jobs from 35 employers, with 316 detail requests.\n\n## Acceptance\n\n- [ ] Adapter plus tests with mocked HTTP: both layouts, paging, the detail pass, country codes, errors.\n- [ ] Registered, wired, with settings knobs and `validate_config` checks.\n- [ ] Boards added after a live probe, direct employers only.\n- [ ] A full real scrape exits 0 and passes `check_integrity.py`.",
-      "excerpt": "## Problem The careers-page audit (#419) found **51 employers** with recent entry-level US/CA/IN jobs whose job board is SAP SuccessFactors. It's now the largest job system we can't read (#316). Examples: Boston Scien...",
-      "issueState": "closed",
-      "contentHash": "70593e948fd804fdd98ff58e34d488bff90e1f3bcc3708171c86d024e66bf179",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T04:12:48Z",
-      "updatedAt": "2026-10-15T04:41:15Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/421",
+      "createdAt": "2026-04-08T15:02:48Z",
+      "updatedAt": "2026-10-16T22:56:09Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/244",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
@@ -716,7 +430,13 @@
         "areas": [
           "frontend"
         ],
-        "technologies": [],
+        "technologies": [
+          "nextjs",
+          "postgres",
+          "react",
+          "redis",
+          "vue"
+        ],
         "seniority": [],
         "employmentTypes": [],
         "workModels": [],
@@ -730,13 +450,13 @@
       }
     },
     {
-      "id": "gh_6bd2ea87cfb4bbe49569241c",
-      "sourceId": "ambicuity/New-Grad-Jobs#316",
-      "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
-      "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
-      "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
-      "issueState": "open",
-      "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+      "id": "gh_ba216a9d8116f061ec962226",
+      "sourceId": "ambicuity/New-Grad-Jobs#243",
+      "title": "[Bug]: Repository scope messaging is inconsistent (US-only claims vs CA/IN ingestion and filters)",
+      "description": "### Bug Type\nOther\n\n### Description\nRepository messaging currently conflicts with runtime behavior.\n\nObserved mismatch:\n- Some docs/template language says US-only or US/Remote-only scope.\n- Backend and frontend behavior include Canada and India:\n  - `scripts/update_jobs.py` location acceptance includes CA/IN indicators\n  - `docs/app.js` country filters include USA, Canada, India\n  - generated listings include non-US roles\n\nThis creates ambiguity for contributors and users about what should be submitted/expected.\n\n### Steps to Reproduce\n1. Review scope language in README and issue template text (especially New Role verification wording).\n2. Inspect location handling in `scripts/update_jobs.py`.\n3. Inspect country filters in `docs/app.js`.\n4. Compare against generated listing behavior showing CA/IN roles.\n\n### Additional Context\nLikely files to align:\n- `README.md`\n- `.github/ISSUE_TEMPLATE/new_role.yml`\n- `scripts/update_jobs.py`\n- `docs/app.js`",
+      "excerpt": "### Bug Type Other ### Description Repository messaging currently conflicts with runtime behavior. Observed mismatch: - Some docs/template language says US-only or US/Remote-only scope. - Backend and frontend behavior...",
+      "issueState": "closed",
+      "contentHash": "426a6220f0f4708eb69704ce515729e279c26834880d4945069dd8b56743e51a",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
       "region": "North America",
@@ -747,20 +467,12 @@
         "region": "North America"
       },
       "tags": [
-        "type: enhancement",
-        "help wanted",
         "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "roadmap"
+        "bug"
       ],
       "sourceTags": [
-        "type: enhancement",
-        "help wanted",
         "needs-triage",
-        "priority: medium",
-        "enhancement",
-        "roadmap"
+        "bug"
       ],
       "author": {
         "id": "ambicuity",
@@ -775,44 +487,38 @@
         "repository": "ambicuity/New-Grad-Jobs",
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
-      "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
-      "createdAt": "2026-05-26T23:52:14Z",
-      "updatedAt": "2026-10-15T16:02:26Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+      "createdAt": "2026-04-08T15:02:00Z",
+      "updatedAt": "2026-10-16T22:56:07Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/243",
       "sourceType": "github-issue",
       "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "US-only claims vs CA",
+        "subdivision": "IN",
         "workModel": "remote",
         "remoteScope": "unspecified",
-        "displayText": "Remote",
+        "displayText": "US-only claims vs CA, IN · Remote",
         "confidence": "explicit"
       },
       "taxonomy": {
         "areas": [
-          "data-ai",
-          "design"
+          "backend",
+          "frontend"
         ],
-        "technologies": [
-          "go",
-          "python"
-        ],
-        "seniority": [
-          "internship",
-          "junior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship"
-        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
         "workModels": [
-          "hybrid",
           "remote"
         ],
         "languages": []
       },
       "dataProvenance": {
-        "location": "unknown",
+        "location": "declared",
         "salary": "unknown",
-        "seniority": "inferred",
+        "seniority": "unknown",
         "workModel": "inferred"
       }
     },
@@ -822,7 +528,7 @@
       "title": "[Advanced]: add iCIMS ingestion support to recover enterprise networking and infrastructure coverage",
       "description": "### 🧠 Advanced Contributors\nThis issue is for contributors who are already very familiar with this codebase\nand its architectural patterns.\n\nYou should feel comfortable:\n- Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit\n- Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations\n- Reasoning about API contract changes across ATS providers\n- Writing rigorous, deterministic tests without live network calls\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\n### 🐞 Problem Description\nThe roadmap already calls out ATS coverage expansion as the biggest remaining quality gap. Today, the scraper has strong coverage for Greenhouse, Lever, Google Careers, and partial Workday, but it still misses entire slices of enterprise hiring that sit behind other ATS platforms.\n\niCIMS is a high-leverage next source because it is common among larger employers, including companies that post entry-level infrastructure, networking, and security roles that never reach the board today.\n\nWithout a first-class iCIMS integration, the dataset will continue to under-represent one of the main role families the README says it tracks.\n\n### 💡 Proposed / Expected Solution\nAdd a production-ready iCIMS fetch path that follows the same project constraints as the existing sources:\n\n- config-driven company definitions\n- deterministic tests with mocked responses\n- compatibility with the current normalization, filtering, and dedup pipeline\n- no external database or browser-based dependency\n\nThis should be implemented as a source integration, not as a one-off company patch.\n\n### ✅ Acceptance Criteria\n- [ ] A reusable iCIMS fetch path exists in the scraper\n- [ ] `config.yml` can declare iCIMS-backed companies without custom code per company\n- [ ] New source behavior is covered by deterministic tests with mocked payloads\n- [ ] Thread-safety is preserved\n- [ ] All existing `pytest tests/` pass\n- [ ] New tests added for every changed code path (deterministic — no live network calls)\n- [ ] `pre-commit run --all-files` passes\n- [ ] `jobs.json` schema remains backward compatible with `docs/app.js`\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### 🔗 Additional Context\n- Roadmap reference: `ROADMAP.md` lists iCIMS support under v1.1\n- Existing ATS references: Greenhouse, Lever, Google Careers, Workday",
       "excerpt": "### 🧠 Advanced Contributors This issue is for contributors who are already very familiar with this codebase and its architectural patterns. You should feel comfortable: - Understanding the full data flow: `config.yml...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "17425b134c9d469abcb69957f04a1c66b27b5fc282997ba3704f0223c4ce761f",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
@@ -861,7 +567,7 @@
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
       "createdAt": "2026-03-14T05:28:12Z",
-      "updatedAt": "2026-10-15T14:39:33Z",
+      "updatedAt": "2026-10-16T22:56:05Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/173",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -874,6 +580,927 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_f4576dc70ccae1d29ed8e7c3",
+      "sourceId": "ambicuity/New-Grad-Jobs#83",
+      "title": "[Intermediate]: Move hardcoded worker pool limits to config.yml",
+      "description": "---\n## Thanks for contributing! 😊\n\nThis template creates an **Intermediate Issue** — for contributors who are already\ncomfortable navigating this codebase and contribution workflow.\n\nThe goal is a task that requires understanding existing patterns and making decisions,\nbut does not require architectural design from scratch.\n---\n\n### 🧩 Intermediate Contributors\n\nThis issue is intended for contributors who already have experience with this repository\nand the contribution workflow.\n\nYou should feel comfortable:\n- Navigating `scripts/update_jobs.py`, `config.yml`, and `tests/`\n- Understanding how `filter_jobs()`, `deduplicate_jobs()`, and `categorize_job()` work\n- Following existing patterns without step-by-step guidance\n- Writing non-trivial pytest tests with mocking\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\nIf you are new to this repo, please start with a\n[Good First Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3A%22good+first+issue%22+no%3Aassignee)\nor a [Beginner Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3Abeginner+no%3Aassignee)\nfirst.\n\n> [!IMPORTANT]\n> ### 🧭 What we consider an Intermediate Issue in this repo\n>\n> This issue generally:\n> - Requires **knowledge of 2–3 existing functions** (e.g. `filter_jobs`, `normalize_date_string`, `get_job_key`)\n> - Is **narrowly scoped** — touches one area without cascading structural changes\n> - Is **medium risk** — does not change deduplication keys, date parsing logic from scratch, or pagination\n> - May involve **refactors, edge case handling, or small feature additions**\n> - Has **similar patterns elsewhere** in the scraper for reference\n>\n> **What this issue is NOT:**\n> - A simple config addition (that belongs in Good First Issue)\n> - A new scraping source integration (that belongs in Advanced)\n> - A breaking change to the job schema\n\n\n### 🐞 Problem Description\n\nCodeRabbit flagged a major architectural debt item in PR #78: the scraper uses hardcoded concurrency limits (e.g., `max_workers = min(300, max(30, total // 3))`) in the `fetch_all_*_parallel` functions.\n\nHardcoding `max_workers=300` for Greenhouse risks IP bans if their rate limits change. The maintainer needs a way to throttle the scraper via configuration, not by pushing code.\n\n### 💡 Expected Solution\n\nThese constants need to be moved to `config.yml` to allow for runtime tuning without code changes. Add a `worker_pools` block to `config.yml` with sub-keys for each API source.\n\n### ✅ Acceptance Criteria\n\n- [ ] Add a `worker_pools` block to `config.yml`.\n- [ ] Update `update_jobs.py` parallel functions to read from `config.get('worker_pools', {}).get('greenhouse', 50)`.\n- [ ] Keep safe fallback defaults in the Python code if the config block is missing.\n- [ ] Log the effective worker count (e.g., 'Using 50 workers from config' or 'Using 30 workers (fallback)') at startup.\n- [ ] Problem is resolved per the description above\n- [ ] All existing `pytest tests/` pass\n- [ ] `pre-commit run --all-files` passes\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n\n🤖 Core scraper (scripts/update_jobs.py)\n⚙️ Configuration (config.yml)\n\n### 🔗 Additional Context\n\n- Related function: `fetch_all_greenhouse_jobs_parallel()` at update_jobs.py\n- CodeRabbit finding from PR #78",
+      "excerpt": "--- ## Thanks for contributing! 😊 This template creates an **Intermediate Issue** — for contributors who are already comfortable navigating this codebase and contribution workflow. The goal is a task that requires un...",
+      "issueState": "closed",
+      "contentHash": "e8a2da62397aae27038b7a69475d8df484f8e1818c3efddd17d6ec2ee3b65ce7",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement",
+        "help wanted",
+        "intermediate"
+      ],
+      "sourceTags": [
+        "type: enhancement",
+        "help wanted",
+        "intermediate"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-04T15:57:28Z",
+      "updatedAt": "2026-10-16T22:56:03Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/83",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "design"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_cb5e82bbd56ec08ac0eccbd7",
+      "sourceId": "ambicuity/New-Grad-Jobs#57",
+      "title": "[Beginner]: Unify `max_retries` default to use a `DEFAULT_MAX_RETRIES` constant",
+      "description": "### Description\nAlmost all `fetch_*` functions default to `max_retries=2`. Extract this magical default into a universal `DEFAULT_MAX_RETRIES` constant at the top of `update_jobs.py`.\n\n### Why it matters\nAllows maintainers to quickly adjust the retry aggressiveness across all scrapers from a single configuration point.\n\n### Acceptance Criteria\n- [ ] Create `DEFAULT_MAX_RETRIES = 2`\n- [ ] Update default signatures like `max_retries: int = DEFAULT_MAX_RETRIES`\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description Almost all `fetch_*` functions default to `max_retries=2`. Extract this magical default into a universal `DEFAULT_MAX_RETRIES` constant at the top of `update_jobs.py`. ### Why it matters Allows maintai...",
+      "issueState": "closed",
+      "contentHash": "c71eed6657f947d753a6fda9be0e377e46900165963eb0d71046e467359bef3a",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:53Z",
+      "updatedAt": "2026-10-16T22:55:44Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/57",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_fc6ae4ce6909457e90fa698d",
+      "sourceId": "ambicuity/New-Grad-Jobs#56",
+      "title": "[Beginner]: Add docstring to `TestCategorizeJob.test_returns_required_keys` method",
+      "description": "### Description\nThe unit test `test_returns_required_keys` in `tests/test_categorize.py` lacks an explanatory docstring. Add one explaining what it asserts.\n\n### Why it matters\nTests serve as living documentation. Clear docstrings help new contributors understand what a test's objective is.\n\n### Acceptance Criteria\n- [ ] Add a clear docstring to the specific test method\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The unit test `test_returns_required_keys` in `tests/test_categorize.py` lacks an explanatory docstring. Add one explaining what it asserts. ### Why it matters Tests serve as living documentation. Clea...",
+      "issueState": "closed",
+      "contentHash": "b3b936b6190bd48b1cbf9576d76820de4800d2991acaa4b405f076d0a912448f",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:50Z",
+      "updatedAt": "2026-10-16T22:56:01Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/56",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_47340e40482a1e26776641f2",
+      "sourceId": "ambicuity/New-Grad-Jobs#55",
+      "title": "[Beginner]: Add a test case for `is_job_closed` in `tests/test_categorize.py`",
+      "description": "### Description\nThe helper function `is_job_closed(title, description)` has no unit tests. Add tests to verify it accurately spots 'closed' or 'no longer accepting' terminology.\n\n### Why it matters\nWe do not want to parse and upload jobs that are already expired. Testing this ensures accuracy.\n\n### Acceptance Criteria\n- [ ] Create `test_is_job_closed()` suite\n- [ ] Provide positive (closed) and negative (open) strings\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The helper function `is_job_closed(title, description)` has no unit tests. Add tests to verify it accurately spots 'closed' or 'no longer accepting' terminology. ### Why it matters We do not want to pa...",
+      "issueState": "closed",
+      "contentHash": "24957ea2a39831493221575ec53fedf7d79f58febb7b5f393063e4108b2e5665",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:47Z",
+      "updatedAt": "2026-10-16T22:56:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/55",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_ffccd833eb3014c6cb1342f0",
+      "sourceId": "ambicuity/New-Grad-Jobs#54",
+      "title": "[Beginner]: Replace `print` with Python `logging` in `scripts/generate_companies.py`",
+      "description": "### Description\nThe `generate_companies.py` script uses `print()` for console output. Replace these with standard Python `logging.info()` and `logging.warning()`.\n\n### Why it matters\nStandardized logging allows for easier parsing of the output stream vs standard errors, and aligns with professional engineering practices.\n\n### Acceptance Criteria\n- [ ] Import `logging` and configure basic configuration\n- [ ] Replace `print()` statements with appropriate logging levels\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The `generate_companies.py` script uses `print()` for console output. Replace these with standard Python `logging.info()` and `logging.warning()`. ### Why it matters Standardized logging allows for eas...",
+      "issueState": "closed",
+      "contentHash": "c0520677211b8351f617d73d35b46e55b7491d9560faa00afec333693a709ecf",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:44Z",
+      "updatedAt": "2026-10-16T22:55:42Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/54",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_3b951784570495a6aa6bc162",
+      "sourceId": "ambicuity/New-Grad-Jobs#53",
+      "title": "[Beginner]: Move inline `import re` out of `categorize_job()`",
+      "description": "### Description\nThe function `categorize_job()` performs an inline `import re` on every execution. Move this import to the top of `update_jobs.py`.\n\n### Why it matters\nInline imports inside heavily used loops degrade performance and violate PEP-8 best practices.\n\n### Acceptance Criteria\n- [ ] Remove `import re` from inside `categorize_job()`\n- [ ] Verify it exists at the top of the file\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The function `categorize_job()` performs an inline `import re` on every execution. Move this import to the top of `update_jobs.py`. ### Why it matters Inline imports inside heavily used loops degrade p...",
+      "issueState": "closed",
+      "contentHash": "c33631afeca642096d7f1d1d3aae7bf7e0042fe1ef1ba79db19aed228d7c8e49",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:42Z",
+      "updatedAt": "2026-10-16T22:55:58Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/53",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_ca0edf451423fae2c24967cd",
+      "sourceId": "ambicuity/New-Grad-Jobs#52",
+      "title": "[Beginner]: Add a `make lint` target in `Makefile`",
+      "description": "### Description\nThe current `Makefile` doesn't have a simple command to run linting. Add a `lint` target that runs `pre-commit run --all-files`.\n\n### Why it matters\nProvides a standard, intuitive command (`make lint`) for newcomers to check their code before opening a PR.\n\n### Acceptance Criteria\n- [ ] Add `lint:` target to `Makefile`\n- [ ] Ensure it invokes `pre-commit run --all-files`\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The current `Makefile` doesn't have a simple command to run linting. Add a `lint` target that runs `pre-commit run --all-files`. ### Why it matters Provides a standard, intuitive command (`make lint`) ...",
+      "issueState": "closed",
+      "contentHash": "1638b277d316cc6818b93a58f18370785a6af22f04fdebc20b988f4e32d1b5a8",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:39Z",
+      "updatedAt": "2026-10-16T22:55:56Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/52",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_c610675f1f00f13245688236",
+      "sourceId": "ambicuity/New-Grad-Jobs#50",
+      "title": "[Beginner]: Extract `countries` fallback list in `fetch_jobspy_jobs` to a constant",
+      "description": "### Description\nThe list of countries `[{'code': 'USA'...}, ...]` is hardcoded as a fallback in `fetch_jobspy_jobs`. Move this to a top-level constant `DEFAULT_JOBSPY_COUNTRIES`.\n\n### Why it matters\nConfiguration defaults shouldn't be hidden arbitrarily inside long functions.\n\n### Acceptance Criteria\n- [ ] Extract the fallback list to `DEFAULT_JOBSPY_COUNTRIES`\n- [ ] Reference the constant inside the `get()` fallback\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The list of countries `[{'code': 'USA'...}, ...]` is hardcoded as a fallback in `fetch_jobspy_jobs`. Move this to a top-level constant `DEFAULT_JOBSPY_COUNTRIES`. ### Why it matters Configuration defau...",
+      "issueState": "closed",
+      "contentHash": "991725608be91ea09d98d942adcc027464ce436d75bdd0da358039780d8be4a3",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:34Z",
+      "updatedAt": "2026-10-16T22:55:55Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/50",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_b2b5c1bdf51aad3bf07a6c52",
+      "sourceId": "ambicuity/New-Grad-Jobs#48",
+      "title": "[Beginner]: Add a test case for `normalize_date_string` in a new `tests/test_utils.py`",
+      "description": "### Description\nCreate a new file `tests/test_utils.py` and write tests for `normalize_date_string`, ensuring it translates 'Posted Yesterday' and '2 Days Ago' correctly.\n\n### Why it matters\nDate parsing is notoriously fragile. Having unit tests for human-readable date conversions prevents silent failures.\n\n### Acceptance Criteria\n- [ ] Create `tests/test_utils.py`\n- [ ] Add assertions for 'Today', 'Yesterday', and 'X Days Ago'\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description Create a new file `tests/test_utils.py` and write tests for `normalize_date_string`, ensuring it translates 'Posted Yesterday' and '2 Days Ago' correctly. ### Why it matters Date parsing is notoriously...",
+      "issueState": "closed",
+      "contentHash": "a7dd15e4d17c7e8889e1cd33c703fd445457a0fbe29b1c4fb285f589f3abc233",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:29Z",
+      "updatedAt": "2026-10-16T22:55:53Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/48",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_2dc0021f7fc5dcf9874e9cbf",
+      "sourceId": "ambicuity/New-Grad-Jobs#47",
+      "title": "[Beginner]: Add a test case for `has_track_signal` in `tests/test_filter.py`",
+      "description": "### Description\nThe function `has_track_signal(title, signals)` needs unit tests. Add a basic suite verifying it correctly identifies specific tracks from the job title.\n\n### Why it matters\nEnsures our filtering logic reliably categorizes special tracks like 'Rotational' or 'Early Career'.\n\n### Acceptance Criteria\n- [ ] Create `test_has_track_signal()` in `tests/test_filter.py`\n- [ ] Test with positive and negative inputs\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The function `has_track_signal(title, signals)` needs unit tests. Add a basic suite verifying it correctly identifies specific tracks from the job title. ### Why it matters Ensures our filtering logic ...",
+      "issueState": "closed",
+      "contentHash": "7d6a3e7cadfb70e8580c1466155035d5f68b8358d1fc2a2e874073e24ccc7581",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:26Z",
+      "updatedAt": "2026-10-16T22:55:50Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/47",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_78db60d3e2c623b18cb48443",
+      "sourceId": "ambicuity/New-Grad-Jobs#45",
+      "title": "[Beginner]: Add standard module-level docstrings to `generate_companies.py` functions",
+      "description": "### Description\nThe functions `generate_greenhouse_companies`, `generate_lever_companies`, and `generate_workday_companies` have very brief docstrings. Expand them to explain parameters and return formats.\n\n### Why it matters\nGood documentation helps new contributors understand what the generation scripts actually output without reading the inner loops.\n\n### Acceptance Criteria\n- [ ] Add detailed docstrings explaining arguments and return types to all 4 functions\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description The functions `generate_greenhouse_companies`, `generate_lever_companies`, and `generate_workday_companies` have very brief docstrings. Expand them to explain parameters and return formats. ### Why it ...",
+      "issueState": "closed",
+      "contentHash": "0cdaf21b590b3fe466da4258b6f3f22ce566a48219f909e6a8e7b27f3b023ddb",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:21Z",
+      "updatedAt": "2026-10-16T22:55:40Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/45",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_05eeb51288546d7881500ce7",
+      "sourceId": "ambicuity/New-Grad-Jobs#44",
+      "title": "[Beginner]: Extract User-Agent string in `fetch_workday_jobs` into a global constant",
+      "description": "### Description\nThere is a hardcoded `Mozilla/5.0...` User-Agent string inside `fetch_workday_jobs()`. Extract this into a global constant `DEFAULT_USER_AGENT`.\n\n### Why it matters\nDuplicating or hiding user agent strings makes them hard to update universally if the scraper gets blocked.\n\n### Acceptance Criteria\n- [ ] Create `GLOBAL_USER_AGENT` constant\n- [ ] Use it in the Workday headers dictionary\n- [ ] Passes `pre-commit run --all-files`",
+      "excerpt": "### Description There is a hardcoded `Mozilla/5.0...` User-Agent string inside `fetch_workday_jobs()`. Extract this into a global constant `DEFAULT_USER_AGENT`. ### Why it matters Duplicating or hiding user agent stri...",
+      "issueState": "closed",
+      "contentHash": "d3dc2e8d5260d706250723e5182ad4afc3b5bc4e8be9a501514bb78b62b68886",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "help wanted",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T23:39:18Z",
+      "updatedAt": "2026-10-16T22:55:48Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/44",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_a2b56e0fd7a6da546f13e738",
+      "sourceId": "ambicuity/New-Grad-Jobs#28",
+      "title": "[Beginner]: Add type hints to generate_companies.py",
+      "description": "The functions `generate_greenhouse_companies`, `generate_lever_companies`, `generate_workday_companies`, and `format_yaml_companies` currently lack Python type hints. This issue involves adding valid type hints (e.g., `count: int`, `start_id: int`, returning `list[dict[str, str]]`) to improve code readability and static analysis.",
+      "excerpt": "The functions `generate_greenhouse_companies`, `generate_lever_companies`, `generate_workday_companies`, and `format_yaml_companies` currently lack Python type hints. This issue involves adding valid type hints (e.g.,...",
+      "issueState": "closed",
+      "contentHash": "5c6a8f53dfaf80b4dc1ce56dfa338a2c9b6d39cdfbb64a84eb0ebf4c3a3a0ebb",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "type: enhancement",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T20:46:06Z",
+      "updatedAt": "2026-10-16T22:55:37Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/28",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_e73e9a5bddeb4cce49ecfa5f",
+      "sourceId": "ambicuity/New-Grad-Jobs#27",
+      "title": "[Beginner]: Convert usa_states and usa_cities lists in is_valid_location() to frozenset for O(1) lookup",
+      "description": "## Summary\n\n`is_valid_location()` in `scripts/update_jobs.py` stores USA state abbreviations and city names in **plain Python lists**. Every call performs a linear scan (`O(n)`) across 100+ entries. Converting to `frozenset` makes each lookup `O(1)` and is the idiomatic Python approach for membership testing.\n\n## Location\n\n`scripts/update_jobs.py`, function `is_valid_location()` (~line 1067)\n\n```python\n# Current — O(n) linear scan, called for every job\nusa_states = [\n    'alabama', 'al', 'alaska', 'ak', ...  # 102 entries, rebuilt per call\n]\nusa_cities = [\n    'new york', 'los angeles', ...  # 42 entries, rebuilt per call\n]\nfor state in usa_states:          # O(n) every time\n    if state in location_lower:\n        return True\n```\n\n## Expected Fix\n\nMove the lists to **module-level constants** as `frozenset` (immutable, hashable):\n\n```python\n# At module level (top of file, after imports)\n_USA_STATES: frozenset[str] = frozenset([\n    'alabama', 'al', 'alaska', 'ak', ...\n])\n_USA_CITIES: frozenset[str] = frozenset([\n    'new york', 'los angeles', ...\n])\n_CANADA_INDICATORS: frozenset[str] = frozenset([...])\n_INDIA_INDICATORS: frozenset[str] = frozenset([...])\n\ndef is_valid_location(location: str) -> bool:\n    ...\n    # Now O(1) per check, and no list rebuild per call\n    if any(state in location_lower for state in _USA_STATES):\n        return True\n```\n\n## Why This Matters\n\n`is_valid_location()` is called for **every job** in the pipeline (potentially thousands per run). Rebuilding these lists on the stack 10,000+ times per execution is unnecessary overhead. Module-level `frozenset` constants are constructed once at import time.\n\n## Acceptance Criteria\n\n- [ ] `usa_states`, `usa_cities`, `canada_indicators`, `india_indicators` moved to module-level `frozenset` constants\n- [ ] Named with leading underscore (e.g. `_USA_STATES`) to signal internal use\n- [ ] `is_valid_location()` updated to use the new constants\n- [ ] Existing behavior (returns `True`/`False`) is unchanged\n- [ ] CI passes\n\n## Skill Level\n\n**Beginner** — Pure refactor: moving data from inside a function to module-level constants and changing `list` to `frozenset`. No logic changes required.",
+      "excerpt": "## Summary `is_valid_location()` in `scripts/update_jobs.py` stores USA state abbreviations and city names in **plain Python lists**. Every call performs a linear scan (`O(n)`) across 100+ entries. Converting to `froz...",
+      "issueState": "closed",
+      "contentHash": "fe11f845ce3d4375ac8012f80ebbc6d172c94a1c9aca8de7facd0785841156bc",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: enhancement",
+        "good first issue",
+        "type: chore"
+      ],
+      "sourceTags": [
+        "type: enhancement",
+        "good first issue",
+        "type: chore"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-02T20:19:35Z",
+      "updatedAt": "2026-10-16T22:55:35Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/27",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
+    {
+      "id": "gh_b80e55ab23d7ebf5821ff619",
+      "sourceId": "ambicuity/New-Grad-Jobs#22",
+      "title": "[Beginner]: Add module-level docstrings to CATEGORY_PATTERNS and company classification sets",
+      "description": "### Contributor Level\n\nThis is a beginner issue. No code logic changes are required. It is suitable for contributors who want to improve their understanding of the codebase before tackling more complex tasks.\n\nPrerequisites:\n- Able to read Python code and understand what a variable is used for\n- Able to write a short English explanation\n\nEstimated time to complete: 1 hour.\n\n---\n\n### Problem Description\n\nThe top-level global constants in `scripts/update_jobs.py` — specifically `FAANG_PLUS`, `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`, and `CATEGORY_PATTERNS` — have no inline comments or docstrings explaining what they represent, how they are consumed at runtime, or how a contributor should add a new entry to them.\n\nA contributor who wants to add a new company has no guidance on which set to add it to, or how company classification interacts with the frontend filters. This increases the friction for community contributions of new company data.\n\nAffected lines: approximately 93–254 in `scripts/update_jobs.py`.\n\n---\n\n### Proposed Solution\n\nAdd a short block comment above each constant explaining:\n\n1. What the set represents\n2. Which function consumes it at runtime\n3. How to add a new entry, including the expected string format\n\nReference example:\n\n```python\n# FAANG_PLUS: Companies classified as the \"FAANG+\" company tier.\n# Consumed by: get_company_tier() at line ~302.\n# This classification surfaces in the frontend's \"FAANG+\" company-tier filter.\n# To add a company: append its name exactly as it appears in job API responses.\n# A company may appear in both FAANG_PLUS and a sector set (e.g., DEFENSE) simultaneously.\nFAANG_PLUS = {\n    ...\n}\n```\n\nApply the same pattern to: `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`, and `CATEGORY_PATTERNS`.\n\nFor `CATEGORY_PATTERNS`, also document how the `keywords` list is matched and what happens when no keyword matches.\n\n---\n\n### Background Research\n\nRead the functions that consume these constants before writing comments:\n\n- `get_company_tier()` — line ~302 (consumes `FAANG_PLUS`, `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`)\n- `categorize_job()` — line ~278 (consumes `CATEGORY_PATTERNS`)\n\nUnderstanding what these functions do with the data will help you write accurate descriptions.\n\n---\n\n### Acceptance Criteria\n\n- A block comment appears above each of the seven constants listed above\n- Each comment covers: purpose, consuming function, and how to add a new entry\n- `python -m py_compile scripts/update_jobs.py` passes with no errors\n- No logic is changed\n\n---\n\n### Done Checklist\n\nBefore opening your PR, confirm:\n\n- [ ] All seven constants have a descriptive block comment above them\n- [ ] `python -m py_compile scripts/update_jobs.py` passes locally\n- [ ] Commit message follows Conventional Commits format: `docs(scraper): add comments to company classification constants`\n- [ ] `README.md` has not been modified (it is auto-generated)\n\n---\n\n### Additional Context\n\n- File: `scripts/update_jobs.py`, lines 93–254\n- Related guide: [CONTRIBUTING.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md)",
+      "excerpt": "### Contributor Level This is a beginner issue. No code logic changes are required. It is suitable for contributors who want to improve their understanding of the codebase before tackling more complex tasks. Prerequis...",
+      "issueState": "closed",
+      "contentHash": "81d4af9a040ca87c667985a380ce3a2742fbf1a2c5c4f6caaac1bd992f8120ba",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "type: docs",
+        "good first issue"
+      ],
+      "sourceTags": [
+        "type: docs",
+        "good first issue"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "tier filter.",
+      "createdAt": "2026-03-02T20:11:52Z",
+      "updatedAt": "2026-10-16T22:55:46Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/22",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "frontend"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
       },
       "dataProvenance": {
         "location": "unknown",

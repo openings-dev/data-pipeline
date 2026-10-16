@@ -1,6 +1,97 @@
 {
-  "generatedAt": "2026-10-16T18:34:00.073Z",
+  "generatedAt": "2026-10-16T23:11:34.994Z",
   "items": {
+    "gh_4a700fa8926cbb8edfbdeb95": {
+      "id": "gh_4a700fa8926cbb8edfbdeb95",
+      "sourceId": "ambicuity/New-Grad-Jobs#449",
+      "title": "[Bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
+      "description": "### Bug Type\nPortal: website not loading or showing stale data\n\n### Description\nThe browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response with an invalid jobs schema. If the index answers HTTP 200 with `{ \"nope\": 1 }` while `jobs.json` contains valid postings, `loadJobs` returns an error and zero jobs without requesting the healthy full dataset.\n\nVerified against `main` at `c73256709`; the relevant files are unchanged from that commit. This is a deterministic fault-injection reproduction, not evidence that production currently serves an invalid index.\n\n### Steps to Reproduce\nRun from the repository root:\n\n```sh\nnode --input-type=module <<'JS'\nimport { loadJobs } from './site/src/data/jobs-source.js';\nconst calls = [];\nconst fetchImpl = async (url) => {\n  calls.push(url);\n  return {\n    ok: true,\n    json: async () => url.endsWith('jobs-index.json')\n      ? { nope: 1 }\n      : { jobs: [{ job_id: 'job_valid', title: 'Junior Engineer', company: 'Example' }] },\n  };\n};\nconst result = await loadJobs(fetchImpl, false);\nconsole.log({ calls, jobs: result.jobs.length, error: result.error });\nJS\n```\n\nActual:\n\n```text\ncalls: ['./jobs-index.json']\njobs: 0\nerror: 'jobs payload has no \"jobs\" array'\n```\n\nExpected: `jobs.json` is requested, its valid posting is returned, and `error` is null.\n\n### Cause\nIn [`jobs-source.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/data/jobs-source.js), the inner `try/catch` protects only the index fetch/decode. `normalizeJobsPayload(payload)` runs after that catch, so a schema error goes straight to the outer failure handler and bypasses the fallback.\n\nThe existing “reports a malformed payload” test supplies only an invalid index. It does not provide a healthy full file or assert that fallback was attempted.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Index loading is considered successful only after schema validation and normalization succeed.\n- [ ] A schema-invalid index triggers a request for `jobs.json`.\n- [ ] A valid full payload restores jobs and returns `error: null`.\n- [ ] A valid empty index (`jobs: []`) remains a successful empty result, without fallback.\n- [ ] When both candidates fail, the loader resolves with an explicit error rather than rejecting or silently reporting success.\n- [ ] Add deterministic tests for invalid index + healthy full payload, both invalid, and valid empty index; cover schema-invalid Brotli index payloads as applicable.\n\n### Validation\nReproduced with the injected fetch above. Existing checks also pass: `vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js` (**50 passed**).\n\nSearched open and closed issues for index/fallback/malformed-payload reports; no issue tracking this specific jobs-loader recovery gap was found.",
+      "excerpt": "### Bug Type Portal: website not loading or showing stale data ### Description The browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response wit...",
+      "issueState": "open",
+      "contentHash": "0b615e7f62c8083170a457bc160151ca568ed466ed88ac0e70b96404a2b69f3d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "'Example' }] },",
+      "createdAt": "2026-10-16T23:03:02Z",
+      "updatedAt": "2026-10-16T23:03:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4a700fa8926cbb8edfbdeb95",
+          "sourceId": "ambicuity/New-Grad-Jobs#449",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+          "createdAt": "2026-10-16T23:03:02Z",
+          "updatedAt": "2026-10-16T23:03:02Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T23:03:02Z",
+        "status": "fresh"
+      }
+    },
     "gh_4a9e1cd0be22fca7515d714c": {
       "id": "gh_4a9e1cd0be22fca7515d714c",
       "sourceId": "SimplifyJobs/Summer2026-Internships#9694",
