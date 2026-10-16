@@ -1,6 +1,97 @@
 {
-  "generatedAt": "2026-10-16T13:40:38.729Z",
+  "generatedAt": "2026-10-16T18:34:00.073Z",
   "items": {
+    "gh_0da1549c7daf4a0c09a7d121": {
+      "id": "gh_0da1549c7daf4a0c09a7d121",
+      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+      "title": "[Product Bug] Jobs auto-detected as \"Applied\" remain visible in \"Liked\" tab (cross-tab duplication)",
+      "description": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team.\n\n### Bug\n\nAfter the Chrome extension auto-detects a submitted application, the job stays in **both** the \"Liked\" tab AND the \"Applied\" tab. User has to manually un-Like each one or Liked-tab counts inflate indefinitely.\n\n### Repro\n\n1. Save a job to the Liked list (click heart/save on a job card)\n2. Apply to that same job on the external careers page\n3. Return to Jobright dashboard\n4. Observe: job appears in both Applied AND Liked\n\n### Expected\n\nOnce auto-detect flips a job to Applied, it should disappear from Liked. \"Applied\" supersedes \"Liked\" in the user's pipeline model: you don't \"like\" a job you've already committed to.\n\n### Impact\n\nBreaks pipeline tracking integrity. Any user with 20+ liked jobs who applies to a few per day accumulates a growing phantom Liked list that no longer reflects pipeline state. Appears to be a recurring class of complaint in third-party Jobright reviews (weak submission tracking).\n\n### One-click diagnostic for your eng team\n\nHard-refresh the Liked tab after reproducing:\n\n- **Duplicate persists**: backend data model issue (likely independent `isLiked` + `isApplied` boolean flags with no mutex, or separate collections with no cross-delete on apply-event)\n- **Duplicate clears**: frontend cache-invalidation miss on apply-event (likely Chrome extension writes applied status without invalidating the Liked-list query)\n\n### Fix sketch\n\n- **Write-side**: on apply-event, set `isLiked=false` as well, OR migrate to a single `status` enum (liked / applied / interviewing / rejected) that is mutually exclusive\n- **Query-side (belt-and-suspenders)**: filter Liked by `isLiked AND status != 'applied' AND status != 'interviewing'` so the bug cannot recur via other write paths\n\n### Severity\n\n**High**. Not critical (no data loss, no security issue), but breaks the extension's core value prop of trustworthy pipeline tracking. 200K users times this friction = material NPS impact.\n\nHappy to provide screenshots if that unblocks routing.",
+      "excerpt": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team. ### Bug After the Chrome extension auto-detects a submitted application, the jo...",
+      "issueState": "open",
+      "contentHash": "674740d7d1bb670636a9cd77e3422687bfcf1533e7088e9730959192c1948b0e",
+      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "author": {
+        "id": "JayDS22",
+        "name": "JayDS22",
+        "handle": "JayDS22",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+      },
+      "createdAt": "2026-10-16T16:34:38Z",
+      "updatedAt": "2026-10-16T16:34:38Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_0da1549c7daf4a0c09a7d121",
+          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+          "createdAt": "2026-10-16T16:34:38Z",
+          "updatedAt": "2026-10-16T16:34:38Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T16:34:38Z",
+        "status": "fresh"
+      }
+    },
     "gh_0dd6d2f3bc8549a37164fb89": {
       "id": "gh_0dd6d2f3bc8549a37164fb89",
       "sourceId": "rebase-network/who-is-hiring#1301",
