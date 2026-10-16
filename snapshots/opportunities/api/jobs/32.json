@@ -1,6 +1,90 @@
 {
-  "generatedAt": "2026-10-15T23:29:49.835Z",
+  "generatedAt": "2026-10-16T13:40:38.729Z",
   "items": {
+    "gh_320f20971f8b22056109b288": {
+      "id": "gh_320f20971f8b22056109b288",
+      "sourceId": "ambicuity/New-Grad-Jobs#447",
+      "title": "Job data is stale: last scrape 2026-10-16T09:45:45.008777Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38906843941. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "f5b06839d653a17f22e71f9c109f34d5e22f2bb652dd0894c8d7c4835f11bba3",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T13:18:41Z",
+      "updatedAt": "2026-10-16T13:18:41Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_320f20971f8b22056109b288",
+          "sourceId": "ambicuity/New-Grad-Jobs#447",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
+          "createdAt": "2026-10-16T13:18:41Z",
+          "updatedAt": "2026-10-16T13:18:41Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T13:18:41Z",
+        "status": "fresh"
+      }
+    },
     "gh_324055d14c5ee3765bdb1221": {
       "id": "gh_324055d14c5ee3765bdb1221",
       "sourceId": "PrepAIJobs/New-Grad-2026#3",
@@ -181,7 +265,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1518,
+        "ageDays": 1519,
         "publishedAt": "2022-08-19T12:58:08Z",
         "status": "stale"
       }

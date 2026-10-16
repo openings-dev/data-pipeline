@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-10-16T02:29:52.912Z",
+  "generatedAt": "2026-10-16T13:40:38.729Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 14,
-    "openIssues": 3,
-    "closedIssues": 11
+    "openIssues": 4,
+    "closedIssues": 10
   },
-  "dataHash": "43d2b24f2cff54e0a7c4442a5b12fb5300008b148e8c8a23e76cde33c76bc934",
+  "dataHash": "5cae334dfff143e2c96bcfaf9ef2b98ece6adb5fe21cd214d2d8eed95f6c25d5",
   "items": [
+    {
+      "id": "gh_320f20971f8b22056109b288",
+      "sourceId": "ambicuity/New-Grad-Jobs#447",
+      "title": "Job data is stale: last scrape 2026-10-16T09:45:45.008777Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38906843941. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "f5b06839d653a17f22e71f9c109f34d5e22f2bb652dd0894c8d7c4835f11bba3",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T13:18:41Z",
+      "updatedAt": "2026-10-16T13:18:41Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_f9423a44dfa4c405cd352a84",
       "sourceId": "ambicuity/New-Grad-Jobs#445",
@@ -668,66 +726,6 @@
         "location": "unknown",
         "salary": "unknown",
         "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_88a13686a28c98625c43eb16",
-      "sourceId": "ambicuity/New-Grad-Jobs#419",
-      "title": "Add 84 employer boards found on employers' own careers pages (Foorilla follow-up)",
-      "description": "## Problem\n\nThe Foorilla audit (#415) left 561 employers unresolved: their job boards weren't at a guessable slug on Greenhouse, Lever, Ashby, Workable or SmartRecruiters. Most of them are large employers on Workday, Oracle HCM and other systems we already fetch. Foorilla doesn't expose their careers links.\n\n## How the boards were found\n\n1. Foorilla was re-read on 2026-10-15. Every company with at least 10 open jobs was checked (4,213 pages). Unconfigured employers with 3 or more recent entry-level jobs in the US, Canada or India were kept: 440 employers, after removing recruiters.\n2. Each employer's **own website** was fetched: the homepage, `/careers`, `/jobs`, `careers.<domain>` and `jobs.<domain>`, plus links labelled careers or jobs. Their HTML was scanned for job-system URLs. A board linked from the employer's own careers page is strong evidence it belongs to that employer.\n3. Workday tenants were confirmed through the CXS API, keeping the site with the most jobs. Other families were confirmed through their public APIs.\n4. All 121 resulting boards were run through our own fetchers and `partition_jobs`, using the dash and senior-title fix from #417.\n\n## Proposal\n\nAdd the **84 boards that publish 2 or more curated jobs, 1,102 in total**: 56 Workday, 15 Oracle HCM, 4 SmartRecruiters, 3 UKG, 2 Paylocity, and 1 each on Ashby, Greenhouse, Workable and Lever.\n\n**Left out:**\n- **Wrong board:** the link pointed at another company or region.\n  - Deloitte → Deloitte Ireland\n  - Toyota Automated Logistics → Vanderlande\n  - ETAP → AVEVA\n  - Argo Group → Brookfield\n  - Emory → HHC\n  - IKEA → IKEA Bulgaria\n- **Staffing:** Diversified Services Network (\"Staffing services to Fortune 500 companies\"), under the direct-employers rule (#404).\n- **Blocked:** Staples' Oracle HCM site answers 403.\n- **Low yield:** 13 boards publish only 1 curated job, and 23 publish none.\n\n**Not resolvable this way:** the families we have no adapter for were detected on 51 SuccessFactors sites, 37 iCIMS, 26 Phenom, 11 Avature, 11 Eightfold and 9 Taleo. 146 employers showed no job-system link at all. This tally is useful for #316.\n\n## Acceptance\n\n- [ ] Boards added; `validate_config.py` passes.\n- [ ] A full real scrape exits 0 with no failed companies and passes `check_integrity.py`, with acceptable run time.\n- [ ] README board counts are synced; `docs/removed-companies.md` is updated.",
-      "excerpt": "## Problem The Foorilla audit (#415) left 561 employers unresolved: their job boards weren't at a guessable slug on Greenhouse, Lever, Ashby, Workable or SmartRecruiters. Most of them are large employers on Workday, O...",
-      "issueState": "closed",
-      "contentHash": "d0cfbaf43e46a1262d1aa0c7019a1db7b2b9a7248a24bbe2512e52b41bf06918",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-15T03:47:04Z",
-      "updatedAt": "2026-10-15T03:54:38Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/419",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
         "workModel": "unknown"
       }
     },

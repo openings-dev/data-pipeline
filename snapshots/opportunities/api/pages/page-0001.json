@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-16T07:45:54.872Z",
+  "generatedAt": "2026-10-16T13:40:38.729Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_320f20971f8b22056109b288",
     "gh_2f90b160baee5d09b0165e89",
     "gh_14ddee933b9b152d7875ef0c",
     "gh_f9423a44dfa4c405cd352a84",
@@ -22,10 +23,93 @@
     "gh_d9f69df508a70f1bd67af284",
     "gh_34417202d0a35257d6811c40",
     "gh_029af2b880506194635d23b8",
-    "gh_81e63edc3ac406661d00088f",
-    "gh_ea7def3477890f265af9646f"
+    "gh_81e63edc3ac406661d00088f"
   ],
   "items": [
+    {
+      "id": "gh_320f20971f8b22056109b288",
+      "sourceId": "ambicuity/New-Grad-Jobs#447",
+      "title": "Job data is stale: last scrape 2026-10-16T09:45:45.008777Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/38906843941. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **212 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "f5b06839d653a17f22e71f9c109f34d5e22f2bb652dd0894c8d7c4835f11bba3",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T13:18:41Z",
+      "updatedAt": "2026-10-16T13:18:41Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_320f20971f8b22056109b288",
+          "sourceId": "ambicuity/New-Grad-Jobs#447",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/447",
+          "createdAt": "2026-10-16T13:18:41Z",
+          "updatedAt": "2026-10-16T13:18:41Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-16T13:18:41Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_2f90b160baee5d09b0165e89",
       "sourceId": "rebase-network/who-is-hiring#1320",
@@ -666,7 +750,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-15T10:27:14Z",
         "status": "fresh"
       }
@@ -748,7 +832,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-15T09:59:57Z",
         "status": "fresh"
       }
@@ -2035,127 +2119,6 @@
       "freshness": {
         "ageDays": 1,
         "publishedAt": "2026-10-14T20:50:20Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_ea7def3477890f265af9646f",
-      "sourceId": "backend-br/vagas#12462",
-      "title": "[Cidade do México, México] Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n<p>In most instances, this position requires in-person interviews as part of the hiring process.</p><p>Please submit your resume in English - we can only consider applications submitted in this language.</p><p></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p></p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>1 year of experience with software development using C++ and Python.</li>\n<li>Ability to communicate in English fluently to interact with local stakeholders in this customer-facing role.</li>\n<li>Experience in writing and debugging software code</li>\n<li>Experience with one or more programming languages</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience with compilers or toolchains.</li>\n<li>Experience with low level programming, Android, iOS, macOS, or operating systems development.</li>\n<li>Knowledge of LLVM.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Software Engineer on the Compilers, Runtimes and Toolchains (CRT) team, you will work very closely with other senior SWEs on the team in developing features in the space of LLVM optimization and code generation that support (but not limited to) build scalability, toolchain velocity, peak performance and safety. The SWE will develop changes (to tools and processes) that help us deliver state-of-the-art C++ toolchain efficiently and always correct and efficient + make the necessary changes upstream in LLVM toolchain that aligns with Google's needs and interests.</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Collaborate with teams to improve LLVM and related technologies to provide google developers with state-of-the-art toolchain and releases.</li>\n<li>Work with other senior SWEs and TLs on the team developing features and improvements to LLVM that support Google long term needs.</li>\n<li>Participate in team OKR planning and roadmap definition.<br>Identify problems that need to be solved through direct exchange with our customers.</li>\n<li>Bring your best self to the team and foster a collaborative culture.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "77d23d5305de9f688fc5bc3a73b17e91fbbaaf3d252b6bb33a01c91f13e35751",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado",
-        "python"
-      ],
-      "sourceTags": [
-        "alocado",
-        "python"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:49:12Z",
-      "updatedAt": "2026-10-14T20:50:21Z",
-      "url": "https://github.com/backend-br/vagas/issues/12462",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America",
-        "displayText": "Mexico",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_ea7def3477890f265af9646f",
-          "sourceId": "backend-br/vagas#12462",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12462",
-          "createdAt": "2026-10-14T20:49:12Z",
-          "updatedAt": "2026-10-14T20:49:32Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
-          "id": "gh_305d92191bf390acb57dbdb3",
-          "sourceId": "programadores-br/geral#3115",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3115",
-          "createdAt": "2026-10-14T20:49:51Z",
-          "updatedAt": "2026-10-14T20:50:21Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-10-14T20:49:12Z",
         "status": "fresh"
       }
     }
