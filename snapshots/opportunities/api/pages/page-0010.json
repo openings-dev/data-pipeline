@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T02:22:27.050Z",
+  "generatedAt": "2026-10-17T07:23:43.215Z",
   "page": 10,
   "pageSize": 20,
   "nextPage": "api/pages/page-0011.json",
@@ -10,7 +10,6 @@
     "gh_f022b6140b0e15eccc2117e3",
     "gh_74ccd3caee0d31411e74c415",
     "gh_08848277f327cf34dba20b8a",
-    "gh_237d354ae3994e01bd1b16e8",
     "gh_d3106ea48a011748e73f6217",
     "gh_6a1098d504e460b826b0e253",
     "gh_aab1efa0506bca04ee83cbc2",
@@ -22,8 +21,9 @@
     "gh_f83ab72e76fc4802a6079563",
     "gh_55bedf2d15381e67bb953516",
     "gh_a3c53b8e6a01587253c809b1",
-    "gh_26c4f960884c36cb1975213d",
-    "gh_c48d49960e929a5d32e92190"
+    "gh_01af249400b5297948fd5955",
+    "gh_c48d49960e929a5d32e92190",
+    "gh_27c2250541f3aca4b4982d3d"
   ],
   "items": [
     {
@@ -240,11 +240,13 @@
       },
       "tags": [
         "pleno",
-        "remoto"
+        "remoto",
+        "stale"
       ],
       "sourceTags": [
         "pleno",
-        "remoto"
+        "remoto",
+        "stale"
       ],
       "author": {
         "id": "GiovaniPole0",
@@ -266,7 +268,7 @@
         "period": "month"
       },
       "createdAt": "2026-08-14T21:14:08Z",
-      "updatedAt": "2026-08-17T09:25:11Z",
+      "updatedAt": "2026-10-17T02:46:05Z",
       "url": "https://github.com/backend-pt/vagas/issues/161",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -312,7 +314,7 @@
           "repositoryUrl": "https://github.com/backend-pt/vagas",
           "url": "https://github.com/backend-pt/vagas/issues/161",
           "createdAt": "2026-08-14T21:14:08Z",
-          "updatedAt": "2026-08-17T09:25:11Z",
+          "updatedAt": "2026-10-17T02:46:05Z",
           "community": {
             "id": "backend-pt",
             "name": "backend-pt",
@@ -640,130 +642,6 @@
       }
     },
     {
-      "id": "gh_237d354ae3994e01bd1b16e8",
-      "sourceId": "soujava/vagas-java#1938",
-      "title": "[Remoto] Java Backend Sênior + Python (Foco em IA) - Evertec 🧡",
-      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n🧡 A Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação e presença em 26 países da América Latina e Caribe. Com mais de 11 bilhões de transações processadas anualmente, somos referência em soluções que impulsionam a transformação digital do mercado.\n\nOferecemos um portfólio completo de soluções em software, atendendo instituições financeiras, empresas e fintechs que buscam inovação, segurança e eficiência.\n\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros, promovendo um ecossistema mais conectado e acessível.\n\n## Descrição da vaga\n• Projetar, desenvolver e implementar soluções de software robustas e escaláveis utilizando a linguagem Java; \n• Desenvolver, otimizar e manter APIs RESTful robustas e escaláveis; \n• Projetar e implementar soluções baseadas em microsserviços; \n• Colaborar com equipes multifuncionais para entender os requisitos do projeto e traduzi-los em soluções técnicas; \n• Atuar na resolução de problemas complexos de performance e segurança; \n• Realizar revisões de código, identificar áreas de melhoria e garantir a adesão aos padrões de codificação; \n• Colaborar com arquitetos de software na definição de padrões e melhores práticas; \n• Apoiar e orientar desenvolvedores juniores e plenos, promovendo um ambiente de aprendizado contínuo \n\n## Local\nRemoto.\n\n## Requisitos\n\n**Requisitos Técnicos (Hard Skills):** \n\n**Desenvolvimento e Arquitetura** \n• Experiência sólida em desenvolvimento Java (Java 11 ou superior). \n• Domínio do ecossistema Spring Framework (Spring Boot, Spring Data, Spring Security, Spring Cloud). \n• Experiência no desenvolvimento e manutenção de APIs RESTful. \n• Conhecimento avançado em arquitetura de microsserviços. \n• Experiência com padrões de integração e comunicação assíncrona. \n• Conhecimento em arquitetura orientada a eventos. \n\n**Bancos de Dados** \n• Experiência com bancos relacionais (PostgreSQL, MySQL ou similares). \n• Experiência com bancos NoSQL (MongoDB, Redis ou similares). \n• Conhecimento em modelagem de dados e otimização de consultas. \n\n**Mensageria e Integração** \n• Experiência com Kafka, RabbitMQ ou tecnologias equivalentes. \n• Conhecimento em integração entre sistemas corporativos e APIs externas. \n\n**DevOps e Cloud** \n• Experiência com Docker e Kubernetes. \n• Conhecimento em pipelines de CI/CD utilizando Jenkins, GitLab CI, GitHub Actions ou similares. \n• Vivência com monitoramento, observabilidade e troubleshooting em ambientes produtivos. \n• Conhecimento em plataformas Cloud (AWS, Azure ou GCP). \n\n**Qualidade de Software** \n• Experiência com testes unitários, integração e automação de testes. \n• Conhecimento em práticas de Clean Code, SOLID, Design Patterns e Arquitetura Limpa. \n• Vivência com revisão de código e práticas de engenharia de software. \n\n**Inteligência Artificial Aplicada ao Desenvolvimento** \n• Experiência prática na utilização de ferramentas de IA para apoio ao ciclo de desenvolvimento de software. \n• Capacidade de utilizar IA para: análise e refinamento de requisitos; modelagem de soluções; geração e revisão de código; criação e automação de testes; produção de documentação técnica; análise de impactos e riscos técnicos. \n• Conhecimento sobre integração com APIs e serviços de IA generativa. \n• Conhecimento de conceitos como Engenharia de Prompt, RAG, agentes de IA e automação inteligente será considerado diferencial. \n• Capacidade de avaliar criticamente respostas geradas por IA, garantindo qualidade, segurança e aderência às necessidades do negócio.\n\n**Competências Comportamentais (Soft Skills):**\n• Comunicação e Influência \n• Boa comunicação verbal e escrita. \n• Capacidade de traduzir conceitos técnicos para públicos não técnicos. \n• Habilidade para conduzir discussões com áreas de negócio, produtos e tecnologia. \n• Facilidade para negociação e gestão de expectativas. \n• Visão de Negócio \n• Capacidade de compreender objetivos estratégicos e transformá-los em soluções tecnológicas. \n• Perfil orientado à geração de valor para clientes e para o negócio. \n• Pensamento crítico para avaliação de riscos, impactos e oportunidades. \n• Liderança Técnica \n• Capacidade de influenciar decisões sem dependência de autoridade formal. \n• Atuação como referência técnica dentro do time.\n\n## Benefícios\nAssistência médica\nVale refeição\nAuxílio creche\nSeguro de vida\nVale transporte\nBenefícios Flexíveis (aqui você escolhe os benefícios de acordo com a sua necessidade).\n\n## Contratação\nPJ.\n\n## Como se candidatar\n🏅 Se identificou com esta vaga? Ela pode ser sua! \nEnvie seu currículo e informe sua pretensão salarial no e-mail para kerolayne.barros@evertecinc.com.br\nAssunto: Vaga Java Senior IA\n\n♿️🌈🙋🏾👴🏻Na Evertec valorizamos a diversidade e entendemos que o que acrescenta é justamente ideias e pontos de vistas variados. Por isso raça, cor, religião, gênero e identidade de gênero, nacionalidade, deficiência, orientação sexual, ascendência ou idade, não serão impeditivos de você fazer parte do nosso time.\n\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n- Sênior\n- Especialista\n\n### Regime\n- PJ\n\n### Alocação\n- Remoto",
-      "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa 🧡 A Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação e presença em 26 países da América L...",
-      "issueState": "open",
-      "contentHash": "5c166faa135b43153be25eb65918249ee5d87695cda6236336f198717a3e233a",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "devops",
-        "docker",
-        "pj",
-        "postgresql",
-        "remoto",
-        "spring",
-        "sênior"
-      ],
-      "sourceTags": [
-        "backend",
-        "devops",
-        "docker",
-        "pj",
-        "postgresql",
-        "remoto",
-        "spring",
-        "sênior"
-      ],
-      "author": {
-        "id": "kerol-barros",
-        "name": "kerol-barros",
-        "handle": "kerol-barros",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-08-11T20:31:19Z",
-      "updatedAt": "2026-10-11T03:45:50Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1938",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "devops-sre"
-        ],
-        "technologies": [
-          "aws",
-          "azure",
-          "docker",
-          "gcp",
-          "java",
-          "kubernetes",
-          "mongodb",
-          "mysql",
-          "postgres",
-          "python",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_237d354ae3994e01bd1b16e8",
-          "sourceId": "soujava/vagas-java#1938",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1938",
-          "createdAt": "2026-08-11T20:31:19Z",
-          "updatedAt": "2026-10-11T03:45:50Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 66,
-        "publishedAt": "2026-08-11T20:31:19Z",
-        "status": "aging"
-      }
-    },
-    {
       "id": "gh_d3106ea48a011748e73f6217",
       "sourceId": "engineerapart/TheRemoteFreelancer#177",
       "title": "Add Growtoria — free invoicing & rate calculators for freelancers",
@@ -1034,7 +912,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 70,
+        "ageDays": 71,
         "publishedAt": "2026-08-07T07:03:23Z",
         "status": "aging"
       }
@@ -1144,7 +1022,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 72,
+        "ageDays": 73,
         "publishedAt": "2026-08-05T06:15:08Z",
         "status": "aging"
       }
@@ -1234,7 +1112,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 72,
+        "ageDays": 73,
         "publishedAt": "2026-08-05T04:53:59Z",
         "status": "aging"
       }
@@ -1324,7 +1202,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 72,
+        "ageDays": 73,
         "publishedAt": "2026-08-05T04:52:08Z",
         "status": "aging"
       }
@@ -1588,7 +1466,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 74,
+        "ageDays": 75,
         "publishedAt": "2026-08-03T03:51:27Z",
         "status": "aging"
       }
@@ -1680,7 +1558,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 77,
+        "ageDays": 78,
         "publishedAt": "2026-07-31T05:02:37Z",
         "status": "aging"
       }
@@ -1790,15 +1668,15 @@
       }
     },
     {
-      "id": "gh_26c4f960884c36cb1975213d",
-      "sourceId": "qa-brasil/vagas#1266",
+      "id": "gh_01af249400b5297948fd5955",
+      "sourceId": "nerdzao/vagas#196",
       "title": "[INTERLAGOS, SP] QA Sênior - Cypress na Inmetrics",
-      "description": "## Descrição da vaga\n\nSe você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você!\nBuscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garantia da qualidade das soluções digitais, assegurando a entrega de produtos com alta performance, confiabilidade e excelente experiência para o usuário.\nAqui, você vai trabalhar em um ambiente colaborativo, ágil e inovador, onde a qualidade é parte essencial do processo de desenvolvimento e a melhoria contínua faz parte da nossa cultura.\n\n## Local de trabalho\n- Híbrido. 2 dias remotos e 3 dias presenciais no escritório em Interlagos, São Paulo\n\n## Requisitos da vaga\n\n**Obrigatórios**\nComo Senior Quality Engineer, será responsável por liderar a estratégia de garantia de qualidade de ponta a ponta. Suas responsabilidades abrangem a definição de padrões de qualidade, a orientação de colegas juniores e plenos, e a implementação de práticas de QA inovadoras. Além disso, espera-se que você tenha uma visão estratégica, influenciando positivamente a cultura de qualidade em toda a organização.\nConhecimentos avançados com:\n- Padrões / melhores práticas/Design Patterns em testes Manuais e Automatizados\n- Ampla cobertura de testes manuais (modelagem de testes com Gherkin)\n- Versionamento de código \n- Cypress\n- Orientação a objetos\n- Implantação CI/CD\n- Testes de API - técnicas de validações como teste de contrato, schema\n- Definir e implementar estratégias de teste e padrões de qualidade.\n- Orientar e treinar membros juniores e plenos da equipe.\n- Desenvolver soluções inovadoras para desafios complexos de QA.\n- Participar ativamente em revisões de design e decisões arquiteturais.\n\n**Desejáveis**\n- Colaborar com líderes de projeto para garantir qualidade em todas as fases do ciclo de vida do desenvolvimento de software.\n- Fornecer liderança técnica, influenciando a cultura de qualidade em toda a organização.\n\n**Diferenciais**\n- Certificação CTFL;\n- Integração de ferramentas como JIRA, Zephyr, outros.\n\n## Forma de contratação\n\nCLT\n\n## Benefícios da empresa\n\n- Plano de saúde Bradesco Saúde (Coparticipação de30%)\n- Plano odontológico Bradesco\n- Seguro de vida\n- Wellhub\n- Vale Alimentação/Refeição\n- Auxílio creche\n- Convênio PET\n- Telemedicina Conexa\n\n**Diferenciais**\n\n- Somos uma Empresa Cidadã: licença maternidade e paternidade prolongadas;\n- Programa INMaterna: Programa de acolhimento a gestantes;\n- Cesta Natalidade e Livro \"Acontecia quando eu nascia\";\n- Desenvolvimento Profissional: cursos disponíveis na universidade interna;\n\n## Range Salarial\n\nA vaga paga entre R$8.000,00 e R$11.000,00 reais.\n\n## Sobre a empresa\n\nNa Inmetrics, transformamos estratégia em resultado.\nNascemos em 2002, a partir de uma base sólida em engenharia, e desde então evoluímos como uma consultoria que conecta tecnologia, negócio e execução para resolver desafios reais de empresas em transformação.\nAo longo dessa jornada, já acumulamos mais de 25 milhões de horas em projetos de tecnologia, com atuação consolidada no Brasil, Chile, Colômbia e República Dominicana — sempre com foco em gerar impacto mensurável para nossos clientes.\nMais do que entregar soluções, ajudamos organizações a construir capacidades: estruturamos operações, evoluímos produtos, fortalecemos cultura e viabilizamos a transformação digital de ponta a ponta.\nAqui, você vai encontrar pessoas que combinam profundidade técnica, pensamento estratégico e colaboração. Trabalhamos em um ambiente ágil, diverso e orientado à troca, onde aprender faz parte do dia a dia e excelência é construída coletivamente.\nNossa cultura é guiada por impacto, consistência e evolução contínua — porque acreditamos que grandes resultados vêm de times fortes, conectados e preparados para resolver problemas complexos.\nEsse é o nosso jeito de construir.\n\n🏆 Reconhecimentos\nNossa forma de trabalhar também é reconhecida por quem vive essa experiência todos os dias.\n⭐ 4,1 no Glassdoor\n🏅 Certificação Lugares Incríveis para Trabalhar (2021, 2022 e 2025 – FIA/UOL)\n🌍 Certificação Great Place to Work (GPTW)\nMais do que prêmios, esses reconhecimentos refletem o ambiente que construímos: um lugar onde pessoas crescem, aprendem e geram impacto real.\n\n## Como se candidatar\n\n- Candidatar através do site: https://inmetrics.gupy.io/jobs/11452361\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 5 dias úteis após cada processo.\n\n\n## Labels\n- CLT\n- Pleno\n- Sênior\n- Especialista\n- Presencial\n- Remoto\n- São Paulo",
-      "excerpt": "## Descrição da vaga Se você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você! Buscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garan...",
+      "description": "**Descrição da vaga**\nSe você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você!\nBuscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garantia da qualidade das soluções digitais, assegurando a entrega de produtos com alta performance, confiabilidade e excelente experiência para o usuário.\nAqui, você vai trabalhar em um ambiente colaborativo, ágil e inovador, onde a qualidade é parte essencial do processo de desenvolvimento e a melhoria contínua faz parte da nossa cultura.\n\n**Local de trabalho**\nHíbrido. 2 dias remotos e 3 dias presenciais no escritório em Interlagos, São Paulo\n\n**Requisitos da vaga\nObrigatórios**\nComo Senior Quality Engineer, será responsável por liderar a estratégia de garantia de qualidade de ponta a ponta. Suas responsabilidades abrangem a definição de padrões de qualidade, a orientação de colegas juniores e plenos, e a implementação de práticas de QA inovadoras. Além disso, espera-se que você tenha uma visão estratégica, influenciando positivamente a cultura de qualidade em toda a organização.\nConhecimentos avançados com:\n- Padrões / melhores práticas/Design Patterns em testes Manuais e Automatizados\n- Ampla cobertura de testes manuais (modelagem de testes com Gherkin)\n- Versionamento de código\n- Cypress\n- Orientação a objetos\n- Implantação CI/CD\n- Testes de API - técnicas de validações como teste de contrato, schema\n- Definir e implementar estratégias de teste e padrões de qualidade.\n- Orientar e treinar membros juniores e plenos da equipe.\n- Desenvolver soluções inovadoras para desafios complexos de QA.\n- Participar ativamente em revisões de design e decisões arquiteturais.\n\n**Desejáveis**\n- Colaborar com líderes de projeto para garantir qualidade em todas as fases do ciclo de vida do desenvolvimento de software.\n- Fornecer liderança técnica, influenciando a cultura de qualidade em toda a organização.\n\n**Diferenciais**\n\n- Certificação CTFL;\n- Integração de ferramentas como JIRA, Zephyr, outros.\n\n\n**Forma de contratação**\nCLT\n\n**Benefícios da empresa**\n- Plano de saúde Bradesco Saúde (Coparticipação de30%)\n- Plano odontológico Bradesco\n- Seguro de vida\n- Wellhub\n- Vale Alimentação/Refeição\n- Auxílio creche\n- Convênio PET\n- Telemedicina Conexa\n\n**Diferenciais**\n- Somos uma Empresa Cidadã: licença maternidade e paternidade prolongadas;\n- Programa INMaterna: Programa de acolhimento a gestantes;\n- Cesta Natalidade e Livro \"Acontecia quando eu nascia\";\n- Desenvolvimento Profissional: cursos disponíveis na universidade interna.\n\n**Range Salarial**\nA vaga paga entre R$8.000,00 e R$11.000,00 reais.\n\n**Sobre a empresa**\nNa Inmetrics, transformamos estratégia em resultado.\nNascemos em 2002, a partir de uma base sólida em engenharia, e desde então evoluímos como uma consultoria que conecta tecnologia, negócio e execução para resolver desafios reais de empresas em transformação.\nAo longo dessa jornada, já acumulamos mais de 25 milhões de horas em projetos de tecnologia, com atuação consolidada no Brasil, Chile, Colômbia e República Dominicana — sempre com foco em gerar impacto mensurável para nossos clientes.\nMais do que entregar soluções, ajudamos organizações a construir capacidades: estruturamos operações, evoluímos produtos, fortalecemos cultura e viabilizamos a transformação digital de ponta a ponta.\nAqui, você vai encontrar pessoas que combinam profundidade técnica, pensamento estratégico e colaboração. Trabalhamos em um ambiente ágil, diverso e orientado à troca, onde aprender faz parte do dia a dia e excelência é construída coletivamente.\nNossa cultura é guiada por impacto, consistência e evolução contínua — porque acreditamos que grandes resultados vêm de times fortes, conectados e preparados para resolver problemas complexos.\nEsse é o nosso jeito de construir.\n\n🏆 Reconhecimentos\nNossa forma de trabalhar também é reconhecida por quem vive essa experiência todos os dias.\n⭐ 4,1 no Glassdoor\n🏅 Certificação Lugares Incríveis para Trabalhar (2021, 2022 e 2025 – FIA/UOL)\n🌍 Certificação Great Place to Work (GPTW)\nMais do que prêmios, esses reconhecimentos refletem o ambiente que construímos: um lugar onde pessoas crescem, aprendem e geram impacto real.\n\n**Como se candidatar**\nCandidatar através do site: https://inmetrics.gupy.io/jobs/11452361\n\n**Tempo médio de feedbacks**\nCostumamos enviar feedbacks em até 5 dias úteis após cada processo.\n\n**Labels**\nCLT\nPleno\nSênior\nEspecialista\nPresencial\nRemoto\nSão Paulo",
+      "excerpt": "**Descrição da vaga** Se você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você! Buscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e gara...",
       "issueState": "open",
-      "contentHash": "a027596f39ff67f78acffe856e9b6d92ca11905e9dbfa0805ab124a7c3caff68",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "contentHash": "f969321a7898ebe70a6a4980c8c74ac139ed29fd96c09f5bc5e9335af9190d12",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -1807,32 +1685,18 @@
         "region": "South America"
       },
       "tags": [
-        "clt",
         "data",
         "design",
-        "especialista",
         "junior",
         "pleno",
-        "presencial",
-        "remoto",
-        "senior",
-        "stale",
-        "são paulo",
-        "sênior"
+        "senior"
       ],
       "sourceTags": [
-        "clt",
         "data",
         "design",
-        "especialista",
         "junior",
         "pleno",
-        "presencial",
-        "remoto",
-        "senior",
-        "stale",
-        "são paulo",
-        "sênior"
+        "senior"
       ],
       "author": {
         "id": "moreirapamela",
@@ -1841,16 +1705,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/103055141?v=4"
       },
       "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
       },
-      "companyName": "Plano de saúde Bradesco Saúde (Coparticipação de30%)",
-      "createdAt": "2026-07-24T14:32:54Z",
-      "updatedAt": "2026-10-10T05:10:18Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1266",
+      "companyName": "Inmetrics",
+      "createdAt": "2026-07-24T14:47:43Z",
+      "updatedAt": "2026-07-24T14:47:43Z",
+      "url": "https://github.com/nerdzao/vagas/issues/196",
       "sourceType": "github-issue",
       "jobLocation": {
         "workModel": "remote",
@@ -1887,22 +1751,6 @@
       },
       "sources": [
         {
-          "id": "gh_26c4f960884c36cb1975213d",
-          "sourceId": "qa-brasil/vagas#1266",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1266",
-          "createdAt": "2026-07-24T14:32:54Z",
-          "updatedAt": "2026-10-10T05:10:18Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        },
-        {
           "id": "gh_01af249400b5297948fd5955",
           "sourceId": "nerdzao/vagas#196",
           "repository": "nerdzao/vagas",
@@ -1920,11 +1768,11 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
+        "sourceCount": 1
       },
       "freshness": {
         "ageDays": 84,
-        "publishedAt": "2026-07-24T14:32:54Z",
+        "publishedAt": "2026-07-24T14:47:43Z",
         "status": "aging"
       }
     },
@@ -2023,6 +1871,118 @@
         "ageDays": 84,
         "publishedAt": "2026-07-24T07:50:21Z",
         "status": "aging"
+      }
+    },
+    {
+      "id": "gh_27c2250541f3aca4b4982d3d",
+      "sourceId": "nerdzao/vagas#195",
+      "title": "[São Paulo]  Pessoa Engenheira de Python Sênior na Viaflow",
+      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de Python Sênior de altíssimo nível para integrar nosso time de ML/AI.\n\n\nVocê ajudará a moldar a próxima geração de produtos inteligentes, tirando o aprendizado de máquina e a IA Generativa do laboratório e colocando-os nas mãos de usuários reais.\n\nSe você ama trabalhar na intersecção entre engenharia de software e Inteligência Artificial, e quer construir sistemas escaláveis desde o protótipo até a produção em Google Cloud Platform (GCP), #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nDesenvolvimento de Produtos IA: Projetar, desenvolver e implantar serviços de ML/AI de ponta a ponta, desde a integração de modelos até APIs voltadas para o cliente final.\nArquitetura Cloud Native: Construir arquiteturas orientadas a eventos e em tempo real utilizando Cloud Run, Kubernetes (GKE), Cloud Functions e Pub/Sub no ecossistema GCP.\nIntegração de LLMs: Integrar modelos baseados em transformers e LLMs em pipelines de inferência escaláveis, lidando com prompt engineering, formatação de saída e recuperação de erros.\nLiderança Técnica: Liderar sessões de design e whiteboarding, traduzindo requisitos de negócio em arquiteturas técnicas robustas, escaláveis e tolerantes a falhas.\nExcelência em Engenharia: Defender as melhores práticas: SOLID, CI/CD, observabilidade, testes rigorosos e infraestrutura como código (IaC).\nColaboração Multidisciplinar: Atuar em parceria com cientistas de dados, POs e outros engenheiros para alinhar prioridades e entregar de forma iterativa.\nVisão Full-Stack: Compreender como cada camada da stack se conecta (front-end, banco de dados, infra) para garantir a melhor performance e experiência do usuário.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\n\nSólida Experiência em Python: focada em desenvolvimento backend ou full-stack com Python.\nDomínio de Cloud: Histórico comprovado no design e implantação de aplicações nativas da nuvem (GCP preferencial; AWS/Azure considerados).\nSistemas Modernos: Experiência com microsserviços resilientes, arquiteturas orientadas a eventos e APIs RESTful/gRPC.\nContainerização: Experiência prática com Docker e Kubernetes.\nPadrões de Design: Domínio profundo de princípios SOLID e padrões de arquitetura.\nFerramentas de IA: Conforto no uso de ferramentas de IA para acelerar o throughput de desenvolvimento.\n🏆 Diferenciais (O que valorizamos)\n\nExperiência servindo modelos de ML ou LLMs em produção.\nFamiliaridade com RAG (Retrieval-Augmented Generation), busca vetorial (vector search) ou fluxos de fine-tuning.\nExposição a frameworks de orquestração de IA (LangChain, Google ADK, etc.).\nConhecimento em Terraform ou Pulumi e pipelines de CI/CD.\n🤝 Soft Skills\n\nAprendizado Implacável: Capacidade de aprender novas tecnologias rapidamente e Masterizar novos desafios.\nMentalidade de Dono (Ownership): Orgulho pelo código entregue, garantindo que esteja bem testado, documentado e monitorado.\nTeam Multiplier: Perfil colaborativo que eleva o nível das pessoas ao redor através de feedback sincero e troca de conhecimento.\nFoco em Entrega: Acredita que um protótipo funcional vale mais que mil apresentações.\n\nIdioma: Inglês Intermediário/Avançado para comunicação verbal e escrita com time internacional.\n\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nClube do iFood gratuito\nTreinamentos e Certificações\nPacote Colab+ com acesso a WellHub, Avus e Starbem\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nTem interesse? Se inscreva através do link: https://viaflow.gupy.io/jobs/11637998?jobBoardSource=gupy_public_page",
+      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de Python Sênior de altíssimo nível para integrar nosso time de ML/AI. Você aj...",
+      "issueState": "open",
+      "contentHash": "914f76c70e144b9ffbfc8e5129b11dca9f316da67e53655b239b8b32c57244c7",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "design",
+        "python"
+      ],
+      "sourceTags": [
+        "backend",
+        "design",
+        "python"
+      ],
+      "author": {
+        "id": "jesspinheiro93",
+        "name": "jesspinheiro93",
+        "handle": "jesspinheiro93",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "companyName": "Viaflow",
+      "createdAt": "2026-07-15T14:22:41Z",
+      "updatedAt": "2026-07-15T14:22:41Z",
+      "url": "https://github.com/nerdzao/vagas/issues/195",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "kubernetes",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_27c2250541f3aca4b4982d3d",
+          "sourceId": "nerdzao/vagas#195",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/195",
+          "createdAt": "2026-07-15T14:22:41Z",
+          "updatedAt": "2026-07-15T14:22:41Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 93,
+        "publishedAt": "2026-07-15T14:22:41Z",
+        "status": "stale"
       }
     }
   ]
