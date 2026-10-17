@@ -1,12 +1,9 @@
 {
-  "generatedAt": "2026-10-16T23:11:34.994Z",
+  "generatedAt": "2026-10-17T02:22:27.050Z",
   "page": 10,
   "pageSize": 20,
   "nextPage": "api/pages/page-0011.json",
   "ids": [
-    "gh_9208a81e3c611e2fd2ef477e",
-    "gh_a8cd59eaeb8f7957cc8a68b5",
-    "gh_a442b3bffe44658fc936f508",
     "gh_cdfa2de024dbb8a4cb735734",
     "gh_0af7c9701b112ef4bbdd5444",
     "gh_9cb67a2721464da325885d3e",
@@ -23,307 +20,12 @@
     "gh_eedc0ca3c146d2fc634ba74f",
     "gh_b3d11f18e9b21e7bd215d304",
     "gh_f83ab72e76fc4802a6079563",
-    "gh_55bedf2d15381e67bb953516"
+    "gh_55bedf2d15381e67bb953516",
+    "gh_a3c53b8e6a01587253c809b1",
+    "gh_26c4f960884c36cb1975213d",
+    "gh_c48d49960e929a5d32e92190"
   ],
   "items": [
-    {
-      "id": "gh_9208a81e3c611e2fd2ef477e",
-      "sourceId": "qa-brasil/vagas#1281",
-      "title": "[Remoto] QA Manual Pleno na Hidden (18+ / inglês fluente)",
-      "description": "# Descrição da vaga\n\nA Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pequeno, remoto, ritmo rápido.\n\n**⚠️ Leia antes de se candidatar:** é uma plataforma adulta (18+). O produto contém conteúdo sexual explícito e testá-lo significa ver esse conteúdo todos os dias, como parte normal do trabalho — feed, perfis, mensagens, mídia enviada e filas de moderação. Falamos isso abertamente para que você decida agora, e não depois de entrar. Se não está confortável com isso, a vaga não é para você.\n\n**O papel:** você é o último gate de qualidade antes de uma mudança chegar aos criadores e seus fãs. Pega tickets da fila \"Ready for QA\", testa ponta a ponta no ambiente de staging correto, escreve bug reports que o dev consegue agir sem perguntar nada, e dá o veredito (Approved / Rejected / Not Reproducible) no GitHub. QA aqui tem autoridade real: processo documentado, handoff de dev obrigatório e poder de devolver trabalho para desenvolvimento.\n\n**No dia a dia:**\n- Montar e executar casos de teste a partir de tickets, BRDs e Figma — caminho feliz e edge cases.\n- Testar em desktop web, mobile web, PWA, iOS Safari e Android Chrome (dispositivos reais + BrowserStack).\n- Regressão dos fluxos principais antes de cada release: cadastro e verificação, upload e transcoding, feed, perfis, compras PPV, mensagens, carteira e payouts.\n- Verificar correções, retestar tickets rejeitados, checagem pós-release em produção.\n- Reportar bugs no GitHub com o template da empresa (um bug por ticket, passos exatos, esperado vs. atual, ambiente, evidências).\n- Contribuir com o report diário/semanal de QA e escalar padrões entre bugs, não só o bug isolado.\n\n## Local de trabalho\n\n- 100% Remoto (residente no Brasil)\n\n## Requisitos da vaga\n\n**Obrigatórios**\n- 1 a 4 anos em QA manual / teste de software em produto web ou mobile voltado ao consumidor.\n- Experiência real testando em iOS e Android físicos; entender como mobile web, PWA e layouts responsivos quebram diferente do desktop.\n- Bug reports que o dev executa sem pedir mais informação.\n- DevTools do navegador com confiança: console, aba Network (ler request/response, identificar status code errado), inspeção de elemento, simulação de device.\n- Ler logs de aplicação e extrair o que vai no bug report.\n- Uso diário de IA (Claude, Codex) para entender relatórios técnicos, logs, BRDs/RFCs e respostas de API. Esperamos que você recorra à IA primeiro, em vez de gastar tempo montando ferramenta.\n- Montar dados e cenários de teste via CMS / painel admin.\n- Entender como uma aplicação web se encaixa (frontend, backend, banco, cache) o bastante para conversar com o dev sobre onde o bug provavelmente está.\n- Git/GitHub (achar tickets, ler PRs, comentar) e kanban (o nosso é GitHub Projects).\n- **Inglês escrito fluente, nível profissional.** Bug reports, notas de teste, comentários e reports são todos em inglês, para devs em outro país. Isso é avaliado de perto no processo seletivo.\n- Maior de 18 anos; setup de home office confiável (internet estável, um iPhone e um Android).\n- Disponível de segunda a sexta para jornada de 9h + 1h de pausa não remunerada (10h porta a porta), **alinhada ao horário europeu** (início na madrugada/manhã cedo no Brasil). É uma jornada mais longa que a maioria das vagas e dizemos isso de cara.\n- Flexibilidade quando release ou incidente em produção exigir.\n- Confortável com conteúdo adulto explícito todos os dias (ver aviso acima).\n\n**Desejáveis**\n- Testes de pagamento/checkout: assinaturas, compras avulsas, reembolsos, pagamentos falhos.\n- Produtos com mídia pesada: upload de vídeo/imagem, transcoding, playback, cache de CDN.\n- Moderação de conteúdo ou verificação de idade/identidade (KYC).\n- Ler relatórios do Playwright e triar falhas (a vaga **não** envolve escrever automação).\n- BrowserStack, Figma, Slack.\n- Acessibilidade e teste cross-browser.\n\n**Diferenciais**\n- ISTQB Foundation ou equivalente.\n\n## Forma de contratação\n\nA vaga é somente PJ, não faz mal não ter uma empresa aberta, mas será necessário abrir uma.\n\n## Benefícios da empresa\n\n- 100% remoto.\n- QA com autoridade real: processo documentado, handoff de dev obrigatório, poder de rejeitar trabalho.\n- Exposição ao produto inteiro num time pequeno, em vez de dono de um módulo estreito.\n- Acesso direto a devs, designers e produto, sem camadas de processo.\n\n## Range Salarial\n\nVariavel.\n\n## Sobre a empresa\n\nA Hidden é uma plataforma de conteúdo feita por criadores para criadores da indústria adulta. Nosso objetivo é dar aos criadores as melhores ferramentas para crescer a marca e vender conteúdo para sua base de fãs. Time pequeno e rápido; QA é função visível e respeitada.\n\nSomos uma empresa de oportunidades iguais. Recebemos candidaturas independentemente de gênero, identidade de gênero, orientação sexual, raça, religião, deficiência ou idade (18+). Trabalhamos na indústria adulta e tratamos a indústria, e quem trabalha nela, com profissionalismo.\n\n## Como se candidatar\n\n- Envie e-mail para luizo@hidden.com com CV (em inglês) anexado. Assunto: **Vaga do QA-Brasil – Manual QA**\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 1 dias após cada etapa.\nEstá é uma vaga urgente, então estamos procurando pessoas de forma rápida para se juntar com a equipe atual.\n\n\n## Labels\n- PJ\n- Pleno\n- Remoto\n- Exterior\n\n#QA #QualityAssurance #vagasQA #testesdesoftware #remoto #vagasremotas",
-      "excerpt": "# Descrição da vaga A Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pe...",
-      "issueState": "open",
-      "contentHash": "a5ddd01313cbbb61b39de74bc79b62749c382ec032130ed183b8ceae0455487a",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "exterior",
-        "inglês",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "sourceTags": [
-        "clt",
-        "exterior",
-        "inglês",
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "author": {
-        "id": "Luiz-Olivieri",
-        "name": "Luiz-Olivieri",
-        "handle": "Luiz-Olivieri",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/295890495?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "companyName": "100% remoto.",
-      "createdAt": "2026-08-21T19:40:20Z",
-      "updatedAt": "2026-08-21T19:43:13Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1281",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "frontend",
-          "mobile",
-          "qa"
-        ],
-        "technologies": [],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_9208a81e3c611e2fd2ef477e",
-          "sourceId": "qa-brasil/vagas#1281",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1281",
-          "createdAt": "2026-08-21T19:40:20Z",
-          "updatedAt": "2026-08-21T19:43:13Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 56,
-        "publishedAt": "2026-08-21T19:40:20Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_a8cd59eaeb8f7957cc8a68b5",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2955",
-      "title": "SWE List not working",
-      "description": "Hi! I signed up for the swelist notifactions in 2024/2025 and I unsubscribed temporarily in January 2025. I saw online there was some sort of refactor that I believe has blocked my email as a result. I have signed up to receive notifications for 2027 full time positions for the email sarahfw@umich.edu but am not receiving any emails. I also tried signing up for 2026 last year and did not receive any emails then either. I'm hoping I can get readded to the list, thanks!",
-      "excerpt": "Hi! I signed up for the swelist notifactions in 2024/2025 and I unsubscribed temporarily in January 2025. I saw online there was some sort of refactor that I believe has blocked my email as a result. I have signed up ...",
-      "issueState": "open",
-      "contentHash": "61a64f1213326cf9c87cf0335e3d3aaf6fe47e1d78acc7b16a36ca231eff43b5",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "sarahfw23",
-        "name": "sarahfw23",
-        "handle": "sarahfw23",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/182167219?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-08-20T03:59:08Z",
-      "updatedAt": "2026-08-26T02:14:53Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2955",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a8cd59eaeb8f7957cc8a68b5",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2955",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2955",
-          "createdAt": "2026-08-20T03:59:08Z",
-          "updatedAt": "2026-08-26T02:14:53Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 57,
-        "publishedAt": "2026-08-20T03:59:08Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_a442b3bffe44658fc936f508",
-      "sourceId": "qa-brasil/vagas#1280",
-      "title": "[Remoto] [PJ] Senior QA Engineer apaixonado por qualidade e automação",
-      "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\nEstamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados comerciais. Você será responsável por projetar e manter suites de testes automatizados robustas, garantir cobertura de testes em funcionalidades críticas e colaborar com desenvolvedores e Product Managers para elevar os padrões de qualidade. Se você tem experiência sólida em Cypress, JavaScript, testes E2E e API, além de proficiência em inglês, essa é sua oportunidade!\n🎯 O que você fará no dia a dia:\n- Projetar, desenvolver, manter e melhorar continuamente suites de testes automatizados utilizando Cypress e JavaScript\n- Definir e implementar estratégias eficazes de automação de testes para aplicações web complexas\n- Desenvolver e executar testes end-to-end (E2E), integração, regressão, funcionais e de API\n- Realizar testes de API para validar integrações, regras de negócio e consistência de dados\n- Colaborar com desenvolvedores, Product Managers e outros engenheiros de QA ao longo do ciclo de desenvolvimento\n- Participar de análise de requisitos e discussões técnicas para identificar riscos de qualidade\n- Garantir cobertura de testes apropriada para novas funcionalidades, correções e fluxos críticos\n- Identificar, documentar e rastrear defeitos com informações técnicas claras\n- Utilizar Grafana e Sentry para monitorar comportamento da aplicação e investigar falhas\n- Integrar testes automatizados em pipelines CI/CD, garantindo validação contínua\n- Mentorizar e apoiar outros engenheiros de QA, compartilhando conhecimento e boas práticas\n✅\n\n## Local\nRemoto (Remoto)\n\n## Requisitos\n- Experiência sólida (mínimo 5 anos) em Garantia de Qualidade de Software e testes de software\n- Experiência prática forte com automação de testes utilizando Cypress e JavaScript\n- Experiência em design e manutenção de frameworks de testes automatizados escaláveis\n- Compreensão sólida de testes E2E, integração, regressão, funcionais e de API\n- Experiência testando aplicações web modernas e sistemas distribuídos\n- Conhecimento forte de metodologias de testes de software e práticas de ciclo de vida de desenvolvimento\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nPJ\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmsxs2mi9000k13v46hsq94lw\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#SeniorQAEngineer #QAAutomation #Cypress #JavaScript #TestesAutomatizados #VagasEmTecnologia #100Remoto #EngenhariaDeQA #CarreiraEmTech #VagasAbertasAgora #OportunidadeRemota #TecnologiaEmFoco",
-      "excerpt": "## Nossa empresa Valorei ## Descrição da vaga Estamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados co...",
-      "issueState": "open",
-      "contentHash": "6bde026d4059b1a3afa5f4d2e3b0167b38813c1767801d58f2b89f1d556fcebd",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "inglês",
-        "pj",
-        "remoto"
-      ],
-      "sourceTags": [
-        "inglês",
-        "pj",
-        "remoto"
-      ],
-      "author": {
-        "id": "caiorehenrique",
-        "name": "caiorehenrique",
-        "handle": "caiorehenrique",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/28871141?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "createdAt": "2026-08-19T14:32:37Z",
-      "updatedAt": "2026-08-19T14:33:01Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1280",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "qa"
-        ],
-        "technologies": [
-          "javascript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_a442b3bffe44658fc936f508",
-          "sourceId": "qa-brasil/vagas#1280",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1280",
-          "createdAt": "2026-08-19T14:32:37Z",
-          "updatedAt": "2026-08-19T14:33:01Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 58,
-        "publishedAt": "2026-08-19T14:32:37Z",
-        "status": "aging"
-      }
-    },
     {
       "id": "gh_cdfa2de024dbb8a4cb735734",
       "sourceId": "devfsa/vagas#2830",
@@ -1806,7 +1508,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 73,
+        "ageDays": 74,
         "publishedAt": "2026-08-03T23:48:20Z",
         "status": "aging"
       }
@@ -1980,6 +1682,346 @@
       "freshness": {
         "ageDays": 77,
         "publishedAt": "2026-07-31T05:02:37Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_a3c53b8e6a01587253c809b1",
+      "sourceId": "golangtw/jobs#233",
+      "title": "[台北][iGaming][年薪 110–150 萬，資深者另議][週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中",
+      "description": "# [台北｜iGaming｜年薪 110–150 萬，資深者另議｜週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中\n\nHi，大家好，我是 EMB Mission Bound 的招募 Jocelyn 👋\n\n我們正在擴編 Golang 後端團隊，希望找到具備後端開發經驗、願意參與系統設計與產品討論的工程師。\n\n如果你不只想接收規格完成開發，也希望實際參與系統規劃、效能改善與技術討論，歡迎認識我們。\n\n---\n\n## About EMB\n\nEMB Mission Bound 為國際娛樂科技公司，台灣團隊主要負責大型跨國遊戲與平台的研發。\n\n我們的產品面向海外市場，工程團隊會接觸到平台功能、系統整合、資料處理及服務穩定性等實際課題。\n\n目前因產品與團隊持續發展，正在擴編 Golang 後端工程師。\n\n---\n\n## What You’ll Do\n\n- 使用 Golang 進行後端系統功能開發與維護\n- 與 PM、前端、QA 及其他後端工程師合作，規劃並完成新系統或新功能\n- 參與需求釐清、系統設計及技術方案討論\n- 維護及改善既有服務的穩定性、效能與可維護性\n- 撰寫必要的技術文件\n- 持續研究新技術，並與團隊分享及交流\n\n---\n\n## What We’re Looking For\n\n- 具 3 年以上軟體開發經驗\n- 具 Golang 實務開發經驗\n- 熟悉 RESTful API 或 gRPC\n- 具關聯式或非關聯式資料庫使用經驗\n- 理解物件導向、資料結構及基本系統設計概念\n- 熟悉 Git 版本控制及團隊協作流程\n- 能獨立分析問題，也願意與團隊溝通討論\n\n---\n\n## Nice to Have\n\n以下不是全部都要具備，有相關經驗會是加分：\n\n- Microservices 架構經驗\n- Docker、Kubernetes 或其他容器化技術\n- Redis、Kafka、RabbitMQ 等工具使用經驗\n- 高流量、高併發或分散式系統經驗\n- CI/CD 建置或維護經驗\n- AWS、GCP 或其他雲端平台經驗\n- 遊戲、娛樂平台或大型會員系統開發經驗\n\n---\n\n## Why EMB\n\n- 年薪保底 13.6 個月\n- 每人每年 NT$30,000 學習補助\n- 彈性上下班制度\n- 每週四提早一小時下班運動\n- 第一年即享 12 天特休\n- 12/31 跨年當天放假\n- 交通補助、托兒津貼\n- 團體保險、醫療保險及健康檢查補助\n- 免費零食、飲料與咖啡\n- 不定期部門聚餐\n\n---\n\n## Salary Range\n\n- 預計年薪：NT$1,100,000–1,500,000\n- 實際薪資將依相關經驗、技術深度及面試結果核定\n- 若具備大型系統、高併發架構、技術帶領或高度相關產業經驗，薪資可另行討論\n\n---\n\n## Position Information\n\n- 工作地點：台北市\n- 聘僱類型：正職\n- 工作模式：週二至週五辦公室上班，週一可遠端辦公（試用期後）\n- 經驗要求：3 年以上\n- 薪資範圍：年薪 NT$1,100,000–1,500,000，資深人才可另議\n- 104 職缺連結：https://www.104.com.tw/job/8w445\n\n---\n\n## Interview Process\n\n1. HR 線上面談，約 30 分鐘\n2. 專業面試（測驗30分鐘+技術團隊面談）\n3. 最終面談及條件確認\n\n實際流程可能依候選人背景彈性調整。\n\n---\n\n## How to Apply\n\n歡迎透過以下任一方式與我聯繫：\n\n- 直接透過 104 投遞履歷\n- 將履歷寄至：`jocelyn.gu@the-force.com.tw`\n- LinkedIn 私訊：`https://www.linkedin.com/in/jocelyn-gu-b89281244/`\n- 在本篇 Issue 留言，或提供方便聯絡的方式\n\n來信標題可註明：\n\nGitHub-Golang Backend Engineer-姓名\n\n即使目前沒有積極轉職，但對職缺或團隊有興趣，也歡迎先聊聊 🙂",
+      "excerpt": "# [台北｜iGaming｜年薪 110–150 萬，資深者另議｜週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中 Hi，大家好，我是 EMB Mission Bound 的招募 Jocelyn 👋 我們正在擴編 Golang 後端團隊，希望找到具備後端開發經驗、願意參與系統設計與產品討論的工程師。 如果你不只想接收規格完成開發，也希望實際參與系統規劃、效能改善與技術討論，歡迎認識我們。 ...",
+      "issueState": "open",
+      "contentHash": "695b0abe75d47abaadc8af88680202e5e2e712d99005b7e5fb11007e49ff04e6",
+      "repository": "golangtw/jobs",
+      "repositoryUrl": "https://github.com/golangtw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "100k以上",
+        "台北",
+        "遠端"
+      ],
+      "sourceTags": [
+        "100k以上",
+        "台北",
+        "遠端"
+      ],
+      "author": {
+        "id": "jocelyngu-bit",
+        "name": "jocelyngu-bit",
+        "handle": "jocelyngu-bit",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/310079277?v=4"
+      },
+      "community": {
+        "id": "golangtw",
+        "name": "golangtw",
+        "avatarUrl": "https://github.com/golangtw.png?size=80",
+        "repository": "golangtw/jobs",
+        "url": "https://github.com/golangtw/jobs"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 1100000,
+        "max": 1500000,
+        "period": "year"
+      },
+      "createdAt": "2026-07-28T09:06:35Z",
+      "updatedAt": "2026-08-03T11:52:47Z",
+      "url": "https://github.com/golangtw/jobs/issues/233",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "gcp",
+          "go",
+          "kubernetes",
+          "redis"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a3c53b8e6a01587253c809b1",
+          "sourceId": "golangtw/jobs#233",
+          "repository": "golangtw/jobs",
+          "repositoryUrl": "https://github.com/golangtw/jobs",
+          "url": "https://github.com/golangtw/jobs/issues/233",
+          "createdAt": "2026-07-28T09:06:35Z",
+          "updatedAt": "2026-08-03T11:52:47Z",
+          "community": {
+            "id": "golangtw",
+            "name": "golangtw",
+            "avatarUrl": "https://github.com/golangtw.png?size=80",
+            "repository": "golangtw/jobs",
+            "url": "https://github.com/golangtw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 80,
+        "publishedAt": "2026-07-28T09:06:35Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_26c4f960884c36cb1975213d",
+      "sourceId": "qa-brasil/vagas#1266",
+      "title": "[INTERLAGOS, SP] QA Sênior - Cypress na Inmetrics",
+      "description": "## Descrição da vaga\n\nSe você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você!\nBuscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garantia da qualidade das soluções digitais, assegurando a entrega de produtos com alta performance, confiabilidade e excelente experiência para o usuário.\nAqui, você vai trabalhar em um ambiente colaborativo, ágil e inovador, onde a qualidade é parte essencial do processo de desenvolvimento e a melhoria contínua faz parte da nossa cultura.\n\n## Local de trabalho\n- Híbrido. 2 dias remotos e 3 dias presenciais no escritório em Interlagos, São Paulo\n\n## Requisitos da vaga\n\n**Obrigatórios**\nComo Senior Quality Engineer, será responsável por liderar a estratégia de garantia de qualidade de ponta a ponta. Suas responsabilidades abrangem a definição de padrões de qualidade, a orientação de colegas juniores e plenos, e a implementação de práticas de QA inovadoras. Além disso, espera-se que você tenha uma visão estratégica, influenciando positivamente a cultura de qualidade em toda a organização.\nConhecimentos avançados com:\n- Padrões / melhores práticas/Design Patterns em testes Manuais e Automatizados\n- Ampla cobertura de testes manuais (modelagem de testes com Gherkin)\n- Versionamento de código \n- Cypress\n- Orientação a objetos\n- Implantação CI/CD\n- Testes de API - técnicas de validações como teste de contrato, schema\n- Definir e implementar estratégias de teste e padrões de qualidade.\n- Orientar e treinar membros juniores e plenos da equipe.\n- Desenvolver soluções inovadoras para desafios complexos de QA.\n- Participar ativamente em revisões de design e decisões arquiteturais.\n\n**Desejáveis**\n- Colaborar com líderes de projeto para garantir qualidade em todas as fases do ciclo de vida do desenvolvimento de software.\n- Fornecer liderança técnica, influenciando a cultura de qualidade em toda a organização.\n\n**Diferenciais**\n- Certificação CTFL;\n- Integração de ferramentas como JIRA, Zephyr, outros.\n\n## Forma de contratação\n\nCLT\n\n## Benefícios da empresa\n\n- Plano de saúde Bradesco Saúde (Coparticipação de30%)\n- Plano odontológico Bradesco\n- Seguro de vida\n- Wellhub\n- Vale Alimentação/Refeição\n- Auxílio creche\n- Convênio PET\n- Telemedicina Conexa\n\n**Diferenciais**\n\n- Somos uma Empresa Cidadã: licença maternidade e paternidade prolongadas;\n- Programa INMaterna: Programa de acolhimento a gestantes;\n- Cesta Natalidade e Livro \"Acontecia quando eu nascia\";\n- Desenvolvimento Profissional: cursos disponíveis na universidade interna;\n\n## Range Salarial\n\nA vaga paga entre R$8.000,00 e R$11.000,00 reais.\n\n## Sobre a empresa\n\nNa Inmetrics, transformamos estratégia em resultado.\nNascemos em 2002, a partir de uma base sólida em engenharia, e desde então evoluímos como uma consultoria que conecta tecnologia, negócio e execução para resolver desafios reais de empresas em transformação.\nAo longo dessa jornada, já acumulamos mais de 25 milhões de horas em projetos de tecnologia, com atuação consolidada no Brasil, Chile, Colômbia e República Dominicana — sempre com foco em gerar impacto mensurável para nossos clientes.\nMais do que entregar soluções, ajudamos organizações a construir capacidades: estruturamos operações, evoluímos produtos, fortalecemos cultura e viabilizamos a transformação digital de ponta a ponta.\nAqui, você vai encontrar pessoas que combinam profundidade técnica, pensamento estratégico e colaboração. Trabalhamos em um ambiente ágil, diverso e orientado à troca, onde aprender faz parte do dia a dia e excelência é construída coletivamente.\nNossa cultura é guiada por impacto, consistência e evolução contínua — porque acreditamos que grandes resultados vêm de times fortes, conectados e preparados para resolver problemas complexos.\nEsse é o nosso jeito de construir.\n\n🏆 Reconhecimentos\nNossa forma de trabalhar também é reconhecida por quem vive essa experiência todos os dias.\n⭐ 4,1 no Glassdoor\n🏅 Certificação Lugares Incríveis para Trabalhar (2021, 2022 e 2025 – FIA/UOL)\n🌍 Certificação Great Place to Work (GPTW)\nMais do que prêmios, esses reconhecimentos refletem o ambiente que construímos: um lugar onde pessoas crescem, aprendem e geram impacto real.\n\n## Como se candidatar\n\n- Candidatar através do site: https://inmetrics.gupy.io/jobs/11452361\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 5 dias úteis após cada processo.\n\n\n## Labels\n- CLT\n- Pleno\n- Sênior\n- Especialista\n- Presencial\n- Remoto\n- São Paulo",
+      "excerpt": "## Descrição da vaga Se você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você! Buscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garan...",
+      "issueState": "open",
+      "contentHash": "a027596f39ff67f78acffe856e9b6d92ca11905e9dbfa0805ab124a7c3caff68",
+      "repository": "qa-brasil/vagas",
+      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "data",
+        "design",
+        "especialista",
+        "junior",
+        "pleno",
+        "presencial",
+        "remoto",
+        "senior",
+        "stale",
+        "são paulo",
+        "sênior"
+      ],
+      "sourceTags": [
+        "clt",
+        "data",
+        "design",
+        "especialista",
+        "junior",
+        "pleno",
+        "presencial",
+        "remoto",
+        "senior",
+        "stale",
+        "são paulo",
+        "sênior"
+      ],
+      "author": {
+        "id": "moreirapamela",
+        "name": "moreirapamela",
+        "handle": "moreirapamela",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/103055141?v=4"
+      },
+      "community": {
+        "id": "qa-brasil",
+        "name": "qa-brasil",
+        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+        "repository": "qa-brasil/vagas",
+        "url": "https://github.com/qa-brasil/vagas"
+      },
+      "companyName": "Plano de saúde Bradesco Saúde (Coparticipação de30%)",
+      "createdAt": "2026-07-24T14:32:54Z",
+      "updatedAt": "2026-10-10T05:10:18Z",
+      "url": "https://github.com/qa-brasil/vagas/issues/1266",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_26c4f960884c36cb1975213d",
+          "sourceId": "qa-brasil/vagas#1266",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1266",
+          "createdAt": "2026-07-24T14:32:54Z",
+          "updatedAt": "2026-10-10T05:10:18Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        },
+        {
+          "id": "gh_01af249400b5297948fd5955",
+          "sourceId": "nerdzao/vagas#196",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/196",
+          "createdAt": "2026-07-24T14:47:43Z",
+          "updatedAt": "2026-07-24T14:47:43Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 84,
+        "publishedAt": "2026-07-24T14:32:54Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_c48d49960e929a5d32e92190",
+      "sourceId": "junminhong/jobs#3",
+      "title": "Associate Director – Product",
+      "description": "### Company Name\n\nNoise\n\n### Position Title\n\nAssociate Director – Product\n\n### Job Type\n\nFull-time\n\n### Location Type\n\nOn-site\n\n### Region\n\n🇮🇳 India\n\n### Location\n\nGurugram\n\n### Salary Range\n\nINR 4500000 - INR 5000000\n\n### Job Description\n\nGurugram | Full-time | Noise\nAt Noise, we're building products that millions of people use every day. As an Associate Director – Product, you'll own the core NoiseFit experience, shaping how users engage with their health, fitness, and wellness journeys.\n\nYou'll define product strategy, lead cross-functional teams, and drive features from concept to launch. Working closely with Engineering, Design, Data, Marketing, and Hardware, you'll build experiences that improve engagement, retention, and long-term user value.\n\nWe're looking for someone who:\nHas 8+ years of Product Management experience in high-scale B2C products\nHas built and scaled consumer mobile products\nIs deeply data-driven and experiment-oriented\nThinks strategically while executing with speed\nHas experience working across cross-functional product teams\nExperience in health-tech, wearables, consumer internet, fintech, or marketplaces is a strong plus.\n\n### Contact Information\n\nhttps://www.linkedin.com/in/dreamteamengineer/\n\n### Additional Information\n\n_No response_",
+      "excerpt": "### Company Name Noise ### Position Title Associate Director – Product ### Job Type Full-time ### Location Type On-site ### Region 🇮🇳 India ### Location Gurugram ### Salary Range INR 4500000 - INR 5000000 ### Job De...",
+      "issueState": "open",
+      "contentHash": "908a7862041ecf8c8bc0e7d1cfaf56a0d8889c17a3c41c502742bae88cfcb56d",
+      "repository": "junminhong/jobs",
+      "repositoryUrl": "https://github.com/junminhong/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "job"
+      ],
+      "sourceTags": [
+        "job"
+      ],
+      "author": {
+        "id": "shivamsharma-debug",
+        "name": "shivamsharma-debug",
+        "handle": "shivamsharma-debug",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/308677757?v=4"
+      },
+      "community": {
+        "id": "junminhong",
+        "name": "junminhong",
+        "avatarUrl": "https://github.com/junminhong.png?size=80",
+        "repository": "junminhong/jobs",
+        "url": "https://github.com/junminhong/jobs"
+      },
+      "createdAt": "2026-07-24T07:50:21Z",
+      "updatedAt": "2026-07-24T07:50:21Z",
+      "url": "https://github.com/junminhong/jobs/issues/3",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "mobile",
+          "product"
+        ],
+        "technologies": [],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_c48d49960e929a5d32e92190",
+          "sourceId": "junminhong/jobs#3",
+          "repository": "junminhong/jobs",
+          "repositoryUrl": "https://github.com/junminhong/jobs",
+          "url": "https://github.com/junminhong/jobs/issues/3",
+          "createdAt": "2026-07-24T07:50:21Z",
+          "updatedAt": "2026-07-24T07:50:21Z",
+          "community": {
+            "id": "junminhong",
+            "name": "junminhong",
+            "avatarUrl": "https://github.com/junminhong.png?size=80",
+            "repository": "junminhong/jobs",
+            "url": "https://github.com/junminhong/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 84,
+        "publishedAt": "2026-07-24T07:50:21Z",
         "status": "aging"
       }
     }
