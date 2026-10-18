@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-18T07:37:49.853Z",
+  "generatedAt": "2026-10-18T12:55:19.663Z",
   "page": 4,
   "pageSize": 20,
   "nextPage": "api/pages/page-0005.json",
   "ids": [
+    "gh_a4a7d7b8ea3a77260256bf62",
     "gh_64aa16d7a09022b86ee0040c",
     "gh_734b65d4c7197d44b825b886",
     "gh_ba5bd2250dfdfeaed6de206e",
@@ -22,10 +23,96 @@
     "gh_806b64f2950fea9d5b673d14",
     "gh_6bd4163903234b0bf8e2d437",
     "gh_0a7a3c6e002a0928c26b439d",
-    "gh_20aceb464738bcb46da14811",
-    "gh_c9dbe8c3245224e55d772ee5"
+    "gh_20aceb464738bcb46da14811"
   ],
   "items": [
+    {
+      "id": "gh_a4a7d7b8ea3a77260256bf62",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+      "title": "New Feature Request: Graduation-year and academic-standing filtering",
+      "description": "### Improvement\n\nFollowing up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to check the requirements.\nI looked through the list-updater code and `listings.json`. The export includes degree types, but not graduation-date windows or freshman/sophomore/junior/senior requirements. The contribution guide mentions that a private service imports listings from Simplify.\nDoes Simplify already store this information, and could it be included in the automated export? Missing or ambiguous requirements could remain “unknown” rather than implying eligibility.\nI’d be interested in contributing filters to the existing search command using that upstream data. Would this be a welcome contribution, and is exposing the necessary data feasible?",
+      "excerpt": "### Improvement Following up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to che...",
+      "issueState": "open",
+      "contentHash": "804d6324575c7187eed7b98afb25ade1def4772b7010c1f586175315750699b6",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement"
+      ],
+      "sourceTags": [
+        "enhancement"
+      ],
+      "author": {
+        "id": "saisrikar8",
+        "name": "saisrikar8",
+        "handle": "saisrikar8",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/77305508?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-10-12T05:05:20Z",
+      "updatedAt": "2026-10-12T05:05:20Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a4a7d7b8ea3a77260256bf62",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
+          "createdAt": "2026-10-12T05:05:20Z",
+          "updatedAt": "2026-10-12T05:05:20Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-10-12T05:05:20Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_64aa16d7a09022b86ee0040c",
       "sourceId": "remoteintech/remote-jobs#2271",
@@ -1075,7 +1162,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-10-07T07:37:51Z",
         "status": "fresh"
       }
@@ -2214,89 +2301,8 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 16,
-        "publishedAt": "2026-10-01T09:30:04Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_c9dbe8c3245224e55d772ee5",
-      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#8",
-      "title": "Add an \"Updated At\" timestamp column so readers can spot new roles",
-      "description": "The `Date Posted` column is day-level only, so when new roles get added between refreshes there's no way to tell which rows are new since my last visit — I have to re-scan the whole table from the top and remember where I left off.\n\nProposal: add a column (e.g. `Updated At`) showing the date + time each row was added or updated by the bot, like:\n\n| Company | Job Title | Location | Date Posted | Updated At |\n|---|---|---|---|---|\n| Company A | ... | ... | Sep 29 | Sep 29, 13:53 |\n| Company B | ... | ... | Sep 29 | Sep 29, 17:54 |\n\nThis should be feasible since the bot already knows when it inserts each row (the timestamp is implicit in the commit history today) — persisting it per-row just makes it visible to everyone. Readers could then instantly see what's new since their last refresh.",
-      "excerpt": "The `Date Posted` column is day-level only, so when new roles get added between refreshes there's no way to tell which rows are new since my last visit — I have to re-scan the whole table from the top and remember whe...",
-      "issueState": "open",
-      "contentHash": "bfc98df4fa468990e5bde9265c165b2dc1a13a1a57b5644b6d76b1772d5f5389",
-      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "akshatshahh",
-        "name": "akshatshahh",
-        "handle": "akshatshahh",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/98461448?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-      },
-      "companyName": "Job Title",
-      "createdAt": "2026-10-01T05:16:11Z",
-      "updatedAt": "2026-10-01T05:16:11Z",
-      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/8",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_c9dbe8c3245224e55d772ee5",
-          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#8",
-          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/8",
-          "createdAt": "2026-10-01T05:16:11Z",
-          "updatedAt": "2026-10-01T05:16:11Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
         "ageDays": 17,
-        "publishedAt": "2026-10-01T05:16:11Z",
+        "publishedAt": "2026-10-01T09:30:04Z",
         "status": "fresh"
       }
     }
