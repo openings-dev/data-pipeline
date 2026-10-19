@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T08:20:47.777Z",
+  "generatedAt": "2026-10-19T16:04:52.069Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
@@ -9,7 +9,7 @@
     "openIssues": 3,
     "closedIssues": 22
   },
-  "dataHash": "e608257c751bf162d829cd2d3528056461d956ab04c4e052f7cdd5bb5b8141b6",
+  "dataHash": "5b0cf7990eb4ffe4ba206690cf0177c118bf957c34ec4b57e3093cdd9c3ab030",
   "items": [
     {
       "id": "gh_8490be623763a6385dbd8094",
@@ -17,7 +17,7 @@
       "title": "Job data is stale: last scrape 2026-10-19T00:13:51.280863Z",
       "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **276 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/39201447513. This issue closes automatically once data is fresh.",
       "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **276 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "986f3ae9147b658e15c1dfd4852088090f6056f56d9c8d3d56313f9735f40d63",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
@@ -48,7 +48,7 @@
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
       "createdAt": "2026-10-19T04:50:07Z",
-      "updatedAt": "2026-10-19T04:50:07Z",
+      "updatedAt": "2026-10-19T13:29:44Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/450",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -369,13 +369,13 @@
       }
     },
     {
-      "id": "gh_3c005c90e07a226401a258ed",
-      "sourceId": "ambicuity/New-Grad-Jobs#440",
-      "title": "Guides: add sourced guides for common situations the current set misses",
-      "description": "Follow-up to #438. The guides cover the software search well but leave common situations unanswered:\n- searching with no internship, or after graduating;\n- advanced degrees, career switchers and location choices;\n- Canada and India, although the board covers both;\n- rotational programs, staffing agencies and contract roles;\n- adjacent technical roles;\n- cover letters, GPA cutoffs, career fairs and cold emails;\n- portfolios and open source;\n- OPT unemployment days, cap-exempt H-1B and other visas;\n- rescinded offers, employment agreements and the first 90 days;\n- how the board reads salary ranges.\n\nThe redesign mockup proposed 25 such guides. Four overlap existing guides (frontend, embedded and security interview prep are already in role-specific technical preparation; deadline extensions are in comparing offers), so this issue covers the other 21.\n\nAlso out of date: \"What counts as a new grad job\" says contract and staffing-agency roles are not excluded. That stopped being true when temporary, contract and fractional-FTE titles were excluded in #437. Three guides also link a USCIS H-1B page that no longer loads.\n\n## Standard for each new guide\n- Front matter per AGENTS.md: published, format, use_when / you_get. The brief may not state a number the body doesn't.\n- 700–1,300 words; supported Markdown only.\n- Every rule, number or quote links an official or primary source opened at writing time. No invented statistics.\n- Claims about NGJ's own behaviour match the code.\n- Field-neutral unless the topic is field-specific; no advice to misrepresent anything.\n- Independently fact-checked before merge.\n\n## Acceptance\n- The 21 guides above, fact-checked.\n- start-here and the reading paths updated together; the sync test passes.\n- The \"What counts\" exclusions corrected and the USCIS link fixed.\n- Content tests, build and a five-width browser sweep of every guide pass.",
-      "excerpt": "Follow-up to #438. The guides cover the software search well but leave common situations unanswered: - searching with no internship, or after graduating; - advanced degrees, career switchers and location choices; - Ca...",
-      "issueState": "closed",
-      "contentHash": "4b3ef584a728b038c829e64f52a9ad5bc44484b621b1217c337ff4b425ab386d",
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "sourceId": "ambicuity/New-Grad-Jobs#383",
+      "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+      "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+      "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+      "issueState": "open",
+      "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
       "region": "North America",
@@ -386,14 +386,16 @@
         "region": "North America"
       },
       "tags": [
-        "frontend",
-        "staff",
-        "design"
+        "type: bug",
+        "needs-triage",
+        "priority: high",
+        "bug"
       ],
       "sourceTags": [
-        "frontend",
-        "staff",
-        "design"
+        "type: bug",
+        "needs-triage",
+        "priority: high",
+        "bug"
       ],
       "author": {
         "id": "ambicuity",
@@ -408,34 +410,27 @@
         "repository": "ambicuity/New-Grad-Jobs",
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
-      "createdAt": "2026-10-16T01:02:18Z",
-      "updatedAt": "2026-10-16T01:06:40Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/440",
+      "createdAt": "2026-10-11T04:41:00Z",
+      "updatedAt": "2026-10-19T13:44:56Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
       },
       "taxonomy": {
-        "areas": [
-          "design",
-          "frontend"
+        "areas": [],
+        "technologies": [
+          "python"
         ],
-        "technologies": [],
-        "seniority": [
-          "internship",
-          "staff"
-        ],
-        "employmentTypes": [
-          "contract",
-          "internship"
-        ],
+        "seniority": [],
+        "employmentTypes": [],
         "workModels": [],
         "languages": []
       },
       "dataProvenance": {
         "location": "unknown",
         "salary": "unknown",
-        "seniority": "inferred",
+        "seniority": "unknown",
         "workModel": "unknown"
       }
     },

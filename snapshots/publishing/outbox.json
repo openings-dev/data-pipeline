@@ -44138,6 +44138,139 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_d89e1cc41b9d704400c8843b",
+        "revision": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+        "idempotencyKey": "openings:job:gh_d89e1cc41b9d704400c8843b:960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e"
+      },
+      "canonical": {
+        "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+        "summary": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_d89e1cc41b9d704400c8843b",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_d89e1cc41b9d704400c8843b",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_d89e1cc41b9d704400c8843b",
+              "revision": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+              "canonicalPath": "/jobs/gh_d89e1cc41b9d704400c8843b",
+              "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+              "summary": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+              "status": "active",
+              "contentSha256": "6a8896bc6feab15deda373ca05e9774376b2bf04069f3a804525ab33593c3ff5",
+              "content": {
+                "id": "gh_d89e1cc41b9d704400c8843b",
+                "sourceId": "ambicuity/New-Grad-Jobs#383",
+                "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+                "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+                "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+                "issueState": "open",
+                "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+                "repository": "ambicuity/New-Grad-Jobs",
+                "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+                "region": "North America",
+                "country": "United States",
+                "sourceLocation": {
+                  "country": "United States",
+                  "countryCode": "US",
+                  "region": "North America"
+                },
+                "tags": [
+                  "bug",
+                  "needs-triage",
+                  "priority: high",
+                  "type: bug"
+                ],
+                "sourceTags": [
+                  "bug",
+                  "needs-triage",
+                  "priority: high",
+                  "type: bug"
+                ],
+                "author": {
+                  "id": "ambicuity",
+                  "name": "ambicuity",
+                  "handle": "ambicuity",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+                },
+                "community": {
+                  "id": "ambicuity",
+                  "name": "ambicuity",
+                  "avatarUrl": "https://github.com/ambicuity.png?size=80",
+                  "repository": "ambicuity/New-Grad-Jobs",
+                  "url": "https://github.com/ambicuity/New-Grad-Jobs"
+                },
+                "createdAt": "2026-10-11T04:41:00Z",
+                "updatedAt": "2026-10-19T13:44:56Z",
+                "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "confidence": "unknown"
+                },
+                "taxonomy": {
+                  "areas": [],
+                  "technologies": [
+                    "python"
+                  ],
+                  "seniority": [],
+                  "employmentTypes": [],
+                  "workModels": [],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "unknown",
+                  "workModel": "unknown"
+                },
+                "sources": [
+                  {
+                    "id": "gh_d89e1cc41b9d704400c8843b",
+                    "sourceId": "ambicuity/New-Grad-Jobs#383",
+                    "repository": "ambicuity/New-Grad-Jobs",
+                    "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+                    "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+                    "createdAt": "2026-10-11T04:41:00Z",
+                    "updatedAt": "2026-10-19T13:44:56Z",
+                    "community": {
+                      "id": "ambicuity",
+                      "name": "ambicuity",
+                      "avatarUrl": "https://github.com/ambicuity.png?size=80",
+                      "repository": "ambicuity/New-Grad-Jobs",
+                      "url": "https://github.com/ambicuity/New-Grad-Jobs"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 8,
+                  "publishedAt": "2026-10-11T04:41:00Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T08:20:47.777Z",
+  "generatedAt": "2026-10-19T16:04:52.069Z",
   "items": [
     {
       "id": "gh_c7a1ddb11a6488cb46c8e04a",
@@ -12,19 +12,6 @@
         "location": "(), india remote () india asia",
         "excerpt": "### link to internship posting https://careers.nodus-compute.ai/jobs/intern-of-research-staff ### company name nodus compute ### internship title intern of research staff (sponsorship not specified) ### location remot...",
         "source": "vanshb03/summer2027-internships pvarshh pvarshh vanshb03/summer2027-internships vanshb03/summer2026-internships simplifyjobs/summer2026-internships"
-      }
-    },
-    {
-      "id": "gh_8490be623763a6385dbd8094",
-      "createdAt": "2026-10-19T04:50:07Z",
-      "text": "job data is stale: last scrape 2026-10-19t00:13:51.280863z the watchdog found https://jobs.riteshrana.engineer/health.json last updated **276 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s... ambicuity/new-grad-jobs united states north america github-actions[bot] github-actions[bot] scraper-stale",
-      "fields": {
-        "title": "job data is stale: last scrape 2026-10-19t00:13:51.280863z",
-        "company": "",
-        "taxonomy": "",
-        "location": "",
-        "excerpt": "the watchdog found https://jobs.riteshrana.engineer/health.json last updated **276 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s...",
-        "source": "ambicuity/new-grad-jobs github-actions[bot] github-actions[bot] ambicuity/new-grad-jobs"
       }
     },
     {
@@ -831,6 +818,19 @@
         "location": "",
         "excerpt": "while checking careers links across src/companies/ (2026-10-11), i found profiles whose company website and careers page are both unreachable. for these 9, the domain no longer resolves at all (nxdomain, checked twi...",
         "source": "remoteintech/remote-jobs aymenjeddou aymenjeddou remoteintech/remote-jobs"
+      }
+    },
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "createdAt": "2026-10-11T04:41:00Z",
+      "text": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld ### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ... ambicuity/new-grad-jobs united states north america ambicuity ambicuity bug needs-triage priority: high type: bug",
+      "fields": {
+        "title": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld",
+        "company": "",
+        "taxonomy": "python",
+        "location": "",
+        "excerpt": "### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ...",
+        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
       }
     },
     {
