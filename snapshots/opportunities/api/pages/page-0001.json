@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-20T02:49:50.591Z",
+  "generatedAt": "2026-10-20T08:05:17.372Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_135dc54daa0d7acb783a5145",
     "gh_3af7b7f1cb517a436b702057",
     "gh_e71f79f12013d53b7cd0248d",
     "gh_c7a1ddb11a6488cb46c8e04a",
@@ -22,10 +23,93 @@
     "gh_94493c77be84aabfeeabe717",
     "gh_0da1549c7daf4a0c09a7d121",
     "gh_2f90b160baee5d09b0165e89",
-    "gh_14ddee933b9b152d7875ef0c",
-    "gh_a03853fce961d78f26781f71"
+    "gh_14ddee933b9b152d7875ef0c"
   ],
   "items": [
+    {
+      "id": "gh_135dc54daa0d7acb783a5145",
+      "sourceId": "ambicuity/New-Grad-Jobs#451",
+      "title": "Job data is stale: last scrape 2026-10-20T01:18:39.537466Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **219 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/39372352086. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **219 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "1e86c94b0a291fd9899b8601913f228c69c2c1f7b3df1dac24daa9c5921623c1",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-20T04:58:15Z",
+      "updatedAt": "2026-10-20T04:58:15Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/451",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_135dc54daa0d7acb783a5145",
+          "sourceId": "ambicuity/New-Grad-Jobs#451",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/451",
+          "createdAt": "2026-10-20T04:58:15Z",
+          "updatedAt": "2026-10-20T04:58:15Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-20T04:58:15Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_3af7b7f1cb517a436b702057",
       "sourceId": "backend-br/vagas#12474",
@@ -418,7 +502,7 @@
         "sourceCount": 3
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-19T06:13:03Z",
         "status": "fresh"
       }
@@ -2092,102 +2176,6 @@
       "freshness": {
         "ageDays": 4,
         "publishedAt": "2026-10-16T02:36:17Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a03853fce961d78f26781f71",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9705",
-      "title": "Duolingo Data Science Internship",
-      "description": "### Link to Internship Posting\n\nhttps://careers.duolingo.com/jobs/8888721002?gh_jid=8888721002&fbclid=PAdGRleAU-OcpleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQWtF_RQRc39-taZhz3TkyLiBeVL83NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7WHFIwjar2PVy-FyurQeCpIXmxFu3-D1DEFOdParcEKLOGeB_HZg1TIjc11_aem_2wH6OFbp5MjKd8TMknSSzQ\n\n### Company Name\n\nDuolingo\n\n### Internship Title\n\nData Science Intern\n\n### Location\n\nNew York, NY | Pittsburgh, PA\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nOffers Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nData Science, AI & Machine Learning\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nkhazar.myp@gmail.com\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://careers.duolingo.com/jobs/8888721002?gh_jid=8888721002&fbclid=PAdGRleAU-OcpleHRuA2FlbQIxMQBwZG9mAmZkaWQWUQWtF_RQRc39-taZhz3TkyLiBeVL83NydGMGYXBwX2lkDzEyNDAyNDU3NDI4NzQxNAABp7WHFI...",
-      "issueState": "open",
-      "contentHash": "8adebe0023005be99019dd6a13bd63ed9a0ce1af7db0a3e8e5cc831061594abe",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship"
-      ],
-      "sourceTags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "khazar08",
-        "name": "khazar08",
-        "handle": "khazar08",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/222704790?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-10-15T23:00:19Z",
-      "updatedAt": "2026-10-15T23:08:53Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9705",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "New York",
-        "subdivision": "NY",
-        "displayText": "New York, NY",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a03853fce961d78f26781f71",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9705",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9705",
-          "createdAt": "2026-10-15T23:00:19Z",
-          "updatedAt": "2026-10-15T23:08:53Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 4,
-        "publishedAt": "2026-10-15T23:00:19Z",
         "status": "fresh"
       }
     }
