@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-10-20T18:52:13.792Z",
+  "generatedAt": "2026-10-20T23:34:49.902Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
+    "gh_6bd2ea87cfb4bbe49569241c",
+    "gh_1f61de8de06b483a9a82d5f4",
+    "gh_5708c7b7c69bc276f6fb8941",
+    "gh_04e16e2c007892d76818f4d4",
+    "gh_1281cf89efd737156e2e7eab",
     "gh_31432bc70b69af4c8049f0ea",
     "gh_86efffb250adb4c9c04e5739",
     "gh_e42065fbc53387de89f2d4c3",
@@ -18,14 +23,539 @@
     "gh_1fbbb84fca255117f18333ff",
     "gh_697a821cabc5eb7906d1c695",
     "gh_a925bdb6349671e5c976d3ab",
-    "gh_86cf7c4c726a6cec1163d1fb",
-    "gh_0f0495da862b94749892e684",
-    "gh_d6f31a804dacbc548031ec5e",
-    "gh_eae48d87a90e3ffbeb60afaf",
-    "gh_bf70dc9f783bd9e91215da56",
-    "gh_72cc354e7d9c38f999fa902a"
+    "gh_86cf7c4c726a6cec1163d1fb"
   ],
   "items": [
+    {
+      "id": "gh_6bd2ea87cfb4bbe49569241c",
+      "sourceId": "ambicuity/New-Grad-Jobs#316",
+      "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
+      "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
+      "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
+      "issueState": "open",
+      "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "roadmap",
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "roadmap",
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
+      "createdAt": "2026-05-26T23:52:14Z",
+      "updatedAt": "2026-10-19T20:18:43Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "go",
+          "python"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_6bd2ea87cfb4bbe49569241c",
+          "sourceId": "ambicuity/New-Grad-Jobs#316",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+          "createdAt": "2026-05-26T23:52:14Z",
+          "updatedAt": "2026-10-19T20:18:43Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 146,
+        "publishedAt": "2026-05-26T23:52:14Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_1f61de8de06b483a9a82d5f4",
+      "sourceId": "nerdzao/vagas#191",
+      "title": "[Híbrido/SP] Pessoa Desenvolvedora Backend Sr (JAVA) - Viaflow",
+      "description": "Nossa empresa\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Java Backend Sênior de altíssimo nível para atuar em um cliente global, focado em projetos de modernização em larga escala e soluções SaaS do zero (greenfield).\n\nSe você tem domínio profundo em Java 21, Quarkus e arquitetura de microsserviços orientada a eventos, #VemPraViaflow!\n\n✨ Se identificou? Então vem com a gente!\n\nLocal\nHíbrido - 3x por semana presencial na região da Av. Paulista-SP\n\nRequisitos\n💻 Competências Técnicas Essenciais\n\nSólida Experiência em ambientes Enterprise.\nDomínio de Java: Experiência prática com Java 21, incluindo Streams, programação funcional e assíncrona (Futures/CompletableFutures).\nFrameworks e ORM: Experiência com Quarkus, JDBC e frameworks de ORM.\nArquitetura Moderna: Sólido conhecimento em Microsserviços e padrões de design orientados a eventos.\nDados: Experiência com bancos de dados baseados em documentos, especificamente MongoDB.\nCloud: Familiaridade com GCP (preferencial), AWS ou outras nuvens de mercado.\nProcessos: Familiaridade com metodologias Ágeis (Scrum/Kanban) e controle de versão com Git.\nEvent Driven Architecture\n\n🏆 Diferenciais (O que valorizamos)\nExperiência com Google Pub/Sub e Kafka.\nFamiliaridade com Azure DevOps e construção de Pipelines.\nVivência prévia em projetos SaaS de escala global ou modernização de sistemas legados.\n\n🤝 Soft Skills\nCapacidade de adaptação a desafios únicos e entrega de soluções classe \"Enterprise\".\nHabilidade de comunicação e apresentação para sessões de desenho técnico.\nPerfil mentor para guiar membros remotos ou offshore.\n\nIdioma: Inglês Intermediário/Avançado para comunicação verbal e escrita com time internacional.\n\nBenefícios\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nTreinamentos e Certificações\nClube do iFood gratuito\nPacote Colab+ com acesso a WellHub, Avus e Starbem\n\nContratação\nCooperativa\n\nComo se candidatar\nSe inscreve através do link: https://viaflow.gupy.io/jobs/11365530?jobBoardSource=gupy_public_page\n\nNível\nSênior\n\nRegime\nCooperado\n\nAlocação\nHíbrido",
+      "excerpt": "Nossa empresa Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Java Backend Sênior de altíssimo nível para atuar em um cliente global, focado...",
+      "issueState": "open",
+      "contentHash": "2fc01278c009d5c1f04db3ab1217bceecb1f162af09e7cadae08ac22860ffae9",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "devops",
+        "java"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "devops",
+        "java"
+      ],
+      "author": {
+        "id": "jesspinheiro93",
+        "name": "jesspinheiro93",
+        "handle": "jesspinheiro93",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "createdAt": "2026-05-26T18:22:15Z",
+      "updatedAt": "2026-05-26T18:22:15Z",
+      "url": "https://github.com/nerdzao/vagas/issues/191",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "java",
+          "mongodb"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_1f61de8de06b483a9a82d5f4",
+          "sourceId": "nerdzao/vagas#191",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/191",
+          "createdAt": "2026-05-26T18:22:15Z",
+          "updatedAt": "2026-05-26T18:22:15Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 147,
+        "publishedAt": "2026-05-26T18:22:15Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5708c7b7c69bc276f6fb8941",
+      "sourceId": "devfsa/vagas#2826",
+      "title": "[Remoto] Analista de Suporte ao Produto na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/analista-de-suporte-ao-produto-185619147?utm_source=github&utm_medium=devfsa-vagas&modal=open) para realizar a candidatura. 👋\n**Objetivo do Cargo:**\n\n*   Ser o ponto focal entre clientes e o time interno da Arbitralis — recebendo, triando e encaminhando todos os suportes antes de chegar ao time de desenvolvimento\n    \n*   Ser responsável por todo o fluxo de suporte: receber a demanda, verificar, documentar e garantir que chegue ao time com contexto suficiente para execução\n    \n*   Conduzir reuniões e interações com clientes para levantar requisitos e configurações de agentes conversacionais de IA\n    \n*   Entender, documentar e traduzir necessidades técnicas e operacionais em tarefas claras para o time de desenvolvimento e produto\n    \n*   Gerenciar e priorizar demandas com base em impacto e urgência — sem precisar de empurrão para decidir\n    \n\n**Responsabilidades Principais:**\n\n*   Receber, verificar e triar todos os suportes e solicitações de clientes — sendo a primeira linha de contato antes de qualquer escalada ao time técnico\n    \n*   Ser o contato diário de clientes sobre bugs, suportes e solicitações — respondendo com agilidade e gerando confiança\n    \n*   Conduzir reuniões de levantamento com clientes para coletar informações necessárias à configuração e evolução de agentes de IA\n    \n*   Entender, verificar e documentar demandas de suporte técnico da secretaria e clientes, transformando em tarefas bem descritas no ClickUp\n    \n*   Gerenciar, organizar e priorizar demandas conforme impacto e urgência, alinhando expectativas com clientes e time interno\n    \n*   Identificar padrões de problemas recorrentes e propor melhorias de processo ou produto com base nas demandas recebidas\n    \n*   Colaborar ativamente com PM, Design e Desenvolvimento para garantir que as demandas cheguem ao time com contexto suficiente para execução\n    \n*   Documentar aprendizados, processos e histórico de atendimento de forma estruturada no ClickUp\n## Arbitralis: \n Na Arbitralis, acreditamos que a justiça pode ser rápida, acessível e eficiente. \n\n<p>&nbsp;</p>\n\nSomos a Câmara de Arbitragem mais tecnológica do Brasil, focada em proporcionar soluções de conflitos contratuais com a mesma validade legal dos processos judiciais — porém, de forma muito mais ágil e econômica.\n\n<p>&nbsp;</p><a href='https://coodesh.com/companies/arbitralis'>Veja mais no site</a>\n\n## Local: \n Remota\n## Requisitos: \n - Experiência em atendimento B2B: condução de reuniões, coleta de requisitos, gestão de expectativas e comunicação clara em canais escritos e verbais \n- Capacidade de transformar conversas e demandas em tarefas bem descritas, organizadas e priorizadas. Domínio de ClickUp ou ferramenta similar \n- Sabe identificar urgência e impacto, priorizar sem depender de validação constante e manter o fluxo de trabalho do time desobstruído \n- Conforto para entender e categorizar bugs e problemas técnicos, mesmo sem capacidade de resolver sozinho — sabe o que perguntar e como descrever para o time de dev \n- Escreve com clareza, sem ruído e sem jargão desnecessário. Adapta o tom para cliente e para time interno\n## Diferenciais: \n - Experiência prévia em empresas que atuam com Inteligência Artificial, automações ou produtos orientados a IA \n- Conhecimento prático de ferramentas Vibe Coding (Lovable, v0, Cursor ou similares) para criação e validação rápida de soluções \n- Uso fluente de Claude, Claude Code, ChatGPT ou ferramentas similares no dia a dia de trabalho — não como curiosidade, mas como hábito \n- Familiaridade com agentes conversacionais: sabe o que são, como funcionam e como levantar requisitos para configurá-los\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Analista de Suporte ao Produto na Arbitralis](https://coodesh.com/jobs/analista-de-suporte-ao-produto-185619147?utm_source=github&utm_medium=devfsa-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nSuporte Técnico",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "f8f3a16683727307f26ddbdb648ba18b87033152ddef69a62354f87b7415ef3c",
+      "repository": "devfsa/vagas",
+      "repositoryUrl": "https://github.com/devfsa/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "devfsa",
+        "name": "devfsa",
+        "avatarUrl": "https://github.com/devfsa.png?size=80",
+        "repository": "devfsa/vagas",
+        "url": "https://github.com/devfsa/vagas"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2026-05-25T18:56:54Z",
+      "updatedAt": "2026-05-26T12:26:29Z",
+      "url": "https://github.com/devfsa/vagas/issues/2826",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "support"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_5708c7b7c69bc276f6fb8941",
+          "sourceId": "devfsa/vagas#2826",
+          "repository": "devfsa/vagas",
+          "repositoryUrl": "https://github.com/devfsa/vagas",
+          "url": "https://github.com/devfsa/vagas/issues/2826",
+          "createdAt": "2026-05-25T18:56:54Z",
+          "updatedAt": "2026-05-25T18:56:54Z",
+          "community": {
+            "id": "devfsa",
+            "name": "devfsa",
+            "avatarUrl": "https://github.com/devfsa.png?size=80",
+            "repository": "devfsa/vagas",
+            "url": "https://github.com/devfsa/vagas"
+          }
+        },
+        {
+          "id": "gh_e9177ae252d1679b2e5d82c5",
+          "sourceId": "devfsa/vagas#2827",
+          "repository": "devfsa/vagas",
+          "repositoryUrl": "https://github.com/devfsa/vagas",
+          "url": "https://github.com/devfsa/vagas/issues/2827",
+          "createdAt": "2026-05-26T12:26:29Z",
+          "updatedAt": "2026-05-26T12:26:29Z",
+          "community": {
+            "id": "devfsa",
+            "name": "devfsa",
+            "avatarUrl": "https://github.com/devfsa.png?size=80",
+            "repository": "devfsa/vagas",
+            "url": "https://github.com/devfsa/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 148,
+        "publishedAt": "2026-05-25T18:56:54Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_04e16e2c007892d76818f4d4",
+      "sourceId": "nerdzao/vagas#190",
+      "title": "Vagas Tecnologia",
+      "description": "A [3 Pontos](https://3pontos.com/l) é um ecossistema que une solução e conhecimento em um único lugar.\n\nEstamos sempre em busca de profissionais talentosos da área de tecnologia para fazer parte do nosso time. Se você gosta de inovação, resolver problemas complexos e trabalhar em um ambiente colaborativo, queremos conhecer você.\n\nAo se inscrever em nosso Banco de Talentos, seu perfil poderá ser considerado para futuras oportunidades alinhadas à sua experiência e interesses.\n\n**Áreas que buscamos**\nBuscamos profissionais de diferentes níveis (Júnior, Pleno e Sênior) nas seguintes áreas:\n\n- Desenvolvimento Back-end\n- Desenvolvimento Front-end\n- Full Stack\n- UI/UX Design\n- Product Management\n- QA / Testes\n- DevOps / Cloud\n- Data / Analytics\n- Segurança da Informação\n\n**O que esperamos:**\n\nExperiência com desenvolvimento de produtos digitais\nPerfil colaborativo e orientado à resolução de problemas\nBoa comunicação e trabalho em equipe\n\nSe aplique pela nossa página de carreiras: https://recrutamento.3pontos.com/vagas/banco-de-talentos-tecnologia-ybhf\n\n\nEsperamos por vocês!!",
+      "excerpt": "A [3 Pontos](https://3pontos.com/l) é um ecossistema que une solução e conhecimento em um único lugar. Estamos sempre em busca de profissionais talentosos da área de tecnologia para fazer parte do nosso time. Se você ...",
+      "issueState": "open",
+      "contentHash": "6ba11401c8db862457eccbaf0211033babb805a4290caae22bef9a44c7e2ca1a",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design",
+        "devops",
+        "pleno"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "devops",
+        "pleno"
+      ],
+      "author": {
+        "id": "Malu3pontos",
+        "name": "Malu3pontos",
+        "handle": "Malu3pontos",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/282318656?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "createdAt": "2026-05-15T15:16:11Z",
+      "updatedAt": "2026-05-15T15:16:11Z",
+      "url": "https://github.com/nerdzao/vagas/issues/190",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend",
+          "fullstack",
+          "product",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "junior",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_04e16e2c007892d76818f4d4",
+          "sourceId": "nerdzao/vagas#190",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/190",
+          "createdAt": "2026-05-15T15:16:11Z",
+          "updatedAt": "2026-05-15T15:16:11Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 158,
+        "publishedAt": "2026-05-15T15:16:11Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_1281cf89efd737156e2e7eab",
+      "sourceId": "cassichen88-jpg/awesome-jobs-2026#9",
+      "title": "[深圳] 数十亿级全球化消费科技公司 CIO IT+流程一号位 ",
+      "description": "> 🔥 CIO 一号位  | IT+流程双线整合 | 100+人团队\n\n---\n\n## 🏢 公司简介\n\n**数十亿级全球化消费科技公司**，深圳，国内头部消费科技品牌，成立近 10 年。核心产品为**智能可穿戴硬件**，业务覆盖全球 **60+ 国家和地区**，年营收数十亿，团队 800+ 人。创始人绝对控股，决策链短，打法务实。\n\n> **当前阶段**：从爆品驱动转向平台化运营，IT 系统正经历从信息化到数字化的质变期——流程与 IT 割裂、系统成熟度不足、业务增速远快于系统承载力。**急需一位能拉通全局、重构顶层的 CIO**。\n\n## 💼 岗位信息\n\n- **职位**：CIO（IT + 流程一号位）\n- **地点**：深圳\n- **薪资**：总包 300 万以内\n- **薪资结构**：固定月 薪 + 年终奖\n- **团队规模**：100+ 人复合型团队\n- **汇报对象**：创始人 / CEO\n\n## 🎯 岗位职责\n\n> **一句话**：你来定义这家公司未来 3-5 年\"技术 + 流程\"怎么长。\n\n**1. IT 体系重构**\n统管系统板块（产研、财务营销 / 经营数据、供应链等多体系）、自建独立站、企业级 AI 应用（聚焦效率提升与企业智能体，非产品侧）。系统的**自研与外采都要能拍板**。\n\n**2. 流程再造与拉通**\n现有流程团队和 IT 团队分离运作，衔接断裂，成熟度和可用性都不够。需要从业务视角把流程和 IT 真正打通，**重塑端到端流程**。\n\n**3. 组织整合**\n接管 100+ 人\"技术中台 + 数字化\"复合团队（系统 + 独立站 + 企业 AI + 流程质量运营），搭梯队、建标准、理清边界。**需要有能力整合现有班底**。\n\n## ✅ 任职要求\n\n**硬性要求**\n\n| 维度 | 要求 |\n|------|------|\n| **行业** | 消费电子 / 硬件制造赛道，**OV 系（OPPO、vivo、一加、realme 等）经验明显加分**。\n| **核心能力** | **IT + 流程双线实战经验**。领过系统建设有流程管理 / 流程再造落地经验 |\n| **视野** | 不要求精通某一个系统，但要做过、知道细节、有自己的方法论。**能从业务痛点倒推 IT 架构** |\n| **学历** | 985/211（双一流）本科及以上 |\n| **年龄** | 40 岁左右（38-42 岁） |\n\n**理想画像**\n> 35-42 岁，985/211 本科，在 OPPO / vivo / 华为消费者 BG 或同级别消费电子公司做过 IT 总监或数字化负责人，管过 80-100 人以上团队，主导过核心业务系统的选型与上线，同时牵头过跨部门流程优化项目。**不是螺丝钉型专家，是能跟老板对话、能拍板、能扛事的人**。\n\n## 💡 为什么值得聊\n\n这不是去\"守摊\"的 IT 总监位。\n\n- **团队够大**：100+ 人复合型团队（系统 + 独立站 + 企业 AI + 流程质量运营）\n- **权限够实**：IT 和流程两条线等你合一，老板给空间、给编制、给决策权\n- **舞台够稀缺**：对于想从 IT 管理者真正跨到 CIO 的人来说，这是一张很难得的入场券\n- **薪酬够位**：对标头部消费电子公司 CIO 水平\n- **创始人直管**：决策链短，不卷政治，能干事\n\n## 📬 联系方式\n\n- 💬 **微信**：cc_cassie888（备注：GitHub + 消费科技CIO）\n- 📧 **邮箱**：cassi.chen88@gmail.com\n\n简历直接发我，沟通高效不墨迹。\n\n---\n\n⭐ Star 仓库获取更多稀缺岗位 | 👁 Watch 第一时间收到更新\n\n[← 返回职位列表](../README.md)",
+      "excerpt": "> 🔥 CIO 一号位 | IT+流程双线整合 | 100+人团队 --- ## 🏢 公司简介 **数十亿级全球化消费科技公司**，深圳，国内头部消费科技品牌，成立近 10 年。核心产品为**智能可穿戴硬件**，业务覆盖全球 **60+ 国家和地区**，年营收数十亿，团队 800+ 人。创始人绝对控股，决策链短，打法务实。 > **当前阶段**：从爆品驱动转向平台化运营，IT 系统正经历从信息化到数字化的质变期——流程与 IT...",
+      "issueState": "open",
+      "contentHash": "018a6935e065764e93942d78d8dc46079c255c1cd47eab4a27139c697938e56d",
+      "repository": "cassichen88-jpg/awesome-jobs-2026",
+      "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [
+        "cio",
+        "急招",
+        "深圳"
+      ],
+      "sourceTags": [
+        "cio",
+        "急招",
+        "深圳"
+      ],
+      "author": {
+        "id": "cassichen88-jpg",
+        "name": "cassichen88-jpg",
+        "handle": "cassichen88-jpg",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/283092288?v=4"
+      },
+      "community": {
+        "id": "cassichen88-jpg",
+        "name": "cassichen88-jpg",
+        "avatarUrl": "https://github.com/cassichen88-jpg.png?size=80",
+        "repository": "cassichen88-jpg/awesome-jobs-2026",
+        "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026"
+      },
+      "createdAt": "2026-05-14T06:24:01Z",
+      "updatedAt": "2026-05-14T06:31:50Z",
+      "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/9",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_1281cf89efd737156e2e7eab",
+          "sourceId": "cassichen88-jpg/awesome-jobs-2026#9",
+          "repository": "cassichen88-jpg/awesome-jobs-2026",
+          "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
+          "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/9",
+          "createdAt": "2026-05-14T06:24:01Z",
+          "updatedAt": "2026-05-14T06:31:50Z",
+          "community": {
+            "id": "cassichen88-jpg",
+            "name": "cassichen88-jpg",
+            "avatarUrl": "https://github.com/cassichen88-jpg.png?size=80",
+            "repository": "cassichen88-jpg/awesome-jobs-2026",
+            "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 159,
+        "publishedAt": "2026-05-14T06:24:01Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_31432bc70b69af4c8049f0ea",
       "sourceId": "cassichen88-jpg/awesome-jobs-2026#8",
@@ -913,7 +1443,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 196,
+        "ageDays": 197,
         "publishedAt": "2026-04-06T22:58:07Z",
         "status": "stale"
       }
@@ -1377,516 +1907,6 @@
       "freshness": {
         "ageDays": 212,
         "publishedAt": "2026-03-22T16:47:15Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_0f0495da862b94749892e684",
-      "sourceId": "react-native-drops/vagas#148",
-      "title": "[Curitiba] Senior React Native Developer para um cliente da Visionnaire",
-      "description": "## Nossa empresa\n\nFábrica de Software, desenvolvimento com IA.\n\n## Descrição da vaga\n\nBuscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que executar tarefas, queremos alguém que contribua com melhorias, decisões técnicas e evolução contínua da nossa stack mobile. Trabalho 100% presencial em Curitiba.\n\nAtividades\nVocê vai trabalhar na evolução de aplicativos digitais usados por milhares de pessoas, ajudando a construir experiências mobile mais estáveis, rápidas e relevantes para o nosso público;\nEvoluir aplicativos em produção com foco em performance, estabilidade e experiência do usuário;\nDesenvolver novas funcionalidades e integrações com APIs e serviços de back-end;\nAtuar em problemas reais de compatibilidade entre plataformas, qualidade de entrega e manutenção sustentável;\nTrabalhar com React Native, Expo e EAS no fluxo de configuração, build e publicação dos aplicativos;\nColaborar com designers, desenvolvedores e áreas de negócio na construção de produtos digitais relevantes;\nContribuir com decisões técnicas, melhoria contínua da arquitetura e boas práticas de engenharia.\n\n## Local\n\nPresencial em Curitiba/PR\n\n## Requisitos\n\n**Obrigatórios:**\n\nGraduação em Ciência da Computação, Engenharia de Software ou área relacionada;\nExperiência sólida com React Native;\nBoa base em TypeScript/JavaScript;\nExperiência prática com Expo/EAS, incluindo configuração de projeto, build e publicação;\nVivência com iOS e Android no contexto React Native;\nExperiência em desenvolvimento de Backend e APIs REST;\nConhecimento em autenticação JWT e oAuth2\nFamiliaridade com Git, code review e boas práticas de engenharia;\nCapacidade de investigar problemas, propor melhorias e atuar de forma colaborativa com o time.\nConhecimento em Banco de Dados SQL e No-SQL;\nDisponibilidade para residir em Curitiba/PR ou região metropolitana e atuar no sistema 100% presencial.\n\n**Diferenciais:**\n\nExperiência com CI/CD para apps mobile;\nConhecimento em AWS ou GCP;\nVivência com Node.js / NestJS;\nInteresse em arquitetura, observabilidade e evolução contínua de produto digital.\n\n## Benefícios\n\n- Assistência médica\n- Assistência odontológica\n- Seguro de vida\n- PLR\n- Vale transporte\n- Gympass\n- Auxílio creche\n- Vale Alimentação ou Refeição\n\n## Contratação\n\nCLT \n\n## Como se candidatar\n\nAtravés do link da vaga https://ats.abler.com.br/jobs/visionnaire?slug=desenvolvedor-a-react-native-senior-158167 ou por e-mail recrutamento_selecao@visionnaire.com.br com seu CV anexado - enviar no assunto: Vaga Senior React Native Developer\n\n## Labels\n\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Regime\n\n- CLT\n\n#### Nível\n\n- Sênior",
-      "excerpt": "## Nossa empresa Fábrica de Software, desenvolvimento com IA. ## Descrição da vaga Buscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que execut...",
-      "issueState": "open",
-      "contentHash": "47d394e3a68076103443aba008b607cd7256098851d3d533511920a0bf84d7b5",
-      "repository": "react-native-drops/vagas",
-      "repositoryUrl": "https://github.com/react-native-drops/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "author": {
-        "id": "Vilcilaine",
-        "name": "Vilcilaine",
-        "handle": "Vilcilaine",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/62064964?v=4"
-      },
-      "community": {
-        "id": "react-native-drops",
-        "name": "react-native-drops",
-        "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-        "repository": "react-native-drops/vagas",
-        "url": "https://github.com/react-native-drops/vagas"
-      },
-      "createdAt": "2026-03-10T13:05:56Z",
-      "updatedAt": "2026-03-10T13:05:56Z",
-      "url": "https://github.com/react-native-drops/vagas/issues/148",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "em Curitiba",
-        "subdivision": "PR",
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "em Curitiba, PR · On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "gcp",
-          "java",
-          "javascript",
-          "nodejs",
-          "react",
-          "react-native",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0f0495da862b94749892e684",
-          "sourceId": "react-native-drops/vagas#148",
-          "repository": "react-native-drops/vagas",
-          "repositoryUrl": "https://github.com/react-native-drops/vagas",
-          "url": "https://github.com/react-native-drops/vagas/issues/148",
-          "createdAt": "2026-03-10T13:05:56Z",
-          "updatedAt": "2026-03-10T13:05:56Z",
-          "community": {
-            "id": "react-native-drops",
-            "name": "react-native-drops",
-            "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-            "repository": "react-native-drops/vagas",
-            "url": "https://github.com/react-native-drops/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 224,
-        "publishedAt": "2026-03-10T13:05:56Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_d6f31a804dacbc548031ec5e",
-      "sourceId": "phpdevbr/vagas#1324",
-      "title": "[Remoto] Arquiteto de software Pleno na Spun",
-      "description": "**[Clique aqui para se inscrever!](https://spun.inhire.app/vagas/1a1950ca-def1-4ede-8945-cfdce2b7ef6f/arquiteto-de-software-pleno)**\n\n\nOlá!\nÉ um prazer contar com sua participação no processo seletivo da SPUN. 💚\nAgradecemos o interesse em conhecer nosso time. Abaixo estão as principais informações sobre a vaga:\nBuscamos uma pessoa para atuar como Arquiteto de Software Pleno em nosso time. \n\nContratação: PJ/MEI \n\nValor Mensal do Contrato: R$12.000,00 a 14.000,00\n\n**Requisitos**:\nExperiência em desenho e evolução de arquiteturas de sistemas complexos, garantindo escalabilidade, segurança e manutenibilidade.\nExperiência comprovada em desenvolvimento em PHP Laravel.\nConhecimento em tecnologias emergentes, frameworks em python.\nBoas práticas de desenvolvimento utilizando IA.\nExperiência em ambientes com múltiplas squads/projetos e integração entre serviços.\nCapacidade de arquitetar soluções tanto para servidores on-premise/VPS (infra local ou tradicional) quanto para ambientes em nuvem (especialmente GCP), avaliando trade-offs entre as abordagens.\nCapacidade de definir padrões de arquitetura e requisitos não funcionais (segurança, performance, observabilidade) juntos aos demais sêniores do time.\nExperiência em sistemas distribuídos, APIs e integração entre serviços.\nHabilidade em modelagem de domínio e dados (DDD ou equivalentes).\nCapacidade de liderar decisões técnicas e comunicar trade-offs.\nConhecimento sólido de fundamentos de engenharia de software (design, redes, segurança, bancos de dados)\n\n**Diferenciais**:\nParticipação em projetos de modernização de legado ou migração para arquiteturas modernas (ex.: microserviços, event-driven).\nVivência em estratégias híbridas de infraestrutura (migração gradual de on-premise para cloud).\nCertificações em arquitetura ou cloud (ex.: AWS Solutions Architect, TOGAF).\n\n**Responsabilidades:**\nDefinir e evoluir a visão e padrões de arquitetura da empresa, alinhados ao negócio e à estratégia de longo prazo.\nProjetar soluções escaláveis, seguras e resilientes para sistemas novos e existentes.\nGarantir requisitos não funcionais (disponibilidade, segurança, observabilidade e custos) em todas as soluções.\nLiderar discussões técnicas e orientar decisões de trade-off entre inovação e legado.\nMentorar tech leads e desenvolvedores, promovendo alinhamento arquitetural entre squads.\nApoiar a modernização de sistemas e a integração de novos produtos/serviços.\nParticipar de revisões de design e analisar riscos técnicos.\nEstabelecer padrões de documentação e governança técnica.\nBenefícios:\n \n💻 Trabalho 100% remoto, modelo de entregas com disponibilidade combinada.\n💳 Cartão CAJU: Receba 15% do valor mensal do contrato para usar em categorias como Home Office, Cultura, Mobilidade, Saúde e Educação.\n🛡️ Seguro de Vida: Tranquilidade e proteção garantida para você e seus familiares;\n📚 Aulas de inglês: Turmas abertas semestralmente para aprimorar seu aprendizado;\n🏋️‍♂️ Auxílio atividade física: Incentivo para manter sua saúde e bem-estar;\n🎯 Consultoria de treino: Turmas abertas periodicamente com especialistas para potencializar seus resultados;\n📢 Treinamentos e palestras: Conteúdos exclusivos para o seu desenvolvimento profissional e pessoal.",
-      "excerpt": "**[Clique aqui para se inscrever!](https://spun.inhire.app/vagas/1a1950ca-def1-4ede-8945-cfdce2b7ef6f/arquiteto-de-software-pleno)** Olá! É um prazer contar com sua participação no processo seletivo da SPUN. 💚 Agrade...",
-      "issueState": "open",
-      "contentHash": "6144eddb06a6ff4964cdb95cfc2595f3f6929d164c09994c4773cdbf47bfca95",
-      "repository": "phpdevbr/vagas",
-      "repositoryUrl": "https://github.com/phpdevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "design",
-        "pleno",
-        "python"
-      ],
-      "sourceTags": [
-        "design",
-        "pleno",
-        "python"
-      ],
-      "author": {
-        "id": "Jeferson-TechRecruiter",
-        "name": "Jeferson-TechRecruiter",
-        "handle": "Jeferson-TechRecruiter",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/266774619?v=4"
-      },
-      "community": {
-        "id": "phpdevbr",
-        "name": "phpdevbr",
-        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-        "repository": "phpdevbr/vagas",
-        "url": "https://github.com/phpdevbr/vagas"
-      },
-      "companyName": "Spun",
-      "salary": {
-        "currency": "BRL",
-        "min": 12000,
-        "max": 14000,
-        "period": "year"
-      },
-      "createdAt": "2026-03-09T15:07:04Z",
-      "updatedAt": "2026-04-01T20:33:51Z",
-      "url": "https://github.com/phpdevbr/vagas/issues/1324",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [
-          "aws",
-          "gcp",
-          "laravel",
-          "php",
-          "python"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_d6f31a804dacbc548031ec5e",
-          "sourceId": "phpdevbr/vagas#1324",
-          "repository": "phpdevbr/vagas",
-          "repositoryUrl": "https://github.com/phpdevbr/vagas",
-          "url": "https://github.com/phpdevbr/vagas/issues/1324",
-          "createdAt": "2026-03-09T15:07:04Z",
-          "updatedAt": "2026-04-01T20:33:51Z",
-          "community": {
-            "id": "phpdevbr",
-            "name": "phpdevbr",
-            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-            "repository": "phpdevbr/vagas",
-            "url": "https://github.com/phpdevbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 225,
-        "publishedAt": "2026-03-09T15:07:04Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_eae48d87a90e3ffbeb60afaf",
-      "sourceId": "qa-brasil/vagas#1243",
-      "title": "[Remoto] QA Pleno na BLIS",
-      "description": "## Descrição da vaga\n\nSomos o primeiro aplicativo do mundo que dá acesso legal a Cannabis Medicinal. Com mais de 500 mil downloads, a blis está presente em mais de 800 cidades brasileiras, realizando todo o passo a passo necessário para que qualquer pessoa encontre a sua melhor versão.\n\nhttps://apps.apple.com/br/app/blis-da-consulta-%C3%A0-entrega/id6474689421\n\n## Local de trabalho\n- 100% Remoto\n\n## Requisitos da vaga\n\n• Experiência como QA Pleno (mínimo 2 anos)\n• Escrita estruturada de cenários de teste\n• Documentação\n• Jira\n• Testes manuais estruturados\n• Testes exploratórios e regressivos\n• Testes automatizados\n\nConhecimento em:\n\n• Noções de testes de API (Postman ou similar)\n• Noções de SQL para validação de dados\n• Experiência validando fluxos entre Web e App\n\nPerfil Comportamental:\n\n• Perfil analítico (questiona regras, não testa apenas botões)\n• Proativo na identificação de riscos\n• Comunicação clara com time técnico\n• Organização na documentação\n• Visão sistêmica (entende impactos entre telas, status e integrações)\n\n**Diferenciais**\n• Experiência com automação E2E (Maestro Studio)\n\n## Forma de contratação\n\nPJ\n\n## Benefícios da empresa\n\n- 30 dias de descanso remunerado\n- Wellhub\n- 10% do salário de bônus com metas batidas \n\n## Como se candidatar\n\n- Enviar e-mail para big@appblis.com com pretensão salarial PJ e o currículo.\n\n\n## Labels\n<!-- Label é uma forma dos QAs conseguirem pesquisar as vagas. Após cadastrar a vaga, ela receberá label automaticamente em até 2 minutos.\nApague os itens abaixo que não corresponderem à vaga. -->\n- PJ\n- Pleno\n- Sênior\n- Remoto",
-      "excerpt": "## Descrição da vaga Somos o primeiro aplicativo do mundo que dá acesso legal a Cannabis Medicinal. Com mais de 500 mil downloads, a blis está presente em mais de 800 cidades brasileiras, realizando todo o passo a pas...",
-      "issueState": "open",
-      "contentHash": "e1f96b2b843dc90452cae5ac516eb4cd7479441cff3d4d3932f5c0e0d6467bf1",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pj",
-        "pleno",
-        "remoto",
-        "stale",
-        "sênior"
-      ],
-      "sourceTags": [
-        "pj",
-        "pleno",
-        "remoto",
-        "stale",
-        "sênior"
-      ],
-      "author": {
-        "id": "marceloblis",
-        "name": "marceloblis",
-        "handle": "marceloblis",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/219734845?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "companyName": "30 dias de descanso remunerado",
-      "createdAt": "2026-03-02T16:16:49Z",
-      "updatedAt": "2026-10-17T03:44:53Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1243",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "qa"
-        ],
-        "technologies": [],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_eae48d87a90e3ffbeb60afaf",
-          "sourceId": "qa-brasil/vagas#1243",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1243",
-          "createdAt": "2026-03-02T16:16:49Z",
-          "updatedAt": "2026-10-17T03:44:53Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 232,
-        "publishedAt": "2026-03-02T16:16:49Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data"
-      ],
-      "sourceTags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "nextjs"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_bf70dc9f783bd9e91215da56",
-          "sourceId": "timqian/open-source-jobs#162",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/162",
-          "createdAt": "2026-02-18T13:31:05Z",
-          "updatedAt": "2026-02-19T04:01:13Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 244,
-        "publishedAt": "2026-02-18T13:31:05Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_72cc354e7d9c38f999fa902a",
-      "sourceId": "timqian/open-source-jobs#161",
-      "title": "Feature: Enhanced Search & Filtering",
-      "description": "### Issue : \nThe current job list is growing large. Users need better ways to find specific roles based on technical keywords or location.\n\n### Improvement : \n\nImplement a client-side search or multi-select filter for the JobListComponent using the tech stack information already available in the repos.csv.\n\n**File Path** :  `open-source-jobs/components/job-list.tsx`\n\n**Code Idea** :\n\n```\n// Inside Joblist Component\nconst [filter, setFilter] = useState('');\nconst filteredJobs = releases.filter(job => \n  job.name.toLowerCase().includes(filter.toLowerCase()) || \n  job.description.toLowerCase().includes(filter.toLowerCase())\n);\n```",
-      "excerpt": "### Issue : The current job list is growing large. Users need better ways to find specific roles based on technical keywords or location. ### Improvement : Implement a client-side search or multi-select filter for the...",
-      "issueState": "open",
-      "contentHash": "a1c8fd547da4ac6071a9133e81960256f5bd4898e7e1f6092b7563955e6a4f11",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:29:12Z",
-      "updatedAt": "2026-02-19T04:01:20Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/161",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_72cc354e7d9c38f999fa902a",
-          "sourceId": "timqian/open-source-jobs#161",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/161",
-          "createdAt": "2026-02-18T13:29:12Z",
-          "updatedAt": "2026-02-19T04:01:20Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 244,
-        "publishedAt": "2026-02-18T13:29:12Z",
         "status": "stale"
       }
     }
