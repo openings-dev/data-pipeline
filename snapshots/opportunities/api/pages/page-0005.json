@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-10-20T23:34:49.902Z",
+  "generatedAt": "2026-10-21T02:43:34.397Z",
   "page": 5,
   "pageSize": 20,
   "nextPage": "api/pages/page-0006.json",
   "ids": [
+    "gh_d89e1cc41b9d704400c8843b",
+    "gh_734b65d4c7197d44b825b886",
+    "gh_ba5bd2250dfdfeaed6de206e",
     "gh_1cc381ec57be0517e8d9243b",
     "gh_849717642034c6ac92924f14",
     "gh_22adb1265e1e9cfbf651ca15",
@@ -20,12 +23,297 @@
     "gh_6bd4163903234b0bf8e2d437",
     "gh_0a7a3c6e002a0928c26b439d",
     "gh_20aceb464738bcb46da14811",
-    "gh_c9dbe8c3245224e55d772ee5",
-    "gh_c99e3a932f7fe533fc8d11db",
-    "gh_62dd90fe5fc8ef9fb41715bd",
-    "gh_01a0a1ad79a225ed23493c50"
+    "gh_c9dbe8c3245224e55d772ee5"
   ],
   "items": [
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "sourceId": "ambicuity/New-Grad-Jobs#383",
+      "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+      "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+      "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+      "issueState": "open",
+      "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T04:41:00Z",
+      "updatedAt": "2026-10-19T13:44:56Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_d89e1cc41b9d704400c8843b",
+          "sourceId": "ambicuity/New-Grad-Jobs#383",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+          "createdAt": "2026-10-11T04:41:00Z",
+          "updatedAt": "2026-10-19T13:44:56Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-10-11T04:41:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_734b65d4c7197d44b825b886",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2981",
+      "title": "New Role",
+      "description": "### Link to Job Posting\n\nhttps://physicalreasoning.ai/join/member-of-research-staff-new-grad/\n\n### Company Name\n\nPhysical Reasoning\n\n### Job Title\n\nMember of Research Staff\n\n### Location\n\nRemote\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nOffers Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nCool AI Lab https://www.linkedin.com/company/physical-reasoning",
+      "excerpt": "### Link to Job Posting https://physicalreasoning.ai/join/member-of-research-staff-new-grad/ ### Company Name Physical Reasoning ### Job Title Member of Research Staff ### Location Remote ### What category does this j...",
+      "issueState": "open",
+      "contentHash": "537e591c314a9a54f84a3d2277d5fc8e0558fea38ff256be5a8ef6a9bf86eb68",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
+        "new_role"
+      ],
+      "author": {
+        "id": "adamkoch4221",
+        "name": "adamkoch4221",
+        "handle": "adamkoch4221",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/281675600?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-10-10T05:20:14Z",
+      "updatedAt": "2026-10-10T05:20:14Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2981",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "staff"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_734b65d4c7197d44b825b886",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2981",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2981",
+          "createdAt": "2026-10-10T05:20:14Z",
+          "updatedAt": "2026-10-10T05:20:14Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 10,
+        "publishedAt": "2026-10-10T05:20:14Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_ba5bd2250dfdfeaed6de206e",
+      "sourceId": "remoteintech/remote-jobs#2268",
+      "title": "[Bug] Changelog page: change descriptions shatter into columns and overflow underneath the Carbon ad",
+      "description": "## Summary\n\nOn `/changelog/`, each change description is shattered into a series of narrow vertical columns, and the overflowing text runs underneath the Carbon Ads sidebar unit. Entries whose description contains inline markup (`<code>`, `<a>`) are badly broken; plain-text entries render fine.\n\nLive page: https://remoteintech.company/changelog/\n\n## Screenshots (current behaviour)\n\n**Desktop — 1920×1080** — description text collapses into columns and extends beneath the ad:\n\n![Desktop 1920 - changelog entries broken, text running under the ad](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-desktop-1920.png)\n\n**Desktop — 1440×900** — same failure at a narrower desktop width:\n\n![Desktop 1440 - fragmented text overflows past the content column](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-desktop-1440.png)\n\n**Tablet — 834×1112** — fragments overflow the right edge:\n\n![Tablet 834 - change text spills outside the content column](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-tablet-834.png)\n\n**Mobile — 390px** — the inline ad is pushed off-screen and entries fragment into columns:\n\n![Mobile 390 - ad pushed off-screen, changelog entries fragmented](https://raw.githubusercontent.com/ambicuity/remote-jobs/evidence/changelog-ad-overlap/screenshots/before-mobile-390-entries.png)\n\n## Steps to reproduce\n\n1. Open <https://remoteintech.company/changelog/> in a desktop browser (≥961px, where the sidebar ad is shown).\n2. Scroll to the **v4.14.1** entry.\n3. Observe the first `FIXED` item.\n\n## Expected behaviour\n\nThe badge (`FIXED` / `ADDED` / `CHANGED`) sits on the left, and the description wraps as normal prose within the content column, never crossing into the ad's area.\n\n## Actual behaviour\n\nThe description is broken into separate vertical columns spread across the full page width. On desktop the overflow is painted underneath the sticky Carbon ad, so text reads as though the ad is covering it. Entries with no inline markup (e.g. *\"Migrated from static README-based list to Eleventy v3 static site\"*) are unaffected, which makes the page look intermittently broken.\n\n## Root cause\n\n`src/pages/changelog.njk` styles each list item as a flex container:\n\n```css\n.changelog-entry__changes li {\n  padding-block: var(--space-2xs);\n  display: flex;          /* <-- the problem */\n  align-items: baseline;\n  gap: var(--space-xs);\n}\n```\n\nBut each `<li>` is not a flex row of two items — it is the badge **plus raw inline content** interpolated from `src/_data/changelog.json` via `{{ change.description | safe }}`:\n\n```html\n<li>\n  <span class=\"changelog-badge\" data-type=\"fixed\">fixed</span>\n  The technology tag list was stale in all three contributor docs —\n  <a href=\"/contributing/\">the site's contributing page</a>,\n  <code>CONTRIBUTING.md</code> and <code>.github/CONTRIBUTING.md</code> — missing\n  <code>typescript</code>, <code>react</code>, … <code>postgres</code>, which …\n</li>\n```\n\nBecause the `<li>` is a flex container, **every one of those nodes becomes a separate flex item**:\n\n- each run of bare text becomes an *anonymous flex item*,\n- every `<a>` and every `<code>` becomes its own flex item.\n\nFlexbox defaults to `flex-wrap: nowrap`, and flex items have `min-width: auto`, so they refuse to shrink below their min-content width. For an entry containing ten-plus inline fragments, the combined min-content width is far wider than the `<main>` column. Two consequences follow:\n\n1. Each fragment collapses to its own min-content-width column (one long word wide) — the \"shattered\" appearance.\n2. The row overflows the `<li>` and the `<main>` column, so it paints underneath the `position: sticky` `.carbon-ad-container` in the sidebar, which is the overlap reported here.\n\nOn mobile the same overflow widens the document beyond the viewport, which also drags the inline ad off-screen.\n\nThis affects every changelog entry whose description contains inline markup — the large majority of recent entries.\n\n## Suggested fix\n\nKeep the badge and the description as the only two flex items by wrapping the description in an element, so the inline markup flows normally inside it:\n\n```njk\n<li>\n  <span class=\"changelog-badge\" data-type=\"{{ change.type }}\">{{ change.type }}</span>\n  <span class=\"changelog-entry__description\">{{ change.description | safe }}</span>\n</li>\n```\n\n```css\n.changelog-entry__changes li {\n  padding-block: var(--space-2xs);\n  display: flex;\n  align-items: baseline;\n  gap: var(--space-xs);\n}\n\n.changelog-entry__description {\n  flex: 1;\n  min-inline-size: 0; /* allow the text to shrink and wrap instead of overflowing */\n}\n```\n\nAdding `overflow-wrap: anywhere` for long unbreakable tokens such as `.github/CONTRIBUTING.md` would also keep narrow viewports clean.\n\n## Environment\n\n- Page: `/changelog/` (https://remoteintech.company/changelog/)\n- Affects all viewport widths; most visible at ≥961px where the sidebar ad renders\n- Reproduced on Chrome (desktop 1920, 1440; tablet 834; mobile 390), both light and dark themes\n- Ad behaviour means it is only reproducible on production builds — the Carbon unit is gated behind `eleventy.env.runMode == \"build\"` (see `src/_includes/partials/carbon-ad.njk` and `src/_layouts/base.njk`)\n\n## Files involved\n\n- `src/pages/changelog.njk` — the `display: flex` list item and the ungrouped description\n- `src/_data/changelog.json` — descriptions containing inline `<a>`/`<code>`\n- `src/_includes/partials/carbon-ad.njk`, `src/assets/css/global/blocks/carbon-ad.css` — the sticky sidebar ad (not at fault, but the element the overflow collides with)",
+      "excerpt": "## Summary On `/changelog/`, each change description is shattered into a series of narrow vertical columns, and the overflowing text runs underneath the Carbon Ads sidebar unit. Entries whose description contains inli...",
+      "issueState": "open",
+      "contentHash": "e19dd6c4bec2e3fd0ddb3c1b9b20ccbb8bd7dc67a6458ac5ef7489b785d11de3",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "node",
+        "react",
+        "remote",
+        "typescript"
+      ],
+      "sourceTags": [
+        "data",
+        "node",
+        "react",
+        "remote",
+        "typescript"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-10-09T18:01:42Z",
+      "updatedAt": "2026-10-09T18:01:42Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2268",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "postgres",
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_ba5bd2250dfdfeaed6de206e",
+          "sourceId": "remoteintech/remote-jobs#2268",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2268",
+          "createdAt": "2026-10-09T18:01:42Z",
+          "updatedAt": "2026-10-09T18:01:42Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 11,
+        "publishedAt": "2026-10-09T18:01:42Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_1cc381ec57be0517e8d9243b",
       "sourceId": "backend-br/vagas#12441",
@@ -461,7 +749,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-10-09T01:49:55Z",
         "status": "fresh"
       }
@@ -949,7 +1237,7 @@
         "sourceCount": 4
       },
       "freshness": {
-        "ageDays": 14,
+        "ageDays": 15,
         "publishedAt": "2026-10-06T01:05:40Z",
         "status": "fresh"
       }
@@ -2018,404 +2306,6 @@
       "freshness": {
         "ageDays": 19,
         "publishedAt": "2026-10-01T05:16:11Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_c99e3a932f7fe533fc8d11db",
-      "sourceId": "frontendbr/vagas#8564",
-      "title": "[Remoto] Software Developer Front-end Pleno na Coodesh",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open) para realizar a candidatura. 👋\nA **TruckPag** está em busca de uma pessoa **Software Developer Front-end Pleno** para aumentar o time de tecnologia. Você vai atuar no desenvolvimento das interfaces dos nossos produtos, trabalhando com as duas gerações de UI da empresa (MUI v5 + Emotion + design system @truckpag/components nos projetos legados e Tailwind CSS + shadcn/ui + Radix UI + Lucide nos projetos novos), em colaboração com os times de back-end e mobile.\n\n### Responsabilidades\n\n*   Escrever código e funções facilmente testáveis e compreendidas por outros desenvolvedores, considerando casos extremos e erros;\n    \n*   Compreender a pirâmide de testes, escrever testes unitários de acordo com a regra de negócio e testes de integração com apoio de desenvolvedores sênior e do Líder Técnico;\n    \n*   Testar casos extremos e erros esperados, usar abordagem sistemática para depurar problemas e conhecer a filosofia de monitoramento da organização e os dados operacionais do domínio da equipe;\n    \n*   Entender o contexto do domínio de negócio, as boas práticas, padrões e processos do time, desenvolvendo funções que melhorem a qualidade do código e reduzam débito técnico;\n    \n*   Entender a importância da segurança nas implementações e envolver o Líder Técnico em decisões com implicação de segurança;\n    \n*   Atuar conforme a priorização de tarefas, identificando dependências entre tarefas e requisitos;\n    \n*   Desenhar estrutura de estado de aplicação e componentes reutilizáveis, com revisão de sênior ou especialista;\n    \n*   Aplicar diretrizes de acessibilidade e de performance de renderização (carregamento sob demanda, controle de re-render) de forma proativa;\n    \n*   Tratar erros de consumo de API com autonomia, incluindo falhas de rede e respostas inesperadas do back-end;\n    \n*   Escrever testes cobrindo os dois estados de funcionalidades de interface implementadas por trás de feature flag, com apoio de sênior.\n    \n\n### Perfil que buscamos\n\n*   **Proatividade:** antecipa problemas de usabilidade ou performance antes de ser perguntado;\n    \n*   **Trabalho em equipe:** colabora com colegas de front, back e mobile sem precisar de mediação constante;\n    \n*   **Foco no cliente:** prioriza o que implementar pelo impacto real na experiência de quem usa a interface;\n    \n*   **Resolução de problemas:** decide como depurar e corrigir problemas de complexidade média com autonomia;\n    \n*   **Adaptabilidade e autoliderança:** transita entre demandas de complexidade crescente sem precisar de re-explicação constante de contexto;\n    \n*   **Boa comunicação:** traduz decisões técnicas de interface para quem não é desenvolvedor sem perder precisão.\n    \n\n### Informações da vaga\n\n*   Contratação: PJ;\n    \n*   Modalidade: remota, com disponibilidade para viagens eventuais para encontros presenciais;\n    \n*   Horário: 08:00 às 17:30;\n    \n*   Formação: ensino superior completo ou em andamento, ou experiência equivalente comprovada na área;\n    \n*   Experiência: 2 a 4 anos na função.\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - React \n- Tailwind CSS \n- Vitest \n- Typescript \n- Redux \n- Zustand \n- Docker \n- Figma \n- Testing Library \n- TanStack Query\n## Local: \n Remota\n## Requisitos: \n - React e TypeScript em nível intermediário, com capacidade de desenhar estrutura de estado e componentes reutilizáveis \n- Vite, Node (18 a 24) e gerenciador de pacotes (npm ou pnpm) \n- MUI v5 + Emotion + design system próprio (@truckpag/components) e Tailwind CSS + shadcn/ui + Radix UI + Lucide \n- Gestão de estado: Redux + Redux Toolkit + Redux Saga (legado), Zustand (novos), TanStack Query e Context API ou Constate \n- Formulários com React Hook Form + Yup (legado) ou Zod (novos) \n- Tabelas com react-table v7 / material-react-table (legado) e TanStack Table v8 (novos) \n- Testes com Vitest, Testing Library e MSW para mock de API \n- Padronização de código: ESLint (@truckpag/eslint-config), Prettier, Husky, lint-staged, Commitlint ou Commitizen \n- Acessibilidade e responsividade de interfaces \n- Git e GitLab CI: escrever e entender .gitlab-ci.yml e participar do pipeline de build e teste do front-end \n- Experiência com CI/CD \n- Docker para ambiente de desenvolvimento local \n- Linux e uso de terminal como ambiente padrão de desenvolvimento \n- git-crypt para variáveis de ambiente \n- Figma: implementação fiel a partir do design entregue \n- Uso de IA no desenvolvimento no dia a dia (Cursor) \n- Integração entre sistemas via consumo de APIs \n- Metodologias ágeis (Scrum, Kanban) \n- Noções de segurança da informação e prevenção de vulnerabilidades web no front-end (XSS, CSRF, CORS e CSP)\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Developer Front-end Pleno na TruckPag](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nFront-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "129f0a147d53b57ff7a94bc303aeecedb35bbca0ce3eb40ecf6760666eb2ce3b",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "especialista",
-        "pj",
-        "pleno",
-        "remoto",
-        "sênior",
-        "⚖️ outros",
-        "⚖️ pj",
-        "🏢 remoto",
-        "👨 pleno",
-        "👴 senior"
-      ],
-      "sourceTags": [
-        "especialista",
-        "pj",
-        "pleno",
-        "remoto",
-        "sênior",
-        "⚖️ outros",
-        "⚖️ pj",
-        "🏢 remoto",
-        "👨 pleno",
-        "👴 senior"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "createdAt": "2026-09-30T12:47:56Z",
-      "updatedAt": "2026-10-09T04:59:10Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8564",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend",
-          "mobile"
-        ],
-        "technologies": [
-          "docker",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_c99e3a932f7fe533fc8d11db",
-          "sourceId": "frontendbr/vagas#8564",
-          "repository": "frontendbr/vagas",
-          "repositoryUrl": "https://github.com/frontendbr/vagas",
-          "url": "https://github.com/frontendbr/vagas/issues/8564",
-          "createdAt": "2026-09-30T12:47:56Z",
-          "updatedAt": "2026-10-09T04:59:10Z",
-          "community": {
-            "id": "frontendbr",
-            "name": "frontendbr",
-            "avatarUrl": "https://github.com/frontendbr.png?size=80",
-            "repository": "frontendbr/vagas",
-            "url": "https://github.com/frontendbr/vagas"
-          }
-        },
-        {
-          "id": "gh_cbb8b91d10771751716e86f6",
-          "sourceId": "react-brasil/vagas#3033",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3033",
-          "createdAt": "2026-09-30T13:33:26Z",
-          "updatedAt": "2026-10-07T11:56:28Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 20,
-        "publishedAt": "2026-09-30T12:47:56Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_62dd90fe5fc8ef9fb41715bd",
-      "sourceId": "awesome-jobs/jobs#5075",
-      "title": "SENWORKS -  - SECURITY ENGINEER - [REMOTE] - Up to USD3200 - Good English",
-      "description": "# Security Engineer\n\n**Sen Works Viet Nam Co., Ltd.**\n\n| | |\n| --- | --- |\n| **Job Title** | Security Engineer |\n| **Department** | IT Services – Information Security |\n| **Reports To** | Head of Information Security / Client Security Lead [to be confirmed] |\n| **Employment Type** | Full-time labour contract with Sen Works Viet Nam Co., Ltd.; probation of up to 60 days |\n| **Work Location** | Vietnam – fully remote |\n| **Salary Range** | Up to USD3200 gross/month |\n\n📩 **Apply:** send your CV to [jobs@senworks.com](mailto:jobs@senworks.com)\n\n---\n\n## About Sen Works Viet Nam\n\nSen Works Viet Nam Co., Ltd. is a Vietnam-based technology and healthcare operations company delivering software development, IT services and revenue cycle management support to healthcare organisations in the United States and Europe. Our people work as dedicated, long-term members of our clients' teams, operating within each client's environment, tools and security standards.\n\n## Role Summary\n\nIn this role you will be dedicated to a US healthcare services client that operates a growing network of affiliated medical practices. You will work inside the client's Microsoft Azure and Microsoft 365 environment and collaborate daily with the client's US-based teams on systems that store, process or transmit protected health information (PHI).\n\nThe Security Engineer is the primary architect and engineer of preventive and detective security controls across the client's endpoint, identity, network, cloud and application layers. You will lead the design, implementation and continuous improvement of the security control environment, run vulnerability management, and build the technical evidence that keeps the client audit-ready.\n\n## Key Responsibilities\n\n### Security Architecture & Engineering\n\n- Design, deploy and manage core security platforms: EDR, email security, identity protection, privileged access management, network security and data loss prevention.\n- Advance zero trust across identity, device, network and application layers, strengthening conditional access, MFA and least privilege.\n- Improve Azure and Microsoft 365 security posture through configuration baselines, policy as code and continuous posture management.\n- Set security standards, hardening baselines and reference architectures; run security design reviews for new systems, integrations, vendors and changes.\n\n### Vulnerability & Threat Management\n\n- Lead the vulnerability management program: scanning coverage, risk-based prioritisation, remediation tracking and exception governance.\n- Align patching, configuration and end-of-life remediation with security priorities and clinical uptime requirements.\n- Direct penetration tests, red team engagements and attack surface management, and validate remediation.\n- Use threat intelligence and healthcare-sector attack trends to refine control priorities.\n\n### Compliance Engineering & Detection Enablement\n\n- Build technical controls and evidence supporting HIPAA Security Rule, HITRUST, SOC 2 and client security requirements.\n- Strengthen SOC detection by engineering log sources, telemetry pipelines and automated response integrations.\n- Define measures for control coverage, vulnerability remediation and platform health; report control gaps, risk posture and investment priorities to leadership.\n- Manage security vendors, MSPs and consultants.\n\n### Education & Certifications\n\n- Bachelor's degree in Cybersecurity, Computer Science, Information Systems or a related field; an equivalent combination of education, certifications and experience will be considered.\n- **CISSP, CCSP** or equivalent advanced security certification required; Microsoft SC-100 or AZ-500 preferred.\n\n### Experience\n\n- 7+ years of information security experience, including at least 3 years in security engineering or architecture.\n- Experience designing and operating enterprise security platforms across endpoint, identity, email, network and cloud.\n- Proven success measurably reducing risk, e.g. remediation rates, MFA and EDR coverage, or reduced privileged access.\n- Experience supporting HIPAA, HITRUST, SOC 2 or ISO 27001 assessments with technical evidence and remediation.\n- Healthcare, healthcare technology or managed services experience is a strong advantage.\n\n### Knowledge & Skills\n\n- Security controls in Azure, Microsoft 365 and hybrid Active Directory environments.\n- NIST CSF, NIST SP 800-53, CIS Controls and zero trust principles.\n- IAM, PKI, network segmentation, encryption and secure configuration management.\n- EDR, SIEM, SOAR, PAM, DLP, email security, vulnerability scanning and CSPM platforms.\n- PowerShell, Python and infrastructure as code for automation and evidence collection.\n- HIPAA Security Rule and HITRUST CSF control mapping (training provided).\n- Professional English (spoken and written) for daily work with US-based colleagues and clients.\n\n### Personal Abilities\n\n- Design controls that reduce risk without impeding clinical workflows.\n- Translate emerging threats into practical control improvements and lead implementations through to handoff.\n- Present risk and architecture decisions clearly in English to executive and clinical leadership.\n\n## Working Conditions\n\n- Flexible working hours, with an agreed daily overlap window with US-based teams for meetings and real-time collaboration; participation in a shared on-call escalation rotation for security incidents.\n- A dedicated, private workspace with stable high-speed internet suitable for handling confidential information and PHI.\n- Fully remote from Vietnam.\n- Prolonged computer use and extended phone and video communication; sustained concentration during incidents, maintenance windows and time-sensitive work.\n\n## What We Offer\n\n- 💰 Salary reviewed annually.\n- 🏠 Flexible working hours and fully remote work.\n- 🎁 13th-month salary and performance bonus.\n- 🌙 Night-shift allowance in accordance with the Vietnam Labour Code for any additional hours worked at night.\n- 🏥 Full social, health and unemployment insurance in accordance with Vietnamese law, plus private healthcare insurance.\n- 📚 Company-sponsored certifications and training budget.\n- 💻 Company-managed laptop and equipment.\n- 🌴 Annual leave of at least 12 days plus Vietnamese public holidays.\n- 🌍 Long-term work with international teams on US healthcare technology.\n\n---",
-      "excerpt": "# Security Engineer **Sen Works Viet Nam Co., Ltd.** | | | | --- | --- | | **Job Title** | Security Engineer | | **Department** | IT Services – Information Security | | **Reports To** | Head of Information Security / ...",
-      "issueState": "open",
-      "contentHash": "d87bb2b07de484c4df95a4a320b2dc39aaa6790a51c89a3ef5ab23ee14983b4a",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "design",
-        "hybrid",
-        "python",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "hybrid",
-        "python",
-        "remote"
-      ],
-      "author": {
-        "id": "Saujoe",
-        "name": "Saujoe",
-        "handle": "Saujoe",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/45487228?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "companyName": "sponsored certifications and training budget.",
-      "createdAt": "2026-09-30T11:43:48Z",
-      "updatedAt": "2026-09-30T14:57:16Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5075",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "security"
-        ],
-        "technologies": [
-          "azure",
-          "python"
-        ],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_62dd90fe5fc8ef9fb41715bd",
-          "sourceId": "awesome-jobs/jobs#5075",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5075",
-          "createdAt": "2026-09-30T11:43:48Z",
-          "updatedAt": "2026-09-30T14:57:16Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_b753d317ad4dedee49c1ac2e",
-          "sourceId": "awesome-jobs/vietnam#5075",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5075",
-          "createdAt": "2026-09-30T11:43:48Z",
-          "updatedAt": "2026-09-30T14:57:16Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 20,
-        "publishedAt": "2026-09-30T11:43:48Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_01a0a1ad79a225ed23493c50",
-      "sourceId": "awesome-jobs/jobs#5074",
-      "title": "SENWORKS -  CLOUD ENGINEER  (Azure Platform / IaC) - [REMOTE] - USD3000",
-      "description": "# Cloud Engineer (Azure Platform / IaC)\n\n**Sen Works Viet Nam Co., Ltd.**\n\n| | |\n| --- | --- |\n| **Job Title** | Cloud Engineer (Azure Platform / IaC) |\n| **Department** | IT Services – Infrastructure & Cloud |\n| **Reports To** | Head of Infrastructure / Client Technical Lead [to be confirmed] |\n| **Employment Type** | Full-time labour contract with Sen Works Viet Nam Co., Ltd.; probation of up to 60 days |\n| **Work Location** | Vietnam – fully remote |\n| **Salary Range** | Up to USD3000 gross |\n\n📩 **Apply:** send your CV to [jobs@senworks.com](mailto:jobs@senworks.com)\n\n---\n\n## Role Summary\n\nIn this role you will be dedicated to a US healthcare services client that operates a growing network of affiliated medical practices. You will work inside the client's Microsoft Azure and Microsoft 365 environment and collaborate daily with the client's US-based teams on systems that store, process or transmit protected health information (PHI).\n\nThe Cloud Engineer is the principal designer and builder of the client's cloud platform. You will lead cloud architecture, infrastructure as code, platform automation and cloud operations, building the landing zones, guardrails and delivery pipelines that give product, data and integration teams a secure, compliant, cost-effective foundation for PHI workloads.\n\n## Key Responsibilities\n\n### Cloud Architecture & Platform Engineering\n\n- Design and implement Azure architecture: landing zones, subscription and tenant structure, identity integration, networking, governance and the platform foundation for Azure Virtual Desktop.\n- Deliver the platform through infrastructure as code (Terraform or Bicep), policy as code and CI/CD pipelines for infrastructure changes.\n- Set reference architectures, naming and tagging standards and environment patterns.\n- Lead migration of on-premises and practice-site workloads to Azure, including dependency mapping, cutover planning and decommissioning.\n\n### Cloud Operations, Reliability & Cost\n\n- Lead observability, monitoring, alerting and incident response for cloud platforms; drive root cause analysis and reliability improvements.\n- Align configuration, identity, encryption, key management and logging with HIPAA, HITRUST and SOC 2 in partnership with Information Security.\n- Design and test backup, DR and business continuity to meet defined RTO and RPO.\n- Use cost and utilisation data to right-size resources and apply reservations and savings plans.\n\n### Enablement & Integration\n\n- Build reusable modules, pipelines and documentation so teams can deploy compliant workloads without bespoke engineering.\n- Design secure connectivity and data exchange between cloud, on-premises systems, practice sites and third-party healthcare platforms.\n- Conduct design and code reviews; define measures for availability, deployment frequency, change success rate and cost efficiency, and report to leadership.\n\n## Qualifications\n\n### Education & Certifications\n\n- Bachelor's degree in Computer Science, Information Systems, Engineering or a related field; an equivalent combination of education, certifications and experience will be considered.\n- **Microsoft Certified: Azure Solutions Architect Expert (AZ-305)** or equivalent expert-level cloud certification required; DevOps, security or networking certifications preferred.\n\n### Experience\n\n- 5+ years of infrastructure or platform engineering experience, including at least 4 years designing and operating production workloads in Azure or a comparable public cloud.\n- Experience leading cloud migrations and greenfield builds, including landing zone design, networking and identity integration.\n- Proven success improving reliability, deployment velocity and cloud cost efficiency through automation.\n- Experience building cloud environments that meet HIPAA, HITRUST, SOC 2 or ISO 27001 requirements.\n- Healthcare, healthcare technology or managed services experience is a strong advantage.\n\n### Knowledge & Skills\n\n- Terraform or Bicep with Git-based workflows; Azure DevOps or GitHub Actions.\n- Azure networking and security: VNets, private endpoints, ExpressRoute/VPN, RBAC, Azure Policy, Key Vault, Defender for Cloud and Entra ID.\n- Azure Well-Architected Framework and Cloud Adoption Framework.\n- Containers and orchestration (Docker, Kubernetes, AKS), serverless patterns and SRE practices.\n- PowerShell, Python or Bash; Azure Monitor and Log Analytics; cloud cost management.\n- HIPAA, the shared responsibility model and BAAs with cloud providers (training provided).\n- Professional English (spoken and written) for daily work with US-based colleagues and clients.\n\n## Working Conditions\n\n- Flexible working hours, with an agreed daily overlap window with US-based teams for meetings and real-time collaboration.\n- Fully remote from Vietnam; no business travel or on-site attendance is required.\n\n## What We Offer\n\n- 💰 Salary reviewed annually.\n- 🏠 Flexible working hours and fully remote work – no travel or on-site attendance required.\n- 🎁 13th-month salary and performance bonus.\n- 🌙 Night-shift allowance in accordance with the Vietnam Labour Code for any hours worked at night.\n- 🏥 Full social, health and unemployment insurance in accordance with Vietnamese law, plus private healthcare insurance.\n- 📚 Company-sponsored certifications and training budget.\n- 💻 Company-managed laptop and equipment.\n- 🌴 Annual leave of at least 12 days plus Vietnamese public holidays.\n- 🌍 Long-term work with international teams.\n\n---\n\n## How to Apply\n\nSend your CV to **[jobs@senworks.com](mailto:jobs@senworks.com)** with the subject line: `Cloud Engineer (Azure Platform / IaC) – [Your Name]`",
-      "excerpt": "# Cloud Engineer (Azure Platform / IaC) **Sen Works Viet Nam Co., Ltd.** | | | | --- | --- | | **Job Title** | Cloud Engineer (Azure Platform / IaC) | | **Department** | IT Services – Infrastructure & Cloud | | **Repo...",
-      "issueState": "open",
-      "contentHash": "62b2d9f483fe60ff63bbbbc175d054690c0d42a0a55e51b55e116cd865b59f0f",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "design",
-        "devops",
-        "principal",
-        "python",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "devops",
-        "principal",
-        "python",
-        "remote"
-      ],
-      "author": {
-        "id": "Saujoe",
-        "name": "Saujoe",
-        "handle": "Saujoe",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/45487228?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "companyName": "sponsored certifications and training budget.",
-      "createdAt": "2026-09-30T11:35:49Z",
-      "updatedAt": "2026-09-30T14:57:48Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5074",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "devops-sre",
-          "leadership"
-        ],
-        "technologies": [
-          "azure",
-          "docker",
-          "kubernetes",
-          "python",
-          "terraform"
-        ],
-        "seniority": [
-          "lead",
-          "principal"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "on-site",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_01a0a1ad79a225ed23493c50",
-          "sourceId": "awesome-jobs/jobs#5074",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5074",
-          "createdAt": "2026-09-30T11:35:49Z",
-          "updatedAt": "2026-09-30T14:57:48Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_a370562fcc444cbb51007ad5",
-          "sourceId": "awesome-jobs/vietnam#5074",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5074",
-          "createdAt": "2026-09-30T11:35:49Z",
-          "updatedAt": "2026-09-30T14:57:48Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 20,
-        "publishedAt": "2026-09-30T11:35:49Z",
         "status": "fresh"
       }
     }
