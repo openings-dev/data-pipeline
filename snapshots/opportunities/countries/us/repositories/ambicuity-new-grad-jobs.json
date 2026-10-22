@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-10-20T18:52:13.792Z",
+  "generatedAt": "2026-10-22T08:11:20.317Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 27,
-    "openIssues": 4,
-    "closedIssues": 23
+    "openIssues": 5,
+    "closedIssues": 22
   },
-  "dataHash": "e027b227f104a12acc053848acd58e40561301cf9f353ebe17bc09a6752893cd",
+  "dataHash": "780c109c8f14baf8db13c52b733ba9be05dfe2ba4b74368c2eedda539714c38a",
   "items": [
+    {
+      "id": "gh_e740902272f4ef38ad9114e9",
+      "sourceId": "ambicuity/New-Grad-Jobs#452",
+      "title": "Job data is stale: last scrape 2026-10-22T00:41:33.505279Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **256 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/39725322633. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **256 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "951096f26d18cec9c08ff3a92365b2d2706f5739cccd471edeffcaa3273a20ed",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-22T04:58:16Z",
+      "updatedAt": "2026-10-22T04:58:16Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/452",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_135dc54daa0d7acb783a5145",
       "sourceId": "ambicuity/New-Grad-Jobs#451",
@@ -353,60 +411,6 @@
       "createdAt": "2026-10-16T01:47:20Z",
       "updatedAt": "2026-10-16T22:56:11Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/445",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_c7f60008c3825de71e9e8f62",
-      "sourceId": "ambicuity/New-Grad-Jobs#443",
-      "title": "Board: salaries shown as US dollars whatever their currency; Indian locations tagged US or untagged",
-      "description": "Found while fact-checking the salary and Canada/India guides (#440).\n\n**1. The board labels every posted salary as US dollars.** `fmtComp` prints `$X–Yk` whatever the range's currency. On the 2026-10-15 feed, 1,661 jobs post a range:\n- 114 are CAD, 6 EUR and 1 INR, and all show as `$`;\n- 6 have an unknown currency (a bare `$` outside the US and Canada) and still show, although the static job pages hide them;\n- the pay sort and the MED COMP median mix all of these together.\n\n**2. Indian locations are tagged US or get no country.** For example, \"IN - Chennai\" and \"IN: Lilly Bengaluru\" are read as Indiana, while \"Gurgaon\", \"IND-Pune-…\" and \"Chennai, Tamil Nadu\" get no country. On the same feed, 108 Indian jobs are affected:\n- 13 are tagged US, and some of those appear as US metros such as \"Chennai, IN\";\n- 95 have no country.\n\nThe COUNTRY filter, the LOCATION list, the /jobs/in/… landing pages and the JobPosting `addressCountry` all inherit the error.\n\n## Expected\n- Each range is labelled in its own currency, with no conversion, and ranges of unknown currency are hidden as on the job pages. Pay is compared only within one currency, and MED COMP is over US-dollar ranges and says so.\n- An Indian state or city is India unless the location names another country. \"IN\" beside it is India, not Indiana, and US/Canadian places such as \"Delhi, NY\" and \"Indianapolis, IN\" are unchanged.",
-      "excerpt": "Found while fact-checking the salary and Canada/India guides (#440). **1. The board labels every posted salary as US dollars.** `fmtComp` prints `$X–Yk` whatever the range's currency. On the 2026-10-15 feed, 1,661 job...",
-      "issueState": "closed",
-      "contentHash": "d8dec8aa9fc4152a1ef210a826a715a55d4e293c1b115f7d059aae834ac705c7",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-16T01:28:24Z",
-      "updatedAt": "2026-10-16T01:32:22Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/443",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"

@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-10-22T02:48:33.103Z",
+  "generatedAt": "2026-10-22T08:11:20.317Z",
   "page": 3,
   "pageSize": 20,
   "nextPage": "api/pages/page-0004.json",
   "ids": [
+    "gh_94493c77be84aabfeeabe717",
+    "gh_0da1549c7daf4a0c09a7d121",
+    "gh_2f90b160baee5d09b0165e89",
     "gh_14ddee933b9b152d7875ef0c",
     "gh_a03853fce961d78f26781f71",
     "gh_c2ca6e47f2a8e232fc4150d6",
@@ -13,19 +16,289 @@
     "gh_f854256c35a417d8933cfcfe",
     "gh_359763f2428002617dd25011",
     "gh_e0e7c31465468a5b2331082b",
-    "gh_559beb0dbd220ca8b9dd95e0",
-    "gh_376143f18c1c757c4fe196f9",
-    "gh_4001ce1c357ee7446bc58419",
-    "gh_d9f69df508a70f1bd67af284",
+    "gh_2aa80ef5fd4f28a6455599af",
+    "gh_5d3fe8220929cd2c26a32412",
+    "gh_93a2ab3cf18ad096329967a7",
+    "gh_3d294925f28c70e3b23520bb",
     "gh_34417202d0a35257d6811c40",
     "gh_029af2b880506194635d23b8",
     "gh_81e63edc3ac406661d00088f",
-    "gh_ea7def3477890f265af9646f",
-    "gh_dd3839af7bc25daf172c8c87",
-    "gh_db1fad49e16a46bf47a89e3d",
-    "gh_9b3e38ebbaf6e3edb0d7728c"
+    "gh_305d92191bf390acb57dbdb3"
   ],
   "items": [
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "sourceId": "ambicuity/New-Grad-Jobs#448",
+      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
+      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
+      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
+      "issueState": "open",
+      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T23:03:00Z",
+      "updatedAt": "2026-10-16T23:03:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_94493c77be84aabfeeabe717",
+          "sourceId": "ambicuity/New-Grad-Jobs#448",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+          "createdAt": "2026-10-16T23:03:00Z",
+          "updatedAt": "2026-10-16T23:03:00Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-10-16T23:03:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_0da1549c7daf4a0c09a7d121",
+      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+      "title": "[Product Bug] Jobs auto-detected as \"Applied\" remain visible in \"Liked\" tab (cross-tab duplication)",
+      "description": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team.\n\n### Bug\n\nAfter the Chrome extension auto-detects a submitted application, the job stays in **both** the \"Liked\" tab AND the \"Applied\" tab. User has to manually un-Like each one or Liked-tab counts inflate indefinitely.\n\n### Repro\n\n1. Save a job to the Liked list (click heart/save on a job card)\n2. Apply to that same job on the external careers page\n3. Return to Jobright dashboard\n4. Observe: job appears in both Applied AND Liked\n\n### Expected\n\nOnce auto-detect flips a job to Applied, it should disappear from Liked. \"Applied\" supersedes \"Liked\" in the user's pipeline model: you don't \"like\" a job you've already committed to.\n\n### Impact\n\nBreaks pipeline tracking integrity. Any user with 20+ liked jobs who applies to a few per day accumulates a growing phantom Liked list that no longer reflects pipeline state. Appears to be a recurring class of complaint in third-party Jobright reviews (weak submission tracking).\n\n### One-click diagnostic for your eng team\n\nHard-refresh the Liked tab after reproducing:\n\n- **Duplicate persists**: backend data model issue (likely independent `isLiked` + `isApplied` boolean flags with no mutex, or separate collections with no cross-delete on apply-event)\n- **Duplicate clears**: frontend cache-invalidation miss on apply-event (likely Chrome extension writes applied status without invalidating the Liked-list query)\n\n### Fix sketch\n\n- **Write-side**: on apply-event, set `isLiked=false` as well, OR migrate to a single `status` enum (liked / applied / interviewing / rejected) that is mutually exclusive\n- **Query-side (belt-and-suspenders)**: filter Liked by `isLiked AND status != 'applied' AND status != 'interviewing'` so the bug cannot recur via other write paths\n\n### Severity\n\n**High**. Not critical (no data loss, no security issue), but breaks the extension's core value prop of trustworthy pipeline tracking. 200K users times this friction = material NPS impact.\n\nHappy to provide screenshots if that unblocks routing.",
+      "excerpt": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team. ### Bug After the Chrome extension auto-detects a submitted application, the jo...",
+      "issueState": "open",
+      "contentHash": "674740d7d1bb670636a9cd77e3422687bfcf1533e7088e9730959192c1948b0e",
+      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "author": {
+        "id": "JayDS22",
+        "name": "JayDS22",
+        "handle": "JayDS22",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+      },
+      "createdAt": "2026-10-16T16:34:38Z",
+      "updatedAt": "2026-10-16T16:34:38Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_0da1549c7daf4a0c09a7d121",
+          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+          "createdAt": "2026-10-16T16:34:38Z",
+          "updatedAt": "2026-10-16T16:34:38Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-10-16T16:34:38Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_2f90b160baee5d09b0165e89",
+      "sourceId": "rebase-network/who-is-hiring#1320",
+      "title": "[远程] CEX公司诚聘 项目经理/财务经理/资深量化风险专家/资深量化交易专家",
+      "description": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。\n公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。\n\n\n## 地点\n\n- 工作地点：远程\n- 联系方式：@nature000111\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：远程\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n01｜项目经理（PMO）\n工作内容\n1. 负责市场活动、用户增长及运营类重点项目的规划与交付。  \n2. 协调产品、市场、运营等团队资源，推动项目按计划落地。  \n3. 管理项目进度、风险及交付质量，优化跨团队协作流程。  \n任职要求\n1. 2–5 年项目管理、PMO 或业务运营经验，有独立主导项目的成功案例。  \n2. 具备数字资产交易平台背景，有市场活动或用户增长项目经验。  \n3. 推动力强、结果导向，能够独立协调多部门解决问题，非纯执行型项目经理。  \n\n02｜财务经理\n工作内容\n1. 负责多币种、多主体账务管理、财务报表及月度、年度结算。  \n2. 管理冷热钱包、银行账户及链上资产，完成资金对账和差异排查。  \n3. 联合产品及研发团队搭建财务核算与对账系统，推动财务流程自动化。  \n任职要求\n1. 财务、会计、金融相关专业本科及以上学历。  \n2. 3 年以上 Web3 或加密交易平台财务经验，熟悉全盘账务及链上资金对账。  \n3. 熟悉多币种财务管理，具备财务系统从 0 到 1 建设或相关需求落地能力。  \n\n03｜资深量化风险专家（交易与对冲）\n工作内容\n1. 建立交易及对冲风险模型，管理风险敞口、保证金、流动性及风险限额。  \n2. 开展市场压力测试，评估极端行情下的潜在损失和资金风险。  \n3. 分析订单簿、成交及交易异常，推动风险预警与控制机制落地。  \n任职要求\n1. 通常 5 年以上量化风险、市场风险或衍生品交易相关经验。  \n2. 熟练使用 Python、SQL，具备风险建模、统计分析及压力测试能力。  \n3. 深入理解永续合约、期货、保证金、强平、资金费率及市场微观结构，具备独立风险管理案例。  \n\n04｜资深量化交易专家（对冲策略）\n工作内容\n1. 研究和优化动态对冲、库存管理、资金再平衡及量化交易策略。  \n2. 优化 Maker/Taker、订单路由、拆单及交易执行，降低交易成本。  \n3. 研究跨市场套利、基差和资金费率机会，负责策略实盘表现及净收益优化。  \n任职要求\n1. 通常 5 年以上量化交易、做市或电子交易经验，其中至少 2 年参与实盘策略及 PnL 管理。  \n2. 有独立主导策略研究、实盘上线及持续优化经验，能够解释收益来源和回撤。  \n3. 熟练使用 Python、SQL，理解回测验证、交易成本建模及衍生品市场机制。  \n## 工作环境",
+      "excerpt": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。 公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。 ## 地点 - 工作地点：远程 - 联系方式：@nature000111 ## 工作性质 - 是否全职：全职 - 是否远程：远程 - 时区要求：（GMT+8优先...",
+      "issueState": "open",
+      "contentHash": "f1859c2110ced5731c7c4c42694aaac2ba37bb1da458fdcd310f5627de750642",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "python"
+      ],
+      "sourceTags": [
+        "python"
+      ],
+      "author": {
+        "id": "digital123s",
+        "name": "digital123s",
+        "handle": "digital123s",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/221972900?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-10-16T02:41:02Z",
+      "updatedAt": "2026-10-16T02:41:02Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2f90b160baee5d09b0165e89",
+          "sourceId": "rebase-network/who-is-hiring#1320",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
+          "createdAt": "2026-10-16T02:41:02Z",
+          "updatedAt": "2026-10-16T02:41:02Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-10-16T02:41:02Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_14ddee933b9b152d7875ef0c",
       "sourceId": "rebase-network/who-is-hiring#1319",
@@ -578,7 +851,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-10-15T05:00:09Z",
         "status": "fresh"
       }
@@ -930,15 +1203,15 @@
       }
     },
     {
-      "id": "gh_559beb0dbd220ca8b9dd95e0",
-      "sourceId": "backend-br/vagas#12467",
+      "id": "gh_2aa80ef5fd4f28a6455599af",
+      "sourceId": "programadores-br/geral#3122",
       "title": "[Cidade do México, México / Buenos Aires, Argentina] Senior Cloud AI Engineer, Google Cloud (English) na Google",
-      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/senior-cloud-ai-engineer-google-cloud-english-181723126?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners.As a Cloud AI Engineer, you will work directly...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to communicate with global teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science, related field, or equivalent practical experience.\n- 6 years of experience in software engineering, cloud architecture, or technical consulting, including 2 years of experience deploying production Generative AI (GenAI) applications.\n- Experience in Python and cloud computing principles (serverless, virtualization, secure networking).\n- Experience building and orchestrating agents using Agent Development Kits (ADKs) or frameworks (LangChain, LlamaIndex, AutoGen).\n- Ability to communicate in English fluently to communicate with global teams.\n\n## Diferenciais:\n- Master’s degree in Computer Science, Artificial Intelligence, Machine Learning, or related field.\n\n## Responsabilidades:\n- Lead the global delivery and implementation of Gemini Enterprise solutions, applying Agent Development Kits (ADKs) to solve highly complex, enterprise-scale technical challenges.\n- Serve as the trusted technical advisor to C-suite executives at Google’s most strategic global accounts, shaping their overarching AI strategy and accelerating the adoption of Gemini Enterprise.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nMexico City, CDMX, Mexico; Buenos Aires, Argentina\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Senior Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/senior-cloud-ai-engineer-google-cloud-english-181723126?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/senior-cloud-ai-engineer-google-cloud-english-181723126?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners.As a Cloud AI Engineer, you will work directly...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to communicate with global teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science, related field, or equivalent practical experience.\n- 6 years of experience in software engineering, cloud architecture, or technical consulting, including 2 years of experience deploying production Generative AI (GenAI) applications.\n- Experience in Python and cloud computing principles (serverless, virtualization, secure networking).\n- Experience building and orchestrating agents using Agent Development Kits (ADKs) or frameworks (LangChain, LlamaIndex, AutoGen).\n- Ability to communicate in English fluently to communicate with global teams.\n\n## Diferenciais:\n- Master’s degree in Computer Science, Artificial Intelligence, Machine Learning, or related field.\n\n## Responsabilidades:\n- Lead the global delivery and implementation of Gemini Enterprise solutions, applying Agent Development Kits (ADKs) to solve highly complex, enterprise-scale technical challenges.\n- Serve as the trusted technical advisor to C-suite executives at Google’s most strategic global accounts, shaping their overarching AI strategy and accelerating the adoption of Gemini Enterprise.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nMexico City, CDMX, Mexico; Buenos Aires, Argentina\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Senior Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/senior-cloud-ai-engineer-google-cloud-english-181723126?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nProgramação",
       "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
       "issueState": "open",
-      "contentHash": "9764b1bfafcf1f4405fe2b5774755a63beccc23b417f680081378fde54aca41c",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "contentHash": "ad6e9c7d2b14e1910a1b761906ad7283ea08c599aeb03750d582510d26bf8d2f",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -947,12 +1220,10 @@
         "region": "South America"
       },
       "tags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "sourceTags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -961,16 +1232,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
       "companyName": "Google",
-      "createdAt": "2026-10-14T21:00:19Z",
+      "createdAt": "2026-10-14T21:01:08Z",
       "updatedAt": "2026-10-14T21:01:34Z",
-      "url": "https://github.com/backend-br/vagas/issues/12467",
+      "url": "https://github.com/programadores-br/geral/issues/3122",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Argentina",
@@ -982,7 +1253,6 @@
       },
       "taxonomy": {
         "areas": [
-          "backend",
           "data-ai"
         ],
         "technologies": [
@@ -1007,22 +1277,6 @@
       },
       "sources": [
         {
-          "id": "gh_559beb0dbd220ca8b9dd95e0",
-          "sourceId": "backend-br/vagas#12467",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12467",
-          "createdAt": "2026-10-14T21:00:19Z",
-          "updatedAt": "2026-10-14T21:00:36Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
           "id": "gh_2aa80ef5fd4f28a6455599af",
           "sourceId": "programadores-br/geral#3122",
           "repository": "programadores-br/geral",
@@ -1040,24 +1294,24 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
+        "sourceCount": 1
       },
       "freshness": {
         "ageDays": 7,
-        "publishedAt": "2026-10-14T21:00:19Z",
+        "publishedAt": "2026-10-14T21:01:08Z",
         "status": "fresh"
       }
     },
     {
-      "id": "gh_376143f18c1c757c4fe196f9",
-      "sourceId": "backend-br/vagas#12466",
+      "id": "gh_5d3fe8220929cd2c26a32412",
+      "sourceId": "programadores-br/geral#3121",
       "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud AI Engineer, Google Cloud (English) na Google",
-      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722948?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to collaborate with other teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience with data structures, algorithms, and software design.\n- Experience coding in Python.\n- Ability to communicate in English fluently to collaborate with other teams.\n\n## Diferenciais:\n- Experience with recommendation engines, data pipelines, distributed machine learning, and deep learning frameworks.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning issues.\n- Coach customers on the practical issues in machine learning systems, feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722948?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722948?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to collaborate with other teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience with data structures, algorithms, and software design.\n- Experience coding in Python.\n- Ability to communicate in English fluently to collaborate with other teams.\n\n## Diferenciais:\n- Experience with recommendation engines, data pipelines, distributed machine learning, and deep learning frameworks.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning issues.\n- Coach customers on the practical issues in machine learning systems, feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722948?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nProgramação",
       "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
       "issueState": "open",
-      "contentHash": "5fbfb378df9944917c6dc5ae398a5cc06ab122af96b3da2b3102f416f2259341",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "contentHash": "e6956753315a74bfe4d3c1afbd1dabc6a2ec261d5927e598d9f8b5973f8b933e",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -1066,12 +1320,10 @@
         "region": "South America"
       },
       "tags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "sourceTags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -1080,16 +1332,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
       "companyName": "Google",
-      "createdAt": "2026-10-14T20:58:44Z",
+      "createdAt": "2026-10-14T20:59:29Z",
       "updatedAt": "2026-10-14T20:59:48Z",
-      "url": "https://github.com/backend-br/vagas/issues/12466",
+      "url": "https://github.com/programadores-br/geral/issues/3121",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Argentina",
@@ -1101,7 +1353,6 @@
       },
       "taxonomy": {
         "areas": [
-          "backend",
           "data-ai",
           "design"
         ],
@@ -1123,22 +1374,6 @@
         "workModel": "unknown"
       },
       "sources": [
-        {
-          "id": "gh_376143f18c1c757c4fe196f9",
-          "sourceId": "backend-br/vagas#12466",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12466",
-          "createdAt": "2026-10-14T20:58:44Z",
-          "updatedAt": "2026-10-14T20:59:00Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
         {
           "id": "gh_5d3fe8220929cd2c26a32412",
           "sourceId": "programadores-br/geral#3121",
@@ -1157,24 +1392,24 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
+        "sourceCount": 1
       },
       "freshness": {
         "ageDays": 7,
-        "publishedAt": "2026-10-14T20:58:44Z",
+        "publishedAt": "2026-10-14T20:59:29Z",
         "status": "fresh"
       }
     },
     {
-      "id": "gh_4001ce1c357ee7446bc58419",
-      "sourceId": "backend-br/vagas#12465",
+      "id": "gh_93a2ab3cf18ad096329967a7",
+      "sourceId": "programadores-br/geral#3120",
       "title": "[Cidade do México, México / Buenos Aires, Argentina] Cloud AI Engineer, Google Cloud (English) na Google",
-      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722857?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to collaborate with other teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience with data structures, algorithms, and software design.\n- Experience coding in Python.\n- Ability to communicate in English fluently to collaborate with other teams.\n\n## Diferenciais:\n- Experience with recommendation engines, data pipelines, distributed machine learning, and deep learning frameworks.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning challenges.\n- Coach customers on the practical challenges in machine learning systems: feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nMexico City, CDMX, Mexico; Buenos Aires, Argentina\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722857?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722857?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently to collaborate with other teams.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience with data structures, algorithms, and software design.\n- Experience coding in Python.\n- Ability to communicate in English fluently to collaborate with other teams.\n\n## Diferenciais:\n- Experience with recommendation engines, data pipelines, distributed machine learning, and deep learning frameworks.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning challenges.\n- Coach customers on the practical challenges in machine learning systems: feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nMexico City, CDMX, Mexico; Buenos Aires, Argentina\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-google-cloud-english-181722857?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nProgramação",
       "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
       "issueState": "open",
-      "contentHash": "96d7f7393ab38d3c40db7793fd976f16b20b6c8b8d507229b50ca38409d1798d",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "contentHash": "3a93abc868aa9e2ed212272620e1c4181cd196a182fea91f35cde0fb1e8ffa70",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -1183,12 +1418,10 @@
         "region": "South America"
       },
       "tags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "sourceTags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -1197,16 +1430,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
       "companyName": "Google",
-      "createdAt": "2026-10-14T20:57:10Z",
+      "createdAt": "2026-10-14T20:57:42Z",
       "updatedAt": "2026-10-14T20:58:04Z",
-      "url": "https://github.com/backend-br/vagas/issues/12465",
+      "url": "https://github.com/programadores-br/geral/issues/3120",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Argentina",
@@ -1218,7 +1451,6 @@
       },
       "taxonomy": {
         "areas": [
-          "backend",
           "data-ai",
           "design"
         ],
@@ -1240,22 +1472,6 @@
         "workModel": "unknown"
       },
       "sources": [
-        {
-          "id": "gh_4001ce1c357ee7446bc58419",
-          "sourceId": "backend-br/vagas#12465",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12465",
-          "createdAt": "2026-10-14T20:57:10Z",
-          "updatedAt": "2026-10-14T20:57:27Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
         {
           "id": "gh_93a2ab3cf18ad096329967a7",
           "sourceId": "programadores-br/geral#3120",
@@ -1274,24 +1490,24 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
+        "sourceCount": 1
       },
       "freshness": {
         "ageDays": 7,
-        "publishedAt": "2026-10-14T20:57:10Z",
+        "publishedAt": "2026-10-14T20:57:42Z",
         "status": "fresh"
       }
     },
     {
-      "id": "gh_d9f69df508a70f1bd67af284",
-      "sourceId": "backend-br/vagas#12464",
+      "id": "gh_3d294925f28c70e3b23520bb",
+      "sourceId": "programadores-br/geral#3119",
       "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud AI Engineer IV, Google Cloud (English) na Google",
-      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-iv-google-cloud-english-181722642?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently as this is a customer-facing role.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- 3 years of experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience building and deploying custom ML models into production, including experience with deep learning frameworks and with designing and deploying agentic AI workflows for business process automation.\n- Experience coding in Python, including data structures, algorithms, and software design.\n- Ability to communicate in English fluently as this is a customer-facing role.\n\n## Diferenciais:\n- Experience working with recommendation engines, data pipelines, or distributed machine learning.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning challenges.\n- Coach customers on the practical challenges in machine learning systems: feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer IV, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-iv-google-cloud-english-181722642?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-ai-engineer-iv-google-cloud-english-181722642?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As a Cloud AI Engineer, you will design and...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in English fluently as this is a customer-facing role.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- 3 years of experience building machine learning solutions and working with technical customers.\n- Experience designing cloud enterprise solutions and supporting customer projects to completion.\n- Experience building and deploying custom ML models into production, including experience with deep learning frameworks and with designing and deploying agentic AI workflows for business process automation.\n- Experience coding in Python, including data structures, algorithms, and software design.\n- Ability to communicate in English fluently as this is a customer-facing role.\n\n## Diferenciais:\n- Experience working with recommendation engines, data pipelines, or distributed machine learning.\n\n## Responsabilidades:\n- Be a trusted technical advisor to customers and solve complex machine learning challenges.\n- Coach customers on the practical challenges in machine learning systems: feature extraction and feature definition, data validation, monitoring, and management of features and models.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud AI Engineer IV, Google Cloud (English) na Google](https://coodesh.com/jobs/cloud-ai-engineer-iv-google-cloud-english-181722642?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nProgramação",
       "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
       "issueState": "open",
-      "contentHash": "4a0e332e9e042bf7429b33d0a78d9a30c76db0ec55a07f98a3514f6224c6f950",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "contentHash": "9e8c341ddb2bd2c154d61828b66d874692f93639788b3c55cf66971ccb21c848",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -1300,12 +1516,10 @@
         "region": "South America"
       },
       "tags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "sourceTags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -1314,16 +1528,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
       "companyName": "Google",
-      "createdAt": "2026-10-14T20:56:12Z",
+      "createdAt": "2026-10-14T20:56:29Z",
       "updatedAt": "2026-10-14T20:56:52Z",
-      "url": "https://github.com/backend-br/vagas/issues/12464",
+      "url": "https://github.com/programadores-br/geral/issues/3119",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Argentina",
@@ -1335,7 +1549,6 @@
       },
       "taxonomy": {
         "areas": [
-          "backend",
           "data-ai",
           "design"
         ],
@@ -1358,22 +1571,6 @@
       },
       "sources": [
         {
-          "id": "gh_d9f69df508a70f1bd67af284",
-          "sourceId": "backend-br/vagas#12464",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12464",
-          "createdAt": "2026-10-14T20:56:12Z",
-          "updatedAt": "2026-10-14T20:56:31Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
           "id": "gh_3d294925f28c70e3b23520bb",
           "sourceId": "programadores-br/geral#3119",
           "repository": "programadores-br/geral",
@@ -1391,11 +1588,11 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
+        "sourceCount": 1
       },
       "freshness": {
         "ageDays": 7,
-        "publishedAt": "2026-10-14T20:56:12Z",
+        "publishedAt": "2026-10-14T20:56:29Z",
         "status": "fresh"
       }
     },
@@ -1560,19 +1757,11 @@
       },
       "tags": [
         "alocado",
-        "inglês",
-        "javascript",
-        "linux",
-        "python",
-        "windows"
+        "inglês"
       ],
       "sourceTags": [
         "alocado",
-        "inglês",
-        "javascript",
-        "linux",
-        "python",
-        "windows"
+        "inglês"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -1601,7 +1790,6 @@
       },
       "taxonomy": {
         "areas": [
-          "backend",
           "data-ai",
           "design",
           "fullstack",
@@ -1647,22 +1835,6 @@
           }
         },
         {
-          "id": "gh_f873c14e9e850b3182b336ae",
-          "sourceId": "backend-br/vagas#12463",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12463",
-          "createdAt": "2026-10-14T20:51:46Z",
-          "updatedAt": "2026-10-14T20:52:00Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
           "id": "gh_dd93894d05afb37071100594",
           "sourceId": "programadores-br/geral#3117",
           "repository": "programadores-br/geral",
@@ -1680,7 +1852,7 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 3
+        "sourceCount": 2
       },
       "freshness": {
         "ageDays": 7,
@@ -1789,15 +1961,15 @@
       }
     },
     {
-      "id": "gh_ea7def3477890f265af9646f",
-      "sourceId": "backend-br/vagas#12462",
+      "id": "gh_305d92191bf390acb57dbdb3",
+      "sourceId": "programadores-br/geral#3115",
       "title": "[Cidade do México, México] Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n<p>In most instances, this position requires in-person interviews as part of the hiring process.</p><p>Please submit your resume in English - we can only consider applications submitted in this language.</p><p></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p></p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>1 year of experience with software development using C++ and Python.</li>\n<li>Ability to communicate in English fluently to interact with local stakeholders in this customer-facing role.</li>\n<li>Experience in writing and debugging software code</li>\n<li>Experience with one or more programming languages</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience with compilers or toolchains.</li>\n<li>Experience with low level programming, Android, iOS, macOS, or operating systems development.</li>\n<li>Knowledge of LLVM.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Software Engineer on the Compilers, Runtimes and Toolchains (CRT) team, you will work very closely with other senior SWEs on the team in developing features in the space of LLVM optimization and code generation that support (but not limited to) build scalability, toolchain velocity, peak performance and safety. The SWE will develop changes (to tools and processes) that help us deliver state-of-the-art C++ toolchain efficiently and always correct and efficient + make the necessary changes upstream in LLVM toolchain that aligns with Google's needs and interests.</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Collaborate with teams to improve LLVM and related technologies to provide google developers with state-of-the-art toolchain and releases.</li>\n<li>Work with other senior SWEs and TLs on the team developing features and improvements to LLVM that support Google long term needs.</li>\n<li>Participate in team OKR planning and roadmap definition.<br>Identify problems that need to be solved through direct exchange with our customers.</li>\n<li>Bring your best self to the team and foster a collaborative culture.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n<p>In most instances, this position requires in-person interviews as part of the hiring process.</p><p>Please submit your resume in English - we can only consider applications submitted in this language.</p><p></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p></p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>1 year of experience with software development using C++ and Python.</li>\n<li>Ability to communicate in English fluently to interact with local stakeholders in this customer-facing role.</li>\n<li>Experience in writing and debugging software code</li>\n<li>Experience with one or more programming languages</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience with compilers or toolchains.</li>\n<li>Experience with low level programming, Android, iOS, macOS, or operating systems development.</li>\n<li>Knowledge of LLVM.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Software Engineer on the Compilers, Runtimes and Toolchains (CRT) team, you will work very closely with other senior SWEs on the team in developing features in the space of LLVM optimization and code generation that support (but not limited to) build scalability, toolchain velocity, peak performance and safety. The SWE will develop changes (to tools and processes) that help us deliver state-of-the-art C++ toolchain efficiently and always correct and efficient + make the necessary changes upstream in LLVM toolchain that aligns with Google's needs and interests.</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Collaborate with teams to improve LLVM and related technologies to provide google developers with state-of-the-art toolchain and releases.</li>\n<li>Work with other senior SWEs and TLs on the team developing features and improvements to LLVM that support Google long term needs.</li>\n<li>Participate in team OKR planning and roadmap definition.<br>Identify problems that need to be solved through direct exchange with our customers.</li>\n<li>Bring your best self to the team and foster a collaborative culture.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
       "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
       "issueState": "open",
-      "contentHash": "77d23d5305de9f688fc5bc3a73b17e91fbbaaf3d252b6bb33a01c91f13e35751",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "contentHash": "88ab1540d55f74588945cb34a7676d3d71f34ff0d7b5faecedfc6d96835b5346",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -1806,12 +1978,10 @@
         "region": "South America"
       },
       "tags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "sourceTags": [
-        "alocado",
-        "python"
+        "alocado"
       ],
       "author": {
         "id": "FrancieleGhizzoni",
@@ -1820,16 +1990,16 @@
         "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
       "companyName": "Google",
-      "createdAt": "2026-10-14T20:49:12Z",
+      "createdAt": "2026-10-14T20:49:51Z",
       "updatedAt": "2026-10-14T20:50:21Z",
-      "url": "https://github.com/backend-br/vagas/issues/12462",
+      "url": "https://github.com/programadores-br/geral/issues/3115",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Mexico",
@@ -1868,22 +2038,6 @@
       },
       "sources": [
         {
-          "id": "gh_ea7def3477890f265af9646f",
-          "sourceId": "backend-br/vagas#12462",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12462",
-          "createdAt": "2026-10-14T20:49:12Z",
-          "updatedAt": "2026-10-14T20:49:32Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
           "id": "gh_305d92191bf390acb57dbdb3",
           "sourceId": "programadores-br/geral#3115",
           "repository": "programadores-br/geral",
@@ -1901,338 +2055,11 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-14T20:49:12Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_dd3839af7bc25daf172c8c87",
-      "sourceId": "programadores-br/geral#3114",
-      "title": "[Cidade do México, México] Business Intelligence Analyst, Global YouTube Marketing na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/business-intelligence-analyst-global-youtube-marketing-181721456?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n<p>Please submit your resume in English - we can only consider applications submitted in this language.<br><br>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>4 years of experience in Business Intelligence or Data Analytics.<br></li>\n<li>4 years of experience in SQL and Data Visualization (e.g., Looker, Tableau, Power BI, Qlik, or similar technologies).<br></li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience with data warehousing or data modeling concepts.</li>\n<li>Experience with translating business requirements to BI solutions.</li>\n<li>Experience with explaining technical analysis to stakeholders.</li>\n</ul><div><h2>About the job</h2><p>As a Business Intelligence Analyst for the Global YouTube Marketing team, you will play a vital role in building and maintaining the BI solutions that measure our marketing strategy. You will design, develop, and socialize dashboards and reporting, ensuring data quality and accessibility for advanced analytics. Your technical expertise will enable the marketing team to leverage data-driven insights to optimize campaigns and measure the impact of marketing initiatives.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Create and maintain automated, easy-to-use dashboards that show how our marketing is performing.</li>\n<li>Conduct deep-dives into specific marketing activities and transform complex data into simple, visual charts and presentations to identify what drives the best results and help the marketing team make quick decisions.</li>\n<li> Build reporting tools that allow marketing partners to easily access and understand their own performance data.</li>\n<li>Run the analysis to demonstrate that marketing campaigns are actually driving incrementally.</li>\n<li> Present data and performance to leadership to ensure marketing’s impact is understood across the company.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Business Intelligence Analyst, Global YouTube Marketing na Google](https://coodesh.com/jobs/business-intelligence-analyst-global-youtube-marketing-181721456?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nSuporte Técnico",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "0a338c7348216506c1e390f8af3c6be2a2699f302a2954481c9d9e0235d151a7",
-      "repository": "programadores-br/geral",
-      "repositoryUrl": "https://github.com/programadores-br/geral",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado"
-      ],
-      "sourceTags": [
-        "alocado"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "programadores-br",
-        "name": "programadores-br",
-        "avatarUrl": "https://github.com/programadores-br.png?size=80",
-        "repository": "programadores-br/geral",
-        "url": "https://github.com/programadores-br/geral"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:48:08Z",
-      "updatedAt": "2026-10-14T20:48:31Z",
-      "url": "https://github.com/programadores-br/geral/issues/3114",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America",
-        "displayText": "Mexico",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "support"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_dd3839af7bc25daf172c8c87",
-          "sourceId": "programadores-br/geral#3114",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3114",
-          "createdAt": "2026-10-14T20:48:08Z",
-          "updatedAt": "2026-10-14T20:48:31Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
         "sourceCount": 1
       },
       "freshness": {
         "ageDays": 7,
-        "publishedAt": "2026-10-14T20:48:08Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_db1fad49e16a46bf47a89e3d",
-      "sourceId": "backend-br/vagas#12461",
-      "title": "[Cidade do México, México] Data Engineer, YouTube Marketing na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/data-engineer-youtube-marketing-181721220?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\nIn most instances, this position requires in-person interviews as part of the hiring process.<br><p>Please submit your resume in English - we can only consider applications submitted in this language.<br></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor's degree in Computer Science, Mathematics, a related field, or equivalent practical experience.</li>\n<li>3 years of experience with data processing software (e.g., Hadoop, Spark, Pig, Hive) and algorithms (e.g., MapReduce, Flume).</li>\n<li>Experience managing client-facing projects, troubleshooting technical issues, and working with Engineering and Sales Services teams.</li>\n<li>Experience with database administration techniques or data engineering, as well as writing software in Java, C++, Python, Go, or JavaScript.</li>\n<li>Experience integrating generative AI tools or LLM interfaces into workflows.</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience in technical consulting.</li>\n<li>Experience working with Big Data, information retrieval, data mining, or machine learning.</li>\n<li>Experience in building multi-tier high availability applications with modern web technologies (e.g., NoSQL, MongoDB, SparkML, TensorFlow).</li>\n<li>Experience architecting, developing software, or internet scale production-grade Big Data solutions in virtualized environments.</li>\n<li>Expertise in designing data models, data warehouses, and handling large-scale distributed data processing.</li>\n</ul><div><h2>About the job</h2>As a Data Engineer for the Global YouTube Marketing team, you will play a vital role in building and maintaining the data infrastructure that fuels our marketing strategy. You will design, develop, and optimize scalable data pipelines, ensuring high data quality and accessibility for analytics and reporting. Your technical expertise will enable the broader marketing organization to leverage data-driven insights to measure and optimize the impact of marketing initiatives.Know the user. Know the magic. Connect the two. At its core, marketing at Google starts with technology and ends with the user, bringing both together in unconventional ways. Our job is to demonstrate how Google's products solve the world's problems--from the everyday to the epic, from the mundane to the monumental. And we approach marketing in a way that only Google can--changing the game, redefining the medium, making the user the priority, and ultimately, letting the technology speak for itself.</div><div><h2>Responsibilities</h2><ul>\n<li>Design, develop, and maintain scalable data pipelines and data models to collect, process, and store data from various marketing sources.</li>\n<li>Integrate new metrics into core data marts and establish robust data quality checks and monitoring to ensure data accuracy, integrity, and pipeline stability.</li>\n<li>Collaborate with cross-functional partners to translate business requirements into technical data solutions and infrastructure.</li>\n<li>Optimize data infrastructure and querying layers for performance, efficiency, and scalability to support evolving Global YouTube Marketing needs.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Data Engineer, YouTube Marketing na Google](https://coodesh.com/jobs/data-engineer-youtube-marketing-181721220?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nSuporte Técnico",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "c629f8aa5ebc74b22264c20862a8bc4ab142daf545dddc886af6082629e916f9",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado",
-        "go",
-        "java",
-        "javascript",
-        "mongodb",
-        "python"
-      ],
-      "sourceTags": [
-        "alocado",
-        "go",
-        "java",
-        "javascript",
-        "mongodb",
-        "python"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:46:23Z",
-      "updatedAt": "2026-10-14T20:47:24Z",
-      "url": "https://github.com/backend-br/vagas/issues/12461",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America",
-        "displayText": "Mexico",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "support"
-        ],
-        "technologies": [
-          "go",
-          "java",
-          "javascript",
-          "mongodb",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_db1fad49e16a46bf47a89e3d",
-          "sourceId": "backend-br/vagas#12461",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12461",
-          "createdAt": "2026-10-14T20:46:23Z",
-          "updatedAt": "2026-10-14T20:46:38Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
-          "id": "gh_388b2a5dc24be386dfbb38aa",
-          "sourceId": "programadores-br/geral#3113",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3113",
-          "createdAt": "2026-10-14T20:46:58Z",
-          "updatedAt": "2026-10-14T20:47:24Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-14T20:46:23Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_9b3e38ebbaf6e3edb0d7728c",
-      "sourceId": "programadores-br/geral#3112",
-      "title": "[Belo Horizonte ou São Paulo, Brasil] Early Career Software Engineer, People with Disabilities na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/early-career-software-engineer-people-with-disabilities-181722150?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n<p>Google is proud to be an equal opportunity workplace and promotes affirmative actions as an employer. </p><p>This requisition is a pipeline effort to generate the People with Disabilities community interest in opportunities at Google. All candidates with disabilities will be evaluated for this role in compliance with the provisions of Article 93 Federal Labor Law 8.213/91. Please provide documentation that attest your disability. Please merge it in your resume PDF.</p><p>O Google tem orgulho em ser um local de trabalho inclusivo.<br><br>Somente as candidaturas de Pessoas com Deficiência (PcD) serão avaliadas para essa vaga, em conformidade com o disposto no artigo 93 da Lei Federal do Trabalho de número 8.213/91.<br><br>Pedimos, por gentileza, que a pessoa candidata envie o currículo em inglês, e forneça documentação que comprove sua deficiência. A documentação pode ser enviada junto ao currículo, no mesmo PDF.<br><br>Please submit your resume in English - we can only consider applications submitted in this language.</p><p>In most instances, this position requires in-person interviews as part of the hiring process.<br></p><br>Note: By applying to this position you will have an opportunity to share your preferred working location from the following: <b>Belo Horizonte, State of Minas Gerais, Brazil; São Paulo, State of São Paulo, Brazil</b>.<h3>Minimum qualifications:</h3><ul>\n<li>\n\nBachelor's degree in Computer Science or related technical field, or equivalent practical experience.\n</li>\n<li>1 year of experience with software development in one or more programming languages (e.g., Python, C, C++, Java, JavaScript)</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>1 year of experience in machine learning technology.<br></li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p><p>Google is an engineering company at heart. We hire people with a broad set of technical skills who are ready to take on some of technology's greatest challenges and make an impact on users around the world. At Google, engineers not only revolutionize search, they routinely work on scalability and storage solutions, large-scale applications and entirely new platforms for developers around the world. From Google Ads to Chrome, Android to YouTube, social to local, Google engineers are changing the world one technological achievement after another.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Establish and follow software development best practices and a robust engineering culture.<br></li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Belo Horizonte, Brasil\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Early Career Software Engineer, People with Disabilities na Google](https://coodesh.com/jobs/early-career-software-engineer-people-with-disabilities-181722150?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "8f7f49583d8ae68b86a390d0d01ca55b510a4466a67170bbb0c85978f8952cf6",
-      "repository": "programadores-br/geral",
-      "repositoryUrl": "https://github.com/programadores-br/geral",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado"
-      ],
-      "sourceTags": [
-        "alocado"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "programadores-br",
-        "name": "programadores-br",
-        "avatarUrl": "https://github.com/programadores-br.png?size=80",
-        "repository": "programadores-br/geral",
-        "url": "https://github.com/programadores-br/geral"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:45:15Z",
-      "updatedAt": "2026-10-14T20:45:38Z",
-      "url": "https://github.com/programadores-br/geral/issues/3112",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "displayText": "Brazil",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "java",
-          "javascript",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_9b3e38ebbaf6e3edb0d7728c",
-          "sourceId": "programadores-br/geral#3112",
-          "repository": "programadores-br/geral",
-          "repositoryUrl": "https://github.com/programadores-br/geral",
-          "url": "https://github.com/programadores-br/geral/issues/3112",
-          "createdAt": "2026-10-14T20:45:15Z",
-          "updatedAt": "2026-10-14T20:45:38Z",
-          "community": {
-            "id": "programadores-br",
-            "name": "programadores-br",
-            "avatarUrl": "https://github.com/programadores-br.png?size=80",
-            "repository": "programadores-br/geral",
-            "url": "https://github.com/programadores-br/geral"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-14T20:45:15Z",
+        "publishedAt": "2026-10-14T20:49:51Z",
         "status": "fresh"
       }
     }
