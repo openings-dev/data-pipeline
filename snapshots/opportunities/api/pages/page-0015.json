@@ -1,9 +1,16 @@
 {
-  "generatedAt": "2026-10-22T14:19:29.008Z",
+  "generatedAt": "2026-10-22T19:00:30.903Z",
   "page": 15,
   "pageSize": 20,
   "nextPage": "api/pages/page-0016.json",
   "ids": [
+    "gh_a2f2311145b5a15ffc134bc1",
+    "gh_1210ec3be1fbd6b0e753f052",
+    "gh_101b8e85d6e51f17f4f4fa8b",
+    "gh_2fa1d8c2e1f80581bc696a54",
+    "gh_54df3a793409f5375f18ab14",
+    "gh_ff2eef9774c09afe77f80f9d",
+    "gh_e2bf92920267625501ec5bdc",
     "gh_6f26b88c93b953f27dcec765",
     "gh_ff871b03fcabd20a93060047",
     "gh_d193c4164f738b737229e88e",
@@ -13,19 +20,760 @@
     "gh_2d9f1819c4f168161629e6ab",
     "gh_24d08e682f7eff699352407d",
     "gh_99150832107b847772cd7a87",
+    "gh_926f3c14cae6e82e67bdbdbf",
     "gh_26085b80562d970f087f85db",
-    "gh_973f877c4733d4a6bd2a37bf",
-    "gh_324055d14c5ee3765bdb1221",
-    "gh_bf8a827e3fae3c73f6d63bba",
-    "gh_96ac58e1c655c2681c495a3f",
-    "gh_f15763c67c8035ee167088c2",
-    "gh_b0284b782444c808bec42051",
-    "gh_76414fd0681a573524b8db1a",
-    "gh_cae9b3a86623390fc07ae1b4",
-    "gh_5de22d4035a6a2ecd058daac",
-    "gh_338622c06f4332345fe4f4ea"
+    "gh_81aa8bfda8cd75209a233f69",
+    "gh_5e7c0ed3e21fb1a527ca77ca"
   ],
   "items": [
+    {
+      "id": "gh_a2f2311145b5a15ffc134bc1",
+      "sourceId": "rebase-network/who-is-hiring#929",
+      "title": "[成都] 佰陌科技 公司诚聘 全职远程（Android / iOS / 鸿蒙 / Golang / 运维 DevOps / 全栈-RN/Flutter）15k-35k CNY",
+      "description": "base 成都优先\n> 全职远程 · 不提倡加班 · 注重效率 · 开源加分 · 即时通讯为核心\n\n## 关于我们\n- 我们专注于即时通讯（IM）与实时互动的产品与基础设施。\n- 团队强调高效产出与良好工程实践，尊重个人时间，不提倡加班文化。\n- 全职远程办公，工具与流程完善，异步协作为主。\n\n## 薪资与合作\n- 薪资范围：15k-35k（按能力与经验匹配，优秀者可谈）\n- 全职远程，弹性时间；提供必要云资源与设备支持\n- 完善的代码评审、技术分享与成长路径\n\n## 通用要求（所有岗位）\n- 扎实的计算机基础：数据结构、网络、并发、工程化与测试\n- 对即时通讯/实时系统有兴趣或经验：连接管理、消息可靠性、弱网优化、离线与多端同步\n- 自驱动，善于拆解问题并产出可落地方案；良好沟通与协作能力\n- 有 GitHub 开源项目/技术文章/演讲作品者优先\n\n---\n\n## 在招岗位\n\n### Android 客户端工程师（IM方向）\n**职责**\n- 负责 IM 客户端核心：长连接/推送、消息收发与存储、会话与多端同步\n- 弱网、功耗、包体与启动优化；构建稳定性与可维护性\n- 协作定义协议（WebSocket/gRPC/HTTP3/Protobuf），完善日志与埋点\n- 如有音视频能力：对接 WebRTC、音视频通话与媒体消息\n\n**要求**\n- Kotlin/Java 熟练；协程/线程/内存管理扎实，熟悉 Jetpack/OkHttp/Retrofit/Room\n- 熟悉前后台保活、推送（FCM/厂商通道）、消息可靠投递与重试策略\n- 具备本地缓存/数据库（消息/会话/未读数）经验，理解组件化与边界\n- 有 RN/Flutter 与原生互通经验加分\n\n---\n\n### iOS 客户端工程师（IM方向）\n**职责**\n- 构建稳定的 IM iOS 客户端：连接、消息、推送、离线与多端一致性\n- 性能与功耗优化，异常监控与问题追踪\n- 对接 APNs/PushKit、后台任务与网络策略\n- 参与协议与数据结构设计，完善测试与发布流程\n\n**要求**\n- Swift 扎实（SwiftUI 或 UIKit），熟悉 Swift Concurrency/GCD、内存与线程安全\n- 熟悉 APNs/PushKit、后台保活、弱网重试与消息去重\n- 本地存储经验（CoreData/SQLite/Realm），关注数据一致性\n- WebRTC/音视频通话或 RN/Flutter 原生模块桥接加分\n\n---\n\n### 鸿蒙应用工程师（HarmonyOS/ArkUI，IM方向）\n**职责**\n- 基于 HarmonyOS 构建 IM 客户端：连接、消息、推送、分布式能力\n- ArkUI/Stage 开发，性能与功耗优化，兼容多设备形态\n- 对接华为 Push Kit 与网络策略；完善稳定性与监控\n\n**要求**\n- 熟悉 ArkUI/ETS、Ability/Stage、DevEco Studio 与 HarmonyOS SDK\n- 熟悉长连接/心跳/弱网优化/多端一致性等即时通讯要点\n- 分布式数据管理经验优先；具备 Android/iOS 跨端经验加分\n\n---\n\n### Golang 后端工程师（IM/实时系统）\n**职责**\n- 设计实现 IM 后端：连接/路由/消息投递与存储、群组/会话、在线状态/订阅\n- 高并发与高可用：水平扩展、限流/熔断、幂等、热点与一致性处理\n- 协议与服务：WebSocket/HTTP3/gRPC/Protobuf，离线消息与推送网关\n- 基础设施：监控告警、日志与链路追踪、性能优化与容量规划\n\n**要求**\n- Golang 熟练，网络编程与微服务经验，良好工程化与测试习惯\n- 熟悉 MySQL/PostgreSQL、Redis、Kafka/NATS、对象存储\n- 有消息系统/IM/RTC/推送网关/Presence 经验优先\n- 容器化与云原生（Docker/K8s）经验加分\n\n---\n\n### 运维 / DevOps 工程师（IM后台）\n**职责**\n- 负责 IM 后端交付、稳定性与成本优化：CI/CD、弹性扩缩、变更管理\n- 搭建可观测性：Prometheus/Grafana/ELK/OpenTelemetry，完善监控告警\n- 容器化与集群管理：Docker/Kubernetes/Helm，灰度/回滚\n- 安全与合规：访问控制、密钥管理、备份与演练\n\n**要求**\n- 熟悉 Linux/网络、CI/CD（GitHub Actions/GitLab CI/ArgoCD）、基础 IaaS\n- 能定位高并发服务瓶颈：CPU/内存/网络/IO 与应用层指标\n- 有 Service Mesh（Istio/Linkerd）或 IaC（Terraform）经验加分\n- 具备 SRE 思维：以工程手段提升可靠性与效率\n\n---\n\n### 全栈工程师（React Native/Flutter + 后端）\n**职责**\n- 负责跨端 IM 客户端（RN 或 Flutter）与必要后端的快速交付\n- 跨端与原生能力打通（通知、相机/麦克风、文件、加密存储等）\n- 搭建通用会话/消息组件、状态管理与性能优化\n- 协作定义接口与协议，保障端到端体验与稳定性\n\n**要求**\n- 至少精通 RN 或 Flutter，熟悉状态管理（Redux/MobX/Bloc 等）与性能优化\n- 理解 IM 关键路径：连接/推送/离线/重试/去重/回执/多端同步\n- 具备后端基础（Golang/Node.js 其一），能独立完成简单服务与工具\n- 原生桥接（iOS/Android）或发布流水线（OTA/应用商店）加分\n\n---\n\n## 加分项（适用于所有岗位）\n- 可展示的开源项目/GitHub 主页，或 IM/实时系统相关开源贡献\n- 主导或参与过高并发/高可用系统的设计与落地\n- 安全与隐私经验（传输加密、端到端加密、风控）\n- 系统性技术文档与工程化建设能力\n\n## 工作方式与文化\n- 工作性质：全职远程（异步协作为主）\n- 文化价值：高效协作、结果导向、尊重个人时间，不提倡加班\n\n## 投递方式\n- 邮箱：**ondu@baimo.cn**\n- 请附：简历（PDF）、代表性项目与说明、GitHub/作品链接、可到岗时间与期望薪资\n- 邮件标题建议：`岗位-姓名-到岗时间-期望薪资`\n\n---\n\n**公司信息**\n北京佰陌科技有限公司 | 聚焦即时通讯与实时互动产品与基础设施",
+      "excerpt": "base 成都优先 > 全职远程 · 不提倡加班 · 注重效率 · 开源加分 · 即时通讯为核心 ## 关于我们 - 我们专注于即时通讯（IM）与实时互动的产品与基础设施。 - 团队强调高效产出与良好工程实践，尊重个人时间，不提倡加班文化。 - 全职远程办公，工具与流程完善，异步协作为主。 ## 薪资与合作 - 薪资范围：15k-35k（按能力与经验匹配，优秀者可谈） - 全职远程，弹性时间；提供必要云资源与设备支持 - 完善的代...",
+      "issueState": "open",
+      "contentHash": "d3bc85ce5ac3be9520fc538743101fe63367e5bf54dc7cbfbb57b774c82df036",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "devops",
+        "golang",
+        "java",
+        "node",
+        "react"
+      ],
+      "sourceTags": [
+        "data",
+        "devops",
+        "golang",
+        "java",
+        "node",
+        "react"
+      ],
+      "author": {
+        "id": "echo19981024",
+        "name": "echo19981024",
+        "handle": "echo19981024",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/9642833?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2025-11-07T06:55:36Z",
+      "updatedAt": "2026-10-04T20:27:56Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/929",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "flutter",
+          "go",
+          "java",
+          "kotlin",
+          "kubernetes",
+          "mysql",
+          "nodejs",
+          "postgres",
+          "react",
+          "react-native",
+          "redis",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a2f2311145b5a15ffc134bc1",
+          "sourceId": "rebase-network/who-is-hiring#929",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/929",
+          "createdAt": "2025-11-07T06:55:36Z",
+          "updatedAt": "2026-10-04T20:27:56Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 349,
+        "publishedAt": "2025-11-07T06:55:36Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_1210ec3be1fbd6b0e753f052",
+      "sourceId": "f2etw/jobs#1161",
+      "title": "[徵才][台北] [AI 新創團隊] Frontend Engineer (2+ yrs)",
+      "description": "# **前端工程師（2+ yrs）— [RADAX.ai](http://radax.ai/)**\n\n*把醫療影像的複雜度，轉成臨床好用的介面。*\n\n地點：台北（Hybrid）• 工作模式：台灣境內 Remote 友善\n\n## **為什麼加入 [RADAX.ai](http://radax.ai/)**\n\nRADAX.ai 是臺北醫學大學的衍生 AI 新創，入選 FITI Final、榮獲第二十屆國家新創獎與科研創業計畫連續兩年支持。\n\n我們正在打造企業級醫療 AI 平台，把複雜的影像判讀轉化為更快、更安全的臨床決策。平台整合先進影像處理、多元診斷模型與院內系統（PACS／HIS），讓醫療流程真正順起來。你將親手上線臨床可用的功能，並與經驗豐富的軟體工程團隊和 AI 團隊一同精進 — 其中包含受過史丹佛訓練的醫師工程師。\n\n## 你將會參與\n\n- 前端功能的開發流程（設計→開發→上線→迭代）。\n- 設計、優化 AI 整合 UI/UX（如 AI 影像標註、LLM 助理、Study List 工作流）。\n- 與放射科醫師、資料科學家、後端工程師協作，定義真正符合臨床的流程。\n- 提升產品品質：效能、易用性、穩定度與務實的測試。\n\n## 我們期待你\n\n- 主動溝通、重視協作。\n- 在「速度」與「品質」間拿捏得宜。\n- 以產品與使用者為核心思考，而不僅是工程角度。\n- 樂於挑戰新領域。\n- 富有有創造力，能以務實且創新的點子解決複雜問題。\n\n## 資格要求\n\n- **2 年以上**前端開發經驗。\n- 熟悉 **React、TypeScript**。\n- 熟悉 **Git** 協作流程。\n- 對 2D/3D 圖形概念有基本理解（如座標系統、轉換）。\n- 願意去閱讀與理解 third-party library 的文件和 source code。\n- 具備使用 **AI 工具**輔助開發的實務經驗。\n\n## 加分項目\n\n- Canvas/WebGL 或影像處理相關經驗。\n- 處理醫療影像相關經驗（我們目前使用 Cornerstone3D 處理醫學影像）。\n- **Electron** 桌面應用程式開發經驗。\n- 參與過測試相關實務經驗（E2E、整合測試或單元測試）。\n- 了解臨床流程、**PACS/RIS**。\n\n## 你將獲得\n\n- 開發的功能會**實際上線於臨床場域**。\n- 與 AI 團隊**跨域學習**，包含**受史丹佛培訓的醫師工程師**。\n- 早期新創的**高影響力與快速成長**，你的意見能形塑產品走向。\n- **薪資：依職級／資歷彈性核定 （NTD $700K–1M/year）**。\n- **股權：提供股權參與機會（依職級／貢獻而定）**。\n\n**投遞方式**\n\n請寄履歷／GitHub／作品集至 **[**[info@radax.ai](mailto:nfo@radax.ai)**]**，主旨註明「Frontend Engineer – [RADAX.ai]」。也歡迎附上一個你最自豪的 UI 作品與簡短說明。\n\n通過初選者將於 14 個工作天內收到聯繫；未入選者恕不另行通知，我們會將資料保留以供未來職缺參考，感謝理解。\n[Front-End Engineer JD_2025_EN.pdf](https://github.com/user-attachments/files/23387732/Front-End.Engineer.JD_2025_EN.pdf)",
+      "excerpt": "# **前端工程師（2+ yrs）— [RADAX.ai](http://radax.ai/)** *把醫療影像的複雜度，轉成臨床好用的介面。* 地點：台北（Hybrid）• 工作模式：台灣境內 Remote 友善 ## **為什麼加入 [RADAX.ai](http://radax.ai/)** RADAX.ai 是臺北醫學大學的衍生 AI 新創，入選 FITI Final、榮獲第二十屆國家新創獎與科研創業計畫連續兩年支持。 我...",
+      "issueState": "open",
+      "contentHash": "21ac235afa442ceae1ebbd0030cb459880c86726f3abe975cbe725b0bfaf7476",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[f] react",
+        "git",
+        "work remotely",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
+        "[f] react",
+        "git",
+        "work remotely",
+        "求才",
+        "缺休假資訊",
+        "缺特/彈休資訊"
+      ],
+      "author": {
+        "id": "AlexChan-1985",
+        "name": "AlexChan-1985",
+        "handle": "AlexChan-1985",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/65586570?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 700000,
+        "max": 1000000,
+        "period": "year"
+      },
+      "createdAt": "2025-11-06T10:16:02Z",
+      "updatedAt": "2025-11-06T14:39:23Z",
+      "url": "https://github.com/f2etw/jobs/issues/1161",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "frontend"
+        ],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_1210ec3be1fbd6b0e753f052",
+          "sourceId": "f2etw/jobs#1161",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1161",
+          "createdAt": "2025-11-06T10:16:02Z",
+          "updatedAt": "2025-11-06T14:39:23Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 350,
+        "publishedAt": "2025-11-06T10:16:02Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_101b8e85d6e51f17f4f4fa8b",
+      "sourceId": "f2etw/jobs#1160",
+      "title": "【徵才】【台北】eGroupAI 初級全端工程師（Junior Full-Stack Engineer）｜月薪 50K up",
+      "description": "#### 公司\n- **公司名稱**：益群健康資訊股份有限公司（eGroupAI CO., LTD.）\n- **產品與里程碑**\n    - 通過 ISO 27001\n    - iBeta ISO 30107-3 Level 1（人臉防偽）\n- **落地場景**\n    - [eGroupAI 人臉辨識 SDK 服務全台 192 間醫療院所](https://www.egroupai.com/)\n    - InfoCenter 資訊中台\n    - MICEPass 活動平台\n    - [DBS 好理家在 ](https://www.familyfinhealth.com/)\n- **工程文化**\n    - 數據驅動、重視 Code Review／測試／文件、持續分享與學習\n\n---\n\n#### TL;DR\n- **職務定位**：Doc-Driven × AI（SDD）初級全端工程師\n    - 你寫規格、AI 協作產出，你負責檢核與交付\n- **核心要求**\n    - 系統架構＋功能文件、AI 協作、Git 協作、獨立交付\n- **投遞必附**\n    - 功能文件／規格書範例＋ Git 連結＋ AI 協作案例（可匿名）\n\n---\n\n#### 工作內容（Responsibilities）\n- **需求與規格**：撰寫功能需求、使用流程、API 契約、資料模型、驗收標準與測試案例\n- **AI 協作**：拆分任務、設計與優化提示（prompts）、定義輸入／輸出與評測規則，並檢核／整合 AI 產出\n- **端到端交付**：必要時親自補位前端／後端／資料庫任一端，確保進度與品質\n- **測試與驗收**：規劃測試案例與驗收清單，處理缺陷並持續改善\n- **協作流程**：以 Git／PR／Code Review 為主要流程\n\n---\n\n#### 必要條件（SDD 文件驅動）\n1. 能撰寫清楚、可執行、可驗收的規格（需求、流程、API、資料模型、驗收標準）\n2. 能將需求拆解與估時，規劃節點與風險\n3. 能設計提示並與 AI 建立回饋循環，並檢核／整合 AI 產出\n4. 熟悉 Git／PR／Code Review 與變更管理\n5. 熟悉前端／後端／資料庫任一主流技術鏈，能完成端到端小任務\n6. 中文表達清晰；能閱讀英文技術文件\n7. 經驗基準：至少 1 年軟體開發經驗或具等同能力／作品\n\n---\n\n#### 加分條件（非必要，能分享更好）\n- 具 DevOps 基礎（Docker、CI/CD、Linux 或雲端其一）\n- 向量資料庫、知識圖譜、vLLM／Ollama、GPU／推論效能\n- AWS SQS／事件驅動架構、Prometheus／Grafana 等可觀測性\n- 富文本／內容編輯器經驗（如 Froala）\n\n---\n\n#### 技術環境（供了解，非硬性要求）\n- **前端**：Next.js、React、TypeScript、SWR、Redux Toolkit、MUI／Emotion\n- **後端**：Java、Spring Boot、Spring MVC／Security、JPA／QueryDSL、MySQL、Redis、Elasticsearch\n- **DevOps**：Docker、CI/CD、Linux、監控（Micrometer／Prometheus）\n- **LLM（多供應商／Fallback）**：Vertex、OpenAI、Bedrock、Anthropic、Ollama、vLLM\n\n---\n\n#### 我們如何工作（Doc-Driven × AI）\n- **規格先行**：以規格為單一事實來源（SSOT），版本化管理\n- **AI 協作**：依規格拆分任務並生成設計／程式／測試草稿\n- **人審與迭代**：用驗收標準檢核 AI 產出，小批量交付與持續整合（PR／Review）\n\n---\n\n#### 工作型態與福利\n- **工作性質**：全職（Full-time）\n- **地點**：台北市大安區辛亥路二段 47 號 1 樓\n- **上班時段**：日班（固定工時）\n- **管理責任**：不需負擔管理責任\n- **出差外派**：無\n- **需求人數**：2–5 人\n- **休假制度**：依公司規定\n- **薪資**：月薪 TWD 50,000 up（依資歷與績效調整）\n\n---\n\n#### 面試流程\n1. 履歷與作品初審檢視功能文件／規格書、AI 協作案例、Git 連結與端到端作品\n2. 文件任務（情境題）：把指定情境轉為功能文件（需求、流程、API 契約、資料模型、驗收標準）\n3. 協作面談（AI 協作）：與面試官共同使用 AI 工具完成小任務，並對 AI 產出進行校正與驗收\n4. 技術／架構討論：針對你熟悉的主流技術與過往經驗，說明設計權衡與選型理由\n5. 綜合評估與通知\n\n---\n### 徵才資訊\n- [詳情](https://job.egroupai.com/careers)\n---\n\n#### 應徵方式（How to Apply）\n- **Email**：service@egroupai.com（主旨：[Git Job] 應徵初級全端工程師－你的姓名）\n- **請附**：\n  - 履歷（含經歷與自我介紹）\n  - GitHub／作品集／技術部落格或代表性專案連結\n  - 可到職日與期望薪資區間（如方便提供）\n  - 功能文件／規格書」範例（可匿名；含需求、流程、API／資料模型、驗收標準）或你與 AI 協作的案例說明\n- **聯絡電話**：02-2362-2508（週一至週五 10:00–18:00；聯絡人：林先生）",
+      "excerpt": "#### 公司 - **公司名稱**：益群健康資訊股份有限公司（eGroupAI CO., LTD.） - **產品與里程碑** - 通過 ISO 27001 - iBeta ISO 30107-3 Level 1（人臉防偽） - **落地場景** - [eGroupAI 人臉辨識 SDK 服務全台 192 間醫療院所](https://www.egroupai.com/) - InfoCenter 資訊中台 - MICEPass...",
+      "issueState": "open",
+      "contentHash": "cc94f1afa2d499df63990ea73963c432f49f9da3c3d5791bf40eb1631b3cc387",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[b] java",
+        "[f] react",
+        "full stack",
+        "求才",
+        "缺特/彈休資訊"
+      ],
+      "sourceTags": [
+        "[b] java",
+        "[f] react",
+        "full stack",
+        "求才",
+        "缺特/彈休資訊"
+      ],
+      "author": {
+        "id": "a6091731",
+        "name": "a6091731",
+        "handle": "a6091731",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/10756817?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2025-11-06T01:33:27Z",
+      "updatedAt": "2025-11-06T14:38:24Z",
+      "url": "https://github.com/f2etw/jobs/issues/1160",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "mysql",
+          "nextjs",
+          "react",
+          "redis",
+          "spring",
+          "typescript"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_101b8e85d6e51f17f4f4fa8b",
+          "sourceId": "f2etw/jobs#1160",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1160",
+          "createdAt": "2025-11-06T01:33:27Z",
+          "updatedAt": "2025-11-06T14:38:24Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 350,
+        "publishedAt": "2025-11-06T01:33:27Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_2fa1d8c2e1f80581bc696a54",
+      "sourceId": "phpdevbr/vagas#1319",
+      "title": "[Remoto] Desenvolvedor PHP/Laravel (Pleno) na Empreender",
+      "description": "Somos um grupo focado em tecnologia, temos a missão de criar ferramentas inovadoras, afim de contribuir com o mercado de Dropshipping e educação!\n\nVenha trabalhar conosco na Empreender! \nVeja mais no site: www.empreender.com.br\n\nEnvie seu currículo  para serena@empreender.com.br com título \"vaga Back end\"  e aguarde que entraremos em contato par agendar  as entrevistas. \n\nResponsabilidades:\n\n- Implementar e otimizar funcionalidades complexas no backend com PHP, Laravel e Code Igniter;\n\n- identificar e corrigir bugs e problemas de desempenho, garantindo a manutenção de sistemas existentes;\n\n- Criar e documentar APIs RESTful para integrações com sistemas internos e externos;\n\n- Participar de reuniões de planejamento e colaborar com equipes de frontend, design e produto;\n\n- Realizar modelagem de dados e otimizar consultas para eficiência e escalabilidade;\n\n- Documentar códigos e processos, e propor melhorias para o sistema e fluxo de trabalho.\n\n------------------------------------------------------------------------------------------------------------------------------------------------------------------\nDiferenciais:\n\n- Experiência com bancos de dados NoSQL, como MongoDB ou DynamoDB\n\n- Conhecimento em linhas de processamento com ferramentas como Supervisor e AWS SQS\n\n- Conhecimento em Kubernetes, especialmente no ambiente AWS.\n\n- Conhecimento em segurança de desenvolvimento (SQL Injection, XSS, CSRF, etc.)\n\n------------------------------------------------------------------------------------------------------------------------------------------------------------------\n\nHabilidades:\n\n- PHP\n\n- Laravel\n\n- CodeIgniter\n\n- Api's Rest\n\n- Mysql\n\n- Redis\n\n- AWS S3\n\nHabituado(a) a trabalhar com micro-serviços e assincronicidade de chamadas. Integração e depuração de sistemas complexos.\nNecessário ter ao menos dois 2 anos de experiência profissional comprovada.\n\n------------------------------------------------------------------------------------------------------------------------------------------------------------------\nLocal:\n\n- Remoto\n\n------------------------------------------------------------------------------------------------------------------------------------------------------------------\nRequisitos:\n\n- Sólida experiência com PHP e conhecimento das boas práticas de programação\n\n- Experiência com Laravel, Code Igniter 3\n\n- Experiência em MySQL/PostgreSQL, modelagem de dados e consultas complexas\n\n- Experiência em desenvolvimento de APIs e integração com serviços externos\n\n- Experiência em testes unitários e de integração.\n\n- Experiência com equipes.\n------------------------------------------------------------------------------------------------------------------------------------------------------------------\nBenefícios:\n\n- Bônus de natal;\n\n- Bônus de férias;\n\n- Bônus de aniversário;\n\n- Aula de idiomas;\n\n- Participação de lucros (PL).\n\n\n-Contratação PJ.\n- Horário flexível\n- 100% Home Office\n\n\nCANDIDATURA A VAGA: Envie seu currículo  para serena@empreender.com.br com título \"vaga Back end\"  e aguarde que entraremos em contato par agendar  as entrevistas.",
+      "excerpt": "Somos um grupo focado em tecnologia, temos a missão de criar ferramentas inovadoras, afim de contribuir com o mercado de Dropshipping e educação! Venha trabalhar conosco na Empreender! Veja mais no site: www.empreende...",
+      "issueState": "open",
+      "contentHash": "1122e4ad7e3e52da83aa9686ff356439b10649459474a86e93a49197c343e746",
+      "repository": "phpdevbr/vagas",
+      "repositoryUrl": "https://github.com/phpdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "design",
+        "frontend",
+        "pleno"
+      ],
+      "sourceTags": [
+        "backend",
+        "design",
+        "frontend",
+        "pleno"
+      ],
+      "author": {
+        "id": "serenarhempreender",
+        "name": "serenarhempreender",
+        "handle": "serenarhempreender",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/104012727?v=4"
+      },
+      "community": {
+        "id": "phpdevbr",
+        "name": "phpdevbr",
+        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+        "repository": "phpdevbr/vagas",
+        "url": "https://github.com/phpdevbr/vagas"
+      },
+      "companyName": "Empreender",
+      "createdAt": "2025-11-04T20:46:55Z",
+      "updatedAt": "2025-11-04T20:46:55Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1319",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend"
+        ],
+        "technologies": [
+          "aws",
+          "kubernetes",
+          "laravel",
+          "mongodb",
+          "mysql",
+          "php",
+          "postgres",
+          "redis"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_2fa1d8c2e1f80581bc696a54",
+          "sourceId": "phpdevbr/vagas#1319",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1319",
+          "createdAt": "2025-11-04T20:46:55Z",
+          "updatedAt": "2025-11-04T20:46:55Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 351,
+        "publishedAt": "2025-11-04T20:46:55Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_54df3a793409f5375f18ab14",
+      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#3",
+      "title": "The list is not updating",
+      "description": "The list is not updating.",
+      "excerpt": "The list is not updating.",
+      "issueState": "open",
+      "contentHash": "a38a85efa1a9653c896672f3c30272eca49876d61637211e8791849fd17bc4f9",
+      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "Allenz5",
+        "name": "Allenz5",
+        "handle": "Allenz5",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/76895714?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+      },
+      "createdAt": "2025-11-04T00:13:11Z",
+      "updatedAt": "2025-11-04T00:13:11Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/3",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_54df3a793409f5375f18ab14",
+          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#3",
+          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/3",
+          "createdAt": "2025-11-04T00:13:11Z",
+          "updatedAt": "2025-11-04T00:13:11Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 352,
+        "publishedAt": "2025-11-04T00:13:11Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_ff2eef9774c09afe77f80f9d",
+      "sourceId": "junminhong/jobs#1",
+      "title": "[職缺] 群聯電子 Go 後端工程師",
+      "description": "### 公司名稱\n\n群聯電子\n\n### 職位名稱\n\nGo 後端工程師\n\n### 工作類型\n\nFull-time 全職\n\n### 工作地點類型\n\nOn-site 現場\n\n### 地區 Region\n\n🇹🇼 台灣 Taiwan\n\n### 工作地點\n\n苗栗\n\n### 薪資範圍\n\n每月 90,000 - 110,000 元\n\n### 職位描述\n\n## 工作內容\n- 使用 Golang 設計高效能、可擴充的後端服務。\n- 基於 Kubernetes 與 Ceph，開發叢集管理平台與應用程式。\n- 使用 Docker 進行應用程式容器化，優化開發與部署流程。\n- 在 Linux 環境下進行系統設定、效能調校與問題排查。\n- 與前端、DevOps 及 QA 團隊合作，確保程式碼品質與安全性。\n- 參與技術研究，探索雲原生與分散式系統新技術。\n## 能力需求\n- Go 經驗：3年以上 Go 開發經驗，熟悉 Goroutine 與 Channel。\n- 開源貢獻：參與過 GitHub 開源專案，熟悉 Pull Request 與程式碼審查。\n- Linux 技能：精通 Linux 系統操作、Shell 腳本、系統監控與效能優化。\n- 容器化技術：熟悉 Docker，具備撰寫 Dockerfile 與容器部署經驗。\n- 微服務架構：精通 RESTful API、gRPC 設計與微服務開發。\n- 軟實力：優秀的問題解決能力、團隊合作精神與溝通技巧。\n## 加分項目\n- 熟悉 CI/CD 工具（如 GitHub Actions、GitLab CI）。\n- 具備雲端平台經驗（如 AWS、GCP 或 Azure）。\n- 熟悉其他語言（如 Svelte、Python、Rust）。\n- 深入理解網路協定與資料庫。\n- 熟悉 OpenTelemetry 或其他分散式追蹤與監控工具。\n## 團隊技術\n- 版本控制：GitHub、GitLab\n- 專案管理：Jira、Confluence\n- 程式語言：Go、Svelte\n- 通訊協定：gRPC、ConnectRPC\n- 資料庫：PostgreSQL\n- 容器與叢集：Kubernetes、Docker、Ceph\n- 基礎設施：MAAS、Juju\n- 監控工具：Elastic Stack、Prometheus、Grafana\n\n### 聯絡方式\n\npaul_tsai@phison.com\n\n### 其他資訊\n\n## 薪資與福利\n- 基本底薪：每月 90,000 - 110,000 元。\n- 年薪保證 14 個月，另加績效獎金與公司分紅。\n## 職涯發展\n- 技術專家：深入雲原生、分散式系統，成為儲存技術專家。\n- 技術管理：帶領技術團隊，參與產品策略制定。\n- 跨領域成長：參與前端、DevOps 或資料科學專案。",
+      "excerpt": "### 公司名稱 群聯電子 ### 職位名稱 Go 後端工程師 ### 工作類型 Full-time 全職 ### 工作地點類型 On-site 現場 ### 地區 Region 🇹🇼 台灣 Taiwan ### 工作地點 苗栗 ### 薪資範圍 每月 90,000 - 110,000 元 ### 職位描述 ## 工作內容 - 使用 Golang 設計高效能、可擴充的後端服務。 - 基於 Kubernetes 與 Ceph，開...",
+      "issueState": "open",
+      "contentHash": "ad7f05ab1e436d57f324362a0ed624868fa75ad2925ccee4b4f7a063ed2a4644",
+      "repository": "junminhong/jobs",
+      "repositoryUrl": "https://github.com/junminhong/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "approved",
+        "job"
+      ],
+      "sourceTags": [
+        "approved",
+        "job"
+      ],
+      "author": {
+        "id": "junminhong",
+        "name": "junminhong",
+        "handle": "junminhong",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/61868459?v=4"
+      },
+      "community": {
+        "id": "junminhong",
+        "name": "junminhong",
+        "avatarUrl": "https://github.com/junminhong.png?size=80",
+        "repository": "junminhong/jobs",
+        "url": "https://github.com/junminhong/jobs"
+      },
+      "createdAt": "2025-10-21T16:00:15Z",
+      "updatedAt": "2025-10-21T16:14:10Z",
+      "url": "https://github.com/junminhong/jobs/issues/1",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "go",
+          "kubernetes",
+          "postgres",
+          "python",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_ff2eef9774c09afe77f80f9d",
+          "sourceId": "junminhong/jobs#1",
+          "repository": "junminhong/jobs",
+          "repositoryUrl": "https://github.com/junminhong/jobs",
+          "url": "https://github.com/junminhong/jobs/issues/1",
+          "createdAt": "2025-10-21T16:00:15Z",
+          "updatedAt": "2025-10-21T16:14:10Z",
+          "community": {
+            "id": "junminhong",
+            "name": "junminhong",
+            "avatarUrl": "https://github.com/junminhong.png?size=80",
+            "repository": "junminhong/jobs",
+            "url": "https://github.com/junminhong/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 366,
+        "publishedAt": "2025-10-21T16:00:15Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_e2bf92920267625501ec5bdc",
+      "sourceId": "Empregos-dev/Vagas-dev#110",
+      "title": "🚀 Vaga Desenvolvedor(a) Fullstack .NET Sênior 🚀 📍 Híbrido - Av. Paulista - São Paulo/SP 🚀",
+      "description": "# Desenvolvedor(a) Fullstack .NET Sênior 🚀\n\n- 📍 Localização: Híbrido - Av. Paulista - São Paulo/SP\n- 📈 Nível: sênior\n- 📃 Contrato: clt\n- 💰 Salário: R$ 12.500,00\n- 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗\n\n\n## Descrição da vaga:\nEstamos em busca de um(a) Desenvolvedor(a) Fullstack .NET Sênior para integrar nossa equipe! 💻\n\nSe você é apaixonado por tecnologia e quer trabalhar em um ambiente dinâmico e colaborativo, essa vaga é para você! 🌟\n\n\n## Atividades e responsabilidade:\nDesenvolver e implementar soluções em .NET, realizar manutenção de sistemas existentes, aplicar boas práticas de programação e colaborar com a equipe em projetos desafiadores. 🤝\n\n\n## Requisitos:\nExperiência sólida em .NET, conhecimento em desenvolvimento front-end e back-end, habilidade em trabalhar em equipe e comunicação efetiva. 🧑‍💻\n\n\n## Benefícios:\nPacote de benefícios atrativos incluindo assistência médica, vale-refeição e oportunidades de crescimento profissional. 🎉\n\n## Mais Informações:\nPara mais informações, entre em contato! 📞\n\n📍 Modelo híbrido: 3x por semana na Av. Paulista/SP.\n\n\n# [🔗 Clique aqui para se candidatar](https://empregos.dev/vaga/desenvolvedora-fullstack-net-senior-3203)\n\n\n**Use nosso site [Empregos.dev](https://empregos.dev) para buscar mais vagas de trabalho na área da programação, desenvolvimento, devops e tecnologia como está!**",
+      "excerpt": "# Desenvolvedor(a) Fullstack .NET Sênior 🚀 - 📍 Localização: Híbrido - Av. Paulista - São Paulo/SP - 📈 Nível: sênior - 📃 Contrato: clt - 💰 Salário: R$ 12.500,00 - 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗...",
+      "issueState": "open",
+      "contentHash": "fe314df83701481d55f57c2b91c32ba24ec70ba904504e51a3682f3bb2da68b4",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        ".net",
+        "clt",
+        "híbrido - av. paulista - são paulo/sp",
+        "sênior"
+      ],
+      "sourceTags": [
+        ".net",
+        "clt",
+        "híbrido - av. paulista - são paulo/sp",
+        "sênior"
+      ],
+      "author": {
+        "id": "ecossistemadev",
+        "name": "ecossistemadev",
+        "handle": "ecossistemadev",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/107730006?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 12500,
+        "period": "year"
+      },
+      "createdAt": "2025-10-13T00:23:24Z",
+      "updatedAt": "2025-10-13T00:23:24Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/110",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Av. Paulista - São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Av. Paulista - São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_e2bf92920267625501ec5bdc",
+          "sourceId": "Empregos-dev/Vagas-dev#110",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/110",
+          "createdAt": "2025-10-13T00:23:24Z",
+          "updatedAt": "2025-10-13T00:23:24Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 374,
+        "publishedAt": "2025-10-13T00:23:24Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_6f26b88c93b953f27dcec765",
       "sourceId": "OurTinTinLand/TinTin-Job-Board#76",
@@ -222,7 +970,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 377,
+        "ageDays": 378,
         "publishedAt": "2025-10-09T14:30:35Z",
         "status": "stale"
       }
@@ -929,8 +1677,128 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 406,
+        "ageDays": 407,
         "publishedAt": "2025-09-10T16:04:04Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_926f3c14cae6e82e67bdbdbf",
+      "sourceId": "Empregos-dev/Vagas-dev#109",
+      "title": "🚀 Vaga Desenvolvedor Java 👩🏻‍💻 📍 Remoto 🚀",
+      "description": "# Desenvolvedor Java 👩🏻‍💻\n\n- 📍 Localização: Remoto\n- 📈 Nível: pleno\n- 📃 Contrato: clt\n- 💰 Salário: R$ 12.400,00\n- 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗\n\n\n## Descrição da vaga:\n📣 Vaga para Desenvolvedor Java em home office!\n\nCliente: Empresa Brasileira de Serviços Hospitalares.\n\n\n## Atividades e responsabilidade:\n🔧 Desenvolvimento em Java (Spring, JPA, Hibernate) e JavaScript (React, Node.js, Angular).\n📊 Trabalho com Banco de Dados (PostgreSQL, MySQL, Oracle).\n🚀 DevOps utilizando CI/CD (Jenkins, GitLab, GitHub Actions), Docker, Kubernetes, Infraestrutura como Código (Terraform, Ansible).\n🔗 Integrações com APIs REST e SOAP.\n✅ Execução de testes com JUnit, Selenium, Postman/Newman.\n📈 Controle de versão com Git, GitFlow, GitHub, GitLab.\n📋 Gestão de projetos com Redmine, Azure DevOps, metodologias ágeis (Scrum/Kanban).\n\n\n## Requisitos:\n🎓 Formação completa em TI.\n📚 Pós-graduação em TI.\n\n\n## Benefícios:\n🍴 Vale alimentação (ou refeição);\n🚗 Vale transporte;\n🚑 Plano de Saúde;\n🦷 Plano Odontológico;\n🏛 Parcerias com Instituições Educacionais e Academia.\n\n\n\n\n\n# [🔗 Clique aqui para se candidatar](https://empregos.dev/vaga/desenvolvedor-java-4148)\n\n\n**Use nosso site [Empregos.dev](https://empregos.dev) para buscar mais vagas de trabalho na área da programação, desenvolvimento, devops e tecnologia como está!**",
+      "excerpt": "# Desenvolvedor Java 👩🏻‍💻 - 📍 Localização: Remoto - 📈 Nível: pleno - 📃 Contrato: clt - 💰 Salário: R$ 12.400,00 - 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗 ## Descrição da vaga: 📣 Vaga para Desenvolved...",
+      "issueState": "open",
+      "contentHash": "e890e420b4754b2ce2161a83a931226722b3140ff9036bbdb03197e6e61be900",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "java (spring",
+        "pleno",
+        "remoto"
+      ],
+      "sourceTags": [
+        "clt",
+        "java (spring",
+        "pleno",
+        "remoto"
+      ],
+      "author": {
+        "id": "ecossistemadev",
+        "name": "ecossistemadev",
+        "handle": "ecossistemadev",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/107730006?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "companyName": "Empresa Brasileira de Serviços Hospitalares.",
+      "salary": {
+        "currency": "BRL",
+        "min": 12400,
+        "period": "year"
+      },
+      "createdAt": "2025-09-08T12:18:17Z",
+      "updatedAt": "2025-09-08T12:18:17Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/109",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "angular",
+          "azure",
+          "docker",
+          "java",
+          "javascript",
+          "kubernetes",
+          "mysql",
+          "nodejs",
+          "postgres",
+          "react",
+          "spring",
+          "terraform"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_926f3c14cae6e82e67bdbdbf",
+          "sourceId": "Empregos-dev/Vagas-dev#109",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/109",
+          "createdAt": "2025-09-08T12:18:17Z",
+          "updatedAt": "2025-09-08T12:18:17Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 409,
+        "publishedAt": "2025-09-08T12:18:17Z",
         "status": "stale"
       }
     },
@@ -1009,747 +1877,21 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 418,
+        "ageDays": 419,
         "publishedAt": "2025-08-29T16:26:49Z",
         "status": "stale"
       }
     },
     {
-      "id": "gh_973f877c4733d4a6bd2a37bf",
-      "sourceId": "OurTinTinLand/TinTin-Job-Board#74",
-      "title": "阿联酋迪拜｜UPay 金融公司诚聘｜测试专家｜45k-50k 18薪｜包食宿",
-      "description": "公司业务简介\nUPay金融科技有限公司作为区块链支付领域的领先创新者，旨在提供便捷、安全的加密资产消费体验。支持虚拟卡和实体卡，允许用户在全球范围内使用加密货币进行日常消费。\n\n-学历要求：本科\n-年龄要求：22-37岁优先\n-国籍要求：不限\n\n福利：\n  每半年15天带薪休假（往返机票报销）\n  提供工签、医疗保险、每月团建、节日红包\n\n工作地点：迪拜未来博物馆对面\n\n【岗位职责】\n\n1.执行产品的功能测试、接口测试和系统测试，发现缺陷并及时记录，协助开发定位问题原因，并验证缺陷修复的有效性，直到问题解决关闭。\n2.负责公司自动化测试与性能测试一体化平台的整体架构设计与搭建；\n3.制定平台开发规范、技术选型和扩展方案，推动测试工具链标准化与流程自动化；\n4.领导并组织团队完成核心模块研发与迭代，包括脚本管理、数据驱动、分布式执行、监控告警、报表展示等；\n5.与研发、运维、产品等团队紧密协作，深度集成 CI/CD 流程，确保平台在多环境下稳定交付；\n6.跟踪业界最新测试技术与工具，评估并引入合适的开源或商业方案，持续提升团队测试效率和质量，主导关键项目测试工作，承担团队中高级别质量把控任务。\n\n 【任职要求】\n\n1.五年以上软件测试或测试平台开发经验，其中至少两年担任自动化测试框架／平台搭建负责人，具备风险识别和测试闭环能力\n2.精通 Java、Python 或 Groovy 中至少一种语言，具备扎实的编码和脚本开发能力；\n3.熟悉主流自动化测试框架（如 Selenium、Appium、Playwright）及性能测试工具（如 JMeter、Locust、Gatling），能设计性能测试场景，分析 TPS、响应时间、瓶颈定位等。\n4.掌握分布式任务调度与执行技术（如 Kubernetes、Docker、消息队列）；\n5.熟练运用 Prometheus、Grafana、ELK 等监控与日志中台，具备性能数据可视化经验，具备一定的代码调试能力或日志分析能力；\n6.精通 Git、Jenkins/GitLab CI、Maven/Gradle 等 DevOps 工具链；\n7.拥有大型测试平台或中台系统的架构设计与实践经验，能够独立撰写高可用、高并发系统的设计文档，有能力指导初中级测试工程师，推动团队技术成长。",
-      "excerpt": "公司业务简介 UPay金融科技有限公司作为区块链支付领域的领先创新者，旨在提供便捷、安全的加密资产消费体验。支持虚拟卡和实体卡，允许用户在全球范围内使用加密货币进行日常消费。 -学历要求：本科 -年龄要求：22-37岁优先 -国籍要求：不限 福利： 每半年15天带薪休假（往返机票报销） 提供工签、医疗保险、每月团建、节日红包 工作地点：迪拜未来博物馆对面 【岗位职责】 1.执行产品的功能测试、接口测试和系统测试，发现缺陷并及时记录...",
+      "id": "gh_81aa8bfda8cd75209a233f69",
+      "sourceId": "TechnologyMasters/jobs#719",
+      "title": "Sr. Software Engineer",
+      "description": "# Hiring experienced Sr. Software Engineers at Turing! 🚀  \nApply Here: http://turing.com/s/DWBRdK\n\nTuring is one of the fastest-growing AI companies, pushing the boundaries of AI-assisted software development.  \nIn this role, you’ll review AI-generated code, rank solutions, and provide feedback to improve how Large Language Models (LLMs) learn real-world coding best practices.  \n\n## We’re looking for professionals with:  \n- 5+ years of software engineering experience, with 2 years as a full-stack engineer at a leading tech product company  \n- Strong skills in code review, debugging, and software design  \n\n## Role Details:  \n- **Location:** Global (Remote, flexible 10/20/40 hrs/week)  \n- **Work style:** Remote contract (flexible hours, partial PT overlap)  \n- **Salary:** $50–$150/hr, depending on experience & geography  \n\n👉 [Check out the full details](https://developers.turing.com/direct-apply/UiGLqtqqU30Y?&utm_source=ad&utm_medium=techmasters&utm_campaign=swe_100&utm_term=techmasters_discord)",
+      "excerpt": "# Hiring experienced Sr. Software Engineers at Turing! 🚀 Apply Here: http://turing.com/s/DWBRdK Turing is one of the fastest-growing AI companies, pushing the boundaries of AI-assisted software development. In this r...",
       "issueState": "open",
-      "contentHash": "208ff9099453fe93bb1ddcb2a0469e144e1b38aed0157b2f16c4338f04eeff9a",
-      "repository": "OurTinTinLand/TinTin-Job-Board",
-      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-      "region": "Asia",
-      "country": "China",
-      "sourceLocation": {
-        "country": "China",
-        "countryCode": "CN",
-        "region": "Asia"
-      },
-      "tags": [
-        "devops",
-        "java",
-        "python"
-      ],
-      "sourceTags": [
-        "devops",
-        "java",
-        "python"
-      ],
-      "author": {
-        "id": "Miranda-HR",
-        "name": "Miranda-HR",
-        "handle": "Miranda-HR",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/207686793?v=4"
-      },
-      "community": {
-        "id": "OurTinTinLand",
-        "name": "OurTinTinLand",
-        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-        "repository": "OurTinTinLand/TinTin-Job-Board",
-        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-      },
-      "createdAt": "2025-08-03T06:24:31Z",
-      "updatedAt": "2025-08-03T06:24:31Z",
-      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/74",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre"
-        ],
-        "technologies": [
-          "docker",
-          "java",
-          "kubernetes",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_973f877c4733d4a6bd2a37bf",
-          "sourceId": "OurTinTinLand/TinTin-Job-Board#74",
-          "repository": "OurTinTinLand/TinTin-Job-Board",
-          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/74",
-          "createdAt": "2025-08-03T06:24:31Z",
-          "updatedAt": "2025-08-03T06:24:31Z",
-          "community": {
-            "id": "OurTinTinLand",
-            "name": "OurTinTinLand",
-            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-            "repository": "OurTinTinLand/TinTin-Job-Board",
-            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 445,
-        "publishedAt": "2025-08-03T06:24:31Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_324055d14c5ee3765bdb1221",
-      "sourceId": "PrepAIJobs/New-Grad-2026#3",
-      "title": "New Grad",
-      "description": "### Link to Grad Posting\n\nhttps://work.mercor.com/jobs/list_AAABlmlUjFNWBdE31bNALLGU?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral\n\n### Company Name\n\nMercor\n\n### Grad Title\n\nApplied AI Engineer\n\n### Location\n\nSan Francisco\n\n### Does this opportunity offer sponsorship?\n\nOffers Sponsorship\n\n### Is this position currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\nyukuairoy@gmail.com\n\n### Extra Notes (Optional)\n\nI'm hiring for this role and candidates can contact me directly.",
-      "excerpt": "### Link to Grad Posting https://work.mercor.com/jobs/list_AAABlmlUjFNWBdE31bNALLGU?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral ### Company Name Mer...",
-      "issueState": "open",
-      "contentHash": "42cdf122e8f2b7200cc9e7991c258fc8c8fd6fd61ba223432b443a5186e38bbb",
-      "repository": "PrepAIJobs/New-Grad-2026",
-      "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "yukuairoy",
-        "name": "yukuairoy",
-        "handle": "yukuairoy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5060492?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/New-Grad-2026",
-        "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-      },
-      "createdAt": "2025-07-31T20:57:04Z",
-      "updatedAt": "2025-07-31T20:57:04Z",
-      "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/3",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_324055d14c5ee3765bdb1221",
-          "sourceId": "PrepAIJobs/New-Grad-2026#3",
-          "repository": "PrepAIJobs/New-Grad-2026",
-          "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-          "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/3",
-          "createdAt": "2025-07-31T20:57:04Z",
-          "updatedAt": "2025-07-31T20:57:04Z",
-          "community": {
-            "id": "PrepAIJobs",
-            "name": "PrepAIJobs",
-            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-            "repository": "PrepAIJobs/New-Grad-2026",
-            "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 447,
-        "publishedAt": "2025-07-31T20:57:04Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_bf8a827e3fae3c73f6d63bba",
-      "sourceId": "PrepAIJobs/New-Grad-2026#2",
-      "title": "New Grad",
-      "description": "### Link to Grad Posting\n\nhttps://work.mercor.com/jobs/list_AAABlJtILQFLnbOxQORBY7E7?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral\n\n### Company Name\n\nMercor\n\n### Grad Title\n\nMachine Learning Engineer\n\n### Location\n\nSan Francisco\n\n### Does this opportunity offer sponsorship?\n\nOffers Sponsorship\n\n### Is this position currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\nyukuairoy@gmail.com\n\n### Extra Notes (Optional)\n\nI'm hiring for this role and candidates can contact me directly.",
-      "excerpt": "### Link to Grad Posting https://work.mercor.com/jobs/list_AAABlJtILQFLnbOxQORBY7E7?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral ### Company Name Mer...",
-      "issueState": "open",
-      "contentHash": "3a87622a2e3f7743e0939a8b689e8cd6a75529e84ae86fae77968fd676d167e0",
-      "repository": "PrepAIJobs/New-Grad-2026",
-      "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "yukuairoy",
-        "name": "yukuairoy",
-        "handle": "yukuairoy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5060492?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/New-Grad-2026",
-        "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-      },
-      "createdAt": "2025-07-31T20:55:09Z",
-      "updatedAt": "2025-07-31T20:55:09Z",
-      "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/2",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_bf8a827e3fae3c73f6d63bba",
-          "sourceId": "PrepAIJobs/New-Grad-2026#2",
-          "repository": "PrepAIJobs/New-Grad-2026",
-          "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-          "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/2",
-          "createdAt": "2025-07-31T20:55:09Z",
-          "updatedAt": "2025-07-31T20:55:09Z",
-          "community": {
-            "id": "PrepAIJobs",
-            "name": "PrepAIJobs",
-            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-            "repository": "PrepAIJobs/New-Grad-2026",
-            "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 447,
-        "publishedAt": "2025-07-31T20:55:09Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_96ac58e1c655c2681c495a3f",
-      "sourceId": "PrepAIJobs/New-Grad-2026#1",
-      "title": "New Grad",
-      "description": "### Link to Grad Posting\n\nhttps://work.mercor.com/jobs/list_AAABmA9AS7Zop9SLSjRNPLIH?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral\n\n### Company Name\n\nMercor\n\n### Grad Title\n\nSoftware Engineer\n\n### Location\n\nSan Francisco\n\n### Does this opportunity offer sponsorship?\n\nOffers Sponsorship\n\n### Is this position currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\nyukuairoy@gmail.com\n\n### Extra Notes (Optional)\n\nI'm hiring for this role and candidates can contact me directly.",
-      "excerpt": "### Link to Grad Posting https://work.mercor.com/jobs/list_AAABmA9AS7Zop9SLSjRNPLIH?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral ### Company Name Mer...",
-      "issueState": "open",
-      "contentHash": "5f5e050547213bbb867f3d83551570e929781ec7489368a8ade70bcdc35cf032",
-      "repository": "PrepAIJobs/New-Grad-2026",
-      "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "yukuairoy",
-        "name": "yukuairoy",
-        "handle": "yukuairoy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5060492?v=4"
-      },
-      "community": {
-        "id": "PrepAIJobs",
-        "name": "PrepAIJobs",
-        "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-        "repository": "PrepAIJobs/New-Grad-2026",
-        "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-      },
-      "createdAt": "2025-07-31T20:53:52Z",
-      "updatedAt": "2025-07-31T20:53:52Z",
-      "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/1",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_96ac58e1c655c2681c495a3f",
-          "sourceId": "PrepAIJobs/New-Grad-2026#1",
-          "repository": "PrepAIJobs/New-Grad-2026",
-          "repositoryUrl": "https://github.com/PrepAIJobs/New-Grad-2026",
-          "url": "https://github.com/PrepAIJobs/New-Grad-2026/issues/1",
-          "createdAt": "2025-07-31T20:53:52Z",
-          "updatedAt": "2025-07-31T20:53:52Z",
-          "community": {
-            "id": "PrepAIJobs",
-            "name": "PrepAIJobs",
-            "avatarUrl": "https://github.com/PrepAIJobs.png?size=80",
-            "repository": "PrepAIJobs/New-Grad-2026",
-            "url": "https://github.com/PrepAIJobs/New-Grad-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 447,
-        "publishedAt": "2025-07-31T20:53:52Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_f15763c67c8035ee167088c2",
-      "sourceId": "f2etw/jobs#1156",
-      "title": "[徵才][台北] [AI 新創公司] [遠端為主] Senior Frontend and Backend Engineer 100w~140w",
-      "description": "## 【AHEAD 先勁智能】正在尋找資深後端工程師。\n\n  薪資： 年薪 NT$ 1,000,000 - NT$ 1,400,000\n\n## 歡迎投遞履歷\n- 資深後端工程師: https://www.104.com.tw/job/8sezr\n\n## 公司簡介 | AHEAD 官方網站\nAHEAD 整合了臨床醫師、轉譯醫學、資料科學、機器學習及軟體開發等多領域專家，致力於開發有效的 AI 輔助診斷工具。首發產品「Cyto-copilot 雲端智能平台」專為血液癌症專業判讀需求而設計。\n- AHEAD 官方網站 | Official Website\nhttps://www.aheadmedicine.com/\n\n## 媒體曝光\n•\t[2024台灣AI大賞｜7秒鐘找出異常細胞！先勁智能用AI加持判讀，成果登入聖經教科書](https://www.bnext.com.tw/article/79724/ahead-medicine--taiwan-impact-ai-award-2024)\n•\t[環球生技 116期焦點企業專訪: 先勁智能AI血癌檢驗平台寫下經典教科書](https://news.gbimonthly.com/tw/magazine/article_show.php?num=68041&menu=1479&p_id=124&fbclid=IwZXh0bgNhZW0CMTAAAR3rTrsPUmfpSYuasKVsCSAxtCF_8XBTlpZJ-FBnPG52IPt7W4_QYmc7Flg_aem_m8EsExRlk78dGDuflMfmtA)\n•\t[DIGITIMES AHEAD打造全面性AI臨床輔助系統](https://www.digitimes.com.tw/iot/article.asp?cat=158&id=0000572899_oqe7yvp3lapxh081lo4yc&fbclid=iwar2gyu05tgzc0obtt4ez6t88ox5yxwbjvpxb8dhappckwzzawx1uq8ttdpu)\n•\t[Meet Global AHEAD Intelligence uses AI to help doctors conquer blood cancer, skyrocket the speed of diagnostics 100 times faster](https://meet-global.bnext.com.tw/articles/view/47385)\n\n## 公司福利\n- 混合居家辦公(Hybrid Remote)：每週僅需進辦公室1-2次參與會議\n- 員工認股權計畫\n- 休假制度優於勞基法(額外三天幸福假)\n- 現磨咖啡機提供，咖啡暢飲 充足供應的零食與飲料\n- 不定期提供水果、甜點\n- 定期團隊聚餐活動\n- 教育訓練補助\n\n## 建議準備事項\n- 準備作品集或可分享的開源專案\n- 熟悉自己過往專案的技術細節\n- 了解我們公司的產品與技術棧\n- 準備關於團隊合作的具體案例",
-      "excerpt": "## 【AHEAD 先勁智能】正在尋找資深後端工程師。 薪資： 年薪 NT$ 1,000,000 - NT$ 1,400,000 ## 歡迎投遞履歷 - 資深後端工程師: https://www.104.com.tw/job/8sezr ## 公司簡介 | AHEAD 官方網站 AHEAD 整合了臨床醫師、轉譯醫學、資料科學、機器學習及軟體開發等多領域專家，致力於開發有效的 AI 輔助診斷工具。首發產品「Cyto-copilot ...",
-      "issueState": "open",
-      "contentHash": "45133f10cd3ab511c5612a72572355ed74edb2f9d938a7ace8c9518eeea51604",
-      "repository": "f2etw/jobs",
-      "repositoryUrl": "https://github.com/f2etw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "[b] python",
-        "[f] react",
-        "senior",
-        "unit test",
-        "年薪百萬",
-        "求才"
-      ],
-      "sourceTags": [
-        "[b] python",
-        "[f] react",
-        "senior",
-        "unit test",
-        "年薪百萬",
-        "求才"
-      ],
-      "author": {
-        "id": "tonebeta",
-        "name": "tonebeta",
-        "handle": "tonebeta",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4890246?v=4"
-      },
-      "community": {
-        "id": "f2etw",
-        "name": "f2etw",
-        "avatarUrl": "https://github.com/f2etw.png?size=80",
-        "repository": "f2etw/jobs",
-        "url": "https://github.com/f2etw/jobs"
-      },
-      "createdAt": "2025-07-30T06:45:38Z",
-      "updatedAt": "2025-11-26T00:04:05Z",
-      "url": "https://github.com/f2etw/jobs/issues/1156",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "frontend"
-        ],
-        "technologies": [
-          "php",
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_f15763c67c8035ee167088c2",
-          "sourceId": "f2etw/jobs#1156",
-          "repository": "f2etw/jobs",
-          "repositoryUrl": "https://github.com/f2etw/jobs",
-          "url": "https://github.com/f2etw/jobs/issues/1156",
-          "createdAt": "2025-07-30T06:45:38Z",
-          "updatedAt": "2025-11-26T00:04:05Z",
-          "community": {
-            "id": "f2etw",
-            "name": "f2etw",
-            "avatarUrl": "https://github.com/f2etw.png?size=80",
-            "repository": "f2etw/jobs",
-            "url": "https://github.com/f2etw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 449,
-        "publishedAt": "2025-07-30T06:45:38Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_b0284b782444c808bec42051",
-      "sourceId": "phpdevbr/vagas#1314",
-      "title": "[First Decision] Desenvolvedor PHP Sênior",
-      "description": "A First Decision, consultoria especializada em tecnologia e migração de Dados está com uma oportunidade para Desenvolvedor PHP Sênior.\n\nModalidade: Híbrido em Brasília - DF\nContratação: CLT\nRemuneração: R$ Informada no ato da inscrição\n\nEstamos em busca de um talentoso desenvolvedor com experiência em PHP Back Symfony para integrar nossa equipe na Advocacia Geral da união - AGU. O candidato ideal será responsável por projetar, implementar e manter aplicações web eficientes e escaláveis, utilizando as tecnologias mencionadas. Além disso, espera-se que o profissional colabore com outros membros da equipe para entregar soluções de alta qualidade.\n\nResponsabilidades:\n\nProjetar, desenvolver e manter aplicações back-end robustas e eficientes utilizando PHP e o framework Symfony.\n\nImplementar lógica de negócios, manipulação de dados e integração de sistemas.\n\nContribuir para a definição e manutenção da arquitetura de software, garantindo escalabilidade, desempenho e modularidade.\n\nIdentificar e corrigir gargalos de desempenho, realizar otimizações de código e implementar boas práticas para garantir eficiência.\n\nIntegrar sistemas e serviços de terceiros de forma eficiente, garantindo a interoperabilidade.\n\nRealizar manutenção contínua do código, resolver bugs e aplicar melhorias conforme necessário.\n\nParticipar ativamente de revisões de código para garantir a qualidade e aderência às diretrizes da equipe.\n\nRequisitos:\n\nGraduação em curso de nível superior na área de Tecnologia da Informação, ou especialização, mestrado ou doutorado na área de Tecnologia da Informação;\n\nTrabalho será realizado de forma home officer\n\nProficiência em PHP e conhecimento avançado em Symfony.\n\nExperiência com arquitetura MVC (Model-View-Controller).\n\nConhecimento sólido em banco de dados, preferencialmente MySQL ou outro sistema de gerenciamento de banco de dados relacional.\n\nOrientação a objetos (Consolidado)\n\nFamiliaridade com o uso de Doctrine ORM (Object-Relational Mapping) no contexto do Symfony.\n\nExperiência em desenvolvimento de aplicações web e serviços RESTful.\n\nConhecimento em tecnologias web como HTML, CSS, JavaScript/jQuery.\n\nUso de ferramentas de controle de versão, como Git.\n\nExperiência em práticas de teste, incluindo testes unitários e testes de integração.\n\nConhecimento de ferramentas de teste, como PHPUnit.\n\nCompromisso com a escrita de código limpo e boas práticas de desenvolvimento.\n\nCapacidade de trabalhar em equipe e receber feedback construtivo;\n\nBoa comunicação e habilidades de trabalho em equipe.\n\nDiferenciais:\n\nFamiliaridade com sistemas de gerenciamento de dependências, como Composer.\n\nExperiência em configuração e implantação de aplicativos Symfony.\n\nCompreensão de práticas de segurança web.\n\nCandidate- se pelo link: https://jobs.recrutei.com.br/first-decision/vacancy/109777-agu-desenvolvedor-senior-php\n\nou envie o seu currículo para o e-mail: ingrid.brandao@firstdecision.com.br (Informe o meio de divulgação que encontrou a vaga, por gentileza)\n<img width=\"1080\" height=\"1080\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/e6ac9987-dbf3-4df0-8ec8-93a6ea0fc00b\" />",
-      "excerpt": "A First Decision, consultoria especializada em tecnologia e migração de Dados está com uma oportunidade para Desenvolvedor PHP Sênior. Modalidade: Híbrido em Brasília - DF Contratação: CLT Remuneração: R$ Informada no...",
-      "issueState": "open",
-      "contentHash": "a03e9ab2fa9e4254423d036a95a82209262fc995b3d0284b3594aa53a0ace4f2",
-      "repository": "phpdevbr/vagas",
-      "repositoryUrl": "https://github.com/phpdevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "java",
-        "senior"
-      ],
-      "sourceTags": [
-        "java",
-        "senior"
-      ],
-      "author": {
-        "id": "IngridBrandaoFD",
-        "name": "IngridBrandaoFD",
-        "handle": "IngridBrandaoFD",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/222834767?v=4"
-      },
-      "community": {
-        "id": "phpdevbr",
-        "name": "phpdevbr",
-        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-        "repository": "phpdevbr/vagas",
-        "url": "https://github.com/phpdevbr/vagas"
-      },
-      "createdAt": "2025-07-25T17:32:58Z",
-      "updatedAt": "2025-07-25T17:32:58Z",
-      "url": "https://github.com/phpdevbr/vagas/issues/1314",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "java",
-          "javascript",
-          "mysql",
-          "php"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_b0284b782444c808bec42051",
-          "sourceId": "phpdevbr/vagas#1314",
-          "repository": "phpdevbr/vagas",
-          "repositoryUrl": "https://github.com/phpdevbr/vagas",
-          "url": "https://github.com/phpdevbr/vagas/issues/1314",
-          "createdAt": "2025-07-25T17:32:58Z",
-          "updatedAt": "2025-07-25T17:32:58Z",
-          "community": {
-            "id": "phpdevbr",
-            "name": "phpdevbr",
-            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-            "repository": "phpdevbr/vagas",
-            "url": "https://github.com/phpdevbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 453,
-        "publishedAt": "2025-07-25T17:32:58Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_76414fd0681a573524b8db1a",
-      "sourceId": "jobright-ai/2026-Data-Analysis-New-Grad#3",
-      "title": "Data analysis jobs",
-      "description": "",
-      "excerpt": "Data analysis jobs",
-      "issueState": "open",
-      "contentHash": "dc296dd7397b3b9dcfe5219d89d3b56d33a194af277ca7e634b6c1ecf0fbed6c",
-      "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "data"
-      ],
-      "sourceTags": [
-        "data"
-      ],
-      "author": {
-        "id": "R-r-bic",
-        "name": "R-r-bic",
-        "handle": "R-r-bic",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/128593223?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
-        "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad"
-      },
-      "createdAt": "2025-07-19T11:25:40Z",
-      "updatedAt": "2025-07-19T11:25:40Z",
-      "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad/issues/3",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_76414fd0681a573524b8db1a",
-          "sourceId": "jobright-ai/2026-Data-Analysis-New-Grad#3",
-          "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad",
-          "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad/issues/3",
-          "createdAt": "2025-07-19T11:25:40Z",
-          "updatedAt": "2025-07-19T11:25:40Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
-            "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 460,
-        "publishedAt": "2025-07-19T11:25:40Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_cae9b3a86623390fc07ae1b4",
-      "sourceId": "twjug/jobs#115",
-      "title": "<徵才>Junior Java Engineer 7/14",
-      "description": "---\n***瑪黑家居招募 Junior Java 工程師***\n\n你對 Java 程式設計充滿熱情，渴望將所學應用於實務嗎？瑪黑家居正在尋找一位充滿潛力、樂於學習的 Junior Java 工程師，一同優化內部系統、開發創新功能，提升顧客體驗。\n\n工作內容：\n\n* 參與內部系統（如：訂單、庫存、會員系統）的開發、維護與優化。\n* 協助新功能設計與實作，提升系統效率。\n* 與團隊協作，將業務需求轉化為技術方案。\n* 撰寫清晰、可維護的程式碼並進行測試除錯。\n* 學習並導入新技術與工具。\n\n必備具備：\n\n* 資訊工程、資訊管理或相關科系畢業。\n* 熟悉Java程式語言1-3年。\n* 具備SQL基礎知識。\n* 熟悉Git版本控制工具。\n* 具備良好的溝通與團隊合作精神。\n\n***加分條件：具備 Spring Framework/Spring Boot 經驗；具備 RESTful API 開發經驗。\n\n薪資：年薪百萬\n\n---\n**立即加入瑪黑家居，開啟你的程式職涯！**\n\n請聯繫或將履歷寄送至以下\nEmail: andy@talematecg.com\nLine ID: kd861229\nPhone: +886 968 111 523 陳先生",
-      "excerpt": "--- ***瑪黑家居招募 Junior Java 工程師*** 你對 Java 程式設計充滿熱情，渴望將所學應用於實務嗎？瑪黑家居正在尋找一位充滿潛力、樂於學習的 Junior Java 工程師，一同優化內部系統、開發創新功能，提升顧客體驗。 工作內容： * 參與內部系統（如：訂單、庫存、會員系統）的開發、維護與優化。 * 協助新功能設計與實作，提升系統效率。 * 與團隊協作，將業務需求轉化為技術方案。 * 撰寫清晰、可維護的程...",
-      "issueState": "open",
-      "contentHash": "a92fba71353dbb91dcea8f58f0c94aababe54ae890531df1af61793cb7410a25",
-      "repository": "twjug/jobs",
-      "repositoryUrl": "https://github.com/twjug/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "java",
-        "junior"
-      ],
-      "sourceTags": [
-        "java",
-        "junior"
-      ],
-      "author": {
-        "id": "Andy-Chenie",
-        "name": "Andy-Chenie",
-        "handle": "Andy-Chenie",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220682704?v=4"
-      },
-      "community": {
-        "id": "twjug",
-        "name": "twjug",
-        "avatarUrl": "https://github.com/twjug.png?size=80",
-        "repository": "twjug/jobs",
-        "url": "https://github.com/twjug/jobs"
-      },
-      "createdAt": "2025-07-14T07:28:30Z",
-      "updatedAt": "2025-07-14T07:28:30Z",
-      "url": "https://github.com/twjug/jobs/issues/115",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "java",
-          "spring"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_cae9b3a86623390fc07ae1b4",
-          "sourceId": "twjug/jobs#115",
-          "repository": "twjug/jobs",
-          "repositoryUrl": "https://github.com/twjug/jobs",
-          "url": "https://github.com/twjug/jobs/issues/115",
-          "createdAt": "2025-07-14T07:28:30Z",
-          "updatedAt": "2025-07-14T07:28:30Z",
-          "community": {
-            "id": "twjug",
-            "name": "twjug",
-            "avatarUrl": "https://github.com/twjug.png?size=80",
-            "repository": "twjug/jobs",
-            "url": "https://github.com/twjug/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 465,
-        "publishedAt": "2025-07-14T07:28:30Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_5de22d4035a6a2ecd058daac",
-      "sourceId": "cncf/gitjobs#293",
-      "title": "Replace https://www.zephyrproject.org/careers/ with GitJobs",
-      "description": "https://www.zephyrproject.org/careers/ can use some GitJobs love!",
-      "excerpt": "https://www.zephyrproject.org/careers/ can use some GitJobs love!",
-      "issueState": "open",
-      "contentHash": "e5f66d2aa333253faa7301ed45f058f0b5ab7b0e35e9df8c9efa2672c095b9f0",
-      "repository": "cncf/gitjobs",
-      "repositoryUrl": "https://github.com/cncf/gitjobs",
+      "contentHash": "60fa8d24fd87f0f7591508b70740e275f0ed5c80be37db4698eb7694f83242dd",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
       "country": "Global",
       "sourceLocation": {
@@ -1758,155 +1900,84 @@
         "region": "Global"
       },
       "tags": [
-        "integration"
+        "design",
+        "remote"
       ],
       "sourceTags": [
-        "integration"
+        "design",
+        "remote"
       ],
       "author": {
-        "id": "caniszczyk",
-        "name": "caniszczyk",
-        "handle": "caniszczyk",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/63777?v=4"
+        "id": "aditya97499",
+        "name": "aditya97499",
+        "handle": "aditya97499",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/227619972?v=4"
       },
       "community": {
-        "id": "cncf",
-        "name": "cncf",
-        "avatarUrl": "https://github.com/cncf.png?size=80",
-        "repository": "cncf/gitjobs",
-        "url": "https://github.com/cncf/gitjobs"
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
       },
-      "createdAt": "2025-07-10T15:45:24Z",
-      "updatedAt": "2026-02-18T11:38:03Z",
-      "url": "https://github.com/cncf/gitjobs/issues/293",
+      "companyName": "Strong skills in code review, debugging, and software design",
+      "salary": {
+        "currency": "USD",
+        "min": 50,
+        "max": 150,
+        "period": "hour"
+      },
+      "createdAt": "2025-08-21T12:47:19Z",
+      "updatedAt": "2025-08-21T12:47:19Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/719",
       "sourceType": "github-issue",
       "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_5de22d4035a6a2ecd058daac",
-          "sourceId": "cncf/gitjobs#293",
-          "repository": "cncf/gitjobs",
-          "repositoryUrl": "https://github.com/cncf/gitjobs",
-          "url": "https://github.com/cncf/gitjobs/issues/293",
-          "createdAt": "2025-07-10T15:45:24Z",
-          "updatedAt": "2026-02-18T11:38:03Z",
-          "community": {
-            "id": "cncf",
-            "name": "cncf",
-            "avatarUrl": "https://github.com/cncf.png?size=80",
-            "repository": "cncf/gitjobs",
-            "url": "https://github.com/cncf/gitjobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 468,
-        "publishedAt": "2025-07-10T15:45:24Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_338622c06f4332345fe4f4ea",
-      "sourceId": "golangtw/jobs#225",
-      "title": "[苗栗/竹南][月薪 90k 起] 群聯電子 雲原生平台工程師",
-      "description": "## 工作地點\n- 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號)\n\n## 工作內容\n- 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。\n- 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。\n- 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。\n- 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernetes RBAC 與多租戶隔離。\n- 開發 LLM 模型服務基礎設施，透過 KServe 與 Gateway API Inference Extension 管理模型的打包、部署與推論生命週期。\n- 設計與實作 Kubernetes CRD 及 Controller，管理叢集、工作負載、租戶隔離與模型生命週期。\n- 使用 ConnectRPC / gRPC 設計跨叢集 API，搭配 Protobuf 定義服務介面。\n- 與前端（SvelteKit）、DevOps 及 QA 團隊合作，確保程式碼品質與安全性。\n- 參與技術研究，探索 AI 推論優化、Gateway API 與雲原生新技術。\n\n## 能力需求\n- Go 經驗：3 年以上 Go 開發經驗，熟悉 Goroutine 與 Channel。\n- Kubernetes：熟悉 Kubernetes 架構，具備 Operator / controller-runtime 開發經驗。\n- 開源貢獻：參與過 GitHub 開源專案，熟悉 Pull Request 與程式碼審查。\n- Linux 技能：精通 Linux 系統操作、Shell 腳本、系統監控與效能優化。\n- 容器化技術：熟悉 Docker，具備撰寫多階段 Dockerfile 與容器部署經驗。\n- API 設計：熟悉 ConnectRPC / gRPC、Protobuf 與 RESTful API 設計。\n- 軟實力：優秀的問題解決能力、團隊合作精神與溝通技巧。\n\n## 加分項目\n- 熟悉 Kubernetes RBAC、NetworkPolicy 或 Admission Webhook 等安全機制。\n- 具備 OIDC / OAuth 2.0 身份驗證或 mTLS 憑證管理實作經驗。\n- 具備 AI/ML 模型服務經驗（如 KServe、vLLM 或類似推論框架）。\n- 熟悉 Istio 服務網格或 Envoy Gateway。\n- 熟悉 Gateway API 與 Kubernetes 網路模型。\n- 熟悉 CI/CD 工具（如 GitHub Actions）與 GitOps 流程（如 Flux CD）。\n- 具備 Helm Chart 開發與管理經驗。\n- 熟悉 OpenTelemetry 分散式追蹤與可觀測性實踐。\n- 熟悉前端技術（如 SvelteKit、TypeScript）。\n\n## 團隊技術\n- 程式語言：Go、TypeScript、Protobuf\n- 前端框架：SvelteKit、Tailwind CSS\n- 通訊協定：ConnectRPC、gRPC\n- 容器與叢集：Kubernetes、Docker、Helm\n- 儲存與網路：Rook/Ceph、Istio、Gateway API\n- AI/ML 推論：KServe、llm-d、Gateway API Inference Extension\n- 安全機制：OIDC、mTLS、Kubernetes RBAC、多租戶隔離\n- 監控與可觀測性：Prometheus、Grafana、OpenTelemetry\n- CI/CD：GitHub Actions、Flux CD\n\n## 薪資與福利\n  - 基本底薪：每月 90,000 - 110,000 元。\n  - 年薪保證 14 個月，另加績效獎金與公司分紅。\n\n## 職涯發展\n- 技術專家：深入 Kubernetes Operator、多叢集架構與 AI 推論基礎設施，成為雲原生平台專家。\n- 技術管理：帶領技術團隊，參與產品策略制定。\n- 跨領域成長：參與前端、AI/ML 推論或基礎設施自動化專案。\n\n## 應徵方式\n請將履歷寄至 [paul_tsai@phison.com](mailto:paul_tsai@phison.com) ，並簡述您的後端開發、Kubernetes 或雲原生技術經驗。",
-      "excerpt": "## 工作地點 - 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號) ## 工作內容 - 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。 - 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。 - 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。 - 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernet...",
-      "issueState": "open",
-      "contentHash": "fd2d0c5383bbd3a92e29f99abb4d9e780b24b944b2784284c76aa9de8a311fee",
-      "repository": "golangtw/jobs",
-      "repositoryUrl": "https://github.com/golangtw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "90k以上",
-        "苗栗"
-      ],
-      "sourceTags": [
-        "90k以上",
-        "苗栗"
-      ],
-      "author": {
-        "id": "iasthc",
-        "name": "iasthc",
-        "handle": "iasthc",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/40525303?v=4"
-      },
-      "community": {
-        "id": "golangtw",
-        "name": "golangtw",
-        "avatarUrl": "https://github.com/golangtw.png?size=80",
-        "repository": "golangtw/jobs",
-        "url": "https://github.com/golangtw/jobs"
-      },
-      "createdAt": "2025-07-08T07:48:12Z",
-      "updatedAt": "2026-04-09T02:47:13Z",
-      "url": "https://github.com/golangtw/jobs/issues/225",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global",
+        "city": "**  (, flexible 10/20/40 hrs/week)",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "**  (, flexible 10/20/40 hrs/week), Global · Remote worldwide",
+        "confidence": "explicit"
       },
       "taxonomy": {
         "areas": [
           "data-ai",
-          "devops-sre",
-          "qa"
+          "design",
+          "fullstack"
         ],
-        "technologies": [
-          "docker",
-          "go",
-          "kubernetes",
-          "typescript"
+        "technologies": [],
+        "seniority": [
+          "senior"
         ],
-        "seniority": [],
         "employmentTypes": [],
-        "workModels": [],
+        "workModels": [
+          "remote"
+        ],
         "languages": []
       },
       "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
       },
       "sources": [
         {
-          "id": "gh_338622c06f4332345fe4f4ea",
-          "sourceId": "golangtw/jobs#225",
-          "repository": "golangtw/jobs",
-          "repositoryUrl": "https://github.com/golangtw/jobs",
-          "url": "https://github.com/golangtw/jobs/issues/225",
-          "createdAt": "2025-07-08T07:48:12Z",
-          "updatedAt": "2026-04-09T02:47:13Z",
+          "id": "gh_81aa8bfda8cd75209a233f69",
+          "sourceId": "TechnologyMasters/jobs#719",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/719",
+          "createdAt": "2025-08-21T12:47:19Z",
+          "updatedAt": "2025-08-21T12:47:19Z",
           "community": {
-            "id": "golangtw",
-            "name": "golangtw",
-            "avatarUrl": "https://github.com/golangtw.png?size=80",
-            "repository": "golangtw/jobs",
-            "url": "https://github.com/golangtw/jobs"
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
           }
         }
       ],
@@ -1914,8 +1985,120 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 471,
-        "publishedAt": "2025-07-08T07:48:12Z",
+        "ageDays": 427,
+        "publishedAt": "2025-08-21T12:47:19Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5e7c0ed3e21fb1a527ca77ca",
+      "sourceId": "Empregos-dev/Vagas-dev#108",
+      "title": "🚀 Vaga Desenvolvedor(a) BackEnd Pleno – C# | JavaScript 🌟 📍 São Paulo - Barueri 🚀",
+      "description": "# Desenvolvedor(a) BackEnd Pleno – C# | JavaScript 🌟\n\n- 📍 Localização: São Paulo - Barueri\n- 📈 Nível: pleno\n- 📃 Contrato: clt\n- 💰 Salário: R$ 4.000,00 - R$ 5.000,00\n- 🏃‍♂️ Corre para se candidatar, ainda dá tempo! 🕗\n\n\n## Descrição da vaga:\nEmpresa de tecnologia que atua com inteligência artificial especializada em logística, oferecendo soluções para otimização e automação de operações, com foco em eficiência e sustentabilidade na cadeia de suprimentos. 🏢\n\n\n## Atividades e responsabilidade:\n• Desenvolver e implementar sistemas com C# e JavaScript\n• Criar e consumir APIs RESTful\n• Projetar e manter bancos de dados relacionais (ex: SQL Server)\n• Contribuir com interfaces e funcionalidades web\n• Garantir qualidade de código e entregas dentro dos prazos\n\n\n## Requisitos:\n✔ Experiência em C# e JavaScript\n✔ Conhecimento em APIs RESTful e desenvolvimento web\n✔ Vivência com bancos de dados relacionais\n✔ Organização e autonomia no trabalho\n✔ Boa comunicação com equipe e stakeholders\n✔ Disponibilidade para trabalho 100% presencial em Alphaville\n\n\n## Benefícios:\n• Vale Refeição (R$ 30,00/dia) \n• Plano de saúde e odontológico sem custo\n• Seguro de vida\n\n## Mais Informações:\n🔹 Experiência com ASP.NET Core\n🔹 Conhecimento em metodologias ágeis\n🔹 Capacidade de propor soluções criativas e escaláveis\n\n\n# [🔗 Clique aqui para se candidatar](https://empregos.dev/vaga/desenvolvedora-backend-pleno-c-javascript-8249)\n\n\n**Use nosso site [Empregos.dev](https://empregos.dev) para buscar mais vagas de trabalho na área da programação, desenvolvimento, devops e tecnologia como está!**",
+      "excerpt": "# Desenvolvedor(a) BackEnd Pleno – C# | JavaScript 🌟 - 📍 Localização: São Paulo - Barueri - 📈 Nível: pleno - 📃 Contrato: clt - 💰 Salário: R$ 4.000,00 - R$ 5.000,00 - 🏃‍♂️ Corre para se candidatar, ainda dá tempo...",
+      "issueState": "open",
+      "contentHash": "c2d8fe8733f02d6ca8788fa124158bbbe48ccab2129c27ceaae1230f548d891e",
+      "repository": "Empregos-dev/Vagas-dev",
+      "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "c#",
+        "clt",
+        "pleno",
+        "são paulo - barueri"
+      ],
+      "sourceTags": [
+        "c#",
+        "clt",
+        "pleno",
+        "são paulo - barueri"
+      ],
+      "author": {
+        "id": "ecossistemadev",
+        "name": "ecossistemadev",
+        "handle": "ecossistemadev",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/107730006?v=4"
+      },
+      "community": {
+        "id": "Empregos-dev",
+        "name": "Empregos-dev",
+        "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+        "repository": "Empregos-dev/Vagas-dev",
+        "url": "https://github.com/Empregos-dev/Vagas-dev"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4000,
+        "max": 5000,
+        "period": "year"
+      },
+      "createdAt": "2025-08-08T00:46:06Z",
+      "updatedAt": "2025-08-08T00:46:06Z",
+      "url": "https://github.com/Empregos-dev/Vagas-dev/issues/108",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "devops-sre"
+        ],
+        "technologies": [
+          "csharp",
+          "dotnet",
+          "javascript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_5e7c0ed3e21fb1a527ca77ca",
+          "sourceId": "Empregos-dev/Vagas-dev#108",
+          "repository": "Empregos-dev/Vagas-dev",
+          "repositoryUrl": "https://github.com/Empregos-dev/Vagas-dev",
+          "url": "https://github.com/Empregos-dev/Vagas-dev/issues/108",
+          "createdAt": "2025-08-08T00:46:06Z",
+          "updatedAt": "2025-08-08T00:46:06Z",
+          "community": {
+            "id": "Empregos-dev",
+            "name": "Empregos-dev",
+            "avatarUrl": "https://github.com/Empregos-dev.png?size=80",
+            "repository": "Empregos-dev/Vagas-dev",
+            "url": "https://github.com/Empregos-dev/Vagas-dev"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 440,
+        "publishedAt": "2025-08-08T00:46:06Z",
         "status": "stale"
       }
     }
