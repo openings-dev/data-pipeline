@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-22T23:49:05.103Z",
+  "generatedAt": "2026-10-23T02:46:04.344Z",
   "page": 24,
   "pageSize": 20,
   "nextPage": "api/pages/page-0025.json",
   "ids": [
-    "gh_2fb1d1c5f7a72da400aa156a",
     "gh_5737029f526e21daadacc576",
     "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
@@ -23,95 +22,10 @@
     "gh_2698bafd032165b940c5550e",
     "gh_5ff7a61468868fed794784cd",
     "gh_724342a7441cbc13493ec56f",
-    "gh_a6bde7918a54217d3e9edaa7"
+    "gh_a6bde7918a54217d3e9edaa7",
+    "gh_b8f22818819d3d26c9540234"
   ],
   "items": [
-    {
-      "id": "gh_2fb1d1c5f7a72da400aa156a",
-      "sourceId": "italiaremote/awesome-italia-remote#401",
-      "title": "Tags normalization",
-      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
-      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
-      "issueState": "open",
-      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
-      "repository": "italiaremote/awesome-italia-remote",
-      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
-      "region": "Europe",
-      "country": "Italy",
-      "sourceLocation": {
-        "country": "Italy",
-        "countryCode": "IT",
-        "region": "Europe"
-      },
-      "tags": [
-        "feature-request"
-      ],
-      "sourceTags": [
-        "feature-request"
-      ],
-      "author": {
-        "id": "FrancescoManfredi",
-        "name": "FrancescoManfredi",
-        "handle": "FrancescoManfredi",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
-      },
-      "community": {
-        "id": "italiaremote",
-        "name": "italiaremote",
-        "avatarUrl": "https://github.com/italiaremote.png?size=80",
-        "repository": "italiaremote/awesome-italia-remote",
-        "url": "https://github.com/italiaremote/awesome-italia-remote"
-      },
-      "createdAt": "2024-04-16T20:25:04Z",
-      "updatedAt": "2025-06-22T07:16:49Z",
-      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_2fb1d1c5f7a72da400aa156a",
-          "sourceId": "italiaremote/awesome-italia-remote#401",
-          "repository": "italiaremote/awesome-italia-remote",
-          "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
-          "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
-          "createdAt": "2024-04-16T20:25:04Z",
-          "updatedAt": "2025-06-22T07:16:49Z",
-          "community": {
-            "id": "italiaremote",
-            "name": "italiaremote",
-            "avatarUrl": "https://github.com/italiaremote.png?size=80",
-            "repository": "italiaremote/awesome-italia-remote",
-            "url": "https://github.com/italiaremote/awesome-italia-remote"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 919,
-        "publishedAt": "2024-04-16T20:25:04Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_5737029f526e21daadacc576",
       "sourceId": "EtherTW/jobs#72",
@@ -879,7 +793,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 989,
+        "ageDays": 990,
         "publishedAt": "2024-02-06T00:45:18Z",
         "status": "stale"
       }
@@ -988,7 +902,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 993,
+        "ageDays": 994,
         "publishedAt": "2024-02-02T02:07:25Z",
         "status": "stale"
       }
@@ -2122,6 +2036,92 @@
       "freshness": {
         "ageDays": 1050,
         "publishedAt": "2023-12-07T03:24:03Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_b8f22818819d3d26c9540234",
+      "sourceId": "matildaexp/remote-latam#4",
+      "title": "New companies hiring remotely",
+      "description": "- Canonical: https://canonical.com/careers\n- Gitlab: https://about.gitlab.com/jobs/all-jobs/\n- Buffer: https://buffer.com/journey#open-roles\n- Toggl: https://toggl.com/jobs/#jobs\n- Aha: https://www.aha.io/company/careers/current-openings\n\nThese are from a list I had compiled. I think they all meet the criteria, but I could be wrong.",
+      "excerpt": "- Canonical: https://canonical.com/careers - Gitlab: https://about.gitlab.com/jobs/all-jobs/ - Buffer: https://buffer.com/journey#open-roles - Toggl: https://toggl.com/jobs/#jobs - Aha: https://www.aha.io/company/care...",
+      "issueState": "open",
+      "contentHash": "e8dee32e47f51c934c51c6566355585a7c0585a22300142ba1aa8d3d879fa5ec",
+      "repository": "matildaexp/remote-latam",
+      "repositoryUrl": "https://github.com/matildaexp/remote-latam",
+      "region": "South America",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "South America"
+      },
+      "tags": [
+        "remote"
+      ],
+      "sourceTags": [
+        "remote"
+      ],
+      "author": {
+        "id": "Nyveon",
+        "name": "Nyveon",
+        "handle": "Nyveon",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/54124297?v=4"
+      },
+      "community": {
+        "id": "matildaexp",
+        "name": "matildaexp",
+        "avatarUrl": "https://github.com/matildaexp.png?size=80",
+        "repository": "matildaexp/remote-latam",
+        "url": "https://github.com/matildaexp/remote-latam"
+      },
+      "createdAt": "2023-12-05T18:27:28Z",
+      "updatedAt": "2023-12-07T19:11:41Z",
+      "url": "https://github.com/matildaexp/remote-latam/issues/4",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_b8f22818819d3d26c9540234",
+          "sourceId": "matildaexp/remote-latam#4",
+          "repository": "matildaexp/remote-latam",
+          "repositoryUrl": "https://github.com/matildaexp/remote-latam",
+          "url": "https://github.com/matildaexp/remote-latam/issues/4",
+          "createdAt": "2023-12-05T18:27:28Z",
+          "updatedAt": "2023-12-07T19:11:41Z",
+          "community": {
+            "id": "matildaexp",
+            "name": "matildaexp",
+            "avatarUrl": "https://github.com/matildaexp.png?size=80",
+            "repository": "matildaexp/remote-latam",
+            "url": "https://github.com/matildaexp/remote-latam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 1052,
+        "publishedAt": "2023-12-05T18:27:28Z",
         "status": "stale"
       }
     }
