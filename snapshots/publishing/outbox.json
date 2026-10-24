@@ -53644,6 +53644,166 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_a2cc3d1808580cc665d96114",
+        "revision": "7b69678a884d70701012980595d440d7dfeb10e660298ead3aa3d91e08981738",
+        "idempotencyKey": "openings:job:gh_a2cc3d1808580cc665d96114:7b69678a884d70701012980595d440d7dfeb10e660298ead3aa3d91e08981738"
+      },
+      "canonical": {
+        "title": "[Remoto] Full Stack Developer Júnior - Rotha IA",
+        "summary": "## Nossa empresa A Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores, com React, TypeScript e Supabase. ## Descrição da vaga Buscamos um perfil júnior avançado para desenvol...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_a2cc3d1808580cc665d96114",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_a2cc3d1808580cc665d96114",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_a2cc3d1808580cc665d96114",
+              "revision": "7b69678a884d70701012980595d440d7dfeb10e660298ead3aa3d91e08981738",
+              "canonicalPath": "/jobs/gh_a2cc3d1808580cc665d96114",
+              "title": "[Remoto] Full Stack Developer Júnior - Rotha IA",
+              "summary": "## Nossa empresa A Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores, com React, TypeScript e Supabase. ## Descrição da vaga Buscamos um perfil júnior avançado para desenvol...",
+              "status": "active",
+              "contentSha256": "e8d2bc6dcf58be5f19b3b026b5ca63d5e05bcbe4a01d3e7b972ebf70481822b9",
+              "content": {
+                "id": "gh_a2cc3d1808580cc665d96114",
+                "sourceId": "backend-br/vagas#12471",
+                "title": "[Remoto] Full Stack Developer Júnior - Rotha IA",
+                "description": "## Nossa empresa\n\nA Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores, com React, TypeScript e Supabase.\n\n## Descrição da vaga\n\nBuscamos um perfil júnior avançado para desenvolver, manter e evoluir os sistemas de gestão web dos nossos clientes, atuando no front-end, no back-end e no banco de dados.\n\n- Desenvolver e manter aplicações web com React e TypeScript.\n- Implementar regras de negócio, funções e serviços no Supabase (PostgreSQL e Edge Functions).\n- Criar e consumir APIs REST e integrar os sistemas com serviços externos (nota fiscal, WhatsApp, pagamentos, automações).\n- Modelar tabelas, escrever consultas e cuidar da integridade dos dados.\n- Corrigir bugs reportados pelos clientes, investigando a causa da tela até o banco.\n- Testar e validar as funcionalidades antes de cada entrega.\n- Publicar versões e aplicar mudanças de banco em produção, seguindo o checklist da empresa.\n- Participar de revisão de código e programar em dupla com o fundador.\n- Documentar funcionalidades e escrever manuais para as equipes dos clientes.\n\n## Local\n\nRemoto (100%), Brasil.\n\n## Requisitos\n\n**Obrigatórios:**\n- Ensino superior completo ou em andamento em Computação, Sistemas de Informação, Engenharia de Software, ADS ou área relacionada.\n- Pelo menos 1 ano com React e TypeScript (emprego, freela ou projetos próprios publicados).\n- Banco de dados relacional e SQL (PostgreSQL ou Supabase).\n- Integração de APIs REST.\n- Git no dia a dia.\n- Autonomia e IA: saber gerenciar o estado da aplicação, fazer requisições HTTP e implementar autenticação, e usar IA (Claude Code, Cursor ou similar) para ganhar produtividade sem ficar dependente dela.\n- Investigar um problema de ponta a ponta e explicar com clareza o que encontrou.\n\n**Diferenciais:**\n- Next.js.\n- Integração com APIs fiscais (NF-e, NFC-e, NFS-e), como Brasil NFe ou Focus NFe.\n- Meta for Developers e API oficial do WhatsApp.\n- Segurança de dados e LGPD.\n- Edge Functions e políticas de acesso (RLS) no Supabase.\n- Testes automatizados.\n\n## Benefícios\n\n- 100% remoto.\n- Horário fixo diário de programação em dupla com o fundador.\n\n## Contratação\n\nPJ, R$ 5.000 por mês. Início a combinar.\n\n## Como se candidatar\n\nPelo formulário (uns 10 minutos): https://docs.google.com/forms/d/e/1FAIpQLSdMr0CKzvQ2CN7hbaCC8ZVy4mKN-xhCCckw11pLjexaFyOsIQ/viewform\n\nPágina da vaga: https://vagas.rothaia.com.br/junior/\n\n## Tempo médio de feedbacks\n\nRespondemos as candidaturas pelo e-mail ou WhatsApp informado no formulário. Dúvidas: contato@rothaia.com.br\n\n## Labels\n\n### Nível\n\n- Júnior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+                "excerpt": "## Nossa empresa A Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores, com React, TypeScript e Supabase. ## Descrição da vaga Buscamos um perfil júnior avançado para desenvol...",
+                "issueState": "open",
+                "contentHash": "7b69678a884d70701012980595d440d7dfeb10e660298ead3aa3d91e08981738",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "git",
+                  "júnior",
+                  "pj",
+                  "postgresql",
+                  "remoto",
+                  "sql",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "sourceTags": [
+                  "git",
+                  "júnior",
+                  "pj",
+                  "postgresql",
+                  "remoto",
+                  "sql",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "author": {
+                  "id": "rodrigofssoares",
+                  "name": "rodrigofssoares",
+                  "handle": "rodrigofssoares",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/161170803?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-10-17T18:46:03Z",
+                "updatedAt": "2026-10-24T20:49:29Z",
+                "url": "https://github.com/backend-br/vagas/issues/12471",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Brazil · Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "nextjs",
+                    "postgres",
+                    "react",
+                    "typescript"
+                  ],
+                  "seniority": [
+                    "junior"
+                  ],
+                  "employmentTypes": [
+                    "contractor"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_a2cc3d1808580cc665d96114",
+                    "sourceId": "backend-br/vagas#12471",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12471",
+                    "createdAt": "2026-10-17T18:46:03Z",
+                    "updatedAt": "2026-10-24T20:49:29Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 7,
+                  "publishedAt": "2026-10-17T18:46:03Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
