@@ -1,16 +1,117 @@
 {
-  "generatedAt": "2026-10-21T14:18:28.671Z",
+  "generatedAt": "2026-10-24T13:02:26.857Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "soujava/vagas-java",
   "totals": {
     "opportunities": 18,
-    "openIssues": 6,
-    "closedIssues": 12
+    "openIssues": 7,
+    "closedIssues": 11
   },
-  "dataHash": "daaefc7d342032f1c6ae0bc16365b9b32580a9ec666e183615f576f17fcccd7a",
+  "dataHash": "930ed76b4a7b0fe745bbc2b55d859422cc9a81aa2b883d0457adc50447486626",
   "items": [
+    {
+      "id": "gh_d9dfe5cac9c424f1f17f3d37",
+      "sourceId": "soujava/vagas-java#1967",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Catalogo e Busca) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO catálogo é o serviço que guarda tudo que está publicado (vaga, requisito, localidade, faixa) e responde às consultas de quem está procurando. A maior parte do tráfego da plataforma passa por ele, e quase todo esse tráfego é leitura. Por isso o problema central aqui não é gravar, é responder rápido: filtro combinado, paginação estável, ordenação que não repete item entre páginas. O back-end é Java com Spring Boot sobre PostgreSQL, com Redis na frente das consultas mais repetidas. Quando uma publicação muda, o cache precisa cair para aquela chave e não para tudo. Uma parte do trabalho é justamente essa: descobrir qual invalidação é correta e barata. Você vai trabalhar com quem cuida do front, porque cada filtro novo na tela é um parâmetro novo no endpoint. Espere discutir contrato de API, nome de campo e o que acontece quando o filtro não retorna nada.\n\n- Implementar endpoints de listagem e detalhe com filtro, ordenação e paginação\n- Escrever consultas SQL e JPA que se sustentem quando a tabela crescer\n- Criar e invalidar cache em Redis por chave, não por limpeza geral\n- Medir tempo de resposta de endpoint e apontar onde está o gargalo\n- Manter o contrato publicado em OpenAPI alinhado com o que o código faz\n- Escrever teste de integração cobrindo filtro combinado e resultado vazio\n- Ajudar no ajuste de índice quando uma consulta ficar lenta\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado que mostre código Java seu\n- Java com orientação a objetos, coleções e Streams em nível básico\n- Spring Boot: criar controller, service e repositório\n- SQL: SELECT com junção, filtro, agrupamento e ordenação\n- Entender paginação e o que muda entre limite por deslocamento e por cursor\n- Git no dia a dia\n\n**Diferenciais:**\n- Ter usado Redis ou qualquer cache em memória\n- Noção de plano de execução e índice em banco relacional\n- Docker para subir banco e cache localmente\n- Já ter consumido uma API própria de dentro de um front\n- Interesse por dado estruturado e como buscador lê página\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.900 a R$ 5.400 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-catalogo-e-busca-461?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O catálogo é o serviço que guarda tudo que está publicado...",
+      "issueState": "open",
+      "contentHash": "d10d2b7d92f6c950236764d2c57e65787ebfb6bbca16966436ce3ec0f8907af1",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "júnior",
+        "clt",
+        "pj",
+        "remoto",
+        "spring",
+        "docker",
+        "postgresql",
+        "git"
+      ],
+      "sourceTags": [
+        "júnior",
+        "clt",
+        "pj",
+        "remoto",
+        "spring",
+        "docker",
+        "postgresql",
+        "git"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3900,
+        "max": 5400,
+        "period": "month"
+      },
+      "createdAt": "2026-10-24T12:08:55Z",
+      "updatedAt": "2026-10-24T12:09:11Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1967",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_635a2d6c08c44acc444fd7c8",
       "sourceId": "soujava/vagas-java#1966",
@@ -1487,102 +1588,6 @@
       "createdAt": "2026-07-24T17:56:33Z",
       "updatedAt": "2026-09-28T03:25:25Z",
       "url": "https://github.com/soujava/vagas-java/issues/1928",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "java"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_9c260b1b5b1a3282b984c67a",
-      "sourceId": "soujava/vagas-java#1927",
-      "title": "[Híbrido] Desenvolvedor(a) Java/Kafka Pleno na Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vagas compatíveis do nosso banco em segundos — você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Desenvolvedor(a) Java/Kafka nível Pleno para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 7.000 a 12.000/mês, conforme experiência.\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com Java/Kafka compatível com o nível Pleno\n- Boas práticas de engenharia: versionamento, testes e code review\n\n**Desejáveis:**\n- Comunicação clara para trabalho remoto/distribuído\n- Inglês para leitura de documentação\n\n## Benefícios\n\n- Faixa salarial transparente (R$ 7.000–12.000/mês)\n- Benefícios variam conforme a empresa contratante (detalhados na conversa com o headhunter)\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-kafka-pleno\n\nBasta enviar o CV uma vez — a IA da Sylision considera seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos IA para cruzar o seu CV com todas as vag...",
-      "issueState": "closed",
-      "contentHash": "804c0df6a7c1f30a18af82bc8f03d59a36af9bf41036b13dd13454bb0f1fff65",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto",
-        "backend",
-        "java",
-        "portugal",
-        "stale"
-      ],
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "remoto",
-        "backend",
-        "java",
-        "portugal",
-        "stale"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 7000,
-        "max": 12000,
-        "period": "month"
-      },
-      "createdAt": "2026-07-24T17:55:32Z",
-      "updatedAt": "2026-09-28T03:25:24Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1927",
       "sourceType": "github-issue",
       "jobLocation": {
         "workModel": "hybrid",
