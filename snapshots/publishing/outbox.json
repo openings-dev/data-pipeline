@@ -52881,6 +52881,769 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_3de1c4071e0e2cdcb4fd4d37",
+        "revision": "21adde3d6d9fb510d42256e417297e9e09315d96f7442112e9d277bbb18824a1",
+        "idempotencyKey": "openings:job:gh_3de1c4071e0e2cdcb4fd4d37:21adde3d6d9fb510d42256e417297e9e09315d96f7442112e9d277bbb18824a1"
+      },
+      "canonical": {
+        "title": "[Belo Horizonte, Brasil] Senior Software Engineer, Localization on AI Answers na Google",
+        "summary": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_3de1c4071e0e2cdcb4fd4d37",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_3de1c4071e0e2cdcb4fd4d37",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_3de1c4071e0e2cdcb4fd4d37",
+              "revision": "21adde3d6d9fb510d42256e417297e9e09315d96f7442112e9d277bbb18824a1",
+              "canonicalPath": "/jobs/gh_3de1c4071e0e2cdcb4fd4d37",
+              "title": "[Belo Horizonte, Brasil] Senior Software Engineer, Localization on AI Answers na Google",
+              "summary": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+              "status": "active",
+              "contentSha256": "7f781b28f9b4970249ccf4118217322c0442946588fb7e2e1d05ece3f3feaa75",
+              "content": {
+                "id": "gh_3de1c4071e0e2cdcb4fd4d37",
+                "sourceId": "backend-br/vagas#12447",
+                "title": "[Belo Horizonte, Brasil] Senior Software Engineer, Localization on AI Answers na Google",
+                "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/senior-software-engineer-localization-on-ai-answers-181722827?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\nIn most instances, this position requires in-person interviews as part of the hiring process.<div><br></div>Please submit your resume in English - we can only consider applications submitted in this language.<h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>5 years of experience with software development in one or more programming languages.</li>\n<li>3 years of experience testing, maintaining, or launching software products, and 1 year of experience with software design and architecture.<br></li>\n<li>3 years of experience with one or more of the following: Speech/audio (e.g., technology duplicating and responding to the human voice), reinforcement learning (e.g., sequential decision making), ML infrastructure, or specialization in another ML field.<br></li>\n<li>3 years of experience with ML infrastructure (e.g., model deployment, model evaluation, optimization, data processing, debugging).</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Master's degree or PhD in Computer Science or related technical field.<br></li>\n<li>5 years of experience with data structures and algorithms.</li>\n<li>1 year of experience in a technical leadership role.<br></li>\n<li>Experience developing accessible technologies.<br></li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>The Localization and Language for Search AI Answers team is at the forefront of teaching our AI to truly understand the world. We don't just translate words; we build systems that grasp cultural nuance, localized intent, and deep linguistic context.</p><div><div><div><p>As a horizontal team, our work spans the entire AI stack. Our ultimate mission is to drive deep, native contextualization across all AI components, ensuring that every user—no matter their language or locale—receives Search AI Answers that are accurate, fluid, and culturally aware.</p></div></div></div><p>In Google Search, we're reimagining what it means to search for information – any way and anywhere. To do that, we need to solve complex engineering challenges and expand our infrastructure, while maintaining a universally accessible and useful experience that people around the world rely on. In joining the Search team, you'll have an opportunity to make an impact on billions of people globally.<b></b></p></div><div><h2>Responsibilities</h2><ul>\n<li>Write and test product or system development code. <br></li>\n<li>Contribute to existing documentation or educational content and adapt content based on product/program updates and user feedback.<br></li>\n<li>Triage product or system issues and debug/track/resolve by analyzing the sources of issues and the impact on hardware, network, or service operations and quality.<br></li>\n<li>Design and implement solutions in one or more specialized ML areas, leverage ML infrastructure, and demonstrate expertise in a chosen field.<br></li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\nundefined \n\n\n\n## Local: \n Belo Horizonte, Brasil\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Senior Software Engineer, Localization on AI Answers na Google](https://coodesh.com/jobs/senior-software-engineer-localization-on-ai-answers-181722827?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nInteligência Artificial",
+                "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+                "issueState": "open",
+                "contentHash": "21adde3d6d9fb510d42256e417297e9e09315d96f7442112e9d277bbb18824a1",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "formato-sugerido"
+                ],
+                "sourceTags": [
+                  "formato-sugerido"
+                ],
+                "author": {
+                  "id": "FrancieleGhizzoni",
+                  "name": "FrancieleGhizzoni",
+                  "handle": "FrancieleGhizzoni",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "companyName": "Google",
+                "createdAt": "2026-10-14T19:52:10Z",
+                "updatedAt": "2026-10-24T18:02:46Z",
+                "url": "https://github.com/backend-br/vagas/issues/12447",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "displayText": "Brazil",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "design",
+                    "fullstack",
+                    "mobile"
+                  ],
+                  "technologies": [],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "on-site"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "inferred"
+                },
+                "sources": [
+                  {
+                    "id": "gh_3de1c4071e0e2cdcb4fd4d37",
+                    "sourceId": "backend-br/vagas#12447",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12447",
+                    "createdAt": "2026-10-14T19:52:10Z",
+                    "updatedAt": "2026-10-24T18:02:46Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 10,
+                  "publishedAt": "2026-10-14T19:52:10Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_6ee5c31976b58995be8b656a",
+        "revision": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
+        "idempotencyKey": "openings:job:gh_6ee5c31976b58995be8b656a:d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2"
+      },
+      "canonical": {
+        "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
+        "summary": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_6ee5c31976b58995be8b656a",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_6ee5c31976b58995be8b656a",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_6ee5c31976b58995be8b656a",
+              "revision": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
+              "canonicalPath": "/jobs/gh_6ee5c31976b58995be8b656a",
+              "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
+              "summary": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
+              "status": "active",
+              "contentSha256": "afa97ea9840803b06b3d52b9a5e8d69302f49786d558393fbd3eb08af1493255",
+              "content": {
+                "id": "gh_6ee5c31976b58995be8b656a",
+                "sourceId": "backend-br/vagas#12439",
+                "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
+                "description": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM \n\n💻 SENIOR FULL-STACK ENGINEER\n\nSe você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional.\n\n🔹 React.js\n🔹 Nest.js\n🔹 Kafka\n\n💰 USD 5.5k – 8.5k/mês\n🗣️ Inglês C1+\n📌 6+ anos de experiência\n⏰ Long-term | 40h/semana\n\n🌎 Oportunidade para profissionais de tecnologia que buscam atuar em projetos internacionais e receber em dólar.\n\n👉 Candidatura pelo meu link abaixo, não recebo o currículo no privado.\nhttps://app.onstrider.com/r/claudiaantunes?job=c2VuaW9yLWZ1bGwtc3RhY2stZW5naW5lZXItOTk3YTViMDM/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=\n\n🔁 Conhece um Full-stack Engineer com esse perfil? Marque ou compartilhe!\n\n#FullStackDeveloper #ReactJS #NestJS #Kafka #SoftwareEngineer #TechJobs #RemoteJobs #VagasInternacionais #VagasRemotas #LATAM #JobsInUSD",
+                "excerpt": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
+                "issueState": "open",
+                "contentHash": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "formato-sugerido",
+                  "remoto",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "formato-sugerido",
+                  "remoto",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "salary": {
+                  "currency": "USD",
+                  "min": 5500,
+                  "max": 8500,
+                  "period": "month"
+                },
+                "createdAt": "2026-10-06T12:49:47Z",
+                "updatedAt": "2026-10-24T18:03:03Z",
+                "url": "https://github.com/backend-br/vagas/issues/12439",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "react"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_6ee5c31976b58995be8b656a",
+                    "sourceId": "backend-br/vagas#12439",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12439",
+                    "createdAt": "2026-10-06T12:49:47Z",
+                    "updatedAt": "2026-10-24T18:03:03Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 18,
+                  "publishedAt": "2026-10-06T12:49:47Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_719f224c7806dc02e6dd9cd2",
+        "revision": "e2026df358ce770a21d58c4a164be20fba1acc506659c34e993b9043fdaf337e",
+        "idempotencyKey": "openings:job:gh_719f224c7806dc02e6dd9cd2:e2026df358ce770a21d58c4a164be20fba1acc506659c34e993b9043fdaf337e"
+      },
+      "canonical": {
+        "title": "[Remoto] Engenheiro(a) Sênior de Infraestrutura / Backend (GCP, Python) - Turing (via AYAN)",
+        "summary": "## Nossa empresa A AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) sênior de infraestrutura e backend para...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_719f224c7806dc02e6dd9cd2",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_719f224c7806dc02e6dd9cd2",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_719f224c7806dc02e6dd9cd2",
+              "revision": "e2026df358ce770a21d58c4a164be20fba1acc506659c34e993b9043fdaf337e",
+              "canonicalPath": "/jobs/gh_719f224c7806dc02e6dd9cd2",
+              "title": "[Remoto] Engenheiro(a) Sênior de Infraestrutura / Backend (GCP, Python) - Turing (via AYAN)",
+              "summary": "## Nossa empresa A AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) sênior de infraestrutura e backend para...",
+              "status": "active",
+              "contentSha256": "1d6d8fc51af85b8c3134edceaf9db93db046a45532114301d0d5b5d61020df29",
+              "content": {
+                "id": "gh_719f224c7806dc02e6dd9cd2",
+                "sourceId": "backend-br/vagas#12435",
+                "title": "[Remoto] Engenheiro(a) Sênior de Infraestrutura / Backend (GCP, Python) - Turing (via AYAN)",
+                "description": "## Nossa empresa\n\nA AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) sênior de infraestrutura e backend para cuidar de sistemas críticos em produção no GCP por trás de projetos de IA de fronteira.\n\n## Descrição da vaga\n\nVocê vai cuidar de deploys, uptime e resposta a incidentes de serviços em Cloud Run, depurar problemas de backend em centenas de execuções simultâneas e dar suporte aos times que dependem desses sistemas.\n\n## Local\n\n100% remoto. Aberta para quem mora no Brasil e demais países da América Latina (também aceita EUA).\n\n## Requisitos\n\n**Obrigatórios:**\n\n- 5+ anos em infraestrutura, backend ou engenharia de sistemas em produção\n- Experiência sólida em produção com Google Cloud Platform, principalmente Cloud Run\n- Python avançado para backend e debugging\n- Kubernetes, containers, bancos SQL e sistemas distribuídos\n- 8h/dia com 6h de overlap com o horário do Pacífico (PST)\n- Inglês para comunicação no dia a dia\n\n## Benefícios\n\n- Trabalho 100% remoto\n- Projetos de IA de fronteira com as principais empresas de modelos fundacionais\n\n## Contratação\n\nContrato de prestação de serviços (contractor), 3 meses, início imediato. Processo simples: análise de perfil e uma entrevista.\n\n## Como se candidatar\n\nPreencha o formulário: https://tally.so/r/BzNAxN\n\n## Labels\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- Contrato\n\n### Alocação\n\n- Remoto",
+                "excerpt": "## Nossa empresa A AYAN é parceira oficial da Turing, empresa que conecta profissionais técnicos aos principais laboratórios de IA do mundo. Estamos selecionando engenheiros(as) sênior de infraestrutura e backend para...",
+                "issueState": "open",
+                "contentHash": "e2026df358ce770a21d58c4a164be20fba1acc506659c34e993b9043fdaf337e",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "contrato",
+                  "formato-sugerido",
+                  "gcp",
+                  "kubernetes",
+                  "python",
+                  "remoto",
+                  "sql",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "contrato",
+                  "formato-sugerido",
+                  "gcp",
+                  "kubernetes",
+                  "python",
+                  "remoto",
+                  "sql",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "AYAN-COMMUNITY",
+                  "name": "AYAN-COMMUNITY",
+                  "handle": "AYAN-COMMUNITY",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/324236025?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-09-28T20:01:27Z",
+                "updatedAt": "2026-10-24T18:03:10Z",
+                "url": "https://github.com/backend-br/vagas/issues/12435",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Brazil · Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "support"
+                  ],
+                  "technologies": [
+                    "gcp",
+                    "kubernetes",
+                    "python"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "contractor"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_719f224c7806dc02e6dd9cd2",
+                    "sourceId": "backend-br/vagas#12435",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12435",
+                    "createdAt": "2026-09-28T20:01:27Z",
+                    "updatedAt": "2026-10-24T18:03:10Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 26,
+                  "publishedAt": "2026-09-28T20:01:27Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_c4b6f80dde15b4f131273b58",
+        "revision": "a64ab4ac200850c1375a1876fd77f244f754a1178a7320771f1a853fc9924909",
+        "idempotencyKey": "openings:job:gh_c4b6f80dde15b4f131273b58:a64ab4ac200850c1375a1876fd77f244f754a1178a7320771f1a853fc9924909"
+      },
+      "canonical": {
+        "title": "[Belo Horizonte, Brasil] Senior Software Engineer, AI/ML, Agentic Ecosystem na Google",
+        "summary": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_c4b6f80dde15b4f131273b58",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_c4b6f80dde15b4f131273b58",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_c4b6f80dde15b4f131273b58",
+              "revision": "a64ab4ac200850c1375a1876fd77f244f754a1178a7320771f1a853fc9924909",
+              "canonicalPath": "/jobs/gh_c4b6f80dde15b4f131273b58",
+              "title": "[Belo Horizonte, Brasil] Senior Software Engineer, AI/ML, Agentic Ecosystem na Google",
+              "summary": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+              "status": "active",
+              "contentSha256": "b488f9f31d8fbea6cc547fd7a1903d15939dd23b04118fd25ccf075e47d27dc5",
+              "content": {
+                "id": "gh_c4b6f80dde15b4f131273b58",
+                "sourceId": "backend-br/vagas#12448",
+                "title": "[Belo Horizonte, Brasil] Senior Software Engineer, AI/ML, Agentic Ecosystem na Google",
+                "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/senior-software-engineer-aiml-agentic-ecosystem-181723112?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nGoogle's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is...\n\n**Importante:** o currículo deve ser enviado em inglês.\n\n## Requisitos mínimos:\n- Bachelor’s degree or equivalent practical experience.\n- 5 years of experience with software development in one or more programming languages.\n- 3 years of experience testing, maintaining, or launching software products, and 1 year of experience with software design and architecture.\n- 3 years of experience with one or more of the following: speech/audio (e.g., technology duplicating and responding to the human voice), reinforcement learning (e.g., sequential decision making), ML infrastructure, or specialization in another ML field.\n- 3 years of experience with ML infrastructure (e.g., model deployment, model evaluation, optimization, data processing, debugging).\n\n## Diferenciais:\n- Master's degree or PhD in Computer Science or related technical field.\n\n## Responsabilidades:\n- Develop complex, domain-specific implementations on top of generalist models (AIM/Gemini). Act as the primary technical anchor for onboarding vertical teams, writing critical-path code and designing tool orchestration to ensure a consistent, high-trust user experience.\n- Translate broad architectural goals into concrete, surface-agnostic systems across AIM, Gemini, and Geo. Drive the technical implementation of the MCP2Agency bridge and ensure strict adherence to data governance policies (e.g., SIAN) in the codebase.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBelo Horizonte, Brasil\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Senior Software Engineer, AI/ML, Agentic Ecosystem na Google](https://coodesh.com/jobs/senior-software-engineer-aiml-agentic-ecosystem-181723112?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+                "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+                "issueState": "open",
+                "contentHash": "a64ab4ac200850c1375a1876fd77f244f754a1178a7320771f1a853fc9924909",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "formato-sugerido"
+                ],
+                "sourceTags": [
+                  "formato-sugerido"
+                ],
+                "author": {
+                  "id": "FrancieleGhizzoni",
+                  "name": "FrancieleGhizzoni",
+                  "handle": "FrancieleGhizzoni",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "companyName": "Google",
+                "createdAt": "2026-10-14T20:06:22Z",
+                "updatedAt": "2026-10-24T18:02:45Z",
+                "url": "https://github.com/backend-br/vagas/issues/12448",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "displayText": "Brazil",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "design",
+                    "mobile"
+                  ],
+                  "technologies": [],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [],
+                  "workModels": [],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "unknown"
+                },
+                "sources": [
+                  {
+                    "id": "gh_c4b6f80dde15b4f131273b58",
+                    "sourceId": "backend-br/vagas#12448",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12448",
+                    "createdAt": "2026-10-14T20:06:22Z",
+                    "updatedAt": "2026-10-24T18:02:45Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 9,
+                  "publishedAt": "2026-10-14T20:06:22Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_f12187a6f9db3fd08703be81",
+        "revision": "743c66cefff5d4a0c7b76a4719a33e873486f74d5d93a68d8c7fe99bcd6514cb",
+        "idempotencyKey": "openings:job:gh_f12187a6f9db3fd08703be81:743c66cefff5d4a0c7b76a4719a33e873486f74d5d93a68d8c7fe99bcd6514cb"
+      },
+      "canonical": {
+        "title": "[Remoto] Full-stack Engineer React.js • UX Design • Node.js (Strider)",
+        "summary": "🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD 🚀 Full-stack Engineer React.js • UX Design • Node.js Se você é profissional Full-stack e busca uma oportunidade internacional, essa pode ser uma excelente opção para ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_f12187a6f9db3fd08703be81",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_f12187a6f9db3fd08703be81",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_f12187a6f9db3fd08703be81",
+              "revision": "743c66cefff5d4a0c7b76a4719a33e873486f74d5d93a68d8c7fe99bcd6514cb",
+              "canonicalPath": "/jobs/gh_f12187a6f9db3fd08703be81",
+              "title": "[Remoto] Full-stack Engineer React.js • UX Design • Node.js (Strider)",
+              "summary": "🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD 🚀 Full-stack Engineer React.js • UX Design • Node.js Se você é profissional Full-stack e busca uma oportunidade internacional, essa pode ser uma excelente opção para ...",
+              "status": "active",
+              "contentSha256": "fdbb3fd6b411da0775ffe8e0a26b429d89bf58cabef249e196144e3a2c95ac2d",
+              "content": {
+                "id": "gh_f12187a6f9db3fd08703be81",
+                "sourceId": "backend-br/vagas#12440",
+                "title": "[Remoto] Full-stack Engineer React.js • UX Design • Node.js (Strider)",
+                "description": "🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD\n\n🚀 Full-stack Engineer\nReact.js • UX Design • Node.js\n\nSe você é profissional Full-stack e busca uma oportunidade internacional, essa pode ser uma excelente opção para o seu próximo passo!\n\n💰 USD 4.000 a 8.000/mês\n🌍 Remota | LATAM\n⏱️ Long-term | 40h/semana\n🇺🇸 Inglês: C1+\n💼 Experiência: 4+ anos\n\n🔎 Stack principal:\n• React.js\n• Node.js\n• UX Design\n• Desenvolvimento Full-stack\n\n👉 Aplique 👇🏼\nhttps://app.onstrider.com/r/claudiaantunes?job=ZnVsbC1zdGFjay1lbmdpbmVlci03MWY1OGY5Mj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==",
+                "excerpt": "🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD 🚀 Full-stack Engineer React.js • UX Design • Node.js Se você é profissional Full-stack e busca uma oportunidade internacional, essa pode ser uma excelente opção para ...",
+                "issueState": "open",
+                "contentHash": "743c66cefff5d4a0c7b76a4719a33e873486f74d5d93a68d8c7fe99bcd6514cb",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "design",
+                  "formato-sugerido",
+                  "node",
+                  "node.js",
+                  "principal",
+                  "react",
+                  "remoto"
+                ],
+                "sourceTags": [
+                  "design",
+                  "formato-sugerido",
+                  "node",
+                  "node.js",
+                  "principal",
+                  "react",
+                  "remoto"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "salary": {
+                  "currency": "USD",
+                  "min": 4000,
+                  "max": 8000,
+                  "period": "month"
+                },
+                "createdAt": "2026-10-07T14:02:31Z",
+                "updatedAt": "2026-10-24T18:03:01Z",
+                "url": "https://github.com/backend-br/vagas/issues/12440",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "design",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "nodejs",
+                    "react"
+                  ],
+                  "seniority": [
+                    "principal"
+                  ],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_f12187a6f9db3fd08703be81",
+                    "sourceId": "backend-br/vagas#12440",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12440",
+                    "createdAt": "2026-10-07T14:02:31Z",
+                    "updatedAt": "2026-10-24T18:03:01Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  },
+                  {
+                    "id": "gh_287c589db6e25b670a056e55",
+                    "sourceId": "frontendbr/vagas#8566",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8566",
+                    "createdAt": "2026-10-07T14:03:28Z",
+                    "updatedAt": "2026-10-07T14:03:28Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 2
+                },
+                "freshness": {
+                  "ageDays": 17,
+                  "publishedAt": "2026-10-07T14:02:31Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
