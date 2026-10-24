@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-23T23:42:58.006Z",
+  "generatedAt": "2026-10-24T07:48:01.189Z",
   "page": 10,
   "pageSize": 20,
   "nextPage": "api/pages/page-0011.json",
   "ids": [
+    "gh_9208a81e3c611e2fd2ef477e",
     "gh_a8cd59eaeb8f7957cc8a68b5",
     "gh_78a413808cdd53999da07a59",
     "gh_a442b3bffe44658fc936f508",
@@ -12,6 +13,7 @@
     "gh_cdfa2de024dbb8a4cb735734",
     "gh_f022b6140b0e15eccc2117e3",
     "gh_74ccd3caee0d31411e74c415",
+    "gh_56f09abec7008337fbc6da45",
     "gh_087f0ff3ec143b6edd622ee9",
     "gh_d3106ea48a011748e73f6217",
     "gh_6a1098d504e460b826b0e253",
@@ -21,11 +23,123 @@
     "gh_a3c53b8e6a01587253c809b1",
     "gh_01af249400b5297948fd5955",
     "gh_c48d49960e929a5d32e92190",
-    "gh_27c2250541f3aca4b4982d3d",
-    "gh_71e10b291f6b95046c3c84fa",
-    "gh_345438a912c4cb4b37d9e419"
+    "gh_27c2250541f3aca4b4982d3d"
   ],
   "items": [
+    {
+      "id": "gh_9208a81e3c611e2fd2ef477e",
+      "sourceId": "qa-brasil/vagas#1281",
+      "title": "[Remoto] QA Manual Pleno na Hidden (18+ / inglês fluente)",
+      "description": "# Descrição da vaga\n\nA Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pequeno, remoto, ritmo rápido.\n\n**⚠️ Leia antes de se candidatar:** é uma plataforma adulta (18+). O produto contém conteúdo sexual explícito e testá-lo significa ver esse conteúdo todos os dias, como parte normal do trabalho — feed, perfis, mensagens, mídia enviada e filas de moderação. Falamos isso abertamente para que você decida agora, e não depois de entrar. Se não está confortável com isso, a vaga não é para você.\n\n**O papel:** você é o último gate de qualidade antes de uma mudança chegar aos criadores e seus fãs. Pega tickets da fila \"Ready for QA\", testa ponta a ponta no ambiente de staging correto, escreve bug reports que o dev consegue agir sem perguntar nada, e dá o veredito (Approved / Rejected / Not Reproducible) no GitHub. QA aqui tem autoridade real: processo documentado, handoff de dev obrigatório e poder de devolver trabalho para desenvolvimento.\n\n**No dia a dia:**\n- Montar e executar casos de teste a partir de tickets, BRDs e Figma — caminho feliz e edge cases.\n- Testar em desktop web, mobile web, PWA, iOS Safari e Android Chrome (dispositivos reais + BrowserStack).\n- Regressão dos fluxos principais antes de cada release: cadastro e verificação, upload e transcoding, feed, perfis, compras PPV, mensagens, carteira e payouts.\n- Verificar correções, retestar tickets rejeitados, checagem pós-release em produção.\n- Reportar bugs no GitHub com o template da empresa (um bug por ticket, passos exatos, esperado vs. atual, ambiente, evidências).\n- Contribuir com o report diário/semanal de QA e escalar padrões entre bugs, não só o bug isolado.\n\n## Local de trabalho\n\n- 100% Remoto (residente no Brasil)\n\n## Requisitos da vaga\n\n**Obrigatórios**\n- 1 a 4 anos em QA manual / teste de software em produto web ou mobile voltado ao consumidor.\n- Experiência real testando em iOS e Android físicos; entender como mobile web, PWA e layouts responsivos quebram diferente do desktop.\n- Bug reports que o dev executa sem pedir mais informação.\n- DevTools do navegador com confiança: console, aba Network (ler request/response, identificar status code errado), inspeção de elemento, simulação de device.\n- Ler logs de aplicação e extrair o que vai no bug report.\n- Uso diário de IA (Claude, Codex) para entender relatórios técnicos, logs, BRDs/RFCs e respostas de API. Esperamos que você recorra à IA primeiro, em vez de gastar tempo montando ferramenta.\n- Montar dados e cenários de teste via CMS / painel admin.\n- Entender como uma aplicação web se encaixa (frontend, backend, banco, cache) o bastante para conversar com o dev sobre onde o bug provavelmente está.\n- Git/GitHub (achar tickets, ler PRs, comentar) e kanban (o nosso é GitHub Projects).\n- **Inglês escrito fluente, nível profissional.** Bug reports, notas de teste, comentários e reports são todos em inglês, para devs em outro país. Isso é avaliado de perto no processo seletivo.\n- Maior de 18 anos; setup de home office confiável (internet estável, um iPhone e um Android).\n- Disponível de segunda a sexta para jornada de 9h + 1h de pausa não remunerada (10h porta a porta), **alinhada ao horário europeu** (início na madrugada/manhã cedo no Brasil). É uma jornada mais longa que a maioria das vagas e dizemos isso de cara.\n- Flexibilidade quando release ou incidente em produção exigir.\n- Confortável com conteúdo adulto explícito todos os dias (ver aviso acima).\n\n**Desejáveis**\n- Testes de pagamento/checkout: assinaturas, compras avulsas, reembolsos, pagamentos falhos.\n- Produtos com mídia pesada: upload de vídeo/imagem, transcoding, playback, cache de CDN.\n- Moderação de conteúdo ou verificação de idade/identidade (KYC).\n- Ler relatórios do Playwright e triar falhas (a vaga **não** envolve escrever automação).\n- BrowserStack, Figma, Slack.\n- Acessibilidade e teste cross-browser.\n\n**Diferenciais**\n- ISTQB Foundation ou equivalente.\n\n## Forma de contratação\n\nA vaga é somente PJ, não faz mal não ter uma empresa aberta, mas será necessário abrir uma.\n\n## Benefícios da empresa\n\n- 100% remoto.\n- QA com autoridade real: processo documentado, handoff de dev obrigatório, poder de rejeitar trabalho.\n- Exposição ao produto inteiro num time pequeno, em vez de dono de um módulo estreito.\n- Acesso direto a devs, designers e produto, sem camadas de processo.\n\n## Range Salarial\n\nVariavel.\n\n## Sobre a empresa\n\nA Hidden é uma plataforma de conteúdo feita por criadores para criadores da indústria adulta. Nosso objetivo é dar aos criadores as melhores ferramentas para crescer a marca e vender conteúdo para sua base de fãs. Time pequeno e rápido; QA é função visível e respeitada.\n\nSomos uma empresa de oportunidades iguais. Recebemos candidaturas independentemente de gênero, identidade de gênero, orientação sexual, raça, religião, deficiência ou idade (18+). Trabalhamos na indústria adulta e tratamos a indústria, e quem trabalha nela, com profissionalismo.\n\n## Como se candidatar\n\n- Envie e-mail para luizo@hidden.com com CV (em inglês) anexado. Assunto: **Vaga do QA-Brasil – Manual QA**\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 1 dias após cada etapa.\nEstá é uma vaga urgente, então estamos procurando pessoas de forma rápida para se juntar com a equipe atual.\n\n\n## Labels\n- PJ\n- Pleno\n- Remoto\n- Exterior\n\n#QA #QualityAssurance #vagasQA #testesdesoftware #remoto #vagasremotas",
+      "excerpt": "# Descrição da vaga A Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pe...",
+      "issueState": "open",
+      "contentHash": "a5ddd01313cbbb61b39de74bc79b62749c382ec032130ed183b8ceae0455487a",
+      "repository": "qa-brasil/vagas",
+      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "exterior",
+        "inglês",
+        "pj",
+        "pleno",
+        "remoto",
+        "stale"
+      ],
+      "sourceTags": [
+        "clt",
+        "exterior",
+        "inglês",
+        "pj",
+        "pleno",
+        "remoto",
+        "stale"
+      ],
+      "author": {
+        "id": "Luiz-Olivieri",
+        "name": "Luiz-Olivieri",
+        "handle": "Luiz-Olivieri",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/295890495?v=4"
+      },
+      "community": {
+        "id": "qa-brasil",
+        "name": "qa-brasil",
+        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+        "repository": "qa-brasil/vagas",
+        "url": "https://github.com/qa-brasil/vagas"
+      },
+      "companyName": "100% remoto.",
+      "createdAt": "2026-08-21T19:40:20Z",
+      "updatedAt": "2026-10-24T03:58:55Z",
+      "url": "https://github.com/qa-brasil/vagas/issues/1281",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "mobile",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_9208a81e3c611e2fd2ef477e",
+          "sourceId": "qa-brasil/vagas#1281",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1281",
+          "createdAt": "2026-08-21T19:40:20Z",
+          "updatedAt": "2026-10-24T03:58:55Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 63,
+        "publishedAt": "2026-08-21T19:40:20Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_a8cd59eaeb8f7957cc8a68b5",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2955",
@@ -103,7 +217,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 64,
+        "ageDays": 65,
         "publishedAt": "2026-08-20T03:59:08Z",
         "status": "aging"
       }
@@ -241,12 +355,14 @@
       "tags": [
         "inglês",
         "pj",
-        "remoto"
+        "remoto",
+        "stale"
       ],
       "sourceTags": [
         "inglês",
         "pj",
-        "remoto"
+        "remoto",
+        "stale"
       ],
       "author": {
         "id": "caiorehenrique",
@@ -262,7 +378,7 @@
         "url": "https://github.com/qa-brasil/vagas"
       },
       "createdAt": "2026-08-19T14:32:37Z",
-      "updatedAt": "2026-08-19T14:33:01Z",
+      "updatedAt": "2026-10-24T03:58:54Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1280",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -306,7 +422,7 @@
           "repositoryUrl": "https://github.com/qa-brasil/vagas",
           "url": "https://github.com/qa-brasil/vagas/issues/1280",
           "createdAt": "2026-08-19T14:32:37Z",
-          "updatedAt": "2026-08-19T14:33:01Z",
+          "updatedAt": "2026-10-24T03:58:54Z",
           "community": {
             "id": "qa-brasil",
             "name": "qa-brasil",
@@ -860,6 +976,125 @@
       }
     },
     {
+      "id": "gh_56f09abec7008337fbc6da45",
+      "sourceId": "backend-br/vagas#12373",
+      "title": "[Remoto] Desenvolvedor(a) Backend .NET  - JJConsulting",
+      "description": "## Nossa empresa\n\nSomos uma empresa focada no desenvolvimento de soluções web para o mercado B2B, com uma equipe formada por profissionais de desenvolvimento, QA e coordenação. Valorizamos colaboração, troca de conhecimento, aprendizado contínuo e desenvolvimento profissional.\n\nhttps://www.jjconsulting.com.br\n\n## Descrição da vaga\n\nBuscamos uma pessoa Desenvolvedora Backend .NET para atuar no desenvolvimento e evolução de soluções web voltadas ao mercado B2B.\n\nVocê trabalhará em conjunto com nosso time de desenvolvimento, QA e coordenadores, participando da construção de APIs, microsserviços, integrações e soluções escaláveis utilizando o ecossistema .NET.\n\n## Local\n\n100% remoto.\n\n## Requisitos\n\n### Obrigatórios\n\n* Experiência sólida com .NET e C#;\n* Experiência no desenvolvimento de APIs REST;\n* Conhecimento em arquitetura de microsserviços;\n* Conhecimento em qualquer ORM como Entity Framework;\n* Conhecimento em SQL Server, incluindo criação de procedures e modelagem de dados;\n* Conhecimento em versionamento de código utilizando Git, GitLab ou GitHub;\n* Conhecimento em alguma plataforma de CI/CD, como GitLab CI, Azure Pipelines ou GitHub Actions;\n* Conhecimento em SOLID, Clean Code e padrões de projeto;\n* Familiaridade com algum framework front-end e conhecimentos em HTML, CSS e JavaScript;\n* Boa comunicação para trabalho remoto;\n* Conexão estável e ambiente adequado para home office;\n* Vontade de aprender, contribuir e crescer junto com o time.\n\n### Desejáveis\n\n* Conhecimento em ASP.NET Core MVC ou Razor Pages;\n* Conhecimento em mensageria e arquitetura orientada a eventos utilizando tecnologias como RabbitMQ, Kafka ou Azure Service Bus;\n* Conhecimento em testes de integração com Testcontainers e Playwright;\n* Espanhol e/ou inglês técnico para leitura e escrita.\n\n## Contratação\n\nPJ.\n\n## Como se candidatar\n\nEnvia um [Whats](https://wa.me/551138575322?text=Ol%C3%A1%2C%20encontrei%20a%20vaga%20de%20.NET%20pleno%20da%20JJ%20pelo%20GitHub%21).\n\n## Labels\n\n### Nível\n\n* Pleno\n\n### Regime\n\n* PJ\n\n### Alocação\n\n* Remoto",
+      "excerpt": "## Nossa empresa Somos uma empresa focada no desenvolvimento de soluções web para o mercado B2B, com uma equipe formada por profissionais de desenvolvimento, QA e coordenação. Valorizamos colaboração, troca de conheci...",
+      "issueState": "open",
+      "contentHash": "d7891f59e60a1eada3d26e1147a6a3fabfe9826d3ac9a346f2070e3d7e237cbc",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        ".net",
+        "git",
+        "javascript",
+        "pj",
+        "pleno",
+        "rabbitmq",
+        "remoto",
+        "sql"
+      ],
+      "sourceTags": [
+        ".net",
+        "git",
+        "javascript",
+        "pj",
+        "pleno",
+        "rabbitmq",
+        "remoto",
+        "sql"
+      ],
+      "author": {
+        "id": "gumbarros",
+        "name": "gumbarros",
+        "handle": "gumbarros",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52143624?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-08-12T17:57:22Z",
+      "updatedAt": "2026-10-24T03:10:14Z",
+      "url": "https://github.com/backend-br/vagas/issues/12373",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "qa"
+        ],
+        "technologies": [
+          "azure",
+          "csharp",
+          "dotnet",
+          "javascript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_56f09abec7008337fbc6da45",
+          "sourceId": "backend-br/vagas#12373",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12373",
+          "createdAt": "2026-08-12T17:57:22Z",
+          "updatedAt": "2026-10-24T03:10:14Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 72,
+        "publishedAt": "2026-08-12T17:57:22Z",
+        "status": "aging"
+      }
+    },
+    {
       "id": "gh_087f0ff3ec143b6edd622ee9",
       "sourceId": "devfsa/vagas#2829",
       "title": "[Remoto] GTM Engineer na Coodesh",
@@ -1212,7 +1447,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 79,
+        "ageDays": 80,
         "publishedAt": "2026-08-05T04:52:08Z",
         "status": "aging"
       }
@@ -1376,7 +1611,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 81,
+        "ageDays": 82,
         "publishedAt": "2026-08-03T03:51:27Z",
         "status": "aging"
       }
@@ -1800,204 +2035,6 @@
       "freshness": {
         "ageDays": 100,
         "publishedAt": "2026-07-15T14:22:41Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_71e10b291f6b95046c3c84fa",
-      "sourceId": "speedyapply/2026-SWE-College-Jobs#45",
-      "title": "New Position",
-      "description": "### Position Title\n\nSoftware Engineer - Data Analytics Team\n\n### Position Application Link\n\nhttps://seacorp.csod.com/ux/ats/careersite/5/home/requisition/1918?c=seacorp\n\n### Company Name\n\nSEACORP\n\n### Company Link\n\nhttps://www.seacorp.com/\n\n### Location\n\nManassas, VA | Middletown, RI\n\n### Is this a new grad position or an internship?\n\nNew Grad\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\nnolanplatt1@gmail.com",
-      "excerpt": "### Position Title Software Engineer - Data Analytics Team ### Position Application Link https://seacorp.csod.com/ux/ats/careersite/5/home/requisition/1918?c=seacorp ### Company Name SEACORP ### Company Link https://w...",
-      "issueState": "open",
-      "contentHash": "bc36a3975f42b4e14a293be0d57447a9689ed8a922ee416c977130ea7d3e1d30",
-      "repository": "speedyapply/2026-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2026-SWE-College-Jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "new"
-      ],
-      "sourceTags": [
-        "new"
-      ],
-      "author": {
-        "id": "nolanplatt",
-        "name": "nolanplatt",
-        "handle": "nolanplatt",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/43970139?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2026-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2026-SWE-College-Jobs"
-      },
-      "createdAt": "2026-07-15T13:51:45Z",
-      "updatedAt": "2026-07-15T13:51:45Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/45",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Manassas",
-        "subdivision": "VA",
-        "displayText": "Manassas, VA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_71e10b291f6b95046c3c84fa",
-          "sourceId": "speedyapply/2026-SWE-College-Jobs#45",
-          "repository": "speedyapply/2026-SWE-College-Jobs",
-          "repositoryUrl": "https://github.com/speedyapply/2026-SWE-College-Jobs",
-          "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/45",
-          "createdAt": "2026-07-15T13:51:45Z",
-          "updatedAt": "2026-07-15T13:51:45Z",
-          "community": {
-            "id": "speedyapply",
-            "name": "speedyapply",
-            "avatarUrl": "https://github.com/speedyapply.png?size=80",
-            "repository": "speedyapply/2026-SWE-College-Jobs",
-            "url": "https://github.com/speedyapply/2026-SWE-College-Jobs"
-          }
-        },
-        {
-          "id": "gh_97b8425b4e56b673a31c0cc8",
-          "sourceId": "speedyapply/2027-SWE-College-Jobs#45",
-          "repository": "speedyapply/2027-SWE-College-Jobs",
-          "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-          "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/45",
-          "createdAt": "2026-07-15T13:51:45Z",
-          "updatedAt": "2026-07-15T13:51:45Z",
-          "community": {
-            "id": "speedyapply",
-            "name": "speedyapply",
-            "avatarUrl": "https://github.com/speedyapply.png?size=80",
-            "repository": "speedyapply/2027-SWE-College-Jobs",
-            "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 100,
-        "publishedAt": "2026-07-15T13:51:45Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_345438a912c4cb4b37d9e419",
-      "sourceId": "speedyapply/2026-SWE-College-Jobs#44",
-      "title": "New Position",
-      "description": "### Position Title\n\nTechnology Intern\n\n### Position Application Link\n\nhttps://grnh.se/wyfef0fb2us\n\n### Company Name\n\nMarshall Wace\n\n### Company Link\n\nhttps://www.mwam.com\n\n### Location\n\nNew York\n\n### Is this a new grad position or an internship?\n\nInternship\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\n_No response_",
-      "excerpt": "### Position Title Technology Intern ### Position Application Link https://grnh.se/wyfef0fb2us ### Company Name Marshall Wace ### Company Link https://www.mwam.com ### Location New York ### Is this a new grad position...",
-      "issueState": "open",
-      "contentHash": "84e1321b21f2509f3433e124dfab1ed2a4476b4008df6c7af951893244557d69",
-      "repository": "speedyapply/2026-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2026-SWE-College-Jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "new"
-      ],
-      "sourceTags": [
-        "new"
-      ],
-      "author": {
-        "id": "zrack23",
-        "name": "zrack23",
-        "handle": "zrack23",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/230143543?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2026-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2026-SWE-College-Jobs"
-      },
-      "createdAt": "2026-07-15T12:01:43Z",
-      "updatedAt": "2026-07-15T12:01:43Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/44",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_345438a912c4cb4b37d9e419",
-          "sourceId": "speedyapply/2026-SWE-College-Jobs#44",
-          "repository": "speedyapply/2026-SWE-College-Jobs",
-          "repositoryUrl": "https://github.com/speedyapply/2026-SWE-College-Jobs",
-          "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/44",
-          "createdAt": "2026-07-15T12:01:43Z",
-          "updatedAt": "2026-07-15T12:01:43Z",
-          "community": {
-            "id": "speedyapply",
-            "name": "speedyapply",
-            "avatarUrl": "https://github.com/speedyapply.png?size=80",
-            "repository": "speedyapply/2026-SWE-College-Jobs",
-            "url": "https://github.com/speedyapply/2026-SWE-College-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 100,
-        "publishedAt": "2026-07-15T12:01:43Z",
         "status": "stale"
       }
     }
