@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-25T07:58:59.859Z",
+  "generatedAt": "2026-10-25T13:29:39.816Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_87b101214c37821666f13aae",
     "gh_7ce789b1d213071032aedb90",
     "gh_d9dfe5cac9c424f1f17f3d37",
     "gh_bd1a02dc4fb9f4d7e001599a",
@@ -22,10 +23,133 @@
     "gh_baa1cacfe8ac107e10908e71",
     "gh_a532a250cf3ce443abd223c9",
     "gh_6ce7664107fbc93c43db7e29",
-    "gh_acbf4cc06bdd966cbf7cdeaa",
-    "gh_998bfcc688411320a9d8e00c"
+    "gh_acbf4cc06bdd966cbf7cdeaa"
   ],
   "items": [
+    {
+      "id": "gh_87b101214c37821666f13aae",
+      "sourceId": "soujava/vagas-java#1969",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Fila de Pedidos) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nPedido entra pela API, responde rápido para quem chamou e segue para processamento assíncrono. Do outro lado, consumidores em Java com Spring Boot leem de tópicos do Apache Kafka, avançam a situação do pedido, gravam em PostgreSQL e publicam o evento seguinte. Você vai trabalhar nesses consumidores e no desenho de estados do pedido. Três coisas dominam o dia a dia. Ordem, porque dois eventos do mesmo pedido não podem ser aplicados fora de sequência. Idempotência, porque mensagem se repete e aplicar duas vezes não pode mudar o resultado. E mensagem que não processa de jeito nenhum, que vai para a fila de mensagem morta e precisa de um caminho claro de reprocessamento depois da correção. Também existe a parte visível: endpoint para consultar a situação do pedido e o histórico de transições. Quando alguém pergunta por que um pedido parou, a resposta tem de sair do histórico gravado, não de investigação manual em log espalhado.\n\n- Implementar consumidores Kafka que avançam a situação do pedido\n- Garantir idempotência do consumo, para mensagem repetida não duplicar efeito\n- Respeitar ordem por chave de pedido e tratar evento que chega adiantado\n- Encaminhar mensagem irrecuperavel para fila de mensagem morta com o motivo\n- Construir a rotina de reprocessamento do que ficou parado\n- Expor consulta de situação e histórico de transições por endpoint REST\n- Escrever teste de consumidor, incluindo mensagem duplicada e fora de ordem\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado com código Java seu\n- Java com orientação a objetos, coleções e tratamento de exceção\n- Noção de Spring Boot\n- SQL de consulta e escrita em banco relacional\n- Entender a diferença entre processar na hora e processar depois, com fila no meio\n- Git no dia a dia\n\n**Diferenciais:**\n- Já ter usado Kafka, RabbitMQ ou qualquer mensageria, mesmo em estudo\n- Noção de máquina de estados aplicada a pedido ou a processo\n- Docker Compose para subir fila, banco e aplicação localmente\n- Ter escrito teste de integração com dependência em container\n- Curiosidade por entrega no mínimo uma vez e por que isso exige idempotência\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 4.100 a R$ 5.600 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-fila-de-pedidos-468?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Pedido entra pela API, responde rápido para quem chamou e...",
+      "issueState": "open",
+      "contentHash": "49388d9753503de97a27d88d715f5446ce37158575b643caa0a5533098e15fd3",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4100,
+        "max": 5600,
+        "period": "month"
+      },
+      "createdAt": "2026-10-25T12:26:08Z",
+      "updatedAt": "2026-10-25T12:26:25Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1969",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_87b101214c37821666f13aae",
+          "sourceId": "soujava/vagas-java#1969",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1969",
+          "createdAt": "2026-10-25T12:26:08Z",
+          "updatedAt": "2026-10-25T12:26:25Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-25T12:26:08Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_7ce789b1d213071032aedb90",
       "sourceId": "awesome-jobs/jobs#5096",
@@ -254,7 +378,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-10-24T12:08:55Z",
         "status": "fresh"
       }
@@ -380,7 +504,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-23T12:33:38Z",
         "status": "fresh"
       }
@@ -482,7 +606,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-10-23T10:36:33Z",
         "status": "fresh"
       }
@@ -646,7 +770,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-10-22T11:43:48Z",
         "status": "fresh"
       }
@@ -732,7 +856,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-10-22T07:59:45Z",
         "status": "fresh"
       }
@@ -1212,7 +1336,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-21T13:09:45Z",
         "status": "fresh"
       }
@@ -1334,7 +1458,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-21T10:53:38Z",
         "status": "fresh"
       }
@@ -2108,108 +2232,6 @@
       "freshness": {
         "ageDays": 4,
         "publishedAt": "2026-10-20T21:06:23Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_998bfcc688411320a9d8e00c",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9716",
-      "title": "New Internship - Sony",
-      "description": "### Link to Internship Posting\n\nhttps://careers.playstation.com/software-engineering-intern-undergraduate/job/6221754004\n\n### Company Name\n\nSony Interactive Entertainment\n\n### Internship Title\n\nSoftware Engineering Intern – Undergraduate\n\n### Location\n\nSan Diego, CA\n\n### What term(s) is this internship offered for?\n\nSummer 2027\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\nterryant64@gmail.com\n\n### Extra Notes (Optional)\n\nJoin Sony Interactive Entertainment and gain hands-on experience supporting the ongoing development of PlayStation’s Global Financial Reporting Systems. You'll work with the enterprise architecture team to build and improve scalable financial systems, with a focus on event-driven architectures, real-time data processing, and simple, intuitive frontends. \n\nAs an intern, you'll collaborate with engineers to develop technical solutions, improve existing applications, and explore how software engineering supports financial operations. This opportunity offers practical experience with backend development, data management, testing, and cloud technologies while contributing to projects that improve efficiency across the business. \n\nIntern Pay Range\n$45.75—$45.75 USD",
-      "excerpt": "### Link to Internship Posting https://careers.playstation.com/software-engineering-intern-undergraduate/job/6221754004 ### Company Name Sony Interactive Entertainment ### Internship Title Software Engineering Intern ...",
-      "issueState": "open",
-      "contentHash": "160ce00fd07181f2cf8ddb58b53beabf106f73d450e9bb7694a942cf1c07fb84",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship"
-      ],
-      "sourceTags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "MarioTeachesTyping",
-        "name": "MarioTeachesTyping",
-        "handle": "MarioTeachesTyping",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/160272873?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 46,
-        "max": 46,
-        "period": "year"
-      },
-      "createdAt": "2026-10-20T21:04:29Z",
-      "updatedAt": "2026-10-20T21:04:44Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9716",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "San Diego",
-        "subdivision": "CA",
-        "displayText": "San Diego, CA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_998bfcc688411320a9d8e00c",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9716",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9716",
-          "createdAt": "2026-10-20T21:04:29Z",
-          "updatedAt": "2026-10-20T21:04:44Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 4,
-        "publishedAt": "2026-10-20T21:04:29Z",
         "status": "fresh"
       }
     }

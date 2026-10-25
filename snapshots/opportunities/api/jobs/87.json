@@ -1,6 +1,130 @@
 {
-  "generatedAt": "2026-10-24T17:45:20.646Z",
+  "generatedAt": "2026-10-25T13:29:39.816Z",
   "items": {
+    "gh_87b101214c37821666f13aae": {
+      "id": "gh_87b101214c37821666f13aae",
+      "sourceId": "soujava/vagas-java#1969",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Fila de Pedidos) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nPedido entra pela API, responde rápido para quem chamou e segue para processamento assíncrono. Do outro lado, consumidores em Java com Spring Boot leem de tópicos do Apache Kafka, avançam a situação do pedido, gravam em PostgreSQL e publicam o evento seguinte. Você vai trabalhar nesses consumidores e no desenho de estados do pedido. Três coisas dominam o dia a dia. Ordem, porque dois eventos do mesmo pedido não podem ser aplicados fora de sequência. Idempotência, porque mensagem se repete e aplicar duas vezes não pode mudar o resultado. E mensagem que não processa de jeito nenhum, que vai para a fila de mensagem morta e precisa de um caminho claro de reprocessamento depois da correção. Também existe a parte visível: endpoint para consultar a situação do pedido e o histórico de transições. Quando alguém pergunta por que um pedido parou, a resposta tem de sair do histórico gravado, não de investigação manual em log espalhado.\n\n- Implementar consumidores Kafka que avançam a situação do pedido\n- Garantir idempotência do consumo, para mensagem repetida não duplicar efeito\n- Respeitar ordem por chave de pedido e tratar evento que chega adiantado\n- Encaminhar mensagem irrecuperavel para fila de mensagem morta com o motivo\n- Construir a rotina de reprocessamento do que ficou parado\n- Expor consulta de situação e histórico de transições por endpoint REST\n- Escrever teste de consumidor, incluindo mensagem duplicada e fora de ordem\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado com código Java seu\n- Java com orientação a objetos, coleções e tratamento de exceção\n- Noção de Spring Boot\n- SQL de consulta e escrita em banco relacional\n- Entender a diferença entre processar na hora e processar depois, com fila no meio\n- Git no dia a dia\n\n**Diferenciais:**\n- Já ter usado Kafka, RabbitMQ ou qualquer mensageria, mesmo em estudo\n- Noção de máquina de estados aplicada a pedido ou a processo\n- Docker Compose para subir fila, banco e aplicação localmente\n- Ter escrito teste de integração com dependência em container\n- Curiosidade por entrega no mínimo uma vez e por que isso exige idempotência\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 4.100 a R$ 5.600 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-fila-de-pedidos-468?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Pedido entra pela API, responde rápido para quem chamou e...",
+      "issueState": "open",
+      "contentHash": "49388d9753503de97a27d88d715f5446ce37158575b643caa0a5533098e15fd3",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4100,
+        "max": 5600,
+        "period": "month"
+      },
+      "createdAt": "2026-10-25T12:26:08Z",
+      "updatedAt": "2026-10-25T12:26:25Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1969",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_87b101214c37821666f13aae",
+          "sourceId": "soujava/vagas-java#1969",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1969",
+          "createdAt": "2026-10-25T12:26:08Z",
+          "updatedAt": "2026-10-25T12:26:25Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-25T12:26:08Z",
+        "status": "fresh"
+      }
+    },
     "gh_878c818f3bab42b66032d2c9": {
       "id": "gh_878c818f3bab42b66032d2c9",
       "sourceId": "developersRJ/vagas#512",
