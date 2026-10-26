@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-25T13:29:39.816Z",
+  "generatedAt": "2026-10-26T15:41:45.369Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
@@ -9,8 +9,107 @@
     "openIssues": 7,
     "closedIssues": 10
   },
-  "dataHash": "3c7e58470ba8bbd4a21196e2bf3591c369518871c949f381317ff39104f4d5bc",
+  "dataHash": "0f814c8ae884cdc1425351c6248639c40c0b6d0322da947535476edc79c1b4a9",
   "items": [
+    {
+      "id": "gh_eef09d4903316c9e4aa1d5a3",
+      "sourceId": "soujava/vagas-java#1971",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Gestão de Pedidos de Compra) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nQuando alguém precisa comprar algo, abre uma requisição. Ela é aprovada pelo gestor, vira cotação com fornecedores e depois pedido de compra, que é enviado ao fornecedor, recebido no almoxarifado e conferido contra a nota fiscal. O sistema acompanha cada passo e impede que um pedido siga adiante sem a aprovação certa. Você vai trabalhar no serviço em Java com Spring Boot que implementa esse fluxo. As regras de alçada são o centro: pedidos acima de certo valor precisam de mais de uma aprovação, e quem pediu não pode aprovar o próprio pedido. Também entra o recebimento parcial, quando o fornecedor entrega só parte do que foi comprado e o restante continua em aberto. Auditoria é rotina nessa área, então cada aprovação, alteração de valor e cancelamento fica registrado com autor e data, e nenhum registro antigo é sobrescrito.\n\n- Implementar o fluxo de requisição, aprovação, cotação e pedido\n- Aplicar regras de alçada por valor e por centro de custo\n- Impedir que o solicitante aprove o próprio pedido\n- Registrar recebimento parcial e saldo pendente de cada item\n- Conferir quantidades e valores do pedido com a nota recebida\n- Gravar o histórico de alterações para auditoria\n- Notificar o aprovador da vez e lembrar quando a aprovação atrasa\n- Escrever testes com JUnit para as regras de alçada\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Projeto próprio, estágio ou curso com Java\n- Java com orientação a objetos\n- Noção de Spring Boot e JPA\n- SQL com junção e filtro\n- Noção de controle de acesso por perfil\n- Leitura de regra de negócio com muitos casos\n- Git com branch e revisão\n\n**Diferenciais:**\n- Spring Security\n- Ter trabalhado em compras ou almoxarifado\n- Noção de máquina de estados\n- Ter escrito teste antes do código em algum projeto\n- Noção de nota fiscal eletrônica e dos seus dados principais\n- Docker\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.000 a R$ 4.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-gestao-de-pedidos-de-compra-515?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Quando alguém precisa comprar algo, abre uma requisição. ...",
+      "issueState": "open",
+      "contentHash": "a4ae205a3662b78b8b2c4fabf7fc6c417bf559c4231c1f7abc74a062012497e3",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "júnior",
+        "clt",
+        "estágio",
+        "pj",
+        "remoto",
+        "spring",
+        "docker",
+        "git"
+      ],
+      "sourceTags": [
+        "júnior",
+        "clt",
+        "estágio",
+        "pj",
+        "remoto",
+        "spring",
+        "docker",
+        "git"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3000,
+        "max": 4500,
+        "period": "month"
+      },
+      "createdAt": "2026-10-26T14:08:59Z",
+      "updatedAt": "2026-10-26T14:09:24Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1971",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_87b101214c37821666f13aae",
       "sourceId": "soujava/vagas-java#1969",
@@ -573,70 +672,6 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_b6aefab5452b32ee8687841b",
-      "sourceId": "soujava/vagas-java#1956",
-      "title": "Question about reading public listings on soujava/vagas-java (personal final-year project)",
-      "description": "Hello soujava/vagas-java team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET api.github.com/repos/soujava/vagas-java/issues?state=open&per_page=100 (the open issues, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
-      "excerpt": "Hello soujava/vagas-java team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any universit...",
-      "issueState": "open",
-      "contentHash": "84422d8dbf49e22c0e602cc7089815c276468d3783d2bfbe029f41eaccb8937c",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "api",
-        "java"
-      ],
-      "sourceTags": [
-        "api",
-        "java"
-      ],
-      "author": {
-        "id": "pathmaker7",
-        "name": "pathmaker7",
-        "handle": "pathmaker7",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-09-30T10:27:18Z",
-      "updatedAt": "2026-09-30T10:27:42Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1956",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "java"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
       }
     },
     {
