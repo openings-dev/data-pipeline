@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-26T15:41:45.369Z",
+  "generatedAt": "2026-10-26T22:09:23.655Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
+    "gh_bf1a4481c55b8d80f89cba07",
     "gh_eab4a0e2c690eebdf77fc87c",
     "gh_e2b9353ac1307526e438b23d",
     "gh_0e98dad659c3df11a1cb1cc8",
@@ -22,10 +23,112 @@
     "gh_1281cf89efd737156e2e7eab",
     "gh_31432bc70b69af4c8049f0ea",
     "gh_86efffb250adb4c9c04e5739",
-    "gh_e42065fbc53387de89f2d4c3",
-    "gh_e2c553c8e40203638ef9d7b5"
+    "gh_e42065fbc53387de89f2d4c3"
   ],
   "items": [
+    {
+      "id": "gh_bf1a4481c55b8d80f89cba07",
+      "sourceId": "f2etw/jobs#1168",
+      "title": "[求職] 高雄 /現場、遠端、混合型/ | 具 Vue 3 & Angular 19 雙框架實作經驗的前端工程師 - 林家齊 (AtayalLin)",
+      "description": "## 📌 關於我 (About Me)\n您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。\n\n我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐性，能將這些特質轉化為高水準的 UI/UX 呈現與穩健的程式碼品質。\n\n- **工作狀態**：待業中，錄取後一週內可到職\n- **期望職缺**：前端工程師 / 全端工程師\n- **工作地點**：高雄市（左營/鼓山/楠梓/前鎮等） / 接受遠端工作 /新北、台中 等地區可接受員工宿舍\n- **技術社群**：完成 2025 六角學院 30 天軟體工程師體驗營鐵人挑戰，以及台南應用科技大學產業新尖兵計畫「Java全端整合實務運用就業養成班第四梯次」共 840 時數課程。\n---\n\n## 🛠 技術棧 (Technical Skills)\n\n| 分類 | 技術重點 |\n| :--- | :--- |\n| **Frontend** | JavaScript (ES6+), TypeScript, HTML5, CSS3 (Fluid Layout/clamp) |\n| **Frameworks** | **Vue 3** (Vite, Pinia, Vue Router, vee-validate, Zod)<br>**Angular 19** (Signals, RxJS) |\n| **Styles & Anim** | RWD, Bootstrap 5, GSAP 動畫庫, IntersectionObserver, Tailwind/CSS Tokens |\n| **Backend / DB** | Java, Spring Boot, RESTful API 串接, MySQL |\n| **DevOps & Tools** | Git / GitHub, GitHub Actions (CI/CD), Figma, Notion |\n\n---\n\n## 💻 精選專案作品 (Featured Projects)\n\n### 1. 懶飽飽智慧點餐系統 (團隊專案・前端負責人)\n以 Angular 19 驅動的餐飲全端管理系統，涵蓋客戶端、員工 POS 終端與老闆管理後台。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Angular-Team-Frontend)\n- **技術棧**：Angular 19, TypeScript, Angular Signals, Spring Boot, MySQL\n- **核心亮點**：\n  - **全域狀態驅動**：採用 **Angular Signals** 管理全域狀態，實現客戶下單與 POS 看板跨元件即時同步。\n  - **雙模式切換機制**：設計 Mock / 真實 API 雙模式切換，使前端可離線完整運行，並精準對齊真實 API 型態，大幅降低與後端串接時的錯誤率。\n  - **路由與權限控制**：實作 3 種角色獨立路由，管理共 10 個頁面與 8 個管理頁籤，並整合完整的信用卡與行動支付流程。\n\n### 2. 日式風格電商網站 (個人 Side Project)\n功能完整的電商購物流程專案，持續迭代並導入現代前端工程化實踐，累積 30 位開發者 clone。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Vueshop-Side-Project-Demo-)\n- **技術棧**：Vue 3, Vite, Pinia, Vue Router, vee-validate + Zod, Vitest, Playwright\n- **核心亮點**：\n  - **嚴格表單驗證**：結帳表單整合 `vee-validate` 與 `Zod` 進行強型別驗證；利用 Composable (`usePricing`) 封裝複雜的運費與折扣計算邏輯。\n  - **多主題持久化**：使用 CSS Design Tokens 實作三種主題切換，並透過 `localStorage` 持久化使用者偏好。\n  - **自動化部署與測試**：配置 GitHub Actions 自動化部署至 GitHub Pages，並配置 Vitest 單元測試與 Playwright E2E 測試框架。\n\n### 3. H5 遊戲大廳入口頁 (前端技術試題)\n受遊戲公司邀請完成的高還原度前端試題，具備 95% 的功能完成度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Igs-test-vue)\n- **技術棧**：Vue 3, Vite, Pinia, Bootstrap 5, GSAP, RESTful API\n- **核心亮點**：\n  - **流暢動效與優化**：利用 GSAP 打造精緻進場動畫與骨架屏（Skeleton Screen）載入狀態；實作實時搜尋並加入 **300ms 防抖 (Debounce)** 優化。\n  - **即時狀態輪詢**：實作 30 秒定時輪詢（Polling）更新餘額機制，以及跨分類同步的收藏管理。\n\n### 4. 個人作品集網站 (年度報告概念)\n純手刻的原生技術展示網站，用以驗證對網頁底層與瀏覽器 API 的掌握度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/AtayaHtml)\n- **技術棧**：純 HTML5, CSS3, Vanilla JavaScript (無框架與建置工具)\n- **核心亮點**：\n  - **流體排版**：CSS 採用 `clamp()` 進行流體排版，無縫支援三斷點 RWD。\n  - **高效能動畫**：使用 `IntersectionObserver` 驅動元素進場動畫與導覽列高亮。\n\n*(其他練習專案參考：[Angular 快速開發 Demo](https://github.com/AtayalLin/Angular-qsdemo) / [Vite 測試專案](https://github.com/AtayalLin/for-vite-test-2025))*\n\n---\n\n## 💼 工作經歷 (Experience)\n\n- **兼職資訊行政助理** | 匠星工程有限公司 (2023/04 - 2023/09)\n  - 協助搬運舊部落格文章至新網頁，處理軟硬體排除。\n- **約聘助理** | 交通部航港局南部航務中心 (2020/04 - 2020/10)\n  - 管理與歸檔 200+ 份船舶資料，**透過 Excel 自動化縮短 20% 行政作業時間**。\n- **學校教務處行政人員** | 高雄市立楠梓國民中學 (2016/01 - 2017/08)\n  - 負責大批量學生資料與教務數據建檔處理。\n\n---\n\n## 📬 聯絡方式 (Contact)\n\n- **Email**：a437777@gmail.com\n- **手機**：0967-187-303\n- **GitHub**：[AtayalLin](https://github.com/AtayalLin)\n\n期待有機會與您聊聊，為團隊帶來即戰力與細膩的前端開發支援！",
+      "excerpt": "## 📌 關於我 (About Me) 您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。 我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐...",
+      "issueState": "open",
+      "contentHash": "d8c0374336eabb5df35caa273f78b6f5cf6c5456dea50f1fea8dd7469b078de3",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[b] java",
+        "[f] angular",
+        "[f] vue.js",
+        "求職"
+      ],
+      "sourceTags": [
+        "[b] java",
+        "[f] angular",
+        "[f] vue.js",
+        "求職"
+      ],
+      "author": {
+        "id": "AtayalLin",
+        "name": "AtayalLin",
+        "handle": "AtayalLin",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/192576566?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2026-06-18T07:09:49Z",
+      "updatedAt": "2026-06-29T06:26:57Z",
+      "url": "https://github.com/f2etw/jobs/issues/1168",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "java",
+          "javascript",
+          "mysql",
+          "spring",
+          "typescript",
+          "vue"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_bf1a4481c55b8d80f89cba07",
+          "sourceId": "f2etw/jobs#1168",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1168",
+          "createdAt": "2026-06-18T07:09:49Z",
+          "updatedAt": "2026-06-29T06:26:57Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 130,
+        "publishedAt": "2026-06-18T07:09:49Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_eab4a0e2c690eebdf77fc87c",
       "sourceId": "OurTinTinLand/TinTin-Job-Board#82",
@@ -219,7 +322,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 132,
+        "ageDays": 133,
         "publishedAt": "2026-06-15T19:31:20Z",
         "status": "stale"
       }
@@ -333,7 +436,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 139,
+        "ageDays": 140,
         "publishedAt": "2026-06-08T16:58:12Z",
         "status": "stale"
       }
@@ -442,7 +545,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 142,
+        "ageDays": 143,
         "publishedAt": "2026-06-05T19:14:10Z",
         "status": "stale"
       }
@@ -611,7 +714,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 143,
+        "ageDays": 144,
         "publishedAt": "2026-06-04T18:38:01Z",
         "status": "stale"
       }
@@ -1023,7 +1126,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 149,
+        "ageDays": 150,
         "publishedAt": "2026-05-29T18:25:37Z",
         "status": "stale"
       }
@@ -1248,7 +1351,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 152,
+        "ageDays": 153,
         "publishedAt": "2026-05-26T18:22:15Z",
         "status": "stale"
       }
@@ -1361,7 +1464,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 153,
+        "ageDays": 154,
         "publishedAt": "2026-05-25T18:56:54Z",
         "status": "stale"
       }
@@ -1482,7 +1585,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 153,
+        "ageDays": 154,
         "publishedAt": "2026-05-25T16:54:47Z",
         "status": "stale"
       }
@@ -1956,94 +2059,6 @@
       "freshness": {
         "ageDays": 169,
         "publishedAt": "2026-05-10T14:11:35Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_e2c553c8e40203638ef9d7b5",
-      "sourceId": "cassichen88-jpg/awesome-jobs-2026#5",
-      "title": "[深圳] 某细分领域头部出海公司 智能体开发工程师 Agent/MCP AI 0到1搭建",
-      "description": "> 🔥 智能体核心岗 | 落地细分出海AI场景 | Agent/MCP前沿技术栈 | 深圳\n\n---\n\n## 🏢 公司简介\n\n**某细分领域头部出海公司**，深圳，集团化运作，在母婴消费领域占据头部地位，业务覆盖全球多个市场。当前正全面推进 AI 智能体战略，打造垂直场景下的 AI 服务能力，处于智能体从 0 到 1 搭建的关键期，技术栈紧跟前沿。\n\n> 公司明牌信息可私聊提供。\n\n## 💼 岗位信息\n\n- **职位**：智能体开发工程师 / Agent Engineer\n- **地点**：深圳\n- **薪资**：面议（对标市场前沿 Agent 岗位）\n- **团队**：AI 技术团队，直接参与智能体核心搭建\n\n## 🎯 岗位职责\n\n1. 负责搭建智能体，支撑**公司智能体服务**的成功落地\n2. 优化智能体性能，**防止幻觉与错误**，提升稳定性\n3. 持续实现智能体的新功能、新能力\n4. 负责智能体的**工程化**（部署、监控、迭代闭环）\n5. 跟进前沿技术，**选择性落地到产品**\n\n## ✅ 任职要求\n\n**硬性要求**\n- **985 本科以上**（硕士优先）\n- 智能体开发相关实战经验：**Prompt 工程、Agent 框架自研、MCP、Skills** 等\n- 逻辑清晰，能写出**高质量 Prompt**\n- 理解智能体底层原理：**MCP、Function Calling、Skills** 等\n- 能理解业务、理解用户\n\n**加分项**\n- 有自研 Agent 框架经验（非纯调 LangChain / Dify）\n- 熟练运用 **AI 编程工具**（Cursor / Claude Code 等）快速完成跨领域任务\n- 母婴 / 消费 / 内容类 AI 产品落地经验\n\n**软性要求**\n- 强探索欲，愿意接触新技术、新挑战\n- 学习速度快，能快速理解、尝试、落地前沿技术\n\n## 💡 为什么值得聊\n\n- **技术栈前沿**：MCP、Skills、自研 Agent，不是套壳调 API\n- **场景真实**：头部出海消费品牌，真实用户量级与全球化数据\n- **0 到 1 操盘**：智能体核心搭建期加入，履历含金量高\n- **技术决策权**：可主导技术选型，前沿技术落地空间大\n\n## 📬 联系方式\n\n- 💬 **微信**：cc_cassie888（备注：GitHub + 智能体开发）\n- 📧 **邮箱**：cassi.chen88@gmail.com\n\n---\n\n⭐ Star 仓库获取更多稀缺岗位 | 👁 Watch 第一时间收到更新\n\n[← 返回职位列表](../README.md)",
-      "excerpt": "> 🔥 智能体核心岗 | 落地细分出海AI场景 | Agent/MCP前沿技术栈 | 深圳 --- ## 🏢 公司简介 **某细分领域头部出海公司**，深圳，集团化运作，在母婴消费领域占据头部地位，业务覆盖全球多个市场。当前正全面推进 AI 智能体战略，打造垂直场景下的 AI 服务能力，处于智能体从 0 到 1 搭建的关键期，技术栈紧跟前沿。 > 公司明牌信息可私聊提供。 ## 💼 岗位信息 - **职位**：智能体开发工程...",
-      "issueState": "open",
-      "contentHash": "c52a1c91c373928c527a35a66a36786e99e95a26674a334e671ea3fdf0a1d868",
-      "repository": "cassichen88-jpg/awesome-jobs-2026",
-      "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
-      "region": "Asia",
-      "country": "China",
-      "sourceLocation": {
-        "country": "China",
-        "countryCode": "CN",
-        "region": "Asia"
-      },
-      "tags": [
-        "agent",
-        "深圳"
-      ],
-      "sourceTags": [
-        "agent",
-        "深圳"
-      ],
-      "author": {
-        "id": "cassichen88-jpg",
-        "name": "cassichen88-jpg",
-        "handle": "cassichen88-jpg",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/283092288?v=4"
-      },
-      "community": {
-        "id": "cassichen88-jpg",
-        "name": "cassichen88-jpg",
-        "avatarUrl": "https://github.com/cassichen88-jpg.png?size=80",
-        "repository": "cassichen88-jpg/awesome-jobs-2026",
-        "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026"
-      },
-      "createdAt": "2026-05-10T14:04:19Z",
-      "updatedAt": "2026-05-10T14:07:15Z",
-      "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/5",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_e2c553c8e40203638ef9d7b5",
-          "sourceId": "cassichen88-jpg/awesome-jobs-2026#5",
-          "repository": "cassichen88-jpg/awesome-jobs-2026",
-          "repositoryUrl": "https://github.com/cassichen88-jpg/awesome-jobs-2026",
-          "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026/issues/5",
-          "createdAt": "2026-05-10T14:04:19Z",
-          "updatedAt": "2026-05-10T14:07:15Z",
-          "community": {
-            "id": "cassichen88-jpg",
-            "name": "cassichen88-jpg",
-            "avatarUrl": "https://github.com/cassichen88-jpg.png?size=80",
-            "repository": "cassichen88-jpg/awesome-jobs-2026",
-            "url": "https://github.com/cassichen88-jpg/awesome-jobs-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 169,
-        "publishedAt": "2026-05-10T14:04:19Z",
         "status": "stale"
       }
     }
