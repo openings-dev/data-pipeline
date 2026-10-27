@@ -53959,6 +53959,486 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_0518d453a06bfe71ae771dff",
+        "revision": "259a465fcf478eb7f80bec362d53d185e260a5b5d358a4c69a47ac3cbc9b810c",
+        "idempotencyKey": "openings:job:gh_0518d453a06bfe71ae771dff:259a465fcf478eb7f80bec362d53d185e260a5b5d358a4c69a47ac3cbc9b810c"
+      },
+      "canonical": {
+        "title": "[Remota] Product Engineer (LLMs, Next.js, Python, AWS)USD - Strider",
+        "summary": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS) > **Salário:** $4,900 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5 a 8 anos > ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_0518d453a06bfe71ae771dff",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_0518d453a06bfe71ae771dff",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_0518d453a06bfe71ae771dff",
+              "revision": "259a465fcf478eb7f80bec362d53d185e260a5b5d358a4c69a47ac3cbc9b810c",
+              "canonicalPath": "/jobs/gh_0518d453a06bfe71ae771dff",
+              "title": "[Remota] Product Engineer (LLMs, Next.js, Python, AWS)USD - Strider",
+              "summary": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS) > **Salário:** $4,900 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5 a 8 anos > ...",
+              "status": "active",
+              "contentSha256": "89a7df3fdcdb46041d01d033cbc3f7e500bbc338dc89d0fc78ef7b5726508a8b",
+              "content": {
+                "id": "gh_0518d453a06bfe71ae771dff",
+                "sourceId": "frontendbr/vagas#8553",
+                "title": "[Remota] Product Engineer (LLMs, Next.js, Python, AWS)USD - Strider",
+                "description": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS)\n\n> **Salário:** $4,900 – $5,600 USD/mês  \n> **Contratação:** Full-time (40h/semana) - Longo prazo  \n> **Idioma:** Inglês C1+  \n> **Experiência:** 5 a 8 anos  \n> **Modalidade:** 100% Remoto  \n\n### 📌 Sobre a Oportunidade\nProcuramos um(a) Product Engineer Sênior capaz de assumir a ownership de sistemas em produção, tomar decisões de produto sem especificação detalhada e construir arquiteturas robustas de IA (LLMs, agentes, pipelines de avaliação) e infraestrutura em nuvem.\n\n### 🛠️ Tech Stack & Requisitos\n- **Front-end & Full-stack:** React.js, Next.js, TypeScript, tRPC.\n- **Back-end & DB:** Node.js, Python, Postgres.\n- **AI & LLM:** Construção de aplicações de IA (tool-using agents, context management, retrieval/reranking) e avaliação de sistemas (LLM judges, deterministic checks).\n- **DevOps & Cloud:** AWS (ambientes self-hosted/regulados), CI/CD, IaC (Docker, Terraform, Pulumi, SST) e observabilidade a nível de sistema.\n- **AI Tooling:** Domínio de fluxos com IA (Claude Code) e visão crítica de suas capacidades.\n\n###  Diferenciais (Nice-to-have)\n- Experiência prévia em Startups\n- Design e operação de servidores MCP (Model Context Protocol)\n- Nuvem regulada (ex: AWS GovCloud)\n- Infraestrutura de ML / Pipelines de Dados\n- Ecossistema de EdTech ou desenvolvimento de força de trabalho\n\n---\n\n### 📩 Como se candidatar\nAcesse a aplicação no link:  \n👉 [Candidatar-se para Product Engineer](https://app.onstrider.com/r/claudiaantunes?job=cHJvZHVjdC1lbmdpbmVlci04ZjAyMDk3Zj9yZWZlcnJhbD1jbGF1ZGlhYW50dW5lcw==)",
+                "excerpt": "# 🚀 [VAGA REMOTA] Product Engineer (LLMs, Next.js, Python, AWS) > **Salário:** $4,900 – $5,600 USD/mês > **Contratação:** Full-time (40h/semana) - Longo prazo > **Idioma:** Inglês C1+ > **Experiência:** 5 a 8 anos > ...",
+                "issueState": "open",
+                "contentHash": "259a465fcf478eb7f80bec362d53d185e260a5b5d358a4c69a47ac3cbc9b810c",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "salary": {
+                  "currency": "BRL",
+                  "min": 4900,
+                  "max": 5600,
+                  "period": "month"
+                },
+                "createdAt": "2026-08-28T01:46:54Z",
+                "updatedAt": "2026-10-27T03:00:46Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8553",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "design",
+                    "devops-sre",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "docker",
+                    "nextjs",
+                    "nodejs",
+                    "postgres",
+                    "python",
+                    "react",
+                    "terraform",
+                    "typescript"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "full-time"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "inferred",
+                  "workModel": "inferred"
+                },
+                "sources": [
+                  {
+                    "id": "gh_0518d453a06bfe71ae771dff",
+                    "sourceId": "frontendbr/vagas#8553",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8553",
+                    "createdAt": "2026-08-28T01:46:54Z",
+                    "updatedAt": "2026-10-27T03:00:46Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-08-28T01:46:54Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_4069aaa4b8ed2c6ca16fa901",
+        "revision": "c9e500690268f1fab6e9f8f6e0c547156ff4d2dd395bd659fac393fd1f319d12",
+        "idempotencyKey": "openings:job:gh_4069aaa4b8ed2c6ca16fa901:c9e500690268f1fab6e9f8f6e0c547156ff4d2dd395bd659fac393fd1f319d12"
+      },
+      "canonical": {
+        "title": "[Híbrido/Curitiba] Senior Front-end Developer React (USD) Jcal Consultoria",
+        "summary": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_4069aaa4b8ed2c6ca16fa901",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_4069aaa4b8ed2c6ca16fa901",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_4069aaa4b8ed2c6ca16fa901",
+              "revision": "c9e500690268f1fab6e9f8f6e0c547156ff4d2dd395bd659fac393fd1f319d12",
+              "canonicalPath": "/jobs/gh_4069aaa4b8ed2c6ca16fa901",
+              "title": "[Híbrido/Curitiba] Senior Front-end Developer React (USD) Jcal Consultoria",
+              "summary": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+              "status": "active",
+              "contentSha256": "acdd479d369acbad4574e150296879fd25b53a49611a1bd3e50028c4391ecba6",
+              "content": {
+                "id": "gh_4069aaa4b8ed2c6ca16fa901",
+                "sourceId": "frontendbr/vagas#8551",
+                "title": "[Híbrido/Curitiba] Senior Front-end Developer React (USD) Jcal Consultoria",
+                "description": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷\n\nEngenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare com remuneração em dólar?\n\nEstamos selecionando um profissional Sênior para integrar o time de Engenharia de uma empresa internacional do setor de Healthcare.\n\n💡 SOBRE A POSIÇÃO\n\nBuscamos um profissional autônomo, com forte senso de ownership e capacidade de atuar de ponta a ponta: do desenvolvimento à entrega e suporte em produção.\n\nO foco será construir experiências digitais de alta qualidade, com atenção especial à performance, confiabilidade, escalabilidade e UX.\n\n💰 REMUNERAÇÃO: Até – USD 5k/mês\n📍 LOCALIZAÇÃO: Qualquer localidade do Brasil\n🏠 MODELO: Inicialmente remoto, com necessidade de mudança para Curitiba após a contratação\n🏢 HÍBRIDO: Após a mudança, atuação presencial 2x por semana em Curitiba – PR\n⏱️ MODELO: Full-time\n🇺🇸 IDIOMA: Inglês Avançado/Fluente, com experiência trabalhando com times dos EUA\n\n🎯 REQUISITOS OBRIGATÓRIOS\n\n🛑 +8 anos de experiência em desenvolvimento de software\n\n✅ Experiência sólida com React e desenvolvimento Front-end\n✅ Desenvolvimento end-to-end: design, implementação, testes, deploy e suporte\n✅ Integração com APIs, gerenciamento de estado e tratamento de erros\n✅ Otimização de performance e escalabilidade\n✅ Testes automatizados: unitários, integração e E2E\n✅ Experiência com CI/CD\n✅ Monitoramento, observabilidade e resolução de incidentes\n✅ Forte senso de ownership e autonomia\n✅ Colaboração com times de Produto e Engenharia\n✅ Ensino Superior em Ciência da Computação, Engenharia ou áreas correlatas\n✅ Inglês avançado para comunicação diária com equipes internacionais\n✅ Disponibilidade para mudança para Curitiba e atuação híbrida 2x por semana\n\n🤩 DIFERENCIAIS\n\n✅ Experiência em Healthcare\n✅ Conhecimento de HIPAA / PHI\n✅ Forte visão crítica sobre UX e experiência do usuário\n✅ Experiência com observabilidade e monitoramento de aplicações Front-end\n\n📌 RESPONSABILIDADES TÉCNICAS\n\n🔹 Desenvolver e evoluir funcionalidades com foco em UX, performance e escalabilidade\n🔹 Integrar aplicações Front-end com APIs\n🔹 Implementar estratégias de gerenciamento de estado e tratamento de erros\n🔹 Garantir qualidade através de testes automatizados e CI/CD\n🔹 Monitorar aplicações após os releases\n🔹 Atuar na resolução de incidentes e melhoria contínua\n🔹 Colaborar com Produto e Engenharia na definição de soluções técnicas\n\n📩 COMO SE CANDIDATAR\n\nAtende aos requisitos, tem +8 anos de experiência e possui disponibilidade para se mudar para Curitiba?\n\n👇🏻 Chame através do link abaixo e envie seu CV em inglês, em PDF:👇🏻 \n\nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n#React #ReactJS #FrontendEngineer #SeniorFrontendEngineer #FrontendDeveloper #SoftwareEngineer #VagasTI #TechJobs #RemoteJobs #InternationalJobs #HealthcareTech #Healthtech #LATAMTech #SeniorDeveloper #TechCareers #CuritibaTI",
+                "excerpt": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+                "issueState": "open",
+                "contentHash": "c9e500690268f1fab6e9f8f6e0c547156ff4d2dd395bd659fac393fd1f319d12",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "especialista",
+                  "híbrido",
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "especialista",
+                  "híbrido",
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "createdAt": "2026-08-27T22:08:53Z",
+                "updatedAt": "2026-10-27T03:00:50Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8551",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "Brazil · Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "design",
+                    "frontend",
+                    "support"
+                  ],
+                  "technologies": [
+                    "react"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "full-time"
+                  ],
+                  "workModels": [
+                    "hybrid",
+                    "on-site",
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_4069aaa4b8ed2c6ca16fa901",
+                    "sourceId": "frontendbr/vagas#8551",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8551",
+                    "createdAt": "2026-08-27T22:08:53Z",
+                    "updatedAt": "2026-10-27T03:00:50Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-08-27T22:08:53Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_d71471df3543c2014e94e7a8",
+        "revision": "a4bfba077ead61bdd7053db3466c5b5cc4a425f09af851af5a16d0db7e4e1b6b",
+        "idempotencyKey": "openings:job:gh_d71471df3543c2014e94e7a8:a4bfba077ead61bdd7053db3466c5b5cc4a425f09af851af5a16d0db7e4e1b6b"
+      },
+      "canonical": {
+        "title": "[Híbrido] Developer Full Stack Python AI/LLM - Convolut",
+        "summary": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_d71471df3543c2014e94e7a8",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_d71471df3543c2014e94e7a8",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_d71471df3543c2014e94e7a8",
+              "revision": "a4bfba077ead61bdd7053db3466c5b5cc4a425f09af851af5a16d0db7e4e1b6b",
+              "canonicalPath": "/jobs/gh_d71471df3543c2014e94e7a8",
+              "title": "[Híbrido] Developer Full Stack Python AI/LLM - Convolut",
+              "summary": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+              "status": "active",
+              "contentSha256": "411c5715bc427230b5d4379d0a1aa285276915ea784f749838da3915b288ad25",
+              "content": {
+                "id": "gh_d71471df3543c2014e94e7a8",
+                "sourceId": "frontendbr/vagas#8550",
+                "title": "[Híbrido] Developer Full Stack Python AI/LLM - Convolut",
+                "description": "<!-- \n==================================================\nPOR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!\n\n!!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!!\n\nNão faça distinção de gênero no título da vaga.\n\nUse: \"Front-End Developer\" ao invés de \n\"Desenvolvedor Front-End\" \\o/\n\nExemplo: `[São Paulo] Front-End Developer na NOME DA EMPRESA`\n==================================================\n-->\n\n## Nossa empresa\n\n**Convolut**\n\nConectamos pessoas e empresas, facilitando para que todos resolvam suas pendências. Somos uma startup em estágio inicial. O MVP está pronto e rodando ponta a ponta, e o primeiro cliente está começando a operar agora. Os founders têm bastante relacionamento no mercado e hoje temos mais clientes no pipeline do que conseguimos atender. Estamos buscando pessoas para fazer parte do founding team.\n\n## Descrição da vaga\n\nBuscamos uma pessoa desenvolvedora para integrar o time fundador e atuar no nosso sistema de negociação inteligente, multicanal e multimodal, que assume e otimiza toda a régua de cobrança de clientes inadimplentes (voz, WhatsApp, SMS e e-mail).\n\n**Atividades:**\n- Colocar em produção o sistema construído em LLM;\n- Desenvolvimento de funcionalidades no Back-End;\n- Desenvolvimento de funcionalidades no Front-End;\n- Aplicar melhores práticas de documentação de código desenvolvido.\n\n**Remuneração:**\n- Até R$ 18.000 / mês\n\n## Local\n\nHíbrido - São Paulo, SP (Av. Brigadeiro Faria Lima, 2391, cj 7)\n*(Não aceita candidatos de outra cidade)*\n\n## Requisitos\n\n**Obrigatórios:**\n- Full stack: Python (FastAPI) e React / TypeScript no dia a dia;\n- Postgres;\n- Infraestrutura com DigitalOcean e Docker;\n- Experiência com sistemas assíncronos, filas e integrações com APIs de terceiros;\n- Uso nativo de ferramentas de IA para programação;\n- Autonomia para tocar projetos de ponta a ponta e visão de negócio.\n\n**Desejáveis:**\n- Já ter colocado LLM em produção e não apenas em POC: prompt, orquestração de agente, controle de custo, tratamento de resposta ruim do modelo;\n- Experiência com telefonia e voz (LiveKit, Twilio, SIP) ou WhatsApp Cloud API;\n- Ter trabalhado em fintech, cobrança ou crédito;\n- Vivência em early-stage.\n\n## Benefícios\n\n- Oportunidade de fazer parte do founding team (perspectiva de equity / sociedade);\n- Remuneração compatível com o mercado (até R$ 18k).\n\n## Contratação\n\nPJ\n\n## Como se candidatar\nLink para se candidatar:\nhttps://kibryp.s.gy/MSsMud\n\n## Labels\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Híbrido",
+                "excerpt": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+                "issueState": "open",
+                "contentHash": "a4bfba077ead61bdd7053db3466c5b5cc4a425f09af851af5a16d0db7e4e1b6b",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "estágio",
+                  "híbrido",
+                  "pj",
+                  "stale",
+                  "são paulo",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "estágio",
+                  "híbrido",
+                  "pj",
+                  "stale",
+                  "são paulo",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Arisnaldo",
+                  "name": "Arisnaldo",
+                  "handle": "Arisnaldo",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/103151770?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "createdAt": "2026-08-27T21:53:59Z",
+                "updatedAt": "2026-10-27T03:00:52Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8550",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "city": "São Paulo",
+                  "subdivision": "SP",
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "São Paulo, SP · Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "docker",
+                    "postgres",
+                    "python",
+                    "react",
+                    "typescript"
+                  ],
+                  "seniority": [
+                    "internship",
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "contractor",
+                    "internship"
+                  ],
+                  "workModels": [
+                    "hybrid"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_d71471df3543c2014e94e7a8",
+                    "sourceId": "frontendbr/vagas#8550",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8550",
+                    "createdAt": "2026-08-27T21:53:59Z",
+                    "updatedAt": "2026-10-27T03:00:52Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-08-27T21:53:59Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
