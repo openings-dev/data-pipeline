@@ -1,6 +1,129 @@
 {
-  "generatedAt": "2026-10-27T03:07:01.419Z",
+  "generatedAt": "2026-10-27T17:08:31.104Z",
   "items": {
+    "gh_e2663887b815fdaa55ecd543": {
+      "id": "gh_e2663887b815fdaa55ecd543",
+      "sourceId": "soujava/vagas-java#1972",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Integração de Pedidos) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nPedidos chegam para a empresa por vários canais: API de parceiro, webhook e arquivo. Cada canal fala um dialeto diferente, e todos precisam virar o mesmo pedido interno antes de seguir para separação e entrega. O serviço que faz essa conversão é Java com Spring Boot, e publica cada pedido normalizado em um tópico Kafka. Seu trabalho vai ser receber, normalizar e não perder pedido. Isso significa aceitar a chamada do parceiro, validar o que veio, traduzir código de produto e de cliente para o cadastro interno e responder rápido, mesmo quando o processamento continua depois em segundo plano. Também significa lidar com entrega repetida: parceiro que não recebe confirmação manda o mesmo pedido de novo, e o sistema precisa reconhecer que já viu aquele identificador. É um bom lugar para aprender mensageria com problema real, sem ter de desenhar a arquitetura sozinho.\n\n- Implementar endpoints que recebem pedido por API e webhook de canais externos.\n- Converter o formato de cada canal para o modelo interno de pedido.\n- Publicar e consumir mensagens em tópicos Kafka com tratamento de erro.\n- Detectar entrega repetida pelo identificador do parceiro e evitar pedido duplicado.\n- Guardar a carga original recebida, para investigar divergência depois.\n- Escrever teste automatizado com exemplo real de carga de cada canal.\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em área de tecnologia, ou projeto próprio publicado com código Java seu.\n- Entender requisição HTTP, verbo, código de status e corpo em JSON.\n- Ler e alterar classes Java em projeto existente.\n- Escrever consulta SQL simples para conferir o que foi gravado.\n- Usar Git com branch e pull request.\n\n**Diferenciais:**\n- Ter usado Spring Boot para construir uma API, mesmo em estudo.\n- Ter encostado em fila ou tópico (Kafka, RabbitMQ, SQS).\n- Conhecer Docker Compose para subir dependência local.\n- Ter consumido API pública de terceiro em algum projeto.\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 4.300 a R$ 6.200 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-integracao-de-pedidos-360?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Pedidos chegam para a empresa por vários canais: API de p...",
+      "issueState": "open",
+      "contentHash": "512b6261cbbf9794a8feee9cd0d4a6ace757d43c4527c36bbd434b6a58db5b0b",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "git",
+        "júnior",
+        "pj",
+        "rabbitmq",
+        "remoto",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "git",
+        "júnior",
+        "pj",
+        "rabbitmq",
+        "remoto",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4300,
+        "max": 6200,
+        "period": "month"
+      },
+      "createdAt": "2026-10-27T12:14:47Z",
+      "updatedAt": "2026-10-27T12:15:02Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1972",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_e2663887b815fdaa55ecd543",
+          "sourceId": "soujava/vagas-java#1972",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1972",
+          "createdAt": "2026-10-27T12:14:47Z",
+          "updatedAt": "2026-10-27T12:15:02Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-27T12:14:47Z",
+        "status": "fresh"
+      }
+    },
     "gh_e20c87ec9b8a84e4069f865e": {
       "id": "gh_e20c87ec9b8a84e4069f865e",
       "sourceId": "frontendbr/vagas#8552",
@@ -20,9 +143,7 @@
       },
       "tags": [
         "design",
-        "formato-sugerido",
         "node",
-        "node.js",
         "principal",
         "react",
         "remoto",
@@ -30,9 +151,7 @@
       ],
       "sourceTags": [
         "design",
-        "formato-sugerido",
         "node",
-        "node.js",
         "principal",
         "react",
         "remoto",
@@ -124,22 +243,6 @@
           }
         },
         {
-          "id": "gh_f12187a6f9db3fd08703be81",
-          "sourceId": "backend-br/vagas#12440",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12440",
-          "createdAt": "2026-10-07T14:02:31Z",
-          "updatedAt": "2026-10-24T18:03:01Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        },
-        {
           "id": "gh_287c589db6e25b670a056e55",
           "sourceId": "frontendbr/vagas#8566",
           "repository": "frontendbr/vagas",
@@ -157,7 +260,7 @@
         }
       ],
       "deduplication": {
-        "sourceCount": 3
+        "sourceCount": 2
       },
       "freshness": {
         "ageDays": 60,
@@ -344,7 +447,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 169,
+        "ageDays": 170,
         "publishedAt": "2026-05-10T14:04:19Z",
         "status": "stale"
       }
