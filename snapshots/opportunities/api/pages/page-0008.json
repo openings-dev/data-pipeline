@@ -1,16 +1,17 @@
 {
-  "generatedAt": "2026-10-27T03:07:01.419Z",
+  "generatedAt": "2026-10-27T11:21:36.557Z",
   "page": 8,
   "pageSize": 20,
   "nextPage": "api/pages/page-0009.json",
   "ids": [
+    "gh_81101225f8f8a2c29de5c5b8",
+    "gh_447cc5783e558f477cf03095",
     "gh_f57d60a6e9ecbafe44d2c3d3",
     "gh_803be473276db52bc1817412",
     "gh_0dd6d2f3bc8549a37164fb89",
     "gh_5920044c481a81f4ba029054",
     "gh_51659470ccf0887616c6cd66",
     "gh_b966e0258e506bd3daf3e811",
-    "gh_d450ba5b01eda9a9621a176b",
     "gh_13d45f8cd2e50adab5e7c669",
     "gh_ec07fc26b3d3475cc24bbd29",
     "gh_7c7e95c00a6ef2ab493c2e3a",
@@ -22,10 +23,196 @@
     "gh_eda7e9f19d68c888f48e9396",
     "gh_3a132b5e1856f9ea8037b5b2",
     "gh_a8dd8982a3db2ecc96d812da",
-    "gh_ee99b9024dfa2fe2694acc81",
-    "gh_2bf1364281c72d4aa07b6d73"
+    "gh_ee99b9024dfa2fe2694acc81"
   ],
   "items": [
+    {
+      "id": "gh_81101225f8f8a2c29de5c5b8",
+      "sourceId": "rebase-network/who-is-hiring#1305",
+      "title": "[日本大阪] web3 交易所 高级测试开发工程师（区块链钱包方向） 8000 USD",
+      "description": "岗位：高级测试开发工程师（区块链钱包方向）\n工作地点：日本大阪\n薪资范围：5,000–10,000 美金/月\n语言要求：中文\n工时：8 小时，周休 1 日\n国籍：不限\n\n工作职责\n1. 参与产品及技术方案评审，识别资产、权限、状态机、幂等、并发及资料一致性风险。\n2. 根据业务风险制定测试策略、测试计画、测试矩阵及发布标准。\n3. 负责托管钱包、AA 钱包、理财、企业金库及多签业务的功能、API、整合及 E2E 测试。\n4. 验证充值、提币、转帐、签名、广播、链上确认、链重组、交易替换及对帐等核心流程。\n5. 负责 OIDC、SSO、SLO、JWT、Token 生命周期、多租户隔离及权限控制测试。\n6. 建设及维护 API 自动化、链上场景自动化及关键业务 E2E 自动化测试。\n7. 与后端、前端及智能合约开发共同完善单元测试、元件测试、Foundry 场景测试及 CI/CD 品质门禁。\n8. 负责 PC、H5、iOS、Android 客户端关键流程的相容性及异常场景测试。\n9. 设计重复请求、并发操作、RPC 故障、讯息乱序、回调重复、服务重启等异常测试。\n10. 跟进及分析生产问题，推动事故复盘并将生产缺陷转化为自动化回归测试案例。\n11. 建立缺陷管理、版本回归、品质指标及发布检查机制。\n12. 推动研发团队建立共同承担品质责任的工程​​文化。\n\n任职要求\n1. 5 年以上软体测试或测试开发经验，特别优秀者不以年限为唯一标准。\n2. 具备后端 API、分散式系统及资料一致性测试能力。\n3. 熟悉 Go、TypeScript 或 Python 至少一门程式语言。\n4. 能独立设计及编写稳定、可维护的自动化测试。\n5. 熟悉 Linux、Git、Docker 及常见 CI/CD 流程。\n6. 熟悉 HTTP、REST、JSON、WebSocket、Webhook 及 SQL。\n7. 理解状态机、幂等、重试、逾时、并发、最终一致性及故障补偿。\n8. 理解 EVM 交易生命周期，包括 Gas、Nonce、Receipt、Event、Confirmation、Revert、Reorg。\n9. 具备权限安全、租户隔离及资产风险意识。\n10. 能使用中文进行高品质技术沟通及文件撰写。\n11. 能在需求不完整时主动推动产品及研发补充边界条件。\n\n加分条件\n\n1. 具备托管钱包、交易所、支付、清结算或金融帐务测试经验。\n2. 具备 ERC-4337、智能帐户、Bundler 或 Paymaster 经验。\n3. 具备多签、MPC、HSM 或企业金库经验。\n4. 具备 Solidity、Foundry 测试经验。\n5. 具备 OIDC、OAuth 2.0、SSO、SLO 测试经验。\n6. 熟悉 Playwright、Appium、Detox 或 Maestro。\n7. 具备效能测试、故障注入或基础安全测试经验。\n8. 具备 DeFi、理财产品或链上资产管理经验。\n\n不适合\n1. 没有区块链测试经验。\n2. 主要按照既有测试案例进行手动测试。\n3. 不具备基本程式设计及自动化测试能力。\n4. 只关注页面显示，不关注服务端状态及资料一致性。\n5. 不理解幂等、并发、重试及非同步状态。\n6. 对权限越权、租户隔离及资产风险不敏感。\n7. 无法独立定位 API、资料库、日志及链上交易问题。\n\n备注：\n1. 公司为区块链基础设施公司。\n2. 产品涵盖智能帐户钱包、托管钱包、数位资产理财、企业级数位资产金库、多签及风控系统。\n3. 客户端包含 PC Web、H5、iOS、Android。\n4. 后端主要使用 Go，智能合约使用 Solidity／Foundry，前端主要使用 JavaScript／TypeScript。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
+      "excerpt": "岗位：高级测试开发工程师（区块链钱包方向） 工作地点：日本大阪 薪资范围：5,000–10,000 美金/月 语言要求：中文 工时：8 小时，周休 1 日 国籍：不限 工作职责 1. 参与产品及技术方案评审，识别资产、权限、状态机、幂等、并发及资料一致性风险。 2. 根据业务风险制定测试策略、测试计画、测试矩阵及发布标准。 3. 负责托管钱包、AA 钱包、理财、企业金库及多签业务的功能、API、整合及 E2E 测试。 4. 验证充...",
+      "issueState": "open",
+      "contentHash": "5b8c627feb465c602eec1e722c0868a9bcab4194f7a016fcdae4dc100a2a86c5",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "golang",
+        "java",
+        "python",
+        "typescript"
+      ],
+      "sourceTags": [
+        "golang",
+        "java",
+        "python",
+        "typescript"
+      ],
+      "author": {
+        "id": "fous6699",
+        "name": "fous6699",
+        "handle": "fous6699",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-09-23T10:36:28Z",
+      "updatedAt": "2026-09-23T10:36:28Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1305",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "java",
+          "javascript",
+          "python",
+          "rust",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_81101225f8f8a2c29de5c5b8",
+          "sourceId": "rebase-network/who-is-hiring#1305",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1305",
+          "createdAt": "2026-09-23T10:36:28Z",
+          "updatedAt": "2026-09-23T10:36:28Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 34,
+        "publishedAt": "2026-09-23T10:36:28Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_447cc5783e558f477cf03095",
+      "sourceId": "rebase-network/who-is-hiring#1304",
+      "title": "[日本大阪] web3交易所  产品经理  30-50K RMB",
+      "description": "岗位：产品经理\n工作地点：日本大阪\n薪资范围：面议\n语言要求：中文\n工时：8 小时，周休 1 日\n\n工作职责\n1. 将业务策略转化为可落地的产品方案，确保研发团队能准确理解并高效执行。\n2. 负责市场调研及竞品分析。\n3. 追踪国内外区块链金融、DeFi、CeFi 及传统电子银行发展趋势。\n4. 定期输出竞品分析报告，为产品迭代提供方向。\n5. 将复杂金融业务需求转化为清晰的产品需求文件 PRD。\n6. 绘制产品原型及互动流程。\n7. 梳理信托、理财、量化策略及 DApp 互动等业务流程。\n8. 设计风控、清结算对帐及异常处理机制。\n9. 结合链上及链下数据分析使用者行为。\n10. 与开发、测试及营运团队协作，推进专案落地。\n\n任职要求\n1. 3 年以上网际网路产品或金融科技产品经验。\n2. 必须熟悉区块链基础概念，如智能合约、公链、Gas、钱包互动等。\n3. 熟悉至少两类区块链应用场景，如 DeFi、资产 Token 化、去中心化身份等。\n4. 对信托、理财、量化交易等金融业务具备基本理解。\n5. 熟练使用 Axure、Figma、Visio、ProcessOn 等产品及流程工具。\n6. 具备强大的逻辑思维能力，能将复杂金融、合规、风控业务转化为简洁的产品逻辑。\n7. 金融、计算机、数学等相关专业背景者优先。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
+      "excerpt": "岗位：产品经理 工作地点：日本大阪 薪资范围：面议 语言要求：中文 工时：8 小时，周休 1 日 工作职责 1. 将业务策略转化为可落地的产品方案，确保研发团队能准确理解并高效执行。 2. 负责市场调研及竞品分析。 3. 追踪国内外区块链金融、DeFi、CeFi 及传统电子银行发展趋势。 4. 定期输出竞品分析报告，为产品迭代提供方向。 5. 将复杂金融业务需求转化为清晰的产品需求文件 PRD。 6. 绘制产品原型及互动流程。 7...",
+      "issueState": "open",
+      "contentHash": "fc4d9096b7294a5efe8c3fadd8f1be00971848ca8e760e4e43700f79c07e729f",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "golang"
+      ],
+      "sourceTags": [
+        "golang"
+      ],
+      "author": {
+        "id": "fous6699",
+        "name": "fous6699",
+        "handle": "fous6699",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-09-23T10:34:47Z",
+      "updatedAt": "2026-09-23T10:34:47Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1304",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "go",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_447cc5783e558f477cf03095",
+          "sourceId": "rebase-network/who-is-hiring#1304",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1304",
+          "createdAt": "2026-09-23T10:34:47Z",
+          "updatedAt": "2026-09-23T10:34:47Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 34,
+        "publishedAt": "2026-09-23T10:34:47Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_f57d60a6e9ecbafe44d2c3d3",
       "sourceId": "rebase-network/who-is-hiring#1303",
@@ -108,7 +295,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 33,
+        "ageDays": 34,
         "publishedAt": "2026-09-23T10:28:53Z",
         "status": "aging"
       }
@@ -204,7 +391,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 33,
+        "ageDays": 34,
         "publishedAt": "2026-09-23T10:23:20Z",
         "status": "aging"
       }
@@ -291,7 +478,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 33,
+        "ageDays": 34,
         "publishedAt": "2026-09-23T10:13:17Z",
         "status": "aging"
       }
@@ -371,7 +558,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 33,
+        "ageDays": 34,
         "publishedAt": "2026-09-23T05:11:27Z",
         "status": "aging"
       }
@@ -561,92 +748,6 @@
       "freshness": {
         "ageDays": 35,
         "publishedAt": "2026-09-21T20:47:46Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_d450ba5b01eda9a9621a176b",
-      "sourceId": "rebase-network/who-is-hiring#1299",
-      "title": "[深圳/上海/北京] 帕西尼（PaXini Tech）公司诚聘 强化学习资深工程师 薪水 75万-150万RMB",
-      "description": "## 帕西尼（PaXini Tech）\n成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。\n\n## 薪资福利待遇\n4万-6万/月*15\n职位联系人微信 QX200423\n## 地点\n  深圳宝安区前城中心34楼        上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号\n- 工作地点：\n- 联系方式：职位联系人微信 QX200423\n\n## 工作性质\n全职\n  \n## 岗位要求、职责\n本岗位聚焦物理AI强化学习系统，在物理世界闭环迭代，通过主动观测、物理交互，自发学习物体动力学、接触特性与长时序任务技能，进化和提升推理能力，打通从仿真训练到真机部署的完整链路。\n\n岗位描述：\n1. 面向通用机器人操作任务，负责物理强化学习核心算法研究，提升样本高效学习与策略训练稳健性，推动算法在物理系统上的可靠落地。\n2. 研究预训练VLA/世界模型与强化学习融合方案，探索感知—决策—执行闭环中的策略学习，实现长程任务、接触密集型复杂任务优化。\n3. 设计奖励策略、课程学习策略、安全探索机制，解决真实世界噪声、时延、接触动力学不确定性，持续迭代算法架构，探索机器人自主持续进化路线。\n3. 协同工程团队，搭建支持在线持续学习所需的完整训练管线，构建大规模强化学习基础设施，管理真机交互数据、经验回放、策略迭代、自动化评测。负责在真机系统上的部署验证与创新应用展示。\n\n职位要求：\n1. 国内或国外Top 985 院校，硕士及以上学历，计算机、人工智能、自动化、应用数学相关专业；具备扎实的强化学习理论基础与研究功底，机器人物理强化学习落地经验；\n2. 熟悉VLA / WM / WAM等具身算法，有机械臂/人形强化学习落地经验，完整经历从算法设计到真机调试全流程更佳；\n3. 扎实强化学习理论基础与研究功底，深刻理解探索-利用、样本效率、策略稳定性核心挑战；\n4. 熟练掌握 Python / PyTorch 等编程语言与深度学习框架,具备较强的算法实现与实验设计能力；\n5. 具备大规模机器学习训练系统实战经验，能够搭建、优化面向真机交互场景的训练Infra，管理海量机器人交互轨迹数据。\n6. 具备极强问题拆解能力，能够从真机失败案例定位策略、表征、动力学、数据层面根因，驱动持续迭代优化。\n\n## 工作环境\n良好",
-      "excerpt": "## 帕西尼（PaXini Tech） 成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。 ## 薪资福利待遇 4万-6万/月*15 职位联系人微信 QX200423 ## 地点 深圳宝安区前城中心34楼 上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号 - 工作地点： - 联系方式：职位联系人微信...",
-      "issueState": "open",
-      "contentHash": "a5395e689c57adb8ca6bce6456dbb602b3292623d305d44d032e71d0d4ec8e45",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "python"
-      ],
-      "sourceTags": [
-        "python"
-      ],
-      "author": {
-        "id": "Winnie7111",
-        "name": "Winnie7111",
-        "handle": "Winnie7111",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/332054296?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-21T14:04:13Z",
-      "updatedAt": "2026-09-21T14:04:13Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1299",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_d450ba5b01eda9a9621a176b",
-          "sourceId": "rebase-network/who-is-hiring#1299",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1299",
-          "createdAt": "2026-09-21T14:04:13Z",
-          "updatedAt": "2026-09-21T14:04:13Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 35,
-        "publishedAt": "2026-09-21T14:04:13Z",
         "status": "aging"
       }
     },
@@ -861,7 +962,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 37,
+        "ageDays": 38,
         "publishedAt": "2026-09-19T10:15:37Z",
         "status": "aging"
       }
@@ -1895,147 +1996,6 @@
       "freshness": {
         "ageDays": 45,
         "publishedAt": "2026-09-11T12:44:53Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_2bf1364281c72d4aa07b6d73",
-      "sourceId": "awesome-jobs/vietnam#5055",
-      "title": "Australian marketplace startup - Senior Software Engineer (React / Full-Stack) - Remote/Vietnam - FT",
-      "description": "## Location\n\n* Remote / Vietnam (distributed team across Australia and Vietnam)\n\n## Salary Expectation\n\n* Competitive (negotiable based on experience)\n\n## Requirements\n\n* 5+ years of professional software development experience\n* Experience designing and building full-stack features end-to-end (UI through backend integration)\n* Backend development and API design (REST/gRPC)\n* Relational databases and data modelling\n* Cloud platforms (AWS preferred) and containerisation\n* CI/CD pipelines and automated deployment practices\n* Strong written/spoken English for distributed, async-first collaboration\n\n## Skills\n\n### Must Have\n\n* React Strength track: React, TypeScript, modern build tools (Webpack, Babel), state management (TanStack or similar)\n* Full-Stack Generalist track: React / React Native plus work across Rails, Kotlin, and Golang services\n* Comfort working across multiple programming languages and stacks\n* Writing comprehensive tests within strong CI/CD practices\n* Applying AI tooling effectively in day-to-day engineering\n\n### Ideally\n\n* User analytics and data transformation pipelines\n* Prior work in marketplace / consumer product environments\n* Experience migrating legacy systems to modern architecture patterns\n\n### Responsibilities\n\nOwn full-stack product features on the Product Engineering team across two related senior tracks (React Strength and Full-Stack Generalist).\n\n### You’ll be responsible for\n\n* Designing and building full-stack features across the React/TypeScript (and React Native) frontend and Kotlin / Go / Rails backends\n* Implementing robust API integrations following BFF (Backend for Frontend) patterns\n* Building responsive, accessible user interfaces using the design system\n* Writing tests and contributing to CI/CD, observability, monitoring, and on-call\n* Mentoring teammates and raising engineering standards\n* Judging when a complex solution is warranted vs when a simpler one ships reliably\n\n### You can bring\n\n* Strong product thinking and attention to craft\n* Ownership and autonomy in a distributed, async-first environment\n* A consistent focus on user experience and technical quality\n\n### Why it would be awesome to work with us\n\n* Own features end-to-end on a real marketplace product, not slice-only tickets\n* Modern frontend plus a multi-language microservices ecosystem (Golang, Rails, Kotlin)\n* Distributed team across Australia, Portugal, and Vietnam\n* Culture that prefers the simplest solution that gets the job done\n\n### What's the roadmap is like for the near future.\n* Ongoing migration from legacy systems to modern architecture patterns. Heavily AI-assisted SLDC (Claude account provided)\n* BFF-based API integration across a multi-language backend\n* Design-system-driven UI shared across web (and mobile for the Generalist track)\n\n### Contact\nSMS / WhatsApp: 0583362116",
-      "excerpt": "## Location * Remote / Vietnam (distributed team across Australia and Vietnam) ## Salary Expectation * Competitive (negotiable based on experience) ## Requirements * 5+ years of professional software development exper...",
-      "issueState": "open",
-      "contentHash": "5d82e1ac8f91f0f8053d16acbff2d96ee74025343c83006572e37c77224a7447",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "frontend",
-        "golang",
-        "react",
-        "remote",
-        "senior",
-        "typescript"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "frontend",
-        "golang",
-        "react",
-        "remote",
-        "senior",
-        "typescript"
-      ],
-      "author": {
-        "id": "aiversonhr",
-        "name": "aiversonhr",
-        "handle": "aiversonhr",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/223813733?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-09-10T07:14:37Z",
-      "updatedAt": "2026-09-30T10:45:44Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Australia",
-        "countryCode": "AU",
-        "region": "Oceania",
-        "city": "*  / Vietnam (distributed team across  and Vietnam)",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "*  / Vietnam (distributed team across  and Vietnam), Australia · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "frontend",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "kotlin",
-          "react",
-          "react-native",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_2bf1364281c72d4aa07b6d73",
-          "sourceId": "awesome-jobs/vietnam#5055",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
-          "createdAt": "2026-09-10T07:14:37Z",
-          "updatedAt": "2026-09-30T10:45:44Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_4dca58465e67cfcc6360ed90",
-          "sourceId": "awesome-jobs/jobs#5055",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5055",
-          "createdAt": "2026-09-10T07:14:37Z",
-          "updatedAt": "2026-09-30T10:45:44Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 46,
-        "publishedAt": "2026-09-10T07:14:37Z",
         "status": "aging"
       }
     }
