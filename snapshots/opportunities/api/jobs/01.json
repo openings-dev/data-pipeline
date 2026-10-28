@@ -1,6 +1,131 @@
 {
-  "generatedAt": "2026-10-28T11:55:16.852Z",
+  "generatedAt": "2026-10-28T17:44:29.661Z",
   "items": {
+    "gh_01d165a4b737ad3ecc75a04b": {
+      "id": "gh_01d165a4b737ad3ecc75a04b",
+      "sourceId": "soujava/vagas-java#1973",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Marketplace de Lojistas) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nNo marketplace, cada lojista cadastra seus produtos, define preço e estoque e recebe os pedidos que chegam pelo site. Um único carrinho pode ter itens de três lojistas diferentes, e esse pedido precisa ser dividido em partes, cada uma com seu prazo de envio, sua nota fiscal e seu repasse financeiro. Você vai trabalhar no serviço em Java com Spring Boot que cuida dessa divisão e do painel de pedidos do lojista. Os erros que mais doem são os de repasse: comissão calculada sobre o valor errado, frete atribuído ao lojista errado, cancelamento parcial que não ajusta o valor a receber. Lojista que recebe a menos abre reclamação; lojista que recebe a mais raramente avisa. Cada lojista só pode ver os próprios pedidos e os próprios números, então toda consulta precisa respeitar esse limite sem depender de um filtro lembrado na tela.\n\n- Implementar a divisão do pedido em subpedidos por lojista\n- Calcular comissão e valor a repassar para cada parte do pedido\n- Tratar o cancelamento parcial ajustando o repasse correspondente\n- Construir endpoints do painel do lojista com paginação e filtros\n- Garantir na camada de repositório que cada lojista acesse só os próprios dados\n- Escrever testes com JUnit e Mockito para os cálculos de repasse\n- Criar consultas JPA eficientes para listas grandes de pedidos\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Curso, estágio ou projeto próprio em Java\n- Java com orientação a objetos e coleções\n- Noção de Spring Boot e de JPA\n- SQL com agrupamento e soma\n- Cuidado com cálculo que envolve dinheiro\n- Leitura de regra de negócio escrita por outra área\n- Git no fluxo de pull request\n\n**Diferenciais:**\n- Mockito em testes de unidade\n- Noção de multilocação, em que vários clientes compartilham o mesmo sistema\n- Ter vendido em marketplace ou ajudado alguém a vender\n- Docker Compose\n- Noção de como nota fiscal e repasse se relacionam num marketplace\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.000 a R$ 4.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-marketplace-de-lojistas-501?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga No marketplace, cada lojista cadastra seus produtos, defi...",
+      "issueState": "open",
+      "contentHash": "fee102834fcf91299277113390dc404f61b2fa85ca355b92afb26da742577f2b",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "estágio",
+        "git",
+        "júnior",
+        "pj",
+        "remoto",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "estágio",
+        "git",
+        "júnior",
+        "pj",
+        "remoto",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3000,
+        "max": 4500,
+        "period": "month"
+      },
+      "createdAt": "2026-10-28T12:19:34Z",
+      "updatedAt": "2026-10-28T12:20:10Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1973",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_01d165a4b737ad3ecc75a04b",
+          "sourceId": "soujava/vagas-java#1973",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1973",
+          "createdAt": "2026-10-28T12:19:34Z",
+          "updatedAt": "2026-10-28T12:20:10Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-28T12:19:34Z",
+        "status": "fresh"
+      }
+    },
     "gh_01a0a1ad79a225ed23493c50": {
       "id": "gh_01a0a1ad79a225ed23493c50",
       "sourceId": "awesome-jobs/jobs#5074",
@@ -239,7 +364,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 95,
+        "ageDays": 96,
         "publishedAt": "2026-07-24T14:47:43Z",
         "status": "stale"
       }

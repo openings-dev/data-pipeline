@@ -54439,6 +54439,431 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_584abed0049e3bbac72854c5",
+        "revision": "9a79ee2c0a2670d08e59138a8c25a7553daaec28a7e1a501528bd4c681ecb6be",
+        "idempotencyKey": "openings:job:gh_584abed0049e3bbac72854c5:9a79ee2c0a2670d08e59138a8c25a7553daaec28a7e1a501528bd4c681ecb6be"
+      },
+      "canonical": {
+        "title": "[Remoto] Back-end Software Engineer - USD (Micro1)",
+        "summary": "🌎 OPORTUNIDADE INTERNACIONAL | REMOTA | PAGAMENTO EM USD 💻 Backend Software Engineer | Engenheiro(a) de Software Backend 🚀 Profissionais de backend, esta oportunidade pode ser o próximo passo da sua carreira intern...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_584abed0049e3bbac72854c5",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_584abed0049e3bbac72854c5",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_584abed0049e3bbac72854c5",
+              "revision": "9a79ee2c0a2670d08e59138a8c25a7553daaec28a7e1a501528bd4c681ecb6be",
+              "canonicalPath": "/jobs/gh_584abed0049e3bbac72854c5",
+              "title": "[Remoto] Back-end Software Engineer - USD (Micro1)",
+              "summary": "🌎 OPORTUNIDADE INTERNACIONAL | REMOTA | PAGAMENTO EM USD 💻 Backend Software Engineer | Engenheiro(a) de Software Backend 🚀 Profissionais de backend, esta oportunidade pode ser o próximo passo da sua carreira intern...",
+              "status": "active",
+              "contentSha256": "fc42f50acc0b1de6108c5e6f6b02bcc8ade312dd23b360698f51dea8f2f9eb3b",
+              "content": {
+                "id": "gh_584abed0049e3bbac72854c5",
+                "sourceId": "backend-br/vagas#12442",
+                "title": "[Remoto] Back-end Software Engineer - USD (Micro1)",
+                "description": "🌎 OPORTUNIDADE INTERNACIONAL | REMOTA | PAGAMENTO EM USD\n\n💻 Backend Software Engineer | Engenheiro(a) de Software Backend\n\n🚀 Profissionais de backend, esta oportunidade pode ser o próximo passo da sua carreira internacional!\n\n💰 US$ 30 a US$ 100 por hora\n🌍 Trabalho remoto\n🇺🇸 Inglês avançado\n\n🛠️ Tecnologias em destaque:\n• Python 3\n• Java\n• Node.js\n• Go\n• Rust\n• TypeScript\n• C++\n\n🎯 O que procuram:\n• Experiência sólida em desenvolvimento backend\n• Construção de serviços escaláveis e APIs\n• Depuração, análise de performance e testes automatizados\n• Experiência com revisão e refatoração de código\n• Desenvolvimento de funcionalidades complexas em aplicações de grande escala\n• Conhecimento de algoritmos, estruturas de dados e fundamentos da ciência da computação\n• Boa capacidade analítica, resolução de problemas e comunicação técnica\n\n Perfil ideal: profissional com experiência comprovada em backend, foco em qualidade de código e capacidade de entregar soluções robustas e eficientes.\n\n📌 Como se candidatar: acesse o link da oportunidade abaixo.\n\n🔗 Link para candidatura: \nhttps://jobs.micro1.ai/post/6634c1b6-553f-4d60-a692-be005464a798?referralCode=4bab295f-cd81-448b-8077-e039a64f9a2c&utm_source=referral&utm_medium=share&utm_campaign=job_referral\n\n⚠️ Não aceito currículos no privado. As candidaturas devem ser realizadas diretamente pelo link informado.\n\n📢 Marque aquele profissional de backend que precisa conhecer essa oportunidade!\n\n🔔 Me siga para acompanhar mais vagas internacionais em tecnologia.",
+                "excerpt": "🌎 OPORTUNIDADE INTERNACIONAL | REMOTA | PAGAMENTO EM USD 💻 Backend Software Engineer | Engenheiro(a) de Software Backend 🚀 Profissionais de backend, esta oportunidade pode ser o próximo passo da sua carreira intern...",
+                "issueState": "open",
+                "contentHash": "9a79ee2c0a2670d08e59138a8c25a7553daaec28a7e1a501528bd4c681ecb6be",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "formato-sugerido",
+                  "go",
+                  "java",
+                  "node.js",
+                  "python",
+                  "remoto",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "sourceTags": [
+                  "formato-sugerido",
+                  "go",
+                  "java",
+                  "node.js",
+                  "python",
+                  "remoto",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "salary": {
+                  "currency": "USD",
+                  "min": 30,
+                  "max": 100,
+                  "period": "hour"
+                },
+                "createdAt": "2026-10-10T19:44:18Z",
+                "updatedAt": "2026-10-28T16:36:55Z",
+                "url": "https://github.com/backend-br/vagas/issues/12442",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai"
+                  ],
+                  "technologies": [
+                    "go",
+                    "java",
+                    "nodejs",
+                    "python",
+                    "rust",
+                    "typescript"
+                  ],
+                  "seniority": [],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "unknown",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_584abed0049e3bbac72854c5",
+                    "sourceId": "backend-br/vagas#12442",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12442",
+                    "createdAt": "2026-10-10T19:44:18Z",
+                    "updatedAt": "2026-10-28T16:36:55Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 17,
+                  "publishedAt": "2026-10-10T19:44:18Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_b1d7b3a976f64e5cf24ef658",
+        "revision": "3c698c921704eccd87712acdd7fdbc8b1a40c6e178108a74872825100945b3b2",
+        "idempotencyKey": "openings:job:gh_b1d7b3a976f64e5cf24ef658:3c698c921704eccd87712acdd7fdbc8b1a40c6e178108a74872825100945b3b2"
+      },
+      "canonical": {
+        "title": "[Remote] 量化团队诚聘 DEX 策略研究员 远程/香港/上海",
+        "summary": "## 公司/团队介绍 我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。 我们特别重视你亲自发现并验证过的套利机会：在P...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_b1d7b3a976f64e5cf24ef658",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_b1d7b3a976f64e5cf24ef658",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_b1d7b3a976f64e5cf24ef658",
+              "revision": "3c698c921704eccd87712acdd7fdbc8b1a40c6e178108a74872825100945b3b2",
+              "canonicalPath": "/jobs/gh_b1d7b3a976f64e5cf24ef658",
+              "title": "[Remote] 量化团队诚聘 DEX 策略研究员 远程/香港/上海",
+              "summary": "## 公司/团队介绍 我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。 我们特别重视你亲自发现并验证过的套利机会：在P...",
+              "status": "active",
+              "contentSha256": "7cfd717014cb136f73fe97d1e49612ff33f9299cc22236bd4839a5f77a31749b",
+              "content": {
+                "id": "gh_b1d7b3a976f64e5cf24ef658",
+                "sourceId": "rebase-network/who-is-hiring#1023",
+                "title": "[Remote] 量化团队诚聘 DEX 策略研究员 远程/香港/上海",
+                "description": "## 公司/团队介绍\n\n我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。\n\n我们特别重视你亲自发现并验证过的套利机会：在Polymarket上找到过概率偏差或跨平台价差，自己测试执行过；或在DEX上捕获过套利机会等，并有小额实盘经验。在我们这里，你将与算法和基础设施工程师合作，将个人发现升级为高效盈利策略。你的努力直接参与丰厚分红。\n\n## 薪资福利待遇\n薪资福利：  $2000 - $4000月，慷慨P&L分红、Token激励。支持远程，弹性工作制。\n\n## 地点\n\n- 工作地点：remote/香港/上海\n- 联系方式：TG：@ajwchai\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：是\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n- 将发现转化为脚本或bot的prototype，进行测试。  \n- 与团队协作，利用优化模型和高速执行系统实现规模化套利。  \n- 跟踪新市场与规则变化，主动探索机会。  \n- 负责实盘运行与策略迭代，收益与个人分红挂钩。\n\n职位要求：  \n- 动手能力强，能独立测试与解决问题。  \n- 对新平台有较快学习能力。\n- 1-2年区块链经验。\n\n\n## 工作环境\n和优秀的量化及infra工程师一起合作。期待与你共同探索链上量化机会！",
+                "excerpt": "## 公司/团队介绍 我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。 我们特别重视你亲自发现并验证过的套利机会：在P...",
+                "issueState": "open",
+                "contentHash": "3c698c921704eccd87712acdd7fdbc8b1a40c6e178108a74872825100945b3b2",
+                "repository": "rebase-network/who-is-hiring",
+                "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+                "region": "Global",
+                "country": "Global",
+                "sourceLocation": {
+                  "country": "Global",
+                  "countryCode": "GLOBAL",
+                  "region": "Global"
+                },
+                "tags": [
+                  "remote"
+                ],
+                "sourceTags": [
+                  "remote"
+                ],
+                "author": {
+                  "id": "albkong",
+                  "name": "albkong",
+                  "handle": "albkong",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/50094996?v=4"
+                },
+                "community": {
+                  "id": "rebase-network",
+                  "name": "rebase-network",
+                  "avatarUrl": "https://github.com/rebase-network.png?size=80",
+                  "repository": "rebase-network/who-is-hiring",
+                  "url": "https://github.com/rebase-network/who-is-hiring"
+                },
+                "salary": {
+                  "currency": "USD",
+                  "min": 2000,
+                  "max": 4000,
+                  "period": "year"
+                },
+                "createdAt": "2026-01-19T14:35:17Z",
+                "updatedAt": "2026-09-22T21:52:26Z",
+                "url": "https://github.com/rebase-network/who-is-hiring/issues/1023",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [],
+                  "technologies": [],
+                  "seniority": [],
+                  "employmentTypes": [],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "inferred",
+                  "seniority": "unknown",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_b1d7b3a976f64e5cf24ef658",
+                    "sourceId": "rebase-network/who-is-hiring#1023",
+                    "repository": "rebase-network/who-is-hiring",
+                    "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+                    "url": "https://github.com/rebase-network/who-is-hiring/issues/1023",
+                    "createdAt": "2026-01-19T14:35:17Z",
+                    "updatedAt": "2026-09-22T21:52:26Z",
+                    "community": {
+                      "id": "rebase-network",
+                      "name": "rebase-network",
+                      "avatarUrl": "https://github.com/rebase-network.png?size=80",
+                      "repository": "rebase-network/who-is-hiring",
+                      "url": "https://github.com/rebase-network/who-is-hiring"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 282,
+                  "publishedAt": "2026-01-19T14:35:17Z",
+                  "status": "stale"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_d450ba5b01eda9a9621a176b",
+        "revision": "a5395e689c57adb8ca6bce6456dbb602b3292623d305d44d032e71d0d4ec8e45",
+        "idempotencyKey": "openings:job:gh_d450ba5b01eda9a9621a176b:a5395e689c57adb8ca6bce6456dbb602b3292623d305d44d032e71d0d4ec8e45"
+      },
+      "canonical": {
+        "title": "[深圳/上海/北京] 帕西尼（PaXini Tech）公司诚聘 强化学习资深工程师 薪水 75万-150万RMB",
+        "summary": "## 帕西尼（PaXini Tech） 成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。 ## 薪资福利待遇 4万-6万/月*15 职位联系人微信 QX200423 ## 地点 深圳宝安区前城中心34楼 上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号 - 工作地点： - 联系方式：职位联系人微信...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_d450ba5b01eda9a9621a176b",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_d450ba5b01eda9a9621a176b",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_d450ba5b01eda9a9621a176b",
+              "revision": "a5395e689c57adb8ca6bce6456dbb602b3292623d305d44d032e71d0d4ec8e45",
+              "canonicalPath": "/jobs/gh_d450ba5b01eda9a9621a176b",
+              "title": "[深圳/上海/北京] 帕西尼（PaXini Tech）公司诚聘 强化学习资深工程师 薪水 75万-150万RMB",
+              "summary": "## 帕西尼（PaXini Tech） 成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。 ## 薪资福利待遇 4万-6万/月*15 职位联系人微信 QX200423 ## 地点 深圳宝安区前城中心34楼 上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号 - 工作地点： - 联系方式：职位联系人微信...",
+              "status": "active",
+              "contentSha256": "0e07da661f2df173988186710ece2977267850e714aee6496ff833a678a94b53",
+              "content": {
+                "id": "gh_d450ba5b01eda9a9621a176b",
+                "sourceId": "rebase-network/who-is-hiring#1299",
+                "title": "[深圳/上海/北京] 帕西尼（PaXini Tech）公司诚聘 强化学习资深工程师 薪水 75万-150万RMB",
+                "description": "## 帕西尼（PaXini Tech）\n成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。\n\n## 薪资福利待遇\n4万-6万/月*15\n职位联系人微信 QX200423\n## 地点\n  深圳宝安区前城中心34楼        上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号\n- 工作地点：\n- 联系方式：职位联系人微信 QX200423\n\n## 工作性质\n全职\n  \n## 岗位要求、职责\n本岗位聚焦物理AI强化学习系统，在物理世界闭环迭代，通过主动观测、物理交互，自发学习物体动力学、接触特性与长时序任务技能，进化和提升推理能力，打通从仿真训练到真机部署的完整链路。\n\n岗位描述：\n1. 面向通用机器人操作任务，负责物理强化学习核心算法研究，提升样本高效学习与策略训练稳健性，推动算法在物理系统上的可靠落地。\n2. 研究预训练VLA/世界模型与强化学习融合方案，探索感知—决策—执行闭环中的策略学习，实现长程任务、接触密集型复杂任务优化。\n3. 设计奖励策略、课程学习策略、安全探索机制，解决真实世界噪声、时延、接触动力学不确定性，持续迭代算法架构，探索机器人自主持续进化路线。\n3. 协同工程团队，搭建支持在线持续学习所需的完整训练管线，构建大规模强化学习基础设施，管理真机交互数据、经验回放、策略迭代、自动化评测。负责在真机系统上的部署验证与创新应用展示。\n\n职位要求：\n1. 国内或国外Top 985 院校，硕士及以上学历，计算机、人工智能、自动化、应用数学相关专业；具备扎实的强化学习理论基础与研究功底，机器人物理强化学习落地经验；\n2. 熟悉VLA / WM / WAM等具身算法，有机械臂/人形强化学习落地经验，完整经历从算法设计到真机调试全流程更佳；\n3. 扎实强化学习理论基础与研究功底，深刻理解探索-利用、样本效率、策略稳定性核心挑战；\n4. 熟练掌握 Python / PyTorch 等编程语言与深度学习框架,具备较强的算法实现与实验设计能力；\n5. 具备大规模机器学习训练系统实战经验，能够搭建、优化面向真机交互场景的训练Infra，管理海量机器人交互轨迹数据。\n6. 具备极强问题拆解能力，能够从真机失败案例定位策略、表征、动力学、数据层面根因，驱动持续迭代优化。\n\n## 工作环境\n良好",
+                "excerpt": "## 帕西尼（PaXini Tech） 成立于2021年6月，是一家专注于“具身感知”领域的全栈式硬科技企业，定位为“全球具身感知驱动通用智能的领导者”和“Physical AI时代基础设施服务商”。 ## 薪资福利待遇 4万-6万/月*15 职位联系人微信 QX200423 ## 地点 深圳宝安区前城中心34楼 上海徐汇区帕西尼感知科技(上海)有限公司徐汇区桂平路391号A座207号 - 工作地点： - 联系方式：职位联系人微信...",
+                "issueState": "open",
+                "contentHash": "a5395e689c57adb8ca6bce6456dbb602b3292623d305d44d032e71d0d4ec8e45",
+                "repository": "rebase-network/who-is-hiring",
+                "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+                "region": "Global",
+                "country": "Global",
+                "sourceLocation": {
+                  "country": "Global",
+                  "countryCode": "GLOBAL",
+                  "region": "Global"
+                },
+                "tags": [
+                  "python"
+                ],
+                "sourceTags": [
+                  "python"
+                ],
+                "author": {
+                  "id": "Winnie7111",
+                  "name": "Winnie7111",
+                  "handle": "Winnie7111",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/332054296?v=4"
+                },
+                "community": {
+                  "id": "rebase-network",
+                  "name": "rebase-network",
+                  "avatarUrl": "https://github.com/rebase-network.png?size=80",
+                  "repository": "rebase-network/who-is-hiring",
+                  "url": "https://github.com/rebase-network/who-is-hiring"
+                },
+                "createdAt": "2026-09-21T14:04:13Z",
+                "updatedAt": "2026-09-21T14:04:13Z",
+                "url": "https://github.com/rebase-network/who-is-hiring/issues/1299",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "confidence": "unknown"
+                },
+                "taxonomy": {
+                  "areas": [],
+                  "technologies": [
+                    "python"
+                  ],
+                  "seniority": [],
+                  "employmentTypes": [],
+                  "workModels": [],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "unknown",
+                  "workModel": "unknown"
+                },
+                "sources": [
+                  {
+                    "id": "gh_d450ba5b01eda9a9621a176b",
+                    "sourceId": "rebase-network/who-is-hiring#1299",
+                    "repository": "rebase-network/who-is-hiring",
+                    "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+                    "url": "https://github.com/rebase-network/who-is-hiring/issues/1299",
+                    "createdAt": "2026-09-21T14:04:13Z",
+                    "updatedAt": "2026-09-21T14:04:13Z",
+                    "community": {
+                      "id": "rebase-network",
+                      "name": "rebase-network",
+                      "avatarUrl": "https://github.com/rebase-network.png?size=80",
+                      "repository": "rebase-network/who-is-hiring",
+                      "url": "https://github.com/rebase-network/who-is-hiring"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 37,
+                  "publishedAt": "2026-09-21T14:04:13Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
