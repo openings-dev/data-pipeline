@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-28T22:04:13.804Z",
+  "generatedAt": "2026-10-29T03:44:10.152Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_dd5f3eceaf22759f0fb5dc88",
     "gh_4ddc5ce7cb4c159fc9054916",
     "gh_f65827432354c0662b6b0ae4",
     "gh_01d165a4b737ad3ecc75a04b",
-    "gh_94e66ce65dbdd3217e662493",
     "gh_a4413b38ce8666beb7e0dc7d",
     "gh_1de65f6a56a6747d7dc792ff",
     "gh_e2663887b815fdaa55ecd543",
@@ -26,6 +26,86 @@
     "gh_4171b79b3ffe9641de97f6e5"
   ],
   "items": [
+    {
+      "id": "gh_dd5f3eceaf22759f0fb5dc88",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9720",
+      "title": "Internships",
+      "description": "",
+      "excerpt": "Internships",
+      "issueState": "open",
+      "contentHash": "eedae4be4101062ec8f3408d02ccb73d4370748655d80ce70ac02020c2e2917a",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "idrkul5",
+        "name": "idrkul5",
+        "handle": "idrkul5",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/164856211?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-10-29T02:59:23Z",
+      "updatedAt": "2026-10-29T02:59:23Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9720",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_dd5f3eceaf22759f0fb5dc88",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9720",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9720",
+          "createdAt": "2026-10-29T02:59:23Z",
+          "updatedAt": "2026-10-29T02:59:23Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-29T02:59:23Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_4ddc5ce7cb4c159fc9054916",
       "sourceId": "react-brasil/vagas#3037",
@@ -403,90 +483,6 @@
       "freshness": {
         "ageDays": 0,
         "publishedAt": "2026-10-28T12:19:34Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_94e66ce65dbdd3217e662493",
-      "sourceId": "ambicuity/New-Grad-Jobs#455",
-      "title": "Job data is stale: last scrape 2026-10-28T05:31:19.320148Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **189 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/40658467464. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **189 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "979cfe9b0ce73c536cefaa77dd7cf895f8c70f592df33662308086b9baa4d054",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-28T08:40:31Z",
-      "updatedAt": "2026-10-28T08:40:31Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/455",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_94e66ce65dbdd3217e662493",
-          "sourceId": "ambicuity/New-Grad-Jobs#455",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/455",
-          "createdAt": "2026-10-28T08:40:31Z",
-          "updatedAt": "2026-10-28T08:40:31Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-10-28T08:40:31Z",
         "status": "fresh"
       }
     },
