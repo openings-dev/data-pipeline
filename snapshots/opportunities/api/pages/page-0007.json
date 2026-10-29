@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-29T03:44:10.152Z",
+  "generatedAt": "2026-10-29T12:02:53.754Z",
   "page": 7,
   "pageSize": 20,
   "nextPage": "api/pages/page-0008.json",
   "ids": [
+    "gh_c99e3a932f7fe533fc8d11db",
     "gh_62dd90fe5fc8ef9fb41715bd",
     "gh_01a0a1ad79a225ed23493c50",
     "gh_fd7b255c451891ac112f8e82",
@@ -22,10 +23,146 @@
     "gh_ea595cfd3331c8561fa42c4f",
     "gh_a005a7b8b54bdcc1233e7263",
     "gh_db999290471cf301e6e682fa",
-    "gh_f731e6b22a1664fd513efea5",
-    "gh_6096c22ce5a05150b15df844"
+    "gh_f731e6b22a1664fd513efea5"
   ],
   "items": [
+    {
+      "id": "gh_c99e3a932f7fe533fc8d11db",
+      "sourceId": "frontendbr/vagas#8564",
+      "title": "[Remoto] Software Developer Front-end Pleno na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open) para realizar a candidatura. 👋\nA **TruckPag** está em busca de uma pessoa **Software Developer Front-end Pleno** para aumentar o time de tecnologia. Você vai atuar no desenvolvimento das interfaces dos nossos produtos, trabalhando com as duas gerações de UI da empresa (MUI v5 + Emotion + design system @truckpag/components nos projetos legados e Tailwind CSS + shadcn/ui + Radix UI + Lucide nos projetos novos), em colaboração com os times de back-end e mobile.\n\n### Responsabilidades\n\n*   Escrever código e funções facilmente testáveis e compreendidas por outros desenvolvedores, considerando casos extremos e erros;\n    \n*   Compreender a pirâmide de testes, escrever testes unitários de acordo com a regra de negócio e testes de integração com apoio de desenvolvedores sênior e do Líder Técnico;\n    \n*   Testar casos extremos e erros esperados, usar abordagem sistemática para depurar problemas e conhecer a filosofia de monitoramento da organização e os dados operacionais do domínio da equipe;\n    \n*   Entender o contexto do domínio de negócio, as boas práticas, padrões e processos do time, desenvolvendo funções que melhorem a qualidade do código e reduzam débito técnico;\n    \n*   Entender a importância da segurança nas implementações e envolver o Líder Técnico em decisões com implicação de segurança;\n    \n*   Atuar conforme a priorização de tarefas, identificando dependências entre tarefas e requisitos;\n    \n*   Desenhar estrutura de estado de aplicação e componentes reutilizáveis, com revisão de sênior ou especialista;\n    \n*   Aplicar diretrizes de acessibilidade e de performance de renderização (carregamento sob demanda, controle de re-render) de forma proativa;\n    \n*   Tratar erros de consumo de API com autonomia, incluindo falhas de rede e respostas inesperadas do back-end;\n    \n*   Escrever testes cobrindo os dois estados de funcionalidades de interface implementadas por trás de feature flag, com apoio de sênior.\n    \n\n### Perfil que buscamos\n\n*   **Proatividade:** antecipa problemas de usabilidade ou performance antes de ser perguntado;\n    \n*   **Trabalho em equipe:** colabora com colegas de front, back e mobile sem precisar de mediação constante;\n    \n*   **Foco no cliente:** prioriza o que implementar pelo impacto real na experiência de quem usa a interface;\n    \n*   **Resolução de problemas:** decide como depurar e corrigir problemas de complexidade média com autonomia;\n    \n*   **Adaptabilidade e autoliderança:** transita entre demandas de complexidade crescente sem precisar de re-explicação constante de contexto;\n    \n*   **Boa comunicação:** traduz decisões técnicas de interface para quem não é desenvolvedor sem perder precisão.\n    \n\n### Informações da vaga\n\n*   Contratação: PJ;\n    \n*   Modalidade: remota, com disponibilidade para viagens eventuais para encontros presenciais;\n    \n*   Horário: 08:00 às 17:30;\n    \n*   Formação: ensino superior completo ou em andamento, ou experiência equivalente comprovada na área;\n    \n*   Experiência: 2 a 4 anos na função.\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - React \n- Tailwind CSS \n- Vitest \n- Typescript \n- Redux \n- Zustand \n- Docker \n- Figma \n- Testing Library \n- TanStack Query\n## Local: \n Remota\n## Requisitos: \n - React e TypeScript em nível intermediário, com capacidade de desenhar estrutura de estado e componentes reutilizáveis \n- Vite, Node (18 a 24) e gerenciador de pacotes (npm ou pnpm) \n- MUI v5 + Emotion + design system próprio (@truckpag/components) e Tailwind CSS + shadcn/ui + Radix UI + Lucide \n- Gestão de estado: Redux + Redux Toolkit + Redux Saga (legado), Zustand (novos), TanStack Query e Context API ou Constate \n- Formulários com React Hook Form + Yup (legado) ou Zod (novos) \n- Tabelas com react-table v7 / material-react-table (legado) e TanStack Table v8 (novos) \n- Testes com Vitest, Testing Library e MSW para mock de API \n- Padronização de código: ESLint (@truckpag/eslint-config), Prettier, Husky, lint-staged, Commitlint ou Commitizen \n- Acessibilidade e responsividade de interfaces \n- Git e GitLab CI: escrever e entender .gitlab-ci.yml e participar do pipeline de build e teste do front-end \n- Experiência com CI/CD \n- Docker para ambiente de desenvolvimento local \n- Linux e uso de terminal como ambiente padrão de desenvolvimento \n- git-crypt para variáveis de ambiente \n- Figma: implementação fiel a partir do design entregue \n- Uso de IA no desenvolvimento no dia a dia (Cursor) \n- Integração entre sistemas via consumo de APIs \n- Metodologias ágeis (Scrum, Kanban) \n- Noções de segurança da informação e prevenção de vulnerabilidades web no front-end (XSS, CSRF, CORS e CSP)\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Developer Front-end Pleno na TruckPag](https://coodesh.com/jobs/desenvolvedor-de-software-front-end-pleno-121748645?utm_source=github&utm_medium=frontendbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nFront-End",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "129f0a147d53b57ff7a94bc303aeecedb35bbca0ce3eb40ecf6760666eb2ce3b",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "especialista",
+        "pj",
+        "pleno",
+        "remoto",
+        "sênior",
+        "⚖️ outros",
+        "⚖️ pj",
+        "🏢 remoto",
+        "👨 pleno",
+        "👴 senior"
+      ],
+      "sourceTags": [
+        "especialista",
+        "pj",
+        "pleno",
+        "remoto",
+        "sênior",
+        "⚖️ outros",
+        "⚖️ pj",
+        "🏢 remoto",
+        "👨 pleno",
+        "👴 senior"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "createdAt": "2026-09-30T12:47:56Z",
+      "updatedAt": "2026-10-09T04:59:10Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8564",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [
+          "docker",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_c99e3a932f7fe533fc8d11db",
+          "sourceId": "frontendbr/vagas#8564",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8564",
+          "createdAt": "2026-09-30T12:47:56Z",
+          "updatedAt": "2026-10-09T04:59:10Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        },
+        {
+          "id": "gh_cbb8b91d10771751716e86f6",
+          "sourceId": "react-brasil/vagas#3033",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3033",
+          "createdAt": "2026-09-30T13:33:26Z",
+          "updatedAt": "2026-10-07T11:56:28Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 28,
+        "publishedAt": "2026-09-30T12:47:56Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_62dd90fe5fc8ef9fb41715bd",
       "sourceId": "awesome-jobs/jobs#5075",
@@ -148,7 +285,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T11:43:48Z",
         "status": "fresh"
       }
@@ -282,7 +419,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T11:35:49Z",
         "status": "fresh"
       }
@@ -362,7 +499,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:41Z",
         "status": "fresh"
       }
@@ -460,7 +597,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:39Z",
         "status": "fresh"
       }
@@ -542,7 +679,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:37Z",
         "status": "fresh"
       }
@@ -644,7 +781,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:34Z",
         "status": "fresh"
       }
@@ -730,7 +867,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:16Z",
         "status": "fresh"
       }
@@ -812,7 +949,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T10:27:11Z",
         "status": "fresh"
       }
@@ -926,7 +1063,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T04:05:24Z",
         "status": "fresh"
       }
@@ -1052,7 +1189,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T03:59:10Z",
         "status": "fresh"
       }
@@ -1180,7 +1317,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-09-30T03:56:50Z",
         "status": "fresh"
       }
@@ -1522,9 +1659,9 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-09-28T10:12:40Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     {
@@ -1620,9 +1757,9 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-09-28T07:33:11Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     {
@@ -2035,93 +2172,6 @@
       "freshness": {
         "ageDays": 34,
         "publishedAt": "2026-09-24T16:06:58Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_6096c22ce5a05150b15df844",
-      "sourceId": "rebase-network/who-is-hiring#1310",
-      "title": "[日本 横滨] web3交易所 Rust 工程师 30-45K RMB",
-      "description": "岗位：Rust 工程师\n工作地点：日本横滨\n薪资范围：30,000–45,000 元人民币/月\n语言要求：不限\n工时：8 小时，周休 1 日\n\n\n工作职责\n1. 负责 Rust 桌面应用程式的开发与维护。\n2. 建构图像／影片识别模型，并整合至桌面应用程式。\n\n任职要求\n1. 5 年以上工作经验，计算机相关专业本科以上学历，具备扎实的程式设计基础。\n2. 熟练掌握 Rust 语言，具备至少 1 年实际 Rust 开发经验；或具备 3 年以上桌面应用程式开发经验（其他程式语言亦可）。\n\n## 其他职缺\n🔥远端🔥\n1️⃣  高級滲透工程師 （红队方向）\n\n🔥菲律宾\n公关经理\n商务负责人｜急招\n商务专员\n高级运营助理\n菲籍管理组长／主管\n资深税务会计师\n法务组长／主管\n\n━━━━━━━━━━\n🔥泰国\n公关经理\n泰国 IT 专员\n人事招聘专员 📌\n━━━━━━━━━━\n🔥 日本横滨\n人资行政专员📌\nCocos 前端工程师\nRust 工程师\n产品经理📌\n测试工程师\n\n\n🔥 日本大阪\n营运客服专员📌\n产品经理📌\n高级测试开发工程师\n游戏数据分析师\n资深 Golang 后端工程师\n\n🔥日本东京\n公关经理📌\n资深猎头\n人事經理\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：否\n- 时区要求：无, 依照日本白天 工作时间\n\n## 公司/团队介绍\n顶尖人力公司,合法注册登记于香港,台湾 共有20位以上的职业猎头.\n🔹 协助企业猎才\n专门协助企业寻找职能、专业人才及中高阶管理人才。\n（欢迎企业 委托职缺！）\n🔹 跨国人才招募\n针对中国、日本、香港、台湾、东南亚等市场，协助企业寻找不同国籍及语言背景的人才。\n\n## 薪资福利待遇\n1. 有团建、生日礼金、节日红包等福利。\n2. 提供宿舍，2 人一间。（高阶主管 1人/间）\n3. 公司提供技人国签证。\n4. 包午餐及晚餐。\n5. 每年 15 天年假＋机票。\n6. 提供日本社会保险、厚生年金等福利。\n\n## 联络方式\n- TG工作頻道：@topJob_168\n- 联系方式：telegram @Lucky_V168\n-联络邮箱：fous6699@gmail.com",
-      "excerpt": "岗位：Rust 工程师 工作地点：日本横滨 薪资范围：30,000–45,000 元人民币/月 语言要求：不限 工时：8 小时，周休 1 日 工作职责 1. 负责 Rust 桌面应用程式的开发与维护。 2. 建构图像／影片识别模型，并整合至桌面应用程式。 任职要求 1. 5 年以上工作经验，计算机相关专业本科以上学历，具备扎实的程式设计基础。 2. 熟练掌握 Rust 语言，具备至少 1 年实际 Rust 开发经验；或具备 3 年...",
-      "issueState": "open",
-      "contentHash": "c8591d36b2fb3e353e46ff5724633634623c378614b3563fbe099c415cf1aaf0",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang"
-      ],
-      "sourceTags": [
-        "golang"
-      ],
-      "author": {
-        "id": "fous6699",
-        "name": "fous6699",
-        "handle": "fous6699",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/232495116?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-09-24T02:54:20Z",
-      "updatedAt": "2026-09-24T02:54:20Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1310",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "go",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_6096c22ce5a05150b15df844",
-          "sourceId": "rebase-network/who-is-hiring#1310",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1310",
-          "createdAt": "2026-09-24T02:54:20Z",
-          "updatedAt": "2026-09-24T02:54:20Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 35,
-        "publishedAt": "2026-09-24T02:54:20Z",
         "status": "aging"
       }
     }
