@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-29T20:00:55.764Z",
+  "generatedAt": "2026-10-30T00:32:25.281Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_e5c3fe2de4aec791023d34ec",
     "gh_9d50e797be669eee892f4cf9",
     "gh_4f7fd9214a277a97b0ec41c5",
     "gh_dd5f3eceaf22759f0fb5dc88",
@@ -22,10 +23,104 @@
     "gh_7ce789b1d213071032aedb90",
     "gh_d9dfe5cac9c424f1f17f3d37",
     "gh_7a5fc9ff59c7e6ba5641e90f",
-    "gh_bd1a02dc4fb9f4d7e001599a",
-    "gh_16411c913e420988025158f9"
+    "gh_bd1a02dc4fb9f4d7e001599a"
   ],
   "items": [
+    {
+      "id": "gh_e5c3fe2de4aec791023d34ec",
+      "sourceId": "remoteintech/remote-jobs#2295",
+      "title": "57 company profiles missing company_size or required sections",
+      "description": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a failing validation check** for problems they didn't cause.\n\n(Invalid tech tags and slug/filename mismatches are being fixed separately in #2294 and #2293.)\n\n## How to help\n\nPick one or a few, check the company's own website, and open a PR. Please keep each PR to a handful of profiles so they're easy to review.\n\n- **`company_size`**: add one of `tiny` (1–10 employees), `small` (11–50), `medium` (51–200), `large` (201–1000) or `enterprise` (1000+). The company's About page or LinkedIn usually says.\n- **Missing sections**: add the heading listed (`## Company blurb`, `## Remote status` or `## How to apply`) with a short, factual paragraph. For `Remote status`, describe the company's actual remote policy as the company states it, not a guess.\n- If the company has **closed or been acquired**, say so in a comment here instead of filling it in, and we'll remove the profile (see #2271 for an example).\n\nSee [CONTRIBUTING](https://github.com/remoteintech/remote-jobs/blob/main/.github/CONTRIBUTING.md) for the full format. You can check your work locally with `node .github/scripts/validate-companies.js src/companies/<file>.md`.\n\nTick a box once its PR is merged.\n\n## Profiles\n\n- [ ] [ALLYDVM](https://remoteintech.company/companies/allydvm/) (`src/companies/allydvm.md`): `company_size`\n- [ ] [Appstractor](https://remoteintech.company/companies/appstractor/) (`src/companies/appstractor.md`): `company_size`\n- [ ] [Articulate](https://remoteintech.company/companies/articulate/) (`src/companies/articulate.md`): `company_size`\n- [ ] [Atento](https://remoteintech.company/companies/atento/) (`src/companies/atento.md`): `company_size`\n- [ ] [Atlassian](https://remoteintech.company/companies/atlassian/) (`src/companies/atlassian.md`): `company_size`\n- [ ] [BeBanjo](https://remoteintech.company/companies/bebanjo/) (`src/companies/bebanjo.md`): `company_size`\n- [ ] [Betable](https://remoteintech.company/companies/betable/) (`src/companies/betable.md`): `company_size`\n- [ ] [Bitovi](https://remoteintech.company/companies/bitovi/) (`src/companies/bitovi.md`): Remote status section\n- [ ] [Bloc](https://remoteintech.company/companies/bloc/) (`src/companies/bloc.md`): `company_size`\n- [ ] [Carbon Black](https://remoteintech.company/companies/carbon-black/) (`src/companies/carbon-black.md`): `company_size`\n- [ ] [CartStack](https://remoteintech.company/companies/cartstack/) (`src/companies/cartstack.md`): Remote status section\n- [ ] [Chef](https://remoteintech.company/companies/chef/) (`src/companies/chef.md`): `company_size`\n- [ ] [Chess](https://remoteintech.company/companies/chess/) (`src/companies/chess.md`): `company_size`\n- [ ] [Coingape](https://remoteintech.company/companies/coingape/) (`src/companies/coingape.md`): Remote status section\n- [ ] [Consumer Financial Protection Bureau](https://remoteintech.company/companies/consumer-financial-protection-bureau/) (`src/companies/consumer-financial-protection-bureau.md`): `company_size`, Remote status section\n- [ ] [Continu](https://remoteintech.company/companies/continu/) (`src/companies/continu.md`): `company_size`\n- [ ] [Cosmic Chimps](https://remoteintech.company/companies/cosmic-chimps/) (`src/companies/cosmic-chimps.md`): `company_size`\n- [ ] [Datadog](https://remoteintech.company/companies/datadog/) (`src/companies/datadog.md`): `company_size`\n- [ ] [Delighted](https://remoteintech.company/companies/delighted/) (`src/companies/delighted.md`): Remote status section\n- [ ] [DGraph](https://remoteintech.company/companies/dgraph/) (`src/companies/dgraph.md`): `company_size`\n- [ ] [Enok Collective](https://remoteintech.company/companies/enok/) (`src/companies/enok.md`): How to apply section\n- [ ] [Figma](https://remoteintech.company/companies/figma/) (`src/companies/figma.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Filament Group](https://remoteintech.company/companies/filament-group/) (`src/companies/filament-group.md`): `company_size`, Remote status section\n- [ ] [Findem](https://remoteintech.company/companies/findem/) (`src/companies/findem.md`): Remote status section\n- [ ] [Freeagent](https://remoteintech.company/companies/freeagent/) (`src/companies/freeagent.md`): Remote status section\n- [ ] [Got Soccer](https://remoteintech.company/companies/got-soccer/) (`src/companies/got-soccer.md`): `company_size`, Remote status section\n- [ ] [Healthfinch](https://remoteintech.company/companies/healthfinch/) (`src/companies/healthfinch.md`): `company_size`\n- [ ] [Hubstaff](https://remoteintech.company/companies/hubstaff/) (`src/companies/hubstaff.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Hugo](https://remoteintech.company/companies/hugo/) (`src/companies/hugo.md`): Remote status section\n- [ ] [IDoneThis](https://remoteintech.company/companies/idonethis/) (`src/companies/idonethis.md`): Remote status section\n- [ ] [Instamobile](https://remoteintech.company/companies/instamobile/) (`src/companies/instamobile.md`): `company_size`\n- [ ] [iOS App Templates](https://remoteintech.company/companies/ios-app-templates/) (`src/companies/ios-app-templates.md`): `company_size`\n- [ ] [Jolly Good Code](https://remoteintech.company/companies/jolly-good-code/) (`src/companies/jolly-good-code.md`): Remote status section\n- [ ] [Keen IO](https://remoteintech.company/companies/keen-io/) (`src/companies/keen-io.md`): Remote status section\n- [ ] [KissMetrics](https://remoteintech.company/companies/kissmetrics/) (`src/companies/kissmetrics.md`): `company_size`\n- [ ] [Knack](https://remoteintech.company/companies/knack/) (`src/companies/knack.md`): `company_size`, How to apply section\n- [ ] [Let's Encrypt](https://remoteintech.company/companies/lets-encrypt/) (`src/companies/lets-encrypt.md`): `company_size`, Remote status section\n- [ ] [Linaro](https://remoteintech.company/companies/linaro/) (`src/companies/linaro.md`): Remote status section\n- [ ] [LogDNA](https://remoteintech.company/companies/logdna/) (`src/companies/logdna.md`): How to apply section\n- [ ] [MaintainNow](https://remoteintech.company/companies/maintainnow/) (`src/companies/maintainnow.md`): valid `company_size` (startup)\n- [ ] [Mattermost](https://remoteintech.company/companies/mattermost/) (`src/companies/mattermost.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [MetaLab](https://remoteintech.company/companies/metalab/) (`src/companies/metalab.md`): `company_size`\n- [ ] [Netlify](https://remoteintech.company/companies/netlify/) (`src/companies/netlify.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [npm](https://remoteintech.company/companies/npm/) (`src/companies/npm.md`): Remote status section\n- [ ] [O'Reilly Media](https://remoteintech.company/companies/oreilly-media/) (`src/companies/oreilly-media.md`): `company_size`\n- [ ] [Our-Hometown Inc.](https://remoteintech.company/companies/our-hometown-inc/) (`src/companies/our-hometown-inc.md`): Remote status section\n- [ ] [PreviousNext](https://remoteintech.company/companies/previousnext/) (`src/companies/previousnext.md`): `company_size`, Remote status section\n- [ ] [Renaissance](https://remoteintech.company/companies/renaissance/) (`src/companies/renaissance.md`): Remote status section\n- [ ] [SignEasy](https://remoteintech.company/companies/signeasy/) (`src/companies/signeasy.md`): `company_size`\n- [ ] [Slack](https://remoteintech.company/companies/slack/) (`src/companies/slack.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Soostone](https://remoteintech.company/companies/soostone/) (`src/companies/soostone.md`): `company_size`, Remote status section\n- [ ] [Sourcegraph](https://remoteintech.company/companies/sourcegraph/) (`src/companies/sourcegraph.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Stitch Fix](https://remoteintech.company/companies/stitch-fix/) (`src/companies/stitch-fix.md`): `company_size`\n- [ ] [The Wirecutter](https://remoteintech.company/companies/the-wirecutter/) (`src/companies/the-wirecutter.md`): `company_size`\n- [ ] [Toptal](https://remoteintech.company/companies/toptal/) (`src/companies/toptal.md`): `company_size`\n- [ ] [Travis CI](https://remoteintech.company/companies/travis-ci/) (`src/companies/travis-ci.md`): Remote status section\n- [ ] [Turing](https://remoteintech.company/companies/turing/) (`src/companies/turing.md`): `company_size`",
+      "excerpt": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a faili...",
+      "issueState": "open",
+      "contentHash": "0ede572a498b4a943c4e6b10c7df8f1289be7242635a91c590e5f2fe22c04002",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "good first issue",
+        "help wanted",
+        "housekeeping"
+      ],
+      "sourceTags": [
+        "good first issue",
+        "help wanted",
+        "housekeeping"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-10-30T00:22:07Z",
+      "updatedAt": "2026-10-30T00:22:07Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_e5c3fe2de4aec791023d34ec",
+          "sourceId": "remoteintech/remote-jobs#2295",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
+          "createdAt": "2026-10-30T00:22:07Z",
+          "updatedAt": "2026-10-30T00:22:07Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-30T00:22:07Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_9d50e797be669eee892f4cf9",
       "sourceId": "react-brasil/vagas#3038",
@@ -2105,7 +2200,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-10-23T20:20:43Z",
         "status": "fresh"
       }
@@ -2233,108 +2328,6 @@
       "freshness": {
         "ageDays": 6,
         "publishedAt": "2026-10-23T12:33:38Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_16411c913e420988025158f9",
-      "sourceId": "awesome-jobs/jobs#5094",
-      "title": "[HCM]  Senior IT Migration Engineer 5+ yoe | migrate 365 -> Google Workspace",
-      "description": "[HCM] Mình tìm Senior IT Migration Engineer 5+ yoe:\n- Có kinh nghiệm migrate 365 -> Google Workspace\n- Eng nghe nói tự tin với Client Ấn\nZl o332.o22.o55 | contact@techdy.vn",
-      "excerpt": "[HCM] Mình tìm Senior IT Migration Engineer 5+ yoe: - Có kinh nghiệm migrate 365 -> Google Workspace - Eng nghe nói tự tin với Client Ấn Zl o332.o22.o55 | contact@techdy.vn",
-      "issueState": "open",
-      "contentHash": "fb601f540d54242518606fd639bb0d70efa7a1a0e5b8259514b5a316517c9e40",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "senior"
-      ],
-      "sourceTags": [
-        "senior"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "createdAt": "2026-10-23T10:36:33Z",
-      "updatedAt": "2026-10-23T10:36:33Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_16411c913e420988025158f9",
-          "sourceId": "awesome-jobs/jobs#5094",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-          "createdAt": "2026-10-23T10:36:33Z",
-          "updatedAt": "2026-10-23T10:36:33Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_4d56154ecd69b587d874a1ae",
-          "sourceId": "awesome-jobs/vietnam#5094",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-          "createdAt": "2026-10-23T10:36:33Z",
-          "updatedAt": "2026-10-23T10:36:33Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-10-23T10:36:33Z",
         "status": "fresh"
       }
     }
