@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-24T07:48:01.189Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "qa-brasil/vagas",
   "totals": {
     "opportunities": 29,
-    "openIssues": 4,
-    "closedIssues": 25
+    "openIssues": 2,
+    "closedIssues": 27
   },
-  "dataHash": "5767a22c3fff965332fc9e0dc0e5320d6307dbaef6667814501948a6141d86a9",
+  "dataHash": "df2f7a25a7d2bb3f3b24b476d5f93460c1008369f59dfc95c146b7ae182cf6e9",
   "items": [
     {
       "id": "gh_029af2b880506194635d23b8",
@@ -263,7 +263,7 @@
       "title": "[Remoto] QA Manual Pleno na Hidden (18+ / inglês fluente)",
       "description": "# Descrição da vaga\n\nA Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pequeno, remoto, ritmo rápido.\n\n**⚠️ Leia antes de se candidatar:** é uma plataforma adulta (18+). O produto contém conteúdo sexual explícito e testá-lo significa ver esse conteúdo todos os dias, como parte normal do trabalho — feed, perfis, mensagens, mídia enviada e filas de moderação. Falamos isso abertamente para que você decida agora, e não depois de entrar. Se não está confortável com isso, a vaga não é para você.\n\n**O papel:** você é o último gate de qualidade antes de uma mudança chegar aos criadores e seus fãs. Pega tickets da fila \"Ready for QA\", testa ponta a ponta no ambiente de staging correto, escreve bug reports que o dev consegue agir sem perguntar nada, e dá o veredito (Approved / Rejected / Not Reproducible) no GitHub. QA aqui tem autoridade real: processo documentado, handoff de dev obrigatório e poder de devolver trabalho para desenvolvimento.\n\n**No dia a dia:**\n- Montar e executar casos de teste a partir de tickets, BRDs e Figma — caminho feliz e edge cases.\n- Testar em desktop web, mobile web, PWA, iOS Safari e Android Chrome (dispositivos reais + BrowserStack).\n- Regressão dos fluxos principais antes de cada release: cadastro e verificação, upload e transcoding, feed, perfis, compras PPV, mensagens, carteira e payouts.\n- Verificar correções, retestar tickets rejeitados, checagem pós-release em produção.\n- Reportar bugs no GitHub com o template da empresa (um bug por ticket, passos exatos, esperado vs. atual, ambiente, evidências).\n- Contribuir com o report diário/semanal de QA e escalar padrões entre bugs, não só o bug isolado.\n\n## Local de trabalho\n\n- 100% Remoto (residente no Brasil)\n\n## Requisitos da vaga\n\n**Obrigatórios**\n- 1 a 4 anos em QA manual / teste de software em produto web ou mobile voltado ao consumidor.\n- Experiência real testando em iOS e Android físicos; entender como mobile web, PWA e layouts responsivos quebram diferente do desktop.\n- Bug reports que o dev executa sem pedir mais informação.\n- DevTools do navegador com confiança: console, aba Network (ler request/response, identificar status code errado), inspeção de elemento, simulação de device.\n- Ler logs de aplicação e extrair o que vai no bug report.\n- Uso diário de IA (Claude, Codex) para entender relatórios técnicos, logs, BRDs/RFCs e respostas de API. Esperamos que você recorra à IA primeiro, em vez de gastar tempo montando ferramenta.\n- Montar dados e cenários de teste via CMS / painel admin.\n- Entender como uma aplicação web se encaixa (frontend, backend, banco, cache) o bastante para conversar com o dev sobre onde o bug provavelmente está.\n- Git/GitHub (achar tickets, ler PRs, comentar) e kanban (o nosso é GitHub Projects).\n- **Inglês escrito fluente, nível profissional.** Bug reports, notas de teste, comentários e reports são todos em inglês, para devs em outro país. Isso é avaliado de perto no processo seletivo.\n- Maior de 18 anos; setup de home office confiável (internet estável, um iPhone e um Android).\n- Disponível de segunda a sexta para jornada de 9h + 1h de pausa não remunerada (10h porta a porta), **alinhada ao horário europeu** (início na madrugada/manhã cedo no Brasil). É uma jornada mais longa que a maioria das vagas e dizemos isso de cara.\n- Flexibilidade quando release ou incidente em produção exigir.\n- Confortável com conteúdo adulto explícito todos os dias (ver aviso acima).\n\n**Desejáveis**\n- Testes de pagamento/checkout: assinaturas, compras avulsas, reembolsos, pagamentos falhos.\n- Produtos com mídia pesada: upload de vídeo/imagem, transcoding, playback, cache de CDN.\n- Moderação de conteúdo ou verificação de idade/identidade (KYC).\n- Ler relatórios do Playwright e triar falhas (a vaga **não** envolve escrever automação).\n- BrowserStack, Figma, Slack.\n- Acessibilidade e teste cross-browser.\n\n**Diferenciais**\n- ISTQB Foundation ou equivalente.\n\n## Forma de contratação\n\nA vaga é somente PJ, não faz mal não ter uma empresa aberta, mas será necessário abrir uma.\n\n## Benefícios da empresa\n\n- 100% remoto.\n- QA com autoridade real: processo documentado, handoff de dev obrigatório, poder de rejeitar trabalho.\n- Exposição ao produto inteiro num time pequeno, em vez de dono de um módulo estreito.\n- Acesso direto a devs, designers e produto, sem camadas de processo.\n\n## Range Salarial\n\nVariavel.\n\n## Sobre a empresa\n\nA Hidden é uma plataforma de conteúdo feita por criadores para criadores da indústria adulta. Nosso objetivo é dar aos criadores as melhores ferramentas para crescer a marca e vender conteúdo para sua base de fãs. Time pequeno e rápido; QA é função visível e respeitada.\n\nSomos uma empresa de oportunidades iguais. Recebemos candidaturas independentemente de gênero, identidade de gênero, orientação sexual, raça, religião, deficiência ou idade (18+). Trabalhamos na indústria adulta e tratamos a indústria, e quem trabalha nela, com profissionalismo.\n\n## Como se candidatar\n\n- Envie e-mail para luizo@hidden.com com CV (em inglês) anexado. Assunto: **Vaga do QA-Brasil – Manual QA**\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 1 dias após cada etapa.\nEstá é uma vaga urgente, então estamos procurando pessoas de forma rápida para se juntar com a equipe atual.\n\n\n## Labels\n- PJ\n- Pleno\n- Remoto\n- Exterior\n\n#QA #QualityAssurance #vagasQA #testesdesoftware #remoto #vagasremotas",
       "excerpt": "# Descrição da vaga A Hidden é uma plataforma de conteúdo para criadores da indústria adulta (feed de descoberta, perfis, venda de conteúdo PPV, mensagens diretas, carteira e pagamentos, rankings e campanhas). Time pe...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "a5ddd01313cbbb61b39de74bc79b62749c382ec032130ed183b8ceae0455487a",
       "repository": "qa-brasil/vagas",
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
@@ -307,7 +307,7 @@
       },
       "companyName": "100% remoto.",
       "createdAt": "2026-08-21T19:40:20Z",
-      "updatedAt": "2026-10-24T03:58:55Z",
+      "updatedAt": "2026-10-31T04:51:57Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1281",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -351,7 +351,7 @@
       "title": "[Remoto] [PJ] Senior QA Engineer apaixonado por qualidade e automação",
       "description": "## Nossa empresa\nValorei\n\n## Descrição da vaga\nEstamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados comerciais. Você será responsável por projetar e manter suites de testes automatizados robustas, garantir cobertura de testes em funcionalidades críticas e colaborar com desenvolvedores e Product Managers para elevar os padrões de qualidade. Se você tem experiência sólida em Cypress, JavaScript, testes E2E e API, além de proficiência em inglês, essa é sua oportunidade!\n🎯 O que você fará no dia a dia:\n- Projetar, desenvolver, manter e melhorar continuamente suites de testes automatizados utilizando Cypress e JavaScript\n- Definir e implementar estratégias eficazes de automação de testes para aplicações web complexas\n- Desenvolver e executar testes end-to-end (E2E), integração, regressão, funcionais e de API\n- Realizar testes de API para validar integrações, regras de negócio e consistência de dados\n- Colaborar com desenvolvedores, Product Managers e outros engenheiros de QA ao longo do ciclo de desenvolvimento\n- Participar de análise de requisitos e discussões técnicas para identificar riscos de qualidade\n- Garantir cobertura de testes apropriada para novas funcionalidades, correções e fluxos críticos\n- Identificar, documentar e rastrear defeitos com informações técnicas claras\n- Utilizar Grafana e Sentry para monitorar comportamento da aplicação e investigar falhas\n- Integrar testes automatizados em pipelines CI/CD, garantindo validação contínua\n- Mentorizar e apoiar outros engenheiros de QA, compartilhando conhecimento e boas práticas\n✅\n\n## Local\nRemoto (Remoto)\n\n## Requisitos\n- Experiência sólida (mínimo 5 anos) em Garantia de Qualidade de Software e testes de software\n- Experiência prática forte com automação de testes utilizando Cypress e JavaScript\n- Experiência em design e manutenção de frameworks de testes automatizados escaláveis\n- Compreensão sólida de testes E2E, integração, regressão, funcionais e de API\n- Experiência testando aplicações web modernas e sistemas distribuídos\n- Conhecimento forte de metodologias de testes de software e práticas de ciclo de vida de desenvolvimento\n📩\n\n## Benefícios\nNão especificado\n\n## Contratação\nPJ\n\n## Como se candidatar\nInteressado(a)? Candidate-se: https://vagas.valorei.tech/caio/vagas/cmsxs2mi9000k13v46hsq94lw\n🚨 Comunidades exclusivas de Vagas nos links abaixo! Receba antes que todo mundo:\n📱 Grupo WhatsApp: https://chat.whatsapp.com/BLkqUBlq6scFfwh4eVZgCL?mode=wwc\n✈️ Canal Telegram: https://t.me/valoreivagas\n🎁 Conhece alguém ideal? Indique pelo nosso Programa de Indicações e ganhe R$ 200,00 a cada amigo contratado!\n🔗 https://vagas.valorei.tech/referral\n#SeniorQAEngineer #QAAutomation #Cypress #JavaScript #TestesAutomatizados #VagasEmTecnologia #100Remoto #EngenhariaDeQA #CarreiraEmTech #VagasAbertasAgora #OportunidadeRemota #TecnologiaEmFoco",
       "excerpt": "## Nossa empresa Valorei ## Descrição da vaga Estamos em busca de um Senior QA Engineer apaixonado por qualidade e automação para integrar o time de uma empresa líder em soluções de inteligência de negócios e dados co...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "6bde026d4059b1a3afa5f4d2e3b0167b38813c1767801d58f2b89f1d556fcebd",
       "repository": "qa-brasil/vagas",
       "repositoryUrl": "https://github.com/qa-brasil/vagas",
@@ -388,7 +388,7 @@
         "url": "https://github.com/qa-brasil/vagas"
       },
       "createdAt": "2026-08-19T14:32:37Z",
-      "updatedAt": "2026-10-24T03:58:54Z",
+      "updatedAt": "2026-10-31T04:51:55Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1280",
       "sourceType": "github-issue",
       "jobLocation": {

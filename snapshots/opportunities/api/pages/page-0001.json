@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-10-31T03:30:24.015Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_7f360ec30276f6b949efdb89",
     "gh_fd9c1ce498613dfab8d56a8d",
     "gh_e5c3fe2de4aec791023d34ec",
     "gh_9d50e797be669eee892f4cf9",
@@ -22,10 +23,93 @@
     "gh_87b101214c37821666f13aae",
     "gh_7ce789b1d213071032aedb90",
     "gh_d9dfe5cac9c424f1f17f3d37",
-    "gh_7a5fc9ff59c7e6ba5641e90f",
-    "gh_bd1a02dc4fb9f4d7e001599a"
+    "gh_7a5fc9ff59c7e6ba5641e90f"
   ],
   "items": [
+    {
+      "id": "gh_7f360ec30276f6b949efdb89",
+      "sourceId": "ambicuity/New-Grad-Jobs#457",
+      "title": "Job data is stale: last scrape 2026-10-31T02:19:56.945162Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41174323910. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "9d337b65c92f509744e57a5ba74239fdcd3c94caed029c9d3a0a990126f96457",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-31T05:53:02Z",
+      "updatedAt": "2026-10-31T05:53:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_7f360ec30276f6b949efdb89",
+          "sourceId": "ambicuity/New-Grad-Jobs#457",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
+          "createdAt": "2026-10-31T05:53:02Z",
+          "updatedAt": "2026-10-31T05:53:02Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-31T05:53:02Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_fd9c1ce498613dfab8d56a8d",
       "sourceId": "react-brasil/vagas#3039",
@@ -1300,7 +1384,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-27T07:54:09Z",
         "status": "fresh"
       }
@@ -1392,7 +1476,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-10-27T06:44:55Z",
         "status": "fresh"
       }
@@ -2244,132 +2328,6 @@
       "freshness": {
         "ageDays": 7,
         "publishedAt": "2026-10-23T20:20:43Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_bd1a02dc4fb9f4d7e001599a",
-      "sourceId": "awesome-jobs/vietnam#5095",
-      "title": "[HCM/Đà Nẵng] Tuyển 12 bạn junior-senior dev [pv 1 vòng 𝐨𝐧𝐥𝐢𝐧𝐞]",
-      "description": "Tuyển gấp 12 bạn junior-senior dev [pv 1 vòng 𝐨𝐧𝐥𝐢𝐧𝐞]\n1. Onsite tại Đà 𝐍ẵ𝐧𝐠/𝐇𝐂𝐌 (7 headcounts):\n+ Fullstack PHP, ReactJS : 2+ YoE level Junior, Middle (Upto 26M) | 4+ YoE level Senior/Leader (Upto 33M)\n+ Java Developer : 2+ YoE level Junior, Middle (Upto 26M) | 4+ YoE level Senior/Leader (Upto 33M)\n\n2. Onsite tại 𝐇𝐂𝐌 (5 headcounts):\n+ Fullstack Developer : Kinh nghiệm code AI, 1+ YoE PHP, 1 + YoE ReactJS. Lương upto 28M\n\n*Thông tin chung:\nDuration 2-3 tháng. Gia hạn hợp đồng ngắn hay dài dựa vào performance, năng lực ứng viên | Start ASAP hoặc muộn nhất đầu tháng 11.\n\nLH Techdy zl o332.o22.o55 | contact@techdy.vn",
-      "excerpt": "Tuyển gấp 12 bạn junior-senior dev [pv 1 vòng 𝐨𝐧𝐥𝐢𝐧𝐞] 1. Onsite tại Đà 𝐍ẵ𝐧𝐠/𝐇𝐂𝐌 (7 headcounts): + Fullstack PHP, ReactJS : 2+ YoE level Junior, Middle (Upto 26M) | 4+ YoE level Senior/Leader (Upto 33M) + J...",
-      "issueState": "open",
-      "contentHash": "0dc2cd77f810ef5a54b326d1b70664452dca76b0afb33d34a3bf0391d2caada1",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "fullstack",
-        "java",
-        "junior",
-        "onsite",
-        "react",
-        "senior"
-      ],
-      "sourceTags": [
-        "fullstack",
-        "java",
-        "junior",
-        "onsite",
-        "react",
-        "senior"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-10-23T12:33:38Z",
-      "updatedAt": "2026-10-23T12:34:15Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5095",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [
-          "java",
-          "php",
-          "react"
-        ],
-        "seniority": [
-          "junior",
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_bd1a02dc4fb9f4d7e001599a",
-          "sourceId": "awesome-jobs/vietnam#5095",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5095",
-          "createdAt": "2026-10-23T12:33:38Z",
-          "updatedAt": "2026-10-23T12:34:15Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_cddc2ddcad404be2d01af448",
-          "sourceId": "awesome-jobs/jobs#5095",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5095",
-          "createdAt": "2026-10-23T12:33:38Z",
-          "updatedAt": "2026-10-23T12:34:15Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-23T12:33:38Z",
         "status": "fresh"
       }
     }

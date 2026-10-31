@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-10-31T03:30:24.015Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "1207df794f53c80d7689ea34490518e4dcb2812b1dd5804e709ba9c9a308ec82",
+  "dataHash": "744d2eae9d2761c89b87c800f82c844692d2adbb272e282c13b013d1cdd29eff",
   "totals": {
-    "openOpportunities": 675,
+    "openOpportunities": 674,
     "pages": 34,
     "repositories": 106,
     "communities": 187,
     "countries": 14,
     "regions": 5,
     "authors": 351,
-    "authorArtifactBytes": 101392
+    "authorArtifactBytes": 101408
   },
   "files": {
     "facets": "api/facet-index.json",
@@ -29,7 +29,7 @@
       "3Tecnos-Development/vagas": 7,
       "ad-si/awesome-fp-jobs": 2,
       "ajudevs/vagas": 11,
-      "ambicuity/New-Grad-Jobs": 4,
+      "ambicuity/New-Grad-Jobs": 5,
       "android-cn/android-jobs": 4,
       "androiddevbr/vagas": 3,
       "awesome-jobs/china": 5,
@@ -103,7 +103,7 @@
       "Proyecto-Nutria/MX-FTE": 1,
       "pydevbr/vagas": 4,
       "pythonjobs/jobs": 4,
-      "qa-brasil/vagas": 4,
+      "qa-brasil/vagas": 2,
       "react-brasil/vagas": 8,
       "react-native-drops/vagas": 2,
       "reactrecife/vagas": 7,
@@ -137,12 +137,12 @@
       "Asia": 175,
       "Europe": 9,
       "Global": 91,
-      "North America": 89,
-      "South America": 311
+      "North America": 90,
+      "South America": 309
     },
     "countries": {
       "Argentina": 24,
-      "Brazil": 285,
+      "Brazil": 283,
       "Canada": 5,
       "China": 49,
       "Germany": 5,
@@ -153,7 +153,7 @@
       "Singapore": 2,
       "Spain": 1,
       "Taiwan": 90,
-      "United States": 82,
+      "United States": 83,
       "Vietnam": 30
     },
     "tags": {
@@ -186,7 +186,7 @@
       "chamba": 1,
       "ci-cd": 5,
       "cio": 2,
-      "clt": 34,
+      "clt": 33,
       "contrato": 1,
       "cv": 1,
       "data": 182,
@@ -202,7 +202,6 @@
       "enhancement": 8,
       "especialista": 6,
       "estagio": 3,
-      "exterior": 1,
       "f-angular": 1,
       "f-js": 1,
       "f-react": 7,
@@ -229,7 +228,7 @@
       "housekeeping": 1,
       "hybrid": 22,
       "infra": 4,
-      "ingles": 3,
+      "ingles": 1,
       "integration": 1,
       "internacional": 1,
       "ios": 1,
@@ -258,9 +257,9 @@
       "outros": 3,
       "pa": 3,
       "php": 3,
-      "pj": 43,
+      "pj": 41,
       "platform": 1,
-      "pleno": 97,
+      "pleno": 96,
       "postgres": 4,
       "presencial-goiania-go": 1,
       "presencial-porto-alegre": 1,
@@ -272,7 +271,7 @@
       "react": 92,
       "react-native": 1,
       "recruited": 1,
-      "remote": 155,
+      "remote": 153,
       "remotely": 4,
       "remoteok-io": 16,
       "rest": 2,
@@ -283,13 +282,14 @@
       "sao-paulo": 2,
       "sao-paulo-barueri": 1,
       "sap": 1,
+      "scraper-stale": 1,
       "security": 4,
       "senior": 131,
       "spring": 8,
       "sql": 5,
       "sre": 4,
       "staff": 7,
-      "stale": 19,
+      "stale": 17,
       "swift": 2,
       "takuma": 1,
       "testes-automatizados": 7,
@@ -348,7 +348,7 @@
       "britez": 1,
       "brunossander": 2,
       "bthaas": 1,
-      "caiorehenrique": 5,
+      "caiorehenrique": 4,
       "calvinomiguel": 1,
       "Camila-Goms": 3,
       "Camiladsr": 1,
@@ -421,6 +421,7 @@
       "GiLazaro": 2,
       "gina1309": 1,
       "GiovaniPole0": 6,
+      "github-actions[bot]": 1,
       "greenapptech": 1,
       "gulatimehul": 1,
       "gustable42": 1,
@@ -494,7 +495,6 @@
       "louisehuyuning": 1,
       "lucasavila00": 1,
       "Lucianoonaicul": 1,
-      "Luiz-Olivieri": 1,
       "Luiza3004": 2,
       "lukasz-madon": 1,
       "machengzhao": 1,
@@ -653,6 +653,7 @@
       "zrack23": 2
     },
     "authorLabels": {
+      "github-actions[bot]": "github-actions[bot]",
       "FrancieleGhizzoni": "FrancieleGhizzoni",
       "dougaitken": "dougaitken",
       "idrkul5": "idrkul5",
@@ -736,7 +737,6 @@
       "raahilpattan": "raahilpattan",
       "aaronkwokweb3": "aaronkwokweb3",
       "caiorehenrique": "caiorehenrique",
-      "Luiz-Olivieri": "Luiz-Olivieri",
       "sarahfw23": "sarahfw23",
       "oandersonporto": "oandersonporto",
       "gedaw2": "gedaw2",
@@ -1033,19 +1033,19 @@
     "workModels": {
       "hybrid": 70,
       "on-site": 79,
-      "remote": 299
+      "remote": 297
     },
     "areas": {
-      "backend": 182,
+      "backend": 181,
       "data-ai": 129,
-      "design": 202,
+      "design": 201,
       "devops-sre": 93,
-      "frontend": 140,
+      "frontend": 139,
       "fullstack": 107,
       "leadership": 24,
-      "mobile": 124,
+      "mobile": 123,
       "product": 13,
-      "qa": 36,
+      "qa": 34,
       "security": 4,
       "support": 28
     },
@@ -1061,7 +1061,7 @@
       "gcp": 60,
       "go": 75,
       "java": 182,
-      "javascript": 130,
+      "javascript": 129,
       "kotlin": 21,
       "kubernetes": 69,
       "laravel": 19,
@@ -1086,21 +1086,21 @@
       "internship": 59,
       "junior": 78,
       "lead": 55,
-      "mid": 122,
+      "mid": 121,
       "principal": 19,
-      "senior": 234,
+      "senior": 233,
       "staff": 12
     },
     "employmentTypes": {
-      "contractor": 107,
-      "employee": 116,
+      "contractor": 105,
+      "employee": 115,
       "full-time": 56,
       "internship": 57,
       "part-time": 19
     },
     "languages": {
       "de": 4,
-      "en": 141,
+      "en": 139,
       "es": 14,
       "fr": 1,
       "it": 1,
@@ -1108,14 +1108,14 @@
     },
     "freshness": {
       "7": 21,
-      "30": 100,
-      "90": 171,
-      "aging": 71,
-      "fresh": 100,
+      "30": 92,
+      "90": 170,
+      "aging": 78,
+      "fresh": 92,
       "stale": 504
     },
     "salaryDisclosed": {
-      "false": 562,
+      "false": 561,
       "true": 113
     }
   },
@@ -1288,7 +1288,7 @@
     {
       "page": 34,
       "file": "api/pages/page-0034.json",
-      "count": 15
+      "count": 14
     }
   ]
 }

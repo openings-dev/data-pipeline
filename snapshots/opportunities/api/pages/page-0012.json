@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-10-30T21:51:17.078Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
-    "gh_86cf7c4c726a6cec1163d1fb",
     "gh_0f0495da862b94749892e684",
     "gh_d6f31a804dacbc548031ec5e",
     "gh_bf70dc9f783bd9e91215da56",
@@ -23,104 +22,10 @@
     "gh_8d3d4b455493191722317dda",
     "gh_b1d7b3a976f64e5cf24ef658",
     "gh_777d6953c094c4c77cffa586",
-    "gh_03fa03119cda6972a7f24c60"
+    "gh_03fa03119cda6972a7f24c60",
+    "gh_018090ae0b51c7fe869fe122"
   ],
   "items": [
-    {
-      "id": "gh_86cf7c4c726a6cec1163d1fb",
-      "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-      "title": "Bug: Company logo thumbnails enter corrupted render state after job application, stale DOM / z-index collision across job card components",
-      "description": "# Company thumbnails overlap other job cards after applying to a posting\n\nHey team,\n\nI've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that job bleeds over into the other job cards in the feed. Sometimes it stacks on top of the adjacent card's logo, sometimes it straight up replaces it. It looks pretty broken.\n\nThe weird part is that it fixes itself the moment I do a hard refresh. So the data coming from the backend seems fine, this is purely a client-side rendering issue.\n\n## Repro\n\n1. Go to the job listings feed.\n2. Apply to any job.\n3. Come back to the listings (back nav or closing the apply modal).\n4. The thumbnails on nearby job cards are now messed up; wrong logos, overlapping, stacked, etc.\n5. Refresh the page → everything goes back to normal.\n\nThis happens every single time, not intermittent. I've tried it across a few different browsers (Chrome and Firefox) and it's the same behavior.\n\n## What I think is going on\n\nI'm a software engineer so I poked around in devtools a bit. A few things that might be worth looking at:\n\n**Key prop issue on the list**: If the job card list is keyed by array index instead of something stable like `job.id`, React's reconciler will reuse DOM nodes incorrectly when the list state changes after applying. This would explain why the thumbnails get \"shifted\" onto wrong cards. Classic React anti-pattern.\n\n**Stacking context / z-index leak**: When the apply flow triggers (modal, overlay, toast, whatever), it might be setting `position: absolute` or bumping `z-index` on the applied card's thumbnail. If that style isn't cleaned up properly (maybe an animation callback that doesn't fire?), the image escapes its container and sits on top of siblings. Throwing `overflow: hidden` and `position: relative` on the card container would contain this.\n\n**Race condition on refetch**: If applying fires off a POST and then the feed revalidates in parallel (SWR `mutate()`, React Query `invalidateQueries()`, etc.), there's a window where partial/stale data gets rendered before the fresh response lands. The thumbnails might be getting swapped around during that intermediate state.\n\n**Image caching**: Less likely, but if there's a custom image component or service worker caching thumbnails by position/index instead of URL, a re-render after apply could serve the wrong cached image to the wrong card.\n\n## Quick fix suggestions\n\n- Check that `key={job.id}` (or whatever unique identifier) is used on the card list, not `key={index}`.\n- Make sure each card's thumbnail container has its own stacking context (`position: relative; overflow: hidden;`).\n- If the apply action triggers a list refetch, batch the state update or wrap it in `startTransition` so you don't get an intermediate broken frame.\n- Audit `useEffect` cleanups around the apply modal/overlay, something might not be resetting styles on unmount.\n\n## Environment\n\n- Chrome 124  on macOS\n- Desktop, standard resolution\n- Happens on both fast and slow connections so it's not a network timing thing\n\nNot a blocker since refresh fixes it, but it makes the platform look buggy and I'd imagine it's hurting trust with less technical users who don't know to just reload. Happy to provide more details or screen recordings if that helps.",
-      "excerpt": "# Company thumbnails overlap other job cards after applying to a posting Hey team, I've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that ...",
-      "issueState": "open",
-      "contentHash": "1e4843c8fb9d905a53f168f5b02b0201043140e257eec09e5f353c378fe3c473",
-      "repository": "jobright-ai/2026-Data-Analysis-Internship",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "author": {
-        "id": "JayDS22",
-        "name": "JayDS22",
-        "handle": "JayDS22",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Data-Analysis-Internship",
-        "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-      },
-      "createdAt": "2026-03-22T16:47:15Z",
-      "updatedAt": "2026-03-22T16:51:05Z",
-      "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "go",
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_86cf7c4c726a6cec1163d1fb",
-          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-          "repository": "jobright-ai/2026-Data-Analysis-Internship",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-          "createdAt": "2026-03-22T16:47:15Z",
-          "updatedAt": "2026-03-22T16:51:05Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Data-Analysis-Internship",
-            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 222,
-        "publishedAt": "2026-03-22T16:47:15Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_0f0495da862b94749892e684",
       "sourceId": "react-native-drops/vagas#148",
@@ -1125,7 +1030,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 269,
+        "ageDays": 270,
         "publishedAt": "2026-02-03T08:33:10Z",
         "status": "stale"
       }
@@ -1239,7 +1144,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 275,
+        "ageDays": 276,
         "publishedAt": "2026-01-28T06:02:14Z",
         "status": "stale"
       }
@@ -1329,7 +1234,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 276,
+        "ageDays": 277,
         "publishedAt": "2026-01-27T03:43:19Z",
         "status": "stale"
       }
@@ -1437,7 +1342,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 276,
+        "ageDays": 277,
         "publishedAt": "2026-01-27T03:40:08Z",
         "status": "stale"
       }
@@ -1521,7 +1426,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 283,
+        "ageDays": 284,
         "publishedAt": "2026-01-20T05:43:31Z",
         "status": "stale"
       }
@@ -1943,7 +1848,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 288,
+        "ageDays": 289,
         "publishedAt": "2026-01-15T06:48:02Z",
         "status": "stale"
       }
@@ -2059,6 +1964,110 @@
       "freshness": {
         "ageDays": 290,
         "publishedAt": "2026-01-13T14:23:29Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_018090ae0b51c7fe869fe122",
+      "sourceId": "TechnologyMasters/jobs#722",
+      "title": "Biz-Tech Analytics - DevOps Engineer - India - Rs.1000-1200/hr",
+      "description": "We’re hiring for our client: Biz-Tech Analytics\n\nRole: DevOps Engineer (Freelance)\nExperience: 4-7+ years\nProject: Terminus Project\nLocation: Remote\nEngagement Type: Freelance | Project-based\n\nAbout the Role:\nBiz-Tech Analytics is looking for experienced DevOps Engineers to contribute to the Terminus Project, a hands-on initiative involving system-level problem solving, automation, and containerised environments.\nThis role is ideal for engineers who enjoy working close to the system layer, debugging complex issues, and building reliable automation in isolated environments.\n\n\nKey Responsibilities:\n • Work on Linux-based systems, handling process management, file systems, and system utilities\n • Write clean, testable Python code for automation and verification\n • Build, configure, and manage Docker-based environments for testing and deployment\n • Troubleshoot and debug complex system and software issues\n • Collaborate using Git and GitHub workflows, including pull requests and branching\n • Execute tasks independently and iterate based on structured feedback\n\nRequired Skills & Qualifications:\n • Expert-level proficiency with Linux CLI, including Bash scripting\n • Strong Python programming skills for automation and tooling\n • Hands-on experience with Docker and containerized environments\n • Excellent problem-solving and debugging skills\n • Proficiency with Git and standard GitHub workflows\n\nPreferred Qualifications:\n • Professional experience in DevOps or Site Reliability Engineering (SRE)\n • Exposure to cloud platforms such as AWS, GCP, or Azure\n • Familiarity with machine learning frameworks like TensorFlow or PyTorch\n • Prior experience contributing to open-source projects\n\nEngagement Details\n • Fully remote freelance engagement\n • Flexible workload, with scope to take on additional tasks\n • Opportunity to work on real-world systems supporting advanced AI and infrastructure projects\n\nPayment Details\n • Rs.1000-1200/hr for approved tasks (India)\n • Invoice to be raised 15-20 days after starting the initial task as long as it is approved\n\nApply via\n • Google form: https://forms.gle/ETNec2n1qJundZsX6\n\n About Biz-Tech Analytics:\nBiz-Tech Analytics partners with global enterprises, AI labs, and industrial businesses to help them build and scale frontier AI systems. From data creation to deployment, the team delivers specialised services including human-in-the-loop annotation, reinforcement learning from human feedback (RLHF), and custom dataset creation.\nWith a network of 500+ vetted developers, STEM professionals, linguists, and domain experts, Biz-Tech Analytics supports leading global platforms by enhancing complex AI models and providing high-precision feedback at scale.\nTheir work sits at the intersection of advanced research, engineering rigor, and real-world AI deployment, making them a strong partner for cutting-edge AI initiatives.",
+      "excerpt": "We’re hiring for our client: Biz-Tech Analytics Role: DevOps Engineer (Freelance) Experience: 4-7+ years Project: Terminus Project Location: Remote Engagement Type: Freelance | Project-based About the Role: Biz-Tech A...",
+      "issueState": "open",
+      "contentHash": "8873badd16a5033d22f1d13c655a680775ac67caeb12e018287652cde4ab1496",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "devops",
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "data",
+        "devops",
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "gulatimehul",
+        "name": "gulatimehul",
+        "handle": "gulatimehul",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/224396119?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "createdAt": "2026-01-05T22:50:21Z",
+      "updatedAt": "2026-01-05T22:50:21Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/722",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "gcp",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_018090ae0b51c7fe869fe122",
+          "sourceId": "TechnologyMasters/jobs#722",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/722",
+          "createdAt": "2026-01-05T22:50:21Z",
+          "updatedAt": "2026-01-05T22:50:21Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 298,
+        "publishedAt": "2026-01-05T22:50:21Z",
         "status": "stale"
       }
     }

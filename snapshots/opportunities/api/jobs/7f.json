@@ -1,6 +1,90 @@
 {
-  "generatedAt": "2026-10-31T03:30:24.015Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "items": {
+    "gh_7f360ec30276f6b949efdb89": {
+      "id": "gh_7f360ec30276f6b949efdb89",
+      "sourceId": "ambicuity/New-Grad-Jobs#457",
+      "title": "Job data is stale: last scrape 2026-10-31T02:19:56.945162Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41174323910. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "9d337b65c92f509744e57a5ba74239fdcd3c94caed029c9d3a0a990126f96457",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-31T05:53:02Z",
+      "updatedAt": "2026-10-31T05:53:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_7f360ec30276f6b949efdb89",
+          "sourceId": "ambicuity/New-Grad-Jobs#457",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
+          "createdAt": "2026-10-31T05:53:02Z",
+          "updatedAt": "2026-10-31T05:53:02Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-10-31T05:53:02Z",
+        "status": "fresh"
+      }
+    },
     "gh_7f94c93b0bdd4341a646243b": {
       "id": "gh_7f94c93b0bdd4341a646243b",
       "sourceId": "Empregos-dev/Vagas-dev#107",
@@ -285,7 +369,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1165,
+        "ageDays": 1166,
         "publishedAt": "2023-08-22T05:58:00Z",
         "status": "stale"
       }
@@ -496,7 +580,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3873,
+        "ageDays": 3874,
         "publishedAt": "2016-03-23T06:16:04Z",
         "status": "stale"
       }

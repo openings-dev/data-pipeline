@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-10-30T21:51:17.078Z",
+  "generatedAt": "2026-10-31T11:29:51.675Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "2c90a442fce873f96149951af09340b3fd8cc3ce8bf5f1c65a01e5dc2ca9fb5b",
+  "dataHash": "22ceb3581b5a7d9fcc21139e1ac3fc7aba4faec54dd0f704d0accba6ef491a94",
   "items": [
+    {
+      "id": "gh_7f360ec30276f6b949efdb89",
+      "sourceId": "ambicuity/New-Grad-Jobs#457",
+      "title": "Job data is stale: last scrape 2026-10-31T02:19:56.945162Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41174323910. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "9d337b65c92f509744e57a5ba74239fdcd3c94caed029c9d3a0a990126f96457",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-31T05:53:02Z",
+      "updatedAt": "2026-10-31T05:53:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_4f7fd9214a277a97b0ec41c5",
       "sourceId": "ambicuity/New-Grad-Jobs#456",
@@ -1733,70 +1791,6 @@
       "createdAt": "2026-03-02T20:46:06Z",
       "updatedAt": "2026-10-16T22:55:37Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/28",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_e73e9a5bddeb4cce49ecfa5f",
-      "sourceId": "ambicuity/New-Grad-Jobs#27",
-      "title": "[Beginner]: Convert usa_states and usa_cities lists in is_valid_location() to frozenset for O(1) lookup",
-      "description": "## Summary\n\n`is_valid_location()` in `scripts/update_jobs.py` stores USA state abbreviations and city names in **plain Python lists**. Every call performs a linear scan (`O(n)`) across 100+ entries. Converting to `frozenset` makes each lookup `O(1)` and is the idiomatic Python approach for membership testing.\n\n## Location\n\n`scripts/update_jobs.py`, function `is_valid_location()` (~line 1067)\n\n```python\n# Current — O(n) linear scan, called for every job\nusa_states = [\n    'alabama', 'al', 'alaska', 'ak', ...  # 102 entries, rebuilt per call\n]\nusa_cities = [\n    'new york', 'los angeles', ...  # 42 entries, rebuilt per call\n]\nfor state in usa_states:          # O(n) every time\n    if state in location_lower:\n        return True\n```\n\n## Expected Fix\n\nMove the lists to **module-level constants** as `frozenset` (immutable, hashable):\n\n```python\n# At module level (top of file, after imports)\n_USA_STATES: frozenset[str] = frozenset([\n    'alabama', 'al', 'alaska', 'ak', ...\n])\n_USA_CITIES: frozenset[str] = frozenset([\n    'new york', 'los angeles', ...\n])\n_CANADA_INDICATORS: frozenset[str] = frozenset([...])\n_INDIA_INDICATORS: frozenset[str] = frozenset([...])\n\ndef is_valid_location(location: str) -> bool:\n    ...\n    # Now O(1) per check, and no list rebuild per call\n    if any(state in location_lower for state in _USA_STATES):\n        return True\n```\n\n## Why This Matters\n\n`is_valid_location()` is called for **every job** in the pipeline (potentially thousands per run). Rebuilding these lists on the stack 10,000+ times per execution is unnecessary overhead. Module-level `frozenset` constants are constructed once at import time.\n\n## Acceptance Criteria\n\n- [ ] `usa_states`, `usa_cities`, `canada_indicators`, `india_indicators` moved to module-level `frozenset` constants\n- [ ] Named with leading underscore (e.g. `_USA_STATES`) to signal internal use\n- [ ] `is_valid_location()` updated to use the new constants\n- [ ] Existing behavior (returns `True`/`False`) is unchanged\n- [ ] CI passes\n\n## Skill Level\n\n**Beginner** — Pure refactor: moving data from inside a function to module-level constants and changing `list` to `frozenset`. No logic changes required.",
-      "excerpt": "## Summary `is_valid_location()` in `scripts/update_jobs.py` stores USA state abbreviations and city names in **plain Python lists**. Every call performs a linear scan (`O(n)`) across 100+ entries. Converting to `froz...",
-      "issueState": "closed",
-      "contentHash": "fe11f845ce3d4375ac8012f80ebbc6d172c94a1c9aca8de7facd0785841156bc",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement",
-        "good first issue",
-        "type: chore"
-      ],
-      "sourceTags": [
-        "type: enhancement",
-        "good first issue",
-        "type: chore"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T20:19:35Z",
-      "updatedAt": "2026-10-16T22:55:35Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/27",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
