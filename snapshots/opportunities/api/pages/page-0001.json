@@ -1,11 +1,10 @@
 {
-  "generatedAt": "2026-10-31T20:51:27.115Z",
+  "generatedAt": "2026-10-31T23:54:08.472Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
     "gh_afcd8a82f0aa037352eb5856",
-    "gh_7f360ec30276f6b949efdb89",
     "gh_fd9c1ce498613dfab8d56a8d",
     "gh_e5c3fe2de4aec791023d34ec",
     "gh_9d50e797be669eee892f4cf9",
@@ -23,7 +22,8 @@
     "gh_7ce789b1d213071032aedb90",
     "gh_d9dfe5cac9c424f1f17f3d37",
     "gh_bd1a02dc4fb9f4d7e001599a",
-    "gh_16411c913e420988025158f9"
+    "gh_16411c913e420988025158f9",
+    "gh_fd2ef9052402e6b346c451bd"
   ],
   "items": [
     {
@@ -111,90 +111,6 @@
       "freshness": {
         "ageDays": 0,
         "publishedAt": "2026-10-31T20:15:52Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_7f360ec30276f6b949efdb89",
-      "sourceId": "ambicuity/New-Grad-Jobs#457",
-      "title": "Job data is stale: last scrape 2026-10-31T02:19:56.945162Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41174323910. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "9d337b65c92f509744e57a5ba74239fdcd3c94caed029c9d3a0a990126f96457",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-31T05:53:02Z",
-      "updatedAt": "2026-10-31T05:53:02Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_7f360ec30276f6b949efdb89",
-          "sourceId": "ambicuity/New-Grad-Jobs#457",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/457",
-          "createdAt": "2026-10-31T05:53:02Z",
-          "updatedAt": "2026-10-31T05:53:02Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-10-31T05:53:02Z",
         "status": "fresh"
       }
     },
@@ -2270,6 +2186,86 @@
       "freshness": {
         "ageDays": 8,
         "publishedAt": "2026-10-23T10:36:33Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_fd2ef9052402e6b346c451bd",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2986",
+      "title": "Hardware enginnering",
+      "description": "The link to hardware engineering is not working, in new grad roles.",
+      "excerpt": "The link to hardware engineering is not working, in new grad roles.",
+      "issueState": "open",
+      "contentHash": "e4a6a95ab8f5c6a2bc87b94c860af0384eb31f083284c6b8d6338dd94b998b09",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "suryavamshi1004",
+        "name": "suryavamshi1004",
+        "handle": "suryavamshi1004",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/187217186?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-10-22T21:34:21Z",
+      "updatedAt": "2026-10-22T21:34:21Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2986",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_fd2ef9052402e6b346c451bd",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2986",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2986",
+          "createdAt": "2026-10-22T21:34:21Z",
+          "updatedAt": "2026-10-22T21:34:21Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-10-22T21:34:21Z",
         "status": "fresh"
       }
     }
