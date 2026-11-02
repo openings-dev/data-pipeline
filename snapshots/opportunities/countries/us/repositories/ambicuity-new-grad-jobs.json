@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-01T19:18:47.724Z",
+  "generatedAt": "2026-11-02T10:23:30.704Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "36b6bfc5cb65e2f3712442b2ba75f288cf7a105d0b9a58e0f54554dc9be73c93",
+  "dataHash": "96df1f15ac091dcbf8ee243f9cc7614e254dab0e067ebb0652f0dec93421efe8",
   "items": [
+    {
+      "id": "gh_8ac933ce31d46b2a289ec0f2",
+      "sourceId": "ambicuity/New-Grad-Jobs#459",
+      "title": "Job data is stale: last scrape 2026-11-02T00:40:20.143909Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **338 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41399144932. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **338 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "aa2aa2cbdc5859ed89c979347ea14c0eac49e188dbbed825aa1b76d4932b7ef9",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-02T06:19:16Z",
+      "updatedAt": "2026-11-02T06:19:16Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/459",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_561fa6ad9d749a58c266bd81",
       "sourceId": "ambicuity/New-Grad-Jobs#458",
@@ -1669,66 +1727,6 @@
       "createdAt": "2026-03-02T23:39:26Z",
       "updatedAt": "2026-10-16T22:55:50Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/47",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_78db60d3e2c623b18cb48443",
-      "sourceId": "ambicuity/New-Grad-Jobs#45",
-      "title": "[Beginner]: Add standard module-level docstrings to `generate_companies.py` functions",
-      "description": "### Description\nThe functions `generate_greenhouse_companies`, `generate_lever_companies`, and `generate_workday_companies` have very brief docstrings. Expand them to explain parameters and return formats.\n\n### Why it matters\nGood documentation helps new contributors understand what the generation scripts actually output without reading the inner loops.\n\n### Acceptance Criteria\n- [ ] Add detailed docstrings explaining arguments and return types to all 4 functions\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description The functions `generate_greenhouse_companies`, `generate_lever_companies`, and `generate_workday_companies` have very brief docstrings. Expand them to explain parameters and return formats. ### Why it ...",
-      "issueState": "closed",
-      "contentHash": "0cdaf21b590b3fe466da4258b6f3f22ce566a48219f909e6a8e7b27f3b023ddb",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:21Z",
-      "updatedAt": "2026-10-16T22:55:40Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/45",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"

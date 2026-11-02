@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-11-02T00:05:30.817Z",
+  "generatedAt": "2026-11-02T10:23:30.704Z",
   "page": 4,
   "pageSize": 20,
   "nextPage": "api/pages/page-0005.json",
   "ids": [
+    "gh_4a700fa8926cbb8edfbdeb95",
+    "gh_94493c77be84aabfeeabe717",
+    "gh_0da1549c7daf4a0c09a7d121",
+    "gh_2f90b160baee5d09b0165e89",
+    "gh_14ddee933b9b152d7875ef0c",
     "gh_8d2476b1965d80a6141c7e7a",
     "gh_776da6cd16a3878a7aa6c3ac",
     "gh_f854256c35a417d8933cfcfe",
@@ -18,14 +23,460 @@
     "gh_3f4dd25df83e57f5eacf604a",
     "gh_6328d3e6c1b2d143814658ba",
     "gh_ba6a0a263cfc528310b60343",
-    "gh_f806a9484b4d439100a45dab",
-    "gh_37868d2da89017c43383f5f3",
-    "gh_0065133926adf9a786c1f458",
-    "gh_14809edc1bee697bfd43f43f",
-    "gh_7d2ddd4299e54af674ed129e",
-    "gh_a4a7d7b8ea3a77260256bf62"
+    "gh_f806a9484b4d439100a45dab"
   ],
   "items": [
+    {
+      "id": "gh_4a700fa8926cbb8edfbdeb95",
+      "sourceId": "ambicuity/New-Grad-Jobs#449",
+      "title": "[Bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
+      "description": "### Bug Type\nPortal: website not loading or showing stale data\n\n### Description\nThe browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response with an invalid jobs schema. If the index answers HTTP 200 with `{ \"nope\": 1 }` while `jobs.json` contains valid postings, `loadJobs` returns an error and zero jobs without requesting the healthy full dataset.\n\nVerified against `main` at `c73256709`; the relevant files are unchanged from that commit. This is a deterministic fault-injection reproduction, not evidence that production currently serves an invalid index.\n\n### Steps to Reproduce\nRun from the repository root:\n\n```sh\nnode --input-type=module <<'JS'\nimport { loadJobs } from './site/src/data/jobs-source.js';\nconst calls = [];\nconst fetchImpl = async (url) => {\n  calls.push(url);\n  return {\n    ok: true,\n    json: async () => url.endsWith('jobs-index.json')\n      ? { nope: 1 }\n      : { jobs: [{ job_id: 'job_valid', title: 'Junior Engineer', company: 'Example' }] },\n  };\n};\nconst result = await loadJobs(fetchImpl, false);\nconsole.log({ calls, jobs: result.jobs.length, error: result.error });\nJS\n```\n\nActual:\n\n```text\ncalls: ['./jobs-index.json']\njobs: 0\nerror: 'jobs payload has no \"jobs\" array'\n```\n\nExpected: `jobs.json` is requested, its valid posting is returned, and `error` is null.\n\n### Cause\nIn [`jobs-source.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/data/jobs-source.js), the inner `try/catch` protects only the index fetch/decode. `normalizeJobsPayload(payload)` runs after that catch, so a schema error goes straight to the outer failure handler and bypasses the fallback.\n\nThe existing “reports a malformed payload” test supplies only an invalid index. It does not provide a healthy full file or assert that fallback was attempted.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Index loading is considered successful only after schema validation and normalization succeed.\n- [ ] A schema-invalid index triggers a request for `jobs.json`.\n- [ ] A valid full payload restores jobs and returns `error: null`.\n- [ ] A valid empty index (`jobs: []`) remains a successful empty result, without fallback.\n- [ ] When both candidates fail, the loader resolves with an explicit error rather than rejecting or silently reporting success.\n- [ ] Add deterministic tests for invalid index + healthy full payload, both invalid, and valid empty index; cover schema-invalid Brotli index payloads as applicable.\n\n### Validation\nReproduced with the injected fetch above. Existing checks also pass: `vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js` (**50 passed**).\n\nSearched open and closed issues for index/fallback/malformed-payload reports; no issue tracking this specific jobs-loader recovery gap was found.",
+      "excerpt": "### Bug Type Portal: website not loading or showing stale data ### Description The browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response wit...",
+      "issueState": "open",
+      "contentHash": "0b615e7f62c8083170a457bc160151ca568ed466ed88ac0e70b96404a2b69f3d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "'Example' }] },",
+      "createdAt": "2026-10-16T23:03:02Z",
+      "updatedAt": "2026-10-16T23:03:02Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4a700fa8926cbb8edfbdeb95",
+          "sourceId": "ambicuity/New-Grad-Jobs#449",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
+          "createdAt": "2026-10-16T23:03:02Z",
+          "updatedAt": "2026-10-16T23:03:02Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-10-16T23:03:02Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "sourceId": "ambicuity/New-Grad-Jobs#448",
+      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
+      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
+      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
+      "issueState": "open",
+      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T23:03:00Z",
+      "updatedAt": "2026-10-16T23:03:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_94493c77be84aabfeeabe717",
+          "sourceId": "ambicuity/New-Grad-Jobs#448",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+          "createdAt": "2026-10-16T23:03:00Z",
+          "updatedAt": "2026-10-16T23:03:00Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-10-16T23:03:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_0da1549c7daf4a0c09a7d121",
+      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+      "title": "[Product Bug] Jobs auto-detected as \"Applied\" remain visible in \"Liked\" tab (cross-tab duplication)",
+      "description": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team.\n\n### Bug\n\nAfter the Chrome extension auto-detects a submitted application, the job stays in **both** the \"Liked\" tab AND the \"Applied\" tab. User has to manually un-Like each one or Liked-tab counts inflate indefinitely.\n\n### Repro\n\n1. Save a job to the Liked list (click heart/save on a job card)\n2. Apply to that same job on the external careers page\n3. Return to Jobright dashboard\n4. Observe: job appears in both Applied AND Liked\n\n### Expected\n\nOnce auto-detect flips a job to Applied, it should disappear from Liked. \"Applied\" supersedes \"Liked\" in the user's pipeline model: you don't \"like\" a job you've already committed to.\n\n### Impact\n\nBreaks pipeline tracking integrity. Any user with 20+ liked jobs who applies to a few per day accumulates a growing phantom Liked list that no longer reflects pipeline state. Appears to be a recurring class of complaint in third-party Jobright reviews (weak submission tracking).\n\n### One-click diagnostic for your eng team\n\nHard-refresh the Liked tab after reproducing:\n\n- **Duplicate persists**: backend data model issue (likely independent `isLiked` + `isApplied` boolean flags with no mutex, or separate collections with no cross-delete on apply-event)\n- **Duplicate clears**: frontend cache-invalidation miss on apply-event (likely Chrome extension writes applied status without invalidating the Liked-list query)\n\n### Fix sketch\n\n- **Write-side**: on apply-event, set `isLiked=false` as well, OR migrate to a single `status` enum (liked / applied / interviewing / rejected) that is mutually exclusive\n- **Query-side (belt-and-suspenders)**: filter Liked by `isLiked AND status != 'applied' AND status != 'interviewing'` so the bug cannot recur via other write paths\n\n### Severity\n\n**High**. Not critical (no data loss, no security issue), but breaks the extension's core value prop of trustworthy pipeline tracking. 200K users times this friction = material NPS impact.\n\nHappy to provide screenshots if that unblocks routing.",
+      "excerpt": "Hi Jobright team. Filing here because this repo is the most public-visible surface; please route to the extension / web-app product team. ### Bug After the Chrome extension auto-detects a submitted application, the jo...",
+      "issueState": "open",
+      "contentHash": "674740d7d1bb670636a9cd77e3422687bfcf1533e7088e9730959192c1948b0e",
+      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "frontend"
+      ],
+      "author": {
+        "id": "JayDS22",
+        "name": "JayDS22",
+        "handle": "JayDS22",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+      },
+      "createdAt": "2026-10-16T16:34:38Z",
+      "updatedAt": "2026-10-16T16:34:38Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_0da1549c7daf4a0c09a7d121",
+          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
+          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/9",
+          "createdAt": "2026-10-16T16:34:38Z",
+          "updatedAt": "2026-10-16T16:34:38Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-10-16T16:34:38Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_2f90b160baee5d09b0165e89",
+      "sourceId": "rebase-network/who-is-hiring#1320",
+      "title": "[远程] CEX公司诚聘 项目经理/财务经理/资深量化风险专家/资深量化交易专家",
+      "description": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。\n公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。\n\n\n## 地点\n\n- 工作地点：远程\n- 联系方式：@nature000111\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：远程\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n01｜项目经理（PMO）\n工作内容\n1. 负责市场活动、用户增长及运营类重点项目的规划与交付。  \n2. 协调产品、市场、运营等团队资源，推动项目按计划落地。  \n3. 管理项目进度、风险及交付质量，优化跨团队协作流程。  \n任职要求\n1. 2–5 年项目管理、PMO 或业务运营经验，有独立主导项目的成功案例。  \n2. 具备数字资产交易平台背景，有市场活动或用户增长项目经验。  \n3. 推动力强、结果导向，能够独立协调多部门解决问题，非纯执行型项目经理。  \n\n02｜财务经理\n工作内容\n1. 负责多币种、多主体账务管理、财务报表及月度、年度结算。  \n2. 管理冷热钱包、银行账户及链上资产，完成资金对账和差异排查。  \n3. 联合产品及研发团队搭建财务核算与对账系统，推动财务流程自动化。  \n任职要求\n1. 财务、会计、金融相关专业本科及以上学历。  \n2. 3 年以上 Web3 或加密交易平台财务经验，熟悉全盘账务及链上资金对账。  \n3. 熟悉多币种财务管理，具备财务系统从 0 到 1 建设或相关需求落地能力。  \n\n03｜资深量化风险专家（交易与对冲）\n工作内容\n1. 建立交易及对冲风险模型，管理风险敞口、保证金、流动性及风险限额。  \n2. 开展市场压力测试，评估极端行情下的潜在损失和资金风险。  \n3. 分析订单簿、成交及交易异常，推动风险预警与控制机制落地。  \n任职要求\n1. 通常 5 年以上量化风险、市场风险或衍生品交易相关经验。  \n2. 熟练使用 Python、SQL，具备风险建模、统计分析及压力测试能力。  \n3. 深入理解永续合约、期货、保证金、强平、资金费率及市场微观结构，具备独立风险管理案例。  \n\n04｜资深量化交易专家（对冲策略）\n工作内容\n1. 研究和优化动态对冲、库存管理、资金再平衡及量化交易策略。  \n2. 优化 Maker/Taker、订单路由、拆单及交易执行，降低交易成本。  \n3. 研究跨市场套利、基差和资金费率机会，负责策略实盘表现及净收益优化。  \n任职要求\n1. 通常 5 年以上量化交易、做市或电子交易经验，其中至少 2 年参与实盘策略及 PnL 管理。  \n2. 有独立主导策略研究、实盘上线及持续优化经验，能够解释收益来源和回撤。  \n3. 熟练使用 Python、SQL，理解回测验证、交易成本建模及衍生品市场机制。  \n## 工作环境",
+      "excerpt": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。 公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。 ## 地点 - 工作地点：远程 - 联系方式：@nature000111 ## 工作性质 - 是否全职：全职 - 是否远程：远程 - 时区要求：（GMT+8优先...",
+      "issueState": "open",
+      "contentHash": "f1859c2110ced5731c7c4c42694aaac2ba37bb1da458fdcd310f5627de750642",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "python"
+      ],
+      "sourceTags": [
+        "python"
+      ],
+      "author": {
+        "id": "digital123s",
+        "name": "digital123s",
+        "handle": "digital123s",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/221972900?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-10-16T02:41:02Z",
+      "updatedAt": "2026-10-16T02:41:02Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2f90b160baee5d09b0165e89",
+          "sourceId": "rebase-network/who-is-hiring#1320",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
+          "createdAt": "2026-10-16T02:41:02Z",
+          "updatedAt": "2026-10-16T02:41:02Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 17,
+        "publishedAt": "2026-10-16T02:41:02Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_14ddee933b9b152d7875ef0c",
+      "sourceId": "rebase-network/who-is-hiring#1319",
+      "title": "[香港] Web3金融科技公司诚聘C++/Rust/量化策略研究/机构BD,港币发薪",
+      "description": "专注于加密货币衍生品，尤其是期权交易的金融科技公司，总部位于新加坡，业务覆盖香港及全球数字资产市场。\n目前团队正在扩张，重点招聘 C++ 低延迟交易系统工程师、Rust 量化交易系统工程师、量化策略研究员及机构业务拓展经理等岗位。\n\n## 薪资福利待遇\n开发者喜欢薪资范围准确的招聘信息。\n此项必须填写，否则 Rebase 公众号和其它媒体渠道可能不会转发。\n\n## 地点\n\n- 工作地点：香港线下办公，可协助办理工作签证\n- 联系方式：@nature000111\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：香港线下办公，可协助办理工作签证\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n01｜C++ 低延迟交易系统工程师\n工作内容\n1. 使用 C++ 开发高频交易系统，包括行情、订单管理、交易执行及风控模块。\n2. 优化下单、撤单、成交回报及实时行情处理，降低交易延迟。\n3. 优化 Linux 系统性能、网络 I/O、并发处理及交易系统稳定性。 \n任职要求\n1. 2–5 年 C++ 开发经验，熟练掌握 Linux、多线程、网络编程及内存管理。\n2. 具备低延迟、高频交易、做市或电子交易系统开发经验。\n3. 理解衍生品交易流程，具备性能调优能力；熟悉 DPDK、RDMA、NUMA、Lock-free 等优先。 \n\n02｜Rust 量化交易系统工程师\n工作内容\n1. 使用 Rust 开发自动化交易策略及交易系统，支持做市与量化交易。\n2. 开发报价、动态对冲、仓位管理及风险控制模块。\n3. 优化下撤单、成交处理、交易 API 连接及实时监控系统。 \n任职要求\n1. 熟练掌握 Rust，熟悉 C++ 优先，具备稳定的系统开发能力。\n2. 有自动化交易、做市、量化交易或交易系统开发经验。\n3. 理解订单簿、资金费率、永续合约、滑点及仓位风险；有低延迟交易经验优先。 \n\n03｜量化策略研究员（高频交易与做市）\n工作内容\n1. 研究数字资产衍生品高频交易、线性做市及短周期量化策略。\n2. 分析订单簿、订单流及逐笔成交数据，开发预测信号和交易因子。\n3. 建立交易回测与仿真模型，优化报价、执行成本、库存及对冲策略。 \n任职要求\n1. 数学、统计、计算机或金融工程相关专业，通常具备 2–5 年量化研究或做市经验。\n2. 扎实的概率统计及时间序列分析基础，熟练使用 Python 进行策略研究及回测。\n3. 熟悉高频交易、市场微观结构和衍生品机制，有实盘策略经验优先。  \n\n04｜机构业务拓展经理（BD）\n工作内容\n1. 开发并维护机构客户、量化交易公司、做市商及经纪商资源。\n2. 负责客户需求沟通、商务谈判、合作方案及业务落地。\n3. 拓展香港及国际市场，推动机构合作和客户增长。 \n4. 任职要求\n1. 通常具备 2–5 年机构销售、BD 或商务合作经验。\n2. 熟悉数字资产行业及衍生品交易生态，理解期货、永续合约，熟悉期权优先。\n3. 中英文沟通流利，具备机构客户资源及独立商务拓展能力。 \n## 工作环境",
+      "excerpt": "专注于加密货币衍生品，尤其是期权交易的金融科技公司，总部位于新加坡，业务覆盖香港及全球数字资产市场。 目前团队正在扩张，重点招聘 C++ 低延迟交易系统工程师、Rust 量化交易系统工程师、量化策略研究员及机构业务拓展经理等岗位。 ## 薪资福利待遇 开发者喜欢薪资范围准确的招聘信息。 此项必须填写，否则 Rebase 公众号和其它媒体渠道可能不会转发。 ## 地点 - 工作地点：香港线下办公，可协助办理工作签证 - 联系方式：@...",
+      "issueState": "open",
+      "contentHash": "f33af77a53aaaac898c65cdfabe464d81ec544d2bfcff01161ddfc29cd4b7de3",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "python"
+      ],
+      "sourceTags": [
+        "python"
+      ],
+      "author": {
+        "id": "digital123s",
+        "name": "digital123s",
+        "handle": "digital123s",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/221972900?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-10-16T02:36:17Z",
+      "updatedAt": "2026-10-16T02:37:05Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1319",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_14ddee933b9b152d7875ef0c",
+          "sourceId": "rebase-network/who-is-hiring#1319",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1319",
+          "createdAt": "2026-10-16T02:36:17Z",
+          "updatedAt": "2026-10-16T02:37:05Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 17,
+        "publishedAt": "2026-10-16T02:36:17Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_8d2476b1965d80a6141c7e7a",
       "sourceId": "rebase-network/who-is-hiring#1318",
@@ -185,7 +636,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-10-15T05:00:09Z",
         "status": "fresh"
       }
@@ -1656,586 +2107,6 @@
       "freshness": {
         "ageDays": 18,
         "publishedAt": "2026-10-14T20:26:00Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_37868d2da89017c43383f5f3",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2983",
-      "title": "Software Developer",
-      "description": "### Link to Job Posting\n\nhttps://careers.epic.com/jobs/softwaredevelopment/\n\n### Company Name\n\nEpic\n\n### Job Title\n\nSoftware Developer\n\n### Location\n\nMadison, WI\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Job Posting https://careers.epic.com/jobs/softwaredevelopment/ ### Company Name Epic ### Job Title Software Developer ### Location Madison, WI ### What category does this job belong to? Software Engineerin...",
-      "issueState": "open",
-      "contentHash": "4868027c0604aa9fe8e656bdd77a27c5b82ebb07ca639496f46d351c69c292f5",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_role"
-      ],
-      "sourceTags": [
-        "new_role"
-      ],
-      "author": {
-        "id": "epicrecruiting",
-        "name": "epicrecruiting",
-        "handle": "epicrecruiting",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/342566902?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-10-14T14:54:45Z",
-      "updatedAt": "2026-10-14T14:54:45Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2983",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Madison",
-        "subdivision": "WI",
-        "displayText": "Madison, WI",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_37868d2da89017c43383f5f3",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2983",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2983",
-          "createdAt": "2026-10-14T14:54:45Z",
-          "updatedAt": "2026-10-14T14:54:45Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 18,
-        "publishedAt": "2026-10-14T14:54:45Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_0065133926adf9a786c1f458",
-      "sourceId": "awesome-jobs/vietnam#5086",
-      "title": "HN/HCM - Hybrid - Senior Backend Engineer (English) - 120M Gross",
-      "description": "■Requirement  \n● Must-have:\n- Education: A bachelor’s degree in Computer Science, Software Engineering, Artificial Intelligence, or related field; a Master’s degree is a plus.\n- Experience: **8+ years** of intensive experience in **backend development**, with a proven track record of **designing, building, and deploying complex, large-scale, and high-traffic software systems** (Any language: **_Go, RoR, Python, Java, C#, or Node.js_**).\n- Critical use of **AI coding tools**: you use tools like Claude Code, GitHub Copilot, and Cursor to move faster, and you verify what they produce: checking for hallucinated APIs, security issues (injection, exposed secrets), architectural fit, and writing your own tests to validate the generated logic.\n- Hands-on experience with observability platforms (Datadog, CloudWatch, Prometheus/Grafana).\n- **Business-level communication skills in English** (for daily collaboration with Japan HQ and documentation).\n\n● Preferred:\n- Experience with Go or Ruby (Rails) our current primary stacks.\n- Microservices experience: service boundaries, gRPC/REST API design, message queues, distributed transaction patterns.\n- Cross-functional collaboration: Ability to converse effectively with Frontend teams (React/TS) and DevOps teams (AWS/Kubernetes) to ensure end-to-end system reliability.\n\n■Salary : VND 75,000,000 - VND 120,000,000 Gross\n\n■Working time: Mon - Fri: 9h00-18h00, Hybrid working (1-2 days working at office)\n\n■Other Benefits：\n● Competitive salary package, including full insurance coverage\n● Annual performance review: twice/ year\n● Year-end Bonus\n● Hybrid working model\n● 12 days of annual leave and maximum of 6 days for New Year Leave\n● Premium Healthcare Insurance Package starting from day one\n● Annual Health Check-up\n● Excellent career development opportunities, with exposure to and experience in the latest technologies\n● Patents and Inventions bonus. \n● Company trip, Year-End Party, Gifts for Tet/ Holidays\n● MacBook Pro/ Laptop is provided.\n\n■ Interview process (100% online): 3 rounds\n\n■Contact: 097 1258 927 (Zalo: Tham)",
-      "excerpt": "■Requirement ● Must-have: - Education: A bachelor’s degree in Computer Science, Software Engineering, Artificial Intelligence, or related field; a Master’s degree is a plus. - Experience: **8+ years** of intensive exp...",
-      "issueState": "open",
-      "contentHash": "005ca709761f068146654581f24cb8abf9d92e947867392a5a0b6deee721c1e4",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "frontend",
-        "hybrid",
-        "java",
-        "node",
-        "python",
-        "react",
-        "senior"
-      ],
-      "sourceTags": [
-        "backend",
-        "frontend",
-        "hybrid",
-        "java",
-        "node",
-        "python",
-        "react",
-        "senior"
-      ],
-      "author": {
-        "id": "PhamTham143",
-        "name": "PhamTham143",
-        "handle": "PhamTham143",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/148303683?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-10-14T07:43:25Z",
-      "updatedAt": "2026-10-14T07:43:25Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5086",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "devops-sre",
-          "frontend"
-        ],
-        "technologies": [
-          "aws",
-          "csharp",
-          "go",
-          "java",
-          "kubernetes",
-          "nodejs",
-          "python",
-          "react",
-          "ruby"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0065133926adf9a786c1f458",
-          "sourceId": "awesome-jobs/vietnam#5086",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5086",
-          "createdAt": "2026-10-14T07:43:25Z",
-          "updatedAt": "2026-10-14T07:43:25Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_b174bfc167b18890f77c0e5f",
-          "sourceId": "awesome-jobs/jobs#5086",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5086",
-          "createdAt": "2026-10-14T07:43:25Z",
-          "updatedAt": "2026-10-14T07:43:25Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 18,
-        "publishedAt": "2026-10-14T07:43:25Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_14809edc1bee697bfd43f43f",
-      "sourceId": "soujava/vagas-java#1962",
-      "title": "[REMOTO] Desenvolvedor Java Junior na DB1/ANYMARKET",
-      "description": "## Descrição da vaga\n<!-- Informe mais detalhes sobre a vaga --> \n\nO Anymarket é uma das principais plataformas de integração com marketplaces do Brasil  e o time é o coração que mantém tudo funcionando com qualidade enquanto a operação cresce. Se você está no início da sua jornada como desenvolvedor e quer aprender fazendo, ao lado de gente experiente disposta a te ensinar, essa é a sua largada.\n\nVocê vai participar ativamente do desenvolvimento e sustentação de soluções robustas e escaláveis, do backend ao frontend, contribuindo com código que resiste ao tempo e evoluindo a cada entrega. Vai trabalhar em times multidisciplinares, conectando tecnologia, negócio e design, e vai dar os primeiros passos usando Inteligência Artificial no fluxo de trabalho diário. Aqui, ninguém espera que você chegue sabendo tudo, só que tenha vontade real de aprender e crescer.\n## Local\n\nRemoto\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n\n## Requisitos\n\n#### Obrigatórios:\nPerfil que buscamos:\nConhecimento em Java, seja acadêmico, de estudos próprios ou de primeiras experiências práticas.\nNoções de Angular para interfaces administrativas e dashboards.\nFamiliaridade com PostgreSQL ou outro banco relacional.\nCursando graduação em TI ou área correlata.\nAlguma experiência prática prévia com desenvolvimento (mesmo que breve)\nQuando trava num problema, consulta logs e levanta contexto antes de pedir ajuda.\nQuando erra, reflete sobre o que aconteceu e demonstra aprendizado concreto na próxima entrega.\n\n#### Diferenciais:\n\nVai ser incrível se você souber ou tiver vontade de aprender:\nSpring Boot e/ou Quarkus\nConceitos de caching com Redis ou similar\nMongoDB ou outros bancos não relacionais\nMensageria assíncrona: Kafka, RabbitMQ ou ActiveMQ\nCiclo de deploy: Docker, Kubernetes e CI/CD\nArquitetura de microsserviços\nIA no fluxo de trabalho: geração e revisão de código, análise de logs, automação de tarefas\nRAG e spec-driven development (SDD)\nFerramentas de análise estática de código (Sonar/SAST)\nFluxos de autenticação como OAuth2/PKCE\nMonitoramento em tempo real: Datadog, Grafana, ELK ou similar\n\n## Contratação\n\n- CLT\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/880681cc-4b9c-4199-b87b-09f0f414645d/desenvolvedor-java-junior?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Alocação\n- Remoto\n\n\n#### Regime\n- CLT\n\n#### Nível\n- Júnior",
-      "excerpt": "## Descrição da vaga <!-- Informe mais detalhes sobre a vaga --> O Anymarket é uma das principais plataformas de integração com marketplaces do Brasil e o time é o coração que mantém tudo funcionando com qualidade enq...",
-      "issueState": "open",
-      "contentHash": "c1f982577654bdc63fb59b297ddf5aaa4ca3c91cfddbfb531dec222ceb067c83",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "angular",
-        "backend",
-        "clt",
-        "docker",
-        "frontend",
-        "java",
-        "júnior",
-        "mongodb",
-        "postgresql",
-        "rabbitmq",
-        "remoto",
-        "spring"
-      ],
-      "sourceTags": [
-        "angular",
-        "backend",
-        "clt",
-        "docker",
-        "frontend",
-        "java",
-        "júnior",
-        "mongodb",
-        "postgresql",
-        "rabbitmq",
-        "remoto",
-        "spring"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-10-13T19:47:00Z",
-      "updatedAt": "2026-11-01T16:33:49Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1962",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend"
-        ],
-        "technologies": [
-          "angular",
-          "docker",
-          "java",
-          "kubernetes",
-          "mongodb",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_14809edc1bee697bfd43f43f",
-          "sourceId": "soujava/vagas-java#1962",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1962",
-          "createdAt": "2026-10-13T19:47:00Z",
-          "updatedAt": "2026-10-15T02:30:26Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        },
-        {
-          "id": "gh_38fdd972b2ec513aa3307c6f",
-          "sourceId": "backend-br/vagas#12444",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12444",
-          "createdAt": "2026-10-13T19:51:25Z",
-          "updatedAt": "2026-11-01T16:33:49Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 19,
-        "publishedAt": "2026-10-13T19:47:00Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_7d2ddd4299e54af674ed129e",
-      "sourceId": "soujava/vagas-java#1961",
-      "title": "[REMOTO] Desenvolvedor Java Pleno na DB1/ANYMARKET",
-      "description": "## Descrição da vaga\n<!-- Informe mais detalhes sobre a vaga --> \n\nNo Anymarket/DB1, você vai construir o coração das nossas integrações, sistemas robustos, escaláveis e que atravessam times diferentes, do backend ao frontend. Sua missão começa pela imersão: entender o que existe, como funciona e por quê foi construído assim. A partir daí, você vai ganhar autonomia para evoluir essas soluções e habilitar a escala que o produto precisa para crescer.\n\nNo dia a dia, você vai trabalhar com times multidisciplinares de tecnologia, negócio e design, sempre com IA como aliada no fluxo de desenvolvimento, geração e revisão de código, análise de logs, automação de tarefas e spec-driven development fazem parte da rotina. Você vai escrever código que resiste ao tempo, do tipo que nasce forte desde o primeiro commit e continua de pé anos depois.\n## Local\n\nRemoto\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nAplicativo de benefícios e descontos (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n\n## Requisitos\n\n#### Obrigatórios:\nExperiência sólida em Java com Spring Boot e/ou Quarkus, não só domínio do framework, mas entendimento do que acontece por trás dele\nExperiência com PostgreSQL ou banco relacional equivalente\nVivência com Redis ou similar para caching\nExperiência com mensageria assíncrona: Kafka, RabbitMQ, ActiveMQ ou similar\nConhecimento do ciclo completo de deploy: Docker, Kubernetes e CI/CD\nVivência real com arquitetura de microsserviços\nExperiência com monitoramento em tempo real: Datadog, Grafana, ELK ou similar\nIA incorporada ao fluxo de trabalho: geração e revisão de código, RAG, spec-driven development (SDD)\nQuando trava num problema, busca ativamente a solução, questiona colegas, pesquisa, decompõe em partes menores\nAssume responsabilidade pelos próprios erros e colabora genuinamente em equipe\n#### Diferenciais:\n\nMongoDB ou outro banco não-relacional\nAWS em nível intermediário\nAnálise de performance em produção\nFerramentas de análise estática de código (Sonar/SAST)\nFluxos de autenticação OAuth2/PKCE\n## Contratação\n\nCLT\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\n\n\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/c89f43bd-95a8-4733-bebd-ebe3bbfd013a/desenvolvedor-java-pleno?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n\n\n## Labels\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Alocação\n- Remoto\n\n#### Regime\n- CLT\n\n\n#### Nível\n- Pleno",
-      "excerpt": "## Descrição da vaga <!-- Informe mais detalhes sobre a vaga --> No Anymarket/DB1, você vai construir o coração das nossas integrações, sistemas robustos, escaláveis e que atravessam times diferentes, do backend ao fr...",
-      "issueState": "open",
-      "contentHash": "d5d07d1b22034e59b09a7445b3eba78d47207bc3c5d65e7ba44844de21a95e39",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "clt",
-        "docker",
-        "frontend",
-        "hibernate",
-        "pleno",
-        "remoto",
-        "spring"
-      ],
-      "sourceTags": [
-        "backend",
-        "clt",
-        "docker",
-        "frontend",
-        "hibernate",
-        "pleno",
-        "remoto",
-        "spring"
-      ],
-      "author": {
-        "id": "hadamaller",
-        "name": "hadamaller",
-        "handle": "hadamaller",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-10-13T19:39:25Z",
-      "updatedAt": "2026-10-13T19:41:51Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1961",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "java",
-          "kubernetes",
-          "mongodb",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_7d2ddd4299e54af674ed129e",
-          "sourceId": "soujava/vagas-java#1961",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1961",
-          "createdAt": "2026-10-13T19:39:25Z",
-          "updatedAt": "2026-10-13T19:41:51Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 19,
-        "publishedAt": "2026-10-13T19:39:25Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a4a7d7b8ea3a77260256bf62",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
-      "title": "New Feature Request: Graduation-year and academic-standing filtering",
-      "description": "### Improvement\n\nFollowing up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to check the requirements.\nI looked through the list-updater code and `listings.json`. The export includes degree types, but not graduation-date windows or freshman/sophomore/junior/senior requirements. The contribution guide mentions that a private service imports listings from Simplify.\nDoes Simplify already store this information, and could it be included in the automated export? Missing or ambiguous requirements could remain “unknown” rather than implying eligibility.\nI’d be interested in contributing filters to the existing search command using that upstream data. Would this be a welcome contribution, and is exposing the necessary data feasible?",
-      "excerpt": "### Improvement Following up on #2479, could the list support filtering internships by expected graduation year or academic standing? This would help applicants find relevant roles without opening every posting to che...",
-      "issueState": "open",
-      "contentHash": "804d6324575c7187eed7b98afb25ade1def4772b7010c1f586175315750699b6",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "enhancement"
-      ],
-      "sourceTags": [
-        "enhancement"
-      ],
-      "author": {
-        "id": "saisrikar8",
-        "name": "saisrikar8",
-        "handle": "saisrikar8",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/77305508?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-10-12T05:05:20Z",
-      "updatedAt": "2026-10-12T05:05:20Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "junior",
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a4a7d7b8ea3a77260256bf62",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9704",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9704",
-          "createdAt": "2026-10-12T05:05:20Z",
-          "updatedAt": "2026-10-12T05:05:20Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 20,
-        "publishedAt": "2026-10-12T05:05:20Z",
         "status": "fresh"
       }
     }
