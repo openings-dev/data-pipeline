@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-11-03T04:46:18.826Z",
+  "generatedAt": "2026-11-03T13:22:45.968Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_01304d40c1defd808fb8b3be",
+    "gh_1ef9ab1a40d70f694d6cf680",
     "gh_e8c58584e2e3c52826eadc7c",
     "gh_7be2f05d46f630ed65453833",
     "gh_ce7340018fdb4eeadb09d635",
@@ -12,20 +14,209 @@
     "gh_73a4d2717e73d4a8a060b3e8",
     "gh_cd69a25dd6943963ac6757d5",
     "gh_ac708d15d7fc65fbd03a15e6",
-    "gh_8ac933ce31d46b2a289ec0f2",
     "gh_d60aaac9a7d278d410f7fe50",
     "gh_1927268a7260ded05056f4ac",
     "gh_afcd8a82f0aa037352eb5856",
     "gh_fd9c1ce498613dfab8d56a8d",
     "gh_e5c3fe2de4aec791023d34ec",
     "gh_9d50e797be669eee892f4cf9",
-    "gh_dd5f3eceaf22759f0fb5dc88",
     "gh_4ddc5ce7cb4c159fc9054916",
     "gh_f65827432354c0662b6b0ae4",
     "gh_01d165a4b737ad3ecc75a04b",
     "gh_a4413b38ce8666beb7e0dc7d"
   ],
   "items": [
+    {
+      "id": "gh_01304d40c1defd808fb8b3be",
+      "sourceId": "rebase-network/who-is-hiring#1335",
+      "title": "【全球远程 远程办公 居家办公 FineStar】后端/go/glang高级/架构师 Go/PHP/Python/node  20-50k",
+      "description": "go高级工程师 架构师\n岗位职责\n1. 负责短剧及 AI 内容平台的后端架构设计、核心功能开发与维护，保障系统稳定性、可扩展性及交付质量。\n2. 负责短剧业务系统建设，涵盖内容管理、剧集管理、视频处理、播放鉴权、会员订阅、付费解锁等核心流程。\n3. 负责 AI 文本生成、图片生成、视频生成模型的接入与服务封装，支持多模型调度、流式输出、异步任务及结果回调。\n4. 建设 AI 内容生产流程，串联剧本生成、角色设定、分镜生成、生图、生视频及成片处理等环节。\n5. 设计模型任务调度与计费体系，完善并发控制、超时重试、幂等处理、失败补偿及成本统计。\n6. 负责数据库、缓存、消息队列及接口性能优化，完善日志、监控与告警，参与生产故障排查和复盘。\n7. 推进代码评审、自动化测试及 CI/CD，与产品、算法、前端和运维团队协作完成项目交付。\n任职要求\n1. 10年及以上后端开发经验，具备独立负责核心业务模块或中大型项目的能力。\n2. 精通 Go、PHP、Python 中至少一门，熟练掌握另一门，熟悉对应主流框架，具备良好的业务建模、接口设计及工程实践能力。\n3. 具备短剧或长短视频平台实际项目经验，熟悉内容与剧集管理、视频转码、对象存储、CDN 分发、播放鉴权及付费解锁等业务。\n4. 具备 AI 文本、图片生成、视频生成三类模型的实际接入或部署经验，能够独立完成接口集成、任务编排、异常处理及上线运维。\n5. 熟悉文本模型的上下文管理、提示词模板、结构化输出及流式响应；熟悉文生图、图生图、文生视频、图生视频等常见生成流程。\n6. 理解生成式 AI 服务的生产特点，具备长耗时任务调度、限流排队、取消与超时处理、回调去重、失败重试及生成结果存储经验。\n7. 熟悉 MySQL 或 PostgreSQL、Redis 及至少一种消息队列，能够解决慢查询、缓存一致性、重复消费及事务一致性问题。\n8. 熟悉 Linux、Docker、Git 和 CI/CD，具备监控告警、性能分析及生产环境故障排查能力。\n9. 具备模型调用成本和服务质量意识，能够跟踪调用量、成功率、生成耗时及单次任务成本，并持续优化。\n10. 具备良好的沟通协作和技术文档能力，能够将业务需求转化为可落地的技术方案。\n加分项\n- 有 AI 短剧、AI 漫剧或自动化视频生产平台的完整项目经验。\n- 有角色一致性、分镜连续性、参考图控制及音画合成等工程落地经验。\n- 有 ComfyUI 工作流集成、自托管模型推理服务或 GPU 资源调度经验。\n- 熟悉 FFmpeg，有字幕、配音、音视频合成及批量媒体处理经验。\n- 有多模型供应商接入、故障切换、模型效果评测及成本优化经验。\n- 有高并发付费业务、订阅计费、支付对账或海外产品开发经验。\n=\n高级后端工程师\n负责视频类后端核心模块的系统设计、技术方案评审与落地，包括内容发布、内容分发、播放服务、互动系统、账号体系、运营后台与监控体系。  \n基于微服务/模块化架构主导服务拆分与演进，优化接口链路、数据库访问与异步任务机制。  \n设计并保障视频全链路稳定运行：上传 → 转码 → 存储 → 分发 → 播放统计的可用性与可观测性。  \n建设高并发能力：限流、熔断、降级、幂等、重试、异步化、队列化等高可用与韧性能力。  \n推动监控体系建设，建立关键指标体系（播放成功率、首帧耗时、转码成功率、接口 P99、错误率、任务积压、核心链路超时率）并持续迭代。  \n负责数据库与缓存治理：索引优化、冷热数据策略、分片/分库分表评估、SQL 调优与存储成本控制。  \n组织并推动接口文档、联调、Code Review、发布评审与回归，保障交付质量和线上稳定。  \n与客户端、算法、前端、测试、运维协作，制定版本计划、排期和风险清单，推动问题闭环。  \n指导初中级工程师，沉淀架构方案、开发规范与故障处置文档，提升团队交付效率。\n任职要求\n本科及以上学历，计算机相关专业优先。  \n5 年以上后端开发经验，3 年以上大流量互联网服务经验，具备从零到一或一到多迭代落地能力。  \n精通至少一种后端语言（Node.js、PHP、Go 中至少一种），并有线上高并发服务开发与问题排障经历。  \n熟悉服务架构与接口设计（RESTful / RPC）、鉴权与权限体系、消息队列、缓存、数据库建模与优化。  \n有能力独立定位并优化性能瓶颈（数据库、缓存、I/O、事件循环/协程、连接池、慢查询、死锁等）。  \n熟悉日志、监控、告警、链路追踪工具，具备线上故障应急处理和复盘能力。  \n对业务有产品化思维，能够把业务目标拆解为可执行的技术方案和里程碑。  \n良好的沟通与协作能力，能在跨部门环境中推动复杂需求落地。\n技术栈要求（必须）\n编程语言：Node.js、PHP、Go（至少熟练掌握 1 门，熟悉其中 2 门更佳）  \n框架/运行时：  Node.js：NestJS / Koa / Express（至少一项）  \nPHP：Laravel / ThinkPHP / Symfony（至少一项）  \nGo：Gin / Kratos / Go-zero（至少一项）\n\n消息与异步：Kafka / RocketMQ / RabbitMQ / SQS（至少一种）  \n对象存储与分发：OSS / COS / S3 + CDN  \n视频链路能力：FFmpeg、HLS/DASH、转码任务编排、文件状态流转、播放埋点  \n容器与部署：Docker + Kubernetes（或云原生托管）+ CI/CD（GitLab CI / Jenkins）  \n监控与可观测：Prometheus + Grafana + ELK（或等效）+ 分布式追踪（Jaeger / SkyWalking）  \n版本管理与协作：Git、CI/CD、项目管理工具（Jira/TAPD/禅道等）\n加分项\n有短视频、UGC/PGC 或直播/点播平台后端经验。  \n有上传转码、播放链路、内容推荐或弹性扩容实战。  \n有反作弊、内容安全、版权风控或风控模型接入经验。  \n有大规模数据治理与性能容量规划经验（QPS、并发连接、秒级故障恢复）。  \n有团队技术规划、架构评审、技术债治理经验。\n\n=\nphp后端工程师 \n任职要求\n1.5年以上PHP后端经验,能独立负责完整项目或核心模块。\n2.熟悉PHP框架及自定义生命周期管理,熟悉Eloquent ORM独立使用模式。\n3.有CMS二次开发经验,理解插件机制、静态化缓存等站群优化手段。\n4.熟悉MySQL主从读写分离,理解大表在线DDL的安全操作。\n5.深入理解Redis应用,包括Cluster hash tag、计数器缓冲批量落库模式。\n6.有搜索引擎(OpenSearch/ES)接入经验,能设计索引同步与降级方案。\n7.熟悉RESTful API设计、接口鉴权、参数校验、错误码与版本规范。\n8.掌握事务、幂等、并发控制、缓存一致性、慢SQL治理、限流补偿。\n9.有用户、权限、内容、订单支付、运营配置等业务模块经验者优先。\n10.有全栈联调经验,能读写前端代码并独立完成接口联调。\n11.熟悉Docker本地开发环境搭建与调试。\n12.熟练使用AI Coding工具辅助开发,但能独立判断业务逻辑与安全风险。\n\n详细岗位JD\n1.负责PHP后端项目(API服务+内容站群)的设计、开发与迭代。\n2.参与需求评审,梳理业务对象、角色、权限与验收标准。\n3.完成技术方案、接口设计、数据库设计与开发计划。\n4.独立完成用户、权限、内容、支付、运营配置等核心功能。\n5.负责Redis缓冲计数、缓存一致性等高并发场景保障。\n6.负责事务幂等、定时任务、异常补偿和数据对账。\n7.参与全栈联调,完成接口联调与问题定位。\n8.负责代码评审、性能优化、日志监控与线上排查。\n9.使用AI工具提升效率,并人工审核生成内容。\n10.沉淀开发规范、接口文档,提高团队交付质量。\n==\n更多职位看 频道 ，谢谢！！！\n\n公司：FineStar 是一家全球化信息技术企业，总部设于英国伦敦，在中国台北、日本东京、新加坡、吉隆坡、台湾、洛杉矶等设立分支机构，全球员工规模超 1500 人。 我们是主流媒体、视频平台、线上社区论坛的一站式综合服务商。公司不止交付标准化产品，更输出创新、差异化的运营思路，助力客户实现业务高速增长与品牌升级转型。依托深厚的行业技术积淀，我们持续打磨创新方案，打造超出预期的落地成果，面向全球客户提供高品质服务体验与完整 IT 解决方案。 公司核心管理团队深耕 Web 业务及多赛道产品运营，行业经验丰富；同时组建了一支高素质的数据、创意与技术研发人才队伍。\n薪资以及其他说明：薪资发u，远程，不实名，不压工资。每日工作9小时左右。工资准时发。单休，法定正常放假，春节12天，年假12天。\n\nTG： @remote0007_jobs\nTG频道/JD： @remote0007\n绿泡泡： rockynn1020\n邮箱： zzl_6544@sina.com",
+      "excerpt": "go高级工程师 架构师 岗位职责 1. 负责短剧及 AI 内容平台的后端架构设计、核心功能开发与维护，保障系统稳定性、可扩展性及交付质量。 2. 负责短剧业务系统建设，涵盖内容管理、剧集管理、视频处理、播放鉴权、会员订阅、付费解锁等核心流程。 3. 负责 AI 文本生成、图片生成、视频生成模型的接入与服务封装，支持多模型调度、流式输出、异步任务及结果回调。 4. 建设 AI 内容生产流程，串联剧本生成、角色设定、分镜生成、生图、生...",
+      "issueState": "open",
+      "contentHash": "f7ba327ceb551e42cadb16a0f43dc825084bd08829ce01e35f3354aa53f963fa",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "node",
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "node",
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "zzl654466725-crypto",
+        "name": "zzl654466725-crypto",
+        "handle": "zzl654466725-crypto",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/272100286?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-03T08:22:37Z",
+      "updatedAt": "2026-11-03T08:22:37Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1335",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "docker",
+          "go",
+          "kubernetes",
+          "laravel",
+          "mysql",
+          "nodejs",
+          "php",
+          "postgres",
+          "python",
+          "redis"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_01304d40c1defd808fb8b3be",
+          "sourceId": "rebase-network/who-is-hiring#1335",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1335",
+          "createdAt": "2026-11-03T08:22:37Z",
+          "updatedAt": "2026-11-03T08:22:37Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-03T08:22:37Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_1ef9ab1a40d70f694d6cf680",
+      "sourceId": "rebase-network/who-is-hiring#1334",
+      "title": "[香港] Crypto量化 诚聘 Rust/Kotlin/Java工程师 薪资不设限制 经验2-20+年",
+      "description": "## 公司/团队介绍\n我是猎头李越，我的客户以量化私募、国际对冲基金为主，覆盖北/上/深/港/新。\n投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com；但看不看机会都欢迎认识~\n\n这家公司是专注于加密衍生品和交易基础设施的金融科技公司。\n岗位主要负责加密货币衍生品市场中的自动化交易策略开发和维护，参与实时、低延迟交易系统建设。将和交易员、量化研究员、基础设施工程师一起优化报价逻辑、交易执行、风险控制和系统稳定性。\n年限20年以上也乐于接受，但是要求至少2年高频交易/低延迟相关经验。\n\n## 薪资福利待遇\n薪资不设限制，根据各人情况给涨幅。\n\n## 地点\n香港\n\n## 工作性质\n全职，香港线下，不能远程\n  \n## 岗位要求、职责\n投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com\n\n主要职责：\n1. 开发和维护自动化交易策略及相关交易系统。\n2. 参与报价逻辑、对冲逻辑、仓位管理和风险控制的开发。\n3. 优化交易系统的下单、撤单、成交处理和异常处理流程。\n4. 处理实时行情数据、订单簿数据、成交数据、资金费率等交易相关数据。\n5. 建设和维护监控工具，包括 PnL、仓位、风险、延迟、交易所连接状态等。\n6. 协助交易员和量化研究员分析策略表现，发现问题并持续优化。\n7. 维护交易所 API 连接，保证行情、下单、成交回报等流程稳定可靠。\n8. 排查交易异常、系统异常、仓位偏差和风控问题。\n\n任职要求：\n1. 熟练掌握至少一种编程语言，Rust/Kotlin/Java。\n2. 有自动化交易、做市、量化交易或交易系统开发经验。\n3. 理解订单簿、买卖价差、滑点、手续费、成交、撤单和仓位风险等基本概念。\n4. 熟悉加密货币交易所、永续合约、资金费率、保证金等机制。\n5. 能写出稳定、清晰、可维护的代码。\n6. 具备较强的问题排查能力，能快速定位线上系统或交易异常。\n7. 对交易和市场有兴趣，愿意理解策略为什么赚钱或亏钱。\n8. 有责任心，能在快节奏环境中推进事情落地。\n\n加分项：\n1. 有加密货币做市、HFT、自营交易或量化交易经验。\n2. 熟悉 Binance、OKX、Bybit、Deribit、Coinbase 等交易所 API。\n3. 有低延迟交易系统开发经验。\n4. 了解基差交易、统计套利、跨交易所交易、对冲或风控系统。\n5. 有回测系统、交易模拟、数据分析或策略研究经验。\n\n我的微信号是：liyue_1297，看不看机会都欢迎认识！",
+      "excerpt": "## 公司/团队介绍 我是猎头李越，我的客户以量化私募、国际对冲基金为主，覆盖北/上/深/港/新。 投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com；但看不看机会都欢迎认识~ 这家公司是专注于加密衍生品和交易基础设施的金融科技公司。 岗位主要负责加密货币衍生品市场中的自动化交易策略开发和维护，参与实时、低延迟交易系统建设。将和交易员、量化研究员、基础设施工程师一起优化报价逻辑、交易执行...",
+      "issueState": "open",
+      "contentHash": "90f9daf0eae72044d81d624d3a3c3f966d091d5d4fea88c1d5e39422cbfa8d32",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "java"
+      ],
+      "sourceTags": [
+        "java"
+      ],
+      "author": {
+        "id": "NoahLI-07",
+        "name": "NoahLI-07",
+        "handle": "NoahLI-07",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/342952561?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-03T05:59:09Z",
+      "updatedAt": "2026-11-03T05:59:09Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1334",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "kotlin",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_1ef9ab1a40d70f694d6cf680",
+          "sourceId": "rebase-network/who-is-hiring#1334",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1334",
+          "createdAt": "2026-11-03T05:59:09Z",
+          "updatedAt": "2026-11-03T05:59:09Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-03T05:59:09Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_e8c58584e2e3c52826eadc7c",
       "sourceId": "junminhong/jobs#5",
@@ -717,7 +908,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-02T08:49:02Z",
         "status": "fresh"
       }
@@ -805,92 +996,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-02T08:48:48Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_8ac933ce31d46b2a289ec0f2",
-      "sourceId": "ambicuity/New-Grad-Jobs#459",
-      "title": "Job data is stale: last scrape 2026-11-02T00:40:20.143909Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **338 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/41399144932. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **338 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "aa2aa2cbdc5859ed89c979347ea14c0eac49e188dbbed825aa1b76d4932b7ef9",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-11-02T06:19:16Z",
-      "updatedAt": "2026-11-02T06:19:16Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/459",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_8ac933ce31d46b2a289ec0f2",
-          "sourceId": "ambicuity/New-Grad-Jobs#459",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/459",
-          "createdAt": "2026-11-02T06:19:16Z",
-          "updatedAt": "2026-11-02T06:19:16Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-11-02T06:19:16Z",
         "status": "fresh"
       }
     },
@@ -1015,7 +1122,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-01T13:10:52Z",
         "status": "fresh"
       }
@@ -1424,7 +1531,7 @@
         "url": "https://github.com/remoteintech/remote-jobs"
       },
       "createdAt": "2026-10-30T00:22:07Z",
-      "updatedAt": "2026-10-30T00:22:07Z",
+      "updatedAt": "2026-11-03T12:04:37Z",
       "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1459,7 +1566,7 @@
           "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
           "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
           "createdAt": "2026-10-30T00:22:07Z",
-          "updatedAt": "2026-10-30T00:22:07Z",
+          "updatedAt": "2026-11-03T12:04:37Z",
           "community": {
             "id": "remoteintech",
             "name": "remoteintech",
@@ -1578,86 +1685,6 @@
       "freshness": {
         "ageDays": 4,
         "publishedAt": "2026-10-29T18:20:29Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_dd5f3eceaf22759f0fb5dc88",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9720",
-      "title": "Internships",
-      "description": "",
-      "excerpt": "Internships",
-      "issueState": "open",
-      "contentHash": "eedae4be4101062ec8f3408d02ccb73d4370748655d80ce70ac02020c2e2917a",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "idrkul5",
-        "name": "idrkul5",
-        "handle": "idrkul5",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/164856211?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-10-29T02:59:23Z",
-      "updatedAt": "2026-10-29T02:59:23Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9720",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_dd5f3eceaf22759f0fb5dc88",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9720",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9720",
-          "createdAt": "2026-10-29T02:59:23Z",
-          "updatedAt": "2026-10-29T02:59:23Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 5,
-        "publishedAt": "2026-10-29T02:59:23Z",
         "status": "fresh"
       }
     },
@@ -2030,7 +2057,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-10-28T12:19:34Z",
         "status": "fresh"
       }

@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-03T04:46:18.826Z",
+  "generatedAt": "2026-11-03T13:22:45.968Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
   "ids": [
+    "gh_bf70dc9f783bd9e91215da56",
     "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
     "gh_eba1cf4eba45f378f7186a1e",
@@ -17,7 +18,6 @@
     "gh_1b456af185b0d148e1769bc2",
     "gh_b0b25f9f51d0e7f1c185dc60",
     "gh_8d3d4b455493191722317dda",
-    "gh_b1d7b3a976f64e5cf24ef658",
     "gh_777d6953c094c4c77cffa586",
     "gh_03fa03119cda6972a7f24c60",
     "gh_018090ae0b51c7fe869fe122",
@@ -26,6 +26,92 @@
     "gh_90da04043225a0b75c5b63f5"
   ],
   "items": [
+    {
+      "id": "gh_bf70dc9f783bd9e91215da56",
+      "sourceId": "timqian/open-source-jobs#162",
+      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
+      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
+      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
+      "issueState": "open",
+      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
+      "repository": "timqian/open-source-jobs",
+      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data"
+      ],
+      "sourceTags": [
+        "data"
+      ],
+      "author": {
+        "id": "codeCraft-Ritik",
+        "name": "codeCraft-Ritik",
+        "handle": "codeCraft-Ritik",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
+      },
+      "community": {
+        "id": "timqian",
+        "name": "timqian",
+        "avatarUrl": "https://github.com/timqian.png?size=80",
+        "repository": "timqian/open-source-jobs",
+        "url": "https://github.com/timqian/open-source-jobs"
+      },
+      "createdAt": "2026-02-18T13:31:05Z",
+      "updatedAt": "2026-02-19T04:01:13Z",
+      "url": "https://github.com/timqian/open-source-jobs/issues/162",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "nextjs"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_bf70dc9f783bd9e91215da56",
+          "sourceId": "timqian/open-source-jobs#162",
+          "repository": "timqian/open-source-jobs",
+          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
+          "url": "https://github.com/timqian/open-source-jobs/issues/162",
+          "createdAt": "2026-02-18T13:31:05Z",
+          "updatedAt": "2026-02-19T04:01:13Z",
+          "community": {
+            "id": "timqian",
+            "name": "timqian",
+            "avatarUrl": "https://github.com/timqian.png?size=80",
+            "repository": "timqian/open-source-jobs",
+            "url": "https://github.com/timqian/open-source-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 257,
+        "publishedAt": "2026-02-18T13:31:05Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_72cc354e7d9c38f999fa902a",
       "sourceId": "timqian/open-source-jobs#161",
@@ -705,7 +791,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 272,
+        "ageDays": 273,
         "publishedAt": "2026-02-03T08:33:10Z",
         "status": "stale"
       }
@@ -819,7 +905,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 278,
+        "ageDays": 279,
         "publishedAt": "2026-01-28T06:02:14Z",
         "status": "stale"
       }
@@ -1101,7 +1187,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 286,
+        "ageDays": 287,
         "publishedAt": "2026-01-20T05:43:31Z",
         "status": "stale"
       }
@@ -1327,101 +1413,6 @@
       }
     },
     {
-      "id": "gh_b1d7b3a976f64e5cf24ef658",
-      "sourceId": "rebase-network/who-is-hiring#1023",
-      "title": "[Remote] 量化团队诚聘 DEX 策略研究员 远程/香港/上海",
-      "description": "## 公司/团队介绍\n\n我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。\n\n我们特别重视你亲自发现并验证过的套利机会：在Polymarket上找到过概率偏差或跨平台价差，自己测试执行过；或在DEX上捕获过套利机会等，并有小额实盘经验。在我们这里，你将与算法和基础设施工程师合作，将个人发现升级为高效盈利策略。你的努力直接参与丰厚分红。\n\n## 薪资福利待遇\n薪资福利：  $2000 - $4000月，慷慨P&L分红、Token激励。支持远程，弹性工作制。\n\n## 地点\n\n- 工作地点：remote/香港/上海\n- 联系方式：TG：@ajwchai\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：是\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n- 将发现转化为脚本或bot的prototype，进行测试。  \n- 与团队协作，利用优化模型和高速执行系统实现规模化套利。  \n- 跟踪新市场与规则变化，主动探索机会。  \n- 负责实盘运行与策略迭代，收益与个人分红挂钩。\n\n职位要求：  \n- 动手能力强，能独立测试与解决问题。  \n- 对新平台有较快学习能力。\n- 1-2年区块链经验。\n\n\n## 工作环境\n和优秀的量化及infra工程师一起合作。期待与你共同探索链上量化机会！",
-      "excerpt": "## 公司/团队介绍 我们是一家专注crypto量化的公司，近期在拓展链上量化交易，专注于挖掘和执行区块链上的量化机会，DEX的套利与交易策略，Defi。公司拥有的顶级的础设施和团队，能将优秀想法快速落地并产生收益。目前处于快速增长阶段，资源充足，激励机制优厚，个人贡献直接与回报挂钩。我们欢迎动手能力强、学习意愿高、主动性强的伙伴，经验1-2年即可，只要你有过真实链上交易、套利经历。 我们特别重视你亲自发现并验证过的套利机会：在P...",
-      "issueState": "open",
-      "contentHash": "3c698c921704eccd87712acdd7fdbc8b1a40c6e178108a74872825100945b3b2",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote"
-      ],
-      "sourceTags": [
-        "remote"
-      ],
-      "author": {
-        "id": "albkong",
-        "name": "albkong",
-        "handle": "albkong",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/50094996?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 2000,
-        "max": 4000,
-        "period": "year"
-      },
-      "createdAt": "2026-01-19T14:35:17Z",
-      "updatedAt": "2026-09-22T21:52:26Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1023",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b1d7b3a976f64e5cf24ef658",
-          "sourceId": "rebase-network/who-is-hiring#1023",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1023",
-          "createdAt": "2026-01-19T14:35:17Z",
-          "updatedAt": "2026-09-22T21:52:26Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 287,
-        "publishedAt": "2026-01-19T14:35:17Z",
-        "status": "stale"
-      }
-    },
-    {
       "id": "gh_777d6953c094c4c77cffa586",
       "sourceId": "f2etw/jobs#1165",
       "title": "[徵才][台北][1.4M+] SWAG.live 徵求資深前端工程師 | Senior Frontend Engineer",
@@ -1523,7 +1514,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 291,
+        "ageDays": 292,
         "publishedAt": "2026-01-15T06:48:02Z",
         "status": "stale"
       }
@@ -1861,7 +1852,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 304,
+        "ageDays": 305,
         "publishedAt": "2026-01-02T13:02:32Z",
         "status": "stale"
       }
@@ -1943,7 +1934,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 306,
+        "ageDays": 307,
         "publishedAt": "2025-12-31T09:25:54Z",
         "status": "stale"
       }
@@ -2049,7 +2040,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 317,
+        "ageDays": 318,
         "publishedAt": "2025-12-20T08:51:33Z",
         "status": "stale"
       }
