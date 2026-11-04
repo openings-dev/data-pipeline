@@ -1,16 +1,116 @@
 {
-  "generatedAt": "2026-11-03T13:22:45.968Z",
+  "generatedAt": "2026-11-04T19:11:15.216Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "soujava/vagas-java",
   "totals": {
     "opportunities": 16,
-    "openIssues": 12,
-    "closedIssues": 4
+    "openIssues": 13,
+    "closedIssues": 3
   },
-  "dataHash": "9b4b542231a7273122785e1c927d164f9474b7e28949fe6aa0eb5268a727ad20",
+  "dataHash": "24abd5b5bfbb42d9f0f53f33aa3b1c1264b446b3dd0d82201f1f45912274309a",
   "items": [
+    {
+      "id": "gh_11c5ccdeb258bb1cac649506",
+      "sourceId": "soujava/vagas-java#1975",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Pagamentos via Pix) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nUma cobrança Pix nasce quando o sistema gera o QR Code com valor, txid e prazo de expiração, e termina quando o banco avisa, por webhook, que o dinheiro entrou. Entre esses dois pontos muita coisa sai do roteiro: o aviso chega duas vezes, chega antes de a cobrança terminar de ser gravada, ou simplesmente não chega e o sistema precisa ir buscar a informação por consulta. Você vai trabalhar no serviço em Java com Spring Boot que cria essas cobranças, recebe as notificações e muda a situação de cada uma no PostgreSQL. A regra que não pode quebrar é curta: um pagamento recebido nunca é baixado duas vezes e nunca fica esquecido como pendente. Também entram as devoluções, totais ou parciais, que têm prazo próprio e precisam ficar sempre ligadas ao pagamento de origem.\n\n- Implementar a criação de cobrança imediata e com vencimento, gravando txid e expiração\n- Tratar o webhook de pagamento de forma idempotente, usando o identificador fim a fim da transação\n- Escrever a rotina que consulta cobranças sem retorno e atualiza a situação delas\n- Registrar devoluções parciais e totais vinculadas ao pagamento original\n- Criar migrações com Flyway e revisar os índices das consultas mais usadas\n- Escrever testes com JUnit para pagamento duplicado, expirado e devolvido\n- Acompanhar os logs da integração e abrir chamado com contexto completo quando algo falha\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Curso de tecnologia em andamento ou concluído, estágio ou projeto próprio em Java publicado\n- Java com classes, interfaces, coleções e tratamento de exceção\n- Noção de Spring Boot: controller, service e repositório\n- SQL para consultar, inserir e atualizar registros\n- Entender o que é uma API REST e como ler um JSON de resposta\n- Git para versionar e abrir pull request\n\n**Diferenciais:**\n- Ter lido a documentação pública do Pix publicada pelo Banco Central\n- Noção de transação no JPA e de bloqueio otimista\n- Docker para subir o banco na sua máquina\n- Saber por que dinheiro se representa com BigDecimal e não com double\n- Ter feito algum projeto que recebe webhook\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.000 a R$ 4.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-pagamentos-via-pix-473?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Uma cobrança Pix nasce quando o sistema gera o QR Code co...",
+      "issueState": "open",
+      "contentHash": "e5ee9e18c7e4d90ee4ca82599ecfe8f646707fb98163013cbc1749c48fd8347d",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "júnior",
+        "clt",
+        "estágio",
+        "pj",
+        "remoto",
+        "rest",
+        "spring",
+        "docker"
+      ],
+      "sourceTags": [
+        "júnior",
+        "clt",
+        "estágio",
+        "pj",
+        "remoto",
+        "rest",
+        "spring",
+        "docker"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3000,
+        "max": 4500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-04T13:27:20Z",
+      "updatedAt": "2026-11-04T13:27:42Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1975",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_d60aaac9a7d278d410f7fe50",
       "sourceId": "soujava/vagas-java#1974",
@@ -1324,102 +1424,6 @@
         "technologies": [
           "java",
           "kubernetes",
-          "spring"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_65b5cf71148066c9df7d3454",
-      "sourceId": "soujava/vagas-java#1944",
-      "title": "[Híbrido] Desenvolvedor(a) Java/Jakarta EE Sênior na Sylision",
-      "description": "## Nossa empresa\n\nA [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o seu currículo com todas as vagas compatíveis do nosso banco próprio. Você se candidata uma única vez.\n\n## Descrição da vaga\n\nVaga de Desenvolvedor(a) Java/Jakarta EE nível Sênior para atuar em projetos de empresas parceiras da Sylision, na área de Backend.\n\nFaixa salarial: R$ 12.000 a 22.000/mês, conforme experiência.\n\n## Responsabilidades\n\n- Manter e evoluir aplicações corporativas em Jakarta EE\n- Modernizar módulos legados sem interromper a operação\n- Integrar com sistemas internos via SOAP e REST\n\n## Local\n\nHíbrido ou remoto, a combinar com a empresa contratante.\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência profissional com Java/Jakarta EE (5 anos ou mais)\n- Jakarta EE (CDI, JPA, JAX-RS, EJB)\n- Servidor de aplicação (WildFly, Payara ou JBoss)\n- SQL e modelagem relacional\n- Maven ou Gradle\n\n**Diferenciais:**\n- Migração para Spring Boot ou Quarkus\n- Docker\n- Mensageria JMS\n\n## Benefícios\n\n- Faixa salarial de R$ 12.000 a 22.000/mês, publicada aqui e não negociada por último\n- Vale-refeição ou vale-alimentação\n- Ajuda de custo / auxílio home office para quem atua remoto\n- Auxílio mobilidade ou vale-transporte para os dias presenciais\n- Plano de saúde e odontológico\n- Day off de aniversário e apoio a cursos e certificações\n- O pacote final é o da empresa contratante e é confirmado antes de qualquer entrevista\n\n## Contratação\n\nCLT ou PJ, conforme sua preferência e acordo com a empresa contratante.\n\n## Como se candidatar\n\nCandidate-se pela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-jakarta-ee-senior\n\nBasta enviar o currículo uma vez. A IA da Sylision considera o seu perfil para esta e para todas as vagas compatíveis, inclusive as que abrirem depois.",
-      "excerpt": "## Nossa empresa A [Sylision](https://sylision.com) é uma plataforma de recrutamento de tecnologia que atua no Brasil e em Portugal. Recrutamos para empresas parceiras e usamos inteligência artificial para cruzar o se...",
-      "issueState": "closed",
-      "contentHash": "8c77b56e7879d83ae7ddbf808b8ede26c0701eaa9a8486e5fbbea0c8685360ea",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "sênior",
-        "clt",
-        "pj",
-        "remoto",
-        "backend",
-        "rest",
-        "spring",
-        "maven"
-      ],
-      "sourceTags": [
-        "sênior",
-        "clt",
-        "pj",
-        "remoto",
-        "backend",
-        "rest",
-        "spring",
-        "maven"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "companyName": "Sylision",
-      "salary": {
-        "currency": "BRL",
-        "min": 12000,
-        "max": 22000,
-        "period": "month"
-      },
-      "createdAt": "2026-08-24T18:29:55Z",
-      "updatedAt": "2026-10-06T23:10:41Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1944",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "docker",
-          "java",
           "spring"
         ],
         "seniority": [

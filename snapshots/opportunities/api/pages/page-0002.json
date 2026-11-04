@@ -1,9 +1,13 @@
 {
-  "generatedAt": "2026-11-04T01:00:19.626Z",
+  "generatedAt": "2026-11-04T19:11:15.216Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_fd9c1ce498613dfab8d56a8d",
+    "gh_e5c3fe2de4aec791023d34ec",
+    "gh_9d50e797be669eee892f4cf9",
+    "gh_4ddc5ce7cb4c159fc9054916",
     "gh_f65827432354c0662b6b0ae4",
     "gh_01d165a4b737ad3ecc75a04b",
     "gh_a4413b38ce8666beb7e0dc7d",
@@ -19,13 +23,461 @@
     "gh_16411c913e420988025158f9",
     "gh_fd2ef9052402e6b346c451bd",
     "gh_4171b79b3ffe9641de97f6e5",
-    "gh_024b04048e3f69628f6e111a",
-    "gh_32c4e9a9b5d6fa8d6dab1eb8",
-    "gh_e89ac86ac916c54d8013da27",
-    "gh_0b7763c8edb9fe9b843a85a8",
-    "gh_635a2d6c08c44acc444fd7c8"
+    "gh_024b04048e3f69628f6e111a"
   ],
   "items": [
+    {
+      "id": "gh_fd9c1ce498613dfab8d56a8d",
+      "sourceId": "react-brasil/vagas#3039",
+      "title": "[Remoto] Mobile Developer React Native (Pleno) na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/mobile-developer-react-native-pleno-174735268?utm_source=github&utm_medium=react-brasil-vagas&modal=open) para realizar a candidatura. 👋\n**TruckPag: Transformando a Logística através da Tecnologia de Pagamentos**\n\nA TruckPag é uma startup inovadora no setor de Meios de Pagamento, focada em solucionar grandes desafios e gerar impacto relevante no mundo logístico. Buscamos profissionais talentosos e motivados que queiram tornar as operações logísticas mais efetivas, assertivas e competitivas. Acreditamos que grandes ideias nascem da diversidade de vivências, formações e pessoas únicas. Cultivamos um ambiente de trabalho colaborativo, de alta performance e descontraído, onde você terá a oportunidade de agregar valor significativo à nossa equipe e aos nossos produtos.\n\nEstamos em busca de uma Pessoa Desenvolvedora Mobile React Native Pleno para atuar no desenvolvimento e evolução dos nossos aplicativos, com foco em qualidade, testes, cenários offline e compatibilidade entre plataformas.\n\n**Atividades**\n\n*   Escrever código e funções facilmente testáveis, compreendidas por outros desenvolvedores, considerando casos extremos e erros;\n    \n*   Compreender a pirâmide de testes, escrever testes unitários de acordo com a regra de negócio, bem como testes de integração com a ajuda de desenvolvedores sênior e do Líder Técnico;\n    \n*   Testar casos extremos e erros esperados, usar abordagem sistemática para depurar problemas, estar ciente da filosofia de monitoramento da organização e dos dados operacionais do domínio da própria equipe;\n    \n*   Entender o contexto do domínio de negócio, as boas práticas, padrões e processos definidos pelo time, e desenvolver funções que melhorem a qualidade do código e reduzam débito técnico;\n    \n*   Entender a importância da segurança nas implementações e pedir ajuda ao Líder Técnico em decisões que possam ter implicação de segurança;\n    \n*   Atuar conforme a priorização de tarefas e identificar dependência entre tarefas e requisitos;\n    \n*   Lidar com cenário de estado offline e sincronização de dados ao reconectar, com revisão de sênior ou especialista;\n    \n*   Tratar compatibilidade entre versões de sistema operacional (iOS e Android) e entre modelos de dispositivo, incluindo ajuste de comportamento quando necessário;\n    \n*   Gerenciar permissões de dispositivo e notificações push via Firebase Console (Cloud Messaging), dentro do padrão já estabelecido pelo time;\n    \n*   Escrever testes unitários com Jest, cobrindo os dois estados de uma funcionalidade implementada por trás de feature flag, com apoio de sênior.\n## TruckPag: \n <p>Somos uma empresa de meios de pagamento especializada em gestão de frotas, com nosso cartão TruckPag, o cliente abastece com economia, facilidade e total controle. Com a CIOTPag, o cliente tem soluções completas para a sua gestão de frete a partir da emissão de CIOT e pagamento eletrônico de frete (PEF) . Além disso, a PagPedágio possibilita que as viagens sejam bem mais rápidas, sem precisar enfrentar filas de pedágios, em todo território nacional.</p>\n<p>Somos 100% TruckPag: sem bancos, sem fundos, sem intermediadores e sem burocracia.</p><a href='https://coodesh.com/companies/truckpag-meios-de-pagamento'>Veja mais no site</a>\n\n ## Habilidades: \n - React Native \n- Typescript \n- Jest \n- GitLab CI \n- Firebase\n## Local: \n Remota\n## Requisitos: \n - Ensino superior completo, cursando, ou experiência equivalente comprovada na área; \n- React Native e TypeScript, nível intermediário, com capacidade de lidar com estado offline e sincronização; \n- Android Studio e Xcode, uso para debug e teste em emulador/simulador de ambas as plataformas; \n- Jest, para teste unitário, incluindo o que sustenta o build web usado no teste E2E; \n- Git e GitLab CI: escrever e entender .gitlab-ci.yml, participar do pipeline de build e teste mobile; \n- Linux e uso de terminal ou Mac OS; \n- Uso de IA para desenvolvimento (Cursor, ferramenta oficial fornecida pela empresa) como prática do dia a dia; \n- Experiência com integração entre sistemas, no sentido de consumo de API em cenário de conectividade instável; \n- Experiência em CI/CD; \n- Experiência em metodologias ágeis (Scrum, Kanban); \n- Noção de gerenciamento de projeto; \n- Noção de segurança da informação e gestão de risco.\n## Diferenciais: \n - Inglês intermediário; \n- Insomnia ou Postman para validação de API consumida; \n- Experiência em alguma das ferramentas de testes (Playwright, Selenium, Cypress), para teste E2E de fluxo completo via build web do aplicativo, capacidade em expansão no time; \n- Vitest, para teste de lógica compartilhada fora do dispositivo, quando aplicável; \n- Play Store Console ou App Store Connect, para publicação e liberação de versão de teste; \n- Kanbanize (Businessmap) como ferramenta de acompanhamento; \n- Conhecimento em meios de pagamento; \n- Conhecimento em transporte rodoviário de cargas; \n- Conhecimento em Appium, Maestro, Detox (frameworks de teste) e ferramentas como BrowserStack e LambdaTest (TestMu AI).\n## Benefícios: \n - Horário Flexível: Maior autonomia e equilíbrio entre vida pessoal e profissional. \n- Parceria Alura: Acesso a diversas plataformas de aprendizado para desenvolvimento contínuo. \n- Descanso remunerado: 30 dias de descanso remunerado por ano. \n- Day off de Aniversário: Um dia de folga no aniversário do Colaborador/Prestador ou de seu filho. \n- WellHub (Gympass): Acesso a uma vasta rede de academias e programas de bem-estar. \n- Incentivo aos estudos (Grupo Cogna): Descontos de até 60% em cursos.\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Mobile Developer React Native Pleno na TruckPag](https://coodesh.com/jobs/mobile-developer-react-native-pleno-174735268?utm_source=github&utm_medium=react-brasil-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nRemoto\n#### Regime\nPJ\n#### Categoria\nMobile",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "07a1423b26bfcd89e5b11f9151f6834b87b5a61536955927b497e5ff209d7cfc",
+      "repository": "react-brasil/vagas",
+      "repositoryUrl": "https://github.com/react-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "pleno",
+        "react",
+        "typescript",
+        "⚖️ outros",
+        "⚖️ pj",
+        "🏢 flexível",
+        "🏢 remoto",
+        "👨 pleno",
+        "👴 senior"
+      ],
+      "sourceTags": [
+        "data",
+        "pleno",
+        "react",
+        "typescript",
+        "⚖️ outros",
+        "⚖️ pj",
+        "🏢 flexível",
+        "🏢 remoto",
+        "👨 pleno",
+        "👴 senior"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "react-brasil",
+        "name": "react-brasil",
+        "avatarUrl": "https://github.com/react-brasil.png?size=80",
+        "repository": "react-brasil/vagas",
+        "url": "https://github.com/react-brasil/vagas"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2026-10-30T18:32:24Z",
+      "updatedAt": "2026-10-30T18:32:56Z",
+      "url": "https://github.com/react-brasil/vagas/issues/3039",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "mobile"
+        ],
+        "technologies": [
+          "react",
+          "react-native",
+          "typescript"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_fd9c1ce498613dfab8d56a8d",
+          "sourceId": "react-brasil/vagas#3039",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3039",
+          "createdAt": "2026-10-30T18:32:24Z",
+          "updatedAt": "2026-10-30T18:32:56Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        },
+        {
+          "id": "gh_91b35429accf78ddff3dea37",
+          "sourceId": "androiddevbr/vagas#2250",
+          "repository": "androiddevbr/vagas",
+          "repositoryUrl": "https://github.com/androiddevbr/vagas",
+          "url": "https://github.com/androiddevbr/vagas/issues/2250",
+          "createdAt": "2026-10-30T18:32:43Z",
+          "updatedAt": "2026-10-30T18:32:43Z",
+          "community": {
+            "id": "androiddevbr",
+            "name": "androiddevbr",
+            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
+            "repository": "androiddevbr/vagas",
+            "url": "https://github.com/androiddevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-10-30T18:32:24Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_e5c3fe2de4aec791023d34ec",
+      "sourceId": "remoteintech/remote-jobs#2295",
+      "title": "57 company profiles missing company_size or required sections",
+      "description": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a failing validation check** for problems they didn't cause.\n\n(Invalid tech tags and slug/filename mismatches are being fixed separately in #2294 and #2293.)\n\n## How to help\n\nPick one or a few, check the company's own website, and open a PR. Please keep each PR to a handful of profiles so they're easy to review.\n\n- **`company_size`**: add one of `tiny` (1–10 employees), `small` (11–50), `medium` (51–200), `large` (201–1000) or `enterprise` (1000+). The company's About page or LinkedIn usually says.\n- **Missing sections**: add the heading listed (`## Company blurb`, `## Remote status` or `## How to apply`) with a short, factual paragraph. For `Remote status`, describe the company's actual remote policy as the company states it, not a guess.\n- If the company has **closed or been acquired**, say so in a comment here instead of filling it in, and we'll remove the profile (see #2271 for an example).\n\nSee [CONTRIBUTING](https://github.com/remoteintech/remote-jobs/blob/main/.github/CONTRIBUTING.md) for the full format. You can check your work locally with `node .github/scripts/validate-companies.js src/companies/<file>.md`.\n\nTick a box once its PR is merged.\n\n## Profiles\n\n- [ ] [ALLYDVM](https://remoteintech.company/companies/allydvm/) (`src/companies/allydvm.md`): `company_size`\n- [ ] [Appstractor](https://remoteintech.company/companies/appstractor/) (`src/companies/appstractor.md`): `company_size`\n- [ ] [Articulate](https://remoteintech.company/companies/articulate/) (`src/companies/articulate.md`): `company_size`\n- [ ] [Atento](https://remoteintech.company/companies/atento/) (`src/companies/atento.md`): `company_size`\n- [ ] [Atlassian](https://remoteintech.company/companies/atlassian/) (`src/companies/atlassian.md`): `company_size`\n- [ ] [BeBanjo](https://remoteintech.company/companies/bebanjo/) (`src/companies/bebanjo.md`): `company_size`\n- [ ] [Betable](https://remoteintech.company/companies/betable/) (`src/companies/betable.md`): `company_size`\n- [ ] [Bitovi](https://remoteintech.company/companies/bitovi/) (`src/companies/bitovi.md`): Remote status section\n- [ ] [Bloc](https://remoteintech.company/companies/bloc/) (`src/companies/bloc.md`): `company_size`\n- [ ] [Carbon Black](https://remoteintech.company/companies/carbon-black/) (`src/companies/carbon-black.md`): `company_size`\n- [ ] [CartStack](https://remoteintech.company/companies/cartstack/) (`src/companies/cartstack.md`): Remote status section\n- [ ] [Chef](https://remoteintech.company/companies/chef/) (`src/companies/chef.md`): `company_size`\n- [ ] [Chess](https://remoteintech.company/companies/chess/) (`src/companies/chess.md`): `company_size`\n- [ ] [Coingape](https://remoteintech.company/companies/coingape/) (`src/companies/coingape.md`): Remote status section\n- [ ] [Consumer Financial Protection Bureau](https://remoteintech.company/companies/consumer-financial-protection-bureau/) (`src/companies/consumer-financial-protection-bureau.md`): `company_size`, Remote status section\n- [ ] [Continu](https://remoteintech.company/companies/continu/) (`src/companies/continu.md`): `company_size`\n- [ ] [Cosmic Chimps](https://remoteintech.company/companies/cosmic-chimps/) (`src/companies/cosmic-chimps.md`): `company_size`\n- [ ] [Datadog](https://remoteintech.company/companies/datadog/) (`src/companies/datadog.md`): `company_size`\n- [ ] [Delighted](https://remoteintech.company/companies/delighted/) (`src/companies/delighted.md`): Remote status section\n- [ ] [DGraph](https://remoteintech.company/companies/dgraph/) (`src/companies/dgraph.md`): `company_size`\n- [ ] [Enok Collective](https://remoteintech.company/companies/enok/) (`src/companies/enok.md`): How to apply section\n- [ ] [Figma](https://remoteintech.company/companies/figma/) (`src/companies/figma.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Filament Group](https://remoteintech.company/companies/filament-group/) (`src/companies/filament-group.md`): `company_size`, Remote status section\n- [ ] [Findem](https://remoteintech.company/companies/findem/) (`src/companies/findem.md`): Remote status section\n- [ ] [Freeagent](https://remoteintech.company/companies/freeagent/) (`src/companies/freeagent.md`): Remote status section\n- [ ] [Got Soccer](https://remoteintech.company/companies/got-soccer/) (`src/companies/got-soccer.md`): `company_size`, Remote status section\n- [ ] [Healthfinch](https://remoteintech.company/companies/healthfinch/) (`src/companies/healthfinch.md`): `company_size`\n- [ ] [Hubstaff](https://remoteintech.company/companies/hubstaff/) (`src/companies/hubstaff.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Hugo](https://remoteintech.company/companies/hugo/) (`src/companies/hugo.md`): Remote status section\n- [ ] [IDoneThis](https://remoteintech.company/companies/idonethis/) (`src/companies/idonethis.md`): Remote status section\n- [ ] [Instamobile](https://remoteintech.company/companies/instamobile/) (`src/companies/instamobile.md`): `company_size`\n- [ ] [iOS App Templates](https://remoteintech.company/companies/ios-app-templates/) (`src/companies/ios-app-templates.md`): `company_size`\n- [ ] [Jolly Good Code](https://remoteintech.company/companies/jolly-good-code/) (`src/companies/jolly-good-code.md`): Remote status section\n- [ ] [Keen IO](https://remoteintech.company/companies/keen-io/) (`src/companies/keen-io.md`): Remote status section\n- [ ] [KissMetrics](https://remoteintech.company/companies/kissmetrics/) (`src/companies/kissmetrics.md`): `company_size`\n- [ ] [Knack](https://remoteintech.company/companies/knack/) (`src/companies/knack.md`): `company_size`, How to apply section\n- [ ] [Let's Encrypt](https://remoteintech.company/companies/lets-encrypt/) (`src/companies/lets-encrypt.md`): `company_size`, Remote status section\n- [ ] [Linaro](https://remoteintech.company/companies/linaro/) (`src/companies/linaro.md`): Remote status section\n- [ ] [LogDNA](https://remoteintech.company/companies/logdna/) (`src/companies/logdna.md`): How to apply section\n- [ ] [MaintainNow](https://remoteintech.company/companies/maintainnow/) (`src/companies/maintainnow.md`): valid `company_size` (startup)\n- [ ] [Mattermost](https://remoteintech.company/companies/mattermost/) (`src/companies/mattermost.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [MetaLab](https://remoteintech.company/companies/metalab/) (`src/companies/metalab.md`): `company_size`\n- [ ] [Netlify](https://remoteintech.company/companies/netlify/) (`src/companies/netlify.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [npm](https://remoteintech.company/companies/npm/) (`src/companies/npm.md`): Remote status section\n- [ ] [O'Reilly Media](https://remoteintech.company/companies/oreilly-media/) (`src/companies/oreilly-media.md`): `company_size`\n- [ ] [Our-Hometown Inc.](https://remoteintech.company/companies/our-hometown-inc/) (`src/companies/our-hometown-inc.md`): Remote status section\n- [ ] [PreviousNext](https://remoteintech.company/companies/previousnext/) (`src/companies/previousnext.md`): `company_size`, Remote status section\n- [ ] [Renaissance](https://remoteintech.company/companies/renaissance/) (`src/companies/renaissance.md`): Remote status section\n- [ ] [SignEasy](https://remoteintech.company/companies/signeasy/) (`src/companies/signeasy.md`): `company_size`\n- [ ] [Slack](https://remoteintech.company/companies/slack/) (`src/companies/slack.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Soostone](https://remoteintech.company/companies/soostone/) (`src/companies/soostone.md`): `company_size`, Remote status section\n- [ ] [Sourcegraph](https://remoteintech.company/companies/sourcegraph/) (`src/companies/sourcegraph.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Stitch Fix](https://remoteintech.company/companies/stitch-fix/) (`src/companies/stitch-fix.md`): `company_size`\n- [ ] [The Wirecutter](https://remoteintech.company/companies/the-wirecutter/) (`src/companies/the-wirecutter.md`): `company_size`\n- [ ] [Toptal](https://remoteintech.company/companies/toptal/) (`src/companies/toptal.md`): `company_size`\n- [ ] [Travis CI](https://remoteintech.company/companies/travis-ci/) (`src/companies/travis-ci.md`): Remote status section\n- [ ] [Turing](https://remoteintech.company/companies/turing/) (`src/companies/turing.md`): `company_size`",
+      "excerpt": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a faili...",
+      "issueState": "open",
+      "contentHash": "0ede572a498b4a943c4e6b10c7df8f1289be7242635a91c590e5f2fe22c04002",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "good first issue",
+        "help wanted",
+        "housekeeping"
+      ],
+      "sourceTags": [
+        "good first issue",
+        "help wanted",
+        "housekeeping"
+      ],
+      "author": {
+        "id": "dougaitken",
+        "name": "dougaitken",
+        "handle": "dougaitken",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-10-30T00:22:07Z",
+      "updatedAt": "2026-11-03T12:04:37Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_e5c3fe2de4aec791023d34ec",
+          "sourceId": "remoteintech/remote-jobs#2295",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
+          "createdAt": "2026-10-30T00:22:07Z",
+          "updatedAt": "2026-11-03T12:04:37Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-10-30T00:22:07Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_9d50e797be669eee892f4cf9",
+      "sourceId": "react-brasil/vagas#3038",
+      "title": "[Nova Lima, Brasil] Full Cycle Developer (Júnior) na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/full-cycle-developer-junior-192511247?utm_source=github&utm_medium=react-brasil-vagas&modal=open) para realizar a candidatura. 👋\nEstamos contratando: **Pessoa Desenvolvedora Full Cycle**\n\nQuer fazer parte de um time que está transformando a logística por meio da tecnologia? Se você é apaixonado(a) por desenvolvimento, gosta de desafios e quer participar da construção de soluções que geram impacto real no negócio, essa oportunidade pode ser para você!\n\n**O que você vai fazer no dia a dia:**\n\nAtuar em todas as etapas do ciclo de desenvolvimento, desde a modelagem da solução até o acompanhamento em produção; Desenvolver soluções de ponta a ponta, colaborando com equipes multidisciplinares; Contribuir ativamente para a transformação digital da logística, elevando o nível de qualidade e eficiência dos nossos processos; Participar da construção de produtos e soluções inovadoras com impacto direto na operação.\n\n**O que oferecemos:**\n\n*   Ambiente promissor para crescimento pessoal e profissional;\n    \n*   Contato direto com um time de tecnologia altamente qualificado;\n    \n*   Espaço para inovação, aprendizado contínuo e desenvolvimento de carreira.\n    \n\nSe você gosta de desafios, inovação e quer crescer junto com um time que está construindo o futuro da logística, queremos conhecer você!\n## BeTruck: \n • Colaboramos muito, uns com os outros. Troca de conhecimento é o nosso lema, e geramos crescimento e inovação;\n• Nosso time é dinâmico e ágil;\n• Temos autonomia e liberdade para propor soluções e exercer nossa criatividade;\n• Idéias? Claro! São muito bem-vindas;\n• O bom humor e a leveza estão sempre presentes por aqui, acredite;\n• Respeitamos os prazos e a qualidade das entregas! \n\nPROCURAMOS ALGUÉM QUE:\n• Queira aprender coisas novas e seja apaixonado por desafios;\n• Seja focado e proativo;\n• Possuir pensamento lógico;\n• Trabalhe com dinamismo e agilidade e goste de entregar resultados; \n\n[Veja mais no site](https://coodesh.com/companies/betruck)\n\n ## Habilidades: \n - Nest.JS \n- React.js \n- AWS \n- SQL\n## Local: \n Nova Lima, Brasil\n## Requisitos: \n - Experiência em desenvolvimento full cycle utilizando tecnologias javascript (nest.js / React.js) \n- Conhecimento e experiência AWS \n- SQL\n\n## Benefícios: \n - É disponibilizado o Onhappy\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Full Cycle Developer (Júnior) na BeTruck](https://coodesh.com/jobs/full-cycle-developer-junior-192511247?utm_source=github&utm_medium=react-brasil-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Regime\nCLT\n#### Categoria\nFull-Stack",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "2a14be924148ec2af0dee93ceb7f293f91a56ba602b716a5d017d5f7b7104c23",
+      "repository": "react-brasil/vagas",
+      "repositoryUrl": "https://github.com/react-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "⚖️ clt",
+        "⚖️ outros",
+        "👦 junior"
+      ],
+      "sourceTags": [
+        "⚖️ clt",
+        "⚖️ outros",
+        "👦 junior"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "react-brasil",
+        "name": "react-brasil",
+        "avatarUrl": "https://github.com/react-brasil.png?size=80",
+        "repository": "react-brasil/vagas",
+        "url": "https://github.com/react-brasil/vagas"
+      },
+      "companyName": "Coodesh",
+      "createdAt": "2026-10-29T18:20:29Z",
+      "updatedAt": "2026-10-29T18:20:59Z",
+      "url": "https://github.com/react-brasil/vagas/issues/3038",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "displayText": "Brazil",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "javascript",
+          "react"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_9d50e797be669eee892f4cf9",
+          "sourceId": "react-brasil/vagas#3038",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3038",
+          "createdAt": "2026-10-29T18:20:29Z",
+          "updatedAt": "2026-10-29T18:20:59Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 6,
+        "publishedAt": "2026-10-29T18:20:29Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_4ddc5ce7cb4c159fc9054916",
+      "sourceId": "react-brasil/vagas#3037",
+      "title": "[Remoto] Senior Front-end / Product Engineer (React/TypeScript) na WeatherWise — 4 dias / 32h",
+      "description": "## Descrição da vaga\n\n**Semana de trabalho de 4 dias — 32 horas semanais.**\n**Remuneração mensal: R$ 15.000 a R$ 25.000, conforme experiência.**\n\n**Senior Front-end / Product Engineer (Design-led), reporting to the CTO.**\n\nDesign and build the interfaces through which brokers, insurers and contractors work with an agentic AI platform. Take problems from first sketch to shipped product: agent conversations, policy-structuring workbenches, risk dashboards and microsites.\n\nThere is no separate design team: you will own UX, visual design and implementation. Help humans understand what our agent Kite did and why, surface uncertainty, and make review, correction and approval clear and effective.\n\n- Build React/TypeScript product interfaces, from information architecture to visual detail.\n- Own the design system, component library and visual consistency.\n- Turn weather and financial data into readable maps, time series, tables, payout curves and portfolio views.\n- Use AI coding/design tools to prototype and iterate quickly.\n- Run lightweight user research and work directly with the CEO, CTO and sales team.\n\nFull role details: https://github.com/frontendbr/vagas/issues/8572\n\n## Local\n\n100% remoto — trabalhando permanentemente do Brasil com a equipe da WeatherWise, sediada em Londres.\n\n## Benefícios\n\n- Semana de trabalho de **4 dias / 32 horas semanais**.\n- **100% remoto do Brasil**.\n- Ownership of design direction and direct access to the CEO and CTO.\n- A small senior team building production agentic products for real customers.\n\n## Requisitos\n\n**Obrigatórios:**\n- 6+ years building production web applications, with deep fluency in React or a comparable modern framework and TypeScript.\n- Work demonstrating ownership of UX, visual design and implementation, with clear explanations of design decisions.\n- Strong data-visualisation skills: charts, maps and dense tables.\n- Daily use of AI coding/design tools such as Claude Code or Cursor.\n- Experience with AI/agent interfaces, or a credible explanation of how you would approach them.\n- Ability to scope ambiguous problems and ship independently.\n\n**Desejáveis:**\nMapLibre, Mapbox, deck.gl, time-series visualisation at scale, B2B/fintech/insurtech products, design systems and an interest in climate or risk.\n\nA portfolio or live work counts for more than a CV.\n\n## Contratação\n\n**PJ (Pessoa Jurídica). R$ 15.000 a R$ 25.000 por mês, conforme experiência. Jornada de 32 horas semanais em 4 dias.**\n\n## Nossa empresa\n\nWeatherWise (Ehabitation Ltd, trading as EHAB) is a London-based weather risk specialist. We help construction, energy, agriculture and logistics businesses understand, plan for and insure against weather risk.\n\nWe build WeatherWise Construction (weather-delay analysis) and WeatherWise Studio (AI-native parametric insurance). Our agent Kite helps brokers discover risks, structure and price cover, generate materials and route submissions to suitable carriers. A weather-data engine drawing on 180,000+ stations and global datasets powers both platforms. Trust, auditability and correctness matter. Website: https://www.ehab.co/\n\n## Como se candidatar\n\nEmail **josh.graham@weatherwise.studio** with subject **Senior Front-end / Product Engineer**.\n\nSkip the cover letter. Send 2–3 things you have built (links, a short Loom or a repo) plus a couple of sentences on what you would change now. We will come back to every application and aim to run the process from first conversation to offer in under three weeks.\n\n## Labels\n\n- 🏢 Remoto\n- 👴 Sênior\n- ⚖️ PJ\n- 💰 15k+",
+      "excerpt": "## Descrição da vaga **Semana de trabalho de 4 dias — 32 horas semanais.** **Remuneração mensal: R$ 15.000 a R$ 25.000, conforme experiência.** **Senior Front-end / Product Engineer (Design-led), reporting to the CTO....",
+      "issueState": "open",
+      "contentHash": "00e2d840a8c58604b0a626ea3fabfe103fa2529f1b4ab585b99d7d1e8e4250e7",
+      "repository": "react-brasil/vagas",
+      "repositoryUrl": "https://github.com/react-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "⚖️ pj",
+        "🏢 remoto",
+        "👴 senior",
+        "💰 15k+"
+      ],
+      "sourceTags": [
+        "⚖️ pj",
+        "🏢 remoto",
+        "👴 senior",
+        "💰 15k+"
+      ],
+      "author": {
+        "id": "fmoura-ehab",
+        "name": "fmoura-ehab",
+        "handle": "fmoura-ehab",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46277770?v=4"
+      },
+      "community": {
+        "id": "react-brasil",
+        "name": "react-brasil",
+        "avatarUrl": "https://github.com/react-brasil.png?size=80",
+        "repository": "react-brasil/vagas",
+        "url": "https://github.com/react-brasil/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 15000,
+        "max": 25000,
+        "period": "hour"
+      },
+      "createdAt": "2026-10-28T14:12:10Z",
+      "updatedAt": "2026-10-28T14:12:37Z",
+      "url": "https://github.com/react-brasil/vagas/issues/3037",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Brazil · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "frontend",
+          "leadership"
+        ],
+        "technologies": [
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_4ddc5ce7cb4c159fc9054916",
+          "sourceId": "react-brasil/vagas#3037",
+          "repository": "react-brasil/vagas",
+          "repositoryUrl": "https://github.com/react-brasil/vagas",
+          "url": "https://github.com/react-brasil/vagas/issues/3037",
+          "createdAt": "2026-10-28T14:12:10Z",
+          "updatedAt": "2026-10-28T14:12:37Z",
+          "community": {
+            "id": "react-brasil",
+            "name": "react-brasil",
+            "avatarUrl": "https://github.com/react-brasil.png?size=80",
+            "repository": "react-brasil/vagas",
+            "url": "https://github.com/react-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 7,
+        "publishedAt": "2026-10-28T14:12:10Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_f65827432354c0662b6b0ae4",
       "sourceId": "pydevbr/vagas#52",
@@ -154,7 +606,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-10-28T14:11:50Z",
         "status": "fresh"
       }
@@ -279,7 +731,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-10-28T12:19:34Z",
         "status": "fresh"
       }
@@ -393,7 +845,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-10-27T16:01:03Z",
         "status": "fresh"
       }
@@ -516,7 +968,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-10-27T12:14:47Z",
         "status": "fresh"
       }
@@ -638,7 +1090,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-10-27T07:54:09Z",
         "status": "fresh"
       }
@@ -730,7 +1182,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-10-27T06:44:55Z",
         "status": "fresh"
       }
@@ -979,7 +1431,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
+        "ageDays": 9,
         "publishedAt": "2026-10-26T14:08:59Z",
         "status": "fresh"
       }
@@ -1103,7 +1555,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 9,
+        "ageDays": 10,
         "publishedAt": "2026-10-25T12:26:08Z",
         "status": "fresh"
       }
@@ -1209,7 +1661,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-10-24T14:35:38Z",
         "status": "fresh"
       }
@@ -1336,7 +1788,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-10-24T12:08:55Z",
         "status": "fresh"
       }
@@ -1462,7 +1914,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-10-23T12:33:38Z",
         "status": "fresh"
       }
@@ -1564,7 +2016,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-10-23T10:36:33Z",
         "status": "fresh"
       }
@@ -1728,7 +2180,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-10-22T11:43:48Z",
         "status": "fresh"
       }
@@ -1814,488 +2266,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 12,
+        "ageDays": 13,
         "publishedAt": "2026-10-22T07:59:45Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_32c4e9a9b5d6fa8d6dab1eb8",
-      "sourceId": "awesome-jobs/jobs#5093",
-      "title": "CMC Global - Ruby on Rails Tech Lead - Ho Chi Minh City - FT",
-      "description": "## Location\n\n* District 7, Ho Chi Minh City, Vietnam\n* Full-time position\n\n## Salary Expectation\n\n* Up to 50,000,000 VND gross per month\n\n## About the Role\n\nWe are looking for a hands-on Ruby on Rails Tech Lead to join an international product team.\n\nYou will lead and mentor a team of 4–5 engineers, take ownership of technical direction, and collaborate with international Engineering and Product stakeholders.\n\nStrong Senior Ruby on Rails Engineers who are ready to step up into a Lead role are also welcome.\n\n## Requirements\n\n* 5+ years of professional software development experience\n* 3+ years of hands-on experience with Ruby on Rails\n* Strong understanding of Ruby, Rails conventions, and engineering best practices\n* Experience with system design, architecture, REST APIs, and relational databases\n* Experience with PostgreSQL, MySQL, MariaDB, or SQL Server\n* Experience with AWS and general cloud infrastructure\n* Familiarity with Git and CI/CD deployment\n* Experience with HTML, CSS, JavaScript, responsive UI, and web development best practices\n* Good English communication skills for working with international stakeholders\n\n## Skills\n\n### Must Have\n\n* Ruby on Rails\n* System design and software architecture\n* PostgreSQL or another relational database\n* AWS\n* Git and CI/CD\n* REST API design and implementation\n* Technical leadership, mentoring, and code review\n* Performance optimization, testing, and production support\n\n### Ideally\n\n* Docker\n* Cloudflare\n* Datadog or a similar monitoring service\n* Algolia or a similar search service\n* AWS Lambda and CloudFront\n* Heroku\n* Buildkite or another CI platform\n\n## Responsibilities\n\n### You’ll be responsible for\n\n* Leading and mentoring a team of 4–5 engineers\n* Driving the delivery of medium to large-scale projects\n* Defining technical direction, architecture, and engineering standards\n* Coordinating development work and managing technical roadblocks\n* Working with Product Managers and international stakeholders\n* Designing scalable, reusable, and maintainable systems\n* Taking ownership of production availability, performance, security, and incident management\n* Promoting testing, code quality, technical documentation, and continuous improvement\n* Supporting the “you build it, you run it” engineering approach\n\n## Why It Would Be Awesome to Work With Us\n\n* Opportunity to build meaningful products for international users\n* International product environment\n* Training and career development opportunities\n* Salary review twice per year or based on excellent performance\n* 12 salary months plus Performance Bonus\n* Extra benefits package of 16,000,000 VND per employee per year\n* Premium healthcare insurance\n* 12 days of annual leave\n* Company trip and employee engagement activities\n* Onsite opportunities in the United States, Europe, and Asia\n* Working time: Monday to Friday, 8 hours per day\n\n## Interesting Engineering Challenges\n\n* Designing and evolving scalable Ruby on Rails systems\n* Improving application performance and production reliability\n* Defining modular and reusable system architecture\n* Developing and maintaining APIs and database solutions\n* Strengthening CI/CD, testing, monitoring, and incident management practices\n* Balancing technical quality with product and business outcomes\n\n## Contact\n\nPhone/Zalo: 0346 239 089",
-      "excerpt": "## Location * District 7, Ho Chi Minh City, Vietnam * Full-time position ## Salary Expectation * Up to 50,000,000 VND gross per month ## About the Role We are looking for a hands-on Ruby on Rails Tech Lead to join an ...",
-      "issueState": "open",
-      "contentHash": "d28605070391e260b694bc2d44ffb12c2ffacd8c28f1e5607efc97ca07b0cae2",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "design",
-        "java",
-        "onsite",
-        "senior"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "java",
-        "onsite",
-        "senior"
-      ],
-      "author": {
-        "id": "ngnlavie-dot",
-        "name": "ngnlavie-dot",
-        "handle": "ngnlavie-dot",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/346213695?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "createdAt": "2026-10-22T07:43:14Z",
-      "updatedAt": "2026-10-22T07:43:14Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5093",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia",
-        "city": "* District 7",
-        "subdivision": "HO",
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "* District 7, HO · On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "leadership"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "java",
-          "javascript",
-          "mysql",
-          "postgres",
-          "ruby"
-        ],
-        "seniority": [
-          "lead",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee",
-          "full-time"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_32c4e9a9b5d6fa8d6dab1eb8",
-          "sourceId": "awesome-jobs/jobs#5093",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5093",
-          "createdAt": "2026-10-22T07:43:14Z",
-          "updatedAt": "2026-10-22T07:43:14Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_ac3ae9a30cec0596e64d0d1b",
-          "sourceId": "awesome-jobs/vietnam#5093",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5093",
-          "createdAt": "2026-10-22T07:43:14Z",
-          "updatedAt": "2026-10-22T07:43:14Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 12,
-        "publishedAt": "2026-10-22T07:43:14Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_e89ac86ac916c54d8013da27",
-      "sourceId": "phpdevbr/vagas#1332",
-      "title": "Desenvolvedor(a) Full Stack Pleno (PHP/Laravel backend e Vue.js) - 100% Presencial no Jardim Europa, São Paulo.",
-      "description": "📌 Desenvolvedor(a) Full Stack Pleno (PHP/Laravel backend e Vue.js) [326655]\n\n❗Não aceitamos perfis fora dos requisitos, por favor, leia o descritivo!\n\nDesenvolvedor(a) Full Stack Pleno (PHP/Laravel backend e Vue.js)\n\n100% Presencial no Jardim Europa, São Paulo (precisa residir em São Paulo, próximo ao local).\n\nRemuneração: R$ 6500 PJ (13 mensalidades) e 7000 a partir de Jan/27.\n\nMissão\n\nAtuar no desenvolvimento, evolução e sustentação dos sistemas da empresa, com autonomia na execução das demandas e reporte técnico ao Desenvolvedor Sênior e Tech Lead.\n\nRequisitos:\nDisponibilidade para início imediato.\nEntre 4 a 6 anos de experiência como Desenvolvedor(a) Full Stack PHP/Laravel backend e Vue.js e perfil estável em empresas.\nExperiência como Desenvolvedor Full Stack;\nBons conhecimentos em PHP/Laravel backend, Vue.js e MySQL;\nConhecimento em Linux, Redis e Docker;\nExperiência com APIs REST e Git;\nExperiência com testes automatizados;\nConhecimento de metodologias ágeis;\nCapacidade de analisar e solucionar problemas com autonomia.\n\nPrincipais responsabilidades:\nDesenvolver novas funcionalidades e realizar manutenção evolutiva e corretiva dos sistemas;\nDesenvolver e manter APIs, integrações e bancos de dados;\nParticipar do desenvolvimento de novos projetos;\nAnalisar e solucionar problemas técnicos;\nDesenvolver e manter testes unitários, funcionais e de integração;\nParticipar dos processos de deploy e versionamento;\nParticipar dos refinamentos e estimativas das demandas;\nGarantir qualidade, performance e boas práticas nas soluções desenvolvidas.\n\nPerfil esperado:\n\nProfissional com boa autonomia técnica, capacidade analítica, organização e responsabilidade pelas próprias entregas. Deve conseguir conduzir demandas de média complexidade do início ao fim, recorrendo ao Sênior ou Tech Lead nas decisões de maior complexidade.\n\nHorário: Seg a sexta das 9h às 19h.\n\nA empresa é de planos funerários e assistência funerária completa.\n\n❗Devido ao alto volume de candidaturas, só poderemos retornar aos candidatos que estiverem dentro do perfil.\n\n\n🚀 CANDIDATE-SE: Envie mensagem informando a VAGA e o NÚMERO dela para o LinkedIn: https://www.linkedin.com/in/erickamarquesb/\n\n\nSomos uma consultoria de Recrutamento e Seleção, sediada em São Paulo, que atua em vagas pelo Brasil inteiro.\n\nOBS.: Informamos que os candidatos não pagam qualquer valor, à consultoria, ou à empresa, para participar do processo seletivo ou após contratação.",
-      "excerpt": "📌 Desenvolvedor(a) Full Stack Pleno (PHP/Laravel backend e Vue.js) [326655] ❗Não aceitamos perfis fora dos requisitos, por favor, leia o descritivo! Desenvolvedor(a) Full Stack Pleno (PHP/Laravel backend e Vue.js) 10...",
-      "issueState": "open",
-      "contentHash": "adbbee8b36d30b2fef7403d3aa24e0e23b3d415a1b9d6b4618c0f59d719d9937",
-      "repository": "phpdevbr/vagas",
-      "repositoryUrl": "https://github.com/phpdevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "pleno"
-      ],
-      "sourceTags": [
-        "backend",
-        "pleno"
-      ],
-      "author": {
-        "id": "ErickaMB",
-        "name": "ErickaMB",
-        "handle": "ErickaMB",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/73557073?v=4"
-      },
-      "community": {
-        "id": "phpdevbr",
-        "name": "phpdevbr",
-        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-        "repository": "phpdevbr/vagas",
-        "url": "https://github.com/phpdevbr/vagas"
-      },
-      "createdAt": "2026-10-21T22:12:52Z",
-      "updatedAt": "2026-10-22T13:22:45Z",
-      "url": "https://github.com/phpdevbr/vagas/issues/1332",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "fullstack",
-          "leadership"
-        ],
-        "technologies": [
-          "docker",
-          "laravel",
-          "mysql",
-          "php",
-          "redis",
-          "vue"
-        ],
-        "seniority": [
-          "lead",
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_e89ac86ac916c54d8013da27",
-          "sourceId": "phpdevbr/vagas#1332",
-          "repository": "phpdevbr/vagas",
-          "repositoryUrl": "https://github.com/phpdevbr/vagas",
-          "url": "https://github.com/phpdevbr/vagas/issues/1332",
-          "createdAt": "2026-10-21T22:12:52Z",
-          "updatedAt": "2026-10-22T13:22:45Z",
-          "community": {
-            "id": "phpdevbr",
-            "name": "phpdevbr",
-            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
-            "repository": "phpdevbr/vagas",
-            "url": "https://github.com/phpdevbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 13,
-        "publishedAt": "2026-10-21T22:12:52Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_0b7763c8edb9fe9b843a85a8",
-      "sourceId": "react-brasil/vagas#3036",
-      "title": "[São Paulo] Dev Fullstack React/React Native + Java Pleno na Protege Cash",
-      "description": "## Descrição da vaga\n\nA Protege Cash é uma instituição de pagamento em fase de crescimento, e estamos buscando uma pessoa desenvolvedora fullstack para atuar de ponta a ponta nos canais digitais: o Internet Banking web em React e o aplicativo mobile em React Native, além do backend em Java.\n\nUm dos principais desafios da posição é levar para o app as mesmas funcionalidades e regras construídas no Internet Banking web, com a mesma qualidade e as mesmas boas práticas nas duas frentes. Buscamos alguém com autonomia para desenvolver funcionalidades completas, não apenas fazer manutenção pontual.\n\nProcesso seletivo conduzido pela Beyond.\n\n## Local\n\nHíbrido: 1 ~ 2x por semana presencial na Consolação, São Paulo (SP).\n\n## Requisitos\n\n**Obrigatórios:**\n- React com TypeScript: hooks, gerenciamento de estado, formulários e roteamento (buscamos entendimento dos conceitos, não de uma biblioteca específica)\n- React Native: navegação, módulos nativos e gerenciamento de estado\n- Segurança mobile: biometria, autenticação forte e proteção contra engenharia reversa (ex.: anti-tamper/RASP)\n- Backend em Java com Quarkus, em arquitetura de microsserviços\n- Bancos relacionais e não relacionais (SQL Server e MongoDB)\n- Sistemas distribuídos: comunicação entre serviços, filas, cache e resiliência (retry, circuit breaker)\n- AWS (armazenamento de objetos, filas, processamento assíncrono) e Docker\n- Testes automatizados, code review, SonarQube, Git e CI/CD\n\n**Desejáveis:**\n- Node.js/NestJS\n- Kubernetes/Helm\n- Experiência com meios de pagamento, internet banking ou app bancário\n- Integrações com core bancário (ex.: Autbank, Matera)\n\n**Diferenciais:**\n- Uso de assistentes de IA no desenvolvimento\n\n## Contratação\n\nPJ nos primeiros 6 meses, depois efetivação em CLT pela Protege Cash.\n\n## Nossa empresa\n\nA Protege Cash é uma instituição de pagamento que oferece Internet Banking e aplicativo mobile, em fase de crescimento e com portfólio em evolução constante. \n\n## Como se candidatar\n\nCandidate-se pelo link: https://jobs.quickin.io/imaginebeyond/jobs/6a96c9871f00460012416067\n\n## Labels\n\n- 🏢 Híbrido\n- 👨 Pleno\n- ⚖️ PJ",
-      "excerpt": "## Descrição da vaga A Protege Cash é uma instituição de pagamento em fase de crescimento, e estamos buscando uma pessoa desenvolvedora fullstack para atuar de ponta a ponta nos canais digitais: o Internet Banking web...",
-      "issueState": "open",
-      "contentHash": "9022d28af45b518c25d390c38cf3a35e83575e09bfa45867cfbfd61da1f10e26",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 presencial",
-        "👨 pleno"
-      ],
-      "sourceTags": [
-        "⚖️ clt",
-        "⚖️ pj",
-        "🏢 presencial",
-        "👨 pleno"
-      ],
-      "author": {
-        "id": "yassobral",
-        "name": "yassobral",
-        "handle": "yassobral",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/285766893?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "companyName": "Protege Cash",
-      "createdAt": "2026-10-21T13:50:08Z",
-      "updatedAt": "2026-10-21T14:26:55Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3036",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "java",
-          "kubernetes",
-          "mongodb",
-          "nodejs",
-          "react",
-          "react-native",
-          "typescript"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0b7763c8edb9fe9b843a85a8",
-          "sourceId": "react-brasil/vagas#3036",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3036",
-          "createdAt": "2026-10-21T13:50:08Z",
-          "updatedAt": "2026-10-21T14:26:55Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 13,
-        "publishedAt": "2026-10-21T13:50:08Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_635a2d6c08c44acc444fd7c8",
-      "sourceId": "soujava/vagas-java#1966",
-      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Agendamento) | Confidencial (vaga via Sylision)",
-      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO serviço de agendamento faz duas coisas relacionadas. Ele guarda agenda de compromisso (quem está disponível, em qual janela, com qual duração, e o que acontece quando dois pedidos disputam o mesmo horário) e ele dispara tarefas programadas que precisam rodar em hora certa, uma vez, sem duplicar quando existe mais de uma instância da aplicação no ar. A stack é Java com Spring Boot, agendamento com Quartz Scheduler e persistência em PostgreSQL. O que mais gera bug aqui e tempo: fuso, horário de verão de outros países, mês com 28 dias, reagendamento que precisa liberar o horário antigo, cancelamento que chega depois do disparo. Você vai mexer bastante em teste com relógio controlado, porque teste que depende da hora real da máquina passa hoje e falha às três da manhã de um domingo. Esse tipo de cuidado é boa parte do valor da vaga.\n\n- Implementar criação, remarcação e cancelamento de compromisso com checagem de conflito\n- Calcular janela de disponibilidade a partir de regra de duração e intervalo\n- Configurar e manter tarefas programadas com Quartz, garantindo execução única\n- Tratar fuso horário de forma explícita, guardando instante e exibindo local\n- Escrever teste com relógio controlado, sem depender da hora da máquina\n- Expor a agenda por endpoint REST para o front consumir\n- Investigar disparo que não aconteceu ou aconteceu duas vezes\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado com código Java seu\n- Java com orientação a objetos e uso da API de datas (LocalDate, LocalDateTime, Instant)\n- Noção de Spring Boot\n- SQL de consulta e escrita, com filtro por intervalo de data\n- Entender que hora com fuso e hora local são coisas diferentes\n- Git no dia a dia\n\n**Diferenciais:**\n- Já ter usado Quartz, cron ou agendador de qualquer linguagem\n- Noção de execução concorrente e de trava para evitar duplicidade\n- Formato iCalendar ou integração com agenda externa\n- Docker para subir aplicação e banco localmente\n- Teste com data fixada, por exemplo com Clock injetado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.800 a R$ 5.200 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-agendamento-464?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
-      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O serviço de agendamento faz duas coisas relacionadas. El...",
-      "issueState": "open",
-      "contentHash": "d35fa634e61af65f50c084a4b20db90439f885d0707cf5bcb4ec551f402bdc97",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "docker",
-        "júnior",
-        "pj",
-        "postgresql",
-        "remoto",
-        "rest",
-        "spring"
-      ],
-      "sourceTags": [
-        "clt",
-        "docker",
-        "júnior",
-        "pj",
-        "postgresql",
-        "remoto",
-        "rest",
-        "spring"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 3800,
-        "max": 5200,
-        "period": "month"
-      },
-      "createdAt": "2026-10-21T13:09:45Z",
-      "updatedAt": "2026-10-21T13:10:03Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1966",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "docker",
-          "java",
-          "postgres",
-          "spring"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_635a2d6c08c44acc444fd7c8",
-          "sourceId": "soujava/vagas-java#1966",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1966",
-          "createdAt": "2026-10-21T13:09:45Z",
-          "updatedAt": "2026-10-21T13:10:03Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 13,
-        "publishedAt": "2026-10-21T13:09:45Z",
         "status": "fresh"
       }
     }

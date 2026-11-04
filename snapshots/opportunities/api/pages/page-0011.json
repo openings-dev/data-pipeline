@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-11-04T01:00:19.626Z",
+  "generatedAt": "2026-11-04T19:11:15.216Z",
   "page": 11,
   "pageSize": 20,
   "nextPage": "api/pages/page-0012.json",
   "ids": [
+    "gh_6bd2ea87cfb4bbe49569241c",
+    "gh_1f61de8de06b483a9a82d5f4",
     "gh_2d9849eace549284f519bf16",
     "gh_04e16e2c007892d76818f4d4",
     "gh_1281cf89efd737156e2e7eab",
@@ -16,16 +18,239 @@
     "gh_40038d6178e5fc763369f132",
     "gh_8813ab3f79703d699606b0d7",
     "gh_d8668644a6f0ebb1839f0122",
+    "gh_046e40a5a4aaffa9b0373703",
     "gh_615cd5b5c01016e20e631b0c",
     "gh_b5220ce704e9136f8724e349",
     "gh_08793c5a453f16e52f94fd4e",
     "gh_1fbbb84fca255117f18333ff",
-    "gh_697a821cabc5eb7906d1c695",
-    "gh_a925bdb6349671e5c976d3ab",
-    "gh_86cf7c4c726a6cec1163d1fb",
-    "gh_0f0495da862b94749892e684"
+    "gh_697a821cabc5eb7906d1c695"
   ],
   "items": [
+    {
+      "id": "gh_6bd2ea87cfb4bbe49569241c",
+      "sourceId": "ambicuity/New-Grad-Jobs#316",
+      "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
+      "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
+      "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
+      "issueState": "open",
+      "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "roadmap",
+        "type: enhancement"
+      ],
+      "sourceTags": [
+        "enhancement",
+        "help wanted",
+        "needs-triage",
+        "priority: medium",
+        "roadmap",
+        "type: enhancement"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
+      "createdAt": "2026-05-26T23:52:14Z",
+      "updatedAt": "2026-10-19T20:18:43Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "go",
+          "python"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_6bd2ea87cfb4bbe49569241c",
+          "sourceId": "ambicuity/New-Grad-Jobs#316",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
+          "createdAt": "2026-05-26T23:52:14Z",
+          "updatedAt": "2026-10-19T20:18:43Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 161,
+        "publishedAt": "2026-05-26T23:52:14Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_1f61de8de06b483a9a82d5f4",
+      "sourceId": "nerdzao/vagas#191",
+      "title": "[Híbrido/SP] Pessoa Desenvolvedora Backend Sr (JAVA) - Viaflow",
+      "description": "Nossa empresa\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Java Backend Sênior de altíssimo nível para atuar em um cliente global, focado em projetos de modernização em larga escala e soluções SaaS do zero (greenfield).\n\nSe você tem domínio profundo em Java 21, Quarkus e arquitetura de microsserviços orientada a eventos, #VemPraViaflow!\n\n✨ Se identificou? Então vem com a gente!\n\nLocal\nHíbrido - 3x por semana presencial na região da Av. Paulista-SP\n\nRequisitos\n💻 Competências Técnicas Essenciais\n\nSólida Experiência em ambientes Enterprise.\nDomínio de Java: Experiência prática com Java 21, incluindo Streams, programação funcional e assíncrona (Futures/CompletableFutures).\nFrameworks e ORM: Experiência com Quarkus, JDBC e frameworks de ORM.\nArquitetura Moderna: Sólido conhecimento em Microsserviços e padrões de design orientados a eventos.\nDados: Experiência com bancos de dados baseados em documentos, especificamente MongoDB.\nCloud: Familiaridade com GCP (preferencial), AWS ou outras nuvens de mercado.\nProcessos: Familiaridade com metodologias Ágeis (Scrum/Kanban) e controle de versão com Git.\nEvent Driven Architecture\n\n🏆 Diferenciais (O que valorizamos)\nExperiência com Google Pub/Sub e Kafka.\nFamiliaridade com Azure DevOps e construção de Pipelines.\nVivência prévia em projetos SaaS de escala global ou modernização de sistemas legados.\n\n🤝 Soft Skills\nCapacidade de adaptação a desafios únicos e entrega de soluções classe \"Enterprise\".\nHabilidade de comunicação e apresentação para sessões de desenho técnico.\nPerfil mentor para guiar membros remotos ou offshore.\n\nIdioma: Inglês Intermediário/Avançado para comunicação verbal e escrita com time internacional.\n\nBenefícios\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nTreinamentos e Certificações\nClube do iFood gratuito\nPacote Colab+ com acesso a WellHub, Avus e Starbem\n\nContratação\nCooperativa\n\nComo se candidatar\nSe inscreve através do link: https://viaflow.gupy.io/jobs/11365530?jobBoardSource=gupy_public_page\n\nNível\nSênior\n\nRegime\nCooperado\n\nAlocação\nHíbrido",
+      "excerpt": "Nossa empresa Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Desenvolvedora Java Backend Sênior de altíssimo nível para atuar em um cliente global, focado...",
+      "issueState": "open",
+      "contentHash": "2fc01278c009d5c1f04db3ab1217bceecb1f162af09e7cadae08ac22860ffae9",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "devops",
+        "java"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "devops",
+        "java"
+      ],
+      "author": {
+        "id": "jesspinheiro93",
+        "name": "jesspinheiro93",
+        "handle": "jesspinheiro93",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "createdAt": "2026-05-26T18:22:15Z",
+      "updatedAt": "2026-05-26T18:22:15Z",
+      "url": "https://github.com/nerdzao/vagas/issues/191",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "gcp",
+          "java",
+          "mongodb"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_1f61de8de06b483a9a82d5f4",
+          "sourceId": "nerdzao/vagas#191",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/191",
+          "createdAt": "2026-05-26T18:22:15Z",
+          "updatedAt": "2026-05-26T18:22:15Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 162,
+        "publishedAt": "2026-05-26T18:22:15Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_2d9849eace549284f519bf16",
       "sourceId": "backend-br/vagas#12245",
@@ -83,7 +308,7 @@
         "period": "month"
       },
       "createdAt": "2026-05-25T16:54:47Z",
-      "updatedAt": "2026-11-03T17:29:51Z",
+      "updatedAt": "2026-11-04T17:44:18Z",
       "url": "https://github.com/backend-br/vagas/issues/12245",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -128,7 +353,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12245",
           "createdAt": "2026-05-25T16:54:47Z",
-          "updatedAt": "2026-11-03T17:29:51Z",
+          "updatedAt": "2026-11-04T17:44:18Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -142,7 +367,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 162,
+        "ageDays": 163,
         "publishedAt": "2026-05-25T16:54:47Z",
         "status": "stale"
       }
@@ -244,7 +469,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 172,
+        "ageDays": 173,
         "publishedAt": "2026-05-15T15:16:11Z",
         "status": "stale"
       }
@@ -334,7 +559,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 173,
+        "ageDays": 174,
         "publishedAt": "2026-05-14T06:24:01Z",
         "status": "stale"
       }
@@ -426,7 +651,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T14:26:25Z",
         "status": "stale"
       }
@@ -521,7 +746,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T14:16:18Z",
         "status": "stale"
       }
@@ -614,7 +839,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T14:11:35Z",
         "status": "stale"
       }
@@ -702,7 +927,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T14:04:19Z",
         "status": "stale"
       }
@@ -792,7 +1017,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T13:43:43Z",
         "status": "stale"
       }
@@ -879,7 +1104,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T12:56:55Z",
         "status": "stale"
       }
@@ -976,7 +1201,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T12:53:48Z",
         "status": "stale"
       }
@@ -1066,7 +1291,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 177,
+        "ageDays": 178,
         "publishedAt": "2026-05-10T08:34:26Z",
         "status": "stale"
       }
@@ -1122,7 +1347,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-05-08T20:43:06Z",
-      "updatedAt": "2026-11-03T17:29:52Z",
+      "updatedAt": "2026-11-04T17:44:19Z",
       "url": "https://github.com/backend-br/vagas/issues/12234",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1169,7 +1394,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12234",
           "createdAt": "2026-05-08T20:43:06Z",
-          "updatedAt": "2026-11-03T17:29:52Z",
+          "updatedAt": "2026-11-04T17:44:19Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -1185,6 +1410,122 @@
       "freshness": {
         "ageDays": 179,
         "publishedAt": "2026-05-08T20:43:06Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_046e40a5a4aaffa9b0373703",
+      "sourceId": "backend-br/vagas#12232",
+      "title": "[Remoto] Desenvolvedor Full-Stack Pleno - Igma",
+      "description": "## **Nossa empresa**\n\nA **Igma** é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n## **Descrição da vaga**\n\nNa **Igma**, como **Dev Full-Stack,** você será responsável por:\n\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n\n**Premissas culturais**\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n**Etapas do processo**\n\n1. Cadastro\n2. Entrevista inicial\n3. Fit Cultural\n4. Entrevista técnica\n5. Proposta\n6. Contratação\n\n## Local\n\n100% Remoto\n\n## **Requisitos**\n\n- Experiência comprovada de ao menos 2 anos com desenvolvimento fullstack.\n- Experiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.\n- Experiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.\n- Conhecimento em arquiteturas modernas e boas práticas de desenvolvimento.\n- Experiência com integração de APIs REST e/ou GraphQL.\n- Conhecimento em bancos de dados relacionais e não relacionais.\n- Controle de versão com Git.\n- Boas práticas de testes automatizados (unitários e integração).\n- Familiaridade com pipelines de CI/CD.\n- Conhecimento em cloud e ambientes de deploy será considerado um diferencial.\n\n## **Benefícios**\n\n- Trabalho 100% remoto\n- Plano de Saúde individual\n- Auxílio Cuidado e Desenvolvimento\n- Incentivo à prática de esportes\n- Seguro de vida\n- Cartão multi-benefício através do Caju\n- Auxílio Remoto para investimento em equipamentos (R$2.000 anual)\n- PJ - 30 dias de férias remuneradas\n\n## **Contratação**\n\nPJ\n\n## **Como se candidatar**\n\nhttps://jobs.quickin.io/igma/jobs/69fc945c7999060013a0d997\n\n\n### **Nível**\n\n- Pleno\n\n### **Regime**\n\n- PJ\n\n### **Alocação**\n\n- Remoto",
+      "excerpt": "## **Nossa empresa** A **Igma** é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado t...",
+      "issueState": "open",
+      "contentHash": "1df3a1842044574352bfca20ba7a04372b868bf6662de36159c1e445a4cb7b26",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "ci/cd",
+        "git",
+        "node.js",
+        "pj",
+        "pleno",
+        "remoto",
+        "testes automatizados",
+        "verificada"
+      ],
+      "sourceTags": [
+        "ci/cd",
+        "git",
+        "node.js",
+        "pj",
+        "pleno",
+        "remoto",
+        "testes automatizados",
+        "verificada"
+      ],
+      "author": {
+        "id": "mcfo-contato",
+        "name": "mcfo-contato",
+        "handle": "mcfo-contato",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85364888?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-05-07T13:54:55Z",
+      "updatedAt": "2026-11-04T17:44:20Z",
+      "url": "https://github.com/backend-br/vagas/issues/12232",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "nextjs",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_046e40a5a4aaffa9b0373703",
+          "sourceId": "backend-br/vagas#12232",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12232",
+          "createdAt": "2026-05-07T13:54:55Z",
+          "updatedAt": "2026-11-04T17:44:20Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 181,
+        "publishedAt": "2026-05-07T13:54:55Z",
         "status": "stale"
       }
     },
@@ -1263,7 +1604,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 196,
+        "ageDays": 197,
         "publishedAt": "2026-04-21T10:30:11Z",
         "status": "stale"
       }
@@ -1450,7 +1791,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 217,
+        "ageDays": 218,
         "publishedAt": "2026-03-31T05:27:45Z",
         "status": "stale"
       }
@@ -1537,7 +1878,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 218,
+        "ageDays": 219,
         "publishedAt": "2026-03-30T08:47:20Z",
         "status": "stale"
       }
@@ -1617,321 +1958,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 218,
+        "ageDays": 219,
         "publishedAt": "2026-03-30T08:10:50Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_a925bdb6349671e5c976d3ab",
-      "sourceId": "OurTinTinLand/TinTin-Job-Board#79",
-      "title": "宁波坐班，招聘Java",
-      "description": "岗位职责：\n1、参与需求评审，编写测试用例、测试计划，执行功能测试、回归测试、兼容性测试等，确保测试覆盖率和质量\n2、提交、跟踪、验证缺陷，与开发团队协作推动问题解决\n3、参与或主导自动化测试脚本编写、维护，提升测试效率\n4、参与性能测试、安全测试等专项测试工作\n5、编写测试报告，输出测试结果，为产品发布提供决策依据\n6、参与测试流程优化，推动测试左移和持续集成实践\n\n岗位要求：\n1、5年以上工作经验，有top15cex/dex3年以上工作经验\n2、精通软件测试理论、方法和流程，熟练掌握至少一种主流编程语言（如Java/Python）。在自动化测试、性能测试、安全测试或白盒测试等某一专业领域有深厚积累\n3、熟悉敏捷开发、DevOps流程，对CI/CD有深入理解。具备大型复杂系统（如微服务架构、云原生应用）的测试规划和实施经验\n4、对新技术保持敏感，能主动引入创新测试方法和工具（如AI在测试中的应用）以提升效能\n5、拥有跨部门沟通和协调能力，能有效解决冲突，推动复杂问题解决\n\n加分项：\n1、能base宁波\n2、有交易所、理财、支付测试经验优先\n薪资待遇：25K-50K\n简历投递：camellia@we-boss.com",
-      "excerpt": "岗位职责： 1、参与需求评审，编写测试用例、测试计划，执行功能测试、回归测试、兼容性测试等，确保测试覆盖率和质量 2、提交、跟踪、验证缺陷，与开发团队协作推动问题解决 3、参与或主导自动化测试脚本编写、维护，提升测试效率 4、参与性能测试、安全测试等专项测试工作 5、编写测试报告，输出测试结果，为产品发布提供决策依据 6、参与测试流程优化，推动测试左移和持续集成实践 岗位要求： 1、5年以上工作经验，有top15cex/dex3年...",
-      "issueState": "open",
-      "contentHash": "1eb077191c153cfedba89f1d74a3406972f9ef4fc030e1e3e8303b8619813c2d",
-      "repository": "OurTinTinLand/TinTin-Job-Board",
-      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-      "region": "Asia",
-      "country": "China",
-      "sourceLocation": {
-        "country": "China",
-        "countryCode": "CN",
-        "region": "Asia"
-      },
-      "tags": [
-        "devops",
-        "java",
-        "python"
-      ],
-      "sourceTags": [
-        "devops",
-        "java",
-        "python"
-      ],
-      "author": {
-        "id": "12Camellia",
-        "name": "12Camellia",
-        "handle": "12Camellia",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/272148107?v=4"
-      },
-      "community": {
-        "id": "OurTinTinLand",
-        "name": "OurTinTinLand",
-        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-        "repository": "OurTinTinLand/TinTin-Job-Board",
-        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-      },
-      "createdAt": "2026-03-30T08:06:46Z",
-      "updatedAt": "2026-03-30T08:08:48Z",
-      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/79",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre"
-        ],
-        "technologies": [
-          "java",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a925bdb6349671e5c976d3ab",
-          "sourceId": "OurTinTinLand/TinTin-Job-Board#79",
-          "repository": "OurTinTinLand/TinTin-Job-Board",
-          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
-          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/79",
-          "createdAt": "2026-03-30T08:06:46Z",
-          "updatedAt": "2026-03-30T08:08:48Z",
-          "community": {
-            "id": "OurTinTinLand",
-            "name": "OurTinTinLand",
-            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
-            "repository": "OurTinTinLand/TinTin-Job-Board",
-            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 218,
-        "publishedAt": "2026-03-30T08:06:46Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_86cf7c4c726a6cec1163d1fb",
-      "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-      "title": "Bug: Company logo thumbnails enter corrupted render state after job application, stale DOM / z-index collision across job card components",
-      "description": "# Company thumbnails overlap other job cards after applying to a posting\n\nHey team,\n\nI've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that job bleeds over into the other job cards in the feed. Sometimes it stacks on top of the adjacent card's logo, sometimes it straight up replaces it. It looks pretty broken.\n\nThe weird part is that it fixes itself the moment I do a hard refresh. So the data coming from the backend seems fine, this is purely a client-side rendering issue.\n\n## Repro\n\n1. Go to the job listings feed.\n2. Apply to any job.\n3. Come back to the listings (back nav or closing the apply modal).\n4. The thumbnails on nearby job cards are now messed up; wrong logos, overlapping, stacked, etc.\n5. Refresh the page → everything goes back to normal.\n\nThis happens every single time, not intermittent. I've tried it across a few different browsers (Chrome and Firefox) and it's the same behavior.\n\n## What I think is going on\n\nI'm a software engineer so I poked around in devtools a bit. A few things that might be worth looking at:\n\n**Key prop issue on the list**: If the job card list is keyed by array index instead of something stable like `job.id`, React's reconciler will reuse DOM nodes incorrectly when the list state changes after applying. This would explain why the thumbnails get \"shifted\" onto wrong cards. Classic React anti-pattern.\n\n**Stacking context / z-index leak**: When the apply flow triggers (modal, overlay, toast, whatever), it might be setting `position: absolute` or bumping `z-index` on the applied card's thumbnail. If that style isn't cleaned up properly (maybe an animation callback that doesn't fire?), the image escapes its container and sits on top of siblings. Throwing `overflow: hidden` and `position: relative` on the card container would contain this.\n\n**Race condition on refetch**: If applying fires off a POST and then the feed revalidates in parallel (SWR `mutate()`, React Query `invalidateQueries()`, etc.), there's a window where partial/stale data gets rendered before the fresh response lands. The thumbnails might be getting swapped around during that intermediate state.\n\n**Image caching**: Less likely, but if there's a custom image component or service worker caching thumbnails by position/index instead of URL, a re-render after apply could serve the wrong cached image to the wrong card.\n\n## Quick fix suggestions\n\n- Check that `key={job.id}` (or whatever unique identifier) is used on the card list, not `key={index}`.\n- Make sure each card's thumbnail container has its own stacking context (`position: relative; overflow: hidden;`).\n- If the apply action triggers a list refetch, batch the state update or wrap it in `startTransition` so you don't get an intermediate broken frame.\n- Audit `useEffect` cleanups around the apply modal/overlay, something might not be resetting styles on unmount.\n\n## Environment\n\n- Chrome 124  on macOS\n- Desktop, standard resolution\n- Happens on both fast and slow connections so it's not a network timing thing\n\nNot a blocker since refresh fixes it, but it makes the platform look buggy and I'd imagine it's hurting trust with less technical users who don't know to just reload. Happy to provide more details or screen recordings if that helps.",
-      "excerpt": "# Company thumbnails overlap other job cards after applying to a posting Hey team, I've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that ...",
-      "issueState": "open",
-      "contentHash": "1e4843c8fb9d905a53f168f5b02b0201043140e257eec09e5f353c378fe3c473",
-      "repository": "jobright-ai/2026-Data-Analysis-Internship",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "author": {
-        "id": "JayDS22",
-        "name": "JayDS22",
-        "handle": "JayDS22",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Data-Analysis-Internship",
-        "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-      },
-      "createdAt": "2026-03-22T16:47:15Z",
-      "updatedAt": "2026-03-22T16:51:05Z",
-      "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "go",
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_86cf7c4c726a6cec1163d1fb",
-          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-          "repository": "jobright-ai/2026-Data-Analysis-Internship",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-          "createdAt": "2026-03-22T16:47:15Z",
-          "updatedAt": "2026-03-22T16:51:05Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Data-Analysis-Internship",
-            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 226,
-        "publishedAt": "2026-03-22T16:47:15Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_0f0495da862b94749892e684",
-      "sourceId": "react-native-drops/vagas#148",
-      "title": "[Curitiba] Senior React Native Developer para um cliente da Visionnaire",
-      "description": "## Nossa empresa\n\nFábrica de Software, desenvolvimento com IA.\n\n## Descrição da vaga\n\nBuscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que executar tarefas, queremos alguém que contribua com melhorias, decisões técnicas e evolução contínua da nossa stack mobile. Trabalho 100% presencial em Curitiba.\n\nAtividades\nVocê vai trabalhar na evolução de aplicativos digitais usados por milhares de pessoas, ajudando a construir experiências mobile mais estáveis, rápidas e relevantes para o nosso público;\nEvoluir aplicativos em produção com foco em performance, estabilidade e experiência do usuário;\nDesenvolver novas funcionalidades e integrações com APIs e serviços de back-end;\nAtuar em problemas reais de compatibilidade entre plataformas, qualidade de entrega e manutenção sustentável;\nTrabalhar com React Native, Expo e EAS no fluxo de configuração, build e publicação dos aplicativos;\nColaborar com designers, desenvolvedores e áreas de negócio na construção de produtos digitais relevantes;\nContribuir com decisões técnicas, melhoria contínua da arquitetura e boas práticas de engenharia.\n\n## Local\n\nPresencial em Curitiba/PR\n\n## Requisitos\n\n**Obrigatórios:**\n\nGraduação em Ciência da Computação, Engenharia de Software ou área relacionada;\nExperiência sólida com React Native;\nBoa base em TypeScript/JavaScript;\nExperiência prática com Expo/EAS, incluindo configuração de projeto, build e publicação;\nVivência com iOS e Android no contexto React Native;\nExperiência em desenvolvimento de Backend e APIs REST;\nConhecimento em autenticação JWT e oAuth2\nFamiliaridade com Git, code review e boas práticas de engenharia;\nCapacidade de investigar problemas, propor melhorias e atuar de forma colaborativa com o time.\nConhecimento em Banco de Dados SQL e No-SQL;\nDisponibilidade para residir em Curitiba/PR ou região metropolitana e atuar no sistema 100% presencial.\n\n**Diferenciais:**\n\nExperiência com CI/CD para apps mobile;\nConhecimento em AWS ou GCP;\nVivência com Node.js / NestJS;\nInteresse em arquitetura, observabilidade e evolução contínua de produto digital.\n\n## Benefícios\n\n- Assistência médica\n- Assistência odontológica\n- Seguro de vida\n- PLR\n- Vale transporte\n- Gympass\n- Auxílio creche\n- Vale Alimentação ou Refeição\n\n## Contratação\n\nCLT \n\n## Como se candidatar\n\nAtravés do link da vaga https://ats.abler.com.br/jobs/visionnaire?slug=desenvolvedor-a-react-native-senior-158167 ou por e-mail recrutamento_selecao@visionnaire.com.br com seu CV anexado - enviar no assunto: Vaga Senior React Native Developer\n\n## Labels\n\n<!-- retire os labels que não fazem sentido à vaga -->\n\n#### Regime\n\n- CLT\n\n#### Nível\n\n- Sênior",
-      "excerpt": "## Nossa empresa Fábrica de Software, desenvolvimento com IA. ## Descrição da vaga Buscamos uma pessoa com experiência sólida em React Native, Expo, visão de produto e cuidado com qualidade técnica. Mais do que execut...",
-      "issueState": "open",
-      "contentHash": "47d394e3a68076103443aba008b607cd7256098851d3d533511920a0bf84d7b5",
-      "repository": "react-native-drops/vagas",
-      "repositoryUrl": "https://github.com/react-native-drops/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "design",
-        "java",
-        "node",
-        "react",
-        "senior",
-        "typescript"
-      ],
-      "author": {
-        "id": "Vilcilaine",
-        "name": "Vilcilaine",
-        "handle": "Vilcilaine",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/62064964?v=4"
-      },
-      "community": {
-        "id": "react-native-drops",
-        "name": "react-native-drops",
-        "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-        "repository": "react-native-drops/vagas",
-        "url": "https://github.com/react-native-drops/vagas"
-      },
-      "createdAt": "2026-03-10T13:05:56Z",
-      "updatedAt": "2026-03-10T13:05:56Z",
-      "url": "https://github.com/react-native-drops/vagas/issues/148",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "em Curitiba",
-        "subdivision": "PR",
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "em Curitiba, PR · On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "gcp",
-          "java",
-          "javascript",
-          "nodejs",
-          "react",
-          "react-native",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0f0495da862b94749892e684",
-          "sourceId": "react-native-drops/vagas#148",
-          "repository": "react-native-drops/vagas",
-          "repositoryUrl": "https://github.com/react-native-drops/vagas",
-          "url": "https://github.com/react-native-drops/vagas/issues/148",
-          "createdAt": "2026-03-10T13:05:56Z",
-          "updatedAt": "2026-03-10T13:05:56Z",
-          "community": {
-            "id": "react-native-drops",
-            "name": "react-native-drops",
-            "avatarUrl": "https://github.com/react-native-drops.png?size=80",
-            "repository": "react-native-drops/vagas",
-            "url": "https://github.com/react-native-drops/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 238,
-        "publishedAt": "2026-03-10T13:05:56Z",
         "status": "stale"
       }
     }
