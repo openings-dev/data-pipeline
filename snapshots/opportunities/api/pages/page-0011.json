@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-11-04T19:11:15.216Z",
+  "generatedAt": "2026-11-05T01:13:49.696Z",
   "page": 11,
   "pageSize": 20,
   "nextPage": "api/pages/page-0012.json",
   "ids": [
-    "gh_6bd2ea87cfb4bbe49569241c",
     "gh_1f61de8de06b483a9a82d5f4",
     "gh_2d9849eace549284f519bf16",
     "gh_04e16e2c007892d76818f4d4",
@@ -23,122 +22,10 @@
     "gh_b5220ce704e9136f8724e349",
     "gh_08793c5a453f16e52f94fd4e",
     "gh_1fbbb84fca255117f18333ff",
-    "gh_697a821cabc5eb7906d1c695"
+    "gh_697a821cabc5eb7906d1c695",
+    "gh_a925bdb6349671e5c976d3ab"
   ],
   "items": [
-    {
-      "id": "gh_6bd2ea87cfb4bbe49569241c",
-      "sourceId": "ambicuity/New-Grad-Jobs#316",
-      "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
-      "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
-      "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
-      "issueState": "open",
-      "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "roadmap",
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "roadmap",
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
-      "createdAt": "2026-05-26T23:52:14Z",
-      "updatedAt": "2026-10-19T20:18:43Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design"
-        ],
-        "technologies": [
-          "go",
-          "python"
-        ],
-        "seniority": [
-          "internship",
-          "junior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_6bd2ea87cfb4bbe49569241c",
-          "sourceId": "ambicuity/New-Grad-Jobs#316",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
-          "createdAt": "2026-05-26T23:52:14Z",
-          "updatedAt": "2026-10-19T20:18:43Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 161,
-        "publishedAt": "2026-05-26T23:52:14Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_1f61de8de06b483a9a82d5f4",
       "sourceId": "nerdzao/vagas#191",
@@ -1408,7 +1295,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 179,
+        "ageDays": 180,
         "publishedAt": "2026-05-08T20:43:06Z",
         "status": "stale"
       }
@@ -1684,7 +1571,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 211,
+        "ageDays": 212,
         "publishedAt": "2026-04-06T22:58:07Z",
         "status": "stale"
       }
@@ -1960,6 +1847,99 @@
       "freshness": {
         "ageDays": 219,
         "publishedAt": "2026-03-30T08:10:50Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_a925bdb6349671e5c976d3ab",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#79",
+      "title": "宁波坐班，招聘Java",
+      "description": "岗位职责：\n1、参与需求评审，编写测试用例、测试计划，执行功能测试、回归测试、兼容性测试等，确保测试覆盖率和质量\n2、提交、跟踪、验证缺陷，与开发团队协作推动问题解决\n3、参与或主导自动化测试脚本编写、维护，提升测试效率\n4、参与性能测试、安全测试等专项测试工作\n5、编写测试报告，输出测试结果，为产品发布提供决策依据\n6、参与测试流程优化，推动测试左移和持续集成实践\n\n岗位要求：\n1、5年以上工作经验，有top15cex/dex3年以上工作经验\n2、精通软件测试理论、方法和流程，熟练掌握至少一种主流编程语言（如Java/Python）。在自动化测试、性能测试、安全测试或白盒测试等某一专业领域有深厚积累\n3、熟悉敏捷开发、DevOps流程，对CI/CD有深入理解。具备大型复杂系统（如微服务架构、云原生应用）的测试规划和实施经验\n4、对新技术保持敏感，能主动引入创新测试方法和工具（如AI在测试中的应用）以提升效能\n5、拥有跨部门沟通和协调能力，能有效解决冲突，推动复杂问题解决\n\n加分项：\n1、能base宁波\n2、有交易所、理财、支付测试经验优先\n薪资待遇：25K-50K\n简历投递：camellia@we-boss.com",
+      "excerpt": "岗位职责： 1、参与需求评审，编写测试用例、测试计划，执行功能测试、回归测试、兼容性测试等，确保测试覆盖率和质量 2、提交、跟踪、验证缺陷，与开发团队协作推动问题解决 3、参与或主导自动化测试脚本编写、维护，提升测试效率 4、参与性能测试、安全测试等专项测试工作 5、编写测试报告，输出测试结果，为产品发布提供决策依据 6、参与测试流程优化，推动测试左移和持续集成实践 岗位要求： 1、5年以上工作经验，有top15cex/dex3年...",
+      "issueState": "open",
+      "contentHash": "1eb077191c153cfedba89f1d74a3406972f9ef4fc030e1e3e8303b8619813c2d",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [
+        "devops",
+        "java",
+        "python"
+      ],
+      "sourceTags": [
+        "devops",
+        "java",
+        "python"
+      ],
+      "author": {
+        "id": "12Camellia",
+        "name": "12Camellia",
+        "handle": "12Camellia",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/272148107?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "createdAt": "2026-03-30T08:06:46Z",
+      "updatedAt": "2026-03-30T08:08:48Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/79",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "java",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a925bdb6349671e5c976d3ab",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#79",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/79",
+          "createdAt": "2026-03-30T08:06:46Z",
+          "updatedAt": "2026-03-30T08:08:48Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 219,
+        "publishedAt": "2026-03-30T08:06:46Z",
         "status": "stale"
       }
     }
