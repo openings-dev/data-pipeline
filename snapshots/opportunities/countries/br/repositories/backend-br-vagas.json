@@ -1,16 +1,120 @@
 {
-  "generatedAt": "2026-11-04T19:11:15.216Z",
+  "generatedAt": "2026-11-05T19:18:31.580Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "backend-br/vagas",
   "totals": {
     "opportunities": 30,
-    "openIssues": 28,
-    "closedIssues": 2
+    "openIssues": 29,
+    "closedIssues": 1
   },
-  "dataHash": "deb9bc053970913e6ab2130349ec363c38fa7f9f5234c81105b0f597af7c28f2",
+  "dataHash": "84e385e1a30f4201c35739e1549f0bc7ca2dee38861f847ab3341e76a09d8bf6",
   "items": [
+    {
+      "id": "gh_1de65f6a56a6747d7dc792ff",
+      "sourceId": "backend-br/vagas#12486",
+      "title": "[Remoto] Desenvolvedor(a) Full Stack Sênior — AI & Agents na WeatherWise | 4 dias / 32h",
+      "description": "### About the company\n\nWeatherWise (Ehabitation Ltd, trading as EHAB) is a London-based weather risk specialist helping construction, energy, agriculture and logistics businesses understand, plan for and insure against weather risk.\n\nWe run WeatherWise Construction (weather-delay analysis, Monte Carlo simulation and schedule risk) and WeatherWise Studio (an AI-native parametric insurance platform). Our agent, Kite, helps brokers discover relevant weather events, structure and price cover, generate client materials and route submissions to suitable carriers. A weather-data engine drawing on 180,000+ stations and global datasets powers both platforms.\n\nOur team is small and senior. Trust, auditability and correctness matter. This position works permanently from Brazil.\n\n### Company website\n\nhttps://www.ehab.co/\n\n### Job description\n\n**Semana de trabalho de 4 dias — 32 horas semanais. 100% remoto do Brasil. Contratação PJ. Remuneração mensal: R$ 15.000 a R$ 25.000, conforme experiência.**\n\n**Senior Full-stack Engineer (AI & Agents), reporting to the CTO.**\n\nOwn features end to end, with a strong backend focus: data models, services, agent tools and the React interfaces they drive.\n\n- Design, build and run APIs, data pipelines, pricing and simulation engines, and integrations for WeatherWise Studio and Construction.\n- Extend agent tools, orchestration, memory, evaluations and observability. Build reliable workflows with guardrails, graceful failure and human approval steps.\n- Own weather-data ingestion, storage, indexing and fast querying of decades of time-series and geospatial history.\n- Ship React/TypeScript interfaces for your features, working with our design-led front-end engineer.\n- Build clean, documented, versioned APIs for brokers and carriers.\n- Own CI/CD, infrastructure as code, monitoring, security and incident response.\n- Use AI tooling daily and help the team improve how it builds.\n\nWork directly with the CTO, with substantial ownership of architecture and technical direction. Agents are both part of our product and how we build it. We prototype quickly, talk to customers and own outcomes.\n\n### Requirements\n\n**Required**\n- 6+ years building and running production systems, with ownership of backend, infrastructure and front end.\n- Strong Python and TypeScript, including the ability to ship React interfaces.\n- Hands-on production experience with LLM-powered or agentic systems: tool use, orchestration, prompt/context design, evaluation and failure handling.\n- Solid data engineering: pipelines, time-series and geospatial data at scale.\n- AWS or GCP, containers, infrastructure as code, CI/CD and observability.\n- Daily use of AI coding tools such as Claude Code or Cursor.\n- Ability to scope ambiguous problems, make pragmatic decisions and ship in a small senior team.\n\n**Nice to have**\nWeather/climate data, NetCDF/Zarr, ERA5, pricing or simulation models, insurance/fintech, public APIs and LLM evaluation frameworks.\n\nWe care far more about what you have shipped than which exact tools you used.\n\n### Benefits\n\nFour-day working week: 32 hours per week. Fully remote from Brazil. PJ contract. Direct access to the CTO and substantial ownership of technical decisions.\n\n### Salary range\n\nBRL 15,000–25,000 per month (R$ 15.000 a R$ 25.000/mês), depending on experience\n\n### Level\n\nSenior\n\n### Contract type\n\nPJ\n\n### Work model\n\nRemote\n\n### Location\n\nBrasil — 100% remoto\n\n### How to apply\n\nEmail josh.graham@weatherwise.studio with the subject \"Senior Full-stack Engineer\".\n\nSkip the cover letter. Send two or three things you have built that you are proud of (links, a repo or a write-up), plus a couple of sentences on what you would change about them now. If you have built something with agents, lead with that.\n\nWe will come back to every application and aim to run the process from first conversation to offer in under three weeks.\n\n### Confirmations\n\n- [x] This issue contains a single job opening.\n- [x] The job is backend (or fullstack with a backend focus).\n- [x] This is not an AI training, data annotation or model evaluation gig.",
+      "excerpt": "### About the company WeatherWise (Ehabitation Ltd, trading as EHAB) is a London-based weather risk specialist helping construction, energy, agriculture and logistics businesses understand, plan for and insure against...",
+      "issueState": "open",
+      "contentHash": "dae88db41030b37a590c71348d6d7c805943bb4b28125ad6ee53cbf3d22ffcf8",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "sênior",
+        "python",
+        "remoto",
+        "aws",
+        "typescript",
+        "ci/cd",
+        "gcp"
+      ],
+      "sourceTags": [
+        "pj",
+        "sênior",
+        "python",
+        "remoto",
+        "aws",
+        "typescript",
+        "ci/cd",
+        "gcp"
+      ],
+      "author": {
+        "id": "fmoura-ehab",
+        "name": "fmoura-ehab",
+        "handle": "fmoura-ehab",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/46277770?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 15000,
+        "max": 25000,
+        "period": "year"
+      },
+      "createdAt": "2026-10-27T15:59:39Z",
+      "updatedAt": "2026-11-05T17:50:24Z",
+      "url": "https://github.com/backend-br/vagas/issues/12486",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Brazil · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "frontend",
+          "fullstack",
+          "leadership"
+        ],
+        "technologies": [
+          "aws",
+          "gcp",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_bd9de7e7149b5af6fc9c5a03",
       "sourceId": "backend-br/vagas#12472",
@@ -97,90 +201,6 @@
       }
     },
     {
-      "id": "gh_a2cc3d1808580cc665d96114",
-      "sourceId": "backend-br/vagas#12471",
-      "title": "[Remoto] Vaga encerrada",
-      "description": "Vaga encerrada. Obrigado a todos que se candidataram.",
-      "excerpt": "Vaga encerrada. Obrigado a todos que se candidataram.",
-      "issueState": "closed",
-      "contentHash": "e6cf5cb2bf09e46ce6b31877720158ab25bb381ac51e134ad961a3fd552fef61",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pj",
-        "júnior",
-        "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql",
-        "sql",
-        "git"
-      ],
-      "sourceTags": [
-        "pj",
-        "júnior",
-        "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql",
-        "sql",
-        "git"
-      ],
-      "author": {
-        "id": "rodrigofssoares",
-        "name": "rodrigofssoares",
-        "handle": "rodrigofssoares",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/161170803?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-10-17T18:46:03Z",
-      "updatedAt": "2026-11-03T22:34:44Z",
-      "url": "https://github.com/backend-br/vagas/issues/12471",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "postgres",
-          "typescript"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
       "id": "gh_f854256c35a417d8933cfcfe",
       "sourceId": "backend-br/vagas#12468",
       "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google",
@@ -232,7 +252,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T21:02:00Z",
-      "updatedAt": "2026-11-04T17:43:44Z",
+      "updatedAt": "2026-11-05T17:50:25Z",
       "url": "https://github.com/backend-br/vagas/issues/12468",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -324,7 +344,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:51:46Z",
-      "updatedAt": "2026-11-04T17:43:46Z",
+      "updatedAt": "2026-11-05T17:50:26Z",
       "url": "https://github.com/backend-br/vagas/issues/12463",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -416,7 +436,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:46:23Z",
-      "updatedAt": "2026-11-04T17:43:48Z",
+      "updatedAt": "2026-11-05T17:50:28Z",
       "url": "https://github.com/backend-br/vagas/issues/12461",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -504,7 +524,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:44:39Z",
-      "updatedAt": "2026-11-04T17:43:49Z",
+      "updatedAt": "2026-11-05T17:50:28Z",
       "url": "https://github.com/backend-br/vagas/issues/12460",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -591,7 +611,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:39:26Z",
-      "updatedAt": "2026-11-04T17:43:51Z",
+      "updatedAt": "2026-11-05T17:50:30Z",
       "url": "https://github.com/backend-br/vagas/issues/12457",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -680,7 +700,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:35:32Z",
-      "updatedAt": "2026-11-04T17:43:52Z",
+      "updatedAt": "2026-11-05T17:50:32Z",
       "url": "https://github.com/backend-br/vagas/issues/12454",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -769,7 +789,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:34:32Z",
-      "updatedAt": "2026-11-04T17:43:53Z",
+      "updatedAt": "2026-11-05T17:50:33Z",
       "url": "https://github.com/backend-br/vagas/issues/12453",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -860,7 +880,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:30:15Z",
-      "updatedAt": "2026-11-04T17:43:55Z",
+      "updatedAt": "2026-11-05T17:50:34Z",
       "url": "https://github.com/backend-br/vagas/issues/12452",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -947,7 +967,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:28:54Z",
-      "updatedAt": "2026-11-04T17:43:57Z",
+      "updatedAt": "2026-11-05T17:50:35Z",
       "url": "https://github.com/backend-br/vagas/issues/12451",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1038,7 +1058,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:26:45Z",
-      "updatedAt": "2026-11-04T17:43:58Z",
+      "updatedAt": "2026-11-05T17:50:36Z",
       "url": "https://github.com/backend-br/vagas/issues/12450",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1131,7 +1151,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T19:35:24Z",
-      "updatedAt": "2026-11-04T17:43:59Z",
+      "updatedAt": "2026-11-05T17:50:37Z",
       "url": "https://github.com/backend-br/vagas/issues/12446",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1507,7 +1527,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-10-09T15:07:16Z",
-      "updatedAt": "2026-11-04T16:44:35Z",
+      "updatedAt": "2026-11-05T17:50:38Z",
       "url": "https://github.com/backend-br/vagas/issues/12441",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1603,7 +1623,7 @@
         "period": "month"
       },
       "createdAt": "2026-10-07T14:02:31Z",
-      "updatedAt": "2026-11-04T17:44:06Z",
+      "updatedAt": "2026-11-05T17:50:39Z",
       "url": "https://github.com/backend-br/vagas/issues/12440",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1623,93 +1643,6 @@
         ],
         "seniority": [
           "principal"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_6ee5c31976b58995be8b656a",
-      "sourceId": "backend-br/vagas#12439",
-      "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
-      "description": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM \n\n💻 SENIOR FULL-STACK ENGINEER\n\nSe você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional.\n\n🔹 React.js\n🔹 Nest.js\n🔹 Kafka\n\n💰 USD 5.5k – 8.5k/mês\n🗣️ Inglês C1+\n📌 6+ anos de experiência\n⏰ Long-term | 40h/semana\n\n🌎 Oportunidade para profissionais de tecnologia que buscam atuar em projetos internacionais e receber em dólar.\n\n👉 Candidatura pelo meu link abaixo, não recebo o currículo no privado.\nhttps://app.onstrider.com/r/claudiaantunes?job=c2VuaW9yLWZ1bGwtc3RhY2stZW5naW5lZXItOTk3YTViMDM/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=\n\n🔁 Conhece um Full-stack Engineer com esse perfil? Marque ou compartilhe!\n\n#FullStackDeveloper #ReactJS #NestJS #Kafka #SoftwareEngineer #TechJobs #RemoteJobs #VagasInternacionais #VagasRemotas #LATAM #JobsInUSD",
-      "excerpt": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
-      "issueState": "open",
-      "contentHash": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "sênior",
-        "remoto",
-        "apache kafka",
-        "verificada",
-        "formato-sugerido",
-        "nestjs"
-      ],
-      "sourceTags": [
-        "sênior",
-        "remoto",
-        "apache kafka",
-        "verificada",
-        "formato-sugerido",
-        "nestjs"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 5500,
-        "max": 8500,
-        "period": "month"
-      },
-      "createdAt": "2026-10-06T12:49:47Z",
-      "updatedAt": "2026-11-02T13:17:05Z",
-      "url": "https://github.com/backend-br/vagas/issues/12439",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "fullstack"
-        ],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "senior"
         ],
         "employmentTypes": [],
         "workModels": [
@@ -1867,7 +1800,7 @@
         "period": "month"
       },
       "createdAt": "2026-09-23T16:57:25Z",
-      "updatedAt": "2026-11-04T17:44:11Z",
+      "updatedAt": "2026-11-05T17:50:41Z",
       "url": "https://github.com/backend-br/vagas/issues/12431",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1993,106 +1926,6 @@
       }
     },
     {
-      "id": "gh_0e6bd5dbd7f6d69f3e81bc93",
-      "sourceId": "backend-br/vagas#12417",
-      "title": "[Híbrido em SP] Fullstack developer Python/React & IA na Evertec 🧡",
-      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## Descrição da vaga\nBuscamos um(a) Desenvolvedor(a) Fullstack Sênior com experiência prática em implementação de soluções de IA/ML para integrar nosso time de tecnologia.\nEssa posição tem papel estratégico na evolução técnica da área: você será responsável por transformar direcionamentos de Tech Leads e Analistas de Negócio em soluções reais, atuando como referência prática em IA dentro do time.\n\n💡 Por que essa posição é estratégica?\nIntroduz capacidade prática de implementação de IA no time\nAcelera a entrega de soluções baseadas em IA\nPermite que arquitetos e tech leads foquem em estratégia e design\nDissemina conhecimento atualizado sobre ferramentas e tendências de IA.\n\n🛠️ Responsabilidades\n- Implementar soluções de IA e fluxos baseados em agentes a partir de especificações técnicas\n- Integrar LLMs, pipelines de dados e ferramentas de IA em sistemas e plataformas existentes\n- Desenvolver soluções com RAG (Retrieval Augmented Generation) e arquiteturas baseadas em agentes\n- Atuar em conjunto com Tech Leads, contribuindo em revisões de design e seguindo padrões de arquitetura\n- Garantir qualidade de código (clean code, testes, documentação e versionamento)\n- Compartilhar conhecimento sobre novas ferramentas, modelos e boas práticas de IA com o time\n- Identificar e comunicar rapidamente bloqueios técnicos ou inconsistências de design\n\n## Local\nHíbrido em São Paulo/SP (Morumbi).\n\n## Requisitos\n🔧 **Stack principal**\n- Python (nível sênior)\n- React\n- Integração com LLMs e frameworks de IA (LangChain, LlamaIndex, OpenAI ou similares).\n\n📌 **Requisitos:**\n- +5 anos de experiência em desenvolvimento de software\n- Pelo menos 1 ano de experiência prática com IA/ML aplicada\n- Forte experiência com Python\n- Experiência com desenvolvimento frontend (React)\n- Vivência na integração de LLMs em aplicações reais\n- Experiência com pipelines de RAG ou sistemas baseados em agentes\n- Sólidos fundamentos de engenharia de software (clean code, SOLID, testes, documentação, Git)\n- Capacidade de trabalhar com especificações técnicas e em times estruturados\n- Inglês avançado.\n\n🤝 **Soft skills esperadas**\n- Comunicação clara e objetiva\n- Proatividade na identificação de problemas\n- Colaboração com diferentes níveis técnicos\n- Interesse contínuo em evolução e aprendizado em IA\n\n## Benefícios\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Just dress no code (sem código de vestimenta);\n• Day off no aniversário;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\n## Contratação\nCLT.\n\n## Como se candidatar\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Python + React + IA - Sênior](https://jobs.quickin.io/sinqia/jobs/6a635c9022a5d000132ef6d7)\n\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n- Pleno\n- Sênior\n- Especialista\n\n### Regime\n- CLT\n\n### Alocação\n- Híbrido",
-      "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Somos a única solução completa para o mercado financeiro! A Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de ...",
-      "issueState": "open",
-      "contentHash": "d5c0a66d498421de871771436d41f45114a64528c494b19ccd26c432624c494e",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pleno",
-        "sênior",
-        "python",
-        "especialista",
-        "git",
-        "híbrido",
-        "solid"
-      ],
-      "sourceTags": [
-        "clt",
-        "pleno",
-        "sênior",
-        "python",
-        "especialista",
-        "git",
-        "híbrido",
-        "solid"
-      ],
-      "author": {
-        "id": "kerol-barros",
-        "name": "kerol-barros",
-        "handle": "kerol-barros",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-09-09T12:38:25Z",
-      "updatedAt": "2026-11-02T12:28:36Z",
-      "url": "https://github.com/backend-br/vagas/issues/12417",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "em São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "em São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "mid",
-          "principal",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
       "id": "gh_ab7a8bff64dbf3837743eded",
       "sourceId": "backend-br/vagas#12416",
       "title": "[Home Office - Tempo Determinado/5 meses] Desenvolvedor Backend (Java) - BHS",
@@ -2143,7 +1976,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-08T11:29:19Z",
-      "updatedAt": "2026-11-04T03:06:35Z",
+      "updatedAt": "2026-11-05T17:50:43Z",
       "url": "https://github.com/backend-br/vagas/issues/12416",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2238,7 +2071,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-03T11:53:48Z",
-      "updatedAt": "2026-11-04T17:44:14Z",
+      "updatedAt": "2026-11-05T17:50:44Z",
       "url": "https://github.com/backend-br/vagas/issues/12412",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2333,7 +2166,7 @@
       },
       "companyName": "30 dias de férias remuneradas por ano",
       "createdAt": "2026-08-27T13:28:41Z",
-      "updatedAt": "2026-11-04T17:44:15Z",
+      "updatedAt": "2026-11-05T17:50:44Z",
       "url": "https://github.com/backend-br/vagas/issues/12397",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2521,7 +2354,7 @@
         "period": "month"
       },
       "createdAt": "2026-05-25T16:54:47Z",
-      "updatedAt": "2026-11-04T17:44:18Z",
+      "updatedAt": "2026-11-05T17:50:46Z",
       "url": "https://github.com/backend-br/vagas/issues/12245",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2610,7 +2443,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-05-08T20:43:06Z",
-      "updatedAt": "2026-11-04T17:44:19Z",
+      "updatedAt": "2026-11-05T17:50:47Z",
       "url": "https://github.com/backend-br/vagas/issues/12234",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2634,6 +2467,96 @@
         ],
         "seniority": [
           "lead"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_1efee2417f6bee01b5cd3f0a",
+      "sourceId": "backend-br/vagas#12233",
+      "title": "[Remoto] Pessoa Desenvolvedora Full-Stack Sênior - Igma",
+      "description": "## Nossa empresa\n\nA Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n## Descrição da vaga\n\nEstamos em busca de uma Pessoa Desenvolvedora Full-Stack para se juntar ao nosso Chapter de desenvolvimento, fortalecer o time de projetos e criar produtos digitais para as maiores empresas do Brasil.\n\nUnimos tecnologia e design para resolver problemas complexos de empresas. Criamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n**Na Igma você será responsável por:**\n\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n\n## Local\n\nRegime: 100% remoto\n\n## Requisitos\n\n- Experiência comprovada de ao menos **4 anos** com desenvolvimento full-stack.\n- Experiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.\n- Experiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.\n- Conhecimento em arquiteturas modernas e boas práticas de desenvolvimento.\n- Experiência com integração de APIs REST e/ou GraphQL.\n- Conhecimento em bancos de dados relacionais e não relacionais.\n- Controle de versão com Git.\n- Boas práticas de testes automatizados (unitários e integração).\n- Familiaridade com pipelines de CI/CD.\n- Conhecimento em cloud e ambientes de deploy será considerado um diferencial.\n\n**Premissas culturais**\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n## Benefícios\n\nTrabalho 100% remoto\nPlano de Saúde individual\nAuxílio Cuidado e Desenvolvimento\nIncentivo à prática de esportes\nSeguro de vida\nCartão multi-benefício através do Caju\nAuxílio Remoto para investimento em equipamentos (R$2.000 anual)\nPJ - 30 dias de férias remuneradas\n\n## Contratação\n\nModelo de contratação: PJ \n\n## Como se candidatar\n\n(https://jobs.quickin.io/igma/jobs/69fdf8136a49d7001314045c)\n\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto\n\n**Etapas do processo**\n\n1. Cadastro\n2. Entrevista inicial\n3. Fit Cultural\n4. Entrevista técnica\n5. Proposta\n6. Contratação",
+      "excerpt": "## Nossa empresa A Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico d...",
+      "issueState": "open",
+      "contentHash": "d4c2a5cbfd1a9fa74b22248fdd45e5444efb07f3e3b6f8d7707690c8a0630bca",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "sênior",
+        "node.js",
+        "remoto",
+        "testes automatizados",
+        "git",
+        "ci/cd",
+        "verificada"
+      ],
+      "sourceTags": [
+        "pj",
+        "sênior",
+        "node.js",
+        "remoto",
+        "testes automatizados",
+        "git",
+        "ci/cd",
+        "verificada"
+      ],
+      "author": {
+        "id": "mcfo-contato",
+        "name": "mcfo-contato",
+        "handle": "mcfo-contato",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/85364888?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-05-08T15:51:18Z",
+      "updatedAt": "2026-11-05T17:50:48Z",
+      "url": "https://github.com/backend-br/vagas/issues/12233",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "nextjs",
+          "nodejs",
+          "react"
+        ],
+        "seniority": [
+          "senior"
         ],
         "employmentTypes": [
           "contractor"
@@ -2732,6 +2655,100 @@
           "remote"
         ],
         "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_56647ce0f055e747d42f4222",
+      "sourceId": "backend-br/vagas#12150",
+      "title": "[Remoto] Senior Back-end developer Java - Botcity",
+      "description": "## Nossa empresa\n\nAt BotCity, we’ve built a pioneering Intelligent Automation platform, backed by global investors such as Y Combinator and SoftBank. Our mission is to empower enterprises worldwide to scale their automation initiatives with best-in-class governance, orchestration, and developer tools. We believe that automation projects are fundamentally software projects, which is why we advocate a high-code approach rooted in Python. Our commitment to innovation has enabled us to serve over 1,000 companies in 73 countries, and we continue to expand through strategic partnerships around the globe.\n\nWe recently raised a $12M Series A, led by Four Rivers with participation from Y Combinator, SoftBank, and top industry leaders such as Lew Cirne (New Relic), Rod Johnson (Spring Source), and Walter Kortschak (Summit Partners | Firestreak Ventures). With 1,000+ customers in 70+ countries, including Bayer and LG, and recognition by G2 (2024) as one of the world’s top 25 emerging platforms, BotCity is scaling fast. \n\nWe’re a global remote company with teams across the US and LATAM, united by a shared vision to redefine how enterprises build and manage automation. If you’re looking for an environment that values impact, autonomy, and excellence, we’d love for you to join us on this journey.\n\n## Descrição da vaga\n\nThe Senior Java Backend Engineer is responsible for architecting and developing complex Java backend applications with a strong focus on scalability, performance, and reliability. Leveraging your deep expertise in the Spring Framework, you will design and implement robust, secure microservices that drive automation at the core of some of the world’s largest and most security-conscious enterprises.\n\nResponsibilities\n\nArchitect, develop, deploy, and maintain scalable backend applications using Java/Spring Framework.\nEnsure high performance and availability of applications within a microservices architecture.\nCollaborate with product managers to understand requirements, ensure their technical feasibility, and translate them into reliable and scalable solutions.\nParticipate in software engineering rituals to develop models for complex application\nDefine private and public APIs for a world-class product.\nParticipate in code reviews, ensuring best practices in backend development.\nWrite high-quality technical documentation to clearly communicate backend architecture and API design, ensuring ease of understanding and effective collaboration across teams.\n\n## Local\n\nRemote\n\n## Requisitos\n\nRequired Qualifications\n\nBachelor's degree in Computer Science, Computer Engineering, or related technical discipline.\nProven professional experience (8+ years) in backend development using Java.\nProficiency in Spring Framework.\nStrong experience in code reviews and managing CI/CD pipelines.\nExperience implementing authentication and authorization mechanisms using OAuth, JWT, or SAML.\nExperience with version control and project management systems, particularly Git and GitHub.\nExperience with SQL and No-SQL databases.\nAbility to work independently as well as part of a team, with strong problem-solving skills and attention to detail.\nPrior experience in an early-stage, high-growth and fast-paced startup (or similar) environment.\nAbility to travel as needed to meet the team.\nPortuguese - Fluent\nPreferred Qualifications\n\nExperience in deploying containerized applications using Docker, Kubernetes, or similar technologies.\nExperience with Keycloak.\nFamiliarity with AWS services such as EC2, ECR, ECS, EKS, and ELB.\nEnglish - Fluent\n\n## Benefícios\n\nCompetitive compensation.\nPaid time off (30 days per year).\n100% remote and flexible hours.\nCaju benefits card.\nConexa health benefits.\nWellhub\nOpportunity to work in a global team with teams in San Francisco and São Paulo.\n\n## Contratação\n\nPJ\n\n## Como se candidatar\n\nhttps://jobs.quickin.io/botcity/jobs/6942bd7904d89c001382e745?src=Github\n\n## Labels\n\n\n### Nível\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+      "excerpt": "## Nossa empresa At BotCity, we’ve built a pioneering Intelligent Automation platform, backed by global investors such as Y Combinator and SoftBank. Our mission is to empower enterprises worldwide to scale their autom...",
+      "issueState": "open",
+      "contentHash": "87815838a6b12f8f0bde4c2ba7261378492a6affb1da317cc65f4b57acadfaeb",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "sênior",
+        "python",
+        "java",
+        "remoto",
+        "aws",
+        "sql",
+        "git"
+      ],
+      "sourceTags": [
+        "pj",
+        "sênior",
+        "python",
+        "java",
+        "remoto",
+        "aws",
+        "sql",
+        "git"
+      ],
+      "author": {
+        "id": "FranPiresBotcity",
+        "name": "FranPiresBotcity",
+        "handle": "FranPiresBotcity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/208652784?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-01-02T13:02:32Z",
+      "updatedAt": "2026-11-05T17:50:49Z",
+      "url": "https://github.com/backend-br/vagas/issues/12150",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "kubernetes",
+          "python",
+          "spring"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en",
+          "pt"
+        ]
       },
       "dataProvenance": {
         "location": "unknown",
