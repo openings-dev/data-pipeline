@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-11-07T00:32:59.006Z",
+  "generatedAt": "2026-11-07T09:29:22.650Z",
   "page": 4,
   "pageSize": 20,
   "nextPage": "api/pages/page-0005.json",
   "ids": [
+    "gh_635a2d6c08c44acc444fd7c8",
+    "gh_3c767e88457a3d29d3db1504",
+    "gh_8f25be7dd252badc093e7167",
     "gh_a07d697588492bd5752cba67",
     "gh_68fade7cdbb97785d910fefb",
     "gh_baa1cacfe8ac107e10908e71",
@@ -20,12 +23,376 @@
     "gh_0da1549c7daf4a0c09a7d121",
     "gh_2f90b160baee5d09b0165e89",
     "gh_14ddee933b9b152d7875ef0c",
-    "gh_8d2476b1965d80a6141c7e7a",
-    "gh_776da6cd16a3878a7aa6c3ac",
-    "gh_f854256c35a417d8933cfcfe",
-    "gh_34417202d0a35257d6811c40"
+    "gh_8d2476b1965d80a6141c7e7a"
   ],
   "items": [
+    {
+      "id": "gh_635a2d6c08c44acc444fd7c8",
+      "sourceId": "soujava/vagas-java#1966",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Agendamento) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO serviço de agendamento faz duas coisas relacionadas. Ele guarda agenda de compromisso (quem está disponível, em qual janela, com qual duração, e o que acontece quando dois pedidos disputam o mesmo horário) e ele dispara tarefas programadas que precisam rodar em hora certa, uma vez, sem duplicar quando existe mais de uma instância da aplicação no ar. A stack é Java com Spring Boot, agendamento com Quartz Scheduler e persistência em PostgreSQL. O que mais gera bug aqui e tempo: fuso, horário de verão de outros países, mês com 28 dias, reagendamento que precisa liberar o horário antigo, cancelamento que chega depois do disparo. Você vai mexer bastante em teste com relógio controlado, porque teste que depende da hora real da máquina passa hoje e falha às três da manhã de um domingo. Esse tipo de cuidado é boa parte do valor da vaga.\n\n- Implementar criação, remarcação e cancelamento de compromisso com checagem de conflito\n- Calcular janela de disponibilidade a partir de regra de duração e intervalo\n- Configurar e manter tarefas programadas com Quartz, garantindo execução única\n- Tratar fuso horário de forma explícita, guardando instante e exibindo local\n- Escrever teste com relógio controlado, sem depender da hora da máquina\n- Expor a agenda por endpoint REST para o front consumir\n- Investigar disparo que não aconteceu ou aconteceu duas vezes\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado com código Java seu\n- Java com orientação a objetos e uso da API de datas (LocalDate, LocalDateTime, Instant)\n- Noção de Spring Boot\n- SQL de consulta e escrita, com filtro por intervalo de data\n- Entender que hora com fuso e hora local são coisas diferentes\n- Git no dia a dia\n\n**Diferenciais:**\n- Já ter usado Quartz, cron ou agendador de qualquer linguagem\n- Noção de execução concorrente e de trava para evitar duplicidade\n- Formato iCalendar ou integração com agenda externa\n- Docker para subir aplicação e banco localmente\n- Teste com data fixada, por exemplo com Clock injetado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.800 a R$ 5.200 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-agendamento-464?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O serviço de agendamento faz duas coisas relacionadas. El...",
+      "issueState": "open",
+      "contentHash": "d35fa634e61af65f50c084a4b20db90439f885d0707cf5bcb4ec551f402bdc97",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3800,
+        "max": 5200,
+        "period": "month"
+      },
+      "createdAt": "2026-10-21T13:09:45Z",
+      "updatedAt": "2026-10-21T13:10:03Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1966",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_635a2d6c08c44acc444fd7c8",
+          "sourceId": "soujava/vagas-java#1966",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1966",
+          "createdAt": "2026-10-21T13:09:45Z",
+          "updatedAt": "2026-10-21T13:10:03Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-10-21T13:09:45Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_3c767e88457a3d29d3db1504",
+      "sourceId": "awesome-jobs/vietnam#5092",
+      "title": "[HCM] Senior Fullstack Developer (Finance/Banking domain)",
+      "description": "**Thông tin vị trí**\nCấp bậc: Senior\nĐịa điểm: Quận Tân Bình TP. Hồ Chí Minh\nThời gian làm việc: Thứ Hai – Thứ Sáu, 08:30 – 17:30\n—-------------------------------------------------------\n**MÔ TẢ CÔNG VIỆC** \n- Tham gia phân tích yêu cầu, thiết kế hệ thống và phát triển các tính năng cho hệ thống Tài chính/Cho vay (Finance/Lending).\n- Phát triển ứng dụng backend bằng Java và frontend bằng Angular, đảm bảo sự tích hợp liền mạch giữa các thành phần của hệ thống.\n- Thiết kế, phát triển và tối ưu hóa RESTful API; triển khai logic nghiệp vụ và tích hợp với các hệ thống liên quan.\n- Làm việc với cơ sở dữ liệu Oracle/MS SQL Server, bao gồm viết truy vấn SQL, tối ưu hóa truy vấn và xử lý dữ liệu.\n- Phối hợp với Business Analyst (BA), đội ngũ Đảm bảo chất lượng (QA) và các bên liên quan để hỗ trợ triển khai, kiểm thử và xử lý sự cố.\n\n**YÊU CẦU BẮT BUỘC** \n**_Kỹ năng và kinh nghiệm chuyên môn_** \n- Tốt nghiệp Đại học/ Cao đẳng chuyên ngành IT\n- Có 5+ năm kinh nghiệm phát triển phần mềm.\n- Thành thạo phát triển backend bằng Java; ưu tiên có kinh nghiệm với Spring Boot, Spring Framework và Spring Security.\n- Có kinh nghiệm phát triển frontend bằng Angular, TypeScript, HTML/CSS và tích hợp API.\n- Có kinh nghiệm thiết kế, phát triển RESTful API, triển khai cơ chế xác thực và phân quyền (Authentication/Authorization), cũng như tích hợp hệ thống.\n- Có kinh nghiệm thực tế với Oracle hoặc MS SQL Server, bao gồm viết câu lệnh SQL, thủ tục lưu trữ (Stored Procedures) và tối ưu hóa truy vấn.\n- Có khả năng phân tích yêu cầu, thiết kế giải pháp kỹ thuật, thực hiện Code Review và chủ động giải quyết các vấn đề kỹ thuật độc lập.\n**_Kiến thức về lĩnh vực Tài chính_** \n- Có kinh nghiệm tham gia các dự án thuộc lĩnh vực Tài chính/Ngân hàng.\n- Hiểu biết về các quy trình nghiệp vụ tài chính cơ bản và xử lý dữ liệu giao dịch.\n- Có khả năng đọc hiểu tài liệu kỹ thuật và yêu cầu nghiệp vụ bằng tiếng Anh.\n\n==========================================\nỨng tuyển ngay hoặc inbox em để trao đổi thêm về cơ hội nhé:\n💌 Email: linh.tran@dikshatek.vn\n📞 Phone/Zalo: 0817 377 143 (Ms. Linh)",
+      "excerpt": "**Thông tin vị trí** Cấp bậc: Senior Địa điểm: Quận Tân Bình TP. Hồ Chí Minh Thời gian làm việc: Thứ Hai – Thứ Sáu, 08:30 – 17:30 —------------------------------------------------------- **MÔ TẢ CÔNG VIỆC** - Tham gia...",
+      "issueState": "open",
+      "contentHash": "50f7f80e103032226b9f57c6be9aba58e23183e683ab857ca00f845ca2bfd075",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "frontend",
+        "fullstack",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "backend",
+        "frontend",
+        "fullstack",
+        "java",
+        "senior",
+        "typescript"
+      ],
+      "author": {
+        "id": "Linh-IT-Recruiter",
+        "name": "Linh-IT-Recruiter",
+        "handle": "Linh-IT-Recruiter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/305696920?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-10-21T10:53:38Z",
+      "updatedAt": "2026-10-21T10:53:38Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5092",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack",
+          "qa"
+        ],
+        "technologies": [
+          "angular",
+          "java",
+          "spring",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_3c767e88457a3d29d3db1504",
+          "sourceId": "awesome-jobs/vietnam#5092",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5092",
+          "createdAt": "2026-10-21T10:53:38Z",
+          "updatedAt": "2026-10-21T10:53:38Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_bdf97ae5d163301aa49c3845",
+          "sourceId": "awesome-jobs/jobs#5092",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5092",
+          "createdAt": "2026-10-21T10:53:38Z",
+          "updatedAt": "2026-10-21T10:53:38Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 16,
+        "publishedAt": "2026-10-21T10:53:38Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_8f25be7dd252badc093e7167",
+      "sourceId": "awesome-jobs/vietnam#5091",
+      "title": "GALAXY JOY - Data Engineer - 2 headcounts",
+      "description": "# 🚀 Hiring: Data Engineer | GalaxyJoy \n\n📍 **Location:** Ho Chi Minh City, Vietnam  \n🏢 **Department:** Technology  \n👤 **Reporting to:** Senior Data Engineer  \n💼 **Experience:** From 4 years\n\n## About GalaxyJoy\n\nGalaxyJoy is a member of the Galaxy Holdings Digital Ecosystem, working to build innovative loyalty solutions that connect customers, partners, and services through technology and data.\n\nWe are looking for a **Data Engineer II** to build reliable data pipelines, integrate diverse data sources, and optimize our cloud data platform to power analytics and data-driven decision-making.\n\n## What You'll Do\n\n- Build and maintain ETL/ELT pipelines to ingest data from S3, SFTP, SharePoint, email, and APIs.\n- Develop and operate **Apache Airflow** workflows with reliable monitoring and failure alerting.\n- Design and optimize data schemas, tables, and transformations in **Snowflake**.\n- Manage data infrastructure using **Infrastructure as Code (Pulumi/Terraform)**.\n- Integrate external data sources end-to-end, from ingestion and mapping to transformation and validation.\n- Implement data quality checks to detect schema drift, missing data, and pipeline failures.\n- Optimize pipeline and query performance as data volumes grow.\n- Collaborate with Data Analysts, Backend Engineers, and cross-functional stakeholders.\n\n## What We're Looking For\n\n- Bachelor's degree in Computer Science, Information Technology, or a related field.\n- 2–4 years of experience in Data Engineering or a related role.\n- Strong **SQL** skills and proficiency in **Python, TypeScript**, or a similar language.\n- Hands-on experience with cloud data warehouses such as **Snowflake, BigQuery, or Amazon Redshift**.\n- Experience with **Apache Airflow** or equivalent workflow orchestration tools.\n- Familiarity with **AWS (S3, IAM)** and cloud data architectures.\n- Experience handling structured and semi-structured data (**CSV, JSON, Parquet**).\n- Solid understanding of data modeling, incremental loading, and pipeline design patterns.\n- Strong debugging, problem-solving, and ownership skills.\n\n### Nice to Have\n- Experience with **Pulumi, Terraform, or AWS CDK**.\n- Experience integrating external data through SFTP, APIs, or file-based feeds.\n- Familiarity with CI/CD, Git, and pull request reviews.\n\n## 🎁 What We Offer\n\n- Competitive salary package with performance-based bonuses.\n- 100% of the official salary during probation.\n- Comprehensive health and accident insurance.\n- 15 days of annual leave per year.\n- Work equipment provided: MacBook/laptop, monitor, mouse, and more.\n- A modern, creative, and collaborative working environment.\n\n## 📩 Apply Now\n\nReady to build reliable data pipelines and turn data into value?\nSend your CV to **[talent@galaxyjoy.vn](mailto:talent@galaxyjoy.vn)** or **[truchtm@galaxyjoy.vn](mailto:truchtm@galaxyjoy.vn)**.\n**Subject:** Application – Data Engineer II – [Your Name]\n\n#GalaxyJoy #Hiring #DataEngineer #DataEngineering #Snowflake #ApacheAirflow #AWS #Python #TechJobs #VietnamTech",
+      "excerpt": "# 🚀 Hiring: Data Engineer | GalaxyJoy 📍 **Location:** Ho Chi Minh City, Vietnam 🏢 **Department:** Technology 👤 **Reporting to:** Senior Data Engineer 💼 **Experience:** From 4 years ## About GalaxyJoy GalaxyJoy is...",
+      "issueState": "open",
+      "contentHash": "4ab6a0aa0aff998edd2e810e2315aabab0bee640de77d9653ca9532022368460",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "python",
+        "senior",
+        "typescript"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "python",
+        "senior",
+        "typescript"
+      ],
+      "author": {
+        "id": "truchuynh63",
+        "name": "truchuynh63",
+        "handle": "truchuynh63",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/140993509?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-10-21T06:41:22Z",
+      "updatedAt": "2026-10-21T06:41:22Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5091",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "** Ho Chi Minh City",
+        "displayText": "** Ho Chi Minh City, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "aws",
+          "python",
+          "terraform",
+          "typescript"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_8f25be7dd252badc093e7167",
+          "sourceId": "awesome-jobs/vietnam#5091",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5091",
+          "createdAt": "2026-10-21T06:41:22Z",
+          "updatedAt": "2026-10-21T06:41:22Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_f01960afc50aaee9049b5f69",
+          "sourceId": "awesome-jobs/jobs#5091",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5091",
+          "createdAt": "2026-10-21T06:41:22Z",
+          "updatedAt": "2026-10-21T06:41:22Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 17,
+        "publishedAt": "2026-10-21T06:41:22Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_a07d697588492bd5752cba67",
       "sourceId": "awesome-jobs/vietnam#5090",
@@ -155,7 +522,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-10-21T06:36:26Z",
         "status": "fresh"
       }
@@ -284,7 +651,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-10-21T04:49:33Z",
         "status": "fresh"
       }
@@ -366,7 +733,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-10-21T01:55:31Z",
         "status": "fresh"
       }
@@ -466,7 +833,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-10-21T01:32:07Z",
         "status": "fresh"
       }
@@ -564,7 +931,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 16,
+        "ageDays": 17,
         "publishedAt": "2026-10-21T01:28:58Z",
         "status": "fresh"
       }
@@ -736,7 +1103,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-10-20T08:56:31Z",
         "status": "fresh"
       }
@@ -1080,7 +1447,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-10-18T01:54:41Z",
         "status": "fresh"
       }
@@ -1206,7 +1573,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-10-18T01:52:07Z",
         "status": "fresh"
       }
@@ -1570,7 +1937,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 21,
+        "ageDays": 22,
         "publishedAt": "2026-10-16T02:41:02Z",
         "status": "fresh"
       }
@@ -1657,7 +2024,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 21,
+        "ageDays": 22,
         "publishedAt": "2026-10-16T02:36:17Z",
         "status": "fresh"
       }
@@ -1743,330 +2110,6 @@
       "freshness": {
         "ageDays": 22,
         "publishedAt": "2026-10-15T10:27:14Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_776da6cd16a3878a7aa6c3ac",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2984",
-      "title": "Doesn't show Hardware engineering jobs",
-      "description": "Says that there are 129 Hardware engineering jobs but doesn't show the list",
-      "excerpt": "Says that there are 129 Hardware engineering jobs but doesn't show the list",
-      "issueState": "open",
-      "contentHash": "0f241cd4ea2fc847321536d0774de9082ba0e4dd51c3f29091d95808d4d2c1a5",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "Danielsch1",
-        "name": "Danielsch1",
-        "handle": "Danielsch1",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/156856283?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-10-15T05:00:09Z",
-      "updatedAt": "2026-10-15T05:00:09Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2984",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_776da6cd16a3878a7aa6c3ac",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2984",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2984",
-          "createdAt": "2026-10-15T05:00:09Z",
-          "updatedAt": "2026-10-15T05:00:09Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 22,
-        "publishedAt": "2026-10-15T05:00:09Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_f854256c35a417d8933cfcfe",
-      "sourceId": "backend-br/vagas#12468",
-      "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google",
-      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As an Application Modernization Cloud...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience coding in one or more general purpose languages (e.g., Python, Java, Go, C or C++).\n- Experience in architecting and implementing APIs and integration technologies in distributed enterprise environment(s) using a combination of technologies/languages/standards like REST, SOAP, GraphQL, JSON, OpenAPI, JavaScript, Cassandra, Kubernetes, etc.\n- Experience with cloud hosting (e.g., Google Cloud Platform), architectural principles in security, distributed computing, and platform/developer/systems operations such as Linux Administration, Git, Terraform, Ansible, etc.\n- Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Diferenciais:\n- Software development in one or more of the following languages: Golang, C/C++, Node.js, Java, Python, etc. including data structures, algorithms, and software design.\n\n## Responsabilidades:\n- Serve as a trusted technical advisor to customers on cloud architecture, Gemini Enterprise implementations, and AI Agent integrations.\n- Architect and execute end-to-end modernization and application assessment strategies powered by AI tools and generative workflows.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "9063b37b54126de9944af172b8b4a50e84ed2eb091ae5563c64b961f676ae9c0",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "git",
-        "go",
-        "java",
-        "javascript",
-        "kubernetes",
-        "linux",
-        "node.js",
-        "python"
-      ],
-      "sourceTags": [
-        "git",
-        "go",
-        "java",
-        "javascript",
-        "kubernetes",
-        "linux",
-        "node.js",
-        "python"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T21:02:00Z",
-      "updatedAt": "2026-11-05T17:50:25Z",
-      "url": "https://github.com/backend-br/vagas/issues/12468",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Argentina",
-        "countryCode": "AR",
-        "region": "South America",
-        "city": "Buenos Aires, ; Mexico City, CDMX, Mexico",
-        "displayText": "Buenos Aires, ; Mexico City, CDMX, Mexico, Argentina",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "design"
-        ],
-        "technologies": [
-          "gcp",
-          "go",
-          "java",
-          "javascript",
-          "kubernetes",
-          "nodejs",
-          "python",
-          "terraform"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": [
-          "en",
-          "es"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f854256c35a417d8933cfcfe",
-          "sourceId": "backend-br/vagas#12468",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12468",
-          "createdAt": "2026-10-14T21:02:00Z",
-          "updatedAt": "2026-11-05T17:50:25Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 23,
-        "publishedAt": "2026-10-14T21:02:00Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_34417202d0a35257d6811c40",
-      "sourceId": "androiddevbr/vagas#2249",
-      "title": "[Cidade do México, México] Mobile Software Engineer, Multiplatform, Early Careers na Google",
-      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open) para realizar a candidatura. 👋\n<p><b>Please submit your resume in English - we can only consider applications submitted in this language.</b></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p>In most instances, this position requires in-person interviews as part of the hiring process.</p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with software development in one or more programming languages (e.g., Python, C, C++, Java, JavaScript).<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>Experience with mobile app development.</li>\n<li>Experience communicating with clients and teams.</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience developing accessible technologies.<br></li>\n<li>Experience creating and maintaining developer frameworks.</li>\n<li>Experience with Android and or iOS app development.</li>\n<li>Experience with Client and Server development.</li>\n<li>Experience as a generalist with the ability to work across many domains.</li>\n<li>Comfortable working across many teams and stakeholders.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>The team empowers Google app developers to create engaging experiences by sharing code across platforms. Our key objectives are to reduce code duplication, ensure uniformity, accelerate time-to-market, and support Google partners (e.g., YouTube, Search, Maps, Workspace).</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Drive outcomes for immediate areas of work as a collaborator.</li>\n<li>Self-direct your individual contributions with the support from your team.</li>\n<li>Make well-reasoned design judgment calls within owned scope where there is no obvious “best” solution.</li>\n<li>Communicate effectively with your team mates.</li>\n<li>Foster a collaborative and inclusive team environment, encouraging knowledge sharing and innovation.<br></li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Mobile Software Engineer, Multiplatform, Early Careers na Google](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nMobile",
-      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
-      "issueState": "open",
-      "contentHash": "8b307757575ed96201a9d2de01af4eb3eb02aecd191f7e4f299bc136ac3e93f5",
-      "repository": "androiddevbr/vagas",
-      "repositoryUrl": "https://github.com/androiddevbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "java",
-        "python"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "java",
-        "python"
-      ],
-      "author": {
-        "id": "FrancieleGhizzoni",
-        "name": "FrancieleGhizzoni",
-        "handle": "FrancieleGhizzoni",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
-      },
-      "community": {
-        "id": "androiddevbr",
-        "name": "androiddevbr",
-        "avatarUrl": "https://github.com/androiddevbr.png?size=80",
-        "repository": "androiddevbr/vagas",
-        "url": "https://github.com/androiddevbr/vagas"
-      },
-      "companyName": "Google",
-      "createdAt": "2026-10-14T20:54:09Z",
-      "updatedAt": "2026-10-14T20:54:48Z",
-      "url": "https://github.com/androiddevbr/vagas/issues/2249",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America",
-        "displayText": "Mexico",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design",
-          "fullstack",
-          "mobile"
-        ],
-        "technologies": [
-          "java",
-          "javascript",
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_34417202d0a35257d6811c40",
-          "sourceId": "androiddevbr/vagas#2249",
-          "repository": "androiddevbr/vagas",
-          "repositoryUrl": "https://github.com/androiddevbr/vagas",
-          "url": "https://github.com/androiddevbr/vagas/issues/2249",
-          "createdAt": "2026-10-14T20:54:09Z",
-          "updatedAt": "2026-10-14T20:54:09Z",
-          "community": {
-            "id": "androiddevbr",
-            "name": "androiddevbr",
-            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
-            "repository": "androiddevbr/vagas",
-            "url": "https://github.com/androiddevbr/vagas"
-          }
-        },
-        {
-          "id": "gh_7431f876035474375ed7a033",
-          "sourceId": "CocoaHeadsBrasil/vagas#1554",
-          "repository": "CocoaHeadsBrasil/vagas",
-          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
-          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1554",
-          "createdAt": "2026-10-14T20:54:48Z",
-          "updatedAt": "2026-10-14T20:54:48Z",
-          "community": {
-            "id": "CocoaHeadsBrasil",
-            "name": "CocoaHeadsBrasil",
-            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
-            "repository": "CocoaHeadsBrasil/vagas",
-            "url": "https://github.com/CocoaHeadsBrasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 23,
-        "publishedAt": "2026-10-14T20:54:09Z",
         "status": "fresh"
       }
     }
