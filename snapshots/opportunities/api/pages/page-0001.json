@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T18:44:30.869Z",
+  "generatedAt": "2026-11-07T00:32:59.006Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
@@ -15,7 +15,6 @@
     "gh_59d3844ae80e74b233ec521b",
     "gh_26e0391744b678d0f0b1569f",
     "gh_2ab32c94b1bcf6d5363fdebe",
-    "gh_fe74ab5962a83195abac41af",
     "gh_3aa462f04fe7bf10a982181a",
     "gh_1dbe4360df75638f5a0799c7",
     "gh_9c25b798ad552710cb428e33",
@@ -23,7 +22,8 @@
     "gh_e31e0f0f47c698e1c0d5a6d9",
     "gh_484b4bfff912b720db1a2be5",
     "gh_955226cbfa98dd29e44c402f",
-    "gh_4c8cb2b9592db50dba6ad8df"
+    "gh_4c8cb2b9592db50dba6ad8df",
+    "gh_30f0dda015de26670412f182"
   ],
   "items": [
     {
@@ -626,7 +626,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-05T19:46:08Z",
         "status": "fresh"
       }
@@ -1134,90 +1134,6 @@
       "freshness": {
         "ageDays": 1,
         "publishedAt": "2026-11-05T12:57:24Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_fe74ab5962a83195abac41af",
-      "sourceId": "ambicuity/New-Grad-Jobs#461",
-      "title": "Job data is stale: last scrape 2026-11-04T21:54:43.000200Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **700 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/42003579963. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **700 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "4c3003185f773578db004aa65bc64e11102c58c9b70a751fd6e30e8a084d6281",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-11-05T09:35:18Z",
-      "updatedAt": "2026-11-05T09:35:18Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/461",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_fe74ab5962a83195abac41af",
-          "sourceId": "ambicuity/New-Grad-Jobs#461",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/461",
-          "createdAt": "2026-11-05T09:35:18Z",
-          "updatedAt": "2026-11-05T09:35:18Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1,
-        "publishedAt": "2026-11-05T09:35:18Z",
         "status": "fresh"
       }
     },
@@ -1954,7 +1870,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-03T18:57:28Z",
         "status": "fresh"
       }
@@ -2055,8 +1971,123 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-03T18:56:32Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_30f0dda015de26670412f182",
+      "sourceId": "programadores-br/geral#3128",
+      "title": "[Belo Horizonte, Brasil] Product Owner na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/product-owner-135201424?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nA **Group Software** está em busca de um(a) **Product Owner Pleno/Sênior** para atuar na evolução do seu portfólio SaaS Horizontal, composto por soluções de Folha de Pagamento, Ponto, RH, CRM e Financeiro, atendendo pequenas e médias empresas de todo o Brasil.\n\nBuscamos alguém apaixonado por produtos digitais, com visão de negócio, forte orientação ao cliente e que já esteja utilizando Inteligência Artificial para acelerar a descoberta, definição e evolução de produtos.\n\n**Como será seu dia a dia:**\n\n- Definir e priorizar o backlog dos produtos em conjunto com as áreas de negócio;\n- Construir e evoluir o roadmap alinhado à estratégia da empresa e às necessidades dos clientes;\n- Realizar entrevistas, pesquisas e validações com clientes para apoiar decisões de produto;\n- Especificar funcionalidades e acompanhar sua implementação junto ao time de desenvolvimento;\n- Trabalhar próximo aos times de Desenvolvimento, QA, Comercial, Atendimento e Marketing;\n- Acompanhar indicadores de uso, adoção e satisfação para orientar a evolução dos produtos;\n- Identificar oportunidades para utilização de Inteligência Artificial nos produtos;\n- Apoiar o lançamento de novas funcionalidades.\n## Group Software: \nTecnologia e gestão completa de propriedades | ERP | Condominial | Administradoras | Shoppings | RH e DP. Há 30 anos desenvolvendo tecnologia para transformar negócios, simplificar processos e criar novas possibilidades.\n\n[Veja mais no site](https://coodesh.com/companies/group-software)\n\n ## Habilidades: \n - Product Ownership\n- Discovery e Roadmap\n- Scrum / Kanban\n- SaaS B2B\n- Inteligência Artificial aplicada a produtos\n## Local: \n Belo Horizonte, Brasil (Presencial)\n## Requisitos: \n - Experiência como Product Owner, Product Manager ou funções similares em produtos digitais;\n- Vivência na construção e evolução de produtos SaaS B2B;\n- Experiência em discovery, levantamento de necessidades, validação de hipóteses e definição de roadmap;\n- Facilidade para transformar problemas de clientes em funcionalidades de alto valor;\n- Experiência com metodologias ágeis (Scrum, Kanban ou similares);\n- Familiaridade com ferramentas e recursos de Inteligência Artificial aplicados ao desenvolvimento de produtos;\n- Excelente capacidade analítica e comunicação com diferentes áreas da empresa;\n- Ensino superior completo.\n\n## Diferenciais: \n - Experiência com produtos para PME;\n- Conhecimento em RH, Departamento Pessoal, Gestão de Pessoas ou Controle de Ponto;\n- Experiência com CRM, ERP Financeiro ou sistemas de gestão empresarial;\n- Vivência em funcionalidades baseadas em IA Generativa, agentes de IA ou automações inteligentes;\n- Conhecimento em métricas de produto (adoção, engajamento, retenção e satisfação).\n\n## Benefícios: \n - VA/VR\n- Assistência médica e odontológica\n- Alura\n- Horário flexível\n- Groupies e Group Store\n- Vale cultura\n\n## Salário: \n R$ 9.000,00 - R$ 15.000,00 por mês\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Product Owner na Group Software](https://coodesh.com/jobs/product-owner-135201424?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Regime\nCLT\n#### Categoria\nGestão",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "dd563ddb971205be5c4127ca75c4d91874b23ff8a7737fa03214cd67d20deb89",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "alocado",
+        "clt",
+        "pleno",
+        "presencial",
+        "sênior"
+      ],
+      "sourceTags": [
+        "alocado",
+        "clt",
+        "pleno",
+        "presencial",
+        "sênior"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
+      },
+      "companyName": "Coodesh",
+      "salary": {
+        "currency": "BRL",
+        "min": 9000,
+        "max": 15000,
+        "period": "month"
+      },
+      "createdAt": "2026-11-03T17:19:12Z",
+      "updatedAt": "2026-11-03T17:19:33Z",
+      "url": "https://github.com/programadores-br/geral/issues/3128",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "product",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_30f0dda015de26670412f182",
+          "sourceId": "programadores-br/geral#3128",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3128",
+          "createdAt": "2026-11-03T17:19:12Z",
+          "updatedAt": "2026-11-03T17:19:33Z",
+          "community": {
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-03T17:19:12Z",
         "status": "fresh"
       }
     }
