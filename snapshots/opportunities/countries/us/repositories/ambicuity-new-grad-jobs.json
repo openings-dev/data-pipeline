@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-07T00:32:59.006Z",
+  "generatedAt": "2026-11-07T17:14:53.794Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "feb422a31d69eadb2a48ec29b247e4adfa96f777d719ce07354e329218031ff2",
+  "dataHash": "8cdb1ed1e73e6b5d97628eda963622049558a28496d77fcef2e83a3b115a1e7a",
   "items": [
+    {
+      "id": "gh_78356fa90897428ba5de27b7",
+      "sourceId": "ambicuity/New-Grad-Jobs#462",
+      "title": "Job data is stale: last scrape 2026-11-07T12:55:40.689284Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/42391530021. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "2babce862d65af7c9e161dce2eef36c7c45052776be50458b43d1cf48f898398",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-07T16:29:29Z",
+      "updatedAt": "2026-11-07T16:29:29Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/462",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_fe74ab5962a83195abac41af",
       "sourceId": "ambicuity/New-Grad-Jobs#461",
@@ -1792,73 +1850,6 @@
         "employmentTypes": [],
         "workModels": [],
         "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_b80e55ab23d7ebf5821ff619",
-      "sourceId": "ambicuity/New-Grad-Jobs#22",
-      "title": "[Beginner]: Add module-level docstrings to CATEGORY_PATTERNS and company classification sets",
-      "description": "### Contributor Level\n\nThis is a beginner issue. No code logic changes are required. It is suitable for contributors who want to improve their understanding of the codebase before tackling more complex tasks.\n\nPrerequisites:\n- Able to read Python code and understand what a variable is used for\n- Able to write a short English explanation\n\nEstimated time to complete: 1 hour.\n\n---\n\n### Problem Description\n\nThe top-level global constants in `scripts/update_jobs.py` — specifically `FAANG_PLUS`, `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`, and `CATEGORY_PATTERNS` — have no inline comments or docstrings explaining what they represent, how they are consumed at runtime, or how a contributor should add a new entry to them.\n\nA contributor who wants to add a new company has no guidance on which set to add it to, or how company classification interacts with the frontend filters. This increases the friction for community contributions of new company data.\n\nAffected lines: approximately 93–254 in `scripts/update_jobs.py`.\n\n---\n\n### Proposed Solution\n\nAdd a short block comment above each constant explaining:\n\n1. What the set represents\n2. Which function consumes it at runtime\n3. How to add a new entry, including the expected string format\n\nReference example:\n\n```python\n# FAANG_PLUS: Companies classified as the \"FAANG+\" company tier.\n# Consumed by: get_company_tier() at line ~302.\n# This classification surfaces in the frontend's \"FAANG+\" company-tier filter.\n# To add a company: append its name exactly as it appears in job API responses.\n# A company may appear in both FAANG_PLUS and a sector set (e.g., DEFENSE) simultaneously.\nFAANG_PLUS = {\n    ...\n}\n```\n\nApply the same pattern to: `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`, and `CATEGORY_PATTERNS`.\n\nFor `CATEGORY_PATTERNS`, also document how the `keywords` list is matched and what happens when no keyword matches.\n\n---\n\n### Background Research\n\nRead the functions that consume these constants before writing comments:\n\n- `get_company_tier()` — line ~302 (consumes `FAANG_PLUS`, `UNICORNS`, `DEFENSE`, `FINANCE`, `HEALTHCARE`, `STARTUPS`)\n- `categorize_job()` — line ~278 (consumes `CATEGORY_PATTERNS`)\n\nUnderstanding what these functions do with the data will help you write accurate descriptions.\n\n---\n\n### Acceptance Criteria\n\n- A block comment appears above each of the seven constants listed above\n- Each comment covers: purpose, consuming function, and how to add a new entry\n- `python -m py_compile scripts/update_jobs.py` passes with no errors\n- No logic is changed\n\n---\n\n### Done Checklist\n\nBefore opening your PR, confirm:\n\n- [ ] All seven constants have a descriptive block comment above them\n- [ ] `python -m py_compile scripts/update_jobs.py` passes locally\n- [ ] Commit message follows Conventional Commits format: `docs(scraper): add comments to company classification constants`\n- [ ] `README.md` has not been modified (it is auto-generated)\n\n---\n\n### Additional Context\n\n- File: `scripts/update_jobs.py`, lines 93–254\n- Related guide: [CONTRIBUTING.md](https://github.com/ambicuity/New-Grad-Jobs/blob/main/CONTRIBUTING.md)",
-      "excerpt": "### Contributor Level This is a beginner issue. No code logic changes are required. It is suitable for contributors who want to improve their understanding of the codebase before tackling more complex tasks. Prerequis...",
-      "issueState": "closed",
-      "contentHash": "81d4af9a040ca87c667985a380ce3a2742fbf1a2c5c4f6caaac1bd992f8120ba",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: docs",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "type: docs",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "companyName": "tier filter.",
-      "createdAt": "2026-03-02T20:11:52Z",
-      "updatedAt": "2026-10-16T22:55:46Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/22",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": [
-          "en"
-        ]
       },
       "dataProvenance": {
         "location": "unknown",

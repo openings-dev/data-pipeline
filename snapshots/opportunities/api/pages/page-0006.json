@@ -1,11 +1,12 @@
 {
-  "generatedAt": "2026-11-07T09:29:22.650Z",
+  "generatedAt": "2026-11-07T17:14:53.794Z",
   "page": 6,
   "pageSize": 20,
   "nextPage": "api/pages/page-0007.json",
   "ids": [
+    "gh_64aa16d7a09022b86ee0040c",
+    "gh_d89e1cc41b9d704400c8843b",
     "gh_734b65d4c7197d44b825b886",
-    "gh_1cc381ec57be0517e8d9243b",
     "gh_849717642034c6ac92924f14",
     "gh_22adb1265e1e9cfbf651ca15",
     "gh_087d885731246159d14ac233",
@@ -22,10 +23,184 @@
     "gh_20aceb464738bcb46da14811",
     "gh_c9dbe8c3245224e55d772ee5",
     "gh_62dd90fe5fc8ef9fb41715bd",
-    "gh_01a0a1ad79a225ed23493c50",
-    "gh_fd7b255c451891ac112f8e82"
+    "gh_01a0a1ad79a225ed23493c50"
   ],
   "items": [
+    {
+      "id": "gh_64aa16d7a09022b86ee0040c",
+      "sourceId": "remoteintech/remote-jobs#2271",
+      "title": "9 company profiles whose domains no longer exist",
+      "description": "While checking careers links across `src/companies/` (2026-10-11), I found profiles whose company website and careers page are both unreachable. For these 9, the domain no longer resolves at all (NXDOMAIN, checked twice), so the company looks closed or renamed:\n\n| Profile | Website |\n|---|---|\n| Cuvette | https://cuvette.tech |\n| GitPrime | https://gitprime.com/ (acquired by Pluralsight in 2019) |\n| Grou.ps | https://build.gr.ps |\n| Impira | https://www.impira.com/ |\n| Mobile Jazz | https://mobilejazz.com |\n| Park Assist | https://tech.parkassist.com |\n| Pathable | https://pathable.com/ |\n| Socket Supply Co | https://socketsupply.co |\n| Telestax Inc. | https://telestax.com/ |\n\nRelated:\n- **Interactive Intelligence**: `inin.com` now redirects to Genesys, which acquired it.\n- **Bugfender**: its `careers_url` is `https://mobilejazz.com/jobs`, on the dead Mobile Jazz domain above.\n\nCONTRIBUTING says profiles are normally removed when a company no longer meets the criteria, so I didn't want to delete these without asking. Happy to open a PR removing them (and fixing Bugfender's link) if you agree.\n\n(Separately, #2270 updates 9 careers links that moved.)",
+      "excerpt": "While checking careers links across `src/companies/` (2026-10-11), I found profiles whose company website and careers page are both unreachable. For these 9, the domain no longer resolves at all (NXDOMAIN, checked twi...",
+      "issueState": "open",
+      "contentHash": "9cd29dc4c8fcba780246dbadc0570a450c61a1fc619d41ba095622fe9347e7b7",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "AymenJeddou",
+        "name": "AymenJeddou",
+        "handle": "AymenJeddou",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/127895207?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "companyName": "longer exist",
+      "createdAt": "2026-10-11T13:29:49Z",
+      "updatedAt": "2026-10-30T00:06:12Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2271",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_64aa16d7a09022b86ee0040c",
+          "sourceId": "remoteintech/remote-jobs#2271",
+          "repository": "remoteintech/remote-jobs",
+          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+          "url": "https://github.com/remoteintech/remote-jobs/issues/2271",
+          "createdAt": "2026-10-11T13:29:49Z",
+          "updatedAt": "2026-10-30T00:06:12Z",
+          "community": {
+            "id": "remoteintech",
+            "name": "remoteintech",
+            "avatarUrl": "https://github.com/remoteintech.png?size=80",
+            "repository": "remoteintech/remote-jobs",
+            "url": "https://github.com/remoteintech/remote-jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 27,
+        "publishedAt": "2026-10-11T13:29:49Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_d89e1cc41b9d704400c8843b",
+      "sourceId": "ambicuity/New-Grad-Jobs#383",
+      "title": "[Bug]: Workday tenants that null locationsText publish out-of-region jobs and lose JobPosting JSON-LD",
+      "description": "### Bug Type\n\nScraper: incorrect job information (title, location, date)\n\n### Description\n\nThe Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish with an **empty location**. Two concrete consequences:\n\n**1. The target-country gate is bypassed, and out-of-region jobs reach the curated board.**\n\n`scripts/ngj/locations.py` deliberately treats an empty location as *unknown, not foreign* (module docstring, lines 18–21). That is correct for sources that genuinely omit locations — but these tenants do not omit it, the adapter simply never reads it. The location is still present, encoded in `externalPath` as the `/job/<Location>/` segment.\n\nResult on the current published run: **90 curated jobs sit in Warsaw, Manila, Paris, Singapore, Prague, Lisbon, Stockholm, Riga, Blagnac, Torino, Kronberg, Bratislava and more** — 53 distinct non-target locations — on a board that advertises itself as US/Canada/India only. The filter that should have caught them ran against `\"\"` and passed.\n\n**2. 391 jobs lose their JobPosting structured data.**\n\n`site/scripts/seo/jobposting.mjs:122` refuses to emit markup it cannot fill honestly:\n\n```js\nconst location = locationProps(job.location);\nif (!location) return { posting: null, reason: 'unresolvable location' };\n```\n\nThose pages still build and still appear in the sitemap, but carry no `JobPosting` JSON-LD, so they are effectively invisible to Google Jobs. **363 of 2877 curated jobs (12.6%) display an em-dash** for location (`site/src/lib/jobs.js:117`, `loc: raw.location || '—'`) and cannot be filtered by location.\n\nAll 363 affected jobs are Accenture. The other 1056 Workday jobs parse correctly, so the bug is tenant-shape-specific.\n\n**Affected code** — `scripts/ngj/sources/workday.py:189`:\n\n```python\n'location': item.get('locationsText') or '',\n```\n\n### Steps to Reproduce\n\n1. Fetch Accenture from its Workday tenant (`https://accenture.wd103.myworkdayjobs.com/AccentureCareers`). Confirmed live — the payload returns **both** location fields null while the URL still carries the city:\n\n   ```json\n   {\n     \"title\": \"Software Engineering New Associate (Fresh Diploma Graduate Program)\",\n     \"locationsText\": null,\n     \"postedLocations\": null,\n     \"externalPath\": \"/job/Singapore/Software-Engineering-New-Associate--Fresh-Diploma-Graduate-Program-_R00144534\"\n   }\n   ```\n\n2. Run a scrape with `NGJ_OUTPUT_DIR=/tmp/ngj make run`.\n3. Inspect `site/public/jobs.json`: 363 Workday jobs have `location: \"\"`.\n4. Parse the `/job/<segment>/` out of each job's `url` — 53 distinct segments fail `is_valid_location()`; 90 jobs are out of region.\n5. Run `npm run build` — the SEO plugin reports `2486 with JobPosting JSON-LD; skipped — unresolvable location: 391`.\n6. Open any affected job page: no `JobPosting` JSON-LD in the source, and the board shows `—` where the location should be.\n\n### Suggested Fix\n\nRead the `/job/<Location>/` segment from `externalPath` as a fallback in `_to_job` (`scripts/ngj/sources/workday.py`):\n\n```python\ndef _location_from_path(item: dict[str, Any]) -> str:\n    if item.get('locationsText'):\n        return item['locationsText']\n    match = re.match(r'^/job/([^/]+)/', item.get('externalPath') or '')\n    return match.group(1).replace('-', ' ') if match else ''\n```\n\nThis makes the 90 out-of-region jobs correctly fail the location gate, restores JSON-LD for the rest, and removes the em-dashes.\n\n### Additional Context\n\n**Regression tests worth adding** (both would have caught this the day the tenant's payload shape changed, and guard the next tenant that does the same):\n\n- A Workday item with `locationsText: null` still yields a location derived from `externalPath`.\n- A posting whose location resolves to a non-target country never reaches `jobs.json`.\n\n**Verification performed**\n\n| Check | Result |\n|---|---|\n| `pytest` | 1566 passed, 96.1% coverage |\n| `vitest` | 450 passed |\n| Playwright E2E + axe | 75 passed |\n| `ruff` / `mypy` / `eslint` / `actionlint` | clean |\n| `check_integrity.py` on current data | `status: ok`, 0 errors |\n| Build with `site/public/` removed | builds clean |\n\nThis is a data-correctness bug, not a regression in the existing suites — no current test exercises a Workday tenant that nulls `locationsText`.\n\n**Related, not the same issue:** #243 covers inconsistent *documentation* wording about US vs CA/IN scope. This issue is about the location *gate* being bypassed at runtime by postings that should have been excluded.\n\n**Note on `/job/<Location>/` edge cases:** some segments are building-qualified rather than a clean city (e.g. `Warsaw-Sienna-39`, `Kronberg-Campus-Kronberg-1`, `Kuala-Lumpur-Vertical-Corp-Tower-B`). These still fail the gate correctly, so the fix is safe without a full place-name parser — but a follow-up cleanup for tidier display would be reasonable.",
+      "excerpt": "### Bug Type Scraper: incorrect job information (title, location, date) ### Description The Workday adapter drops the location for tenants whose search payload returns `locationsText: null`, so those postings publish ...",
+      "issueState": "open",
+      "contentHash": "960980490e860c09f91c2e3cc85516f0f0bdd5b23f68e5622a081043a4846e0e",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "bug",
+        "needs-triage",
+        "priority: high",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-11T04:41:00Z",
+      "updatedAt": "2026-10-19T13:44:56Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_d89e1cc41b9d704400c8843b",
+          "sourceId": "ambicuity/New-Grad-Jobs#383",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/383",
+          "createdAt": "2026-10-11T04:41:00Z",
+          "updatedAt": "2026-10-19T13:44:56Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 27,
+        "publishedAt": "2026-10-11T04:41:00Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_734b65d4c7197d44b825b886",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2981",
@@ -120,130 +295,6 @@
       }
     },
     {
-      "id": "gh_1cc381ec57be0517e8d9243b",
-      "sourceId": "backend-br/vagas#12441",
-      "title": "[Remoto ou Híbrido - São Paulo/SP] Full Stack Developer - Cogfy",
-      "description": "### Sobre a empresa\n\nA Cogfy é uma empresa de tecnologia que desenvolve plataformas de missão crítica para o setor público, com foco em automação, integrações e IA aplicada a milhões de interações. O processo seletivo é conduzido pela Combine Global Recruitment.\n\n### Site da empresa\n\nhttps://cogfy.ai\n\n### Descrição da vaga\n\nA plataforma atende governos e precisa lidar com milhões de interações, exigindo baixa latência, alta disponibilidade, segurança e rastreabilidade. O desafio é construir capacidades de produto AI-first que aumentem o throughput da Operação e a capacidade de venda do Comercial.\n\nO que você vai fazer:\n- Desenvolver e evoluir serviços de backend em Node.js focados em performance e escalabilidade\n- Projetar APIs, workers, filas, webhooks e módulos de integração\n- Evoluir componentes de mensageria, orquestração de jornadas, automações e agentes de IA\n- Trabalhar com arquitetura orientada a eventos, processamento assíncrono e tolerância a falhas\n- Integrar sistemas legados, CRMs, ERPs e plataformas de mensageria\n- Construir autenticação, RBAC, auditoria e governança de ações\n\nStack: Node.js, TypeScript, PostgreSQL, Redis, Docker, Kubernetes, APIs REST, filas e mensageria, LLMs e APIs de IA, RAG\n\n### Requisitos\n\n- Experiência sólida em produção com Node.js\n- Domínio forte de TypeScript\n- Experiência com APIs REST, webhooks, autenticação e integrações\n- Bom entendimento de arquitetura backend e modularização\n- Experiência com bancos relacionais e modelagem multi-tenant\n- Familiaridade com filas, workers e processamento assíncrono\n- Experiência com testes automatizados, observabilidade e CI/CD\n- Desejável: produtos SaaS B2B ou B2G\n- Desejável: plataformas low-code/no-code\n- Desejável: integrações com WhatsApp, ERPs, CRMs ou sistemas de governo\n- Desejável: experiência com IA generativa e ambientes regulados\n\n### Benefícios\n\n_No response_\n\n### Faixa salarial\n\n_No response_\n\n### Nível\n\nSênior\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nRemoto, Híbrido\n\n### Localização\n\nVaga remota ou híbrida; no modelo híbrido, o escritório fica em São Paulo/SP, na região de Cerqueira César.\n\n### Como se candidatar\n\nCandidate-se pela página da vaga: https://combineglobalrecruitment.na.teamtailor.com/jobs/709809-full-stack-developer\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-      "excerpt": "### Sobre a empresa A Cogfy é uma empresa de tecnologia que desenvolve plataformas de missão crítica para o setor público, com foco em automação, integrações e IA aplicada a milhões de interações. O processo seletivo ...",
-      "issueState": "open",
-      "contentHash": "3aac5a90f630c0b086c2735b138a1f6c99f57e84c7831187cf94291b3ebc40f9",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "docker",
-        "node.js",
-        "pj",
-        "postgresql",
-        "remoto",
-        "sênior",
-        "testes automatizados",
-        "typescript"
-      ],
-      "sourceTags": [
-        "docker",
-        "node.js",
-        "pj",
-        "postgresql",
-        "remoto",
-        "sênior",
-        "testes automatizados",
-        "typescript"
-      ],
-      "author": {
-        "id": "CombineGlobalRecruitment",
-        "name": "CombineGlobalRecruitment",
-        "handle": "CombineGlobalRecruitment",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/339306612?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-10-09T15:07:16Z",
-      "updatedAt": "2026-11-06T16:32:39Z",
-      "url": "https://github.com/backend-br/vagas/issues/12441",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "São Paulo",
-        "subdivision": "SP",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "São Paulo, SP · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [
-          "docker",
-          "kubernetes",
-          "nodejs",
-          "postgres",
-          "redis",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_1cc381ec57be0517e8d9243b",
-          "sourceId": "backend-br/vagas#12441",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12441",
-          "createdAt": "2026-10-09T15:07:16Z",
-          "updatedAt": "2026-11-06T16:32:39Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 28,
-        "publishedAt": "2026-10-09T15:07:16Z",
-        "status": "fresh"
-      }
-    },
-    {
       "id": "gh_849717642034c6ac92924f14",
       "sourceId": "rebase-network/who-is-hiring#1315",
       "title": "【全球远程 FineStar】AIGC视频生成师 视频剪辑 新媒体运营 编辑专员 短剧学徒 AI短剧 AI生成师- 10-50k/RMB",
@@ -326,7 +377,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 28,
+        "ageDays": 29,
         "publishedAt": "2026-10-09T13:19:01Z",
         "status": "fresh"
       }
@@ -731,7 +782,7 @@
         "period": "month"
       },
       "createdAt": "2026-10-07T14:02:31Z",
-      "updatedAt": "2026-11-05T17:50:39Z",
+      "updatedAt": "2026-11-07T16:04:06Z",
       "url": "https://github.com/backend-br/vagas/issues/12440",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -774,7 +825,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12440",
           "createdAt": "2026-10-07T14:02:31Z",
-          "updatedAt": "2026-11-05T17:50:39Z",
+          "updatedAt": "2026-11-07T16:04:06Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -804,9 +855,9 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 30,
+        "ageDays": 31,
         "publishedAt": "2026-10-07T14:02:31Z",
-        "status": "fresh"
+        "status": "aging"
       }
     },
     {
@@ -1929,7 +1980,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 36,
+        "ageDays": 37,
         "publishedAt": "2026-10-01T09:30:04Z",
         "status": "aging"
       }
@@ -2137,7 +2188,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 37,
+        "ageDays": 38,
         "publishedAt": "2026-09-30T11:43:48Z",
         "status": "aging"
       }
@@ -2271,88 +2322,8 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 37,
+        "ageDays": 38,
         "publishedAt": "2026-09-30T11:35:49Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_fd7b255c451891ac112f8e82",
-      "sourceId": "soongenwong/Europe-Tech-Internships-2026#2",
-      "title": "Question about reading public listings on Europe Tech Internships 2026 (personal final-year project)",
-      "description": "Hello Europe Tech Internships 2026 team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings once a day and shows the title, organization, location, date and a link back to your page. Nothing is sold.\n\nCould you tell me if this is OK with you, or what you would prefer? If you would rather I stop, tell me and I will stop it within a few days and remove your listings.\n\nI can send the full technical details (every request, what is stored) if that is useful.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev",
-      "excerpt": "Hello Europe Tech Internships 2026 team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any...",
-      "issueState": "open",
-      "contentHash": "1204f52283c9dafcf88669cda5927bf88586c9ffbebc72ffe3bf2de8ec65789d",
-      "repository": "soongenwong/Europe-Tech-Internships-2026",
-      "repositoryUrl": "https://github.com/soongenwong/Europe-Tech-Internships-2026",
-      "region": "Europe",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Europe"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "pathmaker7",
-        "name": "pathmaker7",
-        "handle": "pathmaker7",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
-      },
-      "community": {
-        "id": "soongenwong",
-        "name": "soongenwong",
-        "avatarUrl": "https://github.com/soongenwong.png?size=80",
-        "repository": "soongenwong/Europe-Tech-Internships-2026",
-        "url": "https://github.com/soongenwong/Europe-Tech-Internships-2026"
-      },
-      "createdAt": "2026-09-30T10:27:41Z",
-      "updatedAt": "2026-09-30T10:27:41Z",
-      "url": "https://github.com/soongenwong/Europe-Tech-Internships-2026/issues/2",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_fd7b255c451891ac112f8e82",
-          "sourceId": "soongenwong/Europe-Tech-Internships-2026#2",
-          "repository": "soongenwong/Europe-Tech-Internships-2026",
-          "repositoryUrl": "https://github.com/soongenwong/Europe-Tech-Internships-2026",
-          "url": "https://github.com/soongenwong/Europe-Tech-Internships-2026/issues/2",
-          "createdAt": "2026-09-30T10:27:41Z",
-          "updatedAt": "2026-09-30T10:27:41Z",
-          "community": {
-            "id": "soongenwong",
-            "name": "soongenwong",
-            "avatarUrl": "https://github.com/soongenwong.png?size=80",
-            "repository": "soongenwong/Europe-Tech-Internships-2026",
-            "url": "https://github.com/soongenwong/Europe-Tech-Internships-2026"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 37,
-        "publishedAt": "2026-09-30T10:27:41Z",
         "status": "aging"
       }
     }

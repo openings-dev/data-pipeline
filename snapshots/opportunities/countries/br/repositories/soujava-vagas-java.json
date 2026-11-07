@@ -1,16 +1,114 @@
 {
-  "generatedAt": "2026-11-06T18:44:30.869Z",
+  "generatedAt": "2026-11-07T17:14:53.794Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "soujava/vagas-java",
   "totals": {
-    "opportunities": 16,
-    "openIssues": 12,
+    "opportunities": 17,
+    "openIssues": 13,
     "closedIssues": 4
   },
-  "dataHash": "6cab514d4b3870d51a47998108b2d984fd7d9a3d5eef5c6cc2a6daec02a28254",
+  "dataHash": "6e6740ad5188accbda6f69f08ac201dc3493d7f5a9f327a38f9994b26cd5c34e",
   "items": [
+    {
+      "id": "gh_a2b6260ae05483df75a8020b",
+      "sourceId": "soujava/vagas-java#1977",
+      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Carteira Digital) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nA carteira digital guarda saldo, recebe depósitos, faz pagamentos e transferências entre usuários. Cada operação é um lançamento num livro razão: débito numa conta, crédito em outra, sempre em pares e sempre somando zero. O saldo é derivado desses lançamentos, e qualquer atalho que altere saldo diretamente vira um buraco difícil de explicar depois. Você vai cuidar de funcionalidades inteiras no serviço em Java com Spring Boot, do desenho da API ao teste de integração. O volume pede atenção a concorrência e desempenho: transferências simultâneas da mesma conta não podem gastar o mesmo saldo duas vezes, e o extrato precisa responder rápido mesmo para contas com muito movimento acumulado. Os eventos de cada operação são publicados no Kafka para antifraude, notificação e contabilidade. Estorno, limite diário por tipo de operação e bloqueio cautelar por suspeita de fraude são regras que você vai implementar e manter, decidindo dentro do módulo como modelar cada uma.\n\n- Implementar depósito, pagamento e transferência como lançamentos em partidas dobradas\n- Controlar a concorrência no saldo com bloqueio no PostgreSQL e chave de idempotência\n- Publicar os eventos de cada operação no Kafka com garantia de entrega\n- Implementar limites diários configuráveis por tipo de operação e por perfil\n- Otimizar a consulta de extrato com índices e paginação por cursor\n- Escrever testes de integração com Testcontainers cobrindo concorrência\n- Investigar divergências de saldo e corrigir a causa, não só o sintoma\n- Revisar o código de colegas do módulo\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot no dia a dia, incluindo transação e configuração\n- JPA com entendimento do SQL que ela gera e de quando evitá-la\n- PostgreSQL com índices, plano de execução e níveis de isolamento\n- Mensageria com Kafka ou similar, sabendo lidar com reenvio e duplicidade\n- Testes de unidade e de integração como parte da entrega\n- Entregar uma funcionalidade completa por conta própria, da API à produção\n\n**Diferenciais:**\n- Noção de contabilidade em partidas dobradas\n- Padrão de outbox para publicar eventos de forma consistente\n- Redis para limite de taxa ou cache\n- Observabilidade com métricas e rastreamento distribuído\n- Vivência com sistema financeiro regulado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-carteira-digital-518?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga A carteira digital guarda saldo, recebe depósitos, faz pa...",
+      "issueState": "open",
+      "contentHash": "148f8a5200fb80a5c4f347c86fd5db18d99b78bc9dc910dd34b0464ce3b1ae7f",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto",
+        "spring",
+        "postgresql",
+        "redis",
+        "sql"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "remoto",
+        "spring",
+        "postgresql",
+        "redis",
+        "sql"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 5000,
+        "max": 6500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-07T12:17:37Z",
+      "updatedAt": "2026-11-07T12:17:58Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1977",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "postgres",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_b6d75d364f3ed3304897ef32",
       "sourceId": "soujava/vagas-java#1976",

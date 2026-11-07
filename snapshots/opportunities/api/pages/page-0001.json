@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-11-07T09:29:22.650Z",
+  "generatedAt": "2026-11-07T17:14:53.794Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_78356fa90897428ba5de27b7",
+    "gh_a2b6260ae05483df75a8020b",
     "gh_53768095978702f736a39e69",
     "gh_57374e1d0c8336945e6b5b6b",
     "gh_46efebb5b1651ba26fbd02f7",
@@ -21,11 +23,217 @@
     "gh_3aa462f04fe7bf10a982181a",
     "gh_1dbe4360df75638f5a0799c7",
     "gh_9c25b798ad552710cb428e33",
-    "gh_11c5ccdeb258bb1cac649506",
-    "gh_e31e0f0f47c698e1c0d5a6d9",
-    "gh_484b4bfff912b720db1a2be5"
+    "gh_11c5ccdeb258bb1cac649506"
   ],
   "items": [
+    {
+      "id": "gh_78356fa90897428ba5de27b7",
+      "sourceId": "ambicuity/New-Grad-Jobs#462",
+      "title": "Job data is stale: last scrape 2026-11-07T12:55:40.689284Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/42391530021. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "2babce862d65af7c9e161dce2eef36c7c45052776be50458b43d1cf48f898398",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-07T16:29:29Z",
+      "updatedAt": "2026-11-07T16:29:29Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/462",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_78356fa90897428ba5de27b7",
+          "sourceId": "ambicuity/New-Grad-Jobs#462",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/462",
+          "createdAt": "2026-11-07T16:29:29Z",
+          "updatedAt": "2026-11-07T16:29:29Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-07T16:29:29Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_a2b6260ae05483df75a8020b",
+      "sourceId": "soujava/vagas-java#1977",
+      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Carteira Digital) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nA carteira digital guarda saldo, recebe depósitos, faz pagamentos e transferências entre usuários. Cada operação é um lançamento num livro razão: débito numa conta, crédito em outra, sempre em pares e sempre somando zero. O saldo é derivado desses lançamentos, e qualquer atalho que altere saldo diretamente vira um buraco difícil de explicar depois. Você vai cuidar de funcionalidades inteiras no serviço em Java com Spring Boot, do desenho da API ao teste de integração. O volume pede atenção a concorrência e desempenho: transferências simultâneas da mesma conta não podem gastar o mesmo saldo duas vezes, e o extrato precisa responder rápido mesmo para contas com muito movimento acumulado. Os eventos de cada operação são publicados no Kafka para antifraude, notificação e contabilidade. Estorno, limite diário por tipo de operação e bloqueio cautelar por suspeita de fraude são regras que você vai implementar e manter, decidindo dentro do módulo como modelar cada uma.\n\n- Implementar depósito, pagamento e transferência como lançamentos em partidas dobradas\n- Controlar a concorrência no saldo com bloqueio no PostgreSQL e chave de idempotência\n- Publicar os eventos de cada operação no Kafka com garantia de entrega\n- Implementar limites diários configuráveis por tipo de operação e por perfil\n- Otimizar a consulta de extrato com índices e paginação por cursor\n- Escrever testes de integração com Testcontainers cobrindo concorrência\n- Investigar divergências de saldo e corrigir a causa, não só o sintoma\n- Revisar o código de colegas do módulo\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot no dia a dia, incluindo transação e configuração\n- JPA com entendimento do SQL que ela gera e de quando evitá-la\n- PostgreSQL com índices, plano de execução e níveis de isolamento\n- Mensageria com Kafka ou similar, sabendo lidar com reenvio e duplicidade\n- Testes de unidade e de integração como parte da entrega\n- Entregar uma funcionalidade completa por conta própria, da API à produção\n\n**Diferenciais:**\n- Noção de contabilidade em partidas dobradas\n- Padrão de outbox para publicar eventos de forma consistente\n- Redis para limite de taxa ou cache\n- Observabilidade com métricas e rastreamento distribuído\n- Vivência com sistema financeiro regulado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-carteira-digital-518?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga A carteira digital guarda saldo, recebe depósitos, faz pa...",
+      "issueState": "open",
+      "contentHash": "148f8a5200fb80a5c4f347c86fd5db18d99b78bc9dc910dd34b0464ce3b1ae7f",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "redis",
+        "remoto",
+        "spring",
+        "sql"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "redis",
+        "remoto",
+        "spring",
+        "sql"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 5000,
+        "max": 6500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-07T12:17:37Z",
+      "updatedAt": "2026-11-07T12:17:58Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1977",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "postgres",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_a2b6260ae05483df75a8020b",
+          "sourceId": "soujava/vagas-java#1977",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1977",
+          "createdAt": "2026-11-07T12:17:37Z",
+          "updatedAt": "2026-11-07T12:17:58Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-07T12:17:37Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_53768095978702f736a39e69",
       "sourceId": "TechnologyMasters/jobs#731",
@@ -375,7 +583,7 @@
         "url": "https://github.com/rebase-network/who-is-hiring"
       },
       "createdAt": "2026-11-06T17:00:51Z",
-      "updatedAt": "2026-11-06T17:37:12Z",
+      "updatedAt": "2026-11-07T10:06:55Z",
       "url": "https://github.com/rebase-network/who-is-hiring/issues/1343",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -410,7 +618,7 @@
           "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
           "url": "https://github.com/rebase-network/who-is-hiring/issues/1343",
           "createdAt": "2026-11-06T17:00:51Z",
-          "updatedAt": "2026-11-06T17:37:12Z",
+          "updatedAt": "2026-11-07T10:06:55Z",
           "community": {
             "id": "rebase-network",
             "name": "rebase-network",
@@ -424,7 +632,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-06T17:00:51Z",
         "status": "fresh"
       }
@@ -550,7 +758,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-06T12:44:35Z",
         "status": "fresh"
       }
@@ -1024,7 +1232,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-05T13:27:55Z",
         "status": "fresh"
       }
@@ -1123,7 +1331,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-05T13:26:48Z",
         "status": "fresh"
       }
@@ -1214,7 +1422,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-05T13:26:23Z",
         "status": "fresh"
       }
@@ -1312,7 +1520,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-05T13:00:49Z",
         "status": "fresh"
       }
@@ -1444,7 +1652,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-05T12:57:24Z",
         "status": "fresh"
       }
@@ -1867,221 +2075,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-04T13:27:20Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_e31e0f0f47c698e1c0d5a6d9",
-      "sourceId": "TechnologyMasters/jobs#725",
-      "title": "Fellowlane (recruitment agency) - Cloud Engineer Microsoft 365/Azure - Aalsmeer, Netherlands - 3,750-4,500 EUR/Month",
-      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- EUR 3,750–4,500 gross/month, depending on knowledge and experience.\n- 32–40 hours per week.\n\n### Benefits\n- Freedom and technical responsibility in a small, informal team.\n- Training and certification opportunities.\n- Pension scheme, modern office in Aalsmeer and team activities.\n- A mix of infrastructure management, projects and customer advice.\n\n### Location\nAalsmeer, Netherlands, with customers in the surrounding region. Work is performed remotely on customer environments and on-site at customers. This is not advertised as a worldwide remote or fully work-from-home role.\n\n## What You Will Do\n- Manage and improve Microsoft 365, Azure and Windows Server environments.\n- Work with Active Directory, Exchange, Hyper-V, firewalls, switches, backups and monitoring.\n- Resolve complex second- and third-line technical issues.\n- Deliver cloud migrations and other technical projects.\n- Advise customers and support colleagues with complex technical questions.\n- Improve security, automation, standardisation and technical documentation.\n\n## Relevant Experience\nThis role is aimed at an experienced IT professional ready to combine Microsoft cloud and infrastructure operations with migrations, projects and customer advice. Relevant technologies include Microsoft 365, Azure, Windows Server, Active Directory, Exchange and Hyper-V.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting for an IT service provider in Aalsmeer. This is a client vacancy, not an internal Fellowlane role. The client supports regional organisations with cloud, infrastructure, workplaces, networking and security.\n\n## How to Apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-cloud-engineer/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [ ] Remote OK",
-      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - EUR 3,750–4,500 gross/month, depending on knowledge and experience. - 3...",
-      "issueState": "open",
-      "contentHash": "224a935371d2fab72fde5c7849fb9577be62a6cc3785a10e80977b79820e35d3",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote"
-      ],
-      "sourceTags": [
-        "remote"
-      ],
-      "author": {
-        "id": "nickfetter1-Fellowlane",
-        "name": "nickfetter1-Fellowlane",
-        "handle": "nickfetter1-Fellowlane",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "salary": {
-        "currency": "EUR",
-        "min": 3750,
-        "max": 4500,
-        "period": "month"
-      },
-      "createdAt": "2026-11-04T10:27:31Z",
-      "updatedAt": "2026-11-04T10:29:49Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/725",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Netherlands",
-        "countryCode": "NL",
-        "region": "Europe",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Netherlands · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "azure"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "on-site",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_e31e0f0f47c698e1c0d5a6d9",
-          "sourceId": "TechnologyMasters/jobs#725",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/725",
-          "createdAt": "2026-11-04T10:27:31Z",
-          "updatedAt": "2026-11-04T10:29:49Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 2,
-        "publishedAt": "2026-11-04T10:27:31Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_484b4bfff912b720db1a2be5",
-      "sourceId": "TechnologyMasters/jobs#724",
-      "title": "Fellowlane (recruitment agency) - Back-end Developer .NET/C# - Schiphol-Rijk, Netherlands (Hybrid) - From 4,500 EUR/Month",
-      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- From EUR 4,500 gross/month, based on 40 hours, depending on experience.\n- 32–40 hours per week.\n\n### Location and benefits\n- Schiphol-Rijk, Netherlands; hybrid, partly from home and partly at the office. This is not a worldwide remote position.\n- A small development team with direct influence on architecture and technical decisions.\n- Work on a growing electric-mobility platform contributing to the energy transition.\n\n## What You Will Do\n- Develop and maintain the back-end in .NET Core 10 and C#.\n- Build and maintain APIs and integrations with external systems.\n- Process and validate large amounts of data.\n- Work with Azure to keep the platform reliable and scalable.\n- Collaborate with a small team and contribute to architecture decisions.\n\n## Skills\n### Must have\n- Approximately five years of back-end development experience.\n- Strong .NET Core and C# knowledge and experience with Azure.\n- Bachelor-level working and thinking ability.\n- Initiative and comfort working in a growing environment.\n\n### Nice to have\n- API/integration and high-volume data-processing experience.\n- Interest in energy or electric mobility.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting on behalf of a growing Dutch company in electric mobility. This is a role with our client, not an internal Fellowlane position. The client name is shared during the introductory conversation.\n\n## How to apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-back-end-developer-net-core-10c/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - From EUR 4,500 gross/month, based on 40 hours, depending on experience....",
-      "issueState": "open",
-      "contentHash": "4ffba1541e9f8ceb14791c254953a895024bbf6abd6f856796b34d568795ac00",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "author": {
-        "id": "nickfetter1-Fellowlane",
-        "name": "nickfetter1-Fellowlane",
-        "handle": "nickfetter1-Fellowlane",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2026-11-04T10:26:26Z",
-      "updatedAt": "2026-11-04T10:29:35Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "azure",
-          "csharp",
-          "dotnet"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_484b4bfff912b720db1a2be5",
-          "sourceId": "TechnologyMasters/jobs#724",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-          "createdAt": "2026-11-04T10:26:26Z",
-          "updatedAt": "2026-11-04T10:29:35Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 2,
-        "publishedAt": "2026-11-04T10:26:26Z",
         "status": "fresh"
       }
     }
