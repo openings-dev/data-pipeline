@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-07T17:14:53.794Z",
+  "generatedAt": "2026-11-07T21:17:03.291Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_11c5ccdeb258bb1cac649506",
     "gh_e31e0f0f47c698e1c0d5a6d9",
     "gh_484b4bfff912b720db1a2be5",
     "gh_955226cbfa98dd29e44c402f",
@@ -22,10 +23,135 @@
     "gh_ac708d15d7fc65fbd03a15e6",
     "gh_d60aaac9a7d278d410f7fe50",
     "gh_1927268a7260ded05056f4ac",
-    "gh_fd9c1ce498613dfab8d56a8d",
-    "gh_e5c3fe2de4aec791023d34ec"
+    "gh_fd9c1ce498613dfab8d56a8d"
   ],
   "items": [
+    {
+      "id": "gh_11c5ccdeb258bb1cac649506",
+      "sourceId": "soujava/vagas-java#1975",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Pagamentos via Pix) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nUma cobrança Pix nasce quando o sistema gera o QR Code com valor, txid e prazo de expiração, e termina quando o banco avisa, por webhook, que o dinheiro entrou. Entre esses dois pontos muita coisa sai do roteiro: o aviso chega duas vezes, chega antes de a cobrança terminar de ser gravada, ou simplesmente não chega e o sistema precisa ir buscar a informação por consulta. Você vai trabalhar no serviço em Java com Spring Boot que cria essas cobranças, recebe as notificações e muda a situação de cada uma no PostgreSQL. A regra que não pode quebrar é curta: um pagamento recebido nunca é baixado duas vezes e nunca fica esquecido como pendente. Também entram as devoluções, totais ou parciais, que têm prazo próprio e precisam ficar sempre ligadas ao pagamento de origem.\n\n- Implementar a criação de cobrança imediata e com vencimento, gravando txid e expiração\n- Tratar o webhook de pagamento de forma idempotente, usando o identificador fim a fim da transação\n- Escrever a rotina que consulta cobranças sem retorno e atualiza a situação delas\n- Registrar devoluções parciais e totais vinculadas ao pagamento original\n- Criar migrações com Flyway e revisar os índices das consultas mais usadas\n- Escrever testes com JUnit para pagamento duplicado, expirado e devolvido\n- Acompanhar os logs da integração e abrir chamado com contexto completo quando algo falha\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Curso de tecnologia em andamento ou concluído, estágio ou projeto próprio em Java publicado\n- Java com classes, interfaces, coleções e tratamento de exceção\n- Noção de Spring Boot: controller, service e repositório\n- SQL para consultar, inserir e atualizar registros\n- Entender o que é uma API REST e como ler um JSON de resposta\n- Git para versionar e abrir pull request\n\n**Diferenciais:**\n- Ter lido a documentação pública do Pix publicada pelo Banco Central\n- Noção de transação no JPA e de bloqueio otimista\n- Docker para subir o banco na sua máquina\n- Saber por que dinheiro se representa com BigDecimal e não com double\n- Ter feito algum projeto que recebe webhook\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.000 a R$ 4.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-pagamentos-via-pix-473?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Uma cobrança Pix nasce quando o sistema gera o QR Code co...",
+      "issueState": "open",
+      "contentHash": "e5ee9e18c7e4d90ee4ca82599ecfe8f646707fb98163013cbc1749c48fd8347d",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "estágio",
+        "júnior",
+        "pj",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "estágio",
+        "júnior",
+        "pj",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3000,
+        "max": 4500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-04T13:27:20Z",
+      "updatedAt": "2026-11-05T23:01:06Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1975",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_11c5ccdeb258bb1cac649506",
+          "sourceId": "soujava/vagas-java#1975",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1975",
+          "createdAt": "2026-11-04T13:27:20Z",
+          "updatedAt": "2026-11-05T23:01:06Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-04T13:27:20Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_e31e0f0f47c698e1c0d5a6d9",
       "sourceId": "TechnologyMasters/jobs#725",
@@ -336,7 +462,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-03T18:57:28Z",
         "status": "fresh"
       }
@@ -437,7 +563,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-03T18:56:32Z",
         "status": "fresh"
       }
@@ -552,7 +678,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-03T17:19:12Z",
         "status": "fresh"
       }
@@ -1132,7 +1258,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-02T19:52:34Z",
         "status": "fresh"
       }
@@ -1233,7 +1359,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-02T19:52:16Z",
         "status": "fresh"
       }
@@ -1329,7 +1455,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-02T19:51:49Z",
         "status": "fresh"
       }
@@ -1425,7 +1551,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-02T19:51:28Z",
         "status": "fresh"
       }
@@ -2022,103 +2148,8 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-10-30T18:32:24Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_e5c3fe2de4aec791023d34ec",
-      "sourceId": "remoteintech/remote-jobs#2295",
-      "title": "57 company profiles missing company_size or required sections",
-      "description": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a failing validation check** for problems they didn't cause.\n\n(Invalid tech tags and slug/filename mismatches are being fixed separately in #2294 and #2293.)\n\n## How to help\n\nPick one or a few, check the company's own website, and open a PR. Please keep each PR to a handful of profiles so they're easy to review.\n\n- **`company_size`**: add one of `tiny` (1–10 employees), `small` (11–50), `medium` (51–200), `large` (201–1000) or `enterprise` (1000+). The company's About page or LinkedIn usually says.\n- **Missing sections**: add the heading listed (`## Company blurb`, `## Remote status` or `## How to apply`) with a short, factual paragraph. For `Remote status`, describe the company's actual remote policy as the company states it, not a guess.\n- If the company has **closed or been acquired**, say so in a comment here instead of filling it in, and we'll remove the profile (see #2271 for an example).\n\nSee [CONTRIBUTING](https://github.com/remoteintech/remote-jobs/blob/main/.github/CONTRIBUTING.md) for the full format. You can check your work locally with `node .github/scripts/validate-companies.js src/companies/<file>.md`.\n\nTick a box once its PR is merged.\n\n## Profiles\n\n- [ ] [ALLYDVM](https://remoteintech.company/companies/allydvm/) (`src/companies/allydvm.md`): `company_size`\n- [ ] [Appstractor](https://remoteintech.company/companies/appstractor/) (`src/companies/appstractor.md`): `company_size`\n- [ ] [Articulate](https://remoteintech.company/companies/articulate/) (`src/companies/articulate.md`): `company_size`\n- [ ] [Atento](https://remoteintech.company/companies/atento/) (`src/companies/atento.md`): `company_size`\n- [ ] [Atlassian](https://remoteintech.company/companies/atlassian/) (`src/companies/atlassian.md`): `company_size`\n- [ ] [BeBanjo](https://remoteintech.company/companies/bebanjo/) (`src/companies/bebanjo.md`): `company_size`\n- [ ] [Betable](https://remoteintech.company/companies/betable/) (`src/companies/betable.md`): `company_size`\n- [ ] [Bitovi](https://remoteintech.company/companies/bitovi/) (`src/companies/bitovi.md`): Remote status section\n- [ ] [Bloc](https://remoteintech.company/companies/bloc/) (`src/companies/bloc.md`): `company_size`\n- [ ] [Carbon Black](https://remoteintech.company/companies/carbon-black/) (`src/companies/carbon-black.md`): `company_size`\n- [ ] [CartStack](https://remoteintech.company/companies/cartstack/) (`src/companies/cartstack.md`): Remote status section\n- [ ] [Chef](https://remoteintech.company/companies/chef/) (`src/companies/chef.md`): `company_size`\n- [ ] [Chess](https://remoteintech.company/companies/chess/) (`src/companies/chess.md`): `company_size`\n- [ ] [Coingape](https://remoteintech.company/companies/coingape/) (`src/companies/coingape.md`): Remote status section\n- [ ] [Consumer Financial Protection Bureau](https://remoteintech.company/companies/consumer-financial-protection-bureau/) (`src/companies/consumer-financial-protection-bureau.md`): `company_size`, Remote status section\n- [ ] [Continu](https://remoteintech.company/companies/continu/) (`src/companies/continu.md`): `company_size`\n- [ ] [Cosmic Chimps](https://remoteintech.company/companies/cosmic-chimps/) (`src/companies/cosmic-chimps.md`): `company_size`\n- [ ] [Datadog](https://remoteintech.company/companies/datadog/) (`src/companies/datadog.md`): `company_size`\n- [ ] [Delighted](https://remoteintech.company/companies/delighted/) (`src/companies/delighted.md`): Remote status section\n- [ ] [DGraph](https://remoteintech.company/companies/dgraph/) (`src/companies/dgraph.md`): `company_size`\n- [ ] [Enok Collective](https://remoteintech.company/companies/enok/) (`src/companies/enok.md`): How to apply section\n- [ ] [Figma](https://remoteintech.company/companies/figma/) (`src/companies/figma.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Filament Group](https://remoteintech.company/companies/filament-group/) (`src/companies/filament-group.md`): `company_size`, Remote status section\n- [ ] [Findem](https://remoteintech.company/companies/findem/) (`src/companies/findem.md`): Remote status section\n- [ ] [Freeagent](https://remoteintech.company/companies/freeagent/) (`src/companies/freeagent.md`): Remote status section\n- [ ] [Got Soccer](https://remoteintech.company/companies/got-soccer/) (`src/companies/got-soccer.md`): `company_size`, Remote status section\n- [ ] [Healthfinch](https://remoteintech.company/companies/healthfinch/) (`src/companies/healthfinch.md`): `company_size`\n- [ ] [Hubstaff](https://remoteintech.company/companies/hubstaff/) (`src/companies/hubstaff.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Hugo](https://remoteintech.company/companies/hugo/) (`src/companies/hugo.md`): Remote status section\n- [ ] [IDoneThis](https://remoteintech.company/companies/idonethis/) (`src/companies/idonethis.md`): Remote status section\n- [ ] [Instamobile](https://remoteintech.company/companies/instamobile/) (`src/companies/instamobile.md`): `company_size`\n- [ ] [iOS App Templates](https://remoteintech.company/companies/ios-app-templates/) (`src/companies/ios-app-templates.md`): `company_size`\n- [ ] [Jolly Good Code](https://remoteintech.company/companies/jolly-good-code/) (`src/companies/jolly-good-code.md`): Remote status section\n- [ ] [Keen IO](https://remoteintech.company/companies/keen-io/) (`src/companies/keen-io.md`): Remote status section\n- [ ] [KissMetrics](https://remoteintech.company/companies/kissmetrics/) (`src/companies/kissmetrics.md`): `company_size`\n- [ ] [Knack](https://remoteintech.company/companies/knack/) (`src/companies/knack.md`): `company_size`, How to apply section\n- [ ] [Let's Encrypt](https://remoteintech.company/companies/lets-encrypt/) (`src/companies/lets-encrypt.md`): `company_size`, Remote status section\n- [ ] [Linaro](https://remoteintech.company/companies/linaro/) (`src/companies/linaro.md`): Remote status section\n- [ ] [LogDNA](https://remoteintech.company/companies/logdna/) (`src/companies/logdna.md`): How to apply section\n- [ ] [MaintainNow](https://remoteintech.company/companies/maintainnow/) (`src/companies/maintainnow.md`): valid `company_size` (startup)\n- [ ] [Mattermost](https://remoteintech.company/companies/mattermost/) (`src/companies/mattermost.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [MetaLab](https://remoteintech.company/companies/metalab/) (`src/companies/metalab.md`): `company_size`\n- [ ] [Netlify](https://remoteintech.company/companies/netlify/) (`src/companies/netlify.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [npm](https://remoteintech.company/companies/npm/) (`src/companies/npm.md`): Remote status section\n- [ ] [O'Reilly Media](https://remoteintech.company/companies/oreilly-media/) (`src/companies/oreilly-media.md`): `company_size`\n- [ ] [Our-Hometown Inc.](https://remoteintech.company/companies/our-hometown-inc/) (`src/companies/our-hometown-inc.md`): Remote status section\n- [ ] [PreviousNext](https://remoteintech.company/companies/previousnext/) (`src/companies/previousnext.md`): `company_size`, Remote status section\n- [ ] [Renaissance](https://remoteintech.company/companies/renaissance/) (`src/companies/renaissance.md`): Remote status section\n- [ ] [SignEasy](https://remoteintech.company/companies/signeasy/) (`src/companies/signeasy.md`): `company_size`\n- [ ] [Slack](https://remoteintech.company/companies/slack/) (`src/companies/slack.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Soostone](https://remoteintech.company/companies/soostone/) (`src/companies/soostone.md`): `company_size`, Remote status section\n- [ ] [Sourcegraph](https://remoteintech.company/companies/sourcegraph/) (`src/companies/sourcegraph.md`): Company blurb section, Remote status section, How to apply section\n- [ ] [Stitch Fix](https://remoteintech.company/companies/stitch-fix/) (`src/companies/stitch-fix.md`): `company_size`\n- [ ] [The Wirecutter](https://remoteintech.company/companies/the-wirecutter/) (`src/companies/the-wirecutter.md`): `company_size`\n- [ ] [Toptal](https://remoteintech.company/companies/toptal/) (`src/companies/toptal.md`): `company_size`\n- [ ] [Travis CI](https://remoteintech.company/companies/travis-ci/) (`src/companies/travis-ci.md`): Remote status section\n- [ ] [Turing](https://remoteintech.company/companies/turing/) (`src/companies/turing.md`): `company_size`",
-      "excerpt": "These 57 company profiles fail `.github/scripts/validate-companies.js` because they're missing something only a person can fill in. Until they're fixed, **anyone who opens a PR touching one of these files gets a faili...",
-      "issueState": "open",
-      "contentHash": "0ede572a498b4a943c4e6b10c7df8f1289be7242635a91c590e5f2fe22c04002",
-      "repository": "remoteintech/remote-jobs",
-      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "good first issue",
-        "help wanted",
-        "housekeeping"
-      ],
-      "sourceTags": [
-        "good first issue",
-        "help wanted",
-        "housekeeping"
-      ],
-      "author": {
-        "id": "dougaitken",
-        "name": "dougaitken",
-        "handle": "dougaitken",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/52214?v=4"
-      },
-      "community": {
-        "id": "remoteintech",
-        "name": "remoteintech",
-        "avatarUrl": "https://github.com/remoteintech.png?size=80",
-        "repository": "remoteintech/remote-jobs",
-        "url": "https://github.com/remoteintech/remote-jobs"
-      },
-      "createdAt": "2026-10-30T00:22:07Z",
-      "updatedAt": "2026-11-03T12:04:37Z",
-      "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_e5c3fe2de4aec791023d34ec",
-          "sourceId": "remoteintech/remote-jobs#2295",
-          "repository": "remoteintech/remote-jobs",
-          "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
-          "url": "https://github.com/remoteintech/remote-jobs/issues/2295",
-          "createdAt": "2026-10-30T00:22:07Z",
-          "updatedAt": "2026-11-03T12:04:37Z",
-          "community": {
-            "id": "remoteintech",
-            "name": "remoteintech",
-            "avatarUrl": "https://github.com/remoteintech.png?size=80",
-            "repository": "remoteintech/remote-jobs",
-            "url": "https://github.com/remoteintech/remote-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
         "ageDays": 8,
-        "publishedAt": "2026-10-30T00:22:07Z",
+        "publishedAt": "2026-10-30T18:32:24Z",
         "status": "fresh"
       }
     }
