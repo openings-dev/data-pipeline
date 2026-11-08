@@ -1,16 +1,112 @@
 {
-  "generatedAt": "2026-11-07T17:14:53.794Z",
+  "generatedAt": "2026-11-08T19:16:53.373Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "soujava/vagas-java",
   "totals": {
-    "opportunities": 17,
-    "openIssues": 13,
+    "opportunities": 18,
+    "openIssues": 14,
     "closedIssues": 4
   },
-  "dataHash": "6e6740ad5188accbda6f69f08ac201dc3493d7f5a9f327a38f9994b26cd5c34e",
+  "dataHash": "37b05eb548290f53e4dcb57efd2fab2c81d76df7e290d51232d32d3b1c8ea94e",
   "items": [
+    {
+      "id": "gh_ab503e80ddf6eaff0786fcef",
+      "sourceId": "soujava/vagas-java#1978",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Integração Fiscal e NFe) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nToda venda registrada no sistema precisa virar documento fiscal eletrônico, ser autorizada pela SEFAZ e ter o retorno guardado. A empresa mantém o serviço Java que faz isso: monta o XML da NFe e da NFSe, assina, transmite, trata o código de rejeição e armazena protocolo e chave de acesso. Você vai trabalhar nesse serviço junto de quem já conhece o terreno. O trabalho é bem concreto: quando um estado publica nova versão de schema, o XSD muda, campos entram e saem, e é preciso ajustar o gerador do XML e os testes antes da data de virada. Quando uma nota é rejeitada, é preciso traduzir o código de erro em algo que a pessoa do faturamento entenda. A parte boa é que a regra é pública e documentada: existe manual, existe schema e existe ambiente de homologação para testar sem emitir nota de verdade. A parte difícil é a quantidade de detalhe.\n\n- Gerar e validar XML de documento fiscal contra o XSD oficial da versão em uso.\n- Ajustar o mapeamento de campos quando uma nova versão de layout entra em vigor.\n- Consumir os serviços de autorização, consulta e cancelamento e tratar cada retorno.\n- Transformar código de rejeição em mensagem clara, registrada junto da nota.\n- Guardar XML autorizado e protocolo de forma recuperável por chave de acesso.\n- Testar cada alteração no ambiente de homologação antes de subir para produção.\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em área de tecnologia, ou projeto próprio publicado com código Java seu.\n- Conseguir ler e alterar classes Java em um projeto já existente.\n- Saber o que é XML e conseguir navegar em um documento com namespace.\n- Escrever consulta SQL simples em banco relacional.\n- Disciplina para seguir especificação escrita sem improvisar campo.\n\n**Diferenciais:**\n- Ter encostado em emissão de nota fiscal, ainda que em sistema de terceiro.\n- Conhecer Spring Boot ou qualquer framework de injeção de dependência.\n- Ter consumido serviço SOAP alguma vez.\n- Noção de assinatura digital e certificado A1.\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 4.000 a R$ 5.800 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-integracao-fiscal-e-nfe-358?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Toda venda registrada no sistema precisa virar documento ...",
+      "issueState": "open",
+      "contentHash": "053ab3ef8fbdd205c2f80c362563928b58eae920207d61415f908a6eef4dbf31",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "júnior",
+        "clt",
+        "pj",
+        "remoto",
+        "spring",
+        "soap",
+        "sql",
+        "java"
+      ],
+      "sourceTags": [
+        "júnior",
+        "clt",
+        "pj",
+        "remoto",
+        "spring",
+        "soap",
+        "sql",
+        "java"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 4000,
+        "max": 5800,
+        "period": "month"
+      },
+      "createdAt": "2026-11-08T13:55:33Z",
+      "updatedAt": "2026-11-08T13:55:53Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1978",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_a2b6260ae05483df75a8020b",
       "sourceId": "soujava/vagas-java#1977",
