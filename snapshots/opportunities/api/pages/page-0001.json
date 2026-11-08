@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-11-07T21:17:03.291Z",
+  "generatedAt": "2026-11-08T03:40:34.033Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_7e00452720eb21e53866702d",
     "gh_5e371ac29287a1e60fe77ff4",
-    "gh_78356fa90897428ba5de27b7",
     "gh_a2b6260ae05483df75a8020b",
     "gh_53768095978702f736a39e69",
     "gh_57374e1d0c8336945e6b5b6b",
@@ -26,6 +26,86 @@
     "gh_9c25b798ad552710cb428e33"
   ],
   "items": [
+    {
+      "id": "gh_7e00452720eb21e53866702d",
+      "sourceId": "cncf/gitjobs#393",
+      "title": "Add RSS feed for jobs",
+      "description": "With RSS, users can subscribe to the job feed and get notified when new job is posted.",
+      "excerpt": "With RSS, users can subscribe to the job feed and get notified when new job is posted.",
+      "issueState": "open",
+      "contentHash": "aa700e7539cf897daa7898a81492147fdb788b2045c00fbe87370bce4a09b308",
+      "repository": "cncf/gitjobs",
+      "repositoryUrl": "https://github.com/cncf/gitjobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "matusf",
+        "name": "matusf",
+        "handle": "matusf",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/18228995?v=4"
+      },
+      "community": {
+        "id": "cncf",
+        "name": "cncf",
+        "avatarUrl": "https://github.com/cncf.png?size=80",
+        "repository": "cncf/gitjobs",
+        "url": "https://github.com/cncf/gitjobs"
+      },
+      "createdAt": "2026-11-07T21:17:34Z",
+      "updatedAt": "2026-11-07T21:17:34Z",
+      "url": "https://github.com/cncf/gitjobs/issues/393",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_7e00452720eb21e53866702d",
+          "sourceId": "cncf/gitjobs#393",
+          "repository": "cncf/gitjobs",
+          "repositoryUrl": "https://github.com/cncf/gitjobs",
+          "url": "https://github.com/cncf/gitjobs/issues/393",
+          "createdAt": "2026-11-07T21:17:34Z",
+          "updatedAt": "2026-11-07T21:17:34Z",
+          "community": {
+            "id": "cncf",
+            "name": "cncf",
+            "avatarUrl": "https://github.com/cncf.png?size=80",
+            "repository": "cncf/gitjobs",
+            "url": "https://github.com/cncf/gitjobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-07T21:17:34Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_5e371ac29287a1e60fe77ff4",
       "sourceId": "backend-br/vagas#12493",
@@ -153,90 +233,6 @@
       "freshness": {
         "ageDays": 0,
         "publishedAt": "2026-11-07T20:58:13Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_78356fa90897428ba5de27b7",
-      "sourceId": "ambicuity/New-Grad-Jobs#462",
-      "title": "Job data is stale: last scrape 2026-11-07T12:55:40.689284Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/42391530021. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **213 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
-      "issueState": "open",
-      "contentHash": "2babce862d65af7c9e161dce2eef36c7c45052776be50458b43d1cf48f898398",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "scraper-stale"
-      ],
-      "sourceTags": [
-        "scraper-stale"
-      ],
-      "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-11-07T16:29:29Z",
-      "updatedAt": "2026-11-07T16:29:29Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/462",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_78356fa90897428ba5de27b7",
-          "sourceId": "ambicuity/New-Grad-Jobs#462",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/462",
-          "createdAt": "2026-11-07T16:29:29Z",
-          "updatedAt": "2026-11-07T16:29:29Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 0,
-        "publishedAt": "2026-11-07T16:29:29Z",
         "status": "fresh"
       }
     },
@@ -1791,10 +1787,10 @@
       "id": "gh_3aa462f04fe7bf10a982181a",
       "sourceId": "TechnologyMasters/jobs#728",
       "title": "LookoutAI (recruiting for a client) - Founding Engineer, Generalist - San Francisco, CA (in-person) - $150,000-$350,000 USD/year",
-      "description": "Our client is hiring its first Founding Engineers to build the core of a deeply horizontal system spanning data ingestion, spatial computation, agent orchestration, and product surfaces.\n\n- Role: Founding Engineer, Generalist (own modules end-to-end; mini-founder expectations)\n- Location: San Francisco, CA - full-time, in-person\n- Salary: $150,000-$350,000 per year; equity to be confirmed\n- Experience: 3+ years, owning architecture through production\n- Work authorization: OPT accepted; H-1B transfers only (no new H-1B sponsorship)\n\nFull JD: https://drive.google.com/file/d/10dKAKB8dHhffRr_icstVueY5F9WJT9Dr/view\n\nHow to apply: Email your CV to hari.m@lookoutai.io.",
-      "excerpt": "Our client is hiring its first Founding Engineers to build the core of a deeply horizontal system spanning data ingestion, spatial computation, agent orchestration, and product surfaces. - Role: Founding Engineer, Gen...",
+      "description": "Our client is hiring its first Founding Engineers to build the core of a deeply horizontal system spanning data ingestion, data processing, agent orchestration, and product surfaces.\n\n- Role: Founding Engineer, Generalist (own modules end-to-end; mini-founder expectations)\n- Location: San Francisco, CA - full-time, in-person\n- Salary: $150,000-$350,000 per year; equity to be confirmed\n- Experience: 3+ years, owning architecture through production\n- Work authorization: OPT accepted; H-1B transfers only (no new H-1B sponsorship)\n\nFull JD: https://drive.google.com/file/d/10dKAKB8dHhffRr_icstVueY5F9WJT9Dr/view\n\nHow to apply: Email your CV to hari.m@lookoutai.io.",
+      "excerpt": "Our client is hiring its first Founding Engineers to build the core of a deeply horizontal system spanning data ingestion, data processing, agent orchestration, and product surfaces. - Role: Founding Engineer, General...",
       "issueState": "open",
-      "contentHash": "9a07263cb2248d74ea648fd1bb81738a877bc056bc279aecd5bbcc223c8d39ba",
+      "contentHash": "5603bfbc9b65d52f61d8d897ff884eacd0f854f43418c86178c9d3b718b7b9de",
       "repository": "TechnologyMasters/jobs",
       "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
       "region": "Global",
@@ -1830,7 +1826,7 @@
         "period": "year"
       },
       "createdAt": "2026-11-05T05:33:01Z",
-      "updatedAt": "2026-11-05T05:33:01Z",
+      "updatedAt": "2026-11-07T22:18:26Z",
       "url": "https://github.com/TechnologyMasters/jobs/issues/728",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1868,7 +1864,7 @@
           "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
           "url": "https://github.com/TechnologyMasters/jobs/issues/728",
           "createdAt": "2026-11-05T05:33:01Z",
-          "updatedAt": "2026-11-05T05:33:01Z",
+          "updatedAt": "2026-11-07T22:18:26Z",
           "community": {
             "id": "TechnologyMasters",
             "name": "TechnologyMasters",
