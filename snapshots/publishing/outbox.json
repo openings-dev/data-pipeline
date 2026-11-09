@@ -58555,6 +58555,485 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_5a1ff9c946d4a24594ec28b1",
+        "revision": "6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372",
+        "idempotencyKey": "openings:job:gh_5a1ff9c946d4a24594ec28b1:6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372"
+      },
+      "canonical": {
+        "title": "[HÍBRIDO - São Paulo | SP] Pessoa Desenvolvedora Sênior | BAU e Modernização | Mercado de Capitais na [Evertec]",
+        "summary": "## **Descrição da vaga** Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de da...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_5a1ff9c946d4a24594ec28b1",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_5a1ff9c946d4a24594ec28b1",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_5a1ff9c946d4a24594ec28b1",
+              "revision": "6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372",
+              "canonicalPath": "/jobs/gh_5a1ff9c946d4a24594ec28b1",
+              "title": "[HÍBRIDO - São Paulo | SP] Pessoa Desenvolvedora Sênior | BAU e Modernização | Mercado de Capitais na [Evertec]",
+              "summary": "## **Descrição da vaga** Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de da...",
+              "status": "active",
+              "contentSha256": "cd8dca10861f317eaa1423923912fbdd34bf458b23b568026a6c4444ec453d83",
+              "content": {
+                "id": "gh_5a1ff9c946d4a24594ec28b1",
+                "sourceId": "soujava/vagas-java#1954",
+                "title": "[HÍBRIDO - São Paulo | SP] Pessoa Desenvolvedora Sênior | BAU e Modernização | Mercado de Capitais na [Evertec]",
+                "description": "## **Descrição da vaga**\nEstamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de dados Oracle, soluções corporativas de relatórios (reporting) e tecnologias Microsoft .NET.\n\nO(a) profissional atuará em iniciativas tecnológicas complexas envolvendo múltiplas equipes locais, apoiando tanto o desenvolvimento de aplicações modernas quanto a sustentação e modernização de plataformas legadas. A posição exige uma combinação de competências em engenharia de software, arquitetura de soluções, modelagem de dados, análise de negócios e gestão de stakeholders.\n\nO(a) candidato(a) deve ter conforto para interagir diretamente com usuários de negócio, levantar requisitos, projetar soluções escaláveis, dar suporte a sistemas legados e conduzir iniciativas de modernização ao longo de todo o ciclo de desenvolvimento de software, incluindo testes e implantação em produção.\n\n \n**Principais Responsabilidades**\n\n- Projetar, desenvolver e manter aplicações backend utilizando Java e aplicações frontend utilizando React.\n- Dar suporte, manter e aprimorar aplicações legadas desenvolvidas em tecnologias Microsoft .NET.\n- Participar de iniciativas estratégicas de modernização de aplicações .NET legadas, migrando-as para arquiteturas e stacks tecnológicos modernos.\n- Projetar soluções de dados e relatórios corporativos de ponta a ponta, garantindo escalabilidade, manutenção simplificada e aderência aos requisitos de negócio.\n- Definir arquitetura de sistemas, padrões de integração e soluções técnicas para plataformas novas e existentes.\n- Realizar modelagem de dados conceitual, lógica e física em bancos Oracle.\n- Projetar estruturas de banco de dados, otimizar consultas SQL e garantir integridade, performance e escalabilidade dos dados.\n- Trabalhar diretamente com stakeholders de negócio para levantamento, documentação e validação de requisitos funcionais e técnicos.\n- Traduzir requisitos de negócio em especificações técnicas e desenhos de solução.\n- Desenvolver novas ferramentas e sistemas do zero, desde a análise de requisitos até a implementação.\n- Participar de discussões arquiteturais e iniciativas de estratégia tecnológica.\n- Criar e executar testes unitários para garantir qualidade de código e estabilidade das aplicações.\n- Apoiar testes de integração de sistemas (SIT) e coordenar atividades de homologação com usuários (UAT).\n- Analisar defeitos, realizar análise de causa raiz e apoiar a resolução de problemas.\n- Trabalhar em estreita colaboração com equipes locais e globais das áreas de tecnologia e negócio.\n- Produzir e manter documentação técnica e funcional.\n- Sustentar e evoluir sistemas relacionados ao mercado de ações (equities) e às operações da B3.\n\n \n**Requisitos Técnicos**\n\n- Experiência sólida em desenvolvimento backend com Java.\n- Experiência sólida em desenvolvimento frontend com React.\n- Conhecimento prático em Microsoft .NET Framework e/ou .NET Core.\n- Experiência em sustentação e evolução de aplicações legadas em .NET.\n- Experiência em iniciativas de modernização de sistemas legados e transformação de aplicações.\n- Conhecimento avançado em Oracle Database.\n- Forte domínio de SQL e PL/SQL.\n- Experiência relevante em arquitetura de bancos de dados e otimização de performance.\n- Experiência comprovada em modelagem de dados conceitual, lógica e física.\n- Experiência no desenho de soluções corporativas de dados e relatórios.\n- Sólida compreensão de arquitetura de sistemas e sistemas distribuídos.\n- Experiência com APIs, integrações entre sistemas e desenho de aplicações corporativas.\n- Experiência na concepção e desenvolvimento de aplicações do zero.\n- Conhecimento de metodologias do Ciclo de Vida de Desenvolvimento de Software (SDLC).\n\n \n**Competências de Análise de Negócios e Funcionais**\n\n- Capacidade comprovada de conduzir sessões de levantamento de requisitos com usuários e stakeholders.\n- Capacidade de traduzir necessidades complexas de negócio em soluções técnicas escaláveis.\n- Experiência na elaboração de especificações funcionais, desenhos de solução e documentação técnica.\n- Forte capacidade analítica e de resolução de problemas.\n- Experiência no gerenciamento de prioridades concorrentes em múltiplos projetos.\n- Capacidade de atuar como ponte entre equipes de negócio e tecnologia.\n\n \n**Testes e Garantia da Qualidade**\n\n- Experiência na criação e execução de planos de testes unitários.\n- Experiência no suporte a testes de integração de sistemas (SIT).\n- Experiência na coordenação e suporte a testes de aceitação do usuário (UAT).\n- Capacidade de identificar, documentar e acompanhar defeitos até sua resolução.\n- Compromisso com qualidade, confiabilidade e melhoria contínua do software.\n\n \n**Soft Skills**\n\n- Excelente comunicação e habilidade de gestão de stakeholders.\n- Capacidade de interação eficaz com equipes técnicas, liderança executiva e usuários de negócio.\n- Excelente organização e gestão do tempo.\n- Alto nível de autonomia, responsabilidade e senso de dono.\n- Forte capacidade de liderança e influência.\n- Capacidade de atuar em um ambiente colaborativo, multicultural e global.\n- Perfil analítico e atenção aos detalhes.\n\n \n**Experiência de Mercado Desejável**\n\n- Experiência em corretoras, bancos de investimento, gestoras de recursos ou mercado de capitais.\n- Conhecimento do mercado de ações brasileiro e dos processos da B3.\n- Experiência com sistemas de negociação (trading), pós-negociação (post-trade), reportes regulatórios ou aplicações de middle/back office será considerada um diferencial.\n\n \n**Idioma**\nInglês avançado para comunicação com equipes globais, discussões de arquitetura, workshops de levantamento de requisitos e elaboração de documentação técnica. --> \n\n## **Local**\n\nHíbrido em São Paulo - Próx. ao Shopping Morumbi\n\n## **Benefícios**\n\nE ai, se identificou com o que leu até agora? Então, vou te contar o que você encontrará aqui, além de um ambiente dinâmico:\n\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\nValorizamos a diversidade e entendemos que o que acrescenta é justamente ideias e pontos de vistas variados. Por isso raça, cor, religião, gênero e identidade de gênero, nacionalidade, deficiência, orientação sexual, ascendência ou idade, não serão impeditivos de você fazer parte do nosso time.\n\n\n## **Contratação**\n\n- CLT\n\n## **Sobre a Evertec**\n\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## **Como se candidatar**\n\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Sênior | BAU e Modernização | Mercado de Capitais](https://jobs.quickin.io/sinqia/jobs/6a2047ba03cf9f0013288972)\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 07 dias após cada processo.\n\n#### Alocação\n- Alocado\n- Hibrido\n\n#### Nível\n- Sênior\n- Especialista",
+                "excerpt": "## **Descrição da vaga** Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de da...",
+                "issueState": "open",
+                "contentHash": "6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372",
+                "repository": "soujava/vagas-java",
+                "repositoryUrl": "https://github.com/soujava/vagas-java",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "alocado",
+                  "arquiteto",
+                  "backend",
+                  "clt",
+                  "frontend",
+                  "inglês avançado",
+                  "sql",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "alocado",
+                  "arquiteto",
+                  "backend",
+                  "clt",
+                  "frontend",
+                  "inglês avançado",
+                  "sql",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "DNina31",
+                  "name": "DNina31",
+                  "handle": "DNina31",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/157808255?v=4"
+                },
+                "community": {
+                  "id": "soujava",
+                  "name": "soujava",
+                  "avatarUrl": "https://github.com/soujava.png?size=80",
+                  "repository": "soujava/vagas-java",
+                  "url": "https://github.com/soujava/vagas-java"
+                },
+                "createdAt": "2026-09-09T15:04:41Z",
+                "updatedAt": "2026-11-09T04:27:39Z",
+                "url": "https://github.com/soujava/vagas-java/issues/1954",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "frontend",
+                    "fullstack",
+                    "support"
+                  ],
+                  "technologies": [
+                    "dotnet",
+                    "java",
+                    "react"
+                  ],
+                  "seniority": [
+                    "mid",
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "hybrid",
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_5a1ff9c946d4a24594ec28b1",
+                    "sourceId": "soujava/vagas-java#1954",
+                    "repository": "soujava/vagas-java",
+                    "repositoryUrl": "https://github.com/soujava/vagas-java",
+                    "url": "https://github.com/soujava/vagas-java/issues/1954",
+                    "createdAt": "2026-09-09T15:04:41Z",
+                    "updatedAt": "2026-11-09T04:27:39Z",
+                    "community": {
+                      "id": "soujava",
+                      "name": "soujava",
+                      "avatarUrl": "https://github.com/soujava.png?size=80",
+                      "repository": "soujava/vagas-java",
+                      "url": "https://github.com/soujava/vagas-java"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-09-09T15:04:41Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_6e4a15bd708ba95332fb79bc",
+        "revision": "0a95f6535e1bde37d166bafe3a2dbf70e90a8c16684364da9fdd615e34ebce1a",
+        "idempotencyKey": "openings:job:gh_6e4a15bd708ba95332fb79bc:0a95f6535e1bde37d166bafe3a2dbf70e90a8c16684364da9fdd615e34ebce1a"
+      },
+      "canonical": {
+        "title": "[Híbrido-SP] Fullstack developer Python/React & IA na Evertec 🧡",
+        "summary": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_6e4a15bd708ba95332fb79bc",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_6e4a15bd708ba95332fb79bc",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_6e4a15bd708ba95332fb79bc",
+              "revision": "0a95f6535e1bde37d166bafe3a2dbf70e90a8c16684364da9fdd615e34ebce1a",
+              "canonicalPath": "/jobs/gh_6e4a15bd708ba95332fb79bc",
+              "title": "[Híbrido-SP] Fullstack developer Python/React & IA na Evertec 🧡",
+              "summary": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+              "status": "active",
+              "contentSha256": "e4dd4fb7eb492cc2c8869aa0cac5c45c25086849a6279b781129fe29c9ed67ac",
+              "content": {
+                "id": "gh_6e4a15bd708ba95332fb79bc",
+                "sourceId": "frontendbr/vagas#8559",
+                "title": "[Híbrido-SP] Fullstack developer Python/React & IA na Evertec 🧡",
+                "description": "<!-- \n==================================================\nPOR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!\n\n!!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!!\n\nNão faça distinção de gênero no título da vaga.\n\nUse: \"Front-End Developer\" ao invés de \n\"Desenvolvedor Front-End\" \\o/\n\nExemplo: `[São Paulo] Front-End Developer na NOME DA EMPRESA`\n==================================================\n-->\n\n## **Sobre a Evertec**\n\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## **Descrição da vaga**\nBuscamos um(a) Desenvolvedor(a) Fullstack Sênior com experiência prática em implementação de soluções de IA/ML para integrar nosso time de tecnologia.\nEssa posição tem papel estratégico na evolução técnica da área: você será responsável por transformar direcionamentos de Tech Leads e Analistas de Negócio em soluções reais, atuando como referência prática em IA dentro do time.\n\n💡 **Por que essa posição é estratégica?**\nIntroduz capacidade prática de implementação de IA no time\nAcelera a entrega de soluções baseadas em IA\nPermite que arquitetos e tech leads foquem em estratégia e design\nDissemina conhecimento atualizado sobre ferramentas e tendências de IA.\n\n🛠️ **Responsabilidades**\nImplementar soluções de IA e fluxos baseados em agentes a partir de especificações técnicas\nIntegrar LLMs, pipelines de dados e ferramentas de IA em sistemas e plataformas existentes\nDesenvolver soluções com RAG (Retrieval Augmented Generation) e arquiteturas baseadas em agentes\nAtuar em conjunto com Tech Leads, contribuindo em revisões de design e seguindo padrões de arquitetura\nGarantir qualidade de código (clean code, testes, documentação e versionamento)\nCompartilhar conhecimento sobre novas ferramentas, modelos e boas práticas de IA com o time\nIdentificar e comunicar rapidamente bloqueios técnicos ou inconsistências de design\n\n## Local\n\nHíbrido em São Paulo/SP (Morumbi)., [SP], [São Paulo]\n\n## **Requisitos**\n\n- +5 anos de experiência em desenvolvimento de software\n- Pelo menos 1 ano de experiência prática com IA/ML aplicada\n- Forte experiência com Python\n- Experiência com desenvolvimento frontend (React)\n- Vivência na integração de LLMs em aplicações reais\n- Experiência com pipelines de RAG ou sistemas baseados em agentes\n- Sólidos fundamentos de engenharia de software (clean code, SOLID, testes, documentação, Git)\n- Capacidade de trabalhar com especificações técnicas e em times estruturados\n- Inglês fluente\n- Comunicação clara e objetiva\n- Proatividade na identificação de problemas\n- Colaboração com diferentes níveis técnicos\n- Interesse contínuo em evolução e aprendizado em IA\n\n## **Benefícios**\n\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Just dress no code (sem código de vestimenta);\n• Day off no aniversário;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Python + React + IA - Sênior](https://jobs.quickin.io/sinqia/jobs/6a635c9022a5d000132ef6d7)\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 07 dias após cada processo.\n\n#### Alocação\n- Alocado\n- Híbrido\n\n#### Nível\n- Pleno\n- Sênior\n- Especialista",
+                "excerpt": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
+                "issueState": "open",
+                "contentHash": "0a95f6535e1bde37d166bafe3a2dbf70e90a8c16684364da9fdd615e34ebce1a",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "alocado",
+                  "clt",
+                  "especialista",
+                  "híbrido",
+                  "pleno",
+                  "stale",
+                  "são paulo",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "alocado",
+                  "clt",
+                  "especialista",
+                  "híbrido",
+                  "pleno",
+                  "stale",
+                  "são paulo",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "DNina31",
+                  "name": "DNina31",
+                  "handle": "DNina31",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/157808255?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "createdAt": "2026-09-09T14:14:58Z",
+                "updatedAt": "2026-11-09T03:47:19Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8559",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "city": "em São Paulo",
+                  "subdivision": "SP",
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "em São Paulo, SP · Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "data-ai",
+                    "design",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "python",
+                    "react"
+                  ],
+                  "seniority": [
+                    "mid",
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "hybrid",
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_6e4a15bd708ba95332fb79bc",
+                    "sourceId": "frontendbr/vagas#8559",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8559",
+                    "createdAt": "2026-09-09T14:14:58Z",
+                    "updatedAt": "2026-11-09T03:47:19Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-09-09T14:14:58Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_bc6d8863701c8bf79e429eba",
+        "revision": "c4cbaf9b2912b97fc2081fa626a23a0f2f55be4379dcdcd3cf059bb46b834d07",
+        "idempotencyKey": "openings:job:gh_bc6d8863701c8bf79e429eba:c4cbaf9b2912b97fc2081fa626a23a0f2f55be4379dcdcd3cf059bb46b834d07"
+      },
+      "canonical": {
+        "title": "[Híbrido] Sr Software Engineer - Stealth",
+        "summary": "### Sobre a empresa Oportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técn...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_bc6d8863701c8bf79e429eba",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_bc6d8863701c8bf79e429eba",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_bc6d8863701c8bf79e429eba",
+              "revision": "c4cbaf9b2912b97fc2081fa626a23a0f2f55be4379dcdcd3cf059bb46b834d07",
+              "canonicalPath": "/jobs/gh_bc6d8863701c8bf79e429eba",
+              "title": "[Híbrido] Sr Software Engineer - Stealth",
+              "summary": "### Sobre a empresa Oportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técn...",
+              "status": "active",
+              "contentSha256": "ccdbe7b54bc53451db10a66d355ef0cdc3cb4097c91cb66d9d11fb94d16ace74",
+              "content": {
+                "id": "gh_bc6d8863701c8bf79e429eba",
+                "sourceId": "backend-br/vagas#12484",
+                "title": "[Híbrido] Sr Software Engineer - Stealth",
+                "description": "### Sobre a empresa\n\nOportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técnicas e de produto.\n\n### Site da empresa\n\nhttps://forms.gle/45hRpfEdqzKRGYAY6\n\n### Descrição da vaga\n\nPrincipais responsabilidades:\n\n• Participar das decisões de arquitetura, modelagem de dados e desenho de sistemas;\n• Desenvolver o core do produto;\n• Construir uma infraestrutura segura e escalável;\n• Contribuir para a estratégia de produto e priorização do roadmap;\n• Conversar com clientes para entender necessidades e validar soluções;\n• Apoiar a contratação e a mentoria de engenheiros.\n\n\n### Requisitos\n\nPerfil buscado:\n\n• Forte experiência em backend e conhecimentos de frontend;\n• Experiência em startups ou empresas de tecnologia;\n• Vivência prática construindo soluções com IA;\n• Visão de produto e negócio;\n• Autonomia para lidar com desafios abertos e prioridades em evolução.\n\nExperiência na construção de produtos do zero, o chamado 0 → 1, será um diferencial.\n\nStack: Go, Next.js e AWS. Experiência prévia nessas tecnologias não é obrigatória.\n\n📍 Modelo híbrido: terças e quintas-feiras no escritório, na Vila Madalena, em São Paulo.\n📄 Contratação PJ.\n\n### Benefícios\n\n🏥 Plano de saúde e férias anuais.\n\n### Faixa salarial\n\n_No response_\n\n### Nível\n\nSênior\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nHíbrido\n\n### Localização\n\nSão Paulo\n\n### Como se candidatar\n\nEnvie seu CV no formulário https://forms.gle/45hRpfEdqzKRGYAY6\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+                "excerpt": "### Sobre a empresa Oportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técn...",
+                "issueState": "open",
+                "contentHash": "c4cbaf9b2912b97fc2081fa626a23a0f2f55be4379dcdcd3cf059bb46b834d07",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "aws",
+                  "go",
+                  "híbrido",
+                  "pj",
+                  "sênior",
+                  "verificada"
+                ],
+                "sourceTags": [
+                  "aws",
+                  "go",
+                  "híbrido",
+                  "pj",
+                  "sênior",
+                  "verificada"
+                ],
+                "author": {
+                  "id": "hireflowhq",
+                  "name": "hireflowhq",
+                  "handle": "hireflowhq",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/348344309?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-10-26T14:47:20Z",
+                "updatedAt": "2026-11-09T09:17:36Z",
+                "url": "https://github.com/backend-br/vagas/issues/12484",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "go",
+                    "nextjs"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "contractor"
+                  ],
+                  "workModels": [
+                    "hybrid"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_bc6d8863701c8bf79e429eba",
+                    "sourceId": "backend-br/vagas#12484",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12484",
+                    "createdAt": "2026-10-26T14:47:20Z",
+                    "updatedAt": "2026-11-09T09:17:36Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 13,
+                  "publishedAt": "2026-10-26T14:47:20Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }

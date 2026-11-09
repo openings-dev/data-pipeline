@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-08T03:40:34.033Z",
+  "generatedAt": "2026-11-09T10:43:26.039Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "4e9f97953c9eaff5434ae328cd5b44043745b2cabd8b3eed2fce1d5758861ac7",
+  "dataHash": "d6769e92633e5cfc23e0ec07dbf3f9255e6f3931a4e44a53cfe7f867b356b1a5",
   "items": [
+    {
+      "id": "gh_12c4f52f84bec8dcc76c7871",
+      "sourceId": "ambicuity/New-Grad-Jobs#463",
+      "title": "Job data is stale: last scrape 2026-11-09T02:40:41.745459Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **433 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/42596912918. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **433 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "41890fc7b7b76256729530172308f790bbc465ec0caee1ebda8a5e899608b974",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-09T09:54:24Z",
+      "updatedAt": "2026-11-09T09:54:24Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/463",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_78356fa90897428ba5de27b7",
       "sourceId": "ambicuity/New-Grad-Jobs#462",
@@ -1779,66 +1837,6 @@
       "createdAt": "2026-03-02T23:39:26Z",
       "updatedAt": "2026-10-16T22:55:50Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/47",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_05eeb51288546d7881500ce7",
-      "sourceId": "ambicuity/New-Grad-Jobs#44",
-      "title": "[Beginner]: Extract User-Agent string in `fetch_workday_jobs` into a global constant",
-      "description": "### Description\nThere is a hardcoded `Mozilla/5.0...` User-Agent string inside `fetch_workday_jobs()`. Extract this into a global constant `DEFAULT_USER_AGENT`.\n\n### Why it matters\nDuplicating or hiding user agent strings makes them hard to update universally if the scraper gets blocked.\n\n### Acceptance Criteria\n- [ ] Create `GLOBAL_USER_AGENT` constant\n- [ ] Use it in the Workday headers dictionary\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description There is a hardcoded `Mozilla/5.0...` User-Agent string inside `fetch_workday_jobs()`. Extract this into a global constant `DEFAULT_USER_AGENT`. ### Why it matters Duplicating or hiding user agent stri...",
-      "issueState": "closed",
-      "contentHash": "d3dc2e8d5260d706250723e5182ad4afc3b5bc4e8be9a501514bb78b62b68886",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:18Z",
-      "updatedAt": "2026-10-16T22:55:48Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/44",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
