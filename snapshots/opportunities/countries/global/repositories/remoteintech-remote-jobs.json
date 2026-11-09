@@ -1,16 +1,81 @@
 {
-  "generatedAt": "2026-11-03T13:22:45.968Z",
+  "generatedAt": "2026-11-09T00:24:35.528Z",
   "country": "Global",
   "countryCode": "GLOBAL",
   "region": "Global",
   "repository": "remoteintech/remote-jobs",
   "totals": {
-    "opportunities": 3,
-    "openIssues": 2,
+    "opportunities": 4,
+    "openIssues": 3,
     "closedIssues": 1
   },
-  "dataHash": "b83f0a1d743cbdf8e2588d10f003eb46a2fa9cc0e0dbd7b2cc80721ecbef6e59",
+  "dataHash": "99448dd09d2e1c486b2ae18434100f1ad5bdb99bd3fb10c8801dab18fd77f7bf",
   "items": [
+    {
+      "id": "gh_cbf68a8a3082e4d2bfc4ef1c",
+      "sourceId": "remoteintech/remote-jobs#2304",
+      "title": "[Bug] Schema validation inconsistencies across legacy company profiles",
+      "description": "**Describe the bug**\nRunning the offline validator (`validate-companies.js`) across all 886 markdown files in `src/companies/` revealed several recurring schema inconsistencies on legacy profiles:\n1. **Slug Mismatches**: 43 files had frontmatter `slug` values that did not match their file slug (e.g. `akamai.md` had `slug: akamai-technologies-inc`).\n2. **Missing `company_size`**: 33 profiles lacked the required `company_size` enum value (`tiny`, `small`, `medium`, `large`, `enterprise`).\n3. **Section Heading Inconsistencies**: Multiple files had non-standard headings (double spaces like `##  Company blurb` or missing mandatory sections like `## Remote status` / `## How to apply`).\n4. **URL Syntax Typo**: `akamai.md` had a trailing `]\\` character in its `careers_url`.\n\n**Expected behavior**\nAll company profiles in `src/companies/*.md` should adhere to the required schema fields and headings defined in `validate-companies.js` without errors.\n\n**Desktop (please complete the following information):**\n- OS: Windows / Linux\n- Tool: Node.js validation runner\n\n**Additional context**\nA comprehensive pull request resolving all 96 affected files has already been submitted and passed CI checks: #2302.",
+      "excerpt": "**Describe the bug** Running the offline validator (`validate-companies.js`) across all 886 markdown files in `src/companies/` revealed several recurring schema inconsistencies on legacy profiles: 1. **Slug Mismatches...",
+      "issueState": "open",
+      "contentHash": "462271a1a39f53a89212e34f835e281d21e79646fc04b9ba90e2a96dc067d0e2",
+      "repository": "remoteintech/remote-jobs",
+      "repositoryUrl": "https://github.com/remoteintech/remote-jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "bug"
+      ],
+      "sourceTags": [
+        "bug"
+      ],
+      "author": {
+        "id": "bagussatoto",
+        "name": "bagussatoto",
+        "handle": "bagussatoto",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/87259393?v=4"
+      },
+      "community": {
+        "id": "remoteintech",
+        "name": "remoteintech",
+        "avatarUrl": "https://github.com/remoteintech.png?size=80",
+        "repository": "remoteintech/remote-jobs",
+        "url": "https://github.com/remoteintech/remote-jobs"
+      },
+      "createdAt": "2026-11-08T21:49:03Z",
+      "updatedAt": "2026-11-08T21:49:03Z",
+      "url": "https://github.com/remoteintech/remote-jobs/issues/2304",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "nodejs"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      }
+    },
     {
       "id": "gh_e5c3fe2de4aec791023d34ec",
       "sourceId": "remoteintech/remote-jobs#2295",
