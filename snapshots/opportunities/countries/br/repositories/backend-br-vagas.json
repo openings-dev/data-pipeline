@@ -1,24 +1,24 @@
 {
-  "generatedAt": "2026-11-09T10:43:26.039Z",
+  "generatedAt": "2026-11-09T21:48:57.392Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "backend-br/vagas",
   "totals": {
     "opportunities": 30,
-    "openIssues": 29,
-    "closedIssues": 1
+    "openIssues": 27,
+    "closedIssues": 3
   },
-  "dataHash": "5e4da82a9386d28e3e441ff162927237a87b9b282143bc11d595c211d21dd61a",
+  "dataHash": "7ee01d23ae296662d6a81828f351680b47f58a0adcf212f5decacf52b6600f98",
   "items": [
     {
-      "id": "gh_5e371ac29287a1e60fe77ff4",
-      "sourceId": "backend-br/vagas#12493",
-      "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
-      "description": "### Sobre a empresa\n\nA MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial.\n\nEsta publicação corresponde a **uma única oportunidade de desenvolvimento de software**, com foco em backend, APIs, dados e agentes inteligentes. A pessoa selecionada colaborará em duas frentes de produto da MKdigital: AI Bookkeeping Assistant e Plant Brownfield Reconstruction Agent.\n\n### Site da empresa\n\nhttps://www.mkdigital.ch\n\n### Descrição da vaga\n\nBuscamos uma pessoa em início de carreira, preferencialmente recém-formada ou em fase final de formação em Engenharia, Ciência da Computação ou área relacionada. **Experiência profissional anterior não é obrigatória.** A atuação é prioritariamente em backend; haverá também integração com interfaces web conforme as necessidades dos produtos.\n\nO trabalho combina programação, compreensão de processos de negócio, especificação de soluções, orientação de coding agents, testes e validação. Não é necessário conhecer previamente contabilidade ou engenharia industrial, mas **a disposição para aprender esses domínios é essencial**.\n\n#### 1. Projetos\n\n##### Projeto A — AI Bookkeeping Assistant (Suíça e Brasil)\n\nDesenvolvimento de uma plataforma de automação de processos contábeis utilizando inteligência artificial, LLMs e agentes inteligentes.\n\nAs principais atividades incluem:\n\n- Processamento e interpretação automática de documentos contábeis, incluindo notas fiscais, faturas, recibos e extratos bancários.\n- Integração de OCR, Document AI e modelos de linguagem.\n- Automação de lançamentos e classificação de transações contábeis.\n- Conciliação bancária e integração com sistemas financeiros.\n- Desenvolvimento de workflows inteligentes e agentes autônomos.\n- Integração com bancos de dados, APIs e serviços externos.\n- Testes, implantação e preparação da plataforma para utilização comercial.\n- Compreensão gradual dos processos contábeis e financeiros necessários à especificação e validação das funcionalidades.\n\n**Objetivo do projeto:** Contribuir para o desenvolvimento e lançamento comercial de uma solução operacional de automação contábil, inicialmente para o mercado suíço, com componentes específicos para o mercado brasileiro.\n\n##### Projeto B — Plant Brownfield Reconstruction Agent\n\nDesenvolvimento de uma plataforma baseada em inteligência artificial para reconstrução digital de instalações industriais existentes (*brownfield*), a partir de documentação técnica e outras fontes de dados.\n\nAs principais atividades incluem:\n\n- Desenvolvimento de agentes inteligentes para interpretação de documentação técnica.\n- Processamento de diagramas P&ID, documentação elétrica e de instrumentação (E&I).\n- Extração de informações de documentos históricos, fotografias, imagens e vídeos.\n- Modelagem e armazenamento de informações utilizando bancos de dados em grafos (GraphDB).\n- Identificação de equipamentos, instrumentos, conexões e relacionamentos técnicos.\n- Integração de informações de diferentes fontes em modelos digitais de engenharia.\n- Desenvolvimento de interfaces web para visualização e navegação dos modelos reconstruídos.\n- Compreensão gradual de conceitos de engenharia industrial, instalações, equipamentos e documentação técnica.\n\n**Objetivo do projeto:** Desenvolver um protótipo funcional capaz de importar documentação técnica, identificar e relacionar entidades de engenharia e apresentar os resultados em um modelo digital estruturado.\n\n#### 2. Tecnologias e ambiente de desenvolvimento\n\nOs projetos envolvem as seguintes tecnologias e práticas, entre outras:\n\n**AI Coding e agentes autônomos**\n- Claude Code, OpenAI Codex e outras ferramentas de programação assistida por IA.\n- Agentes autônomos de desenvolvimento de software (*Coding Agents*).\n- Agentic AI, LLMs, tool calling e orquestração de agentes.\n- Automação de tarefas de programação, testes, documentação e revisão de código.\n- Integração de agentes de programação em workflows de desenvolvimento.\n\n**Desenvolvimento paralelo e engenharia de software**\n- Git, GitHub, branches e Git worktrees.\n- Desenvolvimento paralelo utilizando múltiplos agentes de codificação.\n- Isolamento de ambientes e coordenação de alterações simultâneas.\n- Pull requests, code reviews e integração de código.\n- Testes automatizados, integração contínua (CI/CD) e documentação técnica.\n- Organização de projetos, atividades e entregas utilizando Azure DevOps.\n\n**Backend, frontend e dados**\n- Python e FastAPI.\n- REST APIs e integração entre sistemas.\n- JavaScript/TypeScript e React.\n- PostgreSQL, SQL e bancos de dados em grafos.\n- Processamento de documentos, OCR e pipelines de dados.\n\n**Infraestrutura e desenvolvimento**\n- Linux como ambiente de desenvolvimento e execução.\n- Docker e containers.\n- Servidores e infraestrutura em nuvem.\n- Ambientes automatizados de desenvolvimento, testes e implantação.\n- Conceitos de segurança, autenticação e gerenciamento de serviços.\n\nNão é necessário dominar todas essas tecnologias. Esperamos principalmente interesse em aprender, experimentar e aplicar novas ferramentas de maneira prática.\n\n#### 4. Desenvolvimento orientado ao domínio de aplicação\n\nUm aspecto importante dos projetos é a aproximação entre desenvolvimento de software e conhecimento dos processos que estão sendo automatizados.\n\n**No projeto de contabilidade**, será necessário compreender gradualmente conceitos como documentos contábeis, lançamentos, contas, conciliação bancária, impostos e fluxos financeiros.\n\n**No projeto de engenharia industrial**, será importante aprender conceitos relacionados a equipamentos, instrumentação, diagramas técnicos, estruturas de dados de engenharia e representação digital de instalações industriais.\n\nA expectativa não é encontrar alguém que já domine esses assuntos, mas um profissional que tenha interesse em aprendê-los e utilizá-los para:\n\n- Compreender necessidades e requisitos funcionais.\n- Participar da definição de soluções e especificações técnicas.\n- Traduzir processos de negócio em modelos de dados, regras e workflows.\n- Orientar agentes de programação na implementação das funcionalidades.\n- Criar testes e critérios de aceitação baseados em situações reais.\n- Identificar inconsistências e validar os resultados produzidos pelo software e pelos agentes de IA.\n\n**Buscamos alguém interessado em evoluir da programação para a compreensão, especificação e construção de soluções completas, combinando tecnologia, IA e conhecimento de domínio.**\n\n#### 5. Modelo de contratação — Prestação de serviços e empreendedorismo\n\nA MKdigital busca estabelecer uma parceria comercial com um profissional ou uma **microempresa (ME/CNPJ) especializada em desenvolvimento de software**.\n\nA oportunidade é especialmente interessante para profissionais recém-formados que desejam iniciar sua trajetória empreendedora, constituindo sua própria empresa de tecnologia e oferecendo serviços a clientes no Brasil e no exterior.\n\n**Modalidade de contratação**\n\n- **Preferencialmente:** Prestação de serviços por meio de empresa própria (ME/CNPJ), com emissão de notas fiscais.\n- **Apoio ao início da atividade empreendedora:** Para profissionais que ainda estejam no processo de abertura de sua empresa, a MK Digital poderá aceitar, excepcionalmente, a contratação inicial como profissional autônomo (CPF), por até três meses, observadas as obrigações legais e tributárias aplicáveis.\n- Após esse período, a continuidade da parceria estará condicionada à formalização de uma empresa própria (ME/CNPJ) e à celebração de um novo contrato comercial.\n- Não há exigência de exclusividade. O prestador poderá atender outros clientes, respeitando os compromissos de confidencialidade, propriedade intelectual e eventuais conflitos de interesse.\n\n**Projetos e condições comerciais**\n\n- **Duração estimada dos projetos:** 12 meses, com escopo, marcos de entrega e resultados técnicos definidos.\n- **Valor de referência:** R$ 72,50 por hora de serviço.\n- **Dedicação estimada:** Até aproximadamente 36 horas semanais durante os períodos de atividade, sem horário fixo obrigatório.\n- **Volume anual estimado:** 1.656 horas, considerando pausas pessoais, feriados e períodos de indisponibilidade.\n- **Orçamento anual estimado:** R$ 120.060, equivalente a uma média aproximada de R$ 10.000 mensais.\n- O faturamento será realizado conforme os serviços efetivamente prestados e as condições comerciais acordadas. O volume de horas é uma estimativa de planejamento, não uma garantia de contratação mínima.\n- **Local de execução:** 100% remoto, de qualquer cidade do Brasil.\n\nOs valores são referentes à prestação de serviços. O profissional ou empresa contratada será responsável por suas próprias obrigações fiscais e previdenciárias, conforme a legislação aplicável.\n\n**Organização da colaboração**\n\n- Os serviços serão organizados por projetos, atividades técnicas, marcos de entrega e critérios de aceitação.\n- As atividades e entregas serão acompanhadas por meio do Azure DevOps.\n- Estão previstas revisões técnicas semanais e aproximadamente duas reuniões curtas de alinhamento por semana, conforme a necessidade dos projetos.\n- A comunicação diária poderá ocorrer de forma assíncrona por ferramentas online.\n- O prestador terá autonomia na organização dos horários e na execução técnica dos serviços.\n- Todos os custos necessários de ferramentas de IA, APIs e infraestrutura em nuvem serão cobertos pela MKdigital.\n- O prestador deverá possuir computador próprio e conexão estável com a internet.\n\n### Requisitos\n\n#### 3. Perfil desejado\n\n**Requisitos principais**\n\n- Formação superior concluída ou em fase final em Engenharia, Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.\n- Boa base em programação, algoritmos, estruturas de dados e lógica computacional.\n- Conhecimento de alguma linguagem de programação, preferencialmente Python.\n- Familiaridade com Git e conceitos fundamentais de engenharia de software.\n- Interesse em Linux, infraestrutura e desenvolvimento de aplicações.\n- Interesse em inteligência artificial aplicada ao desenvolvimento de software.\n- Capacidade de investigar problemas, pesquisar soluções e trabalhar com autonomia.\n- Interesse em compreender processos de negócio e transformar requisitos em soluções de software.\n- Disposição para aprender conceitos de contabilidade, finanças e engenharia industrial.\n- Boa organização, comunicação e comprometimento com as entregas.\n\n**Diferenciais — Nice to have**\n\n- Experiência prática com Claude Code, OpenAI Codex ou outras ferramentas de AI Coding.\n- Conhecimento ou experiência com agentes autônomos de programação e Agentic AI.\n- Projetos pessoais, acadêmicos ou open source utilizando inteligência artificial e LLMs.\n- Experiência com Git worktrees, desenvolvimento paralelo ou múltiplos agentes de codificação.\n- Conhecimento de Linux, Docker, CI/CD e infraestrutura em nuvem.\n- Experiência com Python, FastAPI, React, APIs ou bancos de dados.\n- Conhecimento de GraphDB, processamento de documentos ou visão computacional.\n- Conhecimentos básicos de contabilidade, sistemas ERP, processos financeiros ou automação empresarial.\n- Familiaridade com documentação de engenharia, diagramas P&ID, instalações industriais ou sistemas CAD/CAE.\n- Experiência em análise de requisitos, especificação funcional ou modelagem de processos.\n- Certificações ou cursos relevantes em IA, cloud computing ou desenvolvimento de software.\n- **Inglês técnico**, especialmente para leitura de documentação, ferramentas e comunicação escrita.\n- **Conhecimentos de alemão** serão considerados um diferencial adicional.\n\nCertificações, conhecimentos prévios dos domínios de aplicação e experiência profissional anterior não são obrigatórios. Projetos desenvolvidos, domínio dos fundamentos e capacidade de resolver problemas terão maior peso na seleção.\n\n### Tecnologias\n\nPython, FastAPI, Linux, Docker, Git, PostgreSQL, SQL, TypeScript, JavaScript, CI/CD, Testes automatizados\n\n### Benefícios\n\n- Ferramentas de IA, APIs e infraestrutura em nuvem necessárias aos projetos custeadas pela MKdigital.\n- Colaboração remota, com autonomia na organização dos horários e sem exclusividade.\n- Participação na construção de produtos reais desde as fases iniciais, com possibilidade de continuidade em novos projetos conforme resultados e necessidades.\n\n### Faixa salarial\n\n**Valor de referência da prestação de serviços: R$ 72,50 por hora.** Até aproximadamente 36 horas semanais e 1.656 horas anuais estimadas; orçamento anual estimado de R$ 120.060. Faturamento pelos serviços efetivamente prestados, sem garantia de volume mínimo. Duração estimada dos projetos: 12 meses.\n\n### Nível\n\nJúnior\n\n### Regime de contratação\n\nPJ, Contrato, Freelance\n\nPreferência por ME/CNPJ com emissão de notas fiscais. Para quem estiver constituindo a própria empresa, poderá ser aceita prestação inicial como autônomo/CPF por até três meses, observadas as obrigações aplicáveis; a continuidade exige ME/CNPJ.\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil — qualquer cidade.\n\n### Como se candidatar\n\nEnvie para **[info@mkdigital.ch](mailto:info@mkdigital.ch)** com o assunto **“Candidatura — Desenvolvimento de Software / AI Coding”**:\n\n- Currículo ou perfil do LinkedIn.\n- GitHub, portfólio ou exemplos de projetos acadêmicos/pessoais, se disponíveis.\n- Breve apresentação e interesse em AI Coding e Agentic AI.\n- Eventual experiência com Claude Code, Codex, Linux ou outras tecnologias citadas.\n- Interesse em aprender os domínios de contabilidade e engenharia industrial.\n- Informação sobre ME/CNPJ existente ou interesse em constituir empresa própria.\n\nO processo será integralmente online, com análise de perfil, projetos e conversa técnica. Não é necessário ter empresa aberta no momento da candidatura.\n\n**Empresa:** MKdigital — https://www.mkdigital.ch\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-      "excerpt": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
+      "id": "gh_0031fc7e9077d48cbb294ce8",
+      "sourceId": "backend-br/vagas#12494",
+      "title": "[Remoto] Desenvolvedor(a) Backend Pleno - White Label e Plataforma - Mimix AI",
+      "description": "### Sobre a empresa\n\nA Mimix AI desenvolve uma plataforma de software para gerenciar operações white label de clientes do setor de robótica. A plataforma organiza a publicação de tarefas, o acompanhamento de envios e os repasses aos participantes.\n\n### Site da empresa\n\nhttps://www.mimix-ai.xyz\n\n### Descrição da vaga\n\nBuscamos uma pessoa desenvolvedora backend pleno para manter os serviços e as integrações das operações white label da Mimix AI e implementar novas funcionalidades da plataforma. O trabalho envolve escrever código, testar mudanças e investigar falhas em produção.\n\n- Manter e evoluir o backend e as integrações das operações white label.\n- Acompanhar a operação dos clientes white label, investigar problemas e encaminhar ou implementar os ajustes necessários.\n- Colaborar no desenvolvimento, nos testes e na entrega de novas funcionalidades da plataforma Mimix.\n\n### Requisitos\n\n**Obrigatórios:** experiência com desenvolvimento e manutenção de aplicações backend, APIs e integrações. Capacidade de investigar falhas em produção e comunicar os próximos passos com clareza.\n\n**Desejáveis:** experiência com plataformas white label ou produtos que atendem a vários clientes.\n\n### Nível\n\nPleno\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil\n\n### Como se candidatar\n\nFale com Marcos pelo [WhatsApp: +55 11 93201-4665](https://wa.me/5511932014665) ou escreva para [caldasvieiramarcos@gmail.com](mailto:caldasvieiramarcos@gmail.com). Inclua seu LinkedIn, GitHub ou currículo e conte em poucas linhas sobre uma funcionalidade que você ajudou a colocar em produção.\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+      "excerpt": "### Sobre a empresa A Mimix AI desenvolve uma plataforma de software para gerenciar operações white label de clientes do setor de robótica. A plataforma organiza a publicação de tarefas, o acompanhamento de envios e o...",
       "issueState": "open",
-      "contentHash": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
+      "contentHash": "37f671289febcdcb40dce5f5d29d4f4d09f5d47bba4ae6522cc840192a629029",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
@@ -30,29 +30,21 @@
       },
       "tags": [
         "pj",
-        "júnior",
-        "javascript",
-        "python",
+        "pleno",
         "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql"
+        "verificada"
       ],
       "sourceTags": [
         "pj",
-        "júnior",
-        "javascript",
-        "python",
+        "pleno",
         "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql"
+        "verificada"
       ],
       "author": {
-        "id": "marcelokipper04",
-        "name": "marcelokipper04",
-        "handle": "marcelokipper04",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/207054547?v=4"
+        "id": "moneymagic",
+        "name": "moneymagic",
+        "handle": "moneymagic",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/32413696?v=4"
       },
       "community": {
         "id": "backend-br",
@@ -61,41 +53,28 @@
         "repository": "backend-br/vagas",
         "url": "https://github.com/backend-br/vagas"
       },
-      "companyName": "** MKdigital — https://www.mkdigital.ch",
-      "createdAt": "2026-11-07T20:58:13Z",
-      "updatedAt": "2026-11-09T00:49:22Z",
-      "url": "https://github.com/backend-br/vagas/issues/12493",
+      "createdAt": "2026-11-09T12:03:33Z",
+      "updatedAt": "2026-11-09T12:29:40Z",
+      "url": "https://github.com/backend-br/vagas/issues/12494",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
         "region": "South America",
-        "city": "Python",
-        "subdivision": "AI",
         "workModel": "remote",
         "remoteScope": "unspecified",
-        "displayText": "Python, AI · Remote",
+        "displayText": "Brazil · Remote",
         "confidence": "explicit"
       },
       "taxonomy": {
         "areas": [
           "backend",
           "data-ai",
-          "devops-sre",
-          "frontend",
           "fullstack"
         ],
-        "technologies": [
-          "azure",
-          "docker",
-          "javascript",
-          "postgres",
-          "python",
-          "react",
-          "typescript"
-        ],
+        "technologies": [],
         "seniority": [
-          "junior"
+          "mid"
         ],
         "employmentTypes": [
           "contractor"
@@ -103,10 +82,7 @@
         "workModels": [
           "remote"
         ],
-        "languages": [
-          "de",
-          "en"
-        ]
+        "languages": []
       },
       "dataProvenance": {
         "location": "declared",
@@ -172,7 +148,7 @@
         "period": "year"
       },
       "createdAt": "2026-10-27T15:59:39Z",
-      "updatedAt": "2026-11-05T17:50:24Z",
+      "updatedAt": "2026-11-09T20:23:18Z",
       "url": "https://github.com/backend-br/vagas/issues/12486",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -266,7 +242,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-10-26T14:47:20Z",
-      "updatedAt": "2026-11-09T09:17:36Z",
+      "updatedAt": "2026-11-09T17:04:30Z",
       "url": "https://github.com/backend-br/vagas/issues/12484",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -302,6 +278,113 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_7a5fc9ff59c7e6ba5641e90f",
+      "sourceId": "backend-br/vagas#12481",
+      "title": "[Joinville/SC] Back-end ou Full Stack Developer (Node.js + React)",
+      "description": "### Sobre a empresa\n\nJoin our team of talented software engineers and be at the forefront of building innovative, AI-driven solutions. At LRA Ventures and Shipix, you'll have the opportunity to create groundbreaking products from scratch, tackling diverse challenges and making a significant impact across various industries. \n\nWe are dedicated to empowering businesses with intelligent tools that drive competitiveness, profitability, and sustainability. While our roots are in transforming the logistics sector, we are expanding our expertise to develop cutting-edge, AI-powered systems for a range of new projects. \n\nWe foster a collaborative environment where deep technological expertise meets creative problem-solving. As part of our international team, based in the Netherlands and Brazil, you will play a key role in building and launching new applications, and shaping the future of our technology.\n\n\n### Site da empresa\n\nhttps://lra-ventures.com/\n\n### Descrição da vaga\n\nAs a Full Stack Developer, you will be responsible for building new features on our platform, delivering complete end-to-end solutions. From concept to implementation, you will be involved in every stage of feature development.\nYou can have more experience as a backend or frontend developer, but you should be comfortable working across the full stack when necessary.\n\nResponsibilities:\n- Develop and implement new features for our platform using Node.js and React.\n- Work closely with the tech lead, other developers, and the Product Manager.\n- Participate in Agile team activities, including daily async check-ins, weekly planning and DDD meetings.\n- Ensure high code quality through code reviews and collaborative development practices.\n- Contribute to a steep learning curve by sharing knowledge and best practices with team members.\n\n\n### Requisitos\n\nRequirements:\n- 4+ years of experience in software development.\n- 2+ years of experience in backend development with Node.js and TypeScript.\n- 2+ years of experience in frontend development with React.\n- Experience in building SaaS products.\n- Experience working in software house or outsourcing \n- English speaker\n\nPreferred Experience:\n- Experience developing solutions for serverless and AWS lambda.\n- Experience working remotely and exceptional organizational skills.\n- Motivation and enthusiasm for tackling new project challenges from start to production.\n\n\n### Benefícios\n\n_No response_\n\n### Faixa salarial\n\n€ 1500 - € 3000 (Euros)\n\n### Nível\n\nSênior\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nHíbrido\n\n### Localização\n\nJoinville, SC\n\n### Como se candidatar\n\nAplicar formulário no link: https://docs.google.com/document/d/e/2PACX-1vQcue10b2pUbSbiyqiHSWUWEuaimZOQmd8tV1OwFtGCO0r4MpEHULZRqDirnZ2q3g/pub\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+      "excerpt": "### Sobre a empresa Join our team of talented software engineers and be at the forefront of building innovative, AI-driven solutions. At LRA Ventures and Shipix, you'll have the opportunity to create groundbreaking pr...",
+      "issueState": "open",
+      "contentHash": "21bedbe6086ad045157c46d8b2243e1813ddb1b48e6085f329a9627451d9fca2",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "sênior",
+        "node.js",
+        "aws",
+        "typescript",
+        "híbrido",
+        "ddd",
+        "verificada"
+      ],
+      "sourceTags": [
+        "pj",
+        "sênior",
+        "node.js",
+        "aws",
+        "typescript",
+        "híbrido",
+        "ddd",
+        "verificada"
+      ],
+      "author": {
+        "id": "logistictechrecruiter",
+        "name": "logistictechrecruiter",
+        "handle": "logistictechrecruiter",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/170283482?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "EUR",
+        "min": 1500,
+        "max": 3000,
+        "period": "year"
+      },
+      "createdAt": "2026-10-23T20:20:43Z",
+      "updatedAt": "2026-11-09T20:23:20Z",
+      "url": "https://github.com/backend-br/vagas/issues/12481",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Joinville",
+        "subdivision": "SC",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Joinville, SC · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "frontend",
+          "fullstack",
+          "leadership",
+          "product"
+        ],
+        "technologies": [
+          "aws",
+          "nodejs",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "lead",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
       }
     },
     {
@@ -356,7 +439,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T21:02:00Z",
-      "updatedAt": "2026-11-05T17:50:25Z",
+      "updatedAt": "2026-11-09T20:23:21Z",
       "url": "https://github.com/backend-br/vagas/issues/12468",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -448,7 +531,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:51:46Z",
-      "updatedAt": "2026-11-07T16:03:57Z",
+      "updatedAt": "2026-11-09T20:23:23Z",
       "url": "https://github.com/backend-br/vagas/issues/12463",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -468,6 +551,89 @@
         ],
         "technologies": [
           "javascript",
+          "python"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      }
+    },
+    {
+      "id": "gh_ea7def3477890f265af9646f",
+      "sourceId": "backend-br/vagas#12462",
+      "title": "[Cidade do México, México] Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n<p>In most instances, this position requires in-person interviews as part of the hiring process.</p><p>Please submit your resume in English - we can only consider applications submitted in this language.</p><p></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p></p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>1 year of experience with software development using C++ and Python.</li>\n<li>Ability to communicate in English fluently to interact with local stakeholders in this customer-facing role.</li>\n<li>Experience in writing and debugging software code</li>\n<li>Experience with one or more programming languages</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience with compilers or toolchains.</li>\n<li>Experience with low level programming, Android, iOS, macOS, or operating systems development.</li>\n<li>Knowledge of LLVM.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>As a Software Engineer on the Compilers, Runtimes and Toolchains (CRT) team, you will work very closely with other senior SWEs on the team in developing features in the space of LLVM optimization and code generation that support (but not limited to) build scalability, toolchain velocity, peak performance and safety. The SWE will develop changes (to tools and processes) that help us deliver state-of-the-art C++ toolchain efficiently and always correct and efficient + make the necessary changes upstream in LLVM toolchain that aligns with Google's needs and interests.</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Collaborate with teams to improve LLVM and related technologies to provide google developers with state-of-the-art toolchain and releases.</li>\n<li>Work with other senior SWEs and TLs on the team developing features and improvements to LLVM that support Google long term needs.</li>\n<li>Participate in team OKR planning and roadmap definition.<br>Identify problems that need to be solved through direct exchange with our customers.</li>\n<li>Bring your best self to the team and foster a collaborative culture.</li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Software Engineer, Compilers, Runtimes and Toolchains, Early Career na Google](https://coodesh.com/jobs/software-engineer-compilers-runtimes-and-toolchains-early-career-181721912?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "77d23d5305de9f688fc5bc3a73b17e91fbbaaf3d252b6bb33a01c91f13e35751",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "python",
+        "c++",
+        "verificada",
+        "formato-sugerido"
+      ],
+      "sourceTags": [
+        "python",
+        "c++",
+        "verificada",
+        "formato-sugerido"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "companyName": "Google",
+      "createdAt": "2026-10-14T20:49:12Z",
+      "updatedAt": "2026-11-09T20:23:24Z",
+      "url": "https://github.com/backend-br/vagas/issues/12462",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Mexico",
+        "countryCode": "MX",
+        "region": "North America",
+        "displayText": "Mexico",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
           "python"
         ],
         "seniority": [
@@ -540,7 +706,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:46:23Z",
-      "updatedAt": "2026-11-07T16:03:58Z",
+      "updatedAt": "2026-11-09T20:23:25Z",
       "url": "https://github.com/backend-br/vagas/issues/12461",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -628,7 +794,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:44:39Z",
-      "updatedAt": "2026-11-07T16:03:59Z",
+      "updatedAt": "2026-11-09T20:23:26Z",
       "url": "https://github.com/backend-br/vagas/issues/12460",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -715,7 +881,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:39:26Z",
-      "updatedAt": "2026-11-07T16:04:00Z",
+      "updatedAt": "2026-11-09T20:23:28Z",
       "url": "https://github.com/backend-br/vagas/issues/12457",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -804,7 +970,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:35:32Z",
-      "updatedAt": "2026-11-07T16:04:02Z",
+      "updatedAt": "2026-11-09T20:23:29Z",
       "url": "https://github.com/backend-br/vagas/issues/12454",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -893,7 +1059,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:34:32Z",
-      "updatedAt": "2026-11-07T16:04:02Z",
+      "updatedAt": "2026-11-09T20:23:31Z",
       "url": "https://github.com/backend-br/vagas/issues/12453",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -984,7 +1150,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:30:15Z",
-      "updatedAt": "2026-11-05T17:50:34Z",
+      "updatedAt": "2026-11-09T20:23:32Z",
       "url": "https://github.com/backend-br/vagas/issues/12452",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1071,7 +1237,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:28:54Z",
-      "updatedAt": "2026-11-05T17:50:35Z",
+      "updatedAt": "2026-11-09T20:23:33Z",
       "url": "https://github.com/backend-br/vagas/issues/12451",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1162,7 +1328,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:26:45Z",
-      "updatedAt": "2026-11-07T16:04:03Z",
+      "updatedAt": "2026-11-09T20:23:34Z",
       "url": "https://github.com/backend-br/vagas/issues/12450",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1255,7 +1421,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T19:35:24Z",
-      "updatedAt": "2026-11-07T16:04:04Z",
+      "updatedAt": "2026-11-09T20:23:35Z",
       "url": "https://github.com/backend-br/vagas/issues/12446",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1297,13 +1463,13 @@
       }
     },
     {
-      "id": "gh_38fdd972b2ec513aa3307c6f",
-      "sourceId": "backend-br/vagas#12444",
-      "title": "[Remoto] Dev java junior - DB1",
-      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n\n## Descrição da vaga\n\nO Anymarket é uma das principais plataformas de integração com marketplaces do Brasil  e o time é o coração que mantém tudo funcionando com qualidade enquanto a operação cresce. Se você está no início da sua jornada como desenvolvedor e quer aprender fazendo, ao lado de gente experiente disposta a te ensinar, essa é a sua largada.\n\nVocê vai participar ativamente do desenvolvimento e sustentação de soluções robustas e escaláveis, do backend ao frontend, contribuindo com código que resiste ao tempo e evoluindo a cada entrega. Vai trabalhar em times multidisciplinares, conectando tecnologia, negócio e design, e vai dar os primeiros passos usando Inteligência Artificial no fluxo de trabalho diário. Aqui, ninguém espera que você chegue sabendo tudo, só que tenha vontade real de aprender e crescer.\n\n## Local\n\nRemoto\n\n## Requisitos\n\nPerfil que buscamos:\n\n- Conhecimento em Java, seja acadêmico, de estudos próprios ou de primeiras experiências práticas.\n- Noções de Angular para interfaces administrativas e dashboards.\n- Familiaridade com PostgreSQL ou outro banco relacional.\n- Cursando graduação em TI ou área correlata.\n- Alguma experiência prática prévia com desenvolvimento (mesmo que breve)\n- Quando trava num problema, consulta logs e levanta contexto antes de pedir ajuda.\n- Quando erra, reflete sobre o que aconteceu e demonstra aprendizado concreto na próxima entrega.\n\nVai ser incrível se você souber ou tiver vontade de aprender:\n\n- Spring Boot e/ou Quarkus\n- Conceitos de caching com Redis ou similar\n- MongoDB ou outros bancos não relacionais\n- Mensageria assíncrona: Kafka, RabbitMQ ou ActiveMQ\n- Ciclo de deploy: Docker, Kubernetes e CI/CD\n- Arquitetura de microsserviços\n- IA no fluxo de trabalho: geração e revisão de código, análise de logs, automação de tarefas\n- RAG e spec-driven development (SDD)\n- Ferramentas de análise estática de código (Sonar/SAST)\n- Fluxos de autenticação como OAuth2/PKCE\n- Monitoramento em tempo real: Datadog, Grafana, ELK ou similar\n- \n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nCrédito Consignado com as melhores taxas (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/880681cc-4b9c-4199-b87b-09f0f414645d/desenvolvedor-java-junior?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n\n- Júnior\n\n### Regime\n\n\n- CLT\n\n\n### Alocação\n\n- Remoto",
+      "id": "gh_7c17d41a11070d7781299515",
+      "sourceId": "backend-br/vagas#12445",
+      "title": "[Remoto] Desenvolvedor Fullstack Pleno - Java & Angular - DB1",
+      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Descrição da vaga\n\nNo Anymarket, você vai construir o coração das nossas integrações, sistemas robustos, escaláveis e que atravessam times diferentes, do backend ao frontend. Sua missão começa pela imersão: entender o que existe, como funciona e por quê foi construído assim. A partir daí, você vai ganhar autonomia para evoluir essas soluções e habilitar a escala que o produto precisa para crescer.\n\nNo dia a dia, você vai trabalhar com times multidisciplinares de tecnologia, negócio e design, sempre com IA como aliada no fluxo de desenvolvimento, geração e revisão de código, análise de logs, automação de tarefas e spec-driven development fazem parte da rotina. Você vai escrever código que resiste ao tempo, do tipo que nasce forte desde o primeiro commit e continua de pé anos depois.\n## Local\n\nRemoto\n\n## Requisitos\n\nPerfil que buscamos:\n\n- Experiência sólida em Java com Spring Boot e/ou Quarkus, não só domínio do framework, mas entendimento do que acontece por trás dele\n- Domínio de Angular para construção de interfaces administrativas e dashboards\n- Experiência com PostgreSQL ou banco relacional equivalente\n- Vivência com Redis ou similar para caching\n- Experiência com mensageria assíncrona: Kafka, RabbitMQ, ActiveMQ ou similar\n- Conhecimento do ciclo completo de deploy: Docker, Kubernetes e CI/CD\n- Vivência real com arquitetura de microsserviços\n- Experiência com monitoramento em tempo real: Datadog, Grafana, ELK ou similar\n- IA incorporada ao fluxo de trabalho: geração e revisão de código, RAG, spec-driven development (SDD)\n- Quando trava num problema, busca ativamente a solução, questiona colegas, pesquisa, decompõe em partes menores\n- Assume responsabilidade pelos próprios erros e colabora genuinamente em equipe\n\nVai ser incrível se você souber ou tiver vontade de aprender:\n\n- MongoDB ou outro banco não-relacional\n- AWS em nível intermediário\n- Análise de performance em produção\n- Ferramentas de análise estática de código (Sonar/SAST)\n- Fluxos de autenticação OAuth2/PKCE\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nCrédito Consignado com as melhores taxas (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n## Contratação\n\nCLT\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/22573662-ab2c-4201-93d1-be107c5ded02/desenvolvedor-fullstack-pleno-java-and-angular?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n- Pleno\n\n\n### Regime\n\n- CLT\n\n### Alocação\n\n- Remoto",
       "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
       "issueState": "open",
-      "contentHash": "1025092bd368cb82010bc7490158d14000b1f03481f176bd6cfdabcb6e7a2b82",
+      "contentHash": "c8576129fa204a480e74616471c478571e05b776c9784b2534e17dbfda9b197f",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
@@ -1315,23 +1481,23 @@
       },
       "tags": [
         "clt",
-        "júnior",
+        "pleno",
         "java",
         "remoto",
+        "aws",
         "mongodb",
         "postgresql",
-        "rabbitmq",
-        "docker"
+        "rabbitmq"
       ],
       "sourceTags": [
         "clt",
-        "júnior",
+        "pleno",
         "java",
         "remoto",
+        "aws",
         "mongodb",
         "postgresql",
-        "rabbitmq",
-        "docker"
+        "rabbitmq"
       ],
       "author": {
         "id": "hadamaller",
@@ -1346,9 +1512,9 @@
         "repository": "backend-br/vagas",
         "url": "https://github.com/backend-br/vagas"
       },
-      "createdAt": "2026-10-13T19:51:25Z",
-      "updatedAt": "2026-11-04T17:44:02Z",
-      "url": "https://github.com/backend-br/vagas/issues/12444",
+      "createdAt": "2026-10-13T19:54:17Z",
+      "updatedAt": "2026-11-09T20:23:36Z",
+      "url": "https://github.com/backend-br/vagas/issues/12445",
       "sourceType": "github-issue",
       "jobLocation": {
         "workModel": "remote",
@@ -1360,10 +1526,12 @@
         "areas": [
           "backend",
           "design",
-          "frontend"
+          "frontend",
+          "fullstack"
         ],
         "technologies": [
           "angular",
+          "aws",
           "docker",
           "java",
           "kubernetes",
@@ -1373,7 +1541,7 @@
           "spring"
         ],
         "seniority": [
-          "junior"
+          "mid"
         ],
         "employmentTypes": [
           "employee"
@@ -1441,7 +1609,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-10-13T19:49:49Z",
-      "updatedAt": "2026-11-04T17:44:04Z",
+      "updatedAt": "2026-11-09T20:23:37Z",
       "url": "https://github.com/backend-br/vagas/issues/12443",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1479,104 +1647,6 @@
       },
       "dataProvenance": {
         "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_1cc381ec57be0517e8d9243b",
-      "sourceId": "backend-br/vagas#12441",
-      "title": "[Remoto ou Híbrido - São Paulo/SP] Full Stack Developer - Cogfy",
-      "description": "### Sobre a empresa\n\nA Cogfy é uma empresa de tecnologia que desenvolve plataformas de missão crítica para o setor público, com foco em automação, integrações e IA aplicada a milhões de interações. O processo seletivo é conduzido pela Combine Global Recruitment.\n\n### Site da empresa\n\nhttps://cogfy.ai\n\n### Descrição da vaga\n\nA plataforma atende governos e precisa lidar com milhões de interações, exigindo baixa latência, alta disponibilidade, segurança e rastreabilidade. O desafio é construir capacidades de produto AI-first que aumentem o throughput da Operação e a capacidade de venda do Comercial.\n\nO que você vai fazer:\n- Desenvolver e evoluir serviços de backend em Node.js focados em performance e escalabilidade\n- Projetar APIs, workers, filas, webhooks e módulos de integração\n- Evoluir componentes de mensageria, orquestração de jornadas, automações e agentes de IA\n- Trabalhar com arquitetura orientada a eventos, processamento assíncrono e tolerância a falhas\n- Integrar sistemas legados, CRMs, ERPs e plataformas de mensageria\n- Construir autenticação, RBAC, auditoria e governança de ações\n\nStack: Node.js, TypeScript, PostgreSQL, Redis, Docker, Kubernetes, APIs REST, filas e mensageria, LLMs e APIs de IA, RAG\n\n### Requisitos\n\n- Experiência sólida em produção com Node.js\n- Domínio forte de TypeScript\n- Experiência com APIs REST, webhooks, autenticação e integrações\n- Bom entendimento de arquitetura backend e modularização\n- Experiência com bancos relacionais e modelagem multi-tenant\n- Familiaridade com filas, workers e processamento assíncrono\n- Experiência com testes automatizados, observabilidade e CI/CD\n- Desejável: produtos SaaS B2B ou B2G\n- Desejável: plataformas low-code/no-code\n- Desejável: integrações com WhatsApp, ERPs, CRMs ou sistemas de governo\n- Desejável: experiência com IA generativa e ambientes regulados\n\n### Benefícios\n\n_No response_\n\n### Faixa salarial\n\n_No response_\n\n### Nível\n\nSênior\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nRemoto, Híbrido\n\n### Localização\n\nVaga remota ou híbrida; no modelo híbrido, o escritório fica em São Paulo/SP, na região de Cerqueira César.\n\n### Como se candidatar\n\nCandidate-se pela página da vaga: https://combineglobalrecruitment.na.teamtailor.com/jobs/709809-full-stack-developer\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-      "excerpt": "### Sobre a empresa A Cogfy é uma empresa de tecnologia que desenvolve plataformas de missão crítica para o setor público, com foco em automação, integrações e IA aplicada a milhões de interações. O processo seletivo ...",
-      "issueState": "closed",
-      "contentHash": "3aac5a90f630c0b086c2735b138a1f6c99f57e84c7831187cf94291b3ebc40f9",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pj",
-        "sênior",
-        "node.js",
-        "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql",
-        "docker"
-      ],
-      "sourceTags": [
-        "pj",
-        "sênior",
-        "node.js",
-        "remoto",
-        "testes automatizados",
-        "typescript",
-        "postgresql",
-        "docker"
-      ],
-      "author": {
-        "id": "CombineGlobalRecruitment",
-        "name": "CombineGlobalRecruitment",
-        "handle": "CombineGlobalRecruitment",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/339306612?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-10-09T15:07:16Z",
-      "updatedAt": "2026-11-07T15:19:45Z",
-      "url": "https://github.com/backend-br/vagas/issues/12441",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "São Paulo",
-        "subdivision": "SP",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "São Paulo, SP · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [
-          "docker",
-          "kubernetes",
-          "nodejs",
-          "postgres",
-          "redis",
-          "typescript"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
@@ -1631,7 +1701,7 @@
         "period": "month"
       },
       "createdAt": "2026-10-07T14:02:31Z",
-      "updatedAt": "2026-11-07T16:04:06Z",
+      "updatedAt": "2026-11-09T20:23:39Z",
       "url": "https://github.com/backend-br/vagas/issues/12440",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1668,13 +1738,13 @@
       }
     },
     {
-      "id": "gh_abc18a87f01200a3317a3019",
-      "sourceId": "backend-br/vagas#12432",
-      "title": "[Remoto] Back-end developer Net- (Strider)",
-      "description": "VAGA INTERNACIONAL | REMOTA | USD\n\n💻 BACK-END ENGINEER\n\n.NET • C# • SQL\n\n💰 USD 4.000–6.000/mês\n🇺🇸 Inglês C1+\n💼 5+ anos de experiência\n🕐 Long-term · 40h/semana\n\nPrincipais tecnologias:\n• .NET\n• C# (C Sharp)\n• SQL\n• Desenvolvimento Back-end\n\n🌎 Oportunidade para profissionais da América Latina.\n\n📩 Aplique 👇🏻\nhttps://app.onstrider.com/r/claudiaantunes?job=YmFjay1lbmQtZW5naW5lZXItOWJiMjU5YTc/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=",
-      "excerpt": "VAGA INTERNACIONAL | REMOTA | USD 💻 BACK-END ENGINEER .NET • C# • SQL 💰 USD 4.000–6.000/mês 🇺🇸 Inglês C1+ 💼 5+ anos de experiência 🕐 Long-term · 40h/semana Principais tecnologias: • .NET • C# (C Sharp) • SQL • D...",
+      "id": "gh_6ee5c31976b58995be8b656a",
+      "sourceId": "backend-br/vagas#12439",
+      "title": "[Remoto] Senior Full-stack Engineer - React.js, Nest.js, Kafka(Strider))",
+      "description": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM \n\n💻 SENIOR FULL-STACK ENGINEER\n\nSe você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional.\n\n🔹 React.js\n🔹 Nest.js\n🔹 Kafka\n\n💰 USD 5.5k – 8.5k/mês\n🗣️ Inglês C1+\n📌 6+ anos de experiência\n⏰ Long-term | 40h/semana\n\n🌎 Oportunidade para profissionais de tecnologia que buscam atuar em projetos internacionais e receber em dólar.\n\n👉 Candidatura pelo meu link abaixo, não recebo o currículo no privado.\nhttps://app.onstrider.com/r/claudiaantunes?job=c2VuaW9yLWZ1bGwtc3RhY2stZW5naW5lZXItOTk3YTViMDM/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=\n\n🔁 Conhece um Full-stack Engineer com esse perfil? Marque ou compartilhe!\n\n#FullStackDeveloper #ReactJS #NestJS #Kafka #SoftwareEngineer #TechJobs #RemoteJobs #VagasInternacionais #VagasRemotas #LATAM #JobsInUSD",
+      "excerpt": "🚀 VAGA INTERNACIONAL | REMOTA | USD| LATAM 💻 SENIOR FULL-STACK ENGINEER Se você é um(a) desenvolvedor(a) Full-stack Sênior e domina React.js, Nest.js e Kafka, confira esta oportunidade internacional. 🔹 React.js 🔹 ...",
       "issueState": "open",
-      "contentHash": "ec6f44b800343d959976b25872a11b0c7c886c2ee5193853454262071c771a13",
+      "contentHash": "d23e713bf5f6526900dbd54a0cff71c15969d183d35bc2ae1a8c9937287baff2",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
       "region": "South America",
@@ -1685,20 +1755,20 @@
         "region": "South America"
       },
       "tags": [
-        ".net",
+        "sênior",
         "remoto",
-        "sql",
-        "c#",
+        "apache kafka",
         "verificada",
-        "formato-sugerido"
+        "formato-sugerido",
+        "nestjs"
       ],
       "sourceTags": [
-        ".net",
+        "sênior",
         "remoto",
-        "sql",
-        "c#",
+        "apache kafka",
         "verificada",
-        "formato-sugerido"
+        "formato-sugerido",
+        "nestjs"
       ],
       "author": {
         "id": "Claudiaantunesdelima",
@@ -1715,13 +1785,13 @@
       },
       "salary": {
         "currency": "USD",
-        "min": 4000,
-        "max": 6000,
+        "min": 5500,
+        "max": 8500,
         "period": "month"
       },
-      "createdAt": "2026-09-23T17:03:05Z",
-      "updatedAt": "2026-11-07T16:04:07Z",
-      "url": "https://github.com/backend-br/vagas/issues/12432",
+      "createdAt": "2026-10-06T12:49:47Z",
+      "updatedAt": "2026-11-09T20:23:40Z",
+      "url": "https://github.com/backend-br/vagas/issues/12439",
       "sourceType": "github-issue",
       "jobLocation": {
         "workModel": "remote",
@@ -1731,13 +1801,14 @@
       },
       "taxonomy": {
         "areas": [
-          "backend"
+          "fullstack"
         ],
         "technologies": [
-          "csharp",
-          "dotnet"
+          "react"
         ],
-        "seniority": [],
+        "seniority": [
+          "senior"
+        ],
         "employmentTypes": [],
         "workModels": [
           "remote"
@@ -1749,7 +1820,7 @@
       "dataProvenance": {
         "location": "unknown",
         "salary": "inferred",
-        "seniority": "unknown",
+        "seniority": "inferred",
         "workModel": "declared"
       }
     },
@@ -1808,7 +1879,7 @@
         "period": "month"
       },
       "createdAt": "2026-09-23T16:57:25Z",
-      "updatedAt": "2026-11-07T16:04:08Z",
+      "updatedAt": "2026-11-09T20:23:41Z",
       "url": "https://github.com/backend-br/vagas/issues/12431",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1894,7 +1965,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-15T17:42:40Z",
-      "updatedAt": "2026-11-04T17:44:12Z",
+      "updatedAt": "2026-11-09T20:23:43Z",
       "url": "https://github.com/backend-br/vagas/issues/12422",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1984,7 +2055,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-08T11:29:19Z",
-      "updatedAt": "2026-11-05T17:50:43Z",
+      "updatedAt": "2026-11-09T20:23:44Z",
       "url": "https://github.com/backend-br/vagas/issues/12416",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2079,7 +2150,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-03T11:53:48Z",
-      "updatedAt": "2026-11-05T17:50:44Z",
+      "updatedAt": "2026-11-09T20:23:45Z",
       "url": "https://github.com/backend-br/vagas/issues/12412",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2174,7 +2245,7 @@
       },
       "companyName": "30 dias de férias remuneradas por ano",
       "createdAt": "2026-08-27T13:28:41Z",
-      "updatedAt": "2026-11-05T17:50:44Z",
+      "updatedAt": "2026-11-09T20:23:46Z",
       "url": "https://github.com/backend-br/vagas/issues/12397",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2207,93 +2278,6 @@
         ],
         "workModels": [
           "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_cb2ee2711308cdd4a5a45c69",
-      "sourceId": "backend-br/vagas#12292",
-      "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
-      "description": "## Nossa empresa\nA Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para negócios de todos os tamanhos. Nossa equipe de experts vive e respira o setor financeiro, atualizando nossas soluções constantemente para tornar suas operações mais digitais, melhorar a performance, inovar no atendimento aos clientes e garantir que todas as exigências regulatórias sejam 100% cumpridas.\n\nTodas as nossas oportunidades são inclusivas e abertas para pessoas com deficiência. 🌟\n\n## Descrição da vaga\n**DESAFIO**\nParticipar do desenvolvimento e manutenção de aplicações web utilizando ASP.NET, C#, JavaScript, e outras tecnologias relacionadas.\nImplementar e otimizar soluções utilizando HTML, CSS, Bootstrap, e JSon, garantindo alta performance e usabilidade.\nDesenvolver e manter banco de dados SQL Server, incluindo a criação e otimização de triggers, stored procedures e aplicação de regras de normalização.\nIntegrar e consumir WebServices (SOAP e REST) nas aplicações desenvolvidas.\nControlar as mudanças no desenvolvimento de software para assegurar a estabilidade e evolução contínua dos projetos.\nIdentificar e corrigir problemas no código, bem como propor melhorias e oportunidades de refatoração para manter a qualidade do software.\nColaborar com equipes multifuncionais para garantir que as soluções atendam aos requisitos de negócios e qualidade.\n\n## Local\nRemoto.\n\n## Requisitos\n\n**O que você precisa ter:**\n\n- Ensino superior completo ou em andamento em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas. \n- Entendimento de processos de desenvolvimento, qualidade e maturidade de software.\n- Experiência e conhecimento em Linguagem de programação: domínio de aplicação e entendimento de sintaxe e desempenho de linguagens como ASP.NET C#, Java script, Json, Bootstrap \n- Experiência com WEB JS/Jquery/Ajax, Webforms, Bootstrap, HTML, JSon e CSS, SQL Server, incluindo normalização, triggers, e stored procedures. \n- Conhecimento em SOAP e REST. \n- Habilidade analítica para detectar problemas e propor soluções eficazes. \n- Proatividade e boa comunicação para colaborar com diferentes equipes.\n\n## Benefícios\n🍽️ Auxílio Alimentação: para você escolher suas refeições com liberdade.\n👶Auxílio Creche: Para ajudar nas despesas dos pequenos.\n👶 Licença Maternidade e Paternidade Estendida: Mais tempo para aproveitar os momentos especiais.\n🏥 Assistência Médica SulAmérica: Cuidado completo para você e sua família.\n🛡️ Seguro de Vida e Funeral: Proteção garantida.\n🏡 Auxílio Home Office: Apoio financeiro para montar e manter seu espaço de trabalho em casa, com conforto e eficiência.\n💊 Descontos em Farmácias: Economize com o Univers.\n🎉 Day Off: Dia de folga no mês do seu aniversário para celebrar em grande estilo!\n\n## Contratação\nCLT.\n\n## Como se candidatar\nCurtiu o desafio e quer fazer parte do nosso time?\n\nPara se candidatar, basta enviar o seu currículo atualizado para o e-mail:\n📧 kerolayne.fbarros@dimensa.com.br\n\nDica: Coloque no assunto do e-mail: **Vaga ASP .NET** para localizarmos sua mensagem mais rápido!\n\n### Nível\n- Junior/Pleno\n\n### Regime\n- CLT\n\n### Alocação\n- Remoto",
-      "excerpt": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
-      "issueState": "open",
-      "contentHash": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pleno",
-        "javascript",
-        ".net",
-        "java",
-        "remoto",
-        "sql",
-        "asp"
-      ],
-      "sourceTags": [
-        "clt",
-        "pleno",
-        "javascript",
-        ".net",
-        "java",
-        "remoto",
-        "sql",
-        "asp"
-      ],
-      "author": {
-        "id": "kerol-barros",
-        "name": "kerol-barros",
-        "handle": "kerol-barros",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-06-23T19:07:13Z",
-      "updatedAt": "2026-11-04T17:44:16Z",
-      "url": "https://github.com/backend-br/vagas/issues/12292",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "csharp",
-          "dotnet",
-          "java",
-          "javascript"
-        ],
-        "seniority": [
-          "junior",
-          "mid"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
           "remote"
         ],
         "languages": []
@@ -2362,7 +2346,7 @@
         "period": "month"
       },
       "createdAt": "2026-05-25T16:54:47Z",
-      "updatedAt": "2026-11-07T16:04:10Z",
+      "updatedAt": "2026-11-09T20:23:47Z",
       "url": "https://github.com/backend-br/vagas/issues/12245",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2406,7 +2390,7 @@
       "title": "[Remoto] Tech Lead - Igma",
       "description": "## Nossa empresa\n\nA Igma é uma empresa de tecnologia que cria produtos digitais críticos — sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n\n## Descrição da vaga\n\nEstamos em busca de uma pessoa Tech Lead para se juntar ao nosso Chapter de desenvolvimento e criar produtos digitais para as maiores empresas do Brasil.\nUnimos tecnologia e design para resolver problemas complexos de empresas. Criamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n**Responsabilidades**\n\nNa Igma, como Tech Lead, você é responsável por garantir que nossas entregas de tecnologias tenham uma arquitetura sólida e escalável, bem como acompanhar a qualidade de código de sua equipe. O desafio será desenhar e planejar arquiteturas, propostas de infraestrutura, bem como escolher as melhores tecnologias para o projeto. Levando em consideração performance, segurança e skills do time. É essencial ter aptidão para trabalhar em equipe com profissionais de diferentes áreas, saiba se comunicar com clareza e tenha adaptabilidade para lidar com mudanças constante.\n\nPara isso é necessário fazer parte de sua rotina:\n\n- Git\n- Docker\n- AWS/Azure/GCP\n- CI/CD\n- Testes (Unitários, interface, integração)\n- Code Review com boas práticas\n- Principais Tecnologias: Python e .NET\n- Curiosidade ativa por Inteligência Artificial e disposição para explorar como a IA pode potencializar seu trabalho\n\n## Local\n\nRegime: 100% remoto\n\n## Requisitos\n\n- Arquitetura / Infra-estrutura, incluindo a análise e escolha de tecnologias adequadas para cada projeto.\n- Micro-serviços\n- Cloud\n- Containerização\n- API\n- Versionamento\n- Testes automatizados\n- CI / CD\n\n**Premissas culturais**\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n## Benefícios\n\n- Trabalho 100% remoto\n- Plano de Saúde e odontológico individual\n- Auxílio Cuidado e Desenvolvimento\n- Incentivo à prática de esportes\n- Seguro de vida\n- Cartão multi-benefício através do Caju\n- Auxílio Remoto para investimento em equipamentos (R$2.000 anual)\n- PJ - 30 dias de férias remuneradas\n\n## Contratação\n\nPJ\n\n## Como se candidatar\n\n(https://jobs.quickin.io/igma/jobs/69fe477d6a49d70013459688)\n\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto\n\n**Etapas do processo**\n\n1. Cadastro\n2. Entrevista inicial\n3. Fit Cultural\n4. Entrevista técnica\n5. Proposta\n6. Contratação",
       "excerpt": "## Nossa empresa A Igma é uma empresa de tecnologia que cria produtos digitais críticos — sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico ...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "fff1845ef3aa306792577dca15ae57c95533faae218384cfd9df3a661e6b8052",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
@@ -2451,7 +2435,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-05-08T20:43:06Z",
-      "updatedAt": "2026-11-09T09:24:14Z",
+      "updatedAt": "2026-11-09T18:28:59Z",
       "url": "https://github.com/backend-br/vagas/issues/12234",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2497,7 +2481,7 @@
       "title": "[Remoto] Pessoa Desenvolvedora Full-Stack Sênior - Igma",
       "description": "## Nossa empresa\n\nA Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n## Descrição da vaga\n\nEstamos em busca de uma Pessoa Desenvolvedora Full-Stack para se juntar ao nosso Chapter de desenvolvimento, fortalecer o time de projetos e criar produtos digitais para as maiores empresas do Brasil.\n\nUnimos tecnologia e design para resolver problemas complexos de empresas. Criamos produtos digitais que revolucionam o relacionamento entre empresas e consumidores.\n\n**Na Igma você será responsável por:**\n\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n\n## Local\n\nRegime: 100% remoto\n\n## Requisitos\n\n- Experiência comprovada de ao menos **4 anos** com desenvolvimento full-stack.\n- Experiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.\n- Experiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.\n- Conhecimento em arquiteturas modernas e boas práticas de desenvolvimento.\n- Experiência com integração de APIs REST e/ou GraphQL.\n- Conhecimento em bancos de dados relacionais e não relacionais.\n- Controle de versão com Git.\n- Boas práticas de testes automatizados (unitários e integração).\n- Familiaridade com pipelines de CI/CD.\n- Conhecimento em cloud e ambientes de deploy será considerado um diferencial.\n\n**Premissas culturais**\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n## Benefícios\n\nTrabalho 100% remoto\nPlano de Saúde individual\nAuxílio Cuidado e Desenvolvimento\nIncentivo à prática de esportes\nSeguro de vida\nCartão multi-benefício através do Caju\nAuxílio Remoto para investimento em equipamentos (R$2.000 anual)\nPJ - 30 dias de férias remuneradas\n\n## Contratação\n\nModelo de contratação: PJ \n\n## Como se candidatar\n\n(https://jobs.quickin.io/igma/jobs/69fdf8136a49d7001314045c)\n\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto\n\n**Etapas do processo**\n\n1. Cadastro\n2. Entrevista inicial\n3. Fit Cultural\n4. Entrevista técnica\n5. Proposta\n6. Contratação",
       "excerpt": "## Nossa empresa A Igma é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico d...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "d4c2a5cbfd1a9fa74b22248fdd45e5444efb07f3e3b6f8d7707690c8a0630bca",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
@@ -2542,7 +2526,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-05-08T15:51:18Z",
-      "updatedAt": "2026-11-09T09:17:32Z",
+      "updatedAt": "2026-11-09T18:29:08Z",
       "url": "https://github.com/backend-br/vagas/issues/12233",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2587,7 +2571,7 @@
       "title": "[Remoto] Desenvolvedor Full-Stack Pleno - Igma",
       "description": "## **Nossa empresa**\n\nA **Igma** é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que\nfuncionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado técnico de quem já transformou grandes empresas. Unimos estratégia, engenharia e design para resolver problemas reais com consistência e impacto. Nos orgulhamos de entregar produtos tecnicamente memoráveis.\n\n## **Descrição da vaga**\n\nNa **Igma**, como **Dev Full-Stack,** você será responsável por:\n\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n- Desenvolver e manter aplicações escaláveis, performáticas e com foco em experiência do usuário.\n- Atuar tanto no frontend quanto no backend, contribuindo para a evolução completa dos produtos.\n- Colaborar com designers, PMs e demais desenvolvedores para transformar ideias em soluções de alta qualidade.\n- Garantir a qualidade do código e seguir boas práticas de engenharia.\n- Participar ativamente de discussões técnicas, code reviews e decisões de arquitetura.\n- Contribuir para a melhoria contínua dos processos, ferramentas e padrões do time.\n\n**Premissas culturais**\n\n- Coragem para realizar o que acredita\n- Excelência na busca constante por superação\n- Disposição genuína para se conectar com pessoas, sejam colegas, clientes ou parceiros\n- Transparência para trabalhar em um ambiente de confiança\n- Energia e intensidade para resolver problemas e entregar valor\n\n**Etapas do processo**\n\n1. Cadastro\n2. Entrevista inicial\n3. Fit Cultural\n4. Entrevista técnica\n5. Proposta\n6. Contratação\n\n## Local\n\n100% Remoto\n\n## **Requisitos**\n\n- Experiência comprovada de ao menos 2 anos com desenvolvimento fullstack.\n- Experiência com desenvolvimento frontend utilizando React, Next.js ou tecnologias similares.\n- Experiência com desenvolvimento backend utilizando Node.js, NestJS ou tecnologias equivalentes.\n- Conhecimento em arquiteturas modernas e boas práticas de desenvolvimento.\n- Experiência com integração de APIs REST e/ou GraphQL.\n- Conhecimento em bancos de dados relacionais e não relacionais.\n- Controle de versão com Git.\n- Boas práticas de testes automatizados (unitários e integração).\n- Familiaridade com pipelines de CI/CD.\n- Conhecimento em cloud e ambientes de deploy será considerado um diferencial.\n\n## **Benefícios**\n\n- Trabalho 100% remoto\n- Plano de Saúde individual\n- Auxílio Cuidado e Desenvolvimento\n- Incentivo à prática de esportes\n- Seguro de vida\n- Cartão multi-benefício através do Caju\n- Auxílio Remoto para investimento em equipamentos (R$2.000 anual)\n- PJ - 30 dias de férias remuneradas\n\n## **Contratação**\n\nPJ\n\n## **Como se candidatar**\n\nhttps://jobs.quickin.io/igma/jobs/69fc945c7999060013a0d997\n\n\n### **Nível**\n\n- Pleno\n\n### **Regime**\n\n- PJ\n\n### **Alocação**\n\n- Remoto",
       "excerpt": "## **Nossa empresa** A **Igma** é uma empresa de tecnologia que cria produtos digitais críticos: sites, plataformas e apps que funcionam, crescem e deixam marca. Atuamos onde a entrega não pode falhar, com o cuidado t...",
-      "issueState": "open",
+      "issueState": "closed",
       "contentHash": "1df3a1842044574352bfca20ba7a04372b868bf6662de36159c1e445a4cb7b26",
       "repository": "backend-br/vagas",
       "repositoryUrl": "https://github.com/backend-br/vagas",
@@ -2632,7 +2616,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-05-07T13:54:55Z",
-      "updatedAt": "2026-11-09T09:17:30Z",
+      "updatedAt": "2026-11-09T18:29:14Z",
       "url": "https://github.com/backend-br/vagas/issues/12232",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2722,7 +2706,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-01-02T13:02:32Z",
-      "updatedAt": "2026-11-09T09:17:28Z",
+      "updatedAt": "2026-11-09T20:23:48Z",
       "url": "https://github.com/backend-br/vagas/issues/12150",
       "sourceType": "github-issue",
       "jobLocation": {

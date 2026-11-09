@@ -1,31 +1,722 @@
 {
-  "generatedAt": "2026-11-09T10:43:26.039Z",
+  "generatedAt": "2026-11-09T21:48:57.392Z",
   "page": 8,
   "pageSize": 20,
   "nextPage": "api/pages/page-0009.json",
   "ids": [
+    "gh_89dcbc79e38c36bf725d0c43",
+    "gh_4cb39f6675d3a84f550bc860",
+    "gh_007e557e3cce1342e00affb2",
+    "gh_a005a7b8b54bdcc1233e7263",
+    "gh_db999290471cf301e6e682fa",
+    "gh_b4197231ee36d78db1f0e1ba",
+    "gh_5920044c481a81f4ba029054",
     "gh_51659470ccf0887616c6cd66",
     "gh_b966e0258e506bd3daf3e811",
     "gh_13d45f8cd2e50adab5e7c669",
     "gh_7c7e95c00a6ef2ab493c2e3a",
     "gh_67bda561fc04c76026a0eb66",
+    "gh_461c2de2accdad3cc973f73e",
     "gh_ced603df4dd5292b72e7f779",
     "gh_0863d8a0fef2db4fad3eeac3",
     "gh_884706455e328be2f8acfe12",
     "gh_eda7e9f19d68c888f48e9396",
     "gh_3a132b5e1856f9ea8037b5b2",
     "gh_a8dd8982a3db2ecc96d812da",
-    "gh_2bf1364281c72d4aa07b6d73",
-    "gh_07684f7ca8d92fa38a4ce3e2",
-    "gh_5a1ff9c946d4a24594ec28b1",
-    "gh_6e4a15bd708ba95332fb79bc",
-    "gh_0a8b03c6a18ae229dcc0f780",
-    "gh_ab7a8bff64dbf3837743eded",
-    "gh_6ce2011192257ba9ecbe6ca6",
-    "gh_70e6e21759821a59e640879e",
-    "gh_1ba6459bb5469a28d19f2a84"
+    "gh_2bf1364281c72d4aa07b6d73"
   ],
   "items": [
+    {
+      "id": "gh_89dcbc79e38c36bf725d0c43",
+      "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#6",
+      "title": "Question about reading public listings on didtheyghostme Singapore (personal final-year project)",
+      "description": "Hello didtheyghostme Singapore team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. This repository has no licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (1 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/didtheyghostme/Singapore-Summer2026-TechInternships/main/README.md (the list, one request)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
+      "excerpt": "Hello didtheyghostme Singapore team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any uni...",
+      "issueState": "open",
+      "contentHash": "e031e799c5d109a89ba59b61985b2187e6bd72a7e9840397927aad953ba11406",
+      "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+      "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+      "region": "Asia",
+      "country": "Singapore",
+      "sourceLocation": {
+        "country": "Singapore",
+        "countryCode": "SG",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "pathmaker7",
+        "name": "pathmaker7",
+        "handle": "pathmaker7",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
+      },
+      "community": {
+        "id": "didtheyghostme",
+        "name": "didtheyghostme",
+        "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+        "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+        "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+      },
+      "createdAt": "2026-09-30T10:27:11Z",
+      "updatedAt": "2026-09-30T10:27:11Z",
+      "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/6",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_89dcbc79e38c36bf725d0c43",
+          "sourceId": "didtheyghostme/Singapore-Summer2026-TechInternships#6",
+          "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+          "repositoryUrl": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships",
+          "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships/issues/6",
+          "createdAt": "2026-09-30T10:27:11Z",
+          "updatedAt": "2026-09-30T10:27:11Z",
+          "community": {
+            "id": "didtheyghostme",
+            "name": "didtheyghostme",
+            "avatarUrl": "https://github.com/didtheyghostme.png?size=80",
+            "repository": "didtheyghostme/Singapore-Summer2026-TechInternships",
+            "url": "https://github.com/didtheyghostme/Singapore-Summer2026-TechInternships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 40,
+        "publishedAt": "2026-09-30T10:27:11Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_4cb39f6675d3a84f550bc860",
+      "sourceId": "awesome-jobs/jobs#5073",
+      "title": "LINE Pay Vietnam - QA - Saigon, District 10",
+      "description": "## Location\n\n* District 10, HCMC, Vietnam\n\n\n## Summary\n* We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobile, Web, service servers, databases, etc.)\n\n### Responsibilities\n\n- Analyze complex software systems and collaborate with global teams to improve the overall design, testability, and quality of the platform\n- Performing all testing activities across one or more projects, utilizing tools, scripts and software that ensure the quality and reliability\n- Develop and execute test cases to diagnose issues and bugs, creating test data when required\n- Working with a global team, communicating effectively with developers, project managers, business operations on test related information\n- Identifying quality issues and drive corrective actions to resolve them\n\n### Qualifications\n- At least 3-years related experiences\n- Solid knowledge about computer science (objected-oriented design, algorithms, data structures, databases, networks, etc.)\n- Strong knowledge of software QA methodologies, tools and processes\n- Experience designing and conducting Performance Testing, Security Testing, Migration Testing\n- Experience in creating and proposing unit tests as well as integration tests that match the architecture and nature of the service. Ability to identify and escalate issues in a timely manner\n- Good analytical and problem solving skills\n- Good communication and interpersonal skills\n- Growth mindset and eagerness to learn\n- •ble to communicate in English efficiently in technical work\n- Familiarity with Test Automation is a plus\n- Experience with Payment or Fintech Service is a plus\n- Experience with using AI in work\n\n### Nice to have\n- ISTQB/ISEB Certificate or equivalence\n- Experience with working in micro services architecture\n- Experience with working in Agile environment\n\n### Contact\n\nSend your CV to email: tungnt@linecorp.com",
+      "excerpt": "## Location * District 10, HCMC, Vietnam ## Summary * We are looking for engineer with broad experience control and evaluate project quality. We expect candidates with capable of manual testing (Related to APIs, Mobil...",
+      "issueState": "open",
+      "contentHash": "c177172dc7d369d270800f1feb434f6a254e6c3b625b53c311594f7583138ec6",
+      "repository": "awesome-jobs/jobs",
+      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "data",
+        "design"
+      ],
+      "sourceTags": [
+        "data",
+        "design"
+      ],
+      "author": {
+        "id": "tungthanhng",
+        "name": "tungthanhng",
+        "handle": "tungthanhng",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/166115704?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/jobs",
+        "url": "https://github.com/awesome-jobs/jobs"
+      },
+      "createdAt": "2026-09-30T04:05:24Z",
+      "updatedAt": "2026-09-30T04:05:24Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia",
+        "city": "* District 10, HCMC",
+        "displayText": "* District 10, HCMC, Vietnam",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "mobile",
+          "qa"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_4cb39f6675d3a84f550bc860",
+          "sourceId": "awesome-jobs/jobs#5073",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+          "createdAt": "2026-09-30T04:05:24Z",
+          "updatedAt": "2026-09-30T04:05:24Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        },
+        {
+          "id": "gh_a930f487b8ffc8c5d45c7938",
+          "sourceId": "awesome-jobs/vietnam#5073",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5073",
+          "createdAt": "2026-09-30T04:05:24Z",
+          "updatedAt": "2026-09-30T04:05:24Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 40,
+        "publishedAt": "2026-09-30T04:05:24Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_007e557e3cce1342e00affb2",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2980",
+      "title": "New Role — HHMI AI Fellow",
+      "description": "### Link to Job Posting\n\nhttps://hhmi.wd1.myworkdayjobs.com/Pres_Fellows/job/Headquarters/HHMI-AI-Fellow_R-4604\n\n### Company Name\n\nHoward Hughes Medical Institute (HHMI)\n\n### Job Title\n\nHHMI AI Fellow (sponsorship not specified)\n\n### Location\n\nChevy Chase, MD\n\n### What category does this job belong to?\n\nData Science, AI & Machine Learning\n\n### Does this job offer sponsorship?\n\nOther\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nTwo-year, term-limited role with rolling start dates; eligible for HHMI benefits. The posting gives no graduation-year or minimum-years requirement. It asks applicants to have built real things with LLMs and shipped at least one applied AI project or prototype that someone else used. Fellows build internal applications, agent workflows, and automations, and advise the President and COO. Primary location is HHMI Headquarters in Chevy Chase, with time at Janelia Research Campus in Ashburn, VA. Base salary: $150,000–$200,000. Sponsorship details are not stated in the posting.",
+      "excerpt": "### Link to Job Posting https://hhmi.wd1.myworkdayjobs.com/Pres_Fellows/job/Headquarters/HHMI-AI-Fellow_R-4604 ### Company Name Howard Hughes Medical Institute (HHMI) ### Job Title HHMI AI Fellow (sponsorship not spec...",
+      "issueState": "open",
+      "contentHash": "11ba2ee52e2cd9bc9ee85fe87fe11cdd582f754f0aa3b38b529c1b7716cf0a83",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
+        "new_role"
+      ],
+      "author": {
+        "id": "bthaas",
+        "name": "bthaas",
+        "handle": "bthaas",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/138165156?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 150000,
+        "max": 200000,
+        "period": "year"
+      },
+      "createdAt": "2026-09-28T07:33:11Z",
+      "updatedAt": "2026-09-28T07:33:11Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2980",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "city": "Chevy Chase",
+        "subdivision": "MD",
+        "displayText": "Chevy Chase, MD",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_007e557e3cce1342e00affb2",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2980",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2980",
+          "createdAt": "2026-09-28T07:33:11Z",
+          "updatedAt": "2026-09-28T07:33:11Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 42,
+        "publishedAt": "2026-09-28T07:33:11Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_a005a7b8b54bdcc1233e7263",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2979",
+      "title": "Editing Role",
+      "description": "### Link to Job Posting\n\nhttps://careers.varsitybrands.com/us/en/job/JR114518/Software-Engineer-I-Net\n\n### Company Name\n\nVarsityBrand\n\n### Job Title\n\nSoftware Engineer 1 - .Net\n\n### Location\n\nMemphis, Tennessee\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nNone\n\n### Is this job posting currently accepting applications?\n\nNone\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Permanently remove this job from the list?\n\n- [ ] Yes, remove this job\n\n### Email associated with your GitHub account (Optional)\n\nleodefarias25@gmail.com\n\n### Reason for edit\n\nThe current link to VarsityBrands is https://careers.varsitybrands.com/global/en/job/JR114518?utm_source=Simplify&ref=Simplify. However, it should be https://careers.varsitybrands.com/us/en/job/JR114518/Software-Engineer-I-Net",
+      "excerpt": "### Link to Job Posting https://careers.varsitybrands.com/us/en/job/JR114518/Software-Engineer-I-Net ### Company Name VarsityBrand ### Job Title Software Engineer 1 - .Net ### Location Memphis, Tennessee ### What cate...",
+      "issueState": "open",
+      "contentHash": "d7b9995752ff59472c1682655084f3e9a8d04736201b7d3fe6ffefd62a4b8489",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "edit_role"
+      ],
+      "sourceTags": [
+        "edit_role"
+      ],
+      "author": {
+        "id": "Tofudog",
+        "name": "Tofudog",
+        "handle": "Tofudog",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/71597308?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-09-26T18:34:27Z",
+      "updatedAt": "2026-09-26T18:34:55Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2979",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "dotnet"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_a005a7b8b54bdcc1233e7263",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2979",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2979",
+          "createdAt": "2026-09-26T18:34:27Z",
+          "updatedAt": "2026-09-26T18:34:55Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 44,
+        "publishedAt": "2026-09-26T18:34:27Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_db999290471cf301e6e682fa",
+      "sourceId": "qa-brasil/vagas#1284",
+      "title": "[HÍBRIDO] [São Paulo] Tech Lead | Data Foundation",
+      "description": "## Descrição da vaga\n•  Liderança técnica de projetos de Data Foundation;\n• Condução e definição de soluções utilizando AWS, dbt, Snowflake, Python e SQL;\n• Estruturação e evolução de pipelines e ambientes de dados;\n• Definição de boas práticas relacionadas à arquitetura, qualidade e governança de dados;\n• Orientação técnica do time e relacionamento com stakeholders.\n\n## Local de trabalho\n\n- Híbrido. 3 dias remoto e 2 dias presencial no escritório em São Paulo - SP, Vila Guarani\n\n## Requisitos da vaga\n\n**Obrigatórios**\n• Experiência sólida com dbt, Snowflake, AWS e SQL;\n• Vivência em Data Foundation e/ou Arquitetura de Dados;\n• Experiência com automação e orquestração de pipelines;\n• Conhecimento em governança e qualidade de dados;\n• Conhecimento em Python;\n• Perfil consultivo, boa comunicação e capacidade de liderança técnica.\n• Disponibilidade de horário e para locomoção, conforme necessidade dos projetos.\n\n**Desejáveis**\n• Experiência em consultoria;\n• Conhecimento em Power BI;\n• Conhecimentos em Gestão de Projetos.\n\n\n## Forma de contratação\nPJ \n\n## Range Salarial\n\nA vaga paga entre 10.000,00 e 14.000,00 reais.\n\n## Sobre a empresa\nO Grupo Orangefox criou e domina a categoria Inteligência Operacional — a integração de dados, automação e execução num único parceiro sênior, focado em resultado.\n\n## Como se candidatar\n- Por favor envie um email para grf@orangefox.com.br com seu CV anexado - Enviar no assunto: Vaga do QA-Brasil\n\n## Tempo médio de feedbacks\nCostumamos enviar feedbacks em até 3 dias após cada processo.\n\nE-mail para contato em caso de não haver resposta: thais@orangefox.com.br\n\n## Labels\n<!-- Label é uma forma dos QAs conseguirem pesquisar as vagas. Após cadastrar a vaga, ela receberá label automaticamente em até 2 minutos.\nApague os itens abaixo que não corresponderem à vaga. -->\n- PJ\n- Pleno\n- Sênior\n- Especialista\n- Presencial\n- Remoto\n- São Paulo",
+      "excerpt": "## Descrição da vaga • Liderança técnica de projetos de Data Foundation; • Condução e definição de soluções utilizando AWS, dbt, Snowflake, Python e SQL; • Estruturação e evolução de pipelines e ambientes de dados; • ...",
+      "issueState": "open",
+      "contentHash": "b9db47945da4c071051cd6c25171464a0f50b37081a045e1f68232624b5f18f9",
+      "repository": "qa-brasil/vagas",
+      "repositoryUrl": "https://github.com/qa-brasil/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "especialista",
+        "pj",
+        "pleno",
+        "presencial",
+        "remoto",
+        "são paulo",
+        "sênior"
+      ],
+      "sourceTags": [
+        "especialista",
+        "pj",
+        "pleno",
+        "presencial",
+        "remoto",
+        "são paulo",
+        "sênior"
+      ],
+      "author": {
+        "id": "thaismachadotcsm-byte",
+        "name": "thaismachadotcsm-byte",
+        "handle": "thaismachadotcsm-byte",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/333897280?v=4"
+      },
+      "community": {
+        "id": "qa-brasil",
+        "name": "qa-brasil",
+        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+        "repository": "qa-brasil/vagas",
+        "url": "https://github.com/qa-brasil/vagas"
+      },
+      "createdAt": "2026-09-25T17:30:55Z",
+      "updatedAt": "2026-09-25T17:34:16Z",
+      "url": "https://github.com/qa-brasil/vagas/issues/1284",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "leadership",
+          "qa"
+        ],
+        "technologies": [
+          "aws",
+          "python"
+        ],
+        "seniority": [
+          "lead",
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_db999290471cf301e6e682fa",
+          "sourceId": "qa-brasil/vagas#1284",
+          "repository": "qa-brasil/vagas",
+          "repositoryUrl": "https://github.com/qa-brasil/vagas",
+          "url": "https://github.com/qa-brasil/vagas/issues/1284",
+          "createdAt": "2026-09-25T17:30:55Z",
+          "updatedAt": "2026-09-25T17:34:16Z",
+          "community": {
+            "id": "qa-brasil",
+            "name": "qa-brasil",
+            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
+            "repository": "qa-brasil/vagas",
+            "url": "https://github.com/qa-brasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 45,
+        "publishedAt": "2026-09-25T17:30:55Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_b4197231ee36d78db1f0e1ba",
+      "sourceId": "backend-br/vagas#12431",
+      "title": "[Remoto] Lead Database & Data Platform Engineer (Strider)",
+      "description": "VAGA INTERNACIONAL | REMOTA | USD\n\n LEAD DATABASE & DATA PLATFORM ENGINEER\n\nOportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto.\n\n💰 USD 5.000–8.000/mês\n🇺🇸 Inglês C1+\n💼 7+ anos de experiência\n🕐 Long-term · 40h/semana\n\n Tecnologias:\n• AWS\n• MySQL\n• Microsoft SQL Server\n• Database & Data Platforms\n\n🌎 Vaga para profissionais da América Latina.\n\n\n\n📩 Aplique👇🏻 \nhttps://app.onstrider.com/r/claudiaantunes?job=bGVhZC1kYXRhYmFzZS1kYXRhLXBsYXRmb3JtLWVuZ2luZWVyLWQ0YWZlMzc0P3JlZmVycmFsPWNsYXVkaWFhbnR1bmVz",
+      "excerpt": "VAGA INTERNACIONAL | REMOTA | USD LEAD DATABASE & DATA PLATFORM ENGINEER Oportunidade para profissionais experientes em Database & Data Platform, com atuação internacional e trabalho remoto. 💰 USD 5.000–8.000/mês 🇺\ud83c...",
+      "issueState": "open",
+      "contentHash": "7f8bc5666421e7dc9901d01bd5a163bebb3b0d507512481a4da6e3bdc9f825c6",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "aws",
+        "formato-sugerido",
+        "mysql",
+        "remoto",
+        "sql",
+        "sql server",
+        "verificada"
+      ],
+      "sourceTags": [
+        "aws",
+        "formato-sugerido",
+        "mysql",
+        "remoto",
+        "sql",
+        "sql server",
+        "verificada"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 5000,
+        "max": 8000,
+        "period": "month"
+      },
+      "createdAt": "2026-09-23T16:57:25Z",
+      "updatedAt": "2026-11-09T20:23:41Z",
+      "url": "https://github.com/backend-br/vagas/issues/12431",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "mysql"
+        ],
+        "seniority": [
+          "lead"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b4197231ee36d78db1f0e1ba",
+          "sourceId": "backend-br/vagas#12431",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12431",
+          "createdAt": "2026-09-23T16:57:25Z",
+          "updatedAt": "2026-11-09T20:23:41Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 47,
+        "publishedAt": "2026-09-23T16:57:25Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_5920044c481a81f4ba029054",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2978",
+      "title": "New Grad Hardware Engineering",
+      "description": "The New grad page for hardware engineering isn't loading.",
+      "excerpt": "The New grad page for hardware engineering isn't loading.",
+      "issueState": "open",
+      "contentHash": "939f80ddeebb88185156a8d2d85fbdd30df17a375d9cc058aa35b8f12c39d7c7",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "satyamr2",
+        "name": "satyamr2",
+        "handle": "satyamr2",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/143846663?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-09-23T05:11:27Z",
+      "updatedAt": "2026-09-23T05:11:27Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2978",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_5920044c481a81f4ba029054",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2978",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2978",
+          "createdAt": "2026-09-23T05:11:27Z",
+          "updatedAt": "2026-09-23T05:11:27Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 47,
+        "publishedAt": "2026-09-23T05:11:27Z",
+        "status": "aging"
+      }
+    },
     {
       "id": "gh_51659470ccf0887616c6cd66",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2977",
@@ -107,7 +798,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 47,
+        "ageDays": 48,
         "publishedAt": "2026-09-22T20:55:34Z",
         "status": "aging"
       }
@@ -209,7 +900,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 48,
+        "ageDays": 49,
         "publishedAt": "2026-09-21T20:47:46Z",
         "status": "aging"
       }
@@ -333,7 +1024,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 50,
+        "ageDays": 51,
         "publishedAt": "2026-09-19T13:38:05Z",
         "status": "aging"
       }
@@ -423,7 +1114,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 51,
+        "ageDays": 52,
         "publishedAt": "2026-09-18T13:34:28Z",
         "status": "aging"
       }
@@ -515,8 +1206,112 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 51,
+        "ageDays": 52,
         "publishedAt": "2026-09-18T13:31:30Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_461c2de2accdad3cc973f73e",
+      "sourceId": "frontendbr/vagas#8563",
+      "title": "[Remoto] Back-end Engineer. Net (USD)",
+      "description": "🚨🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD\n💻 BACK-END ENGINEER | C# .NET\nSe você é desenvolvedor Back-end e tem experiência com C#, .NET e SQL, esta pode ser uma excelente oportunidade para atuar no mercado internacional. 🚀\n🔹 5+ anos de experiência\n\n🔹 Inglês C1+\n\n🔹 Long-term | 40h/semana\n\n💰 USD 4.000–6.000/mês\n\n🔗 Candidatura no link abaixo 👇🏻 \n\nhttps://app.onstrider.com/r/claudiaantunes?job=YmFjay1lbmQtZW5naW5lZXItOWJiMjU5YTc/cmVmZXJyYWw9Y2xhdWRpYWFudHVuZXM=\n👉 Tem esse perfil? Confira os requisitos e candidate-se!\nConhece um profissional de C#/.NET que está buscando uma oportunidade internacional? Compartilhe. 🌎\nMe siga para mais oportunidades internacionais.\n#VagasInternacionais #VagasRemotas #BackEndDeveloper #BackendEngineer #CSharp #DotNet #SQL #NETDeveloper #TechJobs #RemoteJobs #VagasTI #SoftwareDeveloper #TechRecruiter",
+      "excerpt": "🚨🌎 VAGA INTERNACIONAL | REMOTA | PAGAMENTO EM USD 💻 BACK-END ENGINEER | C# .NET Se você é desenvolvedor Back-end e tem experiência com C#, .NET e SQL, esta pode ser uma excelente oportunidade para atuar no mercado ...",
+      "issueState": "open",
+      "contentHash": "83eafbac137705d45cbaf2bf8c5cd8d74e1a312d04671a9bd99cef01ec1f8f7c",
+      "repository": "frontendbr/vagas",
+      "repositoryUrl": "https://github.com/frontendbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "remote"
+      ],
+      "sourceTags": [
+        "backend",
+        "remote"
+      ],
+      "author": {
+        "id": "Claudiaantunesdelima",
+        "name": "Claudiaantunesdelima",
+        "handle": "Claudiaantunesdelima",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+      },
+      "community": {
+        "id": "frontendbr",
+        "name": "frontendbr",
+        "avatarUrl": "https://github.com/frontendbr.png?size=80",
+        "repository": "frontendbr/vagas",
+        "url": "https://github.com/frontendbr/vagas"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 4000,
+        "max": 6000,
+        "period": "month"
+      },
+      "createdAt": "2026-09-17T18:59:30Z",
+      "updatedAt": "2026-11-09T13:44:42Z",
+      "url": "https://github.com/frontendbr/vagas/issues/8563",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "csharp",
+          "dotnet"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_461c2de2accdad3cc973f73e",
+          "sourceId": "frontendbr/vagas#8563",
+          "repository": "frontendbr/vagas",
+          "repositoryUrl": "https://github.com/frontendbr/vagas",
+          "url": "https://github.com/frontendbr/vagas/issues/8563",
+          "createdAt": "2026-09-17T18:59:30Z",
+          "updatedAt": "2026-11-09T13:44:42Z",
+          "community": {
+            "id": "frontendbr",
+            "name": "frontendbr",
+            "avatarUrl": "https://github.com/frontendbr.png?size=80",
+            "repository": "frontendbr/vagas",
+            "url": "https://github.com/frontendbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 53,
+        "publishedAt": "2026-09-17T18:59:30Z",
         "status": "aging"
       }
     },
@@ -622,7 +1417,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 52,
+        "ageDays": 53,
         "publishedAt": "2026-09-17T18:51:29Z",
         "status": "aging"
       }
@@ -678,7 +1473,7 @@
         "url": "https://github.com/backend-br/vagas"
       },
       "createdAt": "2026-09-15T17:42:40Z",
-      "updatedAt": "2026-11-04T17:44:12Z",
+      "updatedAt": "2026-11-09T20:23:43Z",
       "url": "https://github.com/backend-br/vagas/issues/12422",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -724,7 +1519,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12422",
           "createdAt": "2026-09-15T17:42:40Z",
-          "updatedAt": "2026-11-04T17:44:12Z",
+          "updatedAt": "2026-11-09T20:23:43Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -738,7 +1533,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 54,
+        "ageDays": 55,
         "publishedAt": "2026-09-15T17:42:40Z",
         "status": "aging"
       }
@@ -856,7 +1651,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 54,
+        "ageDays": 55,
         "publishedAt": "2026-09-15T14:16:14Z",
         "status": "aging"
       }
@@ -946,7 +1741,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 55,
+        "ageDays": 56,
         "publishedAt": "2026-09-14T19:40:30Z",
         "status": "aging"
       }
@@ -1037,7 +1832,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 58,
+        "ageDays": 59,
         "publishedAt": "2026-09-11T12:56:29Z",
         "status": "aging"
       }
@@ -1184,7 +1979,7 @@
         "sourceCount": 4
       },
       "freshness": {
-        "ageDays": 58,
+        "ageDays": 59,
         "publishedAt": "2026-09-11T12:48:25Z",
         "status": "aging"
       }
@@ -1327,878 +2122,6 @@
       "freshness": {
         "ageDays": 60,
         "publishedAt": "2026-09-10T07:14:37Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_07684f7ca8d92fa38a4ce3e2",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2970",
-      "title": "Hardware Engineering Hyperlink Issue",
-      "description": "### Issue/Question\n\nThe Hardware Engineering hyperlink on the README.md doesn't lead to the job table for that section, hence the hardware engineering jobs are not accessible.",
-      "excerpt": "### Issue/Question The Hardware Engineering hyperlink on the README.md doesn't lead to the job table for that section, hence the hardware engineering jobs are not accessible.",
-      "issueState": "open",
-      "contentHash": "321cf7035b2d6f146a5cae0f369b6b6dd10675e66b5980d97372bb232eb2feda",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "misc"
-      ],
-      "sourceTags": [
-        "misc"
-      ],
-      "author": {
-        "id": "sohumtiwary",
-        "name": "sohumtiwary",
-        "handle": "sohumtiwary",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/61177362?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-09-10T00:36:55Z",
-      "updatedAt": "2026-09-10T00:36:55Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2970",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_07684f7ca8d92fa38a4ce3e2",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2970",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2970",
-          "createdAt": "2026-09-10T00:36:55Z",
-          "updatedAt": "2026-09-10T00:36:55Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 60,
-        "publishedAt": "2026-09-10T00:36:55Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_5a1ff9c946d4a24594ec28b1",
-      "sourceId": "soujava/vagas-java#1954",
-      "title": "[HÍBRIDO - São Paulo | SP] Pessoa Desenvolvedora Sênior | BAU e Modernização | Mercado de Capitais na [Evertec]",
-      "description": "## **Descrição da vaga**\nEstamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de dados Oracle, soluções corporativas de relatórios (reporting) e tecnologias Microsoft .NET.\n\nO(a) profissional atuará em iniciativas tecnológicas complexas envolvendo múltiplas equipes locais, apoiando tanto o desenvolvimento de aplicações modernas quanto a sustentação e modernização de plataformas legadas. A posição exige uma combinação de competências em engenharia de software, arquitetura de soluções, modelagem de dados, análise de negócios e gestão de stakeholders.\n\nO(a) candidato(a) deve ter conforto para interagir diretamente com usuários de negócio, levantar requisitos, projetar soluções escaláveis, dar suporte a sistemas legados e conduzir iniciativas de modernização ao longo de todo o ciclo de desenvolvimento de software, incluindo testes e implantação em produção.\n\n \n**Principais Responsabilidades**\n\n- Projetar, desenvolver e manter aplicações backend utilizando Java e aplicações frontend utilizando React.\n- Dar suporte, manter e aprimorar aplicações legadas desenvolvidas em tecnologias Microsoft .NET.\n- Participar de iniciativas estratégicas de modernização de aplicações .NET legadas, migrando-as para arquiteturas e stacks tecnológicos modernos.\n- Projetar soluções de dados e relatórios corporativos de ponta a ponta, garantindo escalabilidade, manutenção simplificada e aderência aos requisitos de negócio.\n- Definir arquitetura de sistemas, padrões de integração e soluções técnicas para plataformas novas e existentes.\n- Realizar modelagem de dados conceitual, lógica e física em bancos Oracle.\n- Projetar estruturas de banco de dados, otimizar consultas SQL e garantir integridade, performance e escalabilidade dos dados.\n- Trabalhar diretamente com stakeholders de negócio para levantamento, documentação e validação de requisitos funcionais e técnicos.\n- Traduzir requisitos de negócio em especificações técnicas e desenhos de solução.\n- Desenvolver novas ferramentas e sistemas do zero, desde a análise de requisitos até a implementação.\n- Participar de discussões arquiteturais e iniciativas de estratégia tecnológica.\n- Criar e executar testes unitários para garantir qualidade de código e estabilidade das aplicações.\n- Apoiar testes de integração de sistemas (SIT) e coordenar atividades de homologação com usuários (UAT).\n- Analisar defeitos, realizar análise de causa raiz e apoiar a resolução de problemas.\n- Trabalhar em estreita colaboração com equipes locais e globais das áreas de tecnologia e negócio.\n- Produzir e manter documentação técnica e funcional.\n- Sustentar e evoluir sistemas relacionados ao mercado de ações (equities) e às operações da B3.\n\n \n**Requisitos Técnicos**\n\n- Experiência sólida em desenvolvimento backend com Java.\n- Experiência sólida em desenvolvimento frontend com React.\n- Conhecimento prático em Microsoft .NET Framework e/ou .NET Core.\n- Experiência em sustentação e evolução de aplicações legadas em .NET.\n- Experiência em iniciativas de modernização de sistemas legados e transformação de aplicações.\n- Conhecimento avançado em Oracle Database.\n- Forte domínio de SQL e PL/SQL.\n- Experiência relevante em arquitetura de bancos de dados e otimização de performance.\n- Experiência comprovada em modelagem de dados conceitual, lógica e física.\n- Experiência no desenho de soluções corporativas de dados e relatórios.\n- Sólida compreensão de arquitetura de sistemas e sistemas distribuídos.\n- Experiência com APIs, integrações entre sistemas e desenho de aplicações corporativas.\n- Experiência na concepção e desenvolvimento de aplicações do zero.\n- Conhecimento de metodologias do Ciclo de Vida de Desenvolvimento de Software (SDLC).\n\n \n**Competências de Análise de Negócios e Funcionais**\n\n- Capacidade comprovada de conduzir sessões de levantamento de requisitos com usuários e stakeholders.\n- Capacidade de traduzir necessidades complexas de negócio em soluções técnicas escaláveis.\n- Experiência na elaboração de especificações funcionais, desenhos de solução e documentação técnica.\n- Forte capacidade analítica e de resolução de problemas.\n- Experiência no gerenciamento de prioridades concorrentes em múltiplos projetos.\n- Capacidade de atuar como ponte entre equipes de negócio e tecnologia.\n\n \n**Testes e Garantia da Qualidade**\n\n- Experiência na criação e execução de planos de testes unitários.\n- Experiência no suporte a testes de integração de sistemas (SIT).\n- Experiência na coordenação e suporte a testes de aceitação do usuário (UAT).\n- Capacidade de identificar, documentar e acompanhar defeitos até sua resolução.\n- Compromisso com qualidade, confiabilidade e melhoria contínua do software.\n\n \n**Soft Skills**\n\n- Excelente comunicação e habilidade de gestão de stakeholders.\n- Capacidade de interação eficaz com equipes técnicas, liderança executiva e usuários de negócio.\n- Excelente organização e gestão do tempo.\n- Alto nível de autonomia, responsabilidade e senso de dono.\n- Forte capacidade de liderança e influência.\n- Capacidade de atuar em um ambiente colaborativo, multicultural e global.\n- Perfil analítico e atenção aos detalhes.\n\n \n**Experiência de Mercado Desejável**\n\n- Experiência em corretoras, bancos de investimento, gestoras de recursos ou mercado de capitais.\n- Conhecimento do mercado de ações brasileiro e dos processos da B3.\n- Experiência com sistemas de negociação (trading), pós-negociação (post-trade), reportes regulatórios ou aplicações de middle/back office será considerada um diferencial.\n\n \n**Idioma**\nInglês avançado para comunicação com equipes globais, discussões de arquitetura, workshops de levantamento de requisitos e elaboração de documentação técnica. --> \n\n## **Local**\n\nHíbrido em São Paulo - Próx. ao Shopping Morumbi\n\n## **Benefícios**\n\nE ai, se identificou com o que leu até agora? Então, vou te contar o que você encontrará aqui, além de um ambiente dinâmico:\n\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\nValorizamos a diversidade e entendemos que o que acrescenta é justamente ideias e pontos de vistas variados. Por isso raça, cor, religião, gênero e identidade de gênero, nacionalidade, deficiência, orientação sexual, ascendência ou idade, não serão impeditivos de você fazer parte do nosso time.\n\n\n## **Contratação**\n\n- CLT\n\n## **Sobre a Evertec**\n\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## **Como se candidatar**\n\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Sênior | BAU e Modernização | Mercado de Capitais](https://jobs.quickin.io/sinqia/jobs/6a2047ba03cf9f0013288972)\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 07 dias após cada processo.\n\n#### Alocação\n- Alocado\n- Hibrido\n\n#### Nível\n- Sênior\n- Especialista",
-      "excerpt": "## **Descrição da vaga** Estamos buscando um(a) Desenvolvedor(a) Full Stack Sênior e Arquiteto(a) de Soluções de Dados altamente qualificado(a), com sólida experiência em Java (backend), React (frontend), bancos de da...",
-      "issueState": "open",
-      "contentHash": "6dd94acb488552eb6e94abec3b2d7bd3a8fb77160bca95ea29fcd0aec90c0372",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado",
-        "arquiteto",
-        "backend",
-        "clt",
-        "frontend",
-        "inglês avançado",
-        "sql",
-        "sênior"
-      ],
-      "sourceTags": [
-        "alocado",
-        "arquiteto",
-        "backend",
-        "clt",
-        "frontend",
-        "inglês avançado",
-        "sql",
-        "sênior"
-      ],
-      "author": {
-        "id": "DNina31",
-        "name": "DNina31",
-        "handle": "DNina31",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/157808255?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "createdAt": "2026-09-09T15:04:41Z",
-      "updatedAt": "2026-11-09T04:27:39Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1954",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "frontend",
-          "fullstack",
-          "support"
-        ],
-        "technologies": [
-          "dotnet",
-          "java",
-          "react"
-        ],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_5a1ff9c946d4a24594ec28b1",
-          "sourceId": "soujava/vagas-java#1954",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1954",
-          "createdAt": "2026-09-09T15:04:41Z",
-          "updatedAt": "2026-11-09T04:27:39Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 60,
-        "publishedAt": "2026-09-09T15:04:41Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_6e4a15bd708ba95332fb79bc",
-      "sourceId": "frontendbr/vagas#8559",
-      "title": "[Híbrido-SP] Fullstack developer Python/React & IA na Evertec 🧡",
-      "description": "<!-- \n==================================================\nPOR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!\n\n!!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!!\n\nNão faça distinção de gênero no título da vaga.\n\nUse: \"Front-End Developer\" ao invés de \n\"Desenvolvedor Front-End\" \\o/\n\nExemplo: `[São Paulo] Front-End Developer na NOME DA EMPRESA`\n==================================================\n-->\n\n## **Sobre a Evertec**\n\nSomos a única solução completa para o mercado financeiro!\nA Evertec é uma empresa especializada em tecnologia para o setor financeiro, com mais de 27 anos de atuação no mercado, e presença em 26 países da América Latina e Caribe e mais de 11 bilhões de transações processadas anualmente.\nOferecemos um portfólio completo de soluções em software, adquirência, processamento e tecnologias para meios de pagamento, contribuindo para a digitalização de instituições financeiras, empresas e fintechs.\nNosso compromisso é com a excelência tecnológica, a inclusão financeira e a geração de valor sustentável para clientes, colaboradores e parceiros.\n\n## **Descrição da vaga**\nBuscamos um(a) Desenvolvedor(a) Fullstack Sênior com experiência prática em implementação de soluções de IA/ML para integrar nosso time de tecnologia.\nEssa posição tem papel estratégico na evolução técnica da área: você será responsável por transformar direcionamentos de Tech Leads e Analistas de Negócio em soluções reais, atuando como referência prática em IA dentro do time.\n\n💡 **Por que essa posição é estratégica?**\nIntroduz capacidade prática de implementação de IA no time\nAcelera a entrega de soluções baseadas em IA\nPermite que arquitetos e tech leads foquem em estratégia e design\nDissemina conhecimento atualizado sobre ferramentas e tendências de IA.\n\n🛠️ **Responsabilidades**\nImplementar soluções de IA e fluxos baseados em agentes a partir de especificações técnicas\nIntegrar LLMs, pipelines de dados e ferramentas de IA em sistemas e plataformas existentes\nDesenvolver soluções com RAG (Retrieval Augmented Generation) e arquiteturas baseadas em agentes\nAtuar em conjunto com Tech Leads, contribuindo em revisões de design e seguindo padrões de arquitetura\nGarantir qualidade de código (clean code, testes, documentação e versionamento)\nCompartilhar conhecimento sobre novas ferramentas, modelos e boas práticas de IA com o time\nIdentificar e comunicar rapidamente bloqueios técnicos ou inconsistências de design\n\n## Local\n\nHíbrido em São Paulo/SP (Morumbi)., [SP], [São Paulo]\n\n## **Requisitos**\n\n- +5 anos de experiência em desenvolvimento de software\n- Pelo menos 1 ano de experiência prática com IA/ML aplicada\n- Forte experiência com Python\n- Experiência com desenvolvimento frontend (React)\n- Vivência na integração de LLMs em aplicações reais\n- Experiência com pipelines de RAG ou sistemas baseados em agentes\n- Sólidos fundamentos de engenharia de software (clean code, SOLID, testes, documentação, Git)\n- Capacidade de trabalhar com especificações técnicas e em times estruturados\n- Inglês fluente\n- Comunicação clara e objetiva\n- Proatividade na identificação de problemas\n- Colaboração com diferentes níveis técnicos\n- Interesse contínuo em evolução e aprendizado em IA\n\n## **Benefícios**\n\n• Vale refeição ou alimentação;\n• Benefício Flexível (Flash);\n• Assistência médica;\n• Parceiros para atendimento psicológico, jurídico, financeiro e nutricional (CLUDE, C4LIFE E ASQ);\n• Psicologia Viva;\n• Assistência Odontológica;\n• Auxílio creche;\n• Auxílio para filhos com necessidades especiais;\n• Auxílio fertilização;\n• Extensão Licença Maternidade e Paternidade;\n• Vale transporte ou Auxílio Home Office (para contrato teletrabalho);\n• Gympass (Wellhub) e TotalPass;\n• Horários flexíveis;\n• Seguro de vida;\n• Clube de parcerias;\n• Parceria com Sesc;\n• Just dress no code (sem código de vestimenta);\n• Day off no aniversário;\n• Beca (programa de incentivo a educação);\n• PPR ou Bônus - conforme atingimento de metas e resultados.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nGostou da vaga? Se candidate através do link a seguir: [Desenvolvedor Python + React + IA - Sênior](https://jobs.quickin.io/sinqia/jobs/6a635c9022a5d000132ef6d7)\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 07 dias após cada processo.\n\n#### Alocação\n- Alocado\n- Híbrido\n\n#### Nível\n- Pleno\n- Sênior\n- Especialista",
-      "excerpt": "<!-- ================================================== POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END! !!! Temos 4 regrinhas básicas: https://git.io/JG3Z9 !!! Não faça distinção de gênero no título da vaga. Use: \"F...",
-      "issueState": "open",
-      "contentHash": "0a95f6535e1bde37d166bafe3a2dbf70e90a8c16684364da9fdd615e34ebce1a",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "alocado",
-        "clt",
-        "especialista",
-        "híbrido",
-        "pleno",
-        "stale",
-        "são paulo",
-        "sênior"
-      ],
-      "sourceTags": [
-        "alocado",
-        "clt",
-        "especialista",
-        "híbrido",
-        "pleno",
-        "stale",
-        "são paulo",
-        "sênior"
-      ],
-      "author": {
-        "id": "DNina31",
-        "name": "DNina31",
-        "handle": "DNina31",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/157808255?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "createdAt": "2026-09-09T14:14:58Z",
-      "updatedAt": "2026-11-09T03:47:19Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8559",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "em São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "em São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_6e4a15bd708ba95332fb79bc",
-          "sourceId": "frontendbr/vagas#8559",
-          "repository": "frontendbr/vagas",
-          "repositoryUrl": "https://github.com/frontendbr/vagas",
-          "url": "https://github.com/frontendbr/vagas/issues/8559",
-          "createdAt": "2026-09-09T14:14:58Z",
-          "updatedAt": "2026-11-09T03:47:19Z",
-          "community": {
-            "id": "frontendbr",
-            "name": "frontendbr",
-            "avatarUrl": "https://github.com/frontendbr.png?size=80",
-            "repository": "frontendbr/vagas",
-            "url": "https://github.com/frontendbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 60,
-        "publishedAt": "2026-09-09T14:14:58Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_0a8b03c6a18ae229dcc0f780",
-      "sourceId": "react-brasil/vagas#3032",
-      "title": "[Híbrido - São Paulo] Senior Full Stack Developer (React, Next.js e NestJS) na Aurum | US$ 5k",
-      "description": "## Sobre a oportunidade\n\nA **Aurum Data Solutions** está contratando um(a) **Senior Full Stack Developer**, com forte especialização em frontend, para desenvolver produtos corporativos utilizados por uma grande empresa dos Estados Unidos.\n\nVocê fará parte de um time internacional, colaborando diariamente com profissionais no Brasil e nos Estados Unidos. Procuramos alguém com experiência real em aplicações de grande porte, autonomia técnica e inglês avançado para participar ativamente de reuniões, refinamentos, brainstormings e discussões de arquitetura.\n\n## Informações principais\n\n* **Remuneração:** a partir de **US$ 5.000/mês**, conforme experiência\n* **Contratação:** PJ\n* **Local:** São Paulo, SP\n* **Modelo:** híbrido alternado — uma semana inteira no escritório, seguida de uma semana remota\n* **Inglês:** avançado para conversação e comunicação direta com o time dos Estados Unidos\n* **Senioridade:** sênior\n\n## Stack principal\n\n`React` · `Next.js` · `NestJS` · `Node.js` · `TypeScript` · `Jest` · `Vitest` · `Playwright` · `REST APIs`\n\n## O que você fará\n\n* Desenvolver e evoluir aplicações web modernas, escaláveis e responsivas usando React, Next.js, NestJS e TypeScript.\n* Participar de decisões de arquitetura no frontend, no backend e nas integrações entre sistemas.\n* Criar componentes reutilizáveis e contribuir para a evolução dos padrões de desenvolvimento da equipe.\n* Escrever código limpo, bem documentado e coberto por testes automatizados.\n* Garantir a qualidade das entregas por meio de testes unitários, testes de componentes, testes end-to-end e code reviews.\n* Melhorar continuamente a performance, a escalabilidade, a acessibilidade e a experiência do usuário.\n* Trabalhar em conjunto com designers, product owners, desenvolvedores e stakeholders nos Estados Unidos.\n* Participar de refinamentos, planejamentos de sprint, retrospectivas e discussões técnicas.\n* Apoiar e orientar profissionais menos experientes do time.\n\n## O que buscamos\n\n* Experiência sólida em desenvolvimento de software, incluindo atuação como profissional sênior.\n* Domínio de React, Next.js, TypeScript e JavaScript moderno.\n* Experiência prática com Node.js e NestJS no desenvolvimento de APIs e serviços.\n* Conhecimento sólido de HTML5, CSS3, SASS/SCSS e design responsivo.\n* Experiência com testes automatizados usando Jest, Vitest, React Testing Library, Playwright ou ferramentas equivalentes.\n* Experiência com gerenciamento de estado usando Redux, Zustand, Recoil ou solução semelhante.\n* Conhecimento de APIs REST e integrações client-server.\n* Experiência com Git e pipelines de CI/CD.\n* Capacidade de analisar problemas, avaliar trade-offs e propor soluções técnicas sustentáveis.\n* Boa comunicação e colaboração em ambientes multiculturais.\n* **Inglês avançado para participar diariamente de reuniões e discussões técnicas.**\n\n## Será um diferencial\n\n* Experiência trabalhando diretamente com equipes dos Estados Unidos.\n* Experiência com produtos de e-commerce ou plataformas corporativas de grande porte.\n* Experiência com Azure DevOps, Docker, Terraform ou Helm Charts.\n* Conhecimento de arquitetura frontend, design systems e otimização de performance.\n* Experiência liderando iniciativas técnicas ou mentorando outros desenvolvedores.\n* Formação em Ciência da Computação, Engenharia ou área relacionada.\n\n## Processo seletivo\n\nO processo inclui:\n\n1. Conversa inicial e alinhamento de expectativas.\n2. Avaliação comportamental e técnica de alto nível.\n3. Entrevista técnica com um de nossos líderes no Brasil.\n4. Conversa técnica com os gestores do time nos Estados Unidos.\n\nParte do processo seletivo será conduzida em inglês.\n\n## Como se candidatar\n\nEnvie seu currículo ou perfil do LinkedIn para **[[rh@aurumdatasolutions.com](mailto:rh@aurumdatasolutions.com)]** com o assunto:\n\n**Senior Full Stack Developer - React/NestJS**\n\nInclua também:\n\n* nível atual de inglês;\n* disponibilidade para o modelo híbrido alternado em São Paulo;\n* links para GitHub, portfólio ou projetos relevantes, caso disponíveis.\n\n> Conhece alguém com esse perfil? Compartilhe esta oportunidade. Indicações são muito bem-vindas.\n\n## Labels\n\nPJ, Senior, 25k+, Híbrido",
-      "excerpt": "## Sobre a oportunidade A **Aurum Data Solutions** está contratando um(a) **Senior Full Stack Developer**, com forte especialização em frontend, para desenvolver produtos corporativos utilizados por uma grande empresa...",
-      "issueState": "open",
-      "contentHash": "9d24ce3c59b1d8cc31a7862e800adf2fb87f465bdab1d00e385859ed1515e4d8",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "stale",
-        "⚖️ outros",
-        "⚖️ pj",
-        "👴 senior"
-      ],
-      "sourceTags": [
-        "stale",
-        "⚖️ outros",
-        "⚖️ pj",
-        "👴 senior"
-      ],
-      "author": {
-        "id": "fabioglin",
-        "name": "fabioglin",
-        "handle": "fabioglin",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/37214705?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "createdAt": "2026-09-09T00:23:23Z",
-      "updatedAt": "2026-11-08T05:00:31Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3032",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "** São Paulo",
-        "subdivision": "SP",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "** São Paulo, SP · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "devops-sre",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "azure",
-          "docker",
-          "javascript",
-          "nextjs",
-          "nodejs",
-          "react",
-          "terraform",
-          "typescript"
-        ],
-        "seniority": [
-          "principal",
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_0a8b03c6a18ae229dcc0f780",
-          "sourceId": "react-brasil/vagas#3032",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3032",
-          "createdAt": "2026-09-09T00:23:23Z",
-          "updatedAt": "2026-11-08T05:00:31Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 61,
-        "publishedAt": "2026-09-09T00:23:23Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_ab7a8bff64dbf3837743eded",
-      "sourceId": "backend-br/vagas#12416",
-      "title": "[Home Office - Tempo Determinado/5 meses] Desenvolvedor Backend (Java) - BHS",
-      "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nCom 31 anos de experiência no mercado, proporcionamos soluções modernas de TI. 🚀\nSomos reconhecidos como a MELHOR empresa para se trabalhar em MG e TI do BRASIL pelo GPTW - Great Place to Work, e estamos classificados como a 4ª melhor empresa para se trabalhar na categoria LATAM.\n\n## Descrição da vaga\n\n· Projetar, desenvolver e manter microsserviços e APIs RESTful em Java, com foco em alta performance e escalabilidade;\n· Modelar, otimizar e gerenciar estruturas de bancos de dados relacionais e/ou não relacionais, garantindo integridade e eficiência das consultas;\n· Aplicar princípios de Clean Architecture, DDD e SOLID, assegurando cobertura de testes automatizados;\n· Participar ativamente do ciclo de desenvolvimento ágil, com senso de urgência e foco no cumprimento de sprints e metas;\n· Colaborar de forma contínua com o time de Frontend na definição de contratos de API e requisitos de negócio.\n· Disponibilidade para atuar por tempo determinado (5 meses).\n\n## Local\n\nHome Office\n\n## Requisitos\n\n· Sólida experiência em desenvolvimento Java (Java 11/17+) e ecossistemaSpring (Spring Boot, Spring Data, Spring Security);\n· Forte conhecimento e experiência prática em modelagem e otimização de Bancos de Dados Relacionais (PostgreSQL, MySQL, Oracle) e/ou NoSQL (MongoDB, Redis);\n· Experiência com arquitetura de microsserviços, mensageria (Kafka, RabbitMQ, SQS) e integração de APIs REST;\n· Prática com testes automatizados (JUnit, Mockito);\n· Experiência com CI/CD, Docker e plataformas em Nuvem (AWS, Azure ou GCP);\n· Atuação consolidada em metodologias ágeis (Scrum / Kanban).\n\n## Benefícios\n\nPlano de saúde e Assistência Odontológica;\nVale Refeição/Alimentação no cartão Flash;\nVale-transporte ou auxílio mobilidade;\nGympass / Wellhub;\nSeguro de vida;\nLicença Maternidade/Paternidade estendida;\nParcerias e convênios diversos em educação, saúde e lazer (Universidades, escolas de Idioma, academias, clínicas de saúde...);\nCultura de Feedback contínuo, com: Feedbacks semestrais, 1:1, PDI (Plano de Desenvolvimento Individual) e BHS Experience.\n\n## Contratação\n\nCLT Determinado (5 meses)\n\n## Como se candidatar\n\nhttps://bhs.gupy.io/jobs/12263154?jobBoardSource=gupy_public_page\n\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n\n- Sênior\n\n### Regime\n\n- CLT Determinado (5 meses)\n\n\n### Alocação\n\n- Remoto",
-      "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Com 31 anos de experiência no mercado, proporcionamos soluções modernas de TI. 🚀 Somos reconhecidos como a MELHOR empresa para se trabalhar em MG ...",
-      "issueState": "open",
-      "contentHash": "36a5cba8a86a315f1b04c7949869e49a7e5a5752d7ec26a1146f1644c078d474",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "aws",
-        "clt",
-        "java",
-        "mongodb",
-        "mysql",
-        "remoto",
-        "sênior",
-        "testes automatizados"
-      ],
-      "sourceTags": [
-        "aws",
-        "clt",
-        "java",
-        "mongodb",
-        "mysql",
-        "remoto",
-        "sênior",
-        "testes automatizados"
-      ],
-      "author": {
-        "id": "beagaese",
-        "name": "beagaese",
-        "handle": "beagaese",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/326464938?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-09-08T11:29:19Z",
-      "updatedAt": "2026-11-05T17:50:43Z",
-      "url": "https://github.com/backend-br/vagas/issues/12416",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "frontend"
-        ],
-        "technologies": [
-          "aws",
-          "azure",
-          "docker",
-          "gcp",
-          "java",
-          "mongodb",
-          "mysql",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_ab7a8bff64dbf3837743eded",
-          "sourceId": "backend-br/vagas#12416",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12416",
-          "createdAt": "2026-09-08T11:29:19Z",
-          "updatedAt": "2026-11-05T17:50:43Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 61,
-        "publishedAt": "2026-09-08T11:29:19Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_6ce2011192257ba9ecbe6ca6",
-      "sourceId": "frontendbr/vagas#8558",
-      "title": "[Remoto! Curitiba] Tech Lead Integrações (USD)",
-      "description": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES\n📍 Curitiba/PR | Modelo híbrido – 2x por semana\n 💰 Até US$ 5.000/mês | Contractor\n 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA\nEstamos buscando um(a) Tech Lead Hands-On, com forte experiência em desenvolvimento, arquitetura e integrações para atuar em um projeto internacional.\nAqui, liderança técnica significa continuar colocando a mão no código.\nNão buscamos alguém que tenha atuado apenas como gestor ou que esteja distante do desenvolvimento. A posição exige programação no dia a dia, revisão de código, decisões arquiteturais, acompanhamento de pipelines e atuação direta na resolução de problemas em produção.\n💡 Importante: o processo seletivo terá Live Coding, justamente para avaliar a capacidade técnica na prática.\n🔎 O que você precisa ter?\n✅ 10+ anos de experiência profissional em desenvolvimento de software;\n ✅ Experiência sólida com Python, Java ou Go;\n ✅ Experiência com programação assíncrona e concorrência;\n ✅ Bacharelado concluído em TI, como Ciência da Computação, Sistemas de Informação ou Engenharia de Software;\n ✅ Domínio prático de Scrum e Kanban;\n ✅ Experiência conduzindo ritos, refinamentos técnicos e priorização de backlog;\n ✅ Capacidade de liderar tecnicamente uma squad com autonomia, inclusive em cenários sem PO dedicado;\n ✅ Experiência com Clean Code, SOLID e Code Review;\n ✅ Experiência na investigação e resolução de problemas em produção;\n ✅ Conhecimento avançado de SQL;\n ✅ Experiência com APIs REST, Webhooks e integrações;\n ✅ Conhecimento de arquiteturas Event-Driven, como Kafka ou RabbitMQ;\n ✅ Experiência trabalhando com arquivos em alta escala;\n ✅ Prática com testes automatizados, resiliência e idempotência;\n ✅ Inglês C1/C2, com comunicação diária em ambiente internacional.\n⭐ Será um grande diferencial:\n• Experiência com US Healthcare;\n • Conhecimento de FHIR, HL7 e X12 (834/835/837);\n • Conhecimento de HIPAA/PHI;\n • Experiência com arquitetura de integrações na AWS;\n • Conhecimento de Lambda, SQS, SNS e API Gateway.\n⚠️ Antes de se candidatar\nEssa é uma posição realmente Hands-On.\nSe você atualmente não programa no dia a dia ou busca uma posição exclusivamente gerencial, provavelmente essa oportunidade não será o melhor match.\nO processo inclui uma etapa prática de Live Coding, portanto buscamos profissionais que tenham segurança para demonstrar seus conhecimentos técnicos na prática.\n🌎 O que oferecemos?\n💰 Até US$ 5.000/mês\n 📄 Contrato internacional\n 📍 Híbrido em Curitiba/PR – 2x por semana\n 🇺🇸 Atuação com equipe nos Estados Unidos\n 🚀 Projeto internacional e ambiente tecnicamente desafiador\nSe você tem experiência técnica + liderança + perfil Hands-On e está pronto para atuar em um projeto internacional, queremos conhecer você.\n👉 Envie seu CV em inglês (PDF) pelo link nos comentários.\nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n\nE se você conhece aquele Tech Lead que realmente ainda coloca a mão no código, marque ou compartilhe esta oportunidade com ele. 🚀\n#TechLead #TechLeadership #SoftwareEngineering #SoftwareDeveloper #BackendDeveloper #Python #Java #Golang #Kafka #RabbitMQ #AWS #APIs #Integration #EventDrivenArchitecture #CleanCode #SOLID #Scrum #Kanban #USHealthcare #HealthcareIT #RemoteJobs #InternationalJobs #TechJobs #VagasDeTI #Curitiba #LATAM",
-      "excerpt": "🚀 OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech...",
-      "issueState": "open",
-      "contentHash": "ea1036305d074dad0fc14b0f1af77ad042180f86cae3d5f48e4d128c682a8b9b",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "híbrido",
-        "stale"
-      ],
-      "sourceTags": [
-        "híbrido",
-        "stale"
-      ],
-      "author": {
-        "id": "Claudiaantunesdelima",
-        "name": "Claudiaantunesdelima",
-        "handle": "Claudiaantunesdelima",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "createdAt": "2026-09-04T15:51:55Z",
-      "updatedAt": "2026-11-04T04:00:50Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8558",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "leadership"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "java",
-          "python"
-        ],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_6ce2011192257ba9ecbe6ca6",
-          "sourceId": "frontendbr/vagas#8558",
-          "repository": "frontendbr/vagas",
-          "repositoryUrl": "https://github.com/frontendbr/vagas",
-          "url": "https://github.com/frontendbr/vagas/issues/8558",
-          "createdAt": "2026-09-04T15:51:55Z",
-          "updatedAt": "2026-11-04T04:00:50Z",
-          "community": {
-            "id": "frontendbr",
-            "name": "frontendbr",
-            "avatarUrl": "https://github.com/frontendbr.png?size=80",
-            "repository": "frontendbr/vagas",
-            "url": "https://github.com/frontendbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 65,
-        "publishedAt": "2026-09-04T15:51:55Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_70e6e21759821a59e640879e",
-      "sourceId": "react-brasil/vagas#3031",
-      "title": "Senior Full Stack Software Engineer (React / Python / Go or Node.js or Java) | Remote | Velozient",
-      "description": "**About the Role**\n\nWe are seeking a remote, full-time Senior Full Stack Software Engineer with 6+ years of software development experience. Candidates must have a strong background in React.js and either Golang, Node.js, or Java experience with a strong desire to adopt Golang as the primary back-end technology.\n\nIn this position, you will play a foundational role in building the core platform that enables power utilities to shift from decades-old legacy systems into an AI-native future. Candidates must bring working proficiency with AI tools and APIs to ensure seamless integration of intelligent functionality into the client's products.\n\n**Required Experience**\n\nExcellent English communication skills\n6+ years of software engineering experience in SaaS or enterprise environments\nStrong proficiency in Python, Golang, Node.js, or Java (non-Golang developers will learn and adopt Golang on the job)\nStrong background in React\nDemonstrated ability to deliver high-quality code in fast-moving teams\nBasic proficiency with AI/ML tooling (e.g., calling APIs, integrating model outputs)\nSolid understanding of databases (SQL and NoSQL), message queues, and distributed architectures\nCloud-native engineering experience (AWS, Azure, GCP)\n\n\n**Additional Information**\n\n15 days Paid Time Off (PTO), 1 floating day, 3 sick days, and designated national holidays\nStart: ASAP\n--------------------------------------------------------------------------------------------------------\n**Interested in this role?**\n\n**Apply here:** https://velozi-vetting.base44.app/careers/6a6cb6502cbcfa7a246e4ea3?acquisition=inbound&source=forum&landing_job_id=6a6cb6502cbcfa7a246e4ea3&community=React+Brasil&campaign=September+2026\n**All opportunities here:** https://apply.velozient.com/careers",
-      "excerpt": "**About the Role** We are seeking a remote, full-time Senior Full Stack Software Engineer with 6+ years of software development experience. Candidates must have a strong background in React.js and either Golang, Node....",
-      "issueState": "open",
-      "contentHash": "21b3c4602f7c0fafd93adedb37f390bd6381fa0426de4e7b46633e8b4e2c7304",
-      "repository": "react-brasil/vagas",
-      "repositoryUrl": "https://github.com/react-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "stale"
-      ],
-      "sourceTags": [
-        "stale"
-      ],
-      "author": {
-        "id": "Fabiochapola",
-        "name": "Fabiochapola",
-        "handle": "Fabiochapola",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/87088868?v=4"
-      },
-      "community": {
-        "id": "react-brasil",
-        "name": "react-brasil",
-        "avatarUrl": "https://github.com/react-brasil.png?size=80",
-        "repository": "react-brasil/vagas",
-        "url": "https://github.com/react-brasil/vagas"
-      },
-      "createdAt": "2026-09-04T15:16:19Z",
-      "updatedAt": "2026-11-04T05:21:52Z",
-      "url": "https://github.com/react-brasil/vagas/issues/3031",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "fullstack"
-        ],
-        "technologies": [
-          "aws",
-          "azure",
-          "gcp",
-          "go",
-          "java",
-          "nodejs",
-          "python",
-          "react"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_70e6e21759821a59e640879e",
-          "sourceId": "react-brasil/vagas#3031",
-          "repository": "react-brasil/vagas",
-          "repositoryUrl": "https://github.com/react-brasil/vagas",
-          "url": "https://github.com/react-brasil/vagas/issues/3031",
-          "createdAt": "2026-09-04T15:16:19Z",
-          "updatedAt": "2026-11-04T05:21:52Z",
-          "community": {
-            "id": "react-brasil",
-            "name": "react-brasil",
-            "avatarUrl": "https://github.com/react-brasil.png?size=80",
-            "repository": "react-brasil/vagas",
-            "url": "https://github.com/react-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 65,
-        "publishedAt": "2026-09-04T15:16:19Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_1ba6459bb5469a28d19f2a84",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2964",
-      "title": "Update Arch to correct company profile",
-      "description": "### Link to Job Posting\n\nhttps://jobs.ashbyhq.com/arch.co/9fde8d03-9f47-44ac-bd14-53829722c06d/application?embed=true&utm_source=Simplify&ref=Simplify\n\n### Company Name\n\nArch\n\n### Job Title\n\nSoftware Engineer\n\n### Location\n\nNYC\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nYes\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Permanently remove this job from the list?\n\n- [ ] Yes, remove this job\n\n### Email associated with your GitHub account (Optional)\n\nleonxie2003@gmail.com\n\n### Reason for edit\n\nThe company profile linked is incorrect. It should be arch.com, the alternative investment platform, not archlending.com, the crypto lending company.",
-      "excerpt": "### Link to Job Posting https://jobs.ashbyhq.com/arch.co/9fde8d03-9f47-44ac-bd14-53829722c06d/application?embed=true&utm_source=Simplify&ref=Simplify ### Company Name Arch ### Job Title Software Engineer ### Location ...",
-      "issueState": "open",
-      "contentHash": "75d1218ec89625141c4d6c9c9aad96495a8874b16b53a9d4e270422232476636",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "edit_role"
-      ],
-      "sourceTags": [
-        "edit_role"
-      ],
-      "author": {
-        "id": "leonxie2003",
-        "name": "leonxie2003",
-        "handle": "leonxie2003",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/64603936?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-09-03T19:15:29Z",
-      "updatedAt": "2026-09-04T13:34:30Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2964",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_1ba6459bb5469a28d19f2a84",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2964",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2964",
-          "createdAt": "2026-09-03T19:15:29Z",
-          "updatedAt": "2026-09-04T13:34:30Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 66,
-        "publishedAt": "2026-09-03T19:15:29Z",
         "status": "aging"
       }
     }

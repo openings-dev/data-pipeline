@@ -1,9 +1,14 @@
 {
-  "generatedAt": "2026-11-09T10:43:26.039Z",
+  "generatedAt": "2026-11-09T21:48:57.392Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_b6d75d364f3ed3304897ef32",
+    "gh_dc32051696483d7146617fb0",
+    "gh_8dcf7662e9af892020402829",
+    "gh_881dad8e9da418d806d0ef76",
+    "gh_101791c382f876803f9af999",
     "gh_62be6f95b8ba7963f6ff4af4",
     "gh_dbf56fbe02e9e313f09e8784",
     "gh_59d3844ae80e74b233ec521b",
@@ -18,14 +23,523 @@
     "gh_955226cbfa98dd29e44c402f",
     "gh_4c8cb2b9592db50dba6ad8df",
     "gh_30f0dda015de26670412f182",
-    "gh_ca9d5db8baaa5615880ab26c",
-    "gh_01304d40c1defd808fb8b3be",
-    "gh_1ef9ab1a40d70f694d6cf680",
-    "gh_e8c58584e2e3c52826eadc7c",
-    "gh_7be2f05d46f630ed65453833",
-    "gh_ce7340018fdb4eeadb09d635"
+    "gh_ca9d5db8baaa5615880ab26c"
   ],
   "items": [
+    {
+      "id": "gh_b6d75d364f3ed3304897ef32",
+      "sourceId": "soujava/vagas-java#1976",
+      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Atendimento por Chat) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO back-end do chat de atendimento recebe mensagens do site, do aplicativo e de canais de mensagem, coloca cada conversa na fila certa, distribui entre atendentes disponíveis e entrega as mensagens em tempo real para os dois lados. Também guarda o histórico completo, mede o tempo de espera e de resposta e aciona o robô de primeiro atendimento antes de passar a conversa para uma pessoa. O serviço é escrito em Java com Spring Boot, e as conexões em tempo real ficam espalhadas por várias instâncias, então uma mensagem precisa chegar ao atendente certo, esteja ele conectado em qual instância estiver, sem duplicar e sem perder a ordem. A distribuição precisa respeitar o limite de conversas simultâneas de cada atendente e redistribuir quando alguém sai. Mensagens de canais externos chegam por webhook, às vezes repetidas e fora de ordem, e precisam ser normalizadas antes de entrar na conversa. A modelagem de conversa, fila e distribuição dentro do serviço fica sob sua responsabilidade.\n\n- Entregar mensagens em tempo real por WebSocket entre várias instâncias usando Redis\n- Garantir ordem e ausência de duplicidade nas mensagens de cada conversa\n- Implementar a distribuição de conversas por fila, habilidade e limite de cada atendente\n- Receber e normalizar mensagens de canais externos por webhook\n- Medir os tempos de espera e de resposta por fila\n- Integrar a passagem do robô de primeiro atendimento para o atendente\n- Escrever testes de integração com Testcontainers\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot em produção\n- WebSocket e comunicação em tempo real com várias instâncias\n- Redis para publicação e assinatura ou para estado compartilhado\n- PostgreSQL com modelagem de conversas e mensagens\n- Testes de integração que reproduzem várias instâncias conectadas\n- Autonomia para entregar funcionalidade completa e decidir dentro do serviço\n\n**Diferenciais:**\n- Ter trabalhado com chat, atendimento ou mensageria em tempo real\n- RabbitMQ ou Kafka\n- Integração com APIs de canais de mensagem\n- Observabilidade de conexões e de filas\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-atendimento-por-chat-560?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O back-end do chat de atendimento recebe mensagens do sit...",
+      "issueState": "open",
+      "contentHash": "7829b3471f6647bcc123b871b511e67f417ed8dc3caf6238156843037562aa11",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "rabbitmq",
+        "redis",
+        "remoto",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "rabbitmq",
+        "redis",
+        "remoto",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 5000,
+        "max": 6500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-06T12:44:35Z",
+      "updatedAt": "2026-11-06T12:44:53Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1976",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "java",
+          "postgres",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_b6d75d364f3ed3304897ef32",
+          "sourceId": "soujava/vagas-java#1976",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1976",
+          "createdAt": "2026-11-06T12:44:35Z",
+          "updatedAt": "2026-11-06T12:44:53Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-06T12:44:35Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_dc32051696483d7146617fb0",
+      "sourceId": "rebase-network/who-is-hiring#1342",
+      "title": "[Remote] Crypto 交易所诚聘 量化策略研究员（Crypto 做市对冲 / 套利 / CTA / 事件驱动）薪水 4000U-7000U",
+      "description": "## 公司/团队介绍\n二线交易所，管理扁平化，业务稳定，分布式办公\n一个 Crypto 量化团队，正从 0 到 1 搭建。你将作为核心策略成员，独立负责策略的研究、开发、上线与优化，并对实盘表现负责。\n\n## 薪资福利待遇\n薪水 4000U-6000U /月\n\n## 地点\n\n- 工作地点：远程办公\n- 联系方式：✈️TG: @AriaWanax\n                    VX: Aurora_Wanax\n                    📮email: [evelyn.hr@kcex.com](mailto:evelyn.hr@kcex.com)\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：是\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n**你要做的事：**\n\n- Crypto 做市对冲策略：报价优化（spread/skew）、库存管理、逆向选择防护、跨所对冲，并把 alpha 因子嵌入报价做收益增强\n- CTA / 趋势跟踪：方向性策略，辅助对冲时机与仓位，也可独立跑 alpha\n- 套利策略：资金费率套利、基差/期现套利、跨所价差套利\n- 事件驱动策略：Crypto 事件驱动（上币/下架/黑客/监管/链上异动）+ TradFi 事件驱动多因子，有美股交易策略经验优先或者可把传统股票方法迁移到加密中。\n- 因子挖掘与因子工程：量价、动量、波动率、流动性、资金费率、事件、情绪、链上等因子，并建立完整因子研究体系（因子构建、IC/IR 验证、分层测试、稳定性检验、去相关、中性化及多因子组合）\n- 策略全生命周期：Idea → 回测 → 实盘 → 监控 → 优化/下线，独立闭环\n\n**我们希望你是：**\n\n- 3 年以上量化策略经验，Crypto 和美股优先（股票/期货/CTA 背景也欢迎）\n- 在做市对冲、套利、CTA、因子挖掘中，至少真正做深过一类\n- 有真实实盘经验，能说清资金规模、Sharpe、最大回撤、交易频率、策略容量\n- 熟练 Python，熟悉 SQL / Linux，C++ 加分\n\n**加分项：**\n\n- Crypto 做市商 / 交易所背景\n- 链上数据、Funding Rate、OI、Liquidation、Basis、Exchange Flow 研究经验\n- 资金费率套利、事件驱动策略实盘经验\n- 我们更看重\"做深\"，不是\"了解多\"：\n\n为什么加入：\n\n- 直接做核心策略，从 0 到 1，不是维护现成系统\n- 做市对冲是我们的基础盘，你的因子能力会直接变成收益\n- 独立跑通全链路，成长空间和话语权都大\n## 工作环境\n远程办公",
+      "excerpt": "## 公司/团队介绍 二线交易所，管理扁平化，业务稳定，分布式办公 一个 Crypto 量化团队，正从 0 到 1 搭建。你将作为核心策略成员，独立负责策略的研究、开发、上线与优化，并对实盘表现负责。 ## 薪资福利待遇 薪水 4000U-6000U /月 ## 地点 - 工作地点：远程办公 - 联系方式：✈️TG: @AriaWanax VX: Aurora_Wanax 📮email: [evelyn.hr@kcex.com]...",
+      "issueState": "open",
+      "contentHash": "cc955b0e294e3e146fe5d68b2a61d31bf1f1b3d5ee85438b1ff222ec3668f4ff",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "AriaF9",
+        "name": "AriaF9",
+        "handle": "AriaF9",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/182081788?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-06T08:38:22Z",
+      "updatedAt": "2026-11-06T08:38:22Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1342",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_dc32051696483d7146617fb0",
+          "sourceId": "rebase-network/who-is-hiring#1342",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1342",
+          "createdAt": "2026-11-06T08:38:22Z",
+          "updatedAt": "2026-11-06T08:38:22Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-06T08:38:22Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_8dcf7662e9af892020402829",
+      "sourceId": "rebase-network/who-is-hiring#1341",
+      "title": "[Remote] Crypto 交易所诚聘 Node.js后端 开发工程师 薪水 4000U-6000U",
+      "description": "## 公司/团队介绍\n二线交易所，管理扁平化，业务稳定，分布式办公\n\n## 薪资福利待遇\n薪水 4000U-6000U /月\n\n## 地点\n\n- 工作地点：远程办公\n- 联系方式：✈️TG: @AriaWanax\n                     VX: Aurora_Wanax\n                    📮email: evelyn.hr@kcex.com\n\n\n## 工作性质\n\n- 是否全职：是\n- 是否远程：是\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n岗位介绍\n- 负责 DEX 行情处理与链上交易执行相关的后端开发，包括行情接入、报价与路由、交易构建、状态跟踪及异常处理。\n- 岗位以 Node.js / TypeScript 后端开发为主，需要通过 RPC、SDK 与已有链上协议交互，不以智能合约编写为主要职责。管理后台开发属于配套工作。\n\n核心职责\n- DEX 行情与链上数据处理\n- 链上交易执行\n- 交易质量优化\n- 交易监控与状态管理\n- 交易中台及后台开发\n- 系统稳定性建设\n\n任职要求\n- 熟悉 Node.js / TypeScript，有生产环境后端服务开发经验，理解异步编程、事件循环和并发控制，能够定位性能及稳定性问题。\n- 有 交易所、钱包、DEX 或链上服务 相关研发经验，实际参与过链上数据处理或交易服务开发，能够说明本人负责的模块及上线结果。\n- 至少具备 Ethereum/EVM 或 Solana 其中一个生态的线上交易构建经验，熟悉交易构建、签名、广播、确认和执行结果解析流程。\n- 熟悉 EVM 生态，理解 RPC、nonce、mempool、Gas 及合约调用机制；能够使用相关 SDK 完成交易交互。\n- 理解 DEX 交易中的报价、滑点、流动性和路由逻辑。有 DEX 协议、聚合器或钱包 Swap 功能接入经验优先。\n- 有实际线上异常处理经验，如交易长时间未确认、节点异常、交易替换、超时重试、重复请求及状态补偿。\n- 有 WebSocket 等实时数据处理经验，熟悉数据库、缓存及消息队列的常见使用场景。\n- 能独立完成需求拆解、开发、测试、上线及问题跟进；具备基础前端能力，能够完成管理后台页面开发。\n\n加分项\n- 有链上交易执行、做市或量化策略执行系统开发经验。\n- 有 Solana 交易模拟、有效期管理、优先费及确认跟踪经验。\n- 有 Bitcoin 交易构建、UTXO 管理或多链钱包服务经验。\n- 做过 RPC 节点切换、行情补数、交易成功率或时延优化，并能说明具体效果。\n- 有签名服务隔离、权限控制及敏感信息保护相关经验。\n## 工作环境\n远程办公",
+      "excerpt": "## 公司/团队介绍 二线交易所，管理扁平化，业务稳定，分布式办公 ## 薪资福利待遇 薪水 4000U-6000U /月 ## 地点 - 工作地点：远程办公 - 联系方式：✈️TG: @AriaWanax VX: Aurora_Wanax 📮email: evelyn.hr@kcex.com ## 工作性质 - 是否全职：是 - 是否远程：是 - 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作） ##...",
+      "issueState": "open",
+      "contentHash": "696a0dfb6d07668ca3c328eebe19ac3c9ffe7f92dc00b9c92dd1bf0ebca35c56",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "node",
+        "remote",
+        "typescript"
+      ],
+      "sourceTags": [
+        "node",
+        "remote",
+        "typescript"
+      ],
+      "author": {
+        "id": "AriaF9",
+        "name": "AriaF9",
+        "handle": "AriaF9",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/182081788?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-06T08:33:23Z",
+      "updatedAt": "2026-11-06T08:33:23Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1341",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "nodejs",
+          "typescript"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_8dcf7662e9af892020402829",
+          "sourceId": "rebase-network/who-is-hiring#1341",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1341",
+          "createdAt": "2026-11-06T08:33:23Z",
+          "updatedAt": "2026-11-06T08:33:23Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-06T08:33:23Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_881dad8e9da418d806d0ef76",
+      "sourceId": "rebase-network/who-is-hiring#1340",
+      "title": "【中国大陆招聘】Android系统测试工程师｜性能/功耗/稳定性｜Framework/Kernel｜5年+",
+      "description": "**岗位职责**\n\n负责智能手机/平板“快、稳、省”核心体验的端到端测试，包括性能、稳定性、功耗三大维度；\n\n设计并执行系统级性能测试（应用冷启/热启、滑动帧率、多任务切换、动画流畅度等），建立性能基线并监控版本劣化；\n\n主导稳定性专项测试，包括长时间压力测试、内存泄漏检测、Crash/ANR 根因分析与复现；\n\n开展全场景功耗测试（待机、视频播放、游戏、5G/Wi-Fi/BT 多连接、高亮屏等），定位异常耗电模块；\n\n搭建自动化监控体系，推动“快稳省”指标流程；\n\n输出高质量测试报告，协同 OS、Kernel、驱动及应用团队推动体验优化。\n\n \n\n**任职要求**\n\n本科及以上学历，计算机、通信、电子或相关专业；\n\n5年以上智能手机/平板系统测试经验，有完整参与2个以上机型“快稳省”专项测试交付经历；\n\n深入理解 Android 系统架构，熟悉 Framework、HAL、Linux Kernel 与电源管理（PM）机制；\n\n掌握稳定性测试方法论，能独立完成 Crash/ANR 日志分析（logcat、tombstone、dropbox）；\n\n具备 Python/Shell 脚本能力，有自动化测试框架开发或集成经验；\n\n对用户体验高度敏感，具备数据驱动的问题定位与优化建议能力。\n\n \n\n**联系方式**\n\n咨询加微信：applytoHogwarts",
+      "excerpt": "**岗位职责** 负责智能手机/平板“快、稳、省”核心体验的端到端测试，包括性能、稳定性、功耗三大维度； 设计并执行系统级性能测试（应用冷启/热启、滑动帧率、多任务切换、动画流畅度等），建立性能基线并监控版本劣化； 主导稳定性专项测试，包括长时间压力测试、内存泄漏检测、Crash/ANR 根因分析与复现； 开展全场景功耗测试（待机、视频播放、游戏、5G/Wi-Fi/BT 多连接、高亮屏等），定位异常耗电模块； 搭建自动化监控体系，...",
+      "issueState": "open",
+      "contentHash": "df30aabb5709262b632be6e2eb9976e1bb869c660ace76895c7c110c755062a2",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "needs-info"
+      ],
+      "sourceTags": [
+        "needs-info"
+      ],
+      "author": {
+        "id": "Lucky-girl-coder",
+        "name": "Lucky-girl-coder",
+        "handle": "Lucky-girl-coder",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/68574762?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-06T05:48:40Z",
+      "updatedAt": "2026-11-06T05:49:03Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1340",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "mobile"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_881dad8e9da418d806d0ef76",
+          "sourceId": "rebase-network/who-is-hiring#1340",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1340",
+          "createdAt": "2026-11-06T05:48:40Z",
+          "updatedAt": "2026-11-06T05:49:03Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 3,
+        "publishedAt": "2026-11-06T05:48:40Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_101791c382f876803f9af999",
+      "sourceId": "phpdevbr/vagas#1333",
+      "title": "[Rio de Janeiro] Arctron Software - Desenvolvedor Fullstack Sênior (PHP/Laravel/Symfony/React) - 100% Presencial na Barra da Tijuca",
+      "description": "**VAGA 100% PRESENCIAL NA BARRA DA TIJUCA - RJ. ALOCAÇÃO NO CLIENTE.**\n\nSobre a Arctron\nA Arctron é uma fábrica de software. Desenvolve sistemas sob medida e tem produtos próprios de tiqueteira, PDV para bares e credenciamento de eventos. Está em fase de crescimento, com projetos novos chegando para clientes do esporte.\n\n\nSobre a vaga\nA Arctron vai reconstruir o sistema principal de uma entidade esportiva nacional. O sistema cobre processos administrativos, de saúde e de performance das equipes da entidade.\nA pessoa contratada fica dedicada a esse projeto, trabalhando presencialmente dentro do cliente. Faz o ciclo completo. Conversa com os usuários, transforma o que ouve em requisito e backlog, desenvolve, implanta e ajuda as áreas a adotar o sistema no dia a dia.\nVocê vai lidar com dados pessoais sensíveis. Discrição e ética pesam tanto quanto o código.\n\n\nO que você vai fazer\nLevantar requisitos com usuários de várias áreas, como administrativo, saúde e coordenação técnica.\nRegistrar as demandas no backlog e alinhar a prioridade com o gestor da Arctron.\nDesenvolver de ponta a ponta com PHP (Laravel ou Symfony), PostgreSQL e React.\nImplantar o sistema, treinar os usuários e acompanhar o uso.\nMontar dashboards simples em Power BI com os dados do sistema.\nProteger os dados do projeto e ficar atento a tentativas de engenharia social.\n\n\nO que buscamos\nExperiência sênior com PHP, em Laravel ou Symfony.\nPostgreSQL, com modelagem e consulta.\nJavaScript com React.\nVivência full cycle, do atendimento ao usuário até a entrega em produção.\nPower BI para dashboards simples.\nFacilidade para conversar com usuário não técnico e explicar prazo e impacto.\nAutonomia para se organizar sem supervisão diária. O gestor acompanha de perto, mas não fica no local todo dia.\nDisponibilidade para trabalho presencial na Barra da Tijuca, Rio de Janeiro.\n\n\nDiferenciais\nPassagem como analista de requisitos ou analista de negócios, com base técnica sólida.\nExperiência alocado em cliente, implantando sistema com usuários finais.\nNão é preciso ter trabalhado com esporte.\n\n\nCondições\nContrato PJ com remuneração compatível no mercado.\n30 dias de férias remuneradas por ano.\nPresencial na Barra da Tijuca, Rio de Janeiro. Em dezembro o trabalho pode ser remoto, por causa de uma reforma no local.\nInício imediato.\n\nEnviar sua candidatura para o e-mail pedro@purposeconsult.com.br com o currículo!",
+      "excerpt": "**VAGA 100% PRESENCIAL NA BARRA DA TIJUCA - RJ. ALOCAÇÃO NO CLIENTE.** Sobre a Arctron A Arctron é uma fábrica de software. Desenvolve sistemas sob medida e tem produtos próprios de tiqueteira, PDV para bares e creden...",
+      "issueState": "open",
+      "contentHash": "b1ea35452b5646c3cb0bccd6ae99890605dbf397709c06384fb9ce0cf4741233",
+      "repository": "phpdevbr/vagas",
+      "repositoryUrl": "https://github.com/phpdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "fullstack",
+        "java",
+        "principal",
+        "react"
+      ],
+      "sourceTags": [
+        "fullstack",
+        "java",
+        "principal",
+        "react"
+      ],
+      "author": {
+        "id": "opedroalvarenga-droid",
+        "name": "opedroalvarenga-droid",
+        "handle": "opedroalvarenga-droid",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/314667217?v=4"
+      },
+      "community": {
+        "id": "phpdevbr",
+        "name": "phpdevbr",
+        "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+        "repository": "phpdevbr/vagas",
+        "url": "https://github.com/phpdevbr/vagas"
+      },
+      "companyName": "Barra da Tijuca",
+      "createdAt": "2026-11-05T19:46:08Z",
+      "updatedAt": "2026-11-05T20:26:07Z",
+      "url": "https://github.com/phpdevbr/vagas/issues/1333",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "On-site",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "laravel",
+          "php",
+          "postgres",
+          "react"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_101791c382f876803f9af999",
+          "sourceId": "phpdevbr/vagas#1333",
+          "repository": "phpdevbr/vagas",
+          "repositoryUrl": "https://github.com/phpdevbr/vagas",
+          "url": "https://github.com/phpdevbr/vagas/issues/1333",
+          "createdAt": "2026-11-05T19:46:08Z",
+          "updatedAt": "2026-11-05T20:26:07Z",
+          "community": {
+            "id": "phpdevbr",
+            "name": "phpdevbr",
+            "avatarUrl": "https://github.com/phpdevbr.png?size=80",
+            "repository": "phpdevbr/vagas",
+            "url": "https://github.com/phpdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 4,
+        "publishedAt": "2026-11-05T19:46:08Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_62be6f95b8ba7963f6ff4af4",
       "sourceId": "rebase-network/who-is-hiring#1339",
@@ -107,7 +621,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-05T13:27:55Z",
         "status": "fresh"
       }
@@ -206,7 +720,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-05T13:26:48Z",
         "status": "fresh"
       }
@@ -297,7 +811,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-05T13:26:23Z",
         "status": "fresh"
       }
@@ -395,7 +909,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-05T13:00:49Z",
         "status": "fresh"
       }
@@ -527,7 +1041,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-05T12:57:24Z",
         "status": "fresh"
       }
@@ -950,7 +1464,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-04T13:27:20Z",
         "status": "fresh"
       }
@@ -1265,7 +1779,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-03T18:57:28Z",
         "status": "fresh"
       }
@@ -1366,7 +1880,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-03T18:56:32Z",
         "status": "fresh"
       }
@@ -1481,7 +1995,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-03T17:19:12Z",
         "status": "fresh"
       }
@@ -1575,494 +2089,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-03T15:02:16Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_01304d40c1defd808fb8b3be",
-      "sourceId": "rebase-network/who-is-hiring#1335",
-      "title": "【全球远程 远程办公 居家办公 FineStar】后端/go/glang高级/架构师 Go/PHP/Python/node  20-50k",
-      "description": "go高级工程师 架构师\n岗位职责\n1. 负责短剧及 AI 内容平台的后端架构设计、核心功能开发与维护，保障系统稳定性、可扩展性及交付质量。\n2. 负责短剧业务系统建设，涵盖内容管理、剧集管理、视频处理、播放鉴权、会员订阅、付费解锁等核心流程。\n3. 负责 AI 文本生成、图片生成、视频生成模型的接入与服务封装，支持多模型调度、流式输出、异步任务及结果回调。\n4. 建设 AI 内容生产流程，串联剧本生成、角色设定、分镜生成、生图、生视频及成片处理等环节。\n5. 设计模型任务调度与计费体系，完善并发控制、超时重试、幂等处理、失败补偿及成本统计。\n6. 负责数据库、缓存、消息队列及接口性能优化，完善日志、监控与告警，参与生产故障排查和复盘。\n7. 推进代码评审、自动化测试及 CI/CD，与产品、算法、前端和运维团队协作完成项目交付。\n任职要求\n1. 10年及以上后端开发经验，具备独立负责核心业务模块或中大型项目的能力。\n2. 精通 Go、PHP、Python 中至少一门，熟练掌握另一门，熟悉对应主流框架，具备良好的业务建模、接口设计及工程实践能力。\n3. 具备短剧或长短视频平台实际项目经验，熟悉内容与剧集管理、视频转码、对象存储、CDN 分发、播放鉴权及付费解锁等业务。\n4. 具备 AI 文本、图片生成、视频生成三类模型的实际接入或部署经验，能够独立完成接口集成、任务编排、异常处理及上线运维。\n5. 熟悉文本模型的上下文管理、提示词模板、结构化输出及流式响应；熟悉文生图、图生图、文生视频、图生视频等常见生成流程。\n6. 理解生成式 AI 服务的生产特点，具备长耗时任务调度、限流排队、取消与超时处理、回调去重、失败重试及生成结果存储经验。\n7. 熟悉 MySQL 或 PostgreSQL、Redis 及至少一种消息队列，能够解决慢查询、缓存一致性、重复消费及事务一致性问题。\n8. 熟悉 Linux、Docker、Git 和 CI/CD，具备监控告警、性能分析及生产环境故障排查能力。\n9. 具备模型调用成本和服务质量意识，能够跟踪调用量、成功率、生成耗时及单次任务成本，并持续优化。\n10. 具备良好的沟通协作和技术文档能力，能够将业务需求转化为可落地的技术方案。\n加分项\n- 有 AI 短剧、AI 漫剧或自动化视频生产平台的完整项目经验。\n- 有角色一致性、分镜连续性、参考图控制及音画合成等工程落地经验。\n- 有 ComfyUI 工作流集成、自托管模型推理服务或 GPU 资源调度经验。\n- 熟悉 FFmpeg，有字幕、配音、音视频合成及批量媒体处理经验。\n- 有多模型供应商接入、故障切换、模型效果评测及成本优化经验。\n- 有高并发付费业务、订阅计费、支付对账或海外产品开发经验。\n=\n高级后端工程师\n负责视频类后端核心模块的系统设计、技术方案评审与落地，包括内容发布、内容分发、播放服务、互动系统、账号体系、运营后台与监控体系。  \n基于微服务/模块化架构主导服务拆分与演进，优化接口链路、数据库访问与异步任务机制。  \n设计并保障视频全链路稳定运行：上传 → 转码 → 存储 → 分发 → 播放统计的可用性与可观测性。  \n建设高并发能力：限流、熔断、降级、幂等、重试、异步化、队列化等高可用与韧性能力。  \n推动监控体系建设，建立关键指标体系（播放成功率、首帧耗时、转码成功率、接口 P99、错误率、任务积压、核心链路超时率）并持续迭代。  \n负责数据库与缓存治理：索引优化、冷热数据策略、分片/分库分表评估、SQL 调优与存储成本控制。  \n组织并推动接口文档、联调、Code Review、发布评审与回归，保障交付质量和线上稳定。  \n与客户端、算法、前端、测试、运维协作，制定版本计划、排期和风险清单，推动问题闭环。  \n指导初中级工程师，沉淀架构方案、开发规范与故障处置文档，提升团队交付效率。\n任职要求\n本科及以上学历，计算机相关专业优先。  \n5 年以上后端开发经验，3 年以上大流量互联网服务经验，具备从零到一或一到多迭代落地能力。  \n精通至少一种后端语言（Node.js、PHP、Go 中至少一种），并有线上高并发服务开发与问题排障经历。  \n熟悉服务架构与接口设计（RESTful / RPC）、鉴权与权限体系、消息队列、缓存、数据库建模与优化。  \n有能力独立定位并优化性能瓶颈（数据库、缓存、I/O、事件循环/协程、连接池、慢查询、死锁等）。  \n熟悉日志、监控、告警、链路追踪工具，具备线上故障应急处理和复盘能力。  \n对业务有产品化思维，能够把业务目标拆解为可执行的技术方案和里程碑。  \n良好的沟通与协作能力，能在跨部门环境中推动复杂需求落地。\n技术栈要求（必须）\n编程语言：Node.js、PHP、Go（至少熟练掌握 1 门，熟悉其中 2 门更佳）  \n框架/运行时：  Node.js：NestJS / Koa / Express（至少一项）  \nPHP：Laravel / ThinkPHP / Symfony（至少一项）  \nGo：Gin / Kratos / Go-zero（至少一项）\n\n消息与异步：Kafka / RocketMQ / RabbitMQ / SQS（至少一种）  \n对象存储与分发：OSS / COS / S3 + CDN  \n视频链路能力：FFmpeg、HLS/DASH、转码任务编排、文件状态流转、播放埋点  \n容器与部署：Docker + Kubernetes（或云原生托管）+ CI/CD（GitLab CI / Jenkins）  \n监控与可观测：Prometheus + Grafana + ELK（或等效）+ 分布式追踪（Jaeger / SkyWalking）  \n版本管理与协作：Git、CI/CD、项目管理工具（Jira/TAPD/禅道等）\n加分项\n有短视频、UGC/PGC 或直播/点播平台后端经验。  \n有上传转码、播放链路、内容推荐或弹性扩容实战。  \n有反作弊、内容安全、版权风控或风控模型接入经验。  \n有大规模数据治理与性能容量规划经验（QPS、并发连接、秒级故障恢复）。  \n有团队技术规划、架构评审、技术债治理经验。\n\n=\nphp后端工程师 \n任职要求\n1.5年以上PHP后端经验,能独立负责完整项目或核心模块。\n2.熟悉PHP框架及自定义生命周期管理,熟悉Eloquent ORM独立使用模式。\n3.有CMS二次开发经验,理解插件机制、静态化缓存等站群优化手段。\n4.熟悉MySQL主从读写分离,理解大表在线DDL的安全操作。\n5.深入理解Redis应用,包括Cluster hash tag、计数器缓冲批量落库模式。\n6.有搜索引擎(OpenSearch/ES)接入经验,能设计索引同步与降级方案。\n7.熟悉RESTful API设计、接口鉴权、参数校验、错误码与版本规范。\n8.掌握事务、幂等、并发控制、缓存一致性、慢SQL治理、限流补偿。\n9.有用户、权限、内容、订单支付、运营配置等业务模块经验者优先。\n10.有全栈联调经验,能读写前端代码并独立完成接口联调。\n11.熟悉Docker本地开发环境搭建与调试。\n12.熟练使用AI Coding工具辅助开发,但能独立判断业务逻辑与安全风险。\n\n详细岗位JD\n1.负责PHP后端项目(API服务+内容站群)的设计、开发与迭代。\n2.参与需求评审,梳理业务对象、角色、权限与验收标准。\n3.完成技术方案、接口设计、数据库设计与开发计划。\n4.独立完成用户、权限、内容、支付、运营配置等核心功能。\n5.负责Redis缓冲计数、缓存一致性等高并发场景保障。\n6.负责事务幂等、定时任务、异常补偿和数据对账。\n7.参与全栈联调,完成接口联调与问题定位。\n8.负责代码评审、性能优化、日志监控与线上排查。\n9.使用AI工具提升效率,并人工审核生成内容。\n10.沉淀开发规范、接口文档,提高团队交付质量。\n==\n更多职位看 频道 ，谢谢！！！\n\n公司：FineStar 是一家全球化信息技术企业，总部设于英国伦敦，在中国台北、日本东京、新加坡、吉隆坡、台湾、洛杉矶等设立分支机构，全球员工规模超 1500 人。 我们是主流媒体、视频平台、线上社区论坛的一站式综合服务商。公司不止交付标准化产品，更输出创新、差异化的运营思路，助力客户实现业务高速增长与品牌升级转型。依托深厚的行业技术积淀，我们持续打磨创新方案，打造超出预期的落地成果，面向全球客户提供高品质服务体验与完整 IT 解决方案。 公司核心管理团队深耕 Web 业务及多赛道产品运营，行业经验丰富；同时组建了一支高素质的数据、创意与技术研发人才队伍。\n薪资以及其他说明：薪资发u，远程，不实名，不压工资。每日工作9小时左右。工资准时发。单休，法定正常放假，春节12天，年假12天。\n\nTG： @remote0007_jobs\nTG频道/JD： @remote0007\n绿泡泡： rockynn1020\n邮箱： zzl_6544@sina.com",
-      "excerpt": "go高级工程师 架构师 岗位职责 1. 负责短剧及 AI 内容平台的后端架构设计、核心功能开发与维护，保障系统稳定性、可扩展性及交付质量。 2. 负责短剧业务系统建设，涵盖内容管理、剧集管理、视频处理、播放鉴权、会员订阅、付费解锁等核心流程。 3. 负责 AI 文本生成、图片生成、视频生成模型的接入与服务封装，支持多模型调度、流式输出、异步任务及结果回调。 4. 建设 AI 内容生产流程，串联剧本生成、角色设定、分镜生成、生图、生...",
-      "issueState": "open",
-      "contentHash": "f7ba327ceb551e42cadb16a0f43dc825084bd08829ce01e35f3354aa53f963fa",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "node",
-        "python",
-        "remote"
-      ],
-      "sourceTags": [
-        "node",
-        "python",
-        "remote"
-      ],
-      "author": {
-        "id": "zzl654466725-crypto",
-        "name": "zzl654466725-crypto",
-        "handle": "zzl654466725-crypto",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/272100286?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-11-03T08:22:37Z",
-      "updatedAt": "2026-11-03T08:22:37Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1335",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "docker",
-          "go",
-          "kubernetes",
-          "laravel",
-          "mysql",
-          "nodejs",
-          "php",
-          "postgres",
-          "python",
-          "redis"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_01304d40c1defd808fb8b3be",
-          "sourceId": "rebase-network/who-is-hiring#1335",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1335",
-          "createdAt": "2026-11-03T08:22:37Z",
-          "updatedAt": "2026-11-03T08:22:37Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-03T08:22:37Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_1ef9ab1a40d70f694d6cf680",
-      "sourceId": "rebase-network/who-is-hiring#1334",
-      "title": "[香港] Crypto量化 诚聘 Rust/Kotlin/Java工程师 薪资不设限制 经验2-20+年",
-      "description": "## 公司/团队介绍\n我是猎头李越，我的客户以量化私募、国际对冲基金为主，覆盖北/上/深/港/新。\n投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com；但看不看机会都欢迎认识~\n\n这家公司是专注于加密衍生品和交易基础设施的金融科技公司。\n岗位主要负责加密货币衍生品市场中的自动化交易策略开发和维护，参与实时、低延迟交易系统建设。将和交易员、量化研究员、基础设施工程师一起优化报价逻辑、交易执行、风险控制和系统稳定性。\n年限20年以上也乐于接受，但是要求至少2年高频交易/低延迟相关经验。\n\n## 薪资福利待遇\n薪资不设限制，根据各人情况给涨幅。\n\n## 地点\n香港\n\n## 工作性质\n全职，香港线下，不能远程\n  \n## 岗位要求、职责\n投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com\n\n主要职责：\n1. 开发和维护自动化交易策略及相关交易系统。\n2. 参与报价逻辑、对冲逻辑、仓位管理和风险控制的开发。\n3. 优化交易系统的下单、撤单、成交处理和异常处理流程。\n4. 处理实时行情数据、订单簿数据、成交数据、资金费率等交易相关数据。\n5. 建设和维护监控工具，包括 PnL、仓位、风险、延迟、交易所连接状态等。\n6. 协助交易员和量化研究员分析策略表现，发现问题并持续优化。\n7. 维护交易所 API 连接，保证行情、下单、成交回报等流程稳定可靠。\n8. 排查交易异常、系统异常、仓位偏差和风控问题。\n\n任职要求：\n1. 熟练掌握至少一种编程语言，Rust/Kotlin/Java。\n2. 有自动化交易、做市、量化交易或交易系统开发经验。\n3. 理解订单簿、买卖价差、滑点、手续费、成交、撤单和仓位风险等基本概念。\n4. 熟悉加密货币交易所、永续合约、资金费率、保证金等机制。\n5. 能写出稳定、清晰、可维护的代码。\n6. 具备较强的问题排查能力，能快速定位线上系统或交易异常。\n7. 对交易和市场有兴趣，愿意理解策略为什么赚钱或亏钱。\n8. 有责任心，能在快节奏环境中推进事情落地。\n\n加分项：\n1. 有加密货币做市、HFT、自营交易或量化交易经验。\n2. 熟悉 Binance、OKX、Bybit、Deribit、Coinbase 等交易所 API。\n3. 有低延迟交易系统开发经验。\n4. 了解基差交易、统计套利、跨交易所交易、对冲或风控系统。\n5. 有回测系统、交易模拟、数据分析或策略研究经验。\n\n我的微信号是：liyue_1297，看不看机会都欢迎认识！",
-      "excerpt": "## 公司/团队介绍 我是猎头李越，我的客户以量化私募、国际对冲基金为主，覆盖北/上/深/港/新。 投递请联系微信号：liyue_1297 / 邮箱：liyue_1297@foxmail.com；但看不看机会都欢迎认识~ 这家公司是专注于加密衍生品和交易基础设施的金融科技公司。 岗位主要负责加密货币衍生品市场中的自动化交易策略开发和维护，参与实时、低延迟交易系统建设。将和交易员、量化研究员、基础设施工程师一起优化报价逻辑、交易执行...",
-      "issueState": "open",
-      "contentHash": "90f9daf0eae72044d81d624d3a3c3f966d091d5d4fea88c1d5e39422cbfa8d32",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "java"
-      ],
-      "sourceTags": [
-        "java"
-      ],
-      "author": {
-        "id": "NoahLI-07",
-        "name": "NoahLI-07",
-        "handle": "NoahLI-07",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/342952561?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-11-03T05:59:09Z",
-      "updatedAt": "2026-11-03T05:59:09Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1334",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "java",
-          "kotlin",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_1ef9ab1a40d70f694d6cf680",
-          "sourceId": "rebase-network/who-is-hiring#1334",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1334",
-          "createdAt": "2026-11-03T05:59:09Z",
-          "updatedAt": "2026-11-03T05:59:09Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-03T05:59:09Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_e8c58584e2e3c52826eadc7c",
-      "sourceId": "junminhong/jobs#5",
-      "title": "后端 / Web3 / 移动端 / 测试 / SRE 工程师（全远程）",
-      "description": "### 公司名稱\n\n保密（头部数字资产与金融科技平台）\n\n### 職位名稱\n\n后端 / Web3 / 移动端 / 测试 / SRE 工程师（全远程，多个方向）\n\n### 工作類型\n\nFull-time 全職\n\n### 工作地點類型\n\nRemote 遠端\n\n### 地區 Region\n\n🌏 其他 Others\n\n### 工作地點\n\n全远程（亚太时区）\n\n### 薪資範圍\n\nCNY 25K-50K/month（技术岗，按经验）\n\n### 職位描述\n\n业务覆盖全球的头部数字资产与金融科技平台（名称面试阶段告知，企业直招），业务包括现货/合约交易、Web3 钱包与链上交易、美股/股票代币、支付与虚拟卡、AI 量化 / AI Agent。全职、全远程、亚太时区，中文流利，线上 3 轮面试，1–2 周出结果。\n\n## 在招方向（每行：岗位｜核心要求）\n- Web3 后端开发工程师（钱包方向）｜Golang 实战、并发模型、钱包/链上交易系统\n- 高级后端开发工程师（交易后端）｜Go / Java，高并发交易系统设计\n- 交易系统核心开发（撮合引擎）｜低延迟、高性能撮合/行情系统\n- 后端开发工程师（用户安全）｜用户安全、验证、风控类业务研发，CEX 经验优先\n- 智能合约开发工程师（多链）｜Solidity / Rust / Move 至少两种，熟悉主流公链\n- APP 开发工程师（AI 量化 / AI 提效 / Money·虚拟卡 / iPhone Duo）｜Android / iOS / Flutter 至少精通一端，交易/行情/支付类 APP 经验优先\n- Web3 Flutter 开发工程师（钱包 App）｜Flutter 架构与性能，钱包类 App 经验\n- Web3 高级前端开发工程师｜前端架构设计，Web3 / DApp 经验\n- APP 性能治理专家｜崩溃、OOM、启动、卡顿等性能与稳定性治理\n- Web3 测试开发工程师｜交易所 / Web3 业务测试，钱包、swap 等链上业务，接口与 APP 自动化\n- APP 测试开发工程师（AI 量化 / Money·支付 / iPhone Duo）｜金融、交易所类系统测试，资金流与对账逻辑，Python 脚本能力\n- AI 测试工程师｜大模型应用测试，理解 Token、上下文、幻觉等概念\n- 高级 SRE 工程师（AWS / 腾讯云）｜云原生运维，大型业务稳定性保障\n- SRE 架构师｜运维架构设计、容灾与可观测性\n- AI Agent 高级技术专家｜Agent / Tool Calling / MCP 有真实落地项目\n\n## 加分条件\n- 有交易所、钱包、券商、支付等金融科技业务经验\n- 有 AI 工具提效的实际使用经历\n\n\n### 聯絡方式\n\nzhuhongsheng2023@gmail.com（邮件标题：应聘职位-姓名-年限）；或 Telegram @jasonzhu_talent\n\n### 其他資訊\n\n全远程，亚太时区协作；线上 3 轮面试，1–2 周出结果；岗位持续招聘，还有产品、风控、设计、数据等方向（技术岗 25K-50K，其它岗位同等水平面议）。投递请注明应聘职位，我们按方向转给对应团队。",
-      "excerpt": "### 公司名稱 保密（头部数字资产与金融科技平台） ### 職位名稱 后端 / Web3 / 移动端 / 测试 / SRE 工程师（全远程，多个方向） ### 工作類型 Full-time 全職 ### 工作地點類型 Remote 遠端 ### 地區 Region 🌏 其他 Others ### 工作地點 全远程（亚太时区） ### 薪資範圍 CNY 25K-50K/month（技术岗，按经验） ### 職位描述 业务覆盖全球...",
-      "issueState": "open",
-      "contentHash": "92e3c386bc315e96ee113436996dfbc11ed4e25a9c7e4f4de37072e7057c9521",
-      "repository": "junminhong/jobs",
-      "repositoryUrl": "https://github.com/junminhong/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "job"
-      ],
-      "sourceTags": [
-        "job"
-      ],
-      "author": {
-        "id": "jasonzhu1993",
-        "name": "jasonzhu1993",
-        "handle": "jasonzhu1993",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/129932380?v=4"
-      },
-      "community": {
-        "id": "junminhong",
-        "name": "junminhong",
-        "avatarUrl": "https://github.com/junminhong.png?size=80",
-        "repository": "junminhong/jobs",
-        "url": "https://github.com/junminhong/jobs"
-      },
-      "createdAt": "2026-11-03T03:51:50Z",
-      "updatedAt": "2026-11-03T03:51:50Z",
-      "url": "https://github.com/junminhong/jobs/issues/5",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "devops-sre",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "flutter",
-          "go",
-          "java",
-          "python",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_e8c58584e2e3c52826eadc7c",
-          "sourceId": "junminhong/jobs#5",
-          "repository": "junminhong/jobs",
-          "repositoryUrl": "https://github.com/junminhong/jobs",
-          "url": "https://github.com/junminhong/jobs/issues/5",
-          "createdAt": "2026-11-03T03:51:50Z",
-          "updatedAt": "2026-11-03T03:51:50Z",
-          "community": {
-            "id": "junminhong",
-            "name": "junminhong",
-            "avatarUrl": "https://github.com/junminhong.png?size=80",
-            "repository": "junminhong/jobs",
-            "url": "https://github.com/junminhong/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-03T03:51:50Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_7be2f05d46f630ed65453833",
-      "sourceId": "rebase-network/who-is-hiring#1333",
-      "title": "[远程] 头部数字资产与金融科技平台招聘：后端/Web3/智能合约/Flutter/前端/测试/SRE/AI/产品/设计 25K-50K RMB/月",
-      "description": "注：本帖为企业直招（非猎头）。公司名称面试阶段告知，可先通过下方邮箱/Telegram 沟通了解业务与团队。\n\n## 公司/团队介绍\n业务覆盖全球的头部数字资产与金融科技平台（名称面试阶段告知，企业直招）。业务线包括：现货/合约交易、Web3 钱包与链上交易、美股/股票代币、支付与虚拟卡、AI 量化 / AI Agent。团队分布在亚太多个国家和地区，以中文为主要工作语言，长期稳定招聘。\n\n## 薪资福利待遇\n- 技术岗：25K–50K RMB/月，按经验面议\n- 产品、设计、风控、运营等其它岗位：同等水平面议\n- 全远程办公，有竞争力的薪酬，全球化业务视野\n\n## 地点\n- 工作地点：全远程（亚太时区）\n- 联系方式：简历发 zhuhongsheng2023@gmail.com（邮件标题：应聘职位-姓名-年限）；或 Telegram：@jasonzhu_talent\n\n## 工作性质\n- 是否全职：全职\n- 是否远程：全远程\n- 时区要求：亚太时区（GMT+8 优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n- 面试流程：线上 3 轮，1–2 周出结果\n- 语言：中文流利\n\n## 岗位要求、职责（每行：岗位｜核心要求）\n\n### 后端 / 架构 / Web3\n- Web3 后端开发工程师（钱包方向）｜Golang 实战、并发模型、钱包/链上交易系统\n- 智能合约开发工程师（多链）｜Solidity / Rust / Move 等至少两种合约语言，熟悉主流公链\n- 高级后端开发工程师（交易后端）｜Go / Java，高并发交易系统设计\n- 交易系统核心开发（撮合引擎）｜低延迟、高性能撮合/行情系统，对微秒级延迟有追求\n- 后端开发工程师（用户安全）｜CEX 用户安全、验证、风控类业务研发优先\n- 爬虫工程师｜大规模数据采集，有海外平台数据采集经验\n- 风控算法（AI Agent 方向）｜Python/SQL，风控算法与服务落地\n\n### 移动端 / 前端\n- APP 开发工程师（AI 量化 / AI 提效 / Money·虚拟卡 / iPhone Duo）｜Android / iOS / Flutter 至少精通一端，交易/行情/支付类 APP 经验优先\n- Web3 Flutter 开发工程师（钱包 App）｜Flutter 架构与性能，钱包类 App 经验\n- Web3 高级前端开发工程师（钱包前端）｜前端架构设计，Web3 / DApp 经验\n- APP 性能治理专家｜崩溃、OOM、启动、卡顿等性能与稳定性治理，有量化成果\n\n### 测试\n- Web3 测试开发工程师｜交易所 / Web3 业务测试经验，钱包、swap 等链上业务，接口与 APP 自动化\n- APP 测试开发工程师（AI 量化 / Money·支付 / iPhone Duo）｜金融、交易所类系统测试，资金流与对账逻辑，Python 脚本能力\n- 高级 App 提效测试工程师｜金融/支付/交易所测试团队管理或技术专家\n- AI 测试工程师｜大模型应用测试，理解 Token、上下文、幻觉等概念\n\n### SRE / AI\n- 高级 SRE 工程师（AWS / 腾讯云）｜云原生运维，大型业务稳定性保障\n- SRE 架构师｜运维架构设计、容灾与可观测性体系\n- AI Agent 高级技术专家｜Agent / Tool Calling / MCP，有真实落地项目\n\n### 产品\n- AI 产品经理（C 端 Agent 方向 / B 端赋能方向）｜C 端或 B 端复杂产品经验，关注 AI 前沿\n- Web3 产品经理｜链上交易平台、DEX、交易工具或数据产品经验\n- 美股交易产品经理 / 美股期权产品经理 / 产品经理（股票公司行动）｜券商或交易所产品经验，熟悉订单、撮合、清结算、公司行动\n- 支付产品经理 / 支付运营产品经理 / 支付解决方案经理｜法币+加密支付链路、渠道接入、清结算与合规\n- 高级产品经理（充值提现 / 资金）｜CEX 或钱包出入金核心业务经验\n- KYC 产品经理｜KYC / 合规流程产品设计\n- 专业交易产品负责人 / 交易工具产品负责人 / 行情产品经理｜专业交易终端、跟单/量化、行情类产品\n- 金融产品经理（IPO 打新方向）｜Launchpad / Launchpool / Airdrop 等产品经验\n- 增长产品总监 / 社交产品高级经理·总监｜增长或社交产品规划与落地，大厂经验\n\n### 风控 / 数据\n- 资深风控策略专家（TradFi 方向）｜股票、期权或交易所衍生品风控策略\n- 风控策略专家（支付方向 / 链上分析方向）｜支付反欺诈，或链上分析与追踪\n- 活动风控策略专家｜营销风控、批量注册、账号治理\n- 风控运营专员｜风险调查、案件分析、处置建议\n- 数据分析师｜SQL 熟练，BI 工具，币圈或互联网大厂背景\n\n### 设计\n- 资深 UI 产品设计师｜交易所 / Web3 钱包 / 金融科技 UI/UX 全链路设计\n- UX 设计师｜Figma，完整作品集（投递需附作品集链接）\n- 组件设计师｜设计系统与组件库建设，附作品集\n\n## 工作环境\n全远程、亚太时区协作；线上 3 轮面试，1–2 周内出结果；岗位持续招聘，投递时请注明应聘职位，我们会按方向转给对应团队。",
-      "excerpt": "注：本帖为企业直招（非猎头）。公司名称面试阶段告知，可先通过下方邮箱/Telegram 沟通了解业务与团队。 ## 公司/团队介绍 业务覆盖全球的头部数字资产与金融科技平台（名称面试阶段告知，企业直招）。业务线包括：现货/合约交易、Web3 钱包与链上交易、美股/股票代币、支付与虚拟卡、AI 量化 / AI Agent。团队分布在亚太多个国家和地区，以中文为主要工作语言，长期稳定招聘。 ## 薪资福利待遇 - 技术岗：25K–50...",
-      "issueState": "open",
-      "contentHash": "bf2647e4073e88023231386d59cae4772d7f15546bea717964d2e24a7753effc",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "golang",
-        "java",
-        "python"
-      ],
-      "sourceTags": [
-        "golang",
-        "java",
-        "python"
-      ],
-      "author": {
-        "id": "jasonzhu1993",
-        "name": "jasonzhu1993",
-        "handle": "jasonzhu1993",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/129932380?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-11-03T03:50:06Z",
-      "updatedAt": "2026-11-03T03:50:06Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1333",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "devops-sre",
-          "mobile"
-        ],
-        "technologies": [
-          "aws",
-          "flutter",
-          "go",
-          "java",
-          "python",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_7be2f05d46f630ed65453833",
-          "sourceId": "rebase-network/who-is-hiring#1333",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1333",
-          "createdAt": "2026-11-03T03:50:06Z",
-          "updatedAt": "2026-11-03T03:50:06Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-03T03:50:06Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_ce7340018fdb4eeadb09d635",
-      "sourceId": "SimplifyJobs/Summer2026-Internships#9748",
-      "title": "Engineering Intern",
-      "description": "### Link to Internship Posting\n\nhttps://worldscaled.com/join/08647c2ede7baaad/\n\n### Company Name\n\nworldscaled\n\n### Internship Title\n\nEngineering Intern\n\n### Location\n\nPalo Alto, CA\n\n### What term(s) is this internship offered for?\n\nSummer 2027, Winter 2027\n\n### Does this internship offer sponsorship?\n\nOther\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\n_No response_",
-      "excerpt": "### Link to Internship Posting https://worldscaled.com/join/08647c2ede7baaad/ ### Company Name worldscaled ### Internship Title Engineering Intern ### Location Palo Alto, CA ### What term(s) is this internship offered...",
-      "issueState": "open",
-      "contentHash": "10a5919db1840b6dabd4abecadcc3de9c567ddd5c1ba9e39887e31e44bb8ab07",
-      "repository": "SimplifyJobs/Summer2026-Internships",
-      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_internship"
-      ],
-      "sourceTags": [
-        "new_internship"
-      ],
-      "author": {
-        "id": "m-cro",
-        "name": "m-cro",
-        "handle": "m-cro",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/95547044?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/Summer2026-Internships",
-        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-      },
-      "createdAt": "2026-11-02T19:52:34Z",
-      "updatedAt": "2026-11-02T19:52:34Z",
-      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9748",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "city": "Palo Alto",
-        "subdivision": "CA",
-        "displayText": "Palo Alto, CA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_ce7340018fdb4eeadb09d635",
-          "sourceId": "SimplifyJobs/Summer2026-Internships#9748",
-          "repository": "SimplifyJobs/Summer2026-Internships",
-          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
-          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9748",
-          "createdAt": "2026-11-02T19:52:34Z",
-          "updatedAt": "2026-11-02T19:52:34Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/Summer2026-Internships",
-            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-02T19:52:34Z",
         "status": "fresh"
       }
     }

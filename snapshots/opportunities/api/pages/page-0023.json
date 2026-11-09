@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-09T10:43:26.039Z",
+  "generatedAt": "2026-11-09T21:48:57.392Z",
   "page": 23,
   "pageSize": 20,
   "nextPage": "api/pages/page-0024.json",
   "ids": [
+    "gh_2fb1d1c5f7a72da400aa156a",
     "gh_5737029f526e21daadacc576",
     "gh_60de8bef67ca07b62c23f7bf",
     "gh_3ba4922937d17d039f747321",
@@ -22,10 +23,95 @@
     "gh_724342a7441cbc13493ec56f",
     "gh_a6bde7918a54217d3e9edaa7",
     "gh_b8f22818819d3d26c9540234",
-    "gh_89068ca8d5281d02c1cd2aa6",
-    "gh_00b8cb12f574ebae792e39b0"
+    "gh_89068ca8d5281d02c1cd2aa6"
   ],
   "items": [
+    {
+      "id": "gh_2fb1d1c5f7a72da400aa156a",
+      "sourceId": "italiaremote/awesome-italia-remote#401",
+      "title": "Tags normalization",
+      "description": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words.  \nIt might be a good idea to add a normalization pipeline for the tags in each company.  \nHere is a mapping from original to normalized tags in the form of a python dict (easily convertible in any other format) that might be useful as a starting point: https://github.com/FrancescoManfredi/AIRV-analysis/blob/main/tags_repl.py  \nI'm the author of that mapping and this is an invite to make use of it in any way you prefer.",
+      "excerpt": "A high number of tags refer to the same concept with different wording or different casing/styling for the same words. It might be a good idea to add a normalization pipeline for the tags in each company. Here is a ma...",
+      "issueState": "open",
+      "contentHash": "88f398c02bd1217026368c20823530d271e64ed1f9c7258be5209a4e0513f0ef",
+      "repository": "italiaremote/awesome-italia-remote",
+      "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+      "region": "Europe",
+      "country": "Italy",
+      "sourceLocation": {
+        "country": "Italy",
+        "countryCode": "IT",
+        "region": "Europe"
+      },
+      "tags": [
+        "feature-request"
+      ],
+      "sourceTags": [
+        "feature-request"
+      ],
+      "author": {
+        "id": "FrancescoManfredi",
+        "name": "FrancescoManfredi",
+        "handle": "FrancescoManfredi",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/4385841?v=4"
+      },
+      "community": {
+        "id": "italiaremote",
+        "name": "italiaremote",
+        "avatarUrl": "https://github.com/italiaremote.png?size=80",
+        "repository": "italiaremote/awesome-italia-remote",
+        "url": "https://github.com/italiaremote/awesome-italia-remote"
+      },
+      "createdAt": "2024-04-16T20:25:04Z",
+      "updatedAt": "2025-06-22T07:16:49Z",
+      "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_2fb1d1c5f7a72da400aa156a",
+          "sourceId": "italiaremote/awesome-italia-remote#401",
+          "repository": "italiaremote/awesome-italia-remote",
+          "repositoryUrl": "https://github.com/italiaremote/awesome-italia-remote",
+          "url": "https://github.com/italiaremote/awesome-italia-remote/issues/401",
+          "createdAt": "2024-04-16T20:25:04Z",
+          "updatedAt": "2025-06-22T07:16:49Z",
+          "community": {
+            "id": "italiaremote",
+            "name": "italiaremote",
+            "avatarUrl": "https://github.com/italiaremote.png?size=80",
+            "repository": "italiaremote/awesome-italia-remote",
+            "url": "https://github.com/italiaremote/awesome-italia-remote"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 937,
+        "publishedAt": "2024-04-16T20:25:04Z",
+        "status": "stale"
+      }
+    },
     {
       "id": "gh_5737029f526e21daadacc576",
       "sourceId": "EtherTW/jobs#72",
@@ -227,7 +313,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 953,
+        "ageDays": 954,
         "publishedAt": "2024-03-30T18:41:51Z",
         "status": "stale"
       }
@@ -329,7 +415,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 955,
+        "ageDays": 956,
         "publishedAt": "2024-03-28T15:18:03Z",
         "status": "stale"
       }
@@ -448,7 +534,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 977,
+        "ageDays": 978,
         "publishedAt": "2024-03-06T21:31:49Z",
         "status": "stale"
       }
@@ -1644,7 +1730,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1028,
+        "ageDays": 1029,
         "publishedAt": "2024-01-15T20:34:26Z",
         "status": "stale"
       }
@@ -1751,7 +1837,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1046,
+        "ageDays": 1047,
         "publishedAt": "2023-12-28T19:22:29Z",
         "status": "stale"
       }
@@ -1927,7 +2013,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1069,
+        "ageDays": 1070,
         "publishedAt": "2023-12-05T18:27:28Z",
         "status": "stale"
       }
@@ -2013,97 +2099,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1070,
-        "publishedAt": "2023-12-04T17:16:38Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_00b8cb12f574ebae792e39b0",
-      "sourceId": "Proyecto-Nutria/MX-FTE#15",
-      "title": "Mercado Libre | Software Engineer Backend - Bootcamp | 1 Location(s)",
-      "description": "### Link a la publicación del trabajo\n\nhttps://mercadolibre.eightfold.ai/careers/job?domain=mercadolibre.com&pid=16138150&query=66850&domain=mercadolibre.com&sort_by=relevance&job_index=0\n\n### Nombre de la compañía\n\nMercado Libre\n\n### Título del trabajo\n\nSoftware Engineer Backend - Bootcamp\n\n### Lugar\n\nCiudad de México, México\n\n### ¿Para qué nivel es el trabajo?\n\nNew Grad\n\n### ¿La posición necesita saber inglés?\n\nYes\n\n### ¿El trabajo está recibiendo aplicaciones actualmente?\n\nYes\n\n### Email asociado a tu cuenta de GitHub (opcional)\n\n_No response_\n\n### Notas extra (opcional)\n\n_No response_",
-      "excerpt": "### Link a la publicación del trabajo https://mercadolibre.eightfold.ai/careers/job?domain=mercadolibre.com&pid=16138150&query=66850&domain=mercadolibre.com&sort_by=relevance&job_index=0 ### Nombre de la compañía Merc...",
-      "issueState": "open",
-      "contentHash": "3836cf42263485b8bf701235fe083c8464d0da4adc36c3d20752c4d9038d8aca",
-      "repository": "Proyecto-Nutria/MX-FTE",
-      "repositoryUrl": "https://github.com/Proyecto-Nutria/MX-FTE",
-      "region": "North America",
-      "country": "Mexico",
-      "sourceLocation": {
-        "country": "Mexico",
-        "countryCode": "MX",
-        "region": "North America"
-      },
-      "tags": [
-        "new_job"
-      ],
-      "sourceTags": [
-        "new_job"
-      ],
-      "author": {
-        "id": "SebastianCD",
-        "name": "SebastianCD",
-        "handle": "SebastianCD",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/43630732?v=4"
-      },
-      "community": {
-        "id": "Proyecto-Nutria",
-        "name": "Proyecto-Nutria",
-        "avatarUrl": "https://github.com/Proyecto-Nutria.png?size=80",
-        "repository": "Proyecto-Nutria/MX-FTE",
-        "url": "https://github.com/Proyecto-Nutria/MX-FTE"
-      },
-      "createdAt": "2023-12-04T07:32:40Z",
-      "updatedAt": "2023-12-04T13:55:58Z",
-      "url": "https://github.com/Proyecto-Nutria/MX-FTE/issues/15",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_00b8cb12f574ebae792e39b0",
-          "sourceId": "Proyecto-Nutria/MX-FTE#15",
-          "repository": "Proyecto-Nutria/MX-FTE",
-          "repositoryUrl": "https://github.com/Proyecto-Nutria/MX-FTE",
-          "url": "https://github.com/Proyecto-Nutria/MX-FTE/issues/15",
-          "createdAt": "2023-12-04T07:32:40Z",
-          "updatedAt": "2023-12-04T13:55:58Z",
-          "community": {
-            "id": "Proyecto-Nutria",
-            "name": "Proyecto-Nutria",
-            "avatarUrl": "https://github.com/Proyecto-Nutria.png?size=80",
-            "repository": "Proyecto-Nutria/MX-FTE",
-            "url": "https://github.com/Proyecto-Nutria/MX-FTE"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
         "ageDays": 1071,
-        "publishedAt": "2023-12-04T07:32:40Z",
+        "publishedAt": "2023-12-04T17:16:38Z",
         "status": "stale"
       }
     }

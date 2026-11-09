@@ -1,7 +1,18 @@
 {
-  "generatedAt": "2026-11-09T10:43:26.039Z",
+  "generatedAt": "2026-11-09T21:48:57.392Z",
   "retentionDays": 30,
   "runs": [
+    {
+      "startedAt": "2026-11-09T21:47:02.943Z",
+      "completedAt": "2026-11-09T21:48:57.392Z",
+      "durationMs": 114449,
+      "outcome": "healthy",
+      "communities": 187,
+      "successful": 187,
+      "failed": 0,
+      "noOpenings": 80,
+      "openOpportunities": 683
+    },
     {
       "startedAt": "2026-11-09T10:41:35.412Z",
       "completedAt": "2026-11-09T10:43:26.039Z",
@@ -1354,48 +1365,15 @@
       "failed": 0,
       "noOpenings": 71,
       "openOpportunities": 686
-    },
-    {
-      "startedAt": "2026-10-10T20:56:42.777Z",
-      "completedAt": "2026-10-10T20:58:19.061Z",
-      "durationMs": 96284,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 71,
-      "openOpportunities": 686
-    },
-    {
-      "startedAt": "2026-10-10T16:40:41.423Z",
-      "completedAt": "2026-10-10T16:42:22.573Z",
-      "durationMs": 101150,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 71,
-      "openOpportunities": 685
-    },
-    {
-      "startedAt": "2026-10-10T11:39:16.394Z",
-      "completedAt": "2026-10-10T11:40:57.053Z",
-      "durationMs": 100659,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 71,
-      "openOpportunities": 686
     }
   ],
   "days": [
     {
       "date": "2026-11-09",
-      "runs": 2,
+      "runs": 3,
       "partialRuns": 0,
       "failedCommunityRuns": 0,
-      "latestOpenOpportunities": 682
+      "latestOpenOpportunities": 683
     },
     {
       "date": "2026-11-08",
@@ -1599,13 +1577,6 @@
       "partialRuns": 0,
       "failedCommunityRuns": 0,
       "latestOpenOpportunities": 690
-    },
-    {
-      "date": "2026-10-10",
-      "runs": 3,
-      "partialRuns": 0,
-      "failedCommunityRuns": 0,
-      "latestOpenOpportunities": 686
     }
   ]
 }
