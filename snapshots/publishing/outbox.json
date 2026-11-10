@@ -59353,6 +59353,477 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_5e371ac29287a1e60fe77ff4",
+        "revision": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
+        "idempotencyKey": "openings:job:gh_5e371ac29287a1e60fe77ff4:5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035"
+      },
+      "canonical": {
+        "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
+        "summary": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_5e371ac29287a1e60fe77ff4",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_5e371ac29287a1e60fe77ff4",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_5e371ac29287a1e60fe77ff4",
+              "revision": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
+              "canonicalPath": "/jobs/gh_5e371ac29287a1e60fe77ff4",
+              "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
+              "summary": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
+              "status": "active",
+              "contentSha256": "54119d7fc4dfe5039cffbb5d705247c244f165ff326c76c0689c190b5e41ef09",
+              "content": {
+                "id": "gh_5e371ac29287a1e60fe77ff4",
+                "sourceId": "backend-br/vagas#12493",
+                "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
+                "description": "### Sobre a empresa\n\nA MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial.\n\nEsta publicação corresponde a **uma única oportunidade de desenvolvimento de software**, com foco em backend, APIs, dados e agentes inteligentes. A pessoa selecionada colaborará em duas frentes de produto da MKdigital: AI Bookkeeping Assistant e Plant Brownfield Reconstruction Agent.\n\n### Site da empresa\n\nhttps://www.mkdigital.ch\n\n### Descrição da vaga\n\nBuscamos uma pessoa em início de carreira, preferencialmente recém-formada ou em fase final de formação em Engenharia, Ciência da Computação ou área relacionada. **Experiência profissional anterior não é obrigatória.** A atuação é prioritariamente em backend; haverá também integração com interfaces web conforme as necessidades dos produtos.\n\nO trabalho combina programação, compreensão de processos de negócio, especificação de soluções, orientação de coding agents, testes e validação. Não é necessário conhecer previamente contabilidade ou engenharia industrial, mas **a disposição para aprender esses domínios é essencial**.\n\n#### 1. Projetos\n\n##### Projeto A — AI Bookkeeping Assistant (Suíça e Brasil)\n\nDesenvolvimento de uma plataforma de automação de processos contábeis utilizando inteligência artificial, LLMs e agentes inteligentes.\n\nAs principais atividades incluem:\n\n- Processamento e interpretação automática de documentos contábeis, incluindo notas fiscais, faturas, recibos e extratos bancários.\n- Integração de OCR, Document AI e modelos de linguagem.\n- Automação de lançamentos e classificação de transações contábeis.\n- Conciliação bancária e integração com sistemas financeiros.\n- Desenvolvimento de workflows inteligentes e agentes autônomos.\n- Integração com bancos de dados, APIs e serviços externos.\n- Testes, implantação e preparação da plataforma para utilização comercial.\n- Compreensão gradual dos processos contábeis e financeiros necessários à especificação e validação das funcionalidades.\n\n**Objetivo do projeto:** Contribuir para o desenvolvimento e lançamento comercial de uma solução operacional de automação contábil, inicialmente para o mercado suíço, com componentes específicos para o mercado brasileiro.\n\n##### Projeto B — Plant Brownfield Reconstruction Agent\n\nDesenvolvimento de uma plataforma baseada em inteligência artificial para reconstrução digital de instalações industriais existentes (*brownfield*), a partir de documentação técnica e outras fontes de dados.\n\nAs principais atividades incluem:\n\n- Desenvolvimento de agentes inteligentes para interpretação de documentação técnica.\n- Processamento de diagramas P&ID, documentação elétrica e de instrumentação (E&I).\n- Extração de informações de documentos históricos, fotografias, imagens e vídeos.\n- Modelagem e armazenamento de informações utilizando bancos de dados em grafos (GraphDB).\n- Identificação de equipamentos, instrumentos, conexões e relacionamentos técnicos.\n- Integração de informações de diferentes fontes em modelos digitais de engenharia.\n- Desenvolvimento de interfaces web para visualização e navegação dos modelos reconstruídos.\n- Compreensão gradual de conceitos de engenharia industrial, instalações, equipamentos e documentação técnica.\n\n**Objetivo do projeto:** Desenvolver um protótipo funcional capaz de importar documentação técnica, identificar e relacionar entidades de engenharia e apresentar os resultados em um modelo digital estruturado.\n\n#### 2. Tecnologias e ambiente de desenvolvimento\n\nOs projetos envolvem as seguintes tecnologias e práticas, entre outras:\n\n**AI Coding e agentes autônomos**\n- Claude Code, OpenAI Codex e outras ferramentas de programação assistida por IA.\n- Agentes autônomos de desenvolvimento de software (*Coding Agents*).\n- Agentic AI, LLMs, tool calling e orquestração de agentes.\n- Automação de tarefas de programação, testes, documentação e revisão de código.\n- Integração de agentes de programação em workflows de desenvolvimento.\n\n**Desenvolvimento paralelo e engenharia de software**\n- Git, GitHub, branches e Git worktrees.\n- Desenvolvimento paralelo utilizando múltiplos agentes de codificação.\n- Isolamento de ambientes e coordenação de alterações simultâneas.\n- Pull requests, code reviews e integração de código.\n- Testes automatizados, integração contínua (CI/CD) e documentação técnica.\n- Organização de projetos, atividades e entregas utilizando Azure DevOps.\n\n**Backend, frontend e dados**\n- Python e FastAPI.\n- REST APIs e integração entre sistemas.\n- JavaScript/TypeScript e React.\n- PostgreSQL, SQL e bancos de dados em grafos.\n- Processamento de documentos, OCR e pipelines de dados.\n\n**Infraestrutura e desenvolvimento**\n- Linux como ambiente de desenvolvimento e execução.\n- Docker e containers.\n- Servidores e infraestrutura em nuvem.\n- Ambientes automatizados de desenvolvimento, testes e implantação.\n- Conceitos de segurança, autenticação e gerenciamento de serviços.\n\nNão é necessário dominar todas essas tecnologias. Esperamos principalmente interesse em aprender, experimentar e aplicar novas ferramentas de maneira prática.\n\n#### 4. Desenvolvimento orientado ao domínio de aplicação\n\nUm aspecto importante dos projetos é a aproximação entre desenvolvimento de software e conhecimento dos processos que estão sendo automatizados.\n\n**No projeto de contabilidade**, será necessário compreender gradualmente conceitos como documentos contábeis, lançamentos, contas, conciliação bancária, impostos e fluxos financeiros.\n\n**No projeto de engenharia industrial**, será importante aprender conceitos relacionados a equipamentos, instrumentação, diagramas técnicos, estruturas de dados de engenharia e representação digital de instalações industriais.\n\nA expectativa não é encontrar alguém que já domine esses assuntos, mas um profissional que tenha interesse em aprendê-los e utilizá-los para:\n\n- Compreender necessidades e requisitos funcionais.\n- Participar da definição de soluções e especificações técnicas.\n- Traduzir processos de negócio em modelos de dados, regras e workflows.\n- Orientar agentes de programação na implementação das funcionalidades.\n- Criar testes e critérios de aceitação baseados em situações reais.\n- Identificar inconsistências e validar os resultados produzidos pelo software e pelos agentes de IA.\n\n**Buscamos alguém interessado em evoluir da programação para a compreensão, especificação e construção de soluções completas, combinando tecnologia, IA e conhecimento de domínio.**\n\n#### 5. Modelo de contratação — Prestação de serviços e empreendedorismo\n\nA MKdigital busca estabelecer uma parceria comercial com um profissional ou uma **microempresa (ME/CNPJ) especializada em desenvolvimento de software**.\n\nA oportunidade é especialmente interessante para profissionais recém-formados que desejam iniciar sua trajetória empreendedora, constituindo sua própria empresa de tecnologia e oferecendo serviços a clientes no Brasil e no exterior.\n\n**Modalidade de contratação**\n\n- **Preferencialmente:** Prestação de serviços por meio de empresa própria (ME/CNPJ), com emissão de notas fiscais.\n- **Apoio ao início da atividade empreendedora:** Para profissionais que ainda estejam no processo de abertura de sua empresa, a MK Digital poderá aceitar, excepcionalmente, a contratação inicial como profissional autônomo (CPF), por até três meses, observadas as obrigações legais e tributárias aplicáveis.\n- Após esse período, a continuidade da parceria estará condicionada à formalização de uma empresa própria (ME/CNPJ) e à celebração de um novo contrato comercial.\n- Não há exigência de exclusividade. O prestador poderá atender outros clientes, respeitando os compromissos de confidencialidade, propriedade intelectual e eventuais conflitos de interesse.\n\n**Projetos e condições comerciais**\n\n- **Duração estimada dos projetos:** 12 meses, com escopo, marcos de entrega e resultados técnicos definidos.\n- **Valor de referência:** R$ 72,50 por hora de serviço.\n- **Dedicação estimada:** Até aproximadamente 36 horas semanais durante os períodos de atividade, sem horário fixo obrigatório.\n- **Volume anual estimado:** 1.656 horas, considerando pausas pessoais, feriados e períodos de indisponibilidade.\n- **Orçamento anual estimado:** R$ 120.060, equivalente a uma média aproximada de R$ 10.000 mensais.\n- O faturamento será realizado conforme os serviços efetivamente prestados e as condições comerciais acordadas. O volume de horas é uma estimativa de planejamento, não uma garantia de contratação mínima.\n- **Local de execução:** 100% remoto, de qualquer cidade do Brasil.\n\nOs valores são referentes à prestação de serviços. O profissional ou empresa contratada será responsável por suas próprias obrigações fiscais e previdenciárias, conforme a legislação aplicável.\n\n**Organização da colaboração**\n\n- Os serviços serão organizados por projetos, atividades técnicas, marcos de entrega e critérios de aceitação.\n- As atividades e entregas serão acompanhadas por meio do Azure DevOps.\n- Estão previstas revisões técnicas semanais e aproximadamente duas reuniões curtas de alinhamento por semana, conforme a necessidade dos projetos.\n- A comunicação diária poderá ocorrer de forma assíncrona por ferramentas online.\n- O prestador terá autonomia na organização dos horários e na execução técnica dos serviços.\n- Todos os custos necessários de ferramentas de IA, APIs e infraestrutura em nuvem serão cobertos pela MKdigital.\n- O prestador deverá possuir computador próprio e conexão estável com a internet.\n\n### Requisitos\n\n#### 3. Perfil desejado\n\n**Requisitos principais**\n\n- Formação superior concluída ou em fase final em Engenharia, Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.\n- Boa base em programação, algoritmos, estruturas de dados e lógica computacional.\n- Conhecimento de alguma linguagem de programação, preferencialmente Python.\n- Familiaridade com Git e conceitos fundamentais de engenharia de software.\n- Interesse em Linux, infraestrutura e desenvolvimento de aplicações.\n- Interesse em inteligência artificial aplicada ao desenvolvimento de software.\n- Capacidade de investigar problemas, pesquisar soluções e trabalhar com autonomia.\n- Interesse em compreender processos de negócio e transformar requisitos em soluções de software.\n- Disposição para aprender conceitos de contabilidade, finanças e engenharia industrial.\n- Boa organização, comunicação e comprometimento com as entregas.\n\n**Diferenciais — Nice to have**\n\n- Experiência prática com Claude Code, OpenAI Codex ou outras ferramentas de AI Coding.\n- Conhecimento ou experiência com agentes autônomos de programação e Agentic AI.\n- Projetos pessoais, acadêmicos ou open source utilizando inteligência artificial e LLMs.\n- Experiência com Git worktrees, desenvolvimento paralelo ou múltiplos agentes de codificação.\n- Conhecimento de Linux, Docker, CI/CD e infraestrutura em nuvem.\n- Experiência com Python, FastAPI, React, APIs ou bancos de dados.\n- Conhecimento de GraphDB, processamento de documentos ou visão computacional.\n- Conhecimentos básicos de contabilidade, sistemas ERP, processos financeiros ou automação empresarial.\n- Familiaridade com documentação de engenharia, diagramas P&ID, instalações industriais ou sistemas CAD/CAE.\n- Experiência em análise de requisitos, especificação funcional ou modelagem de processos.\n- Certificações ou cursos relevantes em IA, cloud computing ou desenvolvimento de software.\n- **Inglês técnico**, especialmente para leitura de documentação, ferramentas e comunicação escrita.\n- **Conhecimentos de alemão** serão considerados um diferencial adicional.\n\nCertificações, conhecimentos prévios dos domínios de aplicação e experiência profissional anterior não são obrigatórios. Projetos desenvolvidos, domínio dos fundamentos e capacidade de resolver problemas terão maior peso na seleção.\n\n### Tecnologias\n\nPython, FastAPI, Linux, Docker, Git, PostgreSQL, SQL, TypeScript, JavaScript, CI/CD, Testes automatizados\n\n### Benefícios\n\n- Ferramentas de IA, APIs e infraestrutura em nuvem necessárias aos projetos custeadas pela MKdigital.\n- Colaboração remota, com autonomia na organização dos horários e sem exclusividade.\n- Participação na construção de produtos reais desde as fases iniciais, com possibilidade de continuidade em novos projetos conforme resultados e necessidades.\n\n### Faixa salarial\n\n**Valor de referência da prestação de serviços: R$ 72,50 por hora.** Até aproximadamente 36 horas semanais e 1.656 horas anuais estimadas; orçamento anual estimado de R$ 120.060. Faturamento pelos serviços efetivamente prestados, sem garantia de volume mínimo. Duração estimada dos projetos: 12 meses.\n\n### Nível\n\nJúnior\n\n### Regime de contratação\n\nPJ, Contrato, Freelance\n\nPreferência por ME/CNPJ com emissão de notas fiscais. Para quem estiver constituindo a própria empresa, poderá ser aceita prestação inicial como autônomo/CPF por até três meses, observadas as obrigações aplicáveis; a continuidade exige ME/CNPJ.\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil — qualquer cidade.\n\n### Como se candidatar\n\nEnvie para **[info@mkdigital.ch](mailto:info@mkdigital.ch)** com o assunto **“Candidatura — Desenvolvimento de Software / AI Coding”**:\n\n- Currículo ou perfil do LinkedIn.\n- GitHub, portfólio ou exemplos de projetos acadêmicos/pessoais, se disponíveis.\n- Breve apresentação e interesse em AI Coding e Agentic AI.\n- Eventual experiência com Claude Code, Codex, Linux ou outras tecnologias citadas.\n- Interesse em aprender os domínios de contabilidade e engenharia industrial.\n- Informação sobre ME/CNPJ existente ou interesse em constituir empresa própria.\n\nO processo será integralmente online, com análise de perfil, projetos e conversa técnica. Não é necessário ter empresa aberta no momento da candidatura.\n\n**Empresa:** MKdigital — https://www.mkdigital.ch\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+                "excerpt": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
+                "issueState": "open",
+                "contentHash": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "javascript",
+                  "júnior",
+                  "pj",
+                  "postgresql",
+                  "python",
+                  "remoto",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "sourceTags": [
+                  "javascript",
+                  "júnior",
+                  "pj",
+                  "postgresql",
+                  "python",
+                  "remoto",
+                  "testes automatizados",
+                  "typescript"
+                ],
+                "author": {
+                  "id": "marcelokipper04",
+                  "name": "marcelokipper04",
+                  "handle": "marcelokipper04",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/207054547?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "companyName": "** MKdigital — https://www.mkdigital.ch",
+                "createdAt": "2026-11-07T20:58:13Z",
+                "updatedAt": "2026-11-09T22:27:10Z",
+                "url": "https://github.com/backend-br/vagas/issues/12493",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "city": "Python",
+                  "subdivision": "AI",
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Python, AI · Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "data-ai",
+                    "devops-sre",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "azure",
+                    "docker",
+                    "javascript",
+                    "postgres",
+                    "python",
+                    "react",
+                    "typescript"
+                  ],
+                  "seniority": [
+                    "junior"
+                  ],
+                  "employmentTypes": [
+                    "contractor"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": [
+                    "de",
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_5e371ac29287a1e60fe77ff4",
+                    "sourceId": "backend-br/vagas#12493",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12493",
+                    "createdAt": "2026-11-07T20:58:13Z",
+                    "updatedAt": "2026-11-09T22:27:10Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 2,
+                  "publishedAt": "2026-11-07T20:58:13Z",
+                  "status": "fresh"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_8dcc457448d236630b20ba86",
+        "revision": "bd194df83a04aed7cc1acab4b27be13efbe58dc3705685aa50fe8f12feba35d9",
+        "idempotencyKey": "openings:job:gh_8dcc457448d236630b20ba86:bd194df83a04aed7cc1acab4b27be13efbe58dc3705685aa50fe8f12feba35d9"
+      },
+      "canonical": {
+        "title": "[Híbrido/Curitiba] Tech Lead - USD (Jcal)",
+        "summary": "OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech Le...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_8dcc457448d236630b20ba86",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_8dcc457448d236630b20ba86",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_8dcc457448d236630b20ba86",
+              "revision": "bd194df83a04aed7cc1acab4b27be13efbe58dc3705685aa50fe8f12feba35d9",
+              "canonicalPath": "/jobs/gh_8dcc457448d236630b20ba86",
+              "title": "[Híbrido/Curitiba] Tech Lead - USD (Jcal)",
+              "summary": "OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech Le...",
+              "status": "active",
+              "contentSha256": "4c28294f58970cec7b987879e30448c1a21a1c43cb2f4565f0178bab7b3b9083",
+              "content": {
+                "id": "gh_8dcc457448d236630b20ba86",
+                "sourceId": "frontendbr/vagas#8561",
+                "title": "[Híbrido/Curitiba] Tech Lead - USD (Jcal)",
+                "description": "OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES\n📍 Curitiba/PR | Modelo híbrido – 2x por semana\n 💰 Até US$ 5.000/mês | Contractor\n 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA\nEstamos buscando um(a) Tech Lead Hands-On, com forte experiência em desenvolvimento, arquitetura e integrações para atuar em um projeto internacional.\nAqui, liderança técnica significa continuar colocando a mão no código.\nNão buscamos alguém que tenha atuado apenas como gestor ou que esteja distante do desenvolvimento. A posição exige programação no dia a dia, revisão de código, decisões arquiteturais, acompanhamento de pipelines e atuação direta na resolução de problemas em produção.\n💡 Importante: o processo seletivo terá Live Coding, justamente para avaliar a capacidade técnica na prática.\n🔎 O que você precisa ter?\n✅ 10+ anos de experiência profissional em desenvolvimento de software;\n ✅ Experiência sólida com Python, Java ou Go;\n ✅ Experiência com programação assíncrona e concorrência;\n ✅ Bacharelado concluído em TI, como Ciência da Computação, Sistemas de Informação ou Engenharia de Software;\n ✅ Domínio prático de Scrum e Kanban;\n ✅ Experiência conduzindo ritos, refinamentos técnicos e priorização de backlog;\n ✅ Capacidade de liderar tecnicamente uma squad com autonomia, inclusive em cenários sem PO dedicado;\n ✅ Experiência com Clean Code, SOLID e Code Review;\n ✅ Experiência na investigação e resolução de problemas em produção;\n ✅ Conhecimento avançado de SQL;\n ✅ Experiência com APIs REST, Webhooks e integrações;\n ✅ Conhecimento de arquiteturas Event-Driven, como Kafka ou RabbitMQ;\n ✅ Experiência trabalhando com arquivos em alta escala;\n ✅ Prática com testes automatizados, resiliência e idempotência;\n ✅ Inglês C1/C2, com comunicação diária em ambiente internacional.\n⭐ Será um grande diferencial:\n• Experiência com US Healthcare;\n • Conhecimento de FHIR, HL7 e X12 (834/835/837);\n • Conhecimento de HIPAA/PHI;\n • Experiência com arquitetura de integrações na AWS;\n • Conhecimento de Lambda, SQS, SNS e API Gateway.\n⚠️ Antes de se candidatar\nEssa é uma posição realmente Hands-On.\nSe você atualmente não programa no dia a dia ou busca uma posição exclusivamente gerencial, provavelmente essa oportunidade não será o melhor match.\nO processo inclui uma etapa prática de Live Coding, portanto buscamos profissionais que tenham segurança para demonstrar seus conhecimentos técnicos na prática.\n🌎 O que oferecemos?\n💰 Até US$ 5.000/mês\n 📄 Contrato internacional\n 📍 Híbrido em Curitiba/PR – 2x por semana\n 🇺🇸 Atuação com equipe nos Estados Unidos\n 🚀 Projeto internacional e ambiente tecnicamente desafiador\nSe você tem experiência técnica + liderança + perfil Hands-On e está pronto para atuar em um projeto internacional, queremos conhecer você.\n\nObs: Se tiver interesse na mudança para Curitiba, serão bem vindos \n\n\n👉 Envie seu CV em inglês (PDF) e o link do seu GitHub neste link abaixo \nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n\nE se você conhece aquele Tech Lead que realmente ainda coloca a mão no código, marque ou compartilhe esta oportunidade com ele. 🚀\n\n#TechLead #TechLeadership #SoftwareEngineering #SoftwareDeveloper #BackendDeveloper #Python #Java #Golang #Kafka #RabbitMQ #AWS #APIs #Integration #EventDrivenArchitecture #CleanCode #SOLID #Scrum #Kanban #USHealthcare #HealthcareIT #RemoteJobs #InternationalJobs #TechJobs #VagasDeTI #Curitiba #LATAM",
+                "excerpt": "OPORTUNIDADE INTERNACIONAL | TECH LEAD – INTEGRAÇÕES 📍 Curitiba/PR | Modelo híbrido – 2x por semana 💰 Até US$ 5.000/mês | Contractor 🇺🇸 Inglês C1/C2 | Atuação diária com time nos EUA Estamos buscando um(a) Tech Le...",
+                "issueState": "open",
+                "contentHash": "bd194df83a04aed7cc1acab4b27be13efbe58dc3705685aa50fe8f12feba35d9",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "híbrido",
+                  "stale"
+                ],
+                "sourceTags": [
+                  "híbrido",
+                  "stale"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "createdAt": "2026-09-10T16:02:57Z",
+                "updatedAt": "2026-11-10T05:21:12Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8561",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "leadership"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "go",
+                    "java",
+                    "python"
+                  ],
+                  "seniority": [
+                    "lead"
+                  ],
+                  "employmentTypes": [
+                    "contractor"
+                  ],
+                  "workModels": [
+                    "hybrid"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_8dcc457448d236630b20ba86",
+                    "sourceId": "frontendbr/vagas#8561",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8561",
+                    "createdAt": "2026-09-10T16:02:57Z",
+                    "updatedAt": "2026-11-10T05:21:12Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-09-10T16:02:57Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_bf73df7999bf22857e69155f",
+        "revision": "c26e469c57f2bb175f8e9b47fa0dc2a81aea969d4314153f429a668ecc809602",
+        "idempotencyKey": "openings:job:gh_bf73df7999bf22857e69155f:c26e469c57f2bb175f8e9b47fa0dc2a81aea969d4314153f429a668ecc809602"
+      },
+      "canonical": {
+        "title": "[Híbrido/Curitiba] Front-end Developer React-USD (Jcal)",
+        "summary": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_bf73df7999bf22857e69155f",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_bf73df7999bf22857e69155f",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_bf73df7999bf22857e69155f",
+              "revision": "c26e469c57f2bb175f8e9b47fa0dc2a81aea969d4314153f429a668ecc809602",
+              "canonicalPath": "/jobs/gh_bf73df7999bf22857e69155f",
+              "title": "[Híbrido/Curitiba] Front-end Developer React-USD (Jcal)",
+              "summary": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+              "status": "active",
+              "contentSha256": "e086c095de8419fb9cbb745d20180e9e1f53410c329a89d3c24c00995554493c",
+              "content": {
+                "id": "gh_bf73df7999bf22857e69155f",
+                "sourceId": "frontendbr/vagas#8562",
+                "title": "[Híbrido/Curitiba] Front-end Developer React-USD (Jcal)",
+                "description": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷\n\nEngenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare com remuneração em dólar?\n\nEstamos selecionando um profissional Sênior para integrar o time de Engenharia de uma empresa internacional do setor de Healthcare.\n\n💡 SOBRE A POSIÇÃO\n\nBuscamos um profissional autônomo, com forte senso de ownership e capacidade de atuar de ponta a ponta: do desenvolvimento à entrega e suporte em produção.\n\nO foco será construir experiências digitais de alta qualidade, com atenção especial à performance, confiabilidade, escalabilidade e UX.\n\n💰 REMUNERAÇÃO: Até – USD 5k/mês\n📍 LOCALIZAÇÃO: Qualquer localidade do Brasil\n🏠 MODELO: Inicialmente remoto, com necessidade de mudança para Curitiba após a contratação\n🏢 HÍBRIDO: Após a mudança, atuação presencial 2x por semana em Curitiba – PR\n⏱️ MODELO: Full-time\n🇺🇸 IDIOMA: Inglês Avançado/Fluente, com experiência trabalhando com times dos EUA\n\n🎯 REQUISITOS OBRIGATÓRIOS\n\n🛑 +8 anos de experiência em desenvolvimento de software\n\n✅ Experiência sólida com React e desenvolvimento Front-end\n✅ Desenvolvimento end-to-end: design, implementação, testes, deploy e suporte\n✅ Integração com APIs, gerenciamento de estado e tratamento de erros\n✅ Otimização de performance e escalabilidade\n✅ Testes automatizados: unitários, integração e E2E\n✅ Experiência com CI/CD\n✅ Monitoramento, observabilidade e resolução de incidentes\n✅ Forte senso de ownership e autonomia\n✅ Colaboração com times de Produto e Engenharia\n✅ Ensino Superior em Ciência da Computação, Engenharia ou áreas correlatas\n✅ Inglês avançado para comunicação diária com equipes internacionais\n✅ Disponibilidade para mudança para Curitiba e atuação híbrida 2x por semana\n\n🤩 DIFERENCIAIS\n\n✅ Experiência em Healthcare\n✅ Conhecimento de HIPAA / PHI\n✅ Forte visão crítica sobre UX e experiência do usuário\n✅ Experiência com observabilidade e monitoramento de aplicações Front-end\n\n📌 RESPONSABILIDADES TÉCNICAS\n\n🔹 Desenvolver e evoluir funcionalidades com foco em UX, performance e escalabilidade\n🔹 Integrar aplicações Front-end com APIs\n🔹 Implementar estratégias de gerenciamento de estado e tratamento de erros\n🔹 Garantir qualidade através de testes automatizados e CI/CD\n🔹 Monitorar aplicações após os releases\n🔹 Atuar na resolução de incidentes e melhoria contínua\n🔹 Colaborar com Produto e Engenharia na definição de soluções técnicas\n\n📩 COMO SE CANDIDATAR\n\nAtende aos requisitos, tem +8 anos de experiência e possui disponibilidade para se mudar para Curitiba?\n\n👇🏻 Chame através do link abaixo e envie seu CV em inglês, em PDF e o link do GitHub :👇🏻 \n\nhttps://wa.me/5519978164262?text=Ol%C3%A1%0ASeja%20muito%20bem%20vindo(a)%0AVoc%C3%AA%20entrou%20em%20contato%20para%20conversarmos%20sobre%20oportunidades,%20logo%20mais%20irei%20te%20atender\n\n#React #ReactJS #FrontendEngineer #SeniorFrontendEngineer #FrontendDeveloper #SoftwareEngineer #VagasTI #TechJobs #RemoteJobs #InternationalJobs #HealthcareTech #Healthtech #LATAMTech #SeniorDeveloper #TechCareers #CuritibaTI",
+                "excerpt": "🚀 OPORTUNIDADE INTERNACIONAL | SENIOR FRONT-END ENGINEER (REACT) 🇺🇸🇧🇷 Engenheiro(a) de Software Sênior com +8 anos de experiência, especialista em React e interessado em atuar em uma empresa global de Healthcare ...",
+                "issueState": "open",
+                "contentHash": "c26e469c57f2bb175f8e9b47fa0dc2a81aea969d4314153f429a668ecc809602",
+                "repository": "frontendbr/vagas",
+                "repositoryUrl": "https://github.com/frontendbr/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "especialista",
+                  "híbrido",
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "sourceTags": [
+                  "especialista",
+                  "híbrido",
+                  "remoto",
+                  "stale",
+                  "sênior"
+                ],
+                "author": {
+                  "id": "Claudiaantunesdelima",
+                  "name": "Claudiaantunesdelima",
+                  "handle": "Claudiaantunesdelima",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/101112479?v=4"
+                },
+                "community": {
+                  "id": "frontendbr",
+                  "name": "frontendbr",
+                  "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                  "repository": "frontendbr/vagas",
+                  "url": "https://github.com/frontendbr/vagas"
+                },
+                "createdAt": "2026-09-10T16:06:26Z",
+                "updatedAt": "2026-11-10T05:21:10Z",
+                "url": "https://github.com/frontendbr/vagas/issues/8562",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America",
+                  "workModel": "hybrid",
+                  "remoteScope": "unspecified",
+                  "displayText": "Brazil · Hybrid",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "design",
+                    "frontend",
+                    "support"
+                  ],
+                  "technologies": [
+                    "react"
+                  ],
+                  "seniority": [
+                    "senior"
+                  ],
+                  "employmentTypes": [
+                    "full-time"
+                  ],
+                  "workModels": [
+                    "hybrid",
+                    "on-site",
+                    "remote"
+                  ],
+                  "languages": [
+                    "en"
+                  ]
+                },
+                "dataProvenance": {
+                  "location": "declared",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "sources": [
+                  {
+                    "id": "gh_bf73df7999bf22857e69155f",
+                    "sourceId": "frontendbr/vagas#8562",
+                    "repository": "frontendbr/vagas",
+                    "repositoryUrl": "https://github.com/frontendbr/vagas",
+                    "url": "https://github.com/frontendbr/vagas/issues/8562",
+                    "createdAt": "2026-09-10T16:06:26Z",
+                    "updatedAt": "2026-11-10T05:21:10Z",
+                    "community": {
+                      "id": "frontendbr",
+                      "name": "frontendbr",
+                      "avatarUrl": "https://github.com/frontendbr.png?size=80",
+                      "repository": "frontendbr/vagas",
+                      "url": "https://github.com/frontendbr/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 60,
+                  "publishedAt": "2026-09-10T16:06:26Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
