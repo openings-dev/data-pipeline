@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-10T05:27:50.297Z",
+  "generatedAt": "2026-11-10T14:02:28.652Z",
   "page": 5,
   "pageSize": 20,
   "nextPage": "api/pages/page-0006.json",
   "ids": [
+    "gh_635a2d6c08c44acc444fd7c8",
     "gh_3c767e88457a3d29d3db1504",
     "gh_8f25be7dd252badc093e7167",
     "gh_a07d697588492bd5752cba67",
@@ -20,12 +21,130 @@
     "gh_4a700fa8926cbb8edfbdeb95",
     "gh_94493c77be84aabfeeabe717",
     "gh_0da1549c7daf4a0c09a7d121",
-    "gh_2f90b160baee5d09b0165e89",
-    "gh_14ddee933b9b152d7875ef0c",
     "gh_776da6cd16a3878a7aa6c3ac",
-    "gh_f854256c35a417d8933cfcfe"
+    "gh_f854256c35a417d8933cfcfe",
+    "gh_34417202d0a35257d6811c40"
   ],
   "items": [
+    {
+      "id": "gh_635a2d6c08c44acc444fd7c8",
+      "sourceId": "soujava/vagas-java#1966",
+      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Agendamento) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO serviço de agendamento faz duas coisas relacionadas. Ele guarda agenda de compromisso (quem está disponível, em qual janela, com qual duração, e o que acontece quando dois pedidos disputam o mesmo horário) e ele dispara tarefas programadas que precisam rodar em hora certa, uma vez, sem duplicar quando existe mais de uma instância da aplicação no ar. A stack é Java com Spring Boot, agendamento com Quartz Scheduler e persistência em PostgreSQL. O que mais gera bug aqui e tempo: fuso, horário de verão de outros países, mês com 28 dias, reagendamento que precisa liberar o horário antigo, cancelamento que chega depois do disparo. Você vai mexer bastante em teste com relógio controlado, porque teste que depende da hora real da máquina passa hoje e falha às três da manhã de um domingo. Esse tipo de cuidado é boa parte do valor da vaga.\n\n- Implementar criação, remarcação e cancelamento de compromisso com checagem de conflito\n- Calcular janela de disponibilidade a partir de regra de duração e intervalo\n- Configurar e manter tarefas programadas com Quartz, garantindo execução única\n- Tratar fuso horário de forma explícita, guardando instante e exibindo local\n- Escrever teste com relógio controlado, sem depender da hora da máquina\n- Expor a agenda por endpoint REST para o front consumir\n- Investigar disparo que não aconteceu ou aconteceu duas vezes\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Formação em andamento ou concluída em curso de tecnologia, ou projeto próprio publicado com código Java seu\n- Java com orientação a objetos e uso da API de datas (LocalDate, LocalDateTime, Instant)\n- Noção de Spring Boot\n- SQL de consulta e escrita, com filtro por intervalo de data\n- Entender que hora com fuso e hora local são coisas diferentes\n- Git no dia a dia\n\n**Diferenciais:**\n- Já ter usado Quartz, cron ou agendador de qualquer linguagem\n- Noção de execução concorrente e de trava para evitar duplicidade\n- Formato iCalendar ou integração com agenda externa\n- Docker para subir aplicação e banco localmente\n- Teste com data fixada, por exemplo com Clock injetado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.800 a R$ 5.200 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-agendamento-464?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O serviço de agendamento faz duas coisas relacionadas. El...",
+      "issueState": "open",
+      "contentHash": "d35fa634e61af65f50c084a4b20db90439f885d0707cf5bcb4ec551f402bdc97",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "docker",
+        "júnior",
+        "pj",
+        "postgresql",
+        "remoto",
+        "rest",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 3800,
+        "max": 5200,
+        "period": "month"
+      },
+      "createdAt": "2026-10-21T13:09:45Z",
+      "updatedAt": "2026-10-21T13:10:03Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1966",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "docker",
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_635a2d6c08c44acc444fd7c8",
+          "sourceId": "soujava/vagas-java#1966",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1966",
+          "createdAt": "2026-10-21T13:09:45Z",
+          "updatedAt": "2026-10-21T13:10:03Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 20,
+        "publishedAt": "2026-10-21T13:09:45Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_3c767e88457a3d29d3db1504",
       "sourceId": "awesome-jobs/vietnam#5092",
@@ -143,7 +262,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-10-21T10:53:38Z",
         "status": "fresh"
       }
@@ -269,7 +388,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-10-21T06:41:22Z",
         "status": "fresh"
       }
@@ -403,7 +522,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-10-21T06:36:26Z",
         "status": "fresh"
       }
@@ -896,7 +1015,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 20,
+        "ageDays": 21,
         "publishedAt": "2026-10-20T09:45:47Z",
         "status": "fresh"
       }
@@ -984,7 +1103,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 20,
+        "ageDays": 21,
         "publishedAt": "2026-10-20T08:56:31Z",
         "status": "fresh"
       }
@@ -1208,7 +1327,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 22,
+        "ageDays": 23,
         "publishedAt": "2026-10-18T10:05:49Z",
         "status": "fresh"
       }
@@ -1736,181 +1855,6 @@
       }
     },
     {
-      "id": "gh_2f90b160baee5d09b0165e89",
-      "sourceId": "rebase-network/who-is-hiring#1320",
-      "title": "[远程] CEX公司诚聘 项目经理/财务经理/资深量化风险专家/资深量化交易专家",
-      "description": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。\n公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。\n\n\n## 地点\n\n- 工作地点：远程\n- 联系方式：@nature000111\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：远程\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n01｜项目经理（PMO）\n工作内容\n1. 负责市场活动、用户增长及运营类重点项目的规划与交付。  \n2. 协调产品、市场、运营等团队资源，推动项目按计划落地。  \n3. 管理项目进度、风险及交付质量，优化跨团队协作流程。  \n任职要求\n1. 2–5 年项目管理、PMO 或业务运营经验，有独立主导项目的成功案例。  \n2. 具备数字资产交易平台背景，有市场活动或用户增长项目经验。  \n3. 推动力强、结果导向，能够独立协调多部门解决问题，非纯执行型项目经理。  \n\n02｜财务经理\n工作内容\n1. 负责多币种、多主体账务管理、财务报表及月度、年度结算。  \n2. 管理冷热钱包、银行账户及链上资产，完成资金对账和差异排查。  \n3. 联合产品及研发团队搭建财务核算与对账系统，推动财务流程自动化。  \n任职要求\n1. 财务、会计、金融相关专业本科及以上学历。  \n2. 3 年以上 Web3 或加密交易平台财务经验，熟悉全盘账务及链上资金对账。  \n3. 熟悉多币种财务管理，具备财务系统从 0 到 1 建设或相关需求落地能力。  \n\n03｜资深量化风险专家（交易与对冲）\n工作内容\n1. 建立交易及对冲风险模型，管理风险敞口、保证金、流动性及风险限额。  \n2. 开展市场压力测试，评估极端行情下的潜在损失和资金风险。  \n3. 分析订单簿、成交及交易异常，推动风险预警与控制机制落地。  \n任职要求\n1. 通常 5 年以上量化风险、市场风险或衍生品交易相关经验。  \n2. 熟练使用 Python、SQL，具备风险建模、统计分析及压力测试能力。  \n3. 深入理解永续合约、期货、保证金、强平、资金费率及市场微观结构，具备独立风险管理案例。  \n\n04｜资深量化交易专家（对冲策略）\n工作内容\n1. 研究和优化动态对冲、库存管理、资金再平衡及量化交易策略。  \n2. 优化 Maker/Taker、订单路由、拆单及交易执行，降低交易成本。  \n3. 研究跨市场套利、基差和资金费率机会，负责策略实盘表现及净收益优化。  \n任职要求\n1. 通常 5 年以上量化交易、做市或电子交易经验，其中至少 2 年参与实盘策略及 PnL 管理。  \n2. 有独立主导策略研究、实盘上线及持续优化经验，能够解释收益来源和回撤。  \n3. 熟练使用 Python、SQL，理解回测验证、交易成本建模及衍生品市场机制。  \n## 工作环境",
-      "excerpt": "一家面向全球市场的数字资产交易平台，公司以加密货币永续合约交易为核心，结合 AI 技术、自动化交易及量化策略服务，致力于为用户提供专业、高效的数字资产交易体验。 公司目前处于业务发展阶段，正在加强量化交易、风险管理、财务系统及项目管理等核心团队建设，相关岗位支持远程办公。 ## 地点 - 工作地点：远程 - 联系方式：@nature000111 ## 工作性质 - 是否全职：全职 - 是否远程：远程 - 时区要求：（GMT+8优先...",
-      "issueState": "open",
-      "contentHash": "f1859c2110ced5731c7c4c42694aaac2ba37bb1da458fdcd310f5627de750642",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "python"
-      ],
-      "sourceTags": [
-        "python"
-      ],
-      "author": {
-        "id": "digital123s",
-        "name": "digital123s",
-        "handle": "digital123s",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/221972900?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-10-16T02:41:02Z",
-      "updatedAt": "2026-10-16T02:41:02Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_2f90b160baee5d09b0165e89",
-          "sourceId": "rebase-network/who-is-hiring#1320",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1320",
-          "createdAt": "2026-10-16T02:41:02Z",
-          "updatedAt": "2026-10-16T02:41:02Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 25,
-        "publishedAt": "2026-10-16T02:41:02Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_14ddee933b9b152d7875ef0c",
-      "sourceId": "rebase-network/who-is-hiring#1319",
-      "title": "[香港] Web3金融科技公司诚聘C++/Rust/量化策略研究/机构BD,港币发薪",
-      "description": "专注于加密货币衍生品，尤其是期权交易的金融科技公司，总部位于新加坡，业务覆盖香港及全球数字资产市场。\n目前团队正在扩张，重点招聘 C++ 低延迟交易系统工程师、Rust 量化交易系统工程师、量化策略研究员及机构业务拓展经理等岗位。\n\n## 薪资福利待遇\n开发者喜欢薪资范围准确的招聘信息。\n此项必须填写，否则 Rebase 公众号和其它媒体渠道可能不会转发。\n\n## 地点\n\n- 工作地点：香港线下办公，可协助办理工作签证\n- 联系方式：@nature000111\n\n## 工作性质\n\n- 是否全职：全职\n- 是否远程：香港线下办公，可协助办理工作签证\n- 时区要求：（GMT+8优先，可覆盖核心工作时间，可适应国际分布式团队协作）\n  \n## 岗位要求、职责\n01｜C++ 低延迟交易系统工程师\n工作内容\n1. 使用 C++ 开发高频交易系统，包括行情、订单管理、交易执行及风控模块。\n2. 优化下单、撤单、成交回报及实时行情处理，降低交易延迟。\n3. 优化 Linux 系统性能、网络 I/O、并发处理及交易系统稳定性。 \n任职要求\n1. 2–5 年 C++ 开发经验，熟练掌握 Linux、多线程、网络编程及内存管理。\n2. 具备低延迟、高频交易、做市或电子交易系统开发经验。\n3. 理解衍生品交易流程，具备性能调优能力；熟悉 DPDK、RDMA、NUMA、Lock-free 等优先。 \n\n02｜Rust 量化交易系统工程师\n工作内容\n1. 使用 Rust 开发自动化交易策略及交易系统，支持做市与量化交易。\n2. 开发报价、动态对冲、仓位管理及风险控制模块。\n3. 优化下撤单、成交处理、交易 API 连接及实时监控系统。 \n任职要求\n1. 熟练掌握 Rust，熟悉 C++ 优先，具备稳定的系统开发能力。\n2. 有自动化交易、做市、量化交易或交易系统开发经验。\n3. 理解订单簿、资金费率、永续合约、滑点及仓位风险；有低延迟交易经验优先。 \n\n03｜量化策略研究员（高频交易与做市）\n工作内容\n1. 研究数字资产衍生品高频交易、线性做市及短周期量化策略。\n2. 分析订单簿、订单流及逐笔成交数据，开发预测信号和交易因子。\n3. 建立交易回测与仿真模型，优化报价、执行成本、库存及对冲策略。 \n任职要求\n1. 数学、统计、计算机或金融工程相关专业，通常具备 2–5 年量化研究或做市经验。\n2. 扎实的概率统计及时间序列分析基础，熟练使用 Python 进行策略研究及回测。\n3. 熟悉高频交易、市场微观结构和衍生品机制，有实盘策略经验优先。  \n\n04｜机构业务拓展经理（BD）\n工作内容\n1. 开发并维护机构客户、量化交易公司、做市商及经纪商资源。\n2. 负责客户需求沟通、商务谈判、合作方案及业务落地。\n3. 拓展香港及国际市场，推动机构合作和客户增长。 \n4. 任职要求\n1. 通常具备 2–5 年机构销售、BD 或商务合作经验。\n2. 熟悉数字资产行业及衍生品交易生态，理解期货、永续合约，熟悉期权优先。\n3. 中英文沟通流利，具备机构客户资源及独立商务拓展能力。 \n## 工作环境",
-      "excerpt": "专注于加密货币衍生品，尤其是期权交易的金融科技公司，总部位于新加坡，业务覆盖香港及全球数字资产市场。 目前团队正在扩张，重点招聘 C++ 低延迟交易系统工程师、Rust 量化交易系统工程师、量化策略研究员及机构业务拓展经理等岗位。 ## 薪资福利待遇 开发者喜欢薪资范围准确的招聘信息。 此项必须填写，否则 Rebase 公众号和其它媒体渠道可能不会转发。 ## 地点 - 工作地点：香港线下办公，可协助办理工作签证 - 联系方式：@...",
-      "issueState": "open",
-      "contentHash": "f33af77a53aaaac898c65cdfabe464d81ec544d2bfcff01161ddfc29cd4b7de3",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "python"
-      ],
-      "sourceTags": [
-        "python"
-      ],
-      "author": {
-        "id": "digital123s",
-        "name": "digital123s",
-        "handle": "digital123s",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/221972900?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-10-16T02:36:17Z",
-      "updatedAt": "2026-10-16T02:37:05Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1319",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "python",
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_14ddee933b9b152d7875ef0c",
-          "sourceId": "rebase-network/who-is-hiring#1319",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1319",
-          "createdAt": "2026-10-16T02:36:17Z",
-          "updatedAt": "2026-10-16T02:37:05Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 25,
-        "publishedAt": "2026-10-16T02:36:17Z",
-        "status": "fresh"
-      }
-    },
-    {
       "id": "gh_776da6cd16a3878a7aa6c3ac",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2984",
       "title": "Doesn't show Hardware engineering jobs",
@@ -2107,6 +2051,130 @@
       "freshness": {
         "ageDays": 26,
         "publishedAt": "2026-10-14T21:02:00Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_34417202d0a35257d6811c40",
+      "sourceId": "androiddevbr/vagas#2249",
+      "title": "[Cidade do México, México] Mobile Software Engineer, Multiplatform, Early Careers na Google",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open) para realizar a candidatura. 👋\n<p><b>Please submit your resume in English - we can only consider applications submitted in this language.</b></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p>In most instances, this position requires in-person interviews as part of the hiring process.</p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with software development in one or more programming languages (e.g., Python, C, C++, Java, JavaScript).<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>Experience with mobile app development.</li>\n<li>Experience communicating with clients and teams.</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience developing accessible technologies.<br></li>\n<li>Experience creating and maintaining developer frameworks.</li>\n<li>Experience with Android and or iOS app development.</li>\n<li>Experience with Client and Server development.</li>\n<li>Experience as a generalist with the ability to work across many domains.</li>\n<li>Comfortable working across many teams and stakeholders.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>The team empowers Google app developers to create engaging experiences by sharing code across platforms. Our key objectives are to reduce code duplication, ensure uniformity, accelerate time-to-market, and support Google partners (e.g., YouTube, Search, Maps, Workspace).</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Drive outcomes for immediate areas of work as a collaborator.</li>\n<li>Self-direct your individual contributions with the support from your team.</li>\n<li>Make well-reasoned design judgment calls within owned scope where there is no obvious “best” solution.</li>\n<li>Communicate effectively with your team mates.</li>\n<li>Foster a collaborative and inclusive team environment, encouraging knowledge sharing and innovation.<br></li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Mobile Software Engineer, Multiplatform, Early Careers na Google](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nMobile",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "8b307757575ed96201a9d2de01af4eb3eb02aecd191f7e4f299bc136ac3e93f5",
+      "repository": "androiddevbr/vagas",
+      "repositoryUrl": "https://github.com/androiddevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design",
+        "java",
+        "python"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "python"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "androiddevbr",
+        "name": "androiddevbr",
+        "avatarUrl": "https://github.com/androiddevbr.png?size=80",
+        "repository": "androiddevbr/vagas",
+        "url": "https://github.com/androiddevbr/vagas"
+      },
+      "companyName": "Google",
+      "createdAt": "2026-10-14T20:54:09Z",
+      "updatedAt": "2026-10-14T20:54:48Z",
+      "url": "https://github.com/androiddevbr/vagas/issues/2249",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Mexico",
+        "countryCode": "MX",
+        "region": "North America",
+        "displayText": "Mexico",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_34417202d0a35257d6811c40",
+          "sourceId": "androiddevbr/vagas#2249",
+          "repository": "androiddevbr/vagas",
+          "repositoryUrl": "https://github.com/androiddevbr/vagas",
+          "url": "https://github.com/androiddevbr/vagas/issues/2249",
+          "createdAt": "2026-10-14T20:54:09Z",
+          "updatedAt": "2026-10-14T20:54:09Z",
+          "community": {
+            "id": "androiddevbr",
+            "name": "androiddevbr",
+            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
+            "repository": "androiddevbr/vagas",
+            "url": "https://github.com/androiddevbr/vagas"
+          }
+        },
+        {
+          "id": "gh_7431f876035474375ed7a033",
+          "sourceId": "CocoaHeadsBrasil/vagas#1554",
+          "repository": "CocoaHeadsBrasil/vagas",
+          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1554",
+          "createdAt": "2026-10-14T20:54:48Z",
+          "updatedAt": "2026-10-14T20:54:48Z",
+          "community": {
+            "id": "CocoaHeadsBrasil",
+            "name": "CocoaHeadsBrasil",
+            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+            "repository": "CocoaHeadsBrasil/vagas",
+            "url": "https://github.com/CocoaHeadsBrasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 26,
+        "publishedAt": "2026-10-14T20:54:09Z",
         "status": "fresh"
       }
     }
