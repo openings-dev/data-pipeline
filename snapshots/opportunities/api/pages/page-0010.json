@@ -1,15 +1,9 @@
 {
-  "generatedAt": "2026-11-10T21:09:00.841Z",
+  "generatedAt": "2026-11-11T03:57:50.830Z",
   "page": 10,
   "pageSize": 20,
   "nextPage": "api/pages/page-0011.json",
   "ids": [
-    "gh_eedc0ca3c146d2fc634ba74f",
-    "gh_f83ab72e76fc4802a6079563",
-    "gh_a3c53b8e6a01587253c809b1",
-    "gh_01af249400b5297948fd5955",
-    "gh_c48d49960e929a5d32e92190",
-    "gh_6d98037090e2b732742d2b11",
     "gh_27c2250541f3aca4b4982d3d",
     "gh_71e10b291f6b95046c3c84fa",
     "gh_345438a912c4cb4b37d9e419",
@@ -23,567 +17,15 @@
     "gh_01d59eb415dd02a0c1612a74",
     "gh_b58d8e19c5708f146ef494b5",
     "gh_cb2ee2711308cdd4a5a45c69",
-    "gh_e821e22f91f681e575f4a8e0"
+    "gh_e821e22f91f681e575f4a8e0",
+    "gh_eaa7b7195ea99ad11999cd17",
+    "gh_bf1a4481c55b8d80f89cba07",
+    "gh_eab4a0e2c690eebdf77fc87c",
+    "gh_0e98dad659c3df11a1cb1cc8",
+    "gh_5f066bed10486c20bcb3fc70",
+    "gh_84cd180e02db9815d917bcc4"
   ],
   "items": [
-    {
-      "id": "gh_eedc0ca3c146d2fc634ba74f",
-      "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#6",
-      "title": "Albertsons Companies-Front End Entry Level",
-      "description": "I noticed an entry that doesn't fit: a Jewel-Osco \"Front End Entry Level\" role in Chicago. Despite the title, it's a part-time grocery cashier/courtesy clerk position, not a front-end development role. Looks like it may have been picked up by a title keyword match. Might be worth removing so it doesn't confuse job seekers. Thanks!",
-      "excerpt": "I noticed an entry that doesn't fit: a Jewel-Osco \"Front End Entry Level\" role in Chicago. Despite the title, it's a part-time grocery cashier/courtesy clerk position, not a front-end development role. Looks like it m...",
-      "issueState": "open",
-      "contentHash": "185942c5a17da3f651b2480abb464504830949784db58d54a45f40084b44c704",
-      "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "DanV27",
-        "name": "DanV27",
-        "handle": "DanV27",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/130527793?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-        "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-      },
-      "createdAt": "2026-08-04T21:18:29Z",
-      "updatedAt": "2026-08-04T21:18:29Z",
-      "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/6",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [
-          "part-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_eedc0ca3c146d2fc634ba74f",
-          "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#6",
-          "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad",
-          "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad/issues/6",
-          "createdAt": "2026-08-04T21:18:29Z",
-          "updatedAt": "2026-08-04T21:18:29Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Software-Engineer-New-Grad",
-            "url": "https://github.com/jobright-ai/2026-Software-Engineer-New-Grad"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 97,
-        "publishedAt": "2026-08-04T21:18:29Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_f83ab72e76fc4802a6079563",
-      "sourceId": "timqian/open-source-jobs#181",
-      "title": "Script/workflow bug",
-      "description": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json\n. Example: https://github.com/timqian/open-source-jobs/pull/180\n\nThis should only appear when repos.csv is updated:\n  1 workflow awaiting approval\n  This workflow requires approval from a maintainer. \n\nthe script should prevent duplicted items in RSS and updates.json",
-      "excerpt": "The workflow can be run multiple times, creating duplicated items in RSS and updates.json . Example: https://github.com/timqian/open-source-jobs/pull/180 This should only appear when repos.csv is updated: 1 workflow a...",
-      "issueState": "open",
-      "contentHash": "9b4614a453c22ea025c7c23462b630b6c954b405a55e2d2573979aedf1ef9c0d",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "timqian",
-        "name": "timqian",
-        "handle": "timqian",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/5512552?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-08-03T03:51:27Z",
-      "updatedAt": "2026-08-03T03:51:27Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/181",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_f83ab72e76fc4802a6079563",
-          "sourceId": "timqian/open-source-jobs#181",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/181",
-          "createdAt": "2026-08-03T03:51:27Z",
-          "updatedAt": "2026-08-03T03:51:27Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 99,
-        "publishedAt": "2026-08-03T03:51:27Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_a3c53b8e6a01587253c809b1",
-      "sourceId": "golangtw/jobs#233",
-      "title": "[台北][iGaming][年薪 110–150 萬，資深者另議][週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中",
-      "description": "# [台北｜iGaming｜年薪 110–150 萬，資深者另議｜週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中\n\nHi，大家好，我是 EMB Mission Bound 的招募 Jocelyn 👋\n\n我們正在擴編 Golang 後端團隊，希望找到具備後端開發經驗、願意參與系統設計與產品討論的工程師。\n\n如果你不只想接收規格完成開發，也希望實際參與系統規劃、效能改善與技術討論，歡迎認識我們。\n\n---\n\n## About EMB\n\nEMB Mission Bound 為國際娛樂科技公司，台灣團隊主要負責大型跨國遊戲與平台的研發。\n\n我們的產品面向海外市場，工程團隊會接觸到平台功能、系統整合、資料處理及服務穩定性等實際課題。\n\n目前因產品與團隊持續發展，正在擴編 Golang 後端工程師。\n\n---\n\n## What You’ll Do\n\n- 使用 Golang 進行後端系統功能開發與維護\n- 與 PM、前端、QA 及其他後端工程師合作，規劃並完成新系統或新功能\n- 參與需求釐清、系統設計及技術方案討論\n- 維護及改善既有服務的穩定性、效能與可維護性\n- 撰寫必要的技術文件\n- 持續研究新技術，並與團隊分享及交流\n\n---\n\n## What We’re Looking For\n\n- 具 3 年以上軟體開發經驗\n- 具 Golang 實務開發經驗\n- 熟悉 RESTful API 或 gRPC\n- 具關聯式或非關聯式資料庫使用經驗\n- 理解物件導向、資料結構及基本系統設計概念\n- 熟悉 Git 版本控制及團隊協作流程\n- 能獨立分析問題，也願意與團隊溝通討論\n\n---\n\n## Nice to Have\n\n以下不是全部都要具備，有相關經驗會是加分：\n\n- Microservices 架構經驗\n- Docker、Kubernetes 或其他容器化技術\n- Redis、Kafka、RabbitMQ 等工具使用經驗\n- 高流量、高併發或分散式系統經驗\n- CI/CD 建置或維護經驗\n- AWS、GCP 或其他雲端平台經驗\n- 遊戲、娛樂平台或大型會員系統開發經驗\n\n---\n\n## Why EMB\n\n- 年薪保底 13.6 個月\n- 每人每年 NT$30,000 學習補助\n- 彈性上下班制度\n- 每週四提早一小時下班運動\n- 第一年即享 12 天特休\n- 12/31 跨年當天放假\n- 交通補助、托兒津貼\n- 團體保險、醫療保險及健康檢查補助\n- 免費零食、飲料與咖啡\n- 不定期部門聚餐\n\n---\n\n## Salary Range\n\n- 預計年薪：NT$1,100,000–1,500,000\n- 實際薪資將依相關經驗、技術深度及面試結果核定\n- 若具備大型系統、高併發架構、技術帶領或高度相關產業經驗，薪資可另行討論\n\n---\n\n## Position Information\n\n- 工作地點：台北市\n- 聘僱類型：正職\n- 工作模式：週二至週五辦公室上班，週一可遠端辦公（試用期後）\n- 經驗要求：3 年以上\n- 薪資範圍：年薪 NT$1,100,000–1,500,000，資深人才可另議\n- 104 職缺連結：https://www.104.com.tw/job/8w445\n\n---\n\n## Interview Process\n\n1. HR 線上面談，約 30 分鐘\n2. 專業面試（測驗30分鐘+技術團隊面談）\n3. 最終面談及條件確認\n\n實際流程可能依候選人背景彈性調整。\n\n---\n\n## How to Apply\n\n歡迎透過以下任一方式與我聯繫：\n\n- 直接透過 104 投遞履歷\n- 將履歷寄至：`jocelyn.gu@the-force.com.tw`\n- LinkedIn 私訊：`https://www.linkedin.com/in/jocelyn-gu-b89281244/`\n- 在本篇 Issue 留言，或提供方便聯絡的方式\n\n來信標題可註明：\n\nGitHub-Golang Backend Engineer-姓名\n\n即使目前沒有積極轉職，但對職缺或團隊有興趣，也歡迎先聊聊 🙂",
-      "excerpt": "# [台北｜iGaming｜年薪 110–150 萬，資深者另議｜週一遠端] Golang Backend Engineer｜大型遊戲平台｜EMB 擴編中 Hi，大家好，我是 EMB Mission Bound 的招募 Jocelyn 👋 我們正在擴編 Golang 後端團隊，希望找到具備後端開發經驗、願意參與系統設計與產品討論的工程師。 如果你不只想接收規格完成開發，也希望實際參與系統規劃、效能改善與技術討論，歡迎認識我們。 ...",
-      "issueState": "open",
-      "contentHash": "695b0abe75d47abaadc8af88680202e5e2e712d99005b7e5fb11007e49ff04e6",
-      "repository": "golangtw/jobs",
-      "repositoryUrl": "https://github.com/golangtw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "100k以上",
-        "台北",
-        "遠端"
-      ],
-      "sourceTags": [
-        "100k以上",
-        "台北",
-        "遠端"
-      ],
-      "author": {
-        "id": "jocelyngu-bit",
-        "name": "jocelyngu-bit",
-        "handle": "jocelyngu-bit",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/310079277?v=4"
-      },
-      "community": {
-        "id": "golangtw",
-        "name": "golangtw",
-        "avatarUrl": "https://github.com/golangtw.png?size=80",
-        "repository": "golangtw/jobs",
-        "url": "https://github.com/golangtw/jobs"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 1100000,
-        "max": 1500000,
-        "period": "year"
-      },
-      "createdAt": "2026-07-28T09:06:35Z",
-      "updatedAt": "2026-08-03T11:52:47Z",
-      "url": "https://github.com/golangtw/jobs/issues/233",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "qa"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "gcp",
-          "go",
-          "kubernetes",
-          "redis"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_a3c53b8e6a01587253c809b1",
-          "sourceId": "golangtw/jobs#233",
-          "repository": "golangtw/jobs",
-          "repositoryUrl": "https://github.com/golangtw/jobs",
-          "url": "https://github.com/golangtw/jobs/issues/233",
-          "createdAt": "2026-07-28T09:06:35Z",
-          "updatedAt": "2026-08-03T11:52:47Z",
-          "community": {
-            "id": "golangtw",
-            "name": "golangtw",
-            "avatarUrl": "https://github.com/golangtw.png?size=80",
-            "repository": "golangtw/jobs",
-            "url": "https://github.com/golangtw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 105,
-        "publishedAt": "2026-07-28T09:06:35Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_01af249400b5297948fd5955",
-      "sourceId": "nerdzao/vagas#196",
-      "title": "[INTERLAGOS, SP] QA Sênior - Cypress na Inmetrics",
-      "description": "**Descrição da vaga**\nSe você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você!\nBuscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e garantia da qualidade das soluções digitais, assegurando a entrega de produtos com alta performance, confiabilidade e excelente experiência para o usuário.\nAqui, você vai trabalhar em um ambiente colaborativo, ágil e inovador, onde a qualidade é parte essencial do processo de desenvolvimento e a melhoria contínua faz parte da nossa cultura.\n\n**Local de trabalho**\nHíbrido. 2 dias remotos e 3 dias presenciais no escritório em Interlagos, São Paulo\n\n**Requisitos da vaga\nObrigatórios**\nComo Senior Quality Engineer, será responsável por liderar a estratégia de garantia de qualidade de ponta a ponta. Suas responsabilidades abrangem a definição de padrões de qualidade, a orientação de colegas juniores e plenos, e a implementação de práticas de QA inovadoras. Além disso, espera-se que você tenha uma visão estratégica, influenciando positivamente a cultura de qualidade em toda a organização.\nConhecimentos avançados com:\n- Padrões / melhores práticas/Design Patterns em testes Manuais e Automatizados\n- Ampla cobertura de testes manuais (modelagem de testes com Gherkin)\n- Versionamento de código\n- Cypress\n- Orientação a objetos\n- Implantação CI/CD\n- Testes de API - técnicas de validações como teste de contrato, schema\n- Definir e implementar estratégias de teste e padrões de qualidade.\n- Orientar e treinar membros juniores e plenos da equipe.\n- Desenvolver soluções inovadoras para desafios complexos de QA.\n- Participar ativamente em revisões de design e decisões arquiteturais.\n\n**Desejáveis**\n- Colaborar com líderes de projeto para garantir qualidade em todas as fases do ciclo de vida do desenvolvimento de software.\n- Fornecer liderança técnica, influenciando a cultura de qualidade em toda a organização.\n\n**Diferenciais**\n\n- Certificação CTFL;\n- Integração de ferramentas como JIRA, Zephyr, outros.\n\n\n**Forma de contratação**\nCLT\n\n**Benefícios da empresa**\n- Plano de saúde Bradesco Saúde (Coparticipação de30%)\n- Plano odontológico Bradesco\n- Seguro de vida\n- Wellhub\n- Vale Alimentação/Refeição\n- Auxílio creche\n- Convênio PET\n- Telemedicina Conexa\n\n**Diferenciais**\n- Somos uma Empresa Cidadã: licença maternidade e paternidade prolongadas;\n- Programa INMaterna: Programa de acolhimento a gestantes;\n- Cesta Natalidade e Livro \"Acontecia quando eu nascia\";\n- Desenvolvimento Profissional: cursos disponíveis na universidade interna.\n\n**Range Salarial**\nA vaga paga entre R$8.000,00 e R$11.000,00 reais.\n\n**Sobre a empresa**\nNa Inmetrics, transformamos estratégia em resultado.\nNascemos em 2002, a partir de uma base sólida em engenharia, e desde então evoluímos como uma consultoria que conecta tecnologia, negócio e execução para resolver desafios reais de empresas em transformação.\nAo longo dessa jornada, já acumulamos mais de 25 milhões de horas em projetos de tecnologia, com atuação consolidada no Brasil, Chile, Colômbia e República Dominicana — sempre com foco em gerar impacto mensurável para nossos clientes.\nMais do que entregar soluções, ajudamos organizações a construir capacidades: estruturamos operações, evoluímos produtos, fortalecemos cultura e viabilizamos a transformação digital de ponta a ponta.\nAqui, você vai encontrar pessoas que combinam profundidade técnica, pensamento estratégico e colaboração. Trabalhamos em um ambiente ágil, diverso e orientado à troca, onde aprender faz parte do dia a dia e excelência é construída coletivamente.\nNossa cultura é guiada por impacto, consistência e evolução contínua — porque acreditamos que grandes resultados vêm de times fortes, conectados e preparados para resolver problemas complexos.\nEsse é o nosso jeito de construir.\n\n🏆 Reconhecimentos\nNossa forma de trabalhar também é reconhecida por quem vive essa experiência todos os dias.\n⭐ 4,1 no Glassdoor\n🏅 Certificação Lugares Incríveis para Trabalhar (2021, 2022 e 2025 – FIA/UOL)\n🌍 Certificação Great Place to Work (GPTW)\nMais do que prêmios, esses reconhecimentos refletem o ambiente que construímos: um lugar onde pessoas crescem, aprendem e geram impacto real.\n\n**Como se candidatar**\nCandidatar através do site: https://inmetrics.gupy.io/jobs/11452361\n\n**Tempo médio de feedbacks**\nCostumamos enviar feedbacks em até 5 dias úteis após cada processo.\n\n**Labels**\nCLT\nPleno\nSênior\nEspecialista\nPresencial\nRemoto\nSão Paulo",
-      "excerpt": "**Descrição da vaga** Se você é uma pessoa detalhista, analítica e apaixonada por qualidade de software, essa vaga é para você! Buscamos um(a) Analista de Engenharia de Qualidade para atuar na validação, testes e gara...",
-      "issueState": "open",
-      "contentHash": "f969321a7898ebe70a6a4980c8c74ac139ed29fd96c09f5bc5e9335af9190d12",
-      "repository": "nerdzao/vagas",
-      "repositoryUrl": "https://github.com/nerdzao/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "data",
-        "design",
-        "junior",
-        "pleno",
-        "senior"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "junior",
-        "pleno",
-        "senior"
-      ],
-      "author": {
-        "id": "moreirapamela",
-        "name": "moreirapamela",
-        "handle": "moreirapamela",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/103055141?v=4"
-      },
-      "community": {
-        "id": "nerdzao",
-        "name": "nerdzao",
-        "avatarUrl": "https://github.com/nerdzao.png?size=80",
-        "repository": "nerdzao/vagas",
-        "url": "https://github.com/nerdzao/vagas"
-      },
-      "companyName": "Inmetrics",
-      "createdAt": "2026-07-24T14:47:43Z",
-      "updatedAt": "2026-07-24T14:47:43Z",
-      "url": "https://github.com/nerdzao/vagas/issues/196",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "qa"
-        ],
-        "technologies": [],
-        "seniority": [
-          "junior",
-          "mid",
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "on-site",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_01af249400b5297948fd5955",
-          "sourceId": "nerdzao/vagas#196",
-          "repository": "nerdzao/vagas",
-          "repositoryUrl": "https://github.com/nerdzao/vagas",
-          "url": "https://github.com/nerdzao/vagas/issues/196",
-          "createdAt": "2026-07-24T14:47:43Z",
-          "updatedAt": "2026-07-24T14:47:43Z",
-          "community": {
-            "id": "nerdzao",
-            "name": "nerdzao",
-            "avatarUrl": "https://github.com/nerdzao.png?size=80",
-            "repository": "nerdzao/vagas",
-            "url": "https://github.com/nerdzao/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 109,
-        "publishedAt": "2026-07-24T14:47:43Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_c48d49960e929a5d32e92190",
-      "sourceId": "junminhong/jobs#3",
-      "title": "Associate Director – Product",
-      "description": "### Company Name\n\nNoise\n\n### Position Title\n\nAssociate Director – Product\n\n### Job Type\n\nFull-time\n\n### Location Type\n\nOn-site\n\n### Region\n\n🇮🇳 India\n\n### Location\n\nGurugram\n\n### Salary Range\n\nINR 4500000 - INR 5000000\n\n### Job Description\n\nGurugram | Full-time | Noise\nAt Noise, we're building products that millions of people use every day. As an Associate Director – Product, you'll own the core NoiseFit experience, shaping how users engage with their health, fitness, and wellness journeys.\n\nYou'll define product strategy, lead cross-functional teams, and drive features from concept to launch. Working closely with Engineering, Design, Data, Marketing, and Hardware, you'll build experiences that improve engagement, retention, and long-term user value.\n\nWe're looking for someone who:\nHas 8+ years of Product Management experience in high-scale B2C products\nHas built and scaled consumer mobile products\nIs deeply data-driven and experiment-oriented\nThinks strategically while executing with speed\nHas experience working across cross-functional product teams\nExperience in health-tech, wearables, consumer internet, fintech, or marketplaces is a strong plus.\n\n### Contact Information\n\nhttps://www.linkedin.com/in/dreamteamengineer/\n\n### Additional Information\n\n_No response_",
-      "excerpt": "### Company Name Noise ### Position Title Associate Director – Product ### Job Type Full-time ### Location Type On-site ### Region 🇮🇳 India ### Location Gurugram ### Salary Range INR 4500000 - INR 5000000 ### Job De...",
-      "issueState": "open",
-      "contentHash": "908a7862041ecf8c8bc0e7d1cfaf56a0d8889c17a3c41c502742bae88cfcb56d",
-      "repository": "junminhong/jobs",
-      "repositoryUrl": "https://github.com/junminhong/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "job"
-      ],
-      "sourceTags": [
-        "job"
-      ],
-      "author": {
-        "id": "shivamsharma-debug",
-        "name": "shivamsharma-debug",
-        "handle": "shivamsharma-debug",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/308677757?v=4"
-      },
-      "community": {
-        "id": "junminhong",
-        "name": "junminhong",
-        "avatarUrl": "https://github.com/junminhong.png?size=80",
-        "repository": "junminhong/jobs",
-        "url": "https://github.com/junminhong/jobs"
-      },
-      "createdAt": "2026-07-24T07:50:21Z",
-      "updatedAt": "2026-07-24T07:50:21Z",
-      "url": "https://github.com/junminhong/jobs/issues/3",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "on-site",
-        "remoteScope": "unspecified",
-        "displayText": "On-site",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "mobile",
-          "product"
-        ],
-        "technologies": [],
-        "seniority": [
-          "lead"
-        ],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_c48d49960e929a5d32e92190",
-          "sourceId": "junminhong/jobs#3",
-          "repository": "junminhong/jobs",
-          "repositoryUrl": "https://github.com/junminhong/jobs",
-          "url": "https://github.com/junminhong/jobs/issues/3",
-          "createdAt": "2026-07-24T07:50:21Z",
-          "updatedAt": "2026-07-24T07:50:21Z",
-          "community": {
-            "id": "junminhong",
-            "name": "junminhong",
-            "avatarUrl": "https://github.com/junminhong.png?size=80",
-            "repository": "junminhong/jobs",
-            "url": "https://github.com/junminhong/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 109,
-        "publishedAt": "2026-07-24T07:50:21Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_6d98037090e2b732742d2b11",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2940",
-      "title": "Create a Separate List for 2027 New Grad Roles",
-      "description": "### Improvement\n\n2027 new graduate roles have started opening, but they are currently mixed with roles intended for earlier graduating classes.\n\nIt would be helpful to create a separate section, page, or table specifically for **2027 New Grad positions**.\n\n### Suggested changes\n\n- Add a dedicated list for roles targeting students graduating in 2027.\n- Clearly display the eligible graduation year or graduation window for each position.\n- Keep 2026 and 2027 roles separated so applicants can quickly find relevant opportunities.\n- Optionally add a graduation-year filter if maintaining separate lists becomes difficult.\n\nThis would make the repository easier to navigate and prevent students from applying to roles for which they are not eligible.",
-      "excerpt": "### Improvement 2027 new graduate roles have started opening, but they are currently mixed with roles intended for earlier graduating classes. It would be helpful to create a separate section, page, or table specifica...",
-      "issueState": "open",
-      "contentHash": "1cc801524089525f82fcaea1890cd29622cab3985eca8eafdd8422cba6f69fc6",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "enhancement"
-      ],
-      "sourceTags": [
-        "enhancement"
-      ],
-      "author": {
-        "id": "jatinS-dev",
-        "name": "jatinS-dev",
-        "handle": "jatinS-dev",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/66058203?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-07-15T15:28:36Z",
-      "updatedAt": "2026-11-06T02:38:26Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2940",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_6d98037090e2b732742d2b11",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2940",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2940",
-          "createdAt": "2026-07-15T15:28:36Z",
-          "updatedAt": "2026-11-06T02:38:26Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 118,
-        "publishedAt": "2026-07-15T15:28:36Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_27c2250541f3aca4b4982d3d",
       "sourceId": "nerdzao/vagas#195",
@@ -1057,7 +499,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 118,
+        "ageDays": 119,
         "publishedAt": "2026-07-15T03:17:37Z",
         "status": "stale"
       }
@@ -2018,8 +1460,605 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 141,
+        "ageDays": 142,
         "publishedAt": "2026-06-22T01:47:27Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_eaa7b7195ea99ad11999cd17",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#84",
+      "title": "【深圳坐班】法币增长运营｜全球Web3金融平台｜操盘千万级法币交易增长",
+      "description": "🔥 **关于我们**\nKlickl 是一家全球领先的数字金融科技平台，深耕中东及欧洲市场。\n- ✅ 已完成 2500 万美元 A 轮融资\n- ✅ 持有阿联酋（ADGM）和欧盟（波兰）合规牌照\n- ✅ 支付结算业务高速增长\n- ✅ 创始人同时担任纽交所上市基金董事会成员\n\n📍 **工作地点**：深圳（坐班制，高效协作，决策零时差）\n\n💰 **薪酬福利**：发薪方式灵活 + 高额现金补贴替代传统福利，到手净收入更高\n\n---\n\n**🎯 岗位定位**\n这不是一个普通的运营岗。你将是**法币交易增长的操盘手**，直接推动用户从稳定币兑换法币并提现的全链路转化，与渠道方、支付服务商、OTC服务商紧密协作，驱动交易量持续增长。\n\n**你的核心战场：**\n\n**📈 增长运营**\n- 负责ToC法币出金、稳定币兑换法币、Off-ramp、代付等业务的增长运营\n- 围绕重点用户、渠道客户、代理商、HNW用户及B2B2C场景，推动法币交易量增长\n- 跟进用户从USDT/USDC兑换为法币并提现至银行卡/电子钱包的完整流程，提升转化和复购\n- 结合不同市场需求，设计Off-ramp使用场景和运营策略\n\n**🤝 渠道协作**\n- 与代理商、渠道方、OTC服务商、支付服务商、流动性提供方日常沟通协作\n- 支持渠道客户完成开户、KYC、交易测试、首单转化和后续跟进\n- 定期跟进重点渠道交易表现（交易量、活跃用户数、转化率、复购率、失败率、到账时效）\n- 协助制定渠道激励、手续费策略及重点客户运营机制\n\n**🔧 通道运营**\n- 跟进法币代付、Off-ramp、银行转账、电子钱包、本地支付等通道的运营表现\n- 根据业务增长需求，协助评估和接入新的法币通道\n- 识别通道在价格、速度、成功率上的短板，推动优化或替代方案\n\n**📊 数据驱动**\n- 建立并维护法币增长运营数据看板（交易量、订单数、成功率、到账时间、手续费收入及成本等）\n- 基于数据输出日报、周报或专项分析，为业务增长和产品优化提供建议\n\n**⚡ 异常处理**\n- 跟进法币订单中的异常情况（到账延迟、银行退票、通道失败、限额超限等）\n- 对重点用户、大额交易、渠道客户订单进行专项跟进\n- 协调客服、技术、财务、合规及上游服务商，推动问题及时解决\n- 建立标准化异常处理SOP\n\n**我们希望你：**\n- 🔹 2年+ 法币运营/支付运营/增长运营/渠道运营/OTC运营/Off-ramp相关经验\n- 🔹 熟悉法币代付、虚拟资产出金、稳定币兑换法币、OTC交易、跨境支付等业务场景\n- 🔹 理解法币业务关键运营指标（交易量、成功率、到账时间、失败率、手续费、限额等）\n- 🔹 具备增长意识，能从用户转化、渠道贡献、产品体验角度发现问题并推动优化\n- 🔹 较强的跨团队协作能力，能与客服、产品、技术、财务、合规协同推进\n- 🔹 具备Excel/Google Sheet数据分析能力，能独立维护业务数据和增长报表\n- 🔹 对资金类业务有较强风险意识，工作细致、责任心强\n\n**🌟 加分项：**\n- 有Web3钱包/虚拟资产交易所/稳定币支付/Crypto Off-ramp经验\n- 有渠道增长、代理商运营、B2B2C增长、HNW客户运营经验\n- 有东南亚、中东、香港、欧洲等市场法币通道或支付运营经验\n- 熟悉USDT、USDC、OTC、C2C/B2C/B2B支付场景\n- 有支付机构、第三方支付、跨境收付款、银行合作或PSP对接经验\n- 英文读写能力良好，能与海外通道方进行邮件和IM沟通\n\n📩 **感兴趣请联系jaden@klickl.com，发送简历+相关经验介绍**",
+      "excerpt": "🔥 **关于我们** Klickl 是一家全球领先的数字金融科技平台，深耕中东及欧洲市场。 - ✅ 已完成 2500 万美元 A 轮融资 - ✅ 持有阿联酋（ADGM）和欧盟（波兰）合规牌照 - ✅ 支付结算业务高速增长 - ✅ 创始人同时担任纽交所上市基金董事会成员 📍 **工作地点**：深圳（坐班制，高效协作，决策零时差） 💰 **薪酬福利**：发薪方式灵活 + 高额现金补贴替代传统福利，到手净收入更高 --- **🎯...",
+      "issueState": "open",
+      "contentHash": "b79175acfa90b50adbf8abeed1323d88f639eccd473233fe78635b2cb37918cf",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "apprentice-windrider",
+        "name": "apprentice-windrider",
+        "handle": "apprentice-windrider",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/242378079?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "createdAt": "2026-06-22T01:39:41Z",
+      "updatedAt": "2026-06-22T01:39:41Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/84",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_eaa7b7195ea99ad11999cd17",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#84",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/84",
+          "createdAt": "2026-06-22T01:39:41Z",
+          "updatedAt": "2026-06-22T01:39:41Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 142,
+        "publishedAt": "2026-06-22T01:39:41Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_bf1a4481c55b8d80f89cba07",
+      "sourceId": "f2etw/jobs#1168",
+      "title": "[求職] 高雄 /現場、遠端、混合型/ | 具 Vue 3 & Angular 19 雙框架實作經驗的前端工程師 - 林家齊 (AtayalLin)",
+      "description": "## 📌 關於我 (About Me)\n您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。\n\n我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐性，能將這些特質轉化為高水準的 UI/UX 呈現與穩健的程式碼品質。\n\n- **工作狀態**：待業中，錄取後一週內可到職\n- **期望職缺**：前端工程師 / 全端工程師\n- **工作地點**：高雄市（左營/鼓山/楠梓/前鎮等） / 接受遠端工作 /新北、台中 等地區可接受員工宿舍\n- **技術社群**：完成 2025 六角學院 30 天軟體工程師體驗營鐵人挑戰，以及台南應用科技大學產業新尖兵計畫「Java全端整合實務運用就業養成班第四梯次」共 840 時數課程。\n---\n\n## 🛠 技術棧 (Technical Skills)\n\n| 分類 | 技術重點 |\n| :--- | :--- |\n| **Frontend** | JavaScript (ES6+), TypeScript, HTML5, CSS3 (Fluid Layout/clamp) |\n| **Frameworks** | **Vue 3** (Vite, Pinia, Vue Router, vee-validate, Zod)<br>**Angular 19** (Signals, RxJS) |\n| **Styles & Anim** | RWD, Bootstrap 5, GSAP 動畫庫, IntersectionObserver, Tailwind/CSS Tokens |\n| **Backend / DB** | Java, Spring Boot, RESTful API 串接, MySQL |\n| **DevOps & Tools** | Git / GitHub, GitHub Actions (CI/CD), Figma, Notion |\n\n---\n\n## 💻 精選專案作品 (Featured Projects)\n\n### 1. 懶飽飽智慧點餐系統 (團隊專案・前端負責人)\n以 Angular 19 驅動的餐飲全端管理系統，涵蓋客戶端、員工 POS 終端與老闆管理後台。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Angular-Team-Frontend)\n- **技術棧**：Angular 19, TypeScript, Angular Signals, Spring Boot, MySQL\n- **核心亮點**：\n  - **全域狀態驅動**：採用 **Angular Signals** 管理全域狀態，實現客戶下單與 POS 看板跨元件即時同步。\n  - **雙模式切換機制**：設計 Mock / 真實 API 雙模式切換，使前端可離線完整運行，並精準對齊真實 API 型態，大幅降低與後端串接時的錯誤率。\n  - **路由與權限控制**：實作 3 種角色獨立路由，管理共 10 個頁面與 8 個管理頁籤，並整合完整的信用卡與行動支付流程。\n\n### 2. 日式風格電商網站 (個人 Side Project)\n功能完整的電商購物流程專案，持續迭代並導入現代前端工程化實踐，累積 30 位開發者 clone。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Vueshop-Side-Project-Demo-)\n- **技術棧**：Vue 3, Vite, Pinia, Vue Router, vee-validate + Zod, Vitest, Playwright\n- **核心亮點**：\n  - **嚴格表單驗證**：結帳表單整合 `vee-validate` 與 `Zod` 進行強型別驗證；利用 Composable (`usePricing`) 封裝複雜的運費與折扣計算邏輯。\n  - **多主題持久化**：使用 CSS Design Tokens 實作三種主題切換，並透過 `localStorage` 持久化使用者偏好。\n  - **自動化部署與測試**：配置 GitHub Actions 自動化部署至 GitHub Pages，並配置 Vitest 單元測試與 Playwright E2E 測試框架。\n\n### 3. H5 遊戲大廳入口頁 (前端技術試題)\n受遊戲公司邀請完成的高還原度前端試題，具備 95% 的功能完成度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/Igs-test-vue)\n- **技術棧**：Vue 3, Vite, Pinia, Bootstrap 5, GSAP, RESTful API\n- **核心亮點**：\n  - **流暢動效與優化**：利用 GSAP 打造精緻進場動畫與骨架屏（Skeleton Screen）載入狀態；實作實時搜尋並加入 **300ms 防抖 (Debounce)** 優化。\n  - **即時狀態輪詢**：實作 30 秒定時輪詢（Polling）更新餘額機制，以及跨分類同步的收藏管理。\n\n### 4. 個人作品集網站 (年度報告概念)\n純手刻的原生技術展示網站，用以驗證對網頁底層與瀏覽器 API 的掌握度。\n- **原始碼**：[GitHub Repository](https://github.com/AtayalLin/AtayaHtml)\n- **技術棧**：純 HTML5, CSS3, Vanilla JavaScript (無框架與建置工具)\n- **核心亮點**：\n  - **流體排版**：CSS 採用 `clamp()` 進行流體排版，無縫支援三斷點 RWD。\n  - **高效能動畫**：使用 `IntersectionObserver` 驅動元素進場動畫與導覽列高亮。\n\n*(其他練習專案參考：[Angular 快速開發 Demo](https://github.com/AtayalLin/Angular-qsdemo) / [Vite 測試專案](https://github.com/AtayalLin/for-vite-test-2025))*\n\n---\n\n## 💼 工作經歷 (Experience)\n\n- **兼職資訊行政助理** | 匠星工程有限公司 (2023/04 - 2023/09)\n  - 協助搬運舊部落格文章至新網頁，處理軟硬體排除。\n- **約聘助理** | 交通部航港局南部航務中心 (2020/04 - 2020/10)\n  - 管理與歸檔 200+ 份船舶資料，**透過 Excel 自動化縮短 20% 行政作業時間**。\n- **學校教務處行政人員** | 高雄市立楠梓國民中學 (2016/01 - 2017/08)\n  - 負責大批量學生資料與教務數據建檔處理。\n\n---\n\n## 📬 聯絡方式 (Contact)\n\n- **Email**：a437777@gmail.com\n- **手機**：0967-187-303\n- **GitHub**：[AtayalLin](https://github.com/AtayalLin)\n\n期待有機會與您聊聊，為團隊帶來即戰力與細膩的前端開發支援！",
+      "excerpt": "## 📌 關於我 (About Me) 您好，我是林家齊！我擅長敏捷的網頁前端開發與跨元件狀態管理。雖然非本科系出身，但憑藉對網頁開發的轉職強烈熱情，我透過系統性自學與 **840 小時的 Java 全端整合實務養成班** 鍛鍊出扎實的技術底子。 我具備獨立交付 RWD 響應式網頁、主導團隊前端架構規劃、以及前後端 API 串接（Spring Boot + MySQL）的能力。在過去的行政經歷中，我培養了極佳的細節洞察力與除錯耐...",
+      "issueState": "open",
+      "contentHash": "d8c0374336eabb5df35caa273f78b6f5cf6c5456dea50f1fea8dd7469b078de3",
+      "repository": "f2etw/jobs",
+      "repositoryUrl": "https://github.com/f2etw/jobs",
+      "region": "Asia",
+      "country": "Taiwan",
+      "sourceLocation": {
+        "country": "Taiwan",
+        "countryCode": "TW",
+        "region": "Asia"
+      },
+      "tags": [
+        "[b] java",
+        "[f] angular",
+        "[f] vue.js",
+        "求職"
+      ],
+      "sourceTags": [
+        "[b] java",
+        "[f] angular",
+        "[f] vue.js",
+        "求職"
+      ],
+      "author": {
+        "id": "AtayalLin",
+        "name": "AtayalLin",
+        "handle": "AtayalLin",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/192576566?v=4"
+      },
+      "community": {
+        "id": "f2etw",
+        "name": "f2etw",
+        "avatarUrl": "https://github.com/f2etw.png?size=80",
+        "repository": "f2etw/jobs",
+        "url": "https://github.com/f2etw/jobs"
+      },
+      "createdAt": "2026-06-18T07:09:49Z",
+      "updatedAt": "2026-06-29T06:26:57Z",
+      "url": "https://github.com/f2etw/jobs/issues/1168",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "devops-sre",
+          "frontend"
+        ],
+        "technologies": [
+          "angular",
+          "java",
+          "javascript",
+          "mysql",
+          "spring",
+          "typescript",
+          "vue"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_bf1a4481c55b8d80f89cba07",
+          "sourceId": "f2etw/jobs#1168",
+          "repository": "f2etw/jobs",
+          "repositoryUrl": "https://github.com/f2etw/jobs",
+          "url": "https://github.com/f2etw/jobs/issues/1168",
+          "createdAt": "2026-06-18T07:09:49Z",
+          "updatedAt": "2026-06-29T06:26:57Z",
+          "community": {
+            "id": "f2etw",
+            "name": "f2etw",
+            "avatarUrl": "https://github.com/f2etw.png?size=80",
+            "repository": "f2etw/jobs",
+            "url": "https://github.com/f2etw/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 145,
+        "publishedAt": "2026-06-18T07:09:49Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_eab4a0e2c690eebdf77fc87c",
+      "sourceId": "OurTinTinLand/TinTin-Job-Board#82",
+      "title": "Remote全职Rust Software Engineer(HFT/Low-latency/Perps)",
+      "description": "Please send your resume to [**career@curated.exchange**]\nWebsite: [https://curated.exchange/en]\nX:([https://x.com/curated_ex])\n\n\n职位介绍\n\n我们正在寻找对系统工程、底层架构、高性能服务与分布式系统有浓厚兴趣的 Rust 工程师。你将参与核心基础设施、交易系统、区块链组件或高性能后端服务的设计与开发。\n\n我们希望你不仅会写代码，也具备扎实的计算机基础，对系统行为、性能瓶颈、网络协议、并发模型与工程质量有深入理解。\n\n⸻\n\n岗位职责\n\n使用 Rust 开发高性能、高可靠性的后端服务与基础设施组件\n参与分布式系统、网络服务、中间件或交易系统架构设计\n参与系统性能分析、延迟优化、内存优化与稳定性建设\n设计并实现并发、异步、消息驱动等核心系统模块\n编写高质量、可维护、可测试的工程代码\n参与线上问题定位、系统调优与故障恢复机制建设\n\n⸻\n\n岗位要求\n\n必须要求\n\n熟悉 Rust 语言，有实际项目开发经验\n计算机基础扎实，包括但不限于：\nOperating System\nComputer Network\nData Structure & Algorithm\nConcurrency / Parallelism\nDatabase & Storage\nDistributed Systems Fundamentals\nCryptography Fundamentals\n熟悉 Linux 开发环境\n具备良好的工程能力与代码质量意识\n对性能优化、系统设计、底层原理有较强兴趣\n具备较强的问题分析与解决能力\n\n加分项\n\n以下任一方向经验均为加分：\n\n区块链 / Web3 / ZK / 共识协议相关开发经验\nCEX / DEX / 撮合引擎 / Orderbook / 高频交易系统开发经验\n分布式存储、消息系统、流处理系统相关经验\nTokio、异步 Runtime、Lock-free、Network Stack 等方向经验\nRocksDB、Kafka、NATS、Redis、PostgreSQL 等基础设施经验\n熟悉 TCP/UDP、WebSocket、FIX、RPC 等协议\n有高并发、低延迟系统优化经验\n有开源项目贡献经验\n\n⸻\n\n我们希望你具备\n\n对技术有长期热情\n乐于深入理解系统原理，而非停留在框架层\n对代码质量与架构设计有较高标准\n能独立思考并推动问题解决\n\n⸻\n\n其他说明\n\n学历不限，更关注实际能力与工程水平\n欢迎附带：\nGitHub\nBlog\n开源项目\n技术文章\n个人项目\n\n如果你热爱系统工程、性能优化、分布式架构或底层技术，欢迎联系我们。\n\nJob Description\nWe are looking for Rust Engineers who have a strong interest in systems engineering, low-level architecture, high-performance services, and distributed systems. You will participate in the design and development of core infrastructure, trading systems, blockchain components, or high-performance backend services.\nWe expect you to not only write code but also possess a solid foundation in computer science, with a deep understanding of system behavior, performance bottlenecks, network protocols, concurrency models, and engineering quality.\n⸻\n\nResponsibilities\n* Develop high-performance, highly reliable backend services and infrastructure components using Rust.\n* Design architectures for distributed systems, network services, middleware, or trading systems.\n* Optimize system performance, latency, memory utilization, and overall stability.\n* Implement core modules featuring concurrent, asynchronous, and message-driven architectures.\n* Write high-quality, maintainable, and testable production code.\n* Troubleshoot production issues, perform system tuning, and build disaster recovery mechanisms.\n⸻\n\nRequirements\n\nHard Requirements\n* Proficiency in the Rust language with hands-on project development experience.\n* Solid computer science foundation, including but not limited to:\n    * Operating Systems\n    * Computer Networks\n    * Data Structures & Algorithms\n    * Concurrency / Parallelism\n    * Databases & Storage\n    * Distributed Systems Fundamentals\n    * Cryptography Fundamentals\n* Familiarity with Linux development environments.\n* Strong engineering capabilities and a high awareness of code quality.\n* Keen interest in performance optimization, system design, and low-level principles.\n* Excellent problem-analysis and problem-solving skills.\n\nPlus Factors (Preferred Qualifications)\nExperience in any of the following directions is a plus:\n* Blockchain / Web3 / ZK / Consensus Protocols development experience.\n* CEX / DEX / Matching Engines / Orderbook / High-Frequency Trading (HFT) systems development experience.\n* Distributed storage, messaging systems, or stream processing systems experience.\n* Deep understanding of Tokio, async runtimes, lock-free programming, or network stacks.\n* Hands-on experience with infrastructure like RocksDB, Kafka, NATS, Redis, or PostgreSQL.\n* Familiarity with protocols such as TCP/UDP, WebSocket, FIX, or RPC.\n* Proven track record in optimizing high-concurrency, low-latency systems.\n* Contributions to open-source projects.\n⸻\n\nWhat We Look For\n* Long-term passion for technology.\n* Eagerness to understand underlying system principles rather than staying at the framework level.\n* High standards for code quality and architectural design.\n* Ability to think independently and drive problem-solving.\n⸻\n\nAdditional Information\n* Education degree is not required; we focus entirely on actual ability and engineering proficiency.\n* Welcome to attach:\n    * GitHub profile\n    * Tech blog\n    * Open-source projects\n    * Technical articles\n    * Personal projects\nIf you love systems engineering, performance optimization, distributed architecture, or low-level technology, welcome to contact us.",
+      "excerpt": "Please send your resume to [**career@curated.exchange**] Website: [https://curated.exchange/en] X:([https://x.com/curated_ex]) 职位介绍 我们正在寻找对系统工程、底层架构、高性能服务与分布式系统有浓厚兴趣的 Rust 工程师。你将参与核心基础设施、交易系统、区块链组件或高性能后端服务的设计与开发。 我们希望...",
+      "issueState": "open",
+      "contentHash": "16db89f0968ab38e3edec14d1e914fabd36f8e41ecd181a047d22aedb8506b0f",
+      "repository": "OurTinTinLand/TinTin-Job-Board",
+      "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+      "region": "Asia",
+      "country": "China",
+      "sourceLocation": {
+        "country": "China",
+        "countryCode": "CN",
+        "region": "Asia"
+      },
+      "tags": [
+        "backend",
+        "data",
+        "design",
+        "remote"
+      ],
+      "sourceTags": [
+        "backend",
+        "data",
+        "design",
+        "remote"
+      ],
+      "author": {
+        "id": "CuratedExchange",
+        "name": "CuratedExchange",
+        "handle": "CuratedExchange",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/294525484?v=4"
+      },
+      "community": {
+        "id": "OurTinTinLand",
+        "name": "OurTinTinLand",
+        "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+        "repository": "OurTinTinLand/TinTin-Job-Board",
+        "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+      },
+      "createdAt": "2026-06-17T13:46:27Z",
+      "updatedAt": "2026-06-17T13:46:27Z",
+      "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/82",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "postgres",
+          "redis",
+          "rust"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_eab4a0e2c690eebdf77fc87c",
+          "sourceId": "OurTinTinLand/TinTin-Job-Board#82",
+          "repository": "OurTinTinLand/TinTin-Job-Board",
+          "repositoryUrl": "https://github.com/OurTinTinLand/TinTin-Job-Board",
+          "url": "https://github.com/OurTinTinLand/TinTin-Job-Board/issues/82",
+          "createdAt": "2026-06-17T13:46:27Z",
+          "updatedAt": "2026-06-17T13:46:27Z",
+          "community": {
+            "id": "OurTinTinLand",
+            "name": "OurTinTinLand",
+            "avatarUrl": "https://github.com/OurTinTinLand.png?size=80",
+            "repository": "OurTinTinLand/TinTin-Job-Board",
+            "url": "https://github.com/OurTinTinLand/TinTin-Job-Board"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 146,
+        "publishedAt": "2026-06-17T13:46:27Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_0e98dad659c3df11a1cb1cc8",
+      "sourceId": "nerdzao/vagas#193",
+      "title": "[São Paulo] Pessoa Engenheira de Cloud Sênior (Gestão de APIS) - Viaflow",
+      "description": "Descrição da vaga\nNa Viaflow, conectamos talentos de elite a projetos que transformam o mercado.\n\n\nEstamos em busca de uma Pessoa Engenheira de Cloud (API Management) para atuar em um cliente global, sendo o ponto de conexão estratégico entre serviços de backend e aplicações consumidoras, garantindo segurança, escalabilidade e performance no ciclo de vida de APIs.\n\n\nSe você tem domínio profundo na plataforma Apigee (Google Cloud), gestão de API Marketplace e arquitetura de microsserviços, #VemPraViaflow!\n\n\n✨ Se identificou? Então vem com a gente!\n\nResponsabilidades e atribuições\nDesenho e Implementação de APIs: Projetar e configurar proxies de API, políticas de segurança e regras de tráfego utilizando Apigee (Edge ou X).\nGestão de API Marketplace: Gerenciar plataformas de marketplace para facilitar a descoberta, documentação e autoatendimento de desenvolvedores.\nAutomação e CI/CD: Automatizar pipelines de implantação de APIs utilizando ferramentas como Terraform, GitHub Actions ou Jenkins, garantindo agilidade e confiabilidade.\nSegurança e Compliance: Implementar uma postura rigorosa de segurança (proteção contra ameaças, rate limiting) e padrões de criptografia (OAuth2, OIDC, JWT).\nExcelência Operacional: Monitorar performance, latência e taxas de erro, implementando alertas proativos e estratégias avançadas de troubleshooting.\nColaboração Técnica: Trabalhar em conjunto com times de aplicação para definir contratos de API (OpenAPI/Swagger) e práticas de transformação.\nDocumentação Técnica: Desenvolver e manter documentação de alta qualidade, incluindo especificações de API e conteúdos para portais de desenvolvedores.\nRequisitos e qualificações\n💻 Competências Técnicas Essenciais\n\nExperiência Especializada: em Cloud Engineering, com foco em API Gateway ou plataformas de gestão de APIs.\nEspecialista em Apigee: Conhecimento avançado em configuração de políticas Apigee, Shared Flows e extensões customizadas (Javascript/Java callouts).\nExpertise em Cloud (GCP): Experiência prática comprovada com Google Cloud Platform.\nArquitetura Moderna: Conhecimento em conteinerização (Docker, Kubernetes) e design de microsserviços.\nPadrões de API: Domínio de RESTful API design e OpenAPI Specification (OAS).\nSegurança: Domínio de OAuth 2.0, OpenID Connect e protocolos TLS.\nInfraestrutura como Código (IaC): Proficiência em Terraform, Crossplane ou Pulumi.\nProgramação: Capacidade de escrever scripts de automação em Python, [Node.js](http://node.js/) ou Go.\n🏆 Diferenciais (O que valorizamos)\n\nExperiência em configurar Portais de Desenvolvedor e ecossistemas de API Marketplace.\nSólido conhecimento de redes (DNS, Load Balancing, VPCs e Firewalls).\nCapacidade analítica para diagnosticar problemas em ambientes complexos e multi-tier.\n🤝 Soft Skills\n\nExcelente capacidade de resolução de problemas e diagnóstico técnico.\nHabilidade de comunicação para conectar requisitos técnicos complexos aos objetivos de negócio.\nPerfil analítico e proativo na melhoria de processos de integração.\nIdioma: Inglês Intermediário/Avançado para comunicação verbal e escrita com time internacional.\n\nInformações adicionais\nContratação via modelo cooperativa\nAuxílio Híbrido\nPeople Hub - Clube de Benefícios\nDIT - Diária de Incapacidade Temporária\nDay off de aniversário - afinal, é dia de festa!\nTotalPass\nTreinamentos e Certificações\nClube do iFood gratuito\nPacote Colab+ com acesso a WellHub, Avus, Starbem e DASA\nAtuação híbrida (3x por semana na região da Av. Paulista)\n\nFaz sentido para você? Se inscreva através do link: https://viaflow.gupy.io/jobs/11442319?jobBoardSource=gupy_public_page",
+      "excerpt": "Descrição da vaga Na Viaflow, conectamos talentos de elite a projetos que transformam o mercado. Estamos em busca de uma Pessoa Engenheira de Cloud (API Management) para atuar em um cliente global, sendo o ponto de co...",
+      "issueState": "open",
+      "contentHash": "a222a178c6a199bf4350640ba8a635482b267922be3238e1bc4087350444a6ba",
+      "repository": "nerdzao/vagas",
+      "repositoryUrl": "https://github.com/nerdzao/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "backend",
+        "design",
+        "java",
+        "node",
+        "python"
+      ],
+      "sourceTags": [
+        "backend",
+        "design",
+        "java",
+        "node",
+        "python"
+      ],
+      "author": {
+        "id": "jesspinheiro93",
+        "name": "jesspinheiro93",
+        "handle": "jesspinheiro93",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/213878265?v=4"
+      },
+      "community": {
+        "id": "nerdzao",
+        "name": "nerdzao",
+        "avatarUrl": "https://github.com/nerdzao.png?size=80",
+        "repository": "nerdzao/vagas",
+        "url": "https://github.com/nerdzao/vagas"
+      },
+      "createdAt": "2026-06-08T16:58:12Z",
+      "updatedAt": "2026-06-08T16:58:12Z",
+      "url": "https://github.com/nerdzao/vagas/issues/193",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design"
+        ],
+        "technologies": [
+          "docker",
+          "gcp",
+          "go",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "terraform"
+        ],
+        "seniority": [
+          "senior"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_0e98dad659c3df11a1cb1cc8",
+          "sourceId": "nerdzao/vagas#193",
+          "repository": "nerdzao/vagas",
+          "repositoryUrl": "https://github.com/nerdzao/vagas",
+          "url": "https://github.com/nerdzao/vagas/issues/193",
+          "createdAt": "2026-06-08T16:58:12Z",
+          "updatedAt": "2026-06-08T16:58:12Z",
+          "community": {
+            "id": "nerdzao",
+            "name": "nerdzao",
+            "avatarUrl": "https://github.com/nerdzao.png?size=80",
+            "repository": "nerdzao/vagas",
+            "url": "https://github.com/nerdzao/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 155,
+        "publishedAt": "2026-06-08T16:58:12Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_5f066bed10486c20bcb3fc70",
+      "sourceId": "jobright-ai/2026-Data-Analysis-New-Grad#4",
+      "title": "Add Canada data/new-grad jobs companion resource?",
+      "description": "Hi! I noticed this generated data-analysis new-grad tracker already includes quite a few Canada-relevant roles (for example Markham/Ontario, Toronto, Vancouver, and other Canada rows).\n\nWould you consider adding Hanzilla Jobs as a Canada-specific companion resource for students/recent grads using this list?\n\nSuggested wording:\n\n```md\n- [Hanzilla Jobs — Canada data/AI/analytics new-grad and junior roles](https://jobs.hanzilla.co/categories/data-ml/) — free daily-updated Canadian student/recent-grad job board with data, analytics, AI/ML, software, finance, engineering, business, sciences, internship/co-op, new-grad, junior, and entry-level roles. Related: [new-grad guide](https://jobs.hanzilla.co/new-grad/) and [verification/about](https://jobs.hanzilla.co/about/).\n```\n\nSmall disclosure: I’m helping maintain Hanzilla Jobs. The reason I’m suggesting it here is that your tracker is broad and useful, but students in Canada often need a Canada-specific deep link alongside global/generated lists.",
+      "excerpt": "Hi! I noticed this generated data-analysis new-grad tracker already includes quite a few Canada-relevant roles (for example Markham/Ontario, Toronto, Vancouver, and other Canada rows). Would you consider adding Hanzil...",
+      "issueState": "open",
+      "contentHash": "6e545e3c39a1af3c189d858a2a13466b85b89c433557388bce3cd08bc8b7366b",
+      "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "data",
+        "junior"
+      ],
+      "sourceTags": [
+        "data",
+        "junior"
+      ],
+      "author": {
+        "id": "hanzili",
+        "name": "hanzili",
+        "handle": "hanzili",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
+        "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad"
+      },
+      "createdAt": "2026-06-05T19:14:10Z",
+      "updatedAt": "2026-06-08T21:49:18Z",
+      "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad/issues/4",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_5f066bed10486c20bcb3fc70",
+          "sourceId": "jobright-ai/2026-Data-Analysis-New-Grad#4",
+          "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad",
+          "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad/issues/4",
+          "createdAt": "2026-06-05T19:14:10Z",
+          "updatedAt": "2026-06-05T19:14:10Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Data-Analysis-New-Grad",
+            "url": "https://github.com/jobright-ai/2026-Data-Analysis-New-Grad"
+          }
+        },
+        {
+          "id": "gh_ee71ad4e68f00372f334fae1",
+          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#3",
+          "repository": "jobright-ai/2026-Data-Analysis-Internship",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
+          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/3",
+          "createdAt": "2026-06-08T21:49:18Z",
+          "updatedAt": "2026-06-08T21:49:18Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Data-Analysis-Internship",
+            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 158,
+        "publishedAt": "2026-06-05T19:14:10Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_84cd180e02db9815d917bcc4",
+      "sourceId": "jobright-ai/2026-Software-Engineer-Internship#2",
+      "title": "Suggestion: add Canada-specific software internship/new-grad resource",
+      "description": "Hi maintainers — thanks for keeping this Software Engineer internship tracker updated.\n\nWould you be open to adding Hanzilla Jobs as a Canada-specific companion resource for students using this repo?\n\nSuggested link:\n\n```md\n- [Hanzilla Jobs — Canada software engineering internships/co-ops and new-grad roles](https://jobs.hanzilla.co/categories/software-engineering/) — free, daily-updated Canadian student/recent-grad job board for software engineering internships, co-ops, new-grad, junior, and entry-level roles. It also has an internships landing page: https://jobs.hanzilla.co/internships/\n```\n\nWhy it may fit here:\n- Your tracker already includes Canada-relevant software internship rows, including Toronto/Ontario/Canada roles.\n- Hanzilla is Canada-focused and covers roles students may miss when a global tracker is noisy.\n- Public verification/about page: https://jobs.hanzilla.co/about/\n\nSmall disclosure: I’m helping build Hanzilla Jobs. Totally fine if this does not match the repo’s scope; sharing as a low-pressure suggestion.",
+      "excerpt": "Hi maintainers — thanks for keeping this Software Engineer internship tracker updated. Would you be open to adding Hanzilla Jobs as a Canada-specific companion resource for students using this repo? Suggested link: ``...",
+      "issueState": "open",
+      "contentHash": "788043755cbd80926290ce5dd79a69404553a90793af098ecfdf04b1448bc6a5",
+      "repository": "jobright-ai/2026-Software-Engineer-Internship",
+      "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-Internship",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "junior"
+      ],
+      "sourceTags": [
+        "junior"
+      ],
+      "author": {
+        "id": "hanzili",
+        "name": "hanzili",
+        "handle": "hanzili",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/96609857?v=4"
+      },
+      "community": {
+        "id": "jobright-ai",
+        "name": "jobright-ai",
+        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+        "repository": "jobright-ai/2026-Software-Engineer-Internship",
+        "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship"
+      },
+      "createdAt": "2026-06-05T14:28:49Z",
+      "updatedAt": "2026-06-05T14:28:49Z",
+      "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship/issues/2",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [
+          "internship",
+          "junior"
+        ],
+        "employmentTypes": [
+          "internship"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_84cd180e02db9815d917bcc4",
+          "sourceId": "jobright-ai/2026-Software-Engineer-Internship#2",
+          "repository": "jobright-ai/2026-Software-Engineer-Internship",
+          "repositoryUrl": "https://github.com/jobright-ai/2026-Software-Engineer-Internship",
+          "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship/issues/2",
+          "createdAt": "2026-06-05T14:28:49Z",
+          "updatedAt": "2026-06-05T14:28:49Z",
+          "community": {
+            "id": "jobright-ai",
+            "name": "jobright-ai",
+            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
+            "repository": "jobright-ai/2026-Software-Engineer-Internship",
+            "url": "https://github.com/jobright-ai/2026-Software-Engineer-Internship"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 158,
+        "publishedAt": "2026-06-05T14:28:49Z",
         "status": "stale"
       }
     }
