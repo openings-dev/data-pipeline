@@ -1,9 +1,11 @@
 {
-  "generatedAt": "2026-11-12T05:06:57.831Z",
+  "generatedAt": "2026-11-12T14:23:38.483Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_5e371ac29287a1e60fe77ff4",
+    "gh_a2b6260ae05483df75a8020b",
     "gh_53768095978702f736a39e69",
     "gh_57374e1d0c8336945e6b5b6b",
     "gh_46efebb5b1651ba26fbd02f7",
@@ -21,11 +23,263 @@
     "gh_1dbe4360df75638f5a0799c7",
     "gh_9c25b798ad552710cb428e33",
     "gh_11c5ccdeb258bb1cac649506",
-    "gh_e31e0f0f47c698e1c0d5a6d9",
-    "gh_484b4bfff912b720db1a2be5",
-    "gh_955226cbfa98dd29e44c402f"
+    "gh_e31e0f0f47c698e1c0d5a6d9"
   ],
   "items": [
+    {
+      "id": "gh_5e371ac29287a1e60fe77ff4",
+      "sourceId": "backend-br/vagas#12493",
+      "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
+      "description": "### Sobre a empresa\n\nA MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial.\n\nEsta publicação corresponde a **uma única oportunidade de desenvolvimento de software**, com foco em backend, APIs, dados e agentes inteligentes. A pessoa selecionada colaborará em duas frentes de produto da MKdigital: AI Bookkeeping Assistant e Plant Brownfield Reconstruction Agent.\n\n### Site da empresa\n\nhttps://www.mkdigital.ch\n\n### Descrição da vaga\n\nBuscamos uma pessoa em início de carreira, preferencialmente recém-formada ou em fase final de formação em Engenharia, Ciência da Computação ou área relacionada. **Experiência profissional anterior não é obrigatória.** A atuação é prioritariamente em backend; haverá também integração com interfaces web conforme as necessidades dos produtos.\n\nO trabalho combina programação, compreensão de processos de negócio, especificação de soluções, orientação de coding agents, testes e validação. Não é necessário conhecer previamente contabilidade ou engenharia industrial, mas **a disposição para aprender esses domínios é essencial**.\n\n#### 1. Projetos\n\n##### Projeto A — AI Bookkeeping Assistant (Suíça e Brasil)\n\nDesenvolvimento de uma plataforma de automação de processos contábeis utilizando inteligência artificial, LLMs e agentes inteligentes.\n\nAs principais atividades incluem:\n\n- Processamento e interpretação automática de documentos contábeis, incluindo notas fiscais, faturas, recibos e extratos bancários.\n- Integração de OCR, Document AI e modelos de linguagem.\n- Automação de lançamentos e classificação de transações contábeis.\n- Conciliação bancária e integração com sistemas financeiros.\n- Desenvolvimento de workflows inteligentes e agentes autônomos.\n- Integração com bancos de dados, APIs e serviços externos.\n- Testes, implantação e preparação da plataforma para utilização comercial.\n- Compreensão gradual dos processos contábeis e financeiros necessários à especificação e validação das funcionalidades.\n\n**Objetivo do projeto:** Contribuir para o desenvolvimento e lançamento comercial de uma solução operacional de automação contábil, inicialmente para o mercado suíço, com componentes específicos para o mercado brasileiro.\n\n##### Projeto B — Plant Brownfield Reconstruction Agent\n\nDesenvolvimento de uma plataforma baseada em inteligência artificial para reconstrução digital de instalações industriais existentes (*brownfield*), a partir de documentação técnica e outras fontes de dados.\n\nAs principais atividades incluem:\n\n- Desenvolvimento de agentes inteligentes para interpretação de documentação técnica.\n- Processamento de diagramas P&ID, documentação elétrica e de instrumentação (E&I).\n- Extração de informações de documentos históricos, fotografias, imagens e vídeos.\n- Modelagem e armazenamento de informações utilizando bancos de dados em grafos (GraphDB).\n- Identificação de equipamentos, instrumentos, conexões e relacionamentos técnicos.\n- Integração de informações de diferentes fontes em modelos digitais de engenharia.\n- Desenvolvimento de interfaces web para visualização e navegação dos modelos reconstruídos.\n- Compreensão gradual de conceitos de engenharia industrial, instalações, equipamentos e documentação técnica.\n\n**Objetivo do projeto:** Desenvolver um protótipo funcional capaz de importar documentação técnica, identificar e relacionar entidades de engenharia e apresentar os resultados em um modelo digital estruturado.\n\n#### 2. Tecnologias e ambiente de desenvolvimento\n\nOs projetos envolvem as seguintes tecnologias e práticas, entre outras:\n\n**AI Coding e agentes autônomos**\n- Claude Code, OpenAI Codex e outras ferramentas de programação assistida por IA.\n- Agentes autônomos de desenvolvimento de software (*Coding Agents*).\n- Agentic AI, LLMs, tool calling e orquestração de agentes.\n- Automação de tarefas de programação, testes, documentação e revisão de código.\n- Integração de agentes de programação em workflows de desenvolvimento.\n\n**Desenvolvimento paralelo e engenharia de software**\n- Git, GitHub, branches e Git worktrees.\n- Desenvolvimento paralelo utilizando múltiplos agentes de codificação.\n- Isolamento de ambientes e coordenação de alterações simultâneas.\n- Pull requests, code reviews e integração de código.\n- Testes automatizados, integração contínua (CI/CD) e documentação técnica.\n- Organização de projetos, atividades e entregas utilizando Azure DevOps.\n\n**Backend, frontend e dados**\n- Python e FastAPI.\n- REST APIs e integração entre sistemas.\n- JavaScript/TypeScript e React.\n- PostgreSQL, SQL e bancos de dados em grafos.\n- Processamento de documentos, OCR e pipelines de dados.\n\n**Infraestrutura e desenvolvimento**\n- Linux como ambiente de desenvolvimento e execução.\n- Docker e containers.\n- Servidores e infraestrutura em nuvem.\n- Ambientes automatizados de desenvolvimento, testes e implantação.\n- Conceitos de segurança, autenticação e gerenciamento de serviços.\n\nNão é necessário dominar todas essas tecnologias. Esperamos principalmente interesse em aprender, experimentar e aplicar novas ferramentas de maneira prática.\n\n#### 4. Desenvolvimento orientado ao domínio de aplicação\n\nUm aspecto importante dos projetos é a aproximação entre desenvolvimento de software e conhecimento dos processos que estão sendo automatizados.\n\n**No projeto de contabilidade**, será necessário compreender gradualmente conceitos como documentos contábeis, lançamentos, contas, conciliação bancária, impostos e fluxos financeiros.\n\n**No projeto de engenharia industrial**, será importante aprender conceitos relacionados a equipamentos, instrumentação, diagramas técnicos, estruturas de dados de engenharia e representação digital de instalações industriais.\n\nA expectativa não é encontrar alguém que já domine esses assuntos, mas um profissional que tenha interesse em aprendê-los e utilizá-los para:\n\n- Compreender necessidades e requisitos funcionais.\n- Participar da definição de soluções e especificações técnicas.\n- Traduzir processos de negócio em modelos de dados, regras e workflows.\n- Orientar agentes de programação na implementação das funcionalidades.\n- Criar testes e critérios de aceitação baseados em situações reais.\n- Identificar inconsistências e validar os resultados produzidos pelo software e pelos agentes de IA.\n\n**Buscamos alguém interessado em evoluir da programação para a compreensão, especificação e construção de soluções completas, combinando tecnologia, IA e conhecimento de domínio.**\n\n#### 5. Modelo de contratação — Prestação de serviços e empreendedorismo\n\nA MKdigital busca estabelecer uma parceria comercial com um profissional ou uma **microempresa (ME/CNPJ) especializada em desenvolvimento de software**.\n\nA oportunidade é especialmente interessante para profissionais recém-formados que desejam iniciar sua trajetória empreendedora, constituindo sua própria empresa de tecnologia e oferecendo serviços a clientes no Brasil e no exterior.\n\n**Modalidade de contratação**\n\n- **Preferencialmente:** Prestação de serviços por meio de empresa própria (ME/CNPJ), com emissão de notas fiscais.\n- **Apoio ao início da atividade empreendedora:** Para profissionais que ainda estejam no processo de abertura de sua empresa, a MK Digital poderá aceitar, excepcionalmente, a contratação inicial como profissional autônomo (CPF), por até três meses, observadas as obrigações legais e tributárias aplicáveis.\n- Após esse período, a continuidade da parceria estará condicionada à formalização de uma empresa própria (ME/CNPJ) e à celebração de um novo contrato comercial.\n- Não há exigência de exclusividade. O prestador poderá atender outros clientes, respeitando os compromissos de confidencialidade, propriedade intelectual e eventuais conflitos de interesse.\n\n**Projetos e condições comerciais**\n\n- **Duração estimada dos projetos:** 12 meses, com escopo, marcos de entrega e resultados técnicos definidos.\n- **Valor de referência:** R$ 72,50 por hora de serviço.\n- **Dedicação estimada:** Até aproximadamente 36 horas semanais durante os períodos de atividade, sem horário fixo obrigatório.\n- **Volume anual estimado:** 1.656 horas, considerando pausas pessoais, feriados e períodos de indisponibilidade.\n- **Orçamento anual estimado:** R$ 120.060, equivalente a uma média aproximada de R$ 10.000 mensais.\n- O faturamento será realizado conforme os serviços efetivamente prestados e as condições comerciais acordadas. O volume de horas é uma estimativa de planejamento, não uma garantia de contratação mínima.\n- **Local de execução:** 100% remoto, de qualquer cidade do Brasil.\n\nOs valores são referentes à prestação de serviços. O profissional ou empresa contratada será responsável por suas próprias obrigações fiscais e previdenciárias, conforme a legislação aplicável.\n\n**Organização da colaboração**\n\n- Os serviços serão organizados por projetos, atividades técnicas, marcos de entrega e critérios de aceitação.\n- As atividades e entregas serão acompanhadas por meio do Azure DevOps.\n- Estão previstas revisões técnicas semanais e aproximadamente duas reuniões curtas de alinhamento por semana, conforme a necessidade dos projetos.\n- A comunicação diária poderá ocorrer de forma assíncrona por ferramentas online.\n- O prestador terá autonomia na organização dos horários e na execução técnica dos serviços.\n- Todos os custos necessários de ferramentas de IA, APIs e infraestrutura em nuvem serão cobertos pela MKdigital.\n- O prestador deverá possuir computador próprio e conexão estável com a internet.\n\n### Requisitos\n\n#### 3. Perfil desejado\n\n**Requisitos principais**\n\n- Formação superior concluída ou em fase final em Engenharia, Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.\n- Boa base em programação, algoritmos, estruturas de dados e lógica computacional.\n- Conhecimento de alguma linguagem de programação, preferencialmente Python.\n- Familiaridade com Git e conceitos fundamentais de engenharia de software.\n- Interesse em Linux, infraestrutura e desenvolvimento de aplicações.\n- Interesse em inteligência artificial aplicada ao desenvolvimento de software.\n- Capacidade de investigar problemas, pesquisar soluções e trabalhar com autonomia.\n- Interesse em compreender processos de negócio e transformar requisitos em soluções de software.\n- Disposição para aprender conceitos de contabilidade, finanças e engenharia industrial.\n- Boa organização, comunicação e comprometimento com as entregas.\n\n**Diferenciais — Nice to have**\n\n- Experiência prática com Claude Code, OpenAI Codex ou outras ferramentas de AI Coding.\n- Conhecimento ou experiência com agentes autônomos de programação e Agentic AI.\n- Projetos pessoais, acadêmicos ou open source utilizando inteligência artificial e LLMs.\n- Experiência com Git worktrees, desenvolvimento paralelo ou múltiplos agentes de codificação.\n- Conhecimento de Linux, Docker, CI/CD e infraestrutura em nuvem.\n- Experiência com Python, FastAPI, React, APIs ou bancos de dados.\n- Conhecimento de GraphDB, processamento de documentos ou visão computacional.\n- Conhecimentos básicos de contabilidade, sistemas ERP, processos financeiros ou automação empresarial.\n- Familiaridade com documentação de engenharia, diagramas P&ID, instalações industriais ou sistemas CAD/CAE.\n- Experiência em análise de requisitos, especificação funcional ou modelagem de processos.\n- Certificações ou cursos relevantes em IA, cloud computing ou desenvolvimento de software.\n- **Inglês técnico**, especialmente para leitura de documentação, ferramentas e comunicação escrita.\n- **Conhecimentos de alemão** serão considerados um diferencial adicional.\n\nCertificações, conhecimentos prévios dos domínios de aplicação e experiência profissional anterior não são obrigatórios. Projetos desenvolvidos, domínio dos fundamentos e capacidade de resolver problemas terão maior peso na seleção.\n\n### Tecnologias\n\nPython, FastAPI, Linux, Docker, Git, PostgreSQL, SQL, TypeScript, JavaScript, CI/CD, Testes automatizados\n\n### Benefícios\n\n- Ferramentas de IA, APIs e infraestrutura em nuvem necessárias aos projetos custeadas pela MKdigital.\n- Colaboração remota, com autonomia na organização dos horários e sem exclusividade.\n- Participação na construção de produtos reais desde as fases iniciais, com possibilidade de continuidade em novos projetos conforme resultados e necessidades.\n\n### Faixa salarial\n\n**Valor de referência da prestação de serviços: R$ 72,50 por hora.** Até aproximadamente 36 horas semanais e 1.656 horas anuais estimadas; orçamento anual estimado de R$ 120.060. Faturamento pelos serviços efetivamente prestados, sem garantia de volume mínimo. Duração estimada dos projetos: 12 meses.\n\n### Nível\n\nJúnior\n\n### Regime de contratação\n\nPJ, Contrato, Freelance\n\nPreferência por ME/CNPJ com emissão de notas fiscais. Para quem estiver constituindo a própria empresa, poderá ser aceita prestação inicial como autônomo/CPF por até três meses, observadas as obrigações aplicáveis; a continuidade exige ME/CNPJ.\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil — qualquer cidade.\n\n### Como se candidatar\n\nEnvie para **[info@mkdigital.ch](mailto:info@mkdigital.ch)** com o assunto **“Candidatura — Desenvolvimento de Software / AI Coding”**:\n\n- Currículo ou perfil do LinkedIn.\n- GitHub, portfólio ou exemplos de projetos acadêmicos/pessoais, se disponíveis.\n- Breve apresentação e interesse em AI Coding e Agentic AI.\n- Eventual experiência com Claude Code, Codex, Linux ou outras tecnologias citadas.\n- Interesse em aprender os domínios de contabilidade e engenharia industrial.\n- Informação sobre ME/CNPJ existente ou interesse em constituir empresa própria.\n\nO processo será integralmente online, com análise de perfil, projetos e conversa técnica. Não é necessário ter empresa aberta no momento da candidatura.\n\n**Empresa:** MKdigital — https://www.mkdigital.ch\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+      "excerpt": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
+      "issueState": "open",
+      "contentHash": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "javascript",
+        "júnior",
+        "pj",
+        "postgresql",
+        "python",
+        "remoto",
+        "testes automatizados",
+        "typescript"
+      ],
+      "sourceTags": [
+        "javascript",
+        "júnior",
+        "pj",
+        "postgresql",
+        "python",
+        "remoto",
+        "testes automatizados",
+        "typescript"
+      ],
+      "author": {
+        "id": "marcelokipper04",
+        "name": "marcelokipper04",
+        "handle": "marcelokipper04",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/207054547?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "companyName": "** MKdigital — https://www.mkdigital.ch",
+      "createdAt": "2026-11-07T20:58:13Z",
+      "updatedAt": "2026-11-11T21:42:16Z",
+      "url": "https://github.com/backend-br/vagas/issues/12493",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "Python",
+        "subdivision": "AI",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Python, AI · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "devops-sre",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "azure",
+          "docker",
+          "javascript",
+          "postgres",
+          "python",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "junior"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": [
+          "de",
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_5e371ac29287a1e60fe77ff4",
+          "sourceId": "backend-br/vagas#12493",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12493",
+          "createdAt": "2026-11-07T20:58:13Z",
+          "updatedAt": "2026-11-11T21:42:16Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 4,
+        "publishedAt": "2026-11-07T20:58:13Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_a2b6260ae05483df75a8020b",
+      "sourceId": "soujava/vagas-java#1977",
+      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Carteira Digital) | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nA carteira digital guarda saldo, recebe depósitos, faz pagamentos e transferências entre usuários. Cada operação é um lançamento num livro razão: débito numa conta, crédito em outra, sempre em pares e sempre somando zero. O saldo é derivado desses lançamentos, e qualquer atalho que altere saldo diretamente vira um buraco difícil de explicar depois. Você vai cuidar de funcionalidades inteiras no serviço em Java com Spring Boot, do desenho da API ao teste de integração. O volume pede atenção a concorrência e desempenho: transferências simultâneas da mesma conta não podem gastar o mesmo saldo duas vezes, e o extrato precisa responder rápido mesmo para contas com muito movimento acumulado. Os eventos de cada operação são publicados no Kafka para antifraude, notificação e contabilidade. Estorno, limite diário por tipo de operação e bloqueio cautelar por suspeita de fraude são regras que você vai implementar e manter, decidindo dentro do módulo como modelar cada uma.\n\n- Implementar depósito, pagamento e transferência como lançamentos em partidas dobradas\n- Controlar a concorrência no saldo com bloqueio no PostgreSQL e chave de idempotência\n- Publicar os eventos de cada operação no Kafka com garantia de entrega\n- Implementar limites diários configuráveis por tipo de operação e por perfil\n- Otimizar a consulta de extrato com índices e paginação por cursor\n- Escrever testes de integração com Testcontainers cobrindo concorrência\n- Investigar divergências de saldo e corrigir a causa, não só o sintoma\n- Revisar o código de colegas do módulo\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot no dia a dia, incluindo transação e configuração\n- JPA com entendimento do SQL que ela gera e de quando evitá-la\n- PostgreSQL com índices, plano de execução e níveis de isolamento\n- Mensageria com Kafka ou similar, sabendo lidar com reenvio e duplicidade\n- Testes de unidade e de integração como parte da entrega\n- Entregar uma funcionalidade completa por conta própria, da API à produção\n\n**Diferenciais:**\n- Noção de contabilidade em partidas dobradas\n- Padrão de outbox para publicar eventos de forma consistente\n- Redis para limite de taxa ou cache\n- Observabilidade com métricas e rastreamento distribuído\n- Vivência com sistema financeiro regulado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-carteira-digital-518?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga A carteira digital guarda saldo, recebe depósitos, faz pa...",
+      "issueState": "open",
+      "contentHash": "148f8a5200fb80a5c4f347c86fd5db18d99b78bc9dc910dd34b0464ce3b1ae7f",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "redis",
+        "remoto",
+        "spring",
+        "sql"
+      ],
+      "sourceTags": [
+        "clt",
+        "pj",
+        "pleno",
+        "postgresql",
+        "redis",
+        "remoto",
+        "spring",
+        "sql"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 5000,
+        "max": 6500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-07T12:17:37Z",
+      "updatedAt": "2026-11-07T12:17:58Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1977",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "postgres",
+          "redis",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_a2b6260ae05483df75a8020b",
+          "sourceId": "soujava/vagas-java#1977",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1977",
+          "createdAt": "2026-11-07T12:17:37Z",
+          "updatedAt": "2026-11-07T12:17:58Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 5,
+        "publishedAt": "2026-11-07T12:17:37Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_53768095978702f736a39e69",
       "sourceId": "TechnologyMasters/jobs#731",
@@ -459,7 +713,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-06T12:44:35Z",
         "status": "fresh"
       }
@@ -552,7 +806,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-06T08:38:22Z",
         "status": "fresh"
       }
@@ -648,7 +902,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-06T08:33:23Z",
         "status": "fresh"
       }
@@ -736,7 +990,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-06T05:48:40Z",
         "status": "fresh"
       }
@@ -933,7 +1187,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T13:27:55Z",
         "status": "fresh"
       }
@@ -1032,7 +1286,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T13:26:48Z",
         "status": "fresh"
       }
@@ -1123,7 +1377,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T13:26:23Z",
         "status": "fresh"
       }
@@ -1221,7 +1475,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T13:00:49Z",
         "status": "fresh"
       }
@@ -1353,7 +1607,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T12:57:24Z",
         "status": "fresh"
       }
@@ -1453,7 +1707,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T05:33:01Z",
         "status": "fresh"
       }
@@ -1550,7 +1804,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T05:32:57Z",
         "status": "fresh"
       }
@@ -1650,7 +1904,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-05T05:32:53Z",
         "status": "fresh"
       }
@@ -1776,7 +2030,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-04T13:27:20Z",
         "status": "fresh"
       }
@@ -1883,216 +2137,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-11-04T10:27:31Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_484b4bfff912b720db1a2be5",
-      "sourceId": "TechnologyMasters/jobs#724",
-      "title": "Fellowlane (recruitment agency) - Back-end Developer .NET/C# - Schiphol-Rijk, Netherlands (Hybrid) - From 4,500 EUR/Month",
-      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- From EUR 4,500 gross/month, based on 40 hours, depending on experience.\n- 32–40 hours per week.\n\n### Location and benefits\n- Schiphol-Rijk, Netherlands; hybrid, partly from home and partly at the office. This is not a worldwide remote position.\n- A small development team with direct influence on architecture and technical decisions.\n- Work on a growing electric-mobility platform contributing to the energy transition.\n\n## What You Will Do\n- Develop and maintain the back-end in .NET Core 10 and C#.\n- Build and maintain APIs and integrations with external systems.\n- Process and validate large amounts of data.\n- Work with Azure to keep the platform reliable and scalable.\n- Collaborate with a small team and contribute to architecture decisions.\n\n## Skills\n### Must have\n- Approximately five years of back-end development experience.\n- Strong .NET Core and C# knowledge and experience with Azure.\n- Bachelor-level working and thinking ability.\n- Initiative and comfort working in a growing environment.\n\n### Nice to have\n- API/integration and high-volume data-processing experience.\n- Interest in energy or electric mobility.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting on behalf of a growing Dutch company in electric mobility. This is a role with our client, not an internal Fellowlane position. The client name is shared during the introductory conversation.\n\n## How to apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-back-end-developer-net-core-10c/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - From EUR 4,500 gross/month, based on 40 hours, depending on experience....",
-      "issueState": "open",
-      "contentHash": "4ffba1541e9f8ceb14791c254953a895024bbf6abd6f856796b34d568795ac00",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "author": {
-        "id": "nickfetter1-Fellowlane",
-        "name": "nickfetter1-Fellowlane",
-        "handle": "nickfetter1-Fellowlane",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2026-11-04T10:26:26Z",
-      "updatedAt": "2026-11-04T10:29:35Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "azure",
-          "csharp",
-          "dotnet"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_484b4bfff912b720db1a2be5",
-          "sourceId": "TechnologyMasters/jobs#724",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-          "createdAt": "2026-11-04T10:26:26Z",
-          "updatedAt": "2026-11-04T10:29:35Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-11-04T10:26:26Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_955226cbfa98dd29e44c402f",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2988",
-      "title": "New Role",
-      "description": "### Link to Job Posting\n\nhttps://itsheadcount.com/careers/software-engineer\n\n### Company Name\n\nheadcount\n\n### Job Title\n\nSoftware Engineer\n\n### Location\n\nRemote in USA\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nheadcount (itsheadcount.com) is a live job application product. Full-time, remote in the US, $100,000 to $120,000 per year. Applications go through the careers page linked above.",
-      "excerpt": "### Link to Job Posting https://itsheadcount.com/careers/software-engineer ### Company Name headcount ### Job Title Software Engineer ### Location Remote in USA ### What category does this job belong to? Software Engi...",
-      "issueState": "open",
-      "contentHash": "ac8044b4046fa4815e1a150ccc3eaa032472e89713a2453970e578d42f7c5b1d",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_role"
-      ],
-      "sourceTags": [
-        "new_role"
-      ],
-      "author": {
-        "id": "byrencheema",
-        "name": "byrencheema",
-        "handle": "byrencheema",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/88304113?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 100000,
-        "max": 120000,
-        "period": "year"
-      },
-      "createdAt": "2026-11-03T18:57:28Z",
-      "updatedAt": "2026-11-03T18:57:28Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2988",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America",
-        "workModel": "remote",
-        "remoteScope": "country",
-        "displayText": "United States · Remote within United States",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "go"
-        ],
-        "seniority": [],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_955226cbfa98dd29e44c402f",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2988",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2988",
-          "createdAt": "2026-11-03T18:57:28Z",
-          "updatedAt": "2026-11-03T18:57:28Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
         "ageDays": 8,
-        "publishedAt": "2026-11-03T18:57:28Z",
+        "publishedAt": "2026-11-04T10:27:31Z",
         "status": "fresh"
       }
     }

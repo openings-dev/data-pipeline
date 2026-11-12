@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-10T14:02:28.652Z",
+  "generatedAt": "2026-11-12T14:23:38.483Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "6715e33dcb5e19b21797413460439b01ae5dfc71c9129b60f20800d2606cad63",
+  "dataHash": "ac89e1fc97d1cdd3f1e9ac15129581f284b6ec191992fcd3566b3c3cd4c98dfb",
   "items": [
+    {
+      "id": "gh_e62939c587998cbbfc01790e",
+      "sourceId": "ambicuity/New-Grad-Jobs#464",
+      "title": "Job data is stale: last scrape 2026-11-12T02:55:39.884126Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **419 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/43195647939. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **419 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "2f73c7ee01af3efb9ad94246dda1d0b973640dccbac89b736cbc62369a165b1f",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-12T09:54:58Z",
+      "updatedAt": "2026-11-12T09:54:58Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/464",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_12c4f52f84bec8dcc76c7871",
       "sourceId": "ambicuity/New-Grad-Jobs#463",
@@ -1777,66 +1835,6 @@
       "createdAt": "2026-03-02T23:39:29Z",
       "updatedAt": "2026-10-16T22:55:53Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/48",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_2dc0021f7fc5dcf9874e9cbf",
-      "sourceId": "ambicuity/New-Grad-Jobs#47",
-      "title": "[Beginner]: Add a test case for `has_track_signal` in `tests/test_filter.py`",
-      "description": "### Description\nThe function `has_track_signal(title, signals)` needs unit tests. Add a basic suite verifying it correctly identifies specific tracks from the job title.\n\n### Why it matters\nEnsures our filtering logic reliably categorizes special tracks like 'Rotational' or 'Early Career'.\n\n### Acceptance Criteria\n- [ ] Create `test_has_track_signal()` in `tests/test_filter.py`\n- [ ] Test with positive and negative inputs\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description The function `has_track_signal(title, signals)` needs unit tests. Add a basic suite verifying it correctly identifies specific tracks from the job title. ### Why it matters Ensures our filtering logic ...",
-      "issueState": "closed",
-      "contentHash": "7d6a3e7cadfb70e8580c1466155035d5f68b8358d1fc2a2e874073e24ccc7581",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:26Z",
-      "updatedAt": "2026-10-16T22:55:50Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/47",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
