@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-11-13T13:43:25.729Z",
+  "generatedAt": "2026-11-13T21:08:07.624Z",
   "page": 11,
   "pageSize": 20,
   "nextPage": "api/pages/page-0012.json",
   "ids": [
-    "gh_6bd2ea87cfb4bbe49569241c",
     "gh_1f61de8de06b483a9a82d5f4",
     "gh_2d9849eace549284f519bf16",
     "gh_04e16e2c007892d76818f4d4",
@@ -23,122 +22,10 @@
     "gh_1fbbb84fca255117f18333ff",
     "gh_697a821cabc5eb7906d1c695",
     "gh_a925bdb6349671e5c976d3ab",
-    "gh_b93cec8f2d93aa1dac71e10b"
+    "gh_b93cec8f2d93aa1dac71e10b",
+    "gh_0f3a2e758d2213811fcdb8a6"
   ],
   "items": [
-    {
-      "id": "gh_6bd2ea87cfb4bbe49569241c",
-      "sourceId": "ambicuity/New-Grad-Jobs#316",
-      "title": "[ROADMAP] Help us expand job data — all suggestions welcome!",
-      "description": "## TL;DR\n\nWe want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are welcome and I will reply to every comment.**\n\n---\n\n## Why this roadmap?\n\nNew-Grad-Jobs is most useful when it captures the widest possible surface of legitimate new-grad opportunities. Today we scrape and curate from a known set of sources, but there's a long tail of companies, regions, and job types we're missing.\n\nThis issue is the central place to brainstorm **how we add more jobs** — sources, regions, scrapers, partnerships, automation, data quality, anything.\n\n## What kind of suggestions are we looking for?\n\nPick whatever resonates — these are just prompts:\n\n### Sources\n- [ ] Specific ATS platforms we don't yet scrape (Workday tenants, Greenhouse boards, Lever, Ashby, SmartRecruiters, iCIMS, Taleo, Eightfold, Phenom, Jobvite, BrassRing, etc.)\n- [ ] Specific companies whose new-grad pipelines we should track\n- [ ] Regional job boards (EU, India, LATAM, MENA, APAC, Canada, UK, etc.)\n- [ ] University career portals worth aggregating\n- [ ] Government / public-sector hiring portals\n- [ ] Startup-focused aggregators (YC, Wellfound, etc.)\n- [ ] Diversity-focused or accessibility-focused boards\n\n### Job categories\n- [ ] Internship pipelines distinct from full-time\n- [ ] PhD / research / quant-specific listings\n- [ ] Hardware, semiconductor, robotics, aerospace\n- [ ] Game industry\n- [ ] Finance / trading / actuarial new-grad tracks\n- [ ] Bio / pharma / healthcare new-grad roles\n- [ ] Trades, ops, supply chain, manufacturing new-grad programs\n\n### Data quality\n- [ ] How should we detect & dedupe reposted listings?\n- [ ] How should we classify \\\"new grad\\\" vs \\\"junior\\\" vs \\\"intern\\\" more accurately?\n- [ ] Should we surface salary data when available? From which sources?\n- [ ] Should we flag visa sponsorship / remote / hybrid more explicitly?\n- [ ] How should we handle stale postings (last-seen vs first-seen)?\n- [ ] What metadata is most useful to filter on?\n\n### Infrastructure & automation\n- [ ] Scraper frameworks or libraries worth adopting\n- [ ] Anti-bot / rate-limit strategies that respect ToS\n- [ ] Workflow scheduling improvements (cron, GitHub Actions, queues)\n- [ ] LLM-assisted parsing for unstructured careers pages\n- [ ] Storage / dedup / canonicalization approaches\n- [ ] Notification channels (RSS, Discord, Slack, email digest)\n\n### Community & contribution\n- [ ] How can we make it easier for contributors to add a new company in one PR?\n- [ ] Should we publish a contribution template specifically for \\\"add a company\\\"?\n- [ ] Would a structured YAML/JSON registry of companies + ATS endpoints help?\n- [ ] Mentorship for first-time contributors who want to add a scraper\n\n## How to suggest\n\nJust comment below. Any format works:\n\n- **A single company:** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"\n- **A source idea:** \\\"There's an ATS called `<X>` used by these companies: …\\\"\n- **A feature idea:** \\\"It would be great if listings showed `<field>`\\\"\n- **A full proposal:** longer-form design ideas, link to a gist or doc\n- **A pain point:** \\\"As a job seeker, I wish this repo did `<X>`\\\"\n\nYou don't need to know how to scrape, write Python, or anything technical. **Ideas count just as much as code.**\n\n## Commitment\n\n- I'll **reply to every comment on this thread.**\n- Concrete, actionable suggestions will be moved into their own tracking issues and linked back here.\n- Larger themes will become milestones on the roadmap.\n- Credit will go to the suggester in the resulting PR / issue / changelog.\n\n## Ground rules\n\n- Be respectful — this is a community space.\n- Don't post anything that violates a source's Terms of Service or robots.txt; we want sustainable, ethical aggregation.\n- Don't post personal data, recruiter contacts, or anything that could harm a company or candidate.\n- Prefer one idea per comment when possible — it makes follow-up easier.\n\n---\n\n**Thanks in advance — every suggestion helps a new grad find their first job.**",
-      "excerpt": "## TL;DR We want to dramatically expand the job data this project surfaces, and we need **your ideas**. Whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **All suggestions are ...",
-      "issueState": "open",
-      "contentHash": "9dbc30e311e1ce44614e0ce628edb4d89c70df9f08cacdec11198141b4fa7ba7",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "roadmap",
-        "type: enhancement"
-      ],
-      "sourceTags": [
-        "enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "roadmap",
-        "type: enhancement"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "companyName": "** \\\"Please add `<Company>` — their careers page is `<URL>`\\\"",
-      "createdAt": "2026-05-26T23:52:14Z",
-      "updatedAt": "2026-10-19T20:18:43Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design"
-        ],
-        "technologies": [
-          "go",
-          "python"
-        ],
-        "seniority": [
-          "internship",
-          "junior"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_6bd2ea87cfb4bbe49569241c",
-          "sourceId": "ambicuity/New-Grad-Jobs#316",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/316",
-          "createdAt": "2026-05-26T23:52:14Z",
-          "updatedAt": "2026-10-19T20:18:43Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 170,
-        "publishedAt": "2026-05-26T23:52:14Z",
-        "status": "stale"
-      }
-    },
     {
       "id": "gh_1f61de8de06b483a9a82d5f4",
       "sourceId": "nerdzao/vagas#191",
@@ -246,7 +133,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 170,
+        "ageDays": 171,
         "publishedAt": "2026-05-26T18:22:15Z",
         "status": "stale"
       }
@@ -367,7 +254,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 171,
+        "ageDays": 172,
         "publishedAt": "2026-05-25T16:54:47Z",
         "status": "stale"
       }
@@ -469,7 +356,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 181,
+        "ageDays": 182,
         "publishedAt": "2026-05-15T15:16:11Z",
         "status": "stale"
       }
@@ -651,7 +538,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T14:26:25Z",
         "status": "stale"
       }
@@ -746,7 +633,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T14:16:18Z",
         "status": "stale"
       }
@@ -839,7 +726,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T14:11:35Z",
         "status": "stale"
       }
@@ -927,7 +814,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T14:04:19Z",
         "status": "stale"
       }
@@ -1017,7 +904,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T13:43:43Z",
         "status": "stale"
       }
@@ -1900,6 +1787,94 @@
       "freshness": {
         "ageDays": 231,
         "publishedAt": "2026-03-27T03:29:36Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_0f3a2e758d2213811fcdb8a6",
+      "sourceId": "rebase-network/who-is-hiring#1089",
+      "title": "[远程]寻找前端工程师",
+      "description": "### 关于\n我们是一家专注于电商业务的互联网公司，正在持续打造高性能、良好体验的在线购物平台。目前团队正在扩展，欢迎对前端技术有热情的小伙伴加入我们！\n\n### 责任\n\n1、负责电商平台（PC / H5 / 小程序）的前端开发与维护\n2、与产品经理、设计师、后端工程师紧密配合，推动项目落地\n3、持续优化页面性能、用户体验和代码质量\n4、参与前端技术选型与架构设计\n\n### 要求\n\n1、3年以上前端开发经验，有移动端开发经验\n2、熟练掌握 HTML、CSS、JavaScript 相关技术\n3、熟练掌握 vue 全家桶，熟悉浏览器调优及兼容性\n4、熟悉前端的常见构建、发布机制，熟练掌握 Webpack 的使用\n5、基础扎实，思路清晰，具备良好的沟通能力和团队协作精神\n\n### 工作性质\n\n- 全职\n- 远程\n\n### 工资和福利\n\n薪资：20k-40k（可面议）\n\n### 工作地点\n\n远程，在家就可以办公\n\n### 联系\n\nTG：@INHR_Winnie\n邮箱：inthoaahr@gmail.com",
+      "excerpt": "### 关于 我们是一家专注于电商业务的互联网公司，正在持续打造高性能、良好体验的在线购物平台。目前团队正在扩展，欢迎对前端技术有热情的小伙伴加入我们！ ### 责任 1、负责电商平台（PC / H5 / 小程序）的前端开发与维护 2、与产品经理、设计师、后端工程师紧密配合，推动项目落地 3、持续优化页面性能、用户体验和代码质量 4、参与前端技术选型与架构设计 ### 要求 1、3年以上前端开发经验，有移动端开发经验 2、熟练掌握...",
+      "issueState": "open",
+      "contentHash": "2bdde498dd98af440a9e712f171d89824c23855ef310bf992ff83a5a5c1e6430",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "java"
+      ],
+      "sourceTags": [
+        "java"
+      ],
+      "author": {
+        "id": "inthoaahr-svg",
+        "name": "inthoaahr-svg",
+        "handle": "inthoaahr-svg",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/271126965?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-03-26T05:40:12Z",
+      "updatedAt": "2026-11-04T08:50:13Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1089",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "javascript",
+          "vue"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_0f3a2e758d2213811fcdb8a6",
+          "sourceId": "rebase-network/who-is-hiring#1089",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1089",
+          "createdAt": "2026-03-26T05:40:12Z",
+          "updatedAt": "2026-11-04T08:50:13Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 232,
+        "publishedAt": "2026-03-26T05:40:12Z",
         "status": "stale"
       }
     }
