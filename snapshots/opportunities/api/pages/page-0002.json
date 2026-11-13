@@ -1,16 +1,12 @@
 {
-  "generatedAt": "2026-11-13T04:22:46.596Z",
+  "generatedAt": "2026-11-13T13:43:25.729Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
-    "gh_7e00452720eb21e53866702d",
-    "gh_5e371ac29287a1e60fe77ff4",
-    "gh_a2b6260ae05483df75a8020b",
     "gh_53768095978702f736a39e69",
     "gh_57374e1d0c8336945e6b5b6b",
     "gh_46efebb5b1651ba26fbd02f7",
-    "gh_b6d75d364f3ed3304897ef32",
     "gh_dc32051696483d7146617fb0",
     "gh_8dcf7662e9af892020402829",
     "gh_881dad8e9da418d806d0ef76",
@@ -23,343 +19,13 @@
     "gh_3aa462f04fe7bf10a982181a",
     "gh_1dbe4360df75638f5a0799c7",
     "gh_9c25b798ad552710cb428e33",
-    "gh_11c5ccdeb258bb1cac649506"
+    "gh_e31e0f0f47c698e1c0d5a6d9",
+    "gh_484b4bfff912b720db1a2be5",
+    "gh_955226cbfa98dd29e44c402f",
+    "gh_4c8cb2b9592db50dba6ad8df",
+    "gh_30f0dda015de26670412f182"
   ],
   "items": [
-    {
-      "id": "gh_7e00452720eb21e53866702d",
-      "sourceId": "cncf/gitjobs#393",
-      "title": "Add RSS feed for jobs",
-      "description": "With RSS, users can subscribe to the job feed and get notified when new job is posted.",
-      "excerpt": "With RSS, users can subscribe to the job feed and get notified when new job is posted.",
-      "issueState": "open",
-      "contentHash": "aa700e7539cf897daa7898a81492147fdb788b2045c00fbe87370bce4a09b308",
-      "repository": "cncf/gitjobs",
-      "repositoryUrl": "https://github.com/cncf/gitjobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "matusf",
-        "name": "matusf",
-        "handle": "matusf",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/18228995?v=4"
-      },
-      "community": {
-        "id": "cncf",
-        "name": "cncf",
-        "avatarUrl": "https://github.com/cncf.png?size=80",
-        "repository": "cncf/gitjobs",
-        "url": "https://github.com/cncf/gitjobs"
-      },
-      "createdAt": "2026-11-07T21:17:34Z",
-      "updatedAt": "2026-11-11T10:58:28Z",
-      "url": "https://github.com/cncf/gitjobs/issues/393",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_7e00452720eb21e53866702d",
-          "sourceId": "cncf/gitjobs#393",
-          "repository": "cncf/gitjobs",
-          "repositoryUrl": "https://github.com/cncf/gitjobs",
-          "url": "https://github.com/cncf/gitjobs/issues/393",
-          "createdAt": "2026-11-07T21:17:34Z",
-          "updatedAt": "2026-11-11T10:58:28Z",
-          "community": {
-            "id": "cncf",
-            "name": "cncf",
-            "avatarUrl": "https://github.com/cncf.png?size=80",
-            "repository": "cncf/gitjobs",
-            "url": "https://github.com/cncf/gitjobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 5,
-        "publishedAt": "2026-11-07T21:17:34Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_5e371ac29287a1e60fe77ff4",
-      "sourceId": "backend-br/vagas#12493",
-      "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
-      "description": "### Sobre a empresa\n\nA MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial.\n\nEsta publicação corresponde a **uma única oportunidade de desenvolvimento de software**, com foco em backend, APIs, dados e agentes inteligentes. A pessoa selecionada colaborará em duas frentes de produto da MKdigital: AI Bookkeeping Assistant e Plant Brownfield Reconstruction Agent.\n\n### Site da empresa\n\nhttps://www.mkdigital.ch\n\n### Descrição da vaga\n\nBuscamos uma pessoa em início de carreira, preferencialmente recém-formada ou em fase final de formação em Engenharia, Ciência da Computação ou área relacionada. **Experiência profissional anterior não é obrigatória.** A atuação é prioritariamente em backend; haverá também integração com interfaces web conforme as necessidades dos produtos.\n\nO trabalho combina programação, compreensão de processos de negócio, especificação de soluções, orientação de coding agents, testes e validação. Não é necessário conhecer previamente contabilidade ou engenharia industrial, mas **a disposição para aprender esses domínios é essencial**.\n\n#### 1. Projetos\n\n##### Projeto A — AI Bookkeeping Assistant (Suíça e Brasil)\n\nDesenvolvimento de uma plataforma de automação de processos contábeis utilizando inteligência artificial, LLMs e agentes inteligentes.\n\nAs principais atividades incluem:\n\n- Processamento e interpretação automática de documentos contábeis, incluindo notas fiscais, faturas, recibos e extratos bancários.\n- Integração de OCR, Document AI e modelos de linguagem.\n- Automação de lançamentos e classificação de transações contábeis.\n- Conciliação bancária e integração com sistemas financeiros.\n- Desenvolvimento de workflows inteligentes e agentes autônomos.\n- Integração com bancos de dados, APIs e serviços externos.\n- Testes, implantação e preparação da plataforma para utilização comercial.\n- Compreensão gradual dos processos contábeis e financeiros necessários à especificação e validação das funcionalidades.\n\n**Objetivo do projeto:** Contribuir para o desenvolvimento e lançamento comercial de uma solução operacional de automação contábil, inicialmente para o mercado suíço, com componentes específicos para o mercado brasileiro.\n\n##### Projeto B — Plant Brownfield Reconstruction Agent\n\nDesenvolvimento de uma plataforma baseada em inteligência artificial para reconstrução digital de instalações industriais existentes (*brownfield*), a partir de documentação técnica e outras fontes de dados.\n\nAs principais atividades incluem:\n\n- Desenvolvimento de agentes inteligentes para interpretação de documentação técnica.\n- Processamento de diagramas P&ID, documentação elétrica e de instrumentação (E&I).\n- Extração de informações de documentos históricos, fotografias, imagens e vídeos.\n- Modelagem e armazenamento de informações utilizando bancos de dados em grafos (GraphDB).\n- Identificação de equipamentos, instrumentos, conexões e relacionamentos técnicos.\n- Integração de informações de diferentes fontes em modelos digitais de engenharia.\n- Desenvolvimento de interfaces web para visualização e navegação dos modelos reconstruídos.\n- Compreensão gradual de conceitos de engenharia industrial, instalações, equipamentos e documentação técnica.\n\n**Objetivo do projeto:** Desenvolver um protótipo funcional capaz de importar documentação técnica, identificar e relacionar entidades de engenharia e apresentar os resultados em um modelo digital estruturado.\n\n#### 2. Tecnologias e ambiente de desenvolvimento\n\nOs projetos envolvem as seguintes tecnologias e práticas, entre outras:\n\n**AI Coding e agentes autônomos**\n- Claude Code, OpenAI Codex e outras ferramentas de programação assistida por IA.\n- Agentes autônomos de desenvolvimento de software (*Coding Agents*).\n- Agentic AI, LLMs, tool calling e orquestração de agentes.\n- Automação de tarefas de programação, testes, documentação e revisão de código.\n- Integração de agentes de programação em workflows de desenvolvimento.\n\n**Desenvolvimento paralelo e engenharia de software**\n- Git, GitHub, branches e Git worktrees.\n- Desenvolvimento paralelo utilizando múltiplos agentes de codificação.\n- Isolamento de ambientes e coordenação de alterações simultâneas.\n- Pull requests, code reviews e integração de código.\n- Testes automatizados, integração contínua (CI/CD) e documentação técnica.\n- Organização de projetos, atividades e entregas utilizando Azure DevOps.\n\n**Backend, frontend e dados**\n- Python e FastAPI.\n- REST APIs e integração entre sistemas.\n- JavaScript/TypeScript e React.\n- PostgreSQL, SQL e bancos de dados em grafos.\n- Processamento de documentos, OCR e pipelines de dados.\n\n**Infraestrutura e desenvolvimento**\n- Linux como ambiente de desenvolvimento e execução.\n- Docker e containers.\n- Servidores e infraestrutura em nuvem.\n- Ambientes automatizados de desenvolvimento, testes e implantação.\n- Conceitos de segurança, autenticação e gerenciamento de serviços.\n\nNão é necessário dominar todas essas tecnologias. Esperamos principalmente interesse em aprender, experimentar e aplicar novas ferramentas de maneira prática.\n\n#### 4. Desenvolvimento orientado ao domínio de aplicação\n\nUm aspecto importante dos projetos é a aproximação entre desenvolvimento de software e conhecimento dos processos que estão sendo automatizados.\n\n**No projeto de contabilidade**, será necessário compreender gradualmente conceitos como documentos contábeis, lançamentos, contas, conciliação bancária, impostos e fluxos financeiros.\n\n**No projeto de engenharia industrial**, será importante aprender conceitos relacionados a equipamentos, instrumentação, diagramas técnicos, estruturas de dados de engenharia e representação digital de instalações industriais.\n\nA expectativa não é encontrar alguém que já domine esses assuntos, mas um profissional que tenha interesse em aprendê-los e utilizá-los para:\n\n- Compreender necessidades e requisitos funcionais.\n- Participar da definição de soluções e especificações técnicas.\n- Traduzir processos de negócio em modelos de dados, regras e workflows.\n- Orientar agentes de programação na implementação das funcionalidades.\n- Criar testes e critérios de aceitação baseados em situações reais.\n- Identificar inconsistências e validar os resultados produzidos pelo software e pelos agentes de IA.\n\n**Buscamos alguém interessado em evoluir da programação para a compreensão, especificação e construção de soluções completas, combinando tecnologia, IA e conhecimento de domínio.**\n\n#### 5. Modelo de contratação — Prestação de serviços e empreendedorismo\n\nA MKdigital busca estabelecer uma parceria comercial com um profissional ou uma **microempresa (ME/CNPJ) especializada em desenvolvimento de software**.\n\nA oportunidade é especialmente interessante para profissionais recém-formados que desejam iniciar sua trajetória empreendedora, constituindo sua própria empresa de tecnologia e oferecendo serviços a clientes no Brasil e no exterior.\n\n**Modalidade de contratação**\n\n- **Preferencialmente:** Prestação de serviços por meio de empresa própria (ME/CNPJ), com emissão de notas fiscais.\n- **Apoio ao início da atividade empreendedora:** Para profissionais que ainda estejam no processo de abertura de sua empresa, a MK Digital poderá aceitar, excepcionalmente, a contratação inicial como profissional autônomo (CPF), por até três meses, observadas as obrigações legais e tributárias aplicáveis.\n- Após esse período, a continuidade da parceria estará condicionada à formalização de uma empresa própria (ME/CNPJ) e à celebração de um novo contrato comercial.\n- Não há exigência de exclusividade. O prestador poderá atender outros clientes, respeitando os compromissos de confidencialidade, propriedade intelectual e eventuais conflitos de interesse.\n\n**Projetos e condições comerciais**\n\n- **Duração estimada dos projetos:** 12 meses, com escopo, marcos de entrega e resultados técnicos definidos.\n- **Valor de referência:** R$ 72,50 por hora de serviço.\n- **Dedicação estimada:** Até aproximadamente 36 horas semanais durante os períodos de atividade, sem horário fixo obrigatório.\n- **Volume anual estimado:** 1.656 horas, considerando pausas pessoais, feriados e períodos de indisponibilidade.\n- **Orçamento anual estimado:** R$ 120.060, equivalente a uma média aproximada de R$ 10.000 mensais.\n- O faturamento será realizado conforme os serviços efetivamente prestados e as condições comerciais acordadas. O volume de horas é uma estimativa de planejamento, não uma garantia de contratação mínima.\n- **Local de execução:** 100% remoto, de qualquer cidade do Brasil.\n\nOs valores são referentes à prestação de serviços. O profissional ou empresa contratada será responsável por suas próprias obrigações fiscais e previdenciárias, conforme a legislação aplicável.\n\n**Organização da colaboração**\n\n- Os serviços serão organizados por projetos, atividades técnicas, marcos de entrega e critérios de aceitação.\n- As atividades e entregas serão acompanhadas por meio do Azure DevOps.\n- Estão previstas revisões técnicas semanais e aproximadamente duas reuniões curtas de alinhamento por semana, conforme a necessidade dos projetos.\n- A comunicação diária poderá ocorrer de forma assíncrona por ferramentas online.\n- O prestador terá autonomia na organização dos horários e na execução técnica dos serviços.\n- Todos os custos necessários de ferramentas de IA, APIs e infraestrutura em nuvem serão cobertos pela MKdigital.\n- O prestador deverá possuir computador próprio e conexão estável com a internet.\n\n### Requisitos\n\n#### 3. Perfil desejado\n\n**Requisitos principais**\n\n- Formação superior concluída ou em fase final em Engenharia, Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.\n- Boa base em programação, algoritmos, estruturas de dados e lógica computacional.\n- Conhecimento de alguma linguagem de programação, preferencialmente Python.\n- Familiaridade com Git e conceitos fundamentais de engenharia de software.\n- Interesse em Linux, infraestrutura e desenvolvimento de aplicações.\n- Interesse em inteligência artificial aplicada ao desenvolvimento de software.\n- Capacidade de investigar problemas, pesquisar soluções e trabalhar com autonomia.\n- Interesse em compreender processos de negócio e transformar requisitos em soluções de software.\n- Disposição para aprender conceitos de contabilidade, finanças e engenharia industrial.\n- Boa organização, comunicação e comprometimento com as entregas.\n\n**Diferenciais — Nice to have**\n\n- Experiência prática com Claude Code, OpenAI Codex ou outras ferramentas de AI Coding.\n- Conhecimento ou experiência com agentes autônomos de programação e Agentic AI.\n- Projetos pessoais, acadêmicos ou open source utilizando inteligência artificial e LLMs.\n- Experiência com Git worktrees, desenvolvimento paralelo ou múltiplos agentes de codificação.\n- Conhecimento de Linux, Docker, CI/CD e infraestrutura em nuvem.\n- Experiência com Python, FastAPI, React, APIs ou bancos de dados.\n- Conhecimento de GraphDB, processamento de documentos ou visão computacional.\n- Conhecimentos básicos de contabilidade, sistemas ERP, processos financeiros ou automação empresarial.\n- Familiaridade com documentação de engenharia, diagramas P&ID, instalações industriais ou sistemas CAD/CAE.\n- Experiência em análise de requisitos, especificação funcional ou modelagem de processos.\n- Certificações ou cursos relevantes em IA, cloud computing ou desenvolvimento de software.\n- **Inglês técnico**, especialmente para leitura de documentação, ferramentas e comunicação escrita.\n- **Conhecimentos de alemão** serão considerados um diferencial adicional.\n\nCertificações, conhecimentos prévios dos domínios de aplicação e experiência profissional anterior não são obrigatórios. Projetos desenvolvidos, domínio dos fundamentos e capacidade de resolver problemas terão maior peso na seleção.\n\n### Tecnologias\n\nPython, FastAPI, Linux, Docker, Git, PostgreSQL, SQL, TypeScript, JavaScript, CI/CD, Testes automatizados\n\n### Benefícios\n\n- Ferramentas de IA, APIs e infraestrutura em nuvem necessárias aos projetos custeadas pela MKdigital.\n- Colaboração remota, com autonomia na organização dos horários e sem exclusividade.\n- Participação na construção de produtos reais desde as fases iniciais, com possibilidade de continuidade em novos projetos conforme resultados e necessidades.\n\n### Faixa salarial\n\n**Valor de referência da prestação de serviços: R$ 72,50 por hora.** Até aproximadamente 36 horas semanais e 1.656 horas anuais estimadas; orçamento anual estimado de R$ 120.060. Faturamento pelos serviços efetivamente prestados, sem garantia de volume mínimo. Duração estimada dos projetos: 12 meses.\n\n### Nível\n\nJúnior\n\n### Regime de contratação\n\nPJ, Contrato, Freelance\n\nPreferência por ME/CNPJ com emissão de notas fiscais. Para quem estiver constituindo a própria empresa, poderá ser aceita prestação inicial como autônomo/CPF por até três meses, observadas as obrigações aplicáveis; a continuidade exige ME/CNPJ.\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil — qualquer cidade.\n\n### Como se candidatar\n\nEnvie para **[info@mkdigital.ch](mailto:info@mkdigital.ch)** com o assunto **“Candidatura — Desenvolvimento de Software / AI Coding”**:\n\n- Currículo ou perfil do LinkedIn.\n- GitHub, portfólio ou exemplos de projetos acadêmicos/pessoais, se disponíveis.\n- Breve apresentação e interesse em AI Coding e Agentic AI.\n- Eventual experiência com Claude Code, Codex, Linux ou outras tecnologias citadas.\n- Interesse em aprender os domínios de contabilidade e engenharia industrial.\n- Informação sobre ME/CNPJ existente ou interesse em constituir empresa própria.\n\nO processo será integralmente online, com análise de perfil, projetos e conversa técnica. Não é necessário ter empresa aberta no momento da candidatura.\n\n**Empresa:** MKdigital — https://www.mkdigital.ch\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-      "excerpt": "### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais e aplicações de engenharia industrial. Esta publicação corresponde a **uma ú...",
-      "issueState": "open",
-      "contentHash": "5efa3112a8d0d2706c69c53bf46e2444e06a0404c8ba740850d7930a2eae4035",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "javascript",
-        "júnior",
-        "pj",
-        "postgresql",
-        "python",
-        "remoto",
-        "testes automatizados",
-        "typescript"
-      ],
-      "sourceTags": [
-        "javascript",
-        "júnior",
-        "pj",
-        "postgresql",
-        "python",
-        "remoto",
-        "testes automatizados",
-        "typescript"
-      ],
-      "author": {
-        "id": "marcelokipper04",
-        "name": "marcelokipper04",
-        "handle": "marcelokipper04",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/207054547?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "companyName": "** MKdigital — https://www.mkdigital.ch",
-      "createdAt": "2026-11-07T20:58:13Z",
-      "updatedAt": "2026-11-11T21:42:16Z",
-      "url": "https://github.com/backend-br/vagas/issues/12493",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "Python",
-        "subdivision": "AI",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Python, AI · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "data-ai",
-          "devops-sre",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "azure",
-          "docker",
-          "javascript",
-          "postgres",
-          "python",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": [
-          "de",
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_5e371ac29287a1e60fe77ff4",
-          "sourceId": "backend-br/vagas#12493",
-          "repository": "backend-br/vagas",
-          "repositoryUrl": "https://github.com/backend-br/vagas",
-          "url": "https://github.com/backend-br/vagas/issues/12493",
-          "createdAt": "2026-11-07T20:58:13Z",
-          "updatedAt": "2026-11-11T21:42:16Z",
-          "community": {
-            "id": "backend-br",
-            "name": "backend-br",
-            "avatarUrl": "https://github.com/backend-br.png?size=80",
-            "repository": "backend-br/vagas",
-            "url": "https://github.com/backend-br/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 5,
-        "publishedAt": "2026-11-07T20:58:13Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a2b6260ae05483df75a8020b",
-      "sourceId": "soujava/vagas-java#1977",
-      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Carteira Digital) | Confidencial (vaga via Sylision)",
-      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nA carteira digital guarda saldo, recebe depósitos, faz pagamentos e transferências entre usuários. Cada operação é um lançamento num livro razão: débito numa conta, crédito em outra, sempre em pares e sempre somando zero. O saldo é derivado desses lançamentos, e qualquer atalho que altere saldo diretamente vira um buraco difícil de explicar depois. Você vai cuidar de funcionalidades inteiras no serviço em Java com Spring Boot, do desenho da API ao teste de integração. O volume pede atenção a concorrência e desempenho: transferências simultâneas da mesma conta não podem gastar o mesmo saldo duas vezes, e o extrato precisa responder rápido mesmo para contas com muito movimento acumulado. Os eventos de cada operação são publicados no Kafka para antifraude, notificação e contabilidade. Estorno, limite diário por tipo de operação e bloqueio cautelar por suspeita de fraude são regras que você vai implementar e manter, decidindo dentro do módulo como modelar cada uma.\n\n- Implementar depósito, pagamento e transferência como lançamentos em partidas dobradas\n- Controlar a concorrência no saldo com bloqueio no PostgreSQL e chave de idempotência\n- Publicar os eventos de cada operação no Kafka com garantia de entrega\n- Implementar limites diários configuráveis por tipo de operação e por perfil\n- Otimizar a consulta de extrato com índices e paginação por cursor\n- Escrever testes de integração com Testcontainers cobrindo concorrência\n- Investigar divergências de saldo e corrigir a causa, não só o sintoma\n- Revisar o código de colegas do módulo\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot no dia a dia, incluindo transação e configuração\n- JPA com entendimento do SQL que ela gera e de quando evitá-la\n- PostgreSQL com índices, plano de execução e níveis de isolamento\n- Mensageria com Kafka ou similar, sabendo lidar com reenvio e duplicidade\n- Testes de unidade e de integração como parte da entrega\n- Entregar uma funcionalidade completa por conta própria, da API à produção\n\n**Diferenciais:**\n- Noção de contabilidade em partidas dobradas\n- Padrão de outbox para publicar eventos de forma consistente\n- Redis para limite de taxa ou cache\n- Observabilidade com métricas e rastreamento distribuído\n- Vivência com sistema financeiro regulado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-carteira-digital-518?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
-      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga A carteira digital guarda saldo, recebe depósitos, faz pa...",
-      "issueState": "open",
-      "contentHash": "148f8a5200fb80a5c4f347c86fd5db18d99b78bc9dc910dd34b0464ce3b1ae7f",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "redis",
-        "remoto",
-        "spring",
-        "sql"
-      ],
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "redis",
-        "remoto",
-        "spring",
-        "sql"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 5000,
-        "max": 6500,
-        "period": "month"
-      },
-      "createdAt": "2026-11-07T12:17:37Z",
-      "updatedAt": "2026-11-07T12:17:58Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1977",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "100%",
-        "subdivision": "NO",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "100%, NO · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "java",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_a2b6260ae05483df75a8020b",
-          "sourceId": "soujava/vagas-java#1977",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1977",
-          "createdAt": "2026-11-07T12:17:37Z",
-          "updatedAt": "2026-11-07T12:17:58Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 5,
-        "publishedAt": "2026-11-07T12:17:37Z",
-        "status": "fresh"
-      }
-    },
     {
       "id": "gh_53768095978702f736a39e69",
       "sourceId": "TechnologyMasters/jobs#731",
@@ -673,132 +339,6 @@
       }
     },
     {
-      "id": "gh_b6d75d364f3ed3304897ef32",
-      "sourceId": "soujava/vagas-java#1976",
-      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Atendimento por Chat) | Confidencial (vaga via Sylision)",
-      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO back-end do chat de atendimento recebe mensagens do site, do aplicativo e de canais de mensagem, coloca cada conversa na fila certa, distribui entre atendentes disponíveis e entrega as mensagens em tempo real para os dois lados. Também guarda o histórico completo, mede o tempo de espera e de resposta e aciona o robô de primeiro atendimento antes de passar a conversa para uma pessoa. O serviço é escrito em Java com Spring Boot, e as conexões em tempo real ficam espalhadas por várias instâncias, então uma mensagem precisa chegar ao atendente certo, esteja ele conectado em qual instância estiver, sem duplicar e sem perder a ordem. A distribuição precisa respeitar o limite de conversas simultâneas de cada atendente e redistribuir quando alguém sai. Mensagens de canais externos chegam por webhook, às vezes repetidas e fora de ordem, e precisam ser normalizadas antes de entrar na conversa. A modelagem de conversa, fila e distribuição dentro do serviço fica sob sua responsabilidade.\n\n- Entregar mensagens em tempo real por WebSocket entre várias instâncias usando Redis\n- Garantir ordem e ausência de duplicidade nas mensagens de cada conversa\n- Implementar a distribuição de conversas por fila, habilidade e limite de cada atendente\n- Receber e normalizar mensagens de canais externos por webhook\n- Medir os tempos de espera e de resposta por fila\n- Integrar a passagem do robô de primeiro atendimento para o atendente\n- Escrever testes de integração com Testcontainers\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot em produção\n- WebSocket e comunicação em tempo real com várias instâncias\n- Redis para publicação e assinatura ou para estado compartilhado\n- PostgreSQL com modelagem de conversas e mensagens\n- Testes de integração que reproduzem várias instâncias conectadas\n- Autonomia para entregar funcionalidade completa e decidir dentro do serviço\n\n**Diferenciais:**\n- Ter trabalhado com chat, atendimento ou mensageria em tempo real\n- RabbitMQ ou Kafka\n- Integração com APIs de canais de mensagem\n- Observabilidade de conexões e de filas\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-atendimento-por-chat-560?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
-      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O back-end do chat de atendimento recebe mensagens do sit...",
-      "issueState": "open",
-      "contentHash": "7829b3471f6647bcc123b871b511e67f417ed8dc3caf6238156843037562aa11",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "rabbitmq",
-        "redis",
-        "remoto",
-        "spring"
-      ],
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "rabbitmq",
-        "redis",
-        "remoto",
-        "spring"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 5000,
-        "max": 6500,
-        "period": "month"
-      },
-      "createdAt": "2026-11-06T12:44:35Z",
-      "updatedAt": "2026-11-06T12:44:53Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1976",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "100%",
-        "subdivision": "NO",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "100%, NO · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "java",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b6d75d364f3ed3304897ef32",
-          "sourceId": "soujava/vagas-java#1976",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1976",
-          "createdAt": "2026-11-06T12:44:35Z",
-          "updatedAt": "2026-11-06T12:44:53Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-06T12:44:35Z",
-        "status": "fresh"
-      }
-    },
-    {
       "id": "gh_dc32051696483d7146617fb0",
       "sourceId": "rebase-network/who-is-hiring#1342",
       "title": "[Remote] Crypto 交易所诚聘 量化策略研究员（Crypto 做市对冲 / 套利 / CTA / 事件驱动）薪水 4000U-7000U",
@@ -886,7 +426,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-06T08:38:22Z",
         "status": "fresh"
       }
@@ -982,7 +522,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-06T08:33:23Z",
         "status": "fresh"
       }
@@ -1070,7 +610,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-06T05:48:40Z",
         "status": "fresh"
       }
@@ -1267,7 +807,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T13:27:55Z",
         "status": "fresh"
       }
@@ -1366,7 +906,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T13:26:48Z",
         "status": "fresh"
       }
@@ -1457,7 +997,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T13:26:23Z",
         "status": "fresh"
       }
@@ -1555,7 +1095,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T13:00:49Z",
         "status": "fresh"
       }
@@ -1687,7 +1227,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T12:57:24Z",
         "status": "fresh"
       }
@@ -1787,7 +1327,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T05:33:01Z",
         "status": "fresh"
       }
@@ -1884,7 +1424,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T05:32:57Z",
         "status": "fresh"
       }
@@ -1984,21 +1524,437 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-05T05:32:53Z",
         "status": "fresh"
       }
     },
     {
-      "id": "gh_11c5ccdeb258bb1cac649506",
-      "sourceId": "soujava/vagas-java#1975",
-      "title": "[Remoto] Desenvolvedor(a) Java Júnior (Pagamentos via Pix) | Confidencial (vaga via Sylision)",
-      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nUma cobrança Pix nasce quando o sistema gera o QR Code com valor, txid e prazo de expiração, e termina quando o banco avisa, por webhook, que o dinheiro entrou. Entre esses dois pontos muita coisa sai do roteiro: o aviso chega duas vezes, chega antes de a cobrança terminar de ser gravada, ou simplesmente não chega e o sistema precisa ir buscar a informação por consulta. Você vai trabalhar no serviço em Java com Spring Boot que cria essas cobranças, recebe as notificações e muda a situação de cada uma no PostgreSQL. A regra que não pode quebrar é curta: um pagamento recebido nunca é baixado duas vezes e nunca fica esquecido como pendente. Também entram as devoluções, totais ou parciais, que têm prazo próprio e precisam ficar sempre ligadas ao pagamento de origem.\n\n- Implementar a criação de cobrança imediata e com vencimento, gravando txid e expiração\n- Tratar o webhook de pagamento de forma idempotente, usando o identificador fim a fim da transação\n- Escrever a rotina que consulta cobranças sem retorno e atualiza a situação delas\n- Registrar devoluções parciais e totais vinculadas ao pagamento original\n- Criar migrações com Flyway e revisar os índices das consultas mais usadas\n- Escrever testes com JUnit para pagamento duplicado, expirado e devolvido\n- Acompanhar os logs da integração e abrir chamado com contexto completo quando algo falha\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Curso de tecnologia em andamento ou concluído, estágio ou projeto próprio em Java publicado\n- Java com classes, interfaces, coleções e tratamento de exceção\n- Noção de Spring Boot: controller, service e repositório\n- SQL para consultar, inserir e atualizar registros\n- Entender o que é uma API REST e como ler um JSON de resposta\n- Git para versionar e abrir pull request\n\n**Diferenciais:**\n- Ter lido a documentação pública do Pix publicada pelo Banco Central\n- Noção de transação no JPA e de bloqueio otimista\n- Docker para subir o banco na sua máquina\n- Saber por que dinheiro se representa com BigDecimal e não com double\n- Ter feito algum projeto que recebe webhook\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 3.000 a R$ 4.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-junior-pagamentos-via-pix-473?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
-      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Uma cobrança Pix nasce quando o sistema gera o QR Code co...",
+      "id": "gh_e31e0f0f47c698e1c0d5a6d9",
+      "sourceId": "TechnologyMasters/jobs#725",
+      "title": "Fellowlane (recruitment agency) - Cloud Engineer Microsoft 365/Azure - Aalsmeer, Netherlands - 3,750-4,500 EUR/Month",
+      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- EUR 3,750–4,500 gross/month, depending on knowledge and experience.\n- 32–40 hours per week.\n\n### Benefits\n- Freedom and technical responsibility in a small, informal team.\n- Training and certification opportunities.\n- Pension scheme, modern office in Aalsmeer and team activities.\n- A mix of infrastructure management, projects and customer advice.\n\n### Location\nAalsmeer, Netherlands, with customers in the surrounding region. Work is performed remotely on customer environments and on-site at customers. This is not advertised as a worldwide remote or fully work-from-home role.\n\n## What You Will Do\n- Manage and improve Microsoft 365, Azure and Windows Server environments.\n- Work with Active Directory, Exchange, Hyper-V, firewalls, switches, backups and monitoring.\n- Resolve complex second- and third-line technical issues.\n- Deliver cloud migrations and other technical projects.\n- Advise customers and support colleagues with complex technical questions.\n- Improve security, automation, standardisation and technical documentation.\n\n## Relevant Experience\nThis role is aimed at an experienced IT professional ready to combine Microsoft cloud and infrastructure operations with migrations, projects and customer advice. Relevant technologies include Microsoft 365, Azure, Windows Server, Active Directory, Exchange and Hyper-V.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting for an IT service provider in Aalsmeer. This is a client vacancy, not an internal Fellowlane role. The client supports regional organisations with cloud, infrastructure, workplaces, networking and security.\n\n## How to Apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-cloud-engineer/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [ ] Remote OK",
+      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - EUR 3,750–4,500 gross/month, depending on knowledge and experience. - 3...",
       "issueState": "open",
-      "contentHash": "e5ee9e18c7e4d90ee4ca82599ecfe8f646707fb98163013cbc1749c48fd8347d",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "contentHash": "224a935371d2fab72fde5c7849fb9577be62a6cc3785a10e80977b79820e35d3",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "remote"
+      ],
+      "sourceTags": [
+        "remote"
+      ],
+      "author": {
+        "id": "nickfetter1-Fellowlane",
+        "name": "nickfetter1-Fellowlane",
+        "handle": "nickfetter1-Fellowlane",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "salary": {
+        "currency": "EUR",
+        "min": 3750,
+        "max": 4500,
+        "period": "month"
+      },
+      "createdAt": "2026-11-04T10:27:31Z",
+      "updatedAt": "2026-11-04T10:29:49Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/725",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Netherlands",
+        "countryCode": "NL",
+        "region": "Europe",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "Netherlands · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "azure"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "on-site",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_e31e0f0f47c698e1c0d5a6d9",
+          "sourceId": "TechnologyMasters/jobs#725",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/725",
+          "createdAt": "2026-11-04T10:27:31Z",
+          "updatedAt": "2026-11-04T10:29:49Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-11-04T10:27:31Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_484b4bfff912b720db1a2be5",
+      "sourceId": "TechnologyMasters/jobs#724",
+      "title": "Fellowlane (recruitment agency) - Back-end Developer .NET/C# - Schiphol-Rijk, Netherlands (Hybrid) - From 4,500 EUR/Month",
+      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- From EUR 4,500 gross/month, based on 40 hours, depending on experience.\n- 32–40 hours per week.\n\n### Location and benefits\n- Schiphol-Rijk, Netherlands; hybrid, partly from home and partly at the office. This is not a worldwide remote position.\n- A small development team with direct influence on architecture and technical decisions.\n- Work on a growing electric-mobility platform contributing to the energy transition.\n\n## What You Will Do\n- Develop and maintain the back-end in .NET Core 10 and C#.\n- Build and maintain APIs and integrations with external systems.\n- Process and validate large amounts of data.\n- Work with Azure to keep the platform reliable and scalable.\n- Collaborate with a small team and contribute to architecture decisions.\n\n## Skills\n### Must have\n- Approximately five years of back-end development experience.\n- Strong .NET Core and C# knowledge and experience with Azure.\n- Bachelor-level working and thinking ability.\n- Initiative and comfort working in a growing environment.\n\n### Nice to have\n- API/integration and high-volume data-processing experience.\n- Interest in energy or electric mobility.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting on behalf of a growing Dutch company in electric mobility. This is a role with our client, not an internal Fellowlane position. The client name is shared during the introductory conversation.\n\n## How to apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-back-end-developer-net-core-10c/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
+      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - From EUR 4,500 gross/month, based on 40 hours, depending on experience....",
+      "issueState": "open",
+      "contentHash": "4ffba1541e9f8ceb14791c254953a895024bbf6abd6f856796b34d568795ac00",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "data",
+        "hybrid",
+        "remote"
+      ],
+      "sourceTags": [
+        "data",
+        "hybrid",
+        "remote"
+      ],
+      "author": {
+        "id": "nickfetter1-Fellowlane",
+        "name": "nickfetter1-Fellowlane",
+        "handle": "nickfetter1-Fellowlane",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "createdAt": "2026-11-04T10:26:26Z",
+      "updatedAt": "2026-11-04T10:29:35Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/724",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend"
+        ],
+        "technologies": [
+          "azure",
+          "csharp",
+          "dotnet"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "full-time",
+          "internship",
+          "part-time"
+        ],
+        "workModels": [
+          "hybrid",
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_484b4bfff912b720db1a2be5",
+          "sourceId": "TechnologyMasters/jobs#724",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/724",
+          "createdAt": "2026-11-04T10:26:26Z",
+          "updatedAt": "2026-11-04T10:29:35Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-11-04T10:26:26Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_955226cbfa98dd29e44c402f",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2988",
+      "title": "New Role",
+      "description": "### Link to Job Posting\n\nhttps://itsheadcount.com/careers/software-engineer\n\n### Company Name\n\nheadcount\n\n### Job Title\n\nSoftware Engineer\n\n### Location\n\nRemote in USA\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nheadcount (itsheadcount.com) is a live job application product. Full-time, remote in the US, $100,000 to $120,000 per year. Applications go through the careers page linked above.",
+      "excerpt": "### Link to Job Posting https://itsheadcount.com/careers/software-engineer ### Company Name headcount ### Job Title Software Engineer ### Location Remote in USA ### What category does this job belong to? Software Engi...",
+      "issueState": "open",
+      "contentHash": "ac8044b4046fa4815e1a150ccc3eaa032472e89713a2453970e578d42f7c5b1d",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_role"
+      ],
+      "sourceTags": [
+        "new_role"
+      ],
+      "author": {
+        "id": "byrencheema",
+        "name": "byrencheema",
+        "handle": "byrencheema",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/88304113?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 100000,
+        "max": 120000,
+        "period": "year"
+      },
+      "createdAt": "2026-11-03T18:57:28Z",
+      "updatedAt": "2026-11-03T18:57:28Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2988",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "workModel": "remote",
+        "remoteScope": "country",
+        "displayText": "United States · Remote within United States",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "go"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_955226cbfa98dd29e44c402f",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2988",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2988",
+          "createdAt": "2026-11-03T18:57:28Z",
+          "updatedAt": "2026-11-03T18:57:28Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-11-03T18:57:28Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_4c8cb2b9592db50dba6ad8df",
+      "sourceId": "SimplifyJobs/Summer2026-Internships#9751",
+      "title": "New Internship",
+      "description": "### Link to Internship Posting\n\nhttps://itsheadcount.com/careers/software-engineering-intern\n\n### Company Name\n\nheadcount\n\n### Internship Title\n\nSoftware Engineering Intern\n\n### Location\n\nRemote in USA\n\n### What term(s) is this internship offered for?\n\nSummer 2027, Fall 2026, Winter 2027, Spring 2027\n\n### Does this internship offer sponsorship?\n\nDoes Not Offer Sponsorship\n\n### Is this internship currently accepting applications?\n\nYes\n\n### What category does this internship belong to?\n\nSoftware Engineering\n\n### Advanced Degree Requirements\n\n- [ ] This internship requires or strongly prefers advanced degrees (Master's/MBA/PhD)\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nheadcount (itsheadcount.com) is a live job application product. This is a paid, remote, full-time internship ($45/hr, 40 hours/week) with no fixed term on the posting. Applications go through the careers page linked above.",
+      "excerpt": "### Link to Internship Posting https://itsheadcount.com/careers/software-engineering-intern ### Company Name headcount ### Internship Title Software Engineering Intern ### Location Remote in USA ### What term(s) is th...",
+      "issueState": "open",
+      "contentHash": "88ccce835e7fb42edca412a1a2d7e678672cc2a1ba8e8eaac5888325d630dec3",
+      "repository": "SimplifyJobs/Summer2026-Internships",
+      "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "new_internship"
+      ],
+      "sourceTags": [
+        "new_internship"
+      ],
+      "author": {
+        "id": "byrencheema",
+        "name": "byrencheema",
+        "handle": "byrencheema",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/88304113?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/Summer2026-Internships",
+        "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+      },
+      "createdAt": "2026-11-03T18:56:32Z",
+      "updatedAt": "2026-11-03T18:56:32Z",
+      "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9751",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America",
+        "workModel": "remote",
+        "remoteScope": "country",
+        "displayText": "United States · Remote within United States",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "go",
+          "spring"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [
+          "contract",
+          "full-time",
+          "internship"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_4c8cb2b9592db50dba6ad8df",
+          "sourceId": "SimplifyJobs/Summer2026-Internships#9751",
+          "repository": "SimplifyJobs/Summer2026-Internships",
+          "repositoryUrl": "https://github.com/SimplifyJobs/Summer2026-Internships",
+          "url": "https://github.com/SimplifyJobs/Summer2027-Internships/issues/9751",
+          "createdAt": "2026-11-03T18:56:32Z",
+          "updatedAt": "2026-11-03T18:56:32Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/Summer2026-Internships",
+            "url": "https://github.com/SimplifyJobs/Summer2026-Internships"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-11-03T18:56:32Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_30f0dda015de26670412f182",
+      "sourceId": "programadores-br/geral#3128",
+      "title": "[Belo Horizonte, Brasil] Product Owner na Coodesh",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/product-owner-135201424?utm_source=github&utm_medium=programadores-br-geral&modal=open) para realizar a candidatura. 👋\n\nA **Group Software** está em busca de um(a) **Product Owner Pleno/Sênior** para atuar na evolução do seu portfólio SaaS Horizontal, composto por soluções de Folha de Pagamento, Ponto, RH, CRM e Financeiro, atendendo pequenas e médias empresas de todo o Brasil.\n\nBuscamos alguém apaixonado por produtos digitais, com visão de negócio, forte orientação ao cliente e que já esteja utilizando Inteligência Artificial para acelerar a descoberta, definição e evolução de produtos.\n\n**Como será seu dia a dia:**\n\n- Definir e priorizar o backlog dos produtos em conjunto com as áreas de negócio;\n- Construir e evoluir o roadmap alinhado à estratégia da empresa e às necessidades dos clientes;\n- Realizar entrevistas, pesquisas e validações com clientes para apoiar decisões de produto;\n- Especificar funcionalidades e acompanhar sua implementação junto ao time de desenvolvimento;\n- Trabalhar próximo aos times de Desenvolvimento, QA, Comercial, Atendimento e Marketing;\n- Acompanhar indicadores de uso, adoção e satisfação para orientar a evolução dos produtos;\n- Identificar oportunidades para utilização de Inteligência Artificial nos produtos;\n- Apoiar o lançamento de novas funcionalidades.\n## Group Software: \nTecnologia e gestão completa de propriedades | ERP | Condominial | Administradoras | Shoppings | RH e DP. Há 30 anos desenvolvendo tecnologia para transformar negócios, simplificar processos e criar novas possibilidades.\n\n[Veja mais no site](https://coodesh.com/companies/group-software)\n\n ## Habilidades: \n - Product Ownership\n- Discovery e Roadmap\n- Scrum / Kanban\n- SaaS B2B\n- Inteligência Artificial aplicada a produtos\n## Local: \n Belo Horizonte, Brasil (Presencial)\n## Requisitos: \n - Experiência como Product Owner, Product Manager ou funções similares em produtos digitais;\n- Vivência na construção e evolução de produtos SaaS B2B;\n- Experiência em discovery, levantamento de necessidades, validação de hipóteses e definição de roadmap;\n- Facilidade para transformar problemas de clientes em funcionalidades de alto valor;\n- Experiência com metodologias ágeis (Scrum, Kanban ou similares);\n- Familiaridade com ferramentas e recursos de Inteligência Artificial aplicados ao desenvolvimento de produtos;\n- Excelente capacidade analítica e comunicação com diferentes áreas da empresa;\n- Ensino superior completo.\n\n## Diferenciais: \n - Experiência com produtos para PME;\n- Conhecimento em RH, Departamento Pessoal, Gestão de Pessoas ou Controle de Ponto;\n- Experiência com CRM, ERP Financeiro ou sistemas de gestão empresarial;\n- Vivência em funcionalidades baseadas em IA Generativa, agentes de IA ou automações inteligentes;\n- Conhecimento em métricas de produto (adoção, engajamento, retenção e satisfação).\n\n## Benefícios: \n - VA/VR\n- Assistência médica e odontológica\n- Alura\n- Horário flexível\n- Groupies e Group Store\n- Vale cultura\n\n## Salário: \n R$ 9.000,00 - R$ 15.000,00 por mês\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Product Owner na Group Software](https://coodesh.com/jobs/product-owner-135201424?utm_source=github&utm_medium=programadores-br-geral&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Regime\nCLT\n#### Categoria\nGestão",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "dd563ddb971205be5c4127ca75c4d91874b23ff8a7737fa03214cd67d20deb89",
+      "repository": "programadores-br/geral",
+      "repositoryUrl": "https://github.com/programadores-br/geral",
       "region": "South America",
       "country": "Brazil",
       "sourceLocation": {
@@ -2007,78 +1963,67 @@
         "region": "South America"
       },
       "tags": [
+        "alocado",
         "clt",
-        "docker",
-        "estágio",
-        "júnior",
-        "pj",
-        "remoto",
-        "rest",
-        "spring"
+        "pleno",
+        "presencial",
+        "sênior"
       ],
       "sourceTags": [
+        "alocado",
         "clt",
-        "docker",
-        "estágio",
-        "júnior",
-        "pj",
-        "remoto",
-        "rest",
-        "spring"
+        "pleno",
+        "presencial",
+        "sênior"
       ],
       "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
       },
       "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
+        "id": "programadores-br",
+        "name": "programadores-br",
+        "avatarUrl": "https://github.com/programadores-br.png?size=80",
+        "repository": "programadores-br/geral",
+        "url": "https://github.com/programadores-br/geral"
       },
+      "companyName": "Coodesh",
       "salary": {
         "currency": "BRL",
-        "min": 3000,
-        "max": 4500,
+        "min": 9000,
+        "max": 15000,
         "period": "month"
       },
-      "createdAt": "2026-11-04T13:27:20Z",
-      "updatedAt": "2026-11-05T23:01:06Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1975",
+      "createdAt": "2026-11-03T17:19:12Z",
+      "updatedAt": "2026-11-03T17:19:33Z",
+      "url": "https://github.com/programadores-br/geral/issues/3128",
       "sourceType": "github-issue",
       "jobLocation": {
         "country": "Brazil",
         "countryCode": "BR",
         "region": "South America",
-        "city": "100%",
-        "subdivision": "NO",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "100%, NO · Remote worldwide",
+        "workModel": "on-site",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · On-site",
         "confidence": "explicit"
       },
       "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "docker",
-          "java",
-          "postgres",
-          "spring"
+        "areas": [
+          "product",
+          "qa"
         ],
+        "technologies": [],
         "seniority": [
-          "internship",
-          "junior"
+          "mid",
+          "senior"
         ],
         "employmentTypes": [
-          "contractor",
-          "employee",
-          "internship"
+          "employee"
         ],
         "workModels": [
-          "remote"
+          "on-site"
         ],
         "languages": []
       },
@@ -2090,19 +2035,19 @@
       },
       "sources": [
         {
-          "id": "gh_11c5ccdeb258bb1cac649506",
-          "sourceId": "soujava/vagas-java#1975",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1975",
-          "createdAt": "2026-11-04T13:27:20Z",
-          "updatedAt": "2026-11-05T23:01:06Z",
+          "id": "gh_30f0dda015de26670412f182",
+          "sourceId": "programadores-br/geral#3128",
+          "repository": "programadores-br/geral",
+          "repositoryUrl": "https://github.com/programadores-br/geral",
+          "url": "https://github.com/programadores-br/geral/issues/3128",
+          "createdAt": "2026-11-03T17:19:12Z",
+          "updatedAt": "2026-11-03T17:19:33Z",
           "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
+            "id": "programadores-br",
+            "name": "programadores-br",
+            "avatarUrl": "https://github.com/programadores-br.png?size=80",
+            "repository": "programadores-br/geral",
+            "url": "https://github.com/programadores-br/geral"
           }
         }
       ],
@@ -2110,8 +2055,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 8,
-        "publishedAt": "2026-11-04T13:27:20Z",
+        "ageDays": 9,
+        "publishedAt": "2026-11-03T17:19:12Z",
         "status": "fresh"
       }
     }

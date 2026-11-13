@@ -1,132 +1,6 @@
 {
-  "generatedAt": "2026-11-12T21:41:30.618Z",
+  "generatedAt": "2026-11-13T13:43:25.729Z",
   "items": {
-    "gh_b6d75d364f3ed3304897ef32": {
-      "id": "gh_b6d75d364f3ed3304897ef32",
-      "sourceId": "soujava/vagas-java#1976",
-      "title": "[Remoto] Desenvolvedor(a) Java Pleno (Atendimento por Chat) | Confidencial (vaga via Sylision)",
-      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nO back-end do chat de atendimento recebe mensagens do site, do aplicativo e de canais de mensagem, coloca cada conversa na fila certa, distribui entre atendentes disponíveis e entrega as mensagens em tempo real para os dois lados. Também guarda o histórico completo, mede o tempo de espera e de resposta e aciona o robô de primeiro atendimento antes de passar a conversa para uma pessoa. O serviço é escrito em Java com Spring Boot, e as conexões em tempo real ficam espalhadas por várias instâncias, então uma mensagem precisa chegar ao atendente certo, esteja ele conectado em qual instância estiver, sem duplicar e sem perder a ordem. A distribuição precisa respeitar o limite de conversas simultâneas de cada atendente e redistribuir quando alguém sai. Mensagens de canais externos chegam por webhook, às vezes repetidas e fora de ordem, e precisam ser normalizadas antes de entrar na conversa. A modelagem de conversa, fila e distribuição dentro do serviço fica sob sua responsabilidade.\n\n- Entregar mensagens em tempo real por WebSocket entre várias instâncias usando Redis\n- Garantir ordem e ausência de duplicidade nas mensagens de cada conversa\n- Implementar a distribuição de conversas por fila, habilidade e limite de cada atendente\n- Receber e normalizar mensagens de canais externos por webhook\n- Medir os tempos de espera e de resposta por fila\n- Integrar a passagem do robô de primeiro atendimento para o atendente\n- Escrever testes de integração com Testcontainers\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Java e Spring Boot em produção\n- WebSocket e comunicação em tempo real com várias instâncias\n- Redis para publicação e assinatura ou para estado compartilhado\n- PostgreSQL com modelagem de conversas e mensagens\n- Testes de integração que reproduzem várias instâncias conectadas\n- Autonomia para entregar funcionalidade completa e decidir dentro do serviço\n\n**Diferenciais:**\n- Ter trabalhado com chat, atendimento ou mensageria em tempo real\n- RabbitMQ ou Kafka\n- Integração com APIs de canais de mensagem\n- Observabilidade de conexões e de filas\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: R$ 5.000 a R$ 6.500 por mês.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-atendimento-por-chat-560?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
-      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga O back-end do chat de atendimento recebe mensagens do sit...",
-      "issueState": "open",
-      "contentHash": "7829b3471f6647bcc123b871b511e67f417ed8dc3caf6238156843037562aa11",
-      "repository": "soujava/vagas-java",
-      "repositoryUrl": "https://github.com/soujava/vagas-java",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "rabbitmq",
-        "redis",
-        "remoto",
-        "spring"
-      ],
-      "sourceTags": [
-        "clt",
-        "pj",
-        "pleno",
-        "postgresql",
-        "rabbitmq",
-        "redis",
-        "remoto",
-        "spring"
-      ],
-      "author": {
-        "id": "GiovaniPole0",
-        "name": "GiovaniPole0",
-        "handle": "GiovaniPole0",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
-      },
-      "community": {
-        "id": "soujava",
-        "name": "soujava",
-        "avatarUrl": "https://github.com/soujava.png?size=80",
-        "repository": "soujava/vagas-java",
-        "url": "https://github.com/soujava/vagas-java"
-      },
-      "salary": {
-        "currency": "BRL",
-        "min": 5000,
-        "max": 6500,
-        "period": "month"
-      },
-      "createdAt": "2026-11-06T12:44:35Z",
-      "updatedAt": "2026-11-06T12:44:53Z",
-      "url": "https://github.com/soujava/vagas-java/issues/1976",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "city": "100%",
-        "subdivision": "NO",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "100%, NO · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "java",
-          "postgres",
-          "redis",
-          "spring"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor",
-          "employee"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b6d75d364f3ed3304897ef32",
-          "sourceId": "soujava/vagas-java#1976",
-          "repository": "soujava/vagas-java",
-          "repositoryUrl": "https://github.com/soujava/vagas-java",
-          "url": "https://github.com/soujava/vagas-java/issues/1976",
-          "createdAt": "2026-11-06T12:44:35Z",
-          "updatedAt": "2026-11-06T12:44:53Z",
-          "community": {
-            "id": "soujava",
-            "name": "soujava",
-            "avatarUrl": "https://github.com/soujava.png?size=80",
-            "repository": "soujava/vagas-java",
-            "url": "https://github.com/soujava/vagas-java"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 6,
-        "publishedAt": "2026-11-06T12:44:35Z",
-        "status": "fresh"
-      }
-    },
     "gh_b69c178802ca1f80cb167848": {
       "id": "gh_b69c178802ca1f80cb167848",
       "sourceId": "pydevbr/vagas#50",
@@ -311,7 +185,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 186,
+        "ageDays": 187,
         "publishedAt": "2026-05-10T12:56:55Z",
         "status": "stale"
       }
