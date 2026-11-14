@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-13T21:08:07.624Z",
+  "generatedAt": "2026-11-14T12:47:28.824Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "8b17429dab3b291d742a28d0fbabb88a81c8549210a69f2303eafaec2e829d73",
+  "dataHash": "5b875636b8a7b20a8201be1ffc8c380ef63f0c56f8611e747454342cbce194a6",
   "items": [
+    {
+      "id": "gh_e2c0aa3fe4c117752db84897",
+      "sourceId": "ambicuity/New-Grad-Jobs#465",
+      "title": "Job data is stale: last scrape 2026-11-14T02:17:20.043043Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **259 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/43567218761. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **259 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "2668e0e11f93e64b7b5633fbe194355c1b1621e54e644698b6fd4cfaca933dd1",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-14T06:37:16Z",
+      "updatedAt": "2026-11-14T06:37:16Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/465",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_e62939c587998cbbfc01790e",
       "sourceId": "ambicuity/New-Grad-Jobs#464",
@@ -1775,66 +1833,6 @@
       "createdAt": "2026-03-02T23:39:34Z",
       "updatedAt": "2026-10-16T22:55:55Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/50",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_b2b5c1bdf51aad3bf07a6c52",
-      "sourceId": "ambicuity/New-Grad-Jobs#48",
-      "title": "[Beginner]: Add a test case for `normalize_date_string` in a new `tests/test_utils.py`",
-      "description": "### Description\nCreate a new file `tests/test_utils.py` and write tests for `normalize_date_string`, ensuring it translates 'Posted Yesterday' and '2 Days Ago' correctly.\n\n### Why it matters\nDate parsing is notoriously fragile. Having unit tests for human-readable date conversions prevents silent failures.\n\n### Acceptance Criteria\n- [ ] Create `tests/test_utils.py`\n- [ ] Add assertions for 'Today', 'Yesterday', and 'X Days Ago'\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description Create a new file `tests/test_utils.py` and write tests for `normalize_date_string`, ensuring it translates 'Posted Yesterday' and '2 Days Ago' correctly. ### Why it matters Date parsing is notoriously...",
-      "issueState": "closed",
-      "contentHash": "a7dd15e4d17c7e8889e1cd33c703fd445457a0fbe29b1c4fb285f589f3abc233",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:29Z",
-      "updatedAt": "2026-10-16T22:55:53Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/48",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
