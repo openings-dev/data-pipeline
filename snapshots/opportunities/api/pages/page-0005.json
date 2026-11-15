@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-15T10:14:28.333Z",
+  "generatedAt": "2026-11-15T18:19:36.085Z",
   "page": 5,
   "pageSize": 20,
   "nextPage": "api/pages/page-0006.json",
   "ids": [
+    "gh_94493c77be84aabfeeabe717",
     "gh_0da1549c7daf4a0c09a7d121",
     "gh_776da6cd16a3878a7aa6c3ac",
     "gh_f854256c35a417d8933cfcfe",
@@ -22,10 +23,103 @@
     "gh_0065133926adf9a786c1f458",
     "gh_3ad7bdc35204ea0ccc342af8",
     "gh_14809edc1bee697bfd43f43f",
-    "gh_d89e1cc41b9d704400c8843b",
-    "gh_734b65d4c7197d44b825b886"
+    "gh_d89e1cc41b9d704400c8843b"
   ],
   "items": [
+    {
+      "id": "gh_94493c77be84aabfeeabe717",
+      "sourceId": "ambicuity/New-Grad-Jobs#448",
+      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
+      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
+      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
+      "issueState": "open",
+      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "sourceTags": [
+        "needs-triage",
+        "priority: medium",
+        "type: bug"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-10-16T23:03:00Z",
+      "updatedAt": "2026-10-16T23:03:00Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "react"
+        ],
+        "seniority": [
+          "internship"
+        ],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_94493c77be84aabfeeabe717",
+          "sourceId": "ambicuity/New-Grad-Jobs#448",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
+          "createdAt": "2026-10-16T23:03:00Z",
+          "updatedAt": "2026-10-16T23:03:00Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 29,
+        "publishedAt": "2026-10-16T23:03:00Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_0da1549c7daf4a0c09a7d121",
       "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
@@ -112,7 +206,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 29,
+        "ageDays": 30,
         "publishedAt": "2026-10-16T16:34:38Z",
         "status": "fresh"
       }
@@ -463,6 +557,7 @@
         "formato-sugerido",
         "inglês",
         "javascript",
+        "link-quebrado",
         "linux",
         "python",
         "verificada",
@@ -473,6 +568,7 @@
         "formato-sugerido",
         "inglês",
         "javascript",
+        "link-quebrado",
         "linux",
         "python",
         "verificada",
@@ -493,7 +589,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:51:10Z",
-      "updatedAt": "2026-11-14T16:21:14Z",
+      "updatedAt": "2026-11-15T16:00:40Z",
       "url": "https://github.com/qa-brasil/vagas/issues/1285",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -557,7 +653,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12463",
           "createdAt": "2026-10-14T20:51:46Z",
-          "updatedAt": "2026-11-14T16:21:14Z",
+          "updatedAt": "2026-11-15T16:00:40Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -595,20 +691,20 @@
       },
       "tags": [
         "c++",
+        "formato-sugerido",
         "go",
         "java",
         "javascript",
-        "link-quebrado",
         "mongodb",
         "python",
         "verificada"
       ],
       "sourceTags": [
         "c++",
+        "formato-sugerido",
         "go",
         "java",
         "javascript",
-        "link-quebrado",
         "mongodb",
         "python",
         "verificada"
@@ -628,7 +724,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:46:23Z",
-      "updatedAt": "2026-11-14T15:27:34Z",
+      "updatedAt": "2026-11-15T16:00:43Z",
       "url": "https://github.com/backend-br/vagas/issues/12461",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -675,7 +771,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12461",
           "createdAt": "2026-10-14T20:46:23Z",
-          "updatedAt": "2026-11-14T15:27:34Z",
+          "updatedAt": "2026-11-15T16:00:43Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -1202,7 +1298,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:30:15Z",
-      "updatedAt": "2026-11-14T15:27:36Z",
+      "updatedAt": "2026-11-15T16:00:44Z",
       "url": "https://github.com/backend-br/vagas/issues/12452",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1250,7 +1346,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12452",
           "createdAt": "2026-10-14T20:30:15Z",
-          "updatedAt": "2026-11-14T15:27:36Z",
+          "updatedAt": "2026-11-15T16:00:44Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -1289,7 +1385,6 @@
       "tags": [
         "formato-sugerido",
         "gcp",
-        "link-quebrado",
         "python",
         "remoto",
         "verificada"
@@ -1297,7 +1392,6 @@
       "sourceTags": [
         "formato-sugerido",
         "gcp",
-        "link-quebrado",
         "python",
         "remoto",
         "verificada"
@@ -1317,7 +1411,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:28:54Z",
-      "updatedAt": "2026-11-14T15:27:36Z",
+      "updatedAt": "2026-11-15T16:00:47Z",
       "url": "https://github.com/backend-br/vagas/issues/12451",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1363,7 +1457,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12451",
           "createdAt": "2026-10-14T20:28:54Z",
-          "updatedAt": "2026-11-14T15:27:36Z",
+          "updatedAt": "2026-11-15T16:00:47Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -1402,10 +1496,10 @@
       "tags": [
         "alocado",
         "c++",
+        "formato-sugerido",
         "go",
         "java",
         "javascript",
-        "link-quebrado",
         "python",
         "typescript",
         "verificada"
@@ -1413,10 +1507,10 @@
       "sourceTags": [
         "alocado",
         "c++",
+        "formato-sugerido",
         "go",
         "java",
         "javascript",
-        "link-quebrado",
         "python",
         "typescript",
         "verificada"
@@ -1436,7 +1530,7 @@
       },
       "companyName": "Google",
       "createdAt": "2026-10-14T20:26:00Z",
-      "updatedAt": "2026-11-14T16:21:21Z",
+      "updatedAt": "2026-11-15T16:00:49Z",
       "url": "https://github.com/frontendbr/vagas/issues/8568",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1504,7 +1598,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12450",
           "createdAt": "2026-10-14T20:26:45Z",
-          "updatedAt": "2026-11-14T16:21:21Z",
+          "updatedAt": "2026-11-15T16:00:49Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -1723,7 +1817,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 31,
+        "ageDays": 32,
         "publishedAt": "2026-10-14T14:54:45Z",
         "status": "aging"
       }
@@ -2220,99 +2314,6 @@
       "freshness": {
         "ageDays": 35,
         "publishedAt": "2026-10-11T04:41:00Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_734b65d4c7197d44b825b886",
-      "sourceId": "SimplifyJobs/New-Grad-Positions#2981",
-      "title": "New Role",
-      "description": "### Link to Job Posting\n\nhttps://physicalreasoning.ai/join/member-of-research-staff-new-grad/\n\n### Company Name\n\nPhysical Reasoning\n\n### Job Title\n\nMember of Research Staff\n\n### Location\n\nRemote\n\n### What category does this job belong to?\n\nSoftware Engineering\n\n### Does this job offer sponsorship?\n\nOffers Sponsorship\n\n### Is this job posting currently accepting applications?\n\nYes\n\n### Advanced Degree Requirements\n\n- [ ] This position requires a Master's degree or higher\n\n### Email associated with your GitHub account (Optional)\n\n_No response_\n\n### Extra Notes (Optional)\n\nCool AI Lab https://www.linkedin.com/company/physical-reasoning",
-      "excerpt": "### Link to Job Posting https://physicalreasoning.ai/join/member-of-research-staff-new-grad/ ### Company Name Physical Reasoning ### Job Title Member of Research Staff ### Location Remote ### What category does this j...",
-      "issueState": "open",
-      "contentHash": "537e591c314a9a54f84a3d2277d5fc8e0558fea38ff256be5a8ef6a9bf86eb68",
-      "repository": "SimplifyJobs/New-Grad-Positions",
-      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "new_role"
-      ],
-      "sourceTags": [
-        "new_role"
-      ],
-      "author": {
-        "id": "adamkoch4221",
-        "name": "adamkoch4221",
-        "handle": "adamkoch4221",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/281675600?v=4"
-      },
-      "community": {
-        "id": "SimplifyJobs",
-        "name": "SimplifyJobs",
-        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-        "repository": "SimplifyJobs/New-Grad-Positions",
-        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-      },
-      "createdAt": "2026-10-10T05:20:14Z",
-      "updatedAt": "2026-10-10T05:20:14Z",
-      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2981",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [
-          "staff"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_734b65d4c7197d44b825b886",
-          "sourceId": "SimplifyJobs/New-Grad-Positions#2981",
-          "repository": "SimplifyJobs/New-Grad-Positions",
-          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
-          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2981",
-          "createdAt": "2026-10-10T05:20:14Z",
-          "updatedAt": "2026-10-10T05:20:14Z",
-          "community": {
-            "id": "SimplifyJobs",
-            "name": "SimplifyJobs",
-            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
-            "repository": "SimplifyJobs/New-Grad-Positions",
-            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 36,
-        "publishedAt": "2026-10-10T05:20:14Z",
         "status": "aging"
       }
     }
