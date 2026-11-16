@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-15T10:14:28.333Z",
+  "generatedAt": "2026-11-16T10:27:10.400Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 30,
-    "openIssues": 4,
-    "closedIssues": 26
+    "openIssues": 5,
+    "closedIssues": 25
   },
-  "dataHash": "09fb17a73cf225ba439a4cde0c99bdc4853abdb13a09b915fd8a91b14904142e",
+  "dataHash": "f7842209de586ca33ff8366156c662455c03440b8f97d0380c3b5a3da3c748e6",
   "items": [
+    {
+      "id": "gh_f4e29271a86dbdf43ff8fc16",
+      "sourceId": "ambicuity/New-Grad-Jobs#466",
+      "title": "Job data is stale: last scrape 2026-11-16T00:23:23.923178Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **378 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/43818588147. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **378 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "d317b6dcf21cf0d5de5ac3266bd9e86a077eb2e5f3207f0d59df969368adaab9",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-16T06:42:26Z",
+      "updatedAt": "2026-11-16T06:42:26Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/466",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_e2c0aa3fe4c117752db84897",
       "sourceId": "ambicuity/New-Grad-Jobs#465",
@@ -1773,66 +1831,6 @@
       "createdAt": "2026-03-02T23:39:39Z",
       "updatedAt": "2026-10-16T22:55:56Z",
       "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/52",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_c610675f1f00f13245688236",
-      "sourceId": "ambicuity/New-Grad-Jobs#50",
-      "title": "[Beginner]: Extract `countries` fallback list in `fetch_jobspy_jobs` to a constant",
-      "description": "### Description\nThe list of countries `[{'code': 'USA'...}, ...]` is hardcoded as a fallback in `fetch_jobspy_jobs`. Move this to a top-level constant `DEFAULT_JOBSPY_COUNTRIES`.\n\n### Why it matters\nConfiguration defaults shouldn't be hidden arbitrarily inside long functions.\n\n### Acceptance Criteria\n- [ ] Extract the fallback list to `DEFAULT_JOBSPY_COUNTRIES`\n- [ ] Reference the constant inside the `get()` fallback\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description The list of countries `[{'code': 'USA'...}, ...]` is hardcoded as a fallback in `fetch_jobspy_jobs`. Move this to a top-level constant `DEFAULT_JOBSPY_COUNTRIES`. ### Why it matters Configuration defau...",
-      "issueState": "closed",
-      "contentHash": "991725608be91ea09d98d942adcc027464ce436d75bdd0da358039780d8be4a3",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:34Z",
-      "updatedAt": "2026-10-16T22:55:55Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/50",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
