@@ -1,7 +1,18 @@
 {
-  "generatedAt": "2026-11-15T18:19:36.085Z",
+  "generatedAt": "2026-11-16T00:35:04.894Z",
   "retentionDays": 30,
   "runs": [
+    {
+      "startedAt": "2026-11-16T00:33:34.852Z",
+      "completedAt": "2026-11-16T00:35:04.894Z",
+      "durationMs": 90042,
+      "outcome": "healthy",
+      "communities": 187,
+      "successful": 187,
+      "failed": 0,
+      "noOpenings": 81,
+      "openOpportunities": 661
+    },
     {
       "startedAt": "2026-11-15T18:18:02.201Z",
       "completedAt": "2026-11-15T18:19:36.085Z",
@@ -1277,31 +1288,16 @@
       "failed": 0,
       "noOpenings": 73,
       "openOpportunities": 705
-    },
-    {
-      "startedAt": "2026-10-16T23:09:57.183Z",
-      "completedAt": "2026-10-16T23:11:34.994Z",
-      "durationMs": 97811,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 73,
-      "openOpportunities": 708
-    },
-    {
-      "startedAt": "2026-10-16T18:32:15.351Z",
-      "completedAt": "2026-10-16T18:34:00.073Z",
-      "durationMs": 104722,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 73,
-      "openOpportunities": 709
     }
   ],
   "days": [
+    {
+      "date": "2026-11-16",
+      "runs": 1,
+      "partialRuns": 0,
+      "failedCommunityRuns": 0,
+      "latestOpenOpportunities": 661
+    },
     {
       "date": "2026-11-15",
       "runs": 3,
@@ -1511,13 +1507,6 @@
       "partialRuns": 0,
       "failedCommunityRuns": 0,
       "latestOpenOpportunities": 695
-    },
-    {
-      "date": "2026-10-16",
-      "runs": 2,
-      "partialRuns": 0,
-      "failedCommunityRuns": 0,
-      "latestOpenOpportunities": 708
     }
   ]
 }
