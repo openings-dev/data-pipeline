@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-17T05:54:43.876Z",
+  "generatedAt": "2026-11-17T15:18:06.634Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "backend-br/vagas",
   "totals": {
     "opportunities": 30,
-    "openIssues": 29,
-    "closedIssues": 1
+    "openIssues": 28,
+    "closedIssues": 2
   },
-  "dataHash": "ab6f5b27b39b6a15e7c71e5c881ac73f0eccc53bbb02cdefa3889598fe9c4744",
+  "dataHash": "a02a1a473b9fc65f2573d53ad983c64e200768d1a272e44975f1d6502063606e",
   "items": [
     {
       "id": "gh_0031fc7e9077d48cbb294ce8",
@@ -379,6 +379,111 @@
       },
       "dataProvenance": {
         "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
+    {
+      "id": "gh_ba508d488cdde496ec146ac3",
+      "sourceId": "backend-br/vagas#12479",
+      "title": "[Híbrido] Desenvolvedor(a) Fullstack Java/React Pleno - Protege Cash",
+      "description": "### Sobre a empresa\n\n**Sobre a Beyond**\nA [Beyond ](https://www.imaginebeyond.com.br/)é uma consultoria de tecnologia que conecta pessoas desenvolvedoras a empresas do segmento financeiro ou logístico, cuidando da contratação e do acompanhamento dos profissionais alocados nos clientes. Nesta vaga, a Beyond é a empresa contratante nos primeiros 6 meses.\n\n**Sobre a Protege Cash (onde você vai atuar)**\nA [Protege Cash](https://www.protegecash.com.br/) é uma instituição de pagamento em fase de crescimento, com Internet Banking web e aplicativo mobile. Você vai fazer parte do time responsável pelos canais digitais, desenvolvendo do backend ao frontend e ao app, no dia a dia e nos projetos da Protege.\n\n**Como funciona a contratação**\n- **Primeiros 6 meses:** contratação PJ pela Beyond, com atuação alocada no time da Protege Cash.\n- **Após 6 meses:** internalização pela Protege Cash no regime CLT, passando a fazer parte do quadro de funcionários da empresa.\n\nÉ uma vaga com objetivo de efetivação: ela já nasce para que a pessoa se torne funcionária da Protege.\n\n### Site da empresa\n\nhttps://www.imaginebeyond.com.br/\n\n### Descrição da vaga\n\nBuscamos uma pessoa **desenvolvedora fullstack** com **base forte em backend Java** para construir e evoluir as soluções dos canais digitais de uma instituição de pagamento.\n\n**No dia a dia, você vai:**\n- Desenvolver e evoluir microsserviços em Java (Quarkus e/ou Spring Boot)\n- Desenhar a comunicação entre serviços, desacoplar fluxos síncronos com filas e garantir resiliência e idempotência nas operações\n- Trabalhar com AWS e containers, incluindo armazenamento de objetos, filas, políticas de acesso e dimensionamento de recursos\n- Desenvolver telas e funcionalidades no Internet Banking web, em React com TypeScript\n- Levar para o app mobile, em React Native, as mesmas funcionalidades e regras do Internet Banking, com a mesma qualidade nas duas frentes\n- Participar de code reviews, escrever testes automatizados e acompanhar a qualidade do código no SonarQube\n- Investigar incidentes em produção a partir de logs\n\nA empresa está em fase de crescimento, então o portfólio está em evolução constante e há espaço para propor soluções com autonomia.\n\n**Modelo híbrido:** 1 ~2x por semana presencial na Consolação, São Paulo (SP).\n\n### Requisitos\n\n**⚠️ Obrigatórios:**\n- Java em arquitetura de microsserviços, com Quarkus e/ou Spring Boot\n- Bancos relacionais e não relacionais (SQL Server e MongoDB)\n- Sistemas distribuídos: comunicação entre serviços, filas, cache, resiliência (retry, circuit breaker), idempotência e design stateless\n- AWS: armazenamento de objetos, filas e processamento assíncrono, políticas de acesso a buckets, dimensionamento de recursos em ambiente containerizado\n- Docker\n- Testes automatizados, code review, SonarQube, Git e CI/CD\n- Leitura de logs e investigação de incidentes em produção\n- React com TypeScript \n\n**⭐ Desejáveis:**\n- Node.js/NestJS\n- Kubernetes/Helm\n- Experiência com meios de pagamento, internet banking ou app bancário\n- Integrações com core bancário (ex.: Autbank, Matera)\n- Uso de assistentes de IA no desenvolvimento\n\n### Benefícios\n\nDurante os 6 meses de contratação PJ pela Beyond, não há pacote de benefícios. \n\nApós a internalização em CLT, a pessoa passa a contar com o pacote de benefícios da Protege Cash, **que será apresentado pela empresa no momento da efetivação.**\n\n### Faixa salarial\n\n_No response_\n\n### Nível\n\nPleno\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nHíbrido\n\n### Localização\n\nSão Paulo, SP\n\n### Como se candidatar\n\n**Candidate-se pelo link:** https://jobs.quickin.io/imaginebeyond/jobs/6a96c9871f00460012416067\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
+      "excerpt": "### Sobre a empresa **Sobre a Beyond** A [Beyond ](https://www.imaginebeyond.com.br/)é uma consultoria de tecnologia que conecta pessoas desenvolvedoras a empresas do segmento financeiro ou logístico, cuidando da cont...",
+      "issueState": "closed",
+      "contentHash": "5e805bb9f33999ae30c1a7363e4c745d987d251daa38cf8eb7b7719d1cc70b07",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "pj",
+        "pleno",
+        "node.js",
+        "java",
+        "aws",
+        "testes automatizados",
+        "mongodb",
+        "typescript"
+      ],
+      "sourceTags": [
+        "pj",
+        "pleno",
+        "node.js",
+        "java",
+        "aws",
+        "testes automatizados",
+        "mongodb",
+        "typescript"
+      ],
+      "author": {
+        "id": "yassobral",
+        "name": "yassobral",
+        "handle": "yassobral",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/285766893?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "createdAt": "2026-10-21T14:19:07Z",
+      "updatedAt": "2026-11-17T13:33:07Z",
+      "url": "https://github.com/backend-br/vagas/issues/12479",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "São Paulo",
+        "subdivision": "SP",
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "São Paulo, SP · Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "design",
+          "frontend",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "java",
+          "kubernetes",
+          "mongodb",
+          "nodejs",
+          "react",
+          "react-native",
+          "spring",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "hybrid",
+          "on-site"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
@@ -2490,93 +2595,6 @@
         ],
         "workModels": [
           "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_cb2ee2711308cdd4a5a45c69",
-      "sourceId": "backend-br/vagas#12292",
-      "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
-      "description": "## Nossa empresa\nA Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para negócios de todos os tamanhos. Nossa equipe de experts vive e respira o setor financeiro, atualizando nossas soluções constantemente para tornar suas operações mais digitais, melhorar a performance, inovar no atendimento aos clientes e garantir que todas as exigências regulatórias sejam 100% cumpridas.\n\nTodas as nossas oportunidades são inclusivas e abertas para pessoas com deficiência. 🌟\n\n## Descrição da vaga\n**DESAFIO**\nParticipar do desenvolvimento e manutenção de aplicações web utilizando ASP.NET, C#, JavaScript, e outras tecnologias relacionadas.\nImplementar e otimizar soluções utilizando HTML, CSS, Bootstrap, e JSon, garantindo alta performance e usabilidade.\nDesenvolver e manter banco de dados SQL Server, incluindo a criação e otimização de triggers, stored procedures e aplicação de regras de normalização.\nIntegrar e consumir WebServices (SOAP e REST) nas aplicações desenvolvidas.\nControlar as mudanças no desenvolvimento de software para assegurar a estabilidade e evolução contínua dos projetos.\nIdentificar e corrigir problemas no código, bem como propor melhorias e oportunidades de refatoração para manter a qualidade do software.\nColaborar com equipes multifuncionais para garantir que as soluções atendam aos requisitos de negócios e qualidade.\n\n## Local\nRemoto.\n\n## Requisitos\n\n**O que você precisa ter:**\n\n- Ensino superior completo ou em andamento em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas. \n- Entendimento de processos de desenvolvimento, qualidade e maturidade de software.\n- Experiência e conhecimento em Linguagem de programação: domínio de aplicação e entendimento de sintaxe e desempenho de linguagens como ASP.NET C#, Java script, Json, Bootstrap \n- Experiência com WEB JS/Jquery/Ajax, Webforms, Bootstrap, HTML, JSon e CSS, SQL Server, incluindo normalização, triggers, e stored procedures. \n- Conhecimento em SOAP e REST. \n- Habilidade analítica para detectar problemas e propor soluções eficazes. \n- Proatividade e boa comunicação para colaborar com diferentes equipes.\n\n## Benefícios\n🍽️ Auxílio Alimentação: para você escolher suas refeições com liberdade.\n👶Auxílio Creche: Para ajudar nas despesas dos pequenos.\n👶 Licença Maternidade e Paternidade Estendida: Mais tempo para aproveitar os momentos especiais.\n🏥 Assistência Médica SulAmérica: Cuidado completo para você e sua família.\n🛡️ Seguro de Vida e Funeral: Proteção garantida.\n🏡 Auxílio Home Office: Apoio financeiro para montar e manter seu espaço de trabalho em casa, com conforto e eficiência.\n💊 Descontos em Farmácias: Economize com o Univers.\n🎉 Day Off: Dia de folga no mês do seu aniversário para celebrar em grande estilo!\n\n## Contratação\nCLT.\n\n## Como se candidatar\nCurtiu o desafio e quer fazer parte do nosso time?\n\nPara se candidatar, basta enviar o seu currículo atualizado para o e-mail:\n📧 kerolayne.fbarros@dimensa.com.br\n\nDica: Coloque no assunto do e-mail: **Vaga ASP .NET** para localizarmos sua mensagem mais rápido!\n\n### Nível\n- Junior/Pleno\n\n### Regime\n- CLT\n\n### Alocação\n- Remoto",
-      "excerpt": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
-      "issueState": "open",
-      "contentHash": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "pleno",
-        "javascript",
-        ".net",
-        "java",
-        "remoto",
-        "sql",
-        "asp"
-      ],
-      "sourceTags": [
-        "clt",
-        "pleno",
-        "javascript",
-        ".net",
-        "java",
-        "remoto",
-        "sql",
-        "asp"
-      ],
-      "author": {
-        "id": "kerol-barros",
-        "name": "kerol-barros",
-        "handle": "kerol-barros",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-06-23T19:07:13Z",
-      "updatedAt": "2026-11-10T17:27:37Z",
-      "url": "https://github.com/backend-br/vagas/issues/12292",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "csharp",
-          "dotnet",
-          "java",
-          "javascript"
-        ],
-        "seniority": [
-          "junior",
-          "mid"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
           "remote"
         ],
         "languages": []

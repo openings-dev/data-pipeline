@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-11-17T05:54:43.876Z",
+  "generatedAt": "2026-11-17T15:18:06.634Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_b106f2949d8b088f5469d695",
+    "gh_adc1c777e4f9cf6aec97e6b6",
+    "gh_8b24e13e4d69ec1fb0057ab5",
     "gh_2513b5140da0430606c128cb",
     "gh_795475f7a94862e41dd972cf",
     "gh_8243aef70ac78e8ebee05121",
@@ -20,12 +23,325 @@
     "gh_5a902415db8ee28b548b9fd9",
     "gh_6b06d359ba85eb9e7a9f073d",
     "gh_8aa60993a3a4a325a9968338",
-    "gh_0031fc7e9077d48cbb294ce8",
-    "gh_a05345053129d5fdacb17cd4",
-    "gh_970db7bfc7cb32ee1cceed12",
-    "gh_ad6fa1af10e270554797a029"
+    "gh_0031fc7e9077d48cbb294ce8"
   ],
   "items": [
+    {
+      "id": "gh_b106f2949d8b088f5469d695",
+      "sourceId": "ambicuity/New-Grad-Jobs#467",
+      "title": "Job data is stale: last scrape 2026-11-17T09:07:26.026671Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **266 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/44093933556. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **266 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "552c69c7b7ecdbef63ee5e5764e1732136880b30e75b41e782fa607b98eb942d",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-17T13:33:49Z",
+      "updatedAt": "2026-11-17T13:33:49Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/467",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_b106f2949d8b088f5469d695",
+          "sourceId": "ambicuity/New-Grad-Jobs#467",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/467",
+          "createdAt": "2026-11-17T13:33:49Z",
+          "updatedAt": "2026-11-17T13:33:49Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-17T13:33:49Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_adc1c777e4f9cf6aec97e6b6",
+      "sourceId": "dotnetdevbr/vagas#1083",
+      "title": "[São Paulo] Desenvolvedor(a) Full Stack Sênior React & .NET [Beyond Soluções]",
+      "description": "## Nossa empresa\n\nA Beyond é uma consultoria de atração de talentos em tecnologia e está selecionando profissionais para atuar em um grande banco de investimento, em um projeto estratégico na área de direitos creditórios.\n\n➜ Beyond: https://www.imaginebeyond.com.br/\n\n## Descrição da vaga\n\nPlataforma em cloud (AWS), baseada em microsserviços, que cuida de todo o fluxo de compra de direitos creditórios, com muitas integrações, workflows de negócio em várias etapas e uso de IA para automação e apoio à tomada de decisão. Stack principal: React no front-end e APIs em .NET no back-end, com PostgreSQL, Docker, CI/CD e AWS.\n\n**Como será o dia a dia:**\n- Construir as telas em React que os times usam para acompanhar e operar cada etapa do fluxo.\n- Desenvolver as APIs em .NET que executam as regras de negócio e se integram a outros sistemas.\n- Participar do desenho de soluções e integrações, incluindo processamento assíncrono.\n- Garantir a qualidade com testes automatizados, em ambiente cloud-native na AWS.\n- Trabalhar junto com os times de Produto, Arquitetura e Dados.\n\n## Local\n\nHíbrido, com 2 dias presenciais por semana (quarta e sexta), São Paulo - Faria Lima\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiência sólida com React e desenvolvimento de APIs em .NET\n- Conhecimento em arquitetura, boas práticas (SOLID) e integrações\n- Experiência com bancos relacionais (PostgreSQL)\n- Vivência com Git, Docker, CI/CD e cloud (AWS)\n- Experiência com testes automatizados\n- Disponibilidade para atuar no modelo híbrido em São Paulo\n\n**Diferenciais:**\n- DDD, CQRS, Event Sourcing e arquitetura distribuída\n- Mensageria (SQS, RabbitMQ) e observabilidade\n- Experiência com Cognito/Azure AD\n- Uso de IA no desenvolvimento\n- Experiência em produtos financeiros ou workflows complexos\n- MongoDB\n- Inglês intermediário ou superior\n\n## Benefícios\n\n- VR/VA e Auxílio Mobilidade no valor de R$936,00 no FLASH;\n- Plano de Saúde;\n- Plano Odontológico (SulAmérica);\n- Seguro de Vida Individual; (Sem custos para o colaborador);\n- Programa de indicações! Você e sua indicação saem ganhando! Se sua indicação for contratada o prêmio é de R$500,00;\n- Wellhub e TotalPass;\n- Convenio com o Sesc que oferece acesso a programação como espetáculos de teatro, dança, música, artes visuais, cinema, literatura, oficinas, colônia de férias, atividades esportivas, serviços odontológicos, hotéis, passeios, entre outras atividades que compõem a gama de ações da Instituição.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nCandidate-se pelo link: https://jobs.quickin.io/imaginebeyond/jobs/6a918180e61d210013370583\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 7 dias após cada etapa.\nE-mail para contato em caso de não haver resposta: yasmin.sobral@imaginebeyond.com.br\n\n## Labels\n\n#### Alocação\n- Híbrido\n\n#### Regime\n- CLT\n\n#### Nível\n- Sênior\n\n#### Período\n- Full time",
+      "excerpt": "## Nossa empresa A Beyond é uma consultoria de atração de talentos em tecnologia e está selecionando profissionais para atuar em um grande banco de investimento, em um projeto estratégico na área de direitos creditóri...",
+      "issueState": "open",
+      "contentHash": "efbedec85e21adf54582fc3b458c2e4e2e4a2f1b26f672f35fde9e157febb48a",
+      "repository": "dotnetdevbr/vagas",
+      "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "full time",
+        "híbrido",
+        "sênior",
+        "🚦 awaiting triage"
+      ],
+      "sourceTags": [
+        "clt",
+        "full time",
+        "híbrido",
+        "sênior",
+        "🚦 awaiting triage"
+      ],
+      "author": {
+        "id": "yassobral",
+        "name": "yassobral",
+        "handle": "yassobral",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/285766893?v=4"
+      },
+      "community": {
+        "id": "dotnetdevbr",
+        "name": "dotnetdevbr",
+        "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
+        "repository": "dotnetdevbr/vagas",
+        "url": "https://github.com/dotnetdevbr/vagas"
+      },
+      "createdAt": "2026-11-17T13:21:59Z",
+      "updatedAt": "2026-11-17T13:22:21Z",
+      "url": "https://github.com/dotnetdevbr/vagas/issues/1083",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "hybrid",
+        "remoteScope": "unspecified",
+        "displayText": "Hybrid",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "frontend",
+          "fullstack"
+        ],
+        "technologies": [
+          "aws",
+          "azure",
+          "docker",
+          "dotnet",
+          "mongodb",
+          "postgres",
+          "react"
+        ],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee",
+          "full-time"
+        ],
+        "workModels": [
+          "hybrid"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_adc1c777e4f9cf6aec97e6b6",
+          "sourceId": "dotnetdevbr/vagas#1083",
+          "repository": "dotnetdevbr/vagas",
+          "repositoryUrl": "https://github.com/dotnetdevbr/vagas",
+          "url": "https://github.com/dotnetdevbr/vagas/issues/1083",
+          "createdAt": "2026-11-17T13:21:59Z",
+          "updatedAt": "2026-11-17T13:22:21Z",
+          "community": {
+            "id": "dotnetdevbr",
+            "name": "dotnetdevbr",
+            "avatarUrl": "https://github.com/dotnetdevbr.png?size=80",
+            "repository": "dotnetdevbr/vagas",
+            "url": "https://github.com/dotnetdevbr/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-17T13:21:59Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_8b24e13e4d69ec1fb0057ab5",
+      "sourceId": "soujava/vagas-java#1982",
+      "title": "[Remoto] Desenvolvedor Java Pleno - Spring Boot - pedidos pagamentos | Confidencial (vaga via Sylision)",
+      "description": "## Nossa empresa\n\nConfidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision.\n\n## Descrição da vaga\n\nAtuacao em produtos de pagamentos, no projeto de pedidos e conciliacao. O foco desta posicao e servicos transacionais e eventos, com Java e Spring Boot. O problema de negocio e reconciliacao de recebimentos e rastreabilidade de eventos financeiros. A selecao e conduzida pela Sylision para contratante confidencial; os detalhes da contratacao e do time sao tratados no processo seletivo.\n\n\n\n## Local\n\n100% remoto, no Brasil\n\n## Requisitos\n\n**Obrigatórios:**\n- Experiencia pratica com Java, Spring Boot, Kafka, PostgreSQL, compativel com o nivel pleno.\n- Capacidade de explicar decisoes tecnicas aplicadas a pedidos e conciliacao, incluindo alternativas e limitacoes.\n- Experiencia com testes automatizados, controle de versao e revisao de codigo.\n- Atencao a seguranca, diagnostico de erros e tratamento de dados no contexto de produtos de pagamentos.\n\n**Diferenciais:**\n- não informado\n\n## Benefícios\n\n- Ambiente colaborativo, com senso de comunidade e conquistas celebradas em equipe\n- Trabalhe de qualquer lugar, com liberdade e flexibilidade\n- Conexão global: convivência com times de diferentes países e culturas\n- Apoio à saúde física com TotalPass e Mediquo\n- Cuidado com a saúde mental pelo programa Team Care\n- Contratação e jornada definidas com a empresa contratante\n\n## Contratação\n\nCLT ou PJ. Faixa salarial: a combinar.\n\n## Como se candidatar\n\nPela página da vaga: https://www.sylision.com/vagas/desenvolvedor-java-pleno-1769?utm_source=github&utm_medium=comunidade&utm_campaign=soujava\n\n## Tempo médio de feedbacks\n\nContato para retorno do processo: giovani.poleto@sylision.com\n\nEsta issue é encerrada quando a vaga fecha ou em até 28 dias.",
+      "excerpt": "## Nossa empresa Confidencial (vaga via Sylision): a empresa contratante não é nomeada neste anúncio. A seleção é conduzida pela Sylision. ## Descrição da vaga Atuacao em produtos de pagamentos, no projeto de pedidos ...",
+      "issueState": "open",
+      "contentHash": "5ec1dba4e562f01c444e56ef1fb09c962b788aa586ae0e9ca7fc4f90460cb0bd",
+      "repository": "soujava/vagas-java",
+      "repositoryUrl": "https://github.com/soujava/vagas-java",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "java",
+        "pj",
+        "pleno",
+        "postgresql",
+        "remoto",
+        "spring"
+      ],
+      "sourceTags": [
+        "clt",
+        "java",
+        "pj",
+        "pleno",
+        "postgresql",
+        "remoto",
+        "spring"
+      ],
+      "author": {
+        "id": "GiovaniPole0",
+        "name": "GiovaniPole0",
+        "handle": "GiovaniPole0",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/51893630?v=4"
+      },
+      "community": {
+        "id": "soujava",
+        "name": "soujava",
+        "avatarUrl": "https://github.com/soujava.png?size=80",
+        "repository": "soujava/vagas-java",
+        "url": "https://github.com/soujava/vagas-java"
+      },
+      "createdAt": "2026-11-17T13:06:55Z",
+      "updatedAt": "2026-11-17T13:07:13Z",
+      "url": "https://github.com/soujava/vagas-java/issues/1982",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "city": "100%",
+        "subdivision": "NO",
+        "workModel": "remote",
+        "remoteScope": "global",
+        "displayText": "100%, NO · Remote worldwide",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [
+          "java",
+          "postgres",
+          "spring"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor",
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_8b24e13e4d69ec1fb0057ab5",
+          "sourceId": "soujava/vagas-java#1982",
+          "repository": "soujava/vagas-java",
+          "repositoryUrl": "https://github.com/soujava/vagas-java",
+          "url": "https://github.com/soujava/vagas-java/issues/1982",
+          "createdAt": "2026-11-17T13:06:55Z",
+          "updatedAt": "2026-11-17T13:07:13Z",
+          "community": {
+            "id": "soujava",
+            "name": "soujava",
+            "avatarUrl": "https://github.com/soujava.png?size=80",
+            "repository": "soujava/vagas-java",
+            "url": "https://github.com/soujava/vagas-java"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-17T13:06:55Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_2513b5140da0430606c128cb",
       "sourceId": "rebase-network/who-is-hiring#1351",
@@ -249,7 +565,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-16T13:00:40Z",
         "status": "fresh"
       }
@@ -378,7 +694,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-16T10:28:27Z",
         "status": "fresh"
       }
@@ -491,7 +807,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-15T13:42:09Z",
         "status": "fresh"
       }
@@ -692,7 +1008,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-12T13:58:38Z",
         "status": "fresh"
       }
@@ -888,7 +1204,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-11T12:46:19Z",
         "status": "fresh"
       }
@@ -968,7 +1284,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 5,
+        "ageDays": 6,
         "publishedAt": "2026-11-11T09:31:22Z",
         "status": "fresh"
       }
@@ -1010,7 +1326,7 @@
         "url": "https://github.com/rebase-network/who-is-hiring"
       },
       "createdAt": "2026-11-11T02:48:25Z",
-      "updatedAt": "2026-11-11T02:48:25Z",
+      "updatedAt": "2026-11-17T11:05:21Z",
       "url": "https://github.com/rebase-network/who-is-hiring/issues/1349",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -1043,7 +1359,7 @@
           "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
           "url": "https://github.com/rebase-network/who-is-hiring/issues/1349",
           "createdAt": "2026-11-11T02:48:25Z",
-          "updatedAt": "2026-11-11T02:48:25Z",
+          "updatedAt": "2026-11-17T11:05:21Z",
           "community": {
             "id": "rebase-network",
             "name": "rebase-network",
@@ -1827,322 +2143,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-09T12:03:33Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_a05345053129d5fdacb17cd4",
-      "sourceId": "rebase-network/who-is-hiring#1344",
-      "title": "【全球远程 远程办公 居家办公 FineStar】 高级运维工程师 SRE  k8s 【各类开发 AI短剧剪辑 生成师 职能类】30-40k",
-      "description": "运维工程师（SRE / 混合云）2人 🔥—-远程办公 远程工作 居家办公🔥\nBase：远程 【人在 非中国大陆】\n团队与技术环境\n\n* 混合云架构：负责 AWS 公有云与私有物理机房的深度整合与资源调度。\n* K8s：多套集群并存，雲地K8S整合\n* GPU 算力：多種類型GPU混合搭配維運\n* 流水线建设：构建并维护自动化 CI/CD 流程，提升代码交付效率。\n* 网络规划：负责全球业务的CDN 加速, VPN 组网及跨机房网络安全规划。\n* 可观测性：Prometheus/VictoriaMetrics、Grafana、Alertmanager、Loki、Sentry、PMM、OTEL。\n\n岗位职责\n\n1. 混合云架构\n* 负责 AWS 和自建机房的整合与资源调度，规划跨云、跨机房的服务迁移、容量和成本。\n* 管理 Proxmox 虚拟化平台的模板、迁移和存储，处理物理机上下架。\n2. 容器化运维\n* 管理多套 K8s 集群的升级、节点扩缩、网络和存储。\n* 保障核心服务的高可用。\n3. GPU 集群运维\n* 负责 NVIDIA driver、CUDA、gpu-operator 的版本管理。\n* 处理 GPU 故障，例如 Xid、掉卡、功耗；做推理/訓練服务的资源调度和镜像分发。\n4. 安全与数据保护\n* 实施加密存储、密钥与证书管理（轮换、最小权限）和数据脱敏。\n* 负责 SSH/堡垒机访问控制，以及 CI/CD 供应链安全（Runner 隔离、Token 治理）。\n5. 监控与事件处理\n* 建设告警体系并治理告警缺口。\n* 主导故障排查、根因分析（RCA）和入侵事件应急响应，含取证、止血、加固。\n\n任职资格\n* 5 年以上运维/SRE 经验，有混合云或自建机房的实战经验，38岁以下。\n* 精通 K8s 和 Docker，熟悉 Terraform、Ansible、Helm，理解 GitOps。\n* 深耕 AWS 核心服务（VPC、EKS、EC2、S3、IAM），有多账号治理和成本优化经验。\n* 熟悉 Linux 内核和系统排障，熟悉 TCP/IP、DNS、TLS 和 HTTP。\n* 有处理敏感数据加密、静态存储加密（Encryption at Rest）的实际案例，熟悉 KMS、SOPS、Sealed Secrets、KSO 这类方案。\n* 熟练使用 Python、Go 或 Bash 开发自动化工具，能自己写 operator 或 bot 的优先。\n* 能接受远程协作和 on-call，文档和沟通习惯良好。\n\n加分项\n\n* 有 NVIDIA GPU 集群运维经验，包括 driver、MIG/time-slicing、RDMA、DCGM 监控。\n* 熟悉 Proxmox/KVM、Ceph/ZFS、NFS 等存储。\n* 有数据库运维经验：MySQL 高可用、备份还原、ClickHouse/MongoDB 调优。\n* 有安全事件应急响应经验，例如挖矿、后门、凭证外泄，或做过 CIS/K8s 加固。\n* 熟悉 Cloudflare 全家桶，或 CDN 自建过节点。\n==\n远程工作 远程办公 居家远程办公  remote WFH 岗位：\nAIGC 视频生成师，短剧学徒，AI生成师，视频剪辑师，AIGC 视频导演，高级剪辑，内容视频剪辑，AI短剧负责人，AI短剧编剧，AI视频制作，AI视频创作，短剧编剧，舆情与危机公关负责人 ，内容策划，AI 视频生成，视频生成师，视频生成专员，动漫短剧编剧，内容编辑，\n\nUI/UX设计，素材设计，平面设计，编剧 / 剧本策划，招聘专员，ssc，行政，助理，财务/财务数据分析/审计，商务经理/海外商务总监，投放专员，销售专员，初级编辑，资料员，业务培训专家，业务萃取专家，HR助理（HRBP方向），HRBP，业务审查员等。\n\nAgent架构师，AI应用工程师，二次元内容运营，AI视频剪辑师（短剧/影视二创），AI视频内容工程师（AI短剧/AIGC），内容运营，AI短剧编剧，国内新媒体运营，中高级运营专员（创作者社区运营），社区运营，AI内容工程师，高级Go后端工程师，前端工程师， AI/直播前端工程师，AI测试， AI视频设计师，游戏广告素材设计师， 项目经理，数据分析师，运维工程师，资深活动运营（游戏方向），游戏安全运维，游戏平台，游戏系统策划（PO主管），系统策划，AI应用后端工程师（AI Agent方向），高级算法工程师，效能官，督查官，数据工程师（数据采集方向）；\n\nSEO运营，增长运营，新媒体运营，社区运营，初中高级运营，用户增长运营，KOL投放增长运营，运营主管/总监，海外社媒运营，站点运营，中级运营（海外私域流量运营），高级运营(交友，AI，直播，影视)，运营专员（偏剪辑），初级运营专员（剪辑文案方向）；\n法定节假日放假，不实名，春节12天，年假12天\n\n==\n更多职位看 频道 ，谢谢！！！\n\n公司：FineStar 是一家全球化信息技术企业，总部设于英国伦敦，在中国台北、日本东京、新加坡、吉隆坡、台湾、洛杉矶等设立分支机构，全球员工规模超 1500 人。 我们是主流媒体、视频平台、线上社区论坛的一站式综合服务商。公司不止交付标准化产品，更输出创新、差异化的运营思路，助力客户实现业务高速增长与品牌升级转型。依托深厚的行业技术积淀，我们持续打磨创新方案，打造超出预期的落地成果，面向全球客户提供高品质服务体验与完整 IT 解决方案。 公司核心管理团队深耕 Web 业务及多赛道产品运营，行业经验丰富；同时组建了一支高素质的数据、创意与技术研发人才队伍。\n薪资以及其他说明：薪资发u，远程，不实名，不压工资。每日工作9小时左右。工资准时发。单休，法定正常放假，春节12天，年假12天。\n\n我的TG： @remote0007_jobs\nTG频道/JD： @remote0007\n绿泡泡： rockynn1020\n邮箱： zzl_6544@sina.com",
-      "excerpt": "运维工程师（SRE / 混合云）2人 🔥—-远程办公 远程工作 居家办公🔥 Base：远程 【人在 非中国大陆】 团队与技术环境 * 混合云架构：负责 AWS 公有云与私有物理机房的深度整合与资源调度。 * K8s：多套集群并存，雲地K8S整合 * GPU 算力：多種類型GPU混合搭配維運 * 流水线建设：构建并维护自动化 CI/CD 流程，提升代码交付效率。 * 网络规划：负责全球业务的CDN 加速, VPN 组网及跨机房网...",
-      "issueState": "open",
-      "contentHash": "b98d2f24cde255ab8539f8a1c8356af83d4d6d19387d96962e033a89b47ea865",
-      "repository": "rebase-network/who-is-hiring",
-      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "python",
-        "remote"
-      ],
-      "sourceTags": [
-        "python",
-        "remote"
-      ],
-      "author": {
-        "id": "zzl654466725-crypto",
-        "name": "zzl654466725-crypto",
-        "handle": "zzl654466725-crypto",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/272100286?v=4"
-      },
-      "community": {
-        "id": "rebase-network",
-        "name": "rebase-network",
-        "avatarUrl": "https://github.com/rebase-network.png?size=80",
-        "repository": "rebase-network/who-is-hiring",
-        "url": "https://github.com/rebase-network/who-is-hiring"
-      },
-      "createdAt": "2026-11-09T09:46:14Z",
-      "updatedAt": "2026-11-09T09:46:14Z",
-      "url": "https://github.com/rebase-network/who-is-hiring/issues/1344",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "devops-sre"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "go",
-          "kubernetes",
-          "mongodb",
-          "mysql",
-          "python",
-          "terraform"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_a05345053129d5fdacb17cd4",
-          "sourceId": "rebase-network/who-is-hiring#1344",
-          "repository": "rebase-network/who-is-hiring",
-          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
-          "url": "https://github.com/rebase-network/who-is-hiring/issues/1344",
-          "createdAt": "2026-11-09T09:46:14Z",
-          "updatedAt": "2026-11-09T09:46:14Z",
-          "community": {
-            "id": "rebase-network",
-            "name": "rebase-network",
-            "avatarUrl": "https://github.com/rebase-network.png?size=80",
-            "repository": "rebase-network/who-is-hiring",
-            "url": "https://github.com/rebase-network/who-is-hiring"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-11-09T09:46:14Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_970db7bfc7cb32ee1cceed12",
-      "sourceId": "awesome-jobs/vietnam#5100",
-      "title": "[REMOTE 2nd job] 70tr gross | Data Engineer 5+ yoe (Oracle Fusion) | Làm giờ hành chính VN",
-      "description": "REQUIREMENTS\n• Five or more years with Oracle ERP data, including at least two years extracting from Oracle Fusion Cloud.\n• Hands-on Business Intelligence Cloud Connector work: offerings, public view objects, incremental extract settings.\n• Good knowledge of the Fusion financial data model, especially the Subledger Accounting (XLA) and General Ledger tables.\n• Experience with E-Business Suite R12 table structures.\n• Strong SQL and enough Python to automate file handling and loads.\n\nTechdy Recruitment | Whatsapp/Tel/Zalo (+84)332.022.055 | contact@techdy.vn | https://www.linkedin.com/in/tan-dat-vuong-626470423",
-      "excerpt": "REQUIREMENTS • Five or more years with Oracle ERP data, including at least two years extracting from Oracle Fusion Cloud. • Hands-on Business Intelligence Cloud Connector work: offerings, public view objects, incremen...",
-      "issueState": "open",
-      "contentHash": "6e77a503b9938407e1d6a795b8e89284b746433c7167bf045fdec6a1f4d23618",
-      "repository": "awesome-jobs/vietnam",
-      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "data",
-        "python",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "python",
-        "remote"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/vietnam",
-        "url": "https://github.com/awesome-jobs/vietnam"
-      },
-      "createdAt": "2026-11-09T06:23:51Z",
-      "updatedAt": "2026-11-09T06:23:51Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_970db7bfc7cb32ee1cceed12",
-          "sourceId": "awesome-jobs/vietnam#5100",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
-          "createdAt": "2026-11-09T06:23:51Z",
-          "updatedAt": "2026-11-09T06:23:51Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        },
-        {
-          "id": "gh_a82f971db8b3504b78ec0a17",
-          "sourceId": "awesome-jobs/jobs#5100",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
-          "createdAt": "2026-11-09T06:23:51Z",
-          "updatedAt": "2026-11-09T06:23:51Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 7,
-        "publishedAt": "2026-11-09T06:23:51Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_ad6fa1af10e270554797a029",
-      "sourceId": "TechnologyMasters/jobs#733",
-      "title": "LookoutAI (recruiting for a client) - Forward Deployed Engineer - San Francisco, CA (in office) - $180,000-$300,000 USD/year",
-      "description": "Our client is hiring a Forward Deployed Engineer to deploy its AI product inside customer environments: working directly with customer teams to configure and troubleshoot implementations, partnering with go-to-market and client leads on technical deployments, and contributing to core product work.\n\n- Role: Forward Deployed Engineer (customer deployment plus core engineering)\n- Location: San Francisco, CA - full-time, in office; global travel to customer sites as needed\n- Salary: $180,000-$300,000 per year; equity 0.1%-0.5%\n- Experience: 1-5 years\n- Work authorization: Visa sponsorship available\n- Schedule: High-intensity (9-9-6)\n- Benefits: Relocation assistance; health, medical and dental\n\nFull JD: https://drive.google.com/file/d/1zvPZDxBvgrF15iy-WrlIthwiILg2PJLr/view\n\nHow to apply: Email your CV to hari.m@lookoutai.io.",
-      "excerpt": "Our client is hiring a Forward Deployed Engineer to deploy its AI product inside customer environments: working directly with customer teams to configure and troubleshoot implementations, partnering with go-to-market ...",
-      "issueState": "open",
-      "contentHash": "f651715ce2fa6904a3f4d3ac3da70032bfa0f3621821a01840731c31a7aa1a7a",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "rhaghav03",
-        "name": "rhaghav03",
-        "handle": "rhaghav03",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220156934?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "salary": {
-        "currency": "USD",
-        "min": 180000,
-        "max": 300000,
-        "period": "year"
-      },
-      "createdAt": "2026-11-08T04:27:00Z",
-      "updatedAt": "2026-11-08T04:27:00Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/733",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global",
-        "city": "San Francisco",
-        "subdivision": "CA",
-        "displayText": "San Francisco, CA",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [
-          "go"
-        ],
-        "seniority": [],
-        "employmentTypes": [
-          "full-time"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_ad6fa1af10e270554797a029",
-          "sourceId": "TechnologyMasters/jobs#733",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/733",
-          "createdAt": "2026-11-08T04:27:00Z",
-          "updatedAt": "2026-11-08T04:27:00Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 9,
-        "publishedAt": "2026-11-08T04:27:00Z",
         "status": "fresh"
       }
     }

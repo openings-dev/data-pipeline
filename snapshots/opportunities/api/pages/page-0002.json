@@ -1,9 +1,12 @@
 {
-  "generatedAt": "2026-11-17T05:54:43.876Z",
+  "generatedAt": "2026-11-17T15:18:06.634Z",
   "page": 2,
   "pageSize": 20,
   "nextPage": "api/pages/page-0003.json",
   "ids": [
+    "gh_a05345053129d5fdacb17cd4",
+    "gh_970db7bfc7cb32ee1cceed12",
+    "gh_ad6fa1af10e270554797a029",
     "gh_db971604de6e581af15971a7",
     "gh_7e00452720eb21e53866702d",
     "gh_5e371ac29287a1e60fe77ff4",
@@ -20,12 +23,323 @@
     "gh_26e0391744b678d0f0b1569f",
     "gh_2ab32c94b1bcf6d5363fdebe",
     "gh_3aa462f04fe7bf10a982181a",
-    "gh_1dbe4360df75638f5a0799c7",
-    "gh_9c25b798ad552710cb428e33",
-    "gh_e31e0f0f47c698e1c0d5a6d9",
-    "gh_484b4bfff912b720db1a2be5"
+    "gh_1dbe4360df75638f5a0799c7"
   ],
   "items": [
+    {
+      "id": "gh_a05345053129d5fdacb17cd4",
+      "sourceId": "rebase-network/who-is-hiring#1344",
+      "title": "【全球远程 远程办公 居家办公 FineStar】 高级运维工程师 SRE  k8s 【各类开发 AI短剧剪辑 生成师 职能类】30-40k",
+      "description": "运维工程师（SRE / 混合云）2人 🔥—-远程办公 远程工作 居家办公🔥\nBase：远程 【人在 非中国大陆】\n团队与技术环境\n\n* 混合云架构：负责 AWS 公有云与私有物理机房的深度整合与资源调度。\n* K8s：多套集群并存，雲地K8S整合\n* GPU 算力：多種類型GPU混合搭配維運\n* 流水线建设：构建并维护自动化 CI/CD 流程，提升代码交付效率。\n* 网络规划：负责全球业务的CDN 加速, VPN 组网及跨机房网络安全规划。\n* 可观测性：Prometheus/VictoriaMetrics、Grafana、Alertmanager、Loki、Sentry、PMM、OTEL。\n\n岗位职责\n\n1. 混合云架构\n* 负责 AWS 和自建机房的整合与资源调度，规划跨云、跨机房的服务迁移、容量和成本。\n* 管理 Proxmox 虚拟化平台的模板、迁移和存储，处理物理机上下架。\n2. 容器化运维\n* 管理多套 K8s 集群的升级、节点扩缩、网络和存储。\n* 保障核心服务的高可用。\n3. GPU 集群运维\n* 负责 NVIDIA driver、CUDA、gpu-operator 的版本管理。\n* 处理 GPU 故障，例如 Xid、掉卡、功耗；做推理/訓練服务的资源调度和镜像分发。\n4. 安全与数据保护\n* 实施加密存储、密钥与证书管理（轮换、最小权限）和数据脱敏。\n* 负责 SSH/堡垒机访问控制，以及 CI/CD 供应链安全（Runner 隔离、Token 治理）。\n5. 监控与事件处理\n* 建设告警体系并治理告警缺口。\n* 主导故障排查、根因分析（RCA）和入侵事件应急响应，含取证、止血、加固。\n\n任职资格\n* 5 年以上运维/SRE 经验，有混合云或自建机房的实战经验，38岁以下。\n* 精通 K8s 和 Docker，熟悉 Terraform、Ansible、Helm，理解 GitOps。\n* 深耕 AWS 核心服务（VPC、EKS、EC2、S3、IAM），有多账号治理和成本优化经验。\n* 熟悉 Linux 内核和系统排障，熟悉 TCP/IP、DNS、TLS 和 HTTP。\n* 有处理敏感数据加密、静态存储加密（Encryption at Rest）的实际案例，熟悉 KMS、SOPS、Sealed Secrets、KSO 这类方案。\n* 熟练使用 Python、Go 或 Bash 开发自动化工具，能自己写 operator 或 bot 的优先。\n* 能接受远程协作和 on-call，文档和沟通习惯良好。\n\n加分项\n\n* 有 NVIDIA GPU 集群运维经验，包括 driver、MIG/time-slicing、RDMA、DCGM 监控。\n* 熟悉 Proxmox/KVM、Ceph/ZFS、NFS 等存储。\n* 有数据库运维经验：MySQL 高可用、备份还原、ClickHouse/MongoDB 调优。\n* 有安全事件应急响应经验，例如挖矿、后门、凭证外泄，或做过 CIS/K8s 加固。\n* 熟悉 Cloudflare 全家桶，或 CDN 自建过节点。\n==\n远程工作 远程办公 居家远程办公  remote WFH 岗位：\nAIGC 视频生成师，短剧学徒，AI生成师，视频剪辑师，AIGC 视频导演，高级剪辑，内容视频剪辑，AI短剧负责人，AI短剧编剧，AI视频制作，AI视频创作，短剧编剧，舆情与危机公关负责人 ，内容策划，AI 视频生成，视频生成师，视频生成专员，动漫短剧编剧，内容编辑，\n\nUI/UX设计，素材设计，平面设计，编剧 / 剧本策划，招聘专员，ssc，行政，助理，财务/财务数据分析/审计，商务经理/海外商务总监，投放专员，销售专员，初级编辑，资料员，业务培训专家，业务萃取专家，HR助理（HRBP方向），HRBP，业务审查员等。\n\nAgent架构师，AI应用工程师，二次元内容运营，AI视频剪辑师（短剧/影视二创），AI视频内容工程师（AI短剧/AIGC），内容运营，AI短剧编剧，国内新媒体运营，中高级运营专员（创作者社区运营），社区运营，AI内容工程师，高级Go后端工程师，前端工程师， AI/直播前端工程师，AI测试， AI视频设计师，游戏广告素材设计师， 项目经理，数据分析师，运维工程师，资深活动运营（游戏方向），游戏安全运维，游戏平台，游戏系统策划（PO主管），系统策划，AI应用后端工程师（AI Agent方向），高级算法工程师，效能官，督查官，数据工程师（数据采集方向）；\n\nSEO运营，增长运营，新媒体运营，社区运营，初中高级运营，用户增长运营，KOL投放增长运营，运营主管/总监，海外社媒运营，站点运营，中级运营（海外私域流量运营），高级运营(交友，AI，直播，影视)，运营专员（偏剪辑），初级运营专员（剪辑文案方向）；\n法定节假日放假，不实名，春节12天，年假12天\n\n==\n更多职位看 频道 ，谢谢！！！\n\n公司：FineStar 是一家全球化信息技术企业，总部设于英国伦敦，在中国台北、日本东京、新加坡、吉隆坡、台湾、洛杉矶等设立分支机构，全球员工规模超 1500 人。 我们是主流媒体、视频平台、线上社区论坛的一站式综合服务商。公司不止交付标准化产品，更输出创新、差异化的运营思路，助力客户实现业务高速增长与品牌升级转型。依托深厚的行业技术积淀，我们持续打磨创新方案，打造超出预期的落地成果，面向全球客户提供高品质服务体验与完整 IT 解决方案。 公司核心管理团队深耕 Web 业务及多赛道产品运营，行业经验丰富；同时组建了一支高素质的数据、创意与技术研发人才队伍。\n薪资以及其他说明：薪资发u，远程，不实名，不压工资。每日工作9小时左右。工资准时发。单休，法定正常放假，春节12天，年假12天。\n\n我的TG： @remote0007_jobs\nTG频道/JD： @remote0007\n绿泡泡： rockynn1020\n邮箱： zzl_6544@sina.com",
+      "excerpt": "运维工程师（SRE / 混合云）2人 🔥—-远程办公 远程工作 居家办公🔥 Base：远程 【人在 非中国大陆】 团队与技术环境 * 混合云架构：负责 AWS 公有云与私有物理机房的深度整合与资源调度。 * K8s：多套集群并存，雲地K8S整合 * GPU 算力：多種類型GPU混合搭配維運 * 流水线建设：构建并维护自动化 CI/CD 流程，提升代码交付效率。 * 网络规划：负责全球业务的CDN 加速, VPN 组网及跨机房网...",
+      "issueState": "open",
+      "contentHash": "b98d2f24cde255ab8539f8a1c8356af83d4d6d19387d96962e033a89b47ea865",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "zzl654466725-crypto",
+        "name": "zzl654466725-crypto",
+        "handle": "zzl654466725-crypto",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/272100286?v=4"
+      },
+      "community": {
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
+      },
+      "createdAt": "2026-11-09T09:46:14Z",
+      "updatedAt": "2026-11-09T09:46:14Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1344",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "devops-sre"
+        ],
+        "technologies": [
+          "aws",
+          "docker",
+          "go",
+          "kubernetes",
+          "mongodb",
+          "mysql",
+          "python",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_a05345053129d5fdacb17cd4",
+          "sourceId": "rebase-network/who-is-hiring#1344",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1344",
+          "createdAt": "2026-11-09T09:46:14Z",
+          "updatedAt": "2026-11-09T09:46:14Z",
+          "community": {
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 8,
+        "publishedAt": "2026-11-09T09:46:14Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_970db7bfc7cb32ee1cceed12",
+      "sourceId": "awesome-jobs/vietnam#5100",
+      "title": "[REMOTE 2nd job] 70tr gross | Data Engineer 5+ yoe (Oracle Fusion) | Làm giờ hành chính VN",
+      "description": "REQUIREMENTS\n• Five or more years with Oracle ERP data, including at least two years extracting from Oracle Fusion Cloud.\n• Hands-on Business Intelligence Cloud Connector work: offerings, public view objects, incremental extract settings.\n• Good knowledge of the Fusion financial data model, especially the Subledger Accounting (XLA) and General Ledger tables.\n• Experience with E-Business Suite R12 table structures.\n• Strong SQL and enough Python to automate file handling and loads.\n\nTechdy Recruitment | Whatsapp/Tel/Zalo (+84)332.022.055 | contact@techdy.vn | https://www.linkedin.com/in/tan-dat-vuong-626470423",
+      "excerpt": "REQUIREMENTS • Five or more years with Oracle ERP data, including at least two years extracting from Oracle Fusion Cloud. • Hands-on Business Intelligence Cloud Connector work: offerings, public view objects, incremen...",
+      "issueState": "open",
+      "contentHash": "6e77a503b9938407e1d6a795b8e89284b746433c7167bf045fdec6a1f4d23618",
+      "repository": "awesome-jobs/vietnam",
+      "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+      "region": "Asia",
+      "country": "Vietnam",
+      "sourceLocation": {
+        "country": "Vietnam",
+        "countryCode": "VN",
+        "region": "Asia"
+      },
+      "tags": [
+        "data",
+        "python",
+        "remote"
+      ],
+      "sourceTags": [
+        "data",
+        "python",
+        "remote"
+      ],
+      "author": {
+        "id": "techdyvn",
+        "name": "techdyvn",
+        "handle": "techdyvn",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
+      },
+      "community": {
+        "id": "awesome-jobs",
+        "name": "awesome-jobs",
+        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+        "repository": "awesome-jobs/vietnam",
+        "url": "https://github.com/awesome-jobs/vietnam"
+      },
+      "createdAt": "2026-11-09T06:23:51Z",
+      "updatedAt": "2026-11-09T06:23:51Z",
+      "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_970db7bfc7cb32ee1cceed12",
+          "sourceId": "awesome-jobs/vietnam#5100",
+          "repository": "awesome-jobs/vietnam",
+          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
+          "createdAt": "2026-11-09T06:23:51Z",
+          "updatedAt": "2026-11-09T06:23:51Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/vietnam",
+            "url": "https://github.com/awesome-jobs/vietnam"
+          }
+        },
+        {
+          "id": "gh_a82f971db8b3504b78ec0a17",
+          "sourceId": "awesome-jobs/jobs#5100",
+          "repository": "awesome-jobs/jobs",
+          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
+          "url": "https://github.com/awesome-jobs/vietnam/issues/5100",
+          "createdAt": "2026-11-09T06:23:51Z",
+          "updatedAt": "2026-11-09T06:23:51Z",
+          "community": {
+            "id": "awesome-jobs",
+            "name": "awesome-jobs",
+            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
+            "repository": "awesome-jobs/jobs",
+            "url": "https://github.com/awesome-jobs/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 8,
+        "publishedAt": "2026-11-09T06:23:51Z",
+        "status": "fresh"
+      }
+    },
+    {
+      "id": "gh_ad6fa1af10e270554797a029",
+      "sourceId": "TechnologyMasters/jobs#733",
+      "title": "LookoutAI (recruiting for a client) - Forward Deployed Engineer - San Francisco, CA (in office) - $180,000-$300,000 USD/year",
+      "description": "Our client is hiring a Forward Deployed Engineer to deploy its AI product inside customer environments: working directly with customer teams to configure and troubleshoot implementations, partnering with go-to-market and client leads on technical deployments, and contributing to core product work.\n\n- Role: Forward Deployed Engineer (customer deployment plus core engineering)\n- Location: San Francisco, CA - full-time, in office; global travel to customer sites as needed\n- Salary: $180,000-$300,000 per year; equity 0.1%-0.5%\n- Experience: 1-5 years\n- Work authorization: Visa sponsorship available\n- Schedule: High-intensity (9-9-6)\n- Benefits: Relocation assistance; health, medical and dental\n\nFull JD: https://drive.google.com/file/d/1zvPZDxBvgrF15iy-WrlIthwiILg2PJLr/view\n\nHow to apply: Email your CV to hari.m@lookoutai.io.",
+      "excerpt": "Our client is hiring a Forward Deployed Engineer to deploy its AI product inside customer environments: working directly with customer teams to configure and troubleshoot implementations, partnering with go-to-market ...",
+      "issueState": "open",
+      "contentHash": "f651715ce2fa6904a3f4d3ac3da70032bfa0f3621821a01840731c31a7aa1a7a",
+      "repository": "TechnologyMasters/jobs",
+      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+      "region": "Global",
+      "country": "Global",
+      "sourceLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "rhaghav03",
+        "name": "rhaghav03",
+        "handle": "rhaghav03",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/220156934?v=4"
+      },
+      "community": {
+        "id": "TechnologyMasters",
+        "name": "TechnologyMasters",
+        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+        "repository": "TechnologyMasters/jobs",
+        "url": "https://github.com/TechnologyMasters/jobs"
+      },
+      "salary": {
+        "currency": "USD",
+        "min": 180000,
+        "max": 300000,
+        "period": "year"
+      },
+      "createdAt": "2026-11-08T04:27:00Z",
+      "updatedAt": "2026-11-08T04:27:00Z",
+      "url": "https://github.com/TechnologyMasters/jobs/issues/733",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global",
+        "city": "San Francisco",
+        "subdivision": "CA",
+        "displayText": "San Francisco, CA",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai"
+        ],
+        "technologies": [
+          "go"
+        ],
+        "seniority": [],
+        "employmentTypes": [
+          "full-time"
+        ],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "inferred",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_ad6fa1af10e270554797a029",
+          "sourceId": "TechnologyMasters/jobs#733",
+          "repository": "TechnologyMasters/jobs",
+          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
+          "url": "https://github.com/TechnologyMasters/jobs/issues/733",
+          "createdAt": "2026-11-08T04:27:00Z",
+          "updatedAt": "2026-11-08T04:27:00Z",
+          "community": {
+            "id": "TechnologyMasters",
+            "name": "TechnologyMasters",
+            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
+            "repository": "TechnologyMasters/jobs",
+            "url": "https://github.com/TechnologyMasters/jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 9,
+        "publishedAt": "2026-11-08T04:27:00Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_db971604de6e581af15971a7",
       "sourceId": "TechnologyMasters/jobs#732",
@@ -738,7 +1052,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-11-06T08:38:22Z",
         "status": "fresh"
       }
@@ -834,7 +1148,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 10,
+        "ageDays": 11,
         "publishedAt": "2026-11-06T08:33:23Z",
         "status": "fresh"
       }
@@ -1119,7 +1433,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-11-05T13:27:55Z",
         "status": "fresh"
       }
@@ -1218,7 +1532,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-11-05T13:26:48Z",
         "status": "fresh"
       }
@@ -1309,7 +1623,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-11-05T13:26:23Z",
         "status": "fresh"
       }
@@ -1407,7 +1721,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-11-05T13:00:49Z",
         "status": "fresh"
       }
@@ -1539,7 +1853,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 11,
+        "ageDays": 12,
         "publishedAt": "2026-11-05T12:57:24Z",
         "status": "fresh"
       }
@@ -1738,319 +2052,6 @@
       "freshness": {
         "ageDays": 12,
         "publishedAt": "2026-11-05T05:32:57Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_9c25b798ad552710cb428e33",
-      "sourceId": "TechnologyMasters/jobs#726",
-      "title": "LookoutAI (recruiting for a multinational client) - iOS Developer - Hybrid Brampton/Toronto - $50 CAD/hour",
-      "description": "iOS developer with 5-7 years of experience for a multinational client. Hybrid work in Brampton or downtown Toronto. 12-month contract, with extension possible.\n\n- Company: LookoutAI (AI-native recruitment agency - hiring for a multinational client)\n- Role: iOS Developer\n- Contract: 12-month contract, with extension possible\n- Hours: Not specified in listing\n- Location: Brampton or downtown Toronto, Canada (hybrid - on-site; not fully remote)\n- Rate: CAD $50/hour\n- Visa Sponsorship: Not specified in listing\n- Relocation Assistance: Not specified in listing\n\nHow to apply: Email your resume to info@lookoutai.io with \"iOS Developer\" in the subject line.\n\nLookoutAI is an AI-native recruitment agency helping companies hire using AI.",
-      "excerpt": "iOS developer with 5-7 years of experience for a multinational client. Hybrid work in Brampton or downtown Toronto. 12-month contract, with extension possible. - Company: LookoutAI (AI-native recruitment agency - hiri...",
-      "issueState": "open",
-      "contentHash": "d71f42551ea70d3659ee00bf40d274e69d8a09631a176e3ecbe38f5e0f5cc909",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "hybrid",
-        "remote"
-      ],
-      "sourceTags": [
-        "hybrid",
-        "remote"
-      ],
-      "author": {
-        "id": "rhaghav03",
-        "name": "rhaghav03",
-        "handle": "rhaghav03",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/220156934?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2026-11-05T05:32:53Z",
-      "updatedAt": "2026-11-05T05:32:53Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/726",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Canada",
-        "countryCode": "CA",
-        "region": "North America",
-        "city": "Brampton or downtown Toronto,  ( - ; not fully )",
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Brampton or downtown Toronto,  ( - ; not fully ), Canada · Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid",
-          "on-site",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_9c25b798ad552710cb428e33",
-          "sourceId": "TechnologyMasters/jobs#726",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/726",
-          "createdAt": "2026-11-05T05:32:53Z",
-          "updatedAt": "2026-11-05T05:32:53Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 12,
-        "publishedAt": "2026-11-05T05:32:53Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_e31e0f0f47c698e1c0d5a6d9",
-      "sourceId": "TechnologyMasters/jobs#725",
-      "title": "Fellowlane (recruitment agency) - Cloud Engineer Microsoft 365/Azure - Aalsmeer, Netherlands - 3,750-4,500 EUR/Month",
-      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- EUR 3,750–4,500 gross/month, depending on knowledge and experience.\n- 32–40 hours per week.\n\n### Benefits\n- Freedom and technical responsibility in a small, informal team.\n- Training and certification opportunities.\n- Pension scheme, modern office in Aalsmeer and team activities.\n- A mix of infrastructure management, projects and customer advice.\n\n### Location\nAalsmeer, Netherlands, with customers in the surrounding region. Work is performed remotely on customer environments and on-site at customers. This is not advertised as a worldwide remote or fully work-from-home role.\n\n## What You Will Do\n- Manage and improve Microsoft 365, Azure and Windows Server environments.\n- Work with Active Directory, Exchange, Hyper-V, firewalls, switches, backups and monitoring.\n- Resolve complex second- and third-line technical issues.\n- Deliver cloud migrations and other technical projects.\n- Advise customers and support colleagues with complex technical questions.\n- Improve security, automation, standardisation and technical documentation.\n\n## Relevant Experience\nThis role is aimed at an experienced IT professional ready to combine Microsoft cloud and infrastructure operations with migrations, projects and customer advice. Relevant technologies include Microsoft 365, Azure, Windows Server, Active Directory, Exchange and Hyper-V.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting for an IT service provider in Aalsmeer. This is a client vacancy, not an internal Fellowlane role. The client supports regional organisations with cloud, infrastructure, workplaces, networking and security.\n\n## How to Apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-cloud-engineer/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [ ] Remote OK",
-      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - EUR 3,750–4,500 gross/month, depending on knowledge and experience. - 3...",
-      "issueState": "open",
-      "contentHash": "224a935371d2fab72fde5c7849fb9577be62a6cc3785a10e80977b79820e35d3",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "remote"
-      ],
-      "sourceTags": [
-        "remote"
-      ],
-      "author": {
-        "id": "nickfetter1-Fellowlane",
-        "name": "nickfetter1-Fellowlane",
-        "handle": "nickfetter1-Fellowlane",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "salary": {
-        "currency": "EUR",
-        "min": 3750,
-        "max": 4500,
-        "period": "month"
-      },
-      "createdAt": "2026-11-04T10:27:31Z",
-      "updatedAt": "2026-11-04T10:29:49Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/725",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Netherlands",
-        "countryCode": "NL",
-        "region": "Europe",
-        "workModel": "remote",
-        "remoteScope": "global",
-        "displayText": "Netherlands · Remote worldwide",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "azure"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "on-site",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "inferred",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_e31e0f0f47c698e1c0d5a6d9",
-          "sourceId": "TechnologyMasters/jobs#725",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/725",
-          "createdAt": "2026-11-04T10:27:31Z",
-          "updatedAt": "2026-11-04T10:29:49Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 12,
-        "publishedAt": "2026-11-04T10:27:31Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_484b4bfff912b720db1a2be5",
-      "sourceId": "TechnologyMasters/jobs#724",
-      "title": "Fellowlane (recruitment agency) - Back-end Developer .NET/C# - Schiphol-Rijk, Netherlands (Hybrid) - From 4,500 EUR/Month",
-      "description": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.**\n\n## What You Will Get\n\n### Salary and hours\n- From EUR 4,500 gross/month, based on 40 hours, depending on experience.\n- 32–40 hours per week.\n\n### Location and benefits\n- Schiphol-Rijk, Netherlands; hybrid, partly from home and partly at the office. This is not a worldwide remote position.\n- A small development team with direct influence on architecture and technical decisions.\n- Work on a growing electric-mobility platform contributing to the energy transition.\n\n## What You Will Do\n- Develop and maintain the back-end in .NET Core 10 and C#.\n- Build and maintain APIs and integrations with external systems.\n- Process and validate large amounts of data.\n- Work with Azure to keep the platform reliable and scalable.\n- Collaborate with a small team and contribute to architecture decisions.\n\n## Skills\n### Must have\n- Approximately five years of back-end development experience.\n- Strong .NET Core and C# knowledge and experience with Azure.\n- Bachelor-level working and thinking ability.\n- Initiative and comfort working in a growing environment.\n\n### Nice to have\n- API/integration and high-volume data-processing experience.\n- Interest in energy or electric mobility.\n\n## About the company and recruiter\nFellowlane is a recruitment agency recruiting on behalf of a growing Dutch company in electric mobility. This is a role with our client, not an internal Fellowlane position. The client name is shared during the introductory conversation.\n\n## How to apply\n[Full vacancy and application form (Dutch)](https://fellowlane.com/vacature/recruitee-back-end-developer-net-core-10c/?utm_source=github&utm_medium=community&utm_campaign=techmasters#formulier)\n\nQuestions: [info@fellowlane.com](mailto:info@fellowlane.com), +31 297 30 81 51.\nPlease apply through the website and do not post your CV or personal details in this public issue.\n\n## Meta\n- [x] Full Time\n- [ ] Part Time\n- [ ] Contract\n- [ ] Internship\n- [ ] Remote Worldwide\n- [ ] Remote Regional\n- [x] Remote OK",
-      "excerpt": "**Language requirement: Dutch proficiency is mandatory. Beheersing van het Nederlands is verplicht.** ## What You Will Get ### Salary and hours - From EUR 4,500 gross/month, based on 40 hours, depending on experience....",
-      "issueState": "open",
-      "contentHash": "4ffba1541e9f8ceb14791c254953a895024bbf6abd6f856796b34d568795ac00",
-      "repository": "TechnologyMasters/jobs",
-      "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "sourceTags": [
-        "data",
-        "hybrid",
-        "remote"
-      ],
-      "author": {
-        "id": "nickfetter1-Fellowlane",
-        "name": "nickfetter1-Fellowlane",
-        "handle": "nickfetter1-Fellowlane",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/352378445?v=4"
-      },
-      "community": {
-        "id": "TechnologyMasters",
-        "name": "TechnologyMasters",
-        "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-        "repository": "TechnologyMasters/jobs",
-        "url": "https://github.com/TechnologyMasters/jobs"
-      },
-      "createdAt": "2026-11-04T10:26:26Z",
-      "updatedAt": "2026-11-04T10:29:35Z",
-      "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "azure",
-          "csharp",
-          "dotnet"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship",
-          "part-time"
-        ],
-        "workModels": [
-          "hybrid",
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_484b4bfff912b720db1a2be5",
-          "sourceId": "TechnologyMasters/jobs#724",
-          "repository": "TechnologyMasters/jobs",
-          "repositoryUrl": "https://github.com/TechnologyMasters/jobs",
-          "url": "https://github.com/TechnologyMasters/jobs/issues/724",
-          "createdAt": "2026-11-04T10:26:26Z",
-          "updatedAt": "2026-11-04T10:29:35Z",
-          "community": {
-            "id": "TechnologyMasters",
-            "name": "TechnologyMasters",
-            "avatarUrl": "https://github.com/TechnologyMasters.png?size=80",
-            "repository": "TechnologyMasters/jobs",
-            "url": "https://github.com/TechnologyMasters/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 12,
-        "publishedAt": "2026-11-04T10:26:26Z",
         "status": "fresh"
       }
     }
