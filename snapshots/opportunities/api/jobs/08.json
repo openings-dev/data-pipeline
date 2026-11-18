@@ -1,6 +1,127 @@
 {
-  "generatedAt": "2026-11-18T10:57:09.441Z",
+  "generatedAt": "2026-11-18T19:49:00.450Z",
   "items": {
+    "gh_08a04b0801e201329254c81b": {
+      "id": "gh_08a04b0801e201329254c81b",
+      "sourceId": "DevOps-Brasil/Vagas#507",
+      "title": "DevOps Pleno -  Fundação SDTP - Remoto CLT",
+      "description": "### 🎯 Cargo\n\nDevOps Pleno\n\n### 🏢 Empresa\n\nFundação SDTP\n\n### 📊 Nível de Experiência\n\nPleno\n\n### 🏠 Modalidade de Trabalho\n\nRemoto\n\n### 📍 Localização\n\nRio de Janeiro-RJ\n\n### 📝 Tipo de Contratação\n\nCLT\n\n### 💱 Moeda\n\nBRL\n\n### 💰 Faixa Salarial\n\nR$ 10.800 a R$ 11.300 bruto\n\n### 📋 Descrição da Vaga\n\nO time de DevOps/Infra sustenta a plataforma onde rodam dezenas de serviços em produção, usados por órgãos de controle do espaço aéreo e pelo público externo.\n\n**Missão da Vaga**\n\nManter a plataforma estável e evoluindo: executar com autonomia as demandas de infraestrutura, pipelines e incidentes do dia a dia, e tocar frentes da migração Swarm →k0s sob orientação do DevOps sênior e do pleno do time. A pessoa entrega tarefas inteiras, do diagnóstico à verificação em produção, e documenta o que fez.\n\n**Principais Responsabilidades**\n\n- Atender issues de infraestrutura no Taiga: triagem, investigação, correção e registro claro do que foi feito.\n\n- Manter e evoluir pipelines GitLab CI/CD (build, push, deploy em homologação e produção) e os templates compartilhados entre projetos.\n- Operar o Docker Swarm: deploy de stacks, rollback, limpeza de disco, diagnóstico de serviços que não convergem.\n- Operar clusters k0s: deployments, ingress, storage, bancos com CloudNativePG, e tarefas de migração de aplicações do Swarm.\n- Escrever e manter playbooks Ansible (pacotes, Docker, usuários e chaves,  hardening), aplicando primeiro em um nó e verificando antes de expandir.\n- Configurar rotas e proteções na borda: Traefik, Kong, nginx, regras de WAF na  Cloudflare, DNS e certificados.\n- Administrar clients, roles e usuários no Keycloak para as aplicações.\n- Investigar incidentes com logs (OpenSearch) e métricas/alertas (Prometheus, Karma), propondo causa raiz e correção.\n- Disponibilizar variáveis de ambiente e segredos nas aplicações pelos fluxos padrão, sem expor valores.\n- Apoiar a correção de vulnerabilidades: atualizar imagens e versões, aplicar patches e bloqueios.\n- Participar do plantão de incidentes conforme escala do time.\n\n### ✅ Requisitos Técnicos\n\n**Requisitos Obrigatórios**\n\n- 2 a 4 anos em infraestrutura, SRE ou DevOps, com pelo menos 1 ano mexendo em produção.\n- Linux (Ubuntu/Debian) no dia a dia: systemd, rede (DNS, rotas, firewall), discos, troubleshooting por SSH.\n- Docker sólido: imagens, redes, volumes, registry, Compose; ter operado algum orquestrador (Swarm ou Kubernetes).\n- Kubernetes em nível operacional básico: aplicar manifests, ler eventos e logs de pods, entender services e ingress.\n- GitLab CI/CD (ou equivalente): ler e ajustar pipelines; Git com fluxo de branches.\n- Ansible: ler, ajustar e rodar playbooks existentes.\n- Bash para automações do dia a dia.\n- Noções de HTTP, TLS e proxy reverso (nginx ou Traefik).\n- Saber investigar por logs e métricas antes de mexer.\n\n**Diferenciais**\n\n- k0s, k3s ou Kubernetes on-premise (sem nuvem gerenciada); Helm, Longhorn, CloudNativePG.\n- Rede overlay do Docker Swarm (VXLAN, IPVS) e diagnóstico de intermitência entre nós.\n- Keycloak/OIDC e API gateway (Kong).\n- Cloudflare: WAF, regras de exceção, DNS.\n- PostgreSQL, RabbitMQ e Redis na visão de operação (backup, replicação, filas).\n- Resposta a incidentes de segurança e gestão de CVEs em imagens e dependências.\n- Experiência em órgão público ou ambiente com rede restrita.\n- Uso de agentes de IA (Claude Code ou similares) para investigação e automação, com revisão crítica do que produzem.\n- Certificações: CKA, LFCS ou RHCSA.\n\n**Competências comportamentais**\n\n- Cautela com produção: mede antes de mexer, testa em homologação e em um nó antes de expandir.\n- Afirma com evidência: só diz que funciona com saída de comando que prove.\n- Escrita clara: registra no Taiga o que fez, por quê e como verificar, de forma legível para quem não é técnico.\n- Pede ajuda no tempo certo: escala com o diagnóstico pronto, sem travar e sem improvisar em produção.\n- Disciplina com segredos: nunca expõe credenciais em log, chat ou commit.\n- Curiosidade pelo legado: disposição para entender sistemas antigos antes de propor trocá-los.\n\n### 🎁 Benefícios\n\n- Vale Refeição\n- Vale Alimentação\n- Plano de Saúde\n- Plano Odontológico \n- Seguro de Vida (obrigatório)\n\n### 🛠️ Stack/Tecnologias\n\n- Orquestração e Containers: Docker Swarm, Kubernetes (k0s), Docker\n- Automação e Provisionamento: Ansible, GitLab CI/CD\n- Borda, Rede e Identidade: Traefik, Kong, Nginx, Cloudflare (WAF), Keycloak (SSO)\n- Dados e Mensageria: PostgreSQL (CloudNativePG), RabbitMQ, Redis, Longhorn\n- Observabilidade: OpenSearch, Prometheus, Alertmanager/Karma\n- Ambiente: Linux (Ubuntu/Debian), Rede governamental restrita\n\n### 📧 Como se Candidatar\n\nEnvie seu currículo por email para gloriaatd@sdtp.org.br com \"[github] DevOps Pleno\" no asssunto.\n\n_IMPORTANTE: seu currículo deve ter algum contato telefônico._\n\n### 🔗 Link da Vaga (opcional)\n\n_No response_\n\n### ✔️ Confirmação\n\n- [x] Esta é uma vaga real e ativa\n- [x] Li e concordo com as regras do repositório\n- [x] A vaga é relacionada à área de DevOps/SRE/Cloud/Infraestrutura",
+      "excerpt": "### 🎯 Cargo DevOps Pleno ### 🏢 Empresa Fundação SDTP ### 📊 Nível de Experiência Pleno ### 🏠 Modalidade de Trabalho Remoto ### 📍 Localização Rio de Janeiro-RJ ### 📝 Tipo de Contratação CLT ### 💱 Moeda BRL ### 💰...",
+      "issueState": "open",
+      "contentHash": "b32e81ccea3cb6c8b3061bb60719142f5a169905b5fd6d05fb931020af08d913",
+      "repository": "DevOps-Brasil/Vagas",
+      "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "clt",
+        "devops",
+        "docker",
+        "infra",
+        "kubernetes",
+        "platform",
+        "security",
+        "sre"
+      ],
+      "sourceTags": [
+        "clt",
+        "devops",
+        "docker",
+        "infra",
+        "kubernetes",
+        "platform",
+        "security",
+        "sre"
+      ],
+      "author": {
+        "id": "gloriagalembeck",
+        "name": "gloriagalembeck",
+        "handle": "gloriagalembeck",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/256614960?v=4"
+      },
+      "community": {
+        "id": "DevOps-Brasil",
+        "name": "DevOps-Brasil",
+        "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+        "repository": "DevOps-Brasil/Vagas",
+        "url": "https://github.com/DevOps-Brasil/Vagas"
+      },
+      "salary": {
+        "currency": "BRL",
+        "min": 10800,
+        "max": 11300,
+        "period": "year"
+      },
+      "createdAt": "2026-11-18T13:25:35Z",
+      "updatedAt": "2026-11-18T13:50:10Z",
+      "url": "https://github.com/DevOps-Brasil/Vagas/issues/507",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "devops-sre"
+        ],
+        "technologies": [
+          "docker",
+          "kubernetes",
+          "postgres",
+          "redis"
+        ],
+        "seniority": [
+          "mid",
+          "senior"
+        ],
+        "employmentTypes": [
+          "employee"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "inferred",
+        "seniority": "inferred",
+        "workModel": "declared"
+      },
+      "sources": [
+        {
+          "id": "gh_08a04b0801e201329254c81b",
+          "sourceId": "DevOps-Brasil/Vagas#507",
+          "repository": "DevOps-Brasil/Vagas",
+          "repositoryUrl": "https://github.com/DevOps-Brasil/Vagas",
+          "url": "https://github.com/DevOps-Brasil/Vagas/issues/507",
+          "createdAt": "2026-11-18T13:25:35Z",
+          "updatedAt": "2026-11-18T13:50:10Z",
+          "community": {
+            "id": "DevOps-Brasil",
+            "name": "DevOps-Brasil",
+            "avatarUrl": "https://github.com/DevOps-Brasil.png?size=80",
+            "repository": "DevOps-Brasil/Vagas",
+            "url": "https://github.com/DevOps-Brasil/Vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-18T13:25:35Z",
+        "status": "fresh"
+      }
+    },
     "gh_087d885731246159d14ac233": {
       "id": "gh_087d885731246159d14ac233",
       "sourceId": "awesome-jobs/jobs#5084",
@@ -235,7 +356,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 63,
+        "ageDays": 64,
         "publishedAt": "2026-09-15T17:42:40Z",
         "status": "aging"
       }
@@ -454,7 +575,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 729,
+        "ageDays": 730,
         "publishedAt": "2024-11-18T11:41:30Z",
         "status": "stale"
       }
