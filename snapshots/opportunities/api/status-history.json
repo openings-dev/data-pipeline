@@ -1,7 +1,18 @@
 {
-  "generatedAt": "2026-11-17T15:18:06.634Z",
+  "generatedAt": "2026-11-18T00:18:16.060Z",
   "retentionDays": 30,
   "runs": [
+    {
+      "startedAt": "2026-11-18T00:16:36.594Z",
+      "completedAt": "2026-11-18T00:18:16.060Z",
+      "durationMs": 99466,
+      "outcome": "healthy",
+      "communities": 187,
+      "successful": 187,
+      "failed": 0,
+      "noOpenings": 80,
+      "openOpportunities": 664
+    },
     {
       "startedAt": "2026-11-17T15:16:02.170Z",
       "completedAt": "2026-11-17T15:18:06.634Z",
@@ -1200,42 +1211,16 @@
       "failed": 0,
       "noOpenings": 77,
       "openOpportunities": 694
-    },
-    {
-      "startedAt": "2026-10-18T22:41:29.721Z",
-      "completedAt": "2026-10-18T22:43:14.197Z",
-      "durationMs": 104476,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 77,
-      "openOpportunities": 694
-    },
-    {
-      "startedAt": "2026-10-18T19:54:13.078Z",
-      "completedAt": "2026-10-18T19:55:52.300Z",
-      "durationMs": 99222,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 77,
-      "openOpportunities": 694
-    },
-    {
-      "startedAt": "2026-10-18T17:41:35.987Z",
-      "completedAt": "2026-10-18T17:43:14.810Z",
-      "durationMs": 98823,
-      "outcome": "healthy",
-      "communities": 187,
-      "successful": 187,
-      "failed": 0,
-      "noOpenings": 77,
-      "openOpportunities": 694
     }
   ],
   "days": [
+    {
+      "date": "2026-11-18",
+      "runs": 1,
+      "partialRuns": 0,
+      "failedCommunityRuns": 0,
+      "latestOpenOpportunities": 664
+    },
     {
       "date": "2026-11-17",
       "runs": 2,
@@ -1445,13 +1430,6 @@
       "partialRuns": 0,
       "failedCommunityRuns": 0,
       "latestOpenOpportunities": 693
-    },
-    {
-      "date": "2026-10-18",
-      "runs": 3,
-      "partialRuns": 0,
-      "failedCommunityRuns": 0,
-      "latestOpenOpportunities": 694
     }
   ]
 }
