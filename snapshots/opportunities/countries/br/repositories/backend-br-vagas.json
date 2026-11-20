@@ -1,16 +1,96 @@
 {
-  "generatedAt": "2026-11-19T19:49:19.692Z",
+  "generatedAt": "2026-11-20T01:59:17.758Z",
   "country": "Brazil",
   "countryCode": "BR",
   "region": "South America",
   "repository": "backend-br/vagas",
   "totals": {
     "opportunities": 30,
-    "openIssues": 28,
-    "closedIssues": 2
+    "openIssues": 27,
+    "closedIssues": 3
   },
-  "dataHash": "e80e1af0ff572f9473c66f82a96a3580a79a5d90f557c19637c09a8aaf34c7a4",
+  "dataHash": "34678335e7d96c484c82a220534216e6ecd403ba3cfa7e9482b00b7766476016",
   "items": [
+    {
+      "id": "gh_a22127abbdce9982e45438cb",
+      "sourceId": "backend-br/vagas#12496",
+      "title": "[Remoto] Desenvolvedor(a) Full Stack na Rotha IA",
+      "description": "## Nossa empresa\n\nA Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores.\n\nSite da empresa: https://rothaia.com.br\n\n## Descrição da vaga\n\nProcuramos alguém que queira crescer junto com a gente: assumir a parte técnica, trocar feedback de forma direta e, com o tempo, coordenar o time. Se você prefere só executar tarefas, talvez esta não seja a vaga ideal para você.\n\nA pessoa vai cuidar da parte técnica junto com o fundador, num processo estruturado de criação e verificação, criar produtos e, com o crescimento, liderar o time de desenvolvimento.\n\n- Desenvolver e evoluir sistemas de ponta a ponta, do banco à publicação em produção.\n- Responder pela segurança: autenticação, controle de acesso (RLS) e LGPD.\n- Construir integrações de nota fiscal, pagamentos, Pix e WhatsApp.\n- Revisar código, inclusive o gerado por IA, e definir padrões.\n- Falar com clientes (apenas se necessário) e propor soluções e produtos.\n\n## Local\n\nRemoto (100%), Brasil. Reunião diária online às 10h30 (horário de Brasília).\n\n## Requisitos\n\n**Stack:** React, TypeScript, Next.js, Supabase, PostgreSQL (SQL, índices, funções, RLS e migrations), Cloudflare, GitHub e ferramentas de IA como Claude Code.\n\n**Obrigatórios:**\n- 3 anos ou mais de desenvolvimento web, com sistema em produção usado por clientes.\n- PostgreSQL além do básico e integrações com APIs REST e webhooks.\n- Segurança de aplicações e LGPD.\n- Ensino superior completo ou em andamento na área.\n\n**Integrações:** você não precisa ter feito todas, mas precisa já ter integrado algum destes serviços em produção, de preferência bancos ou gateways como o Asaas, e entender como os outros funcionam:\n- Nota fiscal: NF-e, NFC-e e NFS-e por API, com certificado digital A1.\n- Bancos: APIs como Inter, Itaú, Sicredi e Sicoob, com certificado digital (mTLS), OAuth, boleto, Pix e conciliação.\n- Pagamentos: gateways como Asaas, com webhook e sem cobrança duplicada.\n- WhatsApp: API oficial da Meta (WhatsApp Business Platform), Evolution API ou Z-API.\n\n## Benefícios\n\n- 100% remoto.\n- Crescimento para coordenação do time de desenvolvimento.\n\n## Contratação\n\nPJ, R$ 5.000 por mês, integral. 90 dias de experiência com metas claras.\n\n## Como se candidatar\n\nPelo formulário (uns 5 minutos): https://forms.gle/xvkYYcUBjjWzQtjx7\n\nNa candidatura, conte em poucas linhas uma integração que você fez: qual serviço, o que precisava resolver e como resolveu.\n\nAs candidaturas são recebidas só pelo formulário, por favor não envie pelo WhatsApp nem pelos comentários desta issue. Entraremos em contato com as pessoas selecionadas.\n\n## Tempo médio de feedbacks\n\nEntramos em contato com as pessoas selecionadas pelo e-mail ou WhatsApp informado no formulário. Dúvidas: contato@rothaia.com.br\n\n## Labels\n\n### Nível\n\n- Pleno\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto",
+      "excerpt": "## Nossa empresa A Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores. Site da empresa: https://rothaia.com.br ## Descrição da vaga Procuramos alguém que queira crescer junto...",
+      "issueState": "closed",
+      "contentHash": "03fc798722c1bd3d8327e9a0bd52de0c3a8b89e11039cab7a6178bbe97488dd1",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "formato-sugerido",
+        "triagem-recusada"
+      ],
+      "sourceTags": [
+        "formato-sugerido",
+        "triagem-recusada"
+      ],
+      "author": {
+        "id": "rodrigofssoares",
+        "name": "rodrigofssoares",
+        "handle": "rodrigofssoares",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/161170803?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "companyName": "https://rothaia.com.br",
+      "createdAt": "2026-11-20T00:19:47Z",
+      "updatedAt": "2026-11-20T00:21:48Z",
+      "url": "https://github.com/backend-br/vagas/issues/12496",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America",
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Brazil · Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "fullstack"
+        ],
+        "technologies": [
+          "nextjs",
+          "postgres",
+          "react",
+          "typescript"
+        ],
+        "seniority": [
+          "mid"
+        ],
+        "employmentTypes": [
+          "contractor"
+        ],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "inferred",
+        "workModel": "declared"
+      }
+    },
     {
       "id": "gh_b782555b9a13ee7434712eae",
       "sourceId": "backend-br/vagas#12495",
@@ -279,91 +359,6 @@
       },
       "dataProvenance": {
         "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      }
-    },
-    {
-      "id": "gh_bc6d8863701c8bf79e429eba",
-      "sourceId": "backend-br/vagas#12484",
-      "title": "[Híbrido] Sr Software Engineer - Stealth",
-      "description": "### Sobre a empresa\n\nOportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técnicas e de produto.\n\n### Site da empresa\n\nhttps://forms.gle/45hRpfEdqzKRGYAY6\n\n### Descrição da vaga\n\nPrincipais responsabilidades:\n\n• Participar das decisões de arquitetura, modelagem de dados e desenho de sistemas;\n• Desenvolver o core do produto;\n• Construir uma infraestrutura segura e escalável;\n• Contribuir para a estratégia de produto e priorização do roadmap;\n• Conversar com clientes para entender necessidades e validar soluções;\n• Apoiar a contratação e a mentoria de engenheiros.\n\n\n### Requisitos\n\nPerfil buscado:\n\n• Forte experiência em backend e conhecimentos de frontend;\n• Experiência em startups ou empresas de tecnologia;\n• Vivência prática construindo soluções com IA;\n• Visão de produto e negócio;\n• Autonomia para lidar com desafios abertos e prioridades em evolução.\n\nExperiência na construção de produtos do zero, o chamado 0 → 1, será um diferencial.\n\nStack: Go, Next.js e AWS. Experiência prévia nessas tecnologias não é obrigatória.\n\n📍 Modelo híbrido: terças e quintas-feiras no escritório, na Vila Madalena, em São Paulo.\n📄 Contratação PJ.\n\n### Benefícios\n\n🏥 Plano de saúde e férias anuais.\n\n### Faixa salarial\n\n_No response_\n\n### Nível\n\nSênior\n\n### Regime de contratação\n\nPJ\n\n### Modelo de trabalho\n\nHíbrido\n\n### Localização\n\nSão Paulo\n\n### Como se candidatar\n\nEnvie seu CV no formulário https://forms.gle/45hRpfEdqzKRGYAY6\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-      "excerpt": "### Sobre a empresa Oportunidade em uma startup ainda em stealth, com foco em backend e construção de produtos com IA. A posição tem bastante autonomia, proximidade com os fundadores e impacto direto nas decisões técn...",
-      "issueState": "open",
-      "contentHash": "c4cbaf9b2912b97fc2081fa626a23a0f2f55be4379dcdcd3cf059bb46b834d07",
-      "repository": "backend-br/vagas",
-      "repositoryUrl": "https://github.com/backend-br/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pj",
-        "sênior",
-        "go",
-        "aws",
-        "híbrido",
-        "verificada"
-      ],
-      "sourceTags": [
-        "pj",
-        "sênior",
-        "go",
-        "aws",
-        "híbrido",
-        "verificada"
-      ],
-      "author": {
-        "id": "hireflowhq",
-        "name": "hireflowhq",
-        "handle": "hireflowhq",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/348344309?v=4"
-      },
-      "community": {
-        "id": "backend-br",
-        "name": "backend-br",
-        "avatarUrl": "https://github.com/backend-br.png?size=80",
-        "repository": "backend-br/vagas",
-        "url": "https://github.com/backend-br/vagas"
-      },
-      "createdAt": "2026-10-26T14:47:20Z",
-      "updatedAt": "2026-11-12T17:53:12Z",
-      "url": "https://github.com/backend-br/vagas/issues/12484",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "aws",
-          "go",
-          "nextjs"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
