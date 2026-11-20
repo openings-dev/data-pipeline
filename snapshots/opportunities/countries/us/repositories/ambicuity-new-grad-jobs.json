@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-20T01:59:17.758Z",
+  "generatedAt": "2026-11-20T10:47:53.071Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
-    "opportunities": 30,
-    "openIssues": 5,
-    "closedIssues": 25
+    "opportunities": 28,
+    "openIssues": 6,
+    "closedIssues": 22
   },
-  "dataHash": "073cdfad496353380e286b8103a96a2a2b3f58440f634b61c58404b09909bd48",
+  "dataHash": "cdc3a9655fffd46a0edf34c0740f2bd015845458a317226efb09ec7a98981405",
   "items": [
     {
       "id": "gh_34c7a723d019628a4be442f2",
@@ -1661,13 +1661,13 @@
       }
     },
     {
-      "id": "gh_f4576dc70ccae1d29ed8e7c3",
-      "sourceId": "ambicuity/New-Grad-Jobs#83",
-      "title": "[Intermediate]: Move hardcoded worker pool limits to config.yml",
-      "description": "---\n## Thanks for contributing! 😊\n\nThis template creates an **Intermediate Issue** — for contributors who are already\ncomfortable navigating this codebase and contribution workflow.\n\nThe goal is a task that requires understanding existing patterns and making decisions,\nbut does not require architectural design from scratch.\n---\n\n### 🧩 Intermediate Contributors\n\nThis issue is intended for contributors who already have experience with this repository\nand the contribution workflow.\n\nYou should feel comfortable:\n- Navigating `scripts/update_jobs.py`, `config.yml`, and `tests/`\n- Understanding how `filter_jobs()`, `deduplicate_jobs()`, and `categorize_job()` work\n- Following existing patterns without step-by-step guidance\n- Writing non-trivial pytest tests with mocking\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\nIf you are new to this repo, please start with a\n[Good First Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3A%22good+first+issue%22+no%3Aassignee)\nor a [Beginner Issue](https://github.com/ambicuity/New-Grad-Jobs/issues?q=is%3Aissue+state%3Aopen+label%3Abeginner+no%3Aassignee)\nfirst.\n\n> [!IMPORTANT]\n> ### 🧭 What we consider an Intermediate Issue in this repo\n>\n> This issue generally:\n> - Requires **knowledge of 2–3 existing functions** (e.g. `filter_jobs`, `normalize_date_string`, `get_job_key`)\n> - Is **narrowly scoped** — touches one area without cascading structural changes\n> - Is **medium risk** — does not change deduplication keys, date parsing logic from scratch, or pagination\n> - May involve **refactors, edge case handling, or small feature additions**\n> - Has **similar patterns elsewhere** in the scraper for reference\n>\n> **What this issue is NOT:**\n> - A simple config addition (that belongs in Good First Issue)\n> - A new scraping source integration (that belongs in Advanced)\n> - A breaking change to the job schema\n\n\n### 🐞 Problem Description\n\nCodeRabbit flagged a major architectural debt item in PR #78: the scraper uses hardcoded concurrency limits (e.g., `max_workers = min(300, max(30, total // 3))`) in the `fetch_all_*_parallel` functions.\n\nHardcoding `max_workers=300` for Greenhouse risks IP bans if their rate limits change. The maintainer needs a way to throttle the scraper via configuration, not by pushing code.\n\n### 💡 Expected Solution\n\nThese constants need to be moved to `config.yml` to allow for runtime tuning without code changes. Add a `worker_pools` block to `config.yml` with sub-keys for each API source.\n\n### ✅ Acceptance Criteria\n\n- [ ] Add a `worker_pools` block to `config.yml`.\n- [ ] Update `update_jobs.py` parallel functions to read from `config.get('worker_pools', {}).get('greenhouse', 50)`.\n- [ ] Keep safe fallback defaults in the Python code if the config block is missing.\n- [ ] Log the effective worker count (e.g., 'Using 50 workers from config' or 'Using 30 workers (fallback)') at startup.\n- [ ] Problem is resolved per the description above\n- [ ] All existing `pytest tests/` pass\n- [ ] `pre-commit run --all-files` passes\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n\n🤖 Core scraper (scripts/update_jobs.py)\n⚙️ Configuration (config.yml)\n\n### 🔗 Additional Context\n\n- Related function: `fetch_all_greenhouse_jobs_parallel()` at update_jobs.py\n- CodeRabbit finding from PR #78",
-      "excerpt": "--- ## Thanks for contributing! 😊 This template creates an **Intermediate Issue** — for contributors who are already comfortable navigating this codebase and contribution workflow. The goal is a task that requires un...",
-      "issueState": "closed",
-      "contentHash": "e8a2da62397aae27038b7a69475d8df484f8e1818c3efddd17d6ec2ee3b65ce7",
+      "id": "gh_7e4397a5c3ec447941a1d5ca",
+      "sourceId": "ambicuity/New-Grad-Jobs#113",
+      "title": "[Beginner]: feat(frontend): replace <select> dropdowns with chip buttons for Country/State filters to match Category/Tier UX",
+      "description": "## 🐥 Beginner Friendly\n\nThis is a **Beginner Issue** — a natural next step after Good First Issues.\n\nIt expects you to:\n- Read existing CSS and HTML, then follow the established `.chip` pattern\n- Own the small decision of how to handle the State/Province list (scrollable chip row)\n- Refactor the JS filter logic to match the new chip pattern\n\n**Difficulty:**\n- Basic HTML + CSS + vanilla JS DOM manipulation required\n- No external API experience needed\n\n> [!IMPORTANT]\n> We recommend completing at least one Good First Issue before attempting a Beginner Issue.\n>\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n\n> [!TIP]\n> **You should be comfortable with:**\n> - Reading existing CSS class patterns and replicating them\n> - DOM manipulation with vanilla JS\n> - Opening a PR against `main` without a tutorial\n\n⏱️ Typical time: 3–5 hours\n\n---\n\n## 👾 Description of the Issue\n\n**Current state:**\n\nThe filter bar (`docs/index.html` lines 126–186) uses two inconsistent UX patterns in the same section:\n\n- **Category** (`#category-filters`) and **Company Tier** (`#tier-filters`) use styled **chip buttons** (`.chip`) — consistent with modern job boards like Simplify, Himalayas, and Otta.\n- **Country** (`#country-filter`) and **State/Province** (`#state-filter`) use bare **`<select>` dropdowns** — a platform-native control that breaks the design language.\n\n**Desired state — Country as chips:**\n```html\n<div class=\"filter-chips\" id=\"country-filters\">\n  <button class=\"chip active\" data-filter=\"all\">🌍 All</button>\n  <button class=\"chip\" data-filter=\"remote\">🌐 Remote</button>\n  <button class=\"chip\" data-filter=\"usa\">🇺🇸 USA</button>\n  <button class=\"chip\" data-filter=\"canada\">🇨🇦 Canada</button>\n  <button class=\"chip\" data-filter=\"india\">🇮🇳 India</button>\n</div>\n```\n\nFor State/Province (dynamically populated in `docs/app.js`), convert the `<select>` to inject `.chip` buttons into a `<div class=\"filter-chips\">` container. Make the chip row **horizontally scrollable** on mobile (`overflow-x: auto; white-space: nowrap;`).\n\nNote: `filterJobs()` in `docs/app.js` currently reads `document.getElementById('country-filter').value` — refactor these reads to use `.chip.active` class state, matching how category/tier filters already work.\n\n**Reuse existing CSS classes** at `docs/styles.css` lines 640–686 — `.chip` and `.chip.active`. Do NOT add new color variables.\n\n**Inspiration:** Otta (scrollable filter chips), Himalayas (chip-style location), Simplify (consistent chip UX).\n\n---\n\n## ✅ Acceptance Criteria\n\n- [ ] Country filter uses `.chip` buttons (5 chips: All, Remote, USA, Canada, India)\n- [ ] State/Province uses dynamically injected `.chip` buttons replacing the `<select>`\n- [ ] State chip row is horizontally scrollable on viewports < 768px\n- [ ] `filterJobs()` reads new chip state via `.chip.active` — not `select.value`\n- [ ] Dark **and** light themes both render correctly\n- [ ] No regression — filtering USA → CA still returns only California jobs\n- [ ] Existing tests pass (`make test`)\n- [ ] PR linked with `Fixes #<number>`\n- [ ] PR title: `feat(frontend): replace select dropdowns with chip buttons for country/state filters`\n\n**Area:** 🌐 Frontend / website (docs/)",
+      "excerpt": "## 🐥 Beginner Friendly This is a **Beginner Issue** — a natural next step after Good First Issues. It expects you to: - Read existing CSS and HTML, then follow the established `.chip` pattern - Own the small decision...",
+      "issueState": "open",
+      "contentHash": "73e7862bb4ac8af5f86324b02516ad8b1ec4abdf83fc3225eda25d1a21b76dfe",
       "repository": "ambicuity/New-Grad-Jobs",
       "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
       "region": "North America",
@@ -1680,12 +1680,16 @@
       "tags": [
         "type: enhancement",
         "help wanted",
-        "intermediate"
+        "needs-triage",
+        "beginner",
+        "ui/ux"
       ],
       "sourceTags": [
         "type: enhancement",
         "help wanted",
-        "intermediate"
+        "needs-triage",
+        "beginner",
+        "ui/ux"
       ],
       "author": {
         "id": "ambicuity",
@@ -1700,150 +1704,35 @@
         "repository": "ambicuity/New-Grad-Jobs",
         "url": "https://github.com/ambicuity/New-Grad-Jobs"
       },
-      "createdAt": "2026-03-04T15:57:28Z",
-      "updatedAt": "2026-10-16T22:56:03Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/83",
+      "createdAt": "2026-03-06T17:00:46Z",
+      "updatedAt": "2026-11-20T05:01:01Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/113",
       "sourceType": "github-issue",
       "jobLocation": {
-        "confidence": "unknown"
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
       },
       "taxonomy": {
         "areas": [
-          "design"
+          "design",
+          "frontend",
+          "mobile"
         ],
-        "technologies": [
-          "python"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_fc6ae4ce6909457e90fa698d",
-      "sourceId": "ambicuity/New-Grad-Jobs#56",
-      "title": "[Beginner]: Add docstring to `TestCategorizeJob.test_returns_required_keys` method",
-      "description": "### Description\nThe unit test `test_returns_required_keys` in `tests/test_categorize.py` lacks an explanatory docstring. Add one explaining what it asserts.\n\n### Why it matters\nTests serve as living documentation. Clear docstrings help new contributors understand what a test's objective is.\n\n### Acceptance Criteria\n- [ ] Add a clear docstring to the specific test method\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description The unit test `test_returns_required_keys` in `tests/test_categorize.py` lacks an explanatory docstring. Add one explaining what it asserts. ### Why it matters Tests serve as living documentation. Clea...",
-      "issueState": "closed",
-      "contentHash": "b3b936b6190bd48b1cbf9576d76820de4800d2991acaa4b405f076d0a912448f",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:50Z",
-      "updatedAt": "2026-10-16T22:56:01Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/56",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
         "technologies": [],
         "seniority": [],
         "employmentTypes": [],
-        "workModels": [],
+        "workModels": [
+          "remote"
+        ],
         "languages": []
       },
       "dataProvenance": {
         "location": "unknown",
         "salary": "unknown",
         "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_47340e40482a1e26776641f2",
-      "sourceId": "ambicuity/New-Grad-Jobs#55",
-      "title": "[Beginner]: Add a test case for `is_job_closed` in `tests/test_categorize.py`",
-      "description": "### Description\nThe helper function `is_job_closed(title, description)` has no unit tests. Add tests to verify it accurately spots 'closed' or 'no longer accepting' terminology.\n\n### Why it matters\nWe do not want to parse and upload jobs that are already expired. Testing this ensures accuracy.\n\n### Acceptance Criteria\n- [ ] Create `test_is_job_closed()` suite\n- [ ] Provide positive (closed) and negative (open) strings\n- [ ] Passes `pre-commit run --all-files`",
-      "excerpt": "### Description The helper function `is_job_closed(title, description)` has no unit tests. Add tests to verify it accurately spots 'closed' or 'no longer accepting' terminology. ### Why it matters We do not want to pa...",
-      "issueState": "closed",
-      "contentHash": "24957ea2a39831493221575ec53fedf7d79f58febb7b5f393063e4108b2e5665",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "sourceTags": [
-        "help wanted",
-        "good first issue"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-02T23:39:47Z",
-      "updatedAt": "2026-10-16T22:56:00Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/55",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
+        "workModel": "inferred"
       }
     }
   ]

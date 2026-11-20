@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-20T01:59:17.758Z",
+  "generatedAt": "2026-11-20T10:47:53.071Z",
   "page": 12,
   "pageSize": 20,
   "nextPage": "api/pages/page-0013.json",
@@ -10,6 +10,7 @@
     "gh_86cf7c4c726a6cec1163d1fb",
     "gh_0f0495da862b94749892e684",
     "gh_d6f31a804dacbc548031ec5e",
+    "gh_7e4397a5c3ec447941a1d5ca",
     "gh_bf70dc9f783bd9e91215da56",
     "gh_72cc354e7d9c38f999fa902a",
     "gh_dd237a978dba300d92eb4d35",
@@ -22,8 +23,7 @@
     "gh_27ad1c5fa6ae31eaf8210333",
     "gh_7b4f6457d040ea0a23c1c43b",
     "gh_1b456af185b0d148e1769bc2",
-    "gh_b0b25f9f51d0e7f1c185dc60",
-    "gh_8d3d4b455493191722317dda"
+    "gh_b0b25f9f51d0e7f1c185dc60"
   ],
   "items": [
     {
@@ -114,7 +114,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 234,
+        "ageDays": 235,
         "publishedAt": "2026-03-30T08:06:46Z",
         "status": "stale"
       }
@@ -194,7 +194,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 237,
+        "ageDays": 238,
         "publishedAt": "2026-03-27T03:29:36Z",
         "status": "stale"
       }
@@ -282,7 +282,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 238,
+        "ageDays": 239,
         "publishedAt": "2026-03-26T05:40:12Z",
         "status": "stale"
       }
@@ -618,6 +618,107 @@
       "freshness": {
         "ageDays": 255,
         "publishedAt": "2026-03-09T15:07:04Z",
+        "status": "stale"
+      }
+    },
+    {
+      "id": "gh_7e4397a5c3ec447941a1d5ca",
+      "sourceId": "ambicuity/New-Grad-Jobs#113",
+      "title": "[Beginner]: feat(frontend): replace <select> dropdowns with chip buttons for Country/State filters to match Category/Tier UX",
+      "description": "## 🐥 Beginner Friendly\n\nThis is a **Beginner Issue** — a natural next step after Good First Issues.\n\nIt expects you to:\n- Read existing CSS and HTML, then follow the established `.chip` pattern\n- Own the small decision of how to handle the State/Province list (scrollable chip row)\n- Refactor the JS filter logic to match the new chip pattern\n\n**Difficulty:**\n- Basic HTML + CSS + vanilla JS DOM manipulation required\n- No external API experience needed\n\n> [!IMPORTANT]\n> We recommend completing at least one Good First Issue before attempting a Beginner Issue.\n>\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n\n> [!TIP]\n> **You should be comfortable with:**\n> - Reading existing CSS class patterns and replicating them\n> - DOM manipulation with vanilla JS\n> - Opening a PR against `main` without a tutorial\n\n⏱️ Typical time: 3–5 hours\n\n---\n\n## 👾 Description of the Issue\n\n**Current state:**\n\nThe filter bar (`docs/index.html` lines 126–186) uses two inconsistent UX patterns in the same section:\n\n- **Category** (`#category-filters`) and **Company Tier** (`#tier-filters`) use styled **chip buttons** (`.chip`) — consistent with modern job boards like Simplify, Himalayas, and Otta.\n- **Country** (`#country-filter`) and **State/Province** (`#state-filter`) use bare **`<select>` dropdowns** — a platform-native control that breaks the design language.\n\n**Desired state — Country as chips:**\n```html\n<div class=\"filter-chips\" id=\"country-filters\">\n  <button class=\"chip active\" data-filter=\"all\">🌍 All</button>\n  <button class=\"chip\" data-filter=\"remote\">🌐 Remote</button>\n  <button class=\"chip\" data-filter=\"usa\">🇺🇸 USA</button>\n  <button class=\"chip\" data-filter=\"canada\">🇨🇦 Canada</button>\n  <button class=\"chip\" data-filter=\"india\">🇮🇳 India</button>\n</div>\n```\n\nFor State/Province (dynamically populated in `docs/app.js`), convert the `<select>` to inject `.chip` buttons into a `<div class=\"filter-chips\">` container. Make the chip row **horizontally scrollable** on mobile (`overflow-x: auto; white-space: nowrap;`).\n\nNote: `filterJobs()` in `docs/app.js` currently reads `document.getElementById('country-filter').value` — refactor these reads to use `.chip.active` class state, matching how category/tier filters already work.\n\n**Reuse existing CSS classes** at `docs/styles.css` lines 640–686 — `.chip` and `.chip.active`. Do NOT add new color variables.\n\n**Inspiration:** Otta (scrollable filter chips), Himalayas (chip-style location), Simplify (consistent chip UX).\n\n---\n\n## ✅ Acceptance Criteria\n\n- [ ] Country filter uses `.chip` buttons (5 chips: All, Remote, USA, Canada, India)\n- [ ] State/Province uses dynamically injected `.chip` buttons replacing the `<select>`\n- [ ] State chip row is horizontally scrollable on viewports < 768px\n- [ ] `filterJobs()` reads new chip state via `.chip.active` — not `select.value`\n- [ ] Dark **and** light themes both render correctly\n- [ ] No regression — filtering USA → CA still returns only California jobs\n- [ ] Existing tests pass (`make test`)\n- [ ] PR linked with `Fixes #<number>`\n- [ ] PR title: `feat(frontend): replace select dropdowns with chip buttons for country/state filters`\n\n**Area:** 🌐 Frontend / website (docs/)",
+      "excerpt": "## 🐥 Beginner Friendly This is a **Beginner Issue** — a natural next step after Good First Issues. It expects you to: - Read existing CSS and HTML, then follow the established `.chip` pattern - Own the small decision...",
+      "issueState": "open",
+      "contentHash": "73e7862bb4ac8af5f86324b02516ad8b1ec4abdf83fc3225eda25d1a21b76dfe",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "beginner",
+        "help wanted",
+        "needs-triage",
+        "type: enhancement",
+        "ui/ux"
+      ],
+      "sourceTags": [
+        "beginner",
+        "help wanted",
+        "needs-triage",
+        "type: enhancement",
+        "ui/ux"
+      ],
+      "author": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "handle": "ambicuity",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-03-06T17:00:46Z",
+      "updatedAt": "2026-11-20T05:01:01Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/113",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "workModel": "remote",
+        "remoteScope": "unspecified",
+        "displayText": "Remote",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "design",
+          "frontend",
+          "mobile"
+        ],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "remote"
+        ],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_7e4397a5c3ec447941a1d5ca",
+          "sourceId": "ambicuity/New-Grad-Jobs#113",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/113",
+          "createdAt": "2026-03-06T17:00:46Z",
+          "updatedAt": "2026-11-20T05:01:01Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 258,
+        "publishedAt": "2026-03-06T17:00:46Z",
         "status": "stale"
       }
     },
@@ -1386,7 +1487,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 289,
+        "ageDays": 290,
         "publishedAt": "2026-02-03T08:33:10Z",
         "status": "stale"
       }
@@ -1500,7 +1601,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 295,
+        "ageDays": 296,
         "publishedAt": "2026-01-28T06:02:14Z",
         "status": "stale"
       }
@@ -1590,7 +1691,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 296,
+        "ageDays": 297,
         "publishedAt": "2026-01-27T03:43:19Z",
         "status": "stale"
       }
@@ -1698,7 +1799,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 296,
+        "ageDays": 297,
         "publishedAt": "2026-01-27T03:40:08Z",
         "status": "stale"
       }
@@ -1782,7 +1883,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 303,
+        "ageDays": 304,
         "publishedAt": "2026-01-20T05:43:31Z",
         "status": "stale"
       }
@@ -1895,115 +1996,6 @@
       "freshness": {
         "ageDays": 304,
         "publishedAt": "2026-01-19T17:26:42Z",
-        "status": "stale"
-      }
-    },
-    {
-      "id": "gh_8d3d4b455493191722317dda",
-      "sourceId": "pythonjobs/jobs#441",
-      "title": "We're hiring!! Senior Full-Stack Engineer (High-Performance Web)",
-      "description": "🚀 **We’re hiring builders of the future (in code).**\n\nMaestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓\nOur mission is simple and ambitious: **use software to change the way we build**. We turn complex design data into clear, real-time instructions for the people (and soon machines 🤖) assembling our world.\n\n🛠 **The Product**\n**Maestro Pilot** is a web-based platform that converts BIM/CAD models, engineering inputs, and site feedback into:\n\n* Interactive **3D assembly manuals**\n* **Real-time completion tracking** for clients\n  We digest massive BIM models, use **AI** to generate logical assembly sequences, and visualize everything in a custom **3D engine**.\n  We’re building the **operating system for next-generation construction**.\n\n📍 **Proof, not slides**\nWe bootstrapped by proving the tech in the field.\nIn just 24 months, Maestro has delivered **mass-timber and steel projects** across Europe and the US 🌍\nResults? Less re-work, faster schedules, and lower carbon impact ♻️\n\n🔭 **What’s next**\nManufacturers are lining up for enterprise trials.\nNow we’re expanding the **software team** to ship the next-gen Pilot and make **digital assembly the industry default**.\n\n💻 **Your Mission**\nYou’ll build the application backbone of a high-performance **Single-Page Application (SPA)** that connects massive geometric datasets (1M+ objects) directly to the user’s fingertips.\n\nYou’ll work on:\n\n* Advanced **UI architecture** (React, SSR/RSC, hydration, rendering strategies)\n* **Complex data visualization** (datagrids, flowcharts, 3D overlays)\n* **State management** at scale (Redux, Zustand, XState)\n* **Algorithms & data structures** (graphs, trees, BIM traversal)\n* **Performance-first engineering** (benchmarking, custom lightweight solutions)\n\n🤝 **How you’ll collaborate**\n\n* With the **Graphics Lead** to sync React UI with a custom Three.js engine\n* With the **AI Engineer** to visualize AI agents, streaming outputs, and interactive chat interfaces\n\n🧠 **The reality**\nFrom optimizing recursive SQL queries in the morning, to refactoring heavy UI components in the afternoon, your work directly impacts live construction sites.\n\n🎁 **What we offer**\n\n* Real ownership: your code ships to **active job-sites**\n* Steep growth: work side-by-side with founders\n* Equity for top performers 💎\n* Startup energy with **real-world, physical impact**\n\n📍 **Location**: Turin (hybrid)\n\n🔥 Join us early. Ship code that leaves the screen and enters the real world.\n\n👉 **Apply via our Dev Portal** https://www.maestro-tech.com/careers/\n\n#Hiring #FrontendEngineering #ReactJobs #TechCareers #StartupJobs #DevJobs\n#3DRendering #BIM #AIEngineering #ConstructionTech #DigitalTransformation\n``",
-      "excerpt": "🚀 **We’re hiring builders of the future (in code).** Maestro is a startup born from research at **MIT** and the **University of Cambridge** 🧠🎓 Our mission is simple and ambitious: **use software to change the way w...",
-      "issueState": "open",
-      "contentHash": "2367233a10e8829a9be227eed3a900dabdce66bec80ee55cfc69c606c58e3625",
-      "repository": "pythonjobs/jobs",
-      "repositoryUrl": "https://github.com/pythonjobs/jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data",
-        "design",
-        "frontend",
-        "hybrid",
-        "react",
-        "senior"
-      ],
-      "sourceTags": [
-        "data",
-        "design",
-        "frontend",
-        "hybrid",
-        "react",
-        "senior"
-      ],
-      "author": {
-        "id": "sandra614",
-        "name": "sandra614",
-        "handle": "sandra614",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/255935107?v=4"
-      },
-      "community": {
-        "id": "pythonjobs",
-        "name": "pythonjobs",
-        "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-        "repository": "pythonjobs/jobs",
-        "url": "https://github.com/pythonjobs/jobs"
-      },
-      "createdAt": "2026-01-19T17:25:09Z",
-      "updatedAt": "2026-07-22T19:05:02Z",
-      "url": "https://github.com/pythonjobs/jobs/issues/441",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "hybrid",
-        "remoteScope": "unspecified",
-        "displayText": "Hybrid",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "design",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "lead",
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "hybrid"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_8d3d4b455493191722317dda",
-          "sourceId": "pythonjobs/jobs#441",
-          "repository": "pythonjobs/jobs",
-          "repositoryUrl": "https://github.com/pythonjobs/jobs",
-          "url": "https://github.com/pythonjobs/jobs/issues/441",
-          "createdAt": "2026-01-19T17:25:09Z",
-          "updatedAt": "2026-07-22T19:05:02Z",
-          "community": {
-            "id": "pythonjobs",
-            "name": "pythonjobs",
-            "avatarUrl": "https://github.com/pythonjobs.png?size=80",
-            "repository": "pythonjobs/jobs",
-            "url": "https://github.com/pythonjobs/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 304,
-        "publishedAt": "2026-01-19T17:25:09Z",
         "status": "stale"
       }
     }
