@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-11-22T10:34:43.097Z",
+  "generatedAt": "2026-11-22T18:54:24.177Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
-    "gh_c99ee60698f79e7e4bddccc6",
+    "gh_0324e43342e486593f369e16",
     "gh_7acdfbd898b4ec903edebd7d",
     "gh_d1d83fe45523bad6fe0f046e",
     "gh_ac1abcef6a18a8bfaba59882",
@@ -27,52 +27,59 @@
   ],
   "items": [
     {
-      "id": "gh_c99ee60698f79e7e4bddccc6",
-      "sourceId": "ambicuity/New-Grad-Jobs#471",
-      "title": "Job data is stale: last scrape 2026-11-22T06:37:48.465641Z",
-      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/45009625814. This issue closes automatically once data is fresh.",
-      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "id": "gh_0324e43342e486593f369e16",
+      "sourceId": "rebase-network/who-is-hiring#1358",
+      "title": "[深圳]｜MoeGo 社招内推｜AI Agent / 后端 / SRE / 研发经理",
+      "description": "MoeGo 做面向宠物服务行业的 SaaS，深圳团队招聘以下技术岗位：\n\n- **AI Agent 开发工程师**：3 年以上开发经验，有 Agent 实践。\n- **后端开发工程师—BE Platform**：3 年以上后端经验。\n- **高级运维开发工程师 / SRE**。\n- **高级研发经理**：8 年以上研发经验，3 年以上管理或技术负责人经验。\n\n产品、设计和财务也有岗位：Principal Product Manager、产品设计负责人、Senior Finance Operation Expert。\n\n[岗位详情及内推投递](https://app.mokahr.com/su/nykFF)",
+      "excerpt": "MoeGo 做面向宠物服务行业的 SaaS，深圳团队招聘以下技术岗位： - **AI Agent 开发工程师**：3 年以上开发经验，有 Agent 实践。 - **后端开发工程师—BE Platform**：3 年以上后端经验。 - **高级运维开发工程师 / SRE**。 - **高级研发经理**：8 年以上研发经验，3 年以上管理或技术负责人经验。 产品、设计和财务也有岗位：Principal Product Manager...",
       "issueState": "open",
-      "contentHash": "083462d3a9ba345cbd54bae03cea70e7686b5224a486856011220868bdf9ad31",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
+      "contentHash": "79b1c74adf7589e24a123936f412b2f2b995ad5ffeaac7c1f4ebdfa2a9cac4de",
+      "repository": "rebase-network/who-is-hiring",
+      "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+      "region": "Global",
+      "country": "Global",
       "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
+        "country": "Global",
+        "countryCode": "GLOBAL",
+        "region": "Global"
       },
       "tags": [
-        "scraper-stale"
+        "needs-info"
       ],
       "sourceTags": [
-        "scraper-stale"
+        "needs-info"
       ],
       "author": {
-        "id": "github-actions[bot]",
-        "name": "github-actions[bot]",
-        "handle": "github-actions[bot]",
-        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+        "id": "Y-qwq",
+        "name": "Y-qwq",
+        "handle": "Y-qwq",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/43369548?v=4"
       },
       "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+        "id": "rebase-network",
+        "name": "rebase-network",
+        "avatarUrl": "https://github.com/rebase-network.png?size=80",
+        "repository": "rebase-network/who-is-hiring",
+        "url": "https://github.com/rebase-network/who-is-hiring"
       },
-      "createdAt": "2026-11-22T09:52:25Z",
-      "updatedAt": "2026-11-22T09:52:25Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/471",
+      "createdAt": "2026-11-22T13:31:51Z",
+      "updatedAt": "2026-11-22T13:32:42Z",
+      "url": "https://github.com/rebase-network/who-is-hiring/issues/1358",
       "sourceType": "github-issue",
       "jobLocation": {
         "confidence": "unknown"
       },
       "taxonomy": {
-        "areas": [],
+        "areas": [
+          "data-ai",
+          "devops-sre",
+          "product"
+        ],
         "technologies": [],
-        "seniority": [],
+        "seniority": [
+          "principal",
+          "senior"
+        ],
         "employmentTypes": [],
         "workModels": [],
         "languages": []
@@ -80,24 +87,24 @@
       "dataProvenance": {
         "location": "unknown",
         "salary": "unknown",
-        "seniority": "unknown",
+        "seniority": "inferred",
         "workModel": "unknown"
       },
       "sources": [
         {
-          "id": "gh_c99ee60698f79e7e4bddccc6",
-          "sourceId": "ambicuity/New-Grad-Jobs#471",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/471",
-          "createdAt": "2026-11-22T09:52:25Z",
-          "updatedAt": "2026-11-22T09:52:25Z",
+          "id": "gh_0324e43342e486593f369e16",
+          "sourceId": "rebase-network/who-is-hiring#1358",
+          "repository": "rebase-network/who-is-hiring",
+          "repositoryUrl": "https://github.com/rebase-network/who-is-hiring",
+          "url": "https://github.com/rebase-network/who-is-hiring/issues/1358",
+          "createdAt": "2026-11-22T13:31:51Z",
+          "updatedAt": "2026-11-22T13:32:42Z",
           "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+            "id": "rebase-network",
+            "name": "rebase-network",
+            "avatarUrl": "https://github.com/rebase-network.png?size=80",
+            "repository": "rebase-network/who-is-hiring",
+            "url": "https://github.com/rebase-network/who-is-hiring"
           }
         }
       ],
@@ -106,7 +113,7 @@
       },
       "freshness": {
         "ageDays": 0,
-        "publishedAt": "2026-11-22T09:52:25Z",
+        "publishedAt": "2026-11-22T13:31:51Z",
         "status": "fresh"
       }
     },
@@ -164,7 +171,7 @@
         "period": "month"
       },
       "createdAt": "2026-11-21T19:00:10Z",
-      "updatedAt": "2026-11-21T19:06:18Z",
+      "updatedAt": "2026-11-22T18:06:26Z",
       "url": "https://github.com/react-brasil/vagas/issues/3042",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -211,7 +218,7 @@
           "repositoryUrl": "https://github.com/react-brasil/vagas",
           "url": "https://github.com/react-brasil/vagas/issues/3042",
           "createdAt": "2026-11-21T19:00:10Z",
-          "updatedAt": "2026-11-21T19:00:33Z",
+          "updatedAt": "2026-11-22T16:30:06Z",
           "community": {
             "id": "react-brasil",
             "name": "react-brasil",
@@ -227,7 +234,7 @@
           "repositoryUrl": "https://github.com/frontendbr/vagas",
           "url": "https://github.com/frontendbr/vagas/issues/8576",
           "createdAt": "2026-11-21T19:00:11Z",
-          "updatedAt": "2026-11-21T19:06:18Z",
+          "updatedAt": "2026-11-22T18:06:26Z",
           "community": {
             "id": "frontendbr",
             "name": "frontendbr",
@@ -333,7 +340,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-21T16:14:57Z",
         "status": "fresh"
       }
@@ -413,7 +420,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-20T15:46:18Z",
         "status": "fresh"
       }
@@ -508,7 +515,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-20T15:08:04Z",
         "status": "fresh"
       }
@@ -623,7 +630,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-20T13:44:48Z",
         "status": "fresh"
       }
@@ -719,7 +726,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-20T13:07:12Z",
         "status": "fresh"
       }
@@ -1025,7 +1032,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-19T14:35:10Z",
         "status": "fresh"
       }
@@ -1814,7 +1821,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-18T13:25:35Z",
         "status": "fresh"
       }
@@ -1929,7 +1936,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-17T18:53:27Z",
         "status": "fresh"
       }
@@ -2040,7 +2047,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-17T18:43:29Z",
         "status": "fresh"
       }
@@ -2161,7 +2168,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 4,
+        "ageDays": 5,
         "publishedAt": "2026-11-17T18:19:23Z",
         "status": "fresh"
       }
