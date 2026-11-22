@@ -1,16 +1,74 @@
 {
-  "generatedAt": "2026-11-21T18:31:34.051Z",
+  "generatedAt": "2026-11-22T10:34:43.097Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "ambicuity/New-Grad-Jobs",
   "totals": {
     "opportunities": 28,
-    "openIssues": 5,
-    "closedIssues": 23
+    "openIssues": 6,
+    "closedIssues": 22
   },
-  "dataHash": "787a2e8565fb7e6edff1814f51440c1279d3da247a25d263e885cf1f89d1ded8",
+  "dataHash": "a97ec68bad058996de55c865fe8f9d1dd642f0b1a486472305b2e026c8c47cda",
   "items": [
+    {
+      "id": "gh_c99ee60698f79e7e4bddccc6",
+      "sourceId": "ambicuity/New-Grad-Jobs#471",
+      "title": "Job data is stale: last scrape 2026-11-22T06:37:48.465641Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/45009625814. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "083462d3a9ba345cbd54bae03cea70e7686b5224a486856011220868bdf9ad31",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-22T09:52:25Z",
+      "updatedAt": "2026-11-22T09:52:25Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/471",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      }
+    },
     {
       "id": "gh_34c7a723d019628a4be442f2",
       "sourceId": "ambicuity/New-Grad-Jobs#468",
@@ -1592,72 +1650,6 @@
         "salary": "unknown",
         "seniority": "unknown",
         "workModel": "inferred"
-      }
-    },
-    {
-      "id": "gh_b29f7d5bd90361353b30b563",
-      "sourceId": "ambicuity/New-Grad-Jobs#173",
-      "title": "[Advanced]: add iCIMS ingestion support to recover enterprise networking and infrastructure coverage",
-      "description": "### 🧠 Advanced Contributors\nThis issue is for contributors who are already very familiar with this codebase\nand its architectural patterns.\n\nYou should feel comfortable:\n- Understanding the full data flow: `config.yml` → fetch → filter → dedup → categorize → commit\n- Reading and modifying `ThreadPoolExecutor` logic and thread-safety considerations\n- Reasoning about API contract changes across ATS providers\n- Writing rigorous, deterministic tests without live network calls\n\n> [!IMPORTANT]\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n> PRs submitted without a prior assignment will be closed.\n\n### 🐞 Problem Description\nThe roadmap already calls out ATS coverage expansion as the biggest remaining quality gap. Today, the scraper has strong coverage for Greenhouse, Lever, Google Careers, and partial Workday, but it still misses entire slices of enterprise hiring that sit behind other ATS platforms.\n\niCIMS is a high-leverage next source because it is common among larger employers, including companies that post entry-level infrastructure, networking, and security roles that never reach the board today.\n\nWithout a first-class iCIMS integration, the dataset will continue to under-represent one of the main role families the README says it tracks.\n\n### 💡 Proposed / Expected Solution\nAdd a production-ready iCIMS fetch path that follows the same project constraints as the existing sources:\n\n- config-driven company definitions\n- deterministic tests with mocked responses\n- compatibility with the current normalization, filtering, and dedup pipeline\n- no external database or browser-based dependency\n\nThis should be implemented as a source integration, not as a one-off company patch.\n\n### ✅ Acceptance Criteria\n- [ ] A reusable iCIMS fetch path exists in the scraper\n- [ ] `config.yml` can declare iCIMS-backed companies without custom code per company\n- [ ] New source behavior is covered by deterministic tests with mocked payloads\n- [ ] Thread-safety is preserved\n- [ ] All existing `pytest tests/` pass\n- [ ] New tests added for every changed code path (deterministic — no live network calls)\n- [ ] `pre-commit run --all-files` passes\n- [ ] `jobs.json` schema remains backward compatible with `docs/app.js`\n- [ ] PR is linked to this issue with `Fixes #<number>`\n- [ ] PR title follows Conventional Commits format\n\n### 🏗️ Which area does this touch?\n🤖 Core scraper (scripts/update_jobs.py)\n\n### 🔗 Additional Context\n- Roadmap reference: `ROADMAP.md` lists iCIMS support under v1.1\n- Existing ATS references: Greenhouse, Lever, Google Careers, Workday",
-      "excerpt": "### 🧠 Advanced Contributors This issue is for contributors who are already very familiar with this codebase and its architectural patterns. You should feel comfortable: - Understanding the full data flow: `config.yml...",
-      "issueState": "closed",
-      "contentHash": "17425b134c9d469abcb69957f04a1c66b27b5fc282997ba3704f0223c4ce761f",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "type: enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "advanced"
-      ],
-      "sourceTags": [
-        "type: enhancement",
-        "help wanted",
-        "needs-triage",
-        "priority: medium",
-        "advanced"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-14T05:28:12Z",
-      "updatedAt": "2026-10-16T22:56:05Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/173",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
       }
     },
     {

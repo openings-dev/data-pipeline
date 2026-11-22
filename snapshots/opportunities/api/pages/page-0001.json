@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-11-22T00:50:13.940Z",
+  "generatedAt": "2026-11-22T10:34:43.097Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
+    "gh_c99ee60698f79e7e4bddccc6",
     "gh_7acdfbd898b4ec903edebd7d",
     "gh_d1d83fe45523bad6fe0f046e",
     "gh_ac1abcef6a18a8bfaba59882",
@@ -22,10 +23,93 @@
     "gh_08a04b0801e201329254c81b",
     "gh_2f70a6283bee228fdc072988",
     "gh_03e726cf5392a612dc1d5a58",
-    "gh_515d7b3354e1b4d68735ca73",
-    "gh_6357493d77df8d138d92db9e"
+    "gh_515d7b3354e1b4d68735ca73"
   ],
   "items": [
+    {
+      "id": "gh_c99ee60698f79e7e4bddccc6",
+      "sourceId": "ambicuity/New-Grad-Jobs#471",
+      "title": "Job data is stale: last scrape 2026-11-22T06:37:48.465641Z",
+      "description": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing scheduled runs and push a no-op edit to the workflow file to re-register its schedule. Run: https://github.com/ambicuity/New-Grad-Jobs/actions/runs/45009625814. This issue closes automatically once data is fresh.",
+      "excerpt": "The watchdog found `https://jobs.riteshrana.engineer/health.json` last updated **194 minutes** ago (threshold 180). It dispatched `update-jobs.yml`; if this persists, check Actions → Update New Grad Jobs for missing s...",
+      "issueState": "open",
+      "contentHash": "083462d3a9ba345cbd54bae03cea70e7686b5224a486856011220868bdf9ad31",
+      "repository": "ambicuity/New-Grad-Jobs",
+      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [
+        "scraper-stale"
+      ],
+      "sourceTags": [
+        "scraper-stale"
+      ],
+      "author": {
+        "id": "github-actions[bot]",
+        "name": "github-actions[bot]",
+        "handle": "github-actions[bot]",
+        "avatarUrl": "https://avatars.githubusercontent.com/in/15368?v=4"
+      },
+      "community": {
+        "id": "ambicuity",
+        "name": "ambicuity",
+        "avatarUrl": "https://github.com/ambicuity.png?size=80",
+        "repository": "ambicuity/New-Grad-Jobs",
+        "url": "https://github.com/ambicuity/New-Grad-Jobs"
+      },
+      "createdAt": "2026-11-22T09:52:25Z",
+      "updatedAt": "2026-11-22T09:52:25Z",
+      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/471",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_c99ee60698f79e7e4bddccc6",
+          "sourceId": "ambicuity/New-Grad-Jobs#471",
+          "repository": "ambicuity/New-Grad-Jobs",
+          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
+          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/471",
+          "createdAt": "2026-11-22T09:52:25Z",
+          "updatedAt": "2026-11-22T09:52:25Z",
+          "community": {
+            "id": "ambicuity",
+            "name": "ambicuity",
+            "avatarUrl": "https://github.com/ambicuity.png?size=80",
+            "repository": "ambicuity/New-Grad-Jobs",
+            "url": "https://github.com/ambicuity/New-Grad-Jobs"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 0,
+        "publishedAt": "2026-11-22T09:52:25Z",
+        "status": "fresh"
+      }
+    },
     {
       "id": "gh_7acdfbd898b4ec903edebd7d",
       "sourceId": "react-brasil/vagas#3042",
@@ -719,7 +803,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 1,
+        "ageDays": 2,
         "publishedAt": "2026-11-20T05:18:36Z",
         "status": "fresh"
       }
@@ -1042,7 +1126,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-19T10:11:33Z",
         "status": "fresh"
       }
@@ -1133,7 +1217,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-19T07:01:08Z",
         "status": "fresh"
       }
@@ -1258,7 +1342,7 @@
         "sourceCount": 2
       },
       "freshness": {
-        "ageDays": 2,
+        "ageDays": 3,
         "publishedAt": "2026-11-19T04:47:37Z",
         "status": "fresh"
       }
@@ -2079,119 +2163,6 @@
       "freshness": {
         "ageDays": 4,
         "publishedAt": "2026-11-17T18:19:23Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_6357493d77df8d138d92db9e",
-      "sourceId": "qa-brasil/vagas#1286",
-      "title": "[São Paulo] Software QA Manager na Proativa RH",
-      "description": "<!-- IMPORTANTE:\n\n1. VOCÊ PODE SER BLOQUEADO de divulgar vaga se realizar ações que geram spam como:\n    1.1. Abrir diversas issues para a mesma vaga em um curto período de tempo.\n    1.2. Fechar qualquer issue.\n\nSe alguma issue aberta por você é referente a uma vaga que não está mais aberta, mude o título da issue para [VAGA FECHADA]. NÃO feche a issue ou será bloqueado. Para saber mais leia: https://github.com/qa-brasil/vagas#%EF%B8%8F-importante---leia-para-n%C3%A3o-ser-bloqueado.\n\n2. Só poste vaga de QA.\n3. Utilize o template abaixo como guia, sem apagar as seções e apenas alterando as informações de dentro delas.\n4. Não faça distinção de gênero.\n5. Respeite o código de conduta -->\n\n## Responsabilidades\n\n• Liderar a equipe de QA, incluindo profissionais efetivos e contratados, sendo responsável por contratação, onboarding, treinamento, acompanhamento de desempenho e desenvolvimento do time, além da gestão e distribuição dos recursos entre os projetos. \n• Coordenar todas as atividades de testes ao longo do ciclo de desenvolvimento de software (SDLC), incluindo testes manuais, automatizados e de performance, promovendo iniciativas de melhoria contínua. \n• Estruturar, implementar e manter processos, políticas e sistemas de QA e gestão de testes, garantindo a aplicação de padrões, procedimentos e boas práticas de automação. \n• Estruturar e acompanhar os processos de governança e reporting da área, utilizando ferramentas como QTest, Azure DevOps (ADO) e Power BI para monitorar KPIs das equipes de testes e dos ciclos de automação. \n• Atuar em parceria com as equipes funcionais de SAP, Release Management e áreas de negócio, analisando os resultados dos testes e propondo melhorias para a evolução dos processos e dos frameworks de automação. \n• Gerenciar a escolha, implementação e utilização de ferramentas e tecnologias de testes, incluindo soluções baseadas em Inteligência Artificial (IA), além de garantir que a equipe tenha os acessos e ambientes necessários para execução das atividades. \n• Trabalhar em conjunto com diferentes áreas e stakeholders, garantindo uma comunicação alinhada e atuando na resolução de questões relacionadas à qualidade dos projetos. \n• Acompanhar, analisar e apresentar indicadores de qualidade (KPIs), utilizando dados para apoiar a tomada de decisões e identificar tendências e oportunidades de melhoria. \n• Apoiar auditorias, inspeções e revisões de processos relacionados ao SDLC e à qualidade, acompanhando a implementação das ações corretivas identificadas. \n• Elaborar e apresentar relatórios, indicadores e análises de QA para a alta gestão, trazendo recomendações e direcionamentos para melhoria dos processos. \n• Desenvolver e ministrar treinamentos sobre princípios, processos e boas práticas de QA, contribuindo para o desenvolvimento das equipes e para o fortalecimento da cultura de qualidade na organização. \n• Acompanhar as principais tendências e boas práticas do mercado, mudanças regulatórias e novas metodologias de QA, incorporando-as às estratégias e processos do Centro de Excelência (CoE).\n\n\n## Local de trabalho\n<!-- escolha apenas 1 das linhas abaixo, ajuste para o seu contexto e exclua as outras -->\n- Híbrido. 2 dias remoto e 3 dias presencial no escritório em Pinheiros - SP\n\n## Requisitos da vaga\n\n**Obrigatórios**\n\n• Experiência sólida em liderança e gestão de equipes de QA, incluindo contratação, onboarding, desenvolvimento, acompanhamento de desempenho e gestão de recursos. \n• Experiência na definição, implementação e melhoria contínua de processos, metodologias e políticas de QA e gestão de testes. \n• Conhecimento sólido dos processos de desenvolvimento de software (SDLC), princípios e metodologias de Software Quality Assurance (QA). \n• Experiência com testes manuais, automatizados e de performance em ambientes SAP. \n• Domínio do Tricentis Tosca, incluindo conhecimento abrangente de seus módulos, funcionalidades e aplicação em processos de automação de testes. \n• Inglês avançado ou fluente para comunicação frequente com stakeholders e clientes internacionais. \n• Experiência com ferramentas de gestão e execução de testes (exemplos: QTest e NeoLoad). \n• Experiência com outras ferramentas e tecnologias de automação, como Playwright, Selenium e GitHub, será considerada um diferencial. \n• Experiência com indicadores de qualidade, reporting e governança de QA, utilizando ferramentas como Azure DevOps (ADO), QTest e Power BI. \n• Experiência com auditorias, inspeções e revisões de processos relacionados à qualidade de software. \n• Conhecimento e experiência com ferramentas de gestão da qualidade e interesse na aplicação de Inteligência Artificial (IA) em processos de QA. \n• Conhecimento de normas, padrões e regulamentações aplicáveis à qualidade de software.\n• Conhecimento do negócio, estrutura e estratégia, com capacidade de utilizar esse entendimento na identificação de problemas e desenvolvimento de soluções.\n• Forte capacidade analítica, de resolução de problemas e tomada de decisão. \n• Boa comunicação, relacionamento interpessoal, influência e capacidade de liderança, com experiência na gestão de stakeholders e atuação junto a equipes multidisciplinares.\n\n## Forma de contratação\n\nCLT\n\n## Benefícios da empresa\n\n• Assistência Médica; \n• Assistência Odontológica; \n• Cartão Refeição e Alimentação, podendo ser fracionado VA e VR; \n• PPR (Programa de Participação nos Resultados); \n• Seguro de Vida; \n• Previdência Privada; \n• Estacionamento gratuito; \n• Vale-transporte; \n• Convênio Farmácia: descontos em medicamentos pela rede credenciada; \n• Totalpass: acesso a academias e atividades físicas para colaboradores e dependentes; \n• Apoio psicológico, social e emocional para colaboradores e dependentes; \n• Licenças parentais estendidas; \nOutros benefícios adicionais.\n\n## Range Salarial\n\nPretensão Salarial\n\n## Como se candidatar\n\n- Por favor envie um email para alejandro.puerta@proativarh.com.br e isadora.romio@proativarh.com.br com seu CV anexado - Enviar no assunto: Vaga de QA Manager\n- Ou candidatar através do site https://proativarh.selecty.com.br/vaga/3691/vaga-para-gerente-de-qa-de-software-em-sao-paulo-sp\n\n## Tempo médio de feedbacks\n\nCostumamos enviar feedbacks em até 03 dias úteis após cada processo.\n\n## Labels\n<!-- Label é uma forma dos QAs conseguirem pesquisar as vagas. Após cadastrar a vaga, ela receberá label automaticamente em até 2 minutos.\nApague os itens abaixo que não corresponderem à vaga. -->\n- CLT\n- Sênior\n\n<!-- Se a vaga for mista (X dias presencial e Y dias remoto) deixe as 2 linhas abaixo -->\n- Híbrido\n\n<!--- Informar abaixo o nome do estado por extenso se for do Brasil. --->\n- São Paulo\n<!--- Se sua vaga não for do Brasil, apague a linha de estado acima e deixe a de baixo --->",
-      "excerpt": "<!-- IMPORTANTE: 1. VOCÊ PODE SER BLOQUEADO de divulgar vaga se realizar ações que geram spam como: 1.1. Abrir diversas issues para a mesma vaga em um curto período de tempo. 1.2. Fechar qualquer issue. Se alguma issu...",
-      "issueState": "open",
-      "contentHash": "7216f1464e1bec5b8fb3fbfec9f6cffbe5cc004a0ae2c9eb47eb04e7a4ee41b6",
-      "repository": "qa-brasil/vagas",
-      "repositoryUrl": "https://github.com/qa-brasil/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "clt",
-        "inglês",
-        "presencial",
-        "remoto",
-        "são paulo",
-        "sênior"
-      ],
-      "sourceTags": [
-        "clt",
-        "inglês",
-        "presencial",
-        "remoto",
-        "são paulo",
-        "sênior"
-      ],
-      "author": {
-        "id": "IsadoraBRomio",
-        "name": "IsadoraBRomio",
-        "handle": "IsadoraBRomio",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/357934326?v=4"
-      },
-      "community": {
-        "id": "qa-brasil",
-        "name": "qa-brasil",
-        "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-        "repository": "qa-brasil/vagas",
-        "url": "https://github.com/qa-brasil/vagas"
-      },
-      "companyName": "Proativa RH",
-      "createdAt": "2026-11-17T18:02:16Z",
-      "updatedAt": "2026-11-17T19:24:39Z",
-      "url": "https://github.com/qa-brasil/vagas/issues/1286",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "devops-sre",
-          "qa"
-        ],
-        "technologies": [
-          "azure"
-        ],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [
-          "employee"
-        ],
-        "workModels": [
-          "hybrid",
-          "on-site",
-          "remote"
-        ],
-        "languages": [
-          "en"
-        ]
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_6357493d77df8d138d92db9e",
-          "sourceId": "qa-brasil/vagas#1286",
-          "repository": "qa-brasil/vagas",
-          "repositoryUrl": "https://github.com/qa-brasil/vagas",
-          "url": "https://github.com/qa-brasil/vagas/issues/1286",
-          "createdAt": "2026-11-17T18:02:16Z",
-          "updatedAt": "2026-11-17T19:24:39Z",
-          "community": {
-            "id": "qa-brasil",
-            "name": "qa-brasil",
-            "avatarUrl": "https://github.com/qa-brasil.png?size=80",
-            "repository": "qa-brasil/vagas",
-            "url": "https://github.com/qa-brasil/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 4,
-        "publishedAt": "2026-11-17T18:02:16Z",
         "status": "fresh"
       }
     }
