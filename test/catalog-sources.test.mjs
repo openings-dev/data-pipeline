@@ -1,9 +1,52 @@
 import assert from "node:assert/strict";
+import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import test from "node:test";
 
 import { readRepositoryCatalog } from "../src/modules/catalog/catalog-repository.mjs";
 import { mapIssueToOpportunity } from "../src/modules/opportunities/opportunity-mapper.mjs";
+import { readDiscoveryDecisions } from "../src/modules/discovery/read-discovery-contract.mjs";
+import { activeDecisionKeys } from "../src/modules/discovery/discovery-groups.mjs";
+
+test("maintenance-only issue sources are excluded from ingestion", async () => {
+  const catalog = await readRepositoryCatalog(
+    resolve(process.cwd(), "src/modules/catalog/repositories.json"),
+  );
+  assert.equal(catalog.repositories.some(
+    (item) => item.repository.toLowerCase() === "ambicuity/new-grad-jobs",
+  ), false, "repository maintenance issues must not be published as vacancies");
+});
+
+test("discovery retains the rejection of the maintenance-only job-list repository", async () => {
+  const registry = await readDiscoveryDecisions(
+    resolve(process.cwd(), "src/modules/discovery/discovery-decisions.json"),
+  );
+  const decision = registry.decisions.find(
+    (item) => item.repository.toLowerCase() === "ambicuity/new-grad-jobs",
+  );
+  assert.equal(decision?.decision, "rejected");
+  assert.ok(activeDecisionKeys(registry.decisions, "2099-01-01")
+    .has("ambicuity/new-grad-jobs"), "discovery must not propose this source again without review");
+});
+
+test("pending publications do not republish rejected issue sources", async () => {
+  const registry = await readDiscoveryDecisions(
+    resolve(process.cwd(), "src/modules/discovery/discovery-decisions.json"),
+  );
+  const rejected = new Set(registry.decisions
+    .filter((item) => item.decision === "rejected")
+    .map((item) => item.repository.toLowerCase()));
+  const outbox = JSON.parse(await readFile(
+    resolve(process.cwd(), "snapshots/publishing/outbox.json"), "utf8",
+  ));
+  for (const publication of outbox.publications) {
+    for (const delivery of publication.deliveries) {
+      const repository = delivery.payload?.entity?.content?.repository;
+      assert.ok(!rejected.has(repository?.toLowerCase()),
+        `pending publication still includes rejected source: ${repository}`);
+    }
+  }
+});
 
 const EXPECTED = {
   "OurTinTinLand/TinTin-Job-Board": {
