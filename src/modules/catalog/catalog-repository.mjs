@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { ISSUE_POLICIES } from "../opportunities/issue-admission.mjs";
 
 /**
  * @param {string} value
@@ -32,6 +33,9 @@ function assertCatalogShape(catalog) {
     assertNonEmptyString(repository.countryCode, "countryCode");
     assertNonEmptyString(repository.region, "region");
     assertNonEmptyString(repository.url, "url");
+    if (repository.issuePolicy !== undefined && !ISSUE_POLICIES.has(repository.issuePolicy)) {
+      throw new Error(`Invalid issue policy for ${repository.repository}: ${repository.issuePolicy}`);
+    }
   }
 }
 

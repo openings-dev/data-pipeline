@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-11-10T21:09:00.841Z",
+  "generatedAt": "2026-11-23T11:35:19.837Z",
   "country": "United States",
   "countryCode": "US",
   "region": "North America",
   "repository": "speedyapply/2027-SWE-College-Jobs",
   "totals": {
-    "opportunities": 24,
-    "openIssues": 6,
-    "closedIssues": 18
+    "opportunities": 19,
+    "openIssues": 5,
+    "closedIssues": 14
   },
-  "dataHash": "953ce7ae9b22a51cf9a81b6d08b332d41f1292f7130e7bb8f03357667d401cde",
+  "dataHash": "4be6ed04e7863a16774d46235d68473c8320e5a474519ec51bebd3329f7c9250",
   "items": [
     {
       "id": "gh_5bcc6d8ee79c02b947055050",
@@ -148,66 +148,6 @@
       }
     },
     {
-      "id": "gh_04527d7aee2622a060d30425",
-      "sourceId": "speedyapply/2027-SWE-College-Jobs#47",
-      "title": "Question about reading public listings on SpeedyApply INTL (personal final-year project)",
-      "description": "Hello SpeedyApply INTL team,\n\nI'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university or organization. It helps students around the world find internships and graduate roles.\n\nMy script already reads your public job listings, normally once a day, and I would like to check that this is OK with you. For each job the site shows the title, employer, location and a link to the job, and the date where your list gives one, plus a few things derived from the advert (tags, a visa note, a fit score). The same list is also a public file anyone can download. Nothing is sold. Neither this repository nor speedyapply/2027-AI-College-Jobs has a licence file, so I am asking rather than assuming, and I would be glad to credit it with a link back.\n\nCould you tell me if this is fine, or what you would prefer (a lower rate, an API or feed, only some fields)? If someone else handles this, please forward it.\n\nIf you would rather I stop, tell me. I will block it within a few days, so that from the next daily run after that there are no more requests and your listings leave the site, and I will delete the advert text I stored.\n\nThank you,\nManuchehr Qoriev\nOmniLadders · omniladders@gmail.com · https://omniladders.pages.dev\n\nTechnical details, in case someone asks:\n- Requests, once a day (4 in all; a failed request is retried at most twice):\n    GET raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/INTERN_INTL.md (the international internship list)\n    GET raw.githubusercontent.com/speedyapply/2027-SWE-College-Jobs/main/NEW_GRAD_INTL.md (the international new-grad list)\n    GET raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/INTERN_INTL.md (the international AI internship list)\n    GET raw.githubusercontent.com/speedyapply/2027-AI-College-Jobs/main/NEW_GRAD_INTL.md (the international AI new-grad list)\n  They send the headers of Chrome on macOS; I can switch to \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\" if you prefer.\n- Link check: once a day, a HEAD request to the link of each job shown on the site (your job page or, where a listing provides one, the employer's own application page), following redirects (plus a GET on 403, 404, 405, 410 or a server error), as \"Mozilla/5.0 (compatible; OmniLadders/1.0; +https://omniladders.pages.dev)\".\n- Stored privately: the advert text, where your site provides it, used to work out labels (visa, degree, experience, language); not published in full. An occasional manual check may send, at most, a job's title, employer, location, link and up to about 2,000 characters of its text to a third-party AI service (Google Gemini or OpenAI).\n- Published: title, employer, location, date, salary if given, a few tags derived from the advert, a visa note, a computed fit score and a link (also as https://omniladders.pages.dev/jobs.json), plus a short quote where an advert states a visa, experience or language requirement.",
-      "excerpt": "Hello SpeedyApply INTL team, I'm Manuchehr Qoriev, a computer science student. OmniLadders (https://omniladders.pages.dev) is my own personal final-year project, free and non-commercial, and not run by any university ...",
-      "issueState": "open",
-      "contentHash": "fdf1398f91efa9eb099d3b6c3bc33948403e464c9a710ce891cd2780df6ede95",
-      "repository": "speedyapply/2027-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "pathmaker7",
-        "name": "pathmaker7",
-        "handle": "pathmaker7",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/112572372?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2027-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-      },
-      "createdAt": "2026-09-30T10:27:34Z",
-      "updatedAt": "2026-09-30T10:27:34Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/47",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai"
-        ],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_1fcf5b3e41ed98c095ac369d",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#46",
       "title": "Marshall Wace Technology Graduate Programme",
@@ -279,7 +219,7 @@
     {
       "id": "gh_97b8425b4e56b673a31c0cc8",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#45",
-      "title": "New Position",
+      "title": "Software Engineer - Data Analytics Team — SEACORP",
       "description": "### Position Title\n\nSoftware Engineer - Data Analytics Team\n\n### Position Application Link\n\nhttps://seacorp.csod.com/ux/ats/careersite/5/home/requisition/1918?c=seacorp\n\n### Company Name\n\nSEACORP\n\n### Company Link\n\nhttps://www.seacorp.com/\n\n### Location\n\nManassas, VA | Middletown, RI\n\n### Is this a new grad position or an internship?\n\nNew Grad\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\nnolanplatt1@gmail.com",
       "excerpt": "### Position Title Software Engineer - Data Analytics Team ### Position Application Link https://seacorp.csod.com/ux/ats/careersite/5/home/requisition/1918?c=seacorp ### Company Name SEACORP ### Company Link https://w...",
       "issueState": "open",
@@ -342,12 +282,13 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "unknown"
-      }
+      },
+      "sourceTitle": "New Position"
     },
     {
       "id": "gh_e12e9295912e94b19e0d7246",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#44",
-      "title": "New Position",
+      "title": "Technology Intern — Marshall Wace",
       "description": "### Position Title\n\nTechnology Intern\n\n### Position Application Link\n\nhttps://grnh.se/wyfef0fb2us\n\n### Company Name\n\nMarshall Wace\n\n### Company Link\n\nhttps://www.mwam.com\n\n### Location\n\nNew York\n\n### Is this a new grad position or an internship?\n\nInternship\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\n_No response_",
       "excerpt": "### Position Title Technology Intern ### Position Application Link https://grnh.se/wyfef0fb2us ### Company Name Marshall Wace ### Company Link https://www.mwam.com ### Location New York ### Is this a new grad position...",
       "issueState": "open",
@@ -404,78 +345,8 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_0da6859886c96b16c4fc91d2",
-      "sourceId": "speedyapply/2027-SWE-College-Jobs#43",
-      "title": "Bypass Hubstaff, Upwork, Timely, Time Doctor, Apploye or any TimeTracker with TimeCloak",
-      "description": "### Issue or Feature Request\n\nRemote professionals using [Upwork](https://www.upwork.com/), [Hubstaff](https://hubstaff.com/), [Time Doctor](https://www.timedoctor.com/), [Clockify](https://clockify.me/), [Timely](https://www.timely.com/), and [Apploye](https://apploye.com/) often discover that traditional time tracking systems rely heavily on screenshots, mouse movement, keyboard activity, idle detection, and activity scores to evaluate performance. For developers, designers, freelancers, and outsourcing professionals, these metrics rarely capture deep thinking, research, debugging, planning, or creative problem solving, causing productivity to be judged by activity rather than actual results. :contentReference[oaicite:0]{index=0}\n\n[TimeCloak](https://www.mhztimecloak.com/) is built for professionals who believe output matters more than activity percentages. With intelligent features including TimeBooster, Screen Tab Shifting, Automated Cursor Movement, Random Scrolling, and staying invisible on taskbar and task manager, TimeCloak helps create a smoother and less stressful remote work experience. Whether you work through Upwork, collaborate with international clients, or use workplace monitoring platforms like Hubstaff, Time Doctor, Clockify, Timely, or Apploye, TimeCloak is designed for remote developers, freelancers, and distributed teams who want to focus on delivering high quality work instead of constantly worrying about activity scores and excessive monitoring.",
-      "excerpt": "### Issue or Feature Request Remote professionals using [Upwork](https://www.upwork.com/), [Hubstaff](https://hubstaff.com/), [Time Doctor](https://www.timedoctor.com/), [Clockify](https://clockify.me/), [Timely](http...",
-      "issueState": "closed",
-      "contentHash": "514704747ec87966b495a1cdce345b981208c07e9cc6bf2e8514f264e9ab4a2d",
-      "repository": "speedyapply/2027-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
       },
-      "tags": [
-        "remote",
-        "staff",
-        "design"
-      ],
-      "sourceTags": [
-        "remote",
-        "staff",
-        "design"
-      ],
-      "author": {
-        "id": "MHZ426",
-        "name": "MHZ426",
-        "handle": "MHZ426",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/224518011?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2027-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-      },
-      "createdAt": "2026-07-07T06:59:52Z",
-      "updatedAt": "2026-07-09T04:38:03Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/43",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design"
-        ],
-        "technologies": [],
-        "seniority": [
-          "staff"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      }
+      "sourceTitle": "New Position"
     },
     {
       "id": "gh_d649ca7ffa8d099ff1e8dee1",
@@ -542,65 +413,6 @@
       },
       "dataProvenance": {
         "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      }
-    },
-    {
-      "id": "gh_ee8396834b04b69695e95848",
-      "sourceId": "speedyapply/2027-SWE-College-Jobs#39",
-      "title": "Other Issue",
-      "description": "### Issue or Feature Request\n\nTHE\nAce Hardware  IT Associate Software Engineer 2026 Summer Internship  Full Time/Paid/12 weeks IL Oak Brook.\nDOES NOT EXIST.",
-      "excerpt": "### Issue or Feature Request THE Ace Hardware IT Associate Software Engineer 2026 Summer Internship Full Time/Paid/12 weeks IL Oak Brook. DOES NOT EXIST.",
-      "issueState": "closed",
-      "contentHash": "50bcfb06c21729614c24081ca55ee4557a25ce1d5c21cde7e4cf0fa16b924076",
-      "repository": "speedyapply/2027-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "DanV27",
-        "name": "DanV27",
-        "handle": "DanV27",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/130527793?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2027-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-      },
-      "createdAt": "2026-05-07T13:13:59Z",
-      "updatedAt": "2026-07-09T05:56:13Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/39",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [
-          "full-time",
-          "internship"
-        ],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "unknown"
@@ -814,60 +626,6 @@
       }
     },
     {
-      "id": "gh_4072d7facf7181be9e2852ce",
-      "sourceId": "speedyapply/2027-SWE-College-Jobs#34",
-      "title": "Captivation Software position that was just posted is NOT for newgrad",
-      "description": "### Issue or Feature Request\n\nPosition requires minimum of 7 years of experience\n\n<img width=\"857\" height=\"170\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/538b3196-1a90-4445-82ca-1b901bf1a239\" />",
-      "excerpt": "### Issue or Feature Request Position requires minimum of 7 years of experience <img width=\"857\" height=\"170\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/538b3196-1a90-4445-82ca-1b901bf1a239\" />",
-      "issueState": "closed",
-      "contentHash": "9bca9addb69f385a3af1d4b34deccdc83f0816eecfac1e1e8b571f958f9d6744",
-      "repository": "speedyapply/2027-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "jkcarraher",
-        "name": "jkcarraher",
-        "handle": "jkcarraher",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/16822729?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2027-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-      },
-      "createdAt": "2026-02-04T17:03:41Z",
-      "updatedAt": "2026-02-05T01:54:46Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/34",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_eb98344cdb1e6d24ea316406",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#32",
       "title": "Mechanize internship",
@@ -938,7 +696,7 @@
     {
       "id": "gh_6e8a08a9c28139c176478de0",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#31",
-      "title": "New Position",
+      "title": "Junior Software Engineer — Mechanize",
       "description": "### Position Title\n\nJunior Software Engineer\n\n### Position Application Link\n\nhttps://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490\n\n### Company Name\n\nMechanize\n\n### Company Link\n\nhttps://www.mechanize.work/\n\n### Location\n\nSan Francisco, CA \n\n### Is this a new grad position or an internship?\n\nNew Grad\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\nguive@mechanize.work",
       "excerpt": "### Position Title Junior Software Engineer ### Position Application Link https://jobs.ashbyhq.com/mechanize/b50c89dc-001c-4fb6-a4fc-a9f52f35b490 ### Company Name Mechanize ### Company Link https://www.mechanize.work/...",
       "issueState": "closed",
@@ -1002,7 +760,8 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "unknown"
-      }
+      },
+      "sourceTitle": "New Position"
     },
     {
       "id": "gh_7f133aaa280cce36ac2b4b6a",
@@ -1503,66 +1262,9 @@
       }
     },
     {
-      "id": "gh_4d8c5d99bd21e32195b7af17",
-      "sourceId": "speedyapply/2027-SWE-College-Jobs#22",
-      "title": "Other Issue",
-      "description": "### Issue or Feature Request\n\nChamberlain group’s inter position myQ Front End Developer - Android or iOS - Summer 2026 no longer available",
-      "excerpt": "### Issue or Feature Request Chamberlain group’s inter position myQ Front End Developer - Android or iOS - Summer 2026 no longer available",
-      "issueState": "closed",
-      "contentHash": "e29243d16c0279ebdfe4a6bb2797c3e7a9202d5088752e9308b26a5274e26956",
-      "repository": "speedyapply/2027-SWE-College-Jobs",
-      "repositoryUrl": "https://github.com/speedyapply/2027-SWE-College-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [],
-      "sourceTags": [],
-      "author": {
-        "id": "zaineel",
-        "name": "zaineel",
-        "handle": "zaineel",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/127276018?v=4"
-      },
-      "community": {
-        "id": "speedyapply",
-        "name": "speedyapply",
-        "avatarUrl": "https://github.com/speedyapply.png?size=80",
-        "repository": "speedyapply/2027-SWE-College-Jobs",
-        "url": "https://github.com/speedyapply/2027-SWE-College-Jobs"
-      },
-      "createdAt": "2025-08-20T23:20:19Z",
-      "updatedAt": "2025-08-28T19:50:02Z",
-      "url": "https://github.com/speedyapply/2027-SWE-College-Jobs/issues/22",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "frontend",
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      }
-    },
-    {
       "id": "gh_9eb7c70330d0d7751b864c5c",
       "sourceId": "speedyapply/2027-SWE-College-Jobs#21",
-      "title": "New Position",
+      "title": "Software Engineering Intern — NEXJE",
       "description": "### Position Title\n\nSoftware Engineering Intern\n\n### Position Application Link\n\nhttps://www.nexje.com/swe-intern\n\n### Company Name\n\nNEXJE\n\n### Company Link\n\nhttps://www.nexje.com/\n\n### Location\n\nRemote\n\n### Is this a new grad position or an internship?\n\nInternship\n\n### Is this position based in the USA?\n\nYes, it's based in the USA.\n\n### Your GitHub Email\n\n_No response_",
       "excerpt": "### Position Title Software Engineering Intern ### Position Application Link https://www.nexje.com/swe-intern ### Company Name NEXJE ### Company Link https://www.nexje.com/ ### Location Remote ### Is this a new grad p...",
       "issueState": "closed",
@@ -1624,7 +1326,8 @@
         "salary": "unknown",
         "seniority": "inferred",
         "workModel": "declared"
-      }
+      },
+      "sourceTitle": "New Position"
     }
   ]
 }
