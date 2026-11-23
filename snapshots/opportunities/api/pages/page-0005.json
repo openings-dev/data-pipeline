@@ -4,7 +4,6 @@
   "pageSize": 20,
   "nextPage": "api/pages/page-0006.json",
   "ids": [
-    "gh_16411c913e420988025158f9",
     "gh_fd2ef9052402e6b346c451bd",
     "gh_4171b79b3ffe9641de97f6e5",
     "gh_32c4e9a9b5d6fa8d6dab1eb8",
@@ -21,113 +20,12 @@
     "gh_a6c22a0392a2b37a1c75831a",
     "gh_329c074a852e2b7e5af02130",
     "gh_c53b59ec71315966cafb3139",
-    "gh_4a700fa8926cbb8edfbdeb95",
-    "gh_94493c77be84aabfeeabe717",
-    "gh_0da1549c7daf4a0c09a7d121"
+    "gh_0da1549c7daf4a0c09a7d121",
+    "gh_776da6cd16a3878a7aa6c3ac",
+    "gh_f854256c35a417d8933cfcfe",
+    "gh_34417202d0a35257d6811c40"
   ],
   "items": [
-    {
-      "id": "gh_16411c913e420988025158f9",
-      "sourceId": "awesome-jobs/jobs#5094",
-      "title": "[HCM]  Senior IT Migration Engineer 5+ yoe | migrate 365 -> Google Workspace",
-      "description": "[HCM] Mình tìm Senior IT Migration Engineer 5+ yoe:\n- Có kinh nghiệm migrate 365 -> Google Workspace\n- Eng nghe nói tự tin với Client Ấn\nZl o332.o22.o55 | contact@techdy.vn",
-      "excerpt": "[HCM] Mình tìm Senior IT Migration Engineer 5+ yoe: - Có kinh nghiệm migrate 365 -> Google Workspace - Eng nghe nói tự tin với Client Ấn Zl o332.o22.o55 | contact@techdy.vn",
-      "issueState": "open",
-      "contentHash": "fb601f540d54242518606fd639bb0d70efa7a1a0e5b8259514b5a316517c9e40",
-      "repository": "awesome-jobs/jobs",
-      "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-      "region": "Asia",
-      "country": "Vietnam",
-      "sourceLocation": {
-        "country": "Vietnam",
-        "countryCode": "VN",
-        "region": "Asia"
-      },
-      "tags": [
-        "senior"
-      ],
-      "sourceTags": [
-        "senior"
-      ],
-      "author": {
-        "id": "techdyvn",
-        "name": "techdyvn",
-        "handle": "techdyvn",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/305702787?v=4"
-      },
-      "community": {
-        "id": "awesome-jobs",
-        "name": "awesome-jobs",
-        "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-        "repository": "awesome-jobs/jobs",
-        "url": "https://github.com/awesome-jobs/jobs"
-      },
-      "createdAt": "2026-10-23T10:36:33Z",
-      "updatedAt": "2026-10-23T10:36:33Z",
-      "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "senior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_16411c913e420988025158f9",
-          "sourceId": "awesome-jobs/jobs#5094",
-          "repository": "awesome-jobs/jobs",
-          "repositoryUrl": "https://github.com/awesome-jobs/jobs",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-          "createdAt": "2026-10-23T10:36:33Z",
-          "updatedAt": "2026-10-23T10:36:33Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/jobs",
-            "url": "https://github.com/awesome-jobs/jobs"
-          }
-        },
-        {
-          "id": "gh_4d56154ecd69b587d874a1ae",
-          "sourceId": "awesome-jobs/vietnam#5094",
-          "repository": "awesome-jobs/vietnam",
-          "repositoryUrl": "https://github.com/awesome-jobs/vietnam",
-          "url": "https://github.com/awesome-jobs/vietnam/issues/5094",
-          "createdAt": "2026-10-23T10:36:33Z",
-          "updatedAt": "2026-10-23T10:36:33Z",
-          "community": {
-            "id": "awesome-jobs",
-            "name": "awesome-jobs",
-            "avatarUrl": "https://github.com/awesome-jobs.png?size=80",
-            "repository": "awesome-jobs/vietnam",
-            "url": "https://github.com/awesome-jobs/vietnam"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 2
-      },
-      "freshness": {
-        "ageDays": 31,
-        "publishedAt": "2026-10-23T10:36:33Z",
-        "status": "aging"
-      }
-    },
     {
       "id": "gh_fd2ef9052402e6b346c451bd",
       "sourceId": "SimplifyJobs/New-Grad-Positions#2986",
@@ -1964,191 +1862,6 @@
       }
     },
     {
-      "id": "gh_4a700fa8926cbb8edfbdeb95",
-      "sourceId": "ambicuity/New-Grad-Jobs#449",
-      "title": "[Bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
-      "description": "### Bug Type\nPortal: website not loading or showing stale data\n\n### Description\nThe browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response with an invalid jobs schema. If the index answers HTTP 200 with `{ \"nope\": 1 }` while `jobs.json` contains valid postings, `loadJobs` returns an error and zero jobs without requesting the healthy full dataset.\n\nVerified against `main` at `c73256709`; the relevant files are unchanged from that commit. This is a deterministic fault-injection reproduction, not evidence that production currently serves an invalid index.\n\n### Steps to Reproduce\nRun from the repository root:\n\n```sh\nnode --input-type=module <<'JS'\nimport { loadJobs } from './site/src/data/jobs-source.js';\nconst calls = [];\nconst fetchImpl = async (url) => {\n  calls.push(url);\n  return {\n    ok: true,\n    json: async () => url.endsWith('jobs-index.json')\n      ? { nope: 1 }\n      : { jobs: [{ job_id: 'job_valid', title: 'Junior Engineer', company: 'Example' }] },\n  };\n};\nconst result = await loadJobs(fetchImpl, false);\nconsole.log({ calls, jobs: result.jobs.length, error: result.error });\nJS\n```\n\nActual:\n\n```text\ncalls: ['./jobs-index.json']\njobs: 0\nerror: 'jobs payload has no \"jobs\" array'\n```\n\nExpected: `jobs.json` is requested, its valid posting is returned, and `error` is null.\n\n### Cause\nIn [`jobs-source.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/data/jobs-source.js), the inner `try/catch` protects only the index fetch/decode. `normalizeJobsPayload(payload)` runs after that catch, so a schema error goes straight to the outer failure handler and bypasses the fallback.\n\nThe existing “reports a malformed payload” test supplies only an invalid index. It does not provide a healthy full file or assert that fallback was attempted.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Index loading is considered successful only after schema validation and normalization succeed.\n- [ ] A schema-invalid index triggers a request for `jobs.json`.\n- [ ] A valid full payload restores jobs and returns `error: null`.\n- [ ] A valid empty index (`jobs: []`) remains a successful empty result, without fallback.\n- [ ] When both candidates fail, the loader resolves with an explicit error rather than rejecting or silently reporting success.\n- [ ] Add deterministic tests for invalid index + healthy full payload, both invalid, and valid empty index; cover schema-invalid Brotli index payloads as applicable.\n\n### Validation\nReproduced with the injected fetch above. Existing checks also pass: `vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js` (**50 passed**).\n\nSearched open and closed issues for index/fallback/malformed-payload reports; no issue tracking this specific jobs-loader recovery gap was found.",
-      "excerpt": "### Bug Type Portal: website not loading or showing stale data ### Description The browser's fallback from `jobs-index.json` to `jobs.json` handles HTTP / JSON-decoding failures, but not a successful JSON response wit...",
-      "issueState": "open",
-      "contentHash": "0b615e7f62c8083170a457bc160151ca568ed466ed88ac0e70b96404a2b69f3d",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "needs-triage",
-        "priority: medium",
-        "type: bug"
-      ],
-      "sourceTags": [
-        "needs-triage",
-        "priority: medium",
-        "type: bug"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "companyName": "'Example' }] },",
-      "createdAt": "2026-10-16T23:03:02Z",
-      "updatedAt": "2026-10-16T23:03:02Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [],
-        "seniority": [
-          "junior"
-        ],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_4a700fa8926cbb8edfbdeb95",
-          "sourceId": "ambicuity/New-Grad-Jobs#449",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/449",
-          "createdAt": "2026-10-16T23:03:02Z",
-          "updatedAt": "2026-10-16T23:03:02Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 37,
-        "publishedAt": "2026-10-16T23:03:02Z",
-        "status": "aging"
-      }
-    },
-    {
-      "id": "gh_94493c77be84aabfeeabe717",
-      "sourceId": "ambicuity/New-Grad-Jobs#448",
-      "title": "[Bug]: near-miss job share links point to static pages that are never generated",
-      "description": "### Bug Type\nPortal: broken link or incorrect data displayed\n\n### Description\n“Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only for the curated dataset. The copied link therefore points to a page the deployment does not contain.\n\nVerified against `main` at `c73256709`. The relevant source and fixture files are unchanged from that commit. This is reproduced locally using committed fixtures; no live posting counts are asserted.\n\n### Steps to Reproduce\n1. Build the fixture site (`cd site && npm run build:fixtures`).\n2. Open the board and enable **WIDEN SCOPE → internships & co-ops**.\n3. Select the fixture posting `job_e001ffffffffffffffff` (Palantir, Software Engineer Intern - Summer 2027).\n4. Click “Copy link to this job”. The URL is `https://jobs.riteshrana.engineer/job/job_e001ffffffffffffffff/` (or the equivalent preview origin).\n5. Inspect `site/dist/job/job_e001ffffffffffffffff/index.html`: it does not exist. Opening the copied URL cannot restore that posting.\n\nIndependent local verification called `generateSeo` directly on `site/test/fixtures`: it generated 19 curated job pages, while the page for this near-miss ID was absent. Calling `jobShareUrl(mapJob(nearMiss), location)` returned the missing static-page URL.\n\n### Cause\n- [`share.js`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/lib/share.js) selects the static path for every valid `jobId`, without considering `nearMiss`.\n- [`DashboardView.jsx`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/src/components/hiring/DashboardView.jsx) uses that helper for both curated and widened-scope rows.\n- [`generate.mjs`](https://github.com/ambicuity/New-Grad-Jobs/blob/c73256709/site/scripts/seo/generate.mjs) reads `jobs.json` / `jobs-index.json`, not `jobs-extended.json`.\n\n### Expected Behavior / Acceptance Criteria\n- [ ] Copied links for near misses open the board with the selected posting restored.\n- [ ] The link includes every required `include` reason so the receiving browser loads the extended dataset and can display the posting, including postings with multiple reasons.\n- [ ] Curated postings retain their existing static job-page links.\n- [ ] Links work at the domain root and under a GitHub Pages subpath.\n- [ ] Curated counts, feeds, and SEO job-page scope remain unchanged.\n- [ ] Add deterministic unit coverage plus an integration/E2E case that opens a copied near-miss link in a fresh view.\n\n### Validation and Related Issues\n`vitest run src/lib/share.test.js src/data/data-sources.test.js test/seo.test.js`: **50 passed**. The gap is not exercised by those tests.\n\nRelated to #181, but distinct: the current React detail view and URL state already exist. This report concerns the wrong destination produced by the current share action specifically for the near-miss tier.",
-      "excerpt": "### Bug Type Portal: broken link or incorrect data displayed ### Description “Copy link to this job” produces a static `/job/<job_id>/` URL for a near-miss posting, even though the SEO build generates these pages only...",
-      "issueState": "open",
-      "contentHash": "3aa5259aa3e468658f26704e48ef1a55b6f121fc1ba0ad3604ccb1b02079a5ef",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "needs-triage",
-        "priority: medium",
-        "type: bug"
-      ],
-      "sourceTags": [
-        "needs-triage",
-        "priority: medium",
-        "type: bug"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-10-16T23:03:00Z",
-      "updatedAt": "2026-10-16T23:03:00Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "react"
-        ],
-        "seniority": [
-          "internship"
-        ],
-        "employmentTypes": [],
-        "workModels": [
-          "on-site"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_94493c77be84aabfeeabe717",
-          "sourceId": "ambicuity/New-Grad-Jobs#448",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/448",
-          "createdAt": "2026-10-16T23:03:00Z",
-          "updatedAt": "2026-10-16T23:03:00Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 37,
-        "publishedAt": "2026-10-16T23:03:00Z",
-        "status": "aging"
-      }
-    },
-    {
       "id": "gh_0da1549c7daf4a0c09a7d121",
       "sourceId": "jobright-ai/2026-Software-Engineer-New-Grad#9",
       "title": "[Product Bug] Jobs auto-detected as \"Applied\" remain visible in \"Liked\" tab (cross-tab duplication)",
@@ -2236,6 +1949,330 @@
       "freshness": {
         "ageDays": 37,
         "publishedAt": "2026-10-16T16:34:38Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_776da6cd16a3878a7aa6c3ac",
+      "sourceId": "SimplifyJobs/New-Grad-Positions#2984",
+      "title": "Doesn't show Hardware engineering jobs",
+      "description": "Says that there are 129 Hardware engineering jobs but doesn't show the list",
+      "excerpt": "Says that there are 129 Hardware engineering jobs but doesn't show the list",
+      "issueState": "open",
+      "contentHash": "0f241cd4ea2fc847321536d0774de9082ba0e4dd51c3f29091d95808d4d2c1a5",
+      "repository": "SimplifyJobs/New-Grad-Positions",
+      "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+      "region": "North America",
+      "country": "United States",
+      "sourceLocation": {
+        "country": "United States",
+        "countryCode": "US",
+        "region": "North America"
+      },
+      "tags": [],
+      "sourceTags": [],
+      "author": {
+        "id": "Danielsch1",
+        "name": "Danielsch1",
+        "handle": "Danielsch1",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/156856283?v=4"
+      },
+      "community": {
+        "id": "SimplifyJobs",
+        "name": "SimplifyJobs",
+        "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+        "repository": "SimplifyJobs/New-Grad-Positions",
+        "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+      },
+      "createdAt": "2026-10-15T05:00:09Z",
+      "updatedAt": "2026-10-15T05:00:09Z",
+      "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2984",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "confidence": "unknown"
+      },
+      "taxonomy": {
+        "areas": [],
+        "technologies": [],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": []
+      },
+      "dataProvenance": {
+        "location": "unknown",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_776da6cd16a3878a7aa6c3ac",
+          "sourceId": "SimplifyJobs/New-Grad-Positions#2984",
+          "repository": "SimplifyJobs/New-Grad-Positions",
+          "repositoryUrl": "https://github.com/SimplifyJobs/New-Grad-Positions",
+          "url": "https://github.com/SimplifyJobs/New-Grad-Positions/issues/2984",
+          "createdAt": "2026-10-15T05:00:09Z",
+          "updatedAt": "2026-10-15T05:00:09Z",
+          "community": {
+            "id": "SimplifyJobs",
+            "name": "SimplifyJobs",
+            "avatarUrl": "https://github.com/SimplifyJobs.png?size=80",
+            "repository": "SimplifyJobs/New-Grad-Positions",
+            "url": "https://github.com/SimplifyJobs/New-Grad-Positions"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 39,
+        "publishedAt": "2026-10-15T05:00:09Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_f854256c35a417d8933cfcfe",
+      "sourceId": "backend-br/vagas#12468",
+      "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As an Application Modernization Cloud...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience coding in one or more general purpose languages (e.g., Python, Java, Go, C or C++).\n- Experience in architecting and implementing APIs and integration technologies in distributed enterprise environment(s) using a combination of technologies/languages/standards like REST, SOAP, GraphQL, JSON, OpenAPI, JavaScript, Cassandra, Kubernetes, etc.\n- Experience with cloud hosting (e.g., Google Cloud Platform), architectural principles in security, distributed computing, and platform/developer/systems operations such as Linux Administration, Git, Terraform, Ansible, etc.\n- Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Diferenciais:\n- Software development in one or more of the following languages: Golang, C/C++, Node.js, Java, Python, etc. including data structures, algorithms, and software design.\n\n## Responsabilidades:\n- Serve as a trusted technical advisor to customers on cloud architecture, Gemini Enterprise implementations, and AI Agent integrations.\n- Architect and execute end-to-end modernization and application assessment strategies powered by AI tools and generative workflows.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "9063b37b54126de9944af172b8b4a50e84ed2eb091ae5563c64b961f676ae9c0",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "git",
+        "go",
+        "java",
+        "javascript",
+        "kubernetes",
+        "linux",
+        "node.js",
+        "python"
+      ],
+      "sourceTags": [
+        "git",
+        "go",
+        "java",
+        "javascript",
+        "kubernetes",
+        "linux",
+        "node.js",
+        "python"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "companyName": "Google",
+      "createdAt": "2026-10-14T21:02:00Z",
+      "updatedAt": "2026-11-22T16:50:12Z",
+      "url": "https://github.com/backend-br/vagas/issues/12468",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "South America",
+        "city": "Buenos Aires, ; Mexico City, CDMX, Mexico",
+        "displayText": "Buenos Aires, ; Mexico City, CDMX, Mexico, Argentina",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "gcp",
+          "go",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "sources": [
+        {
+          "id": "gh_f854256c35a417d8933cfcfe",
+          "sourceId": "backend-br/vagas#12468",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12468",
+          "createdAt": "2026-10-14T21:02:00Z",
+          "updatedAt": "2026-11-22T16:50:12Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 39,
+        "publishedAt": "2026-10-14T21:02:00Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_34417202d0a35257d6811c40",
+      "sourceId": "androiddevbr/vagas#2249",
+      "title": "[Cidade do México, México] Mobile Software Engineer, Multiplatform, Early Careers na Google",
+      "description": "## Descrição da vaga: \nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open) para realizar a candidatura. 👋\n<p><b>Please submit your resume in English - we can only consider applications submitted in this language.</b></p><p>Only applications of candidates with Mexican citizenship will be evaluated for this role in compliance with the provisions of Article 7 of the Federal Labor Law.</p><p>In most instances, this position requires in-person interviews as part of the hiring process.</p><h3>Minimum qualifications:</h3><ul>\n<li>Bachelor’s degree or equivalent practical experience.<br></li>\n<li>1 year of experience with software development in one or more programming languages (e.g., Python, C, C++, Java, JavaScript).<br></li>\n<li>1 year of experience with data structures or algorithms.<br></li>\n<li>Experience with mobile app development.</li>\n<li>Experience communicating with clients and teams.</li>\n</ul><br><h3>Preferred qualifications:</h3><ul>\n<li>Experience developing accessible technologies.<br></li>\n<li>Experience creating and maintaining developer frameworks.</li>\n<li>Experience with Android and or iOS app development.</li>\n<li>Experience with Client and Server development.</li>\n<li>Experience as a generalist with the ability to work across many domains.</li>\n<li>Comfortable working across many teams and stakeholders.</li>\n</ul><div><h2>About the job</h2><p>Google's software engineers develop the next-generation technologies that change how billions of users connect, explore, and interact with information and one another. Our products need to handle information at massive scale, and extend well beyond web search. We're looking for engineers who bring fresh ideas from all areas, including information retrieval, distributed computing, large-scale system design, networking and data storage, security, artificial intelligence, natural language processing, UI design and mobile; the list goes on and is growing every day. As a software engineer, you will work on a specific project critical to Google’s needs with opportunities to switch teams and projects as you and our fast-paced business grow and evolve. We need our engineers to be versatile, display leadership qualities and be enthusiastic to take on new problems across the full-stack as we continue to push technology forward.</p>\n<p>The team empowers Google app developers to create engaging experiences by sharing code across platforms. Our key objectives are to reduce code duplication, ensure uniformity, accelerate time-to-market, and support Google partners (e.g., YouTube, Search, Maps, Workspace).</p><p>The Core team builds the technical foundation behind Google’s flagship products. We are owners and advocates for the underlying design elements, developer platforms, product components, and infrastructure at Google. These are the essential building blocks for excellent, safe, and coherent experiences for our users and drive the pace of innovation for every developer. We look across Google’s products to build central solutions, break down technical barriers and strengthen existing systems. As the Core team, we have a mandate and a unique opportunity to impact important technical decisions across the company.</p></div><div><h2>Responsibilities</h2><ul>\n<li>Drive outcomes for immediate areas of work as a collaborator.</li>\n<li>Self-direct your individual contributions with the support from your team.</li>\n<li>Make well-reasoned design judgment calls within owned scope where there is no obvious “best” solution.</li>\n<li>Communicate effectively with your team mates.</li>\n<li>Foster a collaborative and inclusive team environment, encouraging knowledge sharing and innovation.<br></li>\n</ul></div>Google is proud to be an equal opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunity regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, citizenship, marital status, disability, gender identity or Veteran status. We also consider qualified applicants regardless of criminal histories, consistent with legal requirements. See also <a href=\"https://careers.google.com/eeo/\">Google's EEO Policy</a> and <a href=\"/jobs/dist/legal/OFCCP_EEO_Post.pdf\">EEO is the Law.</a> If you have a disability or special need that requires accommodation, please let us know by completing our <a href=\"https://goo.gl/forms/aBt6Pu71i1kzpLHe2\">Accommodations for Applicants form</a>.\n## Google: \n A problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone. \n\n\n\n## Local: \n Mexico City, México\n\n\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Mobile Software Engineer, Multiplatform, Early Careers na Google](https://coodesh.com/jobs/mobile-software-engineer-multiplatform-early-careers-181722260?utm_source=github&utm_medium=androiddevbr-vagas&modal=open)\n\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nMobile",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "8b307757575ed96201a9d2de01af4eb3eb02aecd191f7e4f299bc136ac3e93f5",
+      "repository": "androiddevbr/vagas",
+      "repositoryUrl": "https://github.com/androiddevbr/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "data",
+        "design",
+        "java",
+        "python"
+      ],
+      "sourceTags": [
+        "data",
+        "design",
+        "java",
+        "python"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "androiddevbr",
+        "name": "androiddevbr",
+        "avatarUrl": "https://github.com/androiddevbr.png?size=80",
+        "repository": "androiddevbr/vagas",
+        "url": "https://github.com/androiddevbr/vagas"
+      },
+      "companyName": "Google",
+      "createdAt": "2026-10-14T20:54:09Z",
+      "updatedAt": "2026-10-14T20:54:48Z",
+      "url": "https://github.com/androiddevbr/vagas/issues/2249",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Mexico",
+        "countryCode": "MX",
+        "region": "North America",
+        "displayText": "Mexico",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "data-ai",
+          "design",
+          "fullstack",
+          "mobile"
+        ],
+        "technologies": [
+          "java",
+          "javascript",
+          "python"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [
+          "on-site"
+        ],
+        "languages": [
+          "en"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "inferred"
+      },
+      "sources": [
+        {
+          "id": "gh_34417202d0a35257d6811c40",
+          "sourceId": "androiddevbr/vagas#2249",
+          "repository": "androiddevbr/vagas",
+          "repositoryUrl": "https://github.com/androiddevbr/vagas",
+          "url": "https://github.com/androiddevbr/vagas/issues/2249",
+          "createdAt": "2026-10-14T20:54:09Z",
+          "updatedAt": "2026-10-14T20:54:09Z",
+          "community": {
+            "id": "androiddevbr",
+            "name": "androiddevbr",
+            "avatarUrl": "https://github.com/androiddevbr.png?size=80",
+            "repository": "androiddevbr/vagas",
+            "url": "https://github.com/androiddevbr/vagas"
+          }
+        },
+        {
+          "id": "gh_7431f876035474375ed7a033",
+          "sourceId": "CocoaHeadsBrasil/vagas#1554",
+          "repository": "CocoaHeadsBrasil/vagas",
+          "repositoryUrl": "https://github.com/CocoaHeadsBrasil/vagas",
+          "url": "https://github.com/CocoaHeadsBrasil/vagas/issues/1554",
+          "createdAt": "2026-10-14T20:54:48Z",
+          "updatedAt": "2026-10-14T20:54:48Z",
+          "community": {
+            "id": "CocoaHeadsBrasil",
+            "name": "CocoaHeadsBrasil",
+            "avatarUrl": "https://github.com/CocoaHeadsBrasil.png?size=80",
+            "repository": "CocoaHeadsBrasil/vagas",
+            "url": "https://github.com/CocoaHeadsBrasil/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 2
+      },
+      "freshness": {
+        "ageDays": 39,
+        "publishedAt": "2026-10-14T20:54:09Z",
         "status": "aging"
       }
     }

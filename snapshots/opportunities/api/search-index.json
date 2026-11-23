@@ -2,19 +2,6 @@
   "generatedAt": "2026-11-23T11:35:19.837Z",
   "items": [
     {
-      "id": "gh_d07d7afa91168fc4cfeb8d07",
-      "createdAt": "2026-11-23T07:49:35Z",
-      "text": "job data is stale: last scrape 2026-11-23t01:40:06.112703z the watchdog found https://jobs.riteshrana.engineer/health.json last updated **369 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s... ambicuity/new-grad-jobs united states north america github-actions[bot] github-actions[bot] scraper-stale",
-      "fields": {
-        "title": "job data is stale: last scrape 2026-11-23t01:40:06.112703z",
-        "company": "",
-        "taxonomy": "",
-        "location": "",
-        "excerpt": "the watchdog found https://jobs.riteshrana.engineer/health.json last updated **369 minutes** ago (threshold 180). it dispatched update-jobs.yml; if this persists, check actions → update new grad jobs for missing s...",
-        "source": "ambicuity/new-grad-jobs github-actions[bot] github-actions[bot] ambicuity/new-grad-jobs"
-      }
-    },
-    {
       "id": "gh_0324e43342e486593f369e16",
       "createdAt": "2026-11-22T13:31:51Z",
       "text": "[深圳]｜moego 社招内推｜ai agent / 后端 / sre / 研发经理 moego 做面向宠物服务行业的 saas，深圳团队招聘以下技术岗位： - **ai agent 开发工程师**：3 年以上开发经验，有 agent 实践。 - **后端开发工程师—be platform**：3 年以上后端经验。 - **高级运维开发工程师 / sre**。 - **高级研发经理**：8 年以上研发经验，3 年以上管理或技术负责人经验。 产品、设计和财务也有岗位：principal product manager... rebase-network/who-is-hiring global global y-qwq y-qwq needs-info",
@@ -1263,32 +1250,6 @@
       }
     },
     {
-      "id": "gh_4a700fa8926cbb8edfbdeb95",
-      "createdAt": "2026-10-16T23:03:02Z",
-      "text": "[bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json ### bug type portal: website not loading or showing stale data ### description the browser's fallback from jobs-index.json to jobs.json handles http / json-decoding failures, but not a successful json response wit... 'example' }] }, ambicuity/new-grad-jobs united states north america ambicuity ambicuity needs-triage priority: medium type: bug",
-      "fields": {
-        "title": "[bug]: schema-invalid jobs index prevents fallback to a healthy jobs.json",
-        "company": "'example' }] },",
-        "taxonomy": "junior",
-        "location": "",
-        "excerpt": "### bug type portal: website not loading or showing stale data ### description the browser's fallback from jobs-index.json to jobs.json handles http / json-decoding failures, but not a successful json response wit...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
-      }
-    },
-    {
-      "id": "gh_94493c77be84aabfeeabe717",
-      "createdAt": "2026-10-16T23:03:00Z",
-      "text": "[bug]: near-miss job share links point to static pages that are never generated ### bug type portal: broken link or incorrect data displayed ### description “copy link to this job” produces a static /job/<job_id>/ url for a near-miss posting, even though the seo build generates these pages only... ambicuity/new-grad-jobs united states north america ambicuity ambicuity needs-triage priority: medium type: bug",
-      "fields": {
-        "title": "[bug]: near-miss job share links point to static pages that are never generated",
-        "company": "",
-        "taxonomy": "react internship on-site",
-        "location": "",
-        "excerpt": "### bug type portal: broken link or incorrect data displayed ### description “copy link to this job” produces a static /job/<job_id>/ url for a near-miss posting, even though the seo build generates these pages only...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
-      }
-    },
-    {
       "id": "gh_0da1549c7daf4a0c09a7d121",
       "createdAt": "2026-10-16T16:34:38Z",
       "text": "[product bug] jobs auto-detected as \"applied\" remain visible in \"liked\" tab (cross-tab duplication) hi jobright team. filing here because this repo is the most public-visible surface; please route to the extension / web-app product team. ### bug after the chrome extension auto-detects a submitted application, the jo... jobright-ai/2026-software-engineer-new-grad united states north america jayds22 jayds22 backend data frontend",
@@ -1520,19 +1481,6 @@
         "location": "remote",
         "excerpt": "<!-- por favor, poste apenas vagas para backend. --> ## nossa empresa na db1, cada linha de codigo, teste ou insight e uma chance de criar impacto real. somos movidos pela curiosidade e pelo desejo de transformar prob...",
         "source": "backend-br/vagas hadamaller hadamaller backend-br/vagas"
-      }
-    },
-    {
-      "id": "gh_d89e1cc41b9d704400c8843b",
-      "createdAt": "2026-10-11T04:41:00Z",
-      "text": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld ### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ... ambicuity/new-grad-jobs united states north america ambicuity ambicuity bug needs-triage priority: high type: bug",
-      "fields": {
-        "title": "[bug]: workday tenants that null locationstext publish out-of-region jobs and lose jobposting json-ld",
-        "company": "",
-        "taxonomy": "python",
-        "location": "",
-        "excerpt": "### bug type scraper: incorrect job information (title, location, date) ### description the workday adapter drops the location for tenants whose search payload returns locationstext: null, so those postings publish ...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
       }
     },
     {
@@ -2628,19 +2576,6 @@
       }
     },
     {
-      "id": "gh_6bd2ea87cfb4bbe49569241c",
-      "createdAt": "2026-05-26T23:52:14Z",
-      "text": "[roadmap] help us expand job data — all suggestions welcome! ## tl;dr we want to dramatically expand the job data this project surfaces, and we need **your ideas**. whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **all suggestions are ... ** \\\"please add <company> — their careers page is <url>\\\" ambicuity/new-grad-jobs united states north america ambicuity ambicuity enhancement help wanted needs-triage priority: medium roadmap type: enhancement",
-      "fields": {
-        "title": "[roadmap] help us expand job data — all suggestions welcome!",
-        "company": "** \\\"please add <company> — their careers page is <url>\\\"",
-        "taxonomy": "data-ai design go python internship junior full-time internship hybrid remote",
-        "location": "remote",
-        "excerpt": "## tl;dr we want to dramatically expand the job data this project surfaces, and we need **your ideas**. whether you have a small tweak, a wild idea, or a full proposal — drop it in the comments. **all suggestions are ...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
-      }
-    },
-    {
       "id": "gh_1f61de8de06b483a9a82d5f4",
       "createdAt": "2026-05-26T18:22:15Z",
       "text": "[hibrido/sp] pessoa desenvolvedora backend sr (java) - viaflow nossa empresa na viaflow, conectamos talentos de elite a projetos que transformam o mercado. estamos em busca de uma pessoa desenvolvedora java backend senior de altissimo nivel para atuar em um cliente global, focado... nerdzao/vagas brazil south america jesspinheiro93 jesspinheiro93 backend data design devops java",
@@ -2950,19 +2885,6 @@
         "location": "remote",
         "excerpt": "**[clique aqui para se inscrever!](https://spun.inhire.app/vagas/1a1950ca-def1-4ede-8945-cfdce2b7ef6f/arquiteto-de-software-pleno)** ola! e um prazer contar com sua participacao no processo seletivo da spun. 💚 agrade...",
         "source": "phpdevbr/vagas jeferson-techrecruiter jeferson-techrecruiter phpdevbr/vagas"
-      }
-    },
-    {
-      "id": "gh_7e4397a5c3ec447941a1d5ca",
-      "createdAt": "2026-03-06T17:00:46Z",
-      "text": "[beginner]: feat(frontend): replace <select> dropdowns with chip buttons for country/state filters to match category/tier ux ## 🐥 beginner friendly this is a **beginner issue** — a natural next step after good first issues. it expects you to: - read existing css and html, then follow the established .chip pattern - own the small decision... ambicuity/new-grad-jobs united states north america ambicuity ambicuity beginner help wanted needs-triage type: enhancement ui/ux",
-      "fields": {
-        "title": "[beginner]: feat(frontend): replace <select> dropdowns with chip buttons for country/state filters to match category/tier ux",
-        "company": "",
-        "taxonomy": "design frontend mobile remote",
-        "location": "remote",
-        "excerpt": "## 🐥 beginner friendly this is a **beginner issue** — a natural next step after good first issues. it expects you to: - read existing css and html, then follow the established .chip pattern - own the small decision...",
-        "source": "ambicuity/new-grad-jobs ambicuity ambicuity ambicuity/new-grad-jobs"
       }
     },
     {

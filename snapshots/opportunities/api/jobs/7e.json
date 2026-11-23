@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T01:17:37.684Z",
+  "generatedAt": "2026-11-23T11:35:19.837Z",
   "items": {
     "gh_7e00452720eb21e53866702d": {
       "id": "gh_7e00452720eb21e53866702d",
@@ -79,107 +79,6 @@
         "ageDays": 15,
         "publishedAt": "2026-11-07T21:17:34Z",
         "status": "fresh"
-      }
-    },
-    "gh_7e4397a5c3ec447941a1d5ca": {
-      "id": "gh_7e4397a5c3ec447941a1d5ca",
-      "sourceId": "ambicuity/New-Grad-Jobs#113",
-      "title": "[Beginner]: feat(frontend): replace <select> dropdowns with chip buttons for Country/State filters to match Category/Tier UX",
-      "description": "## 🐥 Beginner Friendly\n\nThis is a **Beginner Issue** — a natural next step after Good First Issues.\n\nIt expects you to:\n- Read existing CSS and HTML, then follow the established `.chip` pattern\n- Own the small decision of how to handle the State/Province list (scrollable chip row)\n- Refactor the JS filter logic to match the new chip pattern\n\n**Difficulty:**\n- Basic HTML + CSS + vanilla JS DOM manipulation required\n- No external API experience needed\n\n> [!IMPORTANT]\n> We recommend completing at least one Good First Issue before attempting a Beginner Issue.\n>\n> **You must be assigned before starting** — comment `/assign` to claim this issue.\n\n> [!TIP]\n> **You should be comfortable with:**\n> - Reading existing CSS class patterns and replicating them\n> - DOM manipulation with vanilla JS\n> - Opening a PR against `main` without a tutorial\n\n⏱️ Typical time: 3–5 hours\n\n---\n\n## 👾 Description of the Issue\n\n**Current state:**\n\nThe filter bar (`docs/index.html` lines 126–186) uses two inconsistent UX patterns in the same section:\n\n- **Category** (`#category-filters`) and **Company Tier** (`#tier-filters`) use styled **chip buttons** (`.chip`) — consistent with modern job boards like Simplify, Himalayas, and Otta.\n- **Country** (`#country-filter`) and **State/Province** (`#state-filter`) use bare **`<select>` dropdowns** — a platform-native control that breaks the design language.\n\n**Desired state — Country as chips:**\n```html\n<div class=\"filter-chips\" id=\"country-filters\">\n  <button class=\"chip active\" data-filter=\"all\">🌍 All</button>\n  <button class=\"chip\" data-filter=\"remote\">🌐 Remote</button>\n  <button class=\"chip\" data-filter=\"usa\">🇺🇸 USA</button>\n  <button class=\"chip\" data-filter=\"canada\">🇨🇦 Canada</button>\n  <button class=\"chip\" data-filter=\"india\">🇮🇳 India</button>\n</div>\n```\n\nFor State/Province (dynamically populated in `docs/app.js`), convert the `<select>` to inject `.chip` buttons into a `<div class=\"filter-chips\">` container. Make the chip row **horizontally scrollable** on mobile (`overflow-x: auto; white-space: nowrap;`).\n\nNote: `filterJobs()` in `docs/app.js` currently reads `document.getElementById('country-filter').value` — refactor these reads to use `.chip.active` class state, matching how category/tier filters already work.\n\n**Reuse existing CSS classes** at `docs/styles.css` lines 640–686 — `.chip` and `.chip.active`. Do NOT add new color variables.\n\n**Inspiration:** Otta (scrollable filter chips), Himalayas (chip-style location), Simplify (consistent chip UX).\n\n---\n\n## ✅ Acceptance Criteria\n\n- [ ] Country filter uses `.chip` buttons (5 chips: All, Remote, USA, Canada, India)\n- [ ] State/Province uses dynamically injected `.chip` buttons replacing the `<select>`\n- [ ] State chip row is horizontally scrollable on viewports < 768px\n- [ ] `filterJobs()` reads new chip state via `.chip.active` — not `select.value`\n- [ ] Dark **and** light themes both render correctly\n- [ ] No regression — filtering USA → CA still returns only California jobs\n- [ ] Existing tests pass (`make test`)\n- [ ] PR linked with `Fixes #<number>`\n- [ ] PR title: `feat(frontend): replace select dropdowns with chip buttons for country/state filters`\n\n**Area:** 🌐 Frontend / website (docs/)",
-      "excerpt": "## 🐥 Beginner Friendly This is a **Beginner Issue** — a natural next step after Good First Issues. It expects you to: - Read existing CSS and HTML, then follow the established `.chip` pattern - Own the small decision...",
-      "issueState": "open",
-      "contentHash": "73e7862bb4ac8af5f86324b02516ad8b1ec4abdf83fc3225eda25d1a21b76dfe",
-      "repository": "ambicuity/New-Grad-Jobs",
-      "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "beginner",
-        "help wanted",
-        "needs-triage",
-        "type: enhancement",
-        "ui/ux"
-      ],
-      "sourceTags": [
-        "beginner",
-        "help wanted",
-        "needs-triage",
-        "type: enhancement",
-        "ui/ux"
-      ],
-      "author": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "handle": "ambicuity",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/44251619?v=4"
-      },
-      "community": {
-        "id": "ambicuity",
-        "name": "ambicuity",
-        "avatarUrl": "https://github.com/ambicuity.png?size=80",
-        "repository": "ambicuity/New-Grad-Jobs",
-        "url": "https://github.com/ambicuity/New-Grad-Jobs"
-      },
-      "createdAt": "2026-03-06T17:00:46Z",
-      "updatedAt": "2026-11-20T05:01:01Z",
-      "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/113",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "design",
-          "frontend",
-          "mobile"
-        ],
-        "technologies": [],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_7e4397a5c3ec447941a1d5ca",
-          "sourceId": "ambicuity/New-Grad-Jobs#113",
-          "repository": "ambicuity/New-Grad-Jobs",
-          "repositoryUrl": "https://github.com/ambicuity/New-Grad-Jobs",
-          "url": "https://github.com/ambicuity/New-Grad-Jobs/issues/113",
-          "createdAt": "2026-03-06T17:00:46Z",
-          "updatedAt": "2026-11-20T05:01:01Z",
-          "community": {
-            "id": "ambicuity",
-            "name": "ambicuity",
-            "avatarUrl": "https://github.com/ambicuity.png?size=80",
-            "repository": "ambicuity/New-Grad-Jobs",
-            "url": "https://github.com/ambicuity/New-Grad-Jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 261,
-        "publishedAt": "2026-03-06T17:00:46Z",
-        "status": "stale"
       }
     },
     "gh_7e923ca8233bc921db05ea5b": {
