@@ -217,96 +217,10 @@
         "status": "stale"
       }
     },
-    "gh_bf70dc9f783bd9e91215da56": {
-      "id": "gh_bf70dc9f783bd9e91215da56",
-      "sourceId": "timqian/open-source-jobs#162",
-      "title": "Feature: Social Meta Tags (OpenGraph) for Jobs",
-      "description": "**Issue :** \n\nWhen users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data.\nImprovement: Implement dynamic metadata in the Next.js layout.tsx or individual page components to improve social sharing visibility.\n\n**File Path** :  `open-source-jobs/app/layout.tsx`\n\n**Code logic :**\n\n```\nexport const metadata = {\n  title: 'Open Source Jobs',\n  description: 'Find jobs at companies building open source software.',\n  openGraph: {\n    images: ['/og-image.svg'],\n  },\n};\n```",
-      "excerpt": "**Issue :** When users share a specific job update or the homepage on social media, there is no dynamic OpenGraph preview. The project has an og-image.svg, but it is not dynamically populated with job data. Improvemen...",
-      "issueState": "open",
-      "contentHash": "e920180e02443af31c31f89d3e048d15c2662c6f00e812dbd7ca62cf61b265e7",
-      "repository": "timqian/open-source-jobs",
-      "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-      "region": "Global",
-      "country": "Global",
-      "sourceLocation": {
-        "country": "Global",
-        "countryCode": "GLOBAL",
-        "region": "Global"
-      },
-      "tags": [
-        "data"
-      ],
-      "sourceTags": [
-        "data"
-      ],
-      "author": {
-        "id": "codeCraft-Ritik",
-        "name": "codeCraft-Ritik",
-        "handle": "codeCraft-Ritik",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/190937827?v=4"
-      },
-      "community": {
-        "id": "timqian",
-        "name": "timqian",
-        "avatarUrl": "https://github.com/timqian.png?size=80",
-        "repository": "timqian/open-source-jobs",
-        "url": "https://github.com/timqian/open-source-jobs"
-      },
-      "createdAt": "2026-02-18T13:31:05Z",
-      "updatedAt": "2026-02-19T04:01:13Z",
-      "url": "https://github.com/timqian/open-source-jobs/issues/162",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [],
-        "technologies": [
-          "nextjs"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_bf70dc9f783bd9e91215da56",
-          "sourceId": "timqian/open-source-jobs#162",
-          "repository": "timqian/open-source-jobs",
-          "repositoryUrl": "https://github.com/timqian/open-source-jobs",
-          "url": "https://github.com/timqian/open-source-jobs/issues/162",
-          "createdAt": "2026-02-18T13:31:05Z",
-          "updatedAt": "2026-02-19T04:01:13Z",
-          "community": {
-            "id": "timqian",
-            "name": "timqian",
-            "avatarUrl": "https://github.com/timqian.png?size=80",
-            "repository": "timqian/open-source-jobs",
-            "url": "https://github.com/timqian/open-source-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 277,
-        "publishedAt": "2026-02-18T13:31:05Z",
-        "status": "stale"
-      }
-    },
     "gh_bf8a827e3fae3c73f6d63bba": {
       "id": "gh_bf8a827e3fae3c73f6d63bba",
       "sourceId": "PrepAIJobs/New-Grad-2026#2",
-      "title": "New Grad",
+      "title": "Machine Learning Engineer — Mercor",
       "description": "### Link to Grad Posting\n\nhttps://work.mercor.com/jobs/list_AAABlJtILQFLnbOxQORBY7E7?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral\n\n### Company Name\n\nMercor\n\n### Grad Title\n\nMachine Learning Engineer\n\n### Location\n\nSan Francisco\n\n### Does this opportunity offer sponsorship?\n\nOffers Sponsorship\n\n### Is this position currently accepting applications?\n\nYes\n\n### Email associated with your GitHub account (Optional)\n\nyukuairoy@gmail.com\n\n### Extra Notes (Optional)\n\nI'm hiring for this role and candidates can contact me directly.",
       "excerpt": "### Link to Grad Posting https://work.mercor.com/jobs/list_AAABlJtILQFLnbOxQORBY7E7?referralCode=45d6ae1e-76d4-49fc-abc8-c1f0f9472c91&utm_source=referral&utm_medium=share&utm_campaign=job_referral ### Company Name Mer...",
       "issueState": "open",
@@ -358,6 +272,7 @@
         "seniority": "unknown",
         "workModel": "unknown"
       },
+      "sourceTitle": "New Grad",
       "sources": [
         {
           "id": "gh_bf8a827e3fae3c73f6d63bba",

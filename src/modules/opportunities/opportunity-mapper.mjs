@@ -22,7 +22,7 @@ export function mapIssueToOpportunity(issue, repository) {
     number: issue.number,
   }).slice(0, 24)}`;
   const contentHash = sha256Json({
-    title: issue.title ?? "",
+    title: issue.source_title ?? issue.title ?? "",
     body: body ?? "",
   });
   const sourceLocation = {
@@ -35,6 +35,7 @@ export function mapIssueToOpportunity(issue, repository) {
     id: publicId,
     sourceId,
     title: issue.title ?? "Untitled",
+    ...(issue.source_title ? { sourceTitle: issue.source_title } : {}),
     description,
     excerpt: buildExcerpt(issue.title, issue.body),
     issueState: issue.state === "closed" ? "closed" : "open",

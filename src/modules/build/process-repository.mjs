@@ -1,4 +1,5 @@
 import { mapIssueToOpportunity, sortOpportunitiesByDate } from "../opportunities/opportunity-mapper.mjs";
+import { admitIssue } from "../opportunities/issue-admission.mjs";
 
 /**
  * @param {{repository: Record<string, any>; githubClient: ReturnType<import("../github/github-client.mjs").createGitHubClient>}} params
@@ -7,7 +8,8 @@ export async function processRepository(params) {
   const { repository, githubClient } = params;
   const issues = await githubClient.fetchRecentIssues(repository.repository);
   const items = sortOpportunitiesByDate(
-    issues.map((issue) => mapIssueToOpportunity(issue, repository)),
+    issues.map((issue) => admitIssue(issue, repository)).filter(Boolean)
+      .map((issue) => mapIssueToOpportunity(issue, repository)),
   );
 
   const openIssues = items.filter((item) => item.issueState === "open").length;

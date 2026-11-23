@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T01:17:37.684Z",
+  "generatedAt": "2026-11-23T11:35:19.837Z",
   "items": {
     "gh_86cb84e98756a8403eaeaec8": {
       "id": "gh_86cb84e98756a8403eaeaec8",
@@ -213,101 +213,6 @@
       "freshness": {
         "ageDays": 196,
         "publishedAt": "2026-05-10T14:16:18Z",
-        "status": "stale"
-      }
-    },
-    "gh_86cf7c4c726a6cec1163d1fb": {
-      "id": "gh_86cf7c4c726a6cec1163d1fb",
-      "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-      "title": "Bug: Company logo thumbnails enter corrupted render state after job application, stale DOM / z-index collision across job card components",
-      "description": "# Company thumbnails overlap other job cards after applying to a posting\n\nHey team,\n\nI've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that job bleeds over into the other job cards in the feed. Sometimes it stacks on top of the adjacent card's logo, sometimes it straight up replaces it. It looks pretty broken.\n\nThe weird part is that it fixes itself the moment I do a hard refresh. So the data coming from the backend seems fine, this is purely a client-side rendering issue.\n\n## Repro\n\n1. Go to the job listings feed.\n2. Apply to any job.\n3. Come back to the listings (back nav or closing the apply modal).\n4. The thumbnails on nearby job cards are now messed up; wrong logos, overlapping, stacked, etc.\n5. Refresh the page → everything goes back to normal.\n\nThis happens every single time, not intermittent. I've tried it across a few different browsers (Chrome and Firefox) and it's the same behavior.\n\n## What I think is going on\n\nI'm a software engineer so I poked around in devtools a bit. A few things that might be worth looking at:\n\n**Key prop issue on the list**: If the job card list is keyed by array index instead of something stable like `job.id`, React's reconciler will reuse DOM nodes incorrectly when the list state changes after applying. This would explain why the thumbnails get \"shifted\" onto wrong cards. Classic React anti-pattern.\n\n**Stacking context / z-index leak**: When the apply flow triggers (modal, overlay, toast, whatever), it might be setting `position: absolute` or bumping `z-index` on the applied card's thumbnail. If that style isn't cleaned up properly (maybe an animation callback that doesn't fire?), the image escapes its container and sits on top of siblings. Throwing `overflow: hidden` and `position: relative` on the card container would contain this.\n\n**Race condition on refetch**: If applying fires off a POST and then the feed revalidates in parallel (SWR `mutate()`, React Query `invalidateQueries()`, etc.), there's a window where partial/stale data gets rendered before the fresh response lands. The thumbnails might be getting swapped around during that intermediate state.\n\n**Image caching**: Less likely, but if there's a custom image component or service worker caching thumbnails by position/index instead of URL, a re-render after apply could serve the wrong cached image to the wrong card.\n\n## Quick fix suggestions\n\n- Check that `key={job.id}` (or whatever unique identifier) is used on the card list, not `key={index}`.\n- Make sure each card's thumbnail container has its own stacking context (`position: relative; overflow: hidden;`).\n- If the apply action triggers a list refetch, batch the state update or wrap it in `startTransition` so you don't get an intermediate broken frame.\n- Audit `useEffect` cleanups around the apply modal/overlay, something might not be resetting styles on unmount.\n\n## Environment\n\n- Chrome 124  on macOS\n- Desktop, standard resolution\n- Happens on both fast and slow connections so it's not a network timing thing\n\nNot a blocker since refresh fixes it, but it makes the platform look buggy and I'd imagine it's hurting trust with less technical users who don't know to just reload. Happy to provide more details or screen recordings if that helps.",
-      "excerpt": "# Company thumbnails overlap other job cards after applying to a posting Hey team, I've been noticing a consistent visual bug on the platform. Every time I apply to a job posting, the company logo/thumbnail from that ...",
-      "issueState": "open",
-      "contentHash": "1e4843c8fb9d905a53f168f5b02b0201043140e257eec09e5f353c378fe3c473",
-      "repository": "jobright-ai/2026-Data-Analysis-Internship",
-      "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-      "region": "North America",
-      "country": "United States",
-      "sourceLocation": {
-        "country": "United States",
-        "countryCode": "US",
-        "region": "North America"
-      },
-      "tags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "sourceTags": [
-        "backend",
-        "data",
-        "node",
-        "react"
-      ],
-      "author": {
-        "id": "JayDS22",
-        "name": "JayDS22",
-        "handle": "JayDS22",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/91157708?v=4"
-      },
-      "community": {
-        "id": "jobright-ai",
-        "name": "jobright-ai",
-        "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-        "repository": "jobright-ai/2026-Data-Analysis-Internship",
-        "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-      },
-      "createdAt": "2026-03-22T16:47:15Z",
-      "updatedAt": "2026-03-22T16:51:05Z",
-      "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend"
-        ],
-        "technologies": [
-          "go",
-          "react"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_86cf7c4c726a6cec1163d1fb",
-          "sourceId": "jobright-ai/2026-Data-Analysis-Internship#1",
-          "repository": "jobright-ai/2026-Data-Analysis-Internship",
-          "repositoryUrl": "https://github.com/jobright-ai/2026-Data-Analysis-Internship",
-          "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship/issues/1",
-          "createdAt": "2026-03-22T16:47:15Z",
-          "updatedAt": "2026-03-22T16:51:05Z",
-          "community": {
-            "id": "jobright-ai",
-            "name": "jobright-ai",
-            "avatarUrl": "https://github.com/jobright-ai.png?size=80",
-            "repository": "jobright-ai/2026-Data-Analysis-Internship",
-            "url": "https://github.com/jobright-ai/2026-Data-Analysis-Internship"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 245,
-        "publishedAt": "2026-03-22T16:47:15Z",
         "status": "stale"
       }
     },

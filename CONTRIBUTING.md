@@ -58,6 +58,18 @@ Update `src/modules/catalog/repositories.json` with:
 
 Every new source must have at least one currently open GitHub Issue that is clearly a public job. Record that Issue URL during review. Pull Requests, Discussions, repository README lists, and contribution tasks are not qualifying evidence.
 
+Mixed job-list repositories need an explicit `issuePolicy` in their catalog entry. Review their issue forms before selecting a policy:
+
+- `structured-submissions` requires filled company, role and HTTP(S) application-link fields in the submitted form.
+- `linked-submissions` also accepts a role-titled issue whose entire body is a direct job link, as used by the reviewed Jobright sources.
+- `company-careers` accepts the reviewed open-source employer form with company, career URL and repository description.
+
+These policies reject discussion/edit/maintenance labels within those sources. Ordinary community boards without a policy retain their existing admission behavior. Generic form titles are replaced only with the explicitly submitted role and company; the original issue title is retained as `sourceTitle`. Do not apply discovery's keyword scorer globally to ingestion: legitimate support and label-free jobs must survive.
+
+For an individually reviewed non-vacancy in an otherwise valid board, use `excludedIssues: [{ number, reason, evidenceUrl }]` on that repository. The evidence URL must point to that exact source issue. This prevents its re-ingestion without suppressing future jobs or matching words globally; remove the exclusion if a later review establishes that the issue is a vacancy.
+
+When retiring a directory/software source, remove its catalog entry and record the evidence in `src/modules/discovery/discovery-decisions.json` so discovery does not propose it again. Rebuild the segmented snapshots and remove only matching unsent entries from the publishing outbox; published history is separate.
+
 Use `Global` only when the source genuinely publishes jobs without a country scope. It is not a fallback for an unknown or unreviewed location; unresolved location stays in the discovery inbox until a maintainer can classify it.
 
 The preferred flow is:

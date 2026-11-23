@@ -1,4 +1,5 @@
 import { readFile } from "node:fs/promises";
+import { ISSUE_POLICIES } from "../opportunities/issue-admission.mjs";
 
 /**
  * @param {string} value
@@ -32,6 +33,23 @@ function assertCatalogShape(catalog) {
     assertNonEmptyString(repository.countryCode, "countryCode");
     assertNonEmptyString(repository.region, "region");
     assertNonEmptyString(repository.url, "url");
+    if (repository.issuePolicy !== undefined && !ISSUE_POLICIES.has(repository.issuePolicy)) {
+      throw new Error(`Invalid issue policy for ${repository.repository}: ${repository.issuePolicy}`);
+    }
+    if (repository.excludedIssues !== undefined) {
+      if (!Array.isArray(repository.excludedIssues)) throw new Error("excludedIssues must be an array.");
+      const seen = new Set();
+      for (const entry of repository.excludedIssues) {
+        if (!Number.isInteger(entry?.number) || entry.number < 1 || seen.has(entry.number)) {
+          throw new Error(`Invalid excluded issue number for ${repository.repository}.`);
+        }
+        assertNonEmptyString(entry.reason, "excluded issue reason");
+        if (entry.evidenceUrl !== `${repository.url}/issues/${entry.number}`) {
+          throw new Error(`Excluded issue evidence must match ${repository.repository}#${entry.number}.`);
+        }
+        seen.add(entry.number);
+      }
+    }
   }
 }
 
