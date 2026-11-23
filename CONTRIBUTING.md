@@ -66,6 +66,8 @@ Mixed job-list repositories need an explicit `issuePolicy` in their catalog entr
 
 These policies reject discussion/edit/maintenance labels within those sources. Ordinary community boards without a policy retain their existing admission behavior. Generic form titles are replaced only with the explicitly submitted role and company; the original issue title is retained as `sourceTitle`. Do not apply discovery's keyword scorer globally to ingestion: legitimate support and label-free jobs must survive.
 
+For an individually reviewed non-vacancy in an otherwise valid board, use `excludedIssues: [{ number, reason, evidenceUrl }]` on that repository. The evidence URL must point to that exact source issue. This prevents its re-ingestion without suppressing future jobs or matching words globally; remove the exclusion if a later review establishes that the issue is a vacancy.
+
 When retiring a directory/software source, remove its catalog entry and record the evidence in `src/modules/discovery/discovery-decisions.json` so discovery does not propose it again. Rebuild the segmented snapshots and remove only matching unsent entries from the publishing outbox; published history is separate.
 
 Use `Global` only when the source genuinely publishes jobs without a country scope. It is not a fallback for an unknown or unreviewed location; unresolved location stays in the discovery inbox until a maintainer can classify it.

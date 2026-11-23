@@ -36,6 +36,7 @@ function webLink(text) {
 
 /** Source-specific admission. Ordinary community boards are intentionally unchanged. */
 export function admitIssue(issue, repository) {
+  if (repository.excludedIssues?.some((entry) => entry.number === issue.number)) return null;
   const policy = repository.issuePolicy;
   if (!policy) return issue;
   if (!ISSUE_POLICIES.has(policy)) throw new Error(`Unknown issue policy: ${policy}`);

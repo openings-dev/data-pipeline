@@ -56,6 +56,18 @@
         "vacancies",
         "opportunities",
         "emprego"
+      ],
+      "excludedIssues": [
+        {
+          "number": 1,
+          "reason": "Candidate submits a coding challenge and asks for an opportunity; not an employer vacancy.",
+          "evidenceUrl": "https://github.com/3Tecnos-Development/vagas/issues/1"
+        },
+        {
+          "number": 3,
+          "reason": "Candidate submits a coding challenge and portfolio; not an employer vacancy.",
+          "evidenceUrl": "https://github.com/3Tecnos-Development/vagas/issues/3"
+        }
       ]
     },
     {
@@ -115,6 +127,28 @@
         "work",
         "vacancies",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 109,
+          "reason": "Comment lamenting missing Wuhan listings; no vacancy details.",
+          "evidenceUrl": "https://github.com/android-cn/android-jobs/issues/109"
+        },
+        {
+          "number": 311,
+          "reason": "General encouragement for the repository author; no vacancy.",
+          "evidenceUrl": "https://github.com/android-cn/android-jobs/issues/311"
+        },
+        {
+          "number": 329,
+          "reason": "Complaint about repository layout; no vacancy.",
+          "evidenceUrl": "https://github.com/android-cn/android-jobs/issues/329"
+        },
+        {
+          "number": 335,
+          "reason": "Question about repository maintenance; no vacancy.",
+          "evidenceUrl": "https://github.com/android-cn/android-jobs/issues/335"
+        }
       ]
     },
     {
@@ -614,6 +648,18 @@
         "vacancies",
         "opportunities",
         "emprego"
+      ],
+      "excludedIssues": [
+        {
+          "number": 6,
+          "reason": "Discussion about non-Clojure listings, not a vacancy.",
+          "evidenceUrl": "https://github.com/clj-br/vagas/issues/6"
+        },
+        {
+          "number": 7,
+          "reason": "Report of incorrect job-board localization, not a vacancy.",
+          "evidenceUrl": "https://github.com/clj-br/vagas/issues/7"
+        }
       ]
     },
     {
@@ -1564,6 +1610,18 @@
         "work",
         "vacancies",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 3,
+          "reason": "Job-seeker announcement, not an employer vacancy.",
+          "evidenceUrl": "https://github.com/ios-taipei/MobileJobs/issues/3"
+        },
+        {
+          "number": 4,
+          "reason": "Job-seeker portfolio announcement, not an employer vacancy.",
+          "evidenceUrl": "https://github.com/ios-taipei/MobileJobs/issues/4"
+        }
       ]
     },
     {
@@ -1935,6 +1993,23 @@
         "work",
         "vacancies",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 67,
+          "reason": "Report that a listed company does not support remote work.",
+          "evidenceUrl": "https://github.com/LinuxSuRen/remote-jobs-in-china/issues/67"
+        },
+        {
+          "number": 80,
+          "reason": "Maintenance complaint about unavailable company links and remote policies.",
+          "evidenceUrl": "https://github.com/LinuxSuRen/remote-jobs-in-china/issues/80"
+        },
+        {
+          "number": 81,
+          "reason": "Promotion of a job-search website, not a specific vacancy.",
+          "evidenceUrl": "https://github.com/LinuxSuRen/remote-jobs-in-china/issues/81"
+        }
       ]
     },
     {
@@ -2031,6 +2106,18 @@
         "latam",
         "trabajos",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 2,
+          "reason": "Suggestion of multiple company career pages; no specific role.",
+          "evidenceUrl": "https://github.com/matildaexp/remote-latam/issues/2"
+        },
+        {
+          "number": 4,
+          "reason": "Suggestion of multiple company career pages; no specific role.",
+          "evidenceUrl": "https://github.com/matildaexp/remote-latam/issues/4"
+        }
       ]
     },
     {
@@ -2437,6 +2524,13 @@
         "work",
         "vacancies",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 422,
+          "reason": "Request to repair website builds and migrate Travis CI.",
+          "evidenceUrl": "https://github.com/pythonjobs/jobs/issues/422"
+        }
       ]
     },
     {
@@ -3004,6 +3098,13 @@
         "work",
         "vacancies",
         "opportunities"
+      ],
+      "excludedIssues": [
+        {
+          "number": 2,
+          "reason": "Request to build a job-posting website and automated commits.",
+          "evidenceUrl": "https://github.com/TADSG/jobs/issues/2"
+        }
       ]
     },
     {

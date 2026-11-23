@@ -85,3 +85,24 @@ test('plain Company/Role/Link submissions retain their source attribution', asyn
   assert.equal(result.items.length, 1);
   assert.equal(result.items[0].title, 'Marshall Wace Graduate Programme');
 });
+
+test('reviewed issue exclusions affect only that repository and issue number', async () => {
+  const issues = [issue(6, 'Complaint about unrelated jobs', 'Discussion'), issue(8, 'Application Support Engineer', 'A real position')];
+  const repository = { ...base, excludedIssues: [{ number: 6, reason: 'Reviewed complaint, not a vacancy', evidenceUrl: 'https://github.com/example/jobs/issues/6' }] };
+  const result = await processRepository({ repository, githubClient: { fetchRecentIssues: async () => issues } });
+  assert.deepEqual(result.items.map(x => x.sourceId), ['example/jobs#8']);
+  assert.equal((await run(issues)).items.length, 2);
+});
+
+test('known community complaints and candidate submissions have reviewed exclusions', async () => {
+  const { readRepositoryCatalog } = await import('../src/modules/catalog/catalog-repository.mjs');
+  const catalog = await readRepositoryCatalog('src/modules/catalog/repositories.json');
+  for (const [repository, numbers] of Object.entries({
+    'clj-br/vagas': [6, 7], 'pythonjobs/jobs': [422], 'ios-taipei/MobileJobs': [3, 4],
+    'android-cn/android-jobs': [109, 311, 329, 335], 'LinuxSuRen/remote-jobs-in-china': [67, 80, 81],
+    'TADSG/jobs': [2], '3Tecnos-Development/vagas': [1, 3], 'matildaexp/remote-latam': [2, 4],
+  })) {
+    const source = catalog.repositories.find(x => x.repository === repository);
+    assert.deepEqual(source.excludedIssues?.map(x => x.number), numbers);
+  }
+});
