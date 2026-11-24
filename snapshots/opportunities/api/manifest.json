@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-23T23:09:37.773Z",
+  "generatedAt": "2026-11-24T07:47:47.524Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "8db3dfeae48b8f744601259f4204b2dc57074b070061d44a5c2e3362786ee053",
+  "dataHash": "245c1ed5e538d8b092fbee10e0ac82c046364672d6ad3193cce2fc774cb2da29",
   "totals": {
-    "openOpportunities": 581,
+    "openOpportunities": 585,
     "pages": 30,
     "repositories": 82,
     "communities": 178,
     "countries": 11,
     "regions": 5,
-    "authors": 285,
-    "authorArtifactBytes": 82423
+    "authors": 286,
+    "authorArtifactBytes": 82718
   },
   "files": {
     "facets": "api/facet-index.json",
@@ -94,7 +94,7 @@
       "remotejobsbr/design-ux-vagas": 15,
       "rustdevbr/vagas": 1,
       "SimplifyJobs/New-Grad-Positions": 9,
-      "SimplifyJobs/Summer2026-Internships": 9,
+      "SimplifyJobs/Summer2026-Internships": 13,
       "soujava/vagas-java": 2,
       "speedyapply/2026-AI-College-Jobs": 4,
       "speedyapply/2026-SWE-College-Jobs": 4,
@@ -113,7 +113,7 @@
       "Asia": 163,
       "Europe": 1,
       "Global": 80,
-      "North America": 31,
+      "North America": 35,
       "South America": 306
     },
     "countries": {
@@ -126,7 +126,7 @@
       "Mexico": 2,
       "Portugal": 1,
       "Taiwan": 87,
-      "United States": 28,
+      "United States": 32,
       "Vietnam": 29
     },
     "tags": {
@@ -146,7 +146,7 @@
       "b-java": 2,
       "b-nodejs": 2,
       "b-python": 1,
-      "backend": 90,
+      "backend": 91,
       "brasil": 1,
       "c-c++": 1,
       "c#": 2,
@@ -158,7 +158,7 @@
       "clt": 31,
       "contrato": 2,
       "cv": 1,
-      "data": 172,
+      "data": 174,
       "delphi": 1,
       "desenvolvimento-web": 1,
       "design": 128,
@@ -175,7 +175,7 @@
       "flutter": 1,
       "formato-sugerido": 10,
       "freela": 1,
-      "frontend": 49,
+      "frontend": 50,
       "full": 3,
       "full-time": 11,
       "fullstack": 33,
@@ -229,7 +229,7 @@
       "react": 95,
       "react-native": 1,
       "recruited": 1,
-      "remote": 143,
+      "remote": 147,
       "remotely": 4,
       "remoteok-io": 16,
       "rlhf": 1,
@@ -240,7 +240,7 @@
       "sap": 1,
       "scala": 1,
       "security": 5,
-      "senior": 123,
+      "senior": 127,
       "solid": 1,
       "spring": 2,
       "sql": 5,
@@ -251,7 +251,7 @@
       "swift": 2,
       "terraform": 2,
       "testes-automatizados": 4,
-      "typescript": 62,
+      "typescript": 63,
       "unit-test": 2,
       "verificada": 16,
       "vue-js": 1
@@ -492,6 +492,7 @@
       "Soonas": 1,
       "spiderman6689030-png": 1,
       "Steporto": 1,
+      "sumitece87": 4,
       "susutw": 1,
       "szubtsovskiy": 1,
       "TakumaLee": 1,
@@ -544,6 +545,7 @@
       "zzl654466725-crypto": 2
     },
     "authorLabels": {
+      "sumitece87": "sumitece87",
       "Y-qwq": "Y-qwq",
       "patrickstill": "patrickstill",
       "tanlanhui002-del": "tanlanhui002-del",
@@ -856,15 +858,15 @@
     "workModels": {
       "hybrid": 71,
       "on-site": 85,
-      "remote": 292
+      "remote": 296
     },
     "areas": {
-      "backend": 183,
-      "data-ai": 134,
+      "backend": 184,
+      "data-ai": 136,
       "design": 189,
       "devops-sre": 95,
-      "frontend": 128,
-      "fullstack": 106,
+      "frontend": 129,
+      "fullstack": 107,
       "leadership": 25,
       "mobile": 125,
       "product": 15,
@@ -890,7 +892,7 @@
       "laravel": 21,
       "mongodb": 44,
       "mysql": 65,
-      "nextjs": 21,
+      "nextjs": 22,
       "nodejs": 103,
       "php": 53,
       "postgres": 66,
@@ -902,16 +904,16 @@
       "rust": 15,
       "spring": 48,
       "terraform": 17,
-      "typescript": 84,
+      "typescript": 85,
       "vue": 29
     },
     "seniority": {
-      "internship": 32,
+      "internship": 36,
       "junior": 63,
       "lead": 60,
       "mid": 121,
       "principal": 23,
-      "senior": 229,
+      "senior": 233,
       "staff": 13
     },
     "employmentTypes": {
@@ -919,7 +921,7 @@
       "contractor": 104,
       "employee": 111,
       "full-time": 62,
-      "internship": 31,
+      "internship": 35,
       "part-time": 17
     },
     "languages": {
@@ -930,15 +932,15 @@
       "pt": 12
     },
     "freshness": {
-      "7": 25,
-      "30": 74,
-      "90": 141,
-      "aging": 67,
-      "fresh": 74,
-      "stale": 440
+      "7": 29,
+      "30": 78,
+      "90": 144,
+      "aging": 66,
+      "fresh": 78,
+      "stale": 441
     },
     "salaryDisclosed": {
-      "false": 479,
+      "false": 483,
       "true": 102
     }
   },
@@ -1091,7 +1093,7 @@
     {
       "page": 30,
       "file": "api/pages/page-0030.json",
-      "count": 1
+      "count": 5
     }
   ]
 }
