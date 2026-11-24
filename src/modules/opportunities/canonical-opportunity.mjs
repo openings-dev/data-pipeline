@@ -36,6 +36,7 @@ export function canonicalOpportunity(group) {
 
   return {
     ...primary,
+    ...(sorted.some(item => item.contentLicenses) ? { contentLicenses: [...new Map(sorted.flatMap(item => item.contentLicenses ?? []).map(license => [license.repository, license])).values()] } : {}),
     updatedAt: updatedAt ?? primary.updatedAt,
     ...(explicitLocation ? { jobLocation: explicitLocation } : {}),
     ...(companyName ? { companyName } : {}),

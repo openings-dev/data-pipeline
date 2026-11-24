@@ -33,6 +33,7 @@ export function buildStaticApiManifest(params) {
     pageSize: STATIC_API_PAGE_SIZE,
     dataHash: sha256Json({
       jobIds,
+      contentLicenses: items.map(item => item.contentLicenses ?? []),
       facetSummary,
       communities: communities.items,
       aliases: aliases.ids,
@@ -50,6 +51,7 @@ export function buildStaticApiManifest(params) {
       authorArtifactBytes: authorArtifacts.reduce((total, artifact) => total + artifact.bytes, 0),
     },
     files: {
+      sourceLicenses: "api/source-licenses.json",
       facets: staticApiFacetIndexPath(),
       pageLookup: staticApiPageLookupPath(),
       search: staticApiSearchIndexPath(),

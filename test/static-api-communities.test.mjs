@@ -126,7 +126,7 @@ test("static API manifest versions and hashes the communities artifact", () => {
   assert.notEqual(firstManifest.dataHash, secondManifest.dataHash);
 });
 
-test("catalog contains vetted issue-backed communities", async () => {
+test("catalog holds issue-backed communities pending documented reuse review", async () => {
   const catalog = JSON.parse(await readFile(
     new URL("../src/modules/catalog/repositories.json", import.meta.url),
     "utf8",
@@ -143,6 +143,6 @@ test("catalog contains vetted issue-backed communities", async () => {
   ];
 
   for (const repository of expected) {
-    assert.equal(repositories.has(repository), true, `missing ${repository}`);
+    assert.equal(repositories.has(repository), false, `unreviewed source active: ${repository}`);
   }
 });

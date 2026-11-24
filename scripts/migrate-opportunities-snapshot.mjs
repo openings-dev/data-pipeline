@@ -36,6 +36,7 @@ async function main() {
     repositoriesScanned: legacySnapshot.repositoriesScanned ?? 0,
     failedRepositories: legacySnapshot.failedRepositories ?? [],
     countries,
+    catalogRepositories: catalog.repositories,
   });
 
   const result = await writeSegmentedSnapshot(prepared);
