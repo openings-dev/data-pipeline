@@ -5777,188 +5777,6 @@
       "identity": {
         "tenant": "openings",
         "sourceType": "job",
-        "sourceId": "gh_5e371ac29287a1e60fe77ff4",
-        "revision": "19994aa78176e2d31b84090349c4328c59c617b19ef70ffa2e744d83b21ce061",
-        "idempotencyKey": "openings:job:gh_5e371ac29287a1e60fe77ff4:19994aa78176e2d31b84090349c4328c59c617b19ef70ffa2e744d83b21ce061"
-      },
-      "canonical": {
-        "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
-        "summary": "**Atualização (13/11/2026):** a oportunidade agora se concentra exclusivamente no AI Bookkeeping Assistant. ### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em auto...",
-        "canonicalUrl": "https://openings.dev/jobs/gh_5e371ac29287a1e60fe77ff4",
-        "language": "pt-BR"
-      },
-      "artifacts": [],
-      "deliveries": [
-        {
-          "id": "web",
-          "adapter": "web.r2",
-          "operation": "publish",
-          "required": true,
-          "payload": {
-            "type": "web.page",
-            "route": "/jobs/gh_5e371ac29287a1e60fe77ff4",
-            "entity": {
-              "schemaVersion": 1,
-              "tenant": "openings",
-              "kind": "job",
-              "id": "gh_5e371ac29287a1e60fe77ff4",
-              "revision": "19994aa78176e2d31b84090349c4328c59c617b19ef70ffa2e744d83b21ce061",
-              "canonicalPath": "/jobs/gh_5e371ac29287a1e60fe77ff4",
-              "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
-              "summary": "**Atualização (13/11/2026):** a oportunidade agora se concentra exclusivamente no AI Bookkeeping Assistant. ### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em auto...",
-              "status": "active",
-              "contentSha256": "f572eff641815109b476325bbb05f601493fd4cd68cc1faca65549e17c444e9b",
-              "content": {
-                "id": "gh_5e371ac29287a1e60fe77ff4",
-                "sourceId": "backend-br/vagas#12493",
-                "title": "[Remoto] Desenvolvedor(a) Back-end Júnior - Python / AI Coding & Agentic AI - MKdigital",
-                "description": "**Atualização (13/11/2026):** a oportunidade agora se concentra exclusivamente no AI Bookkeeping Assistant.\n\n### Sobre a empresa\n\nA MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em automação de processos empresariais.\n\nEsta publicação corresponde a **uma única oportunidade de desenvolvimento de software**, com foco em backend, APIs, dados e agentes inteligentes. A pessoa selecionada colaborará no produto AI Bookkeeping Assistant da MKdigital.\n\n### Site da empresa\n\nhttps://www.mkdigital.ch\n\n### Descrição da vaga\n\nBuscamos uma pessoa em início de carreira, preferencialmente recém-formada ou em fase final de formação em Engenharia, Ciência da Computação ou área relacionada. **Experiência profissional anterior não é obrigatória.** A atuação é prioritariamente em backend; haverá também integração com interfaces web conforme as necessidades dos produtos.\n\nO trabalho combina programação, compreensão de processos de negócio, especificação de soluções, orientação de coding agents, testes e validação. Não é necessário conhecer previamente contabilidade, mas **a disposição para aprender esse domínio é essencial**.\n\n#### 1. Projeto\n\n##### Projeto A — AI Bookkeeping Assistant (Suíça e Brasil)\n\nDesenvolvimento de uma plataforma de automação de processos contábeis utilizando inteligência artificial, LLMs e agentes inteligentes.\n\nAs principais atividades incluem:\n\n- Processamento e interpretação automática de documentos contábeis, incluindo notas fiscais, faturas, recibos e extratos bancários.\n- Integração de OCR, Document AI e modelos de linguagem.\n- Automação de lançamentos e classificação de transações contábeis.\n- Conciliação bancária e integração com sistemas financeiros.\n- Desenvolvimento de workflows inteligentes e agentes autônomos.\n- Integração com bancos de dados, APIs e serviços externos.\n- Testes, implantação e preparação da plataforma para utilização comercial.\n- Compreensão gradual dos processos contábeis e financeiros necessários à especificação e validação das funcionalidades.\n\n**Objetivo do projeto:** Contribuir para o desenvolvimento e lançamento comercial de uma solução operacional de automação contábil, inicialmente para o mercado suíço, com componentes específicos para o mercado brasileiro.\n\n#### 2. Tecnologias e ambiente de desenvolvimento\n\nO projeto envolve as seguintes tecnologias e práticas, entre outras:\n\n**AI Coding e agentes autônomos**\n- Claude Code, OpenAI Codex e outras ferramentas de programação assistida por IA.\n- Agentes autônomos de desenvolvimento de software (*Coding Agents*).\n- Agentic AI, LLMs, tool calling e orquestração de agentes.\n- Automação de tarefas de programação, testes, documentação e revisão de código.\n- Integração de agentes de programação em workflows de desenvolvimento.\n\n**Desenvolvimento paralelo e engenharia de software**\n- Git, GitHub, branches e Git worktrees.\n- Desenvolvimento paralelo utilizando múltiplos agentes de codificação.\n- Isolamento de ambientes e coordenação de alterações simultâneas.\n- Pull requests, code reviews e integração de código.\n- Testes automatizados, integração contínua (CI/CD) e documentação técnica.\n- Organização de projetos, atividades e entregas utilizando Azure DevOps.\n\n**Backend, frontend e dados**\n- Python e FastAPI.\n- REST APIs e integração entre sistemas.\n- JavaScript/TypeScript e React.\n- PostgreSQL, SQL e bancos de dados em grafos.\n- Processamento de documentos, OCR e pipelines de dados.\n\n**Infraestrutura e desenvolvimento**\n- Linux como ambiente de desenvolvimento e execução.\n- Docker e containers.\n- Servidores e infraestrutura em nuvem.\n- Ambientes automatizados de desenvolvimento, testes e implantação.\n- Conceitos de segurança, autenticação e gerenciamento de serviços.\n\nNão é necessário dominar todas essas tecnologias. Esperamos principalmente interesse em aprender, experimentar e aplicar novas ferramentas de maneira prática.\n\n#### 4. Desenvolvimento orientado ao domínio de aplicação\n\nUm aspecto importante dos projetos é a aproximação entre desenvolvimento de software e conhecimento dos processos que estão sendo automatizados.\n\n**No projeto de contabilidade**, será necessário compreender gradualmente conceitos como documentos contábeis, lançamentos, contas, conciliação bancária, impostos e fluxos financeiros.\n\nA expectativa não é encontrar alguém que já domine esse assunto, mas um profissional que tenha interesse em aprendê-lo e utilizá-lo para:\n\n- Compreender necessidades e requisitos funcionais.\n- Participar da definição de soluções e especificações técnicas.\n- Traduzir processos de negócio em modelos de dados, regras e workflows.\n- Orientar agentes de programação na implementação das funcionalidades.\n- Criar testes e critérios de aceitação baseados em situações reais.\n- Identificar inconsistências e validar os resultados produzidos pelo software e pelos agentes de IA.\n\n**Buscamos alguém interessado em evoluir da programação para a compreensão, especificação e construção de soluções completas, combinando tecnologia, IA e conhecimento de domínio.**\n\n#### 5. Modelo de contratação — Prestação de serviços e empreendedorismo\n\nA MKdigital busca estabelecer uma parceria comercial com um profissional ou uma **microempresa (ME/CNPJ) especializada em desenvolvimento de software**.\n\nA oportunidade é especialmente interessante para profissionais recém-formados que desejam iniciar sua trajetória empreendedora, constituindo sua própria empresa de tecnologia e oferecendo serviços a clientes no Brasil e no exterior.\n\n**Modalidade de contratação**\n\n- **Preferencialmente:** Prestação de serviços por meio de empresa própria (ME/CNPJ), com emissão de notas fiscais.\n- **Apoio ao início da atividade empreendedora:** Para profissionais que ainda estejam no processo de abertura de sua empresa, a MK Digital poderá aceitar, excepcionalmente, a contratação inicial como profissional autônomo (CPF), por até três meses, observadas as obrigações legais e tributárias aplicáveis.\n- Após esse período, a continuidade da parceria estará condicionada à formalização de uma empresa própria (ME/CNPJ) e à celebração de um novo contrato comercial.\n- Não há exigência de exclusividade. O prestador poderá atender outros clientes, respeitando os compromissos de confidencialidade, propriedade intelectual e eventuais conflitos de interesse.\n\n**Projetos e condições comerciais**\n\n- **Duração estimada dos projetos:** 12 meses, com escopo, marcos de entrega e resultados técnicos definidos.\n- **Valor de referência:** R$ 72,50 por hora de serviço.\n- **Dedicação estimada:** Até aproximadamente 36 horas semanais durante os períodos de atividade, sem horário fixo obrigatório.\n- **Volume anual estimado:** 1.656 horas, considerando pausas pessoais, feriados e períodos de indisponibilidade.\n- **Orçamento anual estimado:** R$ 120.060, equivalente a uma média aproximada de R$ 10.000 mensais.\n- O faturamento será realizado conforme os serviços efetivamente prestados e as condições comerciais acordadas. O volume de horas é uma estimativa de planejamento, não uma garantia de contratação mínima.\n- **Local de execução:** 100% remoto, de qualquer cidade do Brasil.\n\nOs valores são referentes à prestação de serviços. O profissional ou empresa contratada será responsável por suas próprias obrigações fiscais e previdenciárias, conforme a legislação aplicável.\n\n**Organização da colaboração**\n\n- Os serviços serão organizados por projetos, atividades técnicas, marcos de entrega e critérios de aceitação.\n- As atividades e entregas serão acompanhadas por meio do Azure DevOps.\n- Estão previstas revisões técnicas semanais e aproximadamente duas reuniões curtas de alinhamento por semana, conforme a necessidade dos projetos.\n- A comunicação diária poderá ocorrer de forma assíncrona por ferramentas online.\n- O prestador terá autonomia na organização dos horários e na execução técnica dos serviços.\n- Todos os custos necessários de ferramentas de IA, APIs e infraestrutura em nuvem serão cobertos pela MKdigital.\n- O prestador deverá possuir computador próprio e conexão estável com a internet.\n\n### Requisitos\n\n#### 3. Perfil desejado\n\n**Requisitos principais**\n\n- Formação superior concluída ou em fase final em Engenharia, Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas.\n- Boa base em programação, algoritmos, estruturas de dados e lógica computacional.\n- Conhecimento de alguma linguagem de programação, preferencialmente Python.\n- Familiaridade com Git e conceitos fundamentais de engenharia de software.\n- Interesse em Linux, infraestrutura e desenvolvimento de aplicações.\n- Interesse em inteligência artificial aplicada ao desenvolvimento de software.\n- Capacidade de investigar problemas, pesquisar soluções e trabalhar com autonomia.\n- Interesse em compreender processos de negócio e transformar requisitos em soluções de software.\n- Disposição para aprender conceitos de contabilidade e finanças.\n- Boa organização, comunicação e comprometimento com as entregas.\n\n**Diferenciais — Nice to have**\n\n- Experiência prática com Claude Code, OpenAI Codex ou outras ferramentas de AI Coding.\n- Conhecimento ou experiência com agentes autônomos de programação e Agentic AI.\n- Projetos pessoais, acadêmicos ou open source utilizando inteligência artificial e LLMs.\n- Experiência com Git worktrees, desenvolvimento paralelo ou múltiplos agentes de codificação.\n- Conhecimento de Linux, Docker, CI/CD e infraestrutura em nuvem.\n- Experiência com Python, FastAPI, React, APIs ou bancos de dados.\n- Conhecimento de GraphDB, processamento de documentos ou visão computacional.\n- Conhecimentos básicos de contabilidade, sistemas ERP, processos financeiros ou automação empresarial.\n- Experiência em análise de requisitos, especificação funcional ou modelagem de processos.\n- Certificações ou cursos relevantes em IA, cloud computing ou desenvolvimento de software.\n- **Inglês técnico**, especialmente para leitura de documentação, ferramentas e comunicação escrita.\n- **Conhecimentos de alemão** serão considerados um diferencial adicional.\n\nCertificações, conhecimentos prévios dos domínios de aplicação e experiência profissional anterior não são obrigatórios. Projetos desenvolvidos, domínio dos fundamentos e capacidade de resolver problemas terão maior peso na seleção.\n\n### Tecnologias\n\nPython, FastAPI, Linux, Docker, Git, PostgreSQL, SQL, TypeScript, JavaScript, CI/CD, Testes automatizados\n\n### Benefícios\n\n- Ferramentas de IA, APIs e infraestrutura em nuvem necessárias aos projetos custeadas pela MKdigital.\n- Colaboração remota, com autonomia na organização dos horários e sem exclusividade.\n- Participação na construção de produtos reais desde as fases iniciais, com possibilidade de continuidade em novos projetos conforme resultados e necessidades.\n\n### Faixa salarial\n\n**Valor de referência da prestação de serviços: R$ 72,50 por hora.** Até aproximadamente 36 horas semanais e 1.656 horas anuais estimadas; orçamento anual estimado de R$ 120.060. Faturamento pelos serviços efetivamente prestados, sem garantia de volume mínimo. Duração estimada dos projetos: 12 meses.\n\n### Nível\n\nJúnior\n\n### Regime de contratação\n\nPJ, Contrato, Freelance\n\nPreferência por ME/CNPJ com emissão de notas fiscais. Para quem estiver constituindo a própria empresa, poderá ser aceita prestação inicial como autônomo/CPF por até três meses, observadas as obrigações aplicáveis; a continuidade exige ME/CNPJ.\n\n### Modelo de trabalho\n\nRemoto\n\n### Localização\n\nBrasil — qualquer cidade.\n\n### Como se candidatar\n\nEnvie para **[info@mkdigital.ch](mailto:info@mkdigital.ch)** com o assunto **“Candidatura — Desenvolvimento de Software / AI Coding”**:\n\n- Currículo ou perfil do LinkedIn.\n- GitHub, portfólio ou exemplos de projetos acadêmicos/pessoais, se disponíveis.\n- Breve apresentação e interesse em AI Coding e Agentic AI.\n- Eventual experiência com Claude Code, Codex, Linux ou outras tecnologias citadas.\n- Interesse em aprender o domínio de contabilidade.\n- Informação sobre ME/CNPJ existente ou interesse em constituir empresa própria.\n\nO processo será integralmente online, com análise de perfil, projetos e conversa técnica. Não é necessário ter empresa aberta no momento da candidatura.\n\n**Empresa:** MKdigital — https://www.mkdigital.ch\n\n### Confirmações\n\n- [x] Esta issue contém uma única vaga.\n- [x] A vaga é para backend (ou fullstack com foco em backend).\n- [x] Não é vaga de treinamento de IA, anotação de dados ou avaliação de modelos.",
-                "excerpt": "**Atualização (13/11/2026):** a oportunidade agora se concentra exclusivamente no AI Bookkeeping Assistant. ### Sobre a empresa A MKdigital é uma startup suíça de tecnologia e inteligência artificial, com foco em auto...",
-                "issueState": "open",
-                "contentHash": "19994aa78176e2d31b84090349c4328c59c617b19ef70ffa2e744d83b21ce061",
-                "repository": "backend-br/vagas",
-                "repositoryUrl": "https://github.com/backend-br/vagas",
-                "region": "South America",
-                "country": "Brazil",
-                "sourceLocation": {
-                  "country": "Brazil",
-                  "countryCode": "BR",
-                  "region": "South America"
-                },
-                "tags": [
-                  "javascript",
-                  "júnior",
-                  "pj",
-                  "postgresql",
-                  "python",
-                  "remoto",
-                  "testes automatizados",
-                  "typescript"
-                ],
-                "sourceTags": [
-                  "javascript",
-                  "júnior",
-                  "pj",
-                  "postgresql",
-                  "python",
-                  "remoto",
-                  "testes automatizados",
-                  "typescript"
-                ],
-                "author": {
-                  "id": "marcelokipper04",
-                  "name": "marcelokipper04",
-                  "handle": "marcelokipper04",
-                  "avatarUrl": "https://avatars.githubusercontent.com/u/207054547?v=4"
-                },
-                "community": {
-                  "id": "backend-br",
-                  "name": "backend-br",
-                  "avatarUrl": "https://github.com/backend-br.png?size=80",
-                  "repository": "backend-br/vagas",
-                  "url": "https://github.com/backend-br/vagas"
-                },
-                "companyName": "** MKdigital — https://www.mkdigital.ch",
-                "createdAt": "2026-11-07T20:58:13Z",
-                "updatedAt": "2026-11-22T01:21:57Z",
-                "url": "https://github.com/backend-br/vagas/issues/12493",
-                "sourceType": "github-issue",
-                "jobLocation": {
-                  "country": "Brazil",
-                  "countryCode": "BR",
-                  "region": "South America",
-                  "city": "Python",
-                  "subdivision": "AI",
-                  "workModel": "remote",
-                  "remoteScope": "unspecified",
-                  "displayText": "Python, AI · Remote",
-                  "confidence": "explicit"
-                },
-                "taxonomy": {
-                  "areas": [
-                    "backend",
-                    "data-ai",
-                    "devops-sre",
-                    "frontend",
-                    "fullstack"
-                  ],
-                  "technologies": [
-                    "azure",
-                    "docker",
-                    "javascript",
-                    "postgres",
-                    "python",
-                    "react",
-                    "typescript"
-                  ],
-                  "seniority": [
-                    "junior"
-                  ],
-                  "employmentTypes": [
-                    "contractor"
-                  ],
-                  "workModels": [
-                    "remote"
-                  ],
-                  "languages": [
-                    "de",
-                    "en"
-                  ]
-                },
-                "dataProvenance": {
-                  "location": "declared",
-                  "salary": "unknown",
-                  "seniority": "inferred",
-                  "workModel": "declared"
-                },
-                "contentLicenses": [
-                  {
-                    "repository": "backend-br/vagas",
-                    "spdx": "MIT",
-                    "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
-                    "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
-                    "reviewedAt": "2026-11-23",
-                    "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
-                    "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
-                  }
-                ],
-                "sources": [
-                  {
-                    "id": "gh_5e371ac29287a1e60fe77ff4",
-                    "sourceId": "backend-br/vagas#12493",
-                    "repository": "backend-br/vagas",
-                    "repositoryUrl": "https://github.com/backend-br/vagas",
-                    "url": "https://github.com/backend-br/vagas/issues/12493",
-                    "createdAt": "2026-11-07T20:58:13Z",
-                    "updatedAt": "2026-11-22T01:21:57Z",
-                    "community": {
-                      "id": "backend-br",
-                      "name": "backend-br",
-                      "avatarUrl": "https://github.com/backend-br.png?size=80",
-                      "repository": "backend-br/vagas",
-                      "url": "https://github.com/backend-br/vagas"
-                    }
-                  }
-                ],
-                "deduplication": {
-                  "sourceCount": 1
-                },
-                "freshness": {
-                  "ageDays": 16,
-                  "publishedAt": "2026-11-07T20:58:13Z",
-                  "status": "fresh"
-                }
-              }
-            }
-          }
-        }
-      ]
-    },
-    {
-      "schemaVersion": 1,
-      "identity": {
-        "tenant": "openings",
-        "sourceType": "job",
         "sourceId": "gh_0031fc7e9077d48cbb294ce8",
         "revision": "37f671289febcdcb40dce5f5d29d4f4d09f5d47bba4ae6522cc840192a629029",
         "idempotencyKey": "openings:job:gh_0031fc7e9077d48cbb294ce8:37f671289febcdcb40dce5f5d29d4f4d09f5d47bba4ae6522cc840192a629029"
@@ -6792,6 +6610,174 @@
                 "freshness": {
                   "ageDays": 41,
                   "publishedAt": "2026-10-13T19:51:25Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_3af7b7f1cb517a436b702057",
+        "revision": "9da58175ce185c08e1206804567a3b5a0bf751b9792f161242f312c91461e13f",
+        "idempotencyKey": "openings:job:gh_3af7b7f1cb517a436b702057:9da58175ce185c08e1206804567a3b5a0bf751b9792f161242f312c91461e13f"
+      },
+      "canonical": {
+        "title": "[Remoto] Back-end Developer JR - PORT LOUIS",
+        "summary": "## Nossa empresa Na Port Louis, valorizamos a contratação de colaboradores juniores e estagiários, visando seu crescimento em conjunto conosco e seu contínuo desenvolvimento profissional. Operamos com projetos ágeis, ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_3af7b7f1cb517a436b702057",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_3af7b7f1cb517a436b702057",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_3af7b7f1cb517a436b702057",
+              "revision": "9da58175ce185c08e1206804567a3b5a0bf751b9792f161242f312c91461e13f",
+              "canonicalPath": "/jobs/gh_3af7b7f1cb517a436b702057",
+              "title": "[Remoto] Back-end Developer JR - PORT LOUIS",
+              "summary": "## Nossa empresa Na Port Louis, valorizamos a contratação de colaboradores juniores e estagiários, visando seu crescimento em conjunto conosco e seu contínuo desenvolvimento profissional. Operamos com projetos ágeis, ...",
+              "status": "active",
+              "contentSha256": "fcefa41dee0dca40d1d5cdd4267c3664ce02144b035ee48153bfad65d90da4e9",
+              "content": {
+                "id": "gh_3af7b7f1cb517a436b702057",
+                "sourceId": "backend-br/vagas#12474",
+                "title": "[Remoto] Back-end Developer JR - PORT LOUIS",
+                "description": "## Nossa empresa\n\nNa Port Louis, valorizamos a contratação de colaboradores juniores e estagiários, visando seu crescimento em conjunto conosco e seu contínuo desenvolvimento profissional.\nOperamos com projetos ágeis, constituídos por squads de 5 a 9 membros, utilizando a metodologia Scrum. Realizamos sprints quinzenais, com rituais de planning, dailies, review e revisão de roadmap.\nA Port Louis possui soluções de RPA para tarefas de contabilidade e financeiras. O nosso stack é composto por um front em Vue.js, e o back em Node + Net Core, ambos rodando em AWS.\n\n- Tecnologia comprovada de ponta para automação de processos (modelo SaaS);\n- Produto inovador de auditorias jurídicas com portfolio robusto de clientes;\n- Excelência técnica: obsessão por qualidade, foco em longo prazo e comprometimento com resultados\n\nNossa missão: \n\nAlavancar a tecnologia para que as pessoas realizem trabalhos com alto valor cognitivo.\n\n## Descrição da vaga\n\nDesenvolvedor Back-End, com foco em Banco de Dados, para atuar na manutenção e otimização da nossa API e DBs.\n\n## Local\n\nRemoto\n\n## Requisitos\n\n- Obrigatórios:\n  - Conhecimento de Typescript\n  - Conhecimento de Node e das bibliotecas mais comuns\n  - Conhecimento de banco de dados MySQL\n  - Vontade e disposição para aprender e se desenvolver\n \n- Desejáveis:\n  - Conhecimento de banco de dados PostgreSQL e DynamoDB.\n  - Conhecimento de ferramentas AWS (Lambda, S3, etc.)\n\n## Benefícios\n\n- Vale Alimentação\n- Plano de Saúde\n- Seguro de Vida\n- Ajuda de custos\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nPreencher o formulário correspondente na página: https://www.portlouis.inf.br/vagas/\n\n## Labels\n\n### Nível\n\n- Júnior\n\n### Regime\n\n- CLT\n\n### Alocação\n\n- Remoto\n\nSource and license notices\n\nSource: backend-br/vagas\nOriginal posting: https://github.com/backend-br/vagas/issues/12474\nLicense: MIT — https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE\nMIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "excerpt": "## Nossa empresa Na Port Louis, valorizamos a contratação de colaboradores juniores e estagiários, visando seu crescimento em conjunto conosco e seu contínuo desenvolvimento profissional. Operamos com projetos ágeis, ...",
+                "issueState": "open",
+                "contentHash": "9da58175ce185c08e1206804567a3b5a0bf751b9792f161242f312c91461e13f",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "aws",
+                  "clt",
+                  "formato-sugerido",
+                  "júnior",
+                  "mysql",
+                  "postgresql",
+                  "remoto",
+                  "typescript"
+                ],
+                "sourceTags": [
+                  "aws",
+                  "clt",
+                  "formato-sugerido",
+                  "júnior",
+                  "mysql",
+                  "postgresql",
+                  "remoto",
+                  "typescript"
+                ],
+                "author": {
+                  "id": "andregodeiro",
+                  "name": "andregodeiro",
+                  "handle": "andregodeiro",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/108381369?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-10-19T20:18:45Z",
+                "updatedAt": "2026-11-24T13:35:52Z",
+                "url": "https://github.com/backend-br/vagas/issues/12474",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "dotnet",
+                    "mysql",
+                    "postgres",
+                    "typescript",
+                    "vue"
+                  ],
+                  "seniority": [
+                    "junior"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "contentLicenses": [
+                  {
+                    "repository": "backend-br/vagas",
+                    "spdx": "MIT",
+                    "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
+                    "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
+                    "reviewedAt": "2026-11-23",
+                    "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+                    "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+                  }
+                ],
+                "sources": [
+                  {
+                    "id": "gh_3af7b7f1cb517a436b702057",
+                    "sourceId": "backend-br/vagas#12474",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12474",
+                    "createdAt": "2026-10-19T20:18:45Z",
+                    "updatedAt": "2026-11-24T13:35:52Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 35,
+                  "publishedAt": "2026-10-19T20:18:45Z",
                   "status": "aging"
                 }
               }
