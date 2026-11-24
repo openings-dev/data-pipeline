@@ -1,3 +1,4 @@
+import { withSourceLicenseNotices } from "./source-license-notices.mjs";
 import { sortOpportunitiesByDate } from "../../opportunities/opportunity-mapper.mjs";
 import { buildFacetIndex, buildFacetSummary } from "./facet-index.mjs";
 import { buildJobBuckets } from "./jobs.mjs";
@@ -66,7 +67,8 @@ export function buildStaticApiFiles(params) {
     previousHistory: previousStatusHistory,
   });
   const aliases = buildOpportunityAliases(items);
-  const pages = buildItemPages(items, generatedAt);
+  const publicItems = items.map(withSourceLicenseNotices);
+  const pages = buildItemPages(publicItems, generatedAt);
   const pageLookup = buildPageLookup(pages);
   const facetIndex = buildFacetIndex(items);
   const authorArtifacts = buildAuthorArtifacts(items, generatedAt);
@@ -77,9 +79,7 @@ export function buildStaticApiFiles(params) {
   files.push(toFile(snapshotRootDir, staticApiSearchIndexPath(), {
     generatedAt, items: buildSearchIndex(items),
   }));
-  files.push(toFile(snapshotRootDir, staticApiJobIdsPath(), {
-    generatedAt, ids: items.map((item) => item.id),
-  }));
+  files.push(toFile(snapshotRootDir, staticApiJobIdsPath(), { generatedAt, ids: items.map(item => item.id) }));
   files.push(toFile(snapshotRootDir, staticApiOrderPath(), {
     generatedAt, ids: items.map((item) => item.id),
   }));
@@ -87,7 +87,7 @@ export function buildStaticApiFiles(params) {
   files.push(toFile(snapshotRootDir, staticApiCommunitiesPath(), { generatedAt, ...communities }));
   files.push(toFile(snapshotRootDir, staticApiStatusPath(), status));
   files.push(toFile(snapshotRootDir, staticApiStatusHistoryPath(), statusHistory));
-  files.push(...buildJobBuckets(items, generatedAt).map((bucket) =>
+  files.push(...buildJobBuckets(publicItems, generatedAt).map((bucket) =>
     toFile(snapshotRootDir, bucket.file, bucket.payload),
   ));
   files.push(...authorArtifacts.map((artifact) =>

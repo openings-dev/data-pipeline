@@ -33,6 +33,7 @@ export function buildStaticApiManifest(params) {
     pageSize: STATIC_API_PAGE_SIZE,
     dataHash: sha256Json({
       jobIds,
+      descriptionNoticeVersion: 1,
       contentLicenses: items.map(item => item.contentLicenses ?? []),
       facetSummary,
       communities: communities.items,
