@@ -22,7 +22,15 @@ export function prepareSegmentedSnapshot(params) {
     previousStatusHistory = null,
   } = params;
 
+  const allowed = new Map(catalogRepositories.map(source => [source.repository.toLowerCase(), source]));
   const countrySnapshots = countries
+    .map(country => ({ ...country, repositories: country.repositories
+      .filter(repository => allowed.has(repository.repository.toLowerCase()))
+      .map(repository => {
+        const license = allowed.get(repository.repository.toLowerCase()).contentLicense;
+        return { ...repository, items: repository.items.map(item => license ? { ...item, contentLicenses: [license] } : item) };
+      }) }))
+    .filter(country => country.repositories.length > 0)
     .map((countryResult) => buildCountrySnapshot({ snapshotRootDir, generatedAt, countryResult }))
     .sort((left, right) => left.countryCode.localeCompare(right.countryCode));
   const staticApiFiles = buildStaticApiFiles({

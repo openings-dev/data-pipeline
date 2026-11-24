@@ -20,7 +20,8 @@
     "migrate:snapshot": "node scripts/migrate-opportunities-snapshot.mjs",
     "report:monthly": "node scripts/generate-monthly-report.mjs",
     "test": "node --test test/*.test.mjs",
-    "validate": "npm test && node scripts/validate-repo.mjs"
+    "validate": "npm test && node scripts/validate-repo.mjs",
+    "rebuild:reviewed-snapshot": "node scripts/rebuild-reviewed-snapshot.mjs"
   },
   "engines": {
     "node": ">=20.0.0"

@@ -48,6 +48,8 @@ npm run build:snapshot
 
 ## Adding a Source Repository
 
+First complete a documented reuse review in `src/modules/catalog/source-rights.json`: inspect actual license and README scope, any content exclusions, contribution terms and notice chronology. Preserve the full verified license text and exact evidence URLs/hashes. Do not use the GitHub license label, public visibility or an Openings README mention as sufficient evidence. A broader license/permission basis requires an explicit policy review; the current register is the conservative MIT shortlist. New discovery approvals without this evidence are rejected.
+
 Update `src/modules/catalog/repositories.json` with:
 
 - `repository`: `owner/name`

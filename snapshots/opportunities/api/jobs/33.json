@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-24T07:47:47.524Z",
+  "generatedAt": "2026-11-24T12:10:57.732Z",
   "items": {
     "gh_33bced2fc34c5cdedf31728d": {
       "id": "gh_33bced2fc34c5cdedf31728d",
@@ -88,6 +88,17 @@
         "seniority": "inferred",
         "workModel": "declared"
       },
+      "contentLicenses": [
+        {
+          "repository": "DevOps-Brasil/Vagas",
+          "spdx": "MIT",
+          "licenseUrl": "https://github.com/DevOps-Brasil/Vagas/blob/5fd285756ac48a7ef74db505bc35f6d8deb546c4/LICENSE",
+          "readmeUrl": "https://github.com/DevOps-Brasil/Vagas/blob/master/README.md",
+          "reviewedAt": "2026-11-23",
+          "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+          "notice": "MIT License\n\nCopyright (c) 2017 DevOps-Brazil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
       "sources": [
         {
           "id": "gh_33bced2fc34c5cdedf31728d",
@@ -201,6 +212,17 @@
         "seniority": "inferred",
         "workModel": "declared"
       },
+      "contentLicenses": [
+        {
+          "repository": "nerdzao/vagas",
+          "spdx": "MIT",
+          "licenseUrl": "https://github.com/nerdzao/vagas/blob/4e071d6320309fc8a8388c273559f66f987b1562/LICENSE",
+          "readmeUrl": "https://github.com/nerdzao/vagas/blob/master/README.md",
+          "reviewedAt": "2026-11-23",
+          "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+          "notice": "MIT License\n\nCopyright (c) 2019 Nerdzão\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
       "sources": [
         {
           "id": "gh_337dcc0369d8226aab4c836f",
@@ -225,212 +247,6 @@
       "freshness": {
         "ageDays": 290,
         "publishedAt": "2026-02-06T18:42:28Z",
-        "status": "stale"
-      }
-    },
-    "gh_338622c06f4332345fe4f4ea": {
-      "id": "gh_338622c06f4332345fe4f4ea",
-      "sourceId": "golangtw/jobs#225",
-      "title": "[苗栗/竹南][月薪 90k 起] 群聯電子 雲原生平台工程師",
-      "description": "## 工作地點\n- 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號)\n\n## 工作內容\n- 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。\n- 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。\n- 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。\n- 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernetes RBAC 與多租戶隔離。\n- 開發 LLM 模型服務基礎設施，透過 KServe 與 Gateway API Inference Extension 管理模型的打包、部署與推論生命週期。\n- 設計與實作 Kubernetes CRD 及 Controller，管理叢集、工作負載、租戶隔離與模型生命週期。\n- 使用 ConnectRPC / gRPC 設計跨叢集 API，搭配 Protobuf 定義服務介面。\n- 與前端（SvelteKit）、DevOps 及 QA 團隊合作，確保程式碼品質與安全性。\n- 參與技術研究，探索 AI 推論優化、Gateway API 與雲原生新技術。\n\n## 能力需求\n- Go 經驗：3 年以上 Go 開發經驗，熟悉 Goroutine 與 Channel。\n- Kubernetes：熟悉 Kubernetes 架構，具備 Operator / controller-runtime 開發經驗。\n- 開源貢獻：參與過 GitHub 開源專案，熟悉 Pull Request 與程式碼審查。\n- Linux 技能：精通 Linux 系統操作、Shell 腳本、系統監控與效能優化。\n- 容器化技術：熟悉 Docker，具備撰寫多階段 Dockerfile 與容器部署經驗。\n- API 設計：熟悉 ConnectRPC / gRPC、Protobuf 與 RESTful API 設計。\n- 軟實力：優秀的問題解決能力、團隊合作精神與溝通技巧。\n\n## 加分項目\n- 熟悉 Kubernetes RBAC、NetworkPolicy 或 Admission Webhook 等安全機制。\n- 具備 OIDC / OAuth 2.0 身份驗證或 mTLS 憑證管理實作經驗。\n- 具備 AI/ML 模型服務經驗（如 KServe、vLLM 或類似推論框架）。\n- 熟悉 Istio 服務網格或 Envoy Gateway。\n- 熟悉 Gateway API 與 Kubernetes 網路模型。\n- 熟悉 CI/CD 工具（如 GitHub Actions）與 GitOps 流程（如 Flux CD）。\n- 具備 Helm Chart 開發與管理經驗。\n- 熟悉 OpenTelemetry 分散式追蹤與可觀測性實踐。\n- 熟悉前端技術（如 SvelteKit、TypeScript）。\n\n## 團隊技術\n- 程式語言：Go、TypeScript、Protobuf\n- 前端框架：SvelteKit、Tailwind CSS\n- 通訊協定：ConnectRPC、gRPC\n- 容器與叢集：Kubernetes、Docker、Helm\n- 儲存與網路：Rook/Ceph、Istio、Gateway API\n- AI/ML 推論：KServe、llm-d、Gateway API Inference Extension\n- 安全機制：OIDC、mTLS、Kubernetes RBAC、多租戶隔離\n- 監控與可觀測性：Prometheus、Grafana、OpenTelemetry\n- CI/CD：GitHub Actions、Flux CD\n\n## 薪資與福利\n  - 基本底薪：每月 90,000 - 110,000 元。\n  - 年薪保證 14 個月，另加績效獎金與公司分紅。\n\n## 職涯發展\n- 技術專家：深入 Kubernetes Operator、多叢集架構與 AI 推論基礎設施，成為雲原生平台專家。\n- 技術管理：帶領技術團隊，參與產品策略制定。\n- 跨領域成長：參與前端、AI/ML 推論或基礎設施自動化專案。\n\n## 應徵方式\n請將履歷寄至 [paul_tsai@phison.com](mailto:paul_tsai@phison.com) ，並簡述您的後端開發、Kubernetes 或雲原生技術經驗。",
-      "excerpt": "## 工作地點 - 群聯電子竹南總部 (苗栗縣竹南鎮群義路1號) ## 工作內容 - 使用 Golang 開發 Kubernetes Operator 與高效能後端服務。 - 開發多叢集管理平台，整合反向隧道、API 閘道與統一資源操作介面。 - 基於 Kubernetes、Rook/Ceph 與 Istio 服務網格，建構雲原生基礎設施。 - 設計與實作平台安全機制，包含 OIDC 身份驗證、mTLS 憑證管理、Kubernet...",
-      "issueState": "open",
-      "contentHash": "fd2d0c5383bbd3a92e29f99abb4d9e780b24b944b2784284c76aa9de8a311fee",
-      "repository": "golangtw/jobs",
-      "repositoryUrl": "https://github.com/golangtw/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "90k以上",
-        "苗栗"
-      ],
-      "sourceTags": [
-        "90k以上",
-        "苗栗"
-      ],
-      "author": {
-        "id": "iasthc",
-        "name": "iasthc",
-        "handle": "iasthc",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/40525303?v=4"
-      },
-      "community": {
-        "id": "golangtw",
-        "name": "golangtw",
-        "avatarUrl": "https://github.com/golangtw.png?size=80",
-        "repository": "golangtw/jobs",
-        "url": "https://github.com/golangtw/jobs"
-      },
-      "createdAt": "2025-07-08T07:48:12Z",
-      "updatedAt": "2026-04-09T02:47:13Z",
-      "url": "https://github.com/golangtw/jobs/issues/225",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "confidence": "unknown"
-      },
-      "taxonomy": {
-        "areas": [
-          "data-ai",
-          "devops-sre",
-          "qa"
-        ],
-        "technologies": [
-          "docker",
-          "go",
-          "kubernetes",
-          "typescript"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "unknown"
-      },
-      "sources": [
-        {
-          "id": "gh_338622c06f4332345fe4f4ea",
-          "sourceId": "golangtw/jobs#225",
-          "repository": "golangtw/jobs",
-          "repositoryUrl": "https://github.com/golangtw/jobs",
-          "url": "https://github.com/golangtw/jobs/issues/225",
-          "createdAt": "2025-07-08T07:48:12Z",
-          "updatedAt": "2026-04-09T02:47:13Z",
-          "community": {
-            "id": "golangtw",
-            "name": "golangtw",
-            "avatarUrl": "https://github.com/golangtw.png?size=80",
-            "repository": "golangtw/jobs",
-            "url": "https://github.com/golangtw/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 503,
-        "publishedAt": "2025-07-08T07:48:12Z",
-        "status": "stale"
-      }
-    },
-    "gh_334e6a189e0f2f259f76a71a": {
-      "id": "gh_334e6a189e0f2f259f76a71a",
-      "sourceId": "twjug/jobs#101",
-      "title": "[台北信義] [Ubiquiti Inc] Cloud Software Developer - Java",
-      "description": "At Ubiquiti, our mission is to simplify IT—not just by making powerful networking technology more accessible but by delivering frictionless product experiences tailored to our users. This pursuit begins at our R&D Center in Taiwan where we not only build innovative products but a culture of trust transparency and collaboration. \n\nWe develop high-performance networking product platforms. Ubiquiti-engineered technology innovations provide superior performance, clever mechanical design, and ease of use. \n\n**We Unifi everything, connecting in everywhere.**\n\n\n## Responsibilities\n* Design and develop secure cloud-based services.\n* Integrate designs with larger software systems.\n* Coworker with cloud architect, backend, and frontend developer.\n* Positive attitude and a strong commitment to delivering quality work.\n\n\n## Skills and Knowledge\n* 3+ years of experience with developing back-end server products.\n* 3+ years of experience with Java is required.\n* Golang, Python, and node.js are a plus.\n* Familiarity with Spring Framework.\n* Experience with AWS cloud services.\n* Experience with Linux and Docker environments.\n* Have basic knowledge about webRTC, WebSocket, and MQTT.\n\n\n## 工時/特休\n\n* Flexible working patterns.\n\n\n## 薪資範圍\n\n* NT$ 1,300,000 above (yearly）\n\n\n## 福利/推薦項\n\n* 彈性上下班也可申請遠端WFH\n* 免費午餐及水果\n* 優於勞基法不扣薪事假病假\n* 零食區全日免費提供飲品及美食\n* 員工/眷屬團體保險及健檢\n* 健身房及team building 補助\n\n\n## 聯絡方式\n\n* [點此至官網直接投遞](https://bit.ly/3QraGpb) 或 歡迎寄至hr.taiwan@ui.com \n* Any questions, welcome to reach out via LinkedIn: [Louise Hu](https://www.linkedin.com/in/yuninghu/), [Nia Hsieh](https://www.linkedin.com/in/nia-hsieh-9727a6b7/).",
-      "excerpt": "At Ubiquiti, our mission is to simplify IT—not just by making powerful networking technology more accessible but by delivering frictionless product experiences tailored to our users. This pursuit begins at our R&D Cen...",
-      "issueState": "open",
-      "contentHash": "20f74cbd7b83370c90e47af576c8c76e682a81b3298b023cba28e56a45efacd7",
-      "repository": "twjug/jobs",
-      "repositoryUrl": "https://github.com/twjug/jobs",
-      "region": "Asia",
-      "country": "Taiwan",
-      "sourceLocation": {
-        "country": "Taiwan",
-        "countryCode": "TW",
-        "region": "Asia"
-      },
-      "tags": [
-        "backend",
-        "design",
-        "frontend",
-        "golang",
-        "java",
-        "node",
-        "python"
-      ],
-      "sourceTags": [
-        "backend",
-        "design",
-        "frontend",
-        "golang",
-        "java",
-        "node",
-        "python"
-      ],
-      "author": {
-        "id": "louisehuyuning",
-        "name": "louisehuyuning",
-        "handle": "louisehuyuning",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/109797744?v=4"
-      },
-      "community": {
-        "id": "twjug",
-        "name": "twjug",
-        "avatarUrl": "https://github.com/twjug.png?size=80",
-        "repository": "twjug/jobs",
-        "url": "https://github.com/twjug/jobs"
-      },
-      "createdAt": "2022-08-05T10:54:03Z",
-      "updatedAt": "2022-08-05T10:54:03Z",
-      "url": "https://github.com/twjug/jobs/issues/101",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "design",
-          "frontend"
-        ],
-        "technologies": [
-          "aws",
-          "docker",
-          "go",
-          "java",
-          "nodejs",
-          "python",
-          "spring"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "inferred"
-      },
-      "sources": [
-        {
-          "id": "gh_334e6a189e0f2f259f76a71a",
-          "sourceId": "twjug/jobs#101",
-          "repository": "twjug/jobs",
-          "repositoryUrl": "https://github.com/twjug/jobs",
-          "url": "https://github.com/twjug/jobs/issues/101",
-          "createdAt": "2022-08-05T10:54:03Z",
-          "updatedAt": "2022-08-05T10:54:03Z",
-          "community": {
-            "id": "twjug",
-            "name": "twjug",
-            "avatarUrl": "https://github.com/twjug.png?size=80",
-            "repository": "twjug/jobs",
-            "url": "https://github.com/twjug/jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1571,
-        "publishedAt": "2022-08-05T10:54:03Z",
         "status": "stale"
       }
     }

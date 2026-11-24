@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T23:09:37.773Z",
+  "generatedAt": "2026-11-24T12:10:57.732Z",
   "items": {
     "gh_b58d8e19c5708f146ef494b5": {
       "id": "gh_b58d8e19c5708f146ef494b5",
@@ -79,6 +79,17 @@
         "seniority": "inferred",
         "workModel": "inferred"
       },
+      "contentLicenses": [
+        {
+          "repository": "nerdzao/vagas",
+          "spdx": "MIT",
+          "licenseUrl": "https://github.com/nerdzao/vagas/blob/4e071d6320309fc8a8388c273559f66f987b1562/LICENSE",
+          "readmeUrl": "https://github.com/nerdzao/vagas/blob/master/README.md",
+          "reviewedAt": "2026-11-23",
+          "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+          "notice": "MIT License\n\nCopyright (c) 2019 Nerdzão\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
       "sources": [
         {
           "id": "gh_b58d8e19c5708f146ef494b5",
@@ -103,101 +114,6 @@
       "freshness": {
         "ageDays": 146,
         "publishedAt": "2026-06-30T12:50:47Z",
-        "status": "stale"
-      }
-    },
-    "gh_b515951a8597751ca4cb1e35": {
-      "id": "gh_b515951a8597751ca4cb1e35",
-      "sourceId": "FidelisClayton/elm-jobs#73",
-      "title": "[Remote] Software developer @ Timelineapp",
-      "description": "Timelineapp is a service for the financial advisers (mostly in the UK) helping them to build and discuss investment strategies and retirement plans with their clients. Our front-end is almost 100% in Elm, the back-end is in Elixir (we use Phoenix framework), and a very important part has recently been rewritten in Rust. We’re looking for a person to develop both parts of the application (i.e., someone with full-stack capabilities and/or ambitions). Our development team is fully remote. \n\nMore information and the link to apply is available in [the job posting](https://timelineapp.freshteam.com/jobs/-rhCfxf_dSVo/software-developer-software-engineer-remote).",
-      "excerpt": "Timelineapp is a service for the financial advisers (mostly in the UK) helping them to build and discuss investment strategies and retirement plans with their clients. Our front-end is almost 100% in Elm, the back-end...",
-      "issueState": "open",
-      "contentHash": "b07eead4140019e4c27889ff320a619c8c082dae07f61c5eb8d4a2b0bc269068",
-      "repository": "FidelisClayton/elm-jobs",
-      "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "remote"
-      ],
-      "sourceTags": [
-        "remote"
-      ],
-      "author": {
-        "id": "szubtsovskiy",
-        "name": "szubtsovskiy",
-        "handle": "szubtsovskiy",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/1901687?v=4"
-      },
-      "community": {
-        "id": "FidelisClayton",
-        "name": "FidelisClayton",
-        "avatarUrl": "https://github.com/FidelisClayton.png?size=80",
-        "repository": "FidelisClayton/elm-jobs",
-        "url": "https://github.com/FidelisClayton/elm-jobs"
-      },
-      "createdAt": "2021-11-23T10:39:52Z",
-      "updatedAt": "2021-11-23T10:42:36Z",
-      "url": "https://github.com/FidelisClayton/elm-jobs/issues/73",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "backend",
-          "frontend",
-          "fullstack"
-        ],
-        "technologies": [
-          "rust"
-        ],
-        "seniority": [],
-        "employmentTypes": [],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "unknown",
-        "salary": "unknown",
-        "seniority": "unknown",
-        "workModel": "declared"
-      },
-      "sources": [
-        {
-          "id": "gh_b515951a8597751ca4cb1e35",
-          "sourceId": "FidelisClayton/elm-jobs#73",
-          "repository": "FidelisClayton/elm-jobs",
-          "repositoryUrl": "https://github.com/FidelisClayton/elm-jobs",
-          "url": "https://github.com/FidelisClayton/elm-jobs/issues/73",
-          "createdAt": "2021-11-23T10:39:52Z",
-          "updatedAt": "2021-11-23T10:42:36Z",
-          "community": {
-            "id": "FidelisClayton",
-            "name": "FidelisClayton",
-            "avatarUrl": "https://github.com/FidelisClayton.png?size=80",
-            "repository": "FidelisClayton/elm-jobs",
-            "url": "https://github.com/FidelisClayton/elm-jobs"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 1826,
-        "publishedAt": "2021-11-23T10:39:52Z",
         "status": "stale"
       }
     }

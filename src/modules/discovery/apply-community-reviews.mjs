@@ -1,3 +1,4 @@
+import { documentedSources } from "../catalog/source-rights.mjs";
 import {
   candidateMap,
   toCatalogEntry,
@@ -38,6 +39,9 @@ export function applyCommunityReviews(options) {
     const candidate = candidates.get(key);
     if (!candidate) throw new Error(`Review is absent from report: ${review.repository}`);
     if (review.decision === "approved") {
+      if (catalog.contentRightsPolicy === "documented-reuse" && documentedSources([candidate]).length === 0) {
+        throw new Error(`Documented reuse evidence required: ${review.repository}`);
+      }
       validateApproval(review, candidate);
       if (catalogKeys.has(key)) {
         if (nextDecisions.get(key)?.decision !== "approved") {

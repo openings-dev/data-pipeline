@@ -2,7 +2,7 @@ import { readFile, readdir, unlink } from "node:fs/promises";
 import { resolve } from "node:path";
 import { readRepositoryCatalog } from "../src/modules/catalog/catalog-repository.mjs";
 import { buildStaticApiFiles } from "../src/modules/snapshot/static-api/build-static-api-files.mjs";
-import { staticApiStatusPath } from "../src/modules/snapshot/static-api/paths.mjs";
+import { staticApiStatusPath, staticApiStatusHistoryPath } from "../src/modules/snapshot/static-api/paths.mjs";
 import { readJsonIfExists } from "../src/modules/storage/read-json-if-exists.mjs";
 import { writeJsonIfChanged } from "../src/modules/storage/write-json-if-changed.mjs";
 
@@ -31,10 +31,11 @@ async function pruneGeneratedDirectory(relativeDir, liveFiles) {
 }
 
 async function main() {
-  const [globalIndex, catalog, previousStatus] = await Promise.all([
+  const [globalIndex, catalog, previousStatus, previousStatusHistory] = await Promise.all([
     readJson("index.json"),
     readRepositoryCatalog(resolve(process.cwd(), "src/modules/catalog/repositories.json")),
     readJsonIfExists(resolve(rootDir, staticApiStatusPath())),
+    readJsonIfExists(resolve(rootDir, staticApiStatusHistoryPath())),
   ]);
   const countrySnapshots = await Promise.all(globalIndex.countries.map(readCountrySnapshot));
   const files = buildStaticApiFiles({
@@ -43,11 +44,12 @@ async function main() {
     countrySnapshots,
     repositories: catalog.repositories,
     failedRepositories: globalIndex.failedRepositories ?? [],
-    previousStatus,
+    previousStatus, previousStatusHistory,
+    startedAt: previousStatusHistory?.runs?.find(run => run.completedAt === globalIndex.generatedAt)?.startedAt ?? globalIndex.generatedAt,
   });
   for (const file of files) await writeJsonIfChanged(file.filePath, file.payload);
   const liveFiles = new Set(files.map((file) => file.relativePath));
-  await Promise.all(["api/jobs", "api/pages"].map((directory) =>
+  await Promise.all(["api/jobs", "api/pages", "api/authors"].map((directory) =>
     pruneGeneratedDirectory(directory, liveFiles)
   ));
   const nextIndex = {

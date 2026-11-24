@@ -56,6 +56,16 @@ src/modules/catalog/repositories.json
 
 Each catalog entry describes a public GitHub repository that posts opportunities as issues, including repository name, URL, country, country code, and region.
 
+## Documented reuse policy
+
+The active catalog is limited to 16 reviewed issue boards. `src/modules/catalog/source-rights.json` records the actual MIT license text, pinned license URL/blob hash, README evidence and license chronology. Admission requires an entry in this register; adding a repository to the catalog or approving a discovery candidate alone cannot activate an unreviewed source. `held-repositories.json` retains inactive source metadata and previous issue exclusions for a future review, not ingestion.
+
+The bounded review found explicit README MIT language and a repository license predating the indexed issues. Together with [GitHub Terms D.6](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#d-user-generated-content), this is our documented basis for evaluating issue contributions. It is not a claim that public content is public domain, that every employer endorsed Openings, or that all third-party rights are cleared. Openings mentions in a README are not treated as permission. Separate agreements, content exceptions and contributor authority still matter.
+
+Each source shard and published job includes `contentLicenses`; deduplicated jobs preserve notices for every contributing source. The manifest also links `api/source-licenses.json`. Consumers must retain these notices with redistributed content and provide accessible attribution; source links alone do not replace the MIT notice condition. Issue URLs and contributor attribution remain in the records.
+
+To apply a reviewed catalog restriction to existing shards without network requests or external publication, run `npm run rebuild:reviewed-snapshot`. This filters source shards before deduplication, removes obsolete generated files, and removes unsupported pending job/author/community envelopes. Retained pending envelopes are refreshed with the restricted content and notices. Historical external publications and monthly reports are not altered. Snapshot generation time changes, but issue timestamps are preserved; this command does not represent a new upstream fetch.
+
 ## Published Data Layout
 
 ```txt

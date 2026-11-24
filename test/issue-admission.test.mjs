@@ -68,7 +68,9 @@ test('unconfigured community job boards retain label-free and support roles unch
 test('catalog configures reviewed mixed sources and excludes directory-maintenance sources', async () => {
   const { readRepositoryCatalog } = await import('../src/modules/catalog/catalog-repository.mjs');
   const catalog = await readRepositoryCatalog('src/modules/catalog/repositories.json');
-  const find = name => catalog.repositories.find(x => x.repository === name);
+  const held = JSON.parse(await (await import('node:fs/promises')).readFile('src/modules/catalog/held-repositories.json', 'utf8'));
+  const find = name => held.repositories.find(x => x.repository === name);
+  assert.ok(!catalog.repositories.some(x => x.repository.startsWith('SimplifyJobs/')));
   assert.equal(find('SimplifyJobs/New-Grad-Positions').issuePolicy, 'structured-submissions');
   assert.equal(find('SimplifyJobs/Summer2026-Internships').issuePolicy, 'structured-submissions');
   assert.equal(find('negarprh/Canadian-Tech-Internships-2026').issuePolicy, 'structured-submissions');
@@ -103,6 +105,8 @@ test('known community complaints and candidate submissions have reviewed exclusi
     'TADSG/jobs': [2], '3Tecnos-Development/vagas': [1, 3], 'matildaexp/remote-latam': [2, 4],
   })) {
     const source = catalog.repositories.find(x => x.repository === repository);
-    assert.deepEqual(source.excludedIssues?.map(x => x.number), numbers);
+    assert.equal(source, undefined);
+    const held = JSON.parse(await (await import('node:fs/promises')).readFile('src/modules/catalog/held-repositories.json', 'utf8'));
+    assert.deepEqual(held.repositories.find(x => x.repository === repository).excludedIssues.map(x => x.number), numbers);
   }
 });

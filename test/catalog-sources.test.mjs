@@ -65,33 +65,13 @@ const EXPECTED = {
   },
 };
 
-test("catalog includes the TinTin and Prime Leo label-free sources", async () => {
-  const catalog = await readRepositoryCatalog(
-    resolve(process.cwd(), "src/modules/catalog/repositories.json"),
-  );
-
-  for (const [repository, expected] of Object.entries(EXPECTED)) {
-    const entry = catalog.repositories.find(
-      (item) => item.repository === repository,
-    );
-    assert.ok(entry, `${repository} must be cataloged`);
-    assert.deepEqual(
-      Object.fromEntries(
-        Object.keys(expected).map((key) => [key, entry[key]]),
-      ),
-      expected,
-    );
-    assert.equal(entry.requiredLabels, undefined);
+test("label-free issue mapping remains supported but unreviewed sources are inactive", async () => {
+  const catalog = await readRepositoryCatalog("src/modules/catalog/repositories.json");
+  for (const repository of Object.keys(EXPECTED)) {
+    assert.ok(!catalog.repositories.some(item => item.repository === repository));
   }
-
-  const primeLeoRepository = catalog.repositories.find(
-    (item) => item.repository === "Prime-Leo-Enterprises/Jobs",
-  );
-  const tintinRepository = catalog.repositories.find(
-    (item) => item.repository === "OurTinTinLand/TinTin-Job-Board",
-  );
-  assert.ok(primeLeoRepository);
-  assert.ok(tintinRepository);
+  const primeLeoRepository = { repository: "Prime-Leo-Enterprises/Jobs", url: "https://github.com/Prime-Leo-Enterprises/Jobs", ...EXPECTED["Prime-Leo-Enterprises/Jobs"] };
+  const tintinRepository = { repository: "OurTinTinLand/TinTin-Job-Board", url: "https://github.com/OurTinTinLand/TinTin-Job-Board", ...EXPECTED["OurTinTinLand/TinTin-Job-Board"] };
 
   const primeLeo = mapIssueToOpportunity(
     {

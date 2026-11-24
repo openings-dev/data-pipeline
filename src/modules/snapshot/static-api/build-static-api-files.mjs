@@ -15,10 +15,14 @@ import { buildStatusHistory } from "./status-history.mjs";
 import { normalizeDiscoveryOpportunity } from "../../opportunities/normalize-discovery-opportunity.mjs";
 import { collectRepositoryItems, collectSynchronizedRepositories } from "./repository-items.mjs";
 import { buildAuthorArtifacts } from "./authors.mjs";
-function normalizeOpenItems(countrySnapshots, generatedAt) {
+function normalizeOpenItems(countrySnapshots, generatedAt, repositories) {
+  const allowed = new Map(repositories.map(source => [source.repository.toLowerCase(), source]));
   const itemsById = new Map();
   for (const item of collectRepositoryItems(countrySnapshots)) {
-    const normalized = normalizeDiscoveryOpportunity(withPublicOpportunityId(item));
+    const source = allowed.get(item.repository?.toLowerCase());
+    if (!source) continue;
+    const licensed = source.contentLicense ? { ...item, contentLicenses: [source.contentLicense] } : item;
+    const normalized = normalizeDiscoveryOpportunity(withPublicOpportunityId(licensed));
     if (normalized.issueState !== "open") continue;
     itemsById.set(normalized.id, normalized);
   }
@@ -40,7 +44,7 @@ export function buildStaticApiFiles(params) {
     previousStatusHistory = null,
     startedAt = generatedAt,
   } = params;
-  const items = normalizeOpenItems(countrySnapshots, generatedAt);
+  const items = normalizeOpenItems(countrySnapshots, generatedAt, repositories);
   const communities = buildCommunities(repositories, items);
   const synchronizedRepositories = collectSynchronizedRepositories(countrySnapshots);
   const status = buildCommunityStatus({
@@ -65,11 +69,9 @@ export function buildStaticApiFiles(params) {
   const pages = buildItemPages(items, generatedAt);
   const pageLookup = buildPageLookup(pages);
   const facetIndex = buildFacetIndex(items);
-  const facetSummary = buildFacetSummary(facetIndex);
   const authorArtifacts = buildAuthorArtifacts(items, generatedAt);
-  const files = pages.map((page) =>
-    toFile(snapshotRootDir, page.file, page.payload),
-  );
+  const files = pages.map(page => toFile(snapshotRootDir, page.file, page.payload));
+  files.push(toFile(snapshotRootDir, "api/source-licenses.json", { generatedAt, sources: repositories.flatMap(source => source.contentLicense ? [source.contentLicense] : []) }));
   files.push(toFile(snapshotRootDir, staticApiPageLookupPath(), { generatedAt, pageLookup }));
   files.push(toFile(snapshotRootDir, staticApiFacetIndexPath(), { generatedAt, ...facetIndex }));
   files.push(toFile(snapshotRootDir, staticApiSearchIndexPath(), {
@@ -91,7 +93,7 @@ export function buildStaticApiFiles(params) {
   files.push(...authorArtifacts.map((artifact) =>
     toFile(snapshotRootDir, artifact.file, artifact.payload),
   ));
-  const manifest = buildStaticApiManifest({ generatedAt, items, pages, facetSummary, facetIndex, communities, aliases, status, statusHistory, authorArtifacts });
+  const manifest = buildStaticApiManifest({ generatedAt, items, pages, facetSummary: buildFacetSummary(facetIndex), facetIndex, communities, aliases, status, statusHistory, authorArtifacts });
   files.push(toFile(snapshotRootDir, staticApiManifestPath(), manifest));
   return files;
 }

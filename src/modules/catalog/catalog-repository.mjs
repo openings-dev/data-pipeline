@@ -1,3 +1,4 @@
+import { documentedSources } from "./source-rights.mjs";
 import { readFile } from "node:fs/promises";
 import { ISSUE_POLICIES } from "../opportunities/issue-admission.mjs";
 
@@ -60,5 +61,5 @@ export async function readRepositoryCatalog(filePath) {
   const content = await readFile(filePath, "utf8");
   const catalog = JSON.parse(content);
   assertCatalogShape(catalog);
-  return catalog;
+  return { ...catalog, repositories: documentedSources(catalog.repositories) };
 }
