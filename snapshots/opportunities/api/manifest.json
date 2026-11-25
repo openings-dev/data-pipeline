@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-24T19:49:34.312Z",
+  "generatedAt": "2026-11-25T03:53:27.928Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "8e0b09f936dae11ba7cb421e566bb6255d5bc25dc99ff88deeb98c59087db9bc",
+  "dataHash": "1b0129b65c9a642a9c72c9b9e45c62bb18f1201d7f9cedfbb4d371c52393eeec",
   "totals": {
-    "openOpportunities": 147,
+    "openOpportunities": 148,
     "pages": 8,
     "repositories": 16,
     "communities": 16,
     "countries": 2,
     "regions": 2,
-    "authors": 70,
-    "authorArtifactBytes": 20689
+    "authors": 71,
+    "authorArtifactBytes": 20973
   },
   "files": {
     "sourceLicenses": "api/source-licenses.json",
@@ -32,7 +32,7 @@
       "backend-pt/vagas": 1,
       "DevComputaria/CangaceiroDevVagas": 15,
       "developersRJ/vagas": 5,
-      "DevOps-Brasil/Vagas": 7,
+      "DevOps-Brasil/Vagas": 8,
       "dotnetdevbr/vagas": 2,
       "frontendbr/vagas": 8,
       "IonicBrazil/vagas": 6,
@@ -46,17 +46,17 @@
     },
     "regions": {
       "Europe": 1,
-      "South America": 146
+      "South America": 147
     },
     "countries": {
-      "Brazil": 146,
+      "Brazil": 147,
       "Portugal": 1
     },
     "tags": {
       "alocado": 1,
       "asp": 1,
-      "aws": 13,
-      "azure": 1,
+      "aws": 14,
+      "azure": 2,
       "backend": 21,
       "brasil": 1,
       "c#": 1,
@@ -66,10 +66,10 @@
       "contrato": 2,
       "data": 40,
       "design": 46,
-      "devops": 19,
+      "devops": 20,
       "docker": 2,
       "especialista": 7,
-      "formato-sugerido": 11,
+      "formato-sugerido": 12,
       "freela": 1,
       "frontend": 6,
       "full-time": 6,
@@ -78,22 +78,21 @@
       "git": 5,
       "go": 7,
       "hybrid": 5,
-      "infra": 7,
+      "infra": 8,
       "internacional": 1,
       "java": 43,
       "javascript": 11,
       "junior": 6,
-      "kubernetes": 4,
+      "kubernetes": 5,
       "lead": 1,
-      "link-quebrado": 3,
       "linux": 1,
       "mongodb": 3,
       "mysql": 3,
       "n-a": 1,
       "net": 3,
       "nodejs": 17,
-      "pa": 1,
-      "pj": 19,
+      "pa": 2,
+      "pj": 20,
       "platform": 3,
       "pleno": 34,
       "postgres": 4,
@@ -109,7 +108,7 @@
       "solid": 1,
       "sql": 5,
       "sql-server": 1,
-      "sre": 7,
+      "sre": 8,
       "stale": 4,
       "terraform": 2,
       "testes-automatizados": 4,
@@ -128,6 +127,7 @@
       "brunossander": 2,
       "Claudiaantunesdelima": 5,
       "Claulu3": 1,
+      "domytec": 1,
       "ErickaMB": 5,
       "folkseloana": 1,
       "FrancieleGhizzoni": 11,
@@ -189,6 +189,7 @@
       "yassobral": 1
     },
     "authorLabels": {
+      "domytec": "domytec",
       "patrickstill": "patrickstill",
       "rodrigofssoares": "rodrigofssoares",
       "jotnate": "jotnate",
@@ -275,13 +276,13 @@
     "workModels": {
       "hybrid": 33,
       "on-site": 28,
-      "remote": 95
+      "remote": 96
     },
     "areas": {
       "backend": 65,
       "data-ai": 22,
       "design": 71,
-      "devops-sre": 27,
+      "devops-sre": 28,
       "frontend": 37,
       "fullstack": 38,
       "leadership": 11,
@@ -292,18 +293,18 @@
     },
     "technologies": {
       "angular": 13,
-      "aws": 46,
-      "azure": 12,
+      "aws": 47,
+      "azure": 13,
       "csharp": 10,
       "docker": 34,
       "dotnet": 14,
       "flutter": 2,
-      "gcp": 23,
+      "gcp": 24,
       "go": 15,
       "java": 46,
       "javascript": 37,
       "kotlin": 3,
-      "kubernetes": 23,
+      "kubernetes": 24,
       "laravel": 12,
       "mongodb": 13,
       "mysql": 18,
@@ -328,10 +329,11 @@
       "lead": 19,
       "mid": 36,
       "principal": 13,
-      "senior": 84
+      "senior": 84,
+      "staff": 1
     },
     "employmentTypes": {
-      "contractor": 58,
+      "contractor": 59,
       "employee": 29,
       "full-time": 11,
       "internship": 4,
@@ -344,15 +346,15 @@
       "pt": 9
     },
     "freshness": {
-      "7": 10,
-      "30": 15,
+      "7": 11,
+      "30": 16,
       "90": 44,
-      "aging": 29,
-      "fresh": 15,
-      "stale": 103
+      "aging": 28,
+      "fresh": 16,
+      "stale": 104
     },
     "salaryDisclosed": {
-      "false": 130,
+      "false": 131,
       "true": 17
     }
   },
@@ -395,7 +397,7 @@
     {
       "page": 8,
       "file": "api/pages/page-0008.json",
-      "count": 7
+      "count": 8
     }
   ]
 }
