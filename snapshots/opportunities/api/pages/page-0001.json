@@ -1,12 +1,11 @@
 {
-  "generatedAt": "2026-11-25T16:33:33.934Z",
+  "generatedAt": "2026-11-26T01:22:24.123Z",
   "page": 1,
   "pageSize": 20,
   "nextPage": "api/pages/page-0002.json",
   "ids": [
     "gh_8a67a04e0972c22f709426d4",
     "gh_cf06c6504f82d775581897a9",
-    "gh_d3425e1d0b3282c840ec68ef",
     "gh_b782555b9a13ee7434712eae",
     "gh_f0692ed939e78a5d8f9d6d7c",
     "gh_647031ec2d513e0e8c9e9cd7",
@@ -23,7 +22,8 @@
     "gh_e89ac86ac916c54d8013da27",
     "gh_c60ef7a33b18b363ea274f0e",
     "gh_3af7b7f1cb517a436b702057",
-    "gh_a6c22a0392a2b37a1c75831a"
+    "gh_a6c22a0392a2b37a1c75831a",
+    "gh_f854256c35a417d8933cfcfe"
   ],
   "items": [
     {
@@ -146,7 +146,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 0,
+        "ageDays": 1,
         "publishedAt": "2026-11-24T21:20:17Z",
         "status": "fresh"
       }
@@ -271,127 +271,8 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 3,
+        "ageDays": 4,
         "publishedAt": "2026-11-21T19:00:11Z",
-        "status": "fresh"
-      }
-    },
-    {
-      "id": "gh_d3425e1d0b3282c840ec68ef",
-      "sourceId": "frontendbr/vagas#8575",
-      "title": "[Remoto] Desenvolvedor(a) Full Stack na Rotha IA",
-      "description": "## Nossa empresa\n\nA Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores.\n\nSite da empresa: https://rothaia.com.br\n\n## Descrição da vaga\n\nProcuramos alguém que queira crescer junto com a gente: assumir a parte técnica, trocar feedback de forma direta e, com o tempo, coordenar o time. Se você prefere só executar tarefas, talvez esta não seja a vaga ideal para você.\n\nA pessoa vai cuidar da parte técnica junto com o fundador, num processo estruturado de criação e verificação, criar produtos e, com o crescimento, liderar o time de desenvolvimento.\n\n- Desenvolver e evoluir sistemas de ponta a ponta, do banco à publicação em produção.\n- Responder pela segurança: autenticação, controle de acesso (RLS) e LGPD.\n- Construir integrações de nota fiscal, pagamentos, Pix e WhatsApp.\n- Revisar código, inclusive o gerado por IA, e definir padrões.\n- Falar com clientes (apenas se necessário) e propor soluções e produtos.\n\n## Local\n\nRemoto (100%), Brasil. Reunião diária online às 10h30 (horário de Brasília).\n\n## Requisitos\n\n**Stack:** React, TypeScript, Next.js, Supabase, PostgreSQL (SQL, índices, funções, RLS e migrations), Cloudflare, GitHub e ferramentas de IA como Claude Code.\n\n**Obrigatórios:**\n- 3 anos ou mais de desenvolvimento web, com sistema em produção usado por clientes.\n- PostgreSQL além do básico e integrações com APIs REST e webhooks.\n- Segurança de aplicações e LGPD.\n- Ensino superior completo ou em andamento na área.\n\n**Integrações:** você não precisa ter feito todas, mas precisa já ter integrado algum destes serviços em produção, de preferência bancos ou gateways como o Asaas, e entender como os outros funcionam:\n- Nota fiscal: NF-e, NFC-e e NFS-e por API, com certificado digital A1.\n- Bancos: APIs como Inter, Itaú, Sicredi e Sicoob, com certificado digital (mTLS), OAuth, boleto, Pix e conciliação.\n- Pagamentos: gateways como Asaas, com webhook e sem cobrança duplicada.\n- WhatsApp: API oficial da Meta (WhatsApp Business Platform), Evolution API ou Z-API.\n\n## Benefícios\n\n- 100% remoto.\n- Crescimento para coordenação do time de desenvolvimento.\n\n## Contratação\n\nPJ, R$ 5.000 por mês, integral. 90 dias de experiência com metas claras.\n\n## Como se candidatar\n\nPelo formulário (uns 5 minutos): https://forms.gle/xvkYYcUBjjWzQtjx7\n\nNa candidatura, conte em poucas linhas uma integração que você fez: qual serviço, o que precisava resolver e como resolveu.\n\nAs candidaturas são recebidas só pelo formulário, por favor não envie pelo WhatsApp nem pelos comentários desta issue. Entraremos em contato com as pessoas selecionadas.\n\n## Tempo médio de feedbacks\n\nEntramos em contato com as pessoas selecionadas pelo e-mail ou WhatsApp informado no formulário. Dúvidas: contato@rothaia.com.br\n\n## Labels\n\n### Nível\n\n- Pleno\n\n### Regime\n\n- PJ\n\n### Alocação\n\n- Remoto\n\nSource and license notices\n\nSource: frontendbr/vagas\nOriginal posting: https://github.com/frontendbr/vagas/issues/8575\nLicense: MIT — https://github.com/frontendbr/vagas/blob/545a6dc7383f868c04f0f1eb158a628033179147/LICENSE\nThe MIT License (MIT)\n\nCopyright (c) 2016 frontendbr\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
-      "excerpt": "## Nossa empresa A Rotha IA cria sistemas de gestão sob medida (CRMs e ERPs) para empresas de diferentes setores. Site da empresa: https://rothaia.com.br ## Descrição da vaga Procuramos alguém que queira crescer junto...",
-      "issueState": "open",
-      "contentHash": "03fc798722c1bd3d8327e9a0bd52de0c3a8b89e11039cab7a6178bbe97488dd1",
-      "repository": "frontendbr/vagas",
-      "repositoryUrl": "https://github.com/frontendbr/vagas",
-      "region": "South America",
-      "country": "Brazil",
-      "sourceLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America"
-      },
-      "tags": [
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "sourceTags": [
-        "pj",
-        "pleno",
-        "remoto"
-      ],
-      "author": {
-        "id": "rodrigofssoares",
-        "name": "rodrigofssoares",
-        "handle": "rodrigofssoares",
-        "avatarUrl": "https://avatars.githubusercontent.com/u/161170803?v=4"
-      },
-      "community": {
-        "id": "frontendbr",
-        "name": "frontendbr",
-        "avatarUrl": "https://github.com/frontendbr.png?size=80",
-        "repository": "frontendbr/vagas",
-        "url": "https://github.com/frontendbr/vagas"
-      },
-      "companyName": "https://rothaia.com.br",
-      "createdAt": "2026-11-20T00:19:45Z",
-      "updatedAt": "2026-11-23T17:29:56Z",
-      "url": "https://github.com/frontendbr/vagas/issues/8575",
-      "sourceType": "github-issue",
-      "jobLocation": {
-        "country": "Brazil",
-        "countryCode": "BR",
-        "region": "South America",
-        "workModel": "remote",
-        "remoteScope": "unspecified",
-        "displayText": "Brazil · Remote",
-        "confidence": "explicit"
-      },
-      "taxonomy": {
-        "areas": [
-          "fullstack"
-        ],
-        "technologies": [
-          "nextjs",
-          "postgres",
-          "react",
-          "typescript"
-        ],
-        "seniority": [
-          "mid"
-        ],
-        "employmentTypes": [
-          "contractor"
-        ],
-        "workModels": [
-          "remote"
-        ],
-        "languages": []
-      },
-      "dataProvenance": {
-        "location": "declared",
-        "salary": "unknown",
-        "seniority": "inferred",
-        "workModel": "declared"
-      },
-      "contentLicenses": [
-        {
-          "repository": "frontendbr/vagas",
-          "spdx": "MIT",
-          "licenseUrl": "https://github.com/frontendbr/vagas/blob/545a6dc7383f868c04f0f1eb158a628033179147/LICENSE",
-          "readmeUrl": "https://github.com/frontendbr/vagas/blob/main/README.md",
-          "reviewedAt": "2026-11-23",
-          "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
-          "notice": "The MIT License (MIT)\n\nCopyright (c) 2016 frontendbr\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
-        }
-      ],
-      "sources": [
-        {
-          "id": "gh_d3425e1d0b3282c840ec68ef",
-          "sourceId": "frontendbr/vagas#8575",
-          "repository": "frontendbr/vagas",
-          "repositoryUrl": "https://github.com/frontendbr/vagas",
-          "url": "https://github.com/frontendbr/vagas/issues/8575",
-          "createdAt": "2026-11-20T00:19:45Z",
-          "updatedAt": "2026-11-23T17:29:56Z",
-          "community": {
-            "id": "frontendbr",
-            "name": "frontendbr",
-            "avatarUrl": "https://github.com/frontendbr.png?size=80",
-            "repository": "frontendbr/vagas",
-            "url": "https://github.com/frontendbr/vagas"
-          }
-        }
-      ],
-      "deduplication": {
-        "sourceCount": 1
-      },
-      "freshness": {
-        "ageDays": 5,
-        "publishedAt": "2026-11-20T00:19:45Z",
         "status": "fresh"
       }
     },
@@ -516,7 +397,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-18T22:39:26Z",
         "status": "fresh"
       }
@@ -637,7 +518,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-18T22:39:24Z",
         "status": "fresh"
       }
@@ -756,7 +637,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 6,
+        "ageDays": 7,
         "publishedAt": "2026-11-18T19:34:16Z",
         "status": "fresh"
       }
@@ -1014,7 +895,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-17T18:53:27Z",
         "status": "fresh"
       }
@@ -1136,7 +1017,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-17T18:43:29Z",
         "status": "fresh"
       }
@@ -1268,7 +1149,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 7,
+        "ageDays": 8,
         "publishedAt": "2026-11-17T18:19:23Z",
         "status": "fresh"
       }
@@ -1519,7 +1400,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 15,
+        "ageDays": 16,
         "publishedAt": "2026-11-09T19:22:03Z",
         "status": "fresh"
       }
@@ -1660,7 +1541,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 17,
+        "ageDays": 18,
         "publishedAt": "2026-11-07T20:58:13Z",
         "status": "fresh"
       }
@@ -1782,7 +1663,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 19,
+        "ageDays": 20,
         "publishedAt": "2026-11-05T19:46:08Z",
         "status": "fresh"
       }
@@ -1917,7 +1798,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 29,
+        "ageDays": 30,
         "publishedAt": "2026-10-26T19:29:46Z",
         "status": "fresh"
       }
@@ -2158,7 +2039,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 34,
+        "ageDays": 35,
         "publishedAt": "2026-10-21T22:12:52Z",
         "status": "aging"
       }
@@ -2215,7 +2096,7 @@
       },
       "companyName": "Coodesh",
       "createdAt": "2026-10-20T16:31:08Z",
-      "updatedAt": "2026-11-23T21:52:32Z",
+      "updatedAt": "2026-11-25T19:44:14Z",
       "url": "https://github.com/backend-br/vagas/issues/12475",
       "sourceType": "github-issue",
       "jobLocation": {
@@ -2278,7 +2159,7 @@
           "repositoryUrl": "https://github.com/backend-br/vagas",
           "url": "https://github.com/backend-br/vagas/issues/12475",
           "createdAt": "2026-10-20T16:31:08Z",
-          "updatedAt": "2026-11-23T21:52:32Z",
+          "updatedAt": "2026-11-25T19:44:14Z",
           "community": {
             "id": "backend-br",
             "name": "backend-br",
@@ -2419,7 +2300,7 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 36,
+        "ageDays": 37,
         "publishedAt": "2026-10-19T20:18:45Z",
         "status": "aging"
       }
@@ -2546,8 +2427,139 @@
         "sourceCount": 1
       },
       "freshness": {
-        "ageDays": 36,
+        "ageDays": 37,
         "publishedAt": "2026-10-19T16:48:53Z",
+        "status": "aging"
+      }
+    },
+    {
+      "id": "gh_f854256c35a417d8933cfcfe",
+      "sourceId": "backend-br/vagas#12468",
+      "title": "[Buenos Aires, Argentina / Cidade do México, México] Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google",
+      "description": "## Descrição da vaga:\nEsta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios.\n\nFique atento ao redirecionamento que vai te levar para uma url [https://coodesh.com](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open) para realizar a candidatura. 👋\n\nThe Google Cloud Consulting Professional Services team guides customers through the moments that matter most in their cloud journey to help businesses thrive. We help customers transform and evolve their business through the use of Google’s global network, web-scale data centers, and software infrastructure. As part of an innovative team in this rapidly growing business, you will help shape the future of businesses of all sizes and use technology to connect with customers, employees, and partners. As an Application Modernization Cloud...\n\n**Importante:** o currículo deve ser enviado em inglês. Idiomas exigidos: Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Requisitos mínimos:\n- Bachelor's degree in Computer Science or equivalent practical experience.\n- Experience coding in one or more general purpose languages (e.g., Python, Java, Go, C or C++).\n- Experience in architecting and implementing APIs and integration technologies in distributed enterprise environment(s) using a combination of technologies/languages/standards like REST, SOAP, GraphQL, JSON, OpenAPI, JavaScript, Cassandra, Kubernetes, etc.\n- Experience with cloud hosting (e.g., Google Cloud Platform), architectural principles in security, distributed computing, and platform/developer/systems operations such as Linux Administration, Git, Terraform, Ansible, etc.\n- Ability to communicate in Spanish and English fluently to support client relationship management in this region.\n\n## Diferenciais:\n- Software development in one or more of the following languages: Golang, C/C++, Node.js, Java, Python, etc. including data structures, algorithms, and software design.\n\n## Responsabilidades:\n- Serve as a trusted technical advisor to customers on cloud architecture, Gemini Enterprise implementations, and AI Agent integrations.\n- Architect and execute end-to-end modernization and application assessment strategies powered by AI tools and generative workflows.\n\n## Google:\nA problem isn't truly solved until it's solved for all. Googlers build products that help create opportunities for everyone, whether down the street or across the globe. Bring your insight, imagination and a healthy disregard for the impossible. Bring everything that makes you unique. Together, we can build for everyone.\n\n## Local:\nBuenos Aires, Argentina; Mexico City, CDMX, Mexico\n\n## Como se candidatar:\nCandidatar-se exclusivamente através da plataforma Coodesh no link a seguir: [Cloud Engineer, Application Modernization, Gemini Enterprise and AI Agents, Google Professional Services ( Spanish, English) na Google](https://coodesh.com/jobs/cloud-engineer-application-modernization-gemini-enterprise-and-ai-agents-google-professional-services-spanish-english-181723915?utm_source=github&utm_medium=backend-br-vagas&modal=open)\n\nApós candidatar-se via plataforma Coodesh e validar o seu login, você poderá acompanhar e receber todas as interações do processo por lá. Utilize a opção **Pedir Feedback** entre uma etapa e outra na vaga que se candidatou. Isso fará com que a pessoa **Recruiter** responsável pelo processo na empresa receba a notificação.\n\n## Labels\n#### Alocação\nAlocado\n#### Categoria\nBack-End\n\nSource and license notices\n\nSource: backend-br/vagas\nOriginal posting: https://github.com/backend-br/vagas/issues/12468\nLicense: MIT — https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE\nMIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+      "excerpt": "## Descrição da vaga: Esta é uma vaga de um parceiro da plataforma Coodesh, ao candidatar-se você terá acesso as informações completas sobre a empresa e benefícios. Fique atento ao redirecionamento que vai te levar pa...",
+      "issueState": "open",
+      "contentHash": "9063b37b54126de9944af172b8b4a50e84ed2eb091ae5563c64b961f676ae9c0",
+      "repository": "backend-br/vagas",
+      "repositoryUrl": "https://github.com/backend-br/vagas",
+      "region": "South America",
+      "country": "Brazil",
+      "sourceLocation": {
+        "country": "Brazil",
+        "countryCode": "BR",
+        "region": "South America"
+      },
+      "tags": [
+        "git",
+        "go",
+        "java",
+        "javascript",
+        "kubernetes",
+        "linux",
+        "node.js",
+        "python"
+      ],
+      "sourceTags": [
+        "git",
+        "go",
+        "java",
+        "javascript",
+        "kubernetes",
+        "linux",
+        "node.js",
+        "python"
+      ],
+      "author": {
+        "id": "FrancieleGhizzoni",
+        "name": "FrancieleGhizzoni",
+        "handle": "FrancieleGhizzoni",
+        "avatarUrl": "https://avatars.githubusercontent.com/u/67921680?v=4"
+      },
+      "community": {
+        "id": "backend-br",
+        "name": "backend-br",
+        "avatarUrl": "https://github.com/backend-br.png?size=80",
+        "repository": "backend-br/vagas",
+        "url": "https://github.com/backend-br/vagas"
+      },
+      "companyName": "Google",
+      "createdAt": "2026-10-14T21:02:00Z",
+      "updatedAt": "2026-11-25T19:44:15Z",
+      "url": "https://github.com/backend-br/vagas/issues/12468",
+      "sourceType": "github-issue",
+      "jobLocation": {
+        "country": "Argentina",
+        "countryCode": "AR",
+        "region": "South America",
+        "city": "Buenos Aires, ; Mexico City, CDMX, Mexico",
+        "displayText": "Buenos Aires, ; Mexico City, CDMX, Mexico, Argentina",
+        "confidence": "explicit"
+      },
+      "taxonomy": {
+        "areas": [
+          "backend",
+          "data-ai",
+          "design"
+        ],
+        "technologies": [
+          "gcp",
+          "go",
+          "java",
+          "javascript",
+          "kubernetes",
+          "nodejs",
+          "python",
+          "terraform"
+        ],
+        "seniority": [],
+        "employmentTypes": [],
+        "workModels": [],
+        "languages": [
+          "en",
+          "es"
+        ]
+      },
+      "dataProvenance": {
+        "location": "declared",
+        "salary": "unknown",
+        "seniority": "unknown",
+        "workModel": "unknown"
+      },
+      "contentLicenses": [
+        {
+          "repository": "backend-br/vagas",
+          "spdx": "MIT",
+          "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
+          "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
+          "reviewedAt": "2026-11-23",
+          "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+          "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+        }
+      ],
+      "sources": [
+        {
+          "id": "gh_f854256c35a417d8933cfcfe",
+          "sourceId": "backend-br/vagas#12468",
+          "repository": "backend-br/vagas",
+          "repositoryUrl": "https://github.com/backend-br/vagas",
+          "url": "https://github.com/backend-br/vagas/issues/12468",
+          "createdAt": "2026-10-14T21:02:00Z",
+          "updatedAt": "2026-11-25T19:44:15Z",
+          "community": {
+            "id": "backend-br",
+            "name": "backend-br",
+            "avatarUrl": "https://github.com/backend-br.png?size=80",
+            "repository": "backend-br/vagas",
+            "url": "https://github.com/backend-br/vagas"
+          }
+        }
+      ],
+      "deduplication": {
+        "sourceCount": 1
+      },
+      "freshness": {
+        "ageDays": 42,
+        "publishedAt": "2026-10-14T21:02:00Z",
         "status": "aging"
       }
     }

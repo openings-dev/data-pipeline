@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-25T16:33:33.934Z",
+  "generatedAt": "2026-11-26T01:22:24.123Z",
   "schemaVersion": 6,
   "pageSize": 20,
-  "dataHash": "174070c1669d9eefac88db58019a698f9f25f3508c643dc29a96cf6fd15f55b1",
+  "dataHash": "56fde151ce94980da15ef619a1ccdca9903aa402adad3be1dcc4416078c19e87",
   "totals": {
-    "openOpportunities": 148,
+    "openOpportunities": 149,
     "pages": 8,
     "repositories": 16,
     "communities": 16,
     "countries": 2,
     "regions": 2,
-    "authors": 71,
-    "authorArtifactBytes": 20973
+    "authors": 70,
+    "authorArtifactBytes": 20673
   },
   "files": {
     "sourceLicenses": "api/source-licenses.json",
@@ -28,13 +28,13 @@
   "facets": {
     "repositories": {
       "ajudevs/vagas": 11,
-      "backend-br/vagas": 26,
+      "backend-br/vagas": 28,
       "backend-pt/vagas": 1,
       "DevComputaria/CangaceiroDevVagas": 15,
       "developersRJ/vagas": 5,
       "DevOps-Brasil/Vagas": 8,
       "dotnetdevbr/vagas": 2,
-      "frontendbr/vagas": 8,
+      "frontendbr/vagas": 7,
       "IonicBrazil/vagas": 6,
       "nerdzao/vagas": 28,
       "nodejsdevbr/vagas": 1,
@@ -46,21 +46,22 @@
     },
     "regions": {
       "Europe": 1,
-      "South America": 147
+      "South America": 148
     },
     "countries": {
-      "Brazil": 147,
+      "Brazil": 148,
       "Portugal": 1
     },
     "tags": {
       "alocado": 1,
+      "apache-kafka": 1,
       "asp": 1,
       "aws": 14,
       "azure": 2,
       "backend": 21,
       "brasil": 1,
       "c#": 1,
-      "c++": 8,
+      "c++": 9,
       "ci-cd": 1,
       "clt": 12,
       "contrato": 2,
@@ -69,7 +70,7 @@
       "devops": 20,
       "docker": 2,
       "especialista": 7,
-      "formato-sugerido": 12,
+      "formato-sugerido": 14,
       "freela": 1,
       "frontend": 6,
       "full-time": 6,
@@ -89,22 +90,23 @@
       "mongodb": 3,
       "mysql": 3,
       "n-a": 1,
+      "nestjs": 1,
       "net": 3,
       "nodejs": 17,
       "pa": 2,
-      "pj": 20,
+      "pj": 19,
       "platform": 3,
-      "pleno": 34,
+      "pleno": 33,
       "postgres": 4,
       "principal": 5,
-      "python": 27,
+      "python": 28,
       "rabbitmq": 1,
       "react": 15,
       "remote": 39,
       "sap": 1,
       "scala": 1,
       "security": 5,
-      "senior": 30,
+      "senior": 31,
       "solid": 1,
       "sql": 5,
       "sql-server": 1,
@@ -113,7 +115,7 @@
       "terraform": 2,
       "testes-automatizados": 4,
       "typescript": 16,
-      "verificada": 15
+      "verificada": 17
     },
     "authors": {
       "acelant": 1,
@@ -125,12 +127,12 @@
       "BiancaGiuSoares": 3,
       "BrendaRosaTA": 1,
       "brunossander": 2,
-      "Claudiaantunesdelima": 5,
+      "Claudiaantunesdelima": 6,
       "Claulu3": 1,
       "domytec": 1,
       "ErickaMB": 5,
       "folkseloana": 1,
-      "FrancieleGhizzoni": 11,
+      "FrancieleGhizzoni": 12,
       "FranPiresBotcity": 3,
       "friweb": 1,
       "ghost": 4,
@@ -173,7 +175,6 @@
       "patrickstill": 1,
       "Qrhit": 6,
       "quetlinkober-source": 1,
-      "rodrigofssoares": 1,
       "SebastianStifler": 2,
       "selbetti-itsolutions": 1,
       "serenarhempreender": 1,
@@ -191,7 +192,6 @@
     "authorLabels": {
       "domytec": "domytec",
       "patrickstill": "patrickstill",
-      "rodrigofssoares": "rodrigofssoares",
       "jotnate": "jotnate",
       "milenachavesmasa": "milenachavesmasa",
       "gloriagalembeck": "gloriagalembeck",
@@ -263,30 +263,30 @@
     },
     "jobCountries": {
       "Argentina": 1,
-      "Brazil": 22,
+      "Brazil": 21,
       "Italy": 1,
-      "Mexico": 1,
+      "Mexico": 2,
       "Portugal": 3
     },
     "jobRegions": {
       "Europe": 4,
-      "North America": 1,
-      "South America": 23
+      "North America": 2,
+      "South America": 22
     },
     "workModels": {
       "hybrid": 33,
-      "on-site": 28,
+      "on-site": 29,
       "remote": 96
     },
     "areas": {
-      "backend": 65,
-      "data-ai": 22,
-      "design": 71,
+      "backend": 66,
+      "data-ai": 23,
+      "design": 72,
       "devops-sre": 28,
       "frontend": 37,
-      "fullstack": 38,
+      "fullstack": 39,
       "leadership": 11,
-      "mobile": 36,
+      "mobile": 37,
       "product": 2,
       "qa": 8,
       "support": 18
@@ -308,11 +308,11 @@
       "laravel": 12,
       "mongodb": 13,
       "mysql": 18,
-      "nextjs": 3,
+      "nextjs": 2,
       "nodejs": 24,
       "php": 16,
-      "postgres": 20,
-      "python": 37,
+      "postgres": 19,
+      "python": 38,
       "react": 27,
       "react-native": 6,
       "redis": 7,
@@ -320,20 +320,20 @@
       "rust": 1,
       "spring": 12,
       "terraform": 9,
-      "typescript": 21,
+      "typescript": 20,
       "vue": 7
     },
     "seniority": {
       "internship": 4,
       "junior": 15,
       "lead": 19,
-      "mid": 36,
+      "mid": 35,
       "principal": 13,
-      "senior": 84,
+      "senior": 86,
       "staff": 1
     },
     "employmentTypes": {
-      "contractor": 59,
+      "contractor": 58,
       "employee": 29,
       "full-time": 11,
       "internship": 4,
@@ -341,21 +341,21 @@
     },
     "languages": {
       "de": 1,
-      "en": 63,
+      "en": 65,
       "es": 6,
       "pt": 9
     },
     "freshness": {
-      "7": 10,
-      "30": 16,
-      "90": 44,
-      "aging": 28,
-      "fresh": 16,
+      "7": 6,
+      "30": 15,
+      "90": 45,
+      "aging": 30,
+      "fresh": 15,
       "stale": 104
     },
     "salaryDisclosed": {
       "false": 131,
-      "true": 17
+      "true": 18
     }
   },
   "pages": [
@@ -397,7 +397,7 @@
     {
       "page": 8,
       "file": "api/pages/page-0008.json",
-      "count": 8
+      "count": 9
     }
   ]
 }
