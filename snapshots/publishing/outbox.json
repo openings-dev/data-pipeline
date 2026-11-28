@@ -7111,6 +7111,517 @@
           }
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_3ad7bdc35204ea0ccc342af8",
+        "revision": "41c8d215950d9c8efee6a5442fd2f18b17443e3320bc6615db5bab94dc53bd42",
+        "idempotencyKey": "openings:job:gh_3ad7bdc35204ea0ccc342af8:41c8d215950d9c8efee6a5442fd2f18b17443e3320bc6615db5bab94dc53bd42"
+      },
+      "canonical": {
+        "title": "[Remoto] Desenvolvedor Java Pleno - DB1/ANYMARKET",
+        "summary": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_3ad7bdc35204ea0ccc342af8",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_3ad7bdc35204ea0ccc342af8",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_3ad7bdc35204ea0ccc342af8",
+              "revision": "41c8d215950d9c8efee6a5442fd2f18b17443e3320bc6615db5bab94dc53bd42",
+              "canonicalPath": "/jobs/gh_3ad7bdc35204ea0ccc342af8",
+              "title": "[Remoto] Desenvolvedor Java Pleno - DB1/ANYMARKET",
+              "summary": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+              "status": "active",
+              "contentSha256": "f2ac54adc807e07ad4ef3c8acbe50d81c567bb82b19e98234389b7f86c9fc367",
+              "content": {
+                "id": "gh_3ad7bdc35204ea0ccc342af8",
+                "sourceId": "backend-br/vagas#12443",
+                "title": "[Remoto] Desenvolvedor Java Pleno - DB1/ANYMARKET",
+                "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n\n## Descrição da vaga\n\nNo Anymarket, você vai construir o coração das nossas integrações, sistemas robustos, escaláveis e que atravessam times diferentes, do backend ao frontend. Sua missão começa pela imersão: entender o que existe, como funciona e por quê foi construído assim. A partir daí, você vai ganhar autonomia para evoluir essas soluções e habilitar a escala que o produto precisa para crescer.\n\nNo dia a dia, você vai trabalhar com times multidisciplinares de tecnologia, negócio e design, sempre com IA como aliada no fluxo de desenvolvimento, geração e revisão de código, análise de logs, automação de tarefas e spec-driven development fazem parte da rotina. Você vai escrever código que resiste ao tempo, do tipo que nasce forte desde o primeiro commit e continua de pé anos depois.\n\n## Local\n\nRemoto\n\n## Requisitos\n\nPerfil que buscamos:\n\n- Experiência sólida em Java com Spring Boot e/ou Quarkus, não só domínio do framework, mas entendimento do que acontece por trás dele\n- Experiência com PostgreSQL ou banco relacional equivalente\n- Vivência com Redis ou similar para caching\n- Experiência com mensageria assíncrona: Kafka, RabbitMQ, ActiveMQ ou similar\n- Conhecimento do ciclo completo de deploy: Docker, Kubernetes e CI/CD\n- Vivência real com arquitetura de microsserviços\n- Experiência com monitoramento em tempo real: Datadog, Grafana, ELK ou similar\n- IA incorporada ao fluxo de trabalho: geração e revisão de código, RAG, spec-driven development (SDD)\n- Quando trava num problema, busca ativamente a solução, questiona colegas, pesquisa, decompõe em partes menores\n- Assume responsabilidade pelos próprios erros e colabora genuinamente em equipe\n\nVai ser incrível se você souber ou tiver vontade de aprender:\n\n- MongoDB ou outro banco não-relacional\n- AWS em nível intermediário\n- Análise de performance em produção\n- Ferramentas de análise estática de código (Sonar/SAST)\n- Fluxos de autenticação OAuth2/PKCE \n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nCrédito Consignado com as melhores taxas (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n\n## Contratação\n\nCLT\n\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/c89f43bd-95a8-4733-bebd-ebe3bbfd013a/desenvolvedor-java-pleno?r=43941dbb-f183-4c7c-a931-f64828e11cf7 \n\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n\n- Pleno\n\n### Regime\n\n\n- CLT\n\n\n### Alocação\n\n- Remoto\n\nSource and license notices\n\nSource: backend-br/vagas\nOriginal posting: https://github.com/backend-br/vagas/issues/12443\nLicense: MIT — https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE\nMIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+                "issueState": "open",
+                "contentHash": "41c8d215950d9c8efee6a5442fd2f18b17443e3320bc6615db5bab94dc53bd42",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "aws",
+                  "clt",
+                  "java",
+                  "mongodb",
+                  "pleno",
+                  "postgresql",
+                  "rabbitmq",
+                  "remoto"
+                ],
+                "sourceTags": [
+                  "aws",
+                  "clt",
+                  "java",
+                  "mongodb",
+                  "pleno",
+                  "postgresql",
+                  "rabbitmq",
+                  "remoto"
+                ],
+                "author": {
+                  "id": "hadamaller",
+                  "name": "hadamaller",
+                  "handle": "hadamaller",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-10-13T19:49:49Z",
+                "updatedAt": "2026-11-27T19:19:35Z",
+                "url": "https://github.com/backend-br/vagas/issues/12443",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "design",
+                    "frontend"
+                  ],
+                  "technologies": [
+                    "aws",
+                    "docker",
+                    "java",
+                    "kubernetes",
+                    "mongodb",
+                    "postgres",
+                    "redis",
+                    "spring"
+                  ],
+                  "seniority": [
+                    "mid"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "contentLicenses": [
+                  {
+                    "repository": "backend-br/vagas",
+                    "spdx": "MIT",
+                    "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
+                    "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
+                    "reviewedAt": "2026-11-23",
+                    "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+                    "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+                  }
+                ],
+                "sources": [
+                  {
+                    "id": "gh_3ad7bdc35204ea0ccc342af8",
+                    "sourceId": "backend-br/vagas#12443",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12443",
+                    "createdAt": "2026-10-13T19:49:49Z",
+                    "updatedAt": "2026-11-27T19:19:35Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 45,
+                  "publishedAt": "2026-10-13T19:49:49Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_7c17d41a11070d7781299515",
+        "revision": "c8576129fa204a480e74616471c478571e05b776c9784b2534e17dbfda9b197f",
+        "idempotencyKey": "openings:job:gh_7c17d41a11070d7781299515:c8576129fa204a480e74616471c478571e05b776c9784b2534e17dbfda9b197f"
+      },
+      "canonical": {
+        "title": "[Remoto] Desenvolvedor Fullstack Pleno - Java & Angular - DB1",
+        "summary": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_7c17d41a11070d7781299515",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_7c17d41a11070d7781299515",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_7c17d41a11070d7781299515",
+              "revision": "c8576129fa204a480e74616471c478571e05b776c9784b2534e17dbfda9b197f",
+              "canonicalPath": "/jobs/gh_7c17d41a11070d7781299515",
+              "title": "[Remoto] Desenvolvedor Fullstack Pleno - Java & Angular - DB1",
+              "summary": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+              "status": "active",
+              "contentSha256": "e5e9073a206dd003fb62c778ff34b34cc540212fce7a94a6ed8c4a55ea02a2e9",
+              "content": {
+                "id": "gh_7c17d41a11070d7781299515",
+                "sourceId": "backend-br/vagas#12445",
+                "title": "[Remoto] Desenvolvedor Fullstack Pleno - Java & Angular - DB1",
+                "description": "<!-- Por favor, poste apenas vagas para backend. -->\n\n## Nossa empresa\n\nNa DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar problemas complexos em soluções que simplificam a vida das pessoas. Gostamos de experimentar, aprender e inovar, e por isso esse é o lugar para colocar seu talento à prova.\n\nSe você combina inteligência com uma vontade incansável de aprender e evoluir, e tem uma postura resiliente moldado por superações, já carrega muito da essência DB1. Aqui, cada desafio é oportunidade de crescimento, cada erro é uma lição para voltar mais forte e cada vitória é combustível para seguir adiante com uma missão clara e valores sólidos que dão sentido a cada passo. Na DB1, superação não é exceção e sim parte da jornada.\n## Descrição da vaga\n\nNo Anymarket, você vai construir o coração das nossas integrações, sistemas robustos, escaláveis e que atravessam times diferentes, do backend ao frontend. Sua missão começa pela imersão: entender o que existe, como funciona e por quê foi construído assim. A partir daí, você vai ganhar autonomia para evoluir essas soluções e habilitar a escala que o produto precisa para crescer.\n\nNo dia a dia, você vai trabalhar com times multidisciplinares de tecnologia, negócio e design, sempre com IA como aliada no fluxo de desenvolvimento, geração e revisão de código, análise de logs, automação de tarefas e spec-driven development fazem parte da rotina. Você vai escrever código que resiste ao tempo, do tipo que nasce forte desde o primeiro commit e continua de pé anos depois.\n## Local\n\nRemoto\n\n## Requisitos\n\nPerfil que buscamos:\n\n- Experiência sólida em Java com Spring Boot e/ou Quarkus, não só domínio do framework, mas entendimento do que acontece por trás dele\n- Domínio de Angular para construção de interfaces administrativas e dashboards\n- Experiência com PostgreSQL ou banco relacional equivalente\n- Vivência com Redis ou similar para caching\n- Experiência com mensageria assíncrona: Kafka, RabbitMQ, ActiveMQ ou similar\n- Conhecimento do ciclo completo de deploy: Docker, Kubernetes e CI/CD\n- Vivência real com arquitetura de microsserviços\n- Experiência com monitoramento em tempo real: Datadog, Grafana, ELK ou similar\n- IA incorporada ao fluxo de trabalho: geração e revisão de código, RAG, spec-driven development (SDD)\n- Quando trava num problema, busca ativamente a solução, questiona colegas, pesquisa, decompõe em partes menores\n- Assume responsabilidade pelos próprios erros e colabora genuinamente em equipe\n\nVai ser incrível se você souber ou tiver vontade de aprender:\n\n- MongoDB ou outro banco não-relacional\n- AWS em nível intermediário\n- Análise de performance em produção\n- Ferramentas de análise estática de código (Sonar/SAST)\n- Fluxos de autenticação OAuth2/PKCE\n\n## Benefícios\n\nCartão de benefícios flexíveis (Alimentação, Mobilidade, Qualidade de Vida, entre outras categorias);\nPlano de Saúde Unimed;\nSeguro de Vida;\nPlano odontológico (opcional);\nCrédito Consignado com as melhores taxas (Mixtra);\nGift Aniversário;\nBem-estar: parceria com plataforma de acesso a academias e outras atividades físicas, parceria para atendimento psicológico;\nEvolução de carreira: Parceria com plataformas e instituições de ensino, tanto para idiomas quanto para graduação, pós-graduação e cursos livres, Plano de Desenvolvimento Individual (PDI), feedbacks constantes, Programa de Mentoria, eventos internos, subsídio para treinamentos, universidade corporativa e muito mais;\nProgramas de recompensa: bônus para indicação de novos colaboradores e bônus anual atrelado a metas;\nEspaço para assumir desafios e se desenvolver.\n## Contratação\n\nCLT\n## Como se candidatar\n\nhttps://db1.inhire.app/vagas/22573662-ab2c-4201-93d1-be107c5ded02/desenvolvedor-fullstack-pleno-java-and-angular?r=43941dbb-f183-4c7c-a931-f64828e11cf7\n## Labels\n\n<!-- Retire os labels que não fazem sentido à vaga. -->\n\n### Nível\n- Pleno\n\n\n### Regime\n\n- CLT\n\n### Alocação\n\n- Remoto\n\nSource and license notices\n\nSource: backend-br/vagas\nOriginal posting: https://github.com/backend-br/vagas/issues/12445\nLicense: MIT — https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE\nMIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "excerpt": "<!-- Por favor, poste apenas vagas para backend. --> ## Nossa empresa Na DB1, cada linha de código, teste ou insight é uma chance de criar impacto real. Somos movidos pela curiosidade e pelo desejo de transformar prob...",
+                "issueState": "open",
+                "contentHash": "c8576129fa204a480e74616471c478571e05b776c9784b2534e17dbfda9b197f",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  "aws",
+                  "clt",
+                  "java",
+                  "mongodb",
+                  "pleno",
+                  "postgresql",
+                  "rabbitmq",
+                  "remoto"
+                ],
+                "sourceTags": [
+                  "aws",
+                  "clt",
+                  "java",
+                  "mongodb",
+                  "pleno",
+                  "postgresql",
+                  "rabbitmq",
+                  "remoto"
+                ],
+                "author": {
+                  "id": "hadamaller",
+                  "name": "hadamaller",
+                  "handle": "hadamaller",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/248000577?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-10-13T19:54:17Z",
+                "updatedAt": "2026-11-27T19:19:33Z",
+                "url": "https://github.com/backend-br/vagas/issues/12445",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [
+                    "backend",
+                    "design",
+                    "frontend",
+                    "fullstack"
+                  ],
+                  "technologies": [
+                    "angular",
+                    "aws",
+                    "docker",
+                    "java",
+                    "kubernetes",
+                    "mongodb",
+                    "postgres",
+                    "redis",
+                    "spring"
+                  ],
+                  "seniority": [
+                    "mid"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "contentLicenses": [
+                  {
+                    "repository": "backend-br/vagas",
+                    "spdx": "MIT",
+                    "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
+                    "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
+                    "reviewedAt": "2026-11-23",
+                    "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+                    "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+                  }
+                ],
+                "sources": [
+                  {
+                    "id": "gh_7c17d41a11070d7781299515",
+                    "sourceId": "backend-br/vagas#12445",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12445",
+                    "createdAt": "2026-10-13T19:54:17Z",
+                    "updatedAt": "2026-11-27T19:19:33Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 45,
+                  "publishedAt": "2026-10-13T19:54:17Z",
+                  "status": "aging"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "identity": {
+        "tenant": "openings",
+        "sourceType": "job",
+        "sourceId": "gh_cb2ee2711308cdd4a5a45c69",
+        "revision": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+        "idempotencyKey": "openings:job:gh_cb2ee2711308cdd4a5a45c69:7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5"
+      },
+      "canonical": {
+        "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+        "summary": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+        "canonicalUrl": "https://openings.dev/jobs/gh_cb2ee2711308cdd4a5a45c69",
+        "language": "pt-BR"
+      },
+      "artifacts": [],
+      "deliveries": [
+        {
+          "id": "web",
+          "adapter": "web.r2",
+          "operation": "publish",
+          "required": true,
+          "payload": {
+            "type": "web.page",
+            "route": "/jobs/gh_cb2ee2711308cdd4a5a45c69",
+            "entity": {
+              "schemaVersion": 1,
+              "tenant": "openings",
+              "kind": "job",
+              "id": "gh_cb2ee2711308cdd4a5a45c69",
+              "revision": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+              "canonicalPath": "/jobs/gh_cb2ee2711308cdd4a5a45c69",
+              "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+              "summary": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+              "status": "active",
+              "contentSha256": "5e79544588538054014b36d907dd363f976d1ba95e3464af570aa64b3395f551",
+              "content": {
+                "id": "gh_cb2ee2711308cdd4a5a45c69",
+                "sourceId": "backend-br/vagas#12292",
+                "title": "[Remoto] Developer ASP.NET/C# Junior/Pleno - Dimensa",
+                "description": "## Nossa empresa\nA Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para negócios de todos os tamanhos. Nossa equipe de experts vive e respira o setor financeiro, atualizando nossas soluções constantemente para tornar suas operações mais digitais, melhorar a performance, inovar no atendimento aos clientes e garantir que todas as exigências regulatórias sejam 100% cumpridas.\n\nTodas as nossas oportunidades são inclusivas e abertas para pessoas com deficiência. 🌟\n\n## Descrição da vaga\n**DESAFIO**\nParticipar do desenvolvimento e manutenção de aplicações web utilizando ASP.NET, C#, JavaScript, e outras tecnologias relacionadas.\nImplementar e otimizar soluções utilizando HTML, CSS, Bootstrap, e JSon, garantindo alta performance e usabilidade.\nDesenvolver e manter banco de dados SQL Server, incluindo a criação e otimização de triggers, stored procedures e aplicação de regras de normalização.\nIntegrar e consumir WebServices (SOAP e REST) nas aplicações desenvolvidas.\nControlar as mudanças no desenvolvimento de software para assegurar a estabilidade e evolução contínua dos projetos.\nIdentificar e corrigir problemas no código, bem como propor melhorias e oportunidades de refatoração para manter a qualidade do software.\nColaborar com equipes multifuncionais para garantir que as soluções atendam aos requisitos de negócios e qualidade.\n\n## Local\nRemoto.\n\n## Requisitos\n\n**O que você precisa ter:**\n\n- Ensino superior completo ou em andamento em Ciência da Computação, Engenharia de Software, Sistemas de Informação ou áreas correlatas. \n- Entendimento de processos de desenvolvimento, qualidade e maturidade de software.\n- Experiência e conhecimento em Linguagem de programação: domínio de aplicação e entendimento de sintaxe e desempenho de linguagens como ASP.NET C#, Java script, Json, Bootstrap \n- Experiência com WEB JS/Jquery/Ajax, Webforms, Bootstrap, HTML, JSon e CSS, SQL Server, incluindo normalização, triggers, e stored procedures. \n- Conhecimento em SOAP e REST. \n- Habilidade analítica para detectar problemas e propor soluções eficazes. \n- Proatividade e boa comunicação para colaborar com diferentes equipes.\n\n## Benefícios\n🍽️ Auxílio Alimentação: para você escolher suas refeições com liberdade.\n👶Auxílio Creche: Para ajudar nas despesas dos pequenos.\n👶 Licença Maternidade e Paternidade Estendida: Mais tempo para aproveitar os momentos especiais.\n🏥 Assistência Médica SulAmérica: Cuidado completo para você e sua família.\n🛡️ Seguro de Vida e Funeral: Proteção garantida.\n🏡 Auxílio Home Office: Apoio financeiro para montar e manter seu espaço de trabalho em casa, com conforto e eficiência.\n💊 Descontos em Farmácias: Economize com o Univers.\n🎉 Day Off: Dia de folga no mês do seu aniversário para celebrar em grande estilo!\n\n## Contratação\nCLT.\n\n## Como se candidatar\nCurtiu o desafio e quer fazer parte do nosso time?\n\nPara se candidatar, basta enviar o seu currículo atualizado para o e-mail:\n📧 kerolayne.fbarros@dimensa.com.br\n\nDica: Coloque no assunto do e-mail: **Vaga ASP .NET** para localizarmos sua mensagem mais rápido!\n\n### Nível\n- Junior/Pleno\n\n### Regime\n- CLT\n\n### Alocação\n- Remoto\n\nSource and license notices\n\nSource: backend-br/vagas\nOriginal posting: https://github.com/backend-br/vagas/issues/12292\nLicense: MIT — https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE\nMIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.",
+                "excerpt": "## Nossa empresa A Dimensa está no topo do jogo quando o assunto é tecnologia e infraestrutura para operações financeiras, crédito e risco, e seguros. Nossos sistemas são super escaláveis e adaptáveis, perfeitos para ...",
+                "issueState": "open",
+                "contentHash": "7c73bd2f6856ab904523ac70af517ad5f81b668a26b398910a866c84b265ead5",
+                "repository": "backend-br/vagas",
+                "repositoryUrl": "https://github.com/backend-br/vagas",
+                "region": "South America",
+                "country": "Brazil",
+                "sourceLocation": {
+                  "country": "Brazil",
+                  "countryCode": "BR",
+                  "region": "South America"
+                },
+                "tags": [
+                  ".net",
+                  "asp",
+                  "clt",
+                  "java",
+                  "javascript",
+                  "pleno",
+                  "remoto",
+                  "sql"
+                ],
+                "sourceTags": [
+                  ".net",
+                  "asp",
+                  "clt",
+                  "java",
+                  "javascript",
+                  "pleno",
+                  "remoto",
+                  "sql"
+                ],
+                "author": {
+                  "id": "kerol-barros",
+                  "name": "kerol-barros",
+                  "handle": "kerol-barros",
+                  "avatarUrl": "https://avatars.githubusercontent.com/u/110194786?v=4"
+                },
+                "community": {
+                  "id": "backend-br",
+                  "name": "backend-br",
+                  "avatarUrl": "https://github.com/backend-br.png?size=80",
+                  "repository": "backend-br/vagas",
+                  "url": "https://github.com/backend-br/vagas"
+                },
+                "createdAt": "2026-06-23T19:07:13Z",
+                "updatedAt": "2026-11-27T19:19:45Z",
+                "url": "https://github.com/backend-br/vagas/issues/12292",
+                "sourceType": "github-issue",
+                "jobLocation": {
+                  "workModel": "remote",
+                  "remoteScope": "unspecified",
+                  "displayText": "Remote",
+                  "confidence": "explicit"
+                },
+                "taxonomy": {
+                  "areas": [],
+                  "technologies": [
+                    "csharp",
+                    "dotnet",
+                    "java",
+                    "javascript"
+                  ],
+                  "seniority": [
+                    "junior",
+                    "mid"
+                  ],
+                  "employmentTypes": [
+                    "employee"
+                  ],
+                  "workModels": [
+                    "remote"
+                  ],
+                  "languages": []
+                },
+                "dataProvenance": {
+                  "location": "unknown",
+                  "salary": "unknown",
+                  "seniority": "inferred",
+                  "workModel": "declared"
+                },
+                "contentLicenses": [
+                  {
+                    "repository": "backend-br/vagas",
+                    "spdx": "MIT",
+                    "licenseUrl": "https://github.com/backend-br/vagas/blob/2f2261a3ade80734f267353adfe45ac82fe4979c/LICENSE",
+                    "readmeUrl": "https://github.com/backend-br/vagas/blob/main/README.md",
+                    "reviewedAt": "2026-11-23",
+                    "basis": "MIT repository notice and explicit README licensing, assessed with GitHub Terms D.6; not universal employer authorization.",
+                    "notice": "MIT License\n\nCopyright (c) 2017-2026 Back-End Brasil\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+                  }
+                ],
+                "sources": [
+                  {
+                    "id": "gh_cb2ee2711308cdd4a5a45c69",
+                    "sourceId": "backend-br/vagas#12292",
+                    "repository": "backend-br/vagas",
+                    "repositoryUrl": "https://github.com/backend-br/vagas",
+                    "url": "https://github.com/backend-br/vagas/issues/12292",
+                    "createdAt": "2026-06-23T19:07:13Z",
+                    "updatedAt": "2026-11-27T19:19:45Z",
+                    "community": {
+                      "id": "backend-br",
+                      "name": "backend-br",
+                      "avatarUrl": "https://github.com/backend-br.png?size=80",
+                      "repository": "backend-br/vagas",
+                      "url": "https://github.com/backend-br/vagas"
+                    }
+                  }
+                ],
+                "deduplication": {
+                  "sourceCount": 1
+                },
+                "freshness": {
+                  "ageDays": 157,
+                  "publishedAt": "2026-06-23T19:07:13Z",
+                  "status": "stale"
+                }
+              }
+            }
+          }
+        }
+      ]
     }
   ]
 }
